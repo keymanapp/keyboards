@@ -4,15 +4,6 @@
   require_once('header.php');
 ?>
 
-<style type="text/css">
-    p { font: 12pt Tahoma; }
-    h1 { font: bold 18pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 16pt Tahoma; color: #4444cc; }
-    h3 { font: bold 14pt Tahoma; color: #4444cc; }
-</style>
-
-<h1>The SIL Sahu Keyman Keyboard Package</h1>
-
 <h2>Font</h2>
 <p>
   The SIL Sahu keyboard is a Latin script keyboard that uses the SIL Charis font.

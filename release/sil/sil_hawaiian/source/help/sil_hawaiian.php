@@ -6,11 +6,8 @@
   Authors:     Tavultesoft
 */
   $pagename = 'Hawaiian (SIL) Keyboard Help';
-  $pagetitle = 'Hawaiian (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-
-<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 p { font: 10pt Tahoma }
 h1 { font: bold 16pt Tahoma; color: #4444cc }
 h2 { font: bold 12pt Tahoma; color: #4444cc }
@@ -18,7 +15,9 @@ table.display tr .gap { width: 16px; border: none; }
 table.display tr td { font: 10pt "HI Keawe Unicode"; border: solid 1px #ccccff; padding: 4px }
 table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: left }
 table.display { border-collapse: collapse; }
-    </style>
+END;
+  require_once('header.php');
+?>
 
 <p>Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</p>
 
