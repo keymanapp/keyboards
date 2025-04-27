@@ -509,23 +509,45 @@
     background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
   }
 
-/* resets sadis letters that appear in popups of the default layers, this is needed for when the keys appear on the -extra layer */
+
+/* Resets sadis letters that appear in popups of the default layers, this is needed for when the keys appear on the -extra layer */
+/* This needs to be device-specific and not operating-system specific.  Thus .phone.ios and .tablet.ios instead of just .ios ,
+   to avoid unexpected resets when views through a web browser on a Mac. This may not be an issue for Android devices but the
+   more restrictive CSS statements are made here for good measure.*/
+
+/* iOS */
+/* default layer */
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_1225'],
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_1345'],
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_12E5'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_12E5'],
-.tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN, .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_EQUAL,  
-.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
-.ios .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
-.ios .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift,
-.ios .kmw-keyboard-gff_amharic #punctuation-K_4\+shift
+
+/* punctuation layer */
+.tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN,      .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_EQUAL,  
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift,     .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift,
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,     .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_2\+shift, 
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift,
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-K_4\+shift      .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_4\+shift,
+
+/* punctuation-2 layer */
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
+.phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift
   {background: #fdfdfe ; color: black ; }
 
+/* Android */
+/* default layer */
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1225'],
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1345'],
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_12E5'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_12E5'],
-.tablet.android .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN, .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_EQUAL, 
-.android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
-.android .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
-.android .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift,
-.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift
+
+/* punctuation layer */
+.tablet.android .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN,      .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_EQUAL, 
+.phone.android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift,     .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, 
+.phone.android .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,     .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  
+.phone.android .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, 
+.phone.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift,     .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift,
+
+/* punctuation-2 layer */
+.phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift, .tablet.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
+.phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift, .tablet.android .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
+.phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift, .tablet.android .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift
   {background: #777 ; color: white ; }

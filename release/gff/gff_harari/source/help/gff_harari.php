@@ -1,4 +1,5 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_harari
   Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
@@ -6,33 +7,12 @@
   Create Date:      13 June 2023
 
 */
-  $pagename = 'GFF ሐረሪ (Harari) Keyboard Help';
   $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
-  $style = <<<EXTRA
-  .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-  .highlightKeys img {vertical-align:baseline !important}
-  .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-  .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-  .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
   require_once('header.php');
 ?>
-<style type="text/css" media="screen">
-code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(175, 184, 193, 0.2);
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-</style>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
-	<link rel="stylesheet" href="kb.css"/>
-</head>
 
 <p style='margin:0px'>Keyboard © Geʾez Frontier Foundation.</p>
 
