@@ -3,6 +3,7 @@
  * Primarily from: https://www.behance.net/gallery/125405749/Top-10-trending-pastel-color-palettes-in-2021
  */
 
+
 /* functional keys */
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'],     .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],     .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
@@ -527,19 +528,31 @@
 .android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
 .android .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
 .android .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift,
-.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift
-  {background: #777 ; color: white ; }
+.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift,
+.android .kmw-keyboard-gff_amharic #amharic-extra-K_SLASH\+shift , .phone.android .kmw-keyboard-gff_amharic #amharic-extra-2-K_SLASH\+shift,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-K_SLASH+shift'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-K_SLASH+shift'],
+.phone.android div.kmw-key.kmw-key-default[id$='extra-K_1+shift'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-K_1+shift'],
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_1367'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1367']
+  {background: #777 ; color: white ; } 
+  /*  #popup-amharic-extra-K_SLASH+shift */
 
 
-
+/* punctuation layer */
 #punctuation-K_1 .kmw-key-popup-icon,  #punctuation-K_2 .kmw-key-popup-icon,  #punctuation-K_3 .kmw-key-popup-icon,  
 #punctuation-K_4 .kmw-key-popup-icon,  #punctuation-K_5 .kmw-key-popup-icon,  #punctuation-K_6 .kmw-key-popup-icon,  
 #punctuation-K_7 .kmw-key-popup-icon,  #punctuation-K_8 .kmw-key-popup-icon,  #punctuation-K_9 .kmw-key-popup-icon,  
 #punctuation-K_0 .kmw-key-popup-icon,
-#amharic-extra-U_1369 .kmw-key-popup-icon, #amharic-extra-U_136A .kmw-key-popup-icon, 
-#amharic-extra-U_136B .kmw-key-popup-icon, #amharic-extra-U_136C .kmw-key-popup-icon, 
-#amharic-extra-U_136D .kmw-key-popup-icon, #amharic-extra-U_136E .kmw-key-popup-icon, 
-#amharic-extra-U_136F .kmw-key-popup-icon, #amharic-extra-U_1370 .kmw-key-popup-icon, 
-#amharic-extra-U_1371 .kmw-key-popup-icon, #amharic-extra-U_1372 .kmw-key-popup-icon
+
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136A']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136B']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136C']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136D']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136E']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_136F']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_1370']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_1371']  div.kmw-key-popup-icon.kmw-key-text,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-U_1372']  div.kmw-key-popup-icon.kmw-key-text
+
+
 { color: #777 ; }
-// { color: black ; }
+/* { color: black ; } */
