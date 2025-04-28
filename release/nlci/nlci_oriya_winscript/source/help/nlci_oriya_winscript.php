@@ -1,14 +1,7 @@
 <?php
   $pagename = 'NLCI Oriya WinScript Keyboard Help';
-  $pagetitle = 'NLCI Oriya WinScript Keyboard Help';
-  require_once('header.php');
-?>
-<style>
-
-html, body {
-    font-family: sans-serif;
-    font-size: 100%;
-}
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 samp {
     font-family: Annapurna; 
     font-size:20pt; 
@@ -75,11 +68,9 @@ kbd {
     border-top: 2px solid #6ea1cc;
     text-align: right;
 } 
-*/
-
-
-</style>
-</head>
+    END;
+require_once('header.php');
+?>
 
 <p>This Keyboard mimic Oriya WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
