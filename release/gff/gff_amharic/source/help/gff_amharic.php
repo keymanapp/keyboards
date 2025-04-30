@@ -60,6 +60,9 @@ When the GFF Amharic mobile keyboard starts, the key layout appears as shown in 
 <p>
 Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code>) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ</code>) of the spacebar. For example, tapping <code>ግ</code> the modifiers change to <code>ገ</code>, <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> .  If a modifier is tapped, ግ will be updated on screen.
 </p>
+<p>
+Observe that some keys have a small “hint” letter in the upper right corner. The hint letters can be typed by making a quick, light, downward “flick” on the key. These letters can also be typed using the “longress” approach explained in a following example.
+</p>
 
 <img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
 
