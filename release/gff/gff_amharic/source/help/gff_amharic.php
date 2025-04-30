@@ -1,6 +1,7 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2022 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2025 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
@@ -15,17 +16,10 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'GFF አማርኛ (Amharic) Keyboard Help';
   $pagetitle = 'GFF አማርኛ (Amharic) Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
-  $pagestyle = <<<END
-  @import url('kb.css');
-    .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-    .highlightKeys img {vertical-align:baseline !important}
-    .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-    .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-    .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-END;
   require_once('header.php');
 ?>
 
