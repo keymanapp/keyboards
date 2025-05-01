@@ -1,6 +1,7 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2022 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2025 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
@@ -15,17 +16,10 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'GFF አማርኛ (Amharic) Keyboard Help';
   $pagetitle = 'GFF አማርኛ (Amharic) Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
-  $pagestyle = <<<END
-  @import url('kb.css');
-    .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-    .highlightKeys img {vertical-align:baseline !important}
-    .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-    .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-    .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-END;
   require_once('header.php');
 ?>
 
@@ -65,6 +59,9 @@ When the GFF Amharic mobile keyboard starts, the key layout appears as shown in 
 
 <p>
 Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code>) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ</code>) of the spacebar. For example, tapping <code>ግ</code> the modifiers change to <code>ገ</code>, <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> .  If a modifier is tapped, ግ will be updated on screen.
+</p>
+<p>
+Observe that some keys have a small “hint” letter in the upper right corner. The hint letters can be typed by making a quick, light, downward “flick” on the key. These letters can also be typed using the “longress” approach explained in a following example.
 </p>
 
 <img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
