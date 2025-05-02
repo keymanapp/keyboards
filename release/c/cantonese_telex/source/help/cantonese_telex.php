@@ -232,4 +232,4 @@
 <p>汝等行看取敗虛</p> 
 <p>Nhữ Đẳng Hành Hón Xủi Bại Hư</p>
 
-<p>©cathaylab</p>
+<p>© cathaylab</p>

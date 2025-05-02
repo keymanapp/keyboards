@@ -1,83 +1,11 @@
 <?php
-$pagename = 'Aide Clavier Akebu';
-$pagetitle = 'Aide Clavier Akebu';
+$pagename = 'Aide Clavier Akebu Keyboard Help';
+$pagetitle = $pagename;
+$pagestyle = <<<END
+    body {font-family: Charis SIL; font-size: 100%;}
+END;
 require_once('header.php');
 ?>
-
-<!DOCTYPE html>
-<html lang="fr-TG">
-
-  <meta charset="utf-8">
-  <title>Clavier Akebu</title>
-
-
-
-  <style type="text/css">
-    p {
-      font-family: Charis SIL;
-    }
-
-    p.footnote {
-      font-family: Charis SIL;
-      font-size: small;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: Charis SIL;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    td {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-    }
-
-    td.heading {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-      font-weight: bold;
-      padding-left: 8pt;
-      padding-right: 8pt;
-    }
-
-    td.french {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-      background-color: silver;
-    }
-
-    td.diacritic {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: left;
-      padding-left: 10pt;
-    }
-
-    li {
-      font-family: Charis SIL;
-    }
-    .container {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-}
-  .child {
-    flex:1;
-    flex-basis: 45%;
-}
-  </style>
-</head>
 
   <p>Ce document explique l’usage du clavier Keyman élaboré pour taper la langue akebu de Togo avec une police Unicode.
   </p>

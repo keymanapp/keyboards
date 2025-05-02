@@ -1,8 +1,8 @@
 ﻿<?php
     require_once('includes/template.php');
     $pagename = 'Galaxie Greek (Mnemonic) Typing Chart';
-  $pagetitle = 'Galaxie Greek (Mnemonic) Typing Chart';
-  $pagestyle = <<<END
+    $pagetitle = $pagename;
+    $pagestyle = <<<END
         table {border-collapse:collapse !important; margin:10px 0px 20px 40px;}
         .grid col {background-color:#ffffff;}
         col.name {width:100px;}
@@ -26,7 +26,7 @@
         #osk_tabs { margin: 4px 4px 0px 0px; z-index: 100; }
         .osk_tab { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 0px 5px; height: 17px; -webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;}
         .osk_tab_selected { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 1px; border-bottom: none; margin-top: -1px; height: 19px;-webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;}
-        .key {  float: left; display: block;  position: relative; overflow: hidden; height: 35px; margin: 2px 0px 0px 2px; border: solid 1px grey; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;  } #K_BKQUOTE { width:34px; } #K_BKSP { width: 60px; } #K_TAB { width: 52px;		 } #K_BKSLASH { width: 42px;  } #K_CAPS { width: 62px; } #K_ENTER { width: 70px;  }		 #K_ENTER-EU1 { width: 42px;  -webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px; } #K_ENTER-EU1 .keycap { left:3px !important; }    #K_ENTER-EU2 { width: 32px;  margin-top:-1px !important;  border-top:none !important; height:39px !important; -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; }		 #K_SHIFTL { width: 85px; }                 #K_SHIFTL-EU { width: 47px; }     #K_oE2 { display:none;         }      #K_SHIFTR { width: 85px; }   			 #K_CTRLL { width: 60px; } 		 #K_ALTL { width: 50px; }    #K_SPACE { width: 234px;   }  #K_ALTR { width: 50px; }  #K_CTRLR { width: 60px; } 			 .plain {  background-repeat: no-repeat; width: 34px; }  .special { background-repeat: no-repeat;  background: #c0c0c0;  }  .keycap { font: bold 7pt Arial;  position: absolute;  left: 6px;  top: 6px; }  .key .keycap {           display: block; }  .special .keycap { display: block; }  .keytext {  font:	19px "Gentium Plus";  position: absolute;  display: block; right: 5px; bottom: 0px; color: blue; } .keytext.LTN { font-size:12px !important; color: #AD4A28 !important; right:3px !important;  } .hebrew .keytext { font-family:"Ezra SIL"; } .hebrew .diacritic { font-size:30px; color:green; right:15px; bottom:-6px; } .hebrew .top { bottom:-12px !important; } .hebrew .bot{ bottom:2px !important; }
+        .key {  float: left; display: block;  position: relative; overflow: hidden; height: 35px; margin: 2px 0px 0px 2px; border: solid 1px grey; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;  } #K_BKQUOTE { width:34px; } #K_BKSP { width: 60px; } #K_TAB { width: 52px;     } #K_BKSLASH { width: 42px;  } #K_CAPS { width: 62px; } #K_ENTER { width: 70px;  }     #K_ENTER-EU1 { width: 42px;  -webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px; } #K_ENTER-EU1 .keycap { left:3px !important; }    #K_ENTER-EU2 { width: 32px;  margin-top:-1px !important;  border-top:none !important; height:39px !important; -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; }     #K_SHIFTL { width: 85px; }                 #K_SHIFTL-EU { width: 47px; }     #K_oE2 { display:none;         }      #K_SHIFTR { width: 85px; }          #K_CTRLL { width: 60px; }      #K_ALTL { width: 50px; }    #K_SPACE { width: 234px;   }  #K_ALTR { width: 50px; }  #K_CTRLR { width: 60px; }        .plain {  background-repeat: no-repeat; width: 34px; }  .special { background-repeat: no-repeat;  background: #c0c0c0;  }  .keycap { font: bold 7pt Arial;  position: absolute;  left: 6px;  top: 6px; }  .key .keycap {           display: block; }  .special .keycap { display: block; }  .keytext {  font:  19px "Gentium Plus";  position: absolute;  display: block; right: 5px; bottom: 0px; color: blue; } .keytext.LTN { font-size:12px !important; color: #AD4A28 !important; right:3px !important;  } .hebrew .keytext { font-family:"Ezra SIL"; } .hebrew .diacritic { font-size:30px; color:green; right:15px; bottom:-6px; } .hebrew .top { bottom:-12px !important; } .hebrew .bot{ bottom:2px !important; }
         .highlightKeys img { display: none }  .highlightKeys .key-print { display: inline }
 END;
 head([
@@ -714,46 +714,46 @@ head([
                 </tr>
                 <tr>
                     <td><span class='lang2'>ς</span><br/><span class='keys'>'</span><b>,</b><span class='keys'>ç</span><b>,</b><span class='keys'>Ç</span><b>,</b><span class='keys'>ß</span><b>,</b><br/><b>OR</b><br/><span class='keys'>s</span><b> + non-letter<b></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-	</tr>
-	<tr>
-		<td><span class='lang2' >τ</span><br/><span class='keys'>t</span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' >Τ</span><br/><span class='keys'>T</span></td>
-		<td><span class='lang2' ></span></td>
-	</tr>
-	<tr>
-		<td><span class='lang2' >φ</span><br/><span class='keys'>f</span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' >Φ</span><br/><span class='keys'>F</span></td>
-		<td><span class='lang2' ></span></td>
-	</tr>
-	<tr>
-		<td><span class='lang2' >χ</span><br/><span class='keys'>x</span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' >Χ</span><br/><span class='keys'>X</span></td>
-		<td><span class='lang2' ></span></td>
-	</tr>
-	<tr>
-		<td><span class='lang2' >ψ</span><br/><span class='keys'>y</span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' ></span></td>
-		<td><span class='lang2' >Ψ</span><br/><span class='keys'>Y</span></td>
-		<td><span class='lang2' ></span></td>
-	</tr>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+  </tr>
+  <tr>
+    <td><span class='lang2' >τ</span><br/><span class='keys'>t</span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' >Τ</span><br/><span class='keys'>T</span></td>
+    <td><span class='lang2' ></span></td>
+  </tr>
+  <tr>
+    <td><span class='lang2' >φ</span><br/><span class='keys'>f</span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' >Φ</span><br/><span class='keys'>F</span></td>
+    <td><span class='lang2' ></span></td>
+  </tr>
+  <tr>
+    <td><span class='lang2' >χ</span><br/><span class='keys'>x</span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' >Χ</span><br/><span class='keys'>X</span></td>
+    <td><span class='lang2' ></span></td>
+  </tr>
+  <tr>
+    <td><span class='lang2' >ψ</span><br/><span class='keys'>y</span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' ></span></td>
+    <td><span class='lang2' >Ψ</span><br/><span class='keys'>Y</span></td>
+    <td><span class='lang2' ></span></td>
+  </tr>
 </table>
 <h3>Punctuation</h3>
 <p>In addition to the standard punctuation, this keyboard includes the Greek semicolon or <i>ano teleia</i>.</p>
 <table border=0 cellspacing=2 cellpadding=1 class='grid'>
-	<col width=75 />
-	<tr class='headrow'>
-		<td><span class='lang2' >·</span><br/><span class='keys'>:</span></td>
-	</tr>
+  <col width=75 />
+  <tr class='headrow'>
+    <td><span class='lang2' >·</span><br/><span class='keys'>:</span></td>
+  </tr>
 </table>
 <div id="Back">
 <p><a href="galaxie_greek_mnemonic.php">Back to Galaxie Greek (Mnemonic) Keyboard Help</a><br/>
