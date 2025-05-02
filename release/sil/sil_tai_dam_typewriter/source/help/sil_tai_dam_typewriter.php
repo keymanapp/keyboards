@@ -1,9 +1,7 @@
 <?php
   $pagename = 'Tai Dam Typewriter (SIL) Keyboard Help';
-  $pagetitle = 'Tai Dam Typewriter (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-<style type="text/css">
+$pagetitle = $pagename;
+$pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -59,7 +57,7 @@
           top: 3px;
         }
         
-        .key .keycap {          
+        .key .keycap {
           display: block;
         }
         
@@ -68,18 +66,16 @@
         }
         
         .keytext {
-          
-					font:
-						9pt
-							 
-						"Tai Heritage Pro"; 
+          font: 9pt Tai Heritage Pro;
           position: absolute; 
           display: block;
           right: 6px;
           bottom: 3px;
           color: blue;
         }
-    </style>
+        END;
+require_once('header.php');
+?>
 
 <h2>Font</h2>
 

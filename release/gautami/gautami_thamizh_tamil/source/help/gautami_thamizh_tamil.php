@@ -1,10 +1,6 @@
 <?php
-  $pagename = 'Gautami Thamizh/Tamil';
+  $pagename = 'Gautami Thamizh/Tamil Keyboard Help';
   $pagetitle = $pagename;
-  $style = "
-      p {
-	  width: 95%;
-      }";
   require_once('header.php');
 ?>
 

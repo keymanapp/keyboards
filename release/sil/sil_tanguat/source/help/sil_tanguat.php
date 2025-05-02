@@ -4,9 +4,6 @@
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Tanguat (SIL)</h1>
-
 <p>
   This keyboard is designed for the Tanguat language of PNG
 </p>

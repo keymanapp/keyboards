@@ -204,4 +204,4 @@
 <p>汝等行看取敗虛</p>
 <p>Yữ Đẳng Hành Hón Xủi Bại Hui</p>
 
-<p>©cathaylab</p>
+<p>© cathaylab</p>
