@@ -127,7 +127,7 @@ kbd {
   border: 1px solid black;
   margin: 0 2px; /* Add some space between the boxes */
 }
-.highlightExample {
+.output {
   border-radius: 2px;
   padding: 2px;
   border: 2px solid green;
@@ -135,7 +135,7 @@ kbd {
 .input {
   border-radius: 2px;
   padding: 2px;
-  border: 2px solid blue;
+  border: 1px solid black;
 }
 </style>
 </head>
@@ -181,30 +181,30 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 The Amharic keyboard uses an intuitive <i>phonetic</i> system where the Amharic sounds are matched to the nearest English letters. You can think of how a word sounds in
 Amharic and then type it out with English.
 </p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd> produces <span class='highlightExample'>ሰላም</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd> produces <span class='output'>ሰላም</span></p>
 <p>
 Because Amharic has more sounds than English, we sometimes have to adjust this
-rule. For example, English does not have <span class='highlightExample'>ጠ</span> and the closest similar letter would be &lsquo;t&rsquo;. In this case you should type <kbd>Shift</kbd><kbd>t</kbd>, for capital <kbd>T</kbd>:</p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>T</kbd><kbd>i</kbd><kbd>e</kbd><kbd>n</kbd><kbd>a</kbd><kbd>y</kbd><kbd>s</kbd><kbd>T</kbd><kbd>l</kbd><kbd>N</kbd> produces <span class='highlightExample'>ጤናይስጥልኝ</span></p>
-<p>Notice that we used capital <span class='input'>N</span> also for <span class='highlightExample'>ኝ</span> and we needed both <span class='input'>ie</span> together to make the 5th <span class='highlightExample'>ጠ</span> letter, <span class='highlightExample'>ጤ</span>. When the letter you want to type does not appear when you hit the similar sounding key in English, try using the capital next. If typing the capital does not work, then try hitting the key two times:
+rule. For example, English does not have &lsquo;ጠ&rsquo; and the closest similar letter would be &lsquo;T&rsquo;. In this case you should type <kbd>Shift</kbd><kbd>T</kbd>, for capital <kbd>T</kbd>:</p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>T</kbd><kbd>i</kbd><kbd>e</kbd><kbd>n</kbd><kbd>a</kbd><kbd>y</kbd><kbd>s</kbd><kbd>T</kbd><kbd>l</kbd><kbd>N</kbd> produces <span class='output'>ጤናይስጥልኝ</span></p>
+<p>Notice that we used capital <kbd>N</kbd> also for <span class='output'>ኝ</span> and we needed both <kbd>i</kbd><kbd>e</kbd> together to change <span class='output'>ጠ</span> into the 5<sup>th</sup> letter, <span class='output'>ጤ</span>. When the letter you want to type does not appear when you hit the similar sounding key in English, try using the capital next. If typing the capital does not work, then try hitting the key two times:
 </p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>s</kbd><kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd> produces <span class='highlightExample'>ሠላም</span></p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>S</kbd><kbd>S</kbd><kbd>e</kbd><kbd>H</kbd><kbd>e</kbd><kbd>y</kbd> produces <span class='highlightExample'>ፀሐይ</span></p>
-<p>Next, when you need to type the extra letters of Amharic like <span class='highlightExample'>ሏ</span>,<span class='highlightExample'>ሟ</span>,<span class='highlightExample'>ኴ</span> you can do so by typing an extra vowel after a <span class='input'>u</span>:
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>s</kbd><kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd> produces <span class='output'>ሠላም</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>S</kbd><kbd>S</kbd><kbd>e</kbd><kbd>H</kbd><kbd>e</kbd><kbd>y</kbd> produces <span class='output'>ፀሐይ</span></p>
+<p>Next, when you need to type the extra letters of Amharic like <span class='output'>ሏ</span>,<span class='output'>ሟ</span>,<span class='output'>ኴ</span> you can do so by typing an extra vowel after a <kbd>u</kbd>:
 </p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>u</kbd><kbd>a</kbd> produces <span class='highlightExample'>ሟ</span></p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>g</kbd><kbd>u</kbd><kbd>i</kbd><kbd>e</kbd> produces <span class='highlightExample'>ጔ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>u</kbd><kbd>a</kbd> produces <span class='output'>ሟ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>g</kbd><kbd>u</kbd><kbd>i</kbd><kbd>e</kbd> produces <span class='output'>ጔ</span></p>
 <p>
-Finally, we must introduce a special rule for ' (apostrophe). Some words are spelt with a <span class='highlightExample'>ሳድስ</span> (6<sup>th</sup>) letter followed by a vowel, like <span class='highlightExample'>ርኤ</span> in <span class='highlightExample'>ገብርኤል</span>. We use the apostrophe here to type <kbd>g</kbd><kbd>e</kbd><kbd>b</kbd><kbd>r</kbd><kbd>'</kbd><kbd>i</kbd><kbd>e</kbd><kbd>l</kbd> to make sure we get <span class='highlightExample'>ርኤ</span> instead of <span class='highlightExample'>ሬ</span>.
+Finally, we must introduce a special rule for ' (apostrophe). Some words are spelt with a &ldquo;ሳድስ&rdquo; (6<sup>th</sup>) letter followed by a vowel, like &ldquo;ርኤ&rdquo; in &ldquo;ገብርኤል&rdquo;. We use the apostrophe here to type <kbd>g</kbd><kbd>e</kbd><kbd>b</kbd><kbd>r</kbd><kbd>'</kbd><kbd>i</kbd><kbd>e</kbd><kbd>l</kbd> to make sure we get <span class='output'>ርኤ</span> instead of <span class='output'>ሬ</span>.
 </p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>e</kbd><kbd>l</kbd><kbd>'</kbd><kbd>a</kbd><kbd>k</kbd> produces <span class='highlightExample'>መልአክ</span></p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>'</kbd><kbd>e</kbd><kbd>e</kbd><kbd>r</kbd><kbd>a</kbd><kbd>f</kbd> produces <span class='highlightExample'>ምዕራፍ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>e</kbd><kbd>l</kbd><kbd>'</kbd><kbd>a</kbd><kbd>k</kbd> produces <span class='output'>መልአክ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>'</kbd><kbd>e</kbd><kbd>e</kbd><kbd>r</kbd><kbd>a</kbd><kbd>f</kbd> produces <span class='output'>ምዕራፍ</span></p>
 <p>
 Type Apostrophe twice after a 6<sup>th</sup> order letter to make it appear in your document:</p>
-<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>e</kbd><kbd>l</kbd><kbd>'</kbd><kbd>'</kbd><kbd>a</kbd><kbd>k</kbd> produces <span class='highlightExample'>መል'አክ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <kbd>m</kbd><kbd>e</kbd><kbd>l</kbd><kbd>'</kbd><kbd>'</kbd><kbd>a</kbd><kbd>k</kbd> produces <span class='output'>መል'አክ</span></p>
 <p>
-We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldquo;hash mark&rdquo;) for Ethiopic numbers, so <kbd>#</kbd><kbd>1</kbd> becomes <span class='highlightExample'>፩</span> and so on. If a <span class='highlightExample'>#</span> is needed in your document before a number, type it twice and: <kbd>#</kbd><kbd>#</kbd><kbd>1</kbd> becomes <span class='highlightExample'>#1</span>. The double strike works for other punctuation as well,
-so typing <kbd>;</kbd> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
+We also use the &ldquo;number sign&rdquo;, &lsquo;#&rsquo;, (also know as the &ldquo;hash mark&rdquo;) for Ethiopic numbers, so <kbd>#</kbd><kbd>1</kbd> becomes <span class='output'>፩</span> and so on. If a <span class='output'>#</span> is needed in your document before a number, type it twice and: <kbd>#</kbd><kbd>#</kbd><kbd>1</kbd> becomes <span class='output'>#1</span>. The double strike works for other punctuation as well,
+so typing <kbd>;</kbd> once makes <span class='output'>፤</span> and a second time gives English semicolon <span class='output'>;</span>. 
 </p>
 
 <p><br/></p>
