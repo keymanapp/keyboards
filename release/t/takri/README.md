@@ -1,9 +1,9 @@
-takri keyboard
+Takri keyboard
 ==============
 
 Description
 -----------
-manik
+Keyboard for the Kangri language using the Takri script.
 
 Links
 -----
