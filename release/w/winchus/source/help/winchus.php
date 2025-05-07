@@ -5,18 +5,12 @@
 <?php
   $pagename = 'Quechua: Ayuda para el teclado Winchus';
   $pagetitle = 'Winchus - Ayuda';
+  $pagestyle = <<<END
+  
+         @import url('kb.css');
+END;
   require_once('header.php');
-
-$pagestyle = <<<END
-
-        END;
-        ?>
-
-<!-- es: Es necesario mantener <head><link /></head> en el documento PHP para que el CSS se aplique. Ver por ejemplo https://github.com/keymanapp/keyboards/blob/master/release/sil/sil_cameroon_azerty/source/help/sil_cameroon_azerty.php-->
-<!-- en: It's necessary to keep <head><link /></head> in the PHP document so that the CSS is applied. See for example https://github.com/keymanapp/keyboards/blob/master/release/sil/sil_cameroon_azerty/source/help/sil_cameroon_azerty.php -->
-<head>
-    <link rel="stylesheet" href="kb.css" />
-</head>
+?>
 
 <!-- PEGAR DESDE welcome.htm -->
 <!-- INICIO_SECCIÓN#01 -->
