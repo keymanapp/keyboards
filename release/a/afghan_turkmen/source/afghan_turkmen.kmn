@@ -2,8 +2,8 @@
 store(&VERSION) '15.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'afghan_turkmen.kvks'
-store(&COPYRIGHT) '© 2021-2024 Samar'
-store(&KEYBOARDVERSION) '2.0'
+store(&COPYRIGHT) '© Samar'
+store(&KEYBOARDVERSION) '3.0'
 store(&KMW_RTL) '1'
 store(&NAME) 'Afghan Turkmen'
 store(&LAYOUTFILE) 'afghan_turkmen.keyman-touch-layout'
@@ -13,7 +13,7 @@ begin Unicode > use(main)
 group(main) using keys
 
 + [K_SPACE] > U+0020
-+ [SHIFT K_SPACE] > U+200c
++ [SHIFT K_SPACE] > U+202f c NNBSP
 
 + [K_0] > U+06f0
 + [SHIFT K_0] > U+0028
@@ -146,8 +146,8 @@ U+0648 + [SHIFT K_E] > U+06c6
 + [K_SLASH] > U+002f
 + [SHIFT K_SLASH] > U+061f
 
-+ [K_BKQUOTE] > U+200d
-+ [SHIFT K_BKQUOTE] > U+200d
++ [K_BKQUOTE] > nul
++ [SHIFT K_BKQUOTE] > nul
 
 + [K_LBRKT] > U+062c
 + [SHIFT K_LBRKT] > U+007d
@@ -164,6 +164,3 @@ U+0648 + [SHIFT K_E] > U+06c6
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
-+ [T_0647_200C] > U+0647 U+200C
-+ [T_0627_0650] > U+0627 U+0650
-+ [T_0647_0654] > U+0647 U+0654
