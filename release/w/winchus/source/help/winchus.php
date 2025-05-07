@@ -3,8 +3,8 @@
 <!--BUSCA "INSTANCIADEVERSIÓN#" -->
 
 <?php
-  $pagename = 'Ayuda para el teclado Winchus';
-  $pagetitle = $pagename;
+  $pagename = 'Quechua: Ayuda para el teclado Winchus';
+  $pagetitle = 'Winchus - Ayuda';
   require_once('header.php');
 
 $pagestyle = <<<END
@@ -19,16 +19,16 @@ $pagestyle = <<<END
 </head>
 
 <!-- PEGAR DESDE welcome.htm -->
-<!--INICIO_SECCIÓN#01 -->
+<!-- INICIO_SECCIÓN#01 -->
 <!-- #region SECCIÓN#01 -->
-    <br /> 
+<br /> 
     <h1>Winchus</h1><br />
     <div style="text-align: center;">
         <p><i>Escribe en cualquier idioma Quechua<br />
             con la agilidad de un colibrí.</i></p>
         <p><br/></p>
         <!--INSTANCIADEVERSIÓN#02-->
-        <p>Versión 1.2</p>
+        <p>Versión 1.4</p>
     
 
     <!-- <br /><br /><a href="http://tiny.cc/descargar-winchus-teclado">tiny.cc/descargar-winchus-teclado</a><br />
@@ -71,7 +71,7 @@ $pagestyle = <<<END
             <li class="seccion-principal"><a href="#nuevos-caracteres">Nuevos caracteres</a></li>
             <ul>
                 <li><a href="#consonantes">Consonantes</a></li>
-                <li><a href="#puntuacion">Puntuación- comillas angulares</a></li>
+                <li><a href="#puntuacion">Puntuación- comillas</a></li>
             </ul>
         <li class="seccion-principal"><a href="#teclado-fisico">Teclado físico (Computadoras y laptops)</a></li>
         <ul>
@@ -123,7 +123,7 @@ $pagestyle = <<<END
                     <p>Este GIF animado muestra la función con la tecla <kbd>C</kbd>:</p>
                     <!--ASÍ LOS QUIENES ESTÁN VIENDO EN PDF PODRÁN VER EL GIF-->
                     <!--INSTANCIADEVERSIÓN#03-->
-                    <a href="https://help.keyman.com/keyboard/winchus/1.2/winchus#deslizar-gif-1"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;" id="deslizar-gif-1"/></a>
+                    <a href="https://help.keyman.com/keyboard/winchus/1.4/winchus#deslizar-gif-1"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;" id="deslizar-gif-1"/></a>
                     <br />
                     <p>Desliza para abajo para conseguir la <kbd class="kbd-resultado">Ć</kbd>:</p>
                     <img src="deslizar-360-1era-imagen.png" style="display: block; margin-left: auto; margin-right: auto;" />
@@ -258,6 +258,10 @@ $pagestyle = <<<END
                         <td><kbd>'</kbd> + <kbd>'</kbd></td>
                         <td><kbd>'</kbd> + <kbd>'</kbd> + <kbd>'</kbd></td>
                     </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">—</kbd><br />(Guion largo)</td>
+                        <td colspan="2"><kbd>-</kbd> + <kbd>.</kbd></td>
+                    </tr>
                 </tbody>
             </table>
         </ul>
@@ -334,12 +338,10 @@ $pagestyle = <<<END
                 </tr>
             </table>
             
-            <p>El carácter " ʼ " identificado con el código Unicode U+02BC también se podría usar para el glotal, ya que está clasificado como un carácter para palabras y no para puntuación. Pero ya que no tiene mucho uso y se parece a la comilla simple " ’ " (U+2019), puede generar confusión. Por ende, este teclado no lo emplea.</p>
-
         </ul>
 
     
-        <h3 id="puntuacion"><a href="#tabla-de-contenidos">Puntuación- comillas angulares</a></h3>
+        <h3 id="puntuacion"><a href="#tabla-de-contenidos">Puntuación- comillas</a></h3>
             <ul class="no-bullets">
                 <table class="sin-saltos">
                     <tr>
@@ -367,6 +369,10 @@ $pagestyle = <<<END
                         <td>‘</td>
                         <td>’</td>
                     </tr>
+                    <tr>
+                        <td>Guion largo</td>
+                        <td colspan="2">—</td>
+                    </tr>
                 </table>
             </ul>
     </ul>
@@ -381,16 +387,10 @@ $pagestyle = <<<END
         </ul>
 
         <h3 id="como-instalar"><a href="#tabla-de-contenidos">Cómo instalar en tu computadora o laptop</a></h3>
+        <!-- Actualiza para aprovechar de la instalación directa de https://keyman.com/keyboards/install/winchus-->
         <ul class="no-bullets">
              <ol>
-                <li>Descarga Keyman para <a href="https://keyman.com/windows/download#standalone" target="_blank">Windows</a> <a href="https://keyman.com/mac/" target="_blank">Mac</a> o <a href="https://keyman.com/linux/" target="_blank">Linux</a></li>
-                <ul style="list-style-type: disc;">
-                    <li>(Si tienes Mac o Linux, estos pasos podrían variar un poco)</li>
-                </ul>
-                <li>Instala Keyman</li>
-                <li><a id="actualizar-teclado-computadora">&nbsp;</a>Abre el programa “Keyman Configuration”</li>
-                <li>En el rincón inferior izquierdo de la ventanilla, haz clic en el botón “Descargar teclado…”</li>
-                <li>Busca “Winchus” y haz clic en el resultado</li>
+                <li><a href="https://keyman.com/keyboards/winchus" target="_blank">Visita esta página</a></li>
                 <li>Haz clic en el botón verde que diga, “Install Keyboard”</li>
                 <li>Después de la descarga, haz clic en el Botón “Instalar” </li>
                 <li>Después de que se haya terminado de instalar, reinicia tu computadora. (<b>¡Importante!</b>)</li>
@@ -427,7 +427,7 @@ $pagestyle = <<<END
             </ul>       
 <!-- PEGAR DESDE welcome.htm -->
 <!-- #region SECCIÓN#02 -->
-        <h3 id="consonantes-teclado"><a href="#tabla-de-contenidos">Cómo teclear los consonantes</a></h3>
+<h3 id="consonantes-teclado"><a href="#tabla-de-contenidos">Cómo teclear los consonantes</a></h3>
         <ul class="no-bullets">
             <h4 id="acentos"><a href="#tabla-de-contenidos">Acentos</a></h4>
             <ul class="no-bullets">
@@ -443,6 +443,11 @@ $pagestyle = <<<END
                         <td><kbd class="kbd-resultado">ć</kbd> <kbd class="kbd-resultado">Ć</kbd></td>
                         <td><kbd>´</kbd> + <kbd>C</kbd></td>
                         <td><kbd>´</kbd> + <kbd>Mayús</kbd> + <kbd>C</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">h́</kbd> <kbd class="kbd-resultado">H́</kbd></td>
+                        <td><kbd>´</kbd> + <kbd>H</kbd></td>
+                        <td><kbd>´</kbd> + <kbd>Mayús</kbd> + <kbd>H</kbd></td>
                     </tr>
                     <tr>
                         <td><kbd class="kbd-resultado">ŕ</kbd> <kbd class="kbd-resultado">Ŕ</kbd></td>
@@ -543,21 +548,25 @@ $pagestyle = <<<END
             <p>Si tienes un teclado Latinoamericano, teclear las comillas angulares será un poco más fácil. Teclea la <kbd>&lt</kbd> dos veces seguidas para conseguir <kbd class="kbd-resultado">«</kbd>. Teclea la <kbd>&lt</kbd> una vez más para conseguir la <kbd class="kbd-resultado">‹</kbd>. Lo mismo aplica para la comilla de cierre.</p>
             <p>Si tu teclado es estadounidense, usa los atajos siguientes:</p>
             <table class="sin-saltos">
-                <tr>
-                    <th>Carácter</th>
-                    <th>Combinación<br />de teclado<br />estadounidense</th>
-                    <th>Nota</th>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">&lt</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>,</kbd></td>
-                    <td>Recuerda usar la <kbd>Alt</kbd> derecha.</td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">&gt</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>.</kbd></td>
-                    <td>Recuerda usar la <kbd>Alt</kbd> derecha.</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Carácter</th>
+                        <th>Combinación<br />de teclado<br />estadounidense</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><kbd class="kbd-resultado">&lt</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>,</kbd></td>
+                        <td>Recuerda usar la <kbd>Alt</kbd> derecha.</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">&gt</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>.</kbd></td>
+                        <td>Recuerda usar la <kbd>Alt</kbd> derecha.</td>
+                    </tr>
+                </tbody>
             </table>
    
             <p>Algunos caracteres que pueden ser difíciles de encontrar:</p>
@@ -634,6 +643,11 @@ $pagestyle = <<<END
                         <td><kbd class="kbd-resultado">’</kbd></td>
                         <td><kbd>'</kbd> + <kbd>'</kbd> + <kbd>'</kbd></td>
                         <td class="td-nota">La <kbd>'</kbd> suele estar a la derecha de la <kbd>0</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">—</kbd></td>
+                        <td><kbd>-</kbd> + <kbd>.</kbd></td>
+                        <td class="td-nota"></td>
                     </tr>
                 </tbody>
             </table>
@@ -857,6 +871,31 @@ $pagestyle = <<<END
                             <td><kbd>Alt</kbd> + <kbd>`</kbd></td>
                             <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd>. Recuerda usar la <kbd>Alt</kbd> derecha.</td>
                         </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">“</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>2</kbd> + <kbd>2</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">”</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>2</kbd> + <kbd>2</kbd> + <kbd>2</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">‘</kbd></td>
+                            <td><kbd>-</kbd> + <kbd>-</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">’</kbd></td>
+                            <td><kbd>-</kbd> + <kbd>-</kbd> + <kbd>-</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">—</kbd></td>
+                            <td><kbd>/</kbd> + <kbd>.</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
                     </tbody>
                 </table>
             </ul>
@@ -882,6 +921,7 @@ $pagestyle = <<<END
             <li>Toca "Keyman"</li>
             <li>Toca "Aceptar". (Keyman nunca recopila ningún dato de lo que escribes con el teclado. Es una aplicación de código abierto.)</li>
             <li>Lee la nota y toca "Aceptar"</li>
+            <li>Si aparece la opción de "Botón del teclado en la barra de navegación", asegúrate de que esté activada.</li>
             <li>¡Empieza a escribir en cualquier aplicación!</li>
             <li>Paso recomendado: elimina el teclado inglés que viene incluido con Keyman</li>  
             <ol type="a">
@@ -907,13 +947,14 @@ $pagestyle = <<<END
             <li>Toca en el botón verde que diga, “Install Keyboard”</li>
             <li>Toca la palabra “INSTALAR” que sale en la parte inferior derecha de la pantalla</li>
             <li>Después obtendrás este mismo documento. Toca el botón de PDF para descargarlo a tu celular.</li>
-            <li>Toca "ACEPTAR" que sale en la parte inferior derecha de la pantalla</li>
+            <li>Toca "ACEPTAR" que sale en la parte inferior derecha de la pantalla</li>asegúrate
             <li>Toca los tres puntitos verticales (︙) en la parte superior derecha</li>
             <li>Toca "Configuración"</li>
             <li>Toca "Habilitar Keyman como teclado de sistema"</li>
             <li>Toca "Keyman"</li>
             <li>Toca "Aceptar". (Keyman nunca recopila ningún dato de lo que escribes con el teclado. Es una aplicación de código abierto.)</li>
             <li>Lee la nota y toca "Aceptar"</li>
+            <li>Si aparece la opción de "Botón del teclado en la barra de navegación",  de que esté activada.</li>
             <li>¡Empieza a escribir en cualquier aplicación!</li>
             <li>Paso recomendado: elimina el teclado inglés que viene incluido con Keyman</li>  
             <ol type="a">
@@ -934,7 +975,7 @@ $pagestyle = <<<END
         <ul class="no-bullets">
             <p>¡Winchus no tiene autocorrector! No va a cambiar tus palabras en Quechua por palabras en español, como hacen los otros teclados.</p> 
             
-            <p>Nota que en muchas teclas hay un signo más (“+”) en el rincón superior derecho de la mayoría de las teclas. Eso indica que hay otros caracteres relacionados disponibles:</p>
+            <p>Nota que en muchas teclas hay un signo más (“+”) en el rincón superior derecho. Eso indica que hay otros caracteres relacionados disponibles:</p>
             <img src="07-signo-de-mas-174.png" style="display: block; margin-left: auto; margin-right: auto;" />
 
         </ul>    
@@ -945,7 +986,7 @@ $pagestyle = <<<END
                         <p>Este GIF animado muestra la función con la tecla <kbd>C</kbd>:</p>
                         <!--ASÍ LOS QUIENES ESTÁN VIENDO EN PDF PODRÁN VER EL GIF-->
                         <!--INSTANCIADEVERSIÓN#04-->
-                        <a href="https://help.keyman.com/keyboard/winchus/1.2/winchus#deslizar-gif-2"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;"  id="deslizar-gif-2"/></a>
+                        <a href="https://help.keyman.com/keyboard/winchus/1.4/winchus#deslizar-gif-2"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;"  id="deslizar-gif-2"/></a>
                         <br />
                         <p>Desliza para abajo para conseguir la <kbd class="kbd-resultado">Ć</kbd>:</p>
                         <img src="deslizar-360-1era-imagen.png" style="display: block; margin-left: auto; margin-right: auto;" />
@@ -1369,14 +1410,14 @@ $pagestyle = <<<END
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>⬇</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><kbd class="kbd-resultado">—</kbd></td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -1988,7 +2029,18 @@ $pagestyle = <<<END
         <ul class="no-bullets">
         <p>Para usar un autocorrector para escribir en otro idioma como el español o inglés, cambia a otro teclado. (Por ejemplo, al de fábrica o a Gboard). Para cambiar el teclado presiona uno de los botones indicados:</p>
         <img src="08-cambiar-teclado-360.png" style="display: block; margin-left: auto; margin-right: auto;" />
-        </ul>
+
+        <p>Si no tienes el botón para cambiar el teclado, haz lo siguiente:</p>
+        <ol>
+            <li>Vuelve a la página anterior </li>
+            <li>Haz clic en “CONFIGURAR TECLADO”</li>
+            <li>Haz clic en “HABILITAR EL TECLADO”</li>
+            <li>Si aparece la opción de "Botón del teclado en la barra de navegación", asegúrate de que esté activada.</li>
+        </ol>
+        <p>(Nota que en algunos celulares esta opción no está disponible.)</p>
+        <img src="activar-boton-teclado-360.png" style="display: block; margin-left: auto; margin-right: auto;" />            
+    <br />
+    </ul>
 
     </ul>  
     <h2 id="solucionar-problemas"><a href="#tabla-de-contenidos">Solucionar Problemas</a></h2>
@@ -2044,7 +2096,7 @@ $pagestyle = <<<END
                     </tr>
                     <tr>
                         <td>Cuando quiero escribir símbolos o puntuación, salen otros no esperados. Por ejemplo, la <kbd class="kbd-resultado">;</kbd> sale cuando esperaba la <kbd class="kbd-resultado">ñ</kbd>, y la <kbd class="kbd-resultado">]c</kbd> sale cuando esperaba la <kbd class="kbd-resultado">ć</kbd>. (O sea, el teclado está funcionando como si fuera un teclado estadounidense.)</td>
-                        <td>Aunque veas Winchus seleccionado en el rincón de la pantalla, Keyman no se ha ejecutado por completo. Haz clic en la app "Keyman" en el menú de inicio o en el escritorio. No saldrá nada, pero después de un momento el teclado debe empezar a funcionar. Si tienes este problema cada vez que prendes tu computadora, es posible quela computadora necesite un poco más de tiempo para terminar de prenderse, o que haga falta cambiar la configuración para que Keyman se ejecute automáticamente cuando se arranca la computadora. Verifica lo siguiente:
+                        <td>Aunque veas Winchus seleccionado en el rincón de la pantalla, Keyman no se ha ejecutado por completo. Haz clic en la app "Keyman" en el menú de inicio o en el escritorio. No saldrá nada, pero después de un momento el teclado debe empezar a funcionar. Si tienes este problema cada vez que prendes tu computadora, es posible que la computadora necesite un poco más de tiempo para terminar de prenderse, o que haga falta cambiar la configuración para que Keyman se ejecute automáticamente cuando se arranca la computadora. Verifica lo siguiente:
                             <ol>
                                 <li>Teclea <kbd>Ctrl</kbd> + <kbd>Mayús</kbd> + <kbd>Esc</kbd></li>
                                 <li>Escoge la cuarta pestaña de "Inicio"</li>
@@ -2055,12 +2107,25 @@ $pagestyle = <<<END
                         </td>
                     </tr>
                     <tr>
+                        <td>No funciona en Adobe Acrobat Reader</td>
+                        <td><a href="https://help.keyman.com/knowledge-base/?id=69" target="_blank">Sigue los pasos en esta página</a></td>
+                    </tr>
+                    <tr>
                         <td>Todavía tengo problemas.</td>
                         <td>Asegúrate de que Keyman y Winchus estén actualizados.
                             <ol>
                                 <li>Abre la aplicación "Keyman Configuration" en el menú de inicio o en el escritorio. Haz clic en la pestaña de "Soporte". Luego, en el lado derecho, haz clic en "Buscar actualizaciones".</li>
                                     <!--Actualiza esto cuando salga Keyman 18!-->
-                                <li><a href="#actualizar-teclado-computadora">Vuelve a seguir los pasos para agregar el teclado Winchus</a></li>
+                                <li>Actualiza Winchus desde la aplicación Keyman Configuration:</a></li>
+                                <ol></ol>
+                                    <li>Abre el programa “Keyman Configuration”</li>
+                                    <li>En el rincón inferior izquierdo de la ventanilla, haz clic en el botón “Descargar teclado…”</li>
+                                    <li>Busca “Winchus” y haz clic en el resultado</li>
+                                    <li>Haz clic en el botón verde que diga, “Install Keyboard”</li>
+                                    <li>Después de la descarga, haz clic en el Botón “Instalar” </li>
+                                    <li>Después de que se haya terminado de instalar, reinicia tu computadora. (<b>¡Importante!</b>)
+                                    </li>
+                                </ol>
                                 <li>Después, reiniciar tu computadora</li>
                             </ol>
                             
@@ -2082,9 +2147,9 @@ $pagestyle = <<<END
     </ul>
         <div style="text-align: center;">
             <p>¡Yulsulpallä! Muchas gracias.</p>
-        <br />
-    <h6><i>Documento actualizado 10 marzo 2025</i></h6><br />
-    </div>
+            <br />
+             <h6><i>Documento actualizado 5 mayo 2025</i></h6><br />
+         </div>
 <!-- #endregion -->
 <!-- PEGAR DESDE welcome.htm -->
 <!-- FIN_SECCIÓN#02 -->

@@ -11,6 +11,9 @@
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: #333;
+        break-after: avoid; 
+            /* es: Evita que los títulos se impriman al final de una página */
+            /* en: Prevent headers from being orphaned at the bottom of a page */
     }
 
     h1 {
@@ -61,7 +64,7 @@
     min-width: 1.0em;
     text-align: center;
     display: inline-block;
-    /* height: 1.5em; Added to make the height uniform. But it doesn't seem to work */
+    
     }
     .kbd-link {
         background-color: blue;
@@ -90,7 +93,9 @@
         border: 1px solid #ddd;
         padding: 8px;
         text-align: center;
-        vertical-align: middle; /* Vertically center */
+        vertical-align: middle; 
+            /* es: Centrar verticalmente */
+            /* en: Vertically center */
     }
 
     tbody.alinear-izquierda td {
@@ -109,17 +114,23 @@
     ol {
         line-height: 1.75;
         margin-left: 20px;
+            /* en: Indent the list. Necessary for winchus.php */
+            /* es: Sangrar la lista. Necesario para winchus.php */
         list-style-type: decimal; /* Level 1 */
     }
 
     ol ol {
         list-style-type: lower-alpha; /* Level 2 */
+            /* en: Necessary for winchus.php */
+            /* es: Necesario para winchus.php */
     }
 
     ul {
         line-height: 1.75;
         list-style-type: disc; /* Level 1 */
         margin-left: 20px;
+            /* en: Indent the list. Necessary for winchus.php */
+            /* es: Sangrar la lista. Necesario para winchus.php */
         }
 
         ul ul {
@@ -130,11 +141,10 @@
             list-style-type: square; /* Level 3 */
         }
 
-       
+    /* es: Esta clase se usa para sangrar porciones del documento, para que se vea más organizado y para que sea más fácil navegar. */
+    /* en: This class is used to indent portions of the document, so that it looks more organized and is easier to navigate. */
     ul.no-bullets {
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
     }
 
     li {
@@ -143,7 +153,9 @@
         font-weight: bold; 
     }
     table.mapa-deslizamiento {
-        border: 2px solid black; /* Border around the table */
+        border: 2px solid black; 
+            /* es: Borde alrededor de la tabla */
+            /* en: Border around the table */
         border-collapse: collapse;
         font-family: Arial, sans-serif;
         font-size: 18px;
@@ -151,11 +163,19 @@
         overflow: hidden;
         padding: 10px 5px;
         word-break: normal;
-        min-width: 30px;  /* Ensure all cells have the same width */
+        min-width: 30px;  
+            /* es: Asegura que todas las celdas tengan el mismo ancho */
+            /* en: Ensure all cells have the same width */
         height: 30px;
-        max-width: 50px; /* Maximum width */
-        max-height: 30px; /* Maximum height */
-        white-space: nowrap; /* Prevents text from wrapping */
+        max-width: 50px; 
+            /* es: Ancho máximo */
+            /* en: Maximum width */
+        max-height: 30px; 
+            /* es: Altura máxima */
+            /* en: Maximum height */
+        white-space: nowrap; 
+            /* es: Evita que el texto se envuelva */
+            /* en: Prevents text from wrapping */
         text-align: center;
         background-color: #ffffffCC;
         break-inside: avoid; 
@@ -179,6 +199,12 @@
     /* @page, @page landscape-section, y .landscape permiten los teclados en la sección de "Configuración del teclado" imprimirse en modo horizontal, lo cual es importante al imprimir en A5 (lo cual facilita la lectura en celulares). */
     @page {
     size: auto;
+    orphans: 2; 
+        /* es: evita que haya una sola línea al final de una página */
+        /* en: avoids having a single line at the end of a page */
+    widows: 2;
+        /* es: evita que haya una sola línea al inicio de una página */
+        /* en: avoids having a single line at the start of a page */
     }
 
     @page landscape-section {
