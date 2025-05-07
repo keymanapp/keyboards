@@ -90,6 +90,9 @@ Con cada cambio de versión, indica los cambios en `HISTORY.md`, siguiendo el mi
 6. Repite el proceso para todas las secciones numeradas
 7. Guarda los cambios
 
+## Actualizar `LICENSE.md`
+Verifica que el rango de años en línea 3 esté al día. (Debe terminar con el año actual.)
+
 ## Actualizar la aplicación Winchus en Android
 1. Asegúrate de tener la última versión de Keyboard App Builder
 2. Abre el proyecto en Keyboard App Builder, y en el lado izquierdo haz clic en "Keyboards"
