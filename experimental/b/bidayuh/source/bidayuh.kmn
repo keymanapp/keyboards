@@ -3,7 +3,7 @@ c with name "bidayuh"
 store(&VERSION) '15.0'
 store(&NAME) 'BidBiatahBS'
 store(&COPYRIGHT) 'Copyright © Grace Oon Bee Tan'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'bidayuh.ico'
 store(&VISUALKEYBOARD) 'bidayuh.kvks'
@@ -108,6 +108,21 @@ group(main) using keys
 + [K_3] > '3'
 + [K_2] > '2'
 + [K_1] > '1'
+
+
+'a' + '-' > U+0101
+'e' + '-' > U+0113
+'i' + '-' > U+012B
+'o' + '-' > U+014D
+'u' + '-' > U+016B
+'ŭ' + '-' > U+016D U+0304
+
+'A'+ '-' > U+0100
+'E' + '-' > U+0112
+'I' + '-' > U+012A
+'O' + '-' > U+014C
+'U' + '-' > U+016A
+'Ŭ' + '-' > U+016C U+0304
 
 
 store(&CasedKeys) [K_A] .. [K_Z]
