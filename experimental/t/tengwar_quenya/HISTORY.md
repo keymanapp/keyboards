@@ -1,5 +1,9 @@
 Tengwar Change History
 ====================
+1.4 (2025-05-08)
+----------------
+*Changed some key placements in touch layout
+
 1.3 (2025-02-21)
 ----------------
 * changed some character placements and fonts
