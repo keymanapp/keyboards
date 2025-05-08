@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Urdu (DVorak)  Help';
+  $pagename = 'Urdu (DVorak) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
