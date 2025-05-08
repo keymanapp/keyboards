@@ -527,14 +527,11 @@ For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪@&rsquo;, appearing 
 </details>
 </div>
 
-</div>
-
 <div id="Troubleshooting">
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
 <p>For any other questions, <a target="_blank" href="https://keyman.com/contact/">contact us</a>.</p>
-
 </div>
 
 <div id="Resources">
@@ -556,8 +553,8 @@ For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪@&rsquo;, appearing 
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
-
 </div>
+
 <div>
 <h3>Other Internet Resources</h3>
 <p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
@@ -566,6 +563,7 @@ For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪@&rsquo;, appearing 
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a></p>
 </div>
+
 </div>
 
 <div id="Technical">
@@ -575,7 +573,6 @@ For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪@&rsquo;, appearing 
 </p>
 <h3>Unicode Version</h3>
 <p>This keyboard complies with Unicode 4.1</p>
-
 </div>
 
 
@@ -590,7 +587,6 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL Global graciou
 <p>
 The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright Geʾez Frontier Foundation and SIL Global.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
-
 </div>
 
 
