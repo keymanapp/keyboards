@@ -3,7 +3,7 @@ ewe keyboard
 
 Description
 -----------
-ewe
+ewe keyboard to make typing easy and seamless for all ewe speaking regions in Ghana and the diaspora
 
 Links
 -----
