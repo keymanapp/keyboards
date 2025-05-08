@@ -1,6 +1,10 @@
 BidBiatahBS Change History
 ====================
 
+1.2 (08 May 2025)
+----------------
+* update desktop layout
+
 1.1 (07 May 2025)
 ----------------
 * add rules for desktop layout
