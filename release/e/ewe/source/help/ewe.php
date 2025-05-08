@@ -25,7 +25,7 @@
  <hr>
  2. Using the Shift Key<br>
  • Pressing the Shift key in combination with the special letters will give you<br>
- the capital form of the characters assigned to those letters (not the regula<br>r
+ the capital form of the characters assigned to those letters (not the regular<br>
  uppercase letters). For example:<br>
  o Shift + c → Ɔ (Capital form of ɔ)<br>
  o Shift + j → Ɣ (Capital form of Ɣ)<br>
