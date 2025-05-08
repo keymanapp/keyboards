@@ -8,6 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -20,7 +21,7 @@
     <Name URL="">Lavanya</Name>
     <Copyright URL="">Copyright © Prashanth</Copyright>
     <Author URL="mailto:prashanthpentareddy@gmail.com">Prashanth</Author>
-    <Description URL="">Custom Telugu transliteration keyboard</Description>
+    <Description URL="">This custom Telugu keyboard is inspired by Lekhini, a browser-based transliteration tool. It was created to overcome Lekhini’s limitation of working only within a browser. Most of the character mappings from Lekhini have been faithfully replicated, with a few exceptions.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -55,14 +56,26 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\..\Downloads\nirmala-ui.ttf</Name>
-      <Description>Font Nirmala UI</Description>
+      <Name>welcome\layout1.png</Name>
+      <Description>File layout1.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\..\Downloads\vani.ttf</Name>
-      <Description>Font Vani</Description>
+      <Name>welcome\layout2.png</Name>
+      <Description>File layout2.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\..\..\Downloads\NotoSerifTelugu-VariableFont_wght.ttf</Name>
+      <Description>Font Noto Serif Telugu Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -72,6 +85,8 @@
       <Name>lavanya</Name>
       <ID>lavanya</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\..\..\..\..\Downloads\NotoSerifTelugu-VariableFont_wght.ttf</OSKFont>
+      <DisplayFont>..\..\..\..\..\..\Downloads\NotoSerifTelugu-VariableFont_wght.ttf</DisplayFont>
       <Languages>
         <Language ID="te">Telugu</Language>
       </Languages>
