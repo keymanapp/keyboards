@@ -8,7 +8,7 @@
 
 <h2>Typing Guide</h2>
 
-<img src="hindi_urdu_alphabet.png" alt="" srcset=""><br>
+<img src="hindi_urdu_alphabet.png" style="width:40%; height:auto;" alt="" srcset=""><br>
 
 <h2>Desktop Keyboard Layout</h2>
 
