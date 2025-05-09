@@ -3,6 +3,10 @@ greek_tonizo Change History
 
 CHANGES
 
+1.0.4 (2025-05-09)
+------------------
+* Misplaced "δασ" key label on onscreen keyboard placed on correct key 
+
 1.0.3 (2025-04-08)
 ------------------
 * Removal of automatic breathing from letter numerals (i.e. α, ε, ια, Α, etc) followed by vareia or fullstop
