@@ -1,0 +1,52 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Sahtu'
+store(&KEYBOARDVERSION) '2.0'
+store(&VISUALKEYBOARD) 'sahtu.kvks'
+store(&TARGETS) 'web desktop'
+store(&COPYRIGHT) '© Andrew Speakman'
+begin Unicode > use(main)
+
+group(main) using keys   
+
+
+c ---- Accents ----
++ [K_LBRKT] > U+0301 c Acute Accent (́)
++ [K_RBRKT] > U+0328 c Ogonek (̨)
+c + [K_P] > U+0328 U+0301 c Both Accents (̨́)  stacked diacritics always have ogonek before accent
++ [K_I] > U+0131 c dotless i
+
+c ---- Special characters 
++ [K_COLON] > U+0142 c Small Letter L with Stroke
++ [SHIFT K_COLON] > U+0141 c L with Stroke
++ [K_BKQUOTE] > U+01DD c Small Letter Schwa
++ [SHIFT K_BKQUOTE] > U+018E c Schwa
++ [K_BKSLASH] > U+0242 c Small Letter Glottal Stop
++ [SHIFT K_BKSLASH] > U+0241 c Glottal Stop
+
+
+c ---- Key swaps ---- 
++ [SHIFT K_COMMA] > ':'
++ [SHIFT K_PERIOD] > ';'
++ [RALT K_LBRKT] > U+005B c [
++ [RALT K_RBRKT] > U+005D c ]
++ [RALT K_COLON] > '{' c {
++ [RALT K_QUOTE] > '}' c }
++ [RALT K_COMMA] > U+2329 c :
++ [RALT K_PERIOD] > U+232A c ;
++ [RALT K_I] > 'i'
+c + [RALT K_E] > U+01DD c schwa 
++ [RALT K_BKSLASH] > '\'
++ [RALT K_SLASH] > '|'
++ [RALT K_BKQUOTE] > '`'
++ [RALT K_1] > '~'
+
+
+
+
+
+
+
+
+
+
+

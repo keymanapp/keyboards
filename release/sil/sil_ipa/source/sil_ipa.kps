@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.228.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>IPA (SIL)</Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">IPA (SIL)</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="mailto:fonts@sil.org">Martin Hosken, Lorna Evans</Author>
     <Version URL=""></Version>
-    <Description>The keyboard layout is described in terms of an IPA chart rather than a
+    <Description URL="">The keyboard layout is described in terms of an IPA chart rather than a
 keyboard. This is because many base characters are typed as a sequence
 of a letter followed by one of \&lt;, \&gt; or = which are characters used to
 change a base character to another base character. Diacritics are typed
@@ -115,9 +116,7 @@ as sequences of an appropriate key.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>IPA (SIL)</Name>
       <ID>sil_ipa</ID>
-      <Version>1.8.6</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>
@@ -125,10 +124,10 @@ as sequences of an appropriate key.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ipauni11" Relationship="deprecates" />
-    <RelatedPackage ID="ipauni111" Relationship="deprecates" />
-    <RelatedPackage ID="ipa93_km5" />
+    <RelatedPackage ID="ipauni11" Relationship="deprecates"/>
+    <RelatedPackage ID="ipauni111" Relationship="deprecates"/>
+    <RelatedPackage ID="ipa93_km5"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

@@ -380,15 +380,15 @@ will install the <b>Noto Sans Masaram Gondi</b> font.
           My self Rajesh Kumar Dhuriya a full time Computer teacher and freelauncer software & web developer.
         </p>
         <p class="text-muted">Contact us</p>
-        <address>
+        <p>
           Siddharth Nagar, UP(E), India <br />
           Email us: <a href="mailto:hinditutorpoint@gmail.com">hinditutorpoint[at]gmail[dot]com</a>
-        </address>
+        </p>
       </div>
     </div>
   </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-    Created by Rajesh Kumar Dhuriya &middot; &copy; 2021-2022 
-  </footer>
+  <p>
+    Created by Rajesh Kumar Dhuriya 
+  </p>
 </div>
 </div>

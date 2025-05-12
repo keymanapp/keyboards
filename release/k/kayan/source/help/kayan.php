@@ -14,7 +14,6 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
 </p>
 <br/>
 
-<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

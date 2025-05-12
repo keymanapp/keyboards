@@ -5,13 +5,7 @@ $pagetitle = $pagename;
 require_once('header.php');
 ?>
 
-  <h1>Start Using Chechen Latin Keyboard</h1>
-
-  <p>
-
-  </p>
-
-  <h1>Keyboard Layout</h1>
+  <h2>Keyboard Layout</h2>
   <div id="layout"></div>
 
 

@@ -7,7 +7,7 @@
 
   <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it. Shaw believed there should be a simpler way to write English. His wish was fulfilled in 1962 following a worldwide competition. The winner of that competition, Kingsley Read, developed an alphabet designed especially for English, with a unique letter for each of the 40 or so basic sounds we all use today.</p><img src="shavian_alphabet_reading_key.png" alt="A table of Shavian alphabet letters and the sounds they represent.">
   <p>For further information about the Shavian alphabet visit <a href="https://www.shavian.info">Shavian.info</a>.</p>
-  <h1>Keyboard Layout</h1>
+
   <h2>Desktop and onscreen layouts</h2>
   <p>The desktop and onscreen layouts are identical, and are based on the pre–Unicode ASCII mapping of the Shavian alphabet. Shaw QWERTY is a transitional keyboard for those who prefer the relative familiarity of a QWERTY–like keyboard, with all the compromises that entails.</p>
   <p>A number of letters may be found by holding down SHIFT.</p>

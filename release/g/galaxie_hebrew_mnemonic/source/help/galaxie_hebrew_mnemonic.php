@@ -61,16 +61,6 @@ END;
   require_once('header.php');
 ?>
 
-<br/>
-	<a href="#Overview">Overview</a><br/>
-	<a href="#UsingGreek">Hebrew Keyboard</a><br/>
-	<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-	<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-	<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-	<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-	<a href="#Technical">Technical Information</a><br/>
-	<a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
 <div id='Overview'>
 	<h2>Overview</h2>
 	<p>This Keyman keyboard is designed for Biblical Hebrew, a Semitic language of the ancient Near East and the language of the Hebrew Bible. It is a mnemonic Keyman keyboard. This means that the arrangement of the letters in the Keyman keyboard will depend on the order of the keys on your hardware layout.</p>

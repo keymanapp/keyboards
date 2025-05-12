@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Malar Tirhuta</Name>
-    <Copyright URL="">© 2022-2023 Ramesh Kunnappully</Copyright>
+    <Copyright URL="">© Ramesh Kunnappully</Copyright>
     <Author URL="mailto:ramesh1@protonmail.com">Ramesh Kunnappully</Author>
     <Version URL=""></Version>
-    <Description>**Malar Tirhuta** is a transliteration based Unicode input method for
+    <Description URL="">**Malar Tirhuta** is a transliteration based Unicode input method for
 Tirhuta script.
 
 -   [Keyboard Demo](https://malarproject.gitlab.io/tirhuta)</Description>
@@ -80,7 +81,7 @@ Tirhuta script.
     <Keyboard>
       <Name>Malar Tirhuta</Name>
       <ID>malar_tirhuta</ID>
-      <Version>1.0.1</Version>
+      <Version>1.0.2</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Tirh\NotoSansTirhuta-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Tirh\NotoSansTirhuta-Regular.ttf</DisplayFont>
       <Languages>
@@ -88,10 +89,10 @@ Tirhuta script.
         <Language ID="sa-Tirh">Sanskrit</Language>
       </Languages>
       <Examples>
-        <Example ID="mai-Tirh" Keys="t h i r a h u t h a a" Text="𑒞𑒱𑒩𑒯𑒳𑒞𑒰" Note="Tirhuta" />
-        <Example ID="sa-Tirh" Keys="t h i r a h u t h a a" Text="𑒞𑒱𑒩𑒯𑒳𑒞𑒰" Note="Tirhuta" />
+        <Example ID="mai-Tirh" Keys="t h i r a h u t h a a" Text="𑒞𑒱𑒩𑒯𑒳𑒞𑒰" Note="Tirhuta"/>
+        <Example ID="sa-Tirh" Keys="t h i r a h u t h a a" Text="𑒞𑒱𑒩𑒯𑒳𑒞𑒰" Note="Tirhuta"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

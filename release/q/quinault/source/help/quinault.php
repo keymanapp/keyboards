@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
 
-<body>
-
 <p>This keyboard layout is designed for Quinault.  It includes an on screen keyboard.</p>
 
 <h2>Fonts</h2>
@@ -25,7 +23,3 @@
 
 <h3>Shift</h3>
 <img src="quinault_shift.png">
-
-
-</body>
-

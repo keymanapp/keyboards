@@ -11,7 +11,7 @@
 <!-- Insert Keyboard Layout Images or HTML here -->
 <img
   src="https://firebasestorage.googleapis.com/v0/b/talking-dictionaries-alpha.appspot.com/o/livingdictionary%2Fimages%2FKeyboards%2Fholikachuk.png?alt=media&token=25ca3574-920b-4b05-a562-ea7ed497d1fa"
-  alt="Holikachuk Keyboard - Copyright 2007 Chris Harvey"
+  alt="Holikachuk Keyboard - Copyright Chris Harvey"
   width="695"
   height="278"
 />

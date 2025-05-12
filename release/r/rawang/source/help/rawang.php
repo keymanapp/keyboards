@@ -74,5 +74,3 @@ EXTRA;
 
 <h3 id="rawang-gesture-table">rawang Gesture Table</h3>
 <p>Gestures for the Mobile Keyboard layers are described in <a href="rawang-tablet"> Rawang gesture tables</a></p>
-
-</div>

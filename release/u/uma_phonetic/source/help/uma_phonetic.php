@@ -10,8 +10,6 @@
     Uma Phonetic Keyboard version 1.1 created for the Houma Language Project for typing in Uma.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
@@ -20,4 +18,4 @@
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
-<p>© 2021 Houma Language Project</p>
+<p>© Houma Language Project</p>

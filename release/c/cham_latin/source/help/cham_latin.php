@@ -14,5 +14,3 @@ this purpose.</p>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
-</body>
-</html>

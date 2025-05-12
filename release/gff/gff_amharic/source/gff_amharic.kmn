@@ -80,6 +80,7 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ArabOnes) '23456789'
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
+  store(ethDigits)  '፩፪፫፬፭፮፯፰፱'
   store(arabNumbers) '123456789'
   store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
@@ -147,7 +148,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '3.1.2'
+store(&KEYBOARDVERSION) '3.2'
 
   begin Unicode > use(main)
   group(main) using keys
@@ -242,6 +243,7 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
   any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
+  '፡' + "'" > '፡'
 
   'አ' + any(ግዕዝ-key) > 'ኧ'
 
@@ -399,7 +401,7 @@ c upto the order of 100 million
   any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
 
 c enhance this later, look for something that can copy a match over
-  any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
+$keymanonly:   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethDigits,2)
 
 + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
@@ -446,6 +448,30 @@ c 'QKG'
   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(TouchExtended፡ዘመደ፡ራብዕ,1)
 $keymanonly:   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
   any(TouchExtended፡ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
+
+
+c Punctuation Layer Handling
+  store(latinPunctIn)  '@#:$%/()?.' [T_00AB][T_2039][T_201C][T_2018][T_2019][T_201D][T_203A][T_00BB]
+  store(latinPunctOut) '@#:$%/()?.«‹‘“”’›»'
+  store(ethioPunctIn)  [T_1360][T_1361][T_1363][T_1364][T_1365][T_1366][T_1368]
+  store(ethioPunctOut) '፠፡፣፤፥፦፨'
+
+
+  + [T_BANG] > '!' deadkey(2)
+  '!' deadkey(2) + any(latinPunctIn) > index(latinPunctOut,3)
+c  + any(latinPunctIn) > index(latinPunctOut,1)
+  + [T_00AB] > '«'
+  + [T_2039] > '‹'
+  + [T_201C] > '‘'
+  + [T_2018] > '“'
+  + [T_2019] > '”'
+  + [T_201D] > '’'
+  + [T_203A] > '›'
+  + [T_00BB] > '»'
+
+  + [T_1362] > '።' deadkey(2)
+  '።' deadkey(2) + any(ethioPunctIn) > index(ethioPunctOut,3)
+  + any(ethioPunctIn) > index(ethioPunctOut,1)
 c ---------------------Extensions for Touch Layout----------------------------------------------
 
 

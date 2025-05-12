@@ -1,9 +1,7 @@
 <?php 
   $pagename = 'Yupik Cyrillic keyboard (Russian layout)';
-  $pagetitle = 'Yupik Cyrillic keyboard (Russian layout)';
-  require_once('header.php');
-?>
-<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -196,14 +194,12 @@
             width: 61px;
             text-align: center;
         }
+END;
+require_once('header.php');
+?>
 
-
-    </style>
-</head>
-<body>
 
 <h1>Эскимосская клавиатура  (русская раскладка)</h1>
-<h6>Разработка - SIL International</h6>
 
 <h2><a href="sil_yupik_cyrillic_ru_english.php">English</a></h2>
 
@@ -1295,7 +1291,3 @@
 <p>
     SIL International также опубликовала кириллическую эскимосскую клавиатуру, основанную на английской раскладки клавиатуры QWERTY. Она присваивает каждому символу кириллицы ключ ближайшего фонетически эквивалентного английского символа. Смотрите раскладку <a href="https://keyman.com/keyboards/sil_yupik_cyrillic">sil_yupik_cyrillic</a>.
 </p>
-
-<p>© 2019 SIL International</p>
-
-</body>

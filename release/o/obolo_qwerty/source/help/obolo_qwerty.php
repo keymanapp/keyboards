@@ -23,8 +23,6 @@ alt="Key Combination"
 style="width:695px;height:189px;">
 <p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <!-- Insert Keyboard Layout Images or HTML here -->
 <img src="qwerty_default.png"

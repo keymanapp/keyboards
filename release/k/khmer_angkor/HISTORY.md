@@ -1,5 +1,24 @@
 Khmer Angkor Change History
 =======================
+2.2 (10 Apr 2025)
+----------------
+* add rule to prevent beep sound
+
+2.1.1 (24 Mar 2025)
+----------------
+* replace touch fonts with Busra
+
+2.1 (13 Feb 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+* update welcome.htm
+
+2.0 (03 Dec 2024)
+----------------
+* update touch layout with flick gesture
+* add shift and western layer 
+* add indepentdent vowels to numeric layer 
+* update English and Khmer documentation 
 
 1.5 (3 Jul 2024)
 ----------------

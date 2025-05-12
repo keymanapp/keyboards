@@ -1,6 +1,10 @@
 Devanagari Romanized (SIL) Change History
 ====================
 
+1.7.2 (2025-03-31)
+----------------
+* Adjust language tag for kgy
+
 1.7.1 (2023-11-30)
 ----------------
 * Use shared font instead of local

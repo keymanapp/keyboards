@@ -1,9 +1,7 @@
 Nepali Romanized keyboard
 ==============
 
-(c) 2024 Santosh Pradhan
-
-Version 1.0.0
+(c) Santosh Pradhan
 
 Description
 -----------

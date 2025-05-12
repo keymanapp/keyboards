@@ -4,9 +4,6 @@
   require_once('header.php');
 ?>
 
-<body>
-    <h1>Trust Common Devanagari Keyboard help.</h1>
-
     <p>This Common Devanagari keyboard layout designed by WIn Publishing Trust in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid out based on Full deva winscript and Hindi winscript. </p>
 
     <h2>Keyboard layout</h2>

@@ -24,6 +24,3 @@ EXTRA;
   <p><img alt="Lao Pali keyboard layout: normal (default) state" src="lao_pali_us_U.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
   <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_us_S.png"/></p>
-
-</body>
-</html>

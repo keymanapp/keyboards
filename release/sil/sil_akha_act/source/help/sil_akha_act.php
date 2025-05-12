@@ -2,13 +2,6 @@
   $pagename = 'Akha ACT Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
-    $style = <<<END
-    p { font: 12pt Khmer Mondulkiri; }
-	ul { font: 12pt Khmer Mondulkiri; }
-    h1 { font: bold 16pt Khmer Mondulkiri; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 14pt Khmer Mondulkiri; color: #4444cc; }
-END;
-  
   require_once('header.php');
 ?>
 
@@ -24,7 +17,6 @@ END;
 	<li>On touch devices, please use longpresses to access these characters. Find out how to do it in the last section below.</li>
 </ol>
 
-<h1>Keyboard layouts</h1>
 	<h2>Desktop</h2>
 <div id='osk' data-states='default shift alt shift-alt'>
 </div>

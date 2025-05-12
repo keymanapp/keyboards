@@ -19,8 +19,8 @@ tones: as > á, af > à, aw > ă, ar > ā, aj > â, ahj > ăh
 </P>
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
-<h1> Phonology Map </h1>
-<p> consonants <p/>
+<h2>Phonology Map </h2>
+<p>consonants <p/>
 <img src='consonants.png' alt='Keyboard Layout'>
 <p> vowels and combinations <p/>
 <img src='vowels.png' alt='Keyboard Layout'> <p/>
@@ -29,7 +29,8 @@ tones: as > á, af > à, aw > ă, ar > ā, aj > â, ahj > ăh
 
 <p> tones <p/>
 <img src='tones.png' alt='Keyboard Layout'>
-<h1>Keyboard Layout</h1>
+
+<h2>Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='uchauU_.png' alt='Keyboard Layout'>

@@ -10,8 +10,6 @@ END;
 
 <p>Extended Traditional Layout for Nepal Bhasa in Prachalit Newa Script.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

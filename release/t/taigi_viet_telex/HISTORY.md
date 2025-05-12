@@ -1,6 +1,18 @@
 taigi viet telex Change History
 ====================
 
+3.1.1 (2025-3-22)
+----------------
+* Updated by mcdurdin
+* Fix rule with broken index() statement
+
+3.1 (2025-2-28)
+----------------
+* Updated by cathaylab
+* use key z to cancel tonations
+* fix several bugs
+* uses new structure to store more characters
+
 3.0.3 (2025-1-24)
 ----------------
 * fix missing index parameter

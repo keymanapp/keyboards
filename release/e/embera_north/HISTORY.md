@@ -1,6 +1,10 @@
 Embera Northern Change History
 =======================
 
+10.1.5 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 10.1.4 (1 Jul 2021)
 -------------------
 * Updated to use new version of Charis SIL

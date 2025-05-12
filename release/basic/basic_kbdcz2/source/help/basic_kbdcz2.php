@@ -10,8 +10,6 @@
     Czech Programmers Basic generated from template.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
 <p>´a will produce á (available on aAcCeEiIlLnNoOrRsSuUyYzZ).</p>

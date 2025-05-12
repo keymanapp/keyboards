@@ -4,9 +4,6 @@
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Tanguat (SIL)</h1>
-
 <p>
   This keyboard is designed for the Tanguat language of PNG
 </p>
@@ -28,10 +25,6 @@
 
 <p>To type <b>{</b>, use <b>shift</b> <b>right-alt</b> <b>{</b> .</p>
 <p>To type <b>}</b>, use <b>shift</b> <b>right-alt</b> <b>}.</p>
-
-<h1>Keyboard Layout</h1>
-
-<!-- Insert Keyboard Layout Images or HTML here -->
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>

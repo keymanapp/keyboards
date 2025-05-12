@@ -1,7 +1,7 @@
 Tamil Modular (Visual Media) keyboard
 ==============
 
-(c) Visual Media and SIL International
+(c) Visual Media and SIL Global
 
 Description
 -----------

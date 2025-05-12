@@ -6,7 +6,7 @@ store(&TARGETS) 'any'
 store(&BITMAP) 'taigi_viet_telex.ico'
 store(&VISUALKEYBOARD) 'taigi_viet_telex.kvks'
 store(&LAYOUTFILE) 'taigi_viet_telex.keyman-touch-layout'
-store(&KEYBOARDVERSION) '3.0.3'
+store(&KEYBOARDVERSION) '3.1.1'
 
 
 c Note three entry points, rather than the traditional single entry point
@@ -522,6 +522,34 @@ any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) + a
 any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
 any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
 
+any(s_punctuation)'sh' + any(all_letters) > index(s_punctuation, 1) 'sh' index(all_letters, 4)
+any(s_punctuation)'sh'any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sh' index(all_letters, 4) index(all_letters, 5)
+any(s_punctuation)'sh'any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(s_punctuation)'sh'any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(s_punctuation)'sh'any(all_letters)any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(s_punctuation)'SH' + any(all_letters) > index(s_punctuation, 1) 'SH' index(all_letters, 4)
+any(s_punctuation)'SH'any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'SH' index(all_letters, 4) index(all_letters, 5)
+any(s_punctuation)'SH'any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'SH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(s_punctuation)'SH'any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'SH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(s_punctuation)'SH'any(all_letters)any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'SH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(s_punctuation)'Sh' + any(all_letters) > index(s_punctuation, 1) 'Sh' index(all_letters, 4)
+any(s_punctuation)'Sh'any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'Sh' index(all_letters, 4) index(all_letters, 5)
+any(s_punctuation)'Sh'any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'Sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(s_punctuation)'Sh'any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'Sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(s_punctuation)'Sh'any(all_letters)any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'Sh' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(s_punctuation)'sH' + any(all_letters) > index(s_punctuation, 1) 'sH' index(all_letters, 4)
+any(s_punctuation)'sH'any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sH' index(all_letters, 4) index(all_letters, 5)
+any(s_punctuation)'sH'any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(s_punctuation)'sH'any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(s_punctuation)'sH'any(all_letters)any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > index(s_punctuation, 1) 'sH' index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+
+'Sh' + any(all_letters) > 'Sh' index(all_letters, 3)
+'Sh'any(all_letters) + any(all_letters) > 'Sh' index(all_letters, 3) index(all_letters, 4)
+'Sh'any(all_letters)any(all_letters) + any(all_letters) > 'Sh' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'Sh'any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > 'Sh' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'Sh'any(all_letters)any(all_letters)any(all_letters)any(all_letters) + any(all_letters) > 'Sh' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+
+
 c Vowels with tone numbers
 store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 store(all_consonants) 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
@@ -533,13 +561,14 @@ store(h_consonants) 'chkptCHKPT'
 store(no_h_consonants) 'bdfgjlmnqrvwxyzBDFGJLMNQRVWXYZ'
 store(unused_letters) 'dfqrvwxyDFQRVWXY'
 store(ng_letters) 'abeghkmnopstABEGHKMNOPST'
-store(un_ng_letters) 'cdfijlqruvwxyzCDFIJLQRUVWXYZ'
+store(un_ng_letters) 'cdfgijlqruvwxyzCDFGIJLQRUVWXYZ'
 store(ng_consonants) 'bghkmnpstBGHKMNPST'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 store(un_second_consonants)'qrtpdfklcvbmQRTPDFKLCVBM'
-
+store(s_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_gn_letters) 'abcdefhijklmopqrstuvwxyzABCDEFHIJKLMOPQRSTUVWXYZ'
-
+store(ss) 'Ss'
+store(hh) 'Hh'
 c Vowels with tone number s
 store(vowels) 'aiueoAIUEO'
 store(vowels_tones) 'àìùèòÀÌÙÈÒ'
@@ -1169,732 +1198,731 @@ any(vowels_toner) "ⁿ" + "r" > index(vowels,1) "ⁿr"
 any(vowels_toner) "ⁿ" + "R" > index(vowels,1) "ⁿR"
 
 
-any(vowels_tones) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonef) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonex) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonew) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonej) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_toner) "n" + [K_BKSP] > index(vowels, 1) "n"
-any(vowels_tones) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonef) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonex) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonew) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonej) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_toner) "ng" + [K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tones) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonef) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonex) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonew) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonej) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_toner) "m" + [K_BKSP] > index(vowels, 1) "m"
-any(vowels_tones) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonef) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonex) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonew) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonej) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_toner) "M" + [K_BKSP] > index(vowels, 1) "M"
-any(vowels_tones) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonef) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonex) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonew) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonej) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_toner) "N" + [K_BKSP] > index(vowels, 1) "N"
-any(vowels_tones) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonef) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonex) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonew) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonej) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_toner) "NG" + [K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tones) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonef) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonex) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonew) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonej) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_toner) "ⁿ" + [K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tones) + [K_BKSP] > index(vowels, 1)
-any(vowels_tonef) + [K_BKSP] > index(vowels, 1)
-any(vowels_tonex) + [K_BKSP] > index(vowels, 1)
-any(vowels_tonew) + [K_BKSP] > index(vowels, 1)
-any(vowels_tonej) + [K_BKSP] > index(vowels, 1)
-any(vowels_toner) + [K_BKSP] > index(vowels, 1)
+any(vowels_tones) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_tonef) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_tonex) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_tonew) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_tonej) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_toner) "n" + [K_Z] > index(vowels, 1) "n"
+any(vowels_tones) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_tonef) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_tonex) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_tonew) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_tonej) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_toner) "ng" + [K_Z] > index(vowels, 1) "ng"
+any(vowels_tones) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_tonef) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_tonex) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_tonew) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_tonej) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_toner) "m" + [K_Z] > index(vowels, 1) "m"
+any(vowels_tones) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_tonef) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_tonex) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_tonew) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_tonej) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_toner) "M" + [K_Z] > index(vowels, 1) "M"
+any(vowels_tones) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_tonef) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_tonex) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_tonew) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_tonej) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_toner) "N" + [K_Z] > index(vowels, 1) "N"
+any(vowels_tones) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_tonef) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_tonex) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_tonew) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_tonej) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_toner) "NG" + [K_Z] > index(vowels, 1) "NG"
+any(vowels_tones) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonef) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonex) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonew) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonej) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_toner) "ⁿ" + [K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tones) + [K_Z] > index(vowels, 1)
+any(vowels_tonef) + [K_Z] > index(vowels, 1)
+any(vowels_tonex) + [K_Z] > index(vowels, 1)
+any(vowels_tonew) + [K_Z] > index(vowels, 1)
+any(vowels_tonej) + [K_Z] > index(vowels, 1)
+any(vowels_toner) + [K_Z] > index(vowels, 1)
 
 
-"ó͘" + [K_BKSP] > "o͘"
-"ò͘" + [K_BKSP] > "o͘"
-"ô͘" + [K_BKSP] > "o͘"
-"ō͘" + [K_BKSP] > "o͘"
-"ŏ͘" + [K_BKSP] > "o͘"
-"ṳ́" + [K_BKSP] > "ṳ"
-"ṳ̀" + [K_BKSP] > "ṳ"
-"ṳ̂" + [K_BKSP] > "ṳ"
-"ṳ̄" + [K_BKSP] > "ṳ"
-"ṳ̆" + [K_BKSP] > "ṳ"
-"ṳ̃" + [K_BKSP] > "ṳ"
-"ó̤" + [K_BKSP] > "o̤"
-"ò̤" + [K_BKSP] > "o̤"
-"ô̤" + [K_BKSP] > "o̤"
-"ō̤" + [K_BKSP] > "o̤"
-"ŏ̤" + [K_BKSP] > "o̤"
-"Ó͘" + [K_BKSP] > "O͘"
-"Ò͘" + [K_BKSP] > "O͘"
-"Ô͘" + [K_BKSP] > "O͘"
-"Ō͘" + [K_BKSP] > "O͘"
-"Ŏ͘" + [K_BKSP] > "O͘"
-"Ṳ́" + [K_BKSP] > "Ṳ"
-"Ṳ̀" + [K_BKSP] > "Ṳ"
-"Ṳ̂" + [K_BKSP] > "Ṳ"
-"Ṳ̄" + [K_BKSP] > "Ṳ"
-"Ṳ̆" + [K_BKSP] > "Ṳ"
-"Ṳ̃" + [K_BKSP] > "Ṳ"
-"Ó̤" + [K_BKSP] > "O̤"
-"Ò̤" + [K_BKSP] > "O̤"
-"Ô̤" + [K_BKSP] > "O̤"
-"Ō̤" + [K_BKSP] > "O̤"
-"Ŏ̤" + [K_BKSP] > "O̤"
+"ó͘" + [K_Z] > "o͘"
+"ò͘" + [K_Z] > "o͘"
+"ô͘" + [K_Z] > "o͘"
+"ō͘" + [K_Z] > "o͘"
+"ŏ͘" + [K_Z] > "o͘"
+"ṳ́" + [K_Z] > "ṳ"
+"ṳ̀" + [K_Z] > "ṳ"
+"ṳ̂" + [K_Z] > "ṳ"
+"ṳ̄" + [K_Z] > "ṳ"
+"ṳ̆" + [K_Z] > "ṳ"
+"ṳ̃" + [K_Z] > "ṳ"
+"ó̤" + [K_Z] > "o̤"
+"ò̤" + [K_Z] > "o̤"
+"ô̤" + [K_Z] > "o̤"
+"ō̤" + [K_Z] > "o̤"
+"ŏ̤" + [K_Z] > "o̤"
+"Ó͘" + [K_Z] > "O͘"
+"Ò͘" + [K_Z] > "O͘"
+"Ô͘" + [K_Z] > "O͘"
+"Ō͘" + [K_Z] > "O͘"
+"Ŏ͘" + [K_Z] > "O͘"
+"Ṳ́" + [K_Z] > "Ṳ"
+"Ṳ̀" + [K_Z] > "Ṳ"
+"Ṳ̂" + [K_Z] > "Ṳ"
+"Ṳ̄" + [K_Z] > "Ṳ"
+"Ṳ̆" + [K_Z] > "Ṳ"
+"Ṳ̃" + [K_Z] > "Ṳ"
+"Ó̤" + [K_Z] > "O̤"
+"Ò̤" + [K_Z] > "O̤"
+"Ô̤" + [K_Z] > "O̤"
+"Ō̤" + [K_Z] > "O̤"
+"Ŏ̤" + [K_Z] > "O̤"
 
-"ó͘" + [SHIFT K_BKSP] > "o͘"
-"ò͘" + [SHIFT K_BKSP] > "o͘"
-"ô͘" + [SHIFT K_BKSP] > "o͘"
-"ō͘" + [SHIFT K_BKSP] > "o͘"
-"ŏ͘" + [SHIFT K_BKSP] > "o͘"
-"ṳ́" + [SHIFT K_BKSP] > "ṳ"
-"ṳ̀" + [SHIFT K_BKSP] > "ṳ"
-"ṳ̂" + [SHIFT K_BKSP] > "ṳ"
-"ṳ̄" + [SHIFT K_BKSP] > "ṳ"
-"ṳ̆" + [SHIFT K_BKSP] > "ṳ"
-"ṳ̃" + [SHIFT K_BKSP] > "ṳ"
-"ó̤" + [SHIFT K_BKSP] > "o̤"
-"ò̤" + [SHIFT K_BKSP] > "o̤"
-"ô̤" + [SHIFT K_BKSP] > "o̤"
-"ō̤" + [SHIFT K_BKSP] > "o̤"
-"ŏ̤" + [SHIFT K_BKSP] > "o̤"
-"Ó͘" + [SHIFT K_BKSP] > "O͘"
-"Ò͘" + [SHIFT K_BKSP] > "O͘"
-"Ô͘" + [SHIFT K_BKSP] > "O͘"
-"Ō͘" + [SHIFT K_BKSP] > "O͘"
-"Ŏ͘" + [SHIFT K_BKSP] > "O͘"
-"Ṳ́" + [SHIFT K_BKSP] > "Ṳ"
-"Ṳ̀" + [SHIFT K_BKSP] > "Ṳ"
-"Ṳ̂" + [SHIFT K_BKSP] > "Ṳ"
-"Ṳ̄" + [SHIFT K_BKSP] > "Ṳ"
-"Ṳ̆" + [SHIFT K_BKSP] > "Ṳ"
-"Ṳ̃" + [SHIFT K_BKSP] > "Ṳ"
-"Ó̤" + [SHIFT K_BKSP] > "O̤"
-"Ò̤" + [SHIFT K_BKSP] > "O̤"
-"Ô̤" + [SHIFT K_BKSP] > "O̤"
-"Ō̤" + [SHIFT K_BKSP] > "O̤"
-"Ŏ̤" + [SHIFT K_BKSP] > "O̤"
+"ó͘" + [SHIFT K_Z] > "o͘"
+"ò͘" + [SHIFT K_Z] > "o͘"
+"ô͘" + [SHIFT K_Z] > "o͘"
+"ō͘" + [SHIFT K_Z] > "o͘"
+"ŏ͘" + [SHIFT K_Z] > "o͘"
+"ṳ́" + [SHIFT K_Z] > "ṳ"
+"ṳ̀" + [SHIFT K_Z] > "ṳ"
+"ṳ̂" + [SHIFT K_Z] > "ṳ"
+"ṳ̄" + [SHIFT K_Z] > "ṳ"
+"ṳ̆" + [SHIFT K_Z] > "ṳ"
+"ṳ̃" + [SHIFT K_Z] > "ṳ"
+"ó̤" + [SHIFT K_Z] > "o̤"
+"ò̤" + [SHIFT K_Z] > "o̤"
+"ô̤" + [SHIFT K_Z] > "o̤"
+"ō̤" + [SHIFT K_Z] > "o̤"
+"ŏ̤" + [SHIFT K_Z] > "o̤"
+"Ó͘" + [SHIFT K_Z] > "O͘"
+"Ò͘" + [SHIFT K_Z] > "O͘"
+"Ô͘" + [SHIFT K_Z] > "O͘"
+"Ō͘" + [SHIFT K_Z] > "O͘"
+"Ŏ͘" + [SHIFT K_Z] > "O͘"
+"Ṳ́" + [SHIFT K_Z] > "Ṳ"
+"Ṳ̀" + [SHIFT K_Z] > "Ṳ"
+"Ṳ̂" + [SHIFT K_Z] > "Ṳ"
+"Ṳ̄" + [SHIFT K_Z] > "Ṳ"
+"Ṳ̆" + [SHIFT K_Z] > "Ṳ"
+"Ṳ̃" + [SHIFT K_Z] > "Ṳ"
+"Ó̤" + [SHIFT K_Z] > "O̤"
+"Ò̤" + [SHIFT K_Z] > "O̤"
+"Ô̤" + [SHIFT K_Z] > "O̤"
+"Ō̤" + [SHIFT K_Z] > "O̤"
+"Ŏ̤" + [SHIFT K_Z] > "O̤"
 
-"a̍p" + [K_BKSP] > "ap"
-"a̍t" + [K_BKSP] > "at"
-"a̍k" + [K_BKSP] > "ak"
-"a̍h" + [K_BKSP] > "ah"
-"i̍p" + [K_BKSP] > "ip"
-"i̍t" + [K_BKSP] > "it"
-"i̍h" + [K_BKSP] > "ih"
-"u̍t" + [K_BKSP] > "ut"
-"u̍h" + [K_BKSP] > "uh"
-"o̍p" + [K_BKSP] > "op"
-"o̍k" + [K_BKSP] > "ok"
-"o̍͘h" + [K_BKSP] > "oh"
-"e̍k" + [K_BKSP] > "ek"
-"e̍h" + [K_BKSP] > "eh"
-"o̍h" + [K_BKSP] > "oh"
-"a̍ih" + [K_BKSP] > "aih"
-"a̍uh" + [K_BKSP] > "auh"
-"ia̍h" + [K_BKSP] > "iah"
-"io̍h" + [K_BKSP] > "ioh"
-"iu̍h" + [K_BKSP] > "iuh"
-"u̍ih" + [K_BKSP] > "uih"
-"oa̍h" + [K_BKSP] > "oah"
-"oe̍h" + [K_BKSP] > "oeh"
-"ia̍uh" + [K_BKSP] > "iauh"
-"oa̍ih" + [K_BKSP] > "oaih"
-"ia̍p" + [K_BKSP] > "iap"
-"ia̍t" + [K_BKSP] > "iat"
-"ia̍k" + [K_BKSP] > "iak"
-"io̍k" + [K_BKSP] > "iok"
-"oa̍t" + [K_BKSP] > "oat"
-"m̍h" + [K_BKSP] > "mh"
-"n̍gh" + [K_BKSP] > "ngh"
-"ūn" + [K_BKSP] > "un"
+"a̍p" + [K_Z] > "ap"
+"a̍t" + [K_Z] > "at"
+"a̍k" + [K_Z] > "ak"
+"a̍h" + [K_Z] > "ah"
+"i̍p" + [K_Z] > "ip"
+"i̍t" + [K_Z] > "it"
+"i̍h" + [K_Z] > "ih"
+"u̍t" + [K_Z] > "ut"
+"u̍h" + [K_Z] > "uh"
+"o̍p" + [K_Z] > "op"
+"o̍k" + [K_Z] > "ok"
+"o̍͘h" + [K_Z] > "oh"
+"e̍k" + [K_Z] > "ek"
+"e̍h" + [K_Z] > "eh"
+"o̍h" + [K_Z] > "oh"
+"a̍ih" + [K_Z] > "aih"
+"a̍uh" + [K_Z] > "auh"
+"ia̍h" + [K_Z] > "iah"
+"io̍h" + [K_Z] > "ioh"
+"iu̍h" + [K_Z] > "iuh"
+"u̍ih" + [K_Z] > "uih"
+"oa̍h" + [K_Z] > "oah"
+"oe̍h" + [K_Z] > "oeh"
+"ia̍uh" + [K_Z] > "iauh"
+"oa̍ih" + [K_Z] > "oaih"
+"ia̍p" + [K_Z] > "iap"
+"ia̍t" + [K_Z] > "iat"
+"ia̍k" + [K_Z] > "iak"
+"io̍k" + [K_Z] > "iok"
+"oa̍t" + [K_Z] > "oat"
+"m̍h" + [K_Z] > "mh"
+"n̍gh" + [K_Z] > "ngh"
+"ūn" + [K_Z] > "un"
 
-"ḿ" + [K_BKSP] > "m"
-"ńg" + [K_BKSP] > "ng"
-"m̀" + [K_BKSP] > "m"
-"ǹg" + [K_BKSP] > "ng"
-"m̄" + [K_BKSP] > "m"
-"n̄g" + [K_BKSP] > "ng"
-"m̆" + [K_BKSP] > "m"
-"n̆g" + [K_BKSP] > "ng"
-"m̂" + [K_BKSP] > "m"
-"n̂g" + [K_BKSP] > "ng"
+"ḿ" + [K_Z] > "m"
+"ńg" + [K_Z] > "ng"
+"m̀" + [K_Z] > "m"
+"ǹg" + [K_Z] > "ng"
+"m̄" + [K_Z] > "m"
+"n̄g" + [K_Z] > "ng"
+"m̆" + [K_Z] > "m"
+"n̆g" + [K_Z] > "ng"
+"m̂" + [K_Z] > "m"
+"n̂g" + [K_Z] > "ng"
 c uppewcase
-"A̍P" + [K_BKSP] > "AP"
-"A̍T" + [K_BKSP] > "AT"
-"A̍K" + [K_BKSP] > "AK"
-"A̍H" + [K_BKSP] > "AH"
-"I̍P" + [K_BKSP] > "IP"
-"I̍T" + [K_BKSP] > "IT"
-"I̍H" + [K_BKSP] > "IH"
-"U̍T" + [K_BKSP] > "UT"
-"U̍H" + [K_BKSP] > "UH"
-"O̍P" + [K_BKSP] > "OP"
-"O̍K" + [K_BKSP] > "OK"
-"O̍͘H" + [K_BKSP] > "OH"
-"E̍K" + [K_BKSP] > "EK"
-"E̍H" + [K_BKSP] > "EH"
-"O̍H" + [K_BKSP] > "OH"
-"A̍IH" + [K_BKSP] > "AIH"
-"A̍UH" + [K_BKSP] > "AUH"
-"IA̍H" + [K_BKSP] > "IAH"
-"IO̍H" + [K_BKSP] > "IOH"
-"IU̍H" + [K_BKSP] > "IUH"
-"U̍IH" + [K_BKSP] > "UIH"
-"OA̍H" + [K_BKSP] > "OAH"
-"OE̍H" + [K_BKSP] > "OEH"
-"IA̍UH" + [K_BKSP] > "IAUH"
-"OA̍IH" + [K_BKSP] > "OAIH"
-"IA̍P" + [K_BKSP] > "IAP"
-"IA̍T" + [K_BKSP] > "IAT"
-"IA̍K" + [K_BKSP] > "IAK"
-"IO̍K" + [K_BKSP] > "IOK"
-"OA̍T" + [K_BKSP] > "OAT"
-"M̍H" + [K_BKSP] > "MH"
-"N̍GH" + [K_BKSP] > "NGH"
-"ŪN" + [K_BKSP] > "UN"
+"A̍P" + [K_Z] > "AP"
+"A̍T" + [K_Z] > "AT"
+"A̍K" + [K_Z] > "AK"
+"A̍H" + [K_Z] > "AH"
+"I̍P" + [K_Z] > "IP"
+"I̍T" + [K_Z] > "IT"
+"I̍H" + [K_Z] > "IH"
+"U̍T" + [K_Z] > "UT"
+"U̍H" + [K_Z] > "UH"
+"O̍P" + [K_Z] > "OP"
+"O̍K" + [K_Z] > "OK"
+"O̍͘H" + [K_Z] > "OH"
+"E̍K" + [K_Z] > "EK"
+"E̍H" + [K_Z] > "EH"
+"O̍H" + [K_Z] > "OH"
+"A̍IH" + [K_Z] > "AIH"
+"A̍UH" + [K_Z] > "AUH"
+"IA̍H" + [K_Z] > "IAH"
+"IO̍H" + [K_Z] > "IOH"
+"IU̍H" + [K_Z] > "IUH"
+"U̍IH" + [K_Z] > "UIH"
+"OA̍H" + [K_Z] > "OAH"
+"OE̍H" + [K_Z] > "OEH"
+"IA̍UH" + [K_Z] > "IAUH"
+"OA̍IH" + [K_Z] > "OAIH"
+"IA̍P" + [K_Z] > "IAP"
+"IA̍T" + [K_Z] > "IAT"
+"IA̍K" + [K_Z] > "IAK"
+"IO̍K" + [K_Z] > "IOK"
+"OA̍T" + [K_Z] > "OAT"
+"M̍H" + [K_Z] > "MH"
+"N̍GH" + [K_Z] > "NGH"
+"ŪN" + [K_Z] > "UN"
 
-"Ḿ" + [K_BKSP] > "M"
-"ŃG" + [K_BKSP] > "NG"
-"M̀" + [K_BKSP] > "M"
-"ǸG" + [K_BKSP] > "NG"
-"M̄" + [K_BKSP] > "M"
-"N̄G" + [K_BKSP] > "NG"
-"M̆" + [K_BKSP] > "M"
-"N̆G" + [K_BKSP] > "NG"
-"M̂" + [K_BKSP] > "M"
-"N̂G" + [K_BKSP] > "NG"
+"Ḿ" + [K_Z] > "M"
+"ŃG" + [K_Z] > "NG"
+"M̀" + [K_Z] > "M"
+"ǸG" + [K_Z] > "NG"
+"M̄" + [K_Z] > "M"
+"N̄G" + [K_Z] > "NG"
+"M̆" + [K_Z] > "M"
+"N̆G" + [K_Z] > "NG"
+"M̂" + [K_Z] > "M"
+"N̂G" + [K_Z] > "NG"
 c capitalize
-"A̍p" + [K_BKSP] > "Ap"
-"A̍t" + [K_BKSP] > "At"
-"A̍k" + [K_BKSP] > "Ak"
-"A̍h" + [K_BKSP] > "Ah"
-"I̍p" + [K_BKSP] > "Ip"
-"I̍t" + [K_BKSP] > "It"
-"I̍h" + [K_BKSP] > "Ih"
-"U̍t" + [K_BKSP] > "Ut"
-"U̍h" + [K_BKSP] > "Uh"
-"O̍p" + [K_BKSP] > "Op"
-"O̍k" + [K_BKSP] > "Ok"
-"O̍͘h" + [K_BKSP] > "Oh"
-"E̍k" + [K_BKSP] > "Ek"
-"E̍h" + [K_BKSP] > "Eh"
-"O̍h" + [K_BKSP] > "Oh"
-"A̍ih" + [K_BKSP] > "Aih"
-"A̍uh" + [K_BKSP] > "Auh"
-"Ia̍h" + [K_BKSP] > "Iah"
-"Io̍h" + [K_BKSP] > "Ioh"
-"Iu̍h" + [K_BKSP] > "Iuh"
-"U̍ih" + [K_BKSP] > "Uih"
-"Oa̍h" + [K_BKSP] > "Oah"
-"Oe̍h" + [K_BKSP] > "Oeh"
-"Ia̍uh" + [K_BKSP] > "Iauh"
-"Oa̍ih" + [K_BKSP] > "Oaih"
-"Ia̍p" + [K_BKSP] > "Iap"
-"Ia̍t" + [K_BKSP] > "Iat"
-"Ia̍k" + [K_BKSP] > "Iak"
-"Io̍k" + [K_BKSP] > "Iok"
-"Oa̍t" + [K_BKSP] > "Oat"
-"M̍h" + [K_BKSP] > "Mh"
-"N̍gh" + [K_BKSP] > "Ngh"
-"Ńg" + [K_BKSP] > "Ng"
-"Ǹg" + [K_BKSP] > "Ng"
-"N̄g" + [K_BKSP] > "Ng"
-"N̆g" + [K_BKSP] > "Ng"
-"N̂g" + [K_BKSP] > "Ng"
+"A̍p" + [K_Z] > "Ap"
+"A̍t" + [K_Z] > "At"
+"A̍k" + [K_Z] > "Ak"
+"A̍h" + [K_Z] > "Ah"
+"I̍p" + [K_Z] > "Ip"
+"I̍t" + [K_Z] > "It"
+"I̍h" + [K_Z] > "Ih"
+"U̍t" + [K_Z] > "Ut"
+"U̍h" + [K_Z] > "Uh"
+"O̍p" + [K_Z] > "Op"
+"O̍k" + [K_Z] > "Ok"
+"O̍͘h" + [K_Z] > "Oh"
+"E̍k" + [K_Z] > "Ek"
+"E̍h" + [K_Z] > "Eh"
+"O̍h" + [K_Z] > "Oh"
+"A̍ih" + [K_Z] > "Aih"
+"A̍uh" + [K_Z] > "Auh"
+"Ia̍h" + [K_Z] > "Iah"
+"Io̍h" + [K_Z] > "Ioh"
+"Iu̍h" + [K_Z] > "Iuh"
+"U̍ih" + [K_Z] > "Uih"
+"Oa̍h" + [K_Z] > "Oah"
+"Oe̍h" + [K_Z] > "Oeh"
+"Ia̍uh" + [K_Z] > "Iauh"
+"Oa̍ih" + [K_Z] > "Oaih"
+"Ia̍p" + [K_Z] > "Iap"
+"Ia̍t" + [K_Z] > "Iat"
+"Ia̍k" + [K_Z] > "Iak"
+"Io̍k" + [K_Z] > "Iok"
+"Oa̍t" + [K_Z] > "Oat"
+"M̍h" + [K_Z] > "Mh"
+"N̍gh" + [K_Z] > "Ngh"
+"Ńg" + [K_Z] > "Ng"
+"Ǹg" + [K_Z] > "Ng"
+"N̄g" + [K_Z] > "Ng"
+"N̆g" + [K_Z] > "Ng"
+"N̂g" + [K_Z] > "Ng"
 
-"ái" + [K_BKSP] > "ai"
-"áu" + [K_BKSP] > "au"
-"úi" + [K_BKSP] > "ui"
-"óa" + [K_BKSP] > "oa"
-"óe" + [K_BKSP] > "oe"
-"áiⁿ" + [K_BKSP] > "aiⁿ"
-"áuⁿ" + [K_BKSP] > "auⁿ"
-"úiⁿ" + [K_BKSP] > "uiⁿ"
-"óaⁿ" + [K_BKSP] > "oaⁿ"
-"óeⁿ" + [K_BKSP] > "oeⁿ"
-"Ái" + [K_BKSP] > "Ai"
-"Áu" + [K_BKSP] > "Au"
-"Úi" + [K_BKSP] > "Ui"
-"Óa" + [K_BKSP] > "Oa"
-"Óe" + [K_BKSP] > "Oe"
-"Áiⁿ" + [K_BKSP] > "Aiⁿ"
-"Áuⁿ" + [K_BKSP] > "Auⁿ"
-"Úiⁿ" + [K_BKSP] > "Uiⁿ"
-"Óaⁿ" + [K_BKSP] > "Oaⁿ"
-"Óeⁿ" + [K_BKSP] > "Oeⁿ"
-"ài" + [K_BKSP] > "ai"
-"àu" + [K_BKSP] > "au"
-"ùi" + [K_BKSP] > "ui"
-"òa" + [K_BKSP] > "oa"
-"òe" + [K_BKSP] > "oe"
-"àiⁿ" + [K_BKSP] > "aiⁿ"
-"àuⁿ" + [K_BKSP] > "auⁿ"
-"ùiⁿ" + [K_BKSP] > "uiⁿ"
-"òaⁿ" + [K_BKSP] > "oaⁿ"
-"òeⁿ" + [K_BKSP] > "oeⁿ"
-"Ài" + [K_BKSP] > "Ai"
-"Àu" + [K_BKSP] > "Au"
-"Ùi" + [K_BKSP] > "Ui"
-"Òa" + [K_BKSP] > "Oa"
-"Òe" + [K_BKSP] > "Oe"
-"Àiⁿ" + [K_BKSP] > "Aiⁿ"
-"Àuⁿ" + [K_BKSP] > "Auⁿ"
-"Ùiⁿ" + [K_BKSP] > "Uiⁿ"
-"Òaⁿ" + [K_BKSP] > "Oaⁿ"
-"Òeⁿ" + [K_BKSP] > "Oeⁿ"
-"âi" + [K_BKSP] > "ai"
-"âu" + [K_BKSP] > "au"
-"ûi" + [K_BKSP] > "ui"
-"ôa" + [K_BKSP] > "oa"
-"ôe" + [K_BKSP] > "oe"
-"âiⁿ" + [K_BKSP] > "aiⁿ"
-"âuⁿ" + [K_BKSP] > "auⁿ"
-"ûiⁿ" + [K_BKSP] > "uiⁿ"
-"ôaⁿ" + [K_BKSP] > "oaⁿ"
-"ôeⁿ" + [K_BKSP] > "oeⁿ"
-"Âi" + [K_BKSP] > "Ai"
-"Âu" + [K_BKSP] > "Au"
-"Ûi" + [K_BKSP] > "Ui"
-"Ôa" + [K_BKSP] > "Oa"
-"Ôe" + [K_BKSP] > "Oe"
-"Âiⁿ" + [K_BKSP] > "Aiⁿ"
-"Âuⁿ" + [K_BKSP] > "Auⁿ"
-"Ûiⁿ" + [K_BKSP] > "Uiⁿ"
-"Ôaⁿ" + [K_BKSP] > "Oaⁿ"
-"Ôeⁿ" + [K_BKSP] > "Oeⁿ"
-"āi" + [K_BKSP] > "ai"
-"āu" + [K_BKSP] > "au"
-"ūi" + [K_BKSP] > "ui"
-"ōa" + [K_BKSP] > "oa"
-"ōe" + [K_BKSP] > "oe"
-"āiⁿ" + [K_BKSP] > "aiⁿ"
-"āuⁿ" + [K_BKSP] > "auⁿ"
-"ūiⁿ" + [K_BKSP] > "uiⁿ"
-"ōaⁿ" + [K_BKSP] > "oaⁿ"
-"ōeⁿ" + [K_BKSP] > "oeⁿ"
-"Āi" + [K_BKSP] > "Ai"
-"Āu" + [K_BKSP] > "Au"
-"Ūi" + [K_BKSP] > "Ui"
-"Ōa" + [K_BKSP] > "Oa"
-"Ōe" + [K_BKSP] > "Oe"
-"Āiⁿ" + [K_BKSP] > "Aiⁿ"
-"Āuⁿ" + [K_BKSP] > "Auⁿ"
-"Ūiⁿ" + [K_BKSP] > "Uiⁿ"
-"Ōaⁿ" + [K_BKSP] > "Oaⁿ"
-"Ōeⁿ" + [K_BKSP] > "Oeⁿ"
-"ăi" + [K_BKSP] > "ai"
-"ău" + [K_BKSP] > "au"
-"ŭi" + [K_BKSP] > "ui"
-"ŏa" + [K_BKSP] > "oa"
-"ŏe" + [K_BKSP] > "oe"
-"ăiⁿ" + [K_BKSP] > "aiⁿ"
-"ăuⁿ" + [K_BKSP] > "auⁿ"
-"ŭiⁿ" + [K_BKSP] > "uiⁿ"
-"ŏaⁿ" + [K_BKSP] > "oaⁿ"
-"ŏeⁿ" + [K_BKSP] > "oeⁿ"
-"Ăi" + [K_BKSP] > "Ai"
-"Ău" + [K_BKSP] > "Au"
-"Ŭi" + [K_BKSP] > "Ui"
-"Ŏa" + [K_BKSP] > "Oa"
-"Ŏe" + [K_BKSP] > "Oe"
-"Ăiⁿ" + [K_BKSP] > "Aiⁿ"
-"Ăuⁿ" + [K_BKSP] > "Auⁿ"
-"Ŭiⁿ" + [K_BKSP] > "Uiⁿ"
-"Ŏaⁿ" + [K_BKSP] > "Oaⁿ"
-"Ŏeⁿ" + [K_BKSP] > "Oeⁿ"
+"ái" + [K_Z] > "ai"
+"áu" + [K_Z] > "au"
+"úi" + [K_Z] > "ui"
+"óa" + [K_Z] > "oa"
+"óe" + [K_Z] > "oe"
+"áiⁿ" + [K_Z] > "aiⁿ"
+"áuⁿ" + [K_Z] > "auⁿ"
+"úiⁿ" + [K_Z] > "uiⁿ"
+"óaⁿ" + [K_Z] > "oaⁿ"
+"óeⁿ" + [K_Z] > "oeⁿ"
+"Ái" + [K_Z] > "Ai"
+"Áu" + [K_Z] > "Au"
+"Úi" + [K_Z] > "Ui"
+"Óa" + [K_Z] > "Oa"
+"Óe" + [K_Z] > "Oe"
+"Áiⁿ" + [K_Z] > "Aiⁿ"
+"Áuⁿ" + [K_Z] > "Auⁿ"
+"Úiⁿ" + [K_Z] > "Uiⁿ"
+"Óaⁿ" + [K_Z] > "Oaⁿ"
+"Óeⁿ" + [K_Z] > "Oeⁿ"
+"ài" + [K_Z] > "ai"
+"àu" + [K_Z] > "au"
+"ùi" + [K_Z] > "ui"
+"òa" + [K_Z] > "oa"
+"òe" + [K_Z] > "oe"
+"àiⁿ" + [K_Z] > "aiⁿ"
+"àuⁿ" + [K_Z] > "auⁿ"
+"ùiⁿ" + [K_Z] > "uiⁿ"
+"òaⁿ" + [K_Z] > "oaⁿ"
+"òeⁿ" + [K_Z] > "oeⁿ"
+"Ài" + [K_Z] > "Ai"
+"Àu" + [K_Z] > "Au"
+"Ùi" + [K_Z] > "Ui"
+"Òa" + [K_Z] > "Oa"
+"Òe" + [K_Z] > "Oe"
+"Àiⁿ" + [K_Z] > "Aiⁿ"
+"Àuⁿ" + [K_Z] > "Auⁿ"
+"Ùiⁿ" + [K_Z] > "Uiⁿ"
+"Òaⁿ" + [K_Z] > "Oaⁿ"
+"Òeⁿ" + [K_Z] > "Oeⁿ"
+"âi" + [K_Z] > "ai"
+"âu" + [K_Z] > "au"
+"ûi" + [K_Z] > "ui"
+"ôa" + [K_Z] > "oa"
+"ôe" + [K_Z] > "oe"
+"âiⁿ" + [K_Z] > "aiⁿ"
+"âuⁿ" + [K_Z] > "auⁿ"
+"ûiⁿ" + [K_Z] > "uiⁿ"
+"ôaⁿ" + [K_Z] > "oaⁿ"
+"ôeⁿ" + [K_Z] > "oeⁿ"
+"Âi" + [K_Z] > "Ai"
+"Âu" + [K_Z] > "Au"
+"Ûi" + [K_Z] > "Ui"
+"Ôa" + [K_Z] > "Oa"
+"Ôe" + [K_Z] > "Oe"
+"Âiⁿ" + [K_Z] > "Aiⁿ"
+"Âuⁿ" + [K_Z] > "Auⁿ"
+"Ûiⁿ" + [K_Z] > "Uiⁿ"
+"Ôaⁿ" + [K_Z] > "Oaⁿ"
+"Ôeⁿ" + [K_Z] > "Oeⁿ"
+"āi" + [K_Z] > "ai"
+"āu" + [K_Z] > "au"
+"ūi" + [K_Z] > "ui"
+"ōa" + [K_Z] > "oa"
+"ōe" + [K_Z] > "oe"
+"āiⁿ" + [K_Z] > "aiⁿ"
+"āuⁿ" + [K_Z] > "auⁿ"
+"ūiⁿ" + [K_Z] > "uiⁿ"
+"ōaⁿ" + [K_Z] > "oaⁿ"
+"ōeⁿ" + [K_Z] > "oeⁿ"
+"Āi" + [K_Z] > "Ai"
+"Āu" + [K_Z] > "Au"
+"Ūi" + [K_Z] > "Ui"
+"Ōa" + [K_Z] > "Oa"
+"Ōe" + [K_Z] > "Oe"
+"Āiⁿ" + [K_Z] > "Aiⁿ"
+"Āuⁿ" + [K_Z] > "Auⁿ"
+"Ūiⁿ" + [K_Z] > "Uiⁿ"
+"Ōaⁿ" + [K_Z] > "Oaⁿ"
+"Ōeⁿ" + [K_Z] > "Oeⁿ"
+"ăi" + [K_Z] > "ai"
+"ău" + [K_Z] > "au"
+"ŭi" + [K_Z] > "ui"
+"ŏa" + [K_Z] > "oa"
+"ŏe" + [K_Z] > "oe"
+"ăiⁿ" + [K_Z] > "aiⁿ"
+"ăuⁿ" + [K_Z] > "auⁿ"
+"ŭiⁿ" + [K_Z] > "uiⁿ"
+"ŏaⁿ" + [K_Z] > "oaⁿ"
+"ŏeⁿ" + [K_Z] > "oeⁿ"
+"Ăi" + [K_Z] > "Ai"
+"Ău" + [K_Z] > "Au"
+"Ŭi" + [K_Z] > "Ui"
+"Ŏa" + [K_Z] > "Oa"
+"Ŏe" + [K_Z] > "Oe"
+"Ăiⁿ" + [K_Z] > "Aiⁿ"
+"Ăuⁿ" + [K_Z] > "Auⁿ"
+"Ŭiⁿ" + [K_Z] > "Uiⁿ"
+"Ŏaⁿ" + [K_Z] > "Oaⁿ"
+"Ŏeⁿ" + [K_Z] > "Oeⁿ"
 
-"ÁI" + [K_BKSP] > "AI"
-"ÁU" + [K_BKSP] > "AU"
-"ÚI" + [K_BKSP] > "UI"
-"ÓA" + [K_BKSP] > "OA"
-"ÓE" + [K_BKSP] > "OE"
-"ÁIⁿ" + [K_BKSP] > "AIⁿ"
-"ÁUⁿ" + [K_BKSP] > "AUⁿ"
-"ÚIⁿ" + [K_BKSP] > "UIⁿ"
-"ÓAⁿ" + [K_BKSP] > "OAⁿ"
-"ÓEⁿ" + [K_BKSP] > "OEⁿ"
-"ÀI" + [K_BKSP] > "AI"
-"ÀU" + [K_BKSP] > "AU"
-"ÙI" + [K_BKSP] > "UI"
-"ÒA" + [K_BKSP] > "OA"
-"ÒE" + [K_BKSP] > "OE"
-"ÀIⁿ" + [K_BKSP] > "AIⁿ"
-"ÀUⁿ" + [K_BKSP] > "AUⁿ"
-"ÙIⁿ" + [K_BKSP] > "UIⁿ"
-"ÒAⁿ" + [K_BKSP] > "OAⁿ"
-"ÒEⁿ" + [K_BKSP] > "OEⁿ"
-"ÂI" + [K_BKSP] > "AI"
-"ÂU" + [K_BKSP] > "AU"
-"ÛI" + [K_BKSP] > "UI"
-"ÔA" + [K_BKSP] > "OA"
-"ÔE" + [K_BKSP] > "OE"
-"ÂIⁿ" + [K_BKSP] > "AIⁿ"
-"ÂUⁿ" + [K_BKSP] > "AUⁿ"
-"ÛIⁿ" + [K_BKSP] > "UIⁿ"
-"ÔAⁿ" + [K_BKSP] > "OAⁿ"
-"ÔEⁿ" + [K_BKSP] > "OEⁿ"
-"ĀI" + [K_BKSP] > "AI"
-"ĀU" + [K_BKSP] > "AU"
-"ŪI" + [K_BKSP] > "UI"
-"ŌA" + [K_BKSP] > "OA"
-"ŌE" + [K_BKSP] > "OE"
-"ĀIⁿ" + [K_BKSP] > "AIⁿ"
-"ĀUⁿ" + [K_BKSP] > "AUⁿ"
-"ŪIⁿ" + [K_BKSP] > "UIⁿ"
-"ŌAⁿ" + [K_BKSP] > "OAⁿ"
-"ŌEⁿ" + [K_BKSP] > "OEⁿ"
-"ĂI" + [K_BKSP] > "AI"
-"ĂU" + [K_BKSP] > "AU"
-"ŬI" + [K_BKSP] > "UI"
-"ŎA" + [K_BKSP] > "OA"
-"ŎE" + [K_BKSP] > "OE"
-"ĂIⁿ" + [K_BKSP] > "AIⁿ"
-"ĂUⁿ" + [K_BKSP] > "AUⁿ"
-"ŬIⁿ" + [K_BKSP] > "UIⁿ"
-"ŎAⁿ" + [K_BKSP] > "OAⁿ"
-"ŎEⁿ" + [K_BKSP] > "OEⁿ"
+"ÁI" + [K_Z] > "AI"
+"ÁU" + [K_Z] > "AU"
+"ÚI" + [K_Z] > "UI"
+"ÓA" + [K_Z] > "OA"
+"ÓE" + [K_Z] > "OE"
+"ÁIⁿ" + [K_Z] > "AIⁿ"
+"ÁUⁿ" + [K_Z] > "AUⁿ"
+"ÚIⁿ" + [K_Z] > "UIⁿ"
+"ÓAⁿ" + [K_Z] > "OAⁿ"
+"ÓEⁿ" + [K_Z] > "OEⁿ"
+"ÀI" + [K_Z] > "AI"
+"ÀU" + [K_Z] > "AU"
+"ÙI" + [K_Z] > "UI"
+"ÒA" + [K_Z] > "OA"
+"ÒE" + [K_Z] > "OE"
+"ÀIⁿ" + [K_Z] > "AIⁿ"
+"ÀUⁿ" + [K_Z] > "AUⁿ"
+"ÙIⁿ" + [K_Z] > "UIⁿ"
+"ÒAⁿ" + [K_Z] > "OAⁿ"
+"ÒEⁿ" + [K_Z] > "OEⁿ"
+"ÂI" + [K_Z] > "AI"
+"ÂU" + [K_Z] > "AU"
+"ÛI" + [K_Z] > "UI"
+"ÔA" + [K_Z] > "OA"
+"ÔE" + [K_Z] > "OE"
+"ÂIⁿ" + [K_Z] > "AIⁿ"
+"ÂUⁿ" + [K_Z] > "AUⁿ"
+"ÛIⁿ" + [K_Z] > "UIⁿ"
+"ÔAⁿ" + [K_Z] > "OAⁿ"
+"ÔEⁿ" + [K_Z] > "OEⁿ"
+"ĀI" + [K_Z] > "AI"
+"ĀU" + [K_Z] > "AU"
+"ŪI" + [K_Z] > "UI"
+"ŌA" + [K_Z] > "OA"
+"ŌE" + [K_Z] > "OE"
+"ĀIⁿ" + [K_Z] > "AIⁿ"
+"ĀUⁿ" + [K_Z] > "AUⁿ"
+"ŪIⁿ" + [K_Z] > "UIⁿ"
+"ŌAⁿ" + [K_Z] > "OAⁿ"
+"ŌEⁿ" + [K_Z] > "OEⁿ"
+"ĂI" + [K_Z] > "AI"
+"ĂU" + [K_Z] > "AU"
+"ŬI" + [K_Z] > "UI"
+"ŎA" + [K_Z] > "OA"
+"ŎE" + [K_Z] > "OE"
+"ĂIⁿ" + [K_Z] > "AIⁿ"
+"ĂUⁿ" + [K_Z] > "AUⁿ"
+"ŬIⁿ" + [K_Z] > "UIⁿ"
+"ŎAⁿ" + [K_Z] > "OAⁿ"
+"ŎEⁿ" + [K_Z] > "OEⁿ"
 
 
-any(vowels_tones) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonef) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonex) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonew) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_tonej) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_toner) "n" + [SHIFT K_BKSP] > index(vowels, 1) "n"
-any(vowels_tones) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonef) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonex) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonew) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tonej) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_toner) "ng" + [SHIFT K_BKSP] > index(vowels, 1) "ng"
-any(vowels_tones) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonef) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonex) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonew) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_tonej) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_toner) "m" + [SHIFT K_BKSP] > index(vowels, 1) "m"
-any(vowels_tones) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonef) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonex) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonew) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_tonej) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_toner) "M" + [SHIFT K_BKSP] > index(vowels, 1) "M"
-any(vowels_tones) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonef) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonex) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonew) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_tonej) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_toner) "N" + [SHIFT K_BKSP] > index(vowels, 1) "N"
-any(vowels_tones) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonef) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonex) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonew) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tonej) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_toner) "NG" + [SHIFT K_BKSP] > index(vowels, 1) "NG"
-any(vowels_tones) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonef) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonex) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonew) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tonej) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_toner) "ⁿ" + [SHIFT K_BKSP] > index(vowels, 1) "ⁿ"
-any(vowels_tones) + [SHIFT K_BKSP] > index(vowels, 1)
-any(vowels_tonef) + [SHIFT K_BKSP] > index(vowels, 1)
-any(vowels_tonex) + [SHIFT K_BKSP] > index(vowels, 1)
-any(vowels_tonew) + [SHIFT K_BKSP] > index(vowels, 1)
-any(vowels_tonej) + [SHIFT K_BKSP] > index(vowels, 1)
-any(vowels_toner) + [SHIFT K_BKSP] > index(vowels, 1)
+any(vowels_tones) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_tonef) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_tonex) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_tonew) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_tonej) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_toner) "n" + [SHIFT K_Z] > index(vowels, 1) "n"
+any(vowels_tones) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_tonef) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_tonex) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_tonew) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_tonej) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_toner) "ng" + [SHIFT K_Z] > index(vowels, 1) "ng"
+any(vowels_tones) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_tonef) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_tonex) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_tonew) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_tonej) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_toner) "m" + [SHIFT K_Z] > index(vowels, 1) "m"
+any(vowels_tones) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_tonef) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_tonex) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_tonew) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_tonej) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_toner) "M" + [SHIFT K_Z] > index(vowels, 1) "M"
+any(vowels_tones) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_tonef) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_tonex) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_tonew) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_tonej) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_toner) "N" + [SHIFT K_Z] > index(vowels, 1) "N"
+any(vowels_tones) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_tonef) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_tonex) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_tonew) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_tonej) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_toner) "NG" + [SHIFT K_Z] > index(vowels, 1) "NG"
+any(vowels_tones) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonef) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonex) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonew) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tonej) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_toner) "ⁿ" + [SHIFT K_Z] > index(vowels, 1) "ⁿ"
+any(vowels_tones) + [SHIFT K_Z] > index(vowels, 1)
+any(vowels_tonef) + [SHIFT K_Z] > index(vowels, 1)
+any(vowels_tonex) + [SHIFT K_Z] > index(vowels, 1)
+any(vowels_tonew) + [SHIFT K_Z] > index(vowels, 1)
+any(vowels_tonej) + [SHIFT K_Z] > index(vowels, 1)
+any(vowels_toner) + [SHIFT K_Z] > index(vowels, 1)
 
-"a̍p" + [SHIFT K_BKSP] > "ap"
-"a̍t" + [SHIFT K_BKSP] > "at"
-"a̍k" + [SHIFT K_BKSP] > "ak"
-"a̍h" + [SHIFT K_BKSP] > "ah"
-"i̍p" + [SHIFT K_BKSP] > "ip"
-"i̍t" + [SHIFT K_BKSP] > "it"
-"i̍h" + [SHIFT K_BKSP] > "ih"
-"u̍t" + [SHIFT K_BKSP] > "ut"
-"u̍h" + [SHIFT K_BKSP] > "uh"
-"o̍p" + [SHIFT K_BKSP] > "op"
-"o̍k" + [SHIFT K_BKSP] > "ok"
-"o̍͘h" + [SHIFT K_BKSP] > "oh"
-"e̍k" + [SHIFT K_BKSP] > "ek"
-"e̍h" + [SHIFT K_BKSP] > "eh"
-"o̍h" + [SHIFT K_BKSP] > "oh"
-"a̍ih" + [SHIFT K_BKSP] > "aih"
-"a̍uh" + [SHIFT K_BKSP] > "auh"
-"ia̍h" + [SHIFT K_BKSP] > "iah"
-"io̍h" + [SHIFT K_BKSP] > "ioh"
-"iu̍h" + [SHIFT K_BKSP] > "iuh"
-"u̍ih" + [SHIFT K_BKSP] > "uih"
-"oa̍h" + [SHIFT K_BKSP] > "oah"
-"oe̍h" + [SHIFT K_BKSP] > "oeh"
-"ia̍uh" + [SHIFT K_BKSP] > "iauh"
-"oa̍ih" + [SHIFT K_BKSP] > "oaih"
-"ia̍p" + [SHIFT K_BKSP] > "iap"
-"ia̍t" + [SHIFT K_BKSP] > "iat"
-"ia̍k" + [SHIFT K_BKSP] > "iak"
-"io̍k" + [SHIFT K_BKSP] > "iok"
-"oa̍t" + [SHIFT K_BKSP] > "oat"
-"m̍h" + [SHIFT K_BKSP] > "mh"
-"n̍gh" + [SHIFT K_BKSP] > "ngh"
-"ūn" + [SHIFT K_BKSP] > "un"
+"a̍p" + [SHIFT K_Z] > "ap"
+"a̍t" + [SHIFT K_Z] > "at"
+"a̍k" + [SHIFT K_Z] > "ak"
+"a̍h" + [SHIFT K_Z] > "ah"
+"i̍p" + [SHIFT K_Z] > "ip"
+"i̍t" + [SHIFT K_Z] > "it"
+"i̍h" + [SHIFT K_Z] > "ih"
+"u̍t" + [SHIFT K_Z] > "ut"
+"u̍h" + [SHIFT K_Z] > "uh"
+"o̍p" + [SHIFT K_Z] > "op"
+"o̍k" + [SHIFT K_Z] > "ok"
+"o̍͘h" + [SHIFT K_Z] > "oh"
+"e̍k" + [SHIFT K_Z] > "ek"
+"e̍h" + [SHIFT K_Z] > "eh"
+"o̍h" + [SHIFT K_Z] > "oh"
+"a̍ih" + [SHIFT K_Z] > "aih"
+"a̍uh" + [SHIFT K_Z] > "auh"
+"ia̍h" + [SHIFT K_Z] > "iah"
+"io̍h" + [SHIFT K_Z] > "ioh"
+"iu̍h" + [SHIFT K_Z] > "iuh"
+"u̍ih" + [SHIFT K_Z] > "uih"
+"oa̍h" + [SHIFT K_Z] > "oah"
+"oe̍h" + [SHIFT K_Z] > "oeh"
+"ia̍uh" + [SHIFT K_Z] > "iauh"
+"oa̍ih" + [SHIFT K_Z] > "oaih"
+"ia̍p" + [SHIFT K_Z] > "iap"
+"ia̍t" + [SHIFT K_Z] > "iat"
+"ia̍k" + [SHIFT K_Z] > "iak"
+"io̍k" + [SHIFT K_Z] > "iok"
+"oa̍t" + [SHIFT K_Z] > "oat"
+"m̍h" + [SHIFT K_Z] > "mh"
+"n̍gh" + [SHIFT K_Z] > "ngh"
+"ūn" + [SHIFT K_Z] > "un"
 
-"ḿ" + [SHIFT K_BKSP] > "m"
-"ńg" + [SHIFT K_BKSP] > "ng"
-"m̀" + [SHIFT K_BKSP] > "m"
-"ǹg" + [SHIFT K_BKSP] > "ng"
-"m̄" + [SHIFT K_BKSP] > "m"
-"n̄g" + [SHIFT K_BKSP] > "ng"
-"m̆" + [SHIFT K_BKSP] > "m"
-"n̆g" + [SHIFT K_BKSP] > "ng"
-"m̂" + [SHIFT K_BKSP] > "m"
-"n̂g" + [SHIFT K_BKSP] > "ng"
+"ḿ" + [SHIFT K_Z] > "m"
+"ńg" + [SHIFT K_Z] > "ng"
+"m̀" + [SHIFT K_Z] > "m"
+"ǹg" + [SHIFT K_Z] > "ng"
+"m̄" + [SHIFT K_Z] > "m"
+"n̄g" + [SHIFT K_Z] > "ng"
+"m̆" + [SHIFT K_Z] > "m"
+"n̆g" + [SHIFT K_Z] > "ng"
+"m̂" + [SHIFT K_Z] > "m"
+"n̂g" + [SHIFT K_Z] > "ng"
 c uppewcase
-"A̍P" + [SHIFT K_BKSP] > "AP"
-"A̍T" + [SHIFT K_BKSP] > "AT"
-"A̍K" + [SHIFT K_BKSP] > "AK"
-"A̍H" + [SHIFT K_BKSP] > "AH"
-"I̍P" + [SHIFT K_BKSP] > "IP"
-"I̍T" + [SHIFT K_BKSP] > "IT"
-"I̍H" + [SHIFT K_BKSP] > "IH"
-"U̍T" + [SHIFT K_BKSP] > "UT"
-"U̍H" + [SHIFT K_BKSP] > "UH"
-"O̍P" + [SHIFT K_BKSP] > "OP"
-"O̍K" + [SHIFT K_BKSP] > "OK"
-"O̍͘H" + [SHIFT K_BKSP] > "OH"
-"E̍K" + [SHIFT K_BKSP] > "EK"
-"E̍H" + [SHIFT K_BKSP] > "EH"
-"O̍H" + [SHIFT K_BKSP] > "OH"
-"A̍IH" + [SHIFT K_BKSP] > "AIH"
-"A̍UH" + [SHIFT K_BKSP] > "AUH"
-"IA̍H" + [SHIFT K_BKSP] > "IAH"
-"IO̍H" + [SHIFT K_BKSP] > "IOH"
-"IU̍H" + [SHIFT K_BKSP] > "IUH"
-"U̍IH" + [SHIFT K_BKSP] > "UIH"
-"OA̍H" + [SHIFT K_BKSP] > "OAH"
-"OE̍H" + [SHIFT K_BKSP] > "OEH"
-"IA̍UH" + [SHIFT K_BKSP] > "IAUH"
-"OA̍IH" + [SHIFT K_BKSP] > "OAIH"
-"IA̍P" + [SHIFT K_BKSP] > "IAP"
-"IA̍T" + [SHIFT K_BKSP] > "IAT"
-"IA̍K" + [SHIFT K_BKSP] > "IAK"
-"IO̍K" + [SHIFT K_BKSP] > "IOK"
-"OA̍T" + [SHIFT K_BKSP] > "OAT"
-"M̍H" + [SHIFT K_BKSP] > "MH"
-"N̍GH" + [SHIFT K_BKSP] > "NGH"
-"ŪN" + [SHIFT K_BKSP] > "UN"
+"A̍P" + [SHIFT K_Z] > "AP"
+"A̍T" + [SHIFT K_Z] > "AT"
+"A̍K" + [SHIFT K_Z] > "AK"
+"A̍H" + [SHIFT K_Z] > "AH"
+"I̍P" + [SHIFT K_Z] > "IP"
+"I̍T" + [SHIFT K_Z] > "IT"
+"I̍H" + [SHIFT K_Z] > "IH"
+"U̍T" + [SHIFT K_Z] > "UT"
+"U̍H" + [SHIFT K_Z] > "UH"
+"O̍P" + [SHIFT K_Z] > "OP"
+"O̍K" + [SHIFT K_Z] > "OK"
+"O̍͘H" + [SHIFT K_Z] > "OH"
+"E̍K" + [SHIFT K_Z] > "EK"
+"E̍H" + [SHIFT K_Z] > "EH"
+"O̍H" + [SHIFT K_Z] > "OH"
+"A̍IH" + [SHIFT K_Z] > "AIH"
+"A̍UH" + [SHIFT K_Z] > "AUH"
+"IA̍H" + [SHIFT K_Z] > "IAH"
+"IO̍H" + [SHIFT K_Z] > "IOH"
+"IU̍H" + [SHIFT K_Z] > "IUH"
+"U̍IH" + [SHIFT K_Z] > "UIH"
+"OA̍H" + [SHIFT K_Z] > "OAH"
+"OE̍H" + [SHIFT K_Z] > "OEH"
+"IA̍UH" + [SHIFT K_Z] > "IAUH"
+"OA̍IH" + [SHIFT K_Z] > "OAIH"
+"IA̍P" + [SHIFT K_Z] > "IAP"
+"IA̍T" + [SHIFT K_Z] > "IAT"
+"IA̍K" + [SHIFT K_Z] > "IAK"
+"IO̍K" + [SHIFT K_Z] > "IOK"
+"OA̍T" + [SHIFT K_Z] > "OAT"
+"M̍H" + [SHIFT K_Z] > "MH"
+"N̍GH" + [SHIFT K_Z] > "NGH"
+"ŪN" + [SHIFT K_Z] > "UN"
 
-"Ḿ" + [SHIFT K_BKSP] > "M"
-"ŃG" + [SHIFT K_BKSP] > "NG"
-"M̀" + [SHIFT K_BKSP] > "M"
-"ǸG" + [SHIFT K_BKSP] > "NG"
-"M̄" + [SHIFT K_BKSP] > "M"
-"N̄G" + [SHIFT K_BKSP] > "NG"
-"M̆" + [SHIFT K_BKSP] > "M"
-"N̆G" + [SHIFT K_BKSP] > "NG"
-"M̂" + [SHIFT K_BKSP] > "M"
-"N̂G" + [SHIFT K_BKSP] > "NG"
+"Ḿ" + [SHIFT K_Z] > "M"
+"ŃG" + [SHIFT K_Z] > "NG"
+"M̀" + [SHIFT K_Z] > "M"
+"ǸG" + [SHIFT K_Z] > "NG"
+"M̄" + [SHIFT K_Z] > "M"
+"N̄G" + [SHIFT K_Z] > "NG"
+"M̆" + [SHIFT K_Z] > "M"
+"N̆G" + [SHIFT K_Z] > "NG"
+"M̂" + [SHIFT K_Z] > "M"
+"N̂G" + [SHIFT K_Z] > "NG"
 c capitalize
-"A̍p" + [SHIFT K_BKSP] > "Ap"
-"A̍t" + [SHIFT K_BKSP] > "At"
-"A̍k" + [SHIFT K_BKSP] > "Ak"
-"A̍h" + [SHIFT K_BKSP] > "Ah"
-"I̍p" + [SHIFT K_BKSP] > "Ip"
-"I̍t" + [SHIFT K_BKSP] > "It"
-"I̍h" + [SHIFT K_BKSP] > "Ih"
-"U̍t" + [SHIFT K_BKSP] > "Ut"
-"U̍h" + [SHIFT K_BKSP] > "Uh"
-"O̍p" + [SHIFT K_BKSP] > "Op"
-"O̍k" + [SHIFT K_BKSP] > "Ok"
-"O̍͘h" + [SHIFT K_BKSP] > "Oh"
-"E̍k" + [SHIFT K_BKSP] > "Ek"
-"E̍h" + [SHIFT K_BKSP] > "Eh"
-"O̍h" + [SHIFT K_BKSP] > "Oh"
-"A̍ih" + [SHIFT K_BKSP] > "Aih"
-"A̍uh" + [SHIFT K_BKSP] > "Auh"
-"Ia̍h" + [SHIFT K_BKSP] > "Iah"
-"Io̍h" + [SHIFT K_BKSP] > "Ioh"
-"Iu̍h" + [SHIFT K_BKSP] > "Iuh"
-"U̍ih" + [SHIFT K_BKSP] > "Uih"
-"Oa̍h" + [SHIFT K_BKSP] > "Oah"
-"Oe̍h" + [SHIFT K_BKSP] > "Oeh"
-"Ia̍uh" + [SHIFT K_BKSP] > "Iauh"
-"Oa̍ih" + [SHIFT K_BKSP] > "Oaih"
-"Ia̍p" + [SHIFT K_BKSP] > "Iap"
-"Ia̍t" + [SHIFT K_BKSP] > "Iat"
-"Ia̍k" + [SHIFT K_BKSP] > "Iak"
-"Io̍k" + [SHIFT K_BKSP] > "Iok"
-"Oa̍t" + [SHIFT K_BKSP] > "Oat"
-"M̍h" + [SHIFT K_BKSP] > "Mh"
-"N̍gh" + [SHIFT K_BKSP] > "Ngh"
-"Ńg" + [SHIFT K_BKSP] > "Ng"
-"Ǹg" + [SHIFT K_BKSP] > "Ng"
-"N̄g" + [SHIFT K_BKSP] > "Ng"
-"N̆g" + [SHIFT K_BKSP] > "Ng"
-"N̂g" + [SHIFT K_BKSP] > "Ng"
+"A̍p" + [SHIFT K_Z] > "Ap"
+"A̍t" + [SHIFT K_Z] > "At"
+"A̍k" + [SHIFT K_Z] > "Ak"
+"A̍h" + [SHIFT K_Z] > "Ah"
+"I̍p" + [SHIFT K_Z] > "Ip"
+"I̍t" + [SHIFT K_Z] > "It"
+"I̍h" + [SHIFT K_Z] > "Ih"
+"U̍t" + [SHIFT K_Z] > "Ut"
+"U̍h" + [SHIFT K_Z] > "Uh"
+"O̍p" + [SHIFT K_Z] > "Op"
+"O̍k" + [SHIFT K_Z] > "Ok"
+"O̍͘h" + [SHIFT K_Z] > "Oh"
+"E̍k" + [SHIFT K_Z] > "Ek"
+"E̍h" + [SHIFT K_Z] > "Eh"
+"O̍h" + [SHIFT K_Z] > "Oh"
+"A̍ih" + [SHIFT K_Z] > "Aih"
+"A̍uh" + [SHIFT K_Z] > "Auh"
+"Ia̍h" + [SHIFT K_Z] > "Iah"
+"Io̍h" + [SHIFT K_Z] > "Ioh"
+"Iu̍h" + [SHIFT K_Z] > "Iuh"
+"U̍ih" + [SHIFT K_Z] > "Uih"
+"Oa̍h" + [SHIFT K_Z] > "Oah"
+"Oe̍h" + [SHIFT K_Z] > "Oeh"
+"Ia̍uh" + [SHIFT K_Z] > "Iauh"
+"Oa̍ih" + [SHIFT K_Z] > "Oaih"
+"Ia̍p" + [SHIFT K_Z] > "Iap"
+"Ia̍t" + [SHIFT K_Z] > "Iat"
+"Ia̍k" + [SHIFT K_Z] > "Iak"
+"Io̍k" + [SHIFT K_Z] > "Iok"
+"Oa̍t" + [SHIFT K_Z] > "Oat"
+"M̍h" + [SHIFT K_Z] > "Mh"
+"N̍gh" + [SHIFT K_Z] > "Ngh"
+"Ńg" + [SHIFT K_Z] > "Ng"
+"Ǹg" + [SHIFT K_Z] > "Ng"
+"N̄g" + [SHIFT K_Z] > "Ng"
+"N̆g" + [SHIFT K_Z] > "Ng"
+"N̂g" + [SHIFT K_Z] > "Ng"
 
-"ái" + [SHIFT K_BKSP] > "ai"
-"áu" + [SHIFT K_BKSP] > "au"
-"úi" + [SHIFT K_BKSP] > "ui"
-"óa" + [SHIFT K_BKSP] > "oa"
-"óe" + [SHIFT K_BKSP] > "oe"
-"áiⁿ" + [SHIFT K_BKSP] > "aiⁿ"
-"áuⁿ" + [SHIFT K_BKSP] > "auⁿ"
-"úiⁿ" + [SHIFT K_BKSP] > "uiⁿ"
-"óaⁿ" + [SHIFT K_BKSP] > "oaⁿ"
-"óeⁿ" + [SHIFT K_BKSP] > "oeⁿ"
-"Ái" + [SHIFT K_BKSP] > "Ai"
-"Áu" + [SHIFT K_BKSP] > "Au"
-"Úi" + [SHIFT K_BKSP] > "Ui"
-"Óa" + [SHIFT K_BKSP] > "Oa"
-"Óe" + [SHIFT K_BKSP] > "Oe"
-"Áiⁿ" + [SHIFT K_BKSP] > "Aiⁿ"
-"Áuⁿ" + [SHIFT K_BKSP] > "Auⁿ"
-"Úiⁿ" + [SHIFT K_BKSP] > "Uiⁿ"
-"Óaⁿ" + [SHIFT K_BKSP] > "Oaⁿ"
-"Óeⁿ" + [SHIFT K_BKSP] > "Oeⁿ"
-"ài" + [SHIFT K_BKSP] > "ai"
-"àu" + [SHIFT K_BKSP] > "au"
-"ùi" + [SHIFT K_BKSP] > "ui"
-"òa" + [SHIFT K_BKSP] > "oa"
-"òe" + [SHIFT K_BKSP] > "oe"
-"àiⁿ" + [SHIFT K_BKSP] > "aiⁿ"
-"àuⁿ" + [SHIFT K_BKSP] > "auⁿ"
-"ùiⁿ" + [SHIFT K_BKSP] > "uiⁿ"
-"òaⁿ" + [SHIFT K_BKSP] > "oaⁿ"
-"òeⁿ" + [SHIFT K_BKSP] > "oeⁿ"
-"Ài" + [SHIFT K_BKSP] > "Ai"
-"Àu" + [SHIFT K_BKSP] > "Au"
-"Ùi" + [SHIFT K_BKSP] > "Ui"
-"Òa" + [SHIFT K_BKSP] > "Oa"
-"Òe" + [SHIFT K_BKSP] > "Oe"
-"Àiⁿ" + [SHIFT K_BKSP] > "Aiⁿ"
-"Àuⁿ" + [SHIFT K_BKSP] > "Auⁿ"
-"Ùiⁿ" + [SHIFT K_BKSP] > "Uiⁿ"
-"Òaⁿ" + [SHIFT K_BKSP] > "Oaⁿ"
-"Òeⁿ" + [SHIFT K_BKSP] > "Oeⁿ"
-"âi" + [SHIFT K_BKSP] > "ai"
-"âu" + [SHIFT K_BKSP] > "au"
-"ûi" + [SHIFT K_BKSP] > "ui"
-"ôa" + [SHIFT K_BKSP] > "oa"
-"ôe" + [SHIFT K_BKSP] > "oe"
-"âiⁿ" + [SHIFT K_BKSP] > "aiⁿ"
-"âuⁿ" + [SHIFT K_BKSP] > "auⁿ"
-"ûiⁿ" + [SHIFT K_BKSP] > "uiⁿ"
-"ôaⁿ" + [SHIFT K_BKSP] > "oaⁿ"
-"ôeⁿ" + [SHIFT K_BKSP] > "oeⁿ"
-"Âi" + [SHIFT K_BKSP] > "Ai"
-"Âu" + [SHIFT K_BKSP] > "Au"
-"Ûi" + [SHIFT K_BKSP] > "Ui"
-"Ôa" + [SHIFT K_BKSP] > "Oa"
-"Ôe" + [SHIFT K_BKSP] > "Oe"
-"Âiⁿ" + [SHIFT K_BKSP] > "Aiⁿ"
-"Âuⁿ" + [SHIFT K_BKSP] > "Auⁿ"
-"Ûiⁿ" + [SHIFT K_BKSP] > "Uiⁿ"
-"Ôaⁿ" + [SHIFT K_BKSP] > "Oaⁿ"
-"Ôeⁿ" + [SHIFT K_BKSP] > "Oeⁿ"
-"āi" + [SHIFT K_BKSP] > "ai"
-"āu" + [SHIFT K_BKSP] > "au"
-"ūi" + [SHIFT K_BKSP] > "ui"
-"ōa" + [SHIFT K_BKSP] > "oa"
-"ōe" + [SHIFT K_BKSP] > "oe"
-"āiⁿ" + [SHIFT K_BKSP] > "aiⁿ"
-"āuⁿ" + [SHIFT K_BKSP] > "auⁿ"
-"ūiⁿ" + [SHIFT K_BKSP] > "uiⁿ"
-"ōaⁿ" + [SHIFT K_BKSP] > "oaⁿ"
-"ōeⁿ" + [SHIFT K_BKSP] > "oeⁿ"
-"Āi" + [SHIFT K_BKSP] > "Ai"
-"Āu" + [SHIFT K_BKSP] > "Au"
-"Ūi" + [SHIFT K_BKSP] > "Ui"
-"Ōa" + [SHIFT K_BKSP] > "Oa"
-"Ōe" + [SHIFT K_BKSP] > "Oe"
-"Āiⁿ" + [SHIFT K_BKSP] > "Aiⁿ"
-"Āuⁿ" + [SHIFT K_BKSP] > "Auⁿ"
-"Ūiⁿ" + [SHIFT K_BKSP] > "Uiⁿ"
-"Ōaⁿ" + [SHIFT K_BKSP] > "Oaⁿ"
-"Ōeⁿ" + [SHIFT K_BKSP] > "Oeⁿ"
-"ăi" + [SHIFT K_BKSP] > "ai"
-"ău" + [SHIFT K_BKSP] > "au"
-"ŭi" + [SHIFT K_BKSP] > "ui"
-"ŏa" + [SHIFT K_BKSP] > "oa"
-"ŏe" + [SHIFT K_BKSP] > "oe"
-"ăiⁿ" + [SHIFT K_BKSP] > "aiⁿ"
-"ăuⁿ" + [SHIFT K_BKSP] > "auⁿ"
-"ŭiⁿ" + [SHIFT K_BKSP] > "uiⁿ"
-"ŏaⁿ" + [SHIFT K_BKSP] > "oaⁿ"
-"ŏeⁿ" + [SHIFT K_BKSP] > "oeⁿ"
-"Ăi" + [SHIFT K_BKSP] > "Ai"
-"Ău" + [SHIFT K_BKSP] > "Au"
-"Ŭi" + [SHIFT K_BKSP] > "Ui"
-"Ŏa" + [SHIFT K_BKSP] > "Oa"
-"Ŏe" + [SHIFT K_BKSP] > "Oe"
-"Ăiⁿ" + [SHIFT K_BKSP] > "Aiⁿ"
-"Ăuⁿ" + [SHIFT K_BKSP] > "Auⁿ"
-"Ŭiⁿ" + [SHIFT K_BKSP] > "Uiⁿ"
-"Ŏaⁿ" + [SHIFT K_BKSP] > "Oaⁿ"
-"Ŏeⁿ" + [SHIFT K_BKSP] > "Oeⁿ"
+"ái" + [SHIFT K_Z] > "ai"
+"áu" + [SHIFT K_Z] > "au"
+"úi" + [SHIFT K_Z] > "ui"
+"óa" + [SHIFT K_Z] > "oa"
+"óe" + [SHIFT K_Z] > "oe"
+"áiⁿ" + [SHIFT K_Z] > "aiⁿ"
+"áuⁿ" + [SHIFT K_Z] > "auⁿ"
+"úiⁿ" + [SHIFT K_Z] > "uiⁿ"
+"óaⁿ" + [SHIFT K_Z] > "oaⁿ"
+"óeⁿ" + [SHIFT K_Z] > "oeⁿ"
+"Ái" + [SHIFT K_Z] > "Ai"
+"Áu" + [SHIFT K_Z] > "Au"
+"Úi" + [SHIFT K_Z] > "Ui"
+"Óa" + [SHIFT K_Z] > "Oa"
+"Óe" + [SHIFT K_Z] > "Oe"
+"Áiⁿ" + [SHIFT K_Z] > "Aiⁿ"
+"Áuⁿ" + [SHIFT K_Z] > "Auⁿ"
+"Úiⁿ" + [SHIFT K_Z] > "Uiⁿ"
+"Óaⁿ" + [SHIFT K_Z] > "Oaⁿ"
+"Óeⁿ" + [SHIFT K_Z] > "Oeⁿ"
+"ài" + [SHIFT K_Z] > "ai"
+"àu" + [SHIFT K_Z] > "au"
+"ùi" + [SHIFT K_Z] > "ui"
+"òa" + [SHIFT K_Z] > "oa"
+"òe" + [SHIFT K_Z] > "oe"
+"àiⁿ" + [SHIFT K_Z] > "aiⁿ"
+"àuⁿ" + [SHIFT K_Z] > "auⁿ"
+"ùiⁿ" + [SHIFT K_Z] > "uiⁿ"
+"òaⁿ" + [SHIFT K_Z] > "oaⁿ"
+"òeⁿ" + [SHIFT K_Z] > "oeⁿ"
+"Ài" + [SHIFT K_Z] > "Ai"
+"Àu" + [SHIFT K_Z] > "Au"
+"Ùi" + [SHIFT K_Z] > "Ui"
+"Òa" + [SHIFT K_Z] > "Oa"
+"Òe" + [SHIFT K_Z] > "Oe"
+"Àiⁿ" + [SHIFT K_Z] > "Aiⁿ"
+"Àuⁿ" + [SHIFT K_Z] > "Auⁿ"
+"Ùiⁿ" + [SHIFT K_Z] > "Uiⁿ"
+"Òaⁿ" + [SHIFT K_Z] > "Oaⁿ"
+"Òeⁿ" + [SHIFT K_Z] > "Oeⁿ"
+"âi" + [SHIFT K_Z] > "ai"
+"âu" + [SHIFT K_Z] > "au"
+"ûi" + [SHIFT K_Z] > "ui"
+"ôa" + [SHIFT K_Z] > "oa"
+"ôe" + [SHIFT K_Z] > "oe"
+"âiⁿ" + [SHIFT K_Z] > "aiⁿ"
+"âuⁿ" + [SHIFT K_Z] > "auⁿ"
+"ûiⁿ" + [SHIFT K_Z] > "uiⁿ"
+"ôaⁿ" + [SHIFT K_Z] > "oaⁿ"
+"ôeⁿ" + [SHIFT K_Z] > "oeⁿ"
+"Âi" + [SHIFT K_Z] > "Ai"
+"Âu" + [SHIFT K_Z] > "Au"
+"Ûi" + [SHIFT K_Z] > "Ui"
+"Ôa" + [SHIFT K_Z] > "Oa"
+"Ôe" + [SHIFT K_Z] > "Oe"
+"Âiⁿ" + [SHIFT K_Z] > "Aiⁿ"
+"Âuⁿ" + [SHIFT K_Z] > "Auⁿ"
+"Ûiⁿ" + [SHIFT K_Z] > "Uiⁿ"
+"Ôaⁿ" + [SHIFT K_Z] > "Oaⁿ"
+"Ôeⁿ" + [SHIFT K_Z] > "Oeⁿ"
+"āi" + [SHIFT K_Z] > "ai"
+"āu" + [SHIFT K_Z] > "au"
+"ūi" + [SHIFT K_Z] > "ui"
+"ōa" + [SHIFT K_Z] > "oa"
+"ōe" + [SHIFT K_Z] > "oe"
+"āiⁿ" + [SHIFT K_Z] > "aiⁿ"
+"āuⁿ" + [SHIFT K_Z] > "auⁿ"
+"ūiⁿ" + [SHIFT K_Z] > "uiⁿ"
+"ōaⁿ" + [SHIFT K_Z] > "oaⁿ"
+"ōeⁿ" + [SHIFT K_Z] > "oeⁿ"
+"Āi" + [SHIFT K_Z] > "Ai"
+"Āu" + [SHIFT K_Z] > "Au"
+"Ūi" + [SHIFT K_Z] > "Ui"
+"Ōa" + [SHIFT K_Z] > "Oa"
+"Ōe" + [SHIFT K_Z] > "Oe"
+"Āiⁿ" + [SHIFT K_Z] > "Aiⁿ"
+"Āuⁿ" + [SHIFT K_Z] > "Auⁿ"
+"Ūiⁿ" + [SHIFT K_Z] > "Uiⁿ"
+"Ōaⁿ" + [SHIFT K_Z] > "Oaⁿ"
+"Ōeⁿ" + [SHIFT K_Z] > "Oeⁿ"
+"ăi" + [SHIFT K_Z] > "ai"
+"ău" + [SHIFT K_Z] > "au"
+"ŭi" + [SHIFT K_Z] > "ui"
+"ŏa" + [SHIFT K_Z] > "oa"
+"ŏe" + [SHIFT K_Z] > "oe"
+"ăiⁿ" + [SHIFT K_Z] > "aiⁿ"
+"ăuⁿ" + [SHIFT K_Z] > "auⁿ"
+"ŭiⁿ" + [SHIFT K_Z] > "uiⁿ"
+"ŏaⁿ" + [SHIFT K_Z] > "oaⁿ"
+"ŏeⁿ" + [SHIFT K_Z] > "oeⁿ"
+"Ăi" + [SHIFT K_Z] > "Ai"
+"Ău" + [SHIFT K_Z] > "Au"
+"Ŭi" + [SHIFT K_Z] > "Ui"
+"Ŏa" + [SHIFT K_Z] > "Oa"
+"Ŏe" + [SHIFT K_Z] > "Oe"
+"Ăiⁿ" + [SHIFT K_Z] > "Aiⁿ"
+"Ăuⁿ" + [SHIFT K_Z] > "Auⁿ"
+"Ŭiⁿ" + [SHIFT K_Z] > "Uiⁿ"
+"Ŏaⁿ" + [SHIFT K_Z] > "Oaⁿ"
+"Ŏeⁿ" + [SHIFT K_Z] > "Oeⁿ"
 
-"ÁI" + [SHIFT K_BKSP] > "AI"
-"ÁU" + [SHIFT K_BKSP] > "AU"
-"ÚI" + [SHIFT K_BKSP] > "UI"
-"ÓA" + [SHIFT K_BKSP] > "OA"
-"ÓE" + [SHIFT K_BKSP] > "OE"
-"ÁIⁿ" + [SHIFT K_BKSP] > "AIⁿ"
-"ÁUⁿ" + [SHIFT K_BKSP] > "AUⁿ"
-"ÚIⁿ" + [SHIFT K_BKSP] > "UIⁿ"
-"ÓAⁿ" + [SHIFT K_BKSP] > "OAⁿ"
-"ÓEⁿ" + [SHIFT K_BKSP] > "OEⁿ"
-"ÀI" + [SHIFT K_BKSP] > "AI"
-"ÀU" + [SHIFT K_BKSP] > "AU"
-"ÙI" + [SHIFT K_BKSP] > "UI"
-"ÒA" + [SHIFT K_BKSP] > "OA"
-"ÒE" + [SHIFT K_BKSP] > "OE"
-"ÀIⁿ" + [SHIFT K_BKSP] > "AIⁿ"
-"ÀUⁿ" + [SHIFT K_BKSP] > "AUⁿ"
-"ÙIⁿ" + [SHIFT K_BKSP] > "UIⁿ"
-"ÒAⁿ" + [SHIFT K_BKSP] > "OAⁿ"
-"ÒEⁿ" + [SHIFT K_BKSP] > "OEⁿ"
-"ÂI" + [SHIFT K_BKSP] > "AI"
-"ÂU" + [SHIFT K_BKSP] > "AU"
-"ÛI" + [SHIFT K_BKSP] > "UI"
-"ÔA" + [SHIFT K_BKSP] > "OA"
-"ÔE" + [SHIFT K_BKSP] > "OE"
-"ÂIⁿ" + [SHIFT K_BKSP] > "AIⁿ"
-"ÂUⁿ" + [SHIFT K_BKSP] > "AUⁿ"
-"ÛIⁿ" + [SHIFT K_BKSP] > "UIⁿ"
-"ÔAⁿ" + [SHIFT K_BKSP] > "OAⁿ"
-"ÔEⁿ" + [SHIFT K_BKSP] > "OEⁿ"
-"ĀI" + [SHIFT K_BKSP] > "AI"
-"ĀU" + [SHIFT K_BKSP] > "AU"
-"ŪI" + [SHIFT K_BKSP] > "UI"
-"ŌA" + [SHIFT K_BKSP] > "OA"
-"ŌE" + [SHIFT K_BKSP] > "OE"
-"ĀIⁿ" + [SHIFT K_BKSP] > "AIⁿ"
-"ĀUⁿ" + [SHIFT K_BKSP] > "AUⁿ"
-"ŪIⁿ" + [SHIFT K_BKSP] > "UIⁿ"
-"ŌAⁿ" + [SHIFT K_BKSP] > "OAⁿ"
-"ŌEⁿ" + [SHIFT K_BKSP] > "OEⁿ"
-"ĂI" + [SHIFT K_BKSP] > "AI"
-"ĂU" + [SHIFT K_BKSP] > "AU"
-"ŬI" + [SHIFT K_BKSP] > "UI"
-"ŎA" + [SHIFT K_BKSP] > "OA"
-"ŎE" + [SHIFT K_BKSP] > "OE"
-"ĂIⁿ" + [SHIFT K_BKSP] > "AIⁿ"
-"ĂUⁿ" + [SHIFT K_BKSP] > "AUⁿ"
-"ŬIⁿ" + [SHIFT K_BKSP] > "UIⁿ"
-"ŎAⁿ" + [SHIFT K_BKSP] > "OAⁿ"
-"ŎEⁿ" + [SHIFT K_BKSP] > "OEⁿ"
-
+"ÁI" + [SHIFT K_Z] > "AI"
+"ÁU" + [SHIFT K_Z] > "AU"
+"ÚI" + [SHIFT K_Z] > "UI"
+"ÓA" + [SHIFT K_Z] > "OA"
+"ÓE" + [SHIFT K_Z] > "OE"
+"ÁIⁿ" + [SHIFT K_Z] > "AIⁿ"
+"ÁUⁿ" + [SHIFT K_Z] > "AUⁿ"
+"ÚIⁿ" + [SHIFT K_Z] > "UIⁿ"
+"ÓAⁿ" + [SHIFT K_Z] > "OAⁿ"
+"ÓEⁿ" + [SHIFT K_Z] > "OEⁿ"
+"ÀI" + [SHIFT K_Z] > "AI"
+"ÀU" + [SHIFT K_Z] > "AU"
+"ÙI" + [SHIFT K_Z] > "UI"
+"ÒA" + [SHIFT K_Z] > "OA"
+"ÒE" + [SHIFT K_Z] > "OE"
+"ÀIⁿ" + [SHIFT K_Z] > "AIⁿ"
+"ÀUⁿ" + [SHIFT K_Z] > "AUⁿ"
+"ÙIⁿ" + [SHIFT K_Z] > "UIⁿ"
+"ÒAⁿ" + [SHIFT K_Z] > "OAⁿ"
+"ÒEⁿ" + [SHIFT K_Z] > "OEⁿ"
+"ÂI" + [SHIFT K_Z] > "AI"
+"ÂU" + [SHIFT K_Z] > "AU"
+"ÛI" + [SHIFT K_Z] > "UI"
+"ÔA" + [SHIFT K_Z] > "OA"
+"ÔE" + [SHIFT K_Z] > "OE"
+"ÂIⁿ" + [SHIFT K_Z] > "AIⁿ"
+"ÂUⁿ" + [SHIFT K_Z] > "AUⁿ"
+"ÛIⁿ" + [SHIFT K_Z] > "UIⁿ"
+"ÔAⁿ" + [SHIFT K_Z] > "OAⁿ"
+"ÔEⁿ" + [SHIFT K_Z] > "OEⁿ"
+"ĀI" + [SHIFT K_Z] > "AI"
+"ĀU" + [SHIFT K_Z] > "AU"
+"ŪI" + [SHIFT K_Z] > "UI"
+"ŌA" + [SHIFT K_Z] > "OA"
+"ŌE" + [SHIFT K_Z] > "OE"
+"ĀIⁿ" + [SHIFT K_Z] > "AIⁿ"
+"ĀUⁿ" + [SHIFT K_Z] > "AUⁿ"
+"ŪIⁿ" + [SHIFT K_Z] > "UIⁿ"
+"ŌAⁿ" + [SHIFT K_Z] > "OAⁿ"
+"ŌEⁿ" + [SHIFT K_Z] > "OEⁿ"
+"ĂI" + [SHIFT K_Z] > "AI"
+"ĂU" + [SHIFT K_Z] > "AU"
+"ŬI" + [SHIFT K_Z] > "UI"
+"ŎA" + [SHIFT K_Z] > "OA"
+"ŎE" + [SHIFT K_Z] > "OE"
+"ĂIⁿ" + [SHIFT K_Z] > "AIⁿ"
+"ĂUⁿ" + [SHIFT K_Z] > "AUⁿ"
+"ŬIⁿ" + [SHIFT K_Z] > "UIⁿ"
+"ŎAⁿ" + [SHIFT K_Z] > "OAⁿ"
+"ŎEⁿ" + [SHIFT K_Z] > "OEⁿ"
 
 c
 c Finals with tone numbers
@@ -3740,6 +3768,8 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 + "Q" > "O͘"
 "o͘" + [K_Q] > "q"
 "O͘" + "Q" > "Q"
+
+
 "O͘" + "q" > "Q"
 "o͘" + "a" > "qa"
 "o͘" + "b" > "qb"
@@ -3889,17 +3919,19 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 "o̤" + [K_V] > "v"
 "O̤" + "V" > "V"
 
-+ [NCAPS K_D] > "ch"
++ [NCAPS K_D] > "ch"dk(ch1)
 + [CAPS K_D] > "D"
-+ [NCAPS SHIFT K_D] > "Ch"
++ [NCAPS SHIFT K_D] > "Ch"dk(ch2)
 + [CAPS SHIFT K_D] > "D"
-+ [NCAPS ALT K_D] > "ch"
-+ [NCAPS ALT SHIFT K_D] > "Ch"
++ [NCAPS ALT K_D] > "ch"dk(ch1)
++ [NCAPS ALT SHIFT K_D] > "Ch"dk(ch2)
 
-"ch" + [K_D] > "d"
-"Ch" + [SHIFT K_D] > "D"
-"Ch" + [K_D] > "D"
+"ch"dk(ch1) + [K_D] > "d"
+"Ch"dk(ch2) + [SHIFT K_D] > "D"
+"Ch"dk(ch2) + [K_D] > "D"
 
+dk(ch1) + any(all_letters) > index(all_letters, 2)
+dk(ch2) + any(all_letters) > index(all_letters, 2)
 
 + [NCAPS K_Y] > "ng"
 + [CAPS K_Y] > "Y"
@@ -3913,30 +3945,40 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 "Ng" + [K_Y] > "Y"
 
 
-+ [NCAPS K_X] > "chh"
++ [NCAPS K_X] > "chh"dk(chh1)
 + [CAPS K_X] > "X"
-+ [NCAPS SHIFT K_X] > "Chh"
++ [NCAPS SHIFT K_X] > "Chh"dk(chh2)
 + [CAPS SHIFT K_X] > "X"
-+ [NCAPS ALT K_X] > "chh"
-+ [NCAPS ALT SHIFT K_X] > "Chh"
++ [NCAPS ALT K_X] > "chh"dk(chh1)
++ [NCAPS ALT SHIFT K_X] > "Chh"dk(chh2)
 
-"chh" + [K_X] > "x"
-"Chh" + [K_X] > "X"
-"Chh" + [SHIFT K_X] > "X"
+dk(chh1) + any(all_letters) > index(all_letters, 2)
+dk(chh2) + any(all_letters) > index(all_letters, 2)
 
-+ [NCAPS K_F] > "ph"
+"chh"dk(chh1) + [K_X] > "x"
+"Chh"dk(chh2) + [K_X] > "X"
+"Chh"dk(chh2) + [SHIFT K_X] > "X"
+
++ [NCAPS K_F] > "ph" dk(f1)
 + [CAPS K_F] > "F"
-+ [NCAPS SHIFT K_F] > "Ph"
++ [NCAPS SHIFT K_F] > "Ph"dk(f2)
 + [CAPS SHIFT K_F] > "F"
-+ [NCAPS ALT K_F] > "ph"
-+ [NCAPS ALT SHIFT K_F] > "Ph"
++ [NCAPS ALT K_F] > "ph"dk(f1)
++ [NCAPS ALT SHIFT K_F] > "Ph"dk(f2)
 
-"ph" + [K_F] > "f"
-"Ph" + [K_F] > "F"
-"Ph" + [SHIFT K_F] > "F"
+"ph"dk(f1) + [K_F] > "f"
+"Ph"dk(f2) + [K_F] > "F"
+"Ph"dk(f2) + [SHIFT K_F] > "F"
+
+dk(f1) + any(all_letters) > index(all_letters, 2)
+dk(f2) + any(all_letters) > index(all_letters, 2)
 
 any(un_ng_letters) + "y" > index(un_ng_letters, 1) "y"
 any(all_letters) + "Y" > index(all_letters, 1) "Y"
+
+store(aeo) 'aeoAEO'
+any(aeo) + 'y' > index(aeo, 1)'ng'
+any(aeo)'ng' + 'y' > index(aeo, 1)'y'
 
 any(vowels_tones) + "y" > index(vowels_tones, 1) "ng"
 any(vowels_tonef) + "y" > index(vowels_tonef, 1) "ng"
@@ -3944,7 +3986,6 @@ any(vowels_toner) + "y" > index(vowels_toner, 1) "ng"
 any(vowels_tonej) + "y" > index(vowels_tonej, 1) "ng"
 any(vowels_tonew) + "y" > index(vowels_tonew, 1) "ng"
 any(vowels_tonex) + "y" > index(vowels_tonex, 1) "ng"
-
 
 
 "a" + "v" > "aⁿ"
@@ -4308,7 +4349,6 @@ any(vowels_tonex) + "y" > index(vowels_tonex, 1) "ng"
 
 "c" + [K_V] > "cv"
 "d" + [K_V] > "dv"
-"s" + [K_V] > "sv"
 "g" + [K_V] > "gv"
 "m" + [K_V] > "mv"
 "n" + [K_V] > "nv"
@@ -4321,7 +4361,6 @@ any(vowels_tonex) + "y" > index(vowels_tonex, 1) "ng"
 
 "C" + [SHIFT K_V] > "CV"
 "D" + [SHIFT K_V] > "DV"
-"S" + [SHIFT K_V] > "SV"
 "G" + [SHIFT K_V] > "GV"
 "M" + [SHIFT K_V] > "MV"
 "N" + [SHIFT K_V] > "NV"
@@ -4332,7 +4371,6 @@ any(vowels_tonex) + "y" > index(vowels_tonex, 1) "ng"
 "Y" + [SHIFT K_V] > "YV"
 "Z" + [SHIFT K_V] > "ZV"
 "D" + [K_V] > "Dv"
-"S" + [K_V] > "Sv"
 "G" + [K_V] > "Gv"
 "M" + [K_V] > "Mv"
 "N" + [K_V] > "Nv"
@@ -5390,21 +5428,28 @@ any(vowels_tonex) + "y" > index(vowels_tonex, 1) "ng"
 "Òu" + "s" > "Ous"
 "Õu" + "x" > "Oux"
 
-"p" + "p" > "ph"
-"t" + "t" > "th"
-"k" + "k" > "kh"
+"p" + "p" > "ph" dk(ph1)
+"t" + "t" > "th" dk(th1)
+"k" + "k" > "kh" dk(kh1)
 
-"P" + "p" > "Ph"
-"T" + "t" > "Th"
-"K" + "k" > "Kh"
+"P" + "p" > "Ph" dk(ph2)
+"T" + "t" > "Th" dk(th2)
+"K" + "k" > "Kh" dk(kh2)
 
-"ph" + "p" > "pp"
-"th" + "t" > "tt"
-"kh" + "k" > "kk"
+"ph" dk(ph1) + "p" > "pp"
+"th" dk(ph1) + "t" > "tt"
+"kh" dk(ph1) + "k" > "kk"
 
-"Ph" + "p" > "Pp"
-"Th" + "t" > "Tt"
-"Kh" + "k" > "Kk"
+"Ph" dk(ph2) + "p" > "Pp"
+"Th" dk(th2) + "t" > "Tt"
+"Kh" dk(kh2) + "k" > "Kk"
+
+dk(ph1) + any(all_letters) > index(all_letters, 2)
+dk(ph2) + any(all_letters) > index(all_letters, 2)
+dk(th1) + any(all_letters) > index(all_letters, 2)
+dk(th2) + any(all_letters) > index(all_letters, 2)
+dk(kh1) + any(all_letters) > index(all_letters, 2)
+dk(kh2) + any(all_letters) > index(all_letters, 2)
 
 any(all_letters) "p" + "p" > index(all_letters, 1) "pp"
 any(all_letters) "t" + "t" > index(all_letters, 1) "tt"
@@ -6875,15 +6920,6 @@ any(vowels) any(all_consonants) + "Y" > index(vowels, 1) index(all_consonants, 2
 "Ō͘" + "J" > "O͘J"
 "Ŏ͘" + "W" > "O͘W"
 
-"o͘" + [K_BKSP] > nul
-"O͘" + [K_BKSP] > nul
-"o͘" + [SHIFT K_BKSP] > nul
-"O͘" + [SHIFT K_BKSP] > nul
-"o̤" + [K_BKSP] > nul
-"O̤" + [K_BKSP] > nul
-"o̤" + [SHIFT K_BKSP] > nul
-"O̤" + [SHIFT K_BKSP] > nul
-
 
 + [ALT K_QUOTE] > '‘'
 + [ALT SHIFT K_QUOTE] > '“'
@@ -7073,6 +7109,267 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "Ṳ̍" + [ALT SHIFT K_QUOTE] > "Ṳ̍”"
 "O̤̍" + [ALT SHIFT K_QUOTE] > "O̤̍”"
 
+'o̤e' + 's' > 'ò̤e'
+'o̤e' + 'f' > 'ô̤e'
+'o̤e' + 'r' > 'ó̤e'
+'o̤e' + 'j' > 'ō̤e'
+'o̤e' + 'w' > 'ŏ̤e'
+'o̤e' + 'S' > 'ò̤e'
+'o̤e' + 'F' > 'ô̤e'
+'o̤e' + 'R' > 'ó̤e'
+'o̤e' + 'J' > 'ō̤e'
+'o̤e' + 'W' > 'ŏ̤e'
+
+'O̤E' + 's' > 'Ò̤E'
+'O̤E' + 'f' > 'Ô̤E'
+'O̤E' + 'r' > 'Ó̤E'
+'O̤E' + 'j' > 'Ō̤E'
+'O̤E' + 'w' > 'Ŏ̤E'
+'O̤E' + 'S' > 'Ò̤E'
+'O̤E' + 'F' > 'Ô̤E'
+'O̤E' + 'R' > 'Ó̤E'
+'O̤E' + 'J' > 'Ō̤E'
+'O̤E' + 'W' > 'Ŏ̤E'
+
+'O̤e' + 's' > 'Ò̤e'
+'O̤e' + 'f' > 'Ô̤e'
+'O̤e' + 'r' > 'Ó̤e'
+'O̤e' + 'j' > 'Ō̤e'
+'O̤e' + 'w' > 'Ŏ̤e'
+'O̤e' + 'S' > 'Ò̤e'
+'O̤e' + 'F' > 'Ô̤e'
+'O̤e' + 'R' > 'Ó̤e'
+'O̤e' + 'J' > 'Ō̤e'
+'O̤e' + 'W' > 'Ŏ̤e'
+
+'ô̤e' + 'S' > 'ò̤e'
+'ó̤e' + 'S' > 'ò̤e'
+'ō̤e' + 'S' > 'ò̤e'
+'ŏ̤e' + 'S' > 'ò̤e'
+'ò̤e' + 'F' > 'ô̤e'
+'ó̤e' + 'F' > 'ô̤e'
+'ō̤e' + 'F' > 'ô̤e'
+'ŏ̤e' + 'F' > 'ô̤e'
+'ò̤e' + 'R' > 'ó̤e'
+'ô̤e' + 'R' > 'ó̤e'
+'ō̤e' + 'R' > 'ó̤e'
+'ŏ̤e' + 'R' > 'ó̤e'
+'ò̤e' + 'J' > 'ō̤e'
+'ô̤e' + 'J' > 'ō̤e'
+'ó̤e' + 'J' > 'ō̤e'
+'ŏ̤e' + 'J' > 'ō̤e'
+'ò̤e' + 'W' > 'ŏ̤e'
+'ô̤e' + 'W' > 'ŏ̤e'
+'ó̤e' + 'W' > 'ŏ̤e'
+'ō̤e' + 'W' > 'ŏ̤e'
+'Ô̤e' + 'S' > 'Ò̤e'
+'Ó̤e' + 'S' > 'Ò̤e'
+'Ō̤e' + 'S' > 'Ò̤e'
+'Ŏ̤e' + 'S' > 'Ò̤e'
+'Ò̤e' + 'F' > 'Ô̤e'
+'Ó̤e' + 'F' > 'Ô̤e'
+'Ō̤e' + 'F' > 'Ô̤e'
+'Ŏ̤e' + 'F' > 'Ô̤e'
+'Ò̤e' + 'R' > 'Ó̤e'
+'Ô̤e' + 'R' > 'Ó̤e'
+'Ō̤e' + 'R' > 'Ó̤e'
+'Ŏ̤e' + 'R' > 'Ó̤e'
+'Ò̤e' + 'J' > 'Ō̤e'
+'Ô̤e' + 'J' > 'Ō̤e'
+'Ó̤e' + 'J' > 'Ō̤e'
+'Ŏ̤e' + 'J' > 'Ō̤e'
+'Ò̤e' + 'W' > 'Ŏ̤e'
+'Ô̤e' + 'W' > 'Ŏ̤e'
+'Ó̤e' + 'W' > 'Ŏ̤e'
+'Ō̤e' + 'W' > 'Ŏ̤e'
+
+'ò̤e' + [K_Z] > 'o̤e'
+'ô̤e' + [K_Z] > 'o̤e'
+'ó̤e' + [K_Z] > 'o̤e'
+'ō̤e' + [K_Z] > 'o̤e'
+'ŏ̤e' + [K_Z] > 'o̤e'
+'Ò̤E' + [K_Z] > 'O̤E'
+'Ô̤E' + [K_Z] > 'O̤E'
+'Ó̤E' + [K_Z] > 'O̤E'
+'Ō̤E' + [K_Z] > 'O̤E'
+'Ŏ̤E' + [K_Z] > 'O̤E'
+'Ò̤e' + [K_Z] > 'O̤e'
+'Ô̤e' + [K_Z] > 'O̤e'
+'Ó̤e' + [K_Z] > 'O̤e'
+'Ō̤e' + [K_Z] > 'O̤e'
+'Ŏ̤e' + [K_Z] > 'O̤e'
+'ò̤e' + [SHIFT K_Z] > 'o̤e'
+'ô̤e' + [SHIFT K_Z] > 'o̤e'
+'ó̤e' + [SHIFT K_Z] > 'o̤e'
+'ō̤e' + [SHIFT K_Z] > 'o̤e'
+'ŏ̤e' + [SHIFT K_Z] > 'o̤e'
+'Ò̤E' + [SHIFT K_Z] > 'O̤E'
+'Ô̤E' + [SHIFT K_Z] > 'O̤E'
+'Ó̤E' + [SHIFT K_Z] > 'O̤E'
+'Ō̤E' + [SHIFT K_Z] > 'O̤E'
+'Ŏ̤E' + [SHIFT K_Z] > 'O̤E'
+'Ò̤e' + [SHIFT K_Z] > 'O̤e'
+'Ô̤e' + [SHIFT K_Z] > 'O̤e'
+'Ó̤e' + [SHIFT K_Z] > 'O̤e'
+'Ō̤e' + [SHIFT K_Z] > 'O̤e'
+'Ŏ̤e' + [SHIFT K_Z] > 'O̤e'
+
+'o͘' + [K_BKSP] > nul
+'ò͘' + [K_BKSP] > nul
+'ô͘' + [K_BKSP] > nul
+'ó͘' + [K_BKSP] > nul
+'ō͘' + [K_BKSP] > nul
+'ŏ͘' + [K_BKSP] > nul
+'ṳ' + [K_BKSP] > nul
+'ṳ̀' + [K_BKSP] > nul
+'ṳ̂' + [K_BKSP] > nul
+'ṳ́' + [K_BKSP] > nul
+'ṳ̃' + [K_BKSP] > nul
+'ṳ̄' + [K_BKSP] > nul
+'ṳ̆' + [K_BKSP] > nul
+'o̤' + [K_BKSP] > nul
+'ò̤' + [K_BKSP] > nul
+'ô̤' + [K_BKSP] > nul
+'ó̤' + [K_BKSP] > nul
+'ō̤' + [K_BKSP] > nul
+'ŏ̤' + [K_BKSP] > nul
+'m̀' + [K_BKSP] > nul
+'m̂' + [K_BKSP] > nul
+'m̃' + [K_BKSP] > nul
+'m̄' + [K_BKSP] > nul
+'m̆' + [K_BKSP] > nul
+'n̂' + [K_BKSP] > nul
+'n̄' + [K_BKSP] > nul
+'n̆' + [K_BKSP] > nul
+'n̍' + [K_BKSP] > nul
+'a̍' + [K_BKSP] > nul
+'e̍' + [K_BKSP] > nul
+'i̍' + [K_BKSP] > nul
+'o̍' + [K_BKSP] > nul
+'o̍͘' + [K_BKSP] > nul
+'u̍' + [K_BKSP] > nul
+'ṳ̍' + [K_BKSP] > nul
+'o̤̍' + [K_BKSP] > nul
+
+'O͘' + [K_BKSP] > nul
+'Ò͘' + [K_BKSP] > nul
+'Ô͘' + [K_BKSP] > nul
+'Ó͘' + [K_BKSP] > nul
+'Ō͘' + [K_BKSP] > nul
+'Ŏ͘' + [K_BKSP] > nul
+'Ṳ' + [K_BKSP] > nul
+'Ṳ̀' + [K_BKSP] > nul
+'Ṳ̂' + [K_BKSP] > nul
+'Ṳ́' + [K_BKSP] > nul
+'Ṳ̃' + [K_BKSP] > nul
+'Ṳ̄' + [K_BKSP] > nul
+'Ṳ̆' + [K_BKSP] > nul
+'O̤' + [K_BKSP] > nul
+'Ò̤' + [K_BKSP] > nul
+'Ô̤' + [K_BKSP] > nul
+'Ó̤' + [K_BKSP] > nul
+'Ō̤' + [K_BKSP] > nul
+'Ŏ̤' + [K_BKSP] > nul
+'M̀' + [K_BKSP] > nul
+'M̂' + [K_BKSP] > nul
+'M̃' + [K_BKSP] > nul
+'M̄' + [K_BKSP] > nul
+'M̆' + [K_BKSP] > nul
+'N̂' + [K_BKSP] > nul
+'N̄' + [K_BKSP] > nul
+'N̆' + [K_BKSP] > nul
+'N̍' + [K_BKSP] > nul
+'A̍' + [K_BKSP] > nul
+'E̍' + [K_BKSP] > nul
+'I̍' + [K_BKSP] > nul
+'O̍' + [K_BKSP] > nul
+'O̍͘' + [K_BKSP] > nul
+'U̍' + [K_BKSP] > nul
+'Ṳ̍' + [K_BKSP] > nul
+'O̤̍' + [K_BKSP] > nul
+
+'o͘' + [SHIFT K_BKSP] > nul
+'ò͘' + [SHIFT K_BKSP] > nul
+'ô͘' + [SHIFT K_BKSP] > nul
+'ó͘' + [SHIFT K_BKSP] > nul
+'ō͘' + [SHIFT K_BKSP] > nul
+'ŏ͘' + [SHIFT K_BKSP] > nul
+'ṳ' + [SHIFT K_BKSP] > nul
+'ṳ̀' + [SHIFT K_BKSP] > nul
+'ṳ̂' + [SHIFT K_BKSP] > nul
+'ṳ́' + [SHIFT K_BKSP] > nul
+'ṳ̃' + [SHIFT K_BKSP] > nul
+'ṳ̄' + [SHIFT K_BKSP] > nul
+'ṳ̆' + [SHIFT K_BKSP] > nul
+'o̤' + [SHIFT K_BKSP] > nul
+'ò̤' + [SHIFT K_BKSP] > nul
+'ô̤' + [SHIFT K_BKSP] > nul
+'ó̤' + [SHIFT K_BKSP] > nul
+'ō̤' + [SHIFT K_BKSP] > nul
+'ŏ̤' + [SHIFT K_BKSP] > nul
+'m̀' + [SHIFT K_BKSP] > nul
+'m̂' + [SHIFT K_BKSP] > nul
+'m̃' + [SHIFT K_BKSP] > nul
+'m̄' + [SHIFT K_BKSP] > nul
+'m̆' + [SHIFT K_BKSP] > nul
+'n̂' + [SHIFT K_BKSP] > nul
+'n̄' + [SHIFT K_BKSP] > nul
+'n̆' + [SHIFT K_BKSP] > nul
+'n̍' + [SHIFT K_BKSP] > nul
+'a̍' + [SHIFT K_BKSP] > nul
+'e̍' + [SHIFT K_BKSP] > nul
+'i̍' + [SHIFT K_BKSP] > nul
+'o̍' + [SHIFT K_BKSP] > nul
+'o̍͘' + [SHIFT K_BKSP] > nul
+'u̍' + [SHIFT K_BKSP] > nul
+'ṳ̍' + [SHIFT K_BKSP] > nul
+'o̤̍' + [SHIFT K_BKSP] > nul
+
+'O͘' + [SHIFT K_BKSP] > nul
+'Ò͘' + [SHIFT K_BKSP] > nul
+'Ô͘' + [SHIFT K_BKSP] > nul
+'Ó͘' + [SHIFT K_BKSP] > nul
+'Ō͘' + [SHIFT K_BKSP] > nul
+'Ŏ͘' + [SHIFT K_BKSP] > nul
+'Ṳ' + [SHIFT K_BKSP] > nul
+'Ṳ̀' + [SHIFT K_BKSP] > nul
+'Ṳ̂' + [SHIFT K_BKSP] > nul
+'Ṳ́' + [SHIFT K_BKSP] > nul
+'Ṳ̃' + [SHIFT K_BKSP] > nul
+'Ṳ̄' + [SHIFT K_BKSP] > nul
+'Ṳ̆' + [SHIFT K_BKSP] > nul
+'O̤' + [SHIFT K_BKSP] > nul
+'Ò̤' + [SHIFT K_BKSP] > nul
+'Ô̤' + [SHIFT K_BKSP] > nul
+'Ó̤' + [SHIFT K_BKSP] > nul
+'Ō̤' + [SHIFT K_BKSP] > nul
+'Ŏ̤' + [SHIFT K_BKSP] > nul
+'M̀' + [SHIFT K_BKSP] > nul
+'M̂' + [SHIFT K_BKSP] > nul
+'M̃' + [SHIFT K_BKSP] > nul
+'M̄' + [SHIFT K_BKSP] > nul
+'M̆' + [SHIFT K_BKSP] > nul
+'N̂' + [SHIFT K_BKSP] > nul
+'N̄' + [SHIFT K_BKSP] > nul
+'N̆' + [SHIFT K_BKSP] > nul
+'N̍' + [SHIFT K_BKSP] > nul
+'A̍' + [SHIFT K_BKSP] > nul
+'E̍' + [SHIFT K_BKSP] > nul
+'I̍' + [SHIFT K_BKSP] > nul
+'O̍' + [SHIFT K_BKSP] > nul
+'O̍͘' + [SHIFT K_BKSP] > nul
+'U̍' + [SHIFT K_BKSP] > nul
+'Ṳ̍' + [SHIFT K_BKSP] > nul
+'O̤̍' + [SHIFT K_BKSP] > nul
+
+'A' + 'a' > 'Â'
+'Â' + 'a' > 'Aa'
+'E' + 'e' > 'Ê'
+'Ê' + 'e' > 'Ee'
+'I' + 'i' > 'Î'
+'Î' + 'i' > 'Ii'
+'U' + 'u' > 'Û'
+'Û' + 'u' > 'Uu'
 
 "," + [K_TAB] > "，"
 "." + [K_TAB] > "。"
@@ -7713,10 +8010,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "chah" + [K_TAB] > "携"
 "cha̍h" + [K_TAB] > "閘"
 "cha̍h-lō͘" + [K_TAB] > "閘路"
-"chai" + [K_TAB] > "知"
-"chái" + [K_TAB] > "怎"
-"chài" + [K_TAB] > "再"
-"châi" + [K_TAB] > "才"
 "chāi" + [K_TAB] > "在"
 "chãi" + [K_TAB] > "在"
 "chai-bat" + [K_TAB] > "知八"
@@ -7850,10 +8143,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "chèⁿ" + [K_TAB] > "諍"
 "chêⁿ" + [K_TAB] > "晴"
 "chéⁿ-siōng" + [K_TAB] > "井上"
-"cheng" + [K_TAB] > "增"
-"chéng" + [K_TAB] > "井"
-"chêng" + [K_TAB] > "情"
-"chēng" + [K_TAB] > "從"
 "cheng-á" + [K_TAB] > "鐘仔"
 "chéng-á" + [K_TAB] > "種仔"
 "chèng-bêng" + [K_TAB] > "証明"
@@ -8401,8 +8690,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "chí-tēng" + [K_TAB] > "指定"
 "chí-tō" + [K_TAB] > "指導"
 "chí-ū" + [K_TAB] > "只有"
-"chia" + [K_TAB] > "嗟"
-"chiá" + [K_TAB] > "者"
 "chià" + [K_TAB] > "藉"
 "chiă" + [K_TAB] > "者"
 "chiā" + [K_TAB] > "謝"
@@ -8411,7 +8698,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "chià-khió" + [K_TAB] > "藉口"
 "chià-khó͘" + [K_TAB] > "藉口"
 "chià-phō͘" + [K_TAB] > "蔗廍"
-"chiah" + [K_TAB] > "隻"
 "chia̍h" + [K_TAB] > "食"
 "chia̍h-chhài" + [K_TAB] > "食菜"
 "chia̍h-chhēng" + [K_TAB] > "食穿"
@@ -9135,7 +9421,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "gō͘-sì-saⁿ" + [K_TAB] > "五四三"
 "gō͘-tiám" + [K_TAB] > "五點"
 "góa" + [K_TAB] > "我"
-"gōa" + [K_TAB] > "外"
 "gōa-á" + [K_TAB] > "外仔"
 "gōa-bīn" + [K_TAB] > "外面"
 "gōa-chē" + [K_TAB] > "偌濟"
@@ -9194,8 +9479,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "gông-ngia̍h" + [K_TAB] > "昂迎"
 "gōng-tōa-tai" + [K_TAB] > "戅大玳"
 "gú" + [K_TAB] > "語"
-"gû" + [K_TAB] > "牛"
-"gū" + [K_TAB] > "寓"
 "gṳ́" + [K_TAB] > "語"
 "gû-á" + [K_TAB] > "牛仔"
 "gû-bah" + [K_TAB] > "牛肉"
@@ -9216,7 +9499,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "gún" + [K_TAB] > "阮"
 "gûn-hâng" + [K_TAB] > "銀行"
 "hâ" + [K_TAB] > "遐"
-"hā" + [K_TAB] > "夏"
 "hã" + [K_TAB] > "下"
 "hā-chiān" + [K_TAB] > "下賤"
 "hā-goân" + [K_TAB] > "下元"
@@ -9353,7 +9635,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hé" + [K_TAB] > "火"
 "hè" + [K_TAB] > "歲"
 "hê" + [K_TAB] > "回"
-"hē" + [K_TAB] > "會"
 "hẽ" + [K_TAB] > "下"
 "hē-á" + [K_TAB] > "會仔"
 "hê-bí" + [K_TAB] > "蝦米"
@@ -9400,7 +9681,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hêng-tōng" + [K_TAB] > "行動"
 "hi" + [K_TAB] > "曦"
 "hì" + [K_TAB] > "肺"
-"hî" + [K_TAB] > "魚"
 "hī" + [K_TAB] > "耳"
 "hî-á" + [K_TAB] > "魚仔"
 "hī-á" + [K_TAB] > "耳仔"
@@ -9553,10 +9833,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hn̂g" + [K_TAB] > "園"
 "hn̄g" + [K_TAB] > "遠"
 "hñg" + [K_TAB] > "遠"
-"ho" + [K_TAB] > "和"
-"hó" + [K_TAB] > "好"
-"hô" + [K_TAB] > "河"
-"hō" + [K_TAB] > "號"
 "ho͘" + [K_TAB] > "乎"
 "hó͘" + [K_TAB] > "否"
 "hò͘" + [K_TAB] > "戽"
@@ -9663,10 +9939,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hoâiⁿ-pin" + [K_TAB] > "橫濱"
 "hoâiⁿ-san" + [K_TAB] > "橫山"
 "hoâiⁿ-ti̍t" + [K_TAB] > "橫直"
-"hoan" + [K_TAB] > "蕃"
-"hoàn" + [K_TAB] > "幻"
-"hoân" + [K_TAB] > "凡"
-"hoān" + [K_TAB] > "還"
 "hôaⁿ" + [K_TAB] > "橫"
 "hōaⁿ" + [K_TAB] > "𢮹"
 "hoan-á" + [K_TAB] > "番仔"
@@ -9782,10 +10054,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hó͘ⁿ-jīm" + [K_TAB] > "否認"
 "hó͘ⁿ-jīn" + [K_TAB] > "否認"
 "hó͘ⁿ-tēng" + [K_TAB] > "否定"
-"hong" + [K_TAB] > "蜂"
-"hóng" + [K_TAB] > "況"
-"hông" + [K_TAB] > "航"
-"hōng" + [K_TAB] > "鳳"
 "hóng-á" + [K_TAB] > "倣仔"
 "hong-àn" + [K_TAB] > "方案"
 "hong-biān" + [K_TAB] > "方面"
@@ -10269,9 +10537,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "jūn" + [K_TAB] > "潤"
 "jūn-piáⁿ" + [K_TAB] > "潤餅"
 "jūn-piáⁿ-kauh" + [K_TAB] > "潤餅𩛩"
-"ka" + [K_TAB] > "膠"
-"ká" + [K_TAB] > "絞"
-"kà" + [K_TAB] > "教"
 "ka-chài" + [K_TAB] > "加再"
 "kà-chhia" + [K_TAB] > "較車"
 "ka-chiah" + [K_TAB] > "加脊"
@@ -10443,7 +10708,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "kap-káng" + [K_TAB] > "洽港"
 "kau" + [K_TAB] > "交"
 "káu" + [K_TAB] > "九"
-"kàu" + [K_TAB] > "到"
 "kâu" + [K_TAB] > "猴"
 "kāu" + [K_TAB] > "厚"
 "kau-á" + [K_TAB] > "鈎仔"
@@ -10476,10 +10740,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "kàu-tn̂g" + [K_TAB] > "教堂"
 "kàu-ūi" + [K_TAB] > "到位"
 "kauh" + [K_TAB] > "𩛩"
-"ke" + [K_TAB] > "家"
-"ké" + [K_TAB] > "菓"
-"kè" + [K_TAB] > "計"
-"kē" + [K_TAB] > "下"
 "ke-á-lō͘" + [K_TAB] > "街仔路"
 "kè-ang" + [K_TAB] > "嫁翁"
 "ke-āu" + [K_TAB] > "家後"
@@ -10598,7 +10858,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "kha-thúi" + [K_TAB] > "脚腿"
 "khà-tiān-ōe" + [K_TAB] > "扣電話"
 "kha-tó͘" + [K_TAB] > "脚肚"
-"khah" + [K_TAB] > "較"
 "khah-chá" + [K_TAB] > "較早"
 "khah-choa̍h" + [K_TAB] > "較絶"
 "khah-hó" + [K_TAB] > "較好"
@@ -10954,11 +11213,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "khùn-lân" + [K_TAB] > "困難"
 "khun-san" + [K_TAB] > "崑山"
 "khut" + [K_TAB] > "堀"
-"ki" + [K_TAB] > "機"
-"kí" + [K_TAB] > "紀"
-"kì" + [K_TAB] > "記"
-"kî" + [K_TAB] > "技"
-"kī" + [K_TAB] > "具"
 "kî-á" + [K_TAB] > "旗仔"
 "ki-á-kiáⁿ" + [K_TAB] > "枝仔子"
 "ki-á-peng" + [K_TAB] > "枝仔氷"
@@ -11412,10 +11666,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "kong-tiân" + [K_TAB] > "岡田"
 "kong-tō" + [K_TAB] > "公道"
 "kóng-tō-lí" + [K_TAB] > "講道理"
-"ku" + [K_TAB] > "龜"
-"kú" + [K_TAB] > "久"
-"kù" + [K_TAB] > "句"
-"kū" + [K_TAB] > "舊"
 "kū-chêng" + [K_TAB] > "舊情"
 "kú-chhài" + [K_TAB] > "韮菜"
 "ku-kha" + [K_TAB] > "龜脚"
@@ -11634,10 +11884,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "le̍k-tāu-phòng" + [K_TAB] > "綠豆凸"
 "le̍k-tê" + [K_TAB] > "綠茶"
 "le̍k-tóng" + [K_TAB] > "綠黨"
-"leng" + [K_TAB] > "乳"
-"léng" + [K_TAB] > "冷"
-"lêng" + [K_TAB] > "寧"
-"lēng" + [K_TAB] > "令"
 "lêng-á" + [K_TAB] > "鈴仔"
 "lêng-bo̍k" + [K_TAB] > "鈴木"
 "lêng-géng" + [K_TAB] > "龍眼"
@@ -12074,10 +12320,8 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "mûi-san" + [K_TAB] > "梅山"
 "mûi-thé" + [K_TAB] > "媒體"
 "na" + [K_TAB] > "那"
-"ná" + [K_TAB] > "那"
 "nà" + [K_TAB] > "那"
 "nâ" + [K_TAB] > "籃"
-"nā" + [K_TAB] > "若"
 "nâ-á" + [K_TAB] > "籃仔"
 "nâ-á-piⁿ" + [K_TAB] > "林仔邊"
 "nā-bô" + [K_TAB] > "若無"
@@ -12804,10 +13048,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "pn̄g-phí" + [K_TAB] > "飯鄙"
 "pn̄g-thiaⁿ" + [K_TAB] > "飯廳"
 "pn̄g-tiàm" + [K_TAB] > "飯店"
-"po" + [K_TAB] > "褒"
-"pó" + [K_TAB] > "寶"
-"pò" + [K_TAB] > "報"
-"pō" + [K_TAB] > "暴"
 "po͘" + [K_TAB] > "晡"
 "pò͘" + [K_TAB] > "布"
 "pô͘" + [K_TAB] > "蒲"
@@ -13120,8 +13360,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "se̍h" + [K_TAB] > "迺"
 "se̍h-se̍h-liām" + [K_TAB] > "迺迺念"
 "seh-to-siā" + [K_TAB] > "說多謝"
-"sek" + [K_TAB] > "色"
-"se̍k" + [K_TAB] > "碩"
 "se̍k-chí" + [K_TAB] > "汐止"
 "sek-chúi" + [K_TAB] > "色水"
 "sek-ha̍p" + [K_TAB] > "適合"
@@ -13153,10 +13391,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "seⁿ-sian" + [K_TAB] > "生仙"
 "seⁿ-thòaⁿ" + [K_TAB] > "生炭"
 "seⁿ-tiuⁿ" + [K_TAB] > "生張"
-"seng" + [K_TAB] > "先"
-"sèng" + [K_TAB] > "圣"
-"sêng" + [K_TAB] > "承"
-"sēng" + [K_TAB] > "乘"
 "sèng-ài" + [K_TAB] > "聖愛"
 "sèng-chêng" + [K_TAB] > "性情"
 "sèng-chí" + [K_TAB] > "聖旨"
@@ -13668,10 +13902,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "sóng-khoài" + [K_TAB] > "爽快"
 "sòng-sit" + [K_TAB] > "喪失"
 "song-sū" + [K_TAB] > "喪事"
-"su" + [K_TAB] > "师"
-"sú" + [K_TAB] > "四"
-"sù" + [K_TAB] > "戍"
-"sū" + [K_TAB] > "兕"
 "sú-bēng" + [K_TAB] > "使命"
 "sù-bēng" + [K_TAB] > "使命"
 "su-bō͘" + [K_TAB] > "思慕"
@@ -13753,7 +13983,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "tai" + [K_TAB] > "代"
 "tái" + [K_TAB] > "歹"
 "tâi" + [K_TAB] > "台"
-"tāi" + [K_TAB] > "事"
 "tãi" + [K_TAB] > "迨"
 "tâi-á" + [K_TAB] > "台仔"
 "tāi-á" + [K_TAB] > "𩻸仔"
@@ -13990,7 +14219,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "tha̍h" + [K_TAB] > "叠"
 "thai" + [K_TAB] > "台"
 "thái" + [K_TAB] > "豈"
-"thài" + [K_TAB] > "泰"
 "thâi" + [K_TAB] > "刣"
 "thāi" + [K_TAB] > "太"
 "thái-ē" + [K_TAB] > "太會"
@@ -14176,7 +14404,7 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "thiau-lāng" + [K_TAB] > "挑弄"
 "thiàu-tâng" + [K_TAB] > "跳銅"
 "thiau-tî" + [K_TAB] > "挑池"
-"thih" + [K_TAB] > "鐵"
+"thih" + [K_TAB] > "鐵"dk(thih)
 "thih-bé" + [K_TAB] > "鐵馬"
 "thih-koan-im" + [K_TAB] > "鐵觀音"
 "thih-pê" + [K_TAB] > "鐵鈀"
@@ -14309,12 +14537,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "thún-ta̍h" + [K_TAB] > "踐踏"
 "thut-chhê" + [K_TAB] > "禿箠"
 "thut-chhôe" + [K_TAB] > "禿箠"
-"ti" + [K_TAB] > "猪"
-"tí" + [K_TAB] > "觝"
-"tì" + [K_TAB] > "置"
-"tî" + [K_TAB] > "除"
-"tī" + [K_TAB] > "佇"
-"佇" + [K_TAB] > "稚"
 "ti-bah" + [K_TAB] > "猪肉"
 "tì-bō-á" + [K_TAB] > "戴帽仔"
 "tí-chè" + [K_TAB] > "抵制"
@@ -14817,10 +15039,7 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "uih" + [K_TAB] > "挖"
 "úiⁿ" + [K_TAB] > "阮"
 "ṳ̂iⁿ" + [K_TAB] > "閑"
-"un" + [K_TAB] > "温"
 "ún" + [K_TAB] > "允"
-"ùn" + [K_TAB] > "韞"
-"ūn" + [K_TAB] > "運"
 "ṳn" + [K_TAB] > "恩"
 "ùn-á" + [K_TAB] > "塭仔"
 "ûn-á" + [K_TAB] > "緩仔"
@@ -20738,7 +20957,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "亂抄抄" + [K_TAB] > "乱抄抄"
 "亂鐘仔" + [K_TAB] > "乱鐘仔"
 "了後" + [K_TAB] > "了后"
-"事" + [K_TAB] > "迨"
 "事事" + [K_TAB] > "叙事"
 "二" + [K_TAB] > "字"
 "云" + [K_TAB] > "寅"
@@ -20762,7 +20980,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "今那日" + [K_TAB] > "今旦日"
 "介" + [K_TAB] > "皆"
 "仔" + [K_TAB] > "亞"
-"仕" + [K_TAB] > "祀"
 "仙" + [K_TAB] > "銹"
 "代" + [K_TAB] > "玳"
 "代先" + [K_TAB] > "事先"
@@ -20820,7 +21037,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "免細貳" + [K_TAB] > "免細二"
 "兒" + [K_TAB] > "喻"
 "兔" + [K_TAB] > "兎"
-"兕" + [K_TAB] > "士"
 "內" + [K_TAB] > "耐"
 "內裡" + [K_TAB] > "內裏"
 "八" + [K_TAB] > "識"
@@ -20920,7 +21136,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "占" + [K_TAB] > "佔"
 "卡絶" + [K_TAB] > "卡咀"
 "危機" + [K_TAB] > "危机"
-"即" + [K_TAB] > "者"
 "卵" + [K_TAB] > "二"
 "卷" + [K_TAB] > "綰"
 "厘" + [K_TAB] > "离"
@@ -21097,7 +21312,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "壞" + [K_TAB] > "壊"
 "壠" + [K_TAB] > "硦"
 "壩" + [K_TAB] > "埧"
-"士" + [K_TAB] > "仕"
 "壷" + [K_TAB] > "壺"
 "壺" + [K_TAB] > "湖"
 "夕" + [K_TAB] > "席"
@@ -21268,7 +21482,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "幾號" + [K_TAB] > "幾号"
 "幾點" + [K_TAB] > "幾点"
 "庄" + [K_TAB] > "粧"
-"序" + [K_TAB] > "緒"
 "度" + [K_TAB] > "渡"
 "度濟" + [K_TAB] > "度晬"
 "庫" + [K_TAB] > "袴"
@@ -21347,7 +21560,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "復雜" + [K_TAB] > "復什"
 "循" + [K_TAB] > "純"
 "德" + [K_TAB] > "的"
-"徹" + [K_TAB] > "撤"
 "心" + [K_TAB] > "森"
 "心機" + [K_TAB] > "心机"
 "心適" + [K_TAB] > "心色"
@@ -22611,7 +22823,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "軍" + [K_TAB] > "君"
 "軒" + [K_TAB] > "掀"
 "軟體" + [K_TAB] > "軟体"
-"較" + [K_TAB] > "到"
 "輕鐵" + [K_TAB] > "輕鉄"
 "輦霧" + [K_TAB] > "蓮霧"
 "輩" + [K_TAB] > "貝"
@@ -22637,7 +22848,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "迁" + [K_TAB] > "仟"
 "迄" + [K_TAB] > "吃"
 "迎" + [K_TAB] > "凝"
-"迨" + [K_TAB] > "𩻸"
 "迹" + [K_TAB] > "蹟"
 "退" + [K_TAB] > "替"
 "透天个" + [K_TAB] > "透天兮"
@@ -22663,7 +22873,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "遙" + [K_TAB] > "遥"
 "遣" + [K_TAB] > "犬"
 "遣爽" + [K_TAB] > "遣損"
-"遮" + [K_TAB] > "者"
 "遲" + [K_TAB] > "遅"
 "遵" + [K_TAB] > "尊"
 "遷" + [K_TAB] > "迁"
@@ -22717,7 +22926,7 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "鐟仔" + [K_TAB] > "鐕仔"
 "鐱" + [K_TAB] > "鐟"
 "鐱仔" + [K_TAB] > "鐟仔"
-"鐵" + [K_TAB] > "鉄"
+"鐵"dk(thih) + [K_TAB] > "鉄"
 "鐵杷" + [K_TAB] > "鉄鈀"
 "鐵窓" + [K_TAB] > "鉄窓"
 "鐵觀音" + [K_TAB] > "鉄觀音"
@@ -22769,7 +22978,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "隨" + [K_TAB] > "隋"
 "隱" + [K_TAB] > "阭"
 "隹" + [K_TAB] > "鵻"
-"隻" + [K_TAB] > "即"
 "雄" + [K_TAB] > "融"
 "集體" + [K_TAB] > "集体"
 "雕" + [K_TAB] > "鵰"
@@ -22993,7 +23201,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "𥴊壷" + [K_TAB] > "𥴊箶"
 "𥴊壺" + [K_TAB] > "𥴊壷"
 "𧉽仔" + [K_TAB] > "蠘仔"
-"𩻸" + [K_TAB] > "鮘"
 "𩻸仔" + [K_TAB] > "鮘仔"
 "𪮮" + [K_TAB] > "撓"
 "𫔘" + [K_TAB] > "抵"
@@ -23093,7 +23300,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hō͘ lín" + [K_TAB] > "予恁"
 "hō͘ in" + [K_TAB] > "予𪜶"
 "hō͘ lán" + [K_TAB] > "予咱"
-"kah" + [K_TAB] > "佮"
 "kah lí" + [K_TAB] > "佮汝"
 "kah i" + [K_TAB] > "佮伊"
 "kah gún" + [K_TAB] > "佮阮"
@@ -23230,12 +23436,8 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 
 "功" + [K_TAB] > "公"
 "笟" + [K_TAB] > "弧"
-
-"者" + [K_TAB] > "才"
 "choáⁿ" + [K_TAB] > "怎"
 "怎" + [K_TAB] > "盞"
-"lōa" + [K_TAB] > "偌"
-"偌" + [K_TAB] > "賴"
 "iáⁿ-phìⁿ" + [K_TAB] > "影片"
 "iáⁿ phìⁿ" + [K_TAB] > "影片"
 "tâi-lô" + [K_TAB] > "台羅"
@@ -23740,9 +23942,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "kiōng-húi" + [K_TAB] > "共匪"
 "kiōng húi" + [K_TAB] > "共匪"
 "chin súi" + [K_TAB] > "真媠"
-"到" + [K_TAB] > "夠"
-"夠" + [K_TAB] > "校"
-"校" + [K_TAB] > "教"
 "0 hun" + [K_TAB] > "0分"
 "1 hun" + [K_TAB] > "1分"
 "2 hun" + [K_TAB] > "2分"
@@ -24237,7 +24436,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "tiû" + [K_TAB] > "籌"
 "tiû-pī" + [K_TAB] > "籌備"
 "kî-kan" + [K_TAB] > "期間"
-"kan" + [K_TAB] > "間"
 "chè-chok" + [K_TAB] > "製作"
 "債" + [K_TAB] > "製"
 "製" + [K_TAB] > "際"
@@ -24271,7 +24469,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "lán Tâi-oân" + [K_TAB] > "咱台灣"
 "ū chek-jīm" + [K_TAB] > "有責任"
 "lán kok-ka" + [K_TAB] > "咱國家"
-"kā" + [K_TAB] > "咬"
 "咬" + [K_TAB] > "共"
 "piàn-chó" + [K_TAB] > "變做"
 "左" + [K_TAB] > "做"
@@ -24596,7 +24793,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "pó-kok an-bîn" + [K_TAB] > "保國安民"
 "bô chèng-tóng" + [K_TAB] > "無政黨"
 "chèng-tóng" + [K_TAB] > "政黨"
-"chèng" + [K_TAB] > "政"
 "政" + [K_TAB] > "證"
 "衆" + [K_TAB] > "正"
 "li̍p-hoat" + [K_TAB] > "立法"
@@ -24648,9 +24844,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "hòe pòaⁿ" + [K_TAB] > "歲半"
 "廢" + [K_TAB] > "歲"
 "bô kóng" + [K_TAB] > "無講"
-"sû" + [K_TAB] > "詞"
-"詞" + [K_TAB] > "殊"
-"殊" + [K_TAB] > "辭"
 "kàu-io̍k chè-tō͘" + [K_TAB] > "教育制度"
 "chhut siā-hōe" + [K_TAB] > "出社會"
 "chi-kan" + [K_TAB] > "之間"
@@ -24779,7 +24972,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "an-lo̍k" + [K_TAB] > "安祿"
 "An Lo̍k" + [K_TAB] > "安祿"
 "An-Lo̍k" + [K_TAB] > "安祿"
-
 "祿" + [K_TAB] > "碌"
 "碌" + [K_TAB] > "鹿"
 "鹿" + [K_TAB] > "雒"
@@ -24787,7 +24979,6 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "駱" + [K_TAB] > "諾"
 "諾" + [K_TAB] > "落"
 "落" + [K_TAB] > "樂"
-
 "Tâi" + [K_TAB] > "台"
 "Tiong" + [K_TAB] > "中"
 "Ji̍t" + [K_TAB] > "日"
@@ -24880,3 +25071,1031 @@ any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
 "lú ê" + [K_TAB] > "女个"
 "lâm ê" + [K_TAB] > "男个"
 "哥" + [K_TAB] > "高"
+'徹' + [K_TAB] > "鐵"
+'鐵' + [K_TAB] > "撤"
+'thiat kap' + [K_TAB] > "鐵甲"
+'tāi sū' + [K_TAB] > "大事"
+'pa lê' + [K_TAB] > "巴黎"
+'pa-lê' + [K_TAB] > "巴黎"
+'Pa-lê' + [K_TAB] > "巴黎"
+'Pa Lê' + [K_TAB] > "巴黎"
+'Thài Kok' + [K_TAB] > "泰國"
+'Thài kok' + [K_TAB] > "泰國"
+'Thài Lân' + [K_TAB] > "泰蘭"
+'Thài lân' + [K_TAB] > "泰蘭"
+'Thài-lân' + [K_TAB] > "泰蘭"
+'thài-lân' + [K_TAB] > "泰蘭"
+'thài lân' + [K_TAB] > "泰蘭"
+'hông ka' + [K_TAB] > "皇家"
+'hông-ka' + [K_TAB] > "皇家"
+
+'Hô Chēng' + [K_TAB] > "河靜"
+'Hô-Chēng' + [K_TAB] > "河靜"
+'Hô-chēng' + [K_TAB] > "河靜"
+'hô-chēng' + [K_TAB] > "河靜"
+'hô chēng' + [K_TAB] > "河靜"
+
+'kan' + [K_TAB] > "間" dk(kan)
+"間" dk(kan) + [K_TAB] > "干" dk(kan)
+"干" dk(kan) + [K_TAB] > "奸" dk(kan)
+"奸" dk(kan) + [K_TAB] > "杆" dk(kan)
+"杆" dk(kan) + [K_TAB] > "肝" dk(kan)
+"肝" dk(kan) + [K_TAB] > "矸" dk(kan)
+"矸" dk(kan) + [K_TAB] > "姦" dk(kan)
+"姦" dk(kan) + [K_TAB] > "橄" dk(kan)
+"橄" dk(kan) + [K_TAB] > "乾" dk(kan)
+"乾" dk(kan) + [K_TAB] > "艱" dk(kan)
+"艱" dk(kan) + [K_TAB] > "竿" dk(kan)
+"竿" dk(kan) + [K_TAB] > "關" dk(kan)
+
+'gōa' + [K_TAB] > "外" dk(goaj)
+"外" dk(goaj) + [K_TAB] > "偌" dk(goaj)
+'lōa' + [K_TAB] > "偌" dk(loaj)
+"偌" dk(loaj) + [K_TAB] > "賴" dk(loaj)
+"賴" dk(loaj) + [K_TAB] > "瀨" dk(loaj)
+'nā' + [K_TAB] > "若" dk(naj)
+"若" dk(naj) + [K_TAB] > "但" dk(naj)
+"但" dk(naj) + [K_TAB] > "吶" dk(naj)
+
+'ná' + [K_TAB] > "那" dk(nar)
+"那" dk(nar) + [K_TAB] > "若" dk(nar)
+"若" dk(nar) + [K_TAB] > "拿" dk(nar)
+"拿" dk(nar) + [K_TAB] > "娜" dk(nar)
+"娜" dk(nar) + [K_TAB] > "林" dk(nar)
+
+'hoān' + [K_TAB] > "凡" dk(hoanj)
+"凡" dk(hoanj) + [K_TAB] > "犯" dk(hoanj)
+"犯" dk(hoanj) + [K_TAB] > "範" dk(hoanj)
+"範" dk(hoanj) + [K_TAB] > "患" dk(hoanj)
+"患" dk(hoanj) + [K_TAB] > "飯" dk(hoanj)
+"飯" dk(hoanj) + [K_TAB] > "還" dk(hoanj)
+"還" dk(hoanj) + [K_TAB] > "泛" dk(hoanj)
+"泛" dk(hoanj) + [K_TAB] > "宦" dk(hoanj)
+"宦" dk(hoanj) + [K_TAB] > "范" dk(hoanj)
+"范" dk(hoanj) + [K_TAB] > "梵" dk(hoanj)
+
+'hoán' + [K_TAB] > "反" dk(hoanr)
+"反" dk(hoanr) + [K_TAB] > "返" dk(hoanr)
+
+'hoan' + [K_TAB] > "番" dk(hoan)
+"番" dk(hoan) + [K_TAB] > "翻" dk(hoan)
+"翻" dk(hoan) + [K_TAB] > "吩" dk(hoan)
+"吩" dk(hoan) + [K_TAB] > "幡" dk(hoan)
+"幡" dk(hoan) + [K_TAB] > "歡" dk(hoan)
+"歡" dk(hoan) + [K_TAB] > "蕃" dk(hoan)
+"蕃" dk(hoan) + [K_TAB] > "藩" dk(hoan)
+
+'hoân' + [K_TAB] > "凡" dk(hoanf)
+"凡" dk(hoanf) + [K_TAB] > "帆" dk(hoanf)
+"帆" dk(hoanf) + [K_TAB] > "煩" dk(hoanf)
+"煩" dk(hoanf) + [K_TAB] > "環" dk(hoanf)
+"環" dk(hoanf) + [K_TAB] > "還" dk(hoanf)
+"還" dk(hoanf) + [K_TAB] > "礬" dk(hoanf)
+"礬" dk(hoanf) + [K_TAB] > "圜" dk(hoanf)
+"圜" dk(hoanf) + [K_TAB] > "繁" dk(hoanf)
+"繁" dk(hoanf) + [K_TAB] > "樊" dk(hoanf)
+
+'hoàn' + [K_TAB] > "販" dk(hoans)
+"販" dk(hoans) + [K_TAB] > "幻" dk(hoans)
+"幻" dk(hoans) + [K_TAB] > "泛" dk(hoans)
+"泛" dk(hoans) + [K_TAB] > "喚" dk(hoans)
+"喚" dk(hoans) + [K_TAB] > "煥" dk(hoans)
+
+'un' + [K_TAB] > "溫" dk(un)
+"溫" dk(un) + [K_TAB] > "恩" dk(un)
+"恩" dk(un) + [K_TAB] > "瘟" dk(un)
+"瘟" dk(un) + [K_TAB] > "蝹" dk(un)
+"蝹" dk(un) + [K_TAB] > "鰮" dk(un)
+"鰮" dk(un) + [K_TAB] > "殷" dk(un)
+
+"穩" + [K_TAB] > "蚓"
+
+'ùn' + [K_TAB] > "韞" dk(un)
+"韞" dk(un) + [K_TAB] > "塭" dk(un)
+"塭" dk(un) + [K_TAB] > "搵" dk(un)
+"搵" dk(un) + [K_TAB] > "慍" dk(un)
+"慍" dk(un) + [K_TAB] > "蘊" dk(un)
+"蘊" dk(un) + [K_TAB] > "運" dk(un)
+
+'ûn' + [K_TAB] > "勻" dk(unf)
+"勻" dk(unf) + [K_TAB] > "云" dk(unf)
+"云" dk(unf) + [K_TAB] > "殷" dk(unf)
+"殷" dk(unf) + [K_TAB] > "耘" dk(unf)
+"耘" dk(unf) + [K_TAB] > "筠" dk(unf)
+
+'ūn' + [K_TAB] > "運" dk(unj)
+"運" dk(unj) + [K_TAB] > "韻" dk(unj)
+"韻" dk(unj) + [K_TAB] > "暈" dk(unj)
+
+'hā' + [K_TAB] > "下" dk(haj)
+"下" dk(haj) + [K_TAB] > "夏" dk(haj)
+"夏" dk(haj) + [K_TAB] > "暇" dk(haj)
+
+'hē' + [K_TAB] > "下" dk(hej)
+"下" dk(hej) + [K_TAB] > "蟹" dk(hej)
+"蟹" dk(hej) + [K_TAB] > "會" dk(hej)
+"會" dk(hej) + [K_TAB] > "系" dk(hej)
+"系" dk(hej) + [K_TAB] > "夏" dk(hej)
+"夏" dk(hej) + [K_TAB] > "係" dk(hej)
+"係" dk(hej) + [K_TAB] > "嚇" dk(hej)
+"嚇" dk(hej) + [K_TAB] > "繫" dk(hej)
+
+'gû' + [K_TAB] > "牛" dk(guf)
+"牛" dk(guf) + [K_TAB] > "魚" dk(guf)
+"魚" dk(guf) + [K_TAB] > "娛" dk(guf)
+"娛" dk(guf) + [K_TAB] > "愚" dk(guf)
+"愚" dk(guf) + [K_TAB] > "漁" dk(guf)
+"漁" dk(guf) + [K_TAB] > "虞" dk(guf)
+
+'gū' + [K_TAB] > "寓" dk(guj)
+"寓" dk(guj) + [K_TAB] > "遇" dk(guj)
+"遇" dk(guj) + [K_TAB] > "御" dk(guj)
+"御" dk(guj) + [K_TAB] > "禦" dk(guj)
+
+'ke' + [K_TAB] > "家" dk(ke)
+"家" dk(ke) + [K_TAB] > "加" dk(ke)
+"加" dk(ke) + [K_TAB] > "雞" dk(ke)
+"雞" dk(ke) + [K_TAB] > "街" dk(ke)
+"街" dk(ke) + [K_TAB] > "機" dk(ke)
+"機" dk(ke) + [K_TAB] > "基" dk(ke)
+"基" dk(ke) + [K_TAB] > "凱" dk(ke)
+
+'ké' + [K_TAB] > "粿" dk(ker)
+"粿" dk(ker) + [K_TAB] > "果" dk(ker)
+"果" dk(ker) + [K_TAB] > "假" dk(ker)
+"假" dk(ker) + [K_TAB] > "跂" dk(ker)
+"跂" dk(ker) + [K_TAB] > "解" dk(ker)
+
+'kè' + [K_TAB] > "計" dk(kes)
+"計" dk(kes) + [K_TAB] > "繼" dk(kes)
+"繼" dk(kes) + [K_TAB] > "嫁" dk(kes)
+"嫁" dk(kes) + [K_TAB] > "過" dk(kes)
+"過" dk(kes) + [K_TAB] > "價" dk(kes)
+"價" dk(kes) + [K_TAB] > "界" dk(kes)
+"界" dk(kes) + [K_TAB] > "架" dk(kes)
+"架" dk(kes) + [K_TAB] > "芥" dk(kes)
+"芥" dk(kes) + [K_TAB] > "疥" dk(kes)
+"疥" dk(kes) + [K_TAB] > "髻" dk(kes)
+"髻" dk(kes) + [K_TAB] > "鱖" dk(kes)
+
+'kê' + [K_TAB] > "膎" dk(kef)
+"膎" dk(kef) + [K_TAB] > "枷" dk(kef)
+
+'kē' + [K_TAB] > "下" dk(kej)
+"下" dk(kej) + [K_TAB] > "低" dk(kej)
+
+'kā' + [K_TAB] > "共" dk(kaj)
+"共" dk(kaj) + [K_TAB] > "咬" dk(kaj)
+
+'ká' + [K_TAB] > "絞" dk(kar)
+"絞" dk(kar) + [K_TAB] > "假" dk(kar)
+"假" dk(kar) + [K_TAB] > "敢" dk(kar)
+"敢" dk(kar) + [K_TAB] > "賈" dk(kar)
+
+'kà' + [K_TAB] > "教" dk(kas)
+"教" dk(kas) + [K_TAB] > "架" dk(kas)
+"架" dk(kas) + [K_TAB] > "假" dk(kas)
+"假" dk(kas) + [K_TAB] > "酵" dk(kas)
+"酵" dk(kas) + [K_TAB] > "嫁" dk(kas)
+"嫁" dk(kas) + [K_TAB] > "較" dk(kas)
+"較" dk(kas) + [K_TAB] > "漖" dk(kas)
+"漖" dk(kas) + [K_TAB] > "價" dk(kas)
+"價" dk(kas) + [K_TAB] > "駕" dk(kas)
+
+'ka' + [K_TAB] > "膠" dk(ka)
+"膠" dk(ka) + [K_TAB] > "家" dk(ka)
+"家" dk(ka) + [K_TAB] > "尻" dk(ka)
+"尻" dk(ka) + [K_TAB] > "交" dk(ka)
+"交" dk(ka) + [K_TAB] > "佳" dk(ka)
+"佳" dk(ka) + [K_TAB] > "咖" dk(ka)
+"咖" dk(ka) + [K_TAB] > "咳" dk(ka)
+"咳" dk(ka) + [K_TAB] > "枷" dk(ka)
+"枷" dk(ka) + [K_TAB] > "瞌" dk(ka)
+"瞌" dk(ka) + [K_TAB] > "茄" dk(ka)
+"茄" dk(ka) + [K_TAB] > "虼" dk(ka)
+"虼" dk(ka) + [K_TAB] > "茭" dk(ka)
+"茭" dk(ka) + [K_TAB] > "鮫" dk(ka)
+"鮫" dk(ka) + [K_TAB] > "傀" dk(ka)
+"傀" dk(ka) + [K_TAB] > "嘉" dk(ka)
+"嘉" dk(ka) + [K_TAB] > "監" dk(ka)
+"監" dk(ka) + [K_TAB] > "絞" dk(ka)
+"絞" dk(ka) + [K_TAB] > "鵁" dk(ka)
+"鵁" dk(ka) + [K_TAB] > "袈" dk(ka)
+
+'kah' + [K_TAB] > "佮" dk(kah)
+"佮"dk(kah) + [K_TAB] > "甲" dk(kah)
+"甲"dk(kah) + [K_TAB] > "䘥" dk(kah)
+"䘥"dk(kah) + [K_TAB] > "合" dk(kah)
+"合"dk(kah) + [K_TAB] > "胛" dk(kah)
+"胛"dk(kah) + [K_TAB] > "柙" dk(kah)
+"柙"dk(kah) + [K_TAB] > "教" dk(kah)
+"教"dk(kah) + [K_TAB] > "鴿" dk(kah)
+"鴿"dk(kah) + [K_TAB] > "較" dk(kah)
+"較"dk(kah) + [K_TAB] > "蓋" dk(kah)
+"蓋"dk(kah) + [K_TAB] > "華" dk(kah)
+"華"dk(kah) + [K_TAB] > "舺" dk(kah)
+
+'ki' + [K_TAB] > "機" dk(ki)
+"機" dk(ki) + [K_TAB] > "枝" dk(ki)
+"枝" dk(ki) + [K_TAB] > "基" dk(ki)
+"基" dk(ki) + [K_TAB] > "肢" dk(ki)
+"肢" dk(ki) + [K_TAB] > "居" dk(ki)
+"居" dk(ki) + [K_TAB] > "支" dk(ki)
+"支" dk(ki) + [K_TAB] > "吱" dk(ki)
+"吱" dk(ki) + [K_TAB] > "妓" dk(ki)
+"妓" dk(ki) + [K_TAB] > "技" dk(ki)
+"技" dk(ki) + [K_TAB] > "車" dk(ki)
+"車" dk(ki) + [K_TAB] > "裾" dk(ki)
+"裾" dk(ki) + [K_TAB] > "箕" dk(ki)
+"箕" dk(ki) + [K_TAB] > "飢" dk(ki)
+"飢" dk(ki) + [K_TAB] > "期" dk(ki)
+"期" dk(ki) + [K_TAB] > "乩" dk(ki)
+"乩" dk(ki) + [K_TAB] > "梔" dk(ki)
+"梔" dk(ki) + [K_TAB] > "肌" dk(ki)
+"肌" dk(ki) + [K_TAB] > "譏" dk(ki)
+"譏" dk(ki) + [K_TAB] > "起" dk(ki)
+"起" dk(ki) + [K_TAB] > "唭" dk(ki)
+"唭" dk(ki) + [K_TAB] > "姬" dk(ki)
+
+'kí' + [K_TAB] > "己" dk(kir)
+"己" dk(kir) + [K_TAB] > "紀" dk(kir)
+"紀" dk(kir) + [K_TAB] > "指" dk(kir)
+"指" dk(kir) + [K_TAB] > "杞" dk(kir)
+"杞" dk(kir) + [K_TAB] > "矩" dk(kir)
+"矩" dk(kir) + [K_TAB] > "舉" dk(kir)
+"舉" dk(kir) + [K_TAB] > "幾" dk(kir)
+"幾" dk(kir) + [K_TAB] > "莒" dk(kir)
+"莒" dk(kir) + [K_TAB] > "屺" dk(kir)
+"屺" dk(kir) + [K_TAB] > "圮" dk(kir)
+"圮" dk(kir) + [K_TAB] > "㪯" dk(kir)
+
+'kì' + [K_TAB] > "記" dk(kis)
+"記" dk(kis) + [K_TAB] > "據" dk(kis)
+"據" dk(kis) + [K_TAB] > "既" dk(kis)
+"既" dk(kis) + [K_TAB] > "冀" dk(kis)
+"冀" dk(kis) + [K_TAB] > "洎" dk(kis)
+"洎" dk(kis) + [K_TAB] > "驥" dk(kis)
+"驥" dk(kis) + [K_TAB] > "暨" dk(kis)
+"暨" dk(kis) + [K_TAB] > "痣" dk(kis)
+"痣" dk(kis) + [K_TAB] > "計" dk(kis)
+"計" dk(kis) + [K_TAB] > "寄" dk(kis)
+"寄" dk(kis) + [K_TAB] > "鋸" dk(kis)
+"鋸" dk(kis) + [K_TAB] > "紀" dk(kis)
+"紀" dk(kis) + [K_TAB] > "唭" dk(kis)
+
+'kî' + [K_TAB] > "期" dk(kif)
+"期" dk(kif) + [K_TAB] > "奇" dk(kif)
+"奇" dk(kif) + [K_TAB] > "棋" dk(kif)
+"棋" dk(kif) + [K_TAB] > "其" dk(kif)
+"其" dk(kif) + [K_TAB] > "麒" dk(kif)
+"麒" dk(kif) + [K_TAB] > "耆" dk(kif)
+"耆" dk(kif) + [K_TAB] > "祈" dk(kif)
+"祈" dk(kif) + [K_TAB] > "旗" dk(kif)
+"旗" dk(kif) + [K_TAB] > "歧" dk(kif)
+"歧" dk(kif) + [K_TAB] > "淇" dk(kif)
+"淇" dk(kif) + [K_TAB] > "琪" dk(kif)
+"琪" dk(kif) + [K_TAB] > "祺" dk(kif)
+
+
+"kī" + [K_TAB] > "忌" dk(kij)
+"忌" dk(kij) + [K_TAB] > "拒" dk(kij)
+"拒" dk(kij) + [K_TAB] > "巨" dk(kij)
+"巨" dk(kij) + [K_TAB] > "距" dk(kij)
+"距" dk(kij) + [K_TAB] > "己" dk(kij)
+"己" dk(kij) + [K_TAB] > "技" dk(kij)
+"技" dk(kij) + [K_TAB] > "彐" dk(kij)
+"彐" dk(kij) + [K_TAB] > "邔" dk(kij)
+"邔" dk(kij) + [K_TAB] > "芰" dk(kij)
+"芰" dk(kij) + [K_TAB] > "妓" dk(kij)
+"妓" dk(kij) + [K_TAB] > "惎" dk(kij)
+"惎" dk(kij) + [K_TAB] > "跽" dk(kij)
+"跽" dk(kij) + [K_TAB] > "伎" dk(kij)
+"伎" dk(kij) + [K_TAB] > "忮" dk(kij)
+
+"ku" + [K_TAB] > "居" dk(ku)
+"居" dk(ku) + [K_TAB] > "龜" dk(ku)
+"龜" dk(ku) + [K_TAB] > "痀" dk(ku)
+"痀" dk(ku) + [K_TAB] > "車" dk(ku)
+"車" dk(ku) + [K_TAB] > "苦" dk(ku)
+"苦" dk(ku) + [K_TAB] > "裾" dk(ku)
+"裾" dk(ku) + [K_TAB] > "呴" dk(ku)
+"呴" dk(ku) + [K_TAB] > "跔" dk(ku)
+
+"kú" + [K_TAB] > "久" dk(kur)
+"久" dk(kur) + [K_TAB] > "韭" dk(kur)
+"韭" dk(kur) + [K_TAB] > "矩" dk(kur)
+"矩" dk(kur) + [K_TAB] > "舉" dk(kur)
+"舉" dk(kur) + [K_TAB] > "𣁄" dk(kur)
+"𣁄" dk(kur) + [K_TAB] > "莒" dk(kur)
+"莒" dk(kur) + [K_TAB] > "筥" dk(kur)
+"筥" dk(kur) + [K_TAB] > "梖" dk(kur)
+"梖" dk(kur) + [K_TAB] > "秬" dk(kur)
+"秬" dk(kur) + [K_TAB] > "蒟" dk(kur)
+"蒟" dk(kur) + [K_TAB] > "翑" dk(kur)
+"翑" dk(kur) + [K_TAB] > "櫸" dk(kur)
+"櫸" dk(kur) + [K_TAB] > "齲" dk(kur)
+"齲" dk(kur) + [K_TAB] > "踽" dk(kur)
+"踽" dk(kur) + [K_TAB] > "寠" dk(kur)
+"寠" dk(kur) + [K_TAB] > "窶" dk(kur)
+"窶" dk(kur) + [K_TAB] > "舁" dk(kur)
+
+"kù" + [K_TAB] > "句" dk(kus)
+"句" dk(kus) + [K_TAB] > "鋸" dk(kus)
+"鋸" dk(kus) + [K_TAB] > "據" dk(kus)
+"據" dk(kus) + [K_TAB] > "灸" dk(kus)
+"灸" dk(kus) + [K_TAB] > "倨" dk(kus)
+"倨" dk(kus) + [K_TAB] > "据" dk(kus)
+"据" dk(kus) + [K_TAB] > "遽" dk(kus)
+"遽" dk(kus) + [K_TAB] > "屨" dk(kus)
+"屨" dk(kus) + [K_TAB] > "泃" dk(kus)
+"泃" dk(kus) + [K_TAB] > "鐻" dk(kus)
+"鐻" dk(kus) + [K_TAB] > "踞" dk(kus)
+"踞" dk(kus) + [K_TAB] > "蘧" dk(kus)
+"蘧" dk(kus) + [K_TAB] > "懅" dk(kus)
+"懅" dk(kus) + [K_TAB] > "豦" dk(kus)
+"豦" dk(kus) + [K_TAB] > "籧" dk(kus)
+"籧" dk(kus) + [K_TAB] > "瞿" dk(kus)
+"瞿" dk(kus) + [K_TAB] > "勾" dk(kus)
+"勾" dk(kus) + [K_TAB] > "寠" dk(kus)
+"寠" dk(kus) + [K_TAB] > "窶" dk(kus)
+
+"kū" + [K_TAB] > "舊" dk(kuj)
+"舊" dk(kuj) + [K_TAB] > "舅" dk(kuj)
+"舅" dk(kuj) + [K_TAB] > "具" dk(kuj)
+"具" dk(kuj) + [K_TAB] > "拒" dk(kuj)
+"拒" dk(kuj) + [K_TAB] > "巨" dk(kuj)
+"巨" dk(kuj) + [K_TAB] > "距" dk(kuj)
+"距" dk(kuj) + [K_TAB] > "懼" dk(kuj)
+"懼" dk(kuj) + [K_TAB] > "岠" dk(kuj)
+"岠" dk(kuj) + [K_TAB] > "佢" dk(kuj)
+"佢" dk(kuj) + [K_TAB] > "怇" dk(kuj)
+"怇" dk(kuj) + [K_TAB] > "鉅" dk(kuj)
+"鉅" dk(kuj) + [K_TAB] > "炬" dk(kuj)
+"炬" dk(kuj) + [K_TAB] > "詎" dk(kuj)
+"詎" dk(kuj) + [K_TAB] > "颶" dk(kuj)
+"颶" dk(kuj) + [K_TAB] > "粔" dk(kuj)
+"粔" dk(kuj) + [K_TAB] > "耟" dk(kuj)
+"耟" dk(kuj) + [K_TAB] > "埧" dk(kuj)
+"埧" dk(kuj) + [K_TAB] > "苣" dk(kuj)
+"苣" dk(kuj) + [K_TAB] > "簴" dk(kuj)
+"簴" dk(kuj) + [K_TAB] > "駏" dk(kuj)
+"駏" dk(kuj) + [K_TAB] > "俱" dk(kuj)
+"俱" dk(kuj) + [K_TAB] > "豦" dk(kuj)
+
+"ho" + [K_TAB] > "熇" dk(ho)
+"熇" dk(ho) + [K_TAB] > "呵" dk(ho)
+"呵" dk(ho) + [K_TAB] > "薅" dk(ho)
+"薅" dk(ho) + [K_TAB] > "蒿" dk(ho)
+"蒿" dk(ho) + [K_TAB] > "荷" dk(ho)
+"荷" dk(ho) + [K_TAB] > "號" dk(ho)
+
+"hó" + [K_TAB] > "好" dk(hor)
+"好" dk(hor) + [K_TAB] > "傐" dk(hor)
+"傐" dk(hor) + [K_TAB] > "輠" dk(hor)
+"輠" dk(hor) + [K_TAB] > "扷" dk(hor)
+"扷" dk(hor) + [K_TAB] > "杲" dk(hor)
+"杲" dk(hor) + [K_TAB] > "皜" dk(hor)
+"皜" dk(hor) + [K_TAB] > "夥" dk(hor)
+"夥" dk(hor) + [K_TAB] > "盙" dk(hor)
+
+"hò" + [K_TAB] > "貨" dk(hos)
+
+"hô" + [K_TAB] > "和" dk(hof)
+"和" dk(hof) + [K_TAB] > "何" dk(hof)
+"何" dk(hof) + [K_TAB] > "河" dk(hof)
+"河" dk(hof) + [K_TAB] > "荷" dk(hof)
+"荷" dk(hof) + [K_TAB] > "貉" dk(hof)
+"貉" dk(hof) + [K_TAB] > "壕" dk(hof)
+"壕" dk(hof) + [K_TAB] > "禾" dk(hof)
+"禾" dk(hof) + [K_TAB] > "毫" dk(hof)
+"毫" dk(hof) + [K_TAB] > "豪" dk(hof)
+"豪" dk(hof) + [K_TAB] > "富" dk(hof)
+"富" dk(hof) + [K_TAB] > "濠" dk(hof)
+"濠" dk(hof) + [K_TAB] > "龢" dk(hof)
+"龢" dk(hof) + [K_TAB] > "咊" dk(hof)
+"咊" dk(hof) + [K_TAB] > "魺" dk(hof)
+"魺" dk(hof) + [K_TAB] > "嚎" dk(hof)
+"嚎" dk(hof) + [K_TAB] > "諕" dk(hof)
+"諕" dk(hof) + [K_TAB] > "嘷" dk(hof)
+"嘷" dk(hof) + [K_TAB] > "盉" dk(hof)
+"盉" dk(hof) + [K_TAB] > "蚵" dk(hof)
+"蚵" dk(hof) + [K_TAB] > "譹" dk(hof)
+"譹" dk(hof) + [K_TAB] > "蠔" dk(hof)
+
+"hō" + [K_TAB] > "號" dk(hoj)
+"號" dk(hoj) + [K_TAB] > "禍" dk(hoj)
+"禍" dk(hoj) + [K_TAB] > "和" dk(hoj)
+"和" dk(hoj) + [K_TAB] > "賀" dk(hoj)
+"賀" dk(hoj) + [K_TAB] > "昊" dk(hoj)
+"昊" dk(hoj) + [K_TAB] > "浩" dk(hoj)
+"浩" dk(hoj) + [K_TAB] > "皓" dk(hoj)
+"皓" dk(hoj) + [K_TAB] > "灝" dk(hoj)
+"灝" dk(hoj) + [K_TAB] > "号" dk(hoj)
+"号" dk(hoj) + [K_TAB] > "皞" dk(hoj)
+"皞" dk(hoj) + [K_TAB] > "皡" dk(hoj)
+"皡" dk(hoj) + [K_TAB] > "俰" dk(hoj)
+"俰" dk(hoj) + [K_TAB] > "悎" dk(hoj)
+"悎" dk(hoj) + [K_TAB] > "顥" dk(hoj)
+
+"leng" + [K_TAB] > "乳" dk(leng)
+"乳" dk(leng) + [K_TAB] > "奶" dk(leng)
+
+"léng" + [K_TAB] > "冷" dk(lengr)
+"冷" dk(lengr) + [K_TAB] > "領" dk(lengr)
+"領" dk(lengr) + [K_TAB] > "伶" dk(lengr)
+"伶" dk(lengr) + [K_TAB] > "嶺" dk(lengr)
+"嶺" dk(lengr) + [K_TAB] > "袊" dk(lengr)
+"袊" dk(lengr) + [K_TAB] > "矃" dk(lengr)
+"矃" dk(lengr) + [K_TAB] > "濘" dk(lengr)
+"濘" dk(lengr) + [K_TAB] > "兩" dk(lengr)
+"兩" dk(lengr) + [K_TAB] > "两" dk(lengr)
+
+"lèng" + [K_TAB] > "踜" dk(lengs)
+"踜" dk(lengs) + [K_TAB] > "躘" dk(lengs)
+
+"lêng" + [K_TAB] > "能" dk(lengf)
+"能" dk(lengf) + [K_TAB] > "龍" dk(lengf)
+"龍" dk(lengf) + [K_TAB] > "寧" dk(lengf)
+"寧" dk(lengf) + [K_TAB] > "靈" dk(lengf)
+"靈" dk(lengf) + [K_TAB] > "零" dk(lengf)
+"零" dk(lengf) + [K_TAB] > "齡" dk(lengf)
+"齡" dk(lengf) + [K_TAB] > "陵" dk(lengf)
+"陵" dk(lengf) + [K_TAB] > "拎" dk(lengf)
+"拎" dk(lengf) + [K_TAB] > "𦊓" dk(lengf)
+"𦊓" dk(lengf) + [K_TAB] > "綾" dk(lengf)
+"綾" dk(lengf) + [K_TAB] > "鈴" dk(lengf)
+"鈴" dk(lengf) + [K_TAB] > "翎" dk(lengf)
+"翎" dk(lengf) + [K_TAB] > "凌" dk(lengf)
+"凌" dk(lengf) + [K_TAB] > "令" dk(lengf)
+"令" dk(lengf) + [K_TAB] > "伶" dk(lengf)
+"伶" dk(lengf) + [K_TAB] > "泠" dk(lengf)
+"泠" dk(lengf) + [K_TAB] > "寗" dk(lengf)
+"寗" dk(lengf) + [K_TAB] > "崚" dk(lengf)
+"崚" dk(lengf) + [K_TAB] > "竜" dk(lengf)
+"竜" dk(lengf) + [K_TAB] > "嚀" dk(lengf)
+
+"lēng" + [K_TAB] > "令" dk(lengj)
+"令" dk(lengj) + [K_TAB] > "另" dk(lengj)
+"另" dk(lengj) + [K_TAB] > "翎" dk(lengj)
+"翎" dk(lengj) + [K_TAB] > "楝" dk(lengj)
+"楝" dk(lengj) + [K_TAB] > "稜" dk(lengj)
+"稜" dk(lengj) + [K_TAB] > "鴒" dk(lengj)
+"鴒" dk(lengj) + [K_TAB] > "刢" dk(lengj)
+"刢" dk(lengj) + [K_TAB] > "倰" dk(lengj)
+"倰" dk(lengj) + [K_TAB] > "甯" dk(lengj)
+"甯" dk(lengj) + [K_TAB] > "濘" dk(lengj)
+"濘" dk(lengj) + [K_TAB] > "量" dk(lengj)
+"量" dk(lengj) + [K_TAB] > "崚" dk(lengj)
+"崚" dk(lengj) + [K_TAB] > "冗" dk(lengj)
+
+"hong" + [K_TAB] > "方" dk(hong)
+"方" dk(hong) + [K_TAB] > "風" dk(hong)
+"風" dk(hong) + [K_TAB] > "芳" dk(hong)
+"芳" dk(hong) + [K_TAB] > "封" dk(hong)
+"封" dk(hong) + [K_TAB] > "烘" dk(hong)
+"烘" dk(hong) + [K_TAB] > "荒" dk(hong)
+"荒" dk(hong) + [K_TAB] > "揈" dk(hong)
+"揈" dk(hong) + [K_TAB] > "楓" dk(hong)
+"楓" dk(hong) + [K_TAB] > "蜂" dk(hong)
+"蜂" dk(hong) + [K_TAB] > "肓" dk(hong)
+"肓" dk(hong) + [K_TAB] > "豐" dk(hong)
+"豐" dk(hong) + [K_TAB] > "坊" dk(hong)
+"坊" dk(hong) + [K_TAB] > "峰" dk(hong)
+"峰" dk(hong) + [K_TAB] > "慌" dk(hong)
+"慌" dk(hong) + [K_TAB] > "瘋" dk(hong)
+"瘋" dk(hong) + [K_TAB] > "鋒" dk(hong)
+"鋒" dk(hong) + [K_TAB] > "謊" dk(hong)
+"謊" dk(hong) + [K_TAB] > "轟" dk(hong)
+"轟" dk(hong) + [K_TAB] > "酆" dk(hong)
+"酆" dk(hong) + [K_TAB] > "丰" dk(hong)
+"丰" dk(hong) + [K_TAB] > "仹" dk(hong)
+"仹" dk(hong) + [K_TAB] > "崶" dk(hong)
+"崶" dk(hong) + [K_TAB] > "𦪪" dk(hong)
+"𦪪" dk(hong) + [K_TAB] > "峯" dk(hong)
+"峯" dk(hong) + [K_TAB] > "哅" dk(hong)
+"哅" dk(hong) + [K_TAB] > "蠭" dk(hong)
+"蠭" dk(hong) + [K_TAB] > "妦" dk(hong)
+
+
+"hóng" + [K_TAB] > "訪" dk(hongr)
+"訪" dk(hongr) + [K_TAB] > "仿" dk(hongr)
+"仿" dk(hongr) + [K_TAB] > "況" dk(hongr)
+"況" dk(hongr) + [K_TAB] > "紡" dk(hongr)
+"紡" dk(hongr) + [K_TAB] > "彷" dk(hongr)
+"彷" dk(hongr) + [K_TAB] > "恍" dk(hongr)
+"恍" dk(hongr) + [K_TAB] > "謊" dk(hongr)
+"謊" dk(hongr) + [K_TAB] > "倣" dk(hongr)
+"倣" dk(hongr) + [K_TAB] > "况" dk(hongr)
+"况" dk(hongr) + [K_TAB] > "諷" dk(hongr)
+"諷" dk(hongr) + [K_TAB] > "髣" dk(hongr)
+"髣" dk(hongr) + [K_TAB] > "眆" dk(hongr)
+"眆" dk(hongr) + [K_TAB] > "幌" dk(hongr)
+"幌" dk(hongr) + [K_TAB] > "𣄙" dk(hongr)
+"𣄙" dk(hongr) + [K_TAB] > "滉" dk(hongr)
+"滉" dk(hongr) + [K_TAB] > "怳" dk(hongr)
+"怳" dk(hongr) + [K_TAB] > "愰" dk(hongr)
+"愰" dk(hongr) + [K_TAB] > "𦕷" dk(hongr)
+"𦕷" dk(hongr) + [K_TAB] > "榥" dk(hongr)
+"榥" dk(hongr) + [K_TAB] > "𤰟" dk(hongr)
+"𤰟" dk(hongr) + [K_TAB] > "櫎" dk(hongr)
+"櫎" dk(hongr) + [K_TAB] > "瓬" dk(hongr)
+
+"hông" + [K_TAB] > "黃" dk(hongf)
+"黃" dk(hongf) + [K_TAB] > "皇" dk(hongf)
+"皇" dk(hongf) + [K_TAB] > "癀" dk(hongf)
+"癀" dk(hongf) + [K_TAB] > "妨" dk(hongf)
+"妨" dk(hongf) + [K_TAB] > "防" dk(hongf)
+"防" dk(hongf) + [K_TAB] > "隍" dk(hongf)
+"隍" dk(hongf) + [K_TAB] > "紅" dk(hongf)
+"紅" dk(hongf) + [K_TAB] > "磺" dk(hongf)
+"磺" dk(hongf) + [K_TAB] > "縫" dk(hongf)
+"縫" dk(hongf) + [K_TAB] > "潢" dk(hongf)
+"潢" dk(hongf) + [K_TAB] > "肓" dk(hongf)
+"肓" dk(hongf) + [K_TAB] > "凰" dk(hongf)
+"凰" dk(hongf) + [K_TAB] > "蓬" dk(hongf)
+"蓬" dk(hongf) + [K_TAB] > "弘" dk(hongf)
+"弘" dk(hongf) + [K_TAB] > "宏" dk(hongf)
+"宏" dk(hongf) + [K_TAB] > "泓" dk(hongf)
+"泓" dk(hongf) + [K_TAB] > "洪" dk(hongf)
+"洪" dk(hongf) + [K_TAB] > "逢" dk(hongf)
+"逢" dk(hongf) + [K_TAB] > "煌" dk(hongf)
+"煌" dk(hongf) + [K_TAB] > "鴻" dk(hongf)
+"鴻" dk(hongf) + [K_TAB] > "鰉" dk(hongf)
+"鰉" dk(hongf) + [K_TAB] > "蝗" dk(hongf)
+"蝗" dk(hongf) + [K_TAB] > "摓" dk(hongf)
+"摓" dk(hongf) + [K_TAB] > "餭" dk(hongf)
+"餭" dk(hongf) + [K_TAB] > "遑" dk(hongf)
+"遑" dk(hongf) + [K_TAB] > "徨" dk(hongf)
+"徨" dk(hongf) + [K_TAB] > "篁" dk(hongf)
+"篁" dk(hongf) + [K_TAB] > "瑝" dk(hongf)
+
+"hōng" + [K_TAB] > "俸" dk(hongj)
+"俸" dk(hongj) + [K_TAB] > "奉" dk(hongj)
+"奉" dk(hongj) + [K_TAB] > "鳳" dk(hongj)
+"鳳" dk(hongj) + [K_TAB] > "烘" dk(hongj)
+"烘" dk(hongj) + [K_TAB] > "賵" dk(hongj)
+"賵" dk(hongj) + [K_TAB] > "哄" dk(hongj)
+"哄" dk(hongj) + [K_TAB] > "縫" dk(hongj)
+"縫" dk(hongj) + [K_TAB] > "汞" dk(hongj)
+"汞" dk(hongj) + [K_TAB] > "覂" dk(hongj)
+"覂" dk(hongj) + [K_TAB] > "𢇫" dk(hongj)
+"𢇫" dk(hongj) + [K_TAB] > "𢪋" dk(hongj)
+"𢪋" dk(hongj) + [K_TAB] > "捧" dk(hongj)
+"捧" dk(hongj) + [K_TAB] > "綘" dk(hongj)
+"綘" dk(hongj) + [K_TAB] > "澒" dk(hongj)
+
+"sek" + [K_TAB] > "色" dk(sek)
+"色" dk(sek) + [K_TAB] > "式" dk(sek)
+"式" dk(sek) + [K_TAB] > "適" dk(sek)
+"適" dk(sek) + [K_TAB] > "息" dk(sek)
+"息" dk(sek) + [K_TAB] > "室" dk(sek)
+"室" dk(sek) + [K_TAB] > "索" dk(sek)
+"索" dk(sek) + [K_TAB] > "惜" dk(sek)
+"惜" dk(sek) + [K_TAB] > "識" dk(sek)
+"識" dk(sek) + [K_TAB] > "釋" dk(sek)
+"釋" dk(sek) + [K_TAB] > "錫" dk(sek)
+"錫" dk(sek) + [K_TAB] > "穡" dk(sek)
+"穡" dk(sek) + [K_TAB] > "昔" dk(sek)
+"昔" dk(sek) + [K_TAB] > "析" dk(sek)
+"析" dk(sek) + [K_TAB] > "悉" dk(sek)
+"悉" dk(sek) + [K_TAB] > "媳" dk(sek)
+"媳" dk(sek) + [K_TAB] > "瑟" dk(sek)
+"瑟" dk(sek) + [K_TAB] > "飾" dk(sek)
+"飾" dk(sek) + [K_TAB] > "碩" dk(sek)
+"碩" dk(sek) + [K_TAB] > "蟋" dk(sek)
+"蟋" dk(sek) + [K_TAB] > "嗇" dk(sek)
+"嗇" dk(sek) + [K_TAB] > "拭" dk(sek)
+"拭" dk(sek) + [K_TAB] > "鎍" dk(sek)
+
+"se̍k" + [K_TAB] > "夕" dk(sekj)
+"夕" dk(sekj) + [K_TAB] > "席" dk(sekj)
+"席" dk(sekj) + [K_TAB] > "熟" dk(sekj)
+"熟" dk(sekj) + [K_TAB] > "石" dk(sekj)
+"石" dk(sekj) + [K_TAB] > "碩" dk(sekj)
+"碩" dk(sekj) + [K_TAB] > "蝕" dk(sekj)
+"蝕" dk(sekj) + [K_TAB] > "殖" dk(sekj)
+"殖" dk(sekj) + [K_TAB] > "汐" dk(sekj)
+"汐" dk(sekj) + [K_TAB] > "穸" dk(sekj)
+"穸" dk(sekj) + [K_TAB] > "祏" dk(sekj)
+"祏" dk(sekj) + [K_TAB] > "蓆" dk(sekj)
+"蓆" dk(sekj) + [K_TAB] > "鼫" dk(sekj)
+"鼫" dk(sekj) + [K_TAB] > "植" dk(sekj)
+"植" dk(sekj) + [K_TAB] > "妒" dk(sekj)
+
+"su" + [K_TAB] > "思" dk(su)
+"思" dk(su) + [K_TAB] > "师" dk(su)
+"师" dk(su) + [K_TAB] > "書" dk(su)
+"書" dk(su) + [K_TAB] > "司" dk(su)
+"司" dk(su) + [K_TAB] > "軀" dk(su)
+"軀" dk(su) + [K_TAB] > "私" dk(su)
+"私" dk(su) + [K_TAB] > "輸" dk(su)
+"輸" dk(su) + [K_TAB] > "斯" dk(su)
+"斯" dk(su) + [K_TAB] > "舒" dk(su)
+"舒" dk(su) + [K_TAB] > "鬚" dk(su)
+"鬚" dk(su) + [K_TAB] > "須" dk(su)
+"須" dk(su) + [K_TAB] > "需" dk(su)
+"需" dk(su) + [K_TAB] > "樞" dk(su)
+"樞" dk(su) + [K_TAB] > "嘶" dk(su)
+"嘶" dk(su) + [K_TAB] > "澌" dk(su)
+"澌" dk(su) + [K_TAB] > "揌" dk(su)
+"揌" dk(su) + [K_TAB] > "笥" dk(su)
+"笥" dk(su) + [K_TAB] > "廝" dk(su)
+
+"sú" + [K_TAB] > "使" dk(sur)
+"使" dk(sur) + [K_TAB] > "史" dk(sur)
+"史" dk(sur) + [K_TAB] > "駛" dk(sur)
+"駛" dk(sur) + [K_TAB] > "始" dk(sur)
+"始" dk(sur) + [K_TAB] > "署" dk(sur)
+"署" dk(sur) + [K_TAB] > "暑" dk(sur)
+"暑" dk(sur) + [K_TAB] > "死" dk(sur)
+"死" dk(sur) + [K_TAB] > "屎" dk(sur)
+"屎" dk(sur) + [K_TAB] > "璽" dk(sur)
+"璽" dk(sur) + [K_TAB] > "徙" dk(sur)
+"徙" dk(sur) + [K_TAB] > "蓰" dk(sur)
+"蓰" dk(sur) + [K_TAB] > "屣" dk(sur)
+"屣" dk(sur) + [K_TAB] > "黍" dk(sur)
+"黍" dk(sur) + [K_TAB] > "縰" dk(sur)
+"縰" dk(sur) + [K_TAB] > "蹝" dk(sur)
+"蹝" dk(sur) + [K_TAB] > "躧" dk(sur)
+
+"sù" + [K_TAB] > "四" dk(sus)
+"四" dk(sus) + [K_TAB] > "使" dk(sus)
+"使" dk(sus) + [K_TAB] > "肆" dk(sus)
+"肆" dk(sus) + [K_TAB] > "思" dk(sus)
+"思" dk(sus) + [K_TAB] > "賜" dk(sus)
+"賜" dk(sus) + [K_TAB] > "恕" dk(sus)
+"恕" dk(sus) + [K_TAB] > "絮" dk(sus)
+"絮" dk(sus) + [K_TAB] > "肂" dk(sus)
+"肂" dk(sus) + [K_TAB] > "戍" dk(sus)
+"戍" dk(sus) + [K_TAB] > "庶" dk(sus)
+"庶" dk(sus) + [K_TAB] > "泗" dk(sus)
+"泗" dk(sus) + [K_TAB] > "恣" dk(sus)
+"恣" dk(sus) + [K_TAB] > "駟" dk(sus)
+"駟" dk(sus) + [K_TAB] > "樹" dk(sus)
+"樹" dk(sus) + [K_TAB] > "姿" dk(sus)
+
+"sû" + [K_TAB] > "詞" dk(suf)
+"詞" dk(suf) + [K_TAB] > "祠" dk(suf)
+"祠" dk(suf) + [K_TAB] > "殊" dk(suf)
+"殊" dk(suf) + [K_TAB] > "緒" dk(suf)
+"緒" dk(suf) + [K_TAB] > "辭" dk(suf)
+"辭" dk(suf) + [K_TAB] > "嗣" dk(suf)
+"嗣" dk(suf) + [K_TAB] > "柌" dk(suf)
+"柌" dk(suf) + [K_TAB] > "徐" dk(suf)
+"徐" dk(suf) + [K_TAB] > "杸" dk(suf)
+"杸" dk(suf) + [K_TAB] > "殳" dk(suf)
+"殳" dk(suf) + [K_TAB] > "洙" dk(suf)
+"洙" dk(suf) + [K_TAB] > "銖" dk(suf)
+"銖" dk(suf) + [K_TAB] > "蜍" dk(suf)
+"蜍" dk(suf) + [K_TAB] > "余" dk(suf)
+
+"sū" + [K_TAB] > "事" dk(suj)
+"事" dk(suj) + [K_TAB] > "士" dk(suj)
+"士" dk(suj) + [K_TAB] > "巳" dk(suj)
+"巳" dk(suj) + [K_TAB] > "仕" dk(suj)
+"仕" dk(suj) + [K_TAB] > "序" dk(suj)
+"序" dk(suj) + [K_TAB] > "侍" dk(suj)
+"侍" dk(suj) + [K_TAB] > "祀" dk(suj)
+"祀" dk(suj) + [K_TAB] > "嗣" dk(suj)
+"嗣" dk(suj) + [K_TAB] > "緒" dk(suj)
+"緒" dk(suj) + [K_TAB] > "樹" dk(suj)
+"樹" dk(suj) + [K_TAB] > "似" dk(suj)
+"似" dk(suj) + [K_TAB] > "敘" dk(suj)
+"敘" dk(suj) + [K_TAB] > "署" dk(suj)
+"署" dk(suj) + [K_TAB] > "豎" dk(suj)
+"豎" dk(suj) + [K_TAB] > "嶼" dk(suj)
+"嶼" dk(suj) + [K_TAB] > "汜" dk(suj)
+"汜" dk(suj) + [K_TAB] > "兕" dk(suj)
+"兕" dk(suj) + [K_TAB] > "尌" dk(suj)
+"尌" dk(suj) + [K_TAB] > "涘" dk(suj)
+"涘" dk(suj) + [K_TAB] > "鈶" dk(suj)
+"鈶" dk(suj) + [K_TAB] > "飼" dk(suj)
+
+"kàu" + [K_TAB] > "到" dk(kaus)
+"到" dk(kaus) + [K_TAB] > "教" dk(kaus)
+"教" dk(kaus) + [K_TAB] > "較" dk(kaus)
+"較" dk(kaus) + [K_TAB] > "夠" dk(kaus)
+"夠" dk(kaus) + [K_TAB] > "校" dk(kaus)
+
+"chiah" + [K_TAB] > "才" dk(chiah)
+"才" dk(chiah) + [K_TAB] > "隻" dk(chiah)
+"隻" dk(chiah) + [K_TAB] > "即" dk(chiah)
+"即" dk(chiah) + [K_TAB] > "脊" dk(chiah)
+"脊" dk(chiah) + [K_TAB] > "睫" dk(chiah)
+"睫" dk(chiah) + [K_TAB] > "跡" dk(chiah)
+"跡" dk(chiah) + [K_TAB] > "遮" dk(chiah)
+"遮" dk(chiah) + [K_TAB] > "者" dk(chiah)
+"者" dk(chiah) + [K_TAB] > "籍" dk(chiah)
+
+"khah" + [K_TAB] > "較" dk(khah)
+"較" dk(khah) + [K_TAB] > "籗" dk(khah)
+"籗" dk(khah) + [K_TAB] > "筁" dk(khah)
+"筁" dk(khah) + [K_TAB] > "籱" dk(khah)
+
+"chia" + [K_TAB] > "遮" dk(chia)
+"遮" dk(chia) + [K_TAB] > "此" dk(chia)
+"此" dk(chia) + [K_TAB] > "嗟" dk(chia)
+"嗟" dk(chia) + [K_TAB] > "嗻" dk(chia)
+"嗻" dk(chia) + [K_TAB] > "罝" dk(chia)
+"罝" dk(chia) + [K_TAB] > "菹" dk(chia)
+"菹" dk(chia) + [K_TAB] > "嵳" dk(chia)
+"嵳" dk(chia) + [K_TAB] > "嵯" dk(chia)
+
+"chiá" + [K_TAB] > "者" dk(chiar)
+"者" dk(chiar) + [K_TAB] > "姐" dk(chiar)
+
+"tāi" + [K_TAB] > "大" dk(taij)
+"大" dk(taij) + [K_TAB] > "代" dk(taij)
+"代" dk(taij) + [K_TAB] > "事" dk(taij)
+"事" dk(taij) + [K_TAB] > "迨" dk(taij)
+"迨" dk(taij) + [K_TAB] > "待" dk(taij)
+"待" dk(taij) + [K_TAB] > "舵" dk(taij)
+"舵" dk(taij) + [K_TAB] > "袋" dk(taij)
+"袋" dk(taij) + [K_TAB] > "貸" dk(taij)
+"貸" dk(taij) + [K_TAB] > "𩻸" dk(taij)
+"𩻸" dk(taij) + [K_TAB] > "鮘" dk(taij)
+"鮘" dk(taij) + [K_TAB] > "逮" dk(taij)
+"逮" dk(taij) + [K_TAB] > "黛" dk(taij)
+"黛" dk(taij) + [K_TAB] > "太" dk(taij)
+
+"thài" + [K_TAB] > "太" dk(thais)
+"太" dk(thais) + [K_TAB] > "泰" dk(thais)
+"泰" dk(thais) + [K_TAB] > "汰" dk(thais)
+"汰" dk(thais) + [K_TAB] > "態" dk(thais)
+"態" dk(thais) + [K_TAB] > "呔" dk(thais)
+
+"hṳ̂" + [K_TAB] > "魚" dk(hwf)
+"魚" dk(hwf) + [K_TAB] > "漁" dk(hwf)
+
+"hî" + [K_TAB] > "魚" dk(hwf)
+
+"gṳ́" + [K_TAB] > "語"
+
+"lṳ́" + [K_TAB] > "汝" dk(lwr)
+"汝" dk(lwr) + [K_TAB] > "女" dk(lwr)
+"女" dk(lwr) + [K_TAB] > "乳" dk(lwr)
+"乳" dk(lwr) + [K_TAB] > "旅" dk(lwr)
+"旅" dk(lwr) + [K_TAB] > "愈" dk(lwr)
+
+"kṳ́" + [K_TAB] > "舉" dk(kwr)
+"舉" dk(kwr) + [K_TAB] > "矩" dk(kwr)
+
+"kṳ" + [K_TAB] > "居" dk(kw)
+"kṳ̀" + [K_TAB] > "鋸" dk(kws)
+"kṳ̄" + [K_TAB] > "巨" dk(kwj)
+"巨" dk(kwj) + [K_TAB] > "拒" dk(kwj)
+"拒" dk(kwj) + [K_TAB] > "距" dk(kwj)
+
+"chēng" + [K_TAB] > "靜" dk(chengj)
+"靜" dk(chengj) + [K_TAB] > "淨" dk(chengj)
+"淨" dk(chengj) + [K_TAB] > "贈" dk(chengj)
+"贈" dk(chengj) + [K_TAB] > "靖" dk(chengj)
+"靖" dk(chengj) + [K_TAB] > "增" dk(chengj)
+"增" dk(chengj) + [K_TAB] > "從" dk(chengj)
+"從" dk(chengj) + [K_TAB] > "靚" dk(chengj)
+"靚" dk(chengj) + [K_TAB] > "阱" dk(chengj)
+"阱" dk(chengj) + [K_TAB] > "穽" dk(chengj)
+"穽" dk(chengj) + [K_TAB] > "竫" dk(chengj)
+"竫" dk(chengj) + [K_TAB] > "蹭" dk(chengj)
+"蹭" dk(chengj) + [K_TAB] > "婧" dk(chengj)
+"婧" dk(chengj) + [K_TAB] > "繒" dk(chengj)
+"繒" dk(chengj) + [K_TAB] > "甑" dk(chengj)
+"甑" dk(chengj) + [K_TAB] > "睜" dk(chengj)
+
+"chêng" + [K_TAB] > "情" dk(chengf)
+"情" dk(chengf) + [K_TAB] > "前" dk(chengf)
+"前" dk(chengf) + [K_TAB] > "曾" dk(chengf)
+"曾" dk(chengf) + [K_TAB] > "從" dk(chengf)
+"從" dk(chengf) + [K_TAB] > "晴" dk(chengf)
+"晴" dk(chengf) + [K_TAB] > "榕" dk(chengf)
+"榕" dk(chengf) + [K_TAB] > "層" dk(chengf)
+"層" dk(chengf) + [K_TAB] > "嶒" dk(chengf)
+"嶒" dk(chengf) + [K_TAB] > "劊" dk(chengf)
+"劊" dk(chengf) + [K_TAB] > "暒" dk(chengf)
+
+"chéng" + [K_TAB] > "井" dk(chengr)
+"井" dk(chengr) + [K_TAB] > "腫" dk(chengr)
+"腫" dk(chengr) + [K_TAB] > "整" dk(chengr)
+"整" dk(chengr) + [K_TAB] > "種" dk(chengr)
+"種" dk(chengr) + [K_TAB] > "晸" dk(chengr)
+"晸" dk(chengr) + [K_TAB] > "妌" dk(chengr)
+"妌" dk(chengr) + [K_TAB] > "丼" dk(chengr)
+"丼" dk(chengr) + [K_TAB] > "煄" dk(chengr)
+"煄" dk(chengr) + [K_TAB] > "殄" dk(chengr)
+
+"chèng" + [K_TAB] > "正" dk(chengs)
+"正" dk(chengs) + [K_TAB] > "政" dk(chengs)
+"政" dk(chengs) + [K_TAB] > "症" dk(chengs)
+"症" dk(chengs) + [K_TAB] > "衆" dk(chengs)
+"衆" dk(chengs) + [K_TAB] > "證" dk(chengs)
+"證" dk(chengs) + [K_TAB] > "種" dk(chengs)
+"種" dk(chengs) + [K_TAB] > "眐" dk(chengs)
+"眐" dk(chengs) + [K_TAB] > "薦" dk(chengs)
+"薦" dk(chengs) + [K_TAB] > "掙" dk(chengs)
+
+"cheng" + [K_TAB] > "鐘" dk(cheng)
+"鐘" dk(cheng) + [K_TAB] > "衝" dk(cheng)
+"衝" dk(cheng) + [K_TAB] > "舂" dk(cheng)
+"舂" dk(cheng) + [K_TAB] > "精" dk(cheng)
+"精" dk(cheng) + [K_TAB] > "爭" dk(cheng)
+"爭" dk(cheng) + [K_TAB] > "增" dk(cheng)
+"增" dk(cheng) + [K_TAB] > "征" dk(cheng)
+"征" dk(cheng) + [K_TAB] > "貞" dk(cheng)
+"貞" dk(cheng) + [K_TAB] > "偵" dk(cheng)
+"偵" dk(cheng) + [K_TAB] > "晶" dk(cheng)
+"晶" dk(cheng) + [K_TAB] > "曾" dk(cheng)
+"曾" dk(cheng) + [K_TAB] > "晴" dk(cheng)
+"晴" dk(cheng) + [K_TAB] > "僧" dk(cheng)
+"僧" dk(cheng) + [K_TAB] > "禎" dk(cheng)
+"禎" dk(cheng) + [K_TAB] > "箏" dk(cheng)
+"箏" dk(cheng) + [K_TAB] > "蒸" dk(cheng)
+"蒸" dk(cheng) + [K_TAB] > "菁" dk(cheng)
+"菁" dk(cheng) + [K_TAB] > "延" dk(cheng)
+"延" dk(cheng) + [K_TAB] > "噌" dk(cheng)
+"噌" dk(cheng) + [K_TAB] > "憎" dk(cheng)
+"憎" dk(cheng) + [K_TAB] > "罾" dk(cheng)
+"罾" dk(cheng) + [K_TAB] > "鉦" dk(cheng)
+"鉦" dk(cheng) + [K_TAB] > "烝" dk(cheng)
+"烝" dk(cheng) + [K_TAB] > "崢" dk(cheng)
+"崢" dk(cheng) + [K_TAB] > "姃" dk(cheng)
+
+"chai" + [K_TAB] > "知" dk(chai)
+"知" dk(chai) + [K_TAB] > "栽" dk(chai)
+"栽" dk(chai) + [K_TAB] > "災" dk(chai)
+"災" dk(chai) + [K_TAB] > "齋" dk(chai)
+"齋" dk(chai) + [K_TAB] > "哉" dk(chai)
+"哉" dk(chai) + [K_TAB] > "菑" dk(chai)
+"菑" dk(chai) + [K_TAB] > "巀" dk(chai)
+"巀" dk(chai) + [K_TAB] > "嚌" dk(chai)
+
+"chái" + [K_TAB] > "滓" dk(chair)
+"滓" dk(chair) + [K_TAB] > "宰" dk(chair)
+"宰" dk(chair) + [K_TAB] > "早" dk(chair)
+
+"chài" + [K_TAB] > "再" dk(chais)
+"再" dk(chais) + [K_TAB] > "載" dk(chais)
+"載" dk(chais) + [K_TAB] > "哉" dk(chais)
+"哉" dk(chais) + [K_TAB] > "債" dk(chais)
+"債" dk(chais) + [K_TAB] > "榨" dk(chais)
+"榨" dk(chais) + [K_TAB] > "儎" dk(chais)
+
+"châi" + [K_TAB] > "才" dk(chaif)
+"才" dk(chaif) + [K_TAB] > "材" dk(chaif)
+"材" dk(chaif) + [K_TAB] > "財" dk(chaif)
+"財" dk(chaif) + [K_TAB] > "臍" dk(chaif)
+"臍" dk(chaif) + [K_TAB] > "裁" dk(chaif)
+
+"ti" + [K_TAB] > "豬" dk(ti)
+"豬" dk(ti) + [K_TAB] > "知" dk(ti)
+"知" dk(ti) + [K_TAB] > "蜘" dk(ti)
+"蜘" dk(ti) + [K_TAB] > "呧" dk(ti)
+"呧" dk(ti) + [K_TAB] > "諸" dk(ti)
+"諸" dk(ti) + [K_TAB] > "誅" dk(ti)
+
+"tí" + [K_TAB] > "抵" dk(tir)
+"抵" dk(tir) + [K_TAB] > "邸" dk(tir)
+"邸" dk(tir) + [K_TAB] > "觝" dk(tir)
+"觝" dk(tir) + [K_TAB] > "牴" dk(tir)
+"牴" dk(tir) + [K_TAB] > "呧" dk(tir)
+"呧" dk(tir) + [K_TAB] > "軧" dk(tir)
+"軧" dk(tir) + [K_TAB] > "詆" dk(tir)
+"詆" dk(tir) + [K_TAB] > "傂" dk(tir)
+"傂" dk(tir) + [K_TAB] > "坁" dk(tir)
+"坁" dk(tir) + [K_TAB] > "底" dk(tir)
+"底" dk(tir) + [K_TAB] > "氐" dk(tir)
+"氐" dk(tir) + [K_TAB] > "柢" dk(tir)
+"柢" dk(tir) + [K_TAB] > "砥" dk(tir)
+"砥" dk(tir) + [K_TAB] > "袛" dk(tir)
+"袛" dk(tir) + [K_TAB] > "弤" dk(tir)
+
+"tì" + [K_TAB] > "置" dk(tis)
+"置" dk(tis) + [K_TAB] > "智" dk(tis)
+"智" dk(tis) + [K_TAB] > "致" dk(tis)
+"致" dk(tis) + [K_TAB] > "蒂" dk(tis)
+"蒂" dk(tis) + [K_TAB] > "緻" dk(tis)
+"緻" dk(tis) + [K_TAB] > "戴" dk(tis)
+"戴" dk(tis) + [K_TAB] > "寘" dk(tis)
+"寘" dk(tis) + [K_TAB] > "觶" dk(tis)
+"觶" dk(tis) + [K_TAB] > "埴" dk(tis)
+"埴" dk(tis) + [K_TAB] > "植" dk(tis)
+"植" dk(tis) + [K_TAB] > "輊" dk(tis)
+"輊" dk(tis) + [K_TAB] > "懫" dk(tis)
+"懫" dk(tis) + [K_TAB] > "庇" dk(tis)
+"庇" dk(tis) + [K_TAB] > "蔕" dk(tis)
+
+"tî" + [K_TAB] > "除" dk(tif)
+"除" dk(tif) + [K_TAB] > "池" dk(tif)
+"池" dk(tif) + [K_TAB] > "持" dk(tif)
+"持" dk(tif) + [K_TAB] > "治" dk(tif)
+"治" dk(tif) + [K_TAB] > "遲" dk(tif)
+"遲" dk(tif) + [K_TAB] > "馳" dk(tif)
+"馳" dk(tif) + [K_TAB] > "鋤" dk(tif)
+"鋤" dk(tif) + [K_TAB] > "墀" dk(tif)
+"墀" dk(tif) + [K_TAB] > "坻" dk(tif)
+"坻" dk(tif) + [K_TAB] > "篪" dk(tif)
+"篪" dk(tif) + [K_TAB] > "踟" dk(tif)
+"踟" dk(tif) + [K_TAB] > "泜" dk(tif)
+"泜" dk(tif) + [K_TAB] > "蚳" dk(tif)
+"蚳" dk(tif) + [K_TAB] > "趍" dk(tif)
+"趍" dk(tif) + [K_TAB] > "杝" dk(tif)
+"杝" dk(tif) + [K_TAB] > "柂" dk(tif)
+"柂" dk(tif) + [K_TAB] > "箎" dk(tif)
+
+"tī" + [K_TAB] > "佇" dk(tij)
+"佇" dk(tij) + [K_TAB] > "地" dk(tij)
+"地" dk(tij) + [K_TAB] > "值" dk(tij)
+"值" dk(tij) + [K_TAB] > "底" dk(tij)
+"底" dk(tij) + [K_TAB] > "治" dk(tij)
+"治" dk(tij) + [K_TAB] > "緻" dk(tij)
+"緻" dk(tij) + [K_TAB] > "弟" dk(tij)
+"弟" dk(tij) + [K_TAB] > "稚" dk(tij)
+"稚" dk(tij) + [K_TAB] > "痔" dk(tij)
+"痔" dk(tij) + [K_TAB] > "箸" dk(tij)
+"箸" dk(tij) + [K_TAB] > "滯" dk(tij)
+"滯" dk(tij) + [K_TAB] > "雉" dk(tij)
+"雉" dk(tij) + [K_TAB] > "棣" dk(tij)
+"棣" dk(tij) + [K_TAB] > "彘" dk(tij)
+"彘" dk(tij) + [K_TAB] > "庤" dk(tij)
+"庤" dk(tij) + [K_TAB] > "滍" dk(tij)
+
+"seng" + [K_TAB] > "生" dk(seng)
+"生" dk(seng) + [K_TAB] > "星" dk(seng)
+"星" dk(seng) + [K_TAB] > "先" dk(seng)
+"先" dk(seng) + [K_TAB] > "勝" dk(seng)
+"勝" dk(seng) + [K_TAB] > "昇" dk(seng)
+"昇" dk(seng) + [K_TAB] > "聲" dk(seng)
+"聲" dk(seng) + [K_TAB] > "升" dk(seng)
+"升" dk(seng) + [K_TAB] > "醒" dk(seng)
+"醒" dk(seng) + [K_TAB] > "陞" dk(seng)
+"陞" dk(seng) + [K_TAB] > "笙" dk(seng)
+"笙" dk(seng) + [K_TAB] > "僧" dk(seng)
+"僧" dk(seng) + [K_TAB] > "腥" dk(seng)
+"腥" dk(seng) + [K_TAB] > "猩" dk(seng)
+"猩" dk(seng) + [K_TAB] > "旌" dk(seng)
+"旌" dk(seng) + [K_TAB] > "牲" dk(seng)
+"牲" dk(seng) + [K_TAB] > "鉎" dk(seng)
+"鉎" dk(seng) + [K_TAB] > "芟" dk(seng)
+"芟" dk(seng) + [K_TAB] > "惺" dk(seng)
+"惺" dk(seng) + [K_TAB] > "甥" dk(seng)
+"甥" dk(seng) + [K_TAB] > "餳" dk(seng)
+
+"séng" + [K_TAB] > "省" dk(sengr)
+"省" dk(sengr) + [K_TAB] > "醒" dk(sengr)
+"醒" dk(sengr) + [K_TAB] > "冼" dk(sengr)
+"冼" dk(sengr) + [K_TAB] > "眚" dk(sengr)
+"眚" dk(sengr) + [K_TAB] > "擤" dk(sengr)
+
+"sèng" + [K_TAB] > "聖" dk(sengs)
+"聖" dk(sengs) + [K_TAB] > "勝" dk(sengs)
+"勝" dk(sengs) + [K_TAB] > "性" dk(sengs)
+"性" dk(sengs) + [K_TAB] > "姓" dk(sengs)
+"姓" dk(sengs) + [K_TAB] > "甸" dk(sengs)
+
+"sêng" + [K_TAB] > "成" dk(sengf)
+"成" dk(sengf) + [K_TAB] > "城" dk(sengf)
+"城" dk(sengf) + [K_TAB] > "神" dk(sengf)
+"神" dk(sengf) + [K_TAB] > "誠" dk(sengf)
+"誠" dk(sengf) + [K_TAB] > "承" dk(sengf)
+"承" dk(sengf) + [K_TAB] > "盛" dk(sengf)
+"盛" dk(sengf) + [K_TAB] > "乘" dk(sengf)
+"乘" dk(sengf) + [K_TAB] > "繩" dk(sengf)
+"繩" dk(sengf) + [K_TAB] > "晟" dk(sengf)
+"晟" dk(sengf) + [K_TAB] > "澠" dk(sengf)
+"澠" dk(sengf) + [K_TAB] > "塍" dk(sengf)
+
+"sēng" + [K_TAB] > "盛" dk(sengj)
+"盛" dk(sengj) + [K_TAB] > "乘" dk(sengj)
+"乘" dk(sengj) + [K_TAB] > "剩" dk(sengj)
+"剩" dk(sengj) + [K_TAB] > "晟" dk(sengj)
+"晟" dk(sengj) + [K_TAB] > "倖" dk(sengj)
+"倖" dk(sengj) + [K_TAB] > "賸" dk(sengj)
+"賸" dk(sengj) + [K_TAB] > "嵊" dk(sengj)
+
+"po" + [K_TAB] > "玻" dk(po)
+"玻" dk(po) + [K_TAB] > "褒" dk(po)
+"褒" dk(po) + [K_TAB] > "菠" dk(po)
+"菠" dk(po) + [K_TAB] > "嶓" dk(po)
+
+"pó" + [K_TAB] > "寶" dk(por)
+"寶" dk(por) + [K_TAB] > "保" dk(por)
+"保" dk(por) + [K_TAB] > "葆" dk(por)
+"葆" dk(por) + [K_TAB] > "堡" dk(por)
+"堡" dk(por) + [K_TAB] > "爸" dk(por)
+"爸" dk(por) + [K_TAB] > "呆" dk(por)
+"呆" dk(por) + [K_TAB] > "煲" dk(por)
+"煲" dk(por) + [K_TAB] > "褓" dk(por)
+"褓" dk(por) + [K_TAB] > "鴇" dk(por)
+
+"pò" + [K_TAB] > "報" dk(pos)
+"報" dk(pos) + [K_TAB] > "布" dk(pos)
+"布" dk(pos) + [K_TAB] > "播" dk(pos)
+"播" dk(pos) + [K_TAB] > "簸" dk(pos)
+"簸" dk(pos) + [K_TAB] > "嶓" dk(pos)
+
+"pô" + [K_TAB] > "婆" dk(pof)
+"婆" dk(pof) + [K_TAB] > "皤" dk(pof)
+"皤" dk(pof) + [K_TAB] > "捗" dk(pof)
+
+"pō" + [K_TAB] > "暴" dk(poj)
+"暴" dk(poj) + [K_TAB] > "抱" dk(poj)
+"抱" dk(poj) + [K_TAB] > "瀑" dk(poj)
