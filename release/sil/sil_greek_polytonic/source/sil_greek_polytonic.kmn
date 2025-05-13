@@ -36,7 +36,7 @@ c store(&ETHNOLOGUECODE) 'grc ell'
 c store(&LANGUAGE) 'x0408'
 c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.8.2'
+store(&KEYBOARDVERSION) '1.8.3'
 store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
 
 begin Unicode > use(MainU)
@@ -523,6 +523,8 @@ store(K_ill)        "$Vv"
 c ----------------------------------------------------------------------------
 
 group(MainU) using keys
+
++ [SHIFT K_SPACE] > U+0020
 
 any(Sm_Ro)              + any(K_Ro) > context
 any(Sm_Sm)              + any(K_Sm) > context
