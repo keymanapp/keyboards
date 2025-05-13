@@ -3,7 +3,8 @@ Polytonic Greek (SIL) Keyboard Change History
 
 1.8.3 (13 May 2025)
 -----------------
-* replace Ͷ ͷ with Ϝ ϝ on mobile layout
+* Replace Ͷ ͷ with Ϝ ϝ on mobile layout
+* Fixed bug with shift space emitting final sigma
 
 1.8.2 (28 Apr 2025)
 -----------------
