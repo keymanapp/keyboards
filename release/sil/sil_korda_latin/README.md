@@ -1,9 +1,7 @@
 Korean KORDA Latin (SIL) keyboard
 ==============
 
-© 2006-2020 SIL International
-
-Version 3.0
+© SIL Global
 
 Description
 -----------
@@ -16,6 +14,5 @@ The Korean KORDA Latin (SIL) keyboard is built to type Korean using the translit
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * Linux
+
 
