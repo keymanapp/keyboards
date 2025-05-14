@@ -1,6 +1,11 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.8.3 (13 May 2025)
+-----------------
+* Replace Ͷ ͷ with Ϝ ϝ on mobile layout
+* Fixed bug with shift space emitting final sigma
+
 1.8.2 (28 Apr 2025)
 -----------------
 * No functional changes, rebuilt with 18.0 compiler (#3302)
