@@ -1,5 +1,9 @@
 Urdu (DVorak) Change History
 ====================
+1.2 (2025-05-15)
+----------------
+* Pressing any key in the Shifted-layout of Mobile Keyboard, Unshifts the latout to default. Before, the shifted state persists. 
+
 1.1 (2025-05-10)
 ----------------
 * Caps Lock now makes the letter capital, as to previously the Shift needed to held to initiate that behaviour.
