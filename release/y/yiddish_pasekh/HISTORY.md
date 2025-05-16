@@ -1,6 +1,10 @@
 Yiddish Pasekh Keyboard Change History
 =======================
 
+2.0.2 (15 May 2025)
+-----------------
+* Change to use KbdHebr display font for better OSK display
+
 2.0.1 (16 Sep 2024)
 -----------------
 * Added keystroke to access pe (removed "P" from nul so it actually works)

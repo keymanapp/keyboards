@@ -1,6 +1,10 @@
 alephwithbeth Change History
 ====================
 
+1.0.7 (2025-05-15)
+------------------
+* Change to use KbdHebr display font for better OSK display
+
 1.0.6 (2024-06-11)
 ------------------
 * Remove source files from package
