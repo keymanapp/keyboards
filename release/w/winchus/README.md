@@ -41,7 +41,7 @@ _(No es necesario cambiar la versión si solo se han realizado modificaciones en
 7. En la pestaña vertical "Details" por la izquierda, en el campo de "Description", actualiza la versión en los dos enlaces. (Usa la flecha del teclado para ir más abajo.)
 8. En la pestaña vertical "Build", haz clic en "Compile Package"
 9. Abre `welcome.htm` en un editor como Visual Studio Code o Notepad++
-10. Busca cada instancia de "BUSCA "INSTANCIADEVERSIÓN#". En la próxima línea después de cada instancia verás donde actualizar la versión (a veces en un URL).
+10. Busca cada instancia de "INSTANCIADEVERSIÓN#". En la próxima línea después de cada instancia verás donde actualizar la versión (a veces en un URL).
 11. Guarda `welcome.htm`
 12. Actualiza el número en los dos enlaces en este mismo documento, y guarda los cambios
 13. Sigue las instrucciones para actualizar `winchus.php` (ver abajo)
@@ -68,14 +68,8 @@ _(No es necesario cambiar la versión si solo se han realizado modificaciones en
 
 Es recomendable revisar periódicamente el documento completo y seguir los pasos indicados para asegurar que todo esté actualizado, especialmente tras un cambio de versión de Keyman.
 
-## Actualizar `winchus.php`
-1. Abre `welcome.htm` y `winchus.php`
-2. (Si ya actualizaste la versión en `welcome.htm`, no es necesario hacerlo aquí manualmente)
-3. Busca `<!-- INICIO_SECCIÓN#01 -->` y `<!-- #region SECCIÓN#01 -->` en `welcome.htm` y `winchus.php`. En Visual Studio Code, colapsa la sección en ambos archivos. (A la izquierda de la segunda línea haz clic en la flechita para colapsar.)
-4. En `welcome.htm`, selecciona toda esa línea y un poco más hasta que el cursor apenas aparece en la próxima línea. (En realidad, no es la próxima, sino el fin de la sección.)
-5. Copia la selección completa y pégala en `winchus.php`
-6. Repite el proceso para todas las secciones numeradas
-7. Guarda los cambios
+## Actualizar `HISTORY.md`
+Con cada cambio de versión, indica los cambios en `HISTORY.md`, siguiendo el mismo formato. Ser muy breve. 
 
 ## Actualizar `winchus.pdf`
 1. Abre `welcome.htm` en Chrome
@@ -86,6 +80,18 @@ Es recomendable revisar periódicamente el documento completo y seguir los pasos
 6. Verifica que el PDF se vea correctamente
 7. Nómbralo `winchus.pdf` (todo en **minúsculas**)
 8. Coloca el archivo en `/winchus/source/welcome` y `/winchus/source/help`
+
+## Actualizar `winchus.php`
+1. Abre `welcome.htm` y `winchus.php`
+2. (Si ya actualizaste el número de versión en `welcome.htm`, no es necesario hacerlo aquí manualmente)
+3. Busca `<!-- INICIO_SECCIÓN#01 -->` y `<!-- #region SECCIÓN#01 -->` en `welcome.htm` y `winchus.php`. En Visual Studio Code, colapsa la sección en ambos archivos. (A la izquierda de la segunda línea haz clic en la flechita para colapsar.)
+4. En `welcome.htm`, selecciona toda esa línea y un poco más hasta que el cursor apenas aparece en la próxima línea. (En realidad, no es la próxima, sino el fin de la sección.)
+5. Copia la selección completa y pégala en `winchus.php`
+6. Repite el proceso para todas las secciones numeradas
+7. Guarda los cambios
+
+## Actualizar `LICENSE.md`
+Verifica que el rango de años en línea 3 esté al día. (Debe terminar con el año actual.)
 
 ## Actualizar la aplicación Winchus en Android
 1. Asegúrate de tener la última versión de Keyboard App Builder
@@ -112,19 +118,19 @@ Es recomendable revisar periódicamente el documento completo y seguir los pasos
 
 ## Actualizar el repositorio Keyman
 1. Accede a GitHub y actualiza tu _fork_ de [keymanapp/keyboards](https://github.com/keymanapp/keyboards)
-2. Con cada cambio de versión, indica los cambios en `HISTORY.md`, siguiendo el mismo formato. Ser muy breve. 
-3. Seguir los pasos [aquí](https://help.keyman.com/developer/keyboards/github/step-3)
-4. Cuando hagas tu _pull request_, su nombre debe empezar con `[winchus]`
+2. Seguir los pasos [aquí](https://help.keyman.com/developer/keyboards/github/step-3)
+3. Cuando hagas tu _pull request_, su nombre debe empezar con `[winchus]`
 
 Siguiendo estos pasos, garantizas que Winchus esté siempre actualizado, funcionando correctamente, y con buena documentación.
 
 # Más recursos
 
-<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN--> [Haz clic aquí](https://help.keyman.com/keyboard/winchus/1.2/winchus) para leer la documentación completa, y para las indicaciones de cómo usar el teclado.
+<!--INSTANCIADEVERSIÓN#-->
+<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN--> [Haz clic aquí](https://help.keyman.com/keyboard/winchus/1.4/winchus) para leer la documentación completa, y para las indicaciones de cómo usar el teclado.
 
 # Copyright
 
-Véase [LICENSE.md](LICENSE.md)
+Véase [LICENSE.md](LICENSE.md) o [LICENCIA_ESPANOL_NO_OFICIAL.md](LICENCIA_ESPANOL_NO_OFICIAL.md)
 
 # Información de contacto
 
@@ -161,7 +167,8 @@ See the section [Instrucciones para desarrolladores de Winchus](#instrucciones-p
 
 # More resources
 
-<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN-->[Click here](https://help.keyman.com/keyboard/winchus/1.2/winchus ) to read the full documentation, including instructions on how to use the keyboard. Note that it is only in Spanish, so you may want to use a machine translator like Deepl or Google Translate. 
+<!--INSTANCIADEVERSIÓN#-->
+<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN-->[Click here](https://help.keyman.com/keyboard/winchus/1.4/winchus ) to read the full documentation, including instructions on how to use the keyboard. Note that it is only in Spanish, so you may want to use a machine translator like Deepl or Google Translate. 
 
 # Copyright
 
