@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,7 +19,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Beria Erfe Phonetic</Name>
-    <Copyright URL="">Copyright © SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL Global</Copyright>
     <Author URL="">Lorna Evans</Author>
     <Description URL="">This is an experimental phonetic-based keyboard designed for the Zaghawa Beria language using the Beria Erfe script.</Description>
     <Version URL=""></Version>
@@ -79,16 +79,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\build\beria_erfe_phonetic.js</Name>
+      <Description>File beria_erfe_phonetic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Beria Erfe Phonetic</Name>
       <ID>beria_erfe_phonetic</ID>
-      <Version>1.0</Version>
       <OSKFont>..\assets\Kedebideri-Regular.ttf</OSKFont>
       <DisplayFont>..\assets\Kedebideri-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="zag-Zyyy">Zaghawa</Language>
+        <Language ID="zag-Berf">Zaghawa</Language>
       </Languages>
       <WebOSKFonts>
         <Font Filename="..\assets\Kedebideri-Regular.ttf"/>
