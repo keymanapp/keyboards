@@ -781,109 +781,61 @@
     </thead>
     <tbody>
         <tr>
-        <td>Alt + a</td>
+        <td>Shift + F</td>
         <td>َ</td>
         <td>Fatha</td>
         <td>0618</td>
         <td>ARABIC_SMALL_FATHA</td>
         </tr>
         <tr>
-        <td>Alt + e</td>
+        <td>Shift + I</td>
         <td>ِ</td>
         <td>Kasra</td>
         <td>061A</td>
         <td>ARABIC_SMALL_KASRA</td>
         </tr>
         <tr>
-        <td>Alt + i</td>
-        <td>ِ</td>
-        <td>Kasra</td>
-        <td>061A</td>
-        <td>ARABIC_SMALL_KASRA</td>
-        </tr>
-        <tr>
-        <td>Alt + o</td>
+        <td>Shift + U</td>
         <td>ُ</td>
         <td>Damma</td>
         <td>0619</td>
         <td>ARABIC_SMALL_DAMMA</td>
         </tr>
         <tr>
-        <td>Alt + u</td>
-        <td>ُ</td>
-        <td>Damma</td>
-        <td>0619</td>
-        <td>ARABIC_SMALL_DAMMA</td>
-        </tr>
-        <tr>
-        <td>Alt + a, Alt + a</td>
+        <td>Shift + F, Shift + F</td>
         <td>ً</td>
         <td>Fathatan</td>
         <td>064B</td>
         <td>ARABIC_FATHATAN</td>
         </tr>
         <tr>
-        <td>Alt + e, Alt + e</td>
+        <td>Shift + I, Shift + I</td>
         <td>ٍ</td>
         <td>Kasratan</td>
         <td>064D</td>
         <td>ARABIC_KASRATAN</td>
         </tr>
         <tr>
-        <td>Alt + i, Alt + i</td>
-        <td>ٍ</td>
-        <td>Kasratan</td>
-        <td>064D</td>
-        <td>ARABIC_KASRATAN</td>
-        </tr>
-        <tr>
-        <td>Alt + o, Alt + o</td>
+        <td>Shift + U, Shift + U</td>
         <td>ٌ</td>
         <td>Dammatan</td>
         <td>064C</td>
         <td>ARABIC_DAMMATAN</td>
         </tr>
         <tr>
-        <td>Alt + u, Alt + u</td>
-        <td>ٌ</td>
-        <td>Dammatan</td>
-        <td>064C</td>
-        <td>ARABIC_DAMMATAN</td>
-        </tr>
-        <tr>
-        <td>Alt + m</td>
+        <td>Shift + L</td>
         <td>ّ</td>
         <td>Shadda</td>
         <td>0651</td>
         <td>ARABIC_SHADDA</td>
         </tr>
         <tr>
-        <td>Alt + n</td>
+        <td>Shift + R</td>
         <td>ْ</td>
         <td>Sukun</td>
         <td>0652</td>
         <td>ARABIC_SUKUN</td>
         </tr>
-        <tr>
-        <td>Alt + r</td>
-        <td>ٰ</td>
-        <td>Alef superscript</td>
-        <td>0670</td>
-        <td>ARABIC_LETTER_SUPERSCRIPT_ALEF</td>
-        </tr>
-        <tr>
-        <td>Alt + f</td>
-        <td>ٖ</td>
-        <td>Alef subscript</td>
-        <td>0656</td>
-        <td>ARABIC_SUBSCRIPT_ALEF</td>
-        </tr>
-        <tr>
-        <td>Alt + q</td>
-        <td>ٓ</td>
-        <td>Madda</td>
-        <td>0653</td>
-        <td>ARABIC_MADDAH_ABOVE</td>
         </tr>
     </tbody>
     </table>
@@ -1089,7 +1041,7 @@
     <h1 id="settings-toggles">Settings/Toggles</h1>
     <p>There are 3 settings for the keyboard that can be toggled ON and OFF.</p>
     <h2 id="ligature-completion-and-honorifics">Ligature Completion and Honorifics</h2>
-    <p>Whether to enable the addition of ligature completion and honorifics when typing, e.g. &quot;محمد&quot; to &quot;ﷴ (﵌)‏&quot;</p>
+    <p>Whether to enable the addition of ligature completion and honorifics when typing, e.g. &quot;محمد&quot; to &quot;ﷴ (﵌)‏&quot; (which can be done by pressing Shift + Backquote).</p>
     <p>CTRL SHIFT + 1 to enable <br> CTRL SHIFT + 2 to disable </p>
     <h2 id="honorific-brackets">Honorific Brackets</h2>
     <p>Whether to enable the addition of brackets around the honorifics when typing.</p>

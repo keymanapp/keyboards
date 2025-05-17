@@ -1,4 +1,4 @@
-﻿c ------------------ Variable Stores -----------------------
+﻿c Includes the Scheherazade New font family.
 
 store(&VERSION) '10.0'
 store(&COPYRIGHT) 'Copyright © Amir Reza Ghareebdost'
@@ -196,6 +196,7 @@ store(FatimaMasuma) "فاطمة المعصومة"
 
 c ------------------ Base Keyboard Layout -----------------------
 store(&TARGETS) 'windows macosx linux desktop'
+store(&VISUALKEYBOARD) 'phonetic_farsi.kvks'
 
     begin Unicode > use(main)
 
@@ -273,14 +274,6 @@ store(&TARGETS) 'windows macosx linux desktop'
     + [K_2] > outs(two)
     + [K_1] > outs(one)
 
-
-    + [SHIFT K_F] > nul
-    + [SHIFT K_I] > nul
-    + [SHIFT K_L] > nul
-    + [SHIFT K_R] > nul
-    + [SHIFT K_U] > nul
-
-
 c -------------------- Diacritic Implementation ---------------------
 
     if(DIACRITICS_TOGGLE = "1") any(ra) + "'"       > outs(za)
@@ -297,9 +290,6 @@ c -------------------- Diacritic Implementation ---------------------
     if(DIACRITICS_TOGGLE = "1") any(jeem) + "'"     > outs(chah)
     if(DIACRITICS_TOGGLE = "1") any(heh) + "'"      > outs(teh_marbuta)
     if(DIACRITICS_TOGGLE = "1") any(ya) + "'"       > outs(ya_arab)
-
-c ---------- Miscellanous Ligature Implementation --------------------
-
     if(DIACRITICS_TOGGLE = "1") any(alef) + "a"  > outs(alef_madda)
     if(DIACRITICS_TOGGLE = "1") any(alef) + "'"  > outs(alef_hamza)
     if(DIACRITICS_TOGGLE = "1") any(keheh) + "'" > outs(gaf)
@@ -307,25 +297,22 @@ c ---------- Miscellanous Ligature Implementation --------------------
 
 c --------------- Vowel Implementation ------------------------
 
-    + [LALT K_A] > outs(fatha)
-    any(fatha) + [LALT K_A] > outs(fathatan)
+    + [SHIFT K_F] > outs(fatha)
+    any(fatha) + [SHIFT K_F] > outs(fathatan)
 
-    + [LALT K_E] > outs(kasra)
-    + [LALT K_I] > outs(kasra)
-    any(kasra) + [LALT K_E] > outs(kasratan)
-    any(kasra) + [LALT K_I] > outs(kasratan)
+    + [SHIFT K_I] > outs(kasra)
+    any(kasra) + [SHIFT K_I] > outs(kasratan)
 
-    + [LALT K_U] > outs(damma)
-    + [LALT K_O] > outs(damma)
-    any(damma) + [LALT K_U] > outs(dammatan)
-    any(damma) + [LALT K_O] > outs(dammatan)
+    + [SHIFT K_U] > outs(damma)
+    any(kasra) + [SHIFT K_U] > outs(dammatan)
 
-    + [LALT K_M] > outs(shadda)
-    + [LALT K_N] > outs(sukun)
-    + [LALT K_Q] > outs(madda)
-
-    + [LALT K_R] > outs(alef_superscript)
-    + [LALT K_F] > outs(alef_subscript)
+    + [SHIFT K_L] > outs(shadda)
+    + [SHIFT K_R] > outs(sukun)
+    
+    c + [SHIFT K_U] > outs(madda)
+    c + [LALT K_R] > outs(alef_superscript)
+    c + [LALT K_F] > outs(alef_subscript)
+    c Removed for brevity, following DISCUS
 
 c ----------------- Ligature Implementation ---------------------
 
