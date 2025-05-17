@@ -105,6 +105,7 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 
 store(touchVowels)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_WWA]
 store(touchVowelsExtended)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_WWE][T_WWU][T_WWI][T_WWAA][T_WWEE]
+
 store(ሀ_ቤተሰብ) 'ሀሁሂሃሄሆኈኍኊኋኌ'
 store(ለ_ቤተሰብ) 'ለሉሊላሌሎሏ'
 store(ሐ_ቤተሰብ) 'ሐሑሒሓሔሖሗ'
@@ -148,6 +149,21 @@ store(ቐ_ቤተሰብ) 'ቐቑቒቓቔቖቘቝቚቛቜ'
 store(ጘ_ቤተሰብ) 'ጘጙጚጛጜጞⶓⶖⶔጟⶕ'
 store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟦!'
 
+c
+c Stores for handling special cases with tablet "extra" layers.  We want to replace the initial
+c key that brought us into the layer if a modifier key is typed:
+c
+store(ዀ_layer_keys) [T_WWU][T_WWI][T_WWAA][T_WWEE]
+store(ዀ_layer_out) 'ዅዂዃዄ'
+
+store(ᎀ_layer_keys) [U_1E7ED] [U_1E7EE] [U_1383] [U_1384] [U_1E7F3] [U_1E7F4] [U_1387]
+store(ᎀ_layer_out) '𞟭𞟮ᎃᎄ𞟳𞟴ᎇ'
+
+store(ᎈ_layer_keys) [U_1E7FB] [U_1E7FC] [U_138B] [U_138C] [U_1E7FD] [U_1E7FE] [U_138F]
+store(ᎈ_layer_out) '𞟻𞟼ᎋᎌ𞟽𞟾ᎏ'
+
+store(𞟨_layer_keys) [U_1E7E9] [U_1E7EA] [U_1E7EB] [U_1E7F0] [U_1E7F1] [U_1E7F2] [U_1E7F5] [U_1E7F6] [U_1E7F7] [U_1E7F8] [U_1E7F9] [U_1E7FA]
+store(𞟨_layer_out) '𞟩𞟪𞟫𞟰𞟱𞟲𞟵𞟶𞟷𞟸𞟹𞟺'
 
 
 c =====================End Data Section=========================================================
@@ -234,6 +250,20 @@ c
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+
+c Additional Rules for Tablet extras
+  if( &layer = "ዀ-extra" ) 'ዀ' + any(ዀ_layer_keys) > index(ዀ_layer_out,3)
+  if( &layer = "ዀ-extra" ) + [T_WWE] > 'ዀ' dk(1)
+  if( &layer = "ዀ-extra" ) + any(ዀ_layer_keys) > index(ዀ_layer_out,2)
+
+  if( &layer = "ᎀ-extra" ) 'ᎀ' + any(ᎀ_layer_keys) > index(ᎀ_layer_out,3)
+  if( &layer = "ᎀ-extra" ) + [U_1380] > 'ᎀ' dk(1)
+
+  if( &layer = "ᎈ-extra" ) 'ᎈ' + any(ᎈ_layer_keys) > index(ᎈ_layer_out,3)
+  if( &layer = "ᎈ-extra" ) + [U_1388] > 'ᎈ' dk(1)
+  
+  if( &layer = "𞟨-extra" ) '𞟨' + any(𞟨_layer_keys) > index(𞟨_layer_out,3)
+  if( &layer = "𞟨-extra" ) + [U_1E7E8] > '𞟨' dk(1)
 
 c
 c Rules for "extras"
