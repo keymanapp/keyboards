@@ -1,10 +1,8 @@
 <?php
   $pagename = 'Phonetic Farsi Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-
   $pagestyle = <<<END
-   body {
+ /* Font Definitions */
             @font-face {
                 font-family: ScherazadeNew;
                 src: url(https://fonts.googleapis.com/css?family=Scheherazade New) format('truetype');
@@ -33,11 +31,9 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-  END;
-
+END;
+  require_once('header.php');
 ?>
-    
-    <h1>Welcome to Phonetic Farsi Keyboard</h1>
     
     <p>Thank you for choosing the Phonetic Farsi keyboard! This keyboard layout is designed to provide a phonetically accurate typing experience for Farsi (Persian) language users.</p>
     
