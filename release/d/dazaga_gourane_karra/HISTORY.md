@@ -5,4 +5,8 @@ dazaga_gourane_karra Change History
 ----------------
 * Created by Zacharias van Stek and Henri Schellberg
 
+1.0.1 (2025-05-19)
+------------------
+* Updated keyboard name
+
 
