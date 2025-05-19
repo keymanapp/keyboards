@@ -1,7 +1,7 @@
 Dazaga Gourane Karra Keyboard
 ==============
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------
