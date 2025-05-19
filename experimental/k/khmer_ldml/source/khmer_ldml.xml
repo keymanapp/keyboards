@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <keyboard3 xmlns="https://schemas.unicode.org/cldr/45/keyboard3" locale="km" conformsTo="45">
   <info author="Nguonnyny Tan" name="khmer_ldml"/>
-  <version number="1.0.1"/>
+  <version number="1.1.0"/>
   <keys>
     <import base="cldr" path="45/keys-Zyyy-punctuation.xml"/>
     <import base="cldr" path="45/keys-Zyyy-currency.xml"/>
@@ -375,19 +375,8 @@
     </transformGroup>
 
     <transformGroup>
-        <!-- a subscript placed after a shifter and a vowel (a genuine/pseudo vowel or a two-part vowel) has to move to before them. -->
-        <transform from="($[c_shifter]$[v_combo_N]\u{17C6})(\u{17D2}$[subcons])" to="$2$1" /> <!-- after a two-part vowel -->
-        <transform from="($[c_shifter]$[v_combo_R]\u{17C7})(\u{17D2}$[subcons])" to="$2$1" /> <!-- after a two-part vowel -->
-        <transform from="($[c_shifter]$[v_any])(\u{17D2}$[subcons])" to="$2$1" /> <!-- after a genuine/pseudo vowel -->
-
-        <transform from="(\u{17D2}\u{179A}$[v_any])(\u{17D2}$[subcons])" to="$2$1"/> <!-- when a vowel intervenes, move it to the end -->
-        <transform from="(\u{17D2}\u{179A}$[v_combo_N]\u{17C6})(\u{17D2}$[subcons])" to="$2$1"/> <!-- when a two-part vowel intervenes, move it to the end too -->
-        <transform from="(\u{17D2}\u{179A}$[v_combo_R]\u{17C7})(\u{17D2}$[subcons])" to="$2$1"/> <!-- when a two-part vowel intervenes, move it to the end too -->
-
         <!-- @@Case #1: when a subscript is typed after a vowel, the subscript should be automatically moved to before the vowel. -->
-        <transform from="($[v_combo_N]\u{17C6})(\u{17D2}$[subcons])" to="$2$1" /> <!-- two-part vowels have to come after a subscript -->
         <transform from="($[v_combo_R])\u{17C7}\u{17D2}($[subcons])" to="\u{17D2}$2$1\u{17C7}" /> <!-- two-part vowels have to come after a subscript -->
-        <transform from="($[v_any])(\u{17D2}$[subcons])" to="$2$1" /> <!-- a vowel has to come after a subscript -->
     </transformGroup>
 
     <transformGroup>
@@ -402,20 +391,12 @@
         <transform from="(\u{17D2}\u{179A})($[v_combo_N]\u{17C6})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
         <transform from="(\u{17D2}\u{179A})($[v_combo_R]\u{17C7})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
 
-        <transform from="(\u{17D2}\u{179A}$[c_shifter])(\u{17D2}$[subcons])" to="$2$1"/> <!-- when a shifter intervenes, move it to the end -->
-        <transform from="(\u{17D2}\u{179A})(\u{17D2}$[subcons])" to="$2$1"/> <!-- move any subscript placed after [D2+DA] to before them -->
-        <!-- 3 lines of code need to put before Case #1 -->
     </transformGroup>
 
     <transformGroup>
-        <!-- Case #3: when a subscript is placed after a consonant shifter, they should be reversed. -->
-        <transform from="($[c_shifter])(\u{17D2}$[subcons])" to="$2$1"/>
-
         <!-- Reordering - Triisap and Muusikatoan store before a vowel and a vowelcomboR and pseudo vowel. -->
         <transform from="($[c_shifter])($[v_gen]$[v_pseudo])($[c_shifter])" to="$3$2"/> <!-- when a two-part vowel is in between two consonants shifter, replace the one on the left with the one the right.  -->
-        <transform from="($[v_gen]$[v_pseudo])($[c_shifter])" to="$2$1"/> <!-- place a two-part vowel after a consonant shifter(i.e. មោះ៉ )  -->
         <transform from="($[c_shifter])($[v_any])($[c_shifter])" to="$3$2"/> <!-- when either a genuine or pseudo vowel is in between two consonant shifters, replace the one on the left with the one on the right  -->
-        <transform from="($[v_any])($[c_shifter])" to="$2$1"/> <!-- place either a genuine or pseudo vowel after a consonant shifter  -->
     </transformGroup>
 
     <transformGroup>
@@ -472,17 +453,7 @@
         <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])\u{17CA}($[v_gen]$[v_pseudo])" to="$1\u{17C9}$2"/>
 
         <!-- single consonants 2nd > 1st series (without U+17BB) -->
-        <transform from="(\u{17D2}$[shiftable_c_2nd]\u{17CA}$[v_gen]$[v_pseudo])" to="$1"/>
         <transform from="($[shiftable_c_2nd])\u{17CA}($[v_gen]$[v_pseudo])" to="$1\u{17C9}$2"/> <!-- change U+17CA to U+17C9 before ាំ -->
-    </transformGroup>
-
-    <transformGroup>
-        <!-- SPECIAL CASE: the following clusters may accept either of the two consonant shifters. -->
-        <transform from="(\u{1794}\u{17D2}\u{1799}$[c_shifter])" to="$1" />
-        <transform from="(\u{179F}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
-        <transform from="(\u{1786}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
-        <transform from="(\u{1794}\u{17D2}\u{1799}$[c_shifter])" to="$1" />
-        <transform from="(\u{179F}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
     </transformGroup>
 
     <transformGroup>
@@ -606,9 +577,6 @@
     </transformGroup>
 
     <transformGroup>
-        <!-- place Robat after a base before any vowel -->
-        <transform from="($[c_out])($[v_gen])(\u{17CC})" to="$1$3$2" />
-
         <!-- BONUSES​(note that these combinations are invalid and they can't be found in the CN dictionary 1967 nor RH 1997, but users think they are) -->
         <transform from="\u{1791}\u{17D2}\u{1794}" to="\u{17A1}" /> <!-- ទ្ប transforms to ឡ  -->
 
@@ -642,6 +610,22 @@
 
         <transform from="\u{1789}(\u{17D2}\u{179C})" to="\u{1796}$1\u{17B6}" /> <!-- ញ្វ (as in សញ្វវុធ) > ព្វា as in សញ្វវុធ -->
         <!-- 6 rules are before case #6 -->
+    </transformGroup>
+
+    <transformGroup>
+        <reorder from="\u{17CC}" order="5"/> <!-- ៌ -->
+        <reorder from="\u{17D2}[\u{1780}-\u{17B3}\u{17DC}\u{17E0}-\u{17E9}]" order="10" tertiaryBase="true"/>
+        <!-- ក to ឳ  ៜ ១ to ៩ -->
+        <reorder from="\u{17D2}\u{179A}" order="11" tertiaryBase="true"/><!-- ្រ -->
+        <reorder from="[\u{17C9}\u{17CA}]" order="30"/> <!-- ៉  ៊ -->
+        <reorder from="[\u{17BE}-\u{17C5}]" order="60"/>  <!-- ើ  ឿ  ៀ  េ  ែ  ៃ  ោ  ៅ -->
+        <reorder from="[\u{17B7}-\u{17BA}]" order="65"/> <!-- ិ  ី  ឹ  ឺ-->
+        <reorder from="[\u{17BB}-\u{17BD}]" order="70"/> <!-- ុ  ូ  ួ-->
+        <reorder from="\u{17B6}" order="75"/> <!-- ា -->
+        <reorder from="[\u{17C6}\u{17CB}\u{17CD}-\u{17D1}\u{17DD}]" order="105"/> <!-- ំ  ◌់  ◌៍  ◌៎  ◌៏  ◌័  ◌៑  ◌៝ -->
+        <reorder from="[\u{17C7}\u{17C8}]" order="115"/> <!-- ះ  ៈ -->
+        <reorder from="\u{17D3}" order="117"/> <!-- ៓ -->
+        <reorder from="\u{17D2}" order="120" tertiaryBase="true"/> <!-- ceong -->
     </transformGroup>
 
   </transforms>
