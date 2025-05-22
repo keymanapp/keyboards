@@ -26,6 +26,10 @@ function rsync_to_downloads_keyman_com {
 
   pushd $source
 
+  echo   "$RSYNC" -vtrp --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r --stats --rsync-path="$REMOTE_RSYNC_PATH" \
+    --rsh="$RSYNC_HOME\\ssh -i $USERPROFILE\\.ssh\\id_rsa -o UserKnownHostsFile=$USERPROFILE\\.ssh\\known_hosts" \
+    $ignore . "$RSYNC_DEST/$dest"
+
   "$RSYNC" -vtrp --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r --stats --rsync-path="$REMOTE_RSYNC_PATH" \
     --rsh="$RSYNC_HOME\\ssh -i $USERPROFILE\\.ssh\\id_rsa -o UserKnownHostsFile=$USERPROFILE\\.ssh\\known_hosts" \
     $ignore . "$RSYNC_DEST/$dest"
