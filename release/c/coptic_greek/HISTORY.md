@@ -1,7 +1,7 @@
 Coptic (Greek) Change History
 ====================
 
-2.4 (2025-05-20)
+2.4 (2025-05-22)
 ----------------
 * Added Ⳳ,ⳳ
 * Modify discrepancies with coptic_greek.php
