@@ -3,8 +3,8 @@ Coptic (Greek) Change History
 
 2.4 (2025-05-22)
 ----------------
-* Added Ⳳ,ⳳ
-* Modify discrepancies with coptic_greek.php
+* Added Ⳳ,ⳳ,⸴,⸳
+* Several corrections have been implemented to address identified issues
 
 2.3 (2024-08-29)
 ----------------
