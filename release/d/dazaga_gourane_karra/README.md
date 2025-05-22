@@ -1,8 +1,6 @@
 Dazaga Gourane Karra Keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 This keyboard layout is designed for the Dazaga Gourane Karra language and was developed with
