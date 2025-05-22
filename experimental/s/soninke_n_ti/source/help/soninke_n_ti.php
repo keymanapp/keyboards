@@ -1,5 +1,5 @@
 <?php
-$pagename = 'Soninke N'ti Keyboard Help';
+$pagename = 'Soninke N\'ti Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
