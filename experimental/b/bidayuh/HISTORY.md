@@ -1,5 +1,8 @@
 BidBiatahBS Change History
 ====================
+1.3 (23 May 2025)
+----------------
+* update .kmn rules to use equal sign instead of hyphen
 
 1.2 (08 May 2025)
 ----------------
