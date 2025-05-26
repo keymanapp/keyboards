@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.236.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -21,13 +21,13 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Naija Type</Name>
-    <Copyright URL="">© 2024 David Rowbory</Copyright>
+    <Copyright URL="">© 2025 David Rowbory</Copyright>
     <Author URL="mailto:keyboards@m.rowbory.co.uk">David Rowbory</Author>
     <WebSite URL="http://www.rowbory.co.uk">http://www.rowbory.co.uk</WebSite>
     <Description URL="">This keyboard helps you to type any letters used in 100+ Nigerian orthographies including under-dots, underlines, diacritics, tone marks, different shaped letters like a̱ ẹ ɨ ʉ ʊ́ ɓ ɦ m̃ ŋ ₦ and many others all in one keyboard for computers or touch.
 
-    Languages covered include: Abua, Adara, Agatu, Agwagwune, Alago, Ashe, Atsam, Awak, Bacama, Bali, Bangwinji, Basa, Bekwarra, Berom, Bokobaru, Bura-Pabir, Burak, Cahungwarya, Cakfem-Mushere, Cishingini, C’Lela, Dadiya, Dghwede, Dikaka, Duya, Dza, Ebira, Edo, Ekajuk, Engenni, English, Etkywan, Etulo, Ezaa, Nigerian Fulfulde, Gbari, Goemai, Gokana, Gude, Gwak, Hausa, Hyam, Ibaas, Ibani, Idoma, Igbo, Igede, Ika, Ikwere, Ikwo, Iten, Ivbie North-Okpela-Arhe, Izere, Izii, Jibu, Jju, Kamuku, Kamwe, Yerwa Kanuri, Karekare, Kibaku, Kirike, Kukele, Kutep, Lamang, Lokaa, Longuda, Mada, Nigeria Mambila, Mbe, Cross River Mbembe, Mbula-Bwazza, Mumuye, Mwaghavul, Ngas, Ninzo, Nupe-Nupe-Tako, Nya Huba, Obolo, Odual, Ogbah, Pangu, Pero, Nigerian Pidgin, Pyam, Reshe, Rigwe, Ron, Tal, Tangale, Tarok, Tera, Tiv, Tsikimba, Tsishingini, Tsuvadi, Tula, Tyap, ut-Hun, ut-Ma’in, Waja, Warji, Yala, Yoruba
-
+    Languages covered include: abn, kad, agc, yay, ala, ahs, cch, awo, bcy, bcn, bsj, bzw, bkv, bom, bus, bwr, bys, nat, cky, asg, dri, dbd, dgh, cfa, ldb, jen, igb, bin, eka, enn, en, ich, utr, eza, fuv, gby, ank, gkn, gde, jgk, ha, jab, cen, iby, idu, ig, ige, ikk, ikw, iqw, etx, atg, izr, izz, jib, kaj, cdr, hig, kr, kai, ckl, okr, kez, kub, hia, yaz, lnu, mda, mzk, mfo, mfn, mbu, mzm, sur, anc, nin, nup, hbb, ann, odu, ogc, png, pip, pcm, pym, res, iri, cla, tal, tan, yer, ttr, tiv, kdl, tsw, tvd, tul, kcg, uth, gel, wja, wji, yba, yo, bqv, bqvm
+Abua, Adara, Agatu, Agwagwune, Alago, Ashe, Atsam, Awak, Bacama, Bali, Bangwinji, Basa, Bekwarra, Berom, Bokobaru, Bura-Pabir, Burak, Cahungwarya, Cakfem-Mushere, Cishingini, C’Lela, Dadiya, Dghwede, Dikaka, Duya, Dza, Ebira, Edo, Ekajuk, Engenni, English, Etkywan, Etulo, Ezaa, Nigerian Fulfulde, Gbari, Goemai, Gokana, Gude, Gwak, Hausa, Hyam, Ibaas, Ibani, Idoma, Igbo, Igede, Ika, Ikwere, Ikwo, Iten, Ivbie North-Okpela-Arhe, Izere, Izii, Jibu, Jju, Kamuku, Kamwe, Yerwa Kanuri, Karekare, Kibaku, Kirike, Kukele, Kutep, Lamang, Lokaa, Longuda, Mada, Nigeria Mambila, Mbe, Cross River Mbembe, Mbula-Bwazza, Mumuye, Mwaghavul, Ngas, Ninzo, Nupe-Nupe-Tako, Nya Huba, Obolo, Odual, Ogbah, Pangu, Pero, Nigerian Pidgin, Pyam, Reshe, Rigwe, Ron, Tal, Tangale, Tarok, Tera, Tiv, Tsikimba, Tsishingini, Tsuvadi, Tula, Tyap, ut-Hun, ut-Ma’in, Waja, Warji, Yala, Yoruba, Waci, Miyã
     This is the package for the keyboard. Lexical models (text completion) for Hausa, English, Ishɛ, Pangu, Fulfulde etc are packaged separately.</Description>
   </Info>
   <Files>
@@ -54,12 +54,6 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\build\naijatype.js</Name>
-      <Description>File naijatype.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
     </File>
     <File>
       <Name>welcome\comma_punc.png</Name>
@@ -151,12 +145,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\naijatype.kmx</Name>
+      <Description>Keyboard Naija Type</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\naijatype.js</Name>
+      <Description>File naijatype.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Naija Type</Name>
       <ID>naijatype</ID>
-      <Version>61</Version>
       <OSKFont>Andika-Regular.ttf</OSKFont>
       <DisplayFont>Andika-Regular.ttf</DisplayFont>
       <Languages>
@@ -193,7 +197,7 @@
         <Language ID="ich">Etkywan</Language>
         <Language ID="utr">Etulo</Language>
         <Language ID="eza">Ezaa</Language>
-        <Language ID="fuv">Fulfulde, Nigerian</Language>
+        <Language ID="fuv">Nigerian Fulfulde</Language>
         <Language ID="gby">Gbari</Language>
         <Language ID="ank">Goemai</Language>
         <Language ID="gkn">Gokana</Language>
@@ -229,7 +233,7 @@
         <Language ID="mda">Mada</Language>
         <Language ID="mzk">Nigeria Mambila</Language>
         <Language ID="mfo">Mbe</Language>
-        <Language ID="mfn">Mbembe, Cross River</Language>
+        <Language ID="mfn">Cross River Mbembe</Language>
         <Language ID="mbu">Mbula-Bwazza</Language>
         <Language ID="mzm">Mumuye</Language>
         <Language ID="sur">Mwaghavul</Language>
@@ -242,7 +246,7 @@
         <Language ID="ogc">Ogbah</Language>
         <Language ID="png">Pangu</Language>
         <Language ID="pip">Pero</Language>
-        <Language ID="pcm">Pidgin, Nigerian</Language>
+        <Language ID="pcm">Nigerian Pidgin</Language>
         <Language ID="pym">Pyam</Language>
         <Language ID="res">Reshe</Language>
         <Language ID="iri">Rigwe</Language>
@@ -267,6 +271,8 @@
         <Language ID="grh">Tugbiri</Language>
         <Language ID="en-GB">English (United Kingdom)</Language>
         <Language ID="en-NG">English (Nigeria)</Language>
+        <Language ID="bqv">Koro Waci</Language>
+        <Language ID="bqv-NG">Koro Miyã</Language>
       </Languages>
       <Examples>
         <Example ID="ha" Keys="k;" Text="ƙ" Note=""/>
