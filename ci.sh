@@ -27,7 +27,6 @@ SHLVL=0
 #
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$KEYBOARDROOT/tools/jq.inc.sh"
-RSYNC="$KEYBOARDROOT/tools/rsync.exe"
 CI_CACHE="$KEYBOARDROOT/.cache"
 
 if [ ! -z "${SEVENZ_HOME+x}" ]; then

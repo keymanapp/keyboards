@@ -1,5 +1,11 @@
 gff_amharic Change History
 ==========================
+3.2.1 (18 May 2025)
+-------------------
+* mobile: "glow keys" introduced on a trial basis.
+* mobile: more consistent input on non-Amharic layers.
+* mobile & help: miscellaneous css refinements.
+
 3.2 (29 April 2025)
 -------------------
 * desktop: Fix for an `any()` and `index()` size mismatch (index was longer) that KMD 18 warns about.
