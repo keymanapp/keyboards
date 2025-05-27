@@ -1,6 +1,13 @@
 Naija Type Keyboard Change History
 =======================
 
+May 2025
+--------
+* v63 Added diaeresis/umlaut to the tone rota after over dot (esp for Kamuku) and Kanuri reversed e on the Q key. Also disable small caps mode when backspacing a small cap to help those who activate it accidentally.
+
+* v62 Adjust the space+? space+! behaviour to let the shape-changing rota stil work.
+
+
 June 2024
 ---------
 * v61 m̃ easier on touch, ḅ underdot and line on desktop and touch, ɦ on touch. 105 languages known covered.

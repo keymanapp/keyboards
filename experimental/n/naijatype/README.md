@@ -1,10 +1,6 @@
 Naija Type Keyboard for Touch and Physical Keyboards
 ====================================================
 
-© 2021-2025 David Rowbory
-
-Version 63
-
 Description
 -----------
 
