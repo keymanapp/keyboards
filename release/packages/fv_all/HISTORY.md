@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 13.2 (7 May 2025)
+* Rebuild inuktitut_pirurvik keyboard
+
 ## 13.1 (30 Sep 2024)
 * Add NotoHeiltsuk Sans Regular font and code points for fv_hailzaqvla
 

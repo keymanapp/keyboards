@@ -1,9 +1,7 @@
 Korean Morse (SIL) keyboard
 ==============
 
-© 2006-2020 SIL International
-
-Version 2.0
+© SIL Global
 
 Description
 -----------
@@ -17,7 +15,5 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * Linux
 
 

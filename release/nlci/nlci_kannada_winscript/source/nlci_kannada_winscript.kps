@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -23,7 +23,7 @@
     <Name URL="">Kannada WinScript (NLCI)</Name>
     <Copyright URL="">© NLCI Bangalore</Copyright>
     <Author URL="mailto:support@nlife.in">Binila Sanki, SG  NLCI</Author>
-    <Description URL="">This Keyboard mimic Kannada WinScript Keyboard Layout designed by NLCI
+    <Description URL="">This keyboard mimics Kannada WinScript Keyboard Layout designed by NLCI
 in 1988. Several linguists and members of translation community are
 still using this keyboard layout for keyboarding the text. This is a
 phonetic based keyboarding system designed with the objective of
@@ -43,12 +43,6 @@ based keyboarding system.</Description>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>welcome\kannada.png</Name>
-      <Description>File kannada.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
     </File>
     <File>
       <Name>..\build\nlci_kannada_winscript.js</Name>
@@ -80,15 +74,101 @@ based keyboarding system.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Black.ttf</Name>
+      <Description>Font Noto Sans Kannada Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Bold.ttf</Name>
+      <Description>Font Noto Sans Kannada Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-ExtraBold.ttf</Name>
+      <Description>Font Noto Sans Kannada ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-ExtraLight.ttf</Name>
+      <Description>Font Noto Sans Kannada ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Light.ttf</Name>
+      <Description>Font Noto Sans Kannada Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Medium.ttf</Name>
+      <Description>Font Noto Sans Kannada Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</Name>
+      <Description>Font Noto Sans Kannada Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-SemiBold.ttf</Name>
+      <Description>Font Noto Sans Kannada SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Thin.ttf</Name>
+      <Description>Font Noto Sans Kannada Thin</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Kannada WinScript (NLCI)</Name>
       <ID>nlci_kannada_winscript</ID>
-      <Version>2.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="kn">Kannada</Language>
         <Language ID="kfi-Knda">Kannada Kurumba (Kannada)</Language>
+        <Language ID="tcy">Tulu</Language>
+        <Language ID="sa-Knda">Sanskrit (Kannada)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

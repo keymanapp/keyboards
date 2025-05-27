@@ -1,0 +1,151 @@
+﻿c bidayuh generated from template at 2025-04-30 12:28:20
+c with name "bidayuh"
+store(&VERSION) '15.0'
+store(&NAME) 'BidBiatahBS'
+store(&COPYRIGHT) 'Copyright © Grace Oon Bee Tan'
+store(&KEYBOARDVERSION) '1.3'
+store(&TARGETS) 'any'
+store(&BITMAP) 'bidayuh.ico'
+store(&VISUALKEYBOARD) 'bidayuh.kvks'
+store(&LAYOUTFILE) 'bidayuh.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+group(main) using keys
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_2] > '@'
++ [SHIFT K_6] > '^'
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_8] > '*'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_7] > '&'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '$'
++ [SHIFT K_3] > '#'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_1] > '!'
++ [SHIFT K_Z] > 'Z'
++ [SHIFT K_Y] > 'Y'
++ [SHIFT K_X] > 'X'
++ [SHIFT K_W] > 'W'
++ [SHIFT K_V] > 'V'
++ [SHIFT K_U] > 'U'
++ [SHIFT K_T] > 'T'
++ [SHIFT K_S] > 'S'
++ [SHIFT K_R] > 'R'
++ [SHIFT K_Q] > 'Ŭ'
++ [SHIFT K_P] > 'P'
++ [SHIFT K_O] > 'O'
++ [SHIFT K_N] > 'N'
++ [SHIFT K_M] > 'M'
++ [SHIFT K_L] > 'L'
++ [SHIFT K_K] > 'K'
++ [SHIFT K_J] > 'J'
++ [SHIFT K_I] > 'I'
++ [SHIFT K_H] > 'H'
++ [SHIFT K_G] > 'G'
++ [SHIFT K_F] > 'F'
++ [SHIFT K_E] > 'E'
++ [SHIFT K_D] > 'D'
++ [SHIFT K_C] > 'C'
++ [SHIFT K_B] > 'B'
++ [SHIFT K_A] > 'A'
++ [K_PERIOD] > '.'
++ [K_COMMA] > ','
++ [K_QUOTE] > U+0027
++ [K_EQUAL] > '='
++ [K_COLON] > ';'
++ [K_SLASH] > '/'
++ [K_BKQUOTE] > '`'
++ [K_RBRKT] > ']'
++ [K_BKSLASH] > '\'
++ [K_LBRKT] > '['
++ [K_Z] > 'z'
++ [K_Y] > 'y'
++ [K_X] > 'x'
++ [K_W] > 'w'
++ [K_V] > 'v'
++ [K_U] > 'u'
++ [K_T] > 't'
++ [K_S] > 's'
++ [K_R] > 'r'
++ [K_Q] > 'ŭ'
++ [K_P] > 'p'
++ [K_O] > 'o'
++ [K_N] > 'n'
++ [K_M] > 'm'
++ [K_L] > 'l'
++ [K_K] > 'k'
++ [K_J] > 'j'
++ [K_I] > 'i'
++ [K_H] > 'h'
++ [K_G] > 'g'
++ [K_F] > 'f'
++ [K_E] > 'e'
++ [K_D] > 'd'
++ [K_C] > 'c'
++ [K_B] > 'b'
++ [K_A] > 'a'
++ [K_HYPHEN] > '-'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
+
+
+'a' + '=' > U+0101
+'e' + '=' > U+0113
+'i' + '=' > U+012B
+'o' + '=' > U+014D
+'u' + '=' > U+016B
+'ŭ' + '=' > U+016D U+0304
+
+'A' + '=' > U+0100
+'E' + '=' > U+0112
+'I' + '=' > U+012A
+'O' + '=' > U+014C
+'U' + '=' > U+016A
+'Ŭ' + '=' > U+016C U+0304
+
+
+store(&CasedKeys) [K_A] .. [K_Z]
+
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
