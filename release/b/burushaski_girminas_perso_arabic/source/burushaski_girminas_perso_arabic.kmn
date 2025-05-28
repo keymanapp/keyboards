@@ -1,7 +1,7 @@
 ﻿c Please read the Read Me file for a guide as to how to write in Burushaski
 store(&VERSION) '17.0'
 store(&COPYRIGHT) 'Copyright (c) Quwat K. Sunny'
-store(&KEYBOARDVERSION) '2.0.1'
+store(&KEYBOARDVERSION) '2.0.2'
 store(&BITMAP) 'burushaski_girminas_perso_arabic.ico'
 c store(&WINDOWSLANGUAGES) 'x0420 x0820'
 c store(&ETHNOLOGUECODE) 'urd'
@@ -10,7 +10,7 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'burushaski_girminas_perso_arabic.kvks'
 store(&NAME) 'Burushaski Girminas (بروشسکی)'
 store(&LAYOUTFILE) 'burushaski_girminas_perso_arabic.keyman-touch-layout'
-store(&MESSAGE) 'یہ بروشسکی کی بورڈ بروشسکی کے عربی /فارسی رسم الخط میں لکھنے کے لیے بنائی گئ ہے۔ '
+store(&MESSAGE) 'یہ کی بورڈ بروشسکی کے عربی /فارسی رسم الخط میں لکھنے کے لیے بنائی گئ ہے۔ '
 store(&KMW_HELPTEXT) 'څنژ، ژمےࣷ، ݜمن، ݜپیک'
 begin Unicode > use(main)
 
@@ -53,9 +53,11 @@ group(main) using keys
 + [SHIFT CTRL K_BKSLASH] > U+0614 C arabic sign takhalus
 + [SHIFT CTRL K_V] > U+065A C small v above
 + [SHIFT CTRL K_E] > U+08F7 C Left Arrow head 
-
-
-+ [K_0] > '0'
++ [SHIFT CTRL K_W] > U+FD4C C Salla Allahu FULL
++ [SHIFT CTRL K_R] > U+0613 C Razi Allahu FULL+ [K_0] > '0'
++ [SHIFT CTRL K_L] > U+06E1 C Jazm
++ [SHIFT CTRL K_A] > U+FDF2 C Allah Ligature
++ [SHIFT CTRL K_B] > U+FDFD C Bismillah Ligature
 + [K_9] > '9'
 + [K_8] > '8'
 + [K_7] > '7'
@@ -80,7 +82,7 @@ group(main) using keys
 + [K_R] > 'ر'
 + [K_E] > 'ع'
 + [SHIFT K_E] > U+0611
-+ [SHIFT K_W] > 'ﷺ'
++ [SHIFT K_W] > U+0610
 + [K_W] > 'و'
 + [SHIFT K_Q] > 'ْ'
 + [K_Q] > 'ق'
@@ -153,6 +155,4 @@ c superscript alif ٰٰٰU+0670
 
 + [SHIFT CTRL K_C] > U+0685
 + [SHIFT CTRL K_Z] > 'ژ'
-+ [SHIFT CTRL K_R] > 'رْ'
-+ [SHIFT CTRL K_A] > 'اࣷ'
 + [SHIFT CTRL K_N] > 'ݩ' 
