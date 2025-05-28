@@ -1,4 +1,9 @@
 Burushaski (بروشسکی) Perso/Arabic Change History
+
+2.0.2 (27 May 2025)
+-----------------
+On the request of the community, requests were accomodated. 
+
 ====================
 2.0.1 (10 May 2025)
 -----------------
