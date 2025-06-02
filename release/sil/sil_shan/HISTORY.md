@@ -1,6 +1,10 @@
 Shan (SIL) Keyboard Change History
 =======================
 
+1.4.2 (02 June 2025)
+------------------
+* Remove U+1037 and replace with U+1036
+
 1.4.1 (2024-12-12)
 ------------------
 * Update Padauk font

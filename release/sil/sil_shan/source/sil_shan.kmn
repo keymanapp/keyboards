@@ -8,7 +8,7 @@ store(&COPYRIGHT) '(c) SIL Global'
 c store(&hotkey) [CTRL ALT K_S]
 store(&BITMAP) 'sil_shan.ico'
 store(&VISUALKEYBOARD) 'sil_shan.kvks'
-store(&KEYBOARDVERSION) '1.4.1'
+store(&KEYBOARDVERSION) '1.4.2'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'sil_shan.keyman-touch-layout'
 begin Unicode > use(Main)
@@ -51,7 +51,7 @@ store(sdiaU)    U+1086
 store(ldiaK)    'kl'
 store(ldiaU)    U+102F U+1030
 store(ldotK)    'H'
-store(ldotU)    U+1037
+store(ldotU)    U+1036
 
 store(mDia)     outs(ymedU) outs(rmedU) outs(wmedU) outs(udiaU) outs(sdiaU) outs(ldiaU) outs(ldotU)
 store(m1DiaK)   outs(ymedK)
@@ -97,7 +97,6 @@ group(Main) using keys
 + [RALT K_Z] > U+A9E4
 + [RALT K_X] > U+AA67
 + [SHIFT RALT K_X] > U+AA69
-+ [SHIFT RALT K_H] > U+1036
 + [RALT K_S] > U+101D U+A9E5
 
 + any(prevK) > outs(filler) index(prevU, 1)
