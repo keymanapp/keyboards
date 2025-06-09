@@ -2,11 +2,11 @@
   $pagename = 'Embera Northern Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
- th { font: 1.2em "Charis SIL";}
+ th { font: 1.2em "Charis";}
 END;
   require_once('header.php');
 ?>
-<p>Este teclado es para utilizar con el fuente Charis SIL.</p>
+<p>Este teclado es para utilizar con el fuente Charis.</p>
 <p>Se puede utilizar con Microsoft Windows, Mac OSX, Linux, iPhone, Ipad, Android phone, y tabletas Android.</p>
 
 <h3>Accesos directos del teclado Embera (Northern)</h3>

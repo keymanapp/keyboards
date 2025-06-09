@@ -1,9 +1,7 @@
 Ma'di (SIL) keyboard
 ==============
 
-© 2021 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
