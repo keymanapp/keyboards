@@ -16,49 +16,49 @@
 		<div align="left">
 			<table border="2" cellpadding="0" cellspacing="0" width="760" id="table2">
 				<tr>
-					<td><font face="Charis SIL">/ &#713; /</font></td>
+					<td><font face="Charis">/ &#713; /</font></td>
 
 					<td>high rising </td>
 					<td>U+02C9</td>
 					<td>MODIFIER LETTER MACRON</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ &#711; /</font></td>
+					<td><font face="Charis">/ &#711; /</font></td>
 
 					<td>&nbsp;high falling</td>
 					<td>U+02C7</td>
 					<td>CARON</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ / </font></td>
+					<td><font face="Charis">/ / </font></td>
 					<td>mid (not marked)</td>
 
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ &#748; /</font></td>
+					<td><font face="Charis">/ &#748; /</font></td>
 					<td>low falling</td>
 					<td>U+02EC </td>
 
 					<td>MODIFIER LETTER VOICING</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ &#717; /</font></td>
+					<td><font face="Charis">/ &#717; /</font></td>
 					<td>&nbsp;very low</td>
 					<td>U+02CD</td>
 
 					<td>MODIFIER LETTER LOW MACRON</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ ˆ / </font></td>
+					<td><font face="Charis">/ ˆ / </font></td>
 					<td>high checked</td>
 					<td>U+02C6 </td>
 					<td>MODIFIER LETTER CIRCUMFLEX ACCENT</td>
 
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ &#42888; / </font></td>
+					<td><font face="Charis">/ &#42888; / </font></td>
 					<td>low checked</td>
 					<td>U+A788</td>
 					<td>MODIFIER LETTER LOW CIRCUMFLEX ACCENT</td>
@@ -79,36 +79,36 @@
 				<tr>
 
 					<td class="rowheader">To get:</td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
-					<font face="Charis SIL">&#711;</font></td>
-          <td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
-					<font face="Charis SIL">&#710;</font></td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
-					<font face="Charis SIL">&#713;</font></td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<font face="Charis">&#711;</font></td>
+          <td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<font face="Charis">&#710;</font></td>
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<font face="Charis">&#713;</font></td>
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 
-					<font face="Charis SIL">&#717;</font></td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
-					<font face="Charis SIL">&#748;</font></td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
-					<font face="Charis SIL">&#42888;</font></td>
+					<font face="Charis">&#717;</font></td>
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<font face="Charis">&#748;</font></td>
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<font face="Charis">&#42888;</font></td>
 	
 				</tr>
 				<tr>
 					<td class="rowheader">Type:</td>
 
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 					:</td>
-          <td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+          <td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 					{</td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 					?</td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 
 					/</td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 					;</td>
-					<td style="font-family: 'Charis SIL','Gentium Alt',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
+					<td style="font-family: 'Charis','Gentium',serif; font-size: 1.1em; border-right: 1px solid darkblue; margin: 0px; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; background-color: white">
 					[</td>
 					
 				</tr>

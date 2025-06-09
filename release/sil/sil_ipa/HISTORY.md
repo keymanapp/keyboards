@@ -1,6 +1,10 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+2.0.2 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
 2.0.1 (2025-04-10)
 ------------------
 * Modify OSKWeb file to better fit the home page
