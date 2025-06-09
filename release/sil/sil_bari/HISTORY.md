@@ -1,7 +1,7 @@
 Bari (SIL) Keyboard Change History
 =======================
 
-1.2.3 (2025-06-09)
+1.1.3 (2025-06-09)
 ------------------
 * Update font to new version of Charis
 
