@@ -3,8 +3,6 @@ Me’en (Latin) keyboard
 
 © Wycliffe Ethiopia
 
-Version 1.0.1
-
 Description
 -----------
 

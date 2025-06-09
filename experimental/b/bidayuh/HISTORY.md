@@ -1,5 +1,10 @@
 BidBiatahBS Change History
 ====================
+
+1.3.1 (9 June 2025)
+----------------
+* Update to use newest version of Anika fonts
+
 1.3 (23 May 2025)
 ----------------
 * update .kmn rules to use equal sign instead of hyphen
