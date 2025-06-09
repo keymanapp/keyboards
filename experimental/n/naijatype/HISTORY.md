@@ -1,6 +1,11 @@
 Naija Type Keyboard Change History
 =======================
 
+64 (2025-Jun-9)
+--------
+* Added diaeresis/umlaut to the tone rota after over dot (esp for Kamuku) and Kanuri reversed e on the Q key. Also disable small caps mode when backspacing a small cap to help those who activate it accidentally.
+* Updated the Andika font
+
 63 (2024-Aug-20)
 ---------
 * Update osk help file and related css to improve website behavior
