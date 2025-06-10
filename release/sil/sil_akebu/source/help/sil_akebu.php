@@ -2,7 +2,7 @@
 $pagename = 'Aide Clavier Akebu Keyboard Help';
 $pagetitle = $pagename;
 $pagestyle = <<<END
-    body {font-family: Charis SIL; font-size: 100%;}
+    body {font-family: Charis; font-size: 100%;}
 END;
 require_once('header.php');
 ?>
@@ -856,7 +856,7 @@ require_once('header.php');
 
   <h2>Des polices</h2>
 
-  <p>Assurez-vous d’avoir sélectionné une police Unicode (par exemple Charis SIL, Doulos SIL, Andika, Gentium, Times New
+  <p>Assurez-vous d’avoir sélectionné une police Unicode (par exemple Charis, Doulos SIL, Andika, Gentium, Times New
     Roman, etc.) avant de taper les caractères spéciaux.
   </p>
 

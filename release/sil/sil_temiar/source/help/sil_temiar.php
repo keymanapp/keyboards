@@ -5,7 +5,7 @@
 ?>
 <p>Temiar keyboard</p>
 
-<h1>Desktop Usage</h1>
+<h2>Desktop Usage</h2>
 
 <p>This follows standard US / Malay layout with the following keystrokes for vowels:</p>
 
