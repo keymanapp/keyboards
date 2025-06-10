@@ -96,7 +96,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>p</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>p</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -104,7 +104,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -112,7 +112,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -120,7 +120,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>t</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>t</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -128,7 +128,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -136,7 +136,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#648;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#648;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
@@ -145,7 +145,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>c</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>c</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -153,7 +153,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>k</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>k</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -161,7 +161,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>q</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>q</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -169,14 +169,14 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#660;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#660;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.0pt;border-left:
   none;border-bottom:none;border-right:solid windowtext 2.25pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -192,7 +192,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>b</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>b</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -200,7 +200,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -208,7 +208,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -216,7 +216,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>d</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>d</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -224,7 +224,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -232,7 +232,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#598;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#598;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -241,7 +241,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#607;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#607;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -249,7 +249,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#609;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#609;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -257,7 +257,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#610;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#610;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -265,7 +265,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -274,7 +274,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -291,7 +291,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";letter-spacing:
+  <p class=tableipanormal><span style='font-family:"Charis";letter-spacing:
   -1.0pt'>m</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
@@ -300,7 +300,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#625;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#625;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -309,7 +309,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -317,7 +317,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>n</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>n</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -325,7 +325,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -333,7 +333,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#627;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#627;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -342,7 +342,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#626;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#626;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -350,7 +350,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#331;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#331;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -358,7 +358,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#628;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#628;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -366,7 +366,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -375,7 +375,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -392,7 +392,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#665;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#665;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -400,7 +400,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -408,7 +408,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -416,7 +416,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>r</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>r</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -424,7 +424,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -432,7 +432,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -441,7 +441,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -449,7 +449,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -458,7 +458,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#640;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#640;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -466,7 +466,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -474,7 +474,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -491,7 +491,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -500,7 +500,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#11377;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#11377;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -508,7 +508,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -516,7 +516,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#638;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#638;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -524,7 +524,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -532,7 +532,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#637;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#637;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -541,7 +541,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -549,7 +549,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -558,7 +558,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -566,7 +566,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -574,7 +574,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -589,77 +589,77 @@
   9.0pt;font-family:"Arial Narrow",sans-serif'>Fricative</span></p>
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#632;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#632;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>f=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>f</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>f</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>f</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#952;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#952;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>t=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>s</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>s</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>s</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#643;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#643;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>s=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#642;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#642;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>s&lt;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>ç</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>ç</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>c=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>x</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>x</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>x</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#967;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#967;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>x=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#295;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#295;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>h&gt;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>h</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>h</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
@@ -675,7 +675,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#946;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#946;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -683,7 +683,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>v</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>v</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -691,7 +691,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>ð</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>ð</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -699,7 +699,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>z</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>z</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -707,7 +707,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#658;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#658;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -715,7 +715,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#656;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#656;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -724,7 +724,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#669;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#669;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -732,7 +732,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#611;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#611;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -740,7 +740,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#641;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#641;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -748,7 +748,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#661;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#661;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -756,7 +756,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#614;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#614;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -771,7 +771,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;background:#DDDDDD;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
@@ -779,56 +779,56 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;background:#DDDDDD;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#620;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#620;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>l=</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>&nbsp;</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
@@ -836,7 +836,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;background:#DDDDDD;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
@@ -844,7 +844,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;background:#DDDDDD;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border:none;border-right:solid windowtext 2.25pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
@@ -860,7 +860,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -869,7 +869,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -878,7 +878,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -886,7 +886,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#622;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#622;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -894,7 +894,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -902,7 +902,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -911,7 +911,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -919,7 +919,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -927,7 +927,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -935,7 +935,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -944,7 +944,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -961,7 +961,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -969,7 +969,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#651;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#651;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -977,7 +977,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -985,7 +985,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#633;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#633;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -993,7 +993,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1001,7 +1001,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#635;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#635;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1010,7 +1010,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>j</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>j</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1018,7 +1018,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#624;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#624;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1026,7 +1026,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1034,7 +1034,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1042,7 +1042,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -1059,7 +1059,7 @@
   </td>
   <td width=18 valign=top style='width:13.6pt;border:none;border-bottom:solid windowtext 2.25pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -1068,7 +1068,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -1077,7 +1077,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1085,7 +1085,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>l</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>l</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1093,7 +1093,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1101,7 +1101,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#621;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#621;</span></p>
   </td>
   <td width=26 style='width:19.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;
@@ -1110,7 +1110,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#654;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#654;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1118,7 +1118,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#671;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#671;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1126,7 +1126,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;padding:0in 1.8pt 0in 1.8pt'>
@@ -1134,7 +1134,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 1.0pt;background:#DDDDDD;
@@ -1143,7 +1143,7 @@
   </td>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 2.25pt;
   background:#DDDDDD;padding:0in 1.8pt 0in 1.8pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=24 style='width:.25in;border-top:none;border-left:none;border-bottom:
   solid windowtext 2.25pt;border-right:solid windowtext 2.25pt;background:#DDDDDD;
@@ -1182,7 +1182,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 valign=top style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#664;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#664;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1195,7 +1195,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:25.1pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#595;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#595;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1211,7 +1211,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 valign=top style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#448;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#448;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1224,7 +1224,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:25.1pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#599;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#599;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1241,7 +1241,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#451;</span></p>
+  "Charis"'>&#451;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1254,7 +1254,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:25.1pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#644;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#644;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1271,7 +1271,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#450;</span></p>
+  "Charis"'>&#450;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1284,7 +1284,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:25.1pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#608;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#608;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1301,7 +1301,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#449;</span></p>
+  "Charis"'>&#449;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1315,7 +1315,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:25.1pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#667;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#667;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1339,7 +1339,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#653;</span></p>
+  "Charis"'>&#653;</span></p>
   </td>
   <td width=52 style='width:39.05pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -1355,7 +1355,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:24.8pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#597;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#597;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -1374,7 +1374,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>w</span></p>
+  "Charis"'>w</span></p>
   </td>
   <td width=52 style='width:39.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1388,7 +1388,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=33 valign=top style='width:24.8pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL"'>&#657;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis"'>&#657;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1406,7 +1406,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#613;</span></p>
+  "Charis"'>&#613;</span></p>
   </td>
   <td width=52 style='width:39.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1423,7 +1423,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:24.8pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#634;</span></p>
+  "Charis"'>&#634;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1441,7 +1441,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#668;</span></p>
+  "Charis"'>&#668;</span></p>
   </td>
   <td width=52 style='width:39.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1456,7 +1456,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:24.8pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#615;</span></p>
+  "Charis"'>&#615;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1476,7 +1476,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#674;</span></p>
+  "Charis"'>&#674;</span></p>
   </td>
   <td width=52 style='width:39.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1491,7 +1491,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:24.8pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&nbsp;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
@@ -1508,7 +1508,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#673;</span></p>
+  "Charis"'>&#673;</span></p>
   </td>
   <td width=52 style='width:39.05pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1523,7 +1523,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:24.8pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -1616,7 +1616,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=26 valign=top style='width:19.45pt;border:none;border-left:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>i</span></p>
+  "Charis"'>i</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1624,7 +1624,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>y</span></p>
+  "Charis"'>y</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;padding:0in .05in 0in .05in'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>y</span></p>
@@ -1632,7 +1632,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#616;</span></p>
+  "Charis"'>&#616;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -1641,7 +1641,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=36 valign=top style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#649;</span></p>
+  "Charis"'>&#649;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1650,7 +1650,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-left:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#623;</span></p>
+  "Charis"'>&#623;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1658,7 +1658,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>u</span></p>
+  "Charis"'>u</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
@@ -1675,7 +1675,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:none;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#618;</span></p>
+  "Charis"'>&#618;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
@@ -1685,7 +1685,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#655;</span></p>
+  "Charis"'>&#655;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-top:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1694,7 +1694,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&nbsp;</span></p>
+  "Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -1704,7 +1704,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=36 valign=top style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&nbsp;</span></p>
+  "Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1715,7 +1715,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:none;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
@@ -1725,7 +1725,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-top:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#650;</span></p>
+  "Charis"'>&#650;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:none;border-right:solid windowtext 1.5pt;
@@ -1743,7 +1743,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>e</span></p>
+  "Charis"'>e</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0in .05in 0in .05in'>
@@ -1753,7 +1753,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>ø</span></p>
+  "Charis"'>ø</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -1763,7 +1763,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#600;</span></p>
+  "Charis"'>&#600;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -1772,7 +1772,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=36 valign=top style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#629;</span></p>
+  "Charis"'>&#629;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
@@ -1782,7 +1782,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#612;</span></p>
+  "Charis"'>&#612;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0in .05in 0in .05in'>
@@ -1792,7 +1792,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>o</span></p>
+  "Charis"'>o</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
@@ -1809,7 +1809,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&nbsp;</span></p>
+  "Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -1819,7 +1819,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1829,12 +1829,12 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 valign=top style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#601;</span></p>
+  "Charis"'>&#601;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;padding:0in .05in 0in .05in'>
@@ -1847,7 +1847,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -1856,7 +1856,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;padding:0in .05in 0in .05in'>
@@ -1871,7 +1871,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=26 valign=top style='width:19.45pt;border:none;border-left:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#603;</span></p>
+  "Charis"'>&#603;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1879,7 +1879,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>œ</span></p>
+  "Charis"'>œ</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;padding:0in .05in 0in .05in'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>E&lt;</span></p>
@@ -1887,7 +1887,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-left:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#604;</span></p>
+  "Charis"'>&#604;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1895,7 +1895,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=36 valign=top style='width:29.0pt;border:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#606;</span></p>
+  "Charis"'>&#606;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;padding:0in .05in 0in .05in'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>O&lt;</span></p>
@@ -1903,7 +1903,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-left:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#652;</span></p>
+  "Charis"'>&#652;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -1911,7 +1911,7 @@ areas denote articulations judged impossible.</span></p>
   </td>
   <td width=24 valign=top style='width:.25in;border:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#596;</span></p>
+  "Charis"'>&#596;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-right:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
@@ -1928,7 +1928,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>æ</span></p>
+  "Charis"'>æ</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0in .05in 0in .05in'>
@@ -1938,7 +1938,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -1948,13 +1948,13 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:solid windowtext 1.5pt;
   border-left:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 valign=top style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#592;</span></p>
+  "Charis"'>&#592;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
@@ -1970,7 +1970,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:solid windowtext 1.0pt;border-left:
   none;padding:0in .05in 0in .05in'>
@@ -1980,7 +1980,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&nbsp;</span></p>
+  "Charis"'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
@@ -1997,7 +1997,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
   none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>a</span></p>
+  "Charis"'>a</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -2006,7 +2006,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#630;</span></p>
+  "Charis"'>&#630;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
@@ -2015,7 +2015,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&nbsp;</span></p>
+  "Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 valign=top style='width:29.0pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
@@ -2033,7 +2033,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#593;</span></p>
+  "Charis"'>&#593;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;padding:0in .05in 0in .05in'>
@@ -2042,7 +2042,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 valign=top style='width:.25in;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL"'>&#594;</span></p>
+  "Charis"'>&#594;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:none;border-left:none;border-bottom:
   solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;padding:0in .05in 0in .05in'>
@@ -2060,7 +2060,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>&#712;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>&#712;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -2079,7 +2079,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>&#716;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>&#716;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2097,7 +2097,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>e&#720;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>e&#720;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2115,7 +2115,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>e&#721;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>e&#721;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2133,7 +2133,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL";color:blue'>e&#720;&#720;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis";color:blue'>e&#720;&#720;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2151,7 +2151,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>e&#774;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>e&#774;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2169,7 +2169,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>|</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>|</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2187,7 +2187,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>&#8214;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>&#8214;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2205,7 +2205,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>.</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>.</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2223,7 +2223,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=31 style='width:23.4pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:11.0pt;
-  page-break-after:avoid'><span style='font-family:"Charis SIL"'>&#8255;</span></p>
+  page-break-after:avoid'><span style='font-family:"Charis"'>&#8255;</span></p>
   </td>
   <td width=48 valign=top style='width:.5in;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -2252,7 +2252,7 @@ areas denote articulations judged impossible.</span></p>
   solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7426;</span></p>
+  "Charis";color:blue'>&#7426;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -2269,7 +2269,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:solid windowtext 1.5pt;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#945;</span></p>
+  "Charis";color:blue'>&#945;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -2287,7 +2287,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'><span
+  "Charis";color:blue'><span
   style='color:blue'>&#617;</span></span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -2304,7 +2304,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7424;</span></p>
+  "Charis";color:blue'>&#7424;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2321,7 +2321,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7548;</span></p>
+  "Charis";color:blue'>&#7548;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2337,7 +2337,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&#639;</span></p>
+  style='font-family:"Charis";color:blue'>&#639;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2355,7 +2355,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7547;</span></p>
+  "Charis";color:blue'>&#7547;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2375,7 +2375,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&#645;</span></p>
+  style='font-family:"Charis";color:blue'>&#645;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2393,7 +2393,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7550;</span></p>
+  "Charis";color:blue'>&#7550;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2409,7 +2409,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&#686;</span></p>
+  style='font-family:"Charis";color:blue'>&#686;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2427,7 +2427,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'><span
+  "Charis";color:blue'><span
   style='color:blue'>&#631;</span></span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -2444,7 +2444,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&#687;</span></p>
+  style='font-family:"Charis";color:blue'>&#687;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2462,7 +2462,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#7431;</span></p>
+  "Charis";color:blue'>&#7431;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2478,7 +2478,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&nbsp;</span></p>
+  style='font-family:"Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in .05in 0in .05in'>
@@ -2496,7 +2496,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'><span
+  "Charis";color:blue'><span
   style='color:blue'>&#666;</span></span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.5pt;
@@ -2513,7 +2513,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=24 style='width:.25in;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
   <p class=tableipanormal style='margin-bottom:2.0pt;line-height:12.0pt'><span
-  style='font-family:"Charis SIL";color:blue'>&nbsp;</span></p>
+  style='font-family:"Charis";color:blue'>&nbsp;</span></p>
   </td>
   <td width=36 style='width:29.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in .05in 0in .05in'>
@@ -2556,7 +2556,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#741;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#741;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2566,7 +2566,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#779;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#779;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2582,7 +2582,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#745;&#741;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#745;&#741;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2592,7 +2592,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#780;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#780;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2609,7 +2609,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#742;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#742;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2619,7 +2619,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#769;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#769;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2634,7 +2634,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#741;&#745;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#741;&#745;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2644,7 +2644,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#770;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#770;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2661,7 +2661,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#743;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#743;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2671,7 +2671,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#772;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#772;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2686,7 +2686,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:black'>&#743;&#741;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2697,7 +2697,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7620;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2716,7 +2716,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#744;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#744;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2726,7 +2726,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#768;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#768;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2741,7 +2741,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:black'>&#744;&#743;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2752,7 +2752,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7621;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2771,7 +2771,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#745;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#745;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2781,7 +2781,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#783;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#783;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2797,7 +2797,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:black'>&#744;&#741;&#744;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2808,7 +2808,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7624;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2837,7 +2837,7 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL"'>&#42780;</span></p>
+  style='font-family:"Charis"'>&#42780;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2862,7 +2862,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7622;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2892,7 +2892,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#42779;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#42779;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2917,7 +2917,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7623;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -2947,7 +2947,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#42781;</span></p>
   </td>
   <td width=38 style='width:28.85pt;border-top:none;border-left:none;
@@ -2975,7 +2975,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>e&#7625;</span></p>
   </td>
   <td width=50 style='width:37.85pt;border-top:none;border-left:none;
@@ -3006,7 +3006,7 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL";color:blue'>&#42782;</span></p>
+  style='font-family:"Charis";color:blue'>&#42782;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3033,7 +3033,7 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL"'>&#8599;</span></p>
+  style='font-family:"Charis"'>&#8599;</span></p>
   </td>
   <td width=50 valign=top style='width:37.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3061,7 +3061,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#42783;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
@@ -3089,7 +3089,7 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL"'>&#8600;</span></p>
+  style='font-family:"Charis"'>&#8600;</span></p>
   </td>
   <td width=50 valign=top style='width:37.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
@@ -3113,7 +3113,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=121 style='width:91.1pt;border-top:solid;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>³</span></p>
   </td>
   <td width=192 style='width:91.1pt;border-top:solid;border-left:none windowtext 1.5pt;
@@ -3132,7 +3132,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=121 style='width:91.1pt;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#8315;</span></p>
   </td>
   <td width=192 style='width:2.0in;border:none;border-bottom:solid windowtext 1.5pt;
@@ -3157,7 +3157,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:solid windowtext 2.25pt;
   border-left:solid windowtext 2.25pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt;height:16.25pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'><span style='color:blue'>&#392;</span></span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'><span style='color:blue'>&#392;</span></span></p>
   </td>
   <td width=36 style='width:27.05pt;border-top:solid windowtext 2.25pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -3176,7 +3176,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#545;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#545;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3195,7 +3195,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#1106;</span></p>
+  "Charis";color:blue'>&#1106;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3213,7 +3213,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'><span style='color:blue'>&#409;</span></span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'><span style='color:blue'>&#409;</span></span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3231,7 +3231,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#564;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#564;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3249,7 +3249,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#565;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#565;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3267,7 +3267,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'><span style='color:blue'>&#421;</span></span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'><span style='color:blue'>&#421;</span></span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3285,7 +3285,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#672;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#672;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3303,7 +3303,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#7576;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#7576;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3321,7 +3321,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#429;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#429;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3339,7 +3339,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#566;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#566;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3357,7 +3357,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#647;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#647;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3375,7 +3375,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#11379;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#11379;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3393,7 +3393,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=40 valign=top style='width:29.8pt;border-top:none;border-left:solid windowtext 2.25pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
-  <p class=tableipanormal><span style='font-family:"Charis SIL";color:blue'>&#7578;</span></p>
+  <p class=tableipanormal><span style='font-family:"Charis";color:blue'>&#7578;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3412,7 +3412,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>+</span></p>
+  "Charis";color:blue'>+</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3431,7 +3431,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#8709;</span></p>
+  "Charis";color:blue'>&#8709;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3450,7 +3450,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 2.25pt;border-right:none;padding:0in 5.4pt 0in 5.4pt;
   height:15.5pt'>
   <p class=tableipanormal style='line-height:12.0pt'><span style='font-family:
-  "Charis SIL";color:blue'>&#9676;</span></p>
+  "Charis";color:blue'>&#9676;</span></p>
   </td>
   <td width=36 style='width:27.05pt;border:none;border-bottom:solid windowtext 2.25pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
@@ -3479,7 +3479,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>k&#688;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>k&#688;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -3496,7 +3496,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#695;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#695;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3512,7 +3512,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#690;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#690;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3528,7 +3528,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>l&#736;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>l&#736;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3544,7 +3544,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#740;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#740;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3560,7 +3560,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#8319;k</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#8319;k</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3578,7 +3578,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#737;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#737;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3595,7 +3595,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#7598;&#607;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3620,7 +3620,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>k&#701;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3639,7 +3639,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#734;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#734;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3655,7 +3655,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#700;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#700;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3671,7 +3671,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#794;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#794;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3688,7 +3688,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>b&#699;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3707,7 +3707,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>l&#809;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>l&#809;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3723,7 +3723,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>a&#815;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>a&#815;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3739,7 +3739,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>a&#816;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>a&#816;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3756,7 +3756,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#7567;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3780,7 +3780,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>n&#805;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>n&#805;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3796,7 +3796,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>s&#812;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>s&#812;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3812,7 +3812,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>s&#804;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>s&#804;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3829,7 +3829,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#7552;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3855,7 +3855,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#331;&#778;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#331;&#778;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3872,7 +3872,7 @@ areas denote articulations judged impossible.</span></p>
   border-left:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#810;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#810;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
@@ -3889,7 +3889,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#826;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#826;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3905,7 +3905,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#827;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#827;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3921,7 +3921,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#828;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#828;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3937,7 +3937,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:black'>t&#803;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3956,7 +3956,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:black'>e&#771;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -3975,7 +3975,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#619;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>&#619;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3994,7 +3994,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#776;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#776;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4010,7 +4010,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#829;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#829;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4028,7 +4028,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL"'>e&#774;</span></p>
+  style='font-family:"Charis"'>e&#774;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4046,7 +4046,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL";color:black'>e&#775;</span></p>
+  style='font-family:"Charis";color:black'>e&#775;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4064,7 +4064,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL";color:blue'>m&#784;</span></p>
+  style='font-family:"Charis";color:blue'>m&#784;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4081,7 +4081,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>k&#865;p</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>k&#865;p</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4101,7 +4101,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>t&#860;s</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>t&#860;s</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4121,7 +4121,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>u&#799;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>u&#799;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4137,7 +4137,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>i&#800;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>i&#800;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4153,7 +4153,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#797;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#797;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4169,12 +4169,12 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#798;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#798;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span></p>
   </td>
   <td width=132 style='width:99.0pt;border-top:none;border-left:none;
@@ -4187,7 +4187,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#792;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#792;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4203,14 +4203,14 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#793;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#793;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span></p>
   </td>
   <td width=132 style='width:99.0pt;border-top:none;border-left:none;
@@ -4223,7 +4223,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#825;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#825;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4240,16 +4240,16 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>e&#796;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis"'>e&#796;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL"'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis"'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New"'>_</span></p>
   </td>
   <td width=132 style='width:99.0pt;border-top:none;border-left:none;
@@ -4263,20 +4263,20 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>o&#807;</span></p>
   </td>
   <td width=84 style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Courier New";
-  color:blue'>_</span><span style='font-size:9.0pt;font-family:"Charis SIL";
+  color:blue'>_</span><span style='font-size:9.0pt;font-family:"Charis";
   color:blue'>&#8200;</span><span style='font-size:9.0pt;font-family:
   "Courier New";color:blue'>_</span><span style='font-size:9.0pt;
-  font-family:"Charis SIL";color:blue'>&#8200;</span><span lang=EN-GB
+  font-family:"Charis";color:blue'>&#8200;</span><span lang=EN-GB
   style='font-size:9.0pt;font-family:"Courier New";color:blue'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL";color:blue'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis";color:blue'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New";color:blue'>_</span><span
-  style='font-size:9.0pt;font-family:"Charis SIL";color:blue'>&#8200;</span><span
+  style='font-size:9.0pt;font-family:"Charis";color:blue'>&#8200;</span><span
   style='font-size:9.0pt;font-family:"Courier New";color:blue'>_</span></p>
   </td>
   <td width=132 style='width:99.0pt;border-top:none;border-left:none;
@@ -4291,7 +4291,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL";color:blue'>p&#840;</span></p>
+  style='font-family:"Charis";color:blue'>p&#840;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4309,7 +4309,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL";color:blue'>p&#7618;</span></p>
+  style='font-family:"Charis";color:blue'>p&#7618;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -4326,7 +4326,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#8594;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -4344,7 +4344,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=43 valign=top style='width:.45in;border-top:none;border-left:solid windowtext 1.5pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis";
   color:blue'>&#963;</span></p>
   </td>
   <td width=84 valign=top style='width:63.0pt;border:none;border-bottom:solid windowtext 1.0pt;
@@ -4386,12 +4386,12 @@ areas denote articulations judged impossible.</span></p>
 <p class=MsoFootnoteText style='line-height:10.0pt'><a href="#_ftnref1"
 name="_ftn1" title=""><span class=MsoFootnoteReference><span
 class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Times New Roman",serif'>[1]</span></span></span></a>
-<span style='font-family:"Charis SIL";color:black'>Use “</span><span
+<span style='font-family:"Charis";color:black'>Use “</span><span
 style='font-family:"Courier New";color:black'>&amp;</span><span
-style='font-family:"Charis SIL";color:black'>”</span><span style='font-family:
-"Charis SIL";color:black'> for Left-stem level tones, e.g. “</span><span
+style='font-family:"Charis";color:black'>”</span><span style='font-family:
+"Charis";color:black'> for Left-stem level tones, e.g. “</span><span
 style='font-family:"Courier New";color:black'>&amp;0</span><span
-style='font-family:"Charis SIL";color:black'>” becomes A712 (&#42770;). </span></p>
+style='font-family:"Charis";color:black'>” becomes A712 (&#42770;). </span></p>
 
 </div>
 
@@ -4399,13 +4399,13 @@ style='font-family:"Charis SIL";color:black'>” becomes A712 (&#42770;). </span
 
 <p class=MsoFootnoteText style='line-height:10.0pt'><a href="#_ftnref2"
 name="_ftn2" title=""><span class=MsoFootnoteReference><span style='font-family:
-"Charis SIL"'><span class=MsoFootnoteReference><span style='font-size:8.0pt;
-font-family:"Charis SIL"'>[2]</span></span></span></span></a><span
-style='font-family:"Charis SIL"'> </span><span style='font-family:"Charis SIL"'>Glides
+"Charis"'><span class=MsoFootnoteReference><span style='font-size:8.0pt;
+font-family:"Charis"'>[2]</span></span></span></span></a><span
+style='font-family:"Charis"'> </span><span style='font-family:"Charis"'>Glides
 to and from any level (e.g. “</span><span style='font-family:"Courier New"'>#32</span><span
-style='font-family:"Charis SIL"'>” becomes &#742;&#743;) and any sequence of
+style='font-family:"Charis"'>” becomes &#742;&#743;) and any sequence of
 any two glides (e.g. “</span><span style='font-family:"Courier New"'>#314</span><span
-style='font-family:"Charis SIL"'>” becomes &#742;&#744;&#741;).</span></p>
+style='font-family:"Charis"'>” becomes &#742;&#744;&#741;).</span></p>
 
 </div>
 
@@ -4413,9 +4413,9 @@ style='font-family:"Charis SIL"'>” becomes &#742;&#744;&#741;).</span></p>
 
 <p class=MsoFootnoteText><a href="#_ftnref3" name="_ftn3" title=""><span
 class=MsoFootnoteReference><span class=MsoFootnoteReference><span
-style='font-size:8.0pt;font-family:"Charis SIL",serif'>[3]</span></span></span></a>
-<span style='font-family:"Charis SIL"'>These require the use of Charis SIL (http://scripts.sil.org/CharisSIL) or
-Charis SIL (http://scripts.sil.org/CharisSIL) version 4.1 or greater. They will
+style='font-size:8.0pt;font-family:"Charis",serif'>[3]</span></span></span></a>
+<span style='font-family:"Charis"'>These require the use of Charis (http://scripts.sil.org/CharisSIL) or
+Charis (http://scripts.sil.org/CharisSIL) version 4.1 or greater. They will
 turn into contours if used in Graphite applications.</span></p>
 
 </div>
@@ -4424,9 +4424,9 @@ turn into contours if used in Graphite applications.</span></p>
 
 <p class=MsoFootnoteText style='margin-bottom:0in;margin-bottom:.0001pt;
 line-height:10.0pt'><a href="#_ftnref4" name="_ftn4" title=""><span
-class=MsoFootnoteReference><span style='font-family:"Charis SIL"'><span
-class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis SIL"'>[4]</span></span></span></span></a><span
-style='font-family:"Charis SIL"'> The following characters can be
+class=MsoFootnoteReference><span style='font-family:"Charis"'><span
+class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis"'>[4]</span></span></span></span></a><span
+style='font-family:"Charis"'> The following characters can be
 superscripted: 0123456789 + - = ( ) &#661; &#660; b &#946; c &#597; d ð f &#632;
 g &#609; &#611; h &#614;  j &#607; &#669;
 k l &#621;  &#671; m &#625; n &#626; &#627;
@@ -4442,10 +4442,10 @@ u &#623; &#650; &#649; y  </span></p>
 
 <p class=MsoFootnoteText><a href="#_ftnref5"
 name="_ftn5" title=""><span class=MsoFootnoteReference><span style='font-family:
-"Charis SIL";color:#339966'><span class=MsoFootnoteReference><span
-style='font-size:8.0pt;font-family:"Charis SIL";color:#339966'>[5]</span></span></span></span></a><span
-style='font-family:"Charis SIL";color:black'> Retroflex hooks may be added to:
-a </span><span style='font-family:"Charis SIL";color:black'>&#593; &#599; e
+"Charis";color:#339966'><span class=MsoFootnoteReference><span
+style='font-size:8.0pt;font-family:"Charis";color:#339966'>[5]</span></span></span></span></a><span
+style='font-family:"Charis";color:black'> Retroflex hooks may be added to:
+a </span><span style='font-family:"Charis";color:black'>&#593; &#599; e
 &#603; &#604; &#601; i &#596; &#643; u &#658; (&#7567; &#7568; &#7569; &#7570; &#7571;
 &#7572; &#7573; &#7574; &#7575; &#7576; &#7577;  &#7578;)</span></p>
 
@@ -4455,9 +4455,9 @@ a </span><span style='font-family:"Charis SIL";color:black'>&#593; &#599; e
 
 <p class=MsoFootnoteText><a href="#_ftnref6"
 name="_ftn6" title=""><span class=MsoFootnoteReference><span style='font-family:
-"Charis SIL";color:black'><span class=MsoFootnoteReference><span
-style='font-size:8.0pt;font-family:"Charis SIL";color:black'>[6]</span></span></span></span></a><span
-style='font-family:"Charis SIL";color:black'> Palatal hooks may be added to: b
+"Charis";color:black'><span class=MsoFootnoteReference><span
+style='font-size:8.0pt;font-family:"Charis";color:black'>[6]</span></span></span></span></a><span
+style='font-family:"Charis";color:black'> Palatal hooks may be added to: b
 d f &#609; k l m n p r s &#643; v x z (&#7552; &#7553; &#7554; &#7555; &#7556; &#7557;
 &#7558; &#7559; &#7560; &#7561; &#7562; &#7563; &#7564; &#7565; &#7566;)</span></p>
 
@@ -4466,10 +4466,10 @@ d f &#609; k l m n p r s &#643; v x z (&#7552; &#7553; &#7554; &#7555; &#7556; &
 <div id=ftn7>
 
 <p class=MsoFootnoteText><a href="#_ftnref7" name="_ftn7" title=""><span
-class=MsoFootnoteReference><span style='font-family:"Charis SIL";color:black'><span
-class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis SIL";
-color:black'>[7]</span></span></span></span></a><span style='font-family:"Charis SIL";
-color:black'> Available for </span><span style='font-family:"Charis SIL";
+class=MsoFootnoteReference><span style='font-family:"Charis";color:black'><span
+class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis";
+color:black'>[7]</span></span></span></span></a><span style='font-family:"Charis";
+color:black'> Available for </span><span style='font-family:"Charis";
 color:black'>&#7532;, &#7533;, &#7534;, &#619;, &#7535;, &#7536;, &#7537;, &#7538;,
 &#7539;, &#7540;, &#7541; and &#7542;. </span></p>
 
@@ -4478,11 +4478,11 @@ color:black'>&#7532;, &#7533;, &#7534;, &#619;, &#7535;, &#7536;, &#7537;, &#753
 <div id=ftn8>
 
 <p class=MsoFootnoteText style='margin-bottom:0in;margin-bottom:.0001pt;><a href="#_ftnref8" name="_ftn8" title=""><span
-class=MsoFootnoteReference><span style='font-family:"Charis SIL";color:black'><span
-class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis SIL";
-color:black'>[8]</span></span></span></span></a><span style='font-family:"Charis SIL";
+class=MsoFootnoteReference><span style='font-family:"Charis";color:black'><span
+class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis";
+color:black'>[8]</span></span></span></span></a><span style='font-family:"Charis";
 color:black'> Typed between the characters. Thus </span><span style='font-family:
-"Courier New";color:black'>k#&amp;p</span><span style='font-family:"Charis SIL";
+"Courier New";color:black'>k#&amp;p</span><span style='font-family:"Charis";
 color:black'>.</span></p>
 
 </div>
@@ -4490,11 +4490,11 @@ color:black'>.</span></p>
 <div id=ftn9>
 
 <p class=MsoFootnoteText style='margin-bottom:0in;margin-bottom:.0001pt;><a href="#_ftnref9" name="_ftn9" title=""><span
-class=MsoFootnoteReference><span style='font-family:"Charis SIL";color:black'><span
-class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis SIL";
-color:black'>[9]</span></span></span></span></a><span style='font-family:"Charis SIL";
+class=MsoFootnoteReference><span style='font-family:"Charis";color:black'><span
+class=MsoFootnoteReference><span style='font-size:8.0pt;font-family:"Charis";
+color:black'>[9]</span></span></span></span></a><span style='font-family:"Charis";
 color:black'> Typed between the characters. Thus </span><span style='font-family:
-"Courier New";color:black'>t@&amp;s</span><span style='font-family:"Charis SIL";
+"Courier New";color:black'>t@&amp;s</span><span style='font-family:"Charis";
 color:black'>.</span></p>
 
 </div>
