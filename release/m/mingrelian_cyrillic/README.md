@@ -5,7 +5,7 @@ Mingrelian Cyrillic keyboard
 
 Description
 -----------
-Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Georgia.
+Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Abkhazia.
 
 Links
 -----
