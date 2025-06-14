@@ -1,7 +1,7 @@
 Keyman Vietnamese VNI keyboard
 ==============
 
-© 2022 Mike Vo
+© Mike Vo
 
 Description
 -----------

@@ -2,13 +2,13 @@
   $pagename = 'Landuma Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
- th { font: 1.2em "Charis SIL";}
+ th { font: 1.2em "Charis";}
 END;
   require_once('header.php');
 ?>
 
 
-<p>This keyboard is for use with Unicode fonts such as the Charis SIL font.</p>
+<p>This keyboard is for use with Unicode fonts such as the Charis font.</p>
 <p>It can be used with Microsoft Windows, Mac OSX, Linux, iPhone, iPad, Android phone, and Android tablets.</p>
 
 <h1>Keyboard shortcuts Landuma</h1>

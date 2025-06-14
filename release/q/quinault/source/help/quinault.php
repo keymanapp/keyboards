@@ -11,10 +11,10 @@
 <p>The keyboard will work with Times New Roman or many other Unicode encoded font. SIL International has produced several Unicode fonts that would also be suitable. These fonts are:</p>
 
 <ol>
-<a href=http://software.sil.org/Charis>Charis SIL</a><br>  
+<a href=http://software.sil.org/Charis>Charis</a><br>  
 <a href=http://software.sil.org/Doulos>Doulos SIL</a><br> 
 <a href=http://software.sil.org/Andika>Andika</a><br>  
-<a href=http://software.sil.org/gentium>Gentium Plus</a>  
+<a href=http://software.sil.org/gentium>Gentium</a>  
 </ol>
 
 <h2>Keyboard Layout</h2>

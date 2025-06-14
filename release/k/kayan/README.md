@@ -1,7 +1,7 @@
 ﻿Kayǎn keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 For typing the Latin-based script of the Kayǎn people of Myanmar.
 

@@ -25,7 +25,7 @@ c SILGREEK.KMN 3.0  D I Bevan - 14-Mar-1997
 c See REVISION.TXT
 c ----------------------------------------------------------------------------
 
-store(&Version) '15.0'
+store(&Version) '17.0'
 store(&name) "Polytonic Greek (SIL)"
 store(&BITMAP) 'sil_greek_polytonic.ico'
 store(&COPYRIGHT) '(c) SIL Global'
@@ -36,7 +36,7 @@ c store(&ETHNOLOGUECODE) 'grc ell'
 c store(&LANGUAGE) 'x0408'
 c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.8.1'
+store(&KEYBOARDVERSION) '1.8.4'
 store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
 
 begin Unicode > use(MainU)
@@ -524,6 +524,8 @@ c ----------------------------------------------------------------------------
 
 group(MainU) using keys
 
++ [SHIFT K_SPACE] > U+0020
+
 any(Sm_Ro)              + any(K_Ro) > context
 any(Sm_Sm)              + any(K_Sm) > context
 
@@ -698,7 +700,7 @@ any(wi) any(lbr) any(lbr) + any(K_Gr) > context outs(Sm) outs(Gr)      c _[[ + \
 c macron U+0304 minimally implemented 2024-09-17 but doesn't include all the rules other diacritics support
 nul + any(K_Macron) > outs(Macron)
 any(Ma_base) + any(K_Macron) > index(Ma_comp,1)
-any(Ma_comp) + [K_BKSP] > index(Ma_base,1) 
+any(Ma_comp) + [K_BKSP] > index(Ma_base,1)
 
 c Acute Accent U+0301
 any(Ac_in)                + any(K_Ac) > index(Ac_Ac,1)          c a   + /  a/
