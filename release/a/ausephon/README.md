@@ -1,8 +1,6 @@
 ausephon keyboard
 ==============
 
-Version 11
-
 Description
 -----------
 A keyboard for phonemic (broad) transcription of Australian accented English using the Harrington/Cox/Evans (HCE) system with added diacritics.

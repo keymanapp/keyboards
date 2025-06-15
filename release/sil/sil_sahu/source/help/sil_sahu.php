@@ -1,12 +1,12 @@
 <?php
-  $pagename = 'SIL Sahu Keyboard Help';
-  $pagetitle = 'SIL Sahu Keyboard Help';
+  $pagename = 'Sahu (SIL) Keyboard Help';
+  $pagetitle = 'Sahu (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 
 <h2>Font</h2>
 <p>
-  The SIL Sahu keyboard is a Latin script keyboard that uses the SIL Charis font.
+  The Sahu (SIL) keyboard is a Latin script keyboard that uses the Charis font.
 </p>
 
 <h2>Keyboard</h2>

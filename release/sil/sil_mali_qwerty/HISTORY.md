@@ -1,6 +1,9 @@
 Clavier du Mali (Qwerty) Keyboard Change History
 =======================
 
+4.0.3 (10 June 2025)
+------------------
+* Update font to Charis Mali
 
 4.0.2 (2022-02-18)
 ----------------

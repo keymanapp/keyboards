@@ -5,7 +5,7 @@ store(&NAME) 'Clavier du Mali (Azerty)'
 store(&HotKey ) "[K_F11]"
 c store(&mnemoniclayout) "0"
 store(&VISUALKEYBOARD) 'sil_mali_azerty.kvks'
-store(&KEYBOARDVERSION) '3.4.1'
+store(&KEYBOARDVERSION) '3.4.2'
 store(&TARGETS) 'web desktop'
 
 begin Unicode > use(Main)
@@ -171,8 +171,8 @@ c Don't know why the following line has to be included, but it does.
 
 U+0251 + any(modifierK) > context index(Umodifier,2)
 
-+ any(lessthan) > U+2039 use(angleit)
-+ any(greaterthan) > U+203A use(angleit)
+c + any(lessthan) > U+2039 use(angleit)
+c + any(greaterthan) > U+203A use(angleit)
 
 group(angleit)
 U+2039 U+2039 > U+00AB

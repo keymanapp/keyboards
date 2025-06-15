@@ -1,6 +1,10 @@
 Bukawa Change History
 ====================
 
+3.0.1 (2025-06-09)
+------------------
+* Add Charis font to properly display Eng
+
 3.0 (2024-07-21)
 ----------------
 * Updated by William Eckermann.
