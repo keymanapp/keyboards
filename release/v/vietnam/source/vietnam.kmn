@@ -2,7 +2,7 @@
 store(&VERSION) '17.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.7'
+store(&KEYBOARDVERSION) '1.0.8'
 store(&TARGETS) 'any'
 store(&BITMAP) 'vietnam.ico'
 store(&VISUALKEYBOARD) 'vietnam.kvks'
@@ -119,6 +119,8 @@ store(nt) 'ntNT'
 store(n) 'nN'
 store(low_u) 'uúùủũụ'
 store(upper_u) 'UÚÙỦŨỤ'
+store(low_y) 'yýỳỷỹỵ'
+store(upper_y) 'YÝỲỶỸỴ'
 store(low_uw_v) 'ứừửữự'
 store(upper_uw_v) 'ỨỪỬỮỰ'
 store(low_uw) 'ưứừửữự'
@@ -226,6 +228,7 @@ store(two_a) 'aA'
 store(two_uw) 'Ưư'
 store(two_q) 'qQ'
 store(ie_consonants) 'đbcdghklmnprstvxyzĐBCDGHKLMNPRSTVXYZ'
+store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐ'
 c *******************************************************************
 
     c Keyboard options
@@ -4251,6 +4254,121 @@ any(vowels_nang) 'p' + 's' > index(vowels_sac, 1) 'p'
 'N̉' + 'w' > 'Nử'
 'Ñ' + 'w' > 'Nữ'
 'Ṇ' + 'w' > 'Nự'
+"ńh" + "a" > "nhá"
+"ńh" + "e" > "nhé"
+"ńh" + "i" > "nhí"
+"ńh" + "o" > "nhó"
+"ńh" + "u" > "nhú"
+"ǹh" + "a" > "nhà"
+"ǹh" + "e" > "nhè"
+"ǹh" + "i" > "nhì"
+"ǹh" + "o" > "nhò"
+"ǹh" + "u" > "nhù"
+"n̉h" + "a" > "nhả"
+"n̉h" + "e" > "nhẻ"
+"n̉h" + "i" > "nhỉ"
+"n̉h" + "o" > "nhỏ"
+"n̉h" + "u" > "nhủ"
+"ñh" + "a" > "nhã"
+"ñh" + "e" > "nhẽ"
+"ñh" + "i" > "nhĩ"
+"ñh" + "o" > "nhõ"
+"ñh" + "u" > "nhũ"
+"ṇh" + "a" > "nhạ"
+"ṇh" + "e" > "nhẹ"
+"ṇh" + "i" > "nhị"
+"ṇh" + "o" > "nhọ"
+"ṇh" + "u" > "nhụ"
+"ŃH" + "A" > "NHÁ"
+"ŃH" + "E" > "NHÉ"
+"ŃH" + "I" > "NHÍ"
+"ŃH" + "O" > "NHÓ"
+"ŃH" + "U" > "NHÚ"
+"ǸH" + "A" > "NHÀ"
+"ǸH" + "E" > "NHÈ"
+"ǸH" + "I" > "NHÌ"
+"ǸH" + "O" > "NHÒ"
+"ǸH" + "U" > "NHÙ"
+"N̉H" + "A" > "NHẢ"
+"N̉H" + "E" > "NHẺ"
+"N̉H" + "I" > "NHỈ"
+"N̉H" + "O" > "NHỎ"
+"N̉H" + "U" > "NHỦ"
+"ÑH" + "A" > "NHÃ"
+"ÑH" + "E" > "NHẼ"
+"ÑH" + "I" > "NHĨ"
+"ÑH" + "O" > "NHÕ"
+"ÑH" + "U" > "NHŨ"
+"ṆH" + "A" > "NHẠ"
+"ṆH" + "E" > "NHẸ"
+"ṆH" + "I" > "NHỊ"
+"ṆH" + "O" > "NHỌ"
+"ṆH" + "U" > "NHỤ"
+"Ńh" + "a" > "Nhá"
+"Ńh" + "e" > "Nhé"
+"Ńh" + "i" > "Nhí"
+"Ńh" + "o" > "Nhó"
+"Ńh" + "u" > "Nhú"
+"Ǹh" + "a" > "Nhà"
+"Ǹh" + "e" > "Nhè"
+"Ǹh" + "i" > "Nhì"
+"Ǹh" + "o" > "Nhò"
+"Ǹh" + "u" > "Nhù"
+"N̉h" + "a" > "Nhả"
+"N̉h" + "e" > "Nhẻ"
+"N̉h" + "i" > "Nhỉ"
+"N̉h" + "o" > "Nhỏ"
+"N̉h" + "u" > "Nhủ"
+"Ñh" + "a" > "Nhã"
+"Ñh" + "e" > "Nhẽ"
+"Ñh" + "i" > "Nhĩ"
+"Ñh" + "o" > "Nhõ"
+"Ñh" + "u" > "Nhũ"
+"Ṇh" + "a" > "Nhạ"
+"Ṇh" + "e" > "Nhẹ"
+"Ṇh" + "i" > "Nhị"
+"Ṇh" + "o" > "Nhọ"
+"Ṇh" + "u" > "Nhụ"
+'ńh' + 'y' > 'nhý'
+'ǹh' + 'y' > 'nhỳ'
+'n̉h' + 'y' > 'nhỷ'
+'ñh' + 'y' > 'nhỹ'
+'ṇh' + 'y' > 'nhỵ'
+'ńh' + 'w' > 'nhứ'
+'ǹh' + 'w' > 'nhừ'
+'n̉h' + 'w' > 'nhử'
+'ñh' + 'w' > 'nhữ'
+'ṇh' + 'w' > 'nhự'
+'ŃH' + 'Y' > 'NHÝ'
+'ǸH' + 'Y' > 'NHỲ'
+'N̉H' + 'Y' > 'NHỶ'
+'ÑH' + 'Y' > 'NHỸ'
+'ṆH' + 'Y' > 'NHỴ'
+'ŃH' + 'W' > 'NHỨ'
+'ǸH' + 'W' > 'NHỪ'
+'N̉H' + 'W' > 'NHỬ'
+'ÑH' + 'W' > 'NHỮ'
+'ṆH' + 'W' > 'NHỰ'
+'ŃH' + 'y' > 'NHý'
+'ǸH' + 'y' > 'NHỳ'
+'N̉H' + 'y' > 'NHỷ'
+'ÑH' + 'y' > 'NHỹ'
+'ṆH' + 'y' > 'NHỵ'
+'ŃH' + 'w' > 'NHứ'
+'ǸH' + 'w' > 'NHừ'
+'N̉H' + 'w' > 'NHử'
+'ÑH' + 'w' > 'NHữ'
+'ṆH' + 'w' > 'NHự'
+'Ńh' + 'y' > 'Nhý'
+'Ǹh' + 'y' > 'Nhỳ'
+'N̉h' + 'y' > 'Nhỷ'
+'Ñh' + 'y' > 'Nhỹ'
+'Ṇh' + 'y' > 'Nhỵ'
+'Ńh' + 'w' > 'Nhứ'
+'Ǹh' + 'w' > 'Nhừ'
+'N̉h' + 'w' > 'Nhử'
+'Ñh' + 'w' > 'Nhữ'
+'Ṇh' + 'w' > 'Nhự'
 'ứo' + 'm' > 'ướm'
 'ừo' + 'm' > 'ườm'
 'ửo' + 'm' > 'ưởm'
@@ -5774,6 +5892,7 @@ any(vowels) any(ys) + any(end_consonants) > index(vowels, 1) index(ys, 2) index(
 
 any(no_space_punctuation) + [ALT K_QUOTE] > index(no_space_punctuation, 1) '’'
 any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1) '’'
+any(viet_letters) + [ALT K_QUOTE] > index(viet_letters, 1) '’'
 any(vowels_sac) + [ALT K_QUOTE] > index(vowels_sac, 1) '’'
 any(vowels_hoi) + [ALT K_QUOTE] > index(vowels_hoi, 1) '’'
 any(vowels_huyen) + [ALT K_QUOTE] > index(vowels_huyen, 1) '’'
@@ -5782,6 +5901,7 @@ any(vowels_nang) + [ALT K_QUOTE] > index(vowels_nang, 1) '’'
 
 any(no_space_punctuation) + [ALT SHIFT K_QUOTE] > index(no_space_punctuation, 1) '”'
 any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1) '”'
+any(viet_letters) + [ALT SHIFT K_QUOTE] > index(viet_letters, 1) '”'
 any(vowels_sac) + [ALT SHIFT K_QUOTE] > index(vowels_sac, 1) '”'
 any(vowels_hoi) + [ALT SHIFT K_QUOTE] > index(vowels_hoi, 1) '”'
 any(vowels_huyen) + [ALT SHIFT K_QUOTE] > index(vowels_huyen, 1) '”'
@@ -8332,7 +8452,7 @@ any(ow) 'y' + any(all_letters) > index(ow, 1) 'y' index(all_letters, 3)
 any(ow) 'Y' + any(all_letters) > index(ow, 1) 'Y' index(all_letters, 3)
 any(uw) 'y' + any(all_letters) > index(uw, 1) 'y' index(all_letters, 3)
 any(uw) 'Y' + any(all_letters) > index(uw, 1) 'Y' index(all_letters, 3)
-any(ee) any(vowels) + any(all_letters) > index(ee, 1) index(vowels, 2) index(all_letters, 3)
+any(ee) any(no_u_vowels) + any(all_letters) > index(ee, 1) index(no_u_vowels, 2) index(all_letters, 3)
 any(oo) any(un_i_vowels) + any(all_letters) > index(oo, 1) index(un_i_vowels, 2) index(all_letters, 3)
 any(a) any(eoia) + any(all_letters) > index(a, 1) index(eoia, 2) index(all_letters, 3)
 any(ee) any(vowels)any(no_d_letters) + any(all_letters) > index(ee, 1) index(vowels, 2) index(no_d_letters, 3)index(all_letters, 4)
@@ -9230,7 +9350,124 @@ any(two_q) any(two_u) any(oo) any(n) any(g) + 'W' > index(two_q, 1) index(two_u,
 'ĩ' + 'i' > 'iễ'
 'ị' + 'i' > 'iệ'
 
+'Óa' + 's' > 'Oas'
+'Òa' + 'f' > 'Oaf'
+'Ỏa' + 'r' > 'Oar'
+'Õa' + 'x' > 'Oax'
+'Ọa' + 'j' > 'Oaj'
+'Óa' + 'S' > 'OaS'
+'Òa' + 'F' > 'OaF'
+'Ỏa' + 'R' > 'OaR'
+'Õa' + 'X' > 'OaX'
+'Ọa' + 'J' > 'OaJ'
+'Ói' + 's' > 'Ois'
+'Òi' + 'f' > 'Oif'
+'Ỏi' + 'r' > 'Oir'
+'Õi' + 'x' > 'Oix'
+'Ọi' + 'j' > 'Oij'
+'Ói' + 'S' > 'OiS'
+'Òi' + 'F' > 'OiF'
+'Ỏi' + 'R' > 'OiR'
+'Õi' + 'X' > 'OiX'
+'Ọi' + 'J' > 'OiJ'
+'Óe' + 's' > 'Oes'
+'Òe' + 'f' > 'Oef'
+'Ỏe' + 'r' > 'Oer'
+'Õe' + 'x' > 'Oex'
+'Ọe' + 'j' > 'Oej'
+'Óe' + 'S' > 'OeS'
+'Òe' + 'F' > 'OeF'
+'Ỏe' + 'R' > 'OeR'
+'Õe' + 'X' > 'OeX'
+'Ọe' + 'J' > 'OeJ'
 
+'Úa' + 's' > 'Uas'
+'Ùa' + 'f' > 'Uaf'
+'Ủa' + 'r' > 'Uar'
+'Ũa' + 'x' > 'Uax'
+'Ụa' + 'j' > 'Uaj'
+'Úa' + 'S' > 'UaS'
+'Ùa' + 'F' > 'UaF'
+'Ủa' + 'R' > 'UaR'
+'Ũa' + 'X' > 'UaX'
+'Ụa' + 'J' > 'UaJ'
+'Úi' + 's' > 'Uis'
+'Ùi' + 'f' > 'Uif'
+'Ủi' + 'r' > 'Uir'
+'Ũi' + 'x' > 'Uix'
+'Ụi' + 'j' > 'Uij'
+'Úi' + 'S' > 'UiS'
+'Ùi' + 'F' > 'UiF'
+'Ủi' + 'R' > 'UiR'
+'Ũi' + 'X' > 'UiX'
+'Ụi' + 'J' > 'UiJ'
+
+'Ôi' + 's' > 'Ối'
+'Ôi' + 'f' > 'Ồi'
+'Ôi' + 'r' > 'Ổi'
+'Ôi' + 'x' > 'Ỗi'
+'Ôi' + 'j' > 'Ội' 
+'Ơi' + 's' > 'Ới'
+'Ơi' + 'f' > 'Ời'
+'Ơi' + 'r' > 'Ởi'
+'Ơi' + 'x' > 'Ỡi'
+'Ơi' + 'j' > 'Ợi'
+'Ối' + 's' > 'Ôis'
+'Ồi' + 'f' > 'Ôif'
+'Ổi' + 'r' > 'Ôir'
+'Ỗi' + 'x' > 'Ôix'
+'Ội' + 'j' > 'Ôij'
+'Ối' + 'S' > 'ÔiS'
+'Ồi' + 'F' > 'ÔiF'
+'Ổi' + 'R' > 'ÔiR'
+'Ỗi' + 'X' > 'ÔiX'
+'Ội' + 'J' > 'ÔiJ' 
+'Ưu' + 's' > 'Ứu'
+'Ưu' + 'f' > 'Ừu'
+'Ưu' + 'r' > 'Ửu'
+'Ưu' + 'x' > 'Ữu'
+'Ưu' + 'j' > 'Ựu'
+
+'ếu' + 's' > 'êus'
+'ều' + 'f' > 'êuf'
+'ểu' + 'r' > 'êur'
+'ễu' + 'x' > 'êux'
+'ệu' + 'j' > 'êuj'
+'ếu' + 'S' > 'êuS'
+'ều' + 'F' > 'êuF'
+'ểu' + 'R' > 'êuR'
+'ễu' + 'X' > 'êuX'
+'ệu' + 'J' > 'êuJ'
+'Ếu' + 's' > 'Êus'
+'Ều' + 'f' > 'Êuf'
+'Ểu' + 'r' > 'Êur'
+'Ễu' + 'x' > 'Êux'
+'Ệu' + 'j' > 'Êuj'
+'Ếu' + 'S' > 'ÊuS'
+'Ều' + 'F' > 'ÊuF'
+'Ểu' + 'R' > 'ÊuR'
+'Ễu' + 'X' > 'ÊuX'
+'Ệu' + 'J' > 'ÊuJ'
+'ẾU' + 's' > 'ÊUs'
+'ỀU' + 'f' > 'ÊUf'
+'ỂU' + 'r' > 'ÊUr'
+'ỄU' + 'x' > 'ÊUx'
+'ỆU' + 'j' > 'ÊUj'
+'ẾU' + 'S' > 'ÊUS'
+'ỀU' + 'F' > 'ÊUF'
+'ỂU' + 'R' > 'ÊUR'
+'ỄU' + 'X' > 'ÊUX'
+'ỆU' + 'J' > 'ÊUJ'
+
+'u' any(low_a) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'a'
+'U' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'a'
+'U' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'A'
+'o' any(low_a) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'a'
+'O' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'a'
+'O' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'A'
+'u' any(low_y) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'y'
+'U' any(low_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'y'
+'U' any(upper_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'Y'
 
 'k' + [K_TAB] > 'không'
 'ko' + [K_TAB] > 'không'
