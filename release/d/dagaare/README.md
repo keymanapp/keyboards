@@ -3,7 +3,7 @@ Dagaare keyboard
 
 Description
 -----------
-Dagaare
+This is a QWERTY based keyboard for the Dagaare language of Ghana.
 
 Links
 -----
