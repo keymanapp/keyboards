@@ -12,5 +12,5 @@
 </div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>
-<div id='osk-phone' data-states='default shift numeric'>
+<div id='osk-tablet' data-states='default shift'>
 </div>
