@@ -1,7 +1,6 @@
 Lavanya Change History
 ====================
 
-
 2.0 (2025-06-16)
 - Added backspace handling for vowel matras
 
