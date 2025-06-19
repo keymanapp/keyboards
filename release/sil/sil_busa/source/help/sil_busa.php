@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Busa Keyboard Help';
+  $pagename = 'Busa (SIL) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
 td, p { font: 10pt Tahoma }
@@ -73,7 +73,7 @@ table.display { border-collapse: collapse; }
         }
         
         .keytext {
-          font: 12pt "Doulos SIL", "Charis SIL", "Code2000", "Arial Unicode MS", "Arial"; 
+          font: 12pt "Doulos SIL", "Charis", "Code2000", "Arial Unicode MS", "Arial"; 
           position: absolute; 
           display: block;
           right: 5px;
@@ -99,13 +99,13 @@ table.display { border-collapse: collapse; }
         
         .hotkeys tr td { white-space: nowrap; vertical-align: middle }
         
-        td.char { font: 20pt "Doulos SIL", "Charis SIL", "Code2000", "Arial Unicode MS" }
+        td.char { font: 20pt "Doulos SIL", "Charis", "Code2000", "Arial Unicode MS" }
 END;
   require_once('header.php');
 ?>
 
 <p>This package includes a keyboard called: 
-    <b>Busa</b>
+    <b>Busa (SIL)</b>
 designed for use with <b>Boko</b>, <b>Bokobaru</b> and <b>Busa</b> and related languages.</p>
                           
 <table><tr><td style='vertical-align: top; padding-right: 30px'>
@@ -143,7 +143,7 @@ designed for use with <b>Boko</b>, <b>Bokobaru</b> and <b>Busa</b> and related l
 
 <h2>Fonts</h2>
 
-<p>The fonts <b>Doulos SIL</b> or <b>Charis SIL</b> work well with this keyboard. Charis SIL is part of this keyboard package.</p>
+<p>The fonts <b>Doulos SIL</b> or <b>Charis</b> work well with this keyboard. Charis is part of this keyboard package.</p>
 
 
 <H2>Keyboard Layout</H2>

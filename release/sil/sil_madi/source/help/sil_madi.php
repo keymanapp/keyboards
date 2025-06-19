@@ -11,7 +11,7 @@
 <p>This keyboard is similar to the English (US) keyboard, except the way to type out the below dot and tone marks on the vowels.</p>
 <ul>
   <li>Vowels with a combining dot below. <br/>For examples: <br/>
-	  <ul style="font-family:Charis SIL">
+	  <ul style="font-family:Charis">
 		  <li><kbd>U</kbd> + <kbd>.</kbd> &#x21D2; ụ </li>
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> &#x21D2; Ụ </li>
 		  <li><kbd>E</kbd> + <kbd>.</kbd> &#x21D2; ẹ </li>
@@ -19,7 +19,7 @@
 	  </ul>
   </li>
   <li>Type any vowel + / to get the vowel with a combining acute accent. <br/>For examples: <br/>
-	  <ul style="font-family:Charis SIL">
+	  <ul style="font-family:Charis">
 		  <li><kbd>A</kbd> + <kbd>/</kbd> &#x21D2; á </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>/</kbd> &#x21D2; Á </li>
 		  <li><kbd>E</kbd> + <kbd>/</kbd> &#x21D2; é </li>
@@ -27,7 +27,7 @@
 	  </ul>
   </li>
   <li>Type any vowel + ^ to get the vowel with a combining circumflex accent. <br/>For examples: <br/>
-	  <ul style="font-family:Charis SIL">
+	  <ul style="font-family:Charis">
 		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; â </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; Â </li>
 		  <li><kbd>E</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; ê </li>
@@ -35,7 +35,7 @@
 	  </ul>
   </li>
   <li>Type any vowel + ~ to get the vowel with a combining tilde sign. <br/>For examples: <br/>
-	  <ul style="font-family:Charis SIL">
+	  <ul style="font-family:Charis">
 		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ã </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; Ã </li>
 		  <li><kbd>E</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ẽ </li>
@@ -43,7 +43,7 @@
 	  </ul>
   </li>
   <li>Type / after any vowel with a below dot or vice versa to get the vowel with both a combining below dot and a combining acute accent. For the other two tone marks, follow this same method.<br/>For examples: <br/>
-	  <ul style="font-family:Charis SIL">
+	  <ul style="font-family:Charis">
 		  <li><kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; ụ́ </li>
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; Ụ́ </li>
 		  <li><kbd>E</kbd> + <kbd>.</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ẹ̃ </li>

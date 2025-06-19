@@ -14,8 +14,8 @@
 <p>Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga.</p>
 <p>B yag-a-la fãrendã gʋndg zugu.</p>
 <p>Moorã gʋndg mamseg lagma teed a taab n be kaane. Rẽ, bɩ-y pak mamsegã n bãng gʋls-biisã zĩisi.</p>
-<p>Gʋndgã naagda ne <i>Charis SIL</i> n tʋmdẽ.</p>
-<p><i>Charis SIL</i> gʋls-wʋmdɩ wã lagma ne teed a taabã n be ka. Y tõe n paama yaolem gʋls-wʋmdɩ tilgẽ ka :
+<p>Gʋndgã naagda ne <i>Charis</i> n tʋmdẽ.</p>
+<p><i>Charis</i> gʋls-wʋmdɩ wã lagma ne teed a taabã n be ka. Y tõe n paama yaolem gʋls-wʋmdɩ tilgẽ ka :
 <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
 
@@ -29,9 +29,9 @@ emplacements des caractères spécifiques au mooré.</p>
   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 </div>
 
-<p>Ce clavier doit être utilisé conjointement avec une police de caractères comme <i>Charis SIL</i>.</p>
+<p>Ce clavier doit être utilisé conjointement avec une police de caractères comme <i>Charis</i>.</p>
 
-<p>Les polices <i>Charis SIL</i> sont incluses dans ce pack. Vous pouvez effectuer des mises à jour 
+<p>Les polices <i>Charis</i> sont incluses dans ce pack. Vous pouvez effectuer des mises à jour 
 de ces polices de caractères depuis le site <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
 <h2>Notes</h2>
@@ -61,7 +61,7 @@ de ces polices de caractères depuis le site <a href='http://software.sil.org/ch
   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
   </div>
   
-  <p>This keyboard should be used with a font such as <i>Charis SIL</i>. <i>Charis SIL</i> is included in this package, and
+  <p>This keyboard should be used with a font such as <i>Charis</i>. <i>Charis</i> is included in this package, and
   updated versions of all these fonts can be downloaded from <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
     
   <h2>Notes</h2>

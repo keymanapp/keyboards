@@ -47,7 +47,7 @@ EXTRA;
 	
 
 <h1>Special Keystrokes</h1>
-<table style="font-family:'Charis SIL';">
+<table style="font-family:'Charis';">
 <thead><tr><th>Keystrokes</th><th> Outputs  </th></tr></thead><tbody>
  <tr><td><kbd>,</kbd> + <kbd>C</kbd></td><td> Ç  </td></tr>
  <tr><td><kbd>,</kbd> + <kbd>c</kbd></td><td> ç  </td></tr>
