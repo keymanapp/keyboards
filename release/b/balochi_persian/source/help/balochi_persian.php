@@ -20,7 +20,3 @@ and selecting the On Screen Keyboard menu item. Similar keyboards are also avail
 Press and hold on the key with a little dot on the top right to reveal them.</p>
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
-
-<h2>Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift'>
-</div>

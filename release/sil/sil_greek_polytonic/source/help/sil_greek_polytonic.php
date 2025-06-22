@@ -22,13 +22,11 @@ END;
 ?>
 
 
+<p>Greek keyboard layout supporting Polytonic Greek, using precomposed characters.</p>
 
-
-
-<h2>General layout</h2>
-
-<p><img alt="Normal (default keyboard state)" src="sil_greek_polytonicU_.png"></p>
-<p><img alt="Shift state" src="sil_greek_polytonicU_S.png"></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
 
 <h2>Keyboard Assignments</h2>
 <p>The main purpose of the keyboards is to provide a wide range of keying options, so many characters can be entered in multiple ways. If you are typing and make a mistake and use the backspace key to delete characters, the keyboard remembers the context.</p>
@@ -106,6 +104,8 @@ END;
 
 <p>The keyboard automatically chooses the correct code for the <em>sigma</em> depending upon the encoding and the context, so the correct final form is used when appropriate.</p>
 
+<p>When editing text, you may find you need to insert a medial sigma in the middle of a word; this can typed with <b class="input">AltGr+S</b>.</p>
+
 <table class="inputSequences">
     <tbody>
         <tr class="glyphs">
@@ -139,6 +139,7 @@ END;
 <td>ὰ</td>
 <td>ᾳ</td>
 <td>ϊ</td>
+<td>&#x1FB1;</td>
 </tr>
 <tr>
     <th>Type</th>
@@ -147,6 +148,7 @@ END;
     <td>` or \</td>
     <td>!, | , + or _</td>
     <td>"</td>
+    <td>#</td>
 </tr>
 </tbody>
 </table>
@@ -176,6 +178,7 @@ END;
 <p>For example, to type <span lang="grc">Οὐκ εἰμι ἐγω ὁ Χριστος. (ΙΩΑΝΝΗΝ 3 28)</span> you only need to press the following keys:<br>
 <b class="input">O u k SPACE e i m i SPACE e g w SPACE h o SPACE C r i s t o s PERIOD SPACE ( I W A N N J N SPACE 3 : 2 8 )</b></p>
 
+<p>You can use <b class="input">AltGr+vowel</b> to get an isolated lower case vowel or <em>rho</em> without breathing marks.</p>
 <p>You can also press <b class="input">*</b> to remove the breathing mark from a vowel or <em>rho</em>.</p>
 <p>In a few words, a vowel with <em>dieresis</em> follows an accented vowel. You will need to type <b class="input">@</b> before
 the vowel with <em>dieresis<em> to get the right behavior. For example, to get <span lang="grc">Ἰάϊρος</span>, type <b class="input">Ia/@i"ros</b>.</p>
@@ -278,3 +281,16 @@ Others can be typed by preceding them with <b class="input">@</b> (the <b class=
         </tr>
     </tbody>
 </table>
+
+<h2>Tablet Keyboard layout</h2>
+<p>The tablet layout follows the basic Desktop keyboard. However, due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+    <h2>Phone Keyboard layout</h2>
+    <p>Due to the size and number of keys, some characters are hidden in the long press. 
+        Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
+
+<h3>Longpress</h3>
+<p><a href="phone-longpress.png"><img class="keyboard" src="phone-longpress.png" alt="Numeric state" /></a></p>

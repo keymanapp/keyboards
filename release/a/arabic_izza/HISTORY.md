@@ -1,5 +1,8 @@
 arabic_izza Change History
 ==========================
+* Increment version number to force recompile of touch layout.
+1.2.1 (27 October 2020)
+
 --------------------
 * Minor improvement to phone layout.
 1.2 (15 June 2018)

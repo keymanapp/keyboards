@@ -43,7 +43,7 @@ This keyboard is designed for the Tamil language, and uses the Tamil 99 standard
 Most computers will automatically download a special font if needed to display this language correctly.
 </p>
 <p>
-<a href="#Related">Click here</a> to see other keyboard layouts for Tamil.
+<a target="_blank" href="https://keyman.com/tamil">Click here</a> to see other keyboard layouts for Tamil.
 </p>
 </div>
 

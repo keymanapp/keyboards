@@ -1,9 +1,7 @@
 Balochi Scientific Keyboard
 ===========================
 
-Copyright (C) 2017-2019 SIL International
-
-Version 1.0.2
+Copyright (C) SIL International
 
 Description
 -----------

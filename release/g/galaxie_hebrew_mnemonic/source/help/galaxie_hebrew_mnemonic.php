@@ -83,8 +83,6 @@ END;
 		<li>QWERTZ German</li>
 	</ul>	
 
-	<p>This keyboard includes an On Screen Keyboard view, which displays best on a QWERTY US layout.</p>
-
 	<p>This keyboard works with standard Unicode fonts.</p>
 
 </div>

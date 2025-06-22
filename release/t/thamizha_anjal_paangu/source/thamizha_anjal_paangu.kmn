@@ -1,16 +1,17 @@
 ﻿c Improved Unicode keyboard created by A. Umar
 
 store(&VERSION) '10.0'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.2'
 store(&Name) "அஞ்சல் பாங்கு | Anjal Paangu"
 store(&BITMAP) 'thamizha_anjal_paangu.ico'
 c store(&WINDOWSLANGUAGES) 'x0449'
 c store(&ETHNOLOGUECODE) 'tam'
 store(&VISUALKEYBOARD) 'thamizha_anjal_paangu.kvks'
 c store(&LANGUAGE) 'x0449'
-store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+store(&COPYRIGHT) '© thamizha.com and SIL International'
 store(&MESSAGE) 'New Tamil Unicode Keyboard - Contributed by Umar(csd_one@yahoo.com), Mugunth (mugunth@gmail.com); Sethu (skhome@gmail.com)'
-store(&TARGETS) 'windows macosx linux web'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'thamizha_anjal_paangu.keyman-touch-layout'
 
 begin Unicode > use(main)
 c *** Bugs fixing lines at bottom half by K. Sethu indicated by c *** comment blocks

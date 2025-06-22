@@ -1,6 +1,18 @@
 Rawang Change History
 ====================
 
+1.7 (2024-03-06)
+----------------
+* Optimize touch layout. 
+  * Add longpress keys to a,e,i,o,Ã¸,u,v
+  * Add numerals to longpressees on top row
+  * Add numeric layer
+  * Add start of sentence detection
+
+1.6 (2021-03-10)
+----------------
+* Added tablet layout
+
 1.5 (2020-04-17)
 ----------------
 * Moved to release
@@ -15,7 +27,7 @@ Rawang Change History
 
 1.2 (2008-07-11)
 ----------------
-* Fixed v,ø,V,Ø tone marks swapped. 
+* Fixed v,Ã¸,V,Ã˜ tone marks swapped. 
 * Added on screen keyboard, usage screen.
 
 1.1 (2007-11-28)

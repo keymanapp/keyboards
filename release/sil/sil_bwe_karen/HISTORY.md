@@ -1,5 +1,9 @@
-SIL Bwe Karen (Latin) Change History
+Bwe Karen (SIL) Change History
 =======================
+
+1.0.1 (18 Feb 2022)
+------------------
+* Updated keyboard to use new version of the fonts
 
 1.0 (11 June 2018)
 ------------------

@@ -1,12 +1,12 @@
 ﻿c EuroLatin keyboard for Keyman
-c 
+c
 c If you make changes to this keyboard file, please consider sharing them at:
 c https://community.software.sil.org/c/keyman
 
-store(&version) '10.0'
+store(&version) '15.0'
 store(&NAME) 'EuroLatin (SIL)'
 store(&BITMAP) 'sil_euro_latin.ico'
-store(&COPYRIGHT) 'Copyright (C) 1994-2020 SIL International'
+store(&COPYRIGHT) 'Copyright © SIL International'
 
 $keymanonly: store(&mnemoniclayout) '1'
 
@@ -14,10 +14,18 @@ c KeymanWeb-specific header statements
 store(&KMW_HELPFILE) 'sil_euro_latin.html'
 store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
 store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.9.1'
+store(&KEYBOARDVERSION) '3.0.2'
 store(&TARGETS) 'any'
 
 begin Unicode > use(Main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+$keymanweb: store(&CasedKeys) [K_A] .. [K_Z]
+
+c Match our alphabet keys so we get casing behavior applied
+store(default-alpha) 'a' .. 'z'     'A' .. 'Z'
 
 group(Main) using keys
 
@@ -66,9 +74,6 @@ store(tildeO) 'ãÃẽẼĩĨɫⱢñÑõÕũŨṽṼỹỸ'
 store(tildeK) 'aAeEiIlLnNoOuUvVyY'
 '~' dk(1) + "g" > U+0067 U+0303    c for Guaraní
 '~' dk(1) + "G" > U+0047 U+0303    c for Guaraní
-if(&platform = 'touch') + [T_G_Tilde] > U+0067 U+0303           c for Guaraní on touch layouts
-if(&platform = 'touch') + [SHIFT T_G_Tilde] > U+0047 U+0303     c for Guaraní on touch layouts
-
 
 c -
 store(macronO) 'ĀāɃƀĐđĒēḠḡĦħĪīɈɉŁłŌōɌɍŦŧŪūȲȳƵƶ'
@@ -81,8 +86,12 @@ store(lineK) 'BbDdhKkLlNnRrTtZz'
 c :
 store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
 store(dieresisK) 'aehiotuwxyAEHIOUWXY'
+':' dk(1) + "n" > U+006E U+0308    c for Guinea-Bissau Creole (pov)
+':' dk(1) + "N" > U+004E U+0308    c for Guinea-Bissau Creole (pov)
 ':' dk(1) + "p" > U+0070 U+0308    c for Romani
 ':' dk(1) + "P" > U+0050 U+0308    c for Romani
+if(&platform = 'touch') + [T_N_Dieresis] > U+006E U+0308           c for Guinea-Bissau Creole on Touch devices
+if(&platform = 'touch') + [SHIFT T_N_Dieresis] > U+004E U+0308     c for Guinea-Bissau Creole on Touch devices
 if(&platform = 'touch') + [T_P_Dieresis] > U+0070 U+0308           c for Romani on Touch devices
 if(&platform = 'touch') + [SHIFT T_P_Dieresis] > U+0050 U+0308     c for Romani on Touch devices
 
@@ -99,12 +108,12 @@ store(dotbelowO) 'ẠạḄḅḌḍẸẹḤḥỊịḲḳḶḷṂṃṆṇ�
 store(dotbelowK) 'AaBbDdEeHhIiKkLlMmNnOoRrSsTtUuVvWwYyZz'
 
 c ,
-store(cedillaO) 'ąĄçÇḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ'
-store(cedillaK) 'aAcCdDeEgGhHiIkKlLnNoOrRsStTuUzZ'
+store(cedillaO) 'ąĄçÇḉḈḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ' c added c cedilla accent for Mingrelian 12/2/2020
+store(cedillaK) 'aAcC' "'" '"' 'dDeEgGhHiIkKlLnNoOrRsStTuUzZ'
 
 c =
-store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒ'
-store(extendedK) 'CcEeGgJjNnOoSsTtYyZz'
+store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒƔɣ' c added gamma for Mingrelian 12/2/2020
+store(extendedK) 'CcEeGgJjNnOoSsTtYyZzXx'
 '=' dk(1) + "'" >  U+A78C c Lowercase Saltillo
 '=' dk(1) + '"' >  U+A78B c Uppercase Saltillo
 
@@ -119,6 +128,8 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 "`" dk(1) + any(graveK) > index(graveO, 3)
 "#" dk(1) + any(doublegraveK) > index(doublegraveO, 3)
 "'" dk(1) + any(acuteK) > index(acuteO, 3)
+"'" dk(1) + "j" > U+006A U+0301 c Dutch addition 1/20/2023
+"'" dk(1) + "J" > U+004A U+0301
 '"' dk(1) + any(doubleacuteK) > index(doubleacuteO, 3)
 "^" dk(1) + any(circumK) > index(circumO, 3)
 '%' dk(1) + any(caronK) > index(caronO, 3)
@@ -127,6 +138,9 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 '~' dk(1) + any(tildeK) > index(tildeO, 3)
 '-' dk(1) + any(macronK) > index(macronO, 3)
 '_' dk(1) + any(lineK) > index(lineO, 3)
+'_' dk(1) + "x" > U+0078 U+0331 c Zapotec addition 12/2/2020
+'_' dk(1) + "X" > U+0058 U+0331 c Zapotec addition 12/2/2020
+
 ':' dk(1) + any(dieresisK) > index(dieresisO, 3)
 '@' dk(1) + any(ringK) > index(ringO, 3)
 '.' dk(1) + any(dottedK) > index(dottedO, 3)
@@ -139,9 +153,19 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 '·.' + '.' > '…'
 
 
-c Preferred for diagraphs
+c Preferred for digraphs
 'A\' dk(1) + 'E' > 'Æ'
 'a\' dk(1) + 'e' > 'æ'
+'Æ' + '-' > U+01E2 c Anglo-Saxon addition 8/20/2021
+'æ' + '-' > U+01E3 c Anglo-Saxon addition 8/20/2021
+'c\' dk(1) + 'h' > U+0063 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+'C\' dk(1) + 'h' > U+0043 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+'C\' dk(1) + 'H' > U+0043 U+0332 U+0048 U+0332  c Zapotec addition 12/2/2020
+
+if(&platform = 'touch') + [T_ch_macron] > U+0063 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+if(&platform = 'touch') + [SHIFT T_Ch_macron] > U+0043 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+if(&platform = 'touch') + [SHIFT T_CHmacron] > U+0043 U+0332 U+0048 U+0332  c Zapotec addition 12/2/2020
+
 'D\' dk(1) + 'Z' > U+01C4   c Serbian additions 1/5/09
 'D\' dk(1) + 'z' > U+01C5
 'd\' dk(1) + 'z' > U+01C6
@@ -152,8 +176,8 @@ c Preferred for diagraphs
 'L\' dk(1) + 'J' > U+01C7   c Serbian additions 1/5/09
 'L\' dk(1) + 'j' > U+01C8
 'l\' dk(1) + 'j' > U+01C9
-'N\' dk(1) + 'G' > 'Ŋ'      c depricated - see extended - no longer in help/osk
-'n\' dk(1) + 'g' > 'ŋ'      c depricated - see extended - no longer in help/osk
+'N\' dk(1) + 'G' > 'Ŋ'      c deprecated - see extended - no longer in help/osk
+'n\' dk(1) + 'g' > 'ŋ'      c deprecated - see extended - no longer in help/osk
 'N\' dk(1) + 'J' > U+01CA   c Serbian additions 1/5/09
 'N\' dk(1) + 'j' > U+01CB
 'n\' dk(1) + 'j' > U+01CC
@@ -163,10 +187,10 @@ c Preferred for diagraphs
 'o\' dk(1) + 'e' > 'œ'
 'O\' dk(1) + 'I' > 'Ƣ'
 'o\' dk(1) + 'i' > 'ƣ'
-'S\' dk(1) + 'S' > 'ẞ'     c depricated - see extended - no longer in help/osk
-'s\' dk(1) + 's' > 'ß'     c depricated - see extended - no longer in help/osk
-'T\' dk(1) + 'H' > 'Þ'     c depricated - see extended - no longer in help/osk
-'t\' dk(1) + 'h' > 'þ'     c depricated - see extended - no longer in help/osk
+'S\' dk(1) + 'S' > 'ẞ'     c deprecated - see extended - no longer in help/osk
+'s\' dk(1) + 's' > 'ß'     c deprecated - see extended - no longer in help/osk
+'T\' dk(1) + 'H' > 'Þ'     c deprecated - see extended - no longer in help/osk
+'t\' dk(1) + 'h' > 'þ'     c deprecated - see extended - no longer in help/osk
 'T\' dk(1) + 'M' > '™'
 't\' dk(1) + 'm' > '™'
 
@@ -187,16 +211,16 @@ c Preferred for diagraphs
 '5//' + '8' > '⅝'
 '7//' + '8' > '⅞'
 
-c The fractions below have been depricated. Use format above.
-'¹/' + '2' > '½'       c depricated - no longer in help/osk
-'¹/' + '3' > '⅓'       c depricated - no longer in help/osk
-'²/' + '3' > '⅔'       c depricated - no longer in help/osk
-'¹/' + '4' > '¼'       c depricated - no longer in help/osk
-'³/' + '4' > '¾'       c depricated - no longer in help/osk
-'¹/' + '8' > '⅛'       c depricated - no longer in help/osk
-'³/' + '8' > '⅜'       c depricated - no longer in help/osk
-'⁵/' + '8' > '⅝'       c depricated - no longer in help/osk
-'⁷/' + '8' > '⅞'       c depricated - no longer in help/osk
+c The fractions below have been deprecated. Use format above.
+'¹/' + '2' > '½'       c deprecated - no longer in help/osk
+'¹/' + '3' > '⅓'       c deprecated - no longer in help/osk
+'²/' + '3' > '⅔'       c deprecated - no longer in help/osk
+'¹/' + '4' > '¼'       c deprecated - no longer in help/osk
+'³/' + '4' > '¾'       c deprecated - no longer in help/osk
+'¹/' + '8' > '⅛'       c deprecated - no longer in help/osk
+'³/' + '8' > '⅜'       c deprecated - no longer in help/osk
+'⁵/' + '8' > '⅝'       c deprecated - no longer in help/osk
+'⁷/' + '8' > '⅞'       c deprecated - no longer in help/osk
 
 c angled quotes
 c "<" + "<" > '«'
@@ -241,6 +265,67 @@ if(option_key = '') + any(controls) > index(controls, 2) dk(1)
 $keymanonly: if(option_key = 'RALT') + any(controls-ralt) > index(controls, 2) dk(1)
 $keymanonly: if(option_key = 'RCTRL') + any(controls-rctrl) > index(controls, 2) dk(1)
 
+$keymanweb: + any(default-alpha) > index(default-alpha, 1)
+
 group(Touch) using keys
+    c This empty group, plus the rule that calls it, prevents control keys from affecting
+    c the base letter when used on touch keyboards, e.g. pressing 'e on a hardware keyboard
+    c will give é but on a touch keyboard this letter is accessed via long-press on e
+    c instead.
+
+c
+c Start-of-sentence and automatic layer switching
+c
+
+store(digit) '0'..'9'
+
+c Some common end-of-sentence punctuation
+store(sentencePunctuation) '.?!¿¡'
+
+c Various Unicode spacing characters
+store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
+store(whitespace-dk) outs(whitespace) dk(1)
+c store(zwsp) U+200B
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    platform('touch') > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    platform('touch') if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one, two, or three spaces.
+    any(sentencePunctuation) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) any(whitespace) > layer('shift')
+    any(sentencePunctuation) dk(1) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
 
 c End of keyboard

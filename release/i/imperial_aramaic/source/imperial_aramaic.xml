@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<keyboard3 xmlns="https://schemas.unicode.org/cldr/45/keyboard3" locale="arc" conformsTo="45">
+  <info author="Lorna Evans" name="Imperial Aramaic"/>
+  <version number="1.0.1"/>
+  <!-- This keyboard is for Western Neo-Aramaic and Official Aramaic using the Imperial Aramaic script.-->
+  <locales>
+    <locale id="amw-Armi"/>
+  </locales>
+  <keys>
+    <import base="cldr" path="45/keys-Zyyy-punctuation.xml"/>
+    <import base="cldr" path="45/keys-Zyyy-currency.xml"/>
+  	<!-- switch keys -->
+
+        <!-- basic letters -->
+        <key id="a" output="𐡀" />
+        <key id="b" output="𐡁" />
+        <key id="c" output="𐡔" />
+        <key id="d" output="𐡃" />
+        <key id="e" output="𐡄" />
+        <key id="f" output="𐡕" />
+        <key id="g" output="𐡂" />
+        <key id="h" output="𐡇" />
+        <key id="i" output="𐡏" />
+        <key id="j" output="𐡑" />
+        <key id="k" output="𐡊" />
+        <key id="l" output="𐡋" />
+        <key id="m" output="𐡌" />
+        <key id="n" output="𐡍" />
+        <key id="o" gap="true" />
+        <key id="p" output="𐡐" />
+        <key id="q" output="𐡒" />
+        <key id="r" output="𐡓" />
+        <key id="s" output="𐡎" />
+        <key id="t" output="𐡈" />
+        <key id="u" gap="true" />
+        <key id="v" gap="true" />
+        <key id="w" output="𐡅" />
+        <key id="x" gap="true" />
+        <key id="y" output="𐡉" />
+        <key id="z" output="𐡆" />
+        <key id="slash" output="𐡗" />
+        <key id="1" output="𐡘" />
+        <key id="2" output="𐡙" />
+        <key id="3" output="𐡚" />
+        <key id="4" output="𐡛" />
+        <key id="5" output="𐡜" />
+        <key id="6" output="𐡝" />
+        <key id="7" output="𐡞" />
+        <key id="8" output="𐡟" />
+        <key id="9" gap="true" />
+        <key id="0" gap="true" />
+
+        <!-- uppercase letters -->
+        <key id="A" gap="true" />
+        <key id="B" gap="true" />
+        <key id="C" gap="true" />
+        <key id="D" gap="true" />
+        <key id="E" gap="true" />
+        <key id="F" gap="true" />
+        <key id="G" gap="true" />
+        <key id="H" gap="true" />
+        <key id="I" gap="true" />
+        <key id="J" gap="true" />
+        <key id="K" gap="true" />
+        <key id="L" gap="true" />
+        <key id="M" gap="true" />
+        <key id="N" gap="true" />
+        <key id="O" gap="true" />
+        <key id="P" gap="true" />
+        <key id="Q" gap="true" />
+        <key id="R" gap="true" />
+        <key id="S" gap="true" />
+        <key id="T" gap="true" />
+        <key id="U" gap="true" />
+        <key id="V" gap="true" />
+        <key id="W" gap="true" />
+        <key id="X" gap="true" />
+        <key id="Y" gap="true" />
+        <key id="Z" gap="true" />
+
+  </keys>
+<layers formId="us">
+    <layer modifiers="none">
+      <row keys="grave 1 2 3 4 5 6 7 8 9 0 hyphen equal"/>
+      <row keys="q w e r t y u i o p open-square close-square backslash"/>
+      <row keys="a s d f g h j k l semi-colon apos"/>
+      <row keys="z x c v b n m comma period slash"/>
+      <row keys="space"/>
+    </layer>
+    <layer modifiers="shift">
+      <row keys="tilde bang at hash dollar percent caret amp asterisk open-paren close-paren underscore plus"/>
+      <row keys="Q W E R T Y U I O P open-curly close-curly pipe"/>
+      <row keys="A S D F G H J K L colon double-quote"/>
+      <row keys="Z X C V B N M open-angle close-angle question"/>
+      <row keys="space"/>
+    </layer>
+  </layers>
+</keyboard3>

@@ -1,8 +1,8 @@
 store(&VERSION) '10.0'
-store(&NAME) 'Yorùbá with Bar'
-store(&MESSAGE) 'A simple Unicode keyboard for Yorùbá, using the traditional bar under e, o, and s.'
-store(&COPYRIGHT) '© 2012-2020 SIL International'
-store(&KEYBOARDVERSION) '1.2'
+store(&NAME) 'YorÃ¹bÃ¡ with Bar'
+store(&MESSAGE) 'A simple Unicode keyboard for YorÃ¹bÃ¡, using the traditional bar under e, o, and s.'
+store(&COPYRIGHT) '(c) 2012-2020 SIL International'
+store(&KEYBOARDVERSION) '1.2.1'
 store(&BITMAP) 'sil_yoruba_bar.ico'
 store(&VISUALKEYBOARD) 'sil_yoruba_bar.kvks'
 store(&TARGETS) 'any'
@@ -89,7 +89,7 @@ c Unshifted QWERTY US
 dk(un) + '`' > '`'
 
 + '\' > '\'
-+ ']' > '´'  c acute 
++ ']' > 'Â´'  c acute 
 dk(un) + ']' > ']'
 + '[' > '`'  c grave 
 dk(un) + '[' > '['
@@ -194,8 +194,8 @@ dk(un) + 'X' > 'X'
 dk(un) + 'Z' > 'Z'
 
 c Additional: QWERTY UK
-c + '¬' > '¬' 
-c + '£' > '£'      
+c + 'Â¬' > 'Â¬' 
+c + 'Â£' > 'Â£'      
 
 c RALT
 + [RALT K_Q] > "q"

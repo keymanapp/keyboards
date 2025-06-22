@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Ezidi</Name>
+    <Copyright URL="">© Ezidi74</Copyright>
+    <Author URL="mailto:hajisabri74@gmail.com">Haji Sabri and Adil Eazdeen</Author>
+    <Version URL=""></Version>
+    <Description URL="">Keyboard for the Ezidi language using the Yezidi script. 
+
+Authors: mailto:hajisabri74@gmail.com, adilaezdeen1@gmail.com, ezidilangu@gmail.com</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\yezidi.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\yezidi.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\yezidi.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Bold.ttf</Name>
+      <Description>Font Noto Serif Yezidi Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Medium.ttf</Name>
+      <Description>Font Noto Serif Yezidi Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf</Name>
+      <Description>Font Noto Serif Yezidi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-SemiBold.ttf</Name>
+      <Description>Font Noto Serif Yezidi SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Ezidi</Name>
+      <ID>yezidi</ID>
+      <Version>1.0.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="kmr-Yezi">Ezidi</Language>
+        <Language ID="ku-Yezi">Ezidi</Language>
+      </Languages>
+      <Examples>
+        <Example ID="kmr-Yezi" Keys="caTuuma f.cra" Text="𐺊𐺀𐺕𐺣𐺣𐺢𐺀 𐺙𐺦𐺊𐺍𐺀" Note="The name of Khatuna Fekhra"/>
+        <Example ID="ku-Yezi" Keys="caTuuma f.cra" Text="𐺊𐺀𐺕𐺣𐺣𐺢𐺀 𐺙𐺦𐺊𐺍𐺀" Note="The name of Khatuna Fekhra"/>
+      </Examples>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

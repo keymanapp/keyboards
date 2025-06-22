@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Pashai</Folder>
@@ -28,9 +29,15 @@
   <Info>
     <Version URL="">1.0</Version>
     <Name URL="">Rachitrali-Pashai</Name>
-    <Copyright URL="">© 2018-2019 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com</Copyright>
+    <Copyright URL="">© 2018-2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <WebSite URL="https://keyman.com/keyboards/rac_pashai">https://keyman.com/keyboards/rac_pashai</WebSite>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the Pashai
+language in the Arabic Script. You can use this keyboard with any
+extended Arabic script Unicode font. If you have problems using the
+RAChitrali-Pashai Keyman Keyboard, please contact: Rehmat Aziz Chitrali
+E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -105,19 +112,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Rachitrali-Pashai</Name>
       <ID>rac_pashai</ID>
-      <Version>1.0</Version>
+      <Version></Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="psi-Arab">Southeast Pashai</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="psi-Arab" Keys="p x a U y" Text="پشائے" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

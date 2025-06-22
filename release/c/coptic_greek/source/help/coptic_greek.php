@@ -45,4 +45,4 @@ and a little Coptic.
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
-<p>© 2010-2019 Michael Everson, evertype.com.</p>
+<p>© Michael Everson, evertype.com.</p>

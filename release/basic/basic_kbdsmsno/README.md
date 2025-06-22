@@ -1,15 +1,15 @@
 Sami Extended Norway Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
+(c) SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------
 
-This keyboard layout is designed for Sami (Northern).  It includes an on screen keyboard which can be 
-viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. The keyboard 
+This keyboard layout is designed for Sami (Northern).  It includes an on screen keyboard which can be
+viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. The keyboard
 layout follows the Windows 10 Sami Extended Norway layout.
 
 Links

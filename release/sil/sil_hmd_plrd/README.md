@@ -1,12 +1,11 @@
 Ahmao (SIL) Keyboard
 =====================
 
-Copyright (C) 2014-2018 SIL International
-
-Version 1.1
+Copyright (C) SIL International
 
 __DESCRIPTION__
 This keyboard was designed for the Ahmao [hmd] language using the Miao script.
+The Sapushan font is also packaged with this keyboard.
 
 Supported Platforms
 -------------------
@@ -14,3 +13,5 @@ Supported Platforms
  * macOS
  * linux
  * Web
+ * Mobile
+ 

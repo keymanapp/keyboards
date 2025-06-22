@@ -1,9 +1,7 @@
 Cherokee Nation Phonetic Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
-
-Version 1.0
+(c) SIL International
 
 Description
 -----------
@@ -22,5 +20,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
  
 

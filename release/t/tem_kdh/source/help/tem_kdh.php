@@ -28,7 +28,7 @@ Les marques de ponctuation le plus souvent utilisés sont toutes sur le clavier 
 Polices : Ce clavier marche avec toutes les polices Unicode, mais le placement des accents est un peu mieux avec une police créée par SIL. Le dessin d’Andika a pris en compte les besoins des lecteurs débutants. Il focalise sur des lettres claires qui ne seront pas facilement confondues avec d’autres. On peut télécharger la version la plus récente <a href="http://software.sil.org/andika/download/">ici</a>. 
 </p>
 <p>
-(c) 2017 SIL International
+(c) SIL International
 <br/>
 Développé avec l'approbation du comité de langue Tem, CLTem
 <br/>
@@ -58,7 +58,7 @@ Common punctuation marks have all been moved to the main keyboard page, so a com
 Fonts: This keyboard will work with any Unicode font, but the placement of accents looks a little better on a font that has been created by SIL. Andika's design takes into account the needs of beginning readers. The focus is on clear, easy-to-perceive letter forms that will not be readily confused with one another. One can download the latest version of the font <a href="http://software.sil.org/andika/download/">here</a>.
 </p>
 <p>
-(c) 2017-2018 SIL International
+(c) SIL International
 <br/>
 Developed with the approval of the Tem language committee, CLTem
 <br/>
@@ -72,13 +72,8 @@ Released under the MIT license
   <div id='osk' data-states='default shift'></div>
 </div>
 
-<div id='osk-phone-container'>
-  <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default shift symbol'></div>
-</div>
-
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default shift symbol'></div>
+  <div id='osk-tablet' data-states='default shift numeric symbol'></div>
 </div>
 

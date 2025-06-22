@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Maltese 47-Key Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Maltese 47-Key Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -75,6 +77,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,7 +92,14 @@
       <Languages>
         <Language ID="mt">Maltese</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="mt" Keys="i \\ - | i e d a space m a t - T a g ] r i f" Text="iż-Żieda mat-Tagħrif" Note="&quot;Writing in Maltese&quot; guidebook" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="maltese_47" Relationship="deprecates" />
+    <RelatedPackage ID="kbdmlt47" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

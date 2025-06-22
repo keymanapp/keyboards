@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,14 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Nigeria Dot (SIL)</Name>
-    <Copyright URL="">2004-2018 SIL International</Copyright>
+    <Copyright URL="">(c) SIL International</Copyright>
+    <Description URL="">This keyboard pairs with two other keyboards to cover the expected needs
+of most of Nigeria\'s languages. The three keyboards are identical
+except that the vowels are treated differently. The vowels on this
+keyboard can have a dot below them as well as the standard tone
+markings. The keyboard also includes standard hook (implosives),
+nasality, tone, and the Naira sign.</Description>
+    <Author URL="">Heidi Rosendall</Author>
   </Info>
   <Files>
     <File>
@@ -40,12 +49,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\sil_nigeria_dot.js</Name>
-      <Description>File sil_nigeria_dot.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>..\build\sil_nigeria_dot.kvk</Name>
       <Description>File sil_nigeria_dot.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -57,28 +60,37 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nigeria Dot (SIL)</Name>
       <ID>sil_nigeria_dot</ID>
-      <Version></Version>
+      <Version>1.6</Version>
       <Languages>
-        <Language ID="anc-Latn">Ngas (Latin)</Language>
-        <Language ID="ann-Latn">Obolo (Latin)</Language>
-        <Language ID="atg-Latn">Ivbie North-Okpela-Arhe (Latin)</Language>
-        <Language ID="bom-Latn">Berom (Latin)</Language>
-        <Language ID="bzw-Latn">Basa (Nigeria) (Latin)</Language>
-        <Language ID="enn-Latn">Engenni (Latin)</Language>
-        <Language ID="gkn-Latn">Gokana (Latin)</Language>
-        <Language ID="ig-Latn">Igbo (Latin)</Language>
-        <Language ID="igb-Latn">Ebira (Latin)</Language>
-        <Language ID="ige-Latn">Igede (Latin)</Language>
-        <Language ID="ikw-Latn">Ikwere (Latin)</Language>
-        <Language ID="jbu-Latn">Jukun Takum (Latin)</Language>
-        <Language ID="yaz-Latn">Lokaa (Latin)</Language>
+        <Language ID="anc">Ngas</Language>
+        <Language ID="ann">Obolo</Language>
+        <Language ID="atg">Ivbie North-Okpela-Arhe</Language>
+        <Language ID="bom">Berom</Language>
+        <Language ID="bzw">Basa (Nigeria)</Language>
+        <Language ID="enn">Engenni</Language>
+        <Language ID="gkn">Gokana</Language>
+        <Language ID="ig">Igbo</Language>
+        <Language ID="igb">Ebira</Language>
+        <Language ID="ige">Igede</Language>
+        <Language ID="ikw">Ikwere</Language>
+        <Language ID="jbu">Jukun Takum</Language>
+        <Language ID="yaz">Lokaa </Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="nigeria unicode dots" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

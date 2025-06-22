@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,8 +18,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Bosnian (Cyrillic) Basic</Name>
-    <Copyright URL="">© 2009-2019 SIL International</Copyright>
+    <Copyright URL="">© 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Bosnian (Cyrillic) Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -69,16 +71,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Bosnian (Cyrillic) Basic</Name>
       <ID>basic_kbdbhc</ID>
-      <Version>1.1</Version>
+      <Version></Version>
       <Languages>
         <Language ID="bs-Cyrl">Bosnian</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="kbdbhc" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

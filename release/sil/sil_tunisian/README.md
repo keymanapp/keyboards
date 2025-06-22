@@ -1,9 +1,7 @@
 Tunisian Spoken Arabic (SIL) Keyboard
 =====================
 
-Copyright (C) 2016-2018 SIL International
-
-Version 1.0
+Copyright (C) SIL International
 
 __DESCRIPTION__
 Arabic script keyboard for the the Tunisian Spoken Arabic language [aeb].
@@ -17,4 +15,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
+ 

@@ -1,0 +1,43 @@
+﻿c mahajani_inscript generated from template at 2024-10-18 12:04:40
+c with name "Mahajani (Inscript)"
+store(&VERSION) '10.0'
+store(&NAME) 'Mahajani (Inscript)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'mahajani_inscript.ico'
+store(&VISUALKEYBOARD) 'mahajani_inscript.kvks'
+store(&LAYOUTFILE) 'mahajani_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(VowK) "efgsa"
+store(VowU) U+11150 .. U+11154
+
+store(ConsK) "kKiI;:pP}'" '"' "[{ClLoOvhHyYcjnbmuJ"
+store(ConsU) U+11155 .. U+11172
+
+store(NumK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(Num) "0123456789"
+store(NumDeva) U+0966 .. U+096F
+
+store(nul) "qwrtdQWERTUASDFGZXVBNM"
+group(main) using keys
+
++ any(nul) > nul
++ any(VowK) > index(VowU,1)
++ any(ConsK) > index(ConsU,1)
++ any(Num) > index(NumDeva,1)
++ any(NumK) > index(Num,1)
+
++ [K_RBRKT] > U+11173 c nukta
+
++ [K_BKSLASH] > U+11174 c abbreviation sign
++ [K_Z] > U+11175 c section mark
++ [K_X] > U+11176 c ligature shri
++ [RALT K_COLON] > U+003A
++ [K_PERIOD] > U+0964
++ [K_SLASH] > U+0965
++ [RALT K_COMMA] > U+00B7
+
+

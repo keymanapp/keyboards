@@ -1,0 +1,259 @@
+c Vietnamese VNI keyboard by Mike Vo
+
+
+c *******************************************************************
+c HEADERS
+c *******************************************************************
+
+store(&VERSION) '10.0'
+store(&BITMAP) 'vietnamese_vni.ico'
+store(&NAME) 'Vietnamese VNI'
+store(&COPYRIGHT) '© 2022 Mike Vo'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'vietnamese_vni.kvks'
+store(&LAYOUTFILE) 'vietnamese_vni.keyman-touch-layout'
+
+
+c *******************************************************************
+c CONSTANTS
+c *******************************************************************
+
+store(vowels)                   'aeiouăâêôơưyAEIOUĂÂÊÔƠƯY'
+store(vowels_sac)               'áéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝ'
+store(vowels_huyen)             'àèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲ'
+store(vowels_hoi)               'ảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶ'
+store(vowels_nga)               'ãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸ'
+store(vowels_nang)              'ạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
+
+
+c *******************************************************************
+begin Unicode > use(main)          c Code execution entry point
+
+
+group(main) using keys
+    c Keyboard options
+    store(option_toneplace)     ''
+
+
+    c Special d/đ consonant rules - Upper and Lowercase
+    'd' + '9' > 'đ'
+    'đ' + '9' > 'd9'
+    'D' + '9' > 'Đ'
+    'Đ' + '9' > 'D9'
+
+    c Single-vowel nuclei accent rules - Upper and Lowercase
+    any(vowels) + '1' > index(vowels_sac, 1)
+    any(vowels) + '2' > index(vowels_huyen, 1)
+    any(vowels) + '3' > index(vowels_hoi, 1)
+    any(vowels) + '4' > index(vowels_nga, 1)
+    any(vowels) + '5' > index(vowels_nang, 1)
+
+    any(vowels_sac) + '1' > index(vowels, 1) '1'
+    any(vowels_sac) + '2' > index(vowels_huyen, 1)
+    any(vowels_sac) + '3' > index(vowels_hoi, 1)
+    any(vowels_sac) + '4' > index(vowels_nga, 1)
+    any(vowels_sac) + '5' > index(vowels_nang, 1)
+
+    any(vowels_huyen) + '1' > index(vowels_sac, 1)
+    any(vowels_huyen) + '2' > index(vowels, 1) '2'
+    any(vowels_huyen) + '3' > index(vowels_hoi, 1)
+    any(vowels_huyen) + '4' > index(vowels_nga, 1)
+    any(vowels_huyen) + '5' > index(vowels_nang, 1)
+
+    any(vowels_hoi) + '1' > index(vowels_sac, 1)
+    any(vowels_hoi) + '2' > index(vowels_huyen, 1)
+    any(vowels_hoi) + '3' > index(vowels, 1) '3'
+    any(vowels_hoi) + '4' > index(vowels_nga, 1)
+    any(vowels_hoi) + '5' > index(vowels_nang, 1)
+
+    any(vowels_nga) + '1' > index(vowels_sac, 1)
+    any(vowels_nga) + '2' > index(vowels_huyen, 1)
+    any(vowels_nga) + '3' > index(vowels_hoi, 1)
+    any(vowels_nga) + '4' > index(vowels, 1) '4'
+    any(vowels_nga) + '5' > index(vowels_nang, 1)
+
+    any(vowels_nang) + '1' > index(vowels_sac, 1)
+    any(vowels_nang) + '2' > index(vowels_huyen, 1)
+    any(vowels_nang) + '3' > index(vowels_hoi, 1)
+    any(vowels_nang) + '4' > index(vowels_nga, 1)
+    any(vowels_nang) + '5' > index(vowels, 1) '5'
+
+
+    c Single-vowel nuclei vni rules - Lowercase
+    c 'a' + '8' > 'ă'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'ă' + '8' > 'a8'
+    c 'a' + '6' > 'â'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'â' + '6' > 'a6'
+    c 'e' + '6' > 'ê'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'ê' + '6' > 'e6'
+    c 'o' + '6' > 'ô'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'ô' + '6' > 'o6'
+    c 'o' + '7' > 'ơ'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'ơ' + '7' > 'o7'
+    c 'u' + '7' > 'ư'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'ư' + '7' > 'u7'
+
+    c Single-vowel nuclei vni rules - Uppercase
+    c 'A' + '8' > 'Ă'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Ă' + '8' > 'A8'
+    c 'A' + '6' > 'Â'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Â' + '6' > 'A6'
+    c 'E' + '6' > 'Ê'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Ê' + '6' > 'E6'
+    c 'O' + '6' > 'Ô'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Ô' + '6' > 'O6'
+    c 'O' + '7' > 'Ơ'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Ơ' + '7' > 'O7'
+    c 'U' + '7' > 'Ư'  c This rule will be automatically generated with Python in the section below. Commented out to supress Keyman compiler warning, but still left here for clarity.
+    'Ư' + '7' > 'U7'
+
+    c Special ươ vowel nuclei rules - Uppercase and Lowercase
+    'uo' + '7' > 'ươ'
+    'ươ' + '7' > 'uo7'
+    'Uo' + '7' > 'Ươ'
+    'Ươ' + '7' > 'Uo7'
+    'uO' + '7' > 'ưƠ'
+    'ưƠ' + '7' > 'uO7'
+    'UO' + '7' > 'ƯƠ'
+    'ƯƠ' + '7' > 'UO7'
+
+    c Qu + a diacritic rules
+    'qua' + '1' > 'quá'
+    'Qua' + '1' > 'Quá'
+    'qUa' + '1' > 'qUá'
+    'quA' + '1' > 'quÁ'
+    'QUa' + '1' > 'QUá'
+    'qUA' + '1' > 'qUÁ'
+    'QuA' + '1' > 'QuÁ'
+    'QUA' + '1' > 'QUÁ'
+
+    'qua' + '2' > 'quà'
+    'Qua' + '2' > 'Quà'
+    'qUa' + '2' > 'qUà'
+    'quA' + '2' > 'quÀ'
+    'QUa' + '2' > 'QUà'
+    'qUA' + '2' > 'qUÀ'
+    'QuA' + '2' > 'QuÀ'
+    'QUA' + '2' > 'QUÀ'
+
+    'qua' + '3' > 'quả'
+    'Qua' + '3' > 'Quả'
+    'qUa' + '3' > 'qUả'
+    'quA' + '3' > 'quẢ'
+    'QUa' + '3' > 'QUả'
+    'qUA' + '3' > 'qUẢ'
+    'QuA' + '3' > 'QuẢ'
+    'QUA' + '3' > 'QUẢ'
+
+    'qua' + '4' > 'quã'
+    'Qua' + '4' > 'Quã'
+    'qUa' + '4' > 'qUã'
+    'quA' + '4' > 'quÃ'
+    'QUa' + '4' > 'QUã'
+    'qUA' + '4' > 'qUÃ'
+    'QuA' + '4' > 'QuÃ'
+    'QUA' + '4' > 'QUÃ'
+
+    'qua' + '5' > 'quạ'
+    'Qua' + '5' > 'Quạ'
+    'qUa' + '5' > 'qUạ'
+    'quA' + '5' > 'quẠ'
+    'QUa' + '5' > 'QUạ'
+    'qUA' + '5' > 'qUẠ'
+    'QuA' + '5' > 'QuẠ'
+    'QUA' + '5' > 'QUẠ'
+    
+    c Qu + y diacritic rules
+    'quy' + '1' > 'quý'
+    'Quy' + '1' > 'Quý'
+    'qUy' + '1' > 'qUý'
+    'quY' + '1' > 'quÝ'
+    'QUy' + '1' > 'QUý'
+    'qUY' + '1' > 'qUÝ'
+    'QuY' + '1' > 'QuÝ'
+    'QUY' + '1' > 'QUÝ'
+
+    'quy' + '2' > 'quỳ'
+    'Quy' + '2' > 'Quỳ'
+    'qUy' + '2' > 'qUỳ'
+    'quY' + '2' > 'quỲ'
+    'QUy' + '2' > 'QUỳ'
+    'qUY' + '2' > 'qUỲ'
+    'QuY' + '2' > 'QuỲ'
+    'QUY' + '2' > 'QUỲ'
+
+    'quy' + '3' > 'quỷ'
+    'Quy' + '3' > 'Quỷ'
+    'qUy' + '3' > 'qUỷ'
+    'quY' + '3' > 'quỶ'
+    'QUy' + '3' > 'QUỷ'
+    'qUY' + '3' > 'qUỶ'
+    'QuY' + '3' > 'QuỶ'
+    'QUY' + '3' > 'QUỶ'
+
+    'quy' + '4' > 'quỹ'
+    'Quy' + '4' > 'Quỹ'
+    'qUy' + '4' > 'qUỹ'
+    'quY' + '4' > 'quỸ'
+    'QUy' + '4' > 'QUỹ'
+    'qUY' + '4' > 'qUỸ'
+    'QuY' + '4' > 'QuỸ'
+    'QUY' + '4' > 'QUỸ'
+
+    'quy' + '5' > 'quỵ'
+    'Quy' + '5' > 'Quỵ'
+    'qUy' + '5' > 'qUỵ'
+    'quY' + '5' > 'quỴ'
+    'QUy' + '5' > 'QUỵ'
+    'qUY' + '5' > 'qUỴ'
+    'QuY' + '5' > 'QuỴ'
+    'QUY' + '5' > 'QUỴ'
+
+    c Gi + a diacritic rules
+    'gia' + '1' > 'giá'
+    'Gia' + '1' > 'Giá'
+    'gIa' + '1' > 'gIá'
+    'giA' + '1' > 'giÁ'
+    'GIa' + '1' > 'GIá'
+    'gIA' + '1' > 'gIÁ'
+    'GiA' + '1' > 'GiÁ'
+    'GIA' + '1' > 'GIÁ'
+
+    'gia' + '2' > 'già'
+    'Gia' + '2' > 'Già'
+    'gIa' + '2' > 'gIà'
+    'giA' + '2' > 'giÀ'
+    'GIa' + '2' > 'GIà'
+    'gIA' + '2' > 'gIÀ'
+    'GiA' + '2' > 'GiÀ'
+    'GIA' + '2' > 'GIÀ'
+
+    'gia' + '3' > 'giả'
+    'Gia' + '3' > 'Giả'
+    'gIa' + '3' > 'gIả'
+    'giA' + '3' > 'giẢ'
+    'GIa' + '3' > 'GIả'
+    'gIA' + '3' > 'gIẢ'
+    'GiA' + '3' > 'GiẢ'
+    'GIA' + '3' > 'GIẢ'
+
+    'gia' + '4' > 'giã'
+    'Gia' + '4' > 'Giã'
+    'gIa' + '4' > 'gIã'
+    'giA' + '4' > 'giÃ'
+    'GIa' + '4' > 'GIã'
+    'gIA' + '4' > 'gIÃ'
+    'GiA' + '4' > 'GiÃ'
+    'GIA' + '4' > 'GIÃ'
+
+    'gia' + '5' > 'giạ'
+    'Gia' + '5' > 'Giạ'
+    'gIa' + '5' > 'gIạ'
+    'giA' + '5' > 'giẠ'
+    'GIa' + '5' > 'GIạ'
+    'gIA' + '5' > 'gIẠ'
+    'GiA' + '5' > 'GiẠ'
+    'GIA' + '5' > 'GIẠ'
+
+    c Python auto generated rules, see https://github.com/miketvo/vn_kmn_compiler/tree/main/vn_vni
