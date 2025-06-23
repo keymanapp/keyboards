@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder>Anglo-Futhorc-English</Folder>
+    <Items>
+      <Item>
+        <Name>Anglo Furthorc English - Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Anglo Furthorc English - ReadMe</Name>
+        <FileName>readme.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name URL="">Anglo-Furthorc-English</Name>
+    <Copyright URL="">Copyright © Oscar Ewen</Copyright>
+    <Author URL="">Oscar Ewen</Author>
+    <Description URL="">Anglo Furthorc keyboard designed to approximately match the QWERTY keyboard layout, based on the runes from https://rune.school</Description>
+    <Version URL=""></Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>../../../shared/fonts/catrinity/Catrinity.otf</Name>
+      <Description>Font Catrinity</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\build\anglo_furthorc_english.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>englishfuthorcU_.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>englishfuthorcU_S.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\build\anglo_furthorc_english.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\anglo_furthorc_english.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Anglo-Furthorc</Name>
+      <ID>anglo_furthorc_english</ID>
+      <Version>1.0</Version>
+      <OSKFont>../../../shared/fonts/catrinity/Catrinity.otf</OSKFont>
+      <DisplayFont>../../../shared/fonts/catrinity/Catrinity.otf</DisplayFont>
+      <Languages>
+        <Language ID="en-Runr">English</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

@@ -1,9 +1,7 @@
 ﻿<?php
   $pagename = 'Tai Dam Lao (SIL) Keyboard Help';
-  $pagetitle = 'Tai Dam Lao (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -79,15 +77,16 @@
           bottom: 4px;
           color: blue;
         }
-    </style>
+END;
+require_once('header.php');
+?>
 
-<body>
 
 <h2>Font</h2>
 
 <p>The Tai Dam Lao (SIL) keyboard can be used with any font that includes the characters from the Lao Unicode block. For your convenience, the Saysettha MX font is included in the keyboard package. Saysettha MX is copyright &#x00A9 2015 by John M Durdin, and licensed under the <a href="https://scripts.sil.org/OFL">SIL Open Font License, Version 1.1</a>.</p>
 
-<h2>Keyboard</h2>
+<h2>Desktop Keyboard Layout</h2>
 
 <p>SIL's Tai Dam Lao keyboard is designed for typing the Tai Dam language text using the Lao script. The layout is mapped phonetically onto a US English keyboard. 
 </p>

@@ -1,7 +1,7 @@
 Indic Romanization from ITRANS
 =================
 
-©2019 sanskritdocuments.org
+© sanskritdocuments.org
 
 Description
 -------------

@@ -31,14 +31,11 @@ This keyboard is designed for the Tamil language and based on the new Tamil type
 <h2>Using this Keyboard</h2>
 </div>
 
+<h3>Desktop Keyboard layout</h3>
 
 <div id='osk'>
-
-  <h3>Desktop Keyboard layout</h3>
-
-</div><br style="clear: left">
-
 </div>
+
 
 <div id='Quickstart'>
 <h3>Quickstart</h3>
@@ -99,6 +96,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <p>
 Because the consonants contain the implicit vowel <span class='highlightExample'>அ</span>, to produce a pure consonant it is necessary to add the Pulli mark <span class='lang2'>்</span> by typing a semicolon <span class='keys'>;</span> immediately after the consonant.  In every case, a consonant-Pulli mark combinant behaves the same way as a consonant-vowel combinant when you use the arrow, Backspace and Delete keys.  Any vowel component that is typed immediately after typing the Pulli mark will not be combined with the consonant.  Also, typing a semicolon after a standalone vowel or a space will produce a semicolon, not the Pulli mark.
 </p>
+</div>
 
 <div>
 <h4>The SRii Character <img src='sri.png' style='vertical-align:bottom' /></h4>
@@ -194,9 +192,6 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 
 </table>
 
-
-
-</div>
 
 
 
@@ -631,10 +626,11 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >?</span><br/><span class='keys'>_</span></td>
 	</tr>
 </table>
-
+</div>
 
 <div id="Authorship">
 <h2>Authorship</h2>
 <p>
 This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.com) and K. Sethu (skhome@gmail.com).  For more information about keyboards produced by these developers, see <a target="_blank" href="http://thamizha.com">http://thamizha.com</a>.  Tavultesoft gratefully acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb.  Their effort assists in enabling people to communicate in their own language.
 </p>
+</div>

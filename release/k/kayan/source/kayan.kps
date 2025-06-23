@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,9 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">kayan</Name>
-    <Copyright URL="">© 2017-2021 SIL International</Copyright>
-    <Description>For typing the Latin-based script of the Kayǎn people of Myanmar.</Description>
+    <Name URL="">Kayǎn</Name>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">For typing the Latin-based script of the Kayǎn people of Myanmar.</Description>
   </Info>
   <Files>
     <File>
@@ -143,16 +144,38 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-Medium.ttf</Name>
+      <Description>Font Andika Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-MediumItalic.ttf</Name>
+      <Description>Font Andika Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-SemiBold.ttf</Name>
+      <Description>Font Andika SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-SemiBoldItalic.ttf</Name>
+      <Description>Font Andika SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Kayǎn</Name>
       <ID>kayan</ID>
-      <Version>1.5</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="pdu-Latn">Kayan</Language>
+        <Language ID="pdu">Kayan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

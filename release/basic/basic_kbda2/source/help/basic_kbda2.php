@@ -9,8 +9,6 @@
     Arabic (102) Basic generated from template.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift leftctrl-shift'>
 </div>
@@ -21,7 +19,4 @@
 
 <div id='osk-tablet' data-states='default shift ctrl'>
 </div>
-
-
-<p>(c) SIL International</p>
 

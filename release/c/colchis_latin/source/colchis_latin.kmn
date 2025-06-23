@@ -2,8 +2,8 @@
 store(&NAME) 'Colchis Latin'
 store(&VISUALKEYBOARD) 'colchis_latin.kvks'
 store(&BITMAP) 'colchis_latin.ico'
-store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.5'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.6.1'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'colchis_latin.keyman-touch-layout'
 begin Unicode > use(main)
@@ -44,7 +44,6 @@ c Georgian letters
 + [K_EQUAL] > '-'
 + [K_HYPHEN] > '*'
 + [K_SLASH] > '.'
-+ [RALT K_Q] > "@"
 c + [RALT K_A] > U+00E6
 c + [SHIFT RALT K_A] > U+00C6
 + [RALT K_E] > U+20AC
@@ -55,6 +54,7 @@ c + [SHIFT RALT K_A] > U+00C6
 + [RALT K_3] > "#"
 + [RALT K_4] > "$"
 + [RALT K_5] > "½"
++ [RALT K_6] > "@"
 + [RALT K_7] > "{"
 + [RALT K_8] > "["
 + [RALT K_9] > "]"
@@ -82,6 +82,8 @@ c ejective rules
 + [SHIFT RALT K_W] > U+01B7 U+030C c 'Ʒ̆'
 + [RALT K_Z]       > U+017E c 'z̆'
 + [SHIFT RALT K_Z] > U+017D c 'Z̆'
++ [RALT K_Q]       > U+0071 U+030C c 'q̌'
++ [RALT K_O]       > U+0254 c 'ɔ'
 
               
 

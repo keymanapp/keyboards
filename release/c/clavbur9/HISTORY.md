@@ -1,6 +1,11 @@
 Clavier du Burkina Change History
 =======================
 
+9.1.2 (2025-06-09)
+------------------
+* Add Charis font
+* Change to use minimal tags
+
 9.1.1 28-Oct-2020
 -----------------
 * Added Kaansa language to list of languages supported

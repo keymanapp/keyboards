@@ -59,10 +59,7 @@ The negative prophecy of Local and International Philosophers that Ukwuani Langu
 Team Leader.
 </p>
 
-<h1>Keyboard Layout</h1>
-
-<!-- Insert Keyboard Layout Images or HTML here -->
-  <h2>Keyboard layout - computer</h2>
+  <h2>Desktop Keyboard Layout</h2>
 	<h3>Default (unshifted)</h3>
 	<p><a href="LayoutU_.png"><img width="80%" class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
 	<h3>Shift</h3>
@@ -72,7 +69,7 @@ Team Leader.
 	<h3>Right Alt (AltGr) + Shift</h3>
 	<p><a href="LayoutU_SRA.png"><img width="80%" class="keyboard" src="LayoutU_SRA.png" alt="Shift + Right Alt (AltGr) state" /></a></p>
 	
-  <h2>Keyboard layout - touch</h2>
+  <h2>Touch Keyboard Layout</h2>
 	<h3>Default</h3>
 	<p><a href="TLayoutU_.png"><img width="60%" class="keyboard" src="TLayoutU_.png" alt="Default layer" /></a></p>
 	<h3>Shift</h3>
@@ -84,5 +81,5 @@ Team Leader.
 	<p>Any key with a little dot on the top right can be pressed and held to revealed more keys. See the longpress subkey of key <kbd>N</kbd> below.</p>
 	<p><a href="Longpress.png"><img width="60%" class="keyboard" src="Longpress.png" alt="Longpress state" /></a></p>	
 
-<p>© 2022 ULDECF</p>
+<p>© ULDECF</p>
 

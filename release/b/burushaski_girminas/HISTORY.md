@@ -1,6 +1,15 @@
 Burushaski Girminas Change History
 
+2.1.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+2.1.0 (27 Jan 2025)
+-----------------
+* Update versioning consistency
+
 2.0.25 (2023-10-24)
+----------------
 Improvements and features added
 
 2.0.24 (2023-10-10)

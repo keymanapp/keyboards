@@ -7,10 +7,9 @@
 
 
 <p>
-    Vietnamese Basic 1.1 generated from template.
+    Vietnamese Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>Combining marks should be typed after the base character.</p>
 
 <h2>Desktop Keyboard Layout</h2>

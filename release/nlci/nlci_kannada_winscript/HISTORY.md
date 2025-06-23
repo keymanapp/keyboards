@@ -1,6 +1,11 @@
 Kannada WinScript (NLCI) Keyboard Change History
 ====================
 
+2.2 (2025-05-15)
+----------------
+* Added characters to support Tulu and Sanskrit languages
+* Add Noto Sans Kannada font to support all characters
+
 2.1 (2024-08-28)
 ----------------
 * Added tablet layout

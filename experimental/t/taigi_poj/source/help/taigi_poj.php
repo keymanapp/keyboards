@@ -9,8 +9,6 @@ require_once('header.php');
 PhahTaigi POJ for Tâi-gí (Taiwanese) Pe̍h-ōe-jī.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift alt alt-shift'>
 </div>

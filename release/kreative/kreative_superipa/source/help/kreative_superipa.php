@@ -559,7 +559,7 @@ END;
 	<tr><td>ˡ</td><td><code>_l</code></td><td><code>_l</code></td><td>Alt-O</td><td>lateral release</td></tr>
 	<tr><td>◌̚</td><td><code>_}</code></td><td><code>_}</code></td><td>Alt-9</td><td>no audible release</td></tr>
 </table>
-<p>© 2018-2022 Kreative Software</p>
+<p>© Kreative Software</p>
 <script>
 	function prep() {
 		var ua = navigator.userAgent || navigator.appVersion;

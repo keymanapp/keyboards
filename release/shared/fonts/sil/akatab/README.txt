@@ -11,7 +11,7 @@ Unicode ranges and languages, smart font features and how to use them, please
 see the documentation folder.
 
 Akatab is released under under the SIL Open Font License 
-(http://scripts.sil.org/OFL).  
+(https://openfontlicense.org).  
 
 The Latin glyphs are based on the OFL-licensed Source Sans Pro fonts 
 (https://github.com/adobe-fonts/source-sans-pro).

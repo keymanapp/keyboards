@@ -107,4 +107,4 @@ require_once ('header.php');
         <li>z > z̲ (Z̲)</li>
     </ul>
 
-    <p>© 2015-2024 FirstVoices, First Peoples' Cultural Foundation, SIL International</p>
+    <p>© FirstVoices, First Peoples' Cultural Foundation, SIL International</p>

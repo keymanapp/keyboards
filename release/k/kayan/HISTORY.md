@@ -1,6 +1,10 @@
 ﻿Change History
 =======================
 
+1.5.3 (9 Jun 2025)
+-------------------
+* Update to new version of Andika
+
 1.5.2 (18 Nov 2023)
 -------------------
 * Reorder punctuation on longpress of period key

@@ -14,8 +14,6 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
 ?>
   <link rel="stylesheet" href="style.css" type="text/css" />
 
-   <h1>Korean Phonetic Keyboard Help</h1>
-   <div id='overview'>
     <h2>Overview</h2>
     <p>The Korean Phonetic keyboard is built to type Korean using the Phonetic transliteration system when possible. This layout is designed to make Latin-Korean transliteration 100% unambiguous.</p>
     <p>This mnemonic keyboard is based on the pronunciation of Korean. For an alternative accurate transliteration system, use the Korean KORDA keyboards.</p>
@@ -32,7 +30,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
         <li>Gungsuh</li>
         <li>Malgun Gothic</li>
     </ul>
-  <div id='layout'>
+
    <h2>Keyboard Layout</h2>
     <h3 style="clear:left">Korean Phonetic Keyboard</h3>
     <div class="key plain" id="K_BKQUOTE">
@@ -275,7 +273,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
       press <kbd>Shift</kbd>+<kbd>Spacebar</kbd>.</p>
 
     <h2 class='guide'>Complete Typing Guide</h2>
-    <div class='consonants'>
+
         <h3>Consonants</h3>
         <table class='grid'>
             <col width=50 />
@@ -342,8 +340,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᄒ</td><td><span class='keys'>h</span></td>
             </tr>
         </table>
-    </div>
-    <div class='vowels'>
+
         <h3>Vowels</h3>
         <table class='grid'>
             <col width=50 />
@@ -416,4 +413,4 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>w</span>+<span class='keys'>i</span></td>
             </tr>
         </table>
-    </div>
+

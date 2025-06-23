@@ -1,7 +1,7 @@
 Gilaki Phonetic keyboard
 ==============
 
-© 2020 SIL International
+© SIL Global
 
 Description
 -----------

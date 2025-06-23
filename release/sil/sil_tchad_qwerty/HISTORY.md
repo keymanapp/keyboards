@@ -1,6 +1,20 @@
 Tchad QWERTY Keyboard Change History
 =======================
 
+5.3.3 (11 Apr 2025)
+------------------
+* Improved web integration: updated CSS and PHP files 
+  to ensure proper display of the Keyman keyboard help on the website.
+
+5.3.2 (31 Mar 2025)
+------------------
+* Adjust language tag for fub to fub-Latn and 
+  remove cds (Chadian Sign Language)
+
+5.3.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 5.3 (25 Jun 2024)
 ------------------
 * Change to positional layout (QWERTY only for this version)

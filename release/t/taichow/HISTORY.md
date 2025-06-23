@@ -1,6 +1,18 @@
 taichow Change History
 ====================
 
+2.0 (2025-04-06)
+----------------
+* Updated by cathaylab
+* use r key to represent rising tone, to fastening typing and to be similar with Vietnamese typing
+* complete the keyboard document, comfirmed the alphabet and spelling of Goetian.
+
+1.0.4 (2024-11-06)
+----------------
+* Updated by cathaylab
+* modified touch layout
+* added automatic uppercase
+
 1.0.3 (2024-08-25)
 ----------------
 * Updated by cathaylab

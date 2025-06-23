@@ -7,11 +7,10 @@
 
 
 <p>
-    Albanian Basic 1.1 generated from template.
+    Albanian Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
-<h1>Keyboard Layout</h1>
 <p>The keyboard layouts are listed below. However, this keyboard also utilizes "deadkeys" which are accessed with RALT 0/2/3/4/5/6/8/9/-/=. Thus, type:</p>
 <p> RALT+0+o to get "ő". RALT+0 can be used with o, O, u, and U. </p>
 <p> RALT+2+c to get "č". RALT+2 can be used with c, C, d, D, e, E, l, L, n, N, r, R, s, S, t, T, z, and Z. </p>
@@ -31,5 +30,3 @@
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift rightalt'>
 </div>
-
-<p>© 2008-2019 SIL International</p>

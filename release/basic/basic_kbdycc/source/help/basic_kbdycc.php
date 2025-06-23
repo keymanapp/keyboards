@@ -14,8 +14,6 @@
 <p>'г will produce ѓ (available on гГкК).</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
@@ -23,6 +21,3 @@
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
-
-<p>© SIL International</p>
-

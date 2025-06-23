@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.286.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,10 +20,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Batak</Name>
-    <Copyright URL="">© 2021-2022 Benny Lin</Copyright>
+    <Copyright URL="">© Benny Lin</Copyright>
     <Author URL="">Benny Lin</Author>
     <WebSite URL="https://bennylin.github.io/">https://bennylin.github.io/</WebSite>
-    <Description>Batak keyboard (Batak BTK, Simalungun BTS, Toba BBC, Karo BTX, Pakpak
+    <Description URL="">Batak keyboard (Batak BTK, Simalungun BTS, Toba BBC, Karo BTX, Pakpak
 BTD, and Mandailing BTM)</Description>
   </Info>
   <Files>
@@ -89,18 +90,18 @@ BTD, and Mandailing BTM)</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Batak keyboard layout</Name>
+      <Name>Batak</Name>
       <ID>batak</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Batk\NotoSansBatak-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Batk\NotoSansBatak-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bbc-Batk">Batak Toba (Batak)</Language>
         <Language ID="btd">Batak Dairi</Language>
-        <Language ID="btk-Batk">Batak languages (Batak)</Language>
         <Language ID="btm">Batak Mandailing</Language>
         <Language ID="bts-Batk">Batak Simalungun (Batak)</Language>
         <Language ID="btx-Batk">Batak Karo (Batak)</Language>
+        <Language ID="akb-Batk">Batak Angkola (Batak)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -32,7 +32,6 @@ EXTRA;
 
 <p>Thanks to Mr. Joseph Gallop for contributing to the development of this keyboard.</p>
 	
-<h1>Keyboard Layout</h1>
 	<h2>Desktop Keyboard Layout</h2>
 	<div id='osk' data-states='default shift'></div>
 
@@ -48,7 +47,7 @@ EXTRA;
 	
 
 <h1>Special Keystrokes</h1>
-<table style="font-family:'Charis SIL';">
+<table style="font-family:'Charis';">
 <thead><tr><th>Keystrokes</th><th> Outputs  </th></tr></thead><tbody>
  <tr><td><kbd>,</kbd> + <kbd>C</kbd></td><td> Ç  </td></tr>
  <tr><td><kbd>,</kbd> + <kbd>c</kbd></td><td> ç  </td></tr>
@@ -158,4 +157,4 @@ EXTRA;
  <tr><td><kbd>;</kbd> + <kbd>=</kbd></td><td> =  </td></tr>
 </tbody></table>
 
-<p>© 2020 Christian Grandouiller</p>
+<p>© Christian Grandouiller</p>

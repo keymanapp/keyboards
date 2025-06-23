@@ -1,14 +1,7 @@
 <?php
   $pagename = 'NLCI Tamil WinScript Keyboard Help';
-  $pagetitle = 'NLCI Tamil WinScript Keyboard Help';
-  require_once('header.php');
-?>
- <style>
-
-        html, body {
-            font-family: sans-serif;
-            font-size: 100%;
-        }
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         samp {
             font-family: Annapurna; 
             font-size:20pt; 
@@ -75,26 +68,21 @@
             border-top: 2px solid #6ea1cc;
             text-align: right;
         } 
-        */
-
-
-    </style>
-</head>
-
-<body>
-    <h1>NLCI Tamil WinScript Keyboard help</h1>
+    END;
+require_once('header.php');
+?>
 
     <p>This Keyboard mimic Tamil WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
     <h2>Keyboard layout</h2>
-	
+  
 
      <img src = "tamil keyboard.png" style="width:auto;"> </img>
     <h2>Input sequences</h2>
     
-	
-	 <table class="inputSequences">
-	 <h3>Special cases</h3>
+  
+   <table class="inputSequences">
+   <h3>Special cases</h3>
    
         <thead>
             <tr>
@@ -147,30 +135,34 @@
                 
             </tr>
             
-			
-			<tr>
+      
+      <tr>
                <td><kbd>u</kbd><kbd>u</kbd>  </td>
                 <td>ஊ</td>
                 
             </tr>
-			
-			<tr>
+      
+      <tr>
                <td><kbd>s</kbd><kbd>s</kbd>  </td>
                 <td>ஷ</td>
                 
             </tr>
-			
-			
-			
+      
+      
+      
         </tbody>
     </table>
 
+<h3>Nukta</h3>
+
+    <p> <kbd>f</kbd> is used for nukta Eg <kbd>k</kbd> <kbd>f</kbd> will generate <samp>க𑌼</samp>, and <kbd>k</kbd> <kbd>o</kbd> <kbd>o</kbd> <kbd>f</kbd> will generate <samp>க𑌼ோ</samp></p>
+    
     <h3>Virama</h3>
 
     <p> <kbd>X</kbd> is used as virama Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>L</kbd> will generate <samp>க்‌ள</samp></p>
-	
-	<h3>Using = </h3>
-	
+  
+  <h3>Using = </h3>
+  
       <table class="inputSequences">
         <thead>
             <tr>
@@ -192,9 +184,9 @@
             </tr>
 </tbody>
     </table>
-	
-	<h3>Using \ </h3>
-	
+  
+  <h3>Using \ </h3>
+  
       <table class="inputSequences">
         <thead>
             <tr>
@@ -214,28 +206,24 @@
                 <td>ழ</td>
                 
             </tr>
-			<tr>
+      <tr>
                 <td><kbd>\</kbd><kbd>r</kbd> </td>
                 <td>ற</td>
                 
             </tr>
 </tbody>
     </table>
-	
-	 <h3>Conjuncts</h3>
+  
+   <h3>Conjuncts</h3>
 
     <p> <kbd>x</kbd> is used as conjuncts Eg <kbd>k</kbd> <kbd>x</kbd> <kbd>l</kbd> will generate <samp>க்ள </samp></p>
     
-	<h3>Numbers</h3>
+  <h3>Numbers</h3>
 
     <p> <kbd>`</kbd> Backtick with number will get Tamil number Eg <kbd>`</kbd> <kbd>1</kbd> will generate <kbd>௧</kbd></p>  
 
-	<h3>Backtick for change into English</h3>
+  <h3>Backtick for change into English</h3>
 
     <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>த</kbd> will generate <kbd>q</kbd></p>  
-
-    
-</body>
-    
 
 

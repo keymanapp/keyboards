@@ -667,4 +667,4 @@ This keyboard was created by M. S. Murali.  SIL gratefully acknowledges the cont
 </table>
 
 </div>
-<p style='margin:0px'>Keyboard &#169; Visual Media and SIL International</p>
+<p style='margin:0px'>Keyboard &#169; Visual Media and SIL Global</p>
