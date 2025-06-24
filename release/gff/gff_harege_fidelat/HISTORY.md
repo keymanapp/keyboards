@@ -3,6 +3,7 @@
 ## 1.1.3 (2025-06-24)
 * CSS addition for popup key borders.
 * Removed 2 unused layers.
+* Made hint symbol darker on reddish keys.
 
 ## 1.1.2 (2025-06-19)
 * CSS fixes for K_SHIFT keys.
