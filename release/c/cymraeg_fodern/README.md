@@ -3,11 +3,11 @@ Cymraeg Fodern keyboard
 
 Description
 -----------
-
+This keyboard is for use of the Welsh language (Cymraeg) using a QWERTY (ANSI or ISO) layout.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/kbdeditcymf
+Keyboard Homepage: https://keyman.com/keyboards/cymraeg_fodern
 
 Copyright
 ---------
