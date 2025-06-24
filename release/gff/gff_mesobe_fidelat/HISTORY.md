@@ -1,7 +1,8 @@
 # gff_mesobe_fidelat Change History
 
-## 1.1.3 (2025-06-23)
-* CSS addition for popup key borders
+## 1.1.3 (2025-06-24)
+* CSS addition for popup key borders.
+* removed extra letter from 𞟠 index.
 
 ## 1.1.2 (2025-06-19)
 * CSS fixes for K_SHIFT keys.
