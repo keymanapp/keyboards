@@ -1,5 +1,9 @@
 gff_amharic Change History
 ==========================
+3.2.3 (23 Jun 2025)
+-------------------
+* fixed nextlayer targets on multitap keys of the "extra" layers.
+
 3.2.2 (15 Jun 2025)
 -------------------
 * fixes to glow keys for alternative/secondary letters.
