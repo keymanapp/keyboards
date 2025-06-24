@@ -1,5 +1,5 @@
 <?php
-	$pagename = 'Devanagari KaGaPa Phonetic Keyboard – Getting Started' ;
+	$pagename = 'Devanagari KaGaPa Phonetic Keyboard Help' ;
 	$pagetitle = $pagename ;
 	$pagestyle = <<<END
     		body {
