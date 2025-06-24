@@ -36,7 +36,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Modi KaGaPa Phonetic</Name>
-    <Copyright URL="">Copyright © 2025 Abhishek Deshpande</Copyright>
+    <Copyright URL="">Copyright © Abhishek Deshpande</Copyright>
     <Author URL="mailto:abhishekdeshpande128@gmail.com">Abhishek Deshpande</Author>
     <Description URL="">This layout is the KaGaPa phonetic layout for a historically important script, called 'Modi'. It was prominently used to write Marathi, and in a few instances, for Hindi and Sanskrit. It is phonetically equivalent to Devanagari KaGaPa Phonetic, i.e., using similar character mapping, but for Modi letters.</Description>
     <Version URL=""></Version>
@@ -84,15 +84,35 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</Name>
+      <Description>Font Noto Sans Modi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>modi_kagapa_phonetic</ID>
+      <OSKFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="mr">Marathi</Language>
-        <Language ID="hi">Hindi</Language>
-        <Language ID="sa">Sanskrit</Language>
+        <Language ID="mr-Modi">Marathi (Modi)</Language>
+        <Language ID="hi-Modi">Hindi (Modi)</Language>
+        <Language ID="sa-Modi">Sanskrit (Modi)</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
