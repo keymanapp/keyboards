@@ -256,6 +256,8 @@ group(main) using keys
 + [CAPS K_COMMA] > U+004d
 + [NCAPS SHIFT K_COMMA] > U+004d
 + [CAPS SHIFT K_COMMA] > U+006d
++ [CAPS RALT K_COMMA] > U+003C
++ [NCAPS RALT K_COMMA] > U+003C
 
 + [K_HYPHEN] > U+002d
 + [SHIFT K_HYPHEN] > U+005f
@@ -265,11 +267,12 @@ group(main) using keys
 + [CAPS K_PERIOD] > U+004D U+0048
 + [NCAPS SHIFT K_PERIOD] > U+004D U+0068
 + [CAPS SHIFT K_PERIOD] > U+006D U+0068
++ [CAPS RALT K_PERIOD] > U+003E
++ [NCAPS RALT K_PERIOD] > U+003E
 
 + [K_SLASH] > U+002e
 + [SHIFT K_SLASH] > U+002c
-+ [RALT K_SLASH] > U+003c
-+ [SHIFT RALT K_SLASH] > U+003e
++ [RALT K_SLASH] > U+007C
 
 + [NCAPS K_BKSLASH] > U+0070 U+0068
 + [CAPS K_BKSLASH] > U+0050 U+0048
@@ -288,13 +291,12 @@ group(main) using keys
 + [NCAPS SHIFT K_RBRKT] > U+0050
 + [CAPS SHIFT K_RBRKT] > U+0070
 
-+ [K_BKQUOTE] > U+0060
-+ [SHIFT K_BKQUOTE] > U+00ac
-+ [RALT K_BKQUOTE] > U+00a6
++ [K_BKQUOTE] > U+002F
++ [SHIFT K_BKQUOTE] > U+005C
++ [RALT K_BKQUOTE] > U+0060
 
-+ [K_oE2] > U+005c
-+ [SHIFT K_oE2] > U+002f
-+ [RALT K_oE2] > U+007c
++ [K_oE2] > U+00A6
++ [SHIFT K_oE2] > U+00ac
 
 match > use(deadkeys)
 
