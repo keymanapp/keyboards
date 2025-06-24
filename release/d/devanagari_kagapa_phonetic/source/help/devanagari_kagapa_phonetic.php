@@ -1,81 +1,79 @@
 <?php
 	$pagename = 'Devanagari KaGaPa Phonetic Keyboard – Getting Started' ;
 	$pagetitle = $pagename ;
-	// Header we will tidy up later
+	$pagestyle = <<<END
+    		body {
+      			font-family: "Segoe UI", "Noto Sans", sans-serif;
+      			line-height: 1.6;
+      			background-color: #fdfdfd;
+      			color: #333;
+      			margin: 2em;
+    		}
+
+    		h1, h2 {
+      			color: #2c3e50;
+      			border-bottom: 2px solid #ccc;
+      			padding-bottom: 0.2em;
+    		}
+
+    		table {
+      			width: 100%;
+      			border-collapse: collapse;
+      			margin-bottom: 2em;
+    		}
+
+    		th, td {
+      			border: 1px solid #ddd;
+      			padding: 8px 12px;
+      			text-align: left;
+      			vertical-align: middle;
+    		}
+
+    		th {
+      			background-color: #f4f4f4;
+      			color: #000;
+    		}
+
+    		tr:nth-child(even) {
+      			background-color: #fafafa;
+    		}
+
+    		code {
+      			background-color: #eee;
+      			padding: 2px 4px;
+      			border-radius: 4px;
+      			font-family: monospace;
+    		}
+
+    		blockquote {
+      			border-left: 4px solid #ccc;
+      			padding-left: 1em;
+      			color: #666;
+      			background-color: #f9f9f9;
+      			margin: 2em 0;
+    		}
+
+    		hr {
+      			border: none;
+      			border-top: 1px solid #ddd;
+      			margin: 3em 0;
+    		}
+
+    		a {
+      			color: #007acc;
+      			text-decoration: none;
+    		}
+
+    		a:hover {
+      			text-decoration: underline;
+    		}
+
+    		ul {
+      			margin-left: 1.5em;
+    		}
+	END;
 	require_once( 'header.php' ) ;
 ?>
-
-$pagestyle = <<<END
-    body {
-      font-family: "Segoe UI", "Noto Sans", sans-serif;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
-      margin: 2em;
-    }
-
-    h1, h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.2em;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 2em;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px 12px;
-      text-align: left;
-      vertical-align: middle;
-    }
-
-    th {
-      background-color: #f4f4f4;
-      color: #000;
-    }
-
-    tr:nth-child(even) {
-      background-color: #fafafa;
-    }
-
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-
-    blockquote {
-      border-left: 4px solid #ccc;
-      padding-left: 1em;
-      color: #666;
-      background-color: #f9f9f9;
-      margin: 2em 0;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 3em 0;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      margin-left: 1.5em;
-    }
-END;
 
 <h1 id="devanagari-kagapa-phonetic-keyboard-–-key-mapping-tables">Devanagari KaGaPa Phonetic Keyboard – Getting Started</h1>
 
@@ -479,7 +477,7 @@ END;
 <blockquote>
   Author: <strong>Abhishek Deshpande</strong><br>
   License: <a href="https://opensource.org/license/mit">MIT</a><br>
-  Copyright: © 2025 Abhishek Deshpande</p>
+  Copyright: © Abhishek Deshpande</p>
 </blockquote>
 
 
