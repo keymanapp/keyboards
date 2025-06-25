@@ -30,9 +30,9 @@
   </ul>
   <p>The compound letters 𐑿, 𐑸 and 𐑹 are also assigned to single keys on the SHIFT layer. These are relatively common single letter words in English and having a single key for them saves a combination involving SHIFT layer letters, if desired.</p>
   <p>Double guillemets (« ») may also be typed by entering two single guillemets (‹ + ‹ or › + ›).</p>
-  <p>To prevent a compound letter being formed (e.g. to type 𐑩𐑮 or 𐑦𐑩) type 𐑩 then SHIFT + ⁞𐑮, 𐑦 then SHIFT + ⁞𐑩, etc. For example, if you wish to typ 𐑣<strong>𐑳𐑮</strong>𐑦 and not 𐑣<strong>𐑻</strong>𐑦, you will need to type 𐑳 followed by SHIFT + ⁞𐑮.</p>
-  <p>A special key, marked by a star ☆ on the SHIFT layer, also breaks compound letters into their component letters once formed. For example the 𐑘𐑵 combination does not occur natively in Shavian but may be accessed by typing letters 𐑿 and then ☆.</p>
-  <p>The ☆ key also inserts a ‘variation selector’ used to access the Shavian extended letters for the Inter Alia font (it will only work for this font and any others specifically designef for this), see the <a href="https://github.com/Shavian-info/interalia">Inter Alia Github repository</a> for more explanation.</p>
+  <p>To prevent a compound letter being formed (e.g. to type 𐑩𐑮 or 𐑦𐑩) type 𐑩 then SHIFT + ⁞𐑮, 𐑦 then SHIFT + ⁞𐑩, etc. For example, if you wish to type 𐑣<strong>𐑳𐑮</strong>𐑦 and not 𐑣<strong>𐑻</strong>𐑦, you will need to type 𐑳 followed by SHIFT + ⁞𐑮.</p>
+  <p>A special key, marked by a star ☆ on the SHIFT layer, also breaks compound letters into their component letters once formed. For example the 𐑘𐑵 combination does not occur natively in Shavian but may be accessed by typing letter 𐑿 and then ☆.</p>
+  <p>The ☆ key also inserts a ‘variation selector’ used to access the Shavian extended letters for the Inter Alia font (it will only work for this font and any others specifically designed for this), see the <a href="https://github.com/Shavian-info/interalia">Inter Alia Github repository</a> for more explanation.</p>
   <h2>Phone layout</h2>
   <p>The phone layout is adjusted for ease of typing on a small screen.</p>
   <div id='osk-phone' data-states='default shavian_shift shavian_shiftlock numbers symbols latin_default latin_shift latin_shiftlock'></div>
