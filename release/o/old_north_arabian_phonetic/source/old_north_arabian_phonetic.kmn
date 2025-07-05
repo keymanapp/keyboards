@@ -1,0 +1,27 @@
+﻿c old_north_arabian_phonetic generated from template at 2024-10-10 15:42:00
+c with name "Old North Arabian (Phonetic)"
+store(&VERSION) '10.0'
+store(&NAME) 'Old North Arabian (Phonetic)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'old_north_arabian_phonetic.ico'
+store(&VISUALKEYBOARD) 'old_north_arabian_phonetic.kvks'
+store(&LAYOUTFILE) 'old_north_arabian_phonetic.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+c abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+store(LettersK) "hlHmqwcrbtsknKSCfaADgdGTzxyXz"
+store(LettersU) U+10A80 .. U+10A9C
+
+store(numbersK) "123"
+store(numbersU) U+10A9D .. U+10A9F
+store(nul) "4567890euiopjvQWERYUIOPFJLZVBNM"
+
+group(main) using keys
+
++ any(LettersK) > index(LettersU,1)
++ any(numbersK) > index(numbersU,1)
++ any(nul) > nul

@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Lazca (Lazuri) Klavye
-* Copyright:      (C) 2017-2019 HERdilDER Derneği
-* Version:        2.3.1
+* Copyright:      (C) 2017-2020 HERdilDER Derneği
+* Version:        2.3.2
 * Keyman Version: 11.0
 * BCP-47 codes:   lzz-Latn
 

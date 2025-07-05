@@ -1,5 +1,69 @@
 Khmer Angkor Change History
 =======================
+2.2 (10 Apr 2025)
+----------------
+* add rule to prevent beep sound
+
+2.1.1 (24 Mar 2025)
+----------------
+* replace touch fonts with Busra
+
+2.1 (13 Feb 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+* update welcome.htm
+
+2.0 (03 Dec 2024)
+----------------
+* update touch layout with flick gesture
+* add shift and western layer 
+* add indepentdent vowels to numeric layer 
+* update English and Khmer documentation 
+
+1.5 (3 Jul 2024)
+----------------
+* Update keyboard to support OSK font for better display
+
+1.4 (5 Mar 2024)
+----------------
+* add spacing glyphs to touch layout spacebar
+
+1.3.1 (29 Apr 2024)
+----------------------
+* fix identical subscript
+
+1.3 (19 Jul 2022)
+----------------------
+* update OSK in the documentation and bump version number
+
+1.2 (3 Mar 2022)
+----------------------
+* fix BA issue with 17BB
+
+1.1 (27 Oct 2021)
+----------------------
+* update rules for ប (U+1794) and ័ (U+17D0)
+* add robat rule
+* add regression tests
+
+1.0.9 (7 Apr 2021)
+----------------------
+* fix broken images on help and welcome pages
+
+1.0.8 (24 Mar 2021)
+----------------------
+* fix the broken link on welcome page
+* add example to the keyboard_info
+* add tablet layout
+* update phone layout
+* get rid of the Lunar Dates layer on touch layout
+* update documentations
+* change OSK font to Khmer Mondulkiri
+
+1.0.7 (17 Nov 2020)
+----------------------
+* update icon
+* add new rules
 
 1.0.6 (13 May 2019)
 -------------------

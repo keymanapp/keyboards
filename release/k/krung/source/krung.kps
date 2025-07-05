@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,15 @@
   </StartMenu>
   <Info>
     <Name URL="">Krung</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
+    <Description URL="">Krung is a language spoken in the northern part of Cambodia. Khmer
+script was adopted and used for this language. This Keyman keyboard was
+developed based on an existing tool (Clever Rabit) which used the
+Romanized version of Krung. However, a few customizations have been made
+to make this keyboard perform as expected. See the documentation on the
+romanization and examples in our welcome page.</Description>
   </Info>
   <Files>
     <File>
@@ -58,44 +67,56 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
+      <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-B.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-BI.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold Italic</Description>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-I.ttf</Name>
-      <Description>Font Khmer Mondulkiri Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Bold.ttf</Name>
+      <Description>Font Busra Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</Name>
-      <Description>Font Khmer Mondulkiri</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-ExtraLight.ttf</Name>
+      <Description>Font Busra ExtraLight</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Light.ttf</Name>
+      <Description>Font Busra Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Medium.ttf</Name>
+      <Description>Font Busra Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</Name>
+      <Description>Font Busra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-SemiBold.ttf</Name>
+      <Description>Font Busra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\OFL.txt</Name>
       <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
@@ -104,11 +125,11 @@
     <Keyboard>
       <Name>Krung</Name>
       <ID>krung</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</DisplayFont>
+      <Version>1.0.3</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="krr-Khmr">Krung</Language>
+        <Language ID="krr">Krung</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

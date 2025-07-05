@@ -1,0 +1,91 @@
+﻿store(&VERSION) '15.0'
+store(&NAME) 'Zanabazar Square'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'zanabazar_square.ico'
+store(&VISUALKEYBOARD) 'zanabazar_square.kvks'
+store(&LAYOUTFILE) 'zanabazar_square.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c Inscript keys
+
+
+c DONE
+c           a         i     ue           u     e     o     oe         ai          au        rev-i            v length
+store(VowK) [K_QUOTE] [K_I] [SHIFT K_U] [K_U] [K_E] [K_O] [SHIFT K_O] [RALT K_I] [RALT K_U] [SHIFT RALT K_I] [SHIFT K_BKQUOTE]
+store(Vow)  U+11A00 .. U+11A0A
+
+c DONE (but check dzha)
+c            ka     kha        ga    gha         nga   ca    cha          ja    nya        tta         ttha            dda        ddha             nna         ta    tha         da    dha         na    pa    pha         ba    bha         ma     tsa        tsha             dza        dzha            zha         za    -a          ya    ra    la   va    sha         ssa              sa     ha    kssa
+store(ConsK) [K_K] [SHIFT K_K] [K_G] [SHIFT K_G] [K_Q] [K_C] [SHIFT K_C] [K_J] [SHIFT K_N] [RALT K_T] [RALT SHIFT K_T] [RALT K_D] [RALT SHIFT K_D] [RALT K_N] [K_T] [SHIFT K_T] [K_D] [SHIFT K_D] [K_N] [K_P] [SHIFT K_P] [K_B] [SHIFT K_B] [K_M]  [RALT K_C] [SHIFT RALT K_C] [RALT K_J] [RALT SHIFT K_J] [SHIFT K_Z] [K_Z] [K_HYPHEN]  [K_Y] [K_R] [K_L] [K_V] [SHIFT K_S] [RALT SHIFT K_S] [K_S] [K_H] [K_X]
+store(Cons)  U+11A0B .. U+11A32
+
+c DONE
+c ^ dk
+store(ClusterInitK) [K_R]
+store(ClusterInitU) U+11A3A
+
+c DONE
+c + dk
+store(FinConsK) [K_K] [K_R] [K_L] [K_V]
+store(FinConsU) U+11A3B .. U+11A3E
+
+c @ dk
+store(HeadK) [K_1] [K_2] [K_3] [K_4]
+store(HeadU) U+11A3F .. U+11A40 U+11A45 .. U+11A46
+
+c # dk        finalCons virama candrabindu candOrnam  candOrnam2 anusvara visarga
+store(SignsK) [K_1]     [K_2]  [K_3]      [K_4]       [K_5]      [K_6]    [K_7]
+store(Signs)  U+11A33 .. U+11A39
+
+c             tsheg     shad/danda  double shad/doubledanda  long tsheg
+store(PunctK) [K_COLON] [SHIFT K_1] [SHIFT K_QUOTE]          [SHIFT K_5]
+store(Punct)  U+11A41 .. U+11A44
+
+store(DigitsK) "0123456789"
+store(Digits)  U+0030 .. U+0039
+
+
+store(nul) "afwAEFHILMQRVWXY"
+
+store(ralt)  [RALT K_1] [RALT K_QUOTE] [RALT K_5] [RALT K_7] [RALT K_HYPHEN] [RALT K_COLON] [RALT K_BKQUOTE] [RALT K_2] [RALT K_3] [RALT K_6]
+store(raltU) U+0021     U+0022         U+0025     U+0026     U+002D          U+003B         U+007E           U+0040     U+0023     U+005E
+
+group(main) using keys
+
++ [SHIFT K_6] > dk(cluster) c ^
++ [SHIFT K_EQUAL] > dk(FinCons) c +
++ [SHIFT K_2] > dk(head) c @
++ [SHIFT K_3] > dk(signs) c #
+dk(cluster) + any(ClusterInitK) > index(ClusterInitU,2)
+dk(FinCons) + any(FinConsK) > index(FinConsU,2)
+dk(head) + any(HeadK) > index(HeadU,2)
+dk(signs) + any(SignsK)    > index(Signs,2)
+
++ any(nul) > nul
++ any(VowK)  > index(Vow,1)
++ any(ConsK)    > index(Cons,1)
++ any(PunctK)   > index(Punct,1)
++ any(DigitsK) > index(Digits,1)
++ any(ralt) > index(raltU,1)
+
+
++ [SHIFT K_7] > U+11A47 c subjoiner
+
++ [K_LBRKT] > U+005B
++ [K_RBRKT] > U+005D
++ [K_BKSLASH] > U+005C
++ [SHIFT K_LBRKT] > U+007B
++ [SHIFT K_RBRKT] > U+007D
++ [SHIFT K_BKSLASH] > U+007C
++ [SHIFT K_9] > U+0028
++ [SHIFT K_0] > U+0029
++ [SHIFT K_4] > U+0024
++ [K_BKQUOTE] > U+0060
++ [K_SLASH] > U+002F
++ [SHIFT K_HYPHEN] > U+005F
++ [K_EQUAL] > U+003D
+
+

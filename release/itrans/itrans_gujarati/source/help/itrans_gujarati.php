@@ -14,9 +14,6 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Gujarati Phonetic (ITRANS)</h2>
-<h2>
-<span style="color: chocolate;">Gujarati Phonetic (ITRANS)</span> Keyboard Version 1.2.0</h2>
 <p>This is a phonetic (ITRANS) keyboard layout for Gujarati and Avestan written in Gujarati script. It is based on 
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme 
 with some modifications. You can phonetically type using the modified ITRANS scheme on a 

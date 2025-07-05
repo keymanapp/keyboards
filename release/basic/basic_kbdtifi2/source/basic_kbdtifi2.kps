@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Tifinagh (Full) Basic</Name>
-    <Copyright URL="">(c) 2018 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
     <Author URL=""></Author>
+    <Description URL="">Tifinagh (Full) Basic generated from template. This keyboard does not
+support the consonant joiner (U+2D7F) for forming bi-consonants. It also
+does not support U+2D66, U+2D67, U+2D70.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -69,6 +75,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,16 +90,16 @@
       <Languages>
         <Language ID="tzm-Tfng">Central Atlas Tamazight</Language>
         <Language ID="thz-Tfng">Tayart Tamajeq (Tifinagh)</Language>
-        <Language ID="tda-Tfng">Tagdal (Tifinagh)</Language>
+        <Language ID="tda">Tagdal</Language>
         <Language ID="thv-Tfng">Tahaggart Tamahaq (Tifinagh)</Language>
         <Language ID="kab-Tfng">Kabyle (Tifinagh)</Language>
         <Language ID="mzb-Tfng">Tumzabt (Tifinagh)</Language>
-        <Language ID="shi-Latn">Tachelhit (Latin)</Language>
+        <Language ID="shi">Tachelhit</Language>
         <Language ID="shy-Tfng">Tachawit (Tifinagh)</Language>
         <Language ID="rif-Tfng">Tarifit (Tifinagh)</Language>
         <Language ID="tmh-Tfng">Tamashek (Tifinagh)</Language>
-        <Language ID="zen-Tfng">Zenaga (Tifinagh)</Language>
-        <Language ID="zgh-Tfng">Standard Moroccan Tamazight (Tifinagh)</Language>
+        <Language ID="zen">Zenaga</Language>
+        <Language ID="zgh">Standard Moroccan Tamazight</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -1,15 +1,21 @@
 Lepcha (SIL) Keyboard
 =====================
 
-Copyright (C) 2010-2018 SIL International
+Copyright (C) SIL Global
 
-Version 1.0
-
-__DESCRIPTION__
+Description
+-----------
 This keyboard is designed for typing Lepcha text. The keyboard is a phonetic keyboard. This means that the keystrokes are tied to the Latin keyboard. 
+
+Links
+-----
+Home: https://keyman.com/keyboards/sil_lepcha
 
 Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
+

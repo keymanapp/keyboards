@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using Enga</h1>
-
 <p>
     The Enga Keyboard includes 4 characters for the Enga language of Papua New Guinea:  ē ŋ Ē Ŋ.
 </p>
@@ -30,4 +28,4 @@
 
 <h1>Credits</h1>
 
-<p>© 2019 Stanley Stanis Kaka, Marc Durdin</p>
+<p>© Stanley Stanis Kaka, Marc Durdin</p>

@@ -11,8 +11,6 @@
     in combination with the x, v or f keys.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift alt shift-alt'>
 </div>

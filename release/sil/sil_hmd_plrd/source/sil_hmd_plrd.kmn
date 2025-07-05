@@ -1,4 +1,4 @@
-c 
+﻿c 
 c Sample Keyboard: Miao
 c Miao of unknown flavor Calling it Ahmao
 c 
@@ -8,54 +8,79 @@ c
 c Fonts: 
 c
 
-VERSION 9.0
+store(&VERSION) '10.0'
 store(&NAME) 'Ahmao (SIL)'
-store(&TARGETS) 'windows macosx linux web'
+store(&TARGETS) 'any'
 store(&ETHNOLOGUECODE) 'hmd'
-store(&COPYRIGHT) '(c) 2014-2018 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '(c) SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&BITMAP) 'sil_hmd_plrd.ico'
 store(&VISUALKEYBOARD) 'sil_hmd_plrd.kvks'
+store(&LAYOUTFILE) 'sil_hmd_plrd.keyman-touch-layout'
 
-begin Unicode > use(Umain)
+begin Unicode > use(main)
 
+store(toneK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7]
+store(toneU) U+16F93 .. U+16F99
 
-group (Umain) using keys
-+ [SHIFT K_R]  > dk(dead)
-+ [SHIFT K_A]  > dk(dead)
-+ [SHIFT K_X]  > dk(dead)
-+ [SHIFT K_C]  > dk(dead)
+group (main) using keys
 
-+ [K_BKQUOTE] > "`"
-+ 'a' > u+16F43
-+ 'b' > u+16F00
-+ 'c' > u+16F0E
-+ 'd' > u+16F0A
-+ 'e' > u+16F18   c Glyph variation here for style (longer tail)
++ any(toneK) > index(toneU,1)
++ [K_BKQUOTE] > U+16F50 c "`"
++ [K_A] > U+16F43
++ [RALT K_A] > U+16F44
++ [K_B]      > U+16F00
++ [RALT K_B] > U+16F01
++ [K_C] > U+16F0E
++ [RALT K_C] > U+16F0F
++ [K_D] > U+16F0A
++ [RALT K_D] > U+16F0B
++ [K_E] > U+16F18   c Glyph variation here for style (longer tail)
++ [RALT K_E] > U+16F19
 + 'f' > u+16F07
-+ 'g' > u+16F1E
++ [K_G] > U+16F1E
++ [RALT K_G] > U+16F1F
+
 + 'h' > u+16F26
 + 'i' > u+16F61
-+ 'j' > u+16F2F
-+ 'k' > u+16F20
-+ 'l' > u+16F16
-+ 'm' > u+16F04
-+ 'n' > u+16F10
++ [K_J] > U+16F2E
++ [RALT K_J] > U+16F2F
+
++ [K_K] > U+16F21 c change from U+16F20
++ [RALT K_K] > U+16F22
++ [K_L]      > U+16F16
++ [RALT K_L] > U+16F17
+
++ [K_M] > U+16F04
++ [RALT K_M] > U+16F05
+
++ [K_N]      > U+16F10
++ [RALT K_N] > U+16F11
+
 + 'o' > u+16F59
-+ 'p' > u+16F23   c Glyph variation here for style (more squared)
-+ 'q' > u+16F1A
++ [K_P] > U+16F23   c Glyph variation here for style (more squared)
++ [RALT K_P] > U+16F24
++ [K_Q] > U+16F1A
++ [RALT K_Q] > U+16F1B
 + 'r' > u+16F35
 + 's' > u+16F3A
-+ 't' > u+16F37
++ [K_T] > U+16F37
++ [RALT K_T] > U+16F38
+
 + 'u' > u+16F6A
-+ 'v' > u+16F08
++ [K_V]      > U+16F08
++ [RALT K_V] > U+16F09
+
 + 'w' > u+16F42
 + 'x' > u+16F33   c Glyph Variation here for style (more relaxed curve)
-+ 'y' > u+16F3D
-+ 'z' > u+16F3B   c possible Glyph variation here for style
-+ 'A' > nul       c NOT USED by Ahmao
-+ 'B' > u+16F57   c CHECK THIS! I strongly suspect it is wrong
-+ 'C' > nul       c  NOT USED by Ahmao Not Assigned
++ [K_Y] > U+16F3D
++ [RALT K_Y] > U+16F3E
++ [K_Z] > U+16F3B   c possible Glyph variation here for style
++ [RALT K_Z] > U+16F3C
+
+
++ [SHIFT K_B] > u+16F58
++ [SHIFT K_C] > U+16F71
 + 'D' > u+16F62
 + 'E' > u+16F5E
 + 'F' > u+16F74
@@ -70,19 +95,42 @@ group (Umain) using keys
 + 'O' > u+16F5F
 + 'P' > u+16F77
 + 'Q' > u+16F6B
-+ 'R' > nul       c NOT USED by Ahmao
++ [SHIFT K_R] > U+16F64
 + 'S' > u+16F79
 + 'T' > u+16F57
 + 'U' > u+16F51
 + 'V' > u+16F7E
-+ 'W' > u+16F28
++ [K_BKSLASH] > U+16F28
++ [RALT K_BKSLASH] > U+16F29
+c + [SHIFT K_W] > nul
++ [SHIFT K_X] > U+16F66
 + 'Y' > u+16F68
 + 'Z' > u+16F60
++ [K_COLON] > U+16F14
++ [RALT K_COLON] > U+16F15
++ [SHIFT K_COLON] > nul
 + '+' > ':'
 + '=' > ';'
-+ '/' > '?'
++ '?' > '?'
++ '/' > '/'
++ [SHIFT K_BKSLASH] > "\"
 + '{' > u+16F91
 + '}' > u+16F90
 + "'" > u+16F8F
 + '_' > u+16F5D  c was at A-14 on DM keyboard, that key rarely exists.
+
++ [RALT K_X] > U+16F34
++ [RALT K_COMMA] > U+16F1C
++ [RALT K_PERIOD] > U+16F1D
++ [RALT K_U] > U+16F2A
++ [RALT K_I] > U+16F2B
++ [RALT K_HYPHEN] > U+16F2C
++ [RALT K_EQUAL] > U+16F2D
++ [SHIFT K_W] > U+16F40
++ [RALT K_W] > U+16F41
++ [RALT K_QUOTE] > "'"
+
++ [RALT K_LBRKT] > "{"
++ [RALT K_RBRKT] > "}"
++ [RALT K_BKQUOTE] > "`"
 

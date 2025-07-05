@@ -4,13 +4,14 @@ c *** Bugs Fixing Modifications by K. Sethu, April 2008 (addition of 8 lines at 
 store(&BITMAP) 'thamizha_bamini.ico'
 store(&MESSAGE) 'Bamini2Unicode - - Contributed by Suratha Yarl Vaanan(suratha@hotmail.com), Mugunth (mugunth@gmail.com); Sethu (skhome@gmail.com)'
 c store(&language) "Tamil"
-store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+store(&COPYRIGHT) '© thamizha.com and SIL Global'
 c store(&WINDOWSLANGUAGES) 'x0449'
 c store(&LANGUAGE) 'x0449'
 c store(&ETHNOLOGUECODE) 'tam'
 store(&VISUALKEYBOARD) 'thamizha_bamini.kvks'
-store(&KEYBOARDVERSION) '2.1'
-store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '2.2.1'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'thamizha_bamini.keyman-touch-layout'
    
 begin Unicode > use(main)
 group(main) using keys  
@@ -111,7 +112,6 @@ group(main) using keys
     +  ':' > u+003a  
          + "@" > u+003b                                   
                  
-  u+0bbe + ';' >  u+0bb0 U+0bcD                                    
 + "H" > u+0bb0 U+0bcD
 + ">" > u+002c
       + "/" > u+0b83
@@ -161,8 +161,6 @@ store(meyr)    u+0b95 u+0b99 u+0b9a u+0b9c u+0b9e u+0b9f u+0ba3 u+0ba4 u+0ba8 u+
         u+0bb0  U+0bc1  + '-' >   u+0bb0  U+0bc2                                 
                                                                      
                                                          
-  + any(mey1)     > index(meyr,1)    
-                   
    + "i" > dk(3)                                            
    + "N" > dk(2)    
      + "n" > dk(1)
@@ -172,7 +170,6 @@ store(meyr)    u+0b95 u+0b99 u+0b9a u+0b9c u+0b9e u+0b9f u+0ba3 u+0ba4 u+0ba8 u+
   dk(2)+ any(mey1)    > index(meyr,2)  U+0bc7 
     + any(mey1)    > index(meyr,1) 
 + ';' >  U+0bcD
-+ "h"  >  U+0bbe           
 + "p"  >  U+0bbf                                       
 + "P"  >  U+0bC0                        
                                                     
@@ -181,10 +178,9 @@ store(meyr)    u+0b95 u+0b99 u+0b9a u+0b9c u+0b9e u+0b9f u+0ba3 u+0ba4 u+0ba8 u+
                                                         
  any(meyr) U+0bc1 + U+002D   >  index(meyr,1) U+0bc2      
                                                                            
- + u+002d  > U+0bc1                                    
+ + u+002d  > U+0bc1    c this rule will never match                                
                                                              
- any(meyr) U+0bc1  + "-"    >  index(meyr,1) U+0bc2                   
- 
+
 c *** Following  8 lines added by K. Sethu (March 2008)
 store (EVow_for_La) ";hpP"
 store (TVow_for_La) U+0BCD U+0BBE U+0BBF U+0BC0

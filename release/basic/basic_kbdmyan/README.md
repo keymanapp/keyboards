@@ -1,14 +1,12 @@
 Myanmar (Phonetic order) Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.1
+© SIL International
 
 Description
 -----------
 
-Myanmar (Phonetic order) Basic generated from template
+This keyboard matches the following Windows 10 input methods: Myanmar (Phonetic order) and Myanmar (Visual Order).
 
 Links
 -----

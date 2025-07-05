@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1207.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName>C:\Data\Keyman\balochi_scientific\source\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,7 +19,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Balochi Scientific</Name>
-    <Copyright URL="">© 2017-2019 SIL International. This keyboard is distributed under The MIT License (MIT).</Copyright>
+    <Copyright URL="">© 2017-2023 SIL International.</Copyright>
+    <Description>This keyboard is designed for the scientific Latin script transcription
+of Balochi languages using the system devised at Uppsala University.</Description>
   </Info>
   <Files>
     <File>
@@ -25,12 +29,6 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>balochi_scientific.ico</Name>
-      <Description>File balochi_scientific.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
     </File>
     <File>
       <Name>..\build\balochi_scientific.kvk</Name>
@@ -62,14 +60,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\balochi_scientific.js</Name>
+      <Description>File balochi_scientific.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name></Name>
-      <ID></ID>
-      <Version></Version>
+      <Name>Balochi Scientific</Name>
+      <ID>balochi_scientific</ID>
+      <Version>1.0.5</Version>
       <Languages>
-        <Language ID="bcc-Latn">Southern Balochi (Latin)</Language>
+        <Language ID="bal-Latn">Baluchi (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

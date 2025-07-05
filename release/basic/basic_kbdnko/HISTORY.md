@@ -1,6 +1,16 @@
 N’Ko Basic Change History
 ====================
 
+1.1.1 (2023-12-1)
+----------------
+* Update to newer font in noto folder
+
+1.1 (19 Apr 2021)
+----------------
+* update desktop layout
+* update touch layout
+* add Noto Sans NKo font
+
 1.0.1 (24 Apr 2019)
 ----------------
 * Adjust BCP47 code to suppress script

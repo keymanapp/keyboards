@@ -1,0 +1,36 @@
+﻿c sogdian_phonetic generated from template at 2024-11-01 16:01:30
+c with name "Sogdian Phonetic"
+store(&VERSION) '10.0'
+store(&NAME) 'Sogdian Phonetic'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sogdian_phonetic.ico'
+store(&VISUALKEYBOARD) 'sogdian_phonetic.kvks'
+store(&LAYOUTFILE) 'sogdian_phonetic.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(LettersK) "abghwzHyklmnsYpSrctflx"
+store(LettersU) U+10F30 .. U+10F44 U+10F45
+
+store(CombK) "~!@#$%^&*()"
+store(CombU) U+10F46 .. U+10F50
+
+store(NumbK) "1234"
+store(NumbU) U+10F51 .. U+10F54
+
+store(PunctK) "67890"
+store(PunctU) U+10F55 .. U+10F59
+
+store(nul) "qeuiodjvQWERTUIOPADFGJKLZXCVBNM5"
+
+
+group(main) using keys
+
++ any(LettersK) > index(LettersU,1)
++ any(CombK) > index(CombU,1)
++ any(NumbK) > index(NumbU,1)
++ any(PunctK) > index(PunctU,1)
++ any(nul) > nul

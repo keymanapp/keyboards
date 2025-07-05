@@ -12,8 +12,6 @@ Windows 10 Inuktitut - Naqittaut layout.
 </p>
 <p>This keyboard uses one deadkey "]" which is used with the Latin characters to access the Naquittaut characters. The Naquittaut characters may also be accessed through the RALT and SHIFT+RALT keys.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

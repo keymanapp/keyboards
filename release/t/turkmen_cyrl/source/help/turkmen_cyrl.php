@@ -18,7 +18,6 @@ END;
 keyboard also includes an On Screen Keyboard and includes the Cyrillic letters needed for Russian loan words.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p><b>;</b> or <b>:</b> are used as a deadkey with a second keystroke to allow input of the following letters:</p>
                            
 <table class='display'>

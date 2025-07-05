@@ -1,9 +1,7 @@
 Santali (Latin) keyboard
 ==============
 
-© 2020 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
@@ -12,6 +10,7 @@ Description
 
 Links
 -----
+https://keyman.com/keyboards/santali_latin
 
 Supported Platforms
 -------------------
@@ -19,4 +18,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
+
 

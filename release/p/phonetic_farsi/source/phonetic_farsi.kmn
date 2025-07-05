@@ -1,0 +1,469 @@
+﻿c Includes the Scheherazade New font family.
+
+store(&VERSION) '10.0'
+store(&COPYRIGHT) 'Copyright © Amir Reza Ghareebdost'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'phonetic_farsi.ico'
+store(&NAME) 'phonetic_farsi'
+
+c ------------------ Variable Stores -----------------------
+
+store(HONORIFICS_TOGGLE) "۰"
+c honorific toggle key combo
+c ctrl + shift + 1-2
+
+store(HONORIFICS_BRACKETS_TOGGLE) "1"
+c honorific brackets toggle key combo
+c ctrl + shift + 3-4
+
+store(DIACRITICS_TOGGLE) "1"
+c toggle combo
+c ctrl + shift + 5-6
+
+c --[[------- Numbers and Symbols -------]]--
+
+store(space) U+0020
+store(rtl_marK) U+200F
+
+store(one)   U+6F1
+store(two)   U+6F2
+store(three) U+6F3
+store(four)  U+6F4
+store(five)  U+6F5
+store(six)   U+6F6
+store(seven) U+6F7
+store(eight) U+6F8
+store(nine)  U+6F9
+store(zero)  U+6F0
+
+store(percent)       U+66A
+store(decimal_sep)   U+66B
+store(thousands_sep) U+66C
+
+store(kashida)    U+0640
+store(non-joiner) U+200C
+
+store(guillemet_left)  U+00AB
+store(guillemet_right) U+00BB 
+
+store(arabic_semicolon) U+061B
+store(arabic_question)  U+061F
+store(arabic_comma)     U+060C
+
+c --[[------------ Letters --------------]]--
+
+store(alef)              U+0627
+store(alef_madda)        U+0622
+store(alef_hamza)        U+0623
+store(alef_hamza_bottom) U+0625
+store(alef_wasla)        U+671
+store(alef_maksura)      U+649
+
+store(be)          U+628
+store(ya)          U+6CC
+store(ya_arab)     U+64A
+store(lam)         U+644
+store(heh)         U+647
+store(mim)         U+645
+store(hah)         U+062D
+store(khah)        U+062E
+store(dal)         U+62F
+store(thal)        U+0630
+store(pe)          U+067E
+store(teh)         U+062A
+store(teh_marbuta) U+0629
+store(theh)        U+062B
+store(jeem)        U+062C
+store(chah)        U+0686
+store(ra)          U+0631
+store(za)          U+0632
+store(zah)         U+0638
+store(tah)         U+0637
+store(zha)         U+0698
+store(ain)         U+0639
+store(ghain)       U+063A
+store(sad)         U+0635
+store(dad)         U+0636
+store(feh)         U+0641
+store(qaf)         U+0642
+store(keheh)       U+06A9
+store(gaf)         U+06AF
+store(kaf)         U+0643
+store(swish_kaf)   U+6AA
+store(seen)        U+0633
+store(sheen)       U+0634
+store(waw)         U+0648
+store(nun)         U+646
+store(hamza)       U+621
+
+c --[[------------ Vowels --------------]]--
+
+store(fatha) U+064E
+store(fathatan) U+064B
+
+store(damma) U+064F
+store(dammatan) U+064C
+
+store(kasra) U+0650
+store(kasratan) U+064D
+
+store(sukun)  U+0652
+store(shadda) U+0651
+
+store(alef_superscript) U+670
+store(alef_subscript) U+656
+
+store(hamza_above) U+654
+store(hamza_below) U+655
+
+store(madda) U+653
+
+c --[[-------- Ligatures ----------]]--
+
+store(Allah) U+FDF2
+store(swt) U+FDFE
+store(azwj) U+FDFF
+
+store(bismillah) U+FDFD
+
+store(alayhisalam) U+FD47
+store(alayhisalam_bracket) '(' U+FD47 ')' 
+
+store(saw) U+FDFA
+store(saawa) U+FD46
+
+store(saawas) U+FD4C
+store(saawas_bracket) '(' U+FD4C ')'
+
+store(radiallahu_anh) U+FD41
+store(radiallahu_anha) U+FD42
+store(rahimullah) U+FD40
+
+
+c // Prophet Names
+store(Adam)       "آدم"
+store(Sheeth)     "شیث"
+store(Idris)      "إدريس"
+store(Nuh)        "نوح"
+store(Hud)        "هود"
+store(Salih)      "صالح"
+store(Lut)        "لوط"
+store(Ibrahim)    "إبراهيم"
+store(Ismail)     "إسماعيل"
+store(Ishaq)      "إسحاق"
+store(Yaqub)      "یعقوب"
+store(Yusuf)      "یوسف"
+store(Shuayb)     "شعیب"
+store(Ayub)       "أيوب"
+store(DhulKifl)   "ذو الکفل"
+store(Musa)       "موسیٰ"
+store(Haroon)     "هارون"
+store(Dawood)     "داود"
+store(Solomon)    "سليمان"
+store(Alyasa)     "اليسع"
+store(Ilyas)      "إلياس"
+store(Yunus)      "یونس"
+store(Zakariya)   "زكريا"
+store(Yahya)      "يحيى"
+store(Isa)        "عسىٰ ابن مریم"
+store(Muhammad)   U+FDF4
+
+c // Masoomin
+store(Ali)           "امام علی"
+store(AmirAlMuminin) "امیرالمومنین"
+store(FatimaZahra)   "فاطمة زهرا"
+store(Hasan)         "امام حسن"
+store(Husayn)        "امام حسین"
+store(AbaAbdillah)   "اباعبد" ' ' outs(Allah)
+store(ImamSajjad )   "امام سجاد"
+store(ImamBaqir)     "امام باقر"
+store(ImamSadiq)     "امام صادق"
+store(ImamKadhim)    "امام کاظم"
+store(ImamRidha)     "امام رضا"
+store(ImamJawad)     "امام جواد"
+store(ImamHadi)      "امام هادی"
+store(ImamAskari)    "امام عسکری"
+store(ImamMahdi)     "امام مهدی"
+
+
+c // Other
+store(Zainab)    "زینب"
+store(Maryam)    "مریم"
+store(Abbas)    "عباس"
+store(AliAkbar) "علي الأكبر"
+store(AliAsghar) "علي الأصغر"
+store(FatimaMasuma) "فاطمة المعصومة"
+
+c ------------------ Base Keyboard Layout -----------------------
+store(&TARGETS) 'web desktop'
+store(&VISUALKEYBOARD) 'phonetic_farsi.kvks'
+
+    begin Unicode > use(main)
+
+    group(main) using keys
+    + [K_A] > outs(alef)
+    + [K_B] > outs(be)
+    + [K_C] > outs(chah)
+    + [K_D] > outs(dal)
+    + [K_E] > outs(heh)
+    + [K_F] > outs(feh)
+    + [K_G] > outs(gaf)
+    + [K_H] > outs(heh)
+    + [K_I] > outs(ya)
+    + [K_J] > outs(jeem)
+    + [K_K] > outs(keheh)
+    + [K_L] > outs(lam)
+    + [K_M] > outs(mim)
+    + [K_N] > outs(nun)
+    + [K_O] > outs(waw)
+    + [K_P] > outs(pe)
+    + [K_Q] > outs(qaf)
+    + [K_R] > outs(ra)
+    + [K_S] > outs(seen)
+    + [K_T] > outs(teh)
+    + [K_U] > outs(waw)
+    + [K_V] > outs(waw)
+    + [K_W] > outs(waw)
+    + [K_X] > outs(khah)
+    + [K_Y] > outs(ya)
+    + [K_Z] > outs(za)
+
+    + [SHIFT K_A] > outs(ain)
+    + [SHIFT K_B] > outs(kaf)
+    + [SHIFT K_D] > outs(dad)
+    + [SHIFT K_G] > outs(ghain)
+    + [SHIFT K_H] > outs(hah)
+    + [SHIFT K_K] > outs(khah)
+    + [SHIFT K_N] > outs(swish_kaf)
+    + [SHIFT K_S] > outs(sad)
+    + [SHIFT K_T] > outs(tah)
+    + [SHIFT K_Z] > outs(zah)
+
+    + [SHIFT K_Q] > outs(hamza)
+    + [SHIFT K_O] > outs(alef_hamza)
+    + [SHIFT K_P] > outs(alef_hamza_bottom)
+
+    + [SHIFT K_W] > outs(alef_wasla)
+    + [SHIFT K_M] > outs(alef_maksura)
+    + [SHIFT K_V] > outs(alef_madda)
+
+    + [SHIFT K_Y] > outs(ya_arab)
+    + [SHIFT K_J] > outs(teh_marbuta)
+    + [SHIFT K_C] > outs(thousands_sep)
+    + [SHIFT K_X] > outs(decimal_sep)
+    + [SHIFT K_E] > outs(kashida)
+
+    + [SHIFT K_SPACE]       > outs(non-joiner)
+    + [SHIFT K_5]           > outs(percent)
+    + [SHIFT K_COMMA]       > outs(guillemet_left)
+    + [SHIFT K_PERIOD]      > outs(guillemet_right)
+    + [SHIFT K_SLASH]       > outs(arabic_question)
+    + [K_COLON]             > outs(arabic_semicolon)
+    + [K_COMMA]             > outs(arabic_comma)
+
+    + [SHIFT CTRL K_BKQUOTE] > outs(rtl_marK)
+
+    + [K_0] > outs(zero)
+    + [K_9] > outs(nine)
+    + [K_8] > outs(eight)
+    + [K_7] > outs(seven)
+    + [K_6] > outs(six)
+    + [K_5] > outs(five)
+    + [K_4] > outs(four)
+    + [K_3] > outs(three)
+    + [K_2] > outs(two)
+    + [K_1] > outs(one)
+
+c -------------------- Diacritic Implementation ---------------------
+
+    if(DIACRITICS_TOGGLE = "1") any(ra) + "'"       > outs(za)
+    if(DIACRITICS_TOGGLE = "1") any(teh) + "'"      > outs(theh)
+    if(DIACRITICS_TOGGLE = "1") any(ain) + "'"      > outs(ghain)
+    if(DIACRITICS_TOGGLE = "1") any(tah) + "'"      > outs(zah)
+    if(DIACRITICS_TOGGLE = "1") any(dal) + "'"      > outs(thal)
+    if(DIACRITICS_TOGGLE = "1") any(seen) + "'"     > outs(sheen)
+    if(DIACRITICS_TOGGLE = "1") any(sad) + "'"      > outs(dad)
+    if(DIACRITICS_TOGGLE = "1") any(feh) + "'"      > outs(qaf)
+    if(DIACRITICS_TOGGLE = "1") any(hah) + "'"      > outs(khah)
+    if(DIACRITICS_TOGGLE = "1") any(be) + "'"       > outs(pe)
+    if(DIACRITICS_TOGGLE = "1") any(za) + "'"       > outs(zha)
+    if(DIACRITICS_TOGGLE = "1") any(jeem) + "'"     > outs(chah)
+    if(DIACRITICS_TOGGLE = "1") any(heh) + "'"      > outs(teh_marbuta)
+    if(DIACRITICS_TOGGLE = "1") any(ya) + "'"       > outs(ya_arab)
+    if(DIACRITICS_TOGGLE = "1") any(alef) + "a"  > outs(alef_madda)
+    if(DIACRITICS_TOGGLE = "1") any(alef) + "'"  > outs(alef_hamza)
+    if(DIACRITICS_TOGGLE = "1") any(keheh) + "'" > outs(gaf)
+    if(DIACRITICS_TOGGLE = "1") any(kaf) + "'"   > outs(gaf)
+
+c --------------- Vowel Implementation ------------------------
+
+    + [SHIFT K_F] > outs(fatha)
+    any(fatha) + [SHIFT K_F] > outs(fathatan)
+
+    + [SHIFT K_I] > outs(kasra)
+    any(kasra) + [SHIFT K_I] > outs(kasratan)
+
+    + [SHIFT K_U] > outs(damma)
+    any(kasra) + [SHIFT K_U] > outs(dammatan)
+
+    + [SHIFT K_L] > outs(shadda)
+    + [SHIFT K_R] > outs(sukun)
+    
+    c + [SHIFT K_U] > outs(madda)
+    c + [LALT K_R] > outs(alef_superscript)
+    c + [LALT K_F] > outs(alef_subscript)
+    c Removed for brevity, following DISCUS
+
+c ----------------- Ligature Implementation ---------------------
+
+    c // Allah
+    if(HONORIFICS_TOGGLE = "1") "الل" + [K_H]      > outs(Allah)
+    if(HONORIFICS_TOGGLE = "1") "الله" + [K_SPACE]   > outs(Allah)
+
+    c // Prophets
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "محم" + [K_D]        > outs(Muhammad) ' ' outs(saawas_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "محم" + [K_D]        > outs(Muhammad) ' ' outs(saawas) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "موس" + [K_A]        > outs(Musa) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "موس" + [K_A]        > outs(Musa) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "ابرهی" + [K_M]      > outs(Ibrahim) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "ابرهی" + [K_M]      > outs(Ibrahim) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "عس" + [K_A]         > outs(Isa) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "عس" + [K_A]         > outs(Isa) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "یحی" + [K_A]        > outs(Yahya) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "یحی" + [K_A]        > outs(Yahya) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "نو" + [SHIFT K_H]   > outs(Nuh) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "نو" + [SHIFT K_H]   > outs(Nuh) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "اد" + [K_M]         > outs(Adam) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "اد" + [K_M]         > outs(Adam) ' ' outs(alayhisalam) outs(rtl_marK)
+    
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "یوس" + [K_F]        > outs(Yusuf) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "یوس" + [K_F]        > outs(Yusuf) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "یون" + [K_S]        > outs(Yunus) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "یون" + [K_S]        > outs(Yunus) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "ادری" + [K_S]        > outs(Idris) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "ادری" + [K_S]        > outs(Idris) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "صال" + [SHIFT K_H]  > outs(Salih) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "صال" + [SHIFT K_H]  > outs(Salih) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "لو" + [SHIFT K_T]   > outs(Lut) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "لو" + [SHIFT K_T]   > outs(Lut) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "اسماعی" + [K_L]     > outs(Ismail) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "اسماعی" + [K_L]     > outs(Ismail) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "اسحا" + [K_K]       > outs(Ishaq) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "اسحا" + [K_K]       > outs(Ishaq) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "یعقو" + [K_B]       > outs(Yaqub) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "یعقو" + [K_B]       > outs(Yaqub) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "شعی" + [K_B]        > outs(Shuayb) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "شعی" + [K_B]        > outs(Shuayb) ' ' outs(alayhisalam) outs(rtl_marK)
+    
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "ایو" + [K_B]        > outs(Ayub) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "ایو" + [K_B]        > outs(Ayub) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "ذوالکف" + [K_L]     > outs(DhulKifl) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "ذوالکف" + [K_L]     > outs(DhulKifl) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "هارو" + [K_N]       > outs(Haroon) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "هارو" + [K_N]       > outs(Haroon) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "داو" + [K_D]        > outs(Dawood) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "داو" + [K_D]        > outs(Dawood) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "سلیما" + [K_N]      > outs(Solomon) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "سلیما" + [K_N]      > outs(Solomon) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "الیا" + [K_S]         > outs(Ilyas) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "الیا" + [K_S]         > outs(Ilyas) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "الیس" + [SHIFT K_A] > outs(Alyasa) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "الیس" + [SHIFT K_A] > outs(Alyasa) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "زکری" + [K_A]       > outs(Zakariya) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "زکری" + [K_A]       > outs(Zakariya) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "هو" + [K_D]         > outs(Hud) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "هو" + [K_D]         > outs(Hud) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "شیت" + "'"          > outs(Sheeth) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if(HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "شیت" + "'"          > outs(Sheeth) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    c // Masoomin
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام عل" + [K_Y]    > outs(Ali) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام عل" + [K_Y]    > outs(Ali) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "فاطم" + [K_H]       > outs(FatimaZahra) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "فاطم" + [K_H]       > outs(FatimaZahra) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام حس" + [K_N]    > outs(Hasan) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام حس" + [K_N]    > outs(Hasan) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام حسی" + [K_N]   > outs(Husayn) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام حسی" + [K_N]   > outs(Husayn) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "اباعبد" + [K_SPACE] > outs(AbaAbdillah) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "اباعبد" + [K_SPACE] > outs(AbaAbdillah) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام س" + [K_J]   > outs(ImamSajjad) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام س" + [K_J]   > outs(ImamSajjad) ' ' outs(alayhisalam) outs(rtl_marK)
+    
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ب" + [K_Q]   > outs(ImamBaqir) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ب" + [K_Q]   > outs(ImamBaqir) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ص" + [K_A]    > outs(ImamSadiq) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ص" + [K_A]    > outs(ImamSadiq) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ک" + [K_A]   > outs(ImamKadhim) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ک" + [K_A]   > outs(ImamKadhim) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ر" + [SHIFT K_D]    > outs(ImamRidha) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ر" + [SHIFT K_D]    > outs(ImamRidha) ' ' outs(alayhisalam) outs(rtl_marK)
+        
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ج" + [K_W]   > outs(ImamJawad) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ج" + [K_W]   > outs(ImamJawad) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام ه" + [K_A]    > outs(ImamHadi) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام ه" + [K_A]    > outs(ImamHadi) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام عس" + [K_K]    > outs(ImamAskari) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام عس" + [K_K]    > outs(ImamAskari) ' ' outs(alayhisalam) outs(rtl_marK)
+
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "1") "امام م" + [K_H]    > outs(ImamMahdi) ' ' outs(alayhisalam_bracket) outs(rtl_marK)
+    if (HONORIFICS_TOGGLE = "1") if(HONORIFICS_BRACKETS_TOGGLE = "0") "امام م" + [K_H]    > outs(ImamMahdi) ' ' outs(alayhisalam) outs(rtl_marK)
+
+c ----------------- Manual Honorifics ---------------------
+
+"صت" + [SHIFT K_BKQUOTE]   > outs(swt)
+"ازوج" + [SHIFT K_BKQUOTE] > outs(azwj)
+"بسم" + [SHIFT K_BKQUOTE]  > outs(bismillah)
+"سا" + [SHIFT K_BKQUOTE]   > outs(saawa)
+"سو" + [SHIFT K_BKQUOTE]  > outs(saw)
+"ساو" + [SHIFT K_BKQUOTE] > outs(saawas)
+"اس" + [SHIFT K_BKQUOTE]   > outs(alayhisalam)
+"رال" + [SHIFT K_BKQUOTE]  > outs(rahimullah)
+"رض" + [SHIFT K_BKQUOTE]   > outs(radiallahu_anh)
+"رضا" + [SHIFT K_BKQUOTE]  > outs(radiallahu_anha)
+
+c --------------- Toggle Implementation ------------------------
+
++ [SHIFT CTRL K_1] > set(HONORIFICS_TOGGLE = "1") save(HONORIFICS_TOGGLE)
++ [SHIFT CTRL K_2] > set(HONORIFICS_TOGGLE = "0") save(HONORIFICS_TOGGLE)
+
++ [SHIFT CTRL K_3] > set(HONORIFICS_BRACKETS_TOGGLE = "1") save(HONORIFICS_BRACKETS_TOGGLE)
++ [SHIFT CTRL K_4] > set(HONORIFICS_BRACKETS_TOGGLE = "0") save(HONORIFICS_BRACKETS_TOGGLE)
+
++ [SHIFT CTRL K_5] > set(DIACRITICS_TOGGLE = "1") save(DIACRITICS_TOGGLE)
++ [SHIFT CTRL K_6] > set(DIACRITICS_TOGGLE = "0") save(DIACRITICS_TOGGLE)
+
+c -----------------------------------------------------------------------------------------

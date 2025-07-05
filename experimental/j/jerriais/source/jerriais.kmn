@@ -1,0 +1,29 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Jèrriais'
+store(&COPYRIGHT) 'Copyright © Jerriais.Tech'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'jerriais.ico'
+store(&VISUALKEYBOARD) 'jerriais.kvks'
+store(&LAYOUTFILE) 'jerriais.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store( plainvowels )  'a'    'e'    'i'    'o'    'u'      'A'    'E'    'I'    'O'    'U'
+store( acutevowels )  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store( gravevowels )  U+00E0 U+00E8 U+00EC U+00F2 U+00F9   U+00C0 U+00C8 U+00CC U+00D2 U+00D9
+store( circumvowels ) U+00E2 U+00EA U+00EE U+00F4 U+00FB   U+00C2 U+00CA U+00CE U+00D4 U+00DB
+store( dresisvowels ) U+00E4 U+00EB U+00EF U+00F6 U+00FC   U+00C4 U+00CB U+00CF U+00D6 U+00DC
+
+any(plainvowels) "'" + "'" > index(acutevowels,1)
+any(plainvowels) "`" + "`" > index(gravevowels,1)
+any(plainvowels) "^" + "^" > index(circumvowels,1)
+any(plainvowels) '"' + '"' > index(dresisvowels,1)
+
+"Y^" + "^" > U+0176
+"y^" + "^" > U+0177
+
+"C," + "," > U+00C7
+"c," + "," > U+00E7

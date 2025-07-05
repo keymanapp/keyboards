@@ -1,0 +1,78 @@
+﻿c meroitic_cursive generated from template at 2024-08-30 14:56:39
+c with name "Meroitic Cursive"
+store(&VERSION) '10.0'
+store(&NAME) 'Meroitic Cursive'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'meroitic_cursive.ico'
+store(&VISUALKEYBOARD) 'meroitic_cursive.kvks'
+store(&LAYOUTFILE) 'meroitic_cursive.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(U) U+109A0 .. U+109B7
+store(K) [K_A] [K_E] [K_I] [K_O] [K_Y] [K_W] [K_B] [K_P] [K_M] [K_N] [K_X] [K_R] [K_L] [K_C] [K_H] [K_S] [K_F] [K_Z] [K_K] [K_Q] [K_T] [K_G] [K_V] [K_D]
+
+store(digitsU) U+109C0 .. U+109C8
+store(digitsK) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
+
+store(LtndigitsU) U+0030 .. U+0039
+store(LtndigitsK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9]
+
+store(digits70) U+109C0 .. U+109C6
+store(Tens) U+109C9 .. U+109CF
+store(Hundred70) U+109D2 .. U+109D8
+
+store(Hundred) U+109D2 .. U+109DA
+
+store(Thousands) U+109DB .. U+109E3
+store(TenThousands) U+109E4 .. U+109EC
+store(HundredThousands) U+109ED .. U+109F5
+store(Fractions) U+109BC U+109BD U+109F6 .. U+109FF
+
+store(nul) "ABCDEFGHJKLMNOPQSTUVWXYZj<"
+
+group(main) using keys
+
++ any(nul) > nul
++ any(K) > index(U,1)
++ any(digitsK) > index(digitsU,1)
++ any(LtndigitsK) > index(LtndigitsU,1)
+
++ [RALT K_COMMA] > U+003C
++ [RALT K_PERIOD] > U+003E
+
++ [SHIFT K_COLON] > U+205D c TRICOLON
++ [SHIFT K_PERIOD] > U+2026 c HORIZONTAL ELLIPSIS
++ [K_U] > U+003A c COLON
++ [SHIFT K_R] > U+109BE
++ [SHIFT K_I] > U+109BF
+
+any(digits70) + [K_0] > index(Tens,1) c goes through 70
+
+any(Tens) + [K_0] > index(Hundred70,1) c goes through 700
+U+109C7 + [K_0] > U+109D9 c 800
+U+109C8 + [K_0] > U+109DA c 900
+
+any(Hundred) + [K_0] > index(Thousands,1) 
+any(Thousands) + [K_0] > index(TenThousands,1) 
+any(TenThousands) + [K_0] > index(HundredThousands,1) 
+
++ [RALT K_BKSLASH] > dk(stop)
++ [RALT K_SLASH] > dk(frac)
+
+U+109c0 dk(frac) + [K_2] > U+109F6 c 1/12
+U+109c1 dk(frac) + [K_2] > U+109F7 c 2/12
+U+109c2 dk(frac) + [K_2] > U+109F8 c 3/12
+U+109c3 dk(frac) + [K_2] > U+109F9 c 4/12
+U+109c4 dk(frac) + [K_2] > U+109FA c 5/12
+U+109c5 dk(frac) + [K_2] > U+109FB c 6/12
+U+109c6 dk(frac) + [K_2] > U+109FC c 7/12
+U+109c7 dk(frac) + [K_2] > U+109FD c 8/12
+U+109c8 dk(frac) + [K_2] > U+109FE c 9/12
+U+109c9 dk(frac) + [K_2] > U+109FF c 10/12
+U+109c9 U+109C0 dk(frac) + [K_2] > U+109BC c 11/12
+U+109C0 dk(frac) + [K_5] > U+109BD c 1/2
+

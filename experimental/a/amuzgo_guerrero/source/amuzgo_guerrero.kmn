@@ -1,0 +1,50 @@
+﻿c amuzgo_guerrero generated from template at 2025-01-29 13:58:26
+c with name "Amuzgo de Guerrero"
+store(&VERSION) '10.0'
+store(&NAME) 'Amuzgo de Guerrero'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'amuzgo_guerrero.ico'
+store(&VISUALKEYBOARD) 'amuzgo_guerrero.kvks'
+store(&LAYOUTFILE) 'amuzgo_guerrero.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(LC_K) [K_A] [K_B] [K_C] [K_D] [K_E] [K_F] [K_G] [K_H] [K_I] [K_J] [K_K] [K_L] [K_M] \
+            [K_N] [K_O] [K_P] [K_Q] [K_R] [K_S] [K_T] [K_U] [K_V] [K_W] [K_X] [K_Y] [K_Z] [K_COLON] [K_QUOTE]
+store(LC_U) "abcde" U+0301 U+0302 U+0331 "ij" nul "lmnopqrstu" U+207F "wxy" nul U+00F1 U+A78C
+store(UC_K) [SHIFT K_A] [SHIFT K_B] [SHIFT K_C] [SHIFT K_D] [SHIFT K_E] [SHIFT K_F] [SHIFT K_G] \
+            [SHIFT K_H] [SHIFT K_I] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] [SHIFT K_M] \
+            [SHIFT K_N] [SHIFT K_O] [SHIFT K_P] [SHIFT K_Q] [SHIFT K_R] [SHIFT K_S] [SHIFT K_T] \
+            [SHIFT K_U] [SHIFT K_V] [SHIFT K_W] [SHIFT K_X] [SHIFT K_Y] [SHIFT K_Z] [SHIFT K_COLON] 
+store(UC_U) "ABCDE" U+0301 U+0302 U+0331 "IJ" nul "LMNOPQRSTU" U+207F "WXY" nul U+00D1 
+
+store(vowel) "AEIOU" "aeiou"
+store(acute) U+00C1 U+00C9 U+00CD U+00D3 U+00DA U+00E1 U+00E9 U+00ED U+00F3 U+00FA
+store(circ)  U+00C2 U+00CA U+00CE U+00D4 U+00DB U+00E2 U+00EA U+00EE U+00F4 U+00FB
+
+c Put on RALT: f g h k v z
+store(LC_K_Ralt) [RALT K_F] [RALT K_G] [RALT K_H] [RALT K_K] [RALT K_V] [RALT K_Z] [RALT K_COLON] [RALT K_QUOTE]
+store(LC_U_Ralt) U+0066 U+0067 U+0068 U+006B U+0076 U+007A U+003B U+0027
+store(UC_K_Ralt) [RALT SHIFT K_F] [RALT SHIFT K_G] [RALT SHIFT K_H] [RALT SHIFT K_K] \
+                 [RALT SHIFT K_V] [RALT SHIFT K_Z] [RALT SHIFT K_COLON]
+store(UC_U_Ralt) U+0046  U+0047 U+0048 U+004B U+0056 U+005A U+003A
+
+group(main) using keys
+
++ any(LC_K) > index(LC_U,1)
++ any(UC_K) > index(UC_U,1)
++ any(LC_K_Ralt) > index(LC_U_Ralt,1)
++ any(UC_K_Ralt) > index(UC_U_Ralt,1)
+
++ [K_EQUAL] > U+00BF
++ [SHIFT K_EQUAL] > U+00A1
++ [RALT K_EQUAL] > U+003D
++ [RALT SHIFT K_EQUAL] > U+002B
+
+match > use(NFC)
+
+group(NFC)
+any(vowel) U+0301 > index(acute,1)
+any(vowel) U+0302 > index(circ,1)

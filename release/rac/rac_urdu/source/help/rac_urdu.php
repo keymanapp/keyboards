@@ -11,7 +11,7 @@
 
 It is based on phonetic keyboard for Urdu Language 
 developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for 
-use by SIL International, Keyman, Tavultesoft and later approved by Khowar Academy (a literary Association working on the 
+use by SIL Global, Keyman, Tavultesoft and later approved by Khowar Academy (a literary Association working on the 
 language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Urdu Keyboard</p>
 
 <p>This is the first Urdu language keyboard created by Rehmat Aziz Chitrali, 

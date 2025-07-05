@@ -1,17 +1,16 @@
 Lisu (Basic) Basic keyboard
 ==============
 
-(c) 2018 SIL International
-
-Version 1.0.1
+(c) SIL Global
 
 Description
 -----------
 
-Lisu (Basic) Basic generated from template
+This keyboard is designed for languages using the Lisu script.
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdlisub
 
 Supported Platforms
 -------------------

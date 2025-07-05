@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Gilaki Phonetic</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="">RL</Author>
     <Version URL=""></Version>
+    <Description URL="">Keyboard for the Gilaki language based on a phonetic layout.</Description>
   </Info>
   <Files>
     <File>
@@ -95,20 +98,88 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\lateef\LateefRegOT.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\lateef\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Bold.ttf</Name>
+      <Description>Font Lateef Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraBold.ttf</Name>
+      <Description>Font Lateef ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraLight.ttf</Name>
+      <Description>Font Lateef ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Light.ttf</Name>
+      <Description>Font Lateef Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Medium.ttf</Name>
+      <Description>Font Lateef Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</Name>
       <Description>Font Lateef</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-SemiBold.ttf</Name>
+      <Description>Font Lateef SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gilaki Phonetic</Name>
       <ID>gilaki_phonetic</ID>
-      <Version>1.0</Version>
+      <Version>1.1.1</Version>
       <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="glk-Arab">Gilaki</Language>
+        <Language ID="glk">Gilaki</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

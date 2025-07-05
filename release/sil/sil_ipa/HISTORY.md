@@ -1,6 +1,44 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+2.0.2 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
+2.0.1 (2025-04-10)
+------------------
+* Modify OSKWeb file to better fit the home page
+
+2.0.0 (2025-04-05)
+------------------
+* Added new super and subscript characters (with thanks to @moyogo)
+* Added gestures for touch layout (with thanks to @jahorton)
+* Added Sup/Sub layer on touch layout
+* Improved documentation for touch layout
+* Simplified html in the welcome.htm document
+* Added usage.htm for description of how to use keyboard in OSK
+
+1.8.7 (2024-03-05)
+------------------
+* Add subscript numerals to underscore rota
+
+1.8.6 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
+1.8.5 (20 May 2021)
+-------------------
+* Resolves conflict with `{` key with German hardware keyboard
+
+1.8.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
+1.8.3 (15 Sept 2020)
+-------------------
+* Updated documentation to remove underlined links
+* Updated documentation for vl alveolo-palatal fricative (not vd)
+
 1.8.2 (27 Jul 2020)
 -------------------
 * Updated documentation to correct Africanist upstep and downstep. Not behavior changes.

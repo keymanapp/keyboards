@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,57 +20,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Haroi</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This keyboard is adapted from VNI.</Description>
   </Info>
   <Files>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\Charis_SIL_README.txt</Name>
-      <Description>File Charis_SIL_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-B.ttf</Name>
-      <Description>Font Charis SIL Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-BI.ttf</Name>
-      <Description>Font Charis SIL Bold Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-I.ttf</Name>
-      <Description>Font Charis SIL Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-R.ttf</Name>
-      <Description>Font Charis SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_sil\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
     <File>
       <Name>..\build\haroi.js</Name>
       <Description>File haroi.js</Description>
@@ -129,17 +84,68 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis_README.txt</Name>
+      <Description>File Charis_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Bold.ttf</Name>
+      <Description>Font Charis Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-BoldItalic.ttf</Name>
+      <Description>Font Charis Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Italic.ttf</Name>
+      <Description>Font Charis Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</Name>
+      <Description>Font Charis</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Haroi</Name>
       <ID>haroi</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-R.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="hro-Latn-VN">Haroi (Latin, Viet Nam)</Language>
-        <Language ID="hro-Latn">Haroi (Latin)</Language>
+        <Language ID="hro">Haroi</Language>
         <Language ID="vi">Vietnamese</Language>
       </Languages>
     </Keyboard>

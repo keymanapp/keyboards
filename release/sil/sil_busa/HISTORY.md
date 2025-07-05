@@ -1,5 +1,21 @@
-Busa Change History
+Busa (SIL) Change History
 =======================
+
+1.5.2 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
+1.5.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+1.5 (2024-09-06)
+----------------
+* Added a tablet layout
+
+1.4.2 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
 
 1.4.1 (8 Jun 2020)
 -------------------

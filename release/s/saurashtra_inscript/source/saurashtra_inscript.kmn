@@ -1,0 +1,69 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Saurashtra Inscript'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'saurashtra_inscript.ico'
+store(&VISUALKEYBOARD) 'saurashtra_inscript.kvks'
+store(&LAYOUTFILE) 'saurashtra_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c Inscript keys
+
+c             candrabindu anusvara visarga          
+store(SignsK) [SHIFT K_X] [K_X]    [SHIFT K_HYPHEN] 
+store(Signs)  U+A8C5      U+A880 .. U+A881 
+
+c               a          aa          i           ii          u           uu          vocalR          vocalRR              vocalL           vocalLL          e           ee          ai          o           oo                au
+store(IndVowK) [SHIFT K_D] [SHIFT K_E] [SHIFT K_F] [SHIFT K_R] [SHIFT K_G] [SHIFT K_T] [SHIFT K_EQUAL] [SHIFT RALT K_EQUAL] [SHIFT RALT K_F] [SHIFT RALT K_R] [SHIFT K_S] [SHIFT K_Z] [SHIFT K_W] [SHIFT K_A] [SHIFT K_BKQUOTE] [SHIFT K_Q]
+store(IndVow)  U+A882 .. U+A891
+
+c               aa    i     ii    u     uu    vocalR    vocalRR        vocalL     vocalLL    e     ee          ai    o     oo               au
+store(DepVowK) [K_E] [K_F] [K_R] [K_G] [K_T]  [K_EQUAL] [RALT K_EQUAL] [RALT K_F] [RALT K_R] [K_S] [RALT K_Z]  [K_W] [K_A] [RALT K_BKQUOTE] [K_Q]
+store(DepVow)  U+A8B5 .. U+A8C3
+
+c            ka     kha        ga    gha         nga          ca        cha             ja    jha         nya             tta       ttha            dda       ddha            nna         ta    tha         da    dha         na    pa    pha         ba    bha         ma    ya        ra    la    va    sha         ssa             sa     ha  lla         haaru
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] [K_LBRKT] [SHIFT K_RBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] [K_J] [K_N] [K_B] [SHIFT K_M] [SHIFT K_COMMA] [K_M] [K_U] [SHIFT K_N] [RALT K_U]
+store(Cons)  U+A892 .. U+A8B4
+
+
+c             danda            doubledanda
+store(PunctK) [SHIFT K_PERIOD] [RALT K_PERIOD]
+store(Punct)  U+A8CE .. U+A8CF
+
+c Uses Devanagari digits
+store(DigitsK) "0123456789"
+store(Digits)  U+A8D0 .. U+A8D9
+
+store(LDigitsK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(LDigits)  U+0030 .. U+0039
+
+
+store(nul) "]{zJVB"
+
+
+group(main) using keys
+
++ any(DepVowK)  > index(DepVow,1)
++ any(IndVowK)  > index(IndVow,1)
++ any(SignsK)   > index(Signs,1)
++ any(ConsK)    > index(Cons,1)
++ any(PunctK)   > index(Punct,1)
++ any(DigitsK)  > index(Digits,1)
++ any(LDigitsK) > index(LDigits,1)
+
++ [K_D] > U+A8C4 c virama
+
++ [SHIFT RALT K_1] > U+200d c ZWJ
++ [SHIFT RALT K_2] > U+200c c ZWNJ
++ [RALT K_K]       > U+A892 U+A8C4 U+200D U+A8B0 c special conjunct 
+
++ [SHIFT K_SLASH] > U+003F
++ [K_COMMA] > U+002C
++ [K_PERIOD] > U+002E
++ [RALT K_LBRKT] > U+005B
++ [RALT K_RBRKT] > U+005D
+
+ + any(nul) > nul
+ 

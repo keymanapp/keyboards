@@ -1,9 +1,7 @@
 Clavier du Burkina keyboard
 =====================
 
-Copyright (C) 2005-2020 SIL Burkina Faso
-
-Version 9.1
+Copyright (C) SIL Burkina Faso
 
 __DESCRIPTION__
 
@@ -15,8 +13,6 @@ Links
 -----
 
  * Home page: https://keyman.com/keyboards/clavbur9
-
- * Contact:  <steve_white@sil.org>
 
 Supported Platforms
 -------------------

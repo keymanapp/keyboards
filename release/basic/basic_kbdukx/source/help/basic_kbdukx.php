@@ -17,8 +17,6 @@
 <p>~a will produce ã (available on aAnNoO).</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

@@ -1,0 +1,197 @@
+﻿c Watch Rune Revival at:
+c https://www.youtube.com/@LearnRunes
+store(&VERSION) '15.0'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© MMXXIV ᚱᚢᚾ᛫ᛗᚫᚾ'
+store(&NAME) 'Runes'
+store(&MESSAGE) 'The Runeboard is designed for typing the English language in Anglo-Saxon Futhorc runes & Proto-Germanic in Elder Futhark runes. However, as it includes the entire Unicode Runic Block, it can also be used for typing a variety of Germanic languages in runes. Thanks for installing. Watch Rune Revival at: https://www.youtube.com/@LearnRunes'
+store(&KEYBOARDVERSION) '3.0'
+store(&BITMAP) 'runeboard.ico'
+store(&VISUALKEYBOARD) 'runeboard.kvks'
+store(&LAYOUTFILE) 'runeboard.keyman-touch-layout'
+begin Unicode > use(main)
+group(main) using keys
+
++ [K_SPACE] > '᛫' U+200B c punctuation followed by zero width space for breaking
++ [SHIFT K_SPACE] > U+200D c ZWJ for bindrunes
++ [RALT K_SPACE] > '⁝' U+200B
++ [RALT SHIFT K_SPACE] > ' '
+
++ [K_BKQUOTE] > '`'
++ [K_1] > '1'
++ [K_2] > '2'
++ [K_3] > '3'
++ [K_4] > '4'
++ [K_5] > '5'
++ [K_6] > '6'
++ [K_7] > '7'
++ [K_8] > '8'
++ [K_9] > '9'
++ [K_0] > '0'
++ [K_HYPHEN] > '[' U+200B
++ [K_EQUAL] > ']' U+200B
+
++ [K_Q] > 'ᚫ'
++ [K_W] > 'ᚣ'
++ [K_E] > 'ᛟ'
++ [K_R] > 'ᛈ'
++ [K_T] > 'ᛄ'
++ [K_Y] > 'ᚠ'
++ [K_U] > 'ᚸ'
++ [K_I] > 'ᚳ'
++ [K_O] > 'ᚱ'
++ [K_P] > 'ᛚ'
++ [K_LBRKT] > 'ᛝ'
++ [K_RBRKT] > 'ᛥ'
++ [K_BKSLASH] > ' '
+
++ [K_A] > 'ᚪ'
++ [K_S] > 'ᚩ'
++ [K_D] > 'ᛖ'
++ [K_F] > 'ᚢ'
++ [K_G] > 'ᛁ'
++ [K_H] > 'ᛞ'
++ [K_J] > 'ᚻ'
++ [K_K] > 'ᛏ'
++ [K_L] > 'ᚾ'
++ [K_COLON] > 'ᛋ'
++ [K_QUOTE] > 'ᛡ'
+
++ [K_oE2] > ' '
++ [K_Z] > 'ᛇ'
++ [K_X] > 'ᛢ'
++ [K_C] > 'ᚷ'
++ [K_V] > 'ᛣ'
++ [K_B] > 'ᛠ'
++ [K_N] > 'ᛒ'
++ [K_M] > 'ᛗ'
++ [K_COMMA] > 'ᚹ'
++ [K_PERIOD] > 'ᚦ'
++ [K_SLASH] > 'ᛉ'
+
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_1] > '᛭' U+200B
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '£'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '₿'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '(' U+200B
++ [SHIFT K_0] > ')' U+200B
++ [SHIFT K_HYPHEN] > '{' U+200B
++ [SHIFT K_EQUAL] > '}' U+200B
+
++ [SHIFT K_Q] > '⟨' U+200B
++ [SHIFT K_W] > '⟩' U+200B
++ [SHIFT K_E] > '᛬' U+200B
++ [SHIFT K_R] > 'ᛕ'
++ [SHIFT K_T] > 'ᛨ'
++ [SHIFT K_Y] > 'ᚡ'
++ [SHIFT K_U] > 'ᚵ'
++ [SHIFT K_I] > 'ᚲ'
++ [SHIFT K_O] > 'ᛦ'
++ [SHIFT K_P] > 'ᛛ'
++ [SHIFT K_LBRKT] > 'ᛜ'
++ [SHIFT K_RBRKT] > 'ᚶ'
++ [SHIFT K_BKSLASH] > U+2011 c non-breaking hyphen
+
++ [SHIFT K_A] > 'ᚨ'
++ [SHIFT K_S] > 'ᚮ'
++ [SHIFT K_D] > 'ᚰ'
++ [SHIFT K_F] > 'ᚤ'
++ [SHIFT K_G] > 'ᛂ'
++ [SHIFT K_H] > 'ᛑ'
++ [SHIFT K_J] > 'ᚺ'
++ [SHIFT K_K] > 'ᛐ'
++ [SHIFT K_L] > 'ᚿ'
++ [SHIFT K_COLON] > 'ᛌ'
++ [SHIFT K_QUOTE] > U+2015 c horizontal bar
+
++ [SHIFT K_oE2] > U+2011 c non-breaking hyphen
++ [SHIFT K_Z] > 'ᛅ'
++ [SHIFT K_X] > 'ᚬ'
++ [SHIFT K_C] > 'ᛃ'
++ [SHIFT K_V] > 'ᛤ'
++ [SHIFT K_B] > 'ᛪ'
++ [SHIFT K_N] > 'ᛔ'
++ [SHIFT K_M] > 'ᛘ'
++ [SHIFT K_COMMA] > 'ᚥ'
++ [SHIFT K_PERIOD] > 'ᚧ'
++ [SHIFT K_SLASH] > 'ᛎ'
+
++ [RALT K_BKQUOTE] > '°'
++ [RALT K_1] > '!' U+200B
++ [RALT K_2] > '†' U+200B
++ [RALT K_3] > '#'
++ [RALT K_4] > '¢'
++ [RALT K_5] > '©'
++ [RALT K_6] > 'ᛮ'
++ [RALT K_7] > 'ᛯ'
++ [RALT K_8] > 'ᛰ'
++ [RALT K_9] > 'ↈ'
++ [RALT K_0] > 'Ↄ'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUAL] > '='
++ [RALT K_Q] > '⟪' U+200B
++ [RALT K_W] > '⟫' U+200B
++ [RALT K_E] > '⁞' U+200B
++ [RALT K_R] > 'ᛷ'
++ [RALT K_T] > 'ᛸ'
++ [RALT K_Y] > nul
++ [RALT K_U] > nul
++ [RALT K_I] > 'ᛍ'
++ [RALT K_O] > 'ᛧ'
++ [RALT K_P] > 'ᛲ'
++ [RALT K_LBRKT] > '«' U+200B
++ [RALT K_RBRKT] > '»' U+200B
++ [RALT K_BKSLASH] > '\'
+
++ [RALT K_A] > 'Å'
++ [RALT K_S] > 'ᚯ'
++ [RALT K_D] > 'ᛶ'
++ [RALT K_F] > 'ᛳ'
++ [RALT K_G] > 'ᛵ'
++ [RALT K_H] > 'ᚼ'
++ [RALT K_J] > 'ᚽ'
++ [RALT K_K] > nul
++ [RALT K_L] > 'ᛀ'
++ [RALT K_COLON] > 'ᛊ'
++ [RALT K_QUOTE] > '/'
+
++ [RALT K_oE2] > '\'
++ [RALT K_Z] > 'ᛆ'
++ [RALT K_X] > 'ᚭ'
++ [RALT K_C] > 'ᛴ'
++ [RALT K_V] > 'ᚴ'
++ [RALT K_B] > 'ᛱ'
++ [RALT K_N] > 'ᛓ'
++ [RALT K_M] > 'ᛙ'
++ [RALT K_COMMA] > 'ᛩ'
++ [RALT K_PERIOD] > '<'
++ [RALT K_SLASH] > '>'
+
++ [RALT SHIFT K_1] > 'Ⅰ'
++ [RALT SHIFT K_2] > 'Ⅴ'
++ [RALT SHIFT K_3] > 'Ⅹ'
++ [RALT SHIFT K_4] > 'Ⅼ'
++ [RALT SHIFT K_5] > 'Ⅽ'
++ [RALT SHIFT K_6] > 'Ⅾ'
++ [RALT SHIFT K_7] > 'Ⅿ'
++ [RALT SHIFT K_8] > 'ↁ'
++ [RALT SHIFT K_9] > 'ↂ'
++ [RALT SHIFT K_0] > 'ↇ'
++ [RALT SHIFT K_HYPHEN] > '_'
++ [RALT SHIFT K_EQUAL] > '+'
+
++ [RALT SHIFT K_O] > '®'
++ [RALT SHIFT K_LBRKT] > '‹' U+200B
++ [RALT SHIFT K_RBRKT] > '›' U+200B
++ [RALT SHIFT K_BKSLASH] > '|'
+
++ [RALT SHIFT K_K] > '™'
++ [RALT SHIFT K_QUOTE] > '?' U+200B
+
++ [RALT SHIFT K_oE2] > '|'
++ [RALT SHIFT K_SLASH] > '⸽' U+200B

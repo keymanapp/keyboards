@@ -1,12 +1,10 @@
 Hebrew and Greek Transliteration (SIL) Keyboard
 =====================
 
-Copyright (C) 2003-2018 SIL International
-
-Version 1.1
+Copyright (C) SIL Global
 
 __DESCRIPTION__
-Hebrew and Greek Transliteration Unicode keyboard for use with any Unicode Windows fonts.
+Keyboard for Hebrew and Greek Transliteration.
 
 Links
 -----
@@ -19,3 +17,5 @@ Supported Platforms
  * macOS
  * linux
  * Web
+ * Mobile
+

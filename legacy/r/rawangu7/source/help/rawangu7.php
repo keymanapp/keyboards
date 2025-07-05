@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Rvwang Unicode Keyboard Help';
+  $pagename = 'Rvwang Unicode (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

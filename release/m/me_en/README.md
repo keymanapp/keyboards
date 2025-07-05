@@ -1,9 +1,7 @@
 Me’en (Latin) keyboard
 ==============
 
-© 2020 Wycliffe Ethiopia
-
-Version 1.0
+© Wycliffe Ethiopia
 
 Description
 -----------

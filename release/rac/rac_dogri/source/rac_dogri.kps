@@ -11,17 +11,24 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Dogri Keyman Keyboard</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Rachitrali-Dogri Keyman Keyboard</Name>
+    <Name URL="">Rachitrali-Dogri</Name>
     <Copyright URL="">© 2019-2020 Rehmat Aziz Chitrali</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan</Author>
     <WebSite URL="https://keymanweb.com/#dgo,Keyboard_rac_dogri">https://keymanweb.com/#dgo,Keyboard_rac_dogri</WebSite>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan for
+keyboarding the Dogri language in the Arabic Script. You can use this
+keyboard with any extended Arabic script Unicode font. If you have
+problems using the RAChitrali-Dogri Keyman keyboard, please contact:
+Rehmat Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -37,19 +44,19 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\rac_dogri\build\rac_dogri.js</Name>
+      <Name>..\build\rac_dogri.js</Name>
       <Description>File rac_dogri.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\rac_dogri\build\rac_dogri.kvk</Name>
+      <Name>..\build\rac_dogri.kvk</Name>
       <Description>File rac_dogri.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\..\rac_dogri\build\rac_dogri.kmx</Name>
+      <Name>..\build\rac_dogri.kmx</Name>
       <Description>Keyboard Rachitrali-Dogri</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
@@ -114,6 +121,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -125,7 +138,10 @@
       <Languages>
         <Language ID="dgo-Arab-PK">Dogri (individual language) (Arabic, Pakistan)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="dgo-Arab-PK" Keys="D w g r i" Text="ڈوگری" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

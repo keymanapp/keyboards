@@ -4,15 +4,18 @@ store(&VERSION) "10.0"
 store(&NAME) 'Bengali-Assamese Phonetic (SIL)'
 store(&BITMAP) 'sil_bengali_phonetic.ico'
 
-store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '1.2.1'
-store(&COPYRIGHT) '© 2006-2018 SIL International'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.3'
+store(&COPYRIGHT) '© 2006-2021 SIL International'
 store(&VISUALKEYBOARD) 'sil_bengali_phonetic.kvks'
+store(&LAYOUTFILE) 'sil_bengali_phonetic.keyman-touch-layout'
 
 begin UNICODE > use(Main)
 
-group(Main) using keys
+store(nul) "QHLZX"
 
+group(Main) using keys
++ any(nul) > nul
 
 + '`' >  U+0981
 + '~' >  U+0982
@@ -42,6 +45,7 @@ group(Main) using keys
 + 'B' >  U+09AD
 + 'm' >  U+09AE
 + 'y' >  U+09AF
++ 'Y' >  U+09DF
 + 'r' >  U+09B0
 + 'l' >  U+09B2
 + 'z' >  U+09B6
@@ -76,23 +80,28 @@ group(Main) using keys
 
 + 'q' >  deadkey(1)
 
-dk(1)+'a' > U+0985
-dk(1)+'A' > U+0986
-dk(1)+'i' > U+0987
-dk(1)+'I' > U+0988
-dk(1)+'u' > U+0989
-dk(1)+'U' > U+098A
-dk(1)+'r' > U+09F0
-dk(1)+'l' > U+098C
-dk(1)+'e' > U+098F
-dk(1)+'E' > U+0990
-dk(1)+'o' > U+0993
-dk(1)+'O' > U+0994
-dk(1)+'v' > U+09DC
-dk(1)+'V' > U+09DD
-dk(1)+'y' > U+09DF
-dk(1)+'R' > U+09E0
-dk(1)+'L' > U+09E1
-dk(1)+':' > U+0983
-dk(1)+'t' > U+09CE
-dk(1)+'.' > U+09F7
+dk(1) + 'a' > U+0985
+dk(1) + 'A' > U+0986
+dk(1) + 'i' > U+0987
+dk(1) + 'I' > U+0988
+dk(1) + 'u' > U+0989
+dk(1) + 'U' > U+098A
+dk(1) + 'r' > U+09F0
+dk(1) + 'l' > U+098C c Sanskrit
+dk(1) + 'e' > U+098F
+dk(1) + 'E' > U+0990
+dk(1) + 'o' > U+0993
+dk(1) + 'O' > U+0994
+dk(1) + 'v' > U+09DC
+dk(1) + 'V' > U+09DD
+c dk(1) + 'R' > U+09E0 c BENGALI LETTER VOCALIC RR - Sanskrit
+dk(1) + 'R' > U+098B c BENGALI LETTER VOCALIC R
+dk(1) + 'L' > U+09E1 c Sanskrit
+dk(1) + ':' > U+0983
+dk(1) + 't' > U+09CE
+c dk(1) + '.' > U+09F7 c BENGALI CURRENCY NUMERATOR FOUR - obsolete
+dk(1) + '.' > U+0965 c double danda from Deva 
+dk(1) + 'X' > U+09CD U+200C c visible (non-joining) halant
+
+c touch rules
++ [T_09CD_200C] > U+09CD U+200C

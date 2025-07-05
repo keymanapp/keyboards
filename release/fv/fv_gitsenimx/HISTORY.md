@@ -1,5 +1,32 @@
-Gitsenimx̱ Change History
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ Change History
 ============================
+10.1.2 (9 Jul 2024)
+-----------------
+* Corrected error in documentation
+
+10.1.1 (8 Jul 2024)
+-----------------
+* Tidied documentation and mobile table
+* Removed web help
+
+10.1.0 (15 May 2024)
+-----------------
+* Swapped out curled apostrophe for straight apostrophe
+
+10.0.1 (13 Feb 2024)
+-----------------
+* Removed uneeded info from documentation
+* Updated script tag
+
+10.0 (9 Sep 2023)
+-----------------
+* Swapped lowercase f key for lowercase g key on mobile layout
+* Centered mobile layout
+* Updated name to better reflect language
+
+9.1.1 (24 Feb 2021)
+-----------------
+* Updated htm files for readability on Linux
 
 9.1 (8 Oct 2018)
 -----------------

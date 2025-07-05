@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2019-2020 Ethnos360
+Copyright © 2019-2025 Ethnos360
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

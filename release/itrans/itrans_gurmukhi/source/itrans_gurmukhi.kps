@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -52,11 +54,13 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">1.0.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Gurmukhi Phonetic (ITRANS)</Name>
-    <Copyright URL="">©2019 sanskritdocuments.org</Copyright>
+    <Copyright URL="">©  sanskritdocuments.org</Copyright>
     <Author URL="">Shree Devi Kumar</Author>
     <WebSite URL="https://sanskritdocuments.org/punjabi/">https://sanskritdocuments.org/punjabi/</WebSite>
+    <Description URL="">A Phonetic (ITRANS) keyboard layout for Punjabi and Sindhi written in
+Gurmukhi script.</Description>
   </Info>
   <Files>
     <File>
@@ -95,16 +99,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gurmukhi Phonetic (ITRANS)</Name>
       <ID>itrans_gurmukhi</ID>
-      <Version>1.0.0</Version>
+      <Version>1.1</Version>
       <Languages>
         <Language ID="pa">Panjabi</Language>
         <Language ID="sd-Guru">Sindhi (Gurmukhi)</Language>
       </Languages>
+      <Examples>
+        <Example ID="pa" Keys="p a M j A b I" Text="ਪੰਜਾਬੀ" Note=""/>
+        <Example ID="sd-Guru" Keys="h i n d I" Text="ਹਿਨ੍ਦੀ" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

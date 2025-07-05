@@ -1,20 +1,17 @@
-﻿﻿Burushãski Girminas keyboard
+﻿Burushaski Girminas keyboard
 ==============
 
-© 2020 Quwat K. Sunny
-Version 1.0.3
+© Quwat K. Sunny
 
 Description
 -----------
-
-Burushãski Girminas is a Latin-based keyboard developed by Quwat K. Sunny. It was developed primarily for Burushãski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar.
+Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny for the orthography approved by Burusho Maʰraka, a representative body of all three varieties of Burushaski, from Hunza, Nagar and Yasin.
  
 
 Links
 -----
 Homepage:     https://keyman.com/keyboards/burushaski_girminas
-Sponsored by: http://www.dardistantimes.com
-
+Organization Website: https://www.burusho.org
 
 Supported Platforms
 -------------------

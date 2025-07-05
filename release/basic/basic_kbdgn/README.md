@@ -1,14 +1,12 @@
 Guarani Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
 
-Guarani Basic generated from template
+<p>This keyboard is for the Guarani language of Paraguay, Bolivia, and Brazil. The Guarani Basic keyboard was imported with permission from the Windows 10 keyboard.</p>
 
 Links
 -----

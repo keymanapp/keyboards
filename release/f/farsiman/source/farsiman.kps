@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>farsiman.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,8 +20,13 @@
   </StartMenu>
   <Info>
     <Name URL="">farsiman</Name>
-    <Copyright URL="">© 2019 Yuichi Yoshimoto</Copyright>
+    <Copyright URL="">© Yuichi Yoshimoto</Copyright>
     <Author URL="mailto:orew@outlook.com">Yuichi Yoshimoto</Author>
+    <Description URL="">Farsiman is a farsi phonetic keyboard that enables anyone who uses a
+regular English keyboard write in Farsi. Look at the three screenshots
+in the Welcome page and you are immediately ready to write away in
+Farsi.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -71,12 +78,6 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -95,32 +96,56 @@
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\FONTLOG.txt</Name>
       <Description>File FONTLOG.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL-FAQ.txt</Name>
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew_README.txt</Name>
+      <Description>File ScheherazadeNew_README.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Bold.ttf</Name>
+      <Description>Font Scheherazade New Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Medium.ttf</Name>
+      <Description>Font Scheherazade New Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</Name>
+      <Description>Font Scheherazade New</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -129,9 +154,10 @@
     <Keyboard>
       <Name>Farsiman</Name>
       <ID>farsiman</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="fa">Persian</Language>
       </Languages>

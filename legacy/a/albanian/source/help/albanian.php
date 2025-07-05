@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Add further documentation on keyboard
 */
-  $pagename = 'Albanian Keyboard Help';
-  $pagetitle = 'Albanian Keyboard Help';
+  $pagename = 'Albanian (deprecated) Keyboard Help';
+  $pagetitle = 'Albanian (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

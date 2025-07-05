@@ -1,11 +1,7 @@
-Dɛnɛsųłiné keyboard
+Dënesųłıné keyboard
 ======================
 
-Copyright (c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.1
-
-Dɛnɛsųłiné keyboard layout for Unicode
+Dënesųłıné keyboard layout for Unicode
 
 Links
 -----
@@ -19,7 +15,3 @@ Supported Platforms
 
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

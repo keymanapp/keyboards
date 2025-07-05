@@ -1,9 +1,7 @@
 Embera Northern Keyboard
 ========================
 
-© 1999-2020 Ethnos360
-
-Version 10.1.3
+© Ethnos360
 
 __DESCRIPTION__
 This keyboard is designed for the Embera language of Panama.

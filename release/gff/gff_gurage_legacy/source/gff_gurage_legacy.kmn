@@ -1,0 +1,309 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c The Geʾez Frontier Foundation's mnemonic input method for Gurage script on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_gurage-legacy/0.1/gff_gurage_legacy.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_gurage
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
+c 
+store(&Version) '15.0'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&NAME) 'ጉራጌ (Gurage) Legacy'
+store(&COPYRIGHT) '© Geʾez Frontier Foundation'
+store(&Message) 'This is a Gurage language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_S]'
+store(&BITMAP) 'gff_gurage_legacy.ico'
+store(&VISUALKEYBOARD) 'gff_gurage_legacy.kvks'
+store(&LAYOUTFILE) 'gff_gurage_legacy.keyman-touch-layout'
+$keymanonly:  store(&mnemonicLayout) "1"
+c 
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+c The remainder of this document is formatted with a fixed width font.
+
+c Define the set of Ethiopic characters to support contest based input:
+c
+store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+store(ግዕዝ) 'ኸⷐለመረሰሸቀⷀበተቸነኘኧከⷈወዐዘዠየደጀገⷘጠጨፈፐ'
+store(ካዕብ) 'ኹⷑሉሙሩሱሹቁⷁቡቱቹኑኙኡኩⷉዉዑዙዡዩዱጁጉⷙጡጩፉፑ'
+store(ሣልስ) 'ኺⷒሊሚሪሲሺቂⷂቢቲቺኒኚኢኪⷊዊዒዚዢዪዲጂጊⷚጢጪፊፒ'
+store(ራብዕ) 'ኻⷓላማራሳሻቃⷃባታቻናኛኣካⷋዋዓዛዣያዳጃጋⷛጣጫፋፓ'
+store(ኃምስ) 'ኼⷔሌሜሬሴሼቄⷄቤቴቼኔኜኤኬⷌዌዔዜዤዬዴጄጌⷜጤጬፌፔ'
+store(ሳድስ) 'ኽⷕልምርስሽቅⷅብትችንኝእክⷍውዕዝዥይድጅግⷝጥጭፍፕ'
+store(ሳብዕ) 'ኾⷖሎሞሮሶሾቆⷆቦቶቾኖኞኦኮⷎዎዖዞዦዮዶጆጎⷞጦጮፎፖ'
+
+store(keys) 'h_lmrsxq_btcnN_k_w_zZydjg_TCfp'
+
+
+c the following is Sebatbeit specific
+store(ሌሎች፡keys) 'HLMRXBVvQKWYDJGSFP'
+store(ሌሎች፡ሳድስ)  'ኽልምርሽብብብቅክውይድጅግስፍፕ'
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Begin Maps of Sebatbeit Forms-----------------------------------------------
+store(potentialSebatbeit) 'ኽቅክግ'
+store(sebatbeit)  'ⷕⷅⷍⷝ'
+store(sebatbeitY) 'yY'
+c ---------------------End Maps of Sebatbeit Forms-----------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+  store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio)  'ኣዐኡዑኢዒኧዕኦዖኤ'
+  store(composableVowel) 'ኢእዒዕ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+  store(ሳድስ፡መደበኛ)     'ምብጵጽፍፕ'
+  store(ካዕብ፡መደበኛ)     'ሙቡጱጹፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሟቧጷጿፏፗ'
+
+c 'hmbqkKgfp'
+store(ካዕብ፡ልዩ)  'ኹሙቡቁኩጉፉፑ'
+store(ዘመደ፡ግዕዝ) 'ዀᎀᎄቈኰጐᎈᎌ'
+store(ዘመደ፡ካዕብ) 'ዅᎃᎇቍኵጕᎋᎏ'
+store(ዘመደ፡ሣልስ) 'ዂᎁᎅቊኲጒᎉᎍ'
+store(ዘመደ፡ራብዕ) 'ዃሟቧቋኳጓፏፗ'
+store(ዘመደ፡ኃምስ) 'ዄᎂᎆቌኴጔᎊᎎ'
+c ---------------------End Labiovelars----------------------------------------------------------
+
+c ---------------------Maps for Numbers---------------------------------------------------------
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma)        ':,'
+  store(ethWordspaceOrComma) '፡፣'
+c ---------------------End Numbers--------------------------------------------------------------
+
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+  store(ግዕዝ-key) 'eE' c 'äÄéÉèÈêÊëË'
+  store(ካዕብ-key) 'uU' c 'ùÙúÚûÛüÜ'
+  store(ሣልስ-key) 'iI' c ìÌíÍîÎïÏ'
+  store(ራብዕ-key) 'aA' c 'àÀáÁâÂãÃåÅ'
+  store(ኃምስ-key) [T_HAMIS] c 'æÆ'
+  store(ሳብዕ-key) 'oO' c 'òÒóÓôÔõÕöÖøØ'
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+
+c =====================End Data Section=========================================================
+
+c =====================Begin Functional Section=================================================
+c 
+store(&TARGETS) 'any'
+  begin Unicode > use(main)
+  group(main) using keys
+
+c ---------------------Input of Special Symbols-------------------------------------------------
+
+$keymanonly: + [CTRL '.'] > U+135E
+$keymanonly: U+135E + [CTRL '.'] > U+135F
+$keymanonly: U+135F + [CTRL '.'] > U+135D
+$keymanonly: U+135D + [CTRL '.'] > U+135D beep
+
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c
+c The following can happen from the touch keyboards፡
+c
+U+135E + [U_135E] > U+135F c 1 + 1 > 2
+U+135E + [U_135F] > U+135D c 1 + 2 > 3
+U+135F + [U_135E] > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135E + [U_135D] > U+135E beep  c 1 + 3
+U+135F + [U_135F] > U+135F beep  c 2 + 2
+U+135F + [U_135D] > U+135F beep  c 2 + 3
+U+135D + [U_135E] > U+135D beep  c 3 + 1
+U+135D + [U_135F] > U+135D beep  c 3 + 2
+U+135D + [U_135D] > U+135D beep  c 3 + 3
+
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
+c ---------------------End Input of Special Symbols---------------------------------------------
+
+c ---------------------Input of Lone Vowels-----------------------------------------------------
+c 
+c Alef-A Vowels as Vowels
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+  'ኧ' + any(ግዕዝ-key) > 'እ'
+
+  'ዐ' + any(ግዕዝ-key) > 'ዕ'
+  'ዐ' + any(ካዕብ-key) > 'ዑ'
+  'ዐ' + any(ሣልስ-key) > 'ዒ'
+  'ዐ' + any(ራብዕ-key) > 'ዓ'
+  'ዐ' + any(ሳብዕ-key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+c ---------------------End Input of Lone Vowels-------------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  any(ሳድስ) + any(ግዕዝ-key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ-key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Input of Sebatbeit Syllables-------------------------------------------------
+  any(potentialSebatbeit) + any(sebatbeitY) > index(sebatbeit,1)
+c ---------------------End Input of Sebatbeit Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+  any(ካዕብ፡መደበኛ) + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡ልዩ)   + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
+  any(ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(ዘመደ፡ራብዕ,1)
+  any(ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ,1)
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+c ---------------------Input of Punctuation-----------------------------------------------------
+c 
+c The only dead key for entry of special characters and
+c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
+c 
+  any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)
+  any(ሳድስ)      + "'" > context(1) deadkey(1)
+  any(ሣልስ)      + "'" > context(1) deadkey(1)
+  deadkey(1)    + "'" > "'"
+
+
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
+
+      + ':' > '፡'
+  '፡' + ':' > '።'
+  '።' + ':' > ':'
+  ':' + ':' > '፡'  c makes circular
+  '፡' + '+' > '፠'
+  '፡' + '#' > '፨'
+  
+  '።' + '.' > '.'
+  '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
+   
+   
+  any(arabNumbersWithZero) + ',' > context(1) ','
+      + ',' > '፣'
+  '፣' + ',' > '፥'
+  '፥' + ',' > ','
+  ',' + ',' > '፣'  c makes circular
+  notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
+  '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፣' ' ' 
+
+      + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፤'  c makes circular
+      
+
+  '፡' + '-' > '፦'
+
+      + '<' > '‹'
+      + '>' > '›'
+  '‹' + '<' > '«'
+  '›' + '>' > '»'
+  '«' + '<' > '<'
+c ---------------------End Input of Punctuation-------------------------------------------------
+
+c ---------------------Input of European Characters---------------------------------------------
+c  store(euro)    'ÇçÐðÝýÿßÑñ'
+c  store(euroMap) 'ጭችድድይይይጽኝኝ'
+c  + any(euro )   > index(euroMap,1)
+
+c  + '¨' > U+135F
+
+c  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c this mapping has an Amharic bias
+c  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+c  + any(euroVowels) > index(euroVowelsMap,1)
+c ---------------------End Input of European Characters-----------------------------------------
+
+c ---------------------Input of Numbers---------------------------------------------------------
+
+c Special Rule for Arabic Numerals
+c 
+c The following attempts to auto-correct the use of Ethiopic wordspace and
+c Ethiopic comma within an Arabic numeral context.  Ethiopic wordspace gets
+c used erroneously in time formats and Ethiopic commas as an order of thousands
+c delimiter. The correction context is not known until numerals appear on _both_
+c sides of the punctuation.
+c 
+  any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+
+c Ethiopic Numerals
+
+  '#' + '1' > '፩'
+  '#' + any(ArabOnes) > index(ones,2)
+  '#' + '#' > '#'
+
+c special cases for multiples of one
+    '፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+
+c upto the order of 100 million
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1)  '፻' c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1)  '፻' c Thousands
+  any(tens)  '፻' + '0' > index(ones,1)  '፼' c Ten Thousands
+  any(ones)  '፼' + '0' > index(tens,1)  '፼' c Hundred Thousands
+  any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
+  any(ones) '፻፼' + '0' > index(tens,1) '፻፼' c Ten Millions
+  any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
+
+c enhance this later, look for something that can copy a match over
+  any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
+
++ [T_THOUSAND] > '፲፻'
+c ---------------------End Input of Numbers-----------------------------------------------------
+
+c ---------------------Input of Non-Gurgage Characters------------------------------------------
+c
+c This section has mappings for non-Gurage letters that have been made accessing on the touch
+c keyboard.
+c
+  store(non-gurage፡ሳድስ)  'ህሥቭኅዽፅጸጵ'
+  store(non-gurage፡ግዕዝ)  'ሀሠቨኀዸፀጸጰ'  						
+  store(non-gurage፡ካዕብ)  'ሁሡቩኁዹፁጹጱ'
+  store(non-gurage፡ሣልስ)  'ሂሢቪኂዺፂጺጲ'
+  store(non-gurage፡ራብዕ)  'ሃሣቫኃዻፃጻጳ'
+  store(non-gurage፡ኃምስ)  'ሄሤቬኄዼፄጼጴ'
+  store(non-gurage፡ሳብዕ)  'ሆሦቮኆዾፆጾጶ'        
+
+  any(non-gurage፡ሳድስ) + any(ግዕዝ-key) > index(non-gurage፡ግዕዝ,1)
+  any(non-gurage፡ሳድስ) + any(ካዕብ-key) > index(non-gurage፡ካዕብ,1)
+  any(non-gurage፡ሳድስ) + any(ሣልስ-key) > index(non-gurage፡ሣልስ,1)
+  any(non-gurage፡ሳድስ) + any(ራብዕ-key) > index(non-gurage፡ራብዕ,1)
+  any(non-gurage፡ሳድስ) + any(ኃምስ-key) > index(non-gurage፡ኃምስ,1)
+  any(non-gurage፡ሣልስ) + any(ግዕዝ-key) > index(non-gurage፡ኃምስ,1)  
+  any(non-gurage፡ሳድስ) + any(ሳብዕ-key) > index(non-gurage፡ሳብዕ,1)
+c ---------------------End Input of Non-Gurgage Characters--------------------------------------
+                                            
+c =====================End Functional Section===================================================

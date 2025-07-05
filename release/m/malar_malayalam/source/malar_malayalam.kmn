@@ -1,17 +1,18 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Malar Malayalam'
-store(&COPYRIGHT) '© 2019-2020 Ramesh Kunnappully [MIT License]'
-store(&KEYBOARDVERSION) '1.2'
+store(&COPYRIGHT) '© 2019-2023 Ramesh Kunnappully'
+store(&KEYBOARDVERSION) '1.7'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'malar_malayalam.kvks'
 store(&LAYOUTFILE) 'malar_malayalam.keyman-touch-layout'
 store(&BITMAP) 'malar_malayalam.ico'
-store(&MESSAGE) 'Malar Malayalam Keyboard is a transliteration based Malayalam Input Method. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 13.0. Malayalam Unicode fonts under the SIL Open Font License are available at https://smc.org.in/fonts/ and http://rachana.org.in/.'
+store(&MESSAGE) 'Malar Malayalam Keyboard is a transliteration based Malayalam input method. This keyboard supports all Malayalam characters encoded as per the Unicode Standard, Version 15.0.'
 
 begin Unicode > use(main)
 
 store(Digits)   '0'    '1'    '2'    '3'    '4'    '5'    '6'    '7'    '8'    '9'
 store(DigitsML) U+0D66  U+0D67  U+0D68  U+0D69  U+0D6A  U+0D6B  U+0D6C  U+0D6D  U+0D6E  U+0D6F
+store(NumKeys) [K_NP0]	[K_NP1]	[K_NP2]	[K_NP3]	[K_NP4]	[K_NP5]	[K_NP6]	[K_NP7]	[K_NP8]	[K_NP9]
 
 store(Consonants) U+0D15    U+0D16    U+0D17    U+0D18    U+0D19    \
                   U+0D1A    U+0D1B    U+0D1C    U+0D1D    U+0D1E    \
@@ -35,6 +36,9 @@ c Digits
 any(Digits) + [K_BKSLASH] > index(DigitsML,1)
 any(DigitsML) + any(Digits) > context index(DigitsML,2)
 dk(x) + any(Digits) > index(DigitsML,2)
++ any(NumKeys) > index(Digits,1)
+any(DigitsML) + any(NumKeys) > context index(DigitsML,2)
+dk(x) + any(NumKeys) > index(DigitsML,2)
 
 C Vowels
 + [K_A] > U+0D05                            c അ
@@ -119,11 +123,11 @@ U+0D36 U+0D4D + [K_H] > U+0D34 U+0D4D       c ഴ്
 + [SHIFT K_R] > U+0D31 U+0D4D               c റ്
 U+0D30 U+0D4D + [K_R] > U+0D31 U+0D4D       c റ്
 
-U+0D28 U+0D4D + [K_T] > U+0D28 U+0D4D U+0D31 U+0D4D                 c ന്റ്
+U+0D28 U+0D4D + [K_T] > U+0D7B U+0D4D U+0D31 U+0D4D                 c ൻ്റ്
 U+0D20 U+0D4D + [SHIFT K_T] > U+0D31 U+0D4D U+0D31 U+0D4D           c റ്റ്
 U+0D28 U+0D4D + [K_K] > U+0D19 U+0D4D U+0D15 U+0D4D                 c ങ്ക്
 U+0D28 U+0D4D + [K_G] > U+0D19 U+0D4D U+0D19 U+0D4D                 c ങ്ങ്
-U+0D28 U+0D4D U+0D31 U+0D4D + [K_H] > U+0D28 U+0D4D U+0D24 U+0D4D   c ന്ത്
+U+0D7B U+0D4D U+0D31 U+0D4D + [K_H] > U+0D28 U+0D4D U+0D24 U+0D4D   c ന്ത്
 U+0D28 U+0D4D U+005F dk(c1) + [K_H] > U+0D1E U+0D4D U+0D1A U+0D4D   c ഞ്ച് 
 
 c Chillu
@@ -269,6 +273,7 @@ C Other Keys
 + [SHIFT K_LBRKT] > U+007B
 + [K_RBRKT] > U+005D
 + [SHIFT K_RBRKT] > U+007D
++[SHIFT K_BKSLASH] > U+007C
 + [K_COLON] > U+003B
 + [SHIFT K_COLON] > U+003A
 + [K_QUOTE] > U+0027
@@ -282,28 +287,18 @@ C Other Keys
 
 + [K_X] > dk(x)
 + [SHIFT K_X] > dk(x)
-+ [K_Q] > Nul
-+ [SHIFT K_Q] > Nul
-+ [SHIFT K_W] > Nul
++ [K_Q] > dk(q)
++ [SHIFT K_Q] > dk(q)
++ [SHIFT K_W] > U+005F dk(w)
 + [SHIFT K_Y] > Nul
 + [SHIFT K_P] > Nul
 + [SHIFT K_F] > Nul
-+ [SHIFT K_Z] > Nul
++ [SHIFT K_Z] > U+005F dk(z)
 + [SHIFT K_V] > Nul
 + [SHIFT K_B] > Nul
 + [K_C] > U+005F dk(c1)
 + [SHIFT K_C] > U+005F dk(c2)
 
-+ [K_NP0] > '0'
-+ [K_NP1] > '1'
-+ [K_NP2] > '2'
-+ [K_NP3] > '3'
-+ [K_NP4] > '4'
-+ [K_NP5] > '5'
-+ [K_NP6] > '6'
-+ [K_NP7] > '7'
-+ [K_NP8] > '8'
-+ [K_NP9] > '9'
 + [K_NPSTAR] > U+002A
 + [K_NPPLUS] > U+002B
 + [K_NPMINUS] > U+002D
@@ -311,10 +306,13 @@ C Other Keys
 + [K_NPSLASH] > U+002F
 
 c ZWNJ
-+[SHIFT K_BKSLASH] > U+200C c ZWNJ
-U+200C + [SHIFT K_BKSLASH] > U+200C c ZWNJ
+U+005F dk(z) + [SHIFT K_Z] > U+200C     c ZWNJ
+U+200C + [SHIFT K_Z] > U+005F dk(z)
 U+200C + U+0020 > U+0020
-U+0020 + [SHIFT K_BKSLASH] > U+0020
+
+c ZWJ
+U+005F dk(w) + [SHIFT K_W] > U+200D     c ZWJ
+U+200D + [SHIFT K_W] > U+005F dk(w)
 
 C Apostrophe, Quotation, Accent
 U+0027 + [K_BKSLASH] > U+2018           c ‘
@@ -337,11 +335,13 @@ U+2014 + [K_BKSLASH] > U+002D           c -
 U+002D + [K_HYPHEN] > context U+002D    c -
 U+002D + [K_NPMINUS] > context U+002D   c -
 
-c Tilde, Backslash, Vertical bar & Dollar symbol
+c Tilde, Backslash & Dollar symbol
 dk(x) + [SHIFT K_BKQUOTE] > U+007E      c ~
+dk(q) + [SHIFT K_BKQUOTE] > U+007E      c ~
 dk(x) + [K_BKSLASH] > U+005C            c \
-dk(x) + [SHIFT K_BKSLASH] > U+007C      c |
+dk(q) + [K_BKSLASH] > U+005C            c \
 dk(x) + [SHIFT K_4] > U+0024            c $
+dk(q) + [SHIFT K_4] > U+0024            c $
 
 c Division & Multiplication symbol
 U+002F + [K_BKSLASH] > U+00F7           c ÷

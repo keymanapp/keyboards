@@ -25,7 +25,7 @@
   ?>
 
 
-<p style='margin:0px'>Keyboard &#169; 2008, 2015, 2018-2020 thamizha.com and SIL International</p>
+<p style='margin:0px'>Keyboard &#169; thamizha.com and SIL Global</p>
 
 <br/>
 
@@ -43,7 +43,7 @@ This keyboard is designed for the Tamil language, and uses the Tamil 99 standard
 Most computers will automatically download a special font if needed to display this language correctly.
 </p>
 <p>
-<a href="#Related">Click here</a> to see other keyboard layouts for Tamil.
+<a target="_blank" href="https://keyman.com/tamil">Click here</a> to see other keyboard layouts for Tamil.
 </p>
 </div>
 
@@ -290,7 +290,7 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 </p>
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright 2008, 2015, 2018-2020 thamizha.com and SIL International.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright thamizha.com and SIL Global.
 </p>
 
 </div>

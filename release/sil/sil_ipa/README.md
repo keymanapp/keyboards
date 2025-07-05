@@ -1,9 +1,7 @@
 IPA (SIL) Keyboard Keyboard
 =====================
 
-Copyright (C) 2002-2020 SIL International
-
-Version 1.8.2
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 
@@ -17,7 +15,6 @@ typed as sequences of an appropriate key.
 Links
 -----
  * Home: https://keyman.com/keyboards/sil_ipa
- * Other: http://scripts.sil.org/IPAhome
 
 Supported Platforms
 -------------------

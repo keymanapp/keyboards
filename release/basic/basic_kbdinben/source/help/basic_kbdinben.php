@@ -11,8 +11,6 @@ It includes some characters which are not found on the Inscript keyboard.  It us
 
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift leftctrl-shift'>
 </div>
@@ -130,5 +128,3 @@ For example, typing <span class='keys'>F</span> will produce the vowel <span cla
 <h2>System Requirements</h2>
 <p>It is recommended that you use an English QWERTY hardware keyboard with this keyboard.
 </p>
-
-<p>© 2009-2019 SIL International</p>
