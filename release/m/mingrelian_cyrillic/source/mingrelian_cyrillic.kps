@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -21,7 +21,7 @@
     <Name URL="">Mingrelian Cyrillic</Name>
     <Copyright URL="">© Harindeveloper</Copyright>
     <Author URL=""></Author>
-    <Description URL="">Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Georgia.</Description>
+    <Description URL="">Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Abkhazia.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -30,24 +30,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>help\mingrelian_cyrillicU_.png</Name>
-      <Description>File LayoutU_.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>help\mingrelian_cyrillicU_SRA.png</Name>
-      <Description>File LayoutU_SRA.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>help\mingrelian_cyrillicU_S.png</Name>
-      <Description>File LayoutU_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
     </File>
     <File>
       <Name>welcome\welcome.htm</Name>
@@ -79,14 +61,50 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\catrinity\Catrinity.otf</Name>
+      <Description>Font Catrinity</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\catrinity\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Mingrelian Cyrillic</Name>
       <ID>mingrelian_cyrillic</ID>
-      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\catrinity\Catrinity.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\catrinity\Catrinity.otf</DisplayFont>
       <Languages>
-        <Language ID="xmf-Cyrl">Mingrelian (Cyrillic, Georgia)</Language>
+        <Language ID="xmf-Cyrl">Mingrelian (Cyrillic)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

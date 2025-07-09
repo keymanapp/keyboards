@@ -1,7 +1,7 @@
 <?php /*
   Name:        Buang
   Copyright:   2001
-  Description: Keyboard layout for Buang language of Papua New Guinea.  Works with Doulos SIL or Charis SIL fonts.
+  Description: Keyboard layout for Buang language of Papua New Guinea.  Works with Charis fonts.
   Authors:     Bruce Hooley
 */
   $pagename = 'Buang (SIL) Keyboard Help';
@@ -20,7 +20,7 @@ END;
 ?>
 
 <p>
-    Keyboard layout for Buang language of Papua New Guinea.  Works with Doulos SIL or Charis SIL fonts.
+    Keyboard layout for Buang language of Papua New Guinea.  Works with Charis fonts.
 </p>
 
 <p>Type any of the keys below, followed by <span class='key'>"</span>, to get the corresponding output.</p>

@@ -3,7 +3,7 @@ c This Version of Cantonese Romanization script simulate a proto-cantonese phono
 store(&VERSION) '15.0'
 store(&NAME) 'cantonese telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '3.0.1'
+store(&KEYBOARDVERSION) '3.0.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'cantonese_telex.ico'
 store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
@@ -77,7 +77,7 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
 store(ys) 'yýỳỹỷỵYÝỲỸỶỴ'
 store(end_consonants) 'ptkcmnPTKCMN'
-store(un_second_consonants)'qtpdfkcvbQTPDFKCVB'
+store(un_second_consonants) 'qtpdfkcvbQTPDFKCVB'
 store(a) 'âấầẩẫậÂẤẦẨẪẬ'
 store(aa) 'aáàảãạAÁÀẢÃẠ'
 store(aw) 'ăắằẳẵặĂẮẰẲẴẶ'
@@ -119,14 +119,16 @@ store(nt) 'ntNT'
 store(n) 'nN'
 store(low_u) 'uúùủũụ'
 store(upper_u) 'UÚÙỦŨỤ'
+store(low_y) 'yýỳỷỹỵ'
+store(upper_y) 'YÝỲỶỸỴ'
 store(low_uw_v) 'ứừửữự'
 store(upper_uw_v) 'ỨỪỬỮỰ'
 store(low_uw) 'ưứừửữự'
 store(upper_uw) 'ƯỨỪỬỮỰ'
 store(uw_v) 'ứừửữựỨỪỬỮỰ'
 store(un_w_letters) 'efjpqwEFJPQW'
-store(aeiouy)'aeiouyAEIOUY'
-store(aeiou)'aeiouAEIOU'
+store(aeiouy) 'aeiouyAEIOUY'
+store(aeiou) 'aeiouAEIOU'
 store(rgysdfhklzxvb) 'rgysdfhklzxvbRGYSDFHKLZXVB'
 store(eiy) 'eiyEIY'
 store(u) 'uúùủũụUÚÙỦŨỤ'
@@ -225,6 +227,8 @@ store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'ưƯ'
 store(two_q) 'qQ'
+store(ie_consonants) 'đbcdghklmnprstvxyzĐBCDGHKLMNPRSTVXYZ'
+store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐ'
 c *******************************************************************
 
     c Keyboard options
@@ -307,10 +311,10 @@ c unless there was a "u" there before, as marked by dk(u)
 'Thuở' + 'W' > 'Thưở'
 'THUỞ' + 'W' > 'THƯỞ'
 any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3)
-'ư' any(ow) + 'w' > 'u'index(o, 2)'w'
-'Ư' any(ow) + 'w' > 'U'index(o, 2)'w'
-'ư' any(ow) + 'W' > 'u'index(o, 2)'W'
-'Ư' any(ow) + 'W' > 'U'index(o, 2)'W'
+'ư' any(ow) + 'w' > 'u'index(o, 2) 'w'
+'Ư' any(ow) + 'w' > 'U'index(o, 2) 'w'
+'ư' any(ow) + 'W' > 'u'index(o, 2) 'W'
+'Ư' any(ow) + 'W' > 'U'index(o, 2) 'W'
 
 'cli' + 's' > 'clí'
 'Cli' + 's' > 'Clí'
@@ -669,14 +673,14 @@ any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3
     any(aei) "CH" + 'j' > index(aei_nang, 1) "CH"
     any(aei) "CH" + 'J' > index(aei_nang, 1) "CH"
 
-    any(aei_sac)'ch' + 's' > index(aei, 1) 'chs'
-    any(aei_sac)'ch' + 'S' > index(aei, 1) 'chS'
-    any(aei_sac)'CH' + 's' > index(aei, 1) 'CHs'
-    any(aei_sac)'CH' + 'S' > index(aei, 1) 'CHS'
-    any(aei_nang)'ch' + 'j' > index(aei, 1) 'chj'
-    any(aei_nang)'ch' + 'J' > index(aei, 1) 'chJ'
-    any(aei_nang)'CH' + 'j' > index(aei, 1) 'CHj'
-    any(aei_nang)'CH' + 'J' > index(aei, 1) 'CHJ'
+    any(aei_sac) 'ch' + 's' > index(aei, 1) 'chs'
+    any(aei_sac) 'ch' + 'S' > index(aei, 1) 'chS'
+    any(aei_sac) 'CH' + 's' > index(aei, 1) 'CHs'
+    any(aei_sac) 'CH' + 'S' > index(aei, 1) 'CHS'
+    any(aei_nang) 'ch' + 'j' > index(aei, 1) 'chj'
+    any(aei_nang) 'ch' + 'J' > index(aei, 1) 'chJ'
+    any(aei_nang) 'CH' + 'j' > index(aei, 1) 'CHj'
+    any(aei_nang) 'CH' + 'J' > index(aei, 1) 'CHJ'
 
     'âm' + 's' > 'ấm'
     'âm' + 'f' > 'ầm'
@@ -3858,12 +3862,12 @@ any(no_y_vowels_nga) "NG" + "J" > index(no_y_vowels_nang, 1) "NG"
 "Ã" + "w" > "Ẵ"
 "Ạ" + "w" > "Ặ"
 
-any(vowels_sac)'k' + 'j' > index(vowels_nang, 1)'k'
-any(vowels_sac)'t' + 'j' > index(vowels_nang, 1)'t'
-any(vowels_sac)'p' + 'j' > index(vowels_nang, 1)'p'
-any(vowels_nang)'k' + 's' > index(vowels_sac, 1)'k'
-any(vowels_nang)'t' + 's' > index(vowels_sac, 1)'t'
-any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
+any(vowels_sac) 'k' + 'j' > index(vowels_nang, 1) 'k'
+any(vowels_sac) 't' + 'j' > index(vowels_nang, 1) 't'
+any(vowels_sac) 'p' + 'j' > index(vowels_nang, 1) 'p'
+any(vowels_nang) 'k' + 's' > index(vowels_sac, 1) 'k'
+any(vowels_nang) 't' + 's' > index(vowels_sac, 1) 't'
+any(vowels_nang) 'p' + 's' > index(vowels_sac, 1) 'p'
 
 "ńg" + "a" > "ngá"
 "ńg" + "e" > "ngé"
@@ -4251,6 +4255,121 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 'N̉' + 'w' > 'Nử'
 'Ñ' + 'w' > 'Nữ'
 'Ṇ' + 'w' > 'Nự'
+"ńh" + "a" > "nhá"
+"ńh" + "e" > "nhé"
+"ńh" + "i" > "nhí"
+"ńh" + "o" > "nhó"
+"ńh" + "u" > "nhú"
+"ǹh" + "a" > "nhà"
+"ǹh" + "e" > "nhè"
+"ǹh" + "i" > "nhì"
+"ǹh" + "o" > "nhò"
+"ǹh" + "u" > "nhù"
+"n̉h" + "a" > "nhả"
+"n̉h" + "e" > "nhẻ"
+"n̉h" + "i" > "nhỉ"
+"n̉h" + "o" > "nhỏ"
+"n̉h" + "u" > "nhủ"
+"ñh" + "a" > "nhã"
+"ñh" + "e" > "nhẽ"
+"ñh" + "i" > "nhĩ"
+"ñh" + "o" > "nhõ"
+"ñh" + "u" > "nhũ"
+"ṇh" + "a" > "nhạ"
+"ṇh" + "e" > "nhẹ"
+"ṇh" + "i" > "nhị"
+"ṇh" + "o" > "nhọ"
+"ṇh" + "u" > "nhụ"
+"ŃH" + "A" > "NHÁ"
+"ŃH" + "E" > "NHÉ"
+"ŃH" + "I" > "NHÍ"
+"ŃH" + "O" > "NHÓ"
+"ŃH" + "U" > "NHÚ"
+"ǸH" + "A" > "NHÀ"
+"ǸH" + "E" > "NHÈ"
+"ǸH" + "I" > "NHÌ"
+"ǸH" + "O" > "NHÒ"
+"ǸH" + "U" > "NHÙ"
+"N̉H" + "A" > "NHẢ"
+"N̉H" + "E" > "NHẺ"
+"N̉H" + "I" > "NHỈ"
+"N̉H" + "O" > "NHỎ"
+"N̉H" + "U" > "NHỦ"
+"ÑH" + "A" > "NHÃ"
+"ÑH" + "E" > "NHẼ"
+"ÑH" + "I" > "NHĨ"
+"ÑH" + "O" > "NHÕ"
+"ÑH" + "U" > "NHŨ"
+"ṆH" + "A" > "NHẠ"
+"ṆH" + "E" > "NHẸ"
+"ṆH" + "I" > "NHỊ"
+"ṆH" + "O" > "NHỌ"
+"ṆH" + "U" > "NHỤ"
+"Ńh" + "a" > "Nhá"
+"Ńh" + "e" > "Nhé"
+"Ńh" + "i" > "Nhí"
+"Ńh" + "o" > "Nhó"
+"Ńh" + "u" > "Nhú"
+"Ǹh" + "a" > "Nhà"
+"Ǹh" + "e" > "Nhè"
+"Ǹh" + "i" > "Nhì"
+"Ǹh" + "o" > "Nhò"
+"Ǹh" + "u" > "Nhù"
+"N̉h" + "a" > "Nhả"
+"N̉h" + "e" > "Nhẻ"
+"N̉h" + "i" > "Nhỉ"
+"N̉h" + "o" > "Nhỏ"
+"N̉h" + "u" > "Nhủ"
+"Ñh" + "a" > "Nhã"
+"Ñh" + "e" > "Nhẽ"
+"Ñh" + "i" > "Nhĩ"
+"Ñh" + "o" > "Nhõ"
+"Ñh" + "u" > "Nhũ"
+"Ṇh" + "a" > "Nhạ"
+"Ṇh" + "e" > "Nhẹ"
+"Ṇh" + "i" > "Nhị"
+"Ṇh" + "o" > "Nhọ"
+"Ṇh" + "u" > "Nhụ"
+'ńh' + 'y' > 'nhý'
+'ǹh' + 'y' > 'nhỳ'
+'n̉h' + 'y' > 'nhỷ'
+'ñh' + 'y' > 'nhỹ'
+'ṇh' + 'y' > 'nhỵ'
+'ńh' + 'w' > 'nhứ'
+'ǹh' + 'w' > 'nhừ'
+'n̉h' + 'w' > 'nhử'
+'ñh' + 'w' > 'nhữ'
+'ṇh' + 'w' > 'nhự'
+'ŃH' + 'Y' > 'NHÝ'
+'ǸH' + 'Y' > 'NHỲ'
+'N̉H' + 'Y' > 'NHỶ'
+'ÑH' + 'Y' > 'NHỸ'
+'ṆH' + 'Y' > 'NHỴ'
+'ŃH' + 'W' > 'NHỨ'
+'ǸH' + 'W' > 'NHỪ'
+'N̉H' + 'W' > 'NHỬ'
+'ÑH' + 'W' > 'NHỮ'
+'ṆH' + 'W' > 'NHỰ'
+'ŃH' + 'y' > 'NHý'
+'ǸH' + 'y' > 'NHỳ'
+'N̉H' + 'y' > 'NHỷ'
+'ÑH' + 'y' > 'NHỹ'
+'ṆH' + 'y' > 'NHỵ'
+'ŃH' + 'w' > 'NHứ'
+'ǸH' + 'w' > 'NHừ'
+'N̉H' + 'w' > 'NHử'
+'ÑH' + 'w' > 'NHữ'
+'ṆH' + 'w' > 'NHự'
+'Ńh' + 'y' > 'Nhý'
+'Ǹh' + 'y' > 'Nhỳ'
+'N̉h' + 'y' > 'Nhỷ'
+'Ñh' + 'y' > 'Nhỹ'
+'Ṇh' + 'y' > 'Nhỵ'
+'Ńh' + 'w' > 'Nhứ'
+'Ǹh' + 'w' > 'Nhừ'
+'N̉h' + 'w' > 'Nhử'
+'Ñh' + 'w' > 'Nhữ'
+'Ṇh' + 'w' > 'Nhự'
 'ứo' + 'm' > 'ướm'
 'ừo' + 'm' > 'ườm'
 'ửo' + 'm' > 'ưởm'
@@ -4790,10 +4909,10 @@ any(vowels_nang) "i" + "Z" > index(vowels, 1) "i"
 "Ǹg" + "x" > "Ñg"
 "Ṇg" + "x" > "Ñg"
 
-any(no_d_iunn_consonants)'iun' + 'n' > index(no_d_iunn_consonants, 1) 'ương'
+any(no_d_iunn_consonants) 'iun' + 'n' > index(no_d_iunn_consonants, 1) 'ương'
 'diun' + 'n' > 'dương'dk(iunn)
 'Diun' + 'n' > 'Dương'dk(iunn)
-any(no_d_iunn_consonants) 'ương' + 'n' > index(no_d_iunn_consonants, 1)'iunn'
+any(no_d_iunn_consonants) 'ương' + 'n' > index(no_d_iunn_consonants, 1) 'iunn'
 'dương'dk(iunn) + 'n' > 'diunn'
 'Dương'dk(iunn) + 'n' > 'Diunn'
 'dương'dk(iunn) + 's' > 'dướng'
@@ -4824,11 +4943,11 @@ any(punctuation) 'Iun' + 'n' > index(punctuation, 1) 'Dương'
 any(punctuation) 'Ìun' + 'n' > index(punctuation, 1) 'Dường'
 any(punctuation) 'Ĩun' + 'n' > index(punctuation, 1) 'Dưỡng'
 any(punctuation) 'Ịun' + 'n' > index(punctuation, 1) 'Dượng'
-any(iunn_consonants)'íun' + 'n' > index(iunn_consonants, 1)'ướng'
-any(iunn_consonants)'ìun' + 'n' > index(iunn_consonants, 1)'ường'
-any(iunn_consonants)'ỉun' + 'n' > index(iunn_consonants, 1)'ưởng'
-any(iunn_consonants)'ĩun' + 'n' > index(iunn_consonants, 1)'ưỡng'
-any(iunn_consonants)'ịun' + 'n' > index(iunn_consonants, 1)'ượng'
+any(iunn_consonants) 'íun' + 'n' > index(iunn_consonants, 1) 'ướng'
+any(iunn_consonants) 'ìun' + 'n' > index(iunn_consonants, 1) 'ường'
+any(iunn_consonants) 'ỉun' + 'n' > index(iunn_consonants, 1) 'ưởng'
+any(iunn_consonants) 'ĩun' + 'n' > index(iunn_consonants, 1) 'ưỡng'
+any(iunn_consonants) 'ịun' + 'n' > index(iunn_consonants, 1) 'ượng'
 
 'uon' + 'n' > 'ương'dk(uon)
 'Uon' + 'n' > 'Ương'dk(uon)
@@ -4857,30 +4976,30 @@ any(iunn_consonants)'ịun' + 'n' > index(iunn_consonants, 1)'ượng'
 'Uõn' + 'n' > 'Ưỡng'
 'Uọn' + 'n' > 'Ượng'
 
-any(s_all_letters)'ae' + any(all_letters) > index(s_all_letters, 1)'ae' index(all_letters, 4)
-any(s_all_letters)'ea' + any(all_letters) > index(s_all_letters, 1)'ea' index(all_letters, 4)
-any(s_all_letters)'ee' + any(all_letters) > index(s_all_letters, 1)'ee' index(all_letters, 4)
-any(s_all_letters)'ou' + any(all_letters) > index(s_all_letters, 1)'ou' index(all_letters, 4)
-any(s_all_letters)'AE' + any(all_letters) > index(s_all_letters, 1)'AE' index(all_letters, 4)
-any(s_all_letters)'EA' + any(all_letters) > index(s_all_letters, 1)'EA' index(all_letters, 4)
-any(s_all_letters)'EE' + any(all_letters) > index(s_all_letters, 1)'EE' index(all_letters, 4)
-any(s_all_letters)'OU' + any(all_letters) > index(s_all_letters, 1)'OU' index(all_letters, 4)
-any(s_all_letters)'Ae' + any(all_letters) > index(s_all_letters, 1)'Ae' index(all_letters, 4)
-any(s_all_letters)'Ea' + any(all_letters) > index(s_all_letters, 1)'Ea' index(all_letters, 4)
-any(s_all_letters)'Ee' + any(all_letters) > index(s_all_letters, 1)'Ee' index(all_letters, 4)
-any(s_all_letters)'Ou' + any(all_letters) > index(s_all_letters, 1)'Ou' index(all_letters, 4)
-any(s_all_letters)'aE' + any(all_letters) > index(s_all_letters, 1)'aE' index(all_letters, 4)
-any(s_all_letters)'eA' + any(all_letters) > index(s_all_letters, 1)'eA' index(all_letters, 4)
-any(s_all_letters)'eE' + any(all_letters) > index(s_all_letters, 1)'eE' index(all_letters, 4)
-any(s_all_letters)'oU' + any(all_letters) > index(s_all_letters, 1)'oU' index(all_letters, 4)
-any(s_all_letters)'ii' + any(all_letters) > index(s_all_letters, 1)'ii' index(all_letters, 4)
-any(s_all_letters)'II' + any(all_letters) > index(s_all_letters, 1)'II' index(all_letters, 4)
-any(s_all_letters)'Ii' + any(all_letters) > index(s_all_letters, 1)'Ii' index(all_letters, 4)
-any(s_all_letters)'iI' + any(all_letters) > index(s_all_letters, 1)'iI' index(all_letters, 4)
-any(s_all_letters)'aa' + any(all_letters) > index(s_all_letters, 1)'aa' index(all_letters, 4)
-any(s_all_letters)'AA' + any(all_letters) > index(s_all_letters, 1)'AA' index(all_letters, 4)
-any(s_all_letters)'Aa' + any(all_letters) > index(s_all_letters, 1)'Aa' index(all_letters, 4)
-any(s_all_letters)'aA' + any(all_letters) > index(s_all_letters, 1)'aA' index(all_letters, 4)
+any(s_all_letters) 'ae' + any(all_letters) > index(s_all_letters, 1) 'ae' index(all_letters, 4)
+any(s_all_letters) 'ea' + any(all_letters) > index(s_all_letters, 1) 'ea' index(all_letters, 4)
+any(s_all_letters) 'ee' + any(all_letters) > index(s_all_letters, 1) 'ee' index(all_letters, 4)
+any(s_all_letters) 'ou' + any(all_letters) > index(s_all_letters, 1) 'ou' index(all_letters, 4)
+any(s_all_letters) 'AE' + any(all_letters) > index(s_all_letters, 1) 'AE' index(all_letters, 4)
+any(s_all_letters) 'EA' + any(all_letters) > index(s_all_letters, 1) 'EA' index(all_letters, 4)
+any(s_all_letters) 'EE' + any(all_letters) > index(s_all_letters, 1) 'EE' index(all_letters, 4)
+any(s_all_letters) 'OU' + any(all_letters) > index(s_all_letters, 1) 'OU' index(all_letters, 4)
+any(s_all_letters) 'Ae' + any(all_letters) > index(s_all_letters, 1) 'Ae' index(all_letters, 4)
+any(s_all_letters) 'Ea' + any(all_letters) > index(s_all_letters, 1) 'Ea' index(all_letters, 4)
+any(s_all_letters) 'Ee' + any(all_letters) > index(s_all_letters, 1) 'Ee' index(all_letters, 4)
+any(s_all_letters) 'Ou' + any(all_letters) > index(s_all_letters, 1) 'Ou' index(all_letters, 4)
+any(s_all_letters) 'aE' + any(all_letters) > index(s_all_letters, 1) 'aE' index(all_letters, 4)
+any(s_all_letters) 'eA' + any(all_letters) > index(s_all_letters, 1) 'eA' index(all_letters, 4)
+any(s_all_letters) 'eE' + any(all_letters) > index(s_all_letters, 1) 'eE' index(all_letters, 4)
+any(s_all_letters) 'oU' + any(all_letters) > index(s_all_letters, 1) 'oU' index(all_letters, 4)
+any(s_all_letters) 'ii' + any(all_letters) > index(s_all_letters, 1) 'ii' index(all_letters, 4)
+any(s_all_letters) 'II' + any(all_letters) > index(s_all_letters, 1) 'II' index(all_letters, 4)
+any(s_all_letters) 'Ii' + any(all_letters) > index(s_all_letters, 1) 'Ii' index(all_letters, 4)
+any(s_all_letters) 'iI' + any(all_letters) > index(s_all_letters, 1) 'iI' index(all_letters, 4)
+any(s_all_letters) 'aa' + any(all_letters) > index(s_all_letters, 1) 'aa' index(all_letters, 4)
+any(s_all_letters) 'AA' + any(all_letters) > index(s_all_letters, 1) 'AA' index(all_letters, 4)
+any(s_all_letters) 'Aa' + any(all_letters) > index(s_all_letters, 1) 'Aa' index(all_letters, 4)
+any(s_all_letters) 'aA' + any(all_letters) > index(s_all_letters, 1) 'aA' index(all_letters, 4)
 
 any(viet_vowels) any(consonants) any(vowels) + any(all_letters) > index(viet_vowels, 1) index(consonants, 2) index(vowels, 3) index(all_letters, 4)
 any(viet_vowels) any(consonants) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(viet_vowels, 1) index(consonants, 2) index(s_all_letters, 3) index(s_no_d_letters, 4) index (all_letters, 5)
@@ -4959,32 +5078,32 @@ any(consonants) any(un_second_consonants) any(s_no_d_letters) + any(all_letters)
 any(consonants) any(un_second_consonants) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
 any(consonants) any(un_second_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
 
-any(un_T_consonants)'r' + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3)
-any(un_T_consonants)'R' + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3)
-any(un_T_consonants)'r'any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_T_consonants)'r'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_T_consonants)'r'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_T_consonants)'r'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
-any(un_T_consonants)'R'any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_T_consonants)'R'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_T_consonants)'R'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_T_consonants)'R'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
-any(un_s_consonants)'l'any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'l' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_s_consonants)'l'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'l' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_s_consonants)'l'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'l' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_s_consonants)'l'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'l' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
-any(un_s_consonants)'L'any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'L' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_s_consonants)'L'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'L' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_s_consonants)'L'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'L' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_s_consonants)'L'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1)'L' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
-any(un_kg_consonants)'w'any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_kg_consonants)'w'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_kg_consonants)'w'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_kg_consonants)'w'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
-any(un_kg_consonants)'W'any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(s_no_d_letters, 3) index(all_letters, 4)
-any(un_kg_consonants)'W'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
-any(un_kg_consonants)'W'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
-any(un_kg_consonants)'W'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_T_consonants) 'r' + any(all_letters) > index(un_T_consonants, 1) 'r' index(all_letters, 3)
+any(un_T_consonants) 'R' + any(all_letters) > index(un_T_consonants, 1) 'R' index(all_letters, 3)
+any(un_T_consonants) 'r'any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'r' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_T_consonants) 'r'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'r' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_T_consonants) 'r'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'r' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_T_consonants) 'r'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'r' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_T_consonants) 'R'any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'R' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_T_consonants) 'R'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'R' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_T_consonants) 'R'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'R' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_T_consonants) 'R'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_T_consonants, 1) 'R' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_s_consonants) 'l'any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'l' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_s_consonants) 'l'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'l' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_s_consonants) 'l'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'l' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_s_consonants) 'l'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'l' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_s_consonants) 'L'any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'L' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_s_consonants) 'L'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'L' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_s_consonants) 'L'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'L' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_s_consonants) 'L'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_s_consonants, 1) 'L' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_kg_consonants) 'w'any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'w' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_kg_consonants) 'w'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'w' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_kg_consonants) 'w'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'w' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_kg_consonants) 'w'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'w' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
+any(un_kg_consonants) 'W'any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'W' index(s_no_d_letters, 3) index(all_letters, 4)
+any(un_kg_consonants) 'W'any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'W' index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
+any(un_kg_consonants) 'W'any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'W' index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
+any(un_kg_consonants) 'W'any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > index(un_kg_consonants, 1) 'W' index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
 'j'+ any(all_letters) > 'j' index(all_letters, 2)
 'J'+ any(all_letters) > 'J' index(all_letters, 2)
 'j'any(s_no_d_letters) + any(all_letters) > 'j' index(s_no_d_letters, 2) index(all_letters, 3)
@@ -5124,32 +5243,32 @@ any(consonants) any(un_second_consonants) + any(punctuation) > index(consonants,
 any(consonants) any(un_second_consonants) any(all_letters) + any(punctuation) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(punctuation, 4)
 any(consonants) any(un_second_consonants) any(all_letters) any(all_letters) + any(punctuation) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
 any(consonants) any(un_second_consonants) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_T_consonants)'r' + any(punctuation) > index(un_T_consonants, 1)'r' index(punctuation, 3)	
-any(un_T_consonants)'R' + any(punctuation) > index(un_T_consonants, 1)'R' index(punctuation, 3)	
-any(un_T_consonants)'r'any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(punctuation, 4)
-any(un_T_consonants)'r'any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_T_consonants)'r'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_T_consonants)'r'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
-any(un_T_consonants)'R'any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(punctuation, 4)
-any(un_T_consonants)'R'any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_T_consonants)'R'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_T_consonants)'R'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
-any(un_s_consonants)'l'any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'l' index(all_letters, 3) index(punctuation, 4)
-any(un_s_consonants)'l'any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_s_consonants)'l'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_s_consonants)'l'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
-any(un_s_consonants)'L'any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'L' index(all_letters, 3) index(punctuation, 4)
-any(un_s_consonants)'L'any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_s_consonants)'L'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_s_consonants)'L'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
-any(un_kg_consonants)'w'any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(punctuation, 4)
-any(un_kg_consonants)'w'any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_kg_consonants)'w'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_kg_consonants)'w'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
-any(un_kg_consonants)'W'any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(punctuation, 4)
-any(un_kg_consonants)'W'any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
-any(un_kg_consonants)'W'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
-any(un_kg_consonants)'W'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_T_consonants) 'r' + any(punctuation) > index(un_T_consonants, 1) 'r' index(punctuation, 3)	
+any(un_T_consonants) 'R' + any(punctuation) > index(un_T_consonants, 1) 'R' index(punctuation, 3)	
+any(un_T_consonants) 'r'any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'r' index(all_letters, 3) index(punctuation, 4)
+any(un_T_consonants) 'r'any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'r' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_T_consonants) 'r'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_T_consonants) 'r'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_T_consonants) 'R'any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'R' index(all_letters, 3) index(punctuation, 4)
+any(un_T_consonants) 'R'any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'R' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_T_consonants) 'R'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_T_consonants) 'R'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_T_consonants, 1) 'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_s_consonants) 'l'any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'l' index(all_letters, 3) index(punctuation, 4)
+any(un_s_consonants) 'l'any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'l' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_s_consonants) 'l'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_s_consonants) 'l'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_s_consonants) 'L'any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'L' index(all_letters, 3) index(punctuation, 4)
+any(un_s_consonants) 'L'any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'L' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_s_consonants) 'L'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_s_consonants) 'L'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_s_consonants, 1) 'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_kg_consonants) 'w'any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'w' index(all_letters, 3) index(punctuation, 4)
+any(un_kg_consonants) 'w'any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'w' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_kg_consonants) 'w'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_kg_consonants) 'w'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
+any(un_kg_consonants) 'W'any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'W' index(all_letters, 3) index(punctuation, 4)
+any(un_kg_consonants) 'W'any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'W' index(all_letters, 3) index(all_letters, 4) index(punctuation, 5)
+any(un_kg_consonants) 'W'any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(punctuation, 6)
+any(un_kg_consonants) 'W'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > index(un_kg_consonants, 1) 'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(punctuation, 7)
 'j'+ any(punctuation) > 'j' index(punctuation, 2)	
 'j'any(all_letters) + any(punctuation) > 'j' index(all_letters, 2)index(punctuation, 3)	
 'j'any(all_letters)any(all_letters) + any(punctuation) > 'j' index(all_letters, 2)index(all_letters, 3)index(punctuation, 4)
@@ -5229,16 +5348,16 @@ any(eioyw) 'Y' any(all_letters) + any(punctuation) > index(eioyw, 1) 'Y' index(a
 'ư'dk(u) any(e_1)any(all_letters) any(no_d_letters) + any(all_letters) > 'ư'dk(u) index(e_1, 3)index(all_letters, 4)index(no_d_letters, 5)index(all_letters, 6)
 'Ư'dk(u) any(e_1)any(all_letters) any(no_d_letters) + any(all_letters) > 'Ư'dk(u) index(e_1, 3) index(all_letters, 4)index(no_d_letters, 5)index(all_letters, 6)
 
-any(un_viet_letters)any(aeiy)'n' + 'n' > index(un_viet_letters, 1) index(aeiy, 2) 'nn'
+any(un_viet_letters)any(aeiy) 'n' + 'n' > index(un_viet_letters, 1) index(aeiy, 2) 'nn'
 
-any(all_letters)'d' + 'w' > index(all_letters, 1) 'dw'
-any(all_letters)'d' + 'W' > index(all_letters, 1) 'dW'
-any(all_letters)'D' + 'w' > index(all_letters, 1) 'Dw'
-any(all_letters)'D' + 'W' > index(all_letters, 1) 'DW'
+any(all_letters) 'd' + 'w' > index(all_letters, 1) 'dw'
+any(all_letters) 'd' + 'W' > index(all_letters, 1) 'dW'
+any(all_letters) 'D' + 'w' > index(all_letters, 1) 'Dw'
+any(all_letters) 'D' + 'W' > index(all_letters, 1) 'DW'
 any(aa) any(iuo) + 'w' > index(aa, 1) index(iuo, 2) 'w'
 any(aa) any(iuo) + 'W' > index(aa, 1) index(iuo, 2) 'W'
 
-any(un_ii_letters)'i' + 'i' > index(un_ii_letters, 1)'ii'
+any(un_ii_letters) 'i' + 'i' > index(un_ii_letters, 1) 'ii'
 
 any(consonants) any(mn) any(s_all_letters) + any(sfrxj) > index(consonants, 1) index(mn, 2) index(s_all_letters, 3) index(sfrxj, 4)
 any(consonants) any(mn) any(s_all_letters)any(s_all_letters) + any(sfrxj) > index(consonants, 1) index(mn, 2) index(s_all_letters, 3)index(s_all_letters, 4) index(sfrxj, 5)
@@ -5253,10 +5372,10 @@ any(consonants_not_for_l) any(l) any(s_all_letters)any(s_all_letters) + any(sfrx
 any(consonants_not_for_l) any(l) any(s_all_letters)any(s_all_letters)any(s_all_letters) + any(sfrxj) > index(consonants_not_for_l, 1) index(l, 2) index(s_all_letters, 3)index(s_all_letters, 4) index(s_all_letters, 5) index(sfrxj, 6)
 any(consonants_not_for_l) any(l) any(s_all_letters)any(s_all_letters)any(s_all_letters)any(s_all_letters) + any(sfrxj) > index(consonants_not_for_l, 1) index(l, 2) index(s_all_letters, 3)index(s_all_letters, 4) index(s_all_letters, 5) index(s_all_letters, 6) index(sfrxj, 7)
 
-any(ae)'o' + 'o' > index(ae, 1)'oo'
-any(ae)'o' + 'O' > index(ae, 1)'oO'
-any(ae)'O' + 'o' > index(ae, 1)'Oo'
-any(ae)'O' + 'O' > index(ae, 1)'OO'
+any(ae) 'o' + 'o' > index(ae, 1) 'oo'
+any(ae) 'o' + 'O' > index(ae, 1) 'oO'
+any(ae) 'O' + 'o' > index(ae, 1) 'Oo'
+any(ae) 'O' + 'O' > index(ae, 1) 'OO'
 'ung' + 'w' > 'ưng'
 'um' + 'w' > 'ưm'
 'un' + 'w' > 'ưn'
@@ -5772,21 +5891,23 @@ any(vowels) any(ys) + any(end_consonants) > index(vowels, 1) index(ys, 2) index(
 "‘" + [ALT K_QUOTE] > "‘’"
 "“" + [ALT SHIFT K_QUOTE] > "“”"
 
-any(no_space_punctuation) + [ALT K_QUOTE] > index(no_space_punctuation, 1)'’'
-any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1)'’'
-any(vowels_sac) + [ALT K_QUOTE] > index(vowels_sac, 1)'’'
-any(vowels_hoi) + [ALT K_QUOTE] > index(vowels_hoi, 1)'’'
-any(vowels_huyen) + [ALT K_QUOTE] > index(vowels_huyen, 1)'’'
-any(vowels_nga) + [ALT K_QUOTE] > index(vowels_nga, 1)'’'
-any(vowels_nang) + [ALT K_QUOTE] > index(vowels_nang, 1)'’'
+any(no_space_punctuation) + [ALT K_QUOTE] > index(no_space_punctuation, 1) '’'
+any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1) '’'
+any(viet_letters) + [ALT K_QUOTE] > index(viet_letters, 1) '’'
+any(vowels_sac) + [ALT K_QUOTE] > index(vowels_sac, 1) '’'
+any(vowels_hoi) + [ALT K_QUOTE] > index(vowels_hoi, 1) '’'
+any(vowels_huyen) + [ALT K_QUOTE] > index(vowels_huyen, 1) '’'
+any(vowels_nga) + [ALT K_QUOTE] > index(vowels_nga, 1) '’'
+any(vowels_nang) + [ALT K_QUOTE] > index(vowels_nang, 1) '’'
 
-any(no_space_punctuation) + [ALT SHIFT K_QUOTE] > index(no_space_punctuation, 1)'”'
-any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1)'”'
-any(vowels_sac) + [ALT SHIFT K_QUOTE] > index(vowels_sac, 1)'”'
-any(vowels_hoi) + [ALT SHIFT K_QUOTE] > index(vowels_hoi, 1)'”'
-any(vowels_huyen) + [ALT SHIFT K_QUOTE] > index(vowels_huyen, 1)'”'
-any(vowels_nang) + [ALT SHIFT K_QUOTE] > index(vowels_nang, 1)'”'
-any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1)'”'
+any(no_space_punctuation) + [ALT SHIFT K_QUOTE] > index(no_space_punctuation, 1) '”'
+any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1) '”'
+any(viet_letters) + [ALT SHIFT K_QUOTE] > index(viet_letters, 1) '”'
+any(vowels_sac) + [ALT SHIFT K_QUOTE] > index(vowels_sac, 1) '”'
+any(vowels_hoi) + [ALT SHIFT K_QUOTE] > index(vowels_hoi, 1) '”'
+any(vowels_huyen) + [ALT SHIFT K_QUOTE] > index(vowels_huyen, 1) '”'
+any(vowels_nang) + [ALT SHIFT K_QUOTE] > index(vowels_nang, 1) '”'
+any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1) '”'
 
 "ḿ" + [ALT K_QUOTE] > "ḿ’"
 "m̀" + [ALT K_QUOTE] > "m̀’"
@@ -5829,7 +5950,7 @@ any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1)'”'
 "N̉" + [ALT SHIFT K_QUOTE] > "N̉”"
 "Ṇ" + [ALT SHIFT K_QUOTE] > "Ṇ”"
 
-'i' + 'i' > 'iê'
+any(ie_consonants) 'i' + 'i' > index(ie_consonants, 1) 'iê'
 'iê' + 'i' > 'ii'
 
 
@@ -5932,8 +6053,8 @@ any(e) 'NH' + any(punctuation) > index(ee, 1) 'NH' index(punctuation, 4)
 'ƯU' + 'w' > 'UUw'
 'ƯU' + 'W' > 'UUW'
 
-any(a) + 'o' > index(aa, 1)'o'
-any(a) + 'O' > index(aa, 1)'O'
+any(a) + 'o' > index(aa, 1) 'o'
+any(a) + 'O' > index(aa, 1) 'O'
 
 'qú' + any(vowel) >'qu'index(vowel_sac, 3)
 'qù' + any(vowel) >'qu'index(vowel_huyen, 3)
@@ -6349,11 +6470,11 @@ any(aa) + 'A' > index(a, 1)
 'D'any(viet_vowels) any(viet_vowels) 'NH' + 'D' > 'Đ'index(viet_vowels, 2) index(viet_vowels, 3) 'NH'
 'D'any(viet_vowels) any(viet_vowels) 'CH' + 'D' > 'Đ'index(viet_vowels, 2) index(viet_vowels, 3) 'CH'
 
-'đ'any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2)'d'
-'đ'any(viet_vowels) any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3)'d'
-'đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4)'d'
-'đ'any(viet_vowels) any(end_consonants) + 'd' > 'd'index(viet_vowels, 2) index(end_consonants, 3)'d'
-'đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4)'d'
+'đ'any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2) 'd'
+'đ'any(viet_vowels) any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) 'd'
+'đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4) 'd'
+'đ'any(viet_vowels) any(end_consonants) + 'd' > 'd'index(viet_vowels, 2) index(end_consonants, 3) 'd'
+'đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4) 'd'
 'đ'any(viet_vowels) 'ng' + 'd' > 'd'index(viet_vowels, 2) 'ngd'
 'đ'any(viet_vowels) 'nh' + 'd' > 'd'index(viet_vowels, 2) 'nhd'
 'đ'any(viet_vowels) 'ch' + 'd' > 'd'index(viet_vowels, 2) 'chd'
@@ -6361,11 +6482,11 @@ any(aa) + 'A' > index(a, 1)
 'đ'any(viet_vowels) any(viet_vowels) 'nh' + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) 'nhd'
 'đ'any(viet_vowels) any(viet_vowels) 'ch' + 'd' > 'd'index(viet_vowels, 2) index(viet_vowels, 3) 'chd'
 
-'Đ'any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2)'d'
-'Đ'any(viet_vowels) any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3)'d'
-'Đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4)'d'
-'Đ'any(viet_vowels) any(end_consonants) + 'd' > 'D'index(viet_vowels, 2) index(end_consonants, 3)'d'
-'Đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4)'d'
+'Đ'any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2) 'd'
+'Đ'any(viet_vowels) any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'd'
+'Đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4) 'd'
+'Đ'any(viet_vowels) any(end_consonants) + 'd' > 'D'index(viet_vowels, 2) index(end_consonants, 3) 'd'
+'Đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4) 'd'
 'Đ'any(viet_vowels) 'ng' + 'd' > 'D'index(viet_vowels, 2) 'ngd'
 'Đ'any(viet_vowels) 'nh' + 'd' > 'D'index(viet_vowels, 2) 'nhd'
 'Đ'any(viet_vowels) 'ch' + 'd' > 'D'index(viet_vowels, 2) 'chd'
@@ -6373,11 +6494,11 @@ any(aa) + 'A' > index(a, 1)
 'Đ'any(viet_vowels) any(viet_vowels) 'nh' + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'nhd'
 'Đ'any(viet_vowels) any(viet_vowels) 'ch' + 'd' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'chd'
 
-'Đ'any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2)'D'
-'Đ'any(viet_vowels) any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3)'D'
-'Đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4)'D'
-'Đ'any(viet_vowels) any(end_consonants) + 'D' > 'D'index(viet_vowels, 2) index(end_consonants, 3)'D'
-'Đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4)'D'
+'Đ'any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2) 'D'
+'Đ'any(viet_vowels) any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'D'
+'Đ'any(viet_vowels) any(viet_vowels) any(viet_vowels) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(viet_vowels, 4) 'D'
+'Đ'any(viet_vowels) any(end_consonants) + 'D' > 'D'index(viet_vowels, 2) index(end_consonants, 3) 'D'
+'Đ'any(viet_vowels) any(viet_vowels) any(end_consonants) + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) index(end_consonants, 4) 'D'
 'Đ'any(viet_vowels) 'ng' + 'D' > 'D'index(viet_vowels, 2) 'ngD'
 'Đ'any(viet_vowels) 'nh' + 'D' > 'D'index(viet_vowels, 2) 'nhD'
 'Đ'any(viet_vowels) 'ch' + 'D' > 'D'index(viet_vowels, 2) 'chD'
@@ -6398,9 +6519,9 @@ any(aa) + 'A' > index(a, 1)
 'Đ'any(viet_vowels) any(viet_vowels) 'NH' + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'NHD'
 'Đ'any(viet_vowels) any(viet_vowels) 'CH' + 'D' > 'D'index(viet_vowels, 2) index(viet_vowels, 3) 'CHD'
 
-any(low_i)'e' + any(ie_end) > 'i' index(low_e, 1) index(ie_end, 3)
-any(upper_i)'e' + any(ie_end) > 'I' index(low_e, 1) index(ie_end, 3)
-any(upper_i)'E' + any(ie_end) > 'I' index(upper_e, 1) index(ie_end, 3)
+any(low_i) 'e' + any(ie_end) > 'i' index(low_e, 1) index(ie_end, 3)
+any(upper_i) 'e' + any(ie_end) > 'I' index(low_e, 1) index(ie_end, 3)
+any(upper_i) 'E' + any(ie_end) > 'I' index(upper_e, 1) index(ie_end, 3)
 
 'ie' + 's' > 'íe'
 'ie' + 'f' > 'ìe'
@@ -7120,22 +7241,22 @@ any(consonants)"uynh" + "n" > index(consonants, 1)"uynn"
 
 'ươ' + 'w' > 'uow'
 
-any(a)'o' + 'w' > index(a, 1)'ow'
-any(a)'O' + 'w' > index(a, 1)'Ow'
-any(a)'O' + 'W' > index(a, 1)'OW'
-any(a)'o' + 'W' > index(a, 1)'oW'
-any(aa)'o' + 'w' > index(aa, 1)'ow'
-any(aa)'O' + 'w' > index(aa, 1)'Ow'
-any(aa)'O' + 'W' > index(aa, 1)'OW'
-any(aa)'o' + 'W' > index(aa, 1)'oW'
-any(e)'o' + 'w' > index(e, 1)'ow'
-any(e)'O' + 'w' > index(e, 1)'Ow'
-any(e)'O' + 'W' > index(e, 1)'OW'
-any(e)'o' + 'W' > index(e, 1)'oW'
-any(ee)'o' + 'w' > index(ee, 1)'ow'
-any(ee)'O' + 'w' > index(ee, 1)'Ow'
-any(ee)'O' + 'W' > index(ee, 1)'OW'
-any(ee)'o' + 'W' > index(ee, 1)'oW'
+any(a) 'o' + 'w' > index(a, 1) 'ow'
+any(a) 'O' + 'w' > index(a, 1) 'Ow'
+any(a) 'O' + 'W' > index(a, 1) 'OW'
+any(a) 'o' + 'W' > index(a, 1) 'oW'
+any(aa) 'o' + 'w' > index(aa, 1) 'ow'
+any(aa) 'O' + 'w' > index(aa, 1) 'Ow'
+any(aa) 'O' + 'W' > index(aa, 1) 'OW'
+any(aa) 'o' + 'W' > index(aa, 1) 'oW'
+any(e) 'o' + 'w' > index(e, 1) 'ow'
+any(e) 'O' + 'w' > index(e, 1) 'Ow'
+any(e) 'O' + 'W' > index(e, 1) 'OW'
+any(e) 'o' + 'W' > index(e, 1) 'oW'
+any(ee) 'o' + 'w' > index(ee, 1) 'ow'
+any(ee) 'O' + 'w' > index(ee, 1) 'Ow'
+any(ee) 'O' + 'W' > index(ee, 1) 'OW'
+any(ee) 'o' + 'W' > index(ee, 1) 'oW'
 
 any(aeiouy) any(rgysdfhklzxvb) + 'w' > index(aeiouy, 1) index(rgysdfhklzxvb, 2) 'w'
 any(aeiouy) any(rgysdfhklzxvb) + 'W' > index(aeiouy, 1) index(rgysdfhklzxvb, 2) 'W'
@@ -7165,8 +7286,8 @@ any(eioy) 'nG' + 'W' > index(eioy, 1) 'nGW'
 any(eioy) 'Ng' + 'w' > index(eioy, 1) 'Ngw'
 any(eioy) 'Ng' + 'W' > index(eioy, 1) 'NgW'
 
-any(eiy) any(consonants) + 'w' > index(eiy, 1) index(consonants, 2)'w'
-any(eiy) any(consonants) + 'W' > index(eiy, 1) index(consonants, 2)'W'
+any(eiy) any(consonants) + 'w' > index(eiy, 1) index(consonants, 2) 'w'
+any(eiy) any(consonants) + 'W' > index(eiy, 1) index(consonants, 2) 'W'
 
 'i' any(e_v) any(ie_end) + any(punctuation) > 'i' index(ee_v, 2) index(ie_end, 3) index(punctuation, 4)
 'I' any(e_v) any(ie_end) + any(punctuation) > 'I' index(ee_v, 2) index(ie_end, 3) index(punctuation, 4)
@@ -7426,29 +7547,29 @@ any(uw) any(end_consonants) + 'W' > index(u, 1) index(end_consonants, 2) 'W'
 'Ữ' any(ai) + 'X' > 'Ư' index(ai, 2) 'X'
 'Ự' any(ai) + 'J' > 'Ư' index(ai, 2) 'J'
 
-'ư'dk(u) 'a' + any(low_sfrxj) > index(low_uw_v, 4)'a'
-'ư'dk(u) 'a' + any(upper_sfrxj) > index(low_uw_v, 4)'a'
-'Ư'dk(u) 'a' + any(low_sfrxj) > index(upper_uw_v, 4)'a'
-'Ư'dk(u) 'a' + any(upper_sfrxj) > index(upper_uw_v, 4)'a'
-'Ư'dk(u) 'A' + any(low_sfrxj) > index(upper_uw_v, 4)'A'
-'Ư'dk(u) 'A' + any(upper_sfrxj) > index(upper_uw_v, 4)'A'
-'ư'dk(u) 'i' + any(low_sfrxj) > index(low_uw_v, 4)'i'
-'ư'dk(u) 'i' + any(upper_sfrxj) > index(low_uw_v, 4)'i'
-'Ư'dk(u) 'i' + any(low_sfrxj) > index(upper_uw_v, 4)'i'
-'Ư'dk(u) 'i' + any(upper_sfrxj) > index(upper_uw_v, 4)'i'
-'Ư'dk(u) 'I' + any(low_sfrxj) > index(upper_uw_v, 4)'I'
-'Ư'dk(u) 'I' + any(upper_sfrxj) > index(upper_uw_v, 4)'I'
-'ưi' + any(low_sfrxj) > index(low_uw_v, 3)'i'
-'ưi' + any(upper_sfrxj) > index(low_uw_v, 3)'i'
-'Ưi' + any(low_sfrxj) > index(upper_uw_v, 3)'i'
-'Ưi' + any(upper_sfrxj) > index(upper_uw_v, 3)'i'
-'ƯI' + any(low_sfrxj) > index(upper_uw_v, 3)'I'
-'ƯI' + any(upper_sfrxj) > index(upper_uw_v, 3)'I'
+'ư'dk(u) 'a' + any(low_sfrxj) > index(low_uw_v, 4) 'a'
+'ư'dk(u) 'a' + any(upper_sfrxj) > index(low_uw_v, 4) 'a'
+'Ư'dk(u) 'a' + any(low_sfrxj) > index(upper_uw_v, 4) 'a'
+'Ư'dk(u) 'a' + any(upper_sfrxj) > index(upper_uw_v, 4) 'a'
+'Ư'dk(u) 'A' + any(low_sfrxj) > index(upper_uw_v, 4) 'A'
+'Ư'dk(u) 'A' + any(upper_sfrxj) > index(upper_uw_v, 4) 'A'
+'ư'dk(u) 'i' + any(low_sfrxj) > index(low_uw_v, 4) 'i'
+'ư'dk(u) 'i' + any(upper_sfrxj) > index(low_uw_v, 4) 'i'
+'Ư'dk(u) 'i' + any(low_sfrxj) > index(upper_uw_v, 4) 'i'
+'Ư'dk(u) 'i' + any(upper_sfrxj) > index(upper_uw_v, 4) 'i'
+'Ư'dk(u) 'I' + any(low_sfrxj) > index(upper_uw_v, 4) 'I'
+'Ư'dk(u) 'I' + any(upper_sfrxj) > index(upper_uw_v, 4) 'I'
+'ưi' + any(low_sfrxj) > index(low_uw_v, 3) 'i'
+'ưi' + any(upper_sfrxj) > index(low_uw_v, 3) 'i'
+'Ưi' + any(low_sfrxj) > index(upper_uw_v, 3) 'i'
+'Ưi' + any(upper_sfrxj) > index(upper_uw_v, 3) 'i'
+'ƯI' + any(low_sfrxj) > index(upper_uw_v, 3) 'I'
+'ƯI' + any(upper_sfrxj) > index(upper_uw_v, 3) 'I'
 
-any(u) 'i' + 'w' > index(uw, 1)'i'
-any(u) 'i' + 'W' > index(uw, 1)'i'
-any(u) 'I' + 'w' > index(uw, 1)'i'
-any(u) 'I' + 'W' > index(uw, 1)'i'
+any(u) 'i' + 'w' > index(uw, 1) 'i'
+any(u) 'i' + 'W' > index(uw, 1) 'i'
+any(u) 'I' + 'w' > index(uw, 1) 'i'
+any(u) 'I' + 'W' > index(uw, 1) 'i'
 
 any(uw) any(ai) + 'w' > index(u, 1) index(ai, 2) 'w'
 any(uw) any(ai) + 'W' > index(u, 1) index(ai, 2) 'W'
@@ -7608,9 +7729,9 @@ any(aeiou) 'I' any(aeiouy) + any(punctuation) > index(aeiou, 1) 'I' index(aeiouy
 'ư' dk(u) any(o) + any(uo_end) > 'ư' index(ow, 3)index(uo_end, 4)
 'Ư' dk(u) any(o) + any(uo_end) > 'Ư' index(ow, 3)index(uo_end, 4)
 
-'u'any(o_v)'u' + any(punctuation) > 'ư' index(ow_v, 2) 'u' index(punctuation, 4)
-'U'any(o_v)'u' + any(punctuation) > 'Ư' index(ow_v, 2) 'u' index(punctuation, 4)
-'U'any(o_v)'U' + any(punctuation) > 'Ư' index(ow_v, 2) 'U' index(punctuation, 4)
+'u'any(o_v) 'u' + any(punctuation) > 'ư' index(ow_v, 2) 'u' index(punctuation, 4)
+'U'any(o_v) 'u' + any(punctuation) > 'Ư' index(ow_v, 2) 'u' index(punctuation, 4)
+'U'any(o_v) 'U' + any(punctuation) > 'Ư' index(ow_v, 2) 'U' index(punctuation, 4)
 
 any(aw) any(end_consonants) + 'w' > index(aa, 1) index(end_consonants, 2) 'w'
 any(aw) any(end_consonants) + 'W' > index(aa, 1) index(end_consonants, 2) 'W'
@@ -7641,10 +7762,10 @@ any(ow) + 'o' > index(oo, 1)
 any(ow) + 'O' > index(oo, 1)
 any(ow) any(ptcmni) + 'o' > index(oo, 1) index(ptcmni, 2)
 any(ow) any(ptcmni) + 'O' > index(oo, 1) index(ptcmni, 2)
-any(ow)'ng' + 'o' > index(oo, 1) 'ng'
-any(ow)'ng' + 'O' > index(oo, 1) 'ng'
-any(ow)'NG' + 'o' > index(oo, 1) 'NG'
-any(ow)'NG' + 'O' > index(oo, 1) 'NG'
+any(ow) 'ng' + 'o' > index(oo, 1) 'ng'
+any(ow) 'ng' + 'O' > index(oo, 1) 'ng'
+any(ow) 'NG' + 'o' > index(oo, 1) 'NG'
+any(ow) 'NG' + 'O' > index(oo, 1) 'NG'
 'ư'any(ow) + 'o' > 'u'index(oo, 2)
 'ư'any(ow) + 'O' > 'u'index(oo, 2) 
 'ư'any(ow) any(ptcmni) + 'o' > 'u'index(oo, 2) index(ptcmni, 3)
@@ -7660,10 +7781,10 @@ any(oo) + 'w' > index(ow, 1)
 any(oo) + 'W' > index(ow, 1)
 any(oo) any(ptcmni) + 'w' > index(ow, 1) index(ptcmni, 2)
 any(oo) any(ptcmni) + 'W' > index(ow, 1) index(ptcmni, 2)
-any(oo)'ng' + 'w' > index(ow, 1) 'ng'
-any(oo)'ng' + 'W' > index(ow, 1) 'ng'
-any(oo)'NG' + 'w' > index(ow, 1) 'NG'
-any(oo)'NG' + 'W' > index(ow, 1) 'NG'
+any(oo) 'ng' + 'w' > index(ow, 1) 'ng'
+any(oo) 'ng' + 'W' > index(ow, 1) 'ng'
+any(oo) 'NG' + 'w' > index(ow, 1) 'NG'
+any(oo) 'NG' + 'W' > index(ow, 1) 'NG'
 'u'any(oo) + 'w' > 'ư'index(ow, 2)
 'u'any(oo) + 'W' > 'ư'index(ow, 2) 
 'u'any(oo) any(ptcmni) + 'w' > 'ư'index(ow, 2) index(ptcmni, 3)
@@ -7679,10 +7800,10 @@ any(aw) + 'a' > index(a, 1)
 any(aw) + 'A' > index(a, 1)
 any(aw) any(ptcmni) + 'a' > index(a, 1) index(ptcmni, 2)
 any(aw) any(ptcmni) + 'A' > index(a, 1) index(ptcmni, 2)
-any(aw)'ng' + 'a' > index(a, 1) 'ng'
-any(aw)'ng' + 'A' > index(a, 1) 'ng'
-any(aw)'NG' + 'a' > index(a, 1) 'NG'
-any(aw)'NG' + 'A' > index(a, 1) 'NG'
+any(aw) 'ng' + 'a' > index(a, 1) 'ng'
+any(aw) 'ng' + 'A' > index(a, 1) 'ng'
+any(aw) 'NG' + 'a' > index(a, 1) 'NG'
+any(aw) 'NG' + 'A' > index(a, 1) 'NG'
 
 any(low_uw) 'a' + 'a' > 'u'index(low_aa, 1)
 any(low_uw) 'a' + 'A' > 'u'index(low_aa, 1) 
@@ -7699,12 +7820,12 @@ any(upper_uw) 'A' + 'A' > 'U'index(upper_aa, 1)
 'U' any(low_aa) + 'W' > index(upper_uw, 2) 'a'
 'U' any(upper_aa) + 'w' > index(upper_uw, 2) 'a'
 'U' any(upper_aa) + 'W' > index(upper_uw, 2) 'a'
-'ư'dk(u) 'ng' + any(low_sfrxj) > index(low_uw_v, 5)'ng'
-'Ư'dk(u) 'ng' + any(low_sfrxj) > index(upper_uw_v, 5)'ng'
-'ư'dk(u) 'ng' + any(upper_sfrxj) > index(low_uw_v, 5)'ng'
-'Ư'dk(u) 'ng' + any(upper_sfrxj) > index(upper_uw_v, 5)'ng'
-'Ư'dk(u) 'NG' + any(low_sfrxj) > index(low_uw_v, 5)'NG'
-'Ư'dk(u) 'NG' + any(upper_sfrxj) > index(upper_uw_v, 5)'NG'
+'ư'dk(u) 'ng' + any(low_sfrxj) > index(low_uw_v, 5) 'ng'
+'Ư'dk(u) 'ng' + any(low_sfrxj) > index(upper_uw_v, 5) 'ng'
+'ư'dk(u) 'ng' + any(upper_sfrxj) > index(low_uw_v, 5) 'ng'
+'Ư'dk(u) 'ng' + any(upper_sfrxj) > index(upper_uw_v, 5) 'ng'
+'Ư'dk(u) 'NG' + any(low_sfrxj) > index(low_uw_v, 5) 'NG'
+'Ư'dk(u) 'NG' + any(upper_sfrxj) > index(upper_uw_v, 5) 'NG'
 
 'ớ' any(ptc) + 'j' > 'ợ'index(ptc, 2)
 'ớ' any(ptc) + 'J' > 'ợ'index(ptc, 2)
@@ -7918,7 +8039,7 @@ any(no_y_vowels_nang) any(ptck) + 'J' > index(no_y_vowels, 1) index(ptck, 2) 'J'
 'Ũy' + 'x' > 'Uyx'
 'Ụy' + 'j' > 'Uyj'
 
-'Ay' + any(low_sfrxj) > index(upper_a_v, 3)'y'
+'Ay' + any(low_sfrxj) > index(upper_a_v, 3) 'y'
 
 'ày' + 's' > 'áy'
 'ảy' + 's' > 'áy'
@@ -8329,10 +8450,10 @@ any(no_y_vowels_nang) any(ptck) + 'J' > index(no_y_vowels, 1) index(ptck, 2) 'J'
 'Aa' any(all_letters)any(no_d_letters) + any(all_letters) > 'Aa' index(all_letters, 3) index(no_d_letters, 4)index(all_letters, 5)
 'aA' any(all_letters)any(no_d_letters) + any(all_letters) > 'aA' index(all_letters, 3) index(no_d_letters, 4)index(all_letters, 5)
 
-any(ow)'y' + any(all_letters) > index(ow, 1) 'y' index(all_letters, 3)
-any(ow)'Y' + any(all_letters) > index(ow, 1) 'Y' index(all_letters, 3)
-any(uw)'y' + any(all_letters) > index(uw, 1) 'y' index(all_letters, 3)
-any(uw)'Y' + any(all_letters) > index(uw, 1) 'Y' index(all_letters, 3)
+any(ow) 'y' + any(all_letters) > index(ow, 1) 'y' index(all_letters, 3)
+any(ow) 'Y' + any(all_letters) > index(ow, 1) 'Y' index(all_letters, 3)
+any(uw) 'y' + any(all_letters) > index(uw, 1) 'y' index(all_letters, 3)
+any(uw) 'Y' + any(all_letters) > index(uw, 1) 'Y' index(all_letters, 3)
 any(ee) any(vowels) + any(all_letters) > index(ee, 1) index(vowels, 2) index(all_letters, 3)
 any(oo) any(un_i_vowels) + any(all_letters) > index(oo, 1) index(un_i_vowels, 2) index(all_letters, 3)
 any(a) any(eoia) + any(all_letters) > index(a, 1) index(eoia, 2) index(all_letters, 3)
@@ -8548,8 +8669,8 @@ any(a) any(eoia)any(all_letters) any(no_d_letters) + any(all_letters) > index(a,
 'ợ'any(end_consonants) + 'J' > 'ơ'index(end_consonants, 2) 'J'
 'Ợ'any(end_consonants) + 'j' > 'Ơ'index(end_consonants, 2) 'j'
 'Ợ'any(end_consonants) + 'J' > 'Ơ'index(end_consonants, 2) 'J'
-any(ow)'ng' + any(sfrxj) > index(ow, 1) 'ng' index(sfrxj, 4)
-any(ow)'NG' + any(sfrxj) > index(ow, 1) 'NG' index(sfrxj, 4)
+any(ow) 'ng' + any(sfrxj) > index(ow, 1) 'ng' index(sfrxj, 4)
+any(ow) 'NG' + any(sfrxj) > index(ow, 1) 'NG' index(sfrxj, 4)
 
 'ắ'any(end_consonants) + 's' > 'ă'index(end_consonants, 2) 's'
 'ằ'any(end_consonants) + 'f' > 'ă'index(end_consonants, 2) 'f'
@@ -8804,14 +8925,14 @@ any(ow)'NG' + any(sfrxj) > index(ow, 1) 'NG' index(sfrxj, 4)
 'Oi' + 'O' > 'Ôi'
 'OI' + 'o' > 'ÔI'
 'OI' + 'O' > 'ÔI' 
-any(o)'i' + 'o' > index(oo, 1) 'i'
-any(o)'I' + 'o' > index(oo, 1) 'I'
-any(o)'i' + 'O' > index(oo, 1) 'i'
-any(o)'I' + 'O' > index(oo, 1) 'I'
-any(oo)'i' + 'o' > index(o, 1) 'io'
-any(oo)'i' + 'O' > index(o, 1) 'iO'
-any(oo)'I' + 'o' > index(o, 1) 'Io'
-any(oo)'I' + 'O' > index(o, 1) 'IO'
+any(o) 'i' + 'o' > index(oo, 1) 'i'
+any(o) 'I' + 'o' > index(oo, 1) 'I'
+any(o) 'i' + 'O' > index(oo, 1) 'i'
+any(o) 'I' + 'O' > index(oo, 1) 'I'
+any(oo) 'i' + 'o' > index(o, 1) 'io'
+any(oo) 'i' + 'O' > index(o, 1) 'iO'
+any(oo) 'I' + 'o' > index(o, 1) 'Io'
+any(oo) 'I' + 'O' > index(o, 1) 'IO'
 
 'ư' dk(u) any(ow) + 'o' > 'u'index(oo, 3)
 'Ư' dk(u) any(ow) + 'o' > 'U'index(oo, 3)
@@ -8869,10 +8990,10 @@ any(g)any(two_i) any(two_a) + 'A' > index(g, 1) index(two_i,2) index(two_aa,3)
 
 any(punctuation) any(i) any(aou) + any(a_w) > index(punctuation, 1) index(i, 2) index(aou, 3) index(a_w, 4)
 any(two_u)any(two_i)any(cn)any(h) + any(all_letters) > index(two_u, 1) index(two_i, 2) index(cn, 3) index(h, 4) index(all_letters, 5)
-any(q)any(two_u)'i'any(cn)any(h) + any(low_sfrxj) > index(q, 1)index(two_u, 2) index(low_i_v, 6) index(cn, 4) index(h, 5)
-any(q)any(two_u)'i'any(cn)any(h) + any(upper_sfrxj) > index(q, 1)index(two_u, 2) index(low_i_v, 6) index(cn, 4) index(h, 5)
-any(q)any(two_u)'I'any(cn)any(h) + any(low_sfrxj) > index(q, 1)index(two_u, 2) index(upper_i_v, 6) index(cn, 4) index(h, 5)
-any(q)any(two_u)'I'any(cn)any(h) + any(upper_sfrxj) > index(q, 1)index(two_u, 2) index(upper_i_v, 6) index(cn, 4) index(h, 5)
+any(q)any(two_u) 'i'any(cn)any(h) + any(low_sfrxj) > index(q, 1)index(two_u, 2) index(low_i_v, 6) index(cn, 4) index(h, 5)
+any(q)any(two_u) 'i'any(cn)any(h) + any(upper_sfrxj) > index(q, 1)index(two_u, 2) index(low_i_v, 6) index(cn, 4) index(h, 5)
+any(q)any(two_u) 'I'any(cn)any(h) + any(low_sfrxj) > index(q, 1)index(two_u, 2) index(upper_i_v, 6) index(cn, 4) index(h, 5)
+any(q)any(two_u) 'I'any(cn)any(h) + any(upper_sfrxj) > index(q, 1)index(two_u, 2) index(upper_i_v, 6) index(cn, 4) index(h, 5)
 
 'úu' + 'w' > 'ứu'
 'ùu' + 'w' > 'ừu'
@@ -9098,41 +9219,41 @@ any(q)any(two_u)'I'any(cn)any(h) + any(upper_sfrxj) > index(q, 1)index(two_u, 2)
 'Ãy' + 'X' > 'AyX'
 'Ạy' + 'J' > 'AyJ'
 
-any(e)'ch' + 'e' > index(ee, 1)'ch'
-any(e)'CH' + 'e' > index(ee, 1)'CH'
-any(ee)'ch' + 'e' > index(e, 1)'che'
-any(ee)'ch' + 'E' > index(e, 1)'chE'
-any(ee)'CH' + 'e' > index(e, 1)'CHe'
-any(ee)'CH' + 'E' > index(e, 1)'CHE'
-any(ee)'nh' + 'e' > index(e, 1)'nhe'
-any(ee)'nh' + 'E' > index(e, 1)'nhE'
-any(ee)'NH' + 'e' > index(e, 1)'NHe'
-any(ee)'NH' + 'E' > index(e, 1)'NHE'
-any(ee)'ng' + 'e' > index(e, 1)'nge'
-any(ee)'ng' + 'E' > index(e, 1)'ngE'
-any(ee)'NG' + 'e' > index(e, 1)'NGe'
-any(ee)'NG' + 'E' > index(e, 1)'NGE'
+any(e) 'ch' + 'e' > index(ee, 1) 'ch'
+any(e) 'CH' + 'e' > index(ee, 1) 'CH'
+any(ee) 'ch' + 'e' > index(e, 1) 'che'
+any(ee) 'ch' + 'E' > index(e, 1) 'chE'
+any(ee) 'CH' + 'e' > index(e, 1) 'CHe'
+any(ee) 'CH' + 'E' > index(e, 1) 'CHE'
+any(ee) 'nh' + 'e' > index(e, 1) 'nhe'
+any(ee) 'nh' + 'E' > index(e, 1) 'nhE'
+any(ee) 'NH' + 'e' > index(e, 1) 'NHe'
+any(ee) 'NH' + 'E' > index(e, 1) 'NHE'
+any(ee) 'ng' + 'e' > index(e, 1) 'nge'
+any(ee) 'ng' + 'E' > index(e, 1) 'ngE'
+any(ee) 'NG' + 'e' > index(e, 1) 'NGe'
+any(ee) 'NG' + 'E' > index(e, 1) 'NGE'
 
-any(uw) 'ớ' any(n) any(g) + 's' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 's'
-any(uw) 'ờ' any(n) any(g) + 'f' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'f'
-any(uw) 'ở' any(n) any(g) + 'r' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'r'
-any(uw) 'ỡ' any(n) any(g) + 'x' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'x'
-any(uw) 'ợ' any(n) any(g) + 'j' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'j'
-any(uw) 'ớ' any(n) any(g) + 'S' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'S'
-any(uw) 'ờ' any(n) any(g) + 'F' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'F'
-any(uw) 'ở' any(n) any(g) + 'R' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'R'
-any(uw) 'ỡ' any(n) any(g) + 'X' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'X'
-any(uw) 'ợ' any(n) any(g) + 'J' > index(uw, 1)'ơ' index(n, 3) index(g, 4) 'J'
-any(uw) 'Ớ' any(n) any(g) + 's' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 's'
-any(uw) 'Ờ' any(n) any(g) + 'f' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'f'
-any(uw) 'Ở' any(n) any(g) + 'r' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'r'
-any(uw) 'Ỡ' any(n) any(g) + 'x' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'x'
-any(uw) 'Ợ' any(n) any(g) + 'j' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'j'
-any(uw) 'Ớ' any(n) any(g) + 'S' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'S'
-any(uw) 'Ờ' any(n) any(g) + 'F' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'F'
-any(uw) 'Ở' any(n) any(g) + 'R' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'R'
-any(uw) 'Ỡ' any(n) any(g) + 'X' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'X'
-any(uw) 'Ợ' any(n) any(g) + 'J' > index(uw, 1)'Ơ' index(n, 3) index(g, 4) 'J'
+any(uw) 'ớ' any(n) any(g) + 's' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 's'
+any(uw) 'ờ' any(n) any(g) + 'f' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'f'
+any(uw) 'ở' any(n) any(g) + 'r' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'r'
+any(uw) 'ỡ' any(n) any(g) + 'x' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'x'
+any(uw) 'ợ' any(n) any(g) + 'j' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'j'
+any(uw) 'ớ' any(n) any(g) + 'S' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'S'
+any(uw) 'ờ' any(n) any(g) + 'F' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'F'
+any(uw) 'ở' any(n) any(g) + 'R' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'R'
+any(uw) 'ỡ' any(n) any(g) + 'X' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'X'
+any(uw) 'ợ' any(n) any(g) + 'J' > index(uw, 1) 'ơ' index(n, 3) index(g, 4) 'J'
+any(uw) 'Ớ' any(n) any(g) + 's' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 's'
+any(uw) 'Ờ' any(n) any(g) + 'f' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'f'
+any(uw) 'Ở' any(n) any(g) + 'r' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'r'
+any(uw) 'Ỡ' any(n) any(g) + 'x' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'x'
+any(uw) 'Ợ' any(n) any(g) + 'j' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'j'
+any(uw) 'Ớ' any(n) any(g) + 'S' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'S'
+any(uw) 'Ờ' any(n) any(g) + 'F' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'F'
+any(uw) 'Ở' any(n) any(g) + 'R' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'R'
+any(uw) 'Ỡ' any(n) any(g) + 'X' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'X'
+any(uw) 'Ợ' any(n) any(g) + 'J' > index(uw, 1) 'Ơ' index(n, 3) index(g, 4) 'J'
 
 any(uw) any(ow) any(uow_end) + 'w' > index(u, 1) index(o, 2) index(uow_end, 3) 'w'
 any(uw) any(ow) any(uow_end) + 'W' > index(u, 1) index(o, 2) index(uow_end, 3) 'W'
@@ -9186,24 +9307,24 @@ any(aeiy_nang) 'CH' + 'S' > index(aeiy_sac, 1) 'CH'
 'UYCH' + 'S' > 'UÝCH'
 'UYCH' + 'j' > 'UỴCH'
 'UYCH' + 'J' > 'UỴCH'
-any(oo)'n' + 'n' > index(oo, 1) 'ng'
-any(aw)'n' + 'n' > index(aw, 1) 'ng'
-any(a)'n' + 'n' > index(a, 1) 'ng'
-'i'any(ee)'n' + 'n' > 'i'index(ee, 2) 'ng'
-any(uw)'n' + 'n' > index(uw, 1) 'ng'
-any(uw)dk(u)'n' + 'n' > index(uw, 1) 'ng'
-any(uw)'ng' + 'w' > index(u, 1)'ngw'
-any(uw)'ng' + 'W' > index(u, 1)'ngW'
-any(uw)'NG' + 'w' > index(u, 1)'NGw'
-any(uw)'NG' + 'W' > index(u, 1)'NGW'
-any(ow)'ng' + 'w' > index(o, 1)'ngw'
-any(ow)'ng' + 'W' > index(o, 1)'ngW'
-any(ow)'NG' + 'w' > index(o, 1)'NGw'
-any(ow)'NG' + 'W' > index(o, 1)'NGW'
-any(e) + 'w' > index(e, 1)'w'
-any(e) + 'W' > index(e, 1)'W'
-any(ee) + 'w' > index(ee, 1)'w'
-any(ee) + 'W' > index(ee, 1)'W'
+any(oo) 'n' + 'n' > index(oo, 1) 'ng'
+any(aw) 'n' + 'n' > index(aw, 1) 'ng'
+any(a) 'n' + 'n' > index(a, 1) 'ng'
+'i'any(ee) 'n' + 'n' > 'i'index(ee, 2) 'ng'
+any(uw) 'n' + 'n' > index(uw, 1) 'ng'
+any(uw)dk(u) 'n' + 'n' > index(uw, 1) 'ng'
+any(uw) 'ng' + 'w' > index(u, 1) 'ngw'
+any(uw) 'ng' + 'W' > index(u, 1) 'ngW'
+any(uw) 'NG' + 'w' > index(u, 1) 'NGw'
+any(uw) 'NG' + 'W' > index(u, 1) 'NGW'
+any(ow) 'ng' + 'w' > index(o, 1) 'ngw'
+any(ow) 'ng' + 'W' > index(o, 1) 'ngW'
+any(ow) 'NG' + 'w' > index(o, 1) 'NGw'
+any(ow) 'NG' + 'W' > index(o, 1) 'NGW'
+any(e) + 'w' > index(e, 1) 'w'
+any(e) + 'W' > index(e, 1) 'W'
+any(ee) + 'w' > index(ee, 1) 'w'
+any(ee) + 'W' > index(ee, 1) 'W'
 any(two_q) any(two_u) any(aa) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
 any(two_q) any(two_u) any(a) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
 any(two_q) any(two_u) any(aa) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3)
@@ -9213,3 +9334,121 @@ any(two_q) any(two_u) any(a) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3
 'ỉ' + 'i' > 'iể'
 'ĩ' + 'i' > 'iễ'
 'ị' + 'i' > 'iệ'
+'Óa' + 's' > 'Oas'
+'Òa' + 'f' > 'Oaf'
+'Ỏa' + 'r' > 'Oar'
+'Õa' + 'x' > 'Oax'
+'Ọa' + 'j' > 'Oaj'
+'Óa' + 'S' > 'OaS'
+'Òa' + 'F' > 'OaF'
+'Ỏa' + 'R' > 'OaR'
+'Õa' + 'X' > 'OaX'
+'Ọa' + 'J' > 'OaJ'
+'Ói' + 's' > 'Ois'
+'Òi' + 'f' > 'Oif'
+'Ỏi' + 'r' > 'Oir'
+'Õi' + 'x' > 'Oix'
+'Ọi' + 'j' > 'Oij'
+'Ói' + 'S' > 'OiS'
+'Òi' + 'F' > 'OiF'
+'Ỏi' + 'R' > 'OiR'
+'Õi' + 'X' > 'OiX'
+'Ọi' + 'J' > 'OiJ'
+'Óe' + 's' > 'Oes'
+'Òe' + 'f' > 'Oef'
+'Ỏe' + 'r' > 'Oer'
+'Õe' + 'x' > 'Oex'
+'Ọe' + 'j' > 'Oej'
+'Óe' + 'S' > 'OeS'
+'Òe' + 'F' > 'OeF'
+'Ỏe' + 'R' > 'OeR'
+'Õe' + 'X' > 'OeX'
+'Ọe' + 'J' > 'OeJ'
+
+'Úa' + 's' > 'Uas'
+'Ùa' + 'f' > 'Uaf'
+'Ủa' + 'r' > 'Uar'
+'Ũa' + 'x' > 'Uax'
+'Ụa' + 'j' > 'Uaj'
+'Úa' + 'S' > 'UaS'
+'Ùa' + 'F' > 'UaF'
+'Ủa' + 'R' > 'UaR'
+'Ũa' + 'X' > 'UaX'
+'Ụa' + 'J' > 'UaJ'
+'Úi' + 's' > 'Uis'
+'Ùi' + 'f' > 'Uif'
+'Ủi' + 'r' > 'Uir'
+'Ũi' + 'x' > 'Uix'
+'Ụi' + 'j' > 'Uij'
+'Úi' + 'S' > 'UiS'
+'Ùi' + 'F' > 'UiF'
+'Ủi' + 'R' > 'UiR'
+'Ũi' + 'X' > 'UiX'
+'Ụi' + 'J' > 'UiJ'
+
+'Ôi' + 's' > 'Ối'
+'Ôi' + 'f' > 'Ồi'
+'Ôi' + 'r' > 'Ổi'
+'Ôi' + 'x' > 'Ỗi'
+'Ôi' + 'j' > 'Ội' 
+'Ơi' + 's' > 'Ới'
+'Ơi' + 'f' > 'Ời'
+'Ơi' + 'r' > 'Ởi'
+'Ơi' + 'x' > 'Ỡi'
+'Ơi' + 'j' > 'Ợi'
+'Ối' + 's' > 'Ôis'
+'Ồi' + 'f' > 'Ôif'
+'Ổi' + 'r' > 'Ôir'
+'Ỗi' + 'x' > 'Ôix'
+'Ội' + 'j' > 'Ôij'
+'Ối' + 'S' > 'ÔiS'
+'Ồi' + 'F' > 'ÔiF'
+'Ổi' + 'R' > 'ÔiR'
+'Ỗi' + 'X' > 'ÔiX'
+'Ội' + 'J' > 'ÔiJ' 
+'Ưu' + 's' > 'Ứu'
+'Ưu' + 'f' > 'Ừu'
+'Ưu' + 'r' > 'Ửu'
+'Ưu' + 'x' > 'Ữu'
+'Ưu' + 'j' > 'Ựu'
+
+'ếu' + 's' > 'êus'
+'ều' + 'f' > 'êuf'
+'ểu' + 'r' > 'êur'
+'ễu' + 'x' > 'êux'
+'ệu' + 'j' > 'êuj'
+'ếu' + 'S' > 'êuS'
+'ều' + 'F' > 'êuF'
+'ểu' + 'R' > 'êuR'
+'ễu' + 'X' > 'êuX'
+'ệu' + 'J' > 'êuJ'
+'Ếu' + 's' > 'Êus'
+'Ều' + 'f' > 'Êuf'
+'Ểu' + 'r' > 'Êur'
+'Ễu' + 'x' > 'Êux'
+'Ệu' + 'j' > 'Êuj'
+'Ếu' + 'S' > 'ÊuS'
+'Ều' + 'F' > 'ÊuF'
+'Ểu' + 'R' > 'ÊuR'
+'Ễu' + 'X' > 'ÊuX'
+'Ệu' + 'J' > 'ÊuJ'
+'ẾU' + 's' > 'ÊUs'
+'ỀU' + 'f' > 'ÊUf'
+'ỂU' + 'r' > 'ÊUr'
+'ỄU' + 'x' > 'ÊUx'
+'ỆU' + 'j' > 'ÊUj'
+'ẾU' + 'S' > 'ÊUS'
+'ỀU' + 'F' > 'ÊUF'
+'ỂU' + 'R' > 'ÊUR'
+'ỄU' + 'X' > 'ÊUX'
+'ỆU' + 'J' > 'ÊUJ'
+
+'u' any(low_a) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'a'
+'U' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'a'
+'U' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'A'
+'o' any(low_a) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'a'
+'O' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'a'
+'O' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'A'
+'u' any(low_y) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'y'
+'U' any(low_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'y'
+'U' any(upper_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'Y'

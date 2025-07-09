@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lahu</Name>
-    <Copyright URL="">© 2010-2023 Bob Prouty</Copyright>
-    <Description>A keyboard for the language Lahu of China, Laos, Myanmar, Thailand and
+    <Copyright URL="">© Bob Prouty</Copyright>
+    <Description URL="">A keyboard for the language Lahu of China, Laos, Myanmar, Thailand and
 Vietnam. Includes the font LahuyaNet</Description>
   </Info>
   <Files>
@@ -93,13 +94,11 @@ Vietnam. Includes the font LahuyaNet</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Lahu</Name>
       <ID>lahu</ID>
-      <Version>1.1.2</Version>
       <OSKFont>..\..\..\shared\fonts\latn\lahuya_net\LahuyaNet.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\latn\lahuya_net\LahuyaNet.ttf</DisplayFont>
       <Languages>
-        <Language ID="lhu-Latn">Lahu (Latin)</Language>
+        <Language ID="lhu">Lahu</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

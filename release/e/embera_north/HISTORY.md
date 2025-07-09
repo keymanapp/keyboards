@@ -1,6 +1,10 @@
 Embera Northern Change History
 =======================
 
+10.1.6 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
 10.1.5 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file

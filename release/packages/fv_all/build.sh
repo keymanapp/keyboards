@@ -14,7 +14,7 @@ THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 cd "$THIS_SCRIPT_PATH"
 
 . "$REPO_ROOT/resources/util.inc.sh"
-. "$REPO_ROOT/tools/7z.inc.sh"
+. "$REPO_ROOT/resources/zip.inc.sh"
 . "$REPO_ROOT/tools/jq.inc.sh"
 
 builder_describe \
@@ -198,7 +198,7 @@ function do_build_region() {
   fi
 
   # Extract kmp.json (overwrite) from build/fv_all.kmp
-  "$APP7Z" x build/fv_all.kmp -aoa -obuild kmp.json 
+  unzip -o build/fv_all.kmp kmp.json -d build
   [ -f "build/kmp.json" ] || builder_die "fv_all: Failed to extract kmp.json"
 
   kmpKeyboards=$("$JQ" -r '.keyboards' build/kmp.json)
@@ -229,7 +229,7 @@ function do_build_region() {
   if [[ ! -f "build/keyboards.json" ]]; then
     builder_die "Failed to generate build/keyboards.json"
   fi
-  "$APP7Z" a build/fv_all.kmp ./build/keyboards.json
+  add_zip_files build/fv_all.kmp ./build/keyboards.json
 }
 
 function do_build() {

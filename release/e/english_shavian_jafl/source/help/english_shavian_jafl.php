@@ -1,0 +1,46 @@
+<?php
+  $pagename = 'Shaw JAFL | 𐑖𐑷 𐑡𐑨𐑓𐑩𐑤 Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
+  <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it.</p><img src="shavian_alphabet_reading_key.png" alt="A table of Shavian alphabet letters and the sounds they represent.">
+  <p>For further information about the Shavian alphabet visit <a href="https://www.shavian.info">Shavian.info</a>.</p>
+  <p>Shavian.info has developed a keyboard layout called Shaw JAFL, short for ‘Just another “fabulous” layout’. Shaw JAFL:</p>
+  <ul>
+    <li>has been optimised using carpalx to minimise typing effort</li>
+    <li>fits within the three rows of keys commonly used for Latin alphabet layouts (i.e. the numerals remain where they normally are)</li>
+    <li>places less common letters in the SHIFT layer, and</li>
+    <li>uses key combinations to access compound letters.</li>
+  </ul>
+  <h1>Keyboard Layout</h1>
+  <h2>Desktop and onscreen layouts</h2>
+  <p>The desktop and onscreen layouts are identical.</p>
+  <div id='osk' data-states='default shift'></div>
+  <p>The default and SHIFT layers of Shaw JAFL are fairly self-explanatory. Common letters are easier to type and common combinations of letters have been optimised.</p>
+  <p>To type the compound letters (𐑸, 𐑹, 𐑺, 𐑻, 𐑼, 𐑽, & 𐑿), simply type:</p>
+  <ul>
+    <li>𐑩 then 𐑮 for 𐑼</li>
+    <li>𐑦 then 𐑩 for 𐑾</li>
+    <li>𐑦 then 𐑩 then 𐑮 for 𐑽</li>
+    <li>𐑳 then 𐑮 for 𐑻</li>
+    <li>𐑱 then 𐑮 for 𐑺</li>
+    <li>𐑭 then 𐑮 for 𐑸</li>
+    <li>𐑷 then 𐑮 for 𐑹</li>
+    <li>𐑘 then 𐑵 for 𐑿</li>
+  </ul>
+  <p>The compound letters 𐑿, 𐑸 and 𐑹 are also assigned to single keys on the SHIFT layer. These are relatively common single letter words in English and having a single key for them saves a combination involving SHIFT layer letters, if desired.</p>
+  <p>Double guillemets (« ») may also be typed by entering two single guillemets (‹ + ‹ or › + ›).</p>
+  <p>To prevent a compound letter being formed (e.g. to type 𐑩𐑮 or 𐑦𐑩) type 𐑩 then SHIFT + ⁞𐑮, 𐑦 then SHIFT + ⁞𐑩, etc. For example, if you wish to type 𐑣<strong>𐑳𐑮</strong>𐑦 and not 𐑣<strong>𐑻</strong>𐑦, you will need to type 𐑳 followed by SHIFT + ⁞𐑮.</p>
+  <p>A special key, marked by a star ☆ on the SHIFT layer, also breaks compound letters into their component letters once formed. For example the 𐑘𐑵 combination does not occur natively in Shavian but may be accessed by typing letter 𐑿 and then ☆.</p>
+  <p>The ☆ key also inserts a ‘variation selector’ used to access the Shavian extended letters for the Inter Alia font (it will only work for this font and any others specifically designed for this), see the <a href="https://github.com/Shavian-info/interalia">Inter Alia Github repository</a> for more explanation.</p>
+  <h2>Phone layout</h2>
+  <p>The phone layout is adjusted for ease of typing on a small screen.</p>
+  <div id='osk-phone' data-states='default shavian_shift shavian_shiftlock numbers symbols latin_default latin_shift latin_shiftlock'></div>
+  <p>Letters in the SHIFT layer may be accessed by pressing SHIFT, or by a long hold on the key, or by flicking down on the key (whichever you prefer). CAPS LOCK may be accessed by double tapping SHIFT.</p><img src="shaw_jafl_phone_shift.png" alt="The SHIFT layer of the Shaw JAFL smart phone keyboard layout.">
+  <p>Typing and breaking compound letters (𐑸, 𐑹, 𐑺, 𐑻, 𐑼, 𐑽, & 𐑿) is done in the same way as on the desktop and on-screen layouts as set out above. The extended Shavian letters may also be accessed as set out above.</p>
+  <p>Pressing the [123] key will bring up the numbers and a range of symbols, arranged in a similar layout to the standard iOS keyboard. Long hold keys include additional symbols.</p><img src="shaw_jafl_phone_numbers.png" alt="An image of the numbers layer of the Shaw JAFL smart phone keyboard layout.">
+  <p>Pressing the [~¿¡] key will bring up a range of additional symbols, including some accessible by long hold keys.</p><img src="shaw_jafl_phone_symbols.png" alt="An image of the symbols layer of the Shaw JAFL smart phone keyboard layout.">
+  <p>Pressing the [abc] key will bring up a standard US English QWERTY layout keyboard to allow typing in the Latin alphabet. Long hold keys allow the entry of a selection of diacritics, common International Phonetic Alphabet symbols used for English.</p><img src="shaw_jafl_phone_latin_default.png" alt="An image of the default Latin alphabet layer of the Shaw Imperial smart phone keyboard layout."><img src="shaw_jafl_phone_latin_shift.png" alt="An image of the SHIFT Latin alphabet layer of the Shaw Imperial smart phone keyboard layout.">
+  <h2>Tablet layout</h2>
+  <p>The layout for tablet is substantially similar to the desktop and on-screen layouts above, but includes a symbols layer similar to the phone layout.</p>
+  <div id='osk-tablet' data-states='default shavian_shift shavian_shiftlock numbers latin_default latin_shift latin_shiftlock'></div>

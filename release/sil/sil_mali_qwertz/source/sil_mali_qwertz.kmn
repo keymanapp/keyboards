@@ -8,7 +8,7 @@ c store(&ETHNOLOGUECODE) 'bam bmq bzx bze boo boz dba dbu dtt dux ffm jow mwk my
 store(&MESSAGE) 'Pour toutes les langues au Mali, Afrique de l’Ouest, avec clavier allemand (Deutsch).'
 store(&VISUALKEYBOARD) 'sil_mali_qwertz.kvks'
 store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '3.4.1'
+store(&KEYBOARDVERSION) '3.4.2'
 
 begin Unicode > use(Main)
 
@@ -155,7 +155,7 @@ c below 2 hyphens goes to Em-dash AND the Apostrophy after jusqu` doesn't go ove
 "t" + "+" > "t’"
 "t" + "=" > "t’"      
 "m" + "+" > "m’"
-"m" + "=" > "m’"      
+c "m" + "=" > "m’"    c keystroke used for m acute  
 "," + "_" > "’"      
 
 any(LatinVowel) + $AcuteK > index(CompositeAcute,1) c =
@@ -169,7 +169,7 @@ any(LatinVowel) + $DotUnderK > index(CompositeDotUnder,1)   c #
                                  
 c Extra characters with combined accents
 "M" + "=" > "Ḿ" c acute m
-"m" + "=" > "ḿ" c acute    DOESN'T WORK!
+"m" + "=" > "ḿ" c acute
 "N" + "=" > "Ń" c acute n
 "n" + "=" > "ń" c acute
 "N" + "$" > "Ñ" c tilde
@@ -215,8 +215,8 @@ c any(Umodifier) + any(modifierK) > context index(Umodifier,2) use(Udiacritics)
 
 U+0251 + any(modifierK) > context index(Umodifier,2)
 
-+ any(lessthan) > U+2039 use(angleit)
-+ any(greaterthan) > U+203A use(angleit)
+c + any(lessthan) > U+2039 use(angleit)
+c + any(greaterthan) > U+203A use(angleit)
 
 group(angleit)
 U+2039 U+2039 > U+00AB

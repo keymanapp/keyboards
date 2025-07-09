@@ -1,6 +1,11 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+
+1.8.4 (9 Jun 2025)
+-----------------
+* Update Gentium to new version
+
 1.8.3 (13 May 2025)
 -----------------
 * Replace Ͷ ͷ with Ϝ ϝ on mobile layout
