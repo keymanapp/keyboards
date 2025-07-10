@@ -1,6 +1,14 @@
 vietnam Change History
 ====================
 
+2.0 (2025-07-03)
+----------------
+* Updated by cathaylab
+* significantly shortened the codes
+* deleted "iun" + "n" > "ương" rule
+* fixing several bugs in generation
+* improved the generation order of double pressing "n" for generate "nh", to avoid unnecessary generation.
+
 1.0.8 (2025-05-30)
 ----------------
 * Updated by cathaylab

@@ -1,6 +1,10 @@
 ﻿Change History
 =======================
 
+1.5.4 (9 Jul 2025)
+-------------------
+* Remove platform restraint for RALT keys in order to work on web
+
 1.5.3 (9 Jun 2025)
 -------------------
 * Update to new version of Andika
