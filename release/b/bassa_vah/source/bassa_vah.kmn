@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Bassa Vah'
-store(&COPYRIGHT) 'Copyright © SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'bassa_vah.ico'
 store(&VISUALKEYBOARD) 'bassa_vah.kvks'
@@ -16,8 +16,8 @@ store(consK) [K_N] [K_K] [K_S] [K_F] [K_M] [K_Y] [K_G] [K_D] [K_Q] [K_J] [K_R] [
              [K_COLON] [K_L] [K_C] [K_RBRKT] [K_T] [K_B] [K_V] [K_H] [K_P] [K_QUOTE]
 store(consU) U+16AD0 .. U+16AE6
 
-store(diacK) [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K]
-store(diacU) U+16AF0 .. U+16AF4
+store(tone_diacK) [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K]
+store(tone_diacU) U+16AF0 .. U+16AF4
 
 store(digitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
 store(digitsU) U+0030 .. U+0039
@@ -40,5 +40,9 @@ group(main) using keys
 + [SHIFT K_PERIOD]  > U+002E
 + [SHIFT K_COMMA] > U+0027
 
+c tone diacritics only go on vowels
+any(vowelsU) + any(tone_diacK)   > context index(tone_diacU,2)
+any(consU) + any(tone_diacK)   > context beep
 
-+ any(diacK)   > index(diacU,1)
+c two diacritics cannot occur together
+any(tone_diacU) + any(tone_diacK) > context beep
