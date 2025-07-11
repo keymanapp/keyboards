@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
   $pagename = 'Shaw Imperial Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
@@ -28,7 +28,7 @@
   <p>Other assignments are based on resemblance in shape, collocation with related symbols, or arbitrary choice where this was unavoidable.</p>
   <p>Latin letters, and the standard US English QWERTY keyboard, may be accessed by pressing CAPS LOCK, with capital letters then entered the usual way by holding down SHIFT. To return to Shavian, simply turn off CAPS LOCK.</p>
 
-<div id='osk' data-states='default shift alt'>
+<div id='osk' data-states='default shift'>
 </div>
   
   <h2>Phone and tablet layouts</h2>

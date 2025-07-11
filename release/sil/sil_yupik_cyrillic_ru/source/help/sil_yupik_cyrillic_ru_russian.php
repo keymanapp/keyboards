@@ -1,9 +1,7 @@
 <?php 
   $pagename = 'Yupik Cyrillic keyboard (Russian layout)';
-  $pagetitle = 'Yupik Cyrillic keyboard (Russian layout)';
-  require_once('header.php');
-?>
-<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -196,10 +194,10 @@
             width: 61px;
             text-align: center;
         }
+END;
+require_once('header.php');
+?>
 
-
-    </style>
-</head>
 
 <h1>Эскимосская клавиатура  (русская раскладка)</h1>
 

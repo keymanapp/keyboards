@@ -1,4 +1,5 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_mesobe_fidelat
   Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
@@ -6,28 +7,13 @@
   Create Date:      23 Oct 2022
   Last Update:      08 Jul 2023
 */
-  $pagename = 'Mesobe Fidelat Keyboard Help';
   $pagetitle = 'Mesobe Fidelat Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
-  $style = <<<EXTRA
-  .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-  .highlightKeys img {vertical-align:baseline !important}
-  .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-  .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-  .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
   require_once('header.php');
 ?>
-<style type="text/css" media="screen">
-code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(175, 184, 193, 0.2);
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-</style>
+
 
 <p style='margin:0px'>Keyboard © Geʾez Frontier Foundation.</p>
 

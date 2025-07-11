@@ -1,7 +1,7 @@
 sil_sahu keyboard
 ==============
 
-Copyright (c) SIL International
+Copyright (c) SIL Global
 
 Description
 -----------

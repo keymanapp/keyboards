@@ -40,7 +40,7 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
   <li>Brill</li>
   <li>Calibri</li>
   <li>Cambria</li>
-  <li>Charis SIL</li>
+  <li>Charis</li>
   <li>Consolas</li>
   <li>Doulos SIL</li>
   <li>Gentium</li>

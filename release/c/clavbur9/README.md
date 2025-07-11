@@ -1,9 +1,7 @@
 Clavier du Burkina keyboard
 =====================
 
-Copyright (C) 2005-2020 SIL Burkina Faso
-
-Version 9.1.1
+Copyright (C) SIL Burkina Faso
 
 __DESCRIPTION__
 

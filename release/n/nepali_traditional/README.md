@@ -1,9 +1,7 @@
 Nepali Traditional keyboard
 ==============
 
-(c) 2023 Santosh Pradhan
-
-Version 1.3.0
+(c) Santosh Pradhan
 
 Description
 -----------

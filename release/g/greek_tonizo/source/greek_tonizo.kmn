@@ -4,7 +4,7 @@ store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -139,6 +139,9 @@ store(iotacs)     [CAPS SHIFT K_I]
 store(omicroncs)  [CAPS SHIFT K_O] 
 store(upsiloncs)  [CAPS SHIFT K_Y] 
 store(omegacs)    [CAPS SHIFT K_V]  
+c
+store(alphalc)    [RALT K_A]
+
 c
 c 2 - CONSONANTS: No differentiation between CAPS, NCAPS, SHIFT needed
 c 
@@ -722,7 +725,7 @@ u+037a any(tonoi-comb)+ any(omicronup) > beep
 c 
 c ---- diacritics + vowels --> vowel with diacritics
 c 
-c Special vase: any perisp + omikron|epsilon -> omikron|epsilon + any perisp
+c Special case: any perisp + omikron|epsilon -> omikron|epsilon + any perisp
 store(vrachea) [K_E] [SHIFT K_E] [K_O] [SHIFT K_O]
 store(vrachea_codes) U+03B5 U+0395 U+03BF U+039F
 store(perisp_accents) U+1FCF U+1FDF
@@ -755,7 +758,7 @@ any(tonoi-comb) U+037A + any(omegaup) > index(omegaup-yp,1)
 c
 c
 c ------  FOR USERS OF DESKTOP KEYBOARDS ONLY:
-c AN ATTEMPT TO RESTORE FUNCTIONALITY TAKEN BY THE GREEK DIAKRITICS
+c ------- RESTORE FUNCTIONALITY TAKEN BY THE GREEK DIAKRITICS
 c
 if(&platform = 'WINDOWS') + U+0020 > use(WinOnlyRules)
 if(&platform = 'MacOS') + U+0020 > use(WinOnlyRules)
@@ -795,7 +798,23 @@ nul + any(ypoge) > context U+037A U+1FBF
 any(beforeWordChars) + any(ypoge) > context U+037A U+1FBF
 c
 c
-c ------- FOR ALL OTHER CASES, GENERAL RULE -------------------
+c ------- RULES FOR REMOVAL OF AUTOMATIC PSILI in numerals followed by fullstop ---------
+c ------- i.e. α. β. ... ια. ιβ ... ιστ ...
+c
+store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 \
+                            U+1F08 U+1F18 U+1F28 U+1F38 c stores used in following groups    
+store(vowels-arithm)        U+0251 U+03B5 U+03B7 U+03B9 \
+                            U+0391 U+0395 U+0397 U+0399 c for dropping of automatic psili after single quite and space 
+any(vowels-arithm-psili) + '.' > index(vowels-arithm,1) U+002E   
+'ἰα' + '.' > 'ια.'  
+'ἰε' + '.' > 'ιε.'
+'ἰστ' + '.' > 'ιστ.'
+'ἰη' + '.' > 'ιη.' 
+'αἰ' + '.' > 'αἰ.'      c exception to the rule
+'ἰ' any(symfwn) + '.' > 'ι' index(symfwn,2) U+002E
+c
+c
+c ------- FOR ALL OTHER CASES, DEFAULT -------------------
 c 
 + any(all-accents) > index(all-tonoi,1)
 c
@@ -804,23 +823,27 @@ c
 + any(vowelscs) > index(fwncs,1)
 + any(conson) > index(symfwn,1)
 + any(exotics) > index(exo,1)
-
-
+c
+c
+c
 c ----------- Different processing for desktop and mobile platforms
 c
-store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 U+1F08 U+1F18 U+1F28 U+1F38  c stores used in following groups    
-store(vowels-arithm)  U+0251 U+03B5 U+03B7 U+03B9 U+0391 U+0395 U+0397 U+0399   c for dropping of automatic psili after single quite and space 
-
 group(WinOnlyRules) using keys
     store(gr-diacritics)     U+1FC0 U+037A U+1FBF    c  perispomeni, ypogegrammeni, psili
     store(eng-keybd-keys)    U+005B U+007B U+005D    c  replaced by [, {, ] respectively when followed by space
     any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1) 
-c FOLLOWING STATEMENT DOES NOT WORK - ια' ιβ' κλπ
-c    U+1f30 any(vowels) U+0060 + U+0020 > U+03B9 index(vowels,2) u+0027 u+0020
-    'ἰα`' + U+0020 > 'ια' u+0027 u+0020
-    U+0060 + U+0020 > U+0027 U+0020                  c vareia followed by space becomes single quote
-c automatic psili dropped when single vowel used for numbering of ordered lists
+
+    c automatic breathing dropped when single vowel followed by vareia and space -> vareia becomes single quote
+    c This can reasonably happen only in Windows
     any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020  
+    'ἰα`' + U+0020 > 'ια' u+0027 u+0020
+    'ἰε`' + U+0020 > 'ιε' u+0027 u+0020
+    'ἰστ`' + U+0020 > 'ιστ' u+0027 u+0020
+    'ἰη`' + U+0020 > 'ιη' u+0027 u+0020
+    'ἰ' any(symfwn) U+0060 + U+0020 > 'ι' index(symfwn,2) U+0027 u+0020
+    c default case: vareia becomes single quote if followed by space
+    U+0060 + U+0020 > U+0027 U+0020
+
 
 
 group(mobileOnlyRules) using keys

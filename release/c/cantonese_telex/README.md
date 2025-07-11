@@ -7,6 +7,7 @@ cantonese telex for Yuẹt Yữ Quók Yữ Zị (Cantonese). Cantonese Telex粵�
 
 Links
 -----
+https://keyman.com/keyboards/cantonese_telex
 
 Copyright
 ---------

@@ -1,6 +1,20 @@
 cantonese telex Change History
 ====================
 
+3.0.2 (2025-06-03)
+----------------
+* updated the alphabet and keyboard document
+* optimized the rules for generating letters
+
+3.0.1 (2025-04-22)
+----------------
+* Improve On-Screen keyboard
+
+3.0 (2024-3-27)
+----------------
+* updated by cathaylab
+* update the script to the universal version of the script of national language
+
 2.0 (2024-1-21)
 ----------------
 * updated by cathaylab

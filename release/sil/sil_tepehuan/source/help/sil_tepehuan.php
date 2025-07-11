@@ -1,45 +1,44 @@
 <?php
   $pagename = 'Tepehuan (SIL) Keyboard Help';
-  $pagetitle = 'Tepehuan (SIL) Keyboard Help';
-  require_once('header.php');
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
+      p { font: 10pt Tahoma }
+      h1 { font: bold 16pt Tahoma; color: #4444cc }
+      h2 { font: bold 12pt Tahoma; color: #4444cc }
+      table.display tr .gap { width: 16px; border: none; }
+      table.display tr td { font: 10pt "HI Keawe Unicode"; border: solid 1px #ccccff; padding: 4px }
+      table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: left }
+      table.display { border-collapse: collapse; }
+      table.tableizer-table {
+          font-size: 12px;
+          border: 1px solid #CCC; 
+          font-family: Arial, Helvetica, sans-serif;
+      } 
+      .tableizer-table td {
+          padding: 4px;
+          margin: 3px;
+          border: 1px solid #CCC;
+      }
+      .tableizer-table th {
+          background-color: #104E8B; 
+          color: #FFF;
+          font-weight: bold;
+      }
+      kbd {
+          background-color: #eee;
+          border-radius: 3px;
+          border: 1px solid #b4b4b4;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+          color: #333;
+          display: inline-block;
+          font-size: .85em;
+          font-weight: 700;
+          line-height: 1;
+          padding: 2px 4px;
+          white-space: nowrap; }
+    END;
+require_once('header.php');
 ?>
-
-<style type="text/css">
-	p { font: 10pt Tahoma }
-	h1 { font: bold 16pt Tahoma; color: #4444cc }
-	h2 { font: bold 12pt Tahoma; color: #4444cc }
-	table.display tr .gap { width: 16px; border: none; }
-	table.display tr td { font: 10pt "HI Keawe Unicode"; border: solid 1px #ccccff; padding: 4px }
-	table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: left }
-	table.display { border-collapse: collapse; }
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-	kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap; }
-</style>
 
 <h2>Keyboard</h2>
 <p>
