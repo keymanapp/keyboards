@@ -3,7 +3,7 @@ Horami Keyboard
 
 Description
 -----------
-This keyboard is for use by the Horami language
+This keyboard is for Horami Kurdish which is spoken primarily in Iraq and Iran. It is based on the Sorani Kurdish keyboard and includes several additional letters that are commonly used to write Horami. The orthography used on this keyboard was agreed upon by a committee of Horami authors and scholars. 
 
 Links
 -----
