@@ -3,13 +3,13 @@ c with name "Lavanya"
 store(&VERSION) '10.0'
 store(&NAME) 'lavanya'
 store(&COPYRIGHT) 'Copyright © Prashanth'
-store(&KEYBOARDVERSION) '1.0'
-store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '2.0'
 store(&BITMAP) 'lavanya.ico'
 store(&VISUALKEYBOARD) 'lavanya.kvks'
 store(&LAYOUTFILE) 'lavanya.keyman-touch-layout'
 store(&MESSAGE) 'Phonetic based Telugu Keyboard'
 store(&KMW_HELPTEXT) 'Phonetic based Telugu Keyboard'
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -55,6 +55,9 @@ c MODIFIED BEHAVIOR: consonants now produce consonant + virama by default
 + any(cons_strong_keys_1) > index(cons_strong_chars_1, 1) '్'
 + any(cons_weak_keys_2) > index(cons_weak_chars_2, 1) '్'
 + any(cons_remaining_keys) > index(cons_remaining_chars, 1) '్'
+
+c Add backspace handling for vowel matras
+any(consonants) any(vowelMatras) + [K_BKSP] > context(1) '్'
 
 c Adding vowel after consonant with virama
 c If 'a' key pressed after consonant with virama, remove virama to show inherent vowel

@@ -1,0 +1,481 @@
+<?php
+  $pagename = 'Devanagari KaGaPa Phonetic Keyboard Help' ;
+  $pagetitle = $pagename ;
+  $pagestyle = <<<END
+    body {
+      font-family: "Segoe UI", "Noto Sans", sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 2em;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2em;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      color: #000;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      color: #666;
+      background-color: #f9f9f9;
+      margin: 2em 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 3em 0;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 1.5em;
+    }
+  END;
+  require_once( 'header.php' ) ;
+?>
+
+<h1 id="devanagari-kagapa-phonetic-keyboard-–-key-mapping-tables">Devanagari KaGaPa Phonetic Keyboard – Getting Started</h1>
+
+<p>This layout is the KaGaPa phonetic layout for the Devanagari script, as distributed in Linux. This is a very intuitively designed layout, strictly following recommendations and key combinations as stated by Unicode, hence a well-compliant one.</p>
+
+<p>This document provides key mappings for the layout across four layers:</p>
+
+<ul>
+  <li><strong>Normal</strong></li>
+  <li><strong>Shift</strong></li>
+  <li><strong>Right Alt (RAlt)</strong></li>
+  <li><strong>Shift + Right Alt</strong></li>
+</ul>
+
+<hr>
+
+<h2 id="numbers">Numbers</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0 (Digit Zero)</td>
+<td>) (Right Parenthesis)</td>
+<td>० (Devanagari Digit Zero)</td>
+<td>॰ (Devanagari Abbreviation Sign)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1 (Digit One)</td>
+<td>! (Exclamation Mark)</td>
+<td>१ (Devanagari Digit One)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 (Digit Two)</td>
+<td>@ (Commercial At)</td>
+<td>२ (Devanagari Digit Two)</td>
+<td>₨ (Indian Rupee Sign - Old)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 (Digit Three)</td>
+<td># (Number Sign)</td>
+<td>३ (Devanagari Digit Three)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 (Digit Four)</td>
+<td>$ (Dollar Sign)</td>
+<td>४ (Devanagari Digit Four)</td>
+<td>₹ (Indian Rupee Sign)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5 (Digit Five)</td>
+<td>% (Percent Sign)</td>
+<td>५ (Devanagari Digit Five)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6 (Digit Six)</td>
+<td>^ (Circumflex Accent)</td>
+<td>६ (Devanagari Digit Six)</td>
+<td>‌ (Zero Width Non-Joiner)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7 (Digit Seven)</td>
+<td>&amp; (Ampersand)</td>
+<td>७ (Devanagari Digit Seven)</td>
+<td>‍ (Zero Width Joiner)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8 (Digit Eight)</td>
+<td>* (Asterisk)</td>
+<td>८ (Devanagari Digit Eight)</td>
+<td>ँ (Devanagari Sign Candrabindu)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>9 (Digit Nine)</td>
+<td>( (Left Parenthesis)</td>
+<td>९ (Devanagari Digit Nine)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table><hr>
+
+<h2 id="alphabets">Alphabets</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>ा (Devanagari Vowel Sign Aa)</td>
+<td>आ (Devanagari Letter Aa)</td>
+<td>अ (Devanagari Letter A)</td>
+<td>ॲ (Devanagari Letter Candra A)</td>
+</tr>
+<tr>
+<td>B</td>
+<td>ब (Devanagari Letter Ba)</td>
+<td>भ (Devanagari Letter Bha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>C</td>
+<td>च (Devanagari Letter Ca)</td>
+<td>छ (Devanagari Letter Cha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>D</td>
+<td>द (Devanagari Letter Da)</td>
+<td>ध (Devanagari Letter Dha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E</td>
+<td>ॆ (Devanagari Vowel Sign Short E)</td>
+<td>े (Devanagari Vowel Sign E)</td>
+<td>ऎ (Devanagari Letter Short E)</td>
+<td>ए (Devanagari Letter E)</td>
+</tr>
+<tr>
+<td>F</td>
+<td>् (Devanagari Sign Virama)</td>
+<td>ॄ (Devanagari Vowel Sign Vocalic Rr)</td>
+<td>ॠ (Devanagari Letter Vocalic Rr)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>G</td>
+<td>ग (Devanagari Letter Ga)</td>
+<td>घ (Devanagari Letter Gha)</td>
+<td>ग़ (Devanagari Letter Ghha)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>H</td>
+<td>ह (Devanagari Letter Ha)</td>
+<td>ः (Devanagari Sign Visarga)</td>
+<td>ᳵ (Vedic Sign Jihvamuliya)</td>
+<td>ᳶ (Vedic Sign Upadhmaniya)</td>
+</tr>
+<tr>
+<td>I</td>
+<td>ि (Devanagari Vowel Sign I)</td>
+<td>ी (Devanagari Vowel Sign Ii)</td>
+<td>इ (Devanagari Letter I)</td>
+<td>ई (Devanagari Letter Ii)</td>
+</tr>
+<tr>
+<td>J</td>
+<td>ज (Devanagari Letter Ja)</td>
+<td>झ (Devanagari Letter Jha)</td>
+<td>ज़ (Devanagari Letter Za)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>K</td>
+<td>क (Devanagari Letter Ka)</td>
+<td>ख (Devanagari Letter Kha)</td>
+<td>क़ (Devanagari Letter Qa)</td>
+<td>ख़ (Devanagari Letter Khha)</td>
+</tr>
+<tr>
+<td>L</td>
+<td>ल (Devanagari Letter La)</td>
+<td>ळ (Devanagari Letter Lla)</td>
+<td>ॢ (Devanagari Vowel Sign Vocalic L)</td>
+<td>ऌ (Devanagari Letter Vocalic L)</td>
+</tr>
+<tr>
+<td>M</td>
+<td>म (Devanagari Letter Ma)</td>
+<td>ं (Devanagari Sign Anusvara)</td>
+<td>ऽ (Devanagari Sign Avagraha)</td>
+<td>ॐ (Om)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>न (Devanagari Letter Na)</td>
+<td>ण (Devanagari Letter Nna)</td>
+<td>ऩ (Devanagari Letter Nnna)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>O</td>
+<td>ॊ (Devanagari Vowel Sign Short O)</td>
+<td>ो (Devanagari Vowel Sign O)</td>
+<td>ऒ (Devanagari Letter Short O)</td>
+<td>ओ (Devanagari Letter O)</td>
+</tr>
+<tr>
+<td>P</td>
+<td>प (Devanagari Letter Pa)</td>
+<td>फ (Devanagari Letter Pha)</td>
+<td>फ़ (Devanagari Letter Fa)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>ट (Devanagari Letter Tta)</td>
+<td>ठ (Devanagari Letter Ttha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>R</td>
+<td>र (Devanagari Letter Ra)</td>
+<td>ृ (Devanagari Vowel Sign Vocalic R)</td>
+<td>ऋ (Devanagari Letter Vocalic R)</td>
+<td>ऱ (Devanagari Letter Rra)</td>
+</tr>
+<tr>
+<td>S</td>
+<td>स (Devanagari Letter Sa)</td>
+<td>श (Devanagari Letter Sha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>T</td>
+<td>त (Devanagari Letter Ta)</td>
+<td>थ (Devanagari Letter Tha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>U</td>
+<td>ु (Devanagari Vowel Sign U)</td>
+<td>ू (Devanagari Vowel Sign Uu)</td>
+<td>उ (Devanagari Letter U)</td>
+<td>ऊ (Devanagari Letter Uu)</td>
+</tr>
+<tr>
+<td>V</td>
+<td>व (Devanagari Letter Va)</td>
+<td>ौ (Devanagari Vowel Sign Au)</td>
+<td>औ (Devanagari Letter Au)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>W</td>
+<td>ड (Devanagari Letter Dda)</td>
+<td>ढ (Devanagari Letter Ddha)</td>
+<td>ड़ (Devanagari Letter Rra)</td>
+<td>ढ़ (Devanagari Letter Rha)</td>
+</tr>
+<tr>
+<td>X</td>
+<td>ष (Devanagari Letter Ssa)</td>
+<td>़ (Devanagari Sign Nukta)</td>
+<td>ऴ (Devanagari Letter Llla)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>य (Devanagari Letter Ya)</td>
+<td>ै (Devanagari Vowel Sign Ai)</td>
+<td>ऐ (Devanagari Letter Ai)</td>
+<td>य़ (Devanagari Letter YYa)</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>ञ (Devanagari Letter Nya)</td>
+<td>ङ (Devanagari Letter Nga)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table><hr>
+
+<h2 id="symbols--punctuation">Symbols &amp; Punctuation</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>`</td>
+<td>` (Grave Accent)</td>
+<td>~ (Tilde)</td>
+<td>“ (Left Double Quotation Mark)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>-</td>
+<td>- (Hyphen-Minus)</td>
+<td>_ (Underscore)</td>
+<td>॒ (Devanagari Stress Sign Anudatta)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>=</td>
+<td>= (Equals Sign)</td>
+<td>+ (Plus Sign)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>[</td>
+<td>[ (Left Square Bracket)</td>
+<td>{ (Left Curly Bracket)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>\</td>
+<td>\ (Backslash)</td>
+<td>| (Vertical Bar)</td>
+<td>। (Devanagari Danda)</td>
+<td>॥ (Devanagari Double Danda)</td>
+</tr>
+<tr>
+<td>]</td>
+<td>] (Right Square Bracket)</td>
+<td>} (Right Curly Bracket)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>;</td>
+<td>; (Semicolon)</td>
+<td>: (Colon)</td>
+<td>ᳲ (Vedic Sign Ardhavisarga)</td>
+<td>ᳳ (Vedic Sign Rotated Ardhavisarga)</td>
+</tr>
+<tr>
+<td>'</td>
+<td>' (Apostrophe)</td>
+<td>" (Quotation Mark)</td>
+<td>॑ (Devanagari Stress Sign Udatta)</td>
+<td>” (Right Double Quotation Mark)</td>
+</tr>
+<tr>
+<td>,</td>
+<td>, (Comma)</td>
+<td>&lt; (Less-Than Sign)</td>
+<td>ॅ (Devanagari Vowel Sign Candra E)</td>
+<td>ऍ (Devanagari Letter Candra E)</td>
+</tr>
+<tr>
+<td>.</td>
+<td>. (Full Stop)</td>
+<td>&gt; (Greater-Than Sign)</td>
+<td>ॉ (Devanagari Vowel Sign Candra O)</td>
+<td>ऑ (Devanagari Letter Candra O)</td>
+</tr>
+<tr>
+<td>/</td>
+<td>/ (Slash)</td>
+<td>? (Question Mark)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
+
+
+<blockquote>
+  Author: <strong>Abhishek Deshpande</strong><br>
+  License: <a href="https://opensource.org/license/mit">MIT</a><br>
+  Copyright: © Abhishek Deshpande</p>
+</blockquote>
