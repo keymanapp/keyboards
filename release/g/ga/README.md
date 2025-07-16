@@ -3,7 +3,7 @@ ga keyboard
 
 Description
 -----------
-Ga
+This is a QWERTY based keyboard for the Ga language of Ghana.
 
 Links
 -----
