@@ -1,19 +1,17 @@
-greek_tonizo keyboard
-==============
+# greek\_tonizo keyboard
 
-Description
------------
-Greek polytonic kbd for any device
+## Description
 
-Links
------
-Keyboard Homepages: https://keyman.com/keyboards/greek_tonizo   https://greek.tonizo.gr 
+Greek polytonic keyboard for any device
 
-Copyright
----------
+## Links
+
+Keyboard Homepages: https://keyman.com/keyboards/greek\_tonizo   https://greek.tonizo.gr
+
+## Copyright
+
 See [LICENSE.md](LICENSE.md)
 
-Supported Platforms
--------------------
- * any
+## Supported Platforms
 
+* any
