@@ -323,18 +323,24 @@ That's it! Start typing in any app.
 
 ```
 pak-urdu-phonetic/
-├── 📦 build/                          # Compiled output
-│   ├── 💻 pak_urdu_phonetic.kmp       # ✅ Installable keyboard package
-│   └── 🧱 pak_urdu_phonetic.kmx       # Compiled binary layout
-├── 💾 source/                         # Source files (editable)
-│   ├── 🧠 pak_urdu_phonetic.kmn       # Keyboard layout logic
-│   ├── 📦 pak_urdu_phonetic.kps       # Package definition for .kmp
-│   ├── 📘 readme.htm                  # Help/instructions
-│   └── 📗 welcome.htm                 # Help/instructions
-├── 📝 HISTORY.md                      # Version history
-├── 📄 LICENSE.md                      # License (MIT)
-├── 🛠️ pak_urdu_phonetic.kpj           # Keyman project file
-└── 📖 README.md                       # Project documentation (you’re here)
+├── 📝 HISTORY.md                          # Version history
+├── 📄 LICENSE.md                          # License (MIT)
+├── 🧾 pak_urdu_phonetic.keyboard_info     # Metadata for Keyman index
+├── 🛠️ pak_urdu_phonetic.kpj               # Keyman project file
+├── 📖 README.md                           # Project documentation (you’re here)
+└── 💾 source/                             # Source files (editable)
+    ├── 📁 help/
+    │   └── 📜 pak_urdu_phonetic.php       # PHP help file
+    ├── 🧠 pak_urdu_phonetic.kmn           # Keyboard layout logic
+    ├── 📦 pak_urdu_phonetic.kps           # Package definition for .kmp
+    ├── 📘 readme.htm                      # Help/instructions
+    ├── 🖼️ splash_screen.jpg               # Splash image
+    └── 📁 welcome/                        # Welcome screen assets
+        ├── 🖼️ s1.png
+        ├── 🖼️ s2.png
+        ├── 🖼️ s3.png
+        ├── 🖼️ s4.png
+        └── 📗 welcome.htm                 # Welcome instructions
 ```
 
 ## 🐛 Troubleshooting
