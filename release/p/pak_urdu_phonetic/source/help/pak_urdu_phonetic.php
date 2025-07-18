@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagename = 'Pak Urdu Phonetic Keyboard Help';
   $pagetitle = $pagename;
 
@@ -40,7 +40,7 @@
   <h1>🎉 Welcome to Pak Urdu Phonetic!</h1>
 
 <div class="welcome-message">
-<p><strong>Pak Urdu Phonetic</strong> is an Urdu keyboard layout inspired by the popular Windows-based <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> by <strong>mBilalm</strong>. It offers a simple, intuitive phonetic typing experience and has become the de facto standard for typing Urdu on Windows.</p>
+  <p><strong>Pak Urdu Phonetic</strong> is an Urdu keyboard layout faithfully ported from the popular Windows-based <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> layout by <strong>mBilalm</strong>. It offers the same simple, intuitive phonetic typing experience and brings this widely adopted standard to the Keyman platform for cross-platform use.</p>
 
   <p>This Keyman-based layout is a modern reimplementation, adapted for cross-platform use (Linux, Windows, macOS) while maintaining compatibility with the original mapping for familiarity and ease of transition.</p>
 
@@ -48,7 +48,7 @@
 </div>
 
   <div class="keyman-notice">
-    <p>This keyboard layout is intended for use with <strong>Keyman</strong> keyboard software. 
+    <p>This keyboard layout is intended for use with <strong>Keyman</strong> keyboard software.
     Please ensure you have Keyman installed to use this keyboard package effectively.</p>
   </div>
 
@@ -310,8 +310,8 @@
   <p><strong>Total Keys:</strong> 48 | <strong>Total Mappings:</strong> 174</p>
 
   <h2>📖 Need Help?</h2>
-  <p>If you encounter any issues, visit the 
-    <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">GitHub repository</a> 
+  <p>If you encounter any issues, visit the
+    <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">GitHub repository</a>
     or check <a href="https://keyman.com/support/">Keyman support</a>.</p>
 
     <p><strong>Credits:</strong><br><br>
