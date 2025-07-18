@@ -74,7 +74,7 @@
   <h2>⌨️ Keyboard Layout Viewer</h2>
   <p>The visual keyboard layout below shows which Urdu characters appear when you press different keys and modifiers (Shift, AltGr, etc.).</p>
 
-  <div id='osk' data-states='default shift shift-ctrl alt shift-alt'></div>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 
   <h2>Key Mappings</h2>
 
