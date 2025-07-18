@@ -1,5 +1,3 @@
-> A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
->
 > As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
 >
 > But every time I tried to seriously use Linux (especially on my laptop), the lack of a polished, feature-rich Urdu layout always pulled me back. No layout matched the familiarity or usability of what we had on Windows.
@@ -20,7 +18,7 @@ A cross-platform Urdu keyboard layout for Pakistani Urdu typing, ported from the
 
 This keyboard layout lets you type Urdu text using standard English keys in a phonetic way. For example:
 - Press `A` to get `ا`
-- Press `B` to get `ب` 
+- Press `B` to get `ب`
 - Press `P` to get `پ`
 
 It's designed specifically for Pakistani Urdu typing conventions and works exactly like the popular Windows-only Pak Urdu Installer.
@@ -295,8 +293,8 @@ That's it! Start typing in any app.
 | ` | . | U+002E |
 
 
-**Total Keys:** 48  
-**Total Mappings:** 174  
+**Total Keys:** 48
+**Total Mappings:** 174
 
 ## 🔧 For Developers
 
