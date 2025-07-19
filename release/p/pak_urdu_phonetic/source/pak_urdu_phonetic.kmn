@@ -1,0 +1,227 @@
+﻿c Ported from the original "Pak Urdu Installer" layout by mBilalm (https://mbilalm.com/urdu-installer.php).
+c Converted using Keyman Developer and structured for Linux/Windows/macOS distribution.
+c Packaged and maintained by Nashit Ahmed Barq.
+
+store(&NAME) 'Pak Urdu Phonetic'
+store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Copyright © Nashit Ahmed Barq'
+store(&MESSAGE) 'Modern cross-platform port of the popular Pak Urdu Installer keyboard layout by mBilalm (https://mbilalm.com/urdu-installer.php)'
+store(&KMW_RTL) '1'
+store(&TARGETS) 'web desktop'
+store(&VISUALKEYBOARD) 'pak_urdu_phonetic.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+0028
++ [RALT K_0] > U+06f0
++ [SHIFT RALT K_0] > U+fd3f
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
++ [RALT K_1] > U+06f1
++ [SHIFT RALT K_1] > U+0671
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0040
++ [RALT K_2] > U+06f2
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+0023
++ [RALT K_3] > U+06f3
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+0024
++ [RALT K_4] > U+06f4
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+066a
++ [RALT K_5] > U+06f5
++ [SHIFT RALT K_5] > U+06ec
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+06c2
++ [RALT K_6] > U+06f6
++ [SHIFT RALT K_6] > U+06ee
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+0026
++ [RALT K_7] > U+06f7
++ [SHIFT RALT K_7] > U+06e7
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+066d
++ [RALT K_8] > U+06f8
++ [SHIFT RALT K_8] > U+06de
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0029
++ [RALT K_9] > U+06f9
++ [SHIFT RALT K_9] > U+fd3e
+
++ [K_A] > U+0627
++ [SHIFT K_A] > U+0622
++ [RALT K_A] > U+0623
++ [SHIFT RALT K_A] > U+0625
+
++ [K_B] > U+0628
++ [SHIFT K_B] > U+fdfd
+
++ [K_C] > U+0686
++ [SHIFT K_C] > U+062b
++ [RALT K_C] > U+06e3
+
++ [K_D] > U+062f
++ [SHIFT K_D] > U+0688
+
++ [K_E] > U+0639
++ [SHIFT K_E] > U+0611
++ [RALT K_E] > U+06e0
++ [SHIFT RALT K_E] > 'علیہ السلام'
+
++ [K_F] > U+0641
++ [SHIFT K_F] > U+0656
+
++ [K_G] > U+06af
++ [SHIFT K_G] > U+063a
+
++ [K_H] > U+06be
++ [SHIFT K_H] > U+062d
+
++ [K_I] > U+06cc
++ [SHIFT K_I] > U+0670
++ [RALT K_I] > U+064a
++ [SHIFT RALT K_I] > U+0649
+
++ [K_J] > U+062c
++ [SHIFT K_J] > U+0636
++ [RALT K_J] > U+06da
++ [SHIFT RALT K_J] > U+06ed
+
++ [K_K] > U+06a9
++ [SHIFT K_K] > U+062e
++ [RALT K_K] > U+0643
+
++ [K_L] > U+0644
++ [SHIFT K_L] > U+0612
++ [RALT K_L] > U+06d9
++ [SHIFT RALT K_L] > 'رحمۃ اللہ علیہ'
+
++ [K_M] > U+0645
++ [SHIFT K_M] > U+0610
++ [RALT K_M] > U+06d8
++ [SHIFT RALT K_M] > U+06e2
+
++ [K_N] > U+0646
++ [SHIFT K_N] > U+06ba
++ [RALT K_N] > U+06e8
++ [SHIFT RALT K_N] > U+06ff
+
++ [K_O] > U+06c1
++ [SHIFT K_O] > U+06c3
++ [RALT K_O] > U+0647
++ [SHIFT RALT K_O] > U+0629
+
++ [K_P] > U+067e
++ [SHIFT K_P] > U+064f
++ [SHIFT RALT K_P] > U+06d7
+
++ [K_Q] > U+0642
++ [SHIFT K_Q] > U+fdfa
++ [RALT K_Q] > U+06e5
++ [SHIFT RALT K_Q] > U+06aa
+
++ [K_R] > U+0631
++ [SHIFT K_R] > U+0691
++ [RALT K_R] > U+0613
++ [SHIFT RALT K_R] > 'رضی اللہ عنہ'
+
++ [K_S] > U+0633
++ [SHIFT K_S] > U+0635
++ [RALT K_S] > U+06dc
++ [SHIFT RALT K_S] > U+06ea
+
++ [K_T] > U+062a
++ [SHIFT K_T] > U+0679
++ [RALT K_T] > U+200c
+
++ [K_U] > U+0626
++ [SHIFT K_U] > U+0621
++ [RALT K_U] > U+0654
++ [SHIFT RALT K_U] > U+0655
+
++ [K_V] > U+0637
++ [SHIFT K_V] > U+0638
++ [RALT K_V] > U+0615
+
++ [K_W] > U+0648
++ [SHIFT K_W] > U+0624
++ [RALT K_W] > U+200d
++ [SHIFT RALT K_W] > U+06e5
+
++ [K_X] > U+0634
++ [SHIFT K_X] > U+0698
+
++ [K_Y] > U+06d2
++ [SHIFT K_Y] > U+06d3
++ [RALT K_Y] > U+0601
++ [SHIFT RALT K_Y] > U+06e6
+
++ [K_Z] > U+0632
++ [SHIFT K_Z] > U+0630
++ [RALT K_Z] > U+06e1
+
++ [K_COLON] > U+061b
++ [SHIFT K_COLON] > U+003a
++ [RALT K_COLON] > U+201c
++ [SHIFT RALT K_COLON] > U+2018
+
++ [K_EQUAL] > U+0653
++ [SHIFT K_EQUAL] > U+06e4
++ [RALT K_EQUAL] > U+0602
+
++ [K_COMMA] > U+060c
++ [SHIFT K_COMMA] > U+0650
++ [RALT K_COMMA] > U+06eb
++ [SHIFT RALT K_COMMA] > U+060d
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+0640
++ [RALT K_HYPHEN] > U+0600
+
++ [K_PERIOD] > U+06d4
++ [SHIFT K_PERIOD] > U+064e
++ [RALT K_PERIOD] > U+06ef
++ [SHIFT RALT K_PERIOD] > U+06dd
+
++ [K_SLASH] > U+002f
++ [SHIFT K_SLASH] > U+061f
++ [SHIFT RALT K_SLASH] > U+06db
+
++ [K_BKQUOTE] > U+064d
++ [SHIFT K_BKQUOTE] > U+064b
++ [RALT K_BKQUOTE] > U+06e4
++ [SHIFT RALT K_BKQUOTE] > U+002e
+
++ [K_LBRKT] > U+064c
++ [SHIFT K_LBRKT] > U+0657
++ [RALT K_LBRKT] > U+06e9
++ [SHIFT RALT K_LBRKT] > U+06d6
+
++ [K_BKSLASH] > U+060e
++ [SHIFT K_BKSLASH] > U+0614
++ [RALT K_BKSLASH] > U+060f
++ [SHIFT RALT K_BKSLASH] > U+0603
+
++ [K_RBRKT] > U+0652
++ [SHIFT K_RBRKT] > U+0651
++ [RALT K_RBRKT] > U+0658
+
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [RALT K_QUOTE] > U+201d
++ [SHIFT RALT K_QUOTE] > U+2019
