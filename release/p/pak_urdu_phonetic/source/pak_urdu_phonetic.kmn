@@ -1,15 +1,14 @@
 ﻿c Ported from the original "Pak Urdu Installer" layout by mBilalm (https://mbilalm.com/urdu-installer.php).
 c Converted using Keyman Developer and structured for Linux/Windows/macOS distribution.
-c Packaged and maintained by Nashit Ahmed Barq (2025).
+c Packaged and maintained by Nashit Ahmed Barq.
 
 store(&NAME) 'Pak Urdu Phonetic'
-store(&COPYRIGHT) 'Copyright © 2025 Nashit Ahmed Barq'
 store(&KEYBOARDVERSION) '1.0'
-store(&TARGETS) 'windows macosx linux'
+store(&COPYRIGHT) 'Copyright © Nashit Ahmed Barq'
 store(&MESSAGE) 'Modern cross-platform port of the popular Pak Urdu Installer keyboard layout by mBilalm (https://mbilalm.com/urdu-installer.php)'
 store(&KMW_RTL) '1'
-store(&LANGUAGE) 'x0420'
-store(&WINDOWSLANGUAGES) 'x0420'
+store(&TARGETS) 'web desktop'
+store(&VISUALKEYBOARD) 'pak_urdu_phonetic.kvks'
 
 begin Unicode > use(main)
 
@@ -19,58 +18,48 @@ group(main) using keys
 
 + [K_0] > U+0030
 + [SHIFT K_0] > U+0028
-+ [SHIFT CTRL K_0] > U+0660
 + [RALT K_0] > U+06f0
 + [SHIFT RALT K_0] > U+fd3f
 
 + [K_1] > U+0031
 + [SHIFT K_1] > U+0021
-+ [SHIFT CTRL K_1] > U+0661
 + [RALT K_1] > U+06f1
 + [SHIFT RALT K_1] > U+0671
 
 + [K_2] > U+0032
 + [SHIFT K_2] > U+0040
-+ [SHIFT CTRL K_2] > U+0662
 + [RALT K_2] > U+06f2
 
 + [K_3] > U+0033
 + [SHIFT K_3] > U+0023
-+ [SHIFT CTRL K_3] > U+0663
 + [RALT K_3] > U+06f3
 
 + [K_4] > U+0034
 + [SHIFT K_4] > U+0024
-+ [SHIFT CTRL K_4] > U+0664
 + [RALT K_4] > U+06f4
 
 + [K_5] > U+0035
 + [SHIFT K_5] > U+066a
-+ [SHIFT CTRL K_5] > U+0665
 + [RALT K_5] > U+06f5
 + [SHIFT RALT K_5] > U+06ec
 
 + [K_6] > U+0036
 + [SHIFT K_6] > U+06c2
-+ [SHIFT CTRL K_6] > U+0666
 + [RALT K_6] > U+06f6
 + [SHIFT RALT K_6] > U+06ee
 
 + [K_7] > U+0037
 + [SHIFT K_7] > U+0026
-+ [SHIFT CTRL K_7] > U+0667
 + [RALT K_7] > U+06f7
 + [SHIFT RALT K_7] > U+06e7
 
 + [K_8] > U+0038
 + [SHIFT K_8] > U+066d
-+ [SHIFT CTRL K_8] > U+0668
 + [RALT K_8] > U+06f8
 + [SHIFT RALT K_8] > U+06de
 
 + [K_9] > U+0039
 + [SHIFT K_9] > U+0029
-+ [SHIFT CTRL K_9] > U+0669
 + [RALT K_9] > U+06f9
 + [SHIFT RALT K_9] > U+fd3e
 
@@ -81,7 +70,6 @@ group(main) using keys
 
 + [K_B] > U+0628
 + [SHIFT K_B] > U+fdfd
-+ [RALT K_B] > U+200f
 
 + [K_C] > U+0686
 + [SHIFT K_C] > U+062b
@@ -89,24 +77,20 @@ group(main) using keys
 
 + [K_D] > U+062f
 + [SHIFT K_D] > U+0688
-+ [RALT K_D] > U+202d
 
 + [K_E] > U+0639
 + [SHIFT K_E] > U+0611
 + [RALT K_E] > U+06e0
-+ [SHIFT RALT K_E] > U+e001
++ [SHIFT RALT K_E] > 'علیہ السلام'
 
 + [K_F] > U+0641
 + [SHIFT K_F] > U+0656
-+ [RALT K_F] > U+202e
 
 + [K_G] > U+06af
 + [SHIFT K_G] > U+063a
-+ [RALT K_G] > U+202a
 
 + [K_H] > U+06be
 + [SHIFT K_H] > U+062d
-+ [RALT K_H] > U+202b
 
 + [K_I] > U+06cc
 + [SHIFT K_I] > U+0670
@@ -121,12 +105,11 @@ group(main) using keys
 + [K_K] > U+06a9
 + [SHIFT K_K] > U+062e
 + [RALT K_K] > U+0643
-+ [SHIFT RALT K_K] > U+e020
 
 + [K_L] > U+0644
 + [SHIFT K_L] > U+0612
 + [RALT K_L] > U+06d9
-+ [SHIFT RALT K_L] > U+e002
++ [SHIFT RALT K_L] > 'رحمۃ اللہ علیہ'
 
 + [K_M] > U+0645
 + [SHIFT K_M] > U+0610
@@ -145,7 +128,6 @@ group(main) using keys
 
 + [K_P] > U+067e
 + [SHIFT K_P] > U+064f
-+ [RALT K_P] > U+202c
 + [SHIFT RALT K_P] > U+06d7
 
 + [K_Q] > U+0642
@@ -156,7 +138,7 @@ group(main) using keys
 + [K_R] > U+0631
 + [SHIFT K_R] > U+0691
 + [RALT K_R] > U+0613
-+ [SHIFT RALT K_R] > U+e000
++ [SHIFT RALT K_R] > 'رضی اللہ عنہ'
 
 + [K_S] > U+0633
 + [SHIFT K_S] > U+0635
@@ -183,7 +165,6 @@ group(main) using keys
 
 + [K_X] > U+0634
 + [SHIFT K_X] > U+0698
-+ [RALT K_X] > U+200e
 
 + [K_Y] > U+06d2
 + [SHIFT K_Y] > U+06d3
@@ -201,7 +182,6 @@ group(main) using keys
 
 + [K_EQUAL] > U+0653
 + [SHIFT K_EQUAL] > U+06e4
-+ [SHIFT CTRL K_EQUAL] > U+002b
 + [RALT K_EQUAL] > U+0602
 
 + [K_COMMA] > U+060c
@@ -211,7 +191,6 @@ group(main) using keys
 
 + [K_HYPHEN] > U+002d
 + [SHIFT K_HYPHEN] > U+0640
-+ [SHIFT CTRL K_HYPHEN] > U+003d
 + [RALT K_HYPHEN] > U+0600
 
 + [K_PERIOD] > U+06d4
@@ -221,12 +200,10 @@ group(main) using keys
 
 + [K_SLASH] > U+002f
 + [SHIFT K_SLASH] > U+061f
-+ [RALT K_SLASH] > U+e011
 + [SHIFT RALT K_SLASH] > U+06db
 
 + [K_BKQUOTE] > U+064d
 + [SHIFT K_BKQUOTE] > U+064b
-+ [SHIFT CTRL K_BKQUOTE] > U+06df
 + [RALT K_BKQUOTE] > U+06e4
 + [SHIFT RALT K_BKQUOTE] > U+002e
 
@@ -243,11 +220,8 @@ group(main) using keys
 + [K_RBRKT] > U+0652
 + [SHIFT K_RBRKT] > U+0651
 + [RALT K_RBRKT] > U+0658
-+ [SHIFT RALT K_RBRKT] > U+e01d
 
 + [K_QUOTE] > U+0027
 + [SHIFT K_QUOTE] > U+0022
 + [RALT K_QUOTE] > U+201d
 + [SHIFT RALT K_QUOTE] > U+2019
-
-
