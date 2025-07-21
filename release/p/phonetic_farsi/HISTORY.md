@@ -9,10 +9,10 @@ Phonetic Farsi Change History
 - Changed Vowel keycode combinations to be more compatible with text editors
     - From "Alt + {key}" to "Shift + {key}"
 
-* Author: Amir Reza Ghareebdost
+* Author: alliancecrusader
 
 1.0 (2024-07-18)
 ----------------
 Created the keyboard
-* Author: Amir Reza Ghareebdost
+* Author: alliancecrusader
 
