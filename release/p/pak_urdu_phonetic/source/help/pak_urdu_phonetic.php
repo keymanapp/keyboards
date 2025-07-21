@@ -918,6 +918,11 @@
                     <td>U+06E5</td>
                 </tr>
                 <tr>
+                    <td>X</td>
+                    <td>ﷻ</td>
+                    <td>U+FDFB</td>
+                </tr>
+                <tr>
                     <td>Y</td>
                     <td>ۦ</td>
                     <td>U+06E6</td>
@@ -966,7 +971,7 @@
         </table>
 
 
-  <p><strong>Total Keys:</strong> 47 | <strong>Total Mappings:</strong> 163</p>
+  <p><strong>Total Keys:</strong> 47 | <strong>Total Mappings:</strong> 164</p>
 
   <h2>📖 Need Help?</h2>
   <p>If you encounter any issues, visit the
