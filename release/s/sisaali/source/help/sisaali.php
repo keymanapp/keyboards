@@ -10,9 +10,9 @@ for the voiced bilabial implosive (type with [), ŋ for the velar nasal <br>(typ
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift'>
+<div id='osk-tablet' data-states='default shift rightalt shift-rightalt'>
 </div>
