@@ -956,9 +956,6 @@
 	{font-family:"Source Code Pro Black";
 	panose-1:2 11 8 9 3 4 3 2 2 4;}
 @font-face
-	{font-family:"Gentium Basic";
-	panose-1:2 0 5 3 6 0 0 2 0 4;}
-@font-face
 	{font-family:"Liberation Sans Narrow";
 	panose-1:2 11 6 6 2 2 2 3 2 4;}
 @font-face
@@ -988,9 +985,6 @@
 @font-face
 	{font-family:"DejaVu Serif Condensed";
 	panose-1:2 6 6 6 5 6 5 2 2 4;}
-@font-face
-	{font-family:"Gentium Book Basic";
-	panose-1:2 0 5 3 6 0 0 2 0 4;}
 @font-face
 	{font-family:"Liberation Sans";
 	panose-1:2 11 6 4 2 2 2 2 2 4;}
@@ -1040,33 +1034,6 @@
 	{font-family:"Limon S1";
 	panose-1:0 0 0 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:"SBL Hebrew";
-	panose-1:2 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Apparatus SIL";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"ASAP SILManuscript";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:SILDoulosIPA;
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:PitchContours;
-	panose-1:4 2 114 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Amer Phon SILDoulosL";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"ASAP SILCharis";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"ASAP SILDoulos";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"ASAP SILSophia";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
 	{font-family:RibengUni;
 	panose-1:0 0 0 0 0 0 0 0 0 0;}
 @font-face
@@ -1096,14 +1063,8 @@
 	{font-family:"Khmer Oureang";
 	panose-1:2 0 0 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:Scheherazade;
-	panose-1:1 0 6 0 2 0 0 2 0 3;}
-@font-face
 	{font-family:"Angkor 5";
 	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Gentium Plus";
-	panose-1:2 0 5 3 6 0 0 2 0 4;}
 @font-face
 	{font-family:"Khmer OS";
 	panose-1:2 0 5 0 0 0 0 2 0 4;}
@@ -1264,18 +1225,6 @@
 	{font-family:Vijaya;
 	panose-1:2 2 6 4 2 2 2 2 2 4;}
 @font-face
-	{font-family:"Charis SIL Compact";
-	panose-1:2 0 5 0 6 0 0 2 0 4;}
-@font-face
-	{font-family:"Doulos SIL";
-	panose-1:2 0 5 0 7 0 0 2 0 4;}
-@font-face
-	{font-family:"Charis SIL";
-	panose-1:2 0 5 0 6 0 0 2 0 4;}
-@font-face
-	{font-family:Andika;
-	panose-1:2 0 0 0 0 0 0 0 0 0;}
-@font-face
 	{font-family:"BIZ UDGothic";
 	panose-1:2 11 4 0 0 0 0 0 0 0;}
 @font-face
@@ -1422,20 +1371,6 @@
 @font-face
 	{font-family:LilyUPC;
 	panose-1:2 11 6 4 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Andika Afr";
-	panose-1:2 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Code2000;
-	panose-1:2 0 6 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\@Code2000";}
-@font-face
-	{font-family:Code2001;
-	panose-1:2 0 6 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Code2002;
-	panose-1:2 11 6 9 4 5 4 2 2 4;}
 @font-face
 	{font-family:KeymanwebOsk;
 	panose-1:2 11 8 6 3 7 2 4 2 4;}

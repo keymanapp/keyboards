@@ -1,5 +1,9 @@
 # Kayah [Latin] (SIL) Keyboard Change History
 
+1.2.1 (2025-Jun-09)
+------------------
+* Update font to new version of Charis
+
 1.2 (13 Sept 2024)
 -----------------
 * Add tablet layout

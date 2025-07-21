@@ -3,7 +3,7 @@ c with name "Soninke N'ti"
 store(&VERSION) '10.0'
 store(&NAME) 'Soninke N' U+0027 'ti'
 store(&COPYRIGHT) 'Copyright © Oreen Yousuf'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&BITMAP) 'soninke_n_ti.ico'
 store(&VISUALKEYBOARD) 'soninke_n_ti.kvks'
 store(&LAYOUTFILE) 'soninke_n_ti.keyman-touch-layout'
@@ -228,3 +228,15 @@ c latin punctuation instead of n'ti punctuation
 c to type `
 + [SHIFT K_BKQUOTE] > '`'
 + [RALT K_BKQUOTE] > '~' 
+
+c yilla on top of numbers; creates ordinal numbers (e.g., first, second third, etc.)
+'' + [RALT K_PERIOD] > U+E05D
+'' + [RALT K_PERIOD] > U+E066
+'' + [RALT K_PERIOD] > U+E065
+'' + [RALT K_PERIOD] > U+E064
+'' + [RALT K_PERIOD] > U+E063
+'' + [RALT K_PERIOD] > U+E062
+'' + [RALT K_PERIOD] > U+E061
+'' + [RALT K_PERIOD] > U+E060
+'' + [RALT K_PERIOD] > U+E05F
+'' + [RALT K_PERIOD] > U+E05E

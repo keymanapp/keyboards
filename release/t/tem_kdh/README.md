@@ -1,7 +1,7 @@
 Tem (kdh) Keyboard 
 =======================
 
-* Copyright:      © SIL International
+* Copyright: © SIL Global
 
 Description
 -----------
