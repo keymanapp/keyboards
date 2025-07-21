@@ -74,14 +74,14 @@ The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, 
 
 Note the arrow button, `▶`, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the remaining numbers that are orders of ten (e.g. ፳, ፴, ፵, etc.):
 
-<img src="source/help/images/phone/gff_amharic-numerals-2.jpeg" style="border: 1px solid black;"/>
+<img src="source/help/images/phone/gff_amharic-phone-numerals-2.jpeg" style="border: 1px solid black;"/>
 
 After tapping the `▶` button, the Geʾez orders of ten appear as shown:
 
-<img src="source/help/images/phone/gff_amharic-numerals-3.jpeg" style="border: 1px solid black;"/>
+<img src="source/help/images/phone/gff_amharic-phone-numerals-3.jpeg" style="border: 1px solid black;"/>
 
 Tapping the `▶` button again slides to the western digits, a final tap will return to the initial Geʾez numerals.
 
-<img src="source/help/images/phone/gff_amharic-numerals-4.jpeg" style="border: 1px solid black;"/>
+<img src="source/help/images/phone/gff_amharic-phone-numerals-4.jpeg" style="border: 1px solid black;"/>
 
 Simply tap the `ሀለሐ` key to return to the starting letters layers.
