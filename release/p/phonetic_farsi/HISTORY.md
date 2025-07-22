@@ -1,6 +1,10 @@
 Phonetic Farsi Change History
 ====================
 
+2.0.1 (2025-7-23)
+----------------
+- Updated contact details and copyright holder alias
+
 2.0 (2025-05-15)
 ----------------
 - Changed the setting key combinations from "Ctrl Shift Alt + {number}" to "Ctrl Shift + {number}".
