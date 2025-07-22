@@ -75,7 +75,7 @@
      </th>
    </tr>
    <tr>
-     <td>high level</td>
+     <td>high level/level</td>
      <td></td>
      <td>cao<strong></strong></td>
      <td>cao高</td>
@@ -101,7 +101,7 @@
      <td>txà茶
      </td></tr>
    <tr>
-     <td>low falling</td>
+     <td>low falling/falling</td>
      <td>j</td>
      <td>hy<strong>j</strong></td>
      <td>hỵ係
