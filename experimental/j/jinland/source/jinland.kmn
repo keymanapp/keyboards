@@ -145,7 +145,7 @@ store(aeiouy) 'aeiouyAEIOUY'
 store(aeiou) 'aeiouAEIOU'
 store(rgysdfhklzxvb) 'rgysdfhklzxvbRGYSDFHKLZXVB'
 store(eiy) 'eiyEIY'
-store(u) 'uúùủụUÚÙỦỤ'
+store(u)  'uúùủụUÚÙỦỤ'
 store(u_v) 'úùủụÚÙỦỤ'
 store(uw) 'ưứừửựƯỨỪỬỰ'
 store(ae) 'aeAE'
@@ -942,7 +942,7 @@ any(c) any(h) any(consonants) + any(no_d_c) > context index(no_d_c, 4)
 any(c) any(h) any(consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(c) any(h) any(consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(c) any(h) any(consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
-any(c) any(h) any(consonants)  any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > context index(punctuationc, 8)
+any(c) any(h) any(consonants)  any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 8)
 any(d) any(un_z_consonants) + any(no_d_c) > context index(no_d_c, 3)
 any(d) any(un_z_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
 any(d) any(un_z_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
@@ -1094,10 +1094,10 @@ any(g) any(i) any(aa) any(end_consonants) + any(w) > index(g, 1) index(i, 2) ind
 any(g) any(i) any(aa) any(n) any(g) + any(two_a) > index(g, 1) index(i, 2) index(a, 3) index(n, 4) index(g, 5)
 any(g) any(i) any(aa) any(n) any(g) + any(w) > index(g, 1) index(i, 2) index(aw, 3) index(n, 4) index(g, 5)
 any(g) any(i) any(o) + any(two_o) > index(g, 1) index(i, 2) index(oo, 3)
-any(g) any(i) any(two_o) any(end_consonants) + any(two_o) > index(g, 1) index(i, 2) index(oo, 3) index(end_consonants, 4)
-any(g) any(i) any(two_o) any(n) any(g) + any(two_o) > index(g, 1) index(i, 2) index(oo, 3) index(n, 4) index(g, 5)
+any(g) any(i) any(o) any(end_consonants) + any(two_o) > index(g, 1) index(i, 2) index(oo, 3) index(end_consonants, 4)
+any(g) any(i) any(o) any(n) any(g) + any(two_o) > index(g, 1) index(i, 2) index(oo, 3) index(n, 4) index(g, 5)
 
-any(ae) any(two_o) + any(two_o) > index(ae, 1) index(o, 2) index(o, 3)
+any(ae) any(two_o) + any(two_o) > index(ae, 1) index(two_o, 2) index(two_o, 3)
 any(u) any(end_consonants) + any(w) > index(uw, 1) index(end_consonants, 2)
 any(u) any(n) any(g) + any(w) > index(uw, 1) index(n, 2) index(g, 3)
 
