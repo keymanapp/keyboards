@@ -1,14 +1,8 @@
 Cabécar Keyboard / Teclado Cabécar
 ==============
 
-© 2020-2021 Victoria Quint
+© 2020-2022 Victoria Quint
 
-Version 1.2
-
-Prepared for release
---------------------
-
-Version 1.1
 
 Description
 -----------

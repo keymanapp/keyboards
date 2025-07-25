@@ -24,16 +24,15 @@
          .MalarTable2 td:first-child + td {text-align:left; font-size: 20px; font-family:monospace;}
          .MalarFig { display: block; margin-bottom: 1em; margin-left: 0px; margin-right: 0px;}
          .MalarFigC { margin: 2px 0 0 0; font-variant: small-caps; font-family:'Open Sans', sans-serif; font-weight: bold; color: #bb3333; }
-         .MalarMainCont { margin-left: 10px; margin-right: 10px; }
+         .MalarMainCont { margin-left: 10px; margin-right: 10px; 
+         @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap');
 		 
 END;
   require_once('header.php');
 ?>
 
       <div class="MalarMainCont">
-	  <!--link href="https://smc.org.in/fonts/css/fonts.css" rel="stylesheet"--> 
-      <link href="https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap&subset=malayalam" rel="stylesheet">
-         <p class="MalarP"><b>Malar Malayalam Inscript</b> Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at <a href="https://smc.org.in/fonts/" target="_blank">https://smc.org.in/fonts/</a>.</p>
+         <p class="MalarP"><b>Malar Malayalam Inscript</b> Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded as per the Unicode Standard, Version 14.0.</p>
          <h2 class="MalarH2">
             Keyboard Layout
          </h2>
@@ -575,6 +574,12 @@ END;
                   <td>jd]]</td>
                </tr>
                <tr>
+                  <td>U+0D04 </td>
+                  <td>MALAYALAM LETTER VEDIC ANUSVARA </td>
+                  <td>ഄ</td>
+                  <td>x]</td>
+               </tr>
+               <tr>
                   <td>U+0D00 </td>
                   <td>MALAYALAM SIGN COMBINING ANUSVARA ABOVE </td>
                   <td>ഀ</td>
@@ -795,6 +800,10 @@ END;
                   <td>ന്റ</td>
                   <td>vdJ</td>
                </tr>
+			   <tr>
+                  <td>ൻ്റ</td>
+                  <td>vd]dJ</td>
+               </tr>
                <tr>
                   <td>ഞ്ച</td>
                   <td>}d;</td>
@@ -896,8 +905,8 @@ END;
                   <td>kq kqq kqqq</td>
                </tr>
                <tr>
-                  <td>കം കഀ കഁ കം</td>
-                  <td>kx kxx kxxx kxxxx</td>
+                  <td>കം കഀ കഁ കം കഄ</td>
+                  <td>kx kxx kxxx kxxxx kx]</td>
                </tr>
                <tr>
                   <td>ക് ക഻ ക഼ ക്</td>
@@ -949,7 +958,7 @@ END;
                </tr>
                <tr>
                   <td>൧/൨<br>1/2<br>1 / 2</td>
-                  <td>1/2 <br><b>AltGr1</b>/<b>AltGr2</b><br><b>AltGr1 </b><b>AltGr1/</b><b> AltGr2</b></td>
+                  <td>1/2 <br><b>AltGr1</b>/<b>AltGr2</b><br><b>AltGr1 </b><b>AltGr/</b><b> AltGr2</b></td>
                </tr>
                <tr>
                   <td>൧/<br>൧/യ<br>൧യ</td>
@@ -1007,6 +1016,14 @@ END;
                   <td>അ-അ–അ—അ-</td>
                   <td>D-D-]D-]]D-]]]</td>
                </tr>
+			   <tr>
+                  <td><b>AltGr/</b>]</td>
+                  <td>÷</td>
+               </tr>
+			   <tr>
+                  <td><b>AltGr*</b>]</td>
+                  <td>×</td>
+               </tr>
             </tbody>
          </table>
          <br>
@@ -1018,7 +1035,15 @@ END;
             <li>After a number in context output of <b>/</b> key input will be <b>/</b>.</li>
             <li>If necessary type <b>X</b> key to break a keyboard rule.</li>
          </ul>
+         <h2 class="MalarH2">
+            Malayalam Unicode Fonts
+         </h2>
+         <ul class="MalarP2">
+            <li><a href="https://smc.org.in/fonts/" target="blank">Swathanthra Malayalam Computing (SMC) Fonts</a></li>
+            <li><a href="https://rachana.org.in/" target="blank">Rachana Institute of Typography (RIT) Fonts</a></li>
+            <li><a href="https://fonts.google.com/?subset=malayalam" target="blank">Google Fonts</a></li>
+         </ul>
          <br>
-         <p class="MalarP3"><a href="https://forms.gle/DcJZZBHH4vwyoLoz7" target="_blank">Click here to submit a feedback about <b>Malar Malayalam Inscript</b> Keyboard.</a>
+         <p class="MalarP3">Send your feedback about <b>Malar Malayalam Inscript</b> Keyboard to <a href="mailto:ramesh1@protonmail.com?subject=Malar Malayalam Inscript Keyboard - Feedback">ramesh1@protonmail.com</a>
          </p>
       </div>

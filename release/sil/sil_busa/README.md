@@ -1,9 +1,7 @@
-Busa Keyboard 
+Busa (SIL) Keyboard 
 =====================
 
-Copyright (C) SIL International
-
-Version 1.4.2
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 
@@ -16,4 +14,6 @@ Supported Platforms
  * Macosx
  * Linux
  * Web
+ * Mobile
+ 
 

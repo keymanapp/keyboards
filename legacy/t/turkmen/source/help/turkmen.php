@@ -6,8 +6,8 @@
 This package also includes a Cyrillic Turkmen keyboard.  Both keyboards are Unicode.
   Authors:     David Gray
 */
-  $pagename = 'Turkmen Latin and Cyrillic Unicode Keyboard Help';
-  $pagetitle = 'Turkmen Latin and Cyrillic Unicode Keyboard Help';
+  $pagename = 'Turkmen Latin and Cyrillic Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Turkmen Latin and Cyrillic Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">
@@ -95,9 +95,9 @@ table.display { border-collapse: collapse; }
 <p style='margin-top: 2px'><i>Created by David Gray</i></p>
 <p>This package includes 2 Turkmen keyboards: <b>Latin-Turkmen-Unicode</b> and <b>Cyrillic-Turkmen-Unicode</b>.
 These keyboards are designed for simple typing of Turkmen Latin and Cyrillic text.</p>
-<p><img src='tkmluncd.bmp' alt='Turkmen Latin' style='float: left; margin: 0 12px 12px 12px;' /><b>Turkmen-Latin-Unicode</b> is a Latin script Unicode keyboard for Turkmen.  This
+<p><img src='TKMLUNCD.bmp' alt='Turkmen Latin' style='float: left; margin: 0 12px 12px 12px;' /><b>Turkmen-Latin-Unicode</b> is a Latin script Unicode keyboard for Turkmen.  This
 keyboard includes an On Screen Keyboard and is based on the US English layout.</p>
-<p><img src='tkmold.bmp' alt='Turkmen Cyrillic' style='float: left; margin: 0 12px 12px 12px' /><b>Turkmen-Cyrillic-Unicode</b> is a Cyrillic script Unicode keyboard for Turkmen.  This
+<p><img src='TKMOLD.bmp' alt='Turkmen Cyrillic' style='float: left; margin: 0 12px 12px 12px' /><b>Turkmen-Cyrillic-Unicode</b> is a Cyrillic script Unicode keyboard for Turkmen.  This
 keyboard also includes an On Screen Keyboard and includes the Cyrillic letters needed for Russian loan words.</p>
 
 <h2>Latin Keyboard Layout Notes</h2>

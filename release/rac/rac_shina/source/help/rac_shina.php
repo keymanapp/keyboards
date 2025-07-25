@@ -1,13 +1,9 @@
 <?php 
-  $pagename = 'Rachitrali-Shina Keyman Keyboard Help';
+  $pagename = 'Rachitrali-Shina Keyboard Help';
   $pagetitle = $pagename;
 require_once('header.php');
 ?>
 
-<h1>The Rachitrali-Shina Keyman Keyboard Package</h1>
-
-
-<h2>Introduction</h2>
 <p>This keyboard is designed for the Shina language spoken in Gilgit-Baltistan of Northern Pakistan, in its standard Perso-Arabic script, as used in Gilgit-Baltistan of Pakistan. It is based on phonetic keyboard for Shina Language developed by Pakistani linguist, author, Scientist,  Inventor researcher and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Shina Keyboard.
 </p>
 
@@ -58,9 +54,4 @@ and selecting the On Screen Keyboard menu item.     </p>
 <p style="text-align: right; dir=rtl; font-size:150%">
 شینا سافٹ ویر اور شینا ٹیکسٹ ایڈیٹر ایجاد کرنے کا تاریخی کام پاکستان کے ضلع چترال سے تعلق رکھنے والے لسانی ماہر جناب رحمت عزیز چترانی نے شروع کیا ہے۔ اور آج اس سافٹ ویر کے زریعے رحمت عزیز چترالی نے شینا جیسی غیر تحریری زبان کو تحریری زبان میں تبدیل کرکے کمپیوٹر اور موبائل  کی زبان بنا دیا ہے اور شینا بولنے والے لوگ اب فیس بک اور ٹویٹر میں بھی اس سافٹ ویر کے زریعے شینا لکھ رہے ہیں جو کہ شینا دان طبقے کے لیے یقینا بہت بڑی خوشی کی بات ہے
 </p>
-
-<h2>Links</h2>
-<ul>
-<li><a href='http://keymankeyboards.com/iso:scl'>Other keyboards for these languages</a></li>
-</ul>
 

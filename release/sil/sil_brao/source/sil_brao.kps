@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\makara.PHNOMPENH\Downloads\temp\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,18 @@
   </StartMenu>
   <Info>
     <Name URL="">Brao (SIL)</Name>
-    <Copyright URL="">© 2021 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description URL="">ក្ដារចុច Brao (SIL) ត្រូវ​បាន​បង្កើតឡើងសម្រាប់​វាយជាភាសាព្រៅ
+ដែលជាភាសានិយាយនៅភាគ​ឦសាននៃប្រទេសកម្ពុជា ដោយប្រើតួអក្សរខ្មែរ។
+ប្លង់​ក្ដារចុចសម្រាប់​ប្រើប្រាស់​លើ​កុំព្យូទ័រ​គឺ​ស្រដៀង​នឹង​ប្លង់ក្ដារចុចខ្មែរ
+NiDA ប៉ុន្តែ​មាន​ស្រៈ​តិចជាង។
+គេ​ប្រើ​ជើងព្យញ្ជនៈ​តែ​ពីរ​ប៉ុណ្ណោះក្នុង​ភាសានេះ៖ «្រ» និង «្ល»។ Brao
+(SIL) keyboard is designed for typing Brao Lave language spoken in
+north-eastern Cambodia. Khmer script is used for this keyboard. The
+desktop layout is similar to that of the Khmer NiDA keyboard, but there
+are less vowel characters.</Description>
   </Info>
   <Files>
     <File>
@@ -45,48 +56,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-B.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-BI.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-I.ttf</Name>
-      <Description>Font Khmer Mondulkiri Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</Name>
-      <Description>Font Khmer Mondulkiri</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>welcome\touch_default.png</Name>
@@ -136,17 +105,74 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Bold.ttf</Name>
+      <Description>Font Busra Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-ExtraLight.ttf</Name>
+      <Description>Font Busra ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Light.ttf</Name>
+      <Description>Font Busra Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Medium.ttf</Name>
+      <Description>Font Busra Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</Name>
+      <Description>Font Busra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-SemiBold.ttf</Name>
+      <Description>Font Busra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Brao (SIL)</Name>
       <ID>sil_brao</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="brb-Khmr">Lave (Brao)</Language>
+        <Language ID="brb">Lave (Brao)</Language>
       </Languages>
+      <Examples>
+        <Example ID="brb-Khmr" Keys="b R U v" Text="ប្រូវ" Note="Name of language"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

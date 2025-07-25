@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,9 +18,13 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.5</Version>
+    <Version URL=""></Version>
     <Name URL="">Khmer (SIL)</Name>
-    <Copyright URL="">(c) 2002 - 2019 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for any languages using the Khmer script. This
+keyboard is very similar to the Khmer ABS keyboard, but it is a Unicode
+keyboard.</Description>
+    <Author URL="">D. Kanjahn</Author>
   </Info>
   <Files>
     <File>
@@ -93,22 +99,102 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-alt.png</Name>
+      <Description>File tablet-alt.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-alt-shift.png</Name>
+      <Description>File tablet-alt-shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-default.png</Name>
+      <Description>File tablet-default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-shift.png</Name>
+      <Description>File tablet-shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Bold.ttf</Name>
+      <Description>Font Busra Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-ExtraLight.ttf</Name>
+      <Description>Font Busra ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Light.ttf</Name>
+      <Description>Font Busra Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Medium.ttf</Name>
+      <Description>Font Busra Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</Name>
+      <Description>Font Busra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-SemiBold.ttf</Name>
+      <Description>Font Busra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Khmer (SIL)</Name>
       <ID>sil_khmer</ID>
-      <Version>1.5</Version>
+      <Version>2.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="km">Central Khmer</Language>
-        <Language ID="brb-Khmr">Lave (Khmer)</Language>
+        <Language ID="brb">Lave (Khmer)</Language>
         <Language ID="cmo-Khmr">Central Mnong (Khmer)</Language>
         <Language ID="jra-Khmr">Jarai (Khmer)</Language>
         <Language ID="kdt-Khmr">Kuy (Khmer)</Language>
-        <Language ID="krr-Khmr">Krung (Khmer)</Language>
-        <Language ID="krv-Khmr">Kavet (Khmer)</Language>
+        <Language ID="krr">Krung</Language>
+        <Language ID="krv">Kavet</Language>
         <Language ID="kxm-Khmr">Northern Khmer (Khmer)</Language>
-        <Language ID="tpu-Khmr">Tampuan (Khmer)</Language>
+        <Language ID="tpu">Tampuan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

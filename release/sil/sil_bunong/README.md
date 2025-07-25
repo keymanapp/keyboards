@@ -1,14 +1,12 @@
-Bunong (SIL) Keyboard Data
+Bunong ឞូន៝ង (SIL) Keyboard Data
 ------------------------------
 
-Copyright (C) 2021 SIL International
-
-Version 1.0
+Copyright (C) SIL Global
 
 Description
 -----------
 
-This keyboard is designed for typing Bunong language using Khmer characters.
+Bunong ឞូន៝ង (SIL) keyboard is designed for typing Bunong language using Khmer characters.
 
 Supported Platforms
 -------------------

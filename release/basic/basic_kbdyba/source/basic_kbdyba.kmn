@@ -13,8 +13,8 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'basic_kbdyba.kvks'
 store(&BITMAP) 'basic_kbdyba.ico'
 store(&LAYOUTFILE) 'basic_kbdyba.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2018-2020 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '(c) 2018-2022 SIL International'
+store(&KEYBOARDVERSION) '1.1.1'
 
 begin Unicode > use(main)
 
@@ -136,11 +136,11 @@ group(main) using keys
 + [CAPS SHIFT K_M] > U+006d
 
 c 2020-Mar-02 added grave m
-dk(005b) + [K_M]       > U+006d U+0300 
-dk(005b) + [SHIFT K_M] > U+004D U+0300 
+dk(005b) + [NCAPS K_M]       > U+006d U+0300 
+dk(005b) + [NCAPS SHIFT K_M] > U+004D U+0300 
 c 2020-Mar-02 added acute m
-dk(0027) + [K_M]       > U+1e3f 
-dk(0027) + [SHIFT K_M] > U+1e3e 
+dk(0027) + [NCAPS K_M]       > U+1e3f 
+dk(0027) + [NCAPS SHIFT K_M] > U+1e3e 
 
 + [T_M_Grave] > U+006d U+0300
 + [SHIFT T_M_Grave] > U+004d U+0300

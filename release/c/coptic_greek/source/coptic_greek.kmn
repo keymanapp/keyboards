@@ -1,11 +1,12 @@
 ﻿store(&VERSION) "10.0" 
 store(&NAME) "Coptic (Greek)" 
-store(&COPYRIGHT) '© 2010-2019 Michael Everson, evertype.com.'
+store(&COPYRIGHT) '© Michael Everson, evertype.com.'
 store(&MESSAGE) "Coptic - Greek QWERTY keyboard" 
 store(&BITMAP) 'coptic_greek.ico'
 store(&VISUALKEYBOARD) 'coptic_greek.kvks'
-store(&KEYBOARDVERSION) '2.2'
-store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '2.4'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'coptic_greek.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -24,7 +25,7 @@ c Changes from Qwerty to Greek
    + [K_C] > "ϩ"  c was h
    + [K_U] > "ⲑ"  c was q
    + [K_Y] > "ⲩ"  c was u
-   + [K_H] > "ⲏ"  c was y
+   + [K_H] > "ⲏ"  c was y U+2C8F
    + [SHIFT K_Q] > "Ϭ"  c was c
    + [SHIFT K_C] > "Ϩ"  c was h
    + [SHIFT K_U] > "Ⲑ"  c was q
@@ -62,19 +63,19 @@ c Changes from Qwerty to Greek
    + [K_F] > "ϥ"  c line(0)
    + [K_G] > "ⲅ"  c line(0)
    + [K_HYPHEN] > "-"  c line(0)
-   + [K_I] > "ⲓ"  c line(0)
+   + [K_I] > "ⲓ"  c line(0) U+2C93
    + [K_J] > "ϫ"  c line(0)
    + [K_K] > "ⲕ"  c line(0)
    + [K_LBRKT] > "["  c line(0)
    + [K_L] > "ⲗ"  c line(0)
-   + [K_M] > "ⲙ"  c line(0)
+   + [K_M] > "ⲙ"  c line(0) U+2C99
    + [K_N] > "ⲛ"  c line(0)
    + [K_O] > "ⲟ"  c line(0)
    + [K_PERIOD] > "."  c line(0)
    + [K_P] > "ⲡ"  c line(0)
    + [K_QUOTE] > "'"  c line(0)
    + [K_RBRKT] > "]"  c line(0)
-   + [K_R] > "ⲣ"  c line(0)
+   + [K_R] > "ⲣ"  c line(0) U+2CA3
    + [K_SLASH] > "/"  c line(0)
    + [K_S] > "ⲥ"  c line(0)
    + [K_T] > "ⲧ"  c line(0)
@@ -101,17 +102,17 @@ c Changes from Qwerty to Greek
    + [SHIFT K_COMMA] > "︤"  c line(0)
    + [SHIFT K_D] > "Ⲇ"  c line(0)
    + [SHIFT K_EQUAL] > "+"  c line(0)
-   + [SHIFT K_E] > "Ⲉ"  c line(0)
+   + [SHIFT K_E] > "Ⲉ"  c line(0) U+2C88
    + [SHIFT K_F] > "Ϥ"  c line(0)
    + [SHIFT K_G] > "Ⲅ"  c line(0)
    + [SHIFT K_HYPHEN] > "_"  c line(0)
-   + [SHIFT K_I] > "Ⲓ"  c line(0)
+   + [SHIFT K_I] > "Ⲓ"  c line(0) U+2C92
    + [SHIFT K_J] > "Ϫ"  c line(0)
    + [SHIFT K_K] > "Ⲕ"  c line(0)
    + [SHIFT K_LBRKT] > "{"  c line(0)
    + [SHIFT K_L] > "Ⲗ"  c line(0)
    + [SHIFT K_M] > "Ⲙ"  c line(0)
-   + [SHIFT K_N] > "Ⲛ"  c line(0)
+   + [SHIFT K_N] > "Ⲛ"  c line(0) U+2C9A
    + [SHIFT K_O] > "Ⲟ"  c line(0)
    + [SHIFT K_PERIOD] > "︥"  c line(0)
    + [SHIFT K_P] > "Ⲡ"  c line(0)
@@ -120,10 +121,10 @@ c Changes from Qwerty to Greek
    + [SHIFT K_R] > "Ⲣ"  c line(0)
    + [SHIFT K_SLASH] > "?"  c line(0)
    + [SHIFT K_S] > "Ⲥ"  c line(0)
-   + [SHIFT K_T] > "Ⲧ"  c line(0)
+   + [SHIFT K_T] > "Ⲧ"  c line(0) U+2CA6
    + [SHIFT K_V] > "Ⲱ"  c line(0)
    + [SHIFT K_W] > "Ϣ"  c line(0)
-   + [SHIFT K_X] > "Ⲭ"  c line(0)
+   + [SHIFT K_X] > "Ⲭ"  c line(0) U+2CAC
    + [SHIFT K_Z] > "Ⲍ"  c line(0)
    + [SHIFT K_oE2] > '́'
       
@@ -164,7 +165,7 @@ dk(2) + " " > '⸖'
 + [RALT K_SLASH] > '⸓'
 + [RALT K_SPACE] > ' '
 + [RALT K_S] > 'ⲵ'
-+ [RALT K_T] > 'ϯ'
++ [RALT K_T] > 'ϯ' c U+03EF
 + [RALT K_V] > 'ⲿ'
 + [RALT K_W] > 'ⳃ'
 + [RALT K_X] > 'ϧ'
@@ -219,8 +220,10 @@ c + [SHIFT RALT K_3] > '‖'
   deadkey(2)  + "-" > "⸏"  c line(0)
   deadkey(2)  + "." > "⳼"  c line(0)
   deadkey(2)  + "=" > "⸐"  c line(0)
-  deadkey(2)  + "?" > "⳺"  c line(0)
+  deadkey(2)  + "/" > "⳺"  c line(0)
   deadkey(2)  + "\" > "⳻"  c line(0)
+  deadkey(2)  + ";" > "⸴"  c line(0)
+  deadkey(2)  + ":" > "⸳"  c line(0)
 
 c  deadkey(2)  + "Ϣ" > "Ⳬ"  c line(0)
 c  deadkey(2)  + "ϣ" > "ⳬ"  c line(0)
@@ -230,6 +233,10 @@ c  deadkey(2)  + "Ϫ" > "Ⳮ"  c line(0)
 c  deadkey(2)  + "ϫ" > "ⳮ"  c line(0)
   deadkey(2)  + [SHIFT K_J] > "Ⳮ"  c line(0)
   deadkey(2)  + [K_J] > "ⳮ"  c line(0)
+c  deadkey(2)  + "Ⲭ" > "Ⳳ"  c line(0)
+c  deadkey(2)  + "ⲭ" > "ⳳ"  c line(0)
+  deadkey(2)  + [SHIFT K_X] > "Ⳳ"  c line(0)
+  deadkey(2)  + [K_X] > "ⳳ"  c line(0)
 c  deadkey(1)  + "ϭ" > "⳪"  c line(0)
   deadkey(1)  + [K_C] > "⳪"  c line(0)
 c  deadkey(2)  + "Ⲉ" > "Ⲷ"  c line(0)

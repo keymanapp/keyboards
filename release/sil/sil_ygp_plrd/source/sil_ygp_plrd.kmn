@@ -8,10 +8,11 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Bai Yi – White Yi (SIL)'
-store(&TARGETS) 'windows macosx linux web'
-store(&COPYRIGHT) '© 2014-2020 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&VISUALKEYBOARD) 'sil_ygp_plrd.kvks'
+store(&LAYOUTFILE) 'sil_ygp_plrd.keyman-touch-layout'
 
 begin Unicode > use(Umain)
 
@@ -42,7 +43,7 @@ group (Umain) using keys
 + 'x' > u+16F33   c Glyph variation
 + 'y' > u+16F3D
 + 'z' > u+16F3B
-+ 'A' > nul       c KEY NOT ASSIGNED
++ 'A' > U+16F8F c right
 + 'B' > u+16F57
 + 'C' > u+16F12
 + 'D' > u+16F62
@@ -51,7 +52,7 @@ group (Umain) using keys
 + 'G' > u+16F73
 + 'H' > u+16F5C
 + 'I' > u+16F7B
-+ 'J' > nul        c DOESN'T EXIST IN TEXTS
++ 'J' > U+16F90 c top right
 + 'K' > u+16F54
 + 'L' > u+16F75
 + 'M' > u+16F7A
@@ -65,7 +66,7 @@ group (Umain) using keys
 + 'U' > u+16F51
 + 'V' > u+16F7E
 + 'W' > u+16F28
-+ 'X' > nul       c KEY NOT ASSIGNED
++ 'X' > U+16F91 c above
 + 'Y' > u+16F68
 + 'Z' > u+16F60
 + '1' > '1'
@@ -95,5 +96,23 @@ c + '@' > ''
 + '"' > '"'
 + '=' > ';'
 + "'" > "'"
++ [RALT K_N] > U+16F23 c nga
++ [RALT K_S] > U+16F2E c tsha
++ [RALT K_C] > U+16F32 c reformed tsha
++ [RALT K_T] > U+16F48 c te
++ [RALT K_X] > U+16F49 c tse
++ [RALT K_R] > U+16F4A c rte
++ [SHIFT K_BKQUOTE] > U+16F50 c nasalization
++ [RALT K_BKQUOTE] > "~"
+
++ [RALT K_E] > U+16F76 c eir
++ [RALT K_O] > U+16F81 c og
++ [RALT K_V] > U+16F83 c vw
++ [RALT K_I] > U+16F84 c ig
++ [RALT K_A] > U+16F85 c ea
++ [RALT K_G] > U+16F86 c iong
++ [RALT K_U] > U+16F87 c ui
+
+
 c
 

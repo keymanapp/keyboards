@@ -13,7 +13,7 @@ languages. It covers all of the Unicode Myanmar script blocks and works
 on all OpenType and Graphite based systems.
 
 Features:
-* Special support for: ksw, kht, kyu, shn, aio, phk, csh
+* Special support for: ksw, kht, kyu, shn, aio, phk, csh, tjl
 * Variation Selector support for kht, aio, phk
 
 Issues:
@@ -33,6 +33,19 @@ font see OFL-FAQ.txt.
 ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
+
+27 November 2024 (SIL WSTech team) Version 5.100
+- Added Pa'o and Eastern Pwo Karen digits
+- Stack medials vertically (needed for Sanskrit)
+- Add dotted form of U+1002 with VS1 for Khamti, Aiton, and Phake
+- Added Tai Laing variant glyphs and language support (including adding cv10 and ss10)
+- Added Aiton and Phake language support
+- Fixed various bugs
+
+08 June 2022 (SIL WSTech team) Version 5.001
+- Added Character Variant feature (cv09) for U+AA6C variant selection in OpenType and Graphite
+- Added Stylistic Set feature (ss09) for U+AA6C variant selection in OpenType
+- Added support for tall U/UU (U+102F/U+1030) following a sequence of U+101A and U+103E
 
 18 June 2021 (SIL WSTech team) Version 5.0
 - Added Thai Mon variant glyphs and language support
@@ -83,7 +96,7 @@ This list is sorted by last name in alphabetical order.)
 N: Jon Coblentz
 D: Font engineer
 
-N: Bobby deVos
+N: Bobby de Vos
 D: Font engineer
 
 N: Debbi Hosken
@@ -101,4 +114,4 @@ D: Glyph design
 N: Keith Stribley
 D: OpenType engineering
 
-The Padauk fonts are maintained by SIL International.
+The Padauk fonts are maintained by SIL Global.

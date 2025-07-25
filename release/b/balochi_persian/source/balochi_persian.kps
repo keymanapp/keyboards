@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.305.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,9 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Balochi Persian</Name>
-    <Copyright URL="">© 2019-2021 SIL International</Copyright>
+    <Copyright URL="">© 2019-2024 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>This keyboard roughly follows the layout of the standard Persian Windows
+keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -53,12 +56,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\lateef\LateefRegOT.ttf</Name>
-      <Description>Font Lateef</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\persianU_.png</Name>
       <Description>File persianU_.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -82,13 +79,87 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Bold.ttf</Name>
+      <Description>Font Lateef Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraBold.ttf</Name>
+      <Description>Font Lateef ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraLight.ttf</Name>
+      <Description>Font Lateef ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Light.ttf</Name>
+      <Description>Font Lateef Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Medium.ttf</Name>
+      <Description>Font Lateef Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</Name>
+      <Description>Font Lateef</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-SemiBold.ttf</Name>
+      <Description>Font Lateef SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Balochi Persian</Name>
       <ID>balochi_persian</ID>
-      <Version>1.4</Version>
+      <Version>1.6</Version>
       <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bal">Baluchi</Language>
       </Languages>

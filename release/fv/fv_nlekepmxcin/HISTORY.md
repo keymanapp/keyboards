@@ -1,5 +1,37 @@
-Nłeʔkepmxcin Change History
+Nɬeʔkepmxcín Change History
 ============================
+9.5.1 (22 Jul 2024)
+-------------------
+* Corrected typo in linked keyboard name
+
+9.5 (11 Jul 2024)
+-------------------
+* Normalized missed codepoint
+* Tweaked mobile layout
+* Added TODO to README
+* Updated to new capital barred lamda on desktop layout
+* Removed web help in favour of OSK
+* Added ` and ~ to original punctuation rules
+
+9.4 (9 Apr 2024)
+-------------------
+* Added x̌ to keyboard on request
+
+9.3 (24 Feb 2024)
+-------------------
+* Changed barred l for belted l
+* Changed to single codepoints where possible
+* Added combining acute key to mobile layout
+* Corrected spelling of keyboard name
+* Updated script code
+
+9.2.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
+
+9.2.2 (12 May 2022)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
 
 9.2.1 (24 Feb 2021)
 -------------------

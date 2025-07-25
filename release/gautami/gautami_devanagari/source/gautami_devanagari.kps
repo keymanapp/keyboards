@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items>
+      <Item>
+        <Name>(new)</Name>
+        <FileName></FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name URL="">Gautami Devanagari</Name>
+    <Copyright URL="">© Gautam Sengupta</Copyright>
+    <Author URL="mailto:gsghyd@gmail.com">Gautam Sengupta</Author>
+    <Version URL=""></Version>
+    <Description URL="">This is a QWERTY-based keyboard for Devanagari with easy-to-remember key assignments suitable for beginners with limited knowledge of the Devanagari writing system. It is phonetic/alphabetic: typing k will yield क, and typing kamalaa or kamalA will yield कमला.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>help\gautami_devanagari.pdf</Name>
+      <Description>File gautami_devanagari.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\gautami_devanagari.js</Name>
+      <Description>File gautami_devanagari.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\gautami_devanagari.kvk</Name>
+      <Description>File gautami_devanagari.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\gautami_devanagari.kmx</Name>
+      <Description>Keyboard Gautami Devanagari</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Gautami Devanagari</Name>
+      <ID>gautami_devanagari</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="hi">Hindi</Language>
+        <Language ID="sa">Sanskrit</Language>
+      </Languages>
+      <Examples>
+        <Example ID="hi-Deva-IN" Keys="d e v a n A g a r I space or space d e v a n a a g a r i i" Text="देवनागरी" Note=""/>
+        <Example ID="sa-Dev-IN" Keys="d e v a n A g a r I space or space d e v a n a a g a r i i" Text="देवनागरी" Note=""/>
+      </Examples>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="isis_devanagari" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>

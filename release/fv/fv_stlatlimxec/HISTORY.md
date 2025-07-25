@@ -1,5 +1,26 @@
 Sƛ̓aƛ̓imxəc Change History
 ============================
+9.4 (30 Jul 2024)
+-------------------
+* Further tidied documentation
+* Removed web help in favour of OSK
+
+9.3 (1 Jul 2024)
+-------------------
+* Normalised outputs
+* Tidied rules and stores
+* Updated to new capital barred lambda character
+* Added additional stacking prevention
+* Straightened mobile layout
+* Tidied documentation
+
+9.2.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
+
+9.2.2 (13 May 2022)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
 
 9.2.1 (24 Feb 2021)
 -------------------

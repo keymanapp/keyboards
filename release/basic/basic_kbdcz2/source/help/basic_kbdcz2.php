@@ -7,10 +7,8 @@
 
 
 <p>
-    Czech Programmers Basic 1.1 generated from template.
+    Czech Programmers Basic generated from template.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 

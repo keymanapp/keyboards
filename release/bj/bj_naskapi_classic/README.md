@@ -1,9 +1,7 @@
 Naskapi (Classic) keyboard
 ==============
 
-© 2001-2020 Bill Jancewicz
-
-Version 2.1.1
+© Bill Jancewicz
 
 Description
 -----------

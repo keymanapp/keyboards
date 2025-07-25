@@ -1,3 +1,18 @@
+Malayalam Mozhi Change History
+====================
+
+3.2.6 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+3.2.5 (2024-09-18)
+----------------
+* Remove .js from .kps so people will not think mobile is supported.
+
+3.2.4 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 # History of Mozhi Layout
 Initially there was 'Kerala.com' guestbook, for Malayalees world over to come together and discuss. Tony Thomas, who pioneered writing in Malayalam characters, used 'Kerala' font by clicking on Malayalam letters in ‘Charmap’ application. The year was 1996.
 
@@ -43,4 +58,10 @@ In 2012 Feb and Apr, [Jeesmon Jacob](https://github.com/jeesmon) compiled the Va
 In 2015 Benjamin Varghese created a [Mozhi module for InKey](http://inkeysoftware.com/keyboard/mlym-Mozhi/index.html) application. 
 
 ## Keyman Mozhi 2 (Updated)
-In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](#). Benjamin Varghese with the help of Binila Sanki is maintaining this keyboard.
+In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](https://keyman.com/keyboards/mozhi_malayalam). Benjamin Varghese with the help of Binila Sanki maintained this keyboard.
+
+## Keyman Mozhi 3 (Auto generated)
+Cibu has written an engine that can auto generate the Keyman Rules directly from the spec. The 2022 release includes the rules generated using this tool. The underlying spec is still Mozhi Spec 2.0.
+"Transfer of copyright to Cibu C. J. with Mr. Junaid's express permission."
+
+    3.2.3 add a missing character in the layout file

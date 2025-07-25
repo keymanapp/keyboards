@@ -3,11 +3,11 @@ c The Korean KORDA Latin (SIL) keyboard converts Latin letters into Korean hange
 store(&Version) '10.0'
 store(&mnemoniclayout) '1'
 store(&NAME) 'Korean KORDA Latin (SIL)'
-store(&TARGETS) 'windows macosx linux'
-store(&COPYRIGHT) '© 2006-2020 SIL International'
+store(&TARGETS) 'windows'
+store(&COPYRIGHT) '© SIL Global'
 store(&BITMAP) 'sil_korda_latin.ico'
 store(&VISUALKEYBOARD) 'sil_korda_latin.kvks'
-store(&KEYBOARDVERSION) '3.0'
+store(&KEYBOARDVERSION) '3.0.1'
 
 begin Unicode > use(constraints)       
 
@@ -78,8 +78,8 @@ c Jungseong constraints
 'c' + any(jungseongK) > context beep
 'y' + any(jongseongK) > context beep
 'w' + any(jongseongK) > context beep
-'y' + any(choseongK) > context beep
-'w' + any(choseongK) > context beep
+'y' + any(choseongK) > context beep c choseongK and jongseongK stores do not exactly much, but they do have mostly the same characters, hence the warning.
+'w' + any(choseongK) > context beep c choseongK and jongseongK stores do not exactly much, but they do have mostly the same characters, hence the warning.
 
 any(choseongSK) + any(jungseongK) > context use(main)
 c any(choseongSK2) context(1) + any(jungseongK) > context use(main)

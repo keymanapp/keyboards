@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,10 @@
     <Copyright URL="">(c) 2008-2019 SIL International</Copyright>
     <Author URL=""></Author>
     <WebSite URL="https://keyman.com/keyboards/basic_kbdtiprd">https://keyman.com/keyboards/basic_kbdtiprd</WebSite>
+    <Description>This keyboard layout is designed for Tibetan (People\'s Republic of
+China). The keyboard layout follows the Windows 10 Tibetan (People\'s
+Republic of China) layout. The package also includes the compatible
+Unicode Tibetan font DDC Uchen.</Description>
   </Info>
   <Files>
     <File>
@@ -88,16 +93,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tibetan (PRC) - Updated Basic</Name>
       <ID>basic_kbdtiprd</ID>
       <Version>1.1</Version>
+      <DisplayFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</DisplayFont>
       <Languages>
         <Language ID="bo-Tibt-CN">Tibetan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="kbdtiprc" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

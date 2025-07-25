@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,17 +19,15 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Harari (Latin)</Name>
-    <Copyright URL="">© 2005-2019 State Library of Victoria</Copyright>
+    <Name URL="">Harari (Lâtîn harfi)</Name>
+    <Copyright URL="">© Enabling Languages</Copyright>
     <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
+    <Description URL="">This keyboard layout was designed for use with the revised Harari Latin
+orthography adopted by the Harari Community Language schools in
+Melbourne, Australia. The Latin script is used to teach the younger
+Harari children their own language.</Description>
   </Info>
   <Files>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
     <File>
       <Name>..\build\el_harari_latin.kvk</Name>
       <Description>File el_harari_latin.kvk</Description>
@@ -40,21 +41,133 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>keyboard_layout.png</Name>
-      <Description>File keyboard_layout.png</Description>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Medium.ttf</Name>
+      <Description>Font Charis Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-MediumItalic.ttf</Name>
+      <Description>Font Charis Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBold.ttf</Name>
+      <Description>Font Charis SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis_README.txt</Name>
+      <Description>File Charis_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Bold.ttf</Name>
+      <Description>Font Charis Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-BoldItalic.ttf</Name>
+      <Description>Font Charis Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Italic.ttf</Name>
+      <Description>Font Charis Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</Name>
+      <Description>Font Charis</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name></Name>
-      <ID></ID>
-      <Version></Version>
+      <ID>el_harari_latin</ID>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="har-Latn">Harari (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="har10" Relationship="deprecates"/>
+    <RelatedPackage ID="harlatn" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

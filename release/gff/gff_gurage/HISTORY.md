@@ -1,5 +1,21 @@
 # ጉራጊና (Gurage) Change History
 
+## 2024-10-29 1.0.1
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
+## 2023-07-02 1.0
+* Revisions to synchronize with updates to other GFF keyboards.
+* Dynamic layers.
+
+## 2022-10-13 0.9.1
+* Fix on phone touch layout for እ key to enter U+12A5.
+
+## 2021-07-18 0.9
+* Addition of a tablet keyboard.
+* Fix to Gurage Noto Sans Ethiopic font.
+* Abyssinica SIL (Combined) font added.
+
 ## 2021-06-22 0.8.1
 * Change of Keyman version from '14.0' (non-existent) to '10.0'.
 

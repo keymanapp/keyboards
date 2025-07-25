@@ -23,5 +23,5 @@ sequence: <img src="2d54.png">, <img src="2d7f.png">, and <img src="2d5c.png"> t
     <h3>Shift</h3>
     <p><img src="sil_tawallammatU_S.png" alt="Tawallammat Tifinagh (SIL) Keyboard: shift"></p>
     <h3>Right ALT</h3>
-    <p><img src="sil_tawallammAtU_RA.png" alt="Tawallammat Tifinagh (SIL) Keyboard: ralt"></p>
+    <p><img src="sil_tawallammatU_RA.png" alt="Tawallammat Tifinagh (SIL) Keyboard: ralt"></p>
 

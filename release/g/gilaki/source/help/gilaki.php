@@ -6,10 +6,8 @@ require_once('header.php');
 ?>
 
 <p>
-Gilaki keyboard based on Persian.
+Keyboard for the Gilaki language based on the Persian layout.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift shift-ctrl'>

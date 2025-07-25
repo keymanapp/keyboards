@@ -1,9 +1,7 @@
 சுரதா-பாமுனி | Suratha Bamini keyboard
 ==============
 
-(c) 2008-2020 thamizha.com and SIL International
-
-Version 2.1
+(c) thamizha.com and Global
 
 Description
 -----------
@@ -24,3 +22,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile

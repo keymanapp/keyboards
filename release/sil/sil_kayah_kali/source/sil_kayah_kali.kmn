@@ -1,10 +1,8 @@
-﻿c kyu-kali.kmn
-c Kayah Li keyboard for Unicode PUA
-store(&VERSION) "10.0"
+﻿store(&VERSION) "10.0"
 store(&NAME) 'Kayah [Kayah Li] (SIL)'
 c HOTKEY "^+K"
 store(&MESSAGE) ""
-store(&COPYRIGHT) '© 2008-2018 SIL International'
+store(&COPYRIGHT) '© SIL Global'
 
 c 1.0   26-MAR-2007     MJPH    Convert to true Unicode from PUA
 
@@ -15,10 +13,11 @@ c 1.0   01-Dec-2005     RDD     Based on KayaOld.kmn which was based on Kauffman
 c 1.0.1 15-Sep-2008     MJPH    Unicode, fix 'we,' keys
 c 1.1   18-AUG-2014     MJPH    Switch ALT keys to RALT
 
-store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.3.1'
 store(&BITMAP) 'sil_kayah_kali.ico'
 store(&VISUALKEYBOARD) 'sil_kayah_kali.kvks'
+store(&LAYOUTFILE) 'sil_kayah_kali.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -74,6 +73,13 @@ c shifted keys
 + '^' > U+201C
 + '&' > U+201D
 
+c cquotation marks - originally on CTRL keys - AC 15-Jun-2018
++ [SHIFT K_Q] > U+2018
++ [SHIFT K_W] > U+2019
+
+U+2018 + [SHIFT K_Q] > U+201C
+U+2019 + [SHIFT K_W] > U+201D
+
 + '{' > '/'
 + '}' > U+00D7
 
@@ -89,12 +95,10 @@ c shifted keys
 + 'J' > U+A922 U+A929
 + 'K' > U+A922 U+A92A
 
+
 + ':' > U+A92B
 + '>' > '.'
 
-c cquotation marks - originally on CTRL keys - AC 15-Jun-2018
-+ [SHIFT RALT K_6] > U+2018
-+ [SHIFT RALT K_7] > U+2019
 
 c alt keys
 + [RALT K_BKSLASH] > '\'

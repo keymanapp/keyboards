@@ -1,12 +1,10 @@
-Osage Keyboard
+Osage (Classic) Keyboard
 =====================
 
-Copyright (C) 2018-2020 Osage Nation
-
-Version 1.2.2
+Copyright (C) Osage Nation
 
 OSAGE DESCRIPTION__
-This is a keyboard for typing the Osage language in the Osage script.
+This is a keyboard for typing the Osage language in the pre-2016 orthography.
 
 Links
 -----

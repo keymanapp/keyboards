@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Tamil (Visual Media) Keyboard Package Help';
+  $pagename = 'Tamil (Visual Media) Package Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

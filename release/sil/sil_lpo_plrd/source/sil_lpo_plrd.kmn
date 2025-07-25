@@ -9,17 +9,18 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Lipo (SIL)'
-store(&TARGETS) 'windows macosx linux web'
-store(&COPYRIGHT) '© 2014-2020 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&VISUALKEYBOARD) 'sil_lpo_plrd.kvks'
+store(&LAYOUTFILE) 'sil_lpo_plrd.keyman-touch-layout'
 
 begin Unicode > use(Umain)
 
 group (Umain) using keys
 + 'A' > u+16F7C
 + 'B' > u+16F57
-+ 'C' > u+16F8F
++ 'C' > u+16F90 c changed from u+16F8F
 + 'D' > u+16F62
 + 'E' > u+16F91
 + 'F' > u+16F74
@@ -34,15 +35,15 @@ group (Umain) using keys
 + 'O' > u+16F5A
 + 'P' > u+16F78
 + 'Q' > u+16F6B
-+ 'R' > nul
++ 'R' > U+16F58
 + 'S' > u+16F79
-+ 'T' > nul
++ 'T' > U+16F2E
 + 'U' > u+16F51
 + 'V' > u+16F55
 + 'W' > u+16F6E
-+ 'X' > nul
++ 'X' > U+16F20
 + 'Y' > u+16F68
-+ 'Z' > nul
++ 'Z' > U+16F72
 + 'a' > u+16F43
 + 'b' > u+16F00
 + 'c' > u+16F0E
@@ -65,11 +66,11 @@ group (Umain) using keys
 + 't' > u+16F0D
 + 'u' > u+16F6A
 + 'v' > u+16F08
-+ 'w' > u+16F13
++ 'w' > U+16F42 c u+16F13
 + 'x' > u+16F33
 + 'y' > u+16F3D
 + 'z' > u+16F3B
-+ '_' > nul
++ '_' > U+16F66
 + '-' > '-'
 + '+' > ':'
 + '=' > ';'

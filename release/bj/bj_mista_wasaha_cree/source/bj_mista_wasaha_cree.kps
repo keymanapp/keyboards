@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.216.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Swampy Cree (Tataskweyak)</Name>
-    <Copyright URL="">© 2017-2021 Bill Jancewicz</Copyright>
+    <Copyright URL="">© Bill Jancewicz</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <Version URL=""></Version>
+    <Description URL="">This keyboard is distinguished by: western finals, w-dot follows the
+character (Western Cree style), zig-zag R\'s and L\'s. It uses Unified
+Canadian Aboriginal Syllabics.</Description>
   </Info>
   <Files>
     <File>
@@ -52,15 +57,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>options.htm</Name>
+      <Description>File options.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Swampy Cree (Tataskweyak)</Name>
       <ID>bj_mista_wasaha_cree</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
-        <Language ID="csw-Cans">Swampy Cree</Language>
+        <Language ID="csw">Swampy Cree</Language>
       </Languages>
+      <Examples>
+        <Example ID="csw" Keys="n e h i n a w e w i n" Text="ᓀᐦᐃᓇᐍᐏᐣ" Note="Nêhinawêwin"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

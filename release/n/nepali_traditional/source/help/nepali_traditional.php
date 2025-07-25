@@ -12,14 +12,13 @@ END;
 Traditional Layout for Nepali in Devanagiri script with dead keys support for special characters
   </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 <h3>Use dead key <key>{</key> for special characters like ! , @ etc</h3>
 	<p><key>{</key> <key>!</key> = ! </p>
 	<p><key>{</key> <key>@</key> = @ </p>
+	<p><key>{</key> <key>?</key> = ऱ ( प ऱ ् य ो = पऱ्यो ) </p>
 <a href="http://nepalitankan.blogspot.com/2013/10/nepali-traditional.html">Detailed instructions</a>	
 
 <h2>Tablet Keyboard Layout</h2>

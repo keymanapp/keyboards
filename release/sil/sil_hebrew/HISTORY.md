@@ -1,6 +1,23 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+2.0.2 (1 Oct 2024)
+-----------------
+* Remove U+25CC from kvks file and keyman-touch-layout
+
+2.0.1 (8 Jul 2024)
+-----------------
+* Changed display font for .kvks
+
+2.0 (2 Jul 2024)
+-----------------
+* Update keyboard to support OSK font for better display
+
+1.9 (21 Sep 2021)
+-----------------
+* Updated documentation to clarify typing holam and holam haser
+* Changed tablet layout to produce U+05C5 instead of U+0323
+
 1.8.1 (28 Feb 2021)
 -----------------
 * Added tablet layout to package

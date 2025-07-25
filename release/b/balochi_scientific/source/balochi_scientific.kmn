@@ -1,13 +1,11 @@
-﻿store(&VERSION) '9.0'
+store(&VERSION) '9.0'
 store(&TARGETS) 'any'
 store(&NAME) 'Balochi Scientific'
 store(&BITMAP) 'balochi_scientific.ico'
-store(&COPYRIGHT) '© 2017-2020 SIL International'
+store(&COPYRIGHT) '© SIL International'
 store(&MESSAGE) 'The Balochi Scientific keyboard is distributed under The MIT License (MIT).'
 store(&KMW_HELPTEXT) 'This is a Latin keyboard for transcription of Balochi languages using the method devised at Uppsala University.'
-store(&KEYBOARDVERSION) '1.0.3'
-c store(&ETHNOLOGUECODE) 'bcc'
-c store(&WINDOWSLANGUAGES) 'x042D'
+store(&KEYBOARDVERSION) '1.0.5'
 store(&VISUALKEYBOARD) 'balochi_scientific.kvks'
 
 group(main) using keys
@@ -23,7 +21,7 @@ store(&LAYOUTFILE) 'balochi_scientific.keyman-touch-layout'
 
 begin Unicode > use(main)
 
-+ [K_QUOTE] > U+0027
+c + [K_QUOTE] > U+0027
 + [K_SPACE] > ' '
 + [K_A] > 'a'
 + [SHIFT K_A] > 'A'
@@ -48,9 +46,9 @@ begin Unicode > use(main)
 + [K_W] > 'w'
 + [K_X] > 'x'
 + [K_Z] > 'z'
-+ [K_COLON] > ';'
-+ [K_EQUAL] > '='
-+ [K_RBRKT] > ']'
+c + [K_COLON] > ';'
+c + [K_EQUAL] > '='
+c + [K_RBRKT] > ']'
 
 group(deadkeys) 
 c Deadkeys ... (deadkey + space always = deadkey)

@@ -1,5 +1,37 @@
-Hǝn̓q̓ǝmin̓ǝm Change History
+hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
+10.2.1 (30 July 2024)
+-------------------
+* Typo in the *.kps file.
+
+10.2 (30 July 2024)
+-------------------
+* Replaced capital theta and schwa with lowercase versions.
+
+10.1 (10 May 2024)
+-------------------
+* Added a rule for backspacing vowels with acute accent
+* Added colon to the mobile layout, moved middle dot to longpress
+
+10.0.1 (1 Apr 2024)
+-------------------
+* Updated keymap images
+
+10.0 (17 Oct 2023)
+-------------------
+* Added middle dot and chi on mobile layout
+* Replaced barred l with belted l
+* Fixed name of language on mobile layout
+* Fixed name of language in documentation
+* Updated keymap images
+
+9.1.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
+
+9.1.2 (12 May 2022)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
 
 9.1.1 (24 Feb 2021)
 -------------------
@@ -12,5 +44,4 @@ Hǝn̓q̓ǝmin̓ǝm Change History
 
 9.0 (15 Dec 2015)
 -----------------
-
 * Added to tavultesoft keyboards github repository

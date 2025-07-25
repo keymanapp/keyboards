@@ -1,11 +1,11 @@
 <?php 
-  $pagename = 'Tatar Basic Keyboard Help';
+  $pagename = 'Finnish-Swedish with Sami Basic Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
 <p>
-    Finnish-Swedish with Sami Basic 1.1 generated from template. A good font for this keyboard would be <b>Calibri</b> or <b>Segoe UI</b> where the capital eng is correct shape for Sami.
+    Finnish-Swedish with Sami Basic. A good font for this keyboard would be <b>Calibri</b> or <b>Segoe UI</b> where the capital eng is correct shape for Sami.
 </p>
 <p>This keyboard defines some keys that are set by default as "hotkeys" when Keyman is installed. 
 To use this keyboard, you will want to go to <b>Configuration.../Hotkeys</b>, 
@@ -13,8 +13,6 @@ select the hotkey name, and either change the hotkey or turn it off.
 Currently 
 "Switch Keyman Desktop Off" uses Shift+Alt+O
 "Show On Screen Keyboard Pane" uses Shift+Alt+K</p>
-
-<h1>Keyboard Layout</h1>
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>~a will produce ã (available on aAiInNoOuU).</p>
@@ -34,5 +32,3 @@ Currently
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-
-<p>© 2009-2019 SIL International</p>

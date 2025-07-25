@@ -11,7 +11,6 @@ viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu 
 layout follows the Windows 10 Sorbian Standard layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
 <p>^c will produce č (available on cCeErRsSzZ).</p>

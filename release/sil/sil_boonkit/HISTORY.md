@@ -1,5 +1,15 @@
-Boonkit Change History
+Boonkit (SIL) Change History
 =======================
+
+0.6.6 (2023-11-30)
+----------------
+* Use shared font instead of local
+
+ 0.6.5    7-Oct-2022
+ ----------------
+* Change \ from outputting ( to behaving like `. Do not change ` behaviour.
+
+----------------
 
  0.1     23-MAY-2008     Original
  0.2     23-SEP-2008     Fill out sbase, but probably still more to go

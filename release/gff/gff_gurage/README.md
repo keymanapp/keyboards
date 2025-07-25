@@ -1,9 +1,7 @@
 ጉራጊና (Gurage) Keyboard
 ====================
 
-Copyright (C) 2019-2021 Ge'ez Frontier Foundation
-
-Version 0.8.1
+Copyright (C) Geʾez Frontier Foundation
 
 This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method for the 
 Gurage orthography devised by Dr. Fekede Menuta and adopted in Unicode 14.  It requires a font
@@ -22,6 +20,12 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
- * Linux 
+ * Linux
  * Web
- * Mobile
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices

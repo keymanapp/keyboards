@@ -1,9 +1,7 @@
 Khmer (SIL) Keyboard
 =====================
 
-Copyright (C) 2002-2019 SIL International
-
-Version 1.5
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard is designed for any languages using the Khmer script. 
@@ -13,5 +11,6 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
- * linux
+ * Linux
  * Web
+ * Mobile

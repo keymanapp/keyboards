@@ -1,9 +1,11 @@
 Korean KORDA Jamo (SIL) keyboard
 ==============
 
-© 2006-2020 SIL International
+© SIL Global
 
-Version 3.0
+Links
+-----
+ * Home: https://keyman.com/keyboards/sil_korda_jamo
 
 Description
 -----------
@@ -16,6 +18,4 @@ The Korean KORDA Jamo (SIL) keyboard is built to type Korean using the translite
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * Linux
 

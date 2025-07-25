@@ -1,19 +1,16 @@
 <?php
-  $pagename = 'Harari (Latin) Keyboard Help';
-  $pagetitle = 'Harari (Latin) Keyboard Help';
+  $pagename = 'Harari (Lâtîn harfi) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<h1>Harari (Latin) Keyboard</h1>
+<p>This keyboard layout was designed for use with the revised Harari Latin orthography adopted by the Harari Community Language schools in Melbourne, Australia. The Latin script is used to teach the younger Harari children their own language.</p>
 
-<p>This keyboard uses the revised Harari Latin orthography.</p>
-
-<p>Here are the layouts to help you get started.</p>
-<p><img width="70%" src="keyboard_layout.png"></p>
+<h2>Desktop Keyboard layout</h2>
 
 <p>Here are character sequences for input in Keyman.</p>
 
-<table class='display' style="text-align: center">
+<table border="1pt" style="text-align: center">
     <tr>
         <th>Key sequence</th>
         <th>Glyph</th>
@@ -80,3 +77,7 @@
         <td>U+02BC</td>
     </tr>
 </table>
+
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
+

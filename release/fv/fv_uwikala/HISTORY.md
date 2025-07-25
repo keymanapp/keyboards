@@ -1,5 +1,33 @@
-'Uwik̓ala Change History
+’Wuìk̓ala Change History
 ============================
+9.4 (22 Jul 2024)
+-------------------
+* Removed web help in favour of OSK
+* Tweaked mobile layout
+* Tidied documentation
+* Added alternate way to type Slash for Google Workspace
+
+9.3 (7 Nov 2023)
+-------------------
+* Changed keyboard name to better reflect language
+* Cleaned up mobile rules
+* Added rule to backspace only accents instead of whole character
+* Centered mobile layout
+
+9.2.2 (25 Oct 2023)
+-------------------
+* Changed order of mobile layers to unscramble display on help page
+
+9.2.1 (13 May 2022)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
+
+9.2 (24 Mar 2022)
+-------------------
+* Updated touch layout (additional keys)
+* Fixes to diacritics and normalization
+* Updated documentation and layout images
+* Fixed BCP code to canonical `hei`
 
 9.1.1 (24 Feb 2021)
 -------------------

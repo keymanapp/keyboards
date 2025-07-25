@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 <p>
-    Serbian (Latin) Basic 1.1 generated from template.
+    Serbian (Latin) Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <p>˝o will produce ő (available on oOuU).</p>
@@ -19,8 +19,6 @@
 <p>¸c or ‚c will produce ç (available on cCsS).</p>
 <p>¨a will produce ä (available on aAeEoOuU).</p>
 
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>

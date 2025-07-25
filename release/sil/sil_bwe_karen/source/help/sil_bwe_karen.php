@@ -1,13 +1,11 @@
 <?php
-  $pagename = 'SIL Bwe Karen Keyboard Help';
-  $pagetitle = 'SIL Bwe Karen Keyboard Help';
+  $pagename = 'Bwe Karen (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
       
-<body>
-
 <h2>Font</h2>
-<p>The "SIL Bwe Karen" keyboard is designed to work with the Latin script using the Charis SIL Compact font.</p>
+<p>The "Bwe Karen (SIL)" keyboard is designed to work with the Latin script using the Charis font.</p>
 
 <h2>Keyboard Layout</h2>
 
@@ -38,8 +36,4 @@ replaces two unused characters with combining diacritics.</p>
 <p>If you have problems using the SIL Bwe Karen keyboard, please visit: 
 <a href=https://community.software.sil.org/c/keyman>https://community.software.sil.org/c/keyman</a></p>
 
-<h2>License</h2>
-<p>
-  SIL Bwe Karen keyboard is copyright ©2018 SIL International. 
-  It is distributed under The MIT License (MIT)
-</p>
+

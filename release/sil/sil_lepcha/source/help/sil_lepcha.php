@@ -1,6 +1,6 @@
 <?php
   $pagename = 'Lepcha (SIL) Keyboard Help';
-  $pagetitle = 'Lepcha (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
     table {border: 3px solid black ;}
     table, tr,td {border-spacing: 0; border-collapse: collapse;}

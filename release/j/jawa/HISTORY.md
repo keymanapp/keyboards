@@ -1,13 +1,20 @@
 Nulisa Aksara Jawa Keyboard Change History
 =======================
 
+
+2.0.2 (2024-12-03)
+----------------
+* Fixed language tags
+
+1 December 2023 - 2.0.1
 -----------------
+* Update to use newest version of fonts
+
 6 April 2021 - 2.0
 -----------------
 Update to version 2.0
 * Harmonize with the standard Javanese keyboard layout (Javanese Script Congress -- March 2021)
 
------------------
 26 Feb 2020
 -----------------
 KMN file
@@ -29,7 +36,6 @@ HTM file
 
 Minor update on the layout in kvks and touch
 
------------------
 22 Feb 2020 - 1.1
 -----------------
 * Revamped the touch keyboard layout. Made into 4 layers: default, shift, numeric, and symbol
@@ -39,7 +45,6 @@ Minor update on the layout in kvks and touch
 ** On the symbol layer (go to numeric layer, and press the lower left button), I put the longpress option for the numbers in the top row, from '!' to ')', as well as rare Javanese character symbols in the middle row, the rest of symbol on US basic keyboard minus '[', ']', '{', '}' in the third row [see note below], and on the last row, I put the super-unnecessary-Javanese-characters, just for completeness sake. Nobody will ever use them. Ever.
 ** Note: if one need to access the '[', ']', '{', '}' symbols, just go to the default layer, and longpress either ',' or '.' keys. That's the only way to access them right now. Every other symbol have at least two way to access, longpress from default layer, or from numeric/symbol layers.
 
------------------
 21 Feb 2020 - Released version 1.0
 -----------------
 * The keyboard is published on https://keyman.com/keyboards/jawa
@@ -50,7 +55,6 @@ Minor update on the layout in kvks and touch
 * Modify touch layout (add long press option)
 * Expand the welcome.htm help file
 
------------------
 (28 Jan 2019)
 -----------------
 
@@ -58,7 +62,6 @@ Minor update on the layout in kvks and touch
 * Tried to publish, but there's some minor fixes that needs to be resolved before it can get published
 * Unfortunately, I'm unable to continue develop for about one year after this.
 
------------------
 (24 Jan 2019) - Initial version
 -----------------
 

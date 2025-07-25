@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.239.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Yiddish Pasekh</Name>
-    <Copyright URL="">(C) 2002-2021 Gyula Zsigri</Copyright>
+    <Copyright URL="">(C) Gyula Zsigri</Copyright>
+    <Description URL="">This keyboard layout is designed to type Yiddish by transliteration.
+This keyboard layout works best with a QWERTY (English) keyboard.</Description>
+    <Author URL="">Gyula Zsigri</Author>
   </Info>
   <Files>
     <File>
@@ -63,18 +68,37 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Yiddish Pasekh</Name>
       <ID>yiddish_pasekh</ID>
-      <Version></Version>
-      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
       <Languages>
-        <Language ID="ydd-Hebr">Eastern Yiddish (Hebrew)</Language>
-        <Language ID="yih-Hebr">Western Yiddish (Hebrew)</Language>
+        <Language ID="yi">Yiddish</Language>
+        <Language ID="yih">Western Yiddish</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="yidish2k" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

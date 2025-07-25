@@ -8,8 +8,8 @@ The Korean Morse keyboard is built to type Korean using the Morse transliteratio
 The Morse system is not based on the pronunciation of Korean, but is an historical system created by pairing each Korean jamo with the Latin letter that uses the same Morse code value. The system is used among government and military organisations for whom data accuracy is essential. For an alternative accurate transliteration system, based on Korean pronunciation, use the Korean KORDA keyboards.
   Authors:     Tavultesoft Pty Ltd
 */
-  $pagename = 'Korean Morse Keyboard Help';
-  $pagetitle = 'Korean Morse Keyboard Help';
+  $pagename = 'Korean Morse (deprecated) Keyboard Help';
+  $pagetitle = 'Korean Morse (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <link rel="stylesheet" href="style.css" type="text/css" />

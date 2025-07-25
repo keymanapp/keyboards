@@ -28,8 +28,6 @@ Except for the optional accents which are not required, the keyboard will notify
 <h4>Function</h4>
 <p>The Obolo Chwerty keyboard follows the English (QWERTY US) layout. On computers, you can type all of the special Obolo letters with a single keystroke using this keyboard. Here is how:</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
@@ -46,13 +44,13 @@ The position of your BACKSLASH key depends on type of keyboard you are using.
 <p>The three keyboard types and the respective position of the BACKSLASH keys are shown below.
 <p>You can tell where your BACKSLASH key is by looking at the shape of your ENTER/RETURN key:
 <p>
- <img src="chwertyenterkey1.png"
+ <img src="chwertyftkey1.png"
 alt="ANSI Keyboard">
 <p>
-<img src="chwertyenterkey2.png"
+<img src="chwertyftkey2.png"
 alt="ISO/JIS Keyboard">
 <p>
-<img src="chwertyenterkey3.png"
+<img src="chwertyftkey3.png"
 alt="Backward-L Keyboard">
 <p>
 Keyman ... type to the world in your language.

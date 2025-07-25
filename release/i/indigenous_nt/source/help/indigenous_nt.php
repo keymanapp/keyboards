@@ -4,31 +4,17 @@
   require_once('header.php');
 ?>
 
-<?php
-?>
-
-<style>
-  body {
-   font-family: Cambria, Georgia, serif;  
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: Calibri, Helvetica, Arial, sans-serif;
-  }
-</style>
-
-<h1>Indigenous NT Integrated Keyboard for Keyman</h1>
-
-<p><small>By Rajiv Rawat</small></p>
-
 <p>This is the Keyman version of the universal keyboard for the 11 official languages of the Northwest Territories (Inuktitut in Roman Orthography). Additional characters for other circumpolar languages have also been included.</p>
 
 <p>The keyboard is intended to reduce keyboard switching and be intuitive and easy to use for the widest number of users. As such, it hopes to facilitate widescale acceptance and adoption of the incredible linguistic diversity in the Canadian North.</p>
 
 <h2>Desktop Computers</h2>
 
-<p>On Desktop computers, it retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Right Alt)</strong> key on Desktop computers (right-Option key in Macs).</p>
+<p>On Desktop computers, it retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Alt-right)</strong> key on Desktop computers (<strong>right-Option</strong> key in Macs).</p>
 
 <p>Note that the diacritics are typed after the vowel as in the Vowel First Dene convention.</p>
+
+<img style="width: 100%;" src="indigenous_nt_layout.png">
 
 <h2>Tablets and Mobiles</h2>
 
