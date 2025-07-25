@@ -7,8 +7,6 @@
 
 ?>
 
-<h1>Start Using Old Korean</h1>
-
 <p>
   Old Korean keyboard for old hangul옛한글
 </p>
