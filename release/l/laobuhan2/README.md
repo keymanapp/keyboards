@@ -3,7 +3,7 @@ Laobuhan (Unicode) keyboard
 
 Description
 -----------
-
+The keyboard enables text entry in the ancient writing systems of Lao Buhan and Tai Noi.
 
 Links
 -----
