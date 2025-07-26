@@ -1,5 +1,12 @@
 gff_amharic Change History
 ==========================
+3.3 (26 Jul 2025)
+-------------------
+* Update of the Waldba fonts.
+* No longer packaging the older WashRa fonts.
+* Adding Agbalumo and Menbere fonts.
+* Expanded "Description" section in the KPS file.
+
 3.2.3 (23 Jun 2025)
 -------------------
 * fixed nextlayer targets on multitap keys of the "extra" layers.
