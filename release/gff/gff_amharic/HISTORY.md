@@ -5,7 +5,8 @@ gff_amharic Change History
 * Update of the Waldba fonts.
 * No longer packaging the older WashRa fonts.
 * Adding Agbalumo and Menbere fonts.
-* Expanded "Description" section in the KPS file.
+* Expanded `Description` section in the KPS file.
+* Removed the `ኝ` hint on the `ን/ኝ`. 
 
 3.2.3 (23 Jun 2025)
 -------------------
