@@ -4,6 +4,7 @@ Naija Type Keyboard Change History
 65 (2025-Jul-24)
 --------
 * Added 02C4 (˄) as a modifier of ^ circumflex (shift-6) as a tone symbol for grh Tugbiri.
+* (One for the Yorubas:) Ctrl-Alt-semicolon puts an underdot on underlinable letters before or after a tone diacritic.
 
 64 (2025-Jun-9)
 --------
