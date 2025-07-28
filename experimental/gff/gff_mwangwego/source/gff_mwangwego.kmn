@@ -1,8 +1,8 @@
 ﻿store(&Version) '15.0'
 c
-c The design philophy for this keyboard is to first filter out any invalid key sequences, then whatever remains
+c The design philosophy for this keyboard is to first filter out any invalid key sequences, then whatever remains
 c is assumed to be valid and can be processed without further checking.  A valid fully composed letter has
-c proven to be complex in Malawi langauges where validity is highly letter-by-letter (phoneme-by-phoneme)
+c proven to be complex in Malawi languages where validity is highly letter-by-letter (phoneme-by-phoneme)
 c dependent along with the pairing against specific mutuyo sequences. A better may be to store the valid
 c sequences, process them, and assume anything else is invalid. A later approach may use a single group to
 c handle each letter.  Experimentation will continue.
