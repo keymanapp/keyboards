@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+# shellcheck shell=bash
+# shellcheck disable=SC2310
 
 # Note: these two lines can be uncommented for debugging and profiling build
 # scripts:
@@ -32,6 +33,7 @@ SHLVL=0
 # _builder_init is called internally at the bottom of this file after we have
 # all function declarations in place.
 function _builder_init() {
+  _builder_get_operating_system
   _builder_findRepoRoot
   _builder_setBuildScriptIdentifiers
 
@@ -39,6 +41,12 @@ function _builder_init() {
     builder_use_color true
   else
     builder_use_color false
+  fi
+
+  # Set shared Meson package cache (works with Meson >= 1.3)
+  if [[ -z ${MESON_PACKAGE_CACHE_DIR:-} ]]; then
+    export MESON_PACKAGE_CACHE_DIR="${XDG_CACHE_HOME:-${HOME}/.cache}/keyman/builder"
+    mkdir -p "${MESON_PACKAGE_CACHE_DIR}"
   fi
 }
 
@@ -132,18 +140,29 @@ builder_use_color() {
 # $BUILDER_TERM_END
 #
 function builder_term() {
-  echo "${BUILDER_TERM_START}$*${BUILDER_TERM_END}"
+  echo -e "${BUILDER_TERM_START}$*${BUILDER_TERM_END}"
 }
 
 function builder_die() {
-  echo
+  _builder_error_echo
   if [[ $# -eq 0 ]]; then
     builder_echo error "Unspecified error, aborting script"
   else
     builder_echo error "$*"
   fi
-  echo
+  _builder_error_echo
   exit 1
+}
+
+# Emit message to stderr instead of stdout
+function _builder_error_echo() {
+  # we only need to support -e flag
+  if [[ $# -gt 0 ]] && [[ $1 == -e ]]; then
+    shift
+    2>&1 echo -e "$*"
+  else
+    2>&1 echo "$*"
+  fi
 }
 
 function builder_warn() {
@@ -163,35 +182,77 @@ function builder_heading() {
 
 
 builder_echo() {
-  local color=white message= mark=
-  if [[ $# -gt 1 && $1 =~ ^(white|grey|green|success|blue|heading|yellow|warning|red|error|purple|brightwhite|teal|debug|setmark)$ ]]; then
-    color="$1"
-    shift
+  local color=white message= mark= block= action= do_output=true test=
+  local echo_target=echo
+
+  if [[ $# -gt 1 ]]; then
+    if [[ $1 =~ ^(white|grey|green|success|blue|heading|yellow|warning|red|error|purple|brightwhite|teal|debug|setmark)$ ]]; then
+      color="$1"
+      shift
+    elif [[ $1 == "start" ]] || [[ $1 == "startTest" ]]; then
+      # builder_echo start block message
+      test="$1"
+      block="$2"
+      shift 2
+      action="start"
+      color="heading"
+      if ! builder_is_running_on_teamcity && builder_is_child_build; then
+        do_output=${_builder_debug_internal:-false}
+      fi
+    elif [[ $1 == "end" ]] || [[ $1 == "endTest" ]]; then
+      # builder_echo end block status message
+      test="$1"
+      block="$2"
+      color="$3"
+      shift 3
+      action="end"
+      if [[ "${color}" != "error" ]] && ! builder_is_running_on_teamcity && builder_is_child_build; then
+        do_output=${_builder_debug_internal:-false}
+      fi
+    fi
   fi
   message="$*"
 
-  if [[ ! -z ${COLOR_RED+x} ]]; then
-    case $color in
-      white) color="$COLOR_WHITE" ;;
-      grey) color="$COLOR_GREY" ;;
-      green|success) color="$COLOR_GREEN" ;;
-      blue|heading) color="$COLOR_BLUE" ;;
-      yellow|warning) color="$COLOR_YELLOW" ;;
-      red|error) color="$COLOR_RED" ;;
-      purple) color="$COLOR_PURPLE" ;;
-      brightwhite) color="$COLOR_BRIGHTWHITE" ;;
-      teal|debug) color="$COLOR_TEAL" ;;
-      setmark) mark="$HEADING_SETMARK" color="$COLOR_PURPLE" ;;
-    esac
-
-    if builder_is_dep_build; then
-      echo -e "$mark$COLOR_GREY[$THIS_SCRIPT_IDENTIFIER]$COLOR_RESET $color$message$COLOR_RESET"
+  if [[ "${action}" == "start" ]] && builder_is_running_on_teamcity; then
+    if [[ "${test}" == "startTest" ]]; then
+      $echo_target -e "##teamcity[testSuiteStarted name='|[${THIS_SCRIPT_IDENTIFIER}|] ${block}']"
     else
-      echo -e "$mark$BUILDER_BOLD$COLOR_BRIGHT_WHITE[$THIS_SCRIPT_IDENTIFIER]$COLOR_RESET $color$message$COLOR_RESET"
+      $echo_target -e "##teamcity[blockOpened name='|[${THIS_SCRIPT_IDENTIFIER}|] ${block}']"
     fi
-  else
-    # Cope with the case of pre-init message and just emit plain text
-    echo -e "$message"
+  fi
+
+  if ${do_output}; then
+    if [[ ! -z ${COLOR_RED+x} ]]; then
+      case $color in
+        white) color="$COLOR_WHITE" ;;
+        grey) color="$COLOR_GREY" ;;
+        green|success) color="$COLOR_GREEN" ;;
+        blue|heading) color="$COLOR_BLUE" ;;
+        yellow|warning) color="$COLOR_YELLOW" ;;
+        red|error) color="$COLOR_RED"; echo_target=_builder_error_echo ;;
+        purple) color="$COLOR_PURPLE" ;;
+        brightwhite) color="$COLOR_BRIGHTWHITE" ;;
+        teal|debug) color="$COLOR_TEAL" ;;
+        setmark) mark="$HEADING_SETMARK" color="$COLOR_PURPLE" ;;
+      esac
+
+      if builder_is_dep_build; then
+        $echo_target -e "$mark$COLOR_GREY[$THIS_SCRIPT_IDENTIFIER]$COLOR_RESET $color$message$COLOR_RESET"
+      else
+        $echo_target -e "$mark$BUILDER_BOLD$COLOR_BRIGHT_WHITE[$THIS_SCRIPT_IDENTIFIER]$COLOR_RESET $color$message$COLOR_RESET"
+      fi
+    else
+      # Cope with the case of pre-init message and just emit plain text
+      $echo_target -e "$message"
+    fi
+  fi
+
+  if [[ "${action}" == "end" ]] && builder_is_running_on_teamcity; then
+    if [[ "${test}" == "endTest" ]]; then
+      $echo_target -e "##teamcity[testSuiteFinished name='|[${THIS_SCRIPT_IDENTIFIER}|] ${block}']"
+    else
+      $echo_target -e "##teamcity[blockClosed name='|[${THIS_SCRIPT_IDENTIFIER}|] ${block}']"
+    fi
   fi
 }
 
@@ -387,9 +448,7 @@ _builder_execute_child() {
 
   local script="$THIS_SCRIPT_PATH/${_builder_target_paths[$target]}/build.sh"
 
-  if $_builder_debug_internal; then
-    builder_echo heading "## $action$target starting..."
-  fi
+  builder_echo start "$action$target" "## $action$target starting..."
 
   # Build array of specified inheritable options
   local child_options=()
@@ -400,19 +459,28 @@ _builder_execute_child() {
     fi
   done
 
-  "$script" $action \
+  # If the current build is a dependency build, pass the dependency state on to
+  # the child build, so that we don't unnecessarily rebuild children (#11394)
+  local dep_flag= dep_module=
+  if builder_is_dep_build; then
+    dep_flag=--builder-dep-parent
+    dep_module="$builder_dep_parent"
+  fi
+
+  "$script" \
     --builder-child \
     $_builder_build_deps \
+    $dep_flag "$dep_module" \
+    $action \
     ${child_options[@]} \
     $builder_verbose \
     $builder_debug \
+    $_builder_offline \
   && (
-    if $_builder_debug_internal; then
-      builder_echo success "## $action$target completed successfully"
-    fi
+    builder_echo end "$action$target" success "## $action$target completed successfully"
   ) || (
     result=$?
-    builder_echo error "## $action$target failed with exit code $result"
+    builder_echo end "$action$target" error "## $action$target failed with exit code $result"
     exit $result
   ) || exit $? # Required due to above subshell masking exit
 }
@@ -567,7 +635,7 @@ function builder_run_action() {
   local action=$1
   shift
   if builder_start_action $action; then
-    ($@)
+    "$@"
     builder_finish_action success $action
   fi
   return 0
@@ -602,19 +670,19 @@ builder_start_action() {
     # verify whether a target output is present.
     if builder_is_dep_build &&
         ! builder_is_full_dep_build &&
-        _builder_dep_output_exists $_builder_matched_action; then
-      builder_echo "skipping $_builder_matched_action_name, up-to-date"
+        _builder_dep_output_exists "${_builder_matched_action}"; then
+      builder_echo "skipping ${_builder_matched_action_name}, up-to-date"
       return 1
     fi
 
-    builder_echo blue "## $_builder_matched_action_name starting..."
-    if [ -n "${_builder_current_action}" ]; then
+    builder_echo start "${_builder_matched_action_name}" "## ${_builder_matched_action_name} starting..."
+    if [[ -n "${_builder_current_action}" ]]; then
       _builder_warn_if_incomplete
     fi
-    _builder_current_action="$_builder_matched_action"
+    _builder_current_action="${_builder_matched_action}"
 
     # Build dependencies as required
-    _builder_do_build_deps "$_builder_matched_action"
+    _builder_do_build_deps "${_builder_matched_action}"
     return 0
   else
     return 1
@@ -824,6 +892,7 @@ builder_describe() {
   _builder_deps=()                    # array of all dependencies for this script
   _builder_options_inheritable=()     # array of all options that should be passed to child scripts
   _builder_default_action=build
+  declare -A -g _builder_targets_excluded_by_platform=()
   declare -A -g _builder_params
   declare -A -g _builder_options_short
   declare -A -g _builder_options_var
@@ -845,6 +914,8 @@ builder_describe() {
       description="$(builder_trim "${sub[@]:1}")"
     fi
 
+    local original_value="$value"
+
     if [[ $value =~ ^: ]]; then
       # Parameter is a target
       local target_path=
@@ -853,6 +924,7 @@ builder_describe() {
         IFS="=" read -r -a sub <<< "$value"
         target_path="${sub[@]:1}"
         value="${sub[0]}"
+        original_value="$value"
         if [[ ! -d "$THIS_SCRIPT_PATH/$target_path" ]]; then
           builder_die "Target path '$target_path' for $value does not exist."
         fi
@@ -939,9 +1011,9 @@ builder_describe() {
     fi
 
     if [[ -z "${description}" ]]; then
-      description=$(_builder_get_default_description "$value")
+      description=$(_builder_get_default_description "$original_value")
     fi
-    _builder_params[${value}]="$description"
+    _builder_params[${original_value}]="$description"
 
     shift
   done
@@ -1027,6 +1099,7 @@ _builder_get_default_description() {
     :module)   description="this module" ;;
     :tools)    description="build tools for this project" ;;
     --debug)   description="debug build" ;;
+    --release) description="release build (prevents --debug in local-env builds)" ;;
   esac
   echo "$description"
 }
@@ -1203,7 +1276,6 @@ builder_parse() {
         if [[ $# -eq 0 ]]; then
           _builder_parameter_error "$0" parameter "$key"
         fi
-
         exp+=("$1")
       fi
     else
@@ -1249,11 +1321,15 @@ _builder_parse_expanded_parameters() {
   _builder_build_deps=--deps
   builder_verbose=
   builder_debug=
+  local is_release=false
   local _params=($@)
   _builder_chosen_action_targets=()
   _builder_chosen_options=()
   _builder_current_action=
   _builder_is_child=1
+  _builder_offline=
+  _builder_ignore_unknown_options=1
+  builder_ignored_options=()
 
   local n=0
 
@@ -1314,7 +1390,14 @@ _builder_parse_expanded_parameters() {
       # apply the selected action to all targets
       if [[ ! -z $target ]]; then
         # A target was specified but is not valid
-        _builder_parameter_error "$0" target "$target"
+        if builder_is_target_excluded_by_platform "$target"; then
+          builder_echo red "$0: Target $target is unavailable because it requires ${_builder_targets_excluded_by_platform[$target]}"
+          echo
+          builder_display_usage
+          exit 64
+        else
+          _builder_parameter_error "$0" target "$target"
+        fi
       fi
 
       for e in "${_builder_targets[@]}"; do
@@ -1333,6 +1416,7 @@ _builder_parse_expanded_parameters() {
       _builder_chosen_options+=("$key")
       if [[ ! -z ${_builder_options_var[$key]+x} ]]; then
         shift
+        n=$((n + 1))
         # Set the variable associated with this option to the next parameter value
         # A little bit of hoop jumping here to avoid issues with cygwin paths being
         # corrupted too early in the game
@@ -1356,9 +1440,14 @@ _builder_parse_expanded_parameters() {
           _builder_chosen_options+=(--verbose)
           builder_verbose=--verbose
           ;;
-        --debug|-d)
+        --debug)
           _builder_chosen_options+=(--debug)
           builder_debug=--debug
+          ;;
+        --release)
+          _builder_chosen_options+=(--release)
+          # As of #13827, this is only checked when detecting if --debug should be auto-applied.
+          is_release=true
           ;;
         --deps|--no-deps|--force-deps)
           _builder_build_deps=$key
@@ -1367,17 +1456,49 @@ _builder_parse_expanded_parameters() {
           # internal use parameter for dependency builds - identifier of parent script
           shift
           builder_dep_parent="$1"
+          builder_echo setmark "dependency build, started by $builder_dep_parent"
+          builder_echo grey "$(basename "$0") parameters: <${_params[@]}>"
           ;;
         --builder-child)
           _builder_is_child=0
+          builder_echo setmark "child build, parameters: <${_params[@]}>"
           ;;
         --builder-report-dependencies)
           # internal reporting function, ignores all other parameters
           _builder_report_dependencies
           ;;
+        --builder-completion-describe)
+          _builder_completion_describe
+          exit 0
+          ;;
+        --offline)
+          _builder_offline=--offline
+          ;;
+        --builder-ignore-unknown-options)
+          _builder_ignore_unknown_options=0
+          ;;
         *)
           # script does not recognize anything of action or target form at this point.
-          _builder_parameter_error "$0" parameter "$key"
+          if [[ $key =~ ^: ]]; then
+            # This is an unsupported target
+            if builder_is_target_excluded_by_platform "$key"; then
+              builder_echo red "$0: Target $key is unavailable because it requires ${_builder_targets_excluded_by_platform[$key]}"
+              echo
+              builder_display_usage
+              exit 64
+            else
+              _builder_parameter_error "$0" target "$key"
+            fi
+          elif builder_is_child_build; then
+            # For child builds, don't fail the build when pass inheritable
+            # parameters (#11408)
+            builder_echo_debug "Parameter '$key' is not supported, ignoring"
+          elif [[ $key =~ ^- ]] && builder_ignore_unknown_options; then
+            builder_echo warning "Ignoring unknown option $key"
+            builder_ignored_options+=("$key")
+          else
+            _builder_parameter_error "$0" parameter "$key"
+          fi
       esac
     fi
     shift # past the processed argument
@@ -1407,24 +1528,31 @@ _builder_parse_expanded_parameters() {
   fi
 
   if builder_is_dep_build; then
-    builder_echo setmark "dependency build, started by $builder_dep_parent"
-    builder_echo grey "build.sh parameters: <${_params[@]}>"
     if [[ -z ${_builder_deps_built+x} ]]; then
       builder_die "FATAL ERROR: Expected '_builder_deps_built' variable to be set"
     fi
   elif builder_is_child_build; then
-    builder_echo setmark "child build, parameters: <${_params[@]}>"
     if [[ -z ${_builder_deps_built+x} ]]; then
       builder_die "FATAL ERROR: Expected '_builder_deps_built' variable to be set"
     fi
   else
     # This is a top-level invocation, so we want to track which dependencies
     # have been built, so they don't get built multiple times.
-    builder_echo setmark "build.sh parameters: <${_params[@]}>"
-    if [[ ${#builder_extra_params[@]} -gt 0 ]]; then
-      builder_echo grey "build.sh extra parameters: <${builder_extra_params[@]}>"
-    fi
     export _builder_deps_built=`mktemp`
+
+    # Per #11106, local builds use --debug by default.
+    # Second condition prevents the block (and message) from executing when --debug is already specified explicitly.
+    if [[ ${KEYMAN_VERSION_ENVIRONMENT:-} == "local" ]] && [[ $builder_debug != --debug ]] && ! $is_release; then
+      builder_echo grey "Local build environment detected:  setting --debug"
+      _params+=(--debug)
+      _builder_chosen_options+=(--debug)
+      builder_debug=--debug
+    fi
+
+    builder_echo setmark "$(basename "$0") parameters: <${_params[@]}>"
+    if [[ ${#builder_extra_params[@]} -gt 0 ]]; then
+      builder_echo grey "$(basename "$0") extra parameters: <${builder_extra_params[@]}>"
+    fi
   fi
 
   if builder_is_debug_build; then
@@ -1440,7 +1568,18 @@ _builder_parse_expanded_parameters() {
   # Note:  if an error occurs within a script's function in a `set -e` script, it becomes an exit
   # instead for the function's caller.  So, we need both `err` and `exit` here.
   # See https://medium.com/@dirk.avery/the-bash-trap-trap-ce6083f36700.
-  trap _builder_failure_trap err exit
+  if [[ -z "$(trap -p DEBUG)" ]]; then
+    # not running in bashdb
+    trap _builder_failure_trap err exit
+  fi
+}
+
+#
+# Returns 0 (true) if --builder-ignore-unknown-options flag has been specified
+# in the command line
+#
+function builder_ignore_unknown_options() {
+  return $_builder_ignore_unknown_options
 }
 
 _builder_pad() {
@@ -1449,6 +1588,28 @@ _builder_pad() {
   local text2=$3
   local fmt="%-${count}s%s\n"
   printf $fmt "$text1" "$text2"
+}
+
+_builder_completion_describe() {
+  printf '%s ' "${_builder_actions[@]}"
+  echo -n "; "
+  printf '%s ' "${_builder_targets[@]}"
+  echo -n "; "
+  # Remove all '+' suffixes from options; they're a config on the option, not part
+  # of the actual option text itself.
+  local _builder_opts=()
+  for e in "${!_builder_params[@]}"; do
+    if [[ $e =~ ^-- ]]; then
+      _builder_opts+=(${e%+*})
+    fi
+  done
+
+  # Add default options
+  _builder_opts+=( --verbose --debug --color --no-color --offline --help )
+  if builder_has_dependencies; then
+    _builder_opts+=( --deps --no-deps --force-deps )
+  fi
+  printf '%s ' "${_builder_opts[@]}"
 }
 
 builder_display_usage() {
@@ -1482,7 +1643,7 @@ builder_display_usage() {
   echo "Actions: "
 
   for e in "${_builder_actions[@]}"; do
-    if _builder_item_in_glob_array "$e" "${_builder_params[@]}"; then
+    if [[ ! -z "${_builder_params[$e]+x}" ]]; then
       description="${_builder_params[$e]}"
     else
       description=$(_builder_get_default_description "$e")
@@ -1494,13 +1655,26 @@ builder_display_usage() {
   echo "Targets: "
 
   for e in "${_builder_targets[@]}"; do
-    if _builder_item_in_glob_array "$e" "${_builder_params[@]}"; then
+    if [[ ! -z "${_builder_params[$e]+x}" ]]; then
       description="${_builder_params[$e]}"
     else
       description=$(_builder_get_default_description "$e")
     fi
     _builder_pad $width "  $e" "$description"
   done
+
+  if [[ ${#_builder_targets_excluded_by_platform[@]} -gt 0 ]]; then
+    echo
+    echo "Unavailable Targets: "
+    for e in "${!_builder_targets_excluded_by_platform[@]}"; do
+      if [[ ! -z "${_builder_params[$e]+x}" ]]; then
+        description="${_builder_params[$e]}"
+      else
+        description=$(_builder_get_default_description "$e")
+      fi
+      _builder_pad $width "  $e" "$description (requires ${_builder_targets_excluded_by_platform[$e]})"
+    done
+  fi
 
   echo
   echo "Options: "
@@ -1515,6 +1689,7 @@ builder_display_usage() {
   _builder_pad $width "  --debug, -d"    "Debug build"
   _builder_pad $width "  --color"        "Force colorized output"
   _builder_pad $width "  --no-color"     "Never use colorized output"
+  _builder_pad $width "  --offline"      "Try to build while being offline"
   if builder_has_dependencies; then
     _builder_pad $width "  --deps"         "Build dependencies if required (default)"
     _builder_pad $width "  --no-deps"      "Skip build of dependencies"
@@ -1569,14 +1744,14 @@ builder_finish_action() {
       # file or directory exist now?
       if _builder_dep_output_defined $matched_action && ! _builder_dep_output_exists "$matched_action"; then
         builder_echo warning "Expected output: '${_builder_dep_path[$matched_action]}'."
-        builder_echo warning "## $action_name completed successfully, but output does not exist"
+        builder_echo end "$action_name" warning "## $action_name completed successfully, but output does not exist"
       else
-        builder_echo success "## $action_name completed successfully"
+        builder_echo end "$action_name" success "## $action_name completed successfully"
       fi
     elif [[ $result == failure ]]; then
-      builder_echo error "## $action_name failed"
+      builder_echo end "$action_name" error "## $action_name failed"
     else
-      builder_echo error "## $action_name failed with message: $result"
+      builder_echo end "$action_name" error "## $action_name failed with message: $result"
     fi
 
     # Remove $action$target from the array; it is no longer a current action
@@ -1665,11 +1840,6 @@ _builder_do_build_deps() {
       continue
     fi
 
-    # Only configure and build the dependency once per invocation
-    if builder_has_module_been_built "$dep"; then
-      continue
-    fi
-
     dep_target=
     if [[ ! -z ${_builder_dep_targets[$dep]+x} ]]; then
       # TODO: in the future split _builder_dep_targets into comma-separated
@@ -1677,14 +1847,20 @@ _builder_do_build_deps() {
       dep_target=${_builder_dep_targets[$dep]}
     fi
 
-    builder_set_module_has_been_built "$dep"
+    # Only configure and build the dependency once per invocation
+    if builder_has_module_been_built "$dep$dep_target"; then
+      continue
+    fi
+
+    builder_set_module_has_been_built "$dep$dep_target"
     "$REPO_ROOT/$dep/build.sh" "configure$dep_target" "build$dep_target" \
       $builder_verbose \
       $builder_debug \
+      $_builder_offline \
       $_builder_build_deps \
       --builder-dep-parent "$THIS_SCRIPT_IDENTIFIER" && (
       if $_builder_debug_internal; then
-        builder_echo success "## Dependency $dep for $_builder_matched_action_name successfully"
+        builder_echo success "## Dependency $dep$dep_target for $_builder_matched_action_name successfully"
       fi
     ) || (
       result=$?
@@ -1709,6 +1885,18 @@ builder_is_dep_build() {
 #
 builder_is_child_build() {
   return $_builder_is_child
+}
+
+#
+# return `1` for a regular build, `0` to try to build while being offline.
+# The offline build might fail if not all dependencies are cached.
+#
+builder_try_offline() {
+  if [[ "${_builder_offline}" == "--offline" ]]; then
+    return 0
+  else
+    return 1
+  fi
 }
 
 #
@@ -1874,6 +2062,258 @@ _builder_has_function_been_called() {
   fi
   return 1
 }
+
+################################################################################
+# Platform restrictions
+################################################################################
+
+# Describes the platforms for which a given target will be available, and
+# filters the list of targets accordingly, removing targets that cannot be built
+# on the current platform. Removed targets will be listed in a separate section
+# in the help documentation.
+#
+# Parameters: target platform[s] ...     Target and its list of corresponding
+#                                        platform(s)
+#
+# Multiple targets can be listed. Each target must be followed by a comma
+# separated list of platforms. The currently supported platforms are:
+#
+# Operating System platforms:
+#   win        Windows
+#   mac        macOS
+#   linux      Linux
+#
+# Development tooling platforms:
+#   delphi     Delphi is installed (on Windows only)
+#   android    Android Studio is installed
+#
+builder_describe_platform() {
+
+  local builder_platforms=(linux mac win)
+  local builder_tools=(android-studio delphi)
+  local builder_platform="${BUILDER_OS}"
+
+  # --- Detect tools ---
+
+  local builder_installed_tools=()
+
+  # Detect delphi compiler (see also delphi_environment.inc.sh)
+  if builder_is_windows; then
+    local ProgramFilesx86="$(cygpath -w -F 42)"
+    if [[ -x "$(cygpath -u "$ProgramFilesx86\\Embarcadero\\Studio\\20.0\\bin\\dcc32.exe")" ]]; then
+      builder_installed_tools+=(delphi)
+    fi
+  fi
+
+  # Detect Android Studio based on ANDROID_HOME environment variable
+  if [[ ! -z ${ANDROID_HOME+x} ]]; then
+    builder_installed_tools+=(android-studio)
+  fi
+
+  # --- Overrides ---
+
+  # For testing, we can override the current platform
+  if [[ ! -z "${BUILDER_PLATFORM_OVERRIDE+x}" ]]; then
+    builder_warn "BUILDER_PLATFORM_OVERRIDE variable found. Overriding detected platform '$builder_platform' with '$BUILDER_PLATFORM_OVERRIDE'"
+    builder_platform="$BUILDER_PLATFORM_OVERRIDE"
+  fi
+
+  # For testing, we can override the current tools
+  if [[ ! -z "${BUILDER_TOOLS_OVERRIDE+x}" ]]; then
+    builder_warn "BUILDER_TOOLS_OVERRIDE variable found. Overriding detected tools (${builder_installed_tools[@]}) with (${BUILDER_TOOLS_OVERRIDE[@]})"
+    builder_installed_tools=("${BUILDER_TOOLS_OVERRIDE[@]}")
+  fi
+
+  # --- Exclude targets depending on missing tools and platforms
+  while [[ $# -gt 1 ]]; do
+    local target="$1"
+    shift
+    local platforms platform
+    IFS="," read -r -a platforms <<< "$1"
+    shift
+
+    for platform in "${platforms[@]}"; do
+      if _builder_item_in_array "$platform" "${builder_platforms[@]}"; then
+        # Check operating system
+        if [[ "$platform" != "$builder_platform" ]]; then
+          _builder_targets_excluded_by_platform[$target]=$platform
+          _builder_targets=( ${_builder_targets[@]/$target} )
+        fi
+      elif _builder_item_in_array "$platform" "${builder_tools[@]}"; then
+        # Check installed tools
+        if ! _builder_item_in_array "$platform" "${builder_installed_tools[@]}"; then
+          _builder_targets_excluded_by_platform[$target]=$platform
+          _builder_targets=( ${_builder_targets[@]/$target} )
+        fi
+      else
+        builder_warn "Available platforms: ${builder_platforms[@]}"
+        builder_warn "Available tools: ${builder_tools[@]}"
+        builder_die "Invalid platform or tool specified for builder_describe_platforms: $platform"
+      fi
+    done
+  done
+}
+
+# Returns 0 if the specified target is excluded by platform requirements
+#
+# Parameters: target     Target to verify
+#
+builder_is_target_excluded_by_platform() {
+  local target="$1"
+  if [[ ! -z "${_builder_targets_excluded_by_platform[$target]+x}" ]]; then
+    return 0
+  fi
+  return 1
+}
+
+# Returns 0 if the script is running in a Docker container
+builder_is_running_on_docker() {
+  if [[ -z ${DOCKER_RUNNING:-} ]]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+# Returns 0 if the script is running in a GitHub Actions environment
+builder_is_running_on_gha() {
+  if [[ -z ${GITHUB_ACTIONS:-} ]]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+# Returns 0 if the script is running on TeamCity
+builder_is_running_on_teamcity() {
+  if [[ -z "${TEAMCITY_GIT_PATH:-}" ]]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+#
+# Returns 0 if current build is running in CI, as a pull request test, or as a
+# mainline branch test, or as a release build
+#
+builder_is_ci_build() {
+  if builder_is_ci_release_build || builder_is_ci_test_build; then
+    return 0
+  fi
+  return 1
+}
+
+#
+# Returns 0 if current build is running as a release build in CI
+#
+builder_is_ci_release_build() {
+  if [[ "${KEYMAN_VERSION_ENVIRONMENT:-}" =~ ^alpha|beta|stable$ ]]; then
+    return 0
+  fi
+  return 1
+}
+
+#
+# Returns 0 if current build is running in CI, as a pull request test, or as a
+# mainline branch test
+#
+builder_is_ci_test_build() {
+  if [[ "${KEYMAN_VERSION_ENVIRONMENT:-}" == test ]]; then
+    return 0
+  fi
+  return 1
+}
+
+#
+# Returns 0 if current ci build is a release-level build. Do not use for non-ci
+# builds.
+#
+builder_is_ci_build_level_release() {
+  if builder_is_ci_release_build; then
+    return 0
+  fi
+  if [[ "${KEYMAN_BUILD_LEVEL:-}" == release ]]; then
+    return 0
+  fi
+  return 1
+}
+
+#
+# Returns 0 if current ci build is a build-level build. Do not use for non-ci
+# builds.
+#
+builder_is_ci_build_level_build() {
+  if builder_is_ci_release_build; then
+    return 1
+  fi
+  if builder_is_ci_build_level_release; then
+    # KEYMAN_BUILD_LEVEL == release, i.e. not build
+    return 1
+  fi
+  return 0
+}
+
+#
+# Executes statement if a ci build level of 'release', and for local builds, but
+# not for a ci build level of 'build'
+#
+builder_if_release_build_level() {
+  if builder_is_ci_build && builder_is_ci_build_level_build; then
+    builder_echo "Skipping - buildLevel=build: $@"
+    return 0
+  fi
+  "$@"
+}
+
+# Returns 0 if we're running on Windows, i.e. if the environment variable
+# `OSTYPE` is set to "msys" or "cygwin".
+builder_is_windows() {
+  if [[ "${OSTYPE:-}" == "msys" ]] || [[ "${OSTYPE:-}" == "cygwin" ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+# Returns 0 if we're running on macOS.
+builder_is_macos() {
+  if [[ "${OSTYPE:-}" == darwin* ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+# Returns 0 if we're running on Linux (or rather if we're not running
+# on Windows or macOS).
+builder_is_linux() {
+  if builder_is_windows || builder_is_macos; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+# Sets the BUILDER_OS environment variable to linux|mac|win
+#
+_builder_get_operating_system() {
+  declare -g BUILDER_OS
+
+  if builder_is_macos; then
+    BUILDER_OS=mac
+  elif builder_is_windows; then
+    BUILDER_OS=win
+  else
+    BUILDER_OS=linux
+  fi
+
+  readonly BUILDER_OS
+}
+
+################################################################################
+# Final initialization
+################################################################################
 
 #
 # Initialize builder once all functions are declared
