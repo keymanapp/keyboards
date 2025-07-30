@@ -97,9 +97,11 @@ c 'hhkqg'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
+
   store(ArabOnes) '23456789'
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
+  store(ethDigits)  '፩፪፫፬፭፮፯፰፱'
   store(arabNumbers) '123456789'
   store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
@@ -348,7 +350,7 @@ c upto the order of 100 million
   any(ones) '፼፼' + '0' > context beep  c do not go any higher, alert the user with a beep 
 
 c enhance this later, look for something that can copy a match over
-  any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
+$keymanonly:   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethDigits,2)
 
 c ---------------------End Input of Numbers-----------------------------------------------------
 
