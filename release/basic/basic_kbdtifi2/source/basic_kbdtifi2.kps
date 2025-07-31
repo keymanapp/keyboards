@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -21,8 +21,7 @@
     <Name URL="">Tifinagh (Full) Basic</Name>
     <Copyright URL="">(c) SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description URL="">Tifinagh (Full) Basic generated from template. This keyboard does not
-support the consonant joiner (U+2D7F) for forming bi-consonants. It also
+    <Description URL="">This keyboard is designed for languages which use the Tifinagh script.  This keyboard does not support the consonant joiner (U+2D7F) for forming bi-consonants. It also
 does not support U+2D66, U+2D67, U+2D70.</Description>
     <Version URL=""></Version>
   </Info>
@@ -81,12 +80,54 @@ does not support U+2D66, U+2D67, U+2D70.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Black.ttf</Name>
+      <Description>Font Tirra Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Bold.ttf</Name>
+      <Description>Font Tirra Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-ExtraBold.ttf</Name>
+      <Description>Font Tirra ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Medium.ttf</Name>
+      <Description>Font Tirra Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</Name>
+      <Description>Font Tirra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-SemiBold.ttf</Name>
+      <Description>Font Tirra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tifinagh (Full) Basic</Name>
       <ID>basic_kbdtifi2</ID>
-      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="tzm-Tfng">Central Atlas Tamazight</Language>
         <Language ID="thz-Tfng">Tayart Tamajeq (Tifinagh)</Language>
