@@ -4,11 +4,7 @@
   require_once('header.php');
 
   $pagestyle = <<<END
-    p { font: 12pt Tahoma }
     ol { font: 12pt Tahoma }
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 12pt Tahoma; color: #4444cc }
-    h3 { font: bold 11pt Tahoma; color: #4444cc }
     span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
   END;
 
