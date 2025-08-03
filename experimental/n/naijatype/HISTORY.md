@@ -1,18 +1,23 @@
 Naija Type Keyboard Change History
 =======================
 
+65 (2025-Jul-24)
+--------
+* Added 02C4 (˄) as a modifier of ^ circumflex (shift-6) as a tone symbol for grh Tugbiri.
+* (One for the Yorubas:) Ctrl-Alt-semicolon puts an underdot on underlinable letters before or after a tone diacritic.
+
 64 (2025-Jun-9)
 --------
 * Added diaeresis/umlaut to the tone rota after over dot (esp for Kamuku) and Kanuri reversed e on the Q key. Also disable small caps mode when backspacing a small cap to help those who activate it accidentally.
-* Updated the Andika font
+* Updated the Andika font.
 
 63 (2024-Aug-20)
 ---------
-* Update osk help file and related css to improve website behavior
+* Update osk help file and related css to improve website behavior.
 
 62 (2024-Aug-13)
 ---------
-* Corrected the New line indent for Description element
+* Corrected the New line indent for Description element.
 
 June 2024
 ---------
@@ -35,7 +40,7 @@ April 2024
 
 July 2023
 ---------
-* v50 Fix key cap for longpress menu key
+* v50 Fix key cap for longpress menu key.
 
 
 October 2022

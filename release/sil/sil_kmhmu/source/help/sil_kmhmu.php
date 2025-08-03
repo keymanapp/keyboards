@@ -2,9 +2,6 @@
   $pagename = 'Kmhmu (SIL) Keyboard Help';
   $pagetitle = 'Kmhmu (SIL)  Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc }
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
