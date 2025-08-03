@@ -103,8 +103,8 @@ $keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
 $keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
-store(touchVowels)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_WWA]
-store(touchVowelsExtended)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_WWE][T_WWU][T_WWI][T_WWAA][T_WWEE]
+store(touchVowels)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_ዘመደ_ራብዕ]
+store(touchVowelsExtended)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_ዘመደ_ግዕዝ][T_ዘመደ_ካዕብ][T_ዘመደ_ሣልስ][T_ዘመደ_ራብዕ][T_ዘመደ_ኃምስ]
 
 store(ሀ_ቤተሰብ) 'ሀሁሂሃሄሆኈኍኊኋኌ'
 store(ለ_ቤተሰብ) 'ለሉሊላሌሎሏ'
@@ -153,7 +153,7 @@ c
 c Stores for handling special cases with tablet "extra" layers.  We want to replace the initial
 c key that brought us into the layer if a modifier key is typed:
 c
-store(ዀ_layer_keys) [T_WWU][T_WWI][T_WWAA][T_WWEE]
+store(ዀ_layer_keys) [T_ዘመደ_ካዕብ][T_ዘመደ_ሣልስ][T_ዘመደ_ራብዕ][T_ዘመደ_ኃምስ]
 store(ዀ_layer_out) 'ዅዂዃዄ'
 
 store(ᎀ_layer_keys) [U_1E7ED] [U_1E7EE] [U_1383] [U_1384] [U_1E7F3] [U_1E7F4] [U_1387]
@@ -197,7 +197,7 @@ c
   any(ሳድስ) + [T_ራብዕ] > index(ራብዕ,1)
   any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
-  any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ሳድስ፡መደበኛ) + [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
   
   if( &layer = "ሀ-layer" ) 'ህ' + any(touchVowelsExtended) > index(ሀ_ቤተሰብ,3) 
   if( &layer = "ሀ-layer" ) + any(touchVowelsExtended) > index(ሀ_ቤተሰብ,2)
@@ -253,7 +253,7 @@ c
 
 c Additional Rules for Tablet extras
   if( &layer = "ዀ-extra" ) 'ዀ' + any(ዀ_layer_keys) > index(ዀ_layer_out,3)
-  if( &layer = "ዀ-extra" ) + [T_WWE] > 'ዀ' dk(1)
+  if( &layer = "ዀ-extra" ) + [T_ዘመደ_ግዕዝ] > 'ዀ' dk(1)
   if( &layer = "ዀ-extra" ) + any(ዀ_layer_keys) > index(ዀ_layer_out,2)
 
   if( &layer = "ᎀ-extra" ) 'ᎀ' + any(ᎀ_layer_keys) > index(ᎀ_layer_out,3)
