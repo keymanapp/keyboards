@@ -3,7 +3,7 @@ Lanna Unicode (Thai Layout) keyboard
 
 Description
 -----------
-The Lanna Unicode (Thai Layout) keyboard allows text input using the Tai Tham Unicode script.
+The Lanna Unicode (Thai Layout) keyboard allows text input using the Tai Tham Unicode script. By Jayasāro Bhikkhu.
 
 Links
 -----
@@ -12,8 +12,6 @@ Keyboard Homepage: https://keyman.com/keyboards/lanna01
 Copyright
 ---------
 The MIT License (MIT)
-
-Copyright © 2025 Jayasāro Bhikkhu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
