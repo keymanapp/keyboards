@@ -12,7 +12,7 @@
     <li>places less common letters in the SHIFT layer, and</li>
     <li>uses key combinations to access compound letters.</li>
   </ul>
-  <h1>Keyboard Layout</h1>
+
   <h2>Desktop and onscreen layouts</h2>
   <p>The desktop and onscreen layouts are identical.</p>
   <div id='osk' data-states='default shift'></div>

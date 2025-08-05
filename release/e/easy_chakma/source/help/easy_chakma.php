@@ -1696,33 +1696,6 @@
 	margin-bottom:.0001pt;
 	font-size:11.0pt;
 	font-family:"Times New Roman",serif;}
-h1
-	{margin-top:.5pt;
-	margin-right:-.9pt;
-	margin-bottom:0in;
-	margin-left:7.0pt;
-	margin-bottom:.0001pt;
-	font-size:17.0pt;
-	font-family:"Times New Roman",serif;
-	font-weight:bold;}
-h2
-	{margin-top:.05pt;
-	margin-right:.8pt;
-	margin-bottom:0in;
-	margin-left:7.0pt;
-	margin-bottom:.0001pt;
-	font-size:12.5pt;
-	font-family:"Times New Roman",serif;
-	font-weight:bold;}
-h3
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:7.0pt;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Calibri",sans-serif;
-	font-weight:bold;}
 p.MsoHeader, li.MsoHeader, div.MsoHeader
 	{mso-style-link:"Header Char";
 	margin:0in;
