@@ -20,8 +20,8 @@
   <Info>
     <Name URL="">Tai Lanna (Thai Layout)</Name>
     <Copyright URL="">Copyright ©  Jayasiri Jayasāro Bhikkhu, ven.chaisiri@gmail.com</Copyright>
-    <Author URL="">Jayasiri Jayasāro Bhikkhu</Author>
-    <Description URL=""></Description>
+    <Author URL="mailto:ven.chaisiri@gmail.com">Jayasiri Jayasāro Bhikkhu</Author>
+    <Description URL="">The Tai Lanna (Thai Layout) keyboard enables input of the Tai Tham Unicode script using a Thai-based layout.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -61,12 +61,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\lana\a_tai_tham_kh_new\A-Tai-Tham-KH-New-V3.ttf</Name>
+      <Description>Font A Tai Tham KH New V3 Normal</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\lana\a_tai_tham_kh_new\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>tai_lanna_thai</ID>
+      <OSKFont>..\..\..\..\release\shared\fonts\lana\a_tai_tham_kh_new\A-Tai-Tham-KH-New-V3.ttf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\lana\a_tai_tham_kh_new\A-Tai-Tham-KH-New-V3.ttf</DisplayFont>
       <Languages>
-        <Language ID="th">Thai</Language>
+        <Language ID="nod">Northern Thai</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
