@@ -1,5 +1,9 @@
 fv_sguuxs Change History
 ====================
+1.2 (Jul 31 2025)
+------------------
+*updated layout 
+------------------
 1.1 (18 Jul 2024)
 ------------------
 * Corrected mistakes in OSK
