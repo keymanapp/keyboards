@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>ladino.png</GraphicFile>
+    <LicenseFile>LICENSE.htm</LicenseFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder>Teklado Ladino</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Teklado Ladino Manual</Name>
+        <FileName>(Product Configuration)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.0.0</Version>
+    <Name URL="">Teklado Ladino</Name>
+    <Copyright URL="">© Julian Vargo 2025</Copyright>
+    <Author URL="mailto:julianvargo@berkeley.edu">Julian Vargo</Author>
+    <WebSite URL="https://sites.google.com/berkeley.edu/julian-vargo/home?authuser=0">https://sites.google.com/berkeley.edu/julian-vargo/home?authuser=0</WebSite>
+    <Description URL="">Paket del teklado Ladino. Ladino keyboard package.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>LICENSE.htm</Name>
+      <Description>File LICENSE.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>NotoRashiHebrew-VariableFont_wght.ttf</Name>
+      <Description>Font Noto Rashi Hebrew Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>ladino.ico</Name>
+      <Description>File ladino.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>..\build\ladino.js</Name>
+      <Description>File ladino.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\ladino.kvk</Name>
+      <Description>File ladino.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\ladino.kmx</Name>
+      <Description>Keyboard Ladino</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>ladino.png</Name>
+      <Description>File ladino.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\welcome\alt.png</Name>
+      <Description>File alt.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\welcome\alt_shift.png</Name>
+      <Description>File alt_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\welcome\basic.png</Name>
+      <Description>File basic.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\welcome\shift.png</Name>
+      <Description>File shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>ladino</ID>
+      <OSKFont>NotoRashiHebrew-VariableFont_wght.ttf</OSKFont>
+      <DisplayFont>NotoRashiHebrew-VariableFont_wght.ttf</DisplayFont>
+      <Languages>
+        <Language ID="lad-001">Ladino (World)</Language>
+      </Languages>
+      <Examples>
+        <Example ID="Ladino" Keys="w a l o SHIFT+m" Text="שאלום" Note=""/>
+      </Examples>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
