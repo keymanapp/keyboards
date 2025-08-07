@@ -11,21 +11,22 @@ store(&LAYOUTFILE) 'wali.keyman-touch-layout'
 
 begin Unicode > use(main)
 store(norm_vowels) "aeiouAEIOU"
+store(lat_norm_replacement) "zxc;ZXC:"
 store(lat_vowels) "ʋɛɔɩƲƐƆɭ"
 
 store(norm_vowel_nasal) "ãẽĩõũÃẼĨÕŨ"
 store(norm_vowel_grave) "àèìòùÀÈÌÒÙ"
 store(norm_vowel_acute) "áéíóúÁÉÍÓÚ"
 
-store(lat_vowel_nasal) "ʋɛ̃ɔ̃ɩ̀ƲƐ̃Ɔ̃ɭ"
-store(lat_vowel_grave) "ʋ̀ɛ̀ɔ̀ɩ̀Ʋ̀Ɛ̀Ɔ̀ɭ"
-store(lat_vowel_acute) "ʋ́ɛ́ɔ́ɩ́Ʋ́Ɛ́Ɔ́ɭ"
-
 group(main) using keys
 
-'~' + any(norm_vowels) > index(norm_vowel_nasal, 2)
 '`' + any(norm_vowels) > index(norm_vowel_grave, 2)
 "'" + any(norm_vowels) > index(norm_vowel_acute, 2)
+'~' + any(norm_vowels) > index(norm_vowel_nasal, 2)
+
+'`' + any(lat_norm_replacement) > index(lat_vowels, 2) U+0300
+"'" + any(lat_norm_replacement) > index(lat_vowels, 2) U+0301
+'~' + any(lat_norm_replacement) > index(lat_vowels, 2) U+0303
 
 + [SHIFT RALT K_COLON] > ':'
 + [SHIFT RALT K_C] > 'C'
