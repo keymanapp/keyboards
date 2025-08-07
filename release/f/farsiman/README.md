@@ -1,9 +1,7 @@
 Farsiman keyboard
 ==============
 
-© 2019 Yuichi Yoshimoto @WhyEyed
-
-Version 1.0
+© Yuichi Yoshimoto @WhyEyed
 
 Description
 -----------

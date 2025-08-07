@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Old Italic Basic</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="">Makara SOK</Author>
-    <Description>Old Italic Basic generated from template</Description>
+    <Description URL="">Old Italic Basic based on Windows 10 layout.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -82,9 +84,15 @@
     <Keyboard>
       <Name>Old Italic Basic</Name>
       <ID>basic_kbdoldit</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <Languages>
-        <Language ID="itc-Ital">Italic languages (Old Italic (Etruscan, Oscan, etc.))</Language>
+        <Language ID="ett">Etruscan</Language>
+        <Language ID="osc">Oscan</Language>
+        <Language ID="pgn">Paelignian</Language>
+        <Language ID="umc">Marrucinian</Language>
+        <Language ID="xhr">Hernican</Language>
+        <Language ID="xum-Ital">Umbrian (Old Italic (Etruscan, Oscan, etc.))</Language>
+        <Language ID="xve">Venetic</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

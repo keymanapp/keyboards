@@ -45,8 +45,6 @@ On Screen Keyboard menu item. </p>
 <p>The keyboard layout is displayed below in Keyboard graphics.</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift leftctrl'>
 </div>
@@ -107,6 +105,3 @@ style='font-size:18.0pt'>عربی سافٹ ویر اور عربی ٹیکسٹ ا�
 فیس بک اور ٹویٹر میں بھی اس سافٹ ویر کے زریعے عربی لکھ رہے ہیں جو کہ
 عربی دان طبقے کے لیے یقینا بہت بڑی خوشی کی بات ہے </span><span
 style='font-size:18.0pt'><o:p></o:p></span></p>
-
-
-</html>

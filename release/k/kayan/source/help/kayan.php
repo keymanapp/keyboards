@@ -14,7 +14,6 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
 </p>
 <br/>
 
-<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
@@ -41,7 +40,7 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
   <li>Brill</li>
   <li>Calibri</li>
   <li>Cambria</li>
-  <li>Charis SIL</li>
+  <li>Charis</li>
   <li>Consolas</li>
   <li>Doulos SIL</li>
   <li>Gentium</li>

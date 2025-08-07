@@ -5,13 +5,10 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using Colchis Latin</h1>
-
 <p>
     This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.
 </p>
 
-<h1>Keyboard Layout</h1>
 
   <h2>Desktop Keyboard layout</h2>
   <p>Press the circumflex key (SHIFT 3) followed by a vowel to get a circumflex above a vowel. For example, press ^e to produced ê. This is available on a, e, i, o, u.</p>

@@ -13,20 +13,27 @@ function rsync_to_downloads_keyman_com {
   else
     ignore=
   fi
-  
+
   #rsync_args = (
   #  '-vtrp',                                  # verbose, preserve times, recurse, permissions
   #  '--chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r',      # map Windows security to host security
   #  '--stats',                                # show statistics for log
   #  "--rsync-path=$REMOTE_RSYNC_PATH",        # path on remote server
-  #  "--rsh=ssh",                              # use ssh
+  #  "--rsh=$RSYNC_HOME\ssh -i $USERPROFILE\.ssh\id_rsa -o UserKnownHostsFile=$USERPROFILE\.ssh\known_hosts",                              # use ssh
   #  "$source",                                # source path
   #  "$dstroot/$dest"                          # target server + dest path
   #)
-  
+
   pushd $source
-  
-  "$RSYNC" -vtrp --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r --stats --rsync-path="$REMOTE_RSYNC_PATH" --rsh=ssh $ignore . "$RSYNC_DEST/$dest"
-  
+
+  "$RSYNC_HOME"/rsync.exe \
+    -vtrp \
+    --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r \
+    --stats --rsync-path="$REMOTE_RSYNC_PATH" \
+    --rsh="$RSYNC_HOME\\ssh -i $USERPROFILE\\.ssh\\id_rsa -o UserKnownHostsFile=$USERPROFILE\\.ssh\\known_hosts" \
+    $ignore \
+    . \
+    "$RSYNC_DEST/$dest"
+
   popd
 }

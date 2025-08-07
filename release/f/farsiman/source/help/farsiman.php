@@ -26,6 +26,3 @@ To get:
   <div id='osk-tablet' data-states='default shift numeric'></div>
 </div>
 
-
-<h2>Release History</h2>
-<p>Version 1.0, released 01 November 2019</p>

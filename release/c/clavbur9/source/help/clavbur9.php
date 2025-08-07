@@ -3,11 +3,11 @@
   $pagetitle = $pagename;
   $pagestyle = '
   .clavbur9 {
-	font-family: Charis SIL;
+	font-family: Charis;
 	background-color: #FFFFFF;
 }
 .clavbur9 .keytable td, .clavbur9 .keytable th {
-	font-family: "Charis SIL";
+	font-family: "Charis";
 	font-size: 16.0pt;
 	text-align: center;
   padding: 4px;
@@ -163,7 +163,6 @@
             <td>»</td>
           </tr>
 </table>
-</div>
 
 <h2>Disposition du clavier du téléphone / Phone keyboard layout</h2>
 
@@ -171,6 +170,4 @@
 <p>Because of the limited number of keys, some characters are hidden. Press and hold a key with a small dot in the upper right corner to reveal and use them.</p>
 
 <div id='osk-tablet' data-states='default shift numeric'>
-</div>
-
 </div>

@@ -18,8 +18,6 @@
 <p>´a will produce á (available on aAeEiIoOuUyY).</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

@@ -1,5 +1,9 @@
 Sunda Baku Keyboard Change History
 
+1.0.7 (20 Feb 2025)
+-----------------
+* Put OSKFont from .kps file into .kvks file
+
 1.0.6 (2023-11-30)
 ----------------
 * Use shared font instead of local

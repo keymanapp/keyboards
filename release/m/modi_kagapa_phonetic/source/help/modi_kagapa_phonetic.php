@@ -1,0 +1,483 @@
+<?php
+  $pagename = 'Modi KaGaPa Phonetic Keyboard Help' ;
+  $pagetitle = $pagename ;
+  $pagestyle = <<<END
+        body {
+            font-family: "Segoe UI", "Noto Sans", sans-serif;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 2em;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+           border-bottom: 2px solid #ccc;
+            padding-bottom: 0.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+          tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 1em;
+            color: #666;
+          background-color: #f9f9f9;
+          margin: 2em 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 3em 0;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+          margin-left: 1.5em;
+        }
+    END;
+  require_once( 'header.php' ) ;
+?>
+
+<h1 id="Modi-kagapa-phonetic-keyboard-–-key-mapping-tables">Modi KaGaPa Phonetic Keyboard – Getting Started</h1>
+
+<p>This layout is the KaGaPa phonetic layout for a historically important script, called 'Modi'. It was prominently used to write Marathi, and in a few instances, for Hindi and Sanskrit. It is phonetically equivalent to Devanagari KaGaPa Phonetic, i.e., using similar character mapping, but for Modi letters.</p>
+
+<p>This document provides key mappings for the layout across four layers:</p>
+
+<ul>
+  <li><strong>Normal</strong></li>
+  <li><strong>Shift</strong></li>
+  <li><strong>Right Alt (RAlt)</strong></li>
+  <li><strong>Shift + Right Alt</strong></li>
+</ul>
+
+<hr>
+
+<h2 id="numbers">Numbers</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0 (Digit Zero)</td>
+<td>) (Right Parenthesis)</td>
+<td>𑙐 (Modi Digit Zero)</td>
+<td>𑙃 (Modi Abbreviation Sign)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1 (Digit One)</td>
+<td>! (Exclamation Mark)</td>
+<td>𑙑 (Modi Digit One)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 (Digit Two)</td>
+<td>@ (Commercial At)</td>
+<td>𑙒 (Modi Digit Two)</td>
+<td>₨ (Indian Rupee Sign - Old)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 (Digit Three)</td>
+<td># (Number Sign)</td>
+<td>𑙓 (Modi Digit Three)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 (Digit Four)</td>
+<td>$ (Dollar Sign)</td>
+<td>𑙔 (Modi Digit Four)</td>
+<td>₹ (Indian Rupee Sign)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5 (Digit Five)</td>
+<td>% (Percent Sign)</td>
+<td>𑙕 (Modi Digit Five)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6 (Digit Six)</td>
+<td>^ (Circumflex Accent)</td>
+<td>𑙖 (Modi Digit Six)</td>
+<td>‌ (Zero Width Non-Joiner)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7 (Digit Seven)</td>
+<td>&amp; (Ampersand)</td>
+<td>𑙗 (Modi Digit Seven)</td>
+<td>‍ (Zero Width Joiner)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8 (Digit Eight)</td>
+<td>* (Asterisk)</td>
+<td>𑙘 (Modi Digit Eight)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>9</td>
+<td>9 (Digit Nine)</td>
+<td>( (Left Parenthesis)</td>
+<td>𑙙 (Modi Digit Nine)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table><hr>
+
+<h2 id="alphabets">Alphabets</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>𑘰 (Modi Vowel Sign Aa)</td>
+<td>𑘁 (Modi Letter Aa)</td>
+<td>𑘀 (Modi Letter A)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>B</td>
+<td>𑘤 (Modi Letter Ba)</td>
+<td>𑘥 (Modi Letter Bha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>C</td>
+<td>𑘓 (Modi Letter Ca)</td>
+<td>𑘔 (Modi Letter Cha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>D</td>
+<td>𑘟 (Modi Letter Da)</td>
+<td>𑘠 (Modi Letter Dha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E</td>
+<td>𑘹 (Modi Vowel Sign Short E)</td>
+<td>𑘊 (Modi Letter E)</td>
+<td>𑘋 (Modi Letter AI)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>F</td>
+<td>𑘿 (Modi Sign Virama)</td>
+<td>𑘶 (Modi Vowel Sign Vocalic Rr)</td>
+<td>𑘇 (Modi Letter Vocalic Rr)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>G</td>
+<td>𑘐 (Modi Letter Ga)</td>
+<td>𑘑 (Modi Letter Gha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>H</td>
+<td>𑘮 (Modi Letter Ha)</td>
+<td>𑘾 (Modi Sign Visarga)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>I</td>
+<td>𑘱 (Modi Vowel Sign I)</td>
+<td>𑘲 (Modi Vowel Sign Ii)</td>
+<td>𑘂 (Modi Letter I)</td>
+<td>𑘃 (Modi Letter Ii)</td>
+</tr>
+<tr>
+<td>J</td>
+<td>𑘕 (Modi Letter Ja)</td>
+<td>𑘖 (Modi Letter Jha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>K</td>
+<td>𑘎 (Modi Letter Ka)</td>
+<td>𑘏 (Modi Letter Kha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>L</td>
+<td>𑘩 (Modi Letter La)</td>
+<td>𑘯 (Modi Letter Lla)</td>
+<td>𑘷 (Modi Vowel Sign Vocalic L)</td>
+<td>𑘈 (Modi Letter Vocalic L)</td>
+</tr>
+<tr>
+<td>M</td>
+<td>𑘦 (Modi Letter Ma)</td>
+<td>𑘽 (Modi Sign Anusvara)</td>
+<td>ऽ (Avagraha)</td>
+<td>ॐ (Om)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>𑘡 (Modi Letter Na)</td>
+<td>𑘜 (Modi Letter Nna)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>O</td>
+<td>𑘻 (Modi Vowel Sign O)</td>
+<td>𑘌 (Modi Letter O)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>P</td>
+<td>𑘢 (Modi Letter Pa)</td>
+<td>𑘣 (Modi Letter Pha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>𑘘 (Modi Letter Tta)</td>
+<td>𑘙 (Modi Letter Ttha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>R</td>
+<td>𑘨 (Modi Letter Ra)</td>
+<td>𑘵 (Modi Vowel Sign Vocalic R)</td>
+<td>𑘆 (Modi Letter Vocalic R)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>S</td>
+<td>𑘭 (Modi Letter Sa)</td>
+<td>𑘫 (Modi Letter Sha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>T</td>
+<td>𑘝 (Modi Letter Ta)</td>
+<td>𑘞 (Modi Letter Tha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>U</td>
+<td>𑘳 (Modi Vowel Sign U)</td>
+<td>𑘴 (Modi Vowel Sign Uu)</td>
+<td>𑘄 (Modi Letter U)</td>
+<td>𑘅 (Modi Letter Uu)</td>
+</tr>
+<tr>
+<td>V</td>
+<td>𑘪 (Modi Letter Va)</td>
+<td>𑘼 (Modi Vowel Sign Au)</td>
+<td>𑘍 (Modi Letter Au)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>W</td>
+<td>𑘚 (Modi Letter Dda)</td>
+<td>𑘛 (Modi Letter Ddha)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>X</td>
+<td>𑘬 (Modi Letter Ssa)</td>
+<td>𑘉 (Modi Letter Vocalic Ll)</td>
+<td>𑘸 (Modi Vowel Sign Vocalic Ll)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>𑘧 (Modi Letter Ya)</td>
+<td>𑘺 (Modi Vowel Sign Ai)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>ञ (Modi Letter Nya)</td>
+<td>ङ (Modi Letter Nga)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table><hr>
+
+<h2 id="symbols--punctuation">Symbols &amp; Punctuation</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Normal</th>
+<th>Shift</th>
+<th>RAlt</th>
+<th>Shift+RAlt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>`</td>
+<td>` (Grave Accent)</td>
+<td>~ (Tilde)</td>
+<td>“ (Left Double Quotation Mark)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>-</td>
+<td>- (Hyphen-Minus)</td>
+<td>_ (Underscore)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>=</td>
+<td>= (Equals Sign)</td>
+<td>+ (Plus Sign)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>[</td>
+<td>[ (Left Square Bracket)</td>
+<td>{ (Left Curly Bracket)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>\</td>
+<td>\ (Backslash)</td>
+<td>| (Vertical Bar)</td>
+<td>𑙁 (Modi Danda)</td>
+<td>𑙂 (Modi Double Danda)</td>
+</tr>
+<tr>
+<td>]</td>
+<td>] (Right Square Bracket)</td>
+<td>} (Right Curly Bracket)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>;</td>
+<td>; (Semicolon)</td>
+<td>: (Colon)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>'</td>
+<td>' (Apostrophe)</td>
+<td>" (Quotation Mark)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>,</td>
+<td>, (Comma)</td>
+<td>&lt; (Less-Than Sign)</td>
+<td>𑙀 (Modi Vowel Sign Candra E)</td>
+<td>𑙄 (Modi Sign Huva)</td>
+</tr>
+<tr>
+<td>.</td>
+<td>. (Full Stop)</td>
+<td>&gt; (Greater-Than Sign)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>/</td>
+<td>/ (Slash)</td>
+<td>? (Question Mark)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
+
+
+<blockquote>
+  Author: <strong>Abhishek Deshpande</strong><br>
+  License: <a href="https://opensource.org/license/mit">MIT</a><br>
+  Copyright: © Abhishek Deshpande</p>
+</blockquote>
+
+

@@ -5,10 +5,9 @@
   require_once('header.php');
 ?>
 <p>
-    Maltese 48-Key Basic 1.1 generated from template.
+    Maltese 48-Key Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard defines some keys that are set by default as "hotkeys" when Keyman is installed. 
 To use this keyboard, you will want to go to <b>Configuration.../Hotkeys</b>, 
 select the hotkey name, and either change the hotkey or turn it off. 

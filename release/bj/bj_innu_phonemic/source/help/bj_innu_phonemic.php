@@ -10,8 +10,6 @@
   	The keyboard follows a standard US QWERTY keyboard layout. 
 </p>
   	
-
-<h1>Keyboard Layout</h1>
 <p>To access the superscript u and U, type the consonant followed by a "w". 
   	For example "kw" becomes "kᵘ, "mw" becomes "mᵘ" "shw" becomes "shᵘ" and "tw" becomes "tᵘ". 
   	These are also available for uppercase. If "kᵘ" is subsequently followed by "a", "e", "i", or "u", 

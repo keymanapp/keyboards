@@ -14,8 +14,6 @@ Currently
 "Switch Keyman Desktop Off" uses Shift+Alt+O
 "Show On Screen Keyboard Pane" uses Shift+Alt+K</p>
 
-<h1>Keyboard Layout</h1>
-
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>~a will produce ã (available on aAiInNoOuU).</p>
 <p>´a will produce á (available on aAcCeEiIoOsSuUwWyYǻǺǽǼǿǾ).</p>
@@ -34,5 +32,3 @@ Currently
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-
-<p>© SIL International</p>

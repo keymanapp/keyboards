@@ -38,5 +38,3 @@ Type yellow symbols, followed by pink letters / Dìgita i segni xali, e dòpo i 
 </tr></table>
 <br /><br />
 </div>
-
-<p>© 2007-2020 SIL International</p>

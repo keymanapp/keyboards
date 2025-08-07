@@ -9,8 +9,6 @@
     This keyboard is designed for the Wancho language of India using the Wancho script created by Banwang Losu.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
@@ -20,4 +18,4 @@
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-<p>©2020 Banwang Losu</p>
+<p>© Banwang Losu</p>

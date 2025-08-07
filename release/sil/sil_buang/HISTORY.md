@@ -1,6 +1,10 @@
 Buang (SIL) Change History
 ====================
 
+1.2.1 (2025-06-09)
+------------------
+* Add Charis font
+
 1.2 (2020-09-25)
 ----------------
 * Moved to \release from \legacy

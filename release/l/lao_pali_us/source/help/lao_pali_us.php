@@ -2,9 +2,6 @@
   $pagename = 'Lao Pali (US) Keyboard Help';
   $pagetitle = 'Lao Pali (US) Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma; }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc; }
   img {width:100% ;max-width:750px;}
   kbd {font-weight: bold;}
 EXTRA;
@@ -24,6 +21,3 @@ EXTRA;
   <p><img alt="Lao Pali keyboard layout: normal (default) state" src="lao_pali_us_U.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
   <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_us_S.png"/></p>
-
-</body>
-</html>

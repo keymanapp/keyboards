@@ -1,4 +1,5 @@
-<?php /*
+<?php
+/*
   Name:             Keyboard_gff_amhamaric_classic
   Copyright:        Keyboard ©1997-2020 The Ge'ez Frontier Foundation 
   Documentation:    
@@ -15,35 +16,14 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'አማርኛ (Amharic) Classic Keyboard Help';
   $pagetitle = 'አማርኛ (Amharic) Classic Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
-  $style = <<<EXTRA
-  .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-  .highlightKeys img {vertical-align:baseline !important}
-  .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-  .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-  .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2020. Ge'ez Frontier Foundation.</p>
-
-<br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-English.pdf'>Complete Typing Chart - English</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-Amharic.pdf'>Complete Typing Chart - Amharic</a><br/>
-<a href="#Troubleshooting">Troubleshooting</a><br/>
-<a href="#Resources">Further Resources</a><br/>
-<a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
-<a href="#Technical">Technical Information</a><br/>
-<a style='margin-left:20px' href="#Author">Authorship</a><br/>
+<p style='margin:0px'>Keyboard &#169; Ge'ez Frontier Foundation.</p>
 
 
 <div id='Overview'>

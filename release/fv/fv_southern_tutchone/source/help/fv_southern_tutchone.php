@@ -174,6 +174,3 @@ require_once ('header.php');
       bar.</li>
   </ul>
 </div>
-
-<br />
-</div>

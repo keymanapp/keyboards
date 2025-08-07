@@ -2,9 +2,6 @@
   $pagename = 'Kmhmu (SIL) Keyboard Help';
   $pagetitle = 'Kmhmu (SIL)  Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc }
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
@@ -15,12 +12,6 @@
 EXTRA;
   require_once('header.php');
 ?>
-
-
-
-
-
-<h1>Kmhmu (SIL) Keyboard</h1>
 
 <h2>Desktop Keyboard Layout Notes</h2>
 <p>Keyboard layout (as shown below) follows the Lao standard, with the following minor differences to simplify entry of Kmhmu text:</p>
@@ -165,8 +156,3 @@ EXTRA;
   <p>The font <b>Kmhmu OT 2.002</b> and <b>Kmhmu MX</b> have been included with the keyboard layout.</p>
   <p>Both font will be installed on Windows, but Kmhmu OT 2.002 is selected by default for OSK and Keyman app.</p>
   <p>When using outside Keyman app, the default system font may be used instead.</p>
-
-<hr/>
-<p>&copy; SIL International</p>
-</body>
-</html>

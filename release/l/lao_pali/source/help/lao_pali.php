@@ -2,9 +2,6 @@
   $pagename = 'Lao Pali Keyboard Help';
   $pagetitle = 'Lao Pali Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma; }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc; }
   img {width:100% ;max-width:750px;}
   kbd {font-weight: bold;}
 EXTRA;
@@ -22,6 +19,3 @@ EXTRA;
   <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
   <p><img alt="Lao Pali keyboard layout: AltGr state" src="lao_pali_RA.png"/></p>
-
-</body>
-</html>
