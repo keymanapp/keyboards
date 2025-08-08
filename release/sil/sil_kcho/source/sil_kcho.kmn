@@ -3,7 +3,7 @@ c with name "Kcho (SIL)"
 store(&VERSION) '15.0'
 store(&NAME) 'Kcho (SIL)'
 store(&COPYRIGHT) 'Copyright © SIL Global'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'sil_kcho.ico'
 store(&VISUALKEYBOARD) 'sil_kcho.kvks'
@@ -14,15 +14,26 @@ begin Unicode > use(main)
 group(main) using keys
 
 
+c Delete these temp rules
++ [RALT K_A] > 'a' U+0308
++ [RALT K_S] > 'A' U+0308
++ [RALT K_D] > 'u' U+0308
++ [RALT K_F] > 'U' U+0308
+c ccccc
+
 c vowels 
 store(vowelK) 'aeiouAEIOU'
 store(vowelAK) 'äÄ'
 store(vowelUK) 'üÜ'
 store(allvowelK) outs(vowelK) outs(vowelAK) outs(vowelUK) c not used
 
+c vowels for NFD umlaut (diaeresis) rules
+store(vowelAU) 'aA'
+store(vowelUU) 'uU'
+
 c Tones
 c ̀
-store(graveO)    'àèìòùÀÈÌÒÙ'
+store(graveO)  'àèìòùÀÈÌÒÙ'
 store(graveUO) 'ǜǛ'
 
 c ˊ
@@ -65,6 +76,16 @@ any(vowelAK) + '~' > context U+0301
 any(vowelAK) + '^' > context U+0302
 
 any(vowelUK) + '^' > context U+0302
+
+c NFD rules for ä and Ä, ü and Ü that need combining diacritics
+any(vowelAU) U+0308 + '`' > index(umlautO, 1) U+0300
+any(vowelUU) U+0308 + '`' > index(graveUO, 1)
+any(vowelAU) U+0308 + '~' > index(umlautO, 1) U+0301
+any(vowelUU) U+0308 + '~' > index(acuteUO, 1)
+any(vowelAU) U+0308 + '^' > index(umlautO, 1) U+0302
+any(vowelUU) U+0308 + '^' > index(vowelUK, 1) U+0302
+any(vowelAU) U+0308 + '|' > index(macronAO, 1)
+any(vowelUU) U+0308 + '|' > index(macronUO, 1)
 
 c right alt 
 + [RALT K_BKQUOTE] > '`'
