@@ -1,0 +1,422 @@
+﻿c Easy Keyboard Program  for Amharic, Tigringna, Geez & other languages.
+c 
+c This keyboard program uses a simplified set of phonetic keys for typing Geez.
+c 
+c NOTE: This keyboard was created from the Keyman keyboard
+c programming tutorial.
+c 
+c Written by Yemane, October 1999
+c Updated for Keyman 5. on August 18, 2000
+c Updated for Keyman 5. on Oct 21, 2000 - uing "begin Ansi > use(Main)"
+c Updated March 18, 2001
+c Updated Septemeber 14, 2001
+c Updated Septemeber 15, 2001 , some errors corrected
+ 
+
+c -------------------------
+  
+store(&Version) '17.0'  c **************June 1- 2008  *******************
+store(&KEYBOARDVERSION) '18.0'
+
+store(&COPYRIGHT) 'Copyright © 1982-2023, Phonetic Systems, Copyright © 2023-2025, Geezsoft. All Rights Reserved.'
+store(&MESSAGE) 'The easiet Geez/Ethiopic software for Amharic, Tigrigna, Tigre, Geez ...'
+c  store(&ETHNOLOGUECODE) 'tir'
+store(&Name) 'Geezword_ትግርኛ'    
+store(&TARGETS) 'any iphone androidphone'
+store(&VISUALKEYBOARD) 'geezword_tigrinya.kvks'
+store(&BITMAP) 'geezword_tigrinya.ico'
+store(&LAYOUTFILE) 'geezword_tigrinya.keyman-touch-layout'
+store(&HotKey) '[CTRL ALT K_G]'
+c store(&TARGETS) 'windows macosx linux'
+store(&KMW_EMBEDJS) 'geezword_tigrinya-code.js'
+c store(&WINDOWSLANGUAGES) 'x0873'
+store(&KMW_EMBEDCSS) 'sil_geez_keyboard.css'
+
+begin Unicode > use(first)
+group(first) using keys
+
+store(key) '0123456789hlHm[rsSqQbvtc]nNAeuiaokKwOzZydDjgGTCPxXfp' 
+store(out) '0123456789ህልሕምሥርስሽቅቕብቭትችኅንኝእአኡኢኣኦክኽውዕዝዥይድዽጅግጝጥጭጵጽፅፍፕ'
+
+C ----------------ARABIC NUMERALS ---------------------
+store(arabic:key) '0123456789' 
+store(arabic:out) '0123456789'
+
+c ======================= VOWELS AS MODIFIERS  =================================================
+store(sadis:key) 'A'
+
+store(geez:key) 'e'
+store(hamis-E:key) 'E'
+store(kaib:key) 'u'
+store(salis:key) 'i'
+store(rabi:key) 'a'
+store(sabi:key) 'o'
+
+store(geez:out) 'አ'
+store(kaib:out) 'ኡ'
+store(salis:out) 'ኢ'
+store(rabi:out) 'ኣ'
+store(hamis:out) 'ኤ'
+store(sadis:out) 'እ'
+store(sabi:out) 'ኦ'
+store(samin:out) 'ኧ'
+
+
+store(sadis-O:key) 'O'
+
+store(geez-O:out) 'ዐ'
+store(kaib-O:out) 'ዑ'
+store(salis-O:out) 'ዒ'
+store(rabi-O:out) 'ዓ'
+store(hamis-O:out) 'ዔ'
+store(sadis-O:out) 'ዕ'
+store(sabi-O:out) 'ዖ'
+
+
+C ------------VOWELS AS STAND ALONE ----------------------------------
+
+
+store(standalonevowels:key) 'AeEuUiIaoO'
+store(standalonevowels:out) 'እአኤኡኡኢኢኣኦዕ'
+
+
+store(caret) "^" c  duplicates previous ouput
+
+c -----------------LOWER CASE MINIMAL GEEZ ----------------------------------------
+store(lowersadis:key) 'hlmrsqbvtcnkwzydjgxfp' 
+store(lowersadis:out) 'ህልምርስቅብቭትችንክውዝይድጅግጽፍፕ'
+
+
+store(lowergeez:out) 'ሀለመረሰቀበቨተቸነከወዘየደጀገጸፈፐ'
+store(lowerkaib:out) 'ሁሉሙሩሱቁቡቩቱቹኑኩዉዙዩዱጁጉጹፉፑ'
+store(lowersalis:out) 'ሂሊሚሪሲቂቢቪቲቺኒኪዊዚዪዲጂጊጺፊፒ'
+store(lowerrabi:out) 'ሃላማራሳቃባቫታቻናካዋዛያዳጃጋጻፋፓ'
+store(lowerhamis:out) 'ሄሌሜሬሴቄቤቬቴቼኔኬዌዜዬዴጄጌጼፌፔ'
+store(lowersabi:out) 'ሆሎሞሮሶቆቦቮቶቾኖኮዎዞዮዶጆጎጾፎፖ'
+c ---------------------------------------------------------
+
+c -------------------------------------------------------------------------------
+
+
+c ========================== FULL UPPER (no kiflom)====================                  
+ store(uppersadis:key) 'HLMRSQBVTCNKWZYDJGXFP'
+ store(uppersadis:out) 'ሕልምርሽቕብቭጥጭኝኽውዥይዽጅጝፅፍጵ' 
+ store(uppergeez:out) 'ሐለመረሸቐበቨጠጨኘኸወዠየዸጀጘፀፈጰ'
+ store(upperkaib:out) 'ሑሉሙሩሹቑቡቩጡጩኙኹዉዡዩዹጁጙፁፉጱ'
+ store(uppersalis:out) 'ሒሊሚሪሺቒቢቪጢጪኚኺዊዢዪዺጂጚፂፊጲ'
+ store(upperrabi:out) 'ሓላማራሻቓባቫጣጫኛኻዋዣያዻጃጛፃፋጳ'
+ store(upperhamis:out) 'ሔሌሜሬሼቔቤቬጤጬኜኼዌዤዬዼጄጜፄፌጴ'
+ store(uppersabi:out) 'ሖሎሞሮሾቖቦቮጦጮኞኾዎዦዾጆዮጞፆፎጶ'
+
+C ============================================================
+c ----------------------------------------------------------
+C -------------------EXTRA GEEZ -------------------------
+store(sadisextra:key) '[]'
+store(sadisextra:out) 'ሥኅ'
+
+store(geezextra:out) 'ሠኀ'
+store(kaibextra:out) 'ሡኁ'
+store(salisextra:out) 'ሢኂ'
+store(rabiextra:out) 'ሣኃ'
+store(hamisextra:out) 'ሤኄ'
+store(sabiextra:out) 'ሦኆ'
+
+
+c ================ DIPHTHONG PARENT + euai and ie  ==================================
+store(geezdiphthong:parent) 'ቁቑኩኹጉጙኁ'
+
+store(geezdiphthong:out) 'ቈቘኰዀጐⶓኈ' 
+store(salisdiphthong:out) 'ቊቚኲዂጒⶔኊ'
+store(rabidiphthong:out) 'ቋቛኳዃጓጟኋ'
+store(sadisdiphthong:out) 'ቍቝኵዅጕⶖኍ'
+store(hamisdiphthong:out) 'ቌቜኴዄጔⶕኌ'
+
+c ================EXTRA Amharic DIPHTHONG PARENT + a ==================================
+
+store(extradiphthong:key) 'lm[rsSbvtTcCnNzZdDjxfpP'
+store(extradiphthong:parent) 'ሉሙሡሩሱሹቡቩቱጡቹጩኑኙዙዡዱዹጁጹፉፑጱ'
+store(extradiphthong:out) 'ሏሟሧሯሷሿቧቯቷጧቿጯኗኟዟዧዷዿጇጿፏፗጷ'
+
+
+C ADOPTED FROM GFF - DANIELYACOB  (NOT USED)
+
+store(arabicminuszero) '123456789'
+store(arabic) '0123456789'
+store(geezones) '፩፪፫፬፭፮፯፰፱'
+store(geeztens) '፲፳፴፵፶፷፸፹፺'
+store(geezhundreds) '፻'
+store(geezthousands) '፼'
+store(num) '#'
+
+
+c begin Unicode > use(main)
+
+c group(main) using keys   
+
+
+c Speical Hamis (ኤ) vowel applied to different Sadis consonants =  combinations
+
+ any(lowersadis:out) + any(hamis-E:key) > index(lowerhamis:out,1) c ============  working
+ any(uppersadis:out) + any(hamis-E:key) > index(upperhamis:out,1) c ============  working
+ any(sadis:out) + any(hamis-E:key) > index(hamis:out,1) c ============  working
+ any(sadis-O:out) + any(hamis-E:key) > index(hamis-O:out,1) c ============  working
+ any(sadisextra:out) + any(hamis-E:key) > index(hamisextra:out,1) c ============  working
+
+
+c +++++++++++++++++++++++++++++ Stand Alone Vowels   ++++++++++++++++++++++++++++++++++++++++++++++ good
+c store(standalonevowels:key) 'AeuiaoO'
+c store(standalonevowels:out) 'እአኡኢኣዕ'
++ any(standalonevowels:key)>index(standalonevowels:out,1)
+
+
+c ----------------store(sadis:key) 'A'
+c 'A' as  consonant generates 7 vowels
+
+c +any(sadis:key) > index(sadis:out,1)
+any(sadis:out) + any(geez:key) > index(geez:out,1)
+any(sadis:out) + any(kaib:key) > index(kaib:out,1)
+any(sadis:out) + any(salis:key) > index(salis:out,1)
+any(sadis:out) + any(rabi:key) > index(rabi:out,1)
+any(sadis:out) + any(sabi:key) > index(sabi:out,1)
+any(salis:out) + any(geez:key) > index(hamis:out,1)
+
+
+c ------------- store(sadis-O:key) 'O'
+c  "O" as consanant generates 7 vowels
+
+c +any(sadis-O:key) > index(sadis-O:out,1)
+any(sadis-O:out) + any(geez:key) > index(geez-O:out,1)
+any(sadis-O:out) + any(kaib:key) > index(kaib-O:out,1)
+any(sadis-O:out) + any(salis:key) > index(salis-O:out,1)
+any(sadis-O:out) + any(rabi:key) > index(rabi-O:out,1)
+any(sadis-O:out) + any(sabi:key) > index(sabi-O:out,1)
+any(salis-O:out) + any(geez:key) > index(hamis-O:out,1)
+
+
+c +++++++++++++++++++++++++++++lower case  a-z ++++++++++++++++++++++++++++++++++++++++++++++ good
+c store(lowersadis:key) 'hlmrsqbvtcnkwzydjgxfp' 
+c store(lowersadis:out) 'ህልምርስቅብቭትችንክውዝይድጅግጽፍፕ'
++ any(lowersadis:key) > index(lowersadis:out, 1)
+any(lowersadis:out) + any(geez:key) > index(lowergeez:out, 1)
+any(lowersadis:out) + any(kaib:key) > index(lowerkaib:out, 1)
+any(lowersadis:out) + any(salis:key) > index(lowersalis:out, 1)
+any(lowersadis:out) + any(rabi:key) > index(lowerrabi:out, 1)
+any(lowersalis:out) + any(geez:key)> index(lowerhamis:out, 1)
+any(lowersadis:out) + any(sabi:key)> index(lowersabi:out, 1)
+
+
+c ------------- not working ------------------------------------------------
+c store (lowersinglepress:key) 'hsqtcnkzdgxp'
+c store (lowersinglepress:out) 'ህስቅትችንክዝድግጽፕ'
+c store (lowerdoublepress:out) 'ሕሽቕጥጭኝኽዥዽጝፅጵ'
+
+c any(lowersinglepress:out) + any(lowersinglepress:key) > index(lowerdoublepress:out,1)
+c ---------------------------------------------------------------------------------------------
+
+c ------------------twice press convert to upper case
+
+ +[T_H]> 'ህ'
+'ህ' + [T_H] > 'ሕ'
+
++[T_S]> 'ስ'
+'ስ' + [T_S] > 'ሽ'
+
++[T_Q]> 'ቅ'
+'ቅ' + [T_Q] > 'ቕ'
+
++[T_T]> 'ት'
+'ት' + [T_T] > 'ጥ'
+
+c 'ች' + 'c' > 'ጭ'
++[T_C]> 'ች'
+'ች' + [T_C] > 'ጭ'
+
+c 'ን' + 'n' > 'ኝ'
++[T_N]> 'ን'
+'ን' + [T_N] > 'ኝ'
+
+c 'ክ' + 'k' > 'ኽ'
++[T_K]> 'ክ'
+'ክ' + [T_K] > 'ኽ'
+
+c 'ዝ' + 'z' > 'ዥ'
++[T_Z]> 'ዝ'
+'ዝ' + [T_Z] > 'ዥ'
+
+c 'ድ' + 'd' > 'ዽ'
++[T_D]> 'ድ'
+'ድ' + [T_D] > 'ዽ'
+
+c 'ግ' + 'g' > 'ጝ'
++[T_G]> 'ግ'
+'ግ' + [T_G] > 'ጝ'
+
+c 'ጽ' + 'x' > 'ፅ'
++[T_X]> 'ጽ'
+'ጽ' + [T_X] > 'ፅ'
+
+c 'ፕ' + 'p' > 'ጵ'
++[T_P]> 'ፕ'
+'ፕ' + [T_P] > 'ጵ'
+
+c 'ኣ' + 'a' > 'እ'
+
+
+ 
+ c feb 5 2021----------------  solution to side effecteffecteffect of double press - caret generates duplicate letters
+c any(lowersadisonly:out) + "^" > index(lwersadisonly:out,1) c 'ልምርብቭውይጅፍ' 
+c any(lowersadisonly:out) + "^" > index(lwersadisonly:out,1) c 'ልምርብቭውይጅፍ' 
+
+c --------------------Not working -------------------------------------------------------
+store (lowerdublicate:out) 'ህህ' 'ስስ''ቅቅ' 'ትት' 'ችች' 'ንን''ክክ' 'ዝዝ' 'ድድ' 'ግግ' 'ጽጽ' 'ፕፕ'
+c any(lowersinglepress:out) +"^" > index(lowerdublicate:out,1) c not working yet
+c ----------------------------------------------------------------------------------------
+
+c feb 5 2021----------------  solution to side effecteffecteffect of double press - caret generates duplicate letters
+
+   'ህ' + "^" > 'ህህ'
+   'ስ' + "^" > 'ስስ'
+   'ቅ' + "^" > 'ቅቅ'
+   'ት' + "^" > 'ትት'
+   'ች' + "^" > 'ችች'
+   'ን' + "^" > 'ንን'
+   'ክ' + "^" > 'ክክ'
+   'ዝ' + "^" > 'ዝዝ'
+   'ድ' + "^" > 'ድድ'
+   'ግ' + "^" > 'ግግ'
+   'ጽ' + "^" > 'ጽጽ'
+   'ፕ' + "^" > 'ፕፕ'
+
+
++ '^' > dk(1)
+dk(1)+'^' > '^'
+
+c -------------------------------------------------------------------------------
+c ++++++++++++++++++++++++++++++ lower case  extra [] +++++++++++++++++++++++++++++++++++++++++++++ good
++ any(sadisextra:key) > index(sadisextra:out,1)
+any(sadisextra:out) + any(geez:key) > index(geezextra:out, 1)
+any(sadisextra:out) + any(kaib:key) > index(kaibextra:out, 1)
+any(sadisextra:out) + any(salis:key) > index(salisextra:out, 1)
+any(sadisextra:out) + any(rabi:key) > index(rabiextra:out, 1)
+any(salisextra:out) + any(geez:key)> index(hamisextra:out, 1)
+any(sadisextra:out) + any(sabi:key)> index(sabiextra:out, 1)
+
+
+
+c ++++++++++++++++++++++++++++++ upper case  +++++++++++++++++++++++++++++++++++++++++++++ good
+c                        hlmrsqbvtcnkwzydjgxfp                
+c store(uppersadis:key) 'HLMRSQBVTCNKWZYDJGXFP'
+c store(uppersadis:out) 'ሕልምርሽቕብቭጥጭኝኽውዥይዽጅጝፅፍጵ'
++ any(uppersadis:key) > index(uppersadis:out,1)
+any(uppersadis:out) + any(geez:key) > index(uppergeez:out, 1)
+any(uppersadis:out) + any(kaib:key) > index(upperkaib:out, 1)
+any(uppersadis:out) + any(salis:key) > index(uppersalis:out, 1)
+any(uppersadis:out) + any(rabi:key) > index(upperrabi:out, 1)
+any(uppersalis:out) + any(geez:key)> index(upperhamis:out, 1)
+any(uppersadis:out) + any(sabi:key)> index(uppersabi:out, 1)
+
+
+c +++++++++++++++++++++++++++++ quote convert a-z to A-Z ++++++++++++++++++++++++++++++++++++++++++++++ good
+
+c  any(lowersadis:out) + "'" > index(uppersadis:out,1) c ----------- discontinued - replaced by double press
+
+c -----------------------Amharic samin ---------------------------------------------- good
+c store(extradiphthong:key) 'lmrsSbvtTcCnNzZdDjxfpP'
+c store(extradiphthong:parent) 'ሉሙሩሱሹቡቩቱጡቹጩኑኙዙዡዱዹጁጹፉፑጱ'
+c store(extradiphthong:out) 'ሏሟሯሷሿቧቯቷጧቿጯኗኟዟዧዷዿጇጿፏፗጷ'
+
+any(extradiphthong:key) + any(kaib:key) > index(extradiphthong:parent,1) 
+any(extradiphthong:parent) + any(rabi:key)> index(extradiphthong:out,1)
+
+
+c ================ DIPHTHONG PARENT + euai and ie  ================================== good
+c store(geezdiphthong:parent) 'ቁቑኩኹጉጙኁ'
+any(geezdiphthong:parent) + any(geez:key)  > index(geezdiphthong:out,1)
+any(geezdiphthong:parent) + any(salis:key)  > index(salisdiphthong:out,1)
+any(geezdiphthong:parent) + any(rabi:key)  > index(rabidiphthong:out,1)
+any(salisdiphthong:out) + any(geez:key)  > index(hamisdiphthong:out,1)
+any(geezdiphthong:parent) + any(kaib:key)  > index(sadisdiphthong:out,1)
+
+any(kaib:out) + any(geez:key) > index(samin:out,1)
+
+c ------------------------------------------------------------------------------------
+c numerals
+
+c +'0'> U+0030
+c ------------  change begins here - march 8, 2002   -----------------------
+c ---- update 2020  # is leading indictor of geez numerals -----
+c ---- update 2020  "'"  is leading indictor of geez numerals -----
+c +'1'> U+0031
+
+'#' + U+0031 > U+1369 
+U+1369 + '0' > U+1372    
+U+1372 + '0' > U+137B
+U+137B + '0' > U+137C
+
+c +'2'> U+0032
+'#' + U+0032 > U+136A
+U+136A + '0' > U+1373 
+
+c +'3'> U+0033
+'#' + U+0033 > U+136B 
+U+136B + '0' > U+1374
+
+c +'4'> U+0034
+'#' + U+0034 > U+136C
+U+136C + '0' > U+1375
+
+c +'5'> U+0035
+'#' + U+0035 > U+136D
+U+136D + '0' > U+1376
+
+c +'6'> U+0036
+'#' + U+0036 > U+136E
+U+136E + '0' > U+1377
+
+c +'7'> U+0037
+'#' + U+0037 > U+136F
+U+136F + '0' > U+1378 
+
+c +'8'> U+0038
+'#' + U+0038 > U+1370     
+ U+1370 + '0' > U+1379
+
+c +'9'> U+0039
+'#' + U+0039 > U+1371 
+U+1371 + '0' > U+137A
+c ------------change ends here - march 8, 2002-----------------------
+
+
+
+
++ ':' > U+1361           c 2 donts 
+':' + ":" >  U+1362      c 4 donts ------------Does not produce 4 dots
++ ';' > U+1362           c 4 dots
++ '{' > U+1363           c ntela serez
++ '}' > U+1364           c dirb serez
++ '|' > U+1365           c middle serez
+U+1365 + '\' > U+1366    c shifted serez
+'?' + '\' > U+1367       c     3 dots
+U+1362 + '7' > U+1368    c 7 dots
+
+c -----------milikit -----------------
+c +'.'> U+0032
+'#' + U+0022 > U+1390           c -- 1 dot
+'#' + U+003A > U+1393           c -- 2 dots
+c '#' + U+1393 > U+1393           c -- 3 dots
+c '#' + U+1265 > U+1394            c ---- b
+c '#' + U+1205 > U+1391            c  -- h
+c '#' + U+1225 > U+1398           c -- s2
+c '#' + U+007C > U+1399  c -- vertical line
+
+
+
+ 
+c U+1366 + '\' > U+1367
+c '?' + '\' > U+1368
+ 
+
+ 
+c ------- change ends here - march 8, 2002---------------------------
+
+c End of file
