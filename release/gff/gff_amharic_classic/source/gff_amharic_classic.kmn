@@ -20,7 +20,6 @@ store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_A]'
 store(&BITMAP) 'gff_amharic.ico'
 store(&VISUALKEYBOARD) 'gff_amharic_classic.kvks'
-store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'gff_amharic_classic.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'gff_amharic_classic.css'
 $keymanonly:  store(&mnemonicLayout) "1"
@@ -170,7 +169,8 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '3.0'
+store(&TARGETS) 'web iphone ipad androidphone androidtablet mobile tablet'
 
   begin Unicode > use(main)
   group(main) using keys
