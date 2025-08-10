@@ -8,12 +8,11 @@ Additional History of GeezWord
 ==========================
 Geezword was developed as a stand alone, by Phonetic Systems, on Apple and Windows computers, starting 1982-2025
 It was first developed ON Apple II computer (1981 1982)
-It was Later developed on Apple Macintosh (1985- 1987)
+It was 
+lLater developed on Apple Macintosh (1985- 1987)
 It was developed on Windows 1993 as Geezgate
 Its Keyboard was developed for Keyman engine in 2002 (Licensed)
 reference: https://tigrinyadigitalinitiatives.org/
-==========================
-
 
 1982 On Apple II Computer
 -------------------
@@ -42,7 +41,6 @@ reference: https://tigrinyadigitalinitiatives.org/
 ***************************************************************** 
 * This keyboard program was adopted from previous old Stand alone Geezword versions
 * it uses the simplified set of phonetic keys for typing Geez script.
-  
 ****************************************************************** 
 * NOTE: This keyboard was created using the Keyman keyboard
 * programming tutorial.
