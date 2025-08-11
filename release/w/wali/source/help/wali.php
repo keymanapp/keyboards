@@ -44,10 +44,11 @@
     </div>
 
     <h2>Touch Keyboard layouts</h2>
-    <ul>To get the following vowels (a,e,i,o,u) with the acute, grave or tilde accent, use flick gesture:
-        <li>Flick up on key <kbd>a</kbd> = <kbd>ã</kbd></li>
-        <li>Flick right on key <kbd>a</kbd> = <kbd>á</kbd></li>
-        <li>Flick down on key <kbd>a</kbd> = <kbd>à</kbd></li>
+    <ul>To get the following vowels (a,e,i,o,u,ɩ,ʋ,ɛ,ɔ) with the acute, grave or tilde accent, use longpress gesture:
+      <li>Longpress <kbd>a</kbd> = <kbd>ã</kbd></li>
+      <li>Longpress <kbd>a</kbd> = <kbd>á</kbd></li>
+      <li>Longpress <kbd>a</kbd> = <kbd>à</kbd></li>
+      <li>Longpress <kbd>[vowel]</kbd> = <kbd>[vowel with an accent]</kbd></li>
     </ul>
     <ul>To get q, z, x, and c, use longpress gesture:
         <li>Longpress <kbd>ŋ</kbd> = <kbd>q</kbd></li>
@@ -55,7 +56,7 @@
         <li>Longpress <kbd>ɛ</kbd> = <kbd>x</kbd></li>
         <li>Longpress <kbd>ɔ</kbd> = <kbd>c</kbd></li>
     </ul>
-    <div id='osk-phone' data-states='default shift numeric symbol'>
+    <div id='osk-phone' data-states='default shift numeric'>
     </div>
 
 </div>
