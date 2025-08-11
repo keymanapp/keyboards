@@ -13,14 +13,6 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-
-c Delete these temp rules
-+ [RALT K_A] > 'a' U+0308
-+ [RALT K_S] > 'A' U+0308
-+ [RALT K_D] > 'u' U+0308
-+ [RALT K_F] > 'U' U+0308
-c ccccc
-
 c vowels 
 store(vowelK) 'aeiouAEIOU'
 store(vowelAK) 'äÄ'
@@ -39,6 +31,10 @@ store(graveUO) 'ǜǛ'
 c ˊ
 store(acuteO)   'áéíóúÁÉÍÓÚ'
 store(acuteUO) 'ǘǗ'
+
+c ~
+store(tildeO) 'ãĩũÃĨÕŨ'
+store(tildeK) 'aiuAIOU'
 
 c  ̂
 store(circumO) 'âêîôûÂÊÎÔÛ'
@@ -60,11 +56,14 @@ c output tones
 any(vowelK)  + '`' > index(graveO, 1)
 any(vowelUK) + '`' > index(graveUO, 1)
 
-any(vowelK)  + '~' > index(acuteO, 1)
-any(vowelUK) + '~' > index(acuteUO, 1)
+any(vowelK)  + '_' > index(acuteO, 1)
+any(vowelUK) + '_' > index(acuteUO, 1)
 
 any(vowelK) + '^' > index(circumO, 1)
 c no NFC for "u" with diaeresis and circumflex
+
+any(tildeK)  + '~' > index(tildeO, 1)
+any(vowelK)  + '~' > context U+0303
 
 any(vowelK)  + '|' > index(macronO, 1)
 any(vowelAK) + '|' > index(macronAO, 1)
@@ -72,18 +71,23 @@ any(vowelUK) + '|' > index(macronUO, 1)
 
 c ä and Ä, ü and Ü that need combining diacritics
 any(vowelAK) + '`' > context U+0300
-any(vowelAK) + '~' > context U+0301
+any(vowelAK) + '_' > context U+0301
 any(vowelAK) + '^' > context U+0302
-
 any(vowelUK) + '^' > context U+0302
+any(vowelAK) + '~' > context U+0303
+any(vowelUK) + '~' > context U+0303
+
 
 c NFD rules for ä and Ä, ü and Ü that need combining diacritics
 any(vowelAU) U+0308 + '`' > index(umlautO, 1) U+0300
 any(vowelUU) U+0308 + '`' > index(graveUO, 1)
-any(vowelAU) U+0308 + '~' > index(umlautO, 1) U+0301
-any(vowelUU) U+0308 + '~' > index(acuteUO, 1)
+any(vowelAU) U+0308 + '_' > index(umlautO, 1) U+0301
+any(vowelUU) U+0308 + '_' > index(acuteUO, 1)
 any(vowelAU) U+0308 + '^' > index(umlautO, 1) U+0302
 any(vowelUU) U+0308 + '^' > index(vowelUK, 1) U+0302
+any(vowelAU) U+0308 + '~' > index(umlautO, 1) U+0303
+any(vowelUU) U+0308 + '~' > index(vowelUK, 1) U+0303
+
 any(vowelAU) U+0308 + '|' > index(macronAO, 1)
 any(vowelUU) U+0308 + '|' > index(macronUO, 1)
 
@@ -91,6 +95,7 @@ c right alt
 + [RALT K_BKQUOTE] > '`'
 + [RALT K_1] > '~'
 + [RALT K_6] > '^'
++ [RALT K_HYPHEN] > '_'
 + [RALT K_BKSLASH] > '|'
 + [RALT K_Q] > 'q'
 + [RALT K_W] > 'Q'
