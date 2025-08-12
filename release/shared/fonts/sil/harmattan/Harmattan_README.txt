@@ -5,10 +5,6 @@ Harmattan
 Thank you for your interest in the Harmattan font.
 We hope you find it useful!
 
-This release supports most of the Unicode 16.0 Arabic character 
-repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). 
-
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
 available. 
