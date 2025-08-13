@@ -381,7 +381,13 @@
                     "text": "ኧ",
                     "id": "U_12A7"
                   }
-                }
+                },
+                "multitap": [
+                  {
+                    "text": "ኣ",
+                    "id": "U_12A3"
+                  }
+                ]
               },
               {
                 "id": "K_S",
@@ -2005,9 +2011,9 @@
               },
               {
                 "id": "K_H",
-                "text": "ኅ",
-                "nextlayer": "ኀ-layer",
-                "hint": "H",
+                "text": "ህ",
+                "nextlayer": "ሀ-layer",
+                "hint": "ኅH",
                 "sk": [
                   {
                     "text": "ኈ",
@@ -2152,8 +2158,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -2250,30 +2255,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -2478,7 +2483,44 @@
                 "id": "K_V",
                 "text": "ቭ",
                 "nextlayer": "ቨ-layer",
-                "hint": "V"
+                "hint": "V",
+                "sk": [
+                  {
+                    "text": "ቨ",
+                    "id": "U_1268"
+                  },
+                  {
+                    "text": "ቩ",
+                    "id": "U_1269"
+                  },
+                  {
+                    "text": "ቪ",
+                    "id": "U_126A"
+                  },
+                  {
+                    "text": "ቫ",
+                    "id": "U_126B"
+                  },
+                  {
+                    "text": "ቬ",
+                    "id": "U_126C"
+                  },
+                  {
+                    "text": "ቦ",
+                    "id": "U_1266"
+                  },
+                  {
+                    "text": "ቧ",
+                    "id": "U_1267"
+                  }
+                ],
+                "multitap": [
+                  {
+                    "text": "ቨ",
+                    "id": "U_1268",
+                    "nextlayer": "ቨ-layer"
+                  }
+                ]
               },
               {
                 "id": "K_B",
@@ -2513,13 +2555,6 @@
                   {
                     "text": "ቧ",
                     "id": "U_1267"
-                  }
-                ],
-                "multitap": [
-                  {
-                    "text": "በ",
-                    "id": "U_1260",
-                    "nextlayer": "በ-layer"
                   }
                 ]
               },
@@ -2665,6 +2700,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -2674,21 +2717,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -2716,47 +2751,44 @@
             "id": 4,
             "key": [
               {
+                "id": "K_SHIFT",
+                "text": "*123*",
+                "sp": 1,
+                "nextlayer": "punctuation"
+              },
+              {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "sp": 1
               },
               {
                 "id": "T_ዘመደ_ራብዕ",
-                "text": "ኋ"
-              },
-              {
-                "id": "T_ዘመደ_ግዕዝ",
-                "text": "ኈ"
-              },
-              {
-                "id": "T_ዘመደ_ሣልስ",
-                "text": "ኊ",
+                "text": "ኋ",
                 "nextlayer": "default"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": 215,
-                "sp": 0,
-                "nextlayer": "default"
+                "width": 450,
+                "hint": "፡",
+                "flick": {
+                  "s": {
+                    "text": "፡",
+                    "id": "U_1361"
+                  }
+                }
               },
               {
                 "id": "T_ኃምስ",
-                "text": "ሄ"
-              },
-              {
-                "id": "T_ዘመደ_ኃምስ",
-                "text": "ኌ"
-              },
-              {
-                "id": "T_ዘመደ_ካዕብ",
-                "text": "ኍ",
+                "text": "ሄ",
                 "nextlayer": "default"
               },
               {
                 "id": "K_ENTER",
-                "text": "*Enter*",
-                "sp": 1
+                "text": "return",
+                "width": 210,
+                "sp": 1,
+                "nextlayer": "default"
               }
             ]
           }
@@ -4907,30 +4939,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -5262,9 +5294,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -5274,18 +5318,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -6101,8 +6133,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -6199,30 +6230,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -6644,6 +6675,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -6653,21 +6692,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -7101,8 +7132,9 @@
               },
               {
                 "id": "K_S",
-                "text": "ሥ",
-                "hint": "S",
+                "text": "ስ",
+                "nextlayer": "ሰ-layer",
+                "hint": "ሥS",
                 "sk": [
                   {
                     "text": "ሠ",
@@ -7489,8 +7521,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -7587,30 +7618,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -8032,6 +8063,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -8041,21 +8080,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -8878,8 +8909,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -8976,30 +9006,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -9421,6 +9451,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -9430,21 +9468,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -9878,9 +9908,9 @@
               },
               {
                 "id": "K_S",
-                "text": "ሥ",
-                "nextlayer": "ሠ-layer",
-                "hint": "S",
+                "text": "ስ",
+                "nextlayer": "ሰ-layer",
+                "hint": "ሥS",
                 "sk": [
                   {
                     "text": "ሠ",
@@ -10267,8 +10297,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -10365,30 +10394,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -10810,6 +10839,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -10819,21 +10856,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -11656,8 +11685,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -11754,30 +11782,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -12199,6 +12227,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -12208,21 +12244,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -15619,8 +15647,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -15717,30 +15744,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -16162,6 +16189,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -16171,21 +16206,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -17008,8 +17035,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -17106,30 +17132,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -17551,6 +17577,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -17560,21 +17594,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -18397,8 +18423,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -18495,30 +18520,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -18940,6 +18965,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -18949,21 +18982,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -19786,8 +19811,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -19884,30 +19908,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -20329,6 +20353,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -20338,21 +20370,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -21028,8 +21052,9 @@
               },
               {
                 "id": "K_H",
-                "text": "ኅ",
-                "hint": "H",
+                "text": "ህ",
+                "nextlayer": "ሀ-layer",
+                "hint": "ኅH",
                 "sk": [
                   {
                     "text": "ኈ",
@@ -21272,30 +21297,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -21687,9 +21712,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -21699,18 +21736,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -22536,8 +22561,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -22634,30 +22658,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -23079,6 +23103,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -23088,21 +23120,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -23930,30 +23954,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -24285,9 +24309,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -24297,18 +24333,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -25124,8 +25148,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -25222,30 +25245,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -25667,6 +25690,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -25676,21 +25707,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -26611,30 +26634,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -27026,9 +27049,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -27038,18 +27073,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -27880,30 +27903,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -28235,9 +28258,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -28247,18 +28282,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -29087,8 +29110,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -29185,30 +29207,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -29630,6 +29652,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -29639,21 +29669,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -29694,7 +29716,6 @@
               {
                 "id": "T_SPACER",
                 "text": "",
-                "sp": 8,
                 "nextlayer": "default"
               },
               {
@@ -30477,8 +30498,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -30575,30 +30595,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -31020,6 +31040,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -31029,21 +31057,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -31084,7 +31104,6 @@
               {
                 "id": "T_SPACER",
                 "text": "",
-                "sp": 8,
                 "nextlayer": "default"
               },
               {
@@ -31867,8 +31886,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -31965,30 +31983,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -32410,6 +32428,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -32419,21 +32445,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -33261,30 +33279,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -33616,9 +33634,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -33628,18 +33658,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -34455,8 +34473,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -34553,30 +34570,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -34998,6 +35015,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -35007,21 +35032,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -35062,7 +35079,6 @@
               {
                 "id": "T_SPACER",
                 "text": "",
-                "sp": 8,
                 "nextlayer": "default"
               },
               {
@@ -35845,8 +35861,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -35943,30 +35958,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -36388,6 +36403,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -36397,21 +36420,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -37234,8 +37249,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -37332,30 +37346,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -37777,6 +37791,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -37786,21 +37808,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -38721,30 +38735,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -39136,9 +39150,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -39148,18 +39174,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -39990,30 +40004,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -40345,9 +40359,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -40357,18 +40383,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -42401,30 +42415,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -42756,9 +42770,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -42768,18 +42794,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -43600,30 +43614,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -43955,9 +43969,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -43967,18 +43993,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -44358,10 +44372,10 @@
               },
               {
                 "id": "K_S",
-                "text": "ፅ",
-                "nextlayer": "ፀ-layer",
+                "text": "ጽ",
+                "nextlayer": "ጸ-layer",
                 "layer": "shift",
-                "hint": "S",
+                "hint": "ፅS",
                 "sk": [
                   {
                     "text": "ፀ",
@@ -44799,30 +44813,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -45154,9 +45168,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -45166,18 +45192,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -45557,10 +45571,10 @@
               },
               {
                 "id": "K_S",
-                "text": "ፅ",
+                "text": "ጽ",
                 "nextlayer": "ጸ-layer",
                 "layer": "shift",
-                "hint": "S",
+                "hint": "ፅS",
                 "sk": [
                   {
                     "text": "ፀ",
@@ -45998,30 +46012,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -46353,9 +46367,21 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "፦",
+                    "id": "U_1366"
                   },
                   {
                     "text": "፣",
@@ -46365,18 +46391,6 @@
                     "text": "፤",
                     "id": "K_COLON",
                     "default": true
-                  },
-                  {
-                    "text": "፦",
-                    "id": "U_1366"
-                  },
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
                   }
                 ],
                 "flick": {
@@ -47192,8 +47206,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -47290,30 +47303,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -47735,6 +47748,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -47744,21 +47765,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -48581,8 +48594,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -48679,30 +48691,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -49124,6 +49136,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -49133,21 +49153,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -49970,8 +49982,7 @@
                   {
                     "text": "ኽ",
                     "id": "U_12BD",
-                    "nextlayer": "ኸ-layer",
-                    "default": true
+                    "nextlayer": "ኸ-layer"
                   },
                   {
                     "text": "ከ",
@@ -50068,30 +50079,30 @@
                 "hint": "!",
                 "sk": [
                   {
-                    "text": "!",
-                    "id": "T_BANG",
-                    "layer": "shift",
-                    "default": true
-                  },
-                  {
-                    "text": "/",
-                    "id": "K_SLASH"
-                  },
-                  {
-                    "text": ".",
-                    "id": "U_002E"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
+                    "text": "’",
+                    "id": "U_2019"
                   },
                   {
                     "text": ":",
                     "id": "U_003A"
                   },
                   {
-                    "text": "’",
-                    "id": "U_2019"
+                    "text": ",",
+                    "id": "U_002C"
+                  },
+                  {
+                    "text": ".",
+                    "id": "U_002E"
+                  },
+                  {
+                    "text": "/",
+                    "id": "K_SLASH"
+                  },
+                  {
+                    "text": "!",
+                    "id": "T_BANG",
+                    "layer": "shift",
+                    "default": true
                   }
                 ],
                 "flick": {
@@ -50513,6 +50524,14 @@
                 "hint": "፤",
                 "sk": [
                   {
+                    "text": "«",
+                    "id": "U_00AB"
+                  },
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  },
+                  {
                     "text": "፡",
                     "id": "K_COLON",
                     "layer": "shift"
@@ -50522,21 +50541,13 @@
                     "id": "K_COMMA"
                   },
                   {
-                    "text": "፤",
-                    "id": "K_COLON",
-                    "default": true
-                  },
-                  {
                     "text": "፦",
                     "id": "U_1366"
                   },
                   {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "»",
-                    "id": "U_00BB"
+                    "text": "፤",
+                    "id": "K_COLON",
+                    "default": true
                   }
                 ],
                 "flick": {
