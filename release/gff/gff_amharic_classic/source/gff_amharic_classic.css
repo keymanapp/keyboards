@@ -7,6 +7,7 @@
 /* functional keys */
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'],    .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],    .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
+.phone div.kmw-key.kmw-key-special[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-special[id$='K_ENTER'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
 .phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'],   .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
 .phone div.kmw-key.kmw-key-special[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='K_SHIFT'],
@@ -24,10 +25,11 @@
 
 /* .phone div.kmw-key.kmw-key-default[id$='K_1+shift'],  .tablet div.kmw-key.kmw-key-default[id$='K_1+shift'],  /* ! */
 
-.phone div.kmw-key.kmw-key-default[id$='U_1362'],    .tablet div.kmw-key.kmw-key-default[id$='U_1362'],     /* ። */
-.phone div.kmw-key.kmw-key-default[id$='T_BANG'],                                                           /* ! */
-.phone div.kmw-key.kmw-key-default[id$='T_1362'],                                                            /* ። */
-.phone div.kmw-key.kmw-key-default[id$='K_SLASH+shift'],                                                 /* ? */
+/* .phone div.kmw-key.kmw-key-default[id$='U_1362'],    .tablet div.kmw-key.kmw-key-default[id$='U_1362'],     /* ። */
+/* .phone div.kmw-key.kmw-key-default[id$='T_BANG'],                                                           /* ! */
+/* .phone div.kmw-key.kmw-key-default[id$='T_1362'],                                                            /* ። */
+/* .phone div.kmw-key.kmw-key-default[id$='K_SLASH+shift'],                                                 /* ? */
+
 .phone div.kmw-key.kmw-key-deadkey[id$='T_SPACER']     
   { background: #f4eee7 ; color: black ; }
 
@@ -838,5 +840,5 @@ div.kmw-key.kmw-key-default[id='latin-punct-layer-K_4+shift'] div.kmw-key-popup-
 }
 */
 
-.phone.ios div.kmw-key.kmw-key-special[id$='K_ENTER'] span.kmw-key-text
+div.kmw-key.kmw-key-special[id$='K_ENTER'] span.kmw-key-text
     {font-family: "Arial"; background-color: #ece1d5; color: #000000; }
