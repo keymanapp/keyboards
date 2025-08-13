@@ -517,6 +517,12 @@
                     "id": "U_12F7"
                   }
                 ],
+                "flick": {
+                  "s": {
+                    "text": "ድ",
+                    "id": "U_12F5"
+                  }
+                },
                 "multitap": [
                   {
                     "text": "ደ",
@@ -1262,21 +1268,22 @@
                 ],
                 "flick": {
                   "s": {
+                    "text": "ን",
+                    "id": "U_1295"
+                  },
+                  "n": {
                     "text": "ኝ",
-                    "id": "U_129D",
-                    "nextlayer": "ኘ-layer"
+                    "id": "U_129D"
                   }
                 },
                 "multitap": [
                   {
                     "text": "ነ",
-                    "id": "U_1290",
-                    "nextlayer": "ነ-layer"
+                    "id": "U_1290"
                   },
                   {
                     "text": "ኘ",
-                    "id": "U_1298",
-                    "nextlayer": "ኘ-layer"
+                    "id": "U_1298"
                   }
                 ]
               },
@@ -1393,6 +1400,9 @@
                   "s": {
                     "text": "፡",
                     "id": "U_1361"
+                  },
+                  "w": {
+                    "id": "T_new_1016"
                   }
                 }
               },
@@ -3944,6 +3954,12 @@
                     "text": "ቧ",
                     "id": "U_1267"
                   }
+                ],
+                "multitap": [
+                  {
+                    "text": "በ",
+                    "id": "U_1260"
+                  }
                 ]
               },
               {
@@ -4776,7 +4792,7 @@
                 "multitap": [
                   {
                     "text": "ሐ",
-                    "id": "U_1200",
+                    "id": "U_1210",
                     "nextlayer": "ሐ-layer"
                   }
                 ]
@@ -22701,7 +22717,13 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "sp": 1,
-                "nextlayer": "shift"
+                "nextlayer": "shift",
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
               },
               {
                 "id": "K_Z",
@@ -23036,9 +23058,13 @@
                 ],
                 "flick": {
                   "s": {
+                    "text": "",
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  },
+                  "n": {
                     "text": "ኝ",
-                    "id": "U_129D",
-                    "nextlayer": "ኘ-layer"
+                    "id": "U_129D"
                   }
                 },
                 "multitap": [
@@ -23141,6 +23167,12 @@
                 "text": "*BkSp*",
                 "sp": 1,
                 "nextlayer": "default",
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                },
                 "multitap": [
                   {
                     "text": "*BkSp*",
@@ -23157,12 +23189,24 @@
                 "id": "K_SHIFT",
                 "text": "*123*",
                 "sp": 1,
-                "nextlayer": "punctuation"
+                "nextlayer": "punctuation",
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
-                "sp": 1
+                "sp": 1,
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
               },
               {
                 "id": "T_ዘመደ_ራብዕ",
@@ -23176,6 +23220,19 @@
                 "hint": "፡",
                 "flick": {
                   "s": {
+                    "text": "",
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  },
+                  "w": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  },
+                  "e": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  },
+                  "n": {
                     "text": "፡",
                     "id": "U_1361"
                   }
@@ -23191,7 +23248,13 @@
                 "text": "return",
                 "width": 210,
                 "sp": 1,
-                "nextlayer": "default"
+                "nextlayer": "default",
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
               }
             ]
           }
@@ -32111,13 +32174,11 @@
                 "multitap": [
                   {
                     "text": "ዘ",
-                    "id": "U_12D8",
-                    "nextlayer": "ዘ-layer"
+                    "id": "U_12D8"
                   },
                   {
                     "text": "ዠ",
-                    "id": "U_12E0",
-                    "nextlayer": "ዠ-layer"
+                    "id": "U_12E0"
                   }
                 ]
               },
@@ -33363,8 +33424,7 @@
                 "multitap": [
                   {
                     "text": "ዠ",
-                    "id": "U_12E0",
-                    "nextlayer": "ዠ-layer"
+                    "id": "U_12E0"
                   }
                 ]
               },
