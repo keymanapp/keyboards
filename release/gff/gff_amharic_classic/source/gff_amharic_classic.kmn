@@ -136,7 +136,7 @@ store(ጠ_ቤተሰብ) 'ጠጡጢጣጤጦጧ'
 store(ጨ_ቤተሰብ) 'ጨጩጪጫጬጮጯ'
 store(ጰ_ቤተሰብ) 'ጰጱጲጳጴጶጷ'
 store(ጸ_ቤተሰብ) 'ጸጹጺጻጼጾጿ'
-store(ፀ_ቤተሰብ) 'ፀፁፂፃፄፆ!'
+store(ፀ_ቤተሰብ) 'ፀፁፂፃፄፆጿ'
 store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
 
@@ -205,7 +205,7 @@ c
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
-  if( &layer = "ሠ-extra" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+c  if( &layer = "ሠ-extra" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
@@ -213,13 +213,13 @@ c
   if( &layer = "ቀ-layer" ) + any(touchVowelsExtended) > index(ቀ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
-  if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+c  if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
   if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
   if( &layer = "ኀ-layer" ) 'ኅ' + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,3)
   if( &layer = "ኀ-layer" ) + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,2)
-  if( &layer = "ኀ-extra" ) 'ኅ' + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,3)
-  if( &layer = "ኀ-extra" ) + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,2)
+c  if( &layer = "ኀ-extra" ) 'ኅ' + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,3)
+c  if( &layer = "ኀ-extra" ) + any(touchVowelsExtended) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
   if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
@@ -229,13 +229,13 @@ c
   if( &layer = "ከ-layer" ) + any(touchVowelsExtended) > index(ከ_ቤተሰብ,2)
   if( &layer = "ኸ-layer" ) 'ኽ' + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,3)
   if( &layer = "ኸ-layer" ) + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,2)
-  if( &layer = "ኸ-extra" ) 'ኽ' + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,3)
+c  if( &layer = "ኸ-extra" ) 'ኽ' + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,3)
   if( &layer = "ኸ-extra" ) + any(touchVowelsExtended) > index(ኸ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
   if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
   if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
-  if( &layer = "ዠ-extra" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2) 
+c  if( &layer = "ዠ-extra" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2) 
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
@@ -246,34 +246,34 @@ c
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
-  if( &layer = "ፀ-extra" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+c  if( &layer = "ፀ-extra" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
-  if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+c  if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
 
 c Additional Rules for Tablet extras
-  if( &layer = "ዀ-extra" ) 'ዀ' + any(ዀ_layer_keys) > index(ዀ_layer_out,3)
-  if( &layer = "ዀ-extra" ) + [T_ዘመደ_ግዕዝ] > 'ዀ' dk(1)
-  if( &layer = "ዀ-extra" ) + any(ዀ_layer_keys) > index(ዀ_layer_out,2)
+c  if( &layer = "ዀ-extra" ) 'ዀ' + any(ዀ_layer_keys) > index(ዀ_layer_out,3)
+c  if( &layer = "ዀ-extra" ) + [T_ዘመደ_ግዕዝ] > 'ዀ' dk(1)
+c  if( &layer = "ዀ-extra" ) + any(ዀ_layer_keys) > index(ዀ_layer_out,2)
 
-  if( &layer = "ᎀ-extra" ) 'ᎀ' + any(ᎀ_layer_keys) > index(ᎀ_layer_out,3)
-  if( &layer = "ᎀ-extra" ) + [U_1380] > 'ᎀ' dk(1)
+c  if( &layer = "ᎀ-extra" ) 'ᎀ' + any(ᎀ_layer_keys) > index(ᎀ_layer_out,3)
+c  if( &layer = "ᎀ-extra" ) + [U_1380] > 'ᎀ' dk(1)
 
-  if( &layer = "ᎈ-extra" ) 'ᎈ' + any(ᎈ_layer_keys) > index(ᎈ_layer_out,3)
-  if( &layer = "ᎈ-extra" ) + [U_1388] > 'ᎈ' dk(1)
+c  if( &layer = "ᎈ-extra" ) 'ᎈ' + any(ᎈ_layer_keys) > index(ᎈ_layer_out,3)
+c  if( &layer = "ᎈ-extra" ) + [U_1388] > 'ᎈ' dk(1)
   
-  if( &layer = "𞟨-extra" ) '𞟨' + any(𞟨_layer_keys) > index(𞟨_layer_out,3)
-  if( &layer = "𞟨-extra" ) + [U_1E7E8] > '𞟨' dk(1)
+c  if( &layer = "𞟨-extra" ) '𞟨' + any(𞟨_layer_keys) > index(𞟨_layer_out,3)
+c  if( &layer = "𞟨-extra" ) + [U_1E7E8] > '𞟨' dk(1)
 
 c
 c Rules for "extras"
 c
   if( &layer = "ቐ-layer" ) + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,2)
   if( &layer = "ቐ-layer" ) 'ቕ' + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,3)
-  if( &layer = "ቐ-extra" ) + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,2)
+c  if( &layer = "ቐ-extra" ) + any(touchVowelsExtended) > index(ቐ_ቤተሰብ,2)
   if( &layer = "ጘ-layer" ) + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጘ-layer" ) 'ጝ' + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,3)
-  if( &layer = "ጘ-extra" ) + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,2)
+c  if( &layer = "ጘ-extra" ) + any(touchVowelsExtended) > index(ጘ_ቤተሰብ,2)
   if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
