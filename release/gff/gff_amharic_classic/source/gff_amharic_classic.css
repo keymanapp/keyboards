@@ -533,8 +533,10 @@
 */
 .tablet.ios .kmw-keyboard-gff_amharic_classic#punctuation-K_1\+shift, 
 .ios .kmw-keyboard-gff_amharic_classic#punctuation-K_1\+shift, .phone.ios .kmw-keyboard-gff_amharic_classic#punctuation-2-K_1\+shift,
+.ios .kmw-keyboard-gff_amharic_classic#punctuation-K_4\+shift,
 .ios .kmw-keyboard-gff_amharic_classic#punctuation-K_SLASH\+shift, .phone.ios .kmw-keyboard-gff_amharic_classic#punctuation-2-K_SLASH\+shift,
-.ios .kmw-keyboard-gff_amharic_classic#punctuation-K_4\+shift
+/* unfortunately, the above syntax isn't working */
+.ios  div.kmw-key.kmw-key-default[id='punctuation-K_SLASH+shift'], .ios  div.kmw-key.kmw-key-default[id='punctuation-2-K_SLASH+shift']
   {background: #fdfdfe ; color: black ; }
 
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1225'],
