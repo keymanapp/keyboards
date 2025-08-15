@@ -1,7 +1,9 @@
 # ግዕዝ (Geʾez) Change History
 
+## 2025-07-30 2.0.3
+* Removed font file "NotoSerifEthiopic-Regular.woff2"
+
 ## 2024-10-29 2.0.2
---------------------
 * Abyssinica SIL TypeTuned fonts were renamed.
 
 ## 2023-07-18 2.0.1

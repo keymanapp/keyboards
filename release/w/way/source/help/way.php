@@ -4,9 +4,6 @@
   require_once('header.php');
 
   $pagestyle = <<<END
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
     code { font: bold 10pt Courier, monospace; background-color: #D1D3D4; padding: 1px 4px; border-radius: 5px;}
 
     .tg  {border-collapse:collapse;border-spacing:0;}

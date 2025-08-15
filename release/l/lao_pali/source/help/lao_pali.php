@@ -2,9 +2,6 @@
   $pagename = 'Lao Pali Keyboard Help';
   $pagetitle = 'Lao Pali Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma; }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc; }
   img {width:100% ;max-width:750px;}
   kbd {font-weight: bold;}
 EXTRA;

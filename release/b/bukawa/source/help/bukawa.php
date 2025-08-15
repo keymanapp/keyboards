@@ -3,7 +3,6 @@
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-	<h1>Start Using Bukawa</h1>
 	<p><b>1. Desktop/laptop keyboards</b></p>
 	
 		<p>The

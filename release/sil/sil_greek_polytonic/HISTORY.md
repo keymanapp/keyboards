@@ -1,6 +1,9 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.8.5 (25 Jul 2025)
+-----------------
+* Fix up some longpress keys
 
 1.8.4 (9 Jun 2025)
 -----------------

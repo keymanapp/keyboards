@@ -10,10 +10,6 @@
       font-family: 'Noto Sans Masaram Gondi';
       src: URL('./NotoSansMasaramGondi-Regular.ttf') format('truetype');
     }
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 14pt Tahoma; color: #4444cc; }
-    h3 { font: bold 12pt Tahoma; color: #4444cc; }
     .gond { font-family:Noto Sans Masaram Gondi;}
     .char { font-family:Noto Sans Masaram Gondi; font-size: 28px;}
     .key  { font: 12pt Tahoma; color: #708090; }

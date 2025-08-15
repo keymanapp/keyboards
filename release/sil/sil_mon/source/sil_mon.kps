@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -20,7 +21,7 @@
     <Name URL="">Mon (SIL)</Name>
     <Copyright URL="">Copyright © SIL Global</Copyright>
     <Author URL="">SIL Global</Author>
-    <Description URL="">Mon (SIL) Keyboard</Description>
+    <Description URL="">Mon (SIL) Keyboard is designed for typing Mon using Myanmar characters.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -55,24 +56,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\desktop_layout_default.png</Name>
-      <Description>File desktop_layout_default.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\desktop_layout_rightalt.png</Name>
-      <Description>File desktop_layout_rightalt.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\desktop_layout_shift.png</Name>
-      <Description>File desktop_layout_shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\sil\padauk\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
@@ -102,12 +85,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Mon (SIL)</Name>
       <ID>sil_mon</ID>
-      <Version>1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="mnw">Mon</Language>
       </Languages>
