@@ -9,13 +9,14 @@ c store(&WINDOWSLANGUAGES) 'x0449'
 c store(&LANGUAGE) 'x0449'
 c store(&ETHNOLOGUECODE) 'tam'
 store(&VISUALKEYBOARD) 'thamizha_bamini.kvks'
-store(&KEYBOARDVERSION) '2.2.1'
+store(&KEYBOARDVERSION) '2.2.2'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'thamizha_bamini.keyman-touch-layout'
    
 begin Unicode > use(main)
 group(main) using keys  
  
++ [LCTRL LALT K_4] > '₹'
 "கு" + 'h'>  "கூ"        
 "கூ" + ';'>  "குர்"         
 "கூ" + 'p'>  "குரி"        
@@ -194,3 +195,4 @@ U+0BCC + any (EVow_for_La) >  U+0BC6 U+0BB3 index (TVow_for_La,2)
     
 c EOF
                                  
+
