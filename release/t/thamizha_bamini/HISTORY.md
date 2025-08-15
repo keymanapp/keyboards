@@ -1,6 +1,9 @@
 சுரதா-பாமுனி | Suratha Bamini Change History
 ====================
-
+2.2.2 (2025-08-15)
+-----------------
+* Added support for Indian Rupee Sign ₹
+  
 2.2.1 (2025-02-20)
 -----------------
 * Put OSKFont from .kps file into .kvks file
