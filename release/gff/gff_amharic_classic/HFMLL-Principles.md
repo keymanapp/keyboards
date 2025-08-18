@@ -3,12 +3,27 @@
 
 ## Introduction &amp; Assumptions
 “Touch” keyboards found on mobile phones and tablets introduce a number of tactile features not possible with
-traditional mechanical keyboards.  While touch keyboards inherit the simple press-to-enter approach of
-their mechanical counterparts, which remains as the primary means of character entry, they also support a
-small number of finger contact types as a secondary means of entry.
+traditional mechanical keyboards.  While touch keyboards inherit the simple *press-to-enter* approach of
+their mechanical forebearers, which remains the primary means of character entry, they also support a
+small number of finger contact and gesture types as secondary means of entry.
 
-These means include
-entertwine with layers
+These new character entry capabilities include the:
+  * “Longpress” – a key press of more than a ½ second that activates an array selection of “pop-up”
+    keys that the user may tap for entry in place of the initially pressed key.
+  * “Flick” – a quick swiping gesture across a key in one of 8 cardinal directions (e.g north, south, ..
+    north-east, south-west, etc.), each of which may enter a different character.
+  * “Multitap” – quick, repeated taps on a key. Successive tapping will change the entry character
+    to a new one associated with the tap count.
+
+Each of these secondary entry types may also change the keyboard “layer” (the layout of characters presented
+on-screen to the user, e.g. lower vs UPPER cases).  When any of they entry methods *should* lead to a
+layer change is a topic for investigation. An unexpected layer change may befudle users and impart a
+subpar typing experience (usability). Layer changes that negatively impact productivity (as measured by
+entry speed) similarly should be avoided.
+
+The GFF Ethiopic keyboards have explored leveraging these touch entry features and their relationships
+to layer changes in an effort to optimize both a natural and intuitive user experience along with
+minimizing the physicial effort needed for the desired character composition and entry.
 
 
 
@@ -26,8 +41,10 @@ principles should apply to any touch screen Ethiopic keyboard implementation.
     associated with a base letter displayed in the intial, or shifted, state of the keyboard.
 
 ## Hints
+Why hint?  how does hinting help?
 
 ### Hints on QWERTY Style Keyboards
+Hint the upper layer
 
 ## Flicks
 “Flicks” (add hyperlink) are a convenient way to support additional character input from a single key whose primary
