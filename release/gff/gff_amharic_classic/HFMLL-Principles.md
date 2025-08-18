@@ -2,8 +2,12 @@
 “”
 
 ## Introduction &amp; Assumptions
-“Touch” keyboards on mobile phones and tablets support tactile features not possibel with mechanical keyboards
+“Touch” keyboards found on mobile phones and tablets introduce a number of tactile features not possible with
+traditional mechanical keyboards.  While touch keyboards inherit the simple press-to-enter approach of
+their mechanical counterparts, which remains as the primary means of character entry, they also support a
+small number of finger contact types as a secondary means of entry.
 
+These means include
 entertwine with layers
 
 
