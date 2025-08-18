@@ -1,0 +1,220 @@
+/*
+This file is from the Charis project (https://software.sil.org/charis/).
+Copyright (c) 1997-2025 SIL Global (https://www.sil.org/) with Reserved
+Font Names "Charis" and "SIL". This Font Software is licensed under the SIL
+Open Font License, Version 1.1 (https://openfontlicense.org).
+*/
+html {
+    font-family: sans-serif;
+    line-height: 1.1;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+.container {
+    width: 90%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    /* font-family: Cambria, Georgia, Times, "Times New Roman", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", serif; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000000;
+    text-align: start;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    page-break-after: avoid;    
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    margin-bottom: 0.2rem;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+    margin-top: 1.2em;
+    margin-bottom: 0rem;
+    page-break-after: avoid;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+a {
+    color: #018ADF;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+pre {
+    display: block;
+    background-color: #edf2f5;
+    padding: 0.5rem 0;
+}
+
+code {
+    display: inline-block;
+    background-color: #edf2f5;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9rem;
+}
+
+td code {
+    background-color: transparent;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 40px;
+    padding-left: 30px;
+    border-left: 10px solid #edf2f5;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+figcaption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #6c757d;
+    text-align: left;
+    caption-side: bottom;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+thead {
+    vertical-align: bottom;
+}
+
+th {
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    vertical-align: top;
+    background-color: #a6afb4;
+}
+
+tr {
+    vertical-align: bottom;
+    page-break-before: avoid;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dce5eb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf2f5;
+}
+
+td {
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    vertical-align: text-bottom;
+}
+
+kbd{
+    background-color: #6c757d;
+    color: #fff;
+    padding: 0.2rem 0.3rem;
+}
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #999999;
+}
+
+.affects {
+    font-size: 0.8rem;
+    color: #333333;
+}
+
+.footnote-ref {
+    font-weight: 700;
+    padding-left: 0.15rem;
+}
+
+.normal {
+    /* used for all product site web font example spans to remove inherited styling  */
+    font-size: 1.5rem;
+}
+
+@media print {
+    html {
+        font-size: 10pt;
+    }
+}
