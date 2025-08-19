@@ -1,9 +1,8 @@
-﻿store(&VERSION) '9.0'
+﻿store(&VERSION) '10.0'
 store(&TARGETS) 'any'
 store(&NAME) 'Kayǎn'
-store(&COPYRIGHT) '© 2017-2023 SIL International'
-store(&ETHNOLOGUECODE) 'pdu'
-store(&KEYBOARDVERSION) '1.5.2'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.5.4'
 store(&LAYOUTFILE) 'kayan.keyman-touch-layout'
 store(&BITMAP) 'kayan.ico'
 store(&VISUALKEYBOARD) 'kayan.kvks'
@@ -13,12 +12,13 @@ begin Unicode > use(main)
 group(main) using keys    
 
 c These are just for the desktop keyboard and not the touch keyboard
-platform('desktop native') + [RALT K_V] > 'V'
-platform('desktop native') + [RALT K_X] > 'X'
-platform('desktop native') + [RALT K_Z] > 'Z'
-platform('desktop native') + [RALT K_J] > 'J'
-platform('desktop native') + [RALT K_F] > 'F'
-platform('desktop native') + [RALT K_Q] > 'Q'     
+c Removed platform restraint because there is no ralt layer on touch and these rules prevented working on web
++ [RALT K_V] > 'V'
++ [RALT K_X] > 'X'
++ [RALT K_Z] > 'Z'
++ [RALT K_J] > 'J'
++ [RALT K_F] > 'F'
++ [RALT K_Q] > 'Q'     
 
 c SHIFT keys
 + [SHIFT K_SLASH] > '?'

@@ -1,8 +1,8 @@
 <?php
-  $pagename = 'NLCI Kannada WinScript Keyboard Help';
-  $pagetitle = 'NLCI Kannada WinScript Keyboard Help';
+  $pagename = 'Kannada WinScript (NLCI) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
-    samp {font-family: Annapurna; font-size:20pt;   }
+    samp {font-family: Noto Sans Kannada; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
     .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
     .inputSequences th, .inputSequences td {padding: 7px 17px;}
@@ -14,94 +14,21 @@ END;
   require_once('header.php');
 ?>
 
-    <p>This Keyboard mimic Kannada WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
-	
-  <style>
+    <p>This keyboard mimics Kannada WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
-        html, body {
-            font-family: sans-serif;
-            font-size: 100%;
-        }
-        samp {
-            font-family: Annapurna; 
-            font-size:20pt; 
-            
-        }
-        kbd {
-            color:black; 
-            font: 0.8em sans-serif; 
-            border:solid 1px grey; 
-            background:#ccc; 
-            margin:2px 1px; 
-            padding:2px 3px; 
-            -webkit-border-radius: 3px; 
-            -moz-border-radius: 3px; 
-            border-radius: 3px;
-        }
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them. The keys that are on the RALT layers can be found on the equivalent longpress key. For example, <i>avagraha</i> is on the RALT+QUOTE key. It is on the longpress for the QUOTE key.</p>
 
-        /* Table */
-        .inputSequences {
-            border-collapse: collapse;
-            font-size: 14px;
-            min-width: 592px;
-        }
-
-        .inputSequences th, 
-        .inputSequences td {
-            padding: 7px 17px;
-        }
-        /* .inputSequences caption {
-            margin: 7px;
-        } */
-
-        /* Table Header */
-        .inputSequences thead th {
-            border-bottom: 2px solid #6ea1cc;
-            text-transform: uppercase;
-        }
-
-        /* Table Body */
-        .inputSequences tbody td {
-            border-bottom: 1px solid #e1edff;
-            color: #353535;
-            text-align: center;
-        }
-        .inputSequences tbody tr:nth-child(odd) td {
-            background-color: #f4fbff;
-        }
-        /* 
-        .inputSequences tbody td:nth-child(4),
-        .inputSequences tbody td:first-child,
-        .inputSequences tbody td:last-child {
-            text-align: right;
-        }
-        */
-        .inputSequences tbody tr:hover td {
-            background-color: #ffffa2;
-            border-color: #ffff0f;
-        }
-
-        /* Table Footer */
-        /* 
-            .inputSequences tfoot th {
-            border-top: 2px solid #6ea1cc;
-            text-align: right;
-        } 
-        */
-
-
-    </style>
-</head>
-
-    <p>This Keyboard mimic Kannada WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
-
-    <h2>Keyboard layout</h2>
-<img src="kannada.png" alt="Kannada keyboard" > </img>
+<div id='osk-tablet' data-states='default shift'>
+</div>
    
     <h2>Input sequences</h2>
     
-	
 	 <table class="inputSequences">
 	 <h3>Special cases</h3>
    
@@ -167,7 +94,26 @@ END;
 			<tr>
                <td><kbd>s</kbd><kbd>s</kbd>  </td>
                 <td>ಶ</td>
-                
+            </tr>
+			<tr>
+               <td>consonant <kbd>i</kbd>  </td>
+                <td>&#x0CBF;</td>
+            </tr>
+			<tr>
+               <td>consonant <kbd>R</kbd>  </td>
+                <td>&#x0CC3;</td>
+            </tr>
+			<tr>
+               <td>consonant <kbd>R</kbd> <kbd>R</kbd>  </td>
+                <td>&#x0CC4;</td>
+            </tr>
+			<tr>
+               <td><kbd>RAlt</kbd><kbd>&#x0027;</kbd></td>
+                <td>&#x0CBD;</td>
+            </tr>
+			<tr>
+               <td><kbd>L</kbd><kbd>l</kbd></td>
+                <td>&#x0CDE;</td>
             </tr>
 			
 			
@@ -245,6 +191,4 @@ END;
 	<h3>Backtick for change into English</h3>
 
     <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>ತ</kbd> will generate <kbd>q</kbd></p>  
-
-   
 

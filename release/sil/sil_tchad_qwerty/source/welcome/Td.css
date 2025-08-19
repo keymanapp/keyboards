@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: CharisSILWeb;
     font-weight: normal;
@@ -17,6 +16,7 @@ body {
 
 }
 
+
 .tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
     display: none;
 }
@@ -24,33 +24,11 @@ body {
 .tab-folder > :last-child, .tab-folder > .tab-content:target {
     display: block;
 }
-
-/* Default styles for larger screens */
-img.responsive {
-    height: 200px;
-    width: auto;
-}
-
-/* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    img.responsive {
-        height: 100px;
-        width: auto;
-    }
-    h1 {
-        font-size: 130%;
-    }
-    p.tagline {
-        font-size: 100%;
-    }
-}
 .right {
     float: right;
-    margin: 0em 2em;
 }
 .left {
     float: left;
-    margin: 0em 2em;
 }
 .full {
     width: 98%;
@@ -61,12 +39,49 @@ img.responsive {
     color:red;
 }
 
-h1 {
+
+img.responsive {
+    height: 100px;
+    width: auto;
+}
+/* style.css */
+.my-class {
+  vertical-align: baseline;
+}
+
+/* Responsive (si besoin) */
+@media (max-width: 600px) {
+    img.responsive {
+        height: 60px;
+    }
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Pour le paragraphe du haut entre les images */
+.top-tagline {
+    font-weight: bold;
     text-align: center;
+    flex: 1;
+    margin: 2px;
+    font-size: 2em;
+    font-style: italic; /* facultatif */
+}
+
+/* Pour tous les autres paragraphes "normaux" */
+p.tagline {
+    font-size: 100%;
+}
+
+h1.color {
+    text-align: center;
+	font-size: 130%;
+	display: block;
 }
 .tagline {
     text-align: center;
-    font-size: 130%;
     font-style: italic;
 }
 .buttonlang {
@@ -83,30 +98,11 @@ h1 {
     margin: 6px 30px;
     cursor: pointer;
     border-radius: 8px;
-    width: 92%;
-    animation: pulse 2.5s ease infinite;
+    width: 94%;
+    animation: pulse 1.5s ease infinite;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: rgb(241,80,108);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: rgb(210,16,52);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: rgb(241,80,108);
-  }
-}
-
-
-h3 {
+h3.color {
     display: block;
     font-weight: bold;
     text-align: left;
@@ -118,9 +114,23 @@ h3 {
     transition: all 0.25s ease-out;
 }
 
-
-/* Blue */
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #F1506C;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #D21034;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #F1506C;
+  }
+}
 
 table {
   border-collapse: collapse;
@@ -128,7 +138,6 @@ table {
   text-align: center;
 }
 
-th,
 td {
   border: 1px solid rgb(160,160,160);
   padding: 8px 10px;
@@ -142,7 +151,6 @@ th {
 tr:nth-child(even) td {
   background-color: rgb(240,240,240);
 }
-
 
 .heman {
   font: 1.4rem molot;
@@ -159,3 +167,99 @@ tr:nth-child(even) td {
     0 0 9px #000;
 }
   
+.keyboard {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.keyboard--row {
+  display: block;
+  height: 3em;
+  margin: 0.5em;
+}
+
+.keyboard--row > * {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border-radius: 0.3em;
+  margin: 0.06em;
+  padding: 0 0.2em;
+  width: 3.3em;
+  height: 100%;
+}
+
+.key--bottom-left > * {
+  position: absolute;
+  text-align: left;
+  bottom: 0.4em;
+  left: 0.4em;
+}
+
+.key--bottom-right > * {
+  position: absolute;
+  text-align: right;
+  bottom: 0.4em;
+  right: 0.4em;
+  white-space:pre;
+}
+
+.key--word > * {
+  font-size: 0.8em;
+}
+
+.key--letter > div {
+  font-size: 1.2em;
+  height: 1.2em;
+  float: right;
+  clear: right;
+}
+
+.key--letter > div:first-child {
+  margin-top: -0.2em;
+}
+
+.key--letter > span {
+  font-size: 1.2em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+  margin-top: -0.2em;
+  margin-left: 0.1em;
+}
+.key--letter > span:last-child {
+  margin-top: 1em;
+}
+
+/* Light keyboard */
+
+.keyboard.keyboard--light .keyboard--row > * {
+  background: #ccc;
+  color: #111;
+  border: 1px solid #888;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .keyboard--row > .key--letter {
+  background: #f0f0f0;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .key--letter > span {
+  color: black
+}
+
+.keyboard.keyboard--light .key--letter span.french {
+  color: blue
+}
+
+.keyboard.keyboard--light .key--letter span.spec {
+  color: gray
+}
+
+.keyboard.keyboard--light .key--letter span.specTd {
+  color: #9400D3
+}

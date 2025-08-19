@@ -7,14 +7,10 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
   Authors:     Tavultesoft Pty Ltd
 */
   $pagename = 'Korean KORDA Jamo (SIL) Keyboard Help';
-  $pagetitle = 'Korean KORDA Jamo (SIL) Keyboard Help';
+  $pagetitle = $pagename;
+  $pagestyle = "@import url('style.css');";
   require_once('header.php');
 ?>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean KORDA Jamo (SIL) Keyboard Help</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
 
     <h2>Overview</h2>
     <p>The Korean KORDA Jamo (SIL) keyboard is built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and computerizable. For more information on KORDA, see <a href='about_korda.pdf'>About KORDA</a>.</p>

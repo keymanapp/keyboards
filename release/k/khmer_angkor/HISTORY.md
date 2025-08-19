@@ -1,5 +1,8 @@
 Khmer Angkor Change History
 =======================
+2.2 (10 Apr 2025)
+----------------
+* add rule to prevent beep sound
 
 2.1.1 (24 Mar 2025)
 ----------------

@@ -1,6 +1,10 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
+1.5.2 (2025-04-223)
+----------------
+* Improve On-Screen keyboard
+
 1.5.1 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file

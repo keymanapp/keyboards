@@ -1,5 +1,14 @@
 Tchad QWERTY Keyboard Change History
 =======================
+5.3.4
+------------------
+* Improved web integration: updated CSS
+  addition of the line: text aligned for PHP display
+
+5.3.3 (11 Apr 2025)
+------------------
+* Improved web integration: updated CSS and PHP files 
+  to ensure proper display of the Keyman keyboard help on the website.
 
 5.3.2 (31 Mar 2025)
 ------------------

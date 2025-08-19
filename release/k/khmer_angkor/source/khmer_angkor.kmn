@@ -5,7 +5,7 @@ store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&TARGETS) 'any'
 store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdkhmr/KbdKhmr.json'
 store(&LAYOUTFILE) 'khmer_angkor.keyman-touch-layout'
-store(&KEYBOARDVERSION) '2.1.1'
+store(&KEYBOARDVERSION) '2.2'
 store(&BITMAP) 'khmer_angkor.ico'
 store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
@@ -285,6 +285,7 @@ any(shiftable_c_2nd_with_BA) U+17B6 U+17C6 + [K_U] > context(1) U+17C9 context(2
 c Consonant shifter constraints (beep when the consonant shifter is used in inappropriate environment)
 
 any(shiftable_c_1st) + [SHIFT K_QUOTE] > context U+17C9 beep 
+U+17D2 any(shiftable_c_2nd_with_BA) + [K_SLASH] > context U+17CA
 any(shiftable_c_2nd_with_BA) + [K_SLASH]       > context U+17CA beep
 
 c 1st series consonant clusters
