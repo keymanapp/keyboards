@@ -1,4 +1,4 @@
-Chad FALSE AZERTY Keyboard Change History
+Tchad FAUX AZERTY Keyboard Change History
 =======================
 
 5.3 (25 Jun 2025)
@@ -44,3 +44,4 @@ Chad FALSE AZERTY Keyboard Change History
 2.0 (Oct 2009)
 -----------------
 * complete keyboard implementation
+
