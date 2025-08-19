@@ -1,4 +1,4 @@
-Tchad Keyboard
+Tchad FAUX AZERTY Keyboard
 =====================
 
 Copyright (C) SIL Global
@@ -15,3 +15,4 @@ Supported Platforms
  * Mobile Web
  * iOS
  * Android
+
