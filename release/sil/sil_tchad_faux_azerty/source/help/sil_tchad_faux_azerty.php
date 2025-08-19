@@ -1,5 +1,5 @@
 <?php
-$pagename = 'Chad FALSE AZERTY Keyboard Help';
+$pagename = 'Tchad FAUX AZERTY Keyboard Help';
 $pagetitle = $pagename;
 $pagestyle = "@import url('Td.css');";
 require_once('header.php');
@@ -558,4 +558,5 @@ pour taper des caractères spéciaux.</p>
 </div>
 </div>
 <!--Ending French-->
+
 </div>
