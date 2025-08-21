@@ -1,5 +1,5 @@
 <?php
-$pagename  = 'Chechen Language Keyboard Help';
+$pagename  = 'Chechen Latn Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');

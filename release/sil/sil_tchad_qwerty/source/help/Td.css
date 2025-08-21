@@ -39,28 +39,46 @@ body {
     color:red;
 }
 
-/* Default styles for larger screens */
+
 img.responsive {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
+/* style.css */
+.my-class {
+  vertical-align: baseline;
+}
 
-/* Styles for screens smaller than 600px */
+/* Responsive (si besoin) */
 @media (max-width: 600px) {
     img.responsive {
-        height: 100px;
-        width: auto;
+        height: 60px;
     }
-	
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Pour le paragraphe du haut entre les images */
+.top-tagline {
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin: 2px;
+    font-size: 2em;
+    font-style: italic; /* facultatif */
+}
+
+/* Pour tous les autres paragraphes "normaux" */
+p.tagline {
+    font-size: 100%;
+}
+
 h1.color {
     text-align: center;
 	font-size: 130%;
 	display: block;
-}
-
-p.tagline {
-        font-size: 100%;
-    }
 }
 .tagline {
     text-align: center;

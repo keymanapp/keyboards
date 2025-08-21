@@ -36,7 +36,7 @@ c store(&ETHNOLOGUECODE) 'grc ell'
 c store(&LANGUAGE) 'x0408'
 c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.8.4'
+store(&KEYBOARDVERSION) '1.8.5'
 store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
 
 begin Unicode > use(MainU)
@@ -637,7 +637,7 @@ any(rRo)             + any(K_Del) > outs(r)                     c r<  + *  r
 any(upVSm_Sm)        + any(K_Del) > index(upVSm,1)              c >A  + *  A
 any(Sm) any(upU)     + any(K_Del) > index(upU,2)                c >U  + *  U
 any(upVSmAc)         + any(K_Del) > index(upVSm_Sm,1)           c >/A + *  /A
-any(upVRo)           + any(K_Del) > index(upV,2)                c <A  + *  A
+any(upVRo)           + any(K_Del) > index(upV,1)                c <A  + *  A
 
 any(upRRo)           + any(K_Del) > outs(upR)                   c <R  + *  R
 

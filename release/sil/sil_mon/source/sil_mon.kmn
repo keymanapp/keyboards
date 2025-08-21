@@ -3,7 +3,7 @@ c with name "Mon (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Mon (SIL)'
 store(&COPYRIGHT) 'Copyright © SIL Global'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'web desktop'
 store(&BITMAP) 'sil_mon.ico'
 store(&VISUALKEYBOARD) 'sil_mon.kvks'
@@ -22,8 +22,8 @@ store(Default)  "`-=" \
                 "asdfghjkl;'" \
                 "zxcvbnm,./"
 store(DefaultU) U+1051 "_x" \
-                U+101E U+101D U+1035 U+101B U+1010 U+101A U+1030 U+102D U+1034 U+1015 U+104F U+104D U+104B \
-                U+1021 U+1005 U+1012 U+1016 U+1002 U+101F U+103A U+1000 U+101C U+100D U+100C \
+                U+101E U+101D U+1031 U+101B U+1010 U+101A U+102F U+102D U+1032 U+1015 U+104F U+104D U+104B \
+                U+1021 U+1005 U+1012 U+1016 U+1002 U+101F U+103A U+1000 U+101C U+100D U+100F \
                 U+1007 U+1025 U+1004 U+100A U+1017 U+1014 U+1019 U+1038 U+102C U+105C
 
 c Shifted layer
@@ -32,9 +32,9 @@ store(Shifted)  "~!@#$%^&*()_+" \
                 "ASDFGHJKL:" U+0022 \
                 "ZXCVBNM<>?"
 store(ShiftedU) U+1050 U+0022 "{}[]%/?()-+" \
-                U+103f U+103D U+1031 U+103C U+1011 U+103B U+102F U+1033 U+1032 U+100E U+1024 U+104C U+104A \
-                U+1028 U+1006 U+1013 U+1039 U+1003 U+103E U+102E U+1001 U+1060 U+100B U+100F \
-                U+105B U+1023 U+105A U+1009 U+1018 U+105E U+105F U+1036 U+102B U+105D
+                U+103f U+103D U+1035 U+103C U+1011 U+103B U+1030 U+1033 U+1034 U+1020 U+1024 U+104C U+104A \
+                U+1028 U+1006 U+1013 U+1039 U+1003 U+103E U+102E U+1001 U+1060 U+100B U+100C \
+                U+1037 U+1023 U+105A U+1009 U+1018 U+105E U+105F U+1036 U+102B U+105D
 
 + any(Digits)  > index(DigitsU,1)          c Mon digits
 + any(Default) > index(DefaultU,1)         c Default layer
@@ -45,7 +45,6 @@ c Right Alt layer
 + [RALT K_LBRKT]   > U+1027
 + [RALT K_RBRKT]   > U+104E
 + [RALT K_COMMA]   > U+1037
-+ [RALT K_SLASH]   > U+1020
 + [RALT K_1]       > '1'
 + [RALT K_2]       > '2'
 + [RALT K_3]       > '3'
@@ -58,3 +57,7 @@ c Right Alt layer
 + [RALT K_0]       > '0'
 + [RALT K_HYPHEN]  > '+'
 + [RALT K_EQUAL]   > '='
+
++ [RALT K_Z]       > U+105B
++ [RALT K_J]       > U+1008
++ [RALT K_P]       > U+100E

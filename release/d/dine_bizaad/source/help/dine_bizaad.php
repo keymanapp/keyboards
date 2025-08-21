@@ -29,12 +29,6 @@
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift alt shift-alt'>
+</div>
 
- <h3>Unshifted Keyboard</h3>
- <img src="unshifted.png" alt="Unshifted Keyboard">
-<h3>Keyboard with Shift Held</h3>
-<img src="shifted.png" alt="Shifted Keyboard">
-<h3>Keyboard with Alt Held</h3>
-<img src="alt-shifted.png" alt="Keyboard with Alt held">
-<h3>Keyboard with Alt and Shift Held</h3>
-<img src="alt+shifted.png" alt="Keyboard with Alt and Shift held">
