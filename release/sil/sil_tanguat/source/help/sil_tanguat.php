@@ -24,7 +24,7 @@
 <p>To type <b>[</b>, use <b>right-alt</b> <b>]</b>.</p>
 
 <p>To type <b>{</b>, use <b>shift</b> <b>right-alt</b> <b>{</b> .</p>
-<p>To type <b>}</b>, use <b>shift</b> <b>right-alt</b> <b>}.</p>
+<p>To type <b>}</b>, use <b>shift</b> <b>right-alt</b> <b>}.</b></p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
