@@ -32,7 +32,14 @@
 ?>
 
 <div>
-    <h1>Keyboard rules</h1>
+<p>
+  The Hupdah (SIL) keyboard is for the <a href="https://en.wikipedia.org/wiki/Hup_language" alt="Hup language - Wikipedia">Hup language</a> (also called Hupda, Hupdah, Hupdé", "Húpd’äh, Jupde, and more). Hup language is one of the four Naduhup languages. 
+</p>
+<p>
+  It is spoken by the Hupda indigenous Amazonian peoples who live on the border between Colombia and the Brazilian state of Amazonas.
+</p>
+
+<h1>Keyboard rules</h1>
 <h2>Uppercase</h2>
 <table>
     <thead>
