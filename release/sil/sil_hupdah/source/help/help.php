@@ -5,10 +5,9 @@
 
   $pagestyle = <<< END
         table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-            font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
         }
         th, td {
             border: 1px solid #ddd;
@@ -25,7 +24,10 @@
         }
         tr:hover {
             background-color: #f1f1f1;
-        } 
+        }
+        .key-combo {
+            font-weight: bold;
+        }
     END
 ?>
 
@@ -218,7 +220,7 @@
             
         </tbody>
     </table>
-    
+
   <h2>Desktop Keyboard layouts</h2>
   <div id='osk' data-states='default shift'>
       
