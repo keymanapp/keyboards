@@ -27,7 +27,7 @@
 
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='taigi_sdwxvU_.png' alt='Keyboard Layout'>

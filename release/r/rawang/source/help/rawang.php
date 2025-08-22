@@ -16,7 +16,7 @@ EXTRA;
     This keyboard is intended for the Rawang language of Myanmar and India. The keyboard is designed to be used with a standard (QWERTY) keyboard.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <div id="Documentation">
 <h3>Typing Instructions</h3>

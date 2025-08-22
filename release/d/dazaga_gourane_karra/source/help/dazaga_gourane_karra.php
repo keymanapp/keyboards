@@ -14,8 +14,6 @@
 
 <div id="english">
 
-<h1>The Dazaga Gourane Karra keyboard for Keyman</h1>
-
 <p>This keyboard layout is designed for the Dazaga Gourane Karra Language and was developed with 
     the help of the <a href=https://typlab.linguistik.hu-berlin.de/>Working Group General Linguistics (Typ*Ex Lab) at Humboldt-University of Berlin</a>. 
     <br>It includes both a touch layout for smartphones and a layout for physical keyboards. 
@@ -54,9 +52,10 @@
 
 <p>The on-screen keyboard sadly is not working as of yet, unless windows is set to an English keyboard layout.</p>
 </div>
+
 <div id="deutsch">
 
-<h1>Die Dazaga Gourane Karra Tastatur für Keyman</h1>
+<h2>Die Dazaga Gourane Karra Tastatur für Keyman</h2>
 
 <p>Dies ist eine Tastaturbelegung für die Dazaga-Gourane-Karra-Sprache, die mit der Hilfe der 
     <a href=https://typlab.linguistik.hu-berlin.de/>Arbeitsgruppe Allgemeine Sprachwissenschaft (Typ*Ex Lab) der Humboldt-Universität zu Berlin</a> entwickelt wurde. 
@@ -96,4 +95,3 @@
 
 <p>Die Bildschirmtastatur funktioniert zur Zeit leider noch nicht, außer die Tastatursprache von Windows ist auf Englisch eingestellt.</p>
 </div>
-<div id="download"></div>

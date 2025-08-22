@@ -12,20 +12,7 @@
     On hardware keyboards, the keyboard overrides <key>c</key> for ē and <key>f</key> for ŋ, as c and f are not used in Enga. To access c and f (e.g. for loan words), use <key>Right Alt</key>.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h2>Base Layout</h2>
-<p><img src='engaU_.png' alt='Enga keyboard, base layout' /></p>
-
-<h2>Shift Layout</h2>
-<p><img src='engaU_S.png' alt='Enga keyboard, shift layout' /></p>
-
-<h2>Right Alt Layout</h2>
-<p><img src='engaU_RA.png' alt='Enga keyboard, Right Alt layout' /></p>
-
-<h2>Right Alt+Shift Layout</h2>
-<p><img src='engaU_SRA.png' alt='Enga keyboard, Right Alt+Shift layout' /></p>
-
-<h1>Credits</h1>
-
-<p>© Stanley Stanis Kaka, Marc Durdin</p>

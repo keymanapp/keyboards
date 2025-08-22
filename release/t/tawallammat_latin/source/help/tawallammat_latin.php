@@ -24,8 +24,6 @@ EXTRA;
 ?>
 
 
-<h1>Start Using Tawallammat Latin</h1>
-
 <p>
     This keyboard covers all posible characters needed to type Tamajaq language for Latin orthography. Additional characters have been added to avoid having to switch keyboard to French or English while typing.
 </p>
@@ -46,7 +44,7 @@ EXTRA;
 	<p><a href="tawallammat_latin_longpress_a.jpg"><img class="keyboard" src="tawallammat_latin_longpress_a.jpg" width=40% /></a></p>
 	
 
-<h1>Special Keystrokes</h1>
+<h2>Special Keystrokes</h2>
 <table style="font-family:'Charis';">
 <thead><tr><th>Keystrokes</th><th> Outputs  </th></tr></thead><tbody>
  <tr><td><kbd>,</kbd> + <kbd>C</kbd></td><td> Ç  </td></tr>
