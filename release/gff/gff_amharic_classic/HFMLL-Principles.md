@@ -32,7 +32,7 @@ minimizing the physicial effort needed for the desired character composition and
     in the Keyman keyboard software.  Other keyboard and input method platforms may treat these features
     slightly differently.  However, it is beleived that the principles described here are transferable.
   * When “Ethiopic keyboard” is used, the expression is in reference to the “GFF” Ethiopic keyboards, though the
-principles should apply to any touch screen Ethiopic keyboard implementation.
+    principles should apply to any touch screen Ethiopic keyboard implementation.
   * “Ethiopic” here covers the letter inventory of the languages Amharic, Awngwi, Blin, Ge'ez, Harari, Khimtanga,
     Tigre, Tigrinya, and other languages that use letters outside of the Unicode Ethiopic Extended-A, and
     Ethiopic Extended-B ranges. Special cases, such as for Gurage (which utilizes Ethiopic Extended-B) are not
@@ -41,10 +41,60 @@ principles should apply to any touch screen Ethiopic keyboard implementation.
     associated with a base letter displayed in the intial, or shifted, state of the keyboard.
 
 ## Hints
-Why hint?  how does hinting help?
+Hints are a means of informing the typist of addition characters available from a given key. Accessing the associated
+character will require another action such as: performing a longpress, a flick, or a layer change (often performed
+with the `shift` key). Hints appear visually as one or more symbols appearing in the upper-right corner of a key cap,
+with a subtle color hue change so as not to be distracting or taking attention way from the primary key cap letter.
+
+By default, Keyman will present a dot symbol, ·, in the hint positing to signal that a longpress letter selection menu
+is available. The developer may override the default and use another symbol that they think serves as a better
+mnemonic.
+
+In GFF keyboards hints are used to indicate the availability of an alternative letter from the same key. For example
+“ሥ”  also available from the “ስ” key, and “ኅ” available from the “ህ” , etc.  Doing so aids the user user by informing him
+or her that the letters can be input from the indicated key without having to hunt around for them.
+
 
 ### Hints on QWERTY Style Keyboards
-Hint the upper layer
+When applying hints to a virtual keyboard that emulates a familiar layout from a hardware keyboard, such as QWERTY,
+hints may beneficially apply the underlying key.
+
+Employing underlying keys as hints provides a helpful cue that aids the user in anchorng their layout perception -a locational mnemonic.
+Although the user is expected to be highly experienced with the layout, the hint serves as a visual “crutch” to help
+overcome the phenomenon of “screen blindness” and minor disorientation with the mobile platform.
+
+The GFF Keyboards will apply the underlying key as the hint in a QWERTY based layout. Additionally, the associated uppercase
+and alternative letter is also indicated in the hint. For example “ጥ”, typed with uppercase “T” will be the hint on the 
+“ት” key. Similarly, “ቕ” becomes the hint on the “ቅ” key. Phonetic alternative letters (e.g. “ኅ”, “ሥ”,  “ፅ” ) will also 
+appear in the hint position so the  user is aware that the letters can be input from the indicated key without having to hunt around
+for them (often with a double-strike or longpress).  Applying both the underlying key and the associated  letter presents a
+“crowding” in the space above the key cap letter, and may even overlap with it.  For this reason, not more than 2 characters
+are applied in the hint.  Thus, “ሕ ” and “ጽ”, both entered with a `shift`, do not appear in the hint on their respective keys,
+“ህ” and “ስ” respectively. If all associated letters were applied in the hint, the hint for “ህ” would become “ሕኅH” and for “ስ” 
+would be the even mroe extreme “ፅጽሥS”. Once in the shifted state, the “ጽ” can be more practically hinted with “ፅS”.
+
+**Note:** Keyman mobile keyboards provide the option to display the underlying keys in the top-left corner of a keycap. 
+This is helpful in that it reduces the labor needed to populate the same letters as hints. The underlying key appearing
+in the opposite-side corner from the hint, has the benefit of alleviating the crowding problem that occurs when a 
+hint and underlying key appear in the same corner.
+
+However, in some cases the
+underlying key shown may be misleading or undesireable. For example, a key for “?” may be defined with the mapping
+SHIFT + K\_SLASH , and a slash “/” will appear as the underlying key. This seems unnatural or  ...
+[Can be worked around by using U\_003F as an ID instead which will not receive the underlying key.]
+
+On some layers, such as for punctuation, native keys might be mixed with punctuation that does not have a corresponding
+underying key. This presents an optically uneven/unbalanced layout when the upper-right corner is populated sporadically.
+The underlying keys are associated with key codes that have their origins in hardware keyboards. When a key is not in its
+familiar hardware location, the presence of the underlying key can be disorienting.
+
+For the above reasons, it would be desirable to disable the underlying key appearance on a per-layer, and even per-key
+basis.  Alternatively, the keyboard developer could be granted access to position secondary hints in the top-left key
+cap location. [suggest in a ticket]
+
+
+[Add a screenshot to illustrate the issue]
+
 
 ## Flicks
 “Flicks” (add hyperlink) are a convenient way to support additional character input from a single key whose primary
