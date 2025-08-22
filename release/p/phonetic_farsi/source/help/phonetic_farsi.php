@@ -14,12 +14,6 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-        }
         .feature {
             background-color: #f7f9fa;
             border-left: 4px solid #3498db;
@@ -68,7 +62,11 @@ END;
         <p>Ability to enable and disable the brackets around honorifics</p>
     </div>
 
-    <h1>Guide</h1>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift shift-ctrl'>
+</div>
+
+    <h2>Guide</h2>
     <p>Note, some of the characters here may not be available on all typefaces.</p>
     <p>This keyboard was made using the Scherezade New font, which implements all symbols included here.</p>
     <table>
@@ -637,7 +635,7 @@ END;
         </tr>
     </tbody>
     </table>
-    <h1 id="letters-with-diacritic-support">Letters with Diacritic Support</h1>
+    <h2 id="letters-with-diacritic-support">Letters with Diacritic Support</h2>
     <p>To add diacritic, press the apostrophe key (&#39;).</p>
     <table>
     <thead>
@@ -764,7 +762,7 @@ END;
         </tr>
     </tbody>
     </table>
-    <h1 id="vowels">Vowels</h1>
+    <h2 id="vowels">Vowels</h2>
     <table>
     <thead>
         <tr>
@@ -835,7 +833,7 @@ END;
         </tr>
     </tbody>
     </table>
-    <h1 id="honorifics-ligature">Honorifics/Ligature</h1>
+    <h2 id="honorifics-ligature">Honorifics/Ligature</h2>
     <p>To create an honorific, simply type the corresponding letter combination and press Shift + Backquote (Tilde) Ke</p>
     <table>
     <thead>
@@ -943,7 +941,7 @@ END;
         </tr>
     </tbody>
     </table>
-    <h1 id="special-characters">Special Characters</h1>
+    <h2 id="special-characters">Special Characters</h2>
     <table>
     <thead>
         <tr>
@@ -1034,21 +1032,21 @@ END;
         </tr>
     </tbody>
     </table>
-    <h1 id="settings-toggles">Settings/Toggles</h1>
+    <h2 id="settings-toggles">Settings/Toggles</h2>
     <p>There are 3 settings for the keyboard that can be toggled ON and OFF.</p>
-    <h2 id="ligature-completion-and-honorifics">Ligature Completion and Honorifics</h2>
+    <h3 id="ligature-completion-and-honorifics">Ligature Completion and Honorifics</h3>
     <p>Whether to enable the addition of ligature completion and honorifics when typing, e.g. &quot;محمد&quot; to &quot;ﷴ (﵌)‏&quot; (which can be done by pressing Shift + Backquote).</p>
     <p>CTRL SHIFT + 1 to enable <br> CTRL SHIFT + 2 to disable </p>
-    <h2 id="honorific-brackets">Honorific Brackets</h2>
+    <h3 id="honorific-brackets">Honorific Brackets</h3>
     <p>Whether to enable the addition of brackets around the honorifics when typing.</p>
     <p>CTRL SHIFT + 3 to enable <br> CTRL SHIFT + 4 to disable </p>
-    <h2 id="diacritic-addition">Diacritic Addition</h2>
+    <h3 id="diacritic-addition">Diacritic Addition</h3>
     <p>Whether to enable the addition of diacritics (dots) to letters when typing using the apostrophe key (&#39;).</p>
     <p>CTRL SHIFT + 5 to enable <br> CTRL SHIFT + 6 to disable </p>
-    <h2 id="license">License</h2>
+    <h3 id="license">License</h3>
     <p>This keyboard is licensed under the MIT License. You can find the full license text in the LICENSE file.</p>
     </p>
-    <h2 id="download">Download</h2>
+    <h3 id="download">Download</h3>
     <p>
     <a href="https://keyman.com/keyboards/phonetic_farsi?bcp47=fa">https://keyman.com/keyboards/phonetic_farsi?bcp47=fa</a>
     </p>
