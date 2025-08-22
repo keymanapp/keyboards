@@ -3,7 +3,9 @@ sil_hupdah keyboard
 
 Description
 -----------
-The Hupdah keyboard is for the language and people of Hupa.
+The Hupdah (SIL) keyboard is for the [Hup language](https://en.wikipedia.org/wiki/Hup_language) (also called Hupda, Hupdah, Hupdé", "Húpd’äh, Jupde, and more). Hup language is one of the four Naduhup languages. 
+
+It is spoken by the Hupda indigenous Amazonian peoples who live on the border between Colombia and the Brazilian state of Amazonas.
 
 Links
 -----
