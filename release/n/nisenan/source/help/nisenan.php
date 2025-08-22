@@ -14,7 +14,7 @@
 <p>&emsp;</p>
 
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p>The Nisenan alphabet uses a number of special symbols that are not available on a standard keyboard.</p>
 
@@ -34,7 +34,7 @@
 
 
 
-<h1>Comments/Questions</h1>
+<h2>Comments/Questions</h2>
 
 <p>The current version of the Nisenan Keyboard was developed by <b>Jonathan Geary (jgeary@ssband.org)</b>. Please contact Jonathan with any questions about the Nisenan Keyboard.
 
