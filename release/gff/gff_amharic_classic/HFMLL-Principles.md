@@ -1,5 +1,21 @@
 # Principles for Hints, Flicks, and Multitaps, Longpresses, and Layer Shifting in Ethiopic Keyboards
 “”
+## Preamble
+This documentation of design “principles” started as personal notes to keep track of decisions
+made for defining and interweaving the various entry types in some optimal fashion that minimizes
+the typing effort while providing an intuitive experience when inputing Ethiopic script -which itself
+has many inter-tangled historo-phonetic coorelations.
+
+The number and complexitiy of these relationships can be difficult to recall between work sessions
+that may be many months apart. Thus the motivation to record the rationale behind the decisions made.
+In the hopes that these notes may benefit other people working on virtual keyboards for Ethiopic,
+or wishing to understand why the Ge'ez Frontier Foundation mobile keyboards are they way they are,
+the notes have been expanded and formalized to be (hopefully) comprehensible to persons other than
+the author.
+
+These principles have been developed after years of practical experience and user feedback.  All have
+been refined over time and principles for some of the newer featueres (such as flicks) are likely to
+mature in the years ahead.
 
 ## Introduction &amp; Assumptions
 “Touch” keyboards found on mobile phones and tablets introduce a number of tactile features not possible with
