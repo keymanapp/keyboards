@@ -141,6 +141,9 @@ On keys that support more than one letter family, such as a key that is primaril
 be used to support the quick entry of these letters while *also* changeing to its letter-family layer to allow further
 composition of the syllable.  Thus these keys will have both the south and north flicks defined.
 
+In our example, the “ስ” key will display “ሥ” as a hint and will provide “ስ” as the south-flick, and “ሥ” as the
+north-flick which will also change the layout to the “ሠ-layer” to suport further compoistion of "ሥ”.
+
 
 ### Flicks on Modifier Keys
 South flicks on keys that act to change the displayed sylalble of a letter (for example, from “ል” to “ሌ”, should likewise
@@ -161,10 +164,26 @@ following user feedback.
 
 
 ## Multitaps
+“Multitaps” leverage a leverage simple repeated action, finger “tapping”, to input an associated character.
+In GFF keyboards, multitaps are used to fascilitate faster input of frequent letters and avoid an action
+requiring more time to perform, such as a longpress or layer change. The same policy is applied to multitaps
+as with flick actions, that no visual or state-changing side effects occur.
 
 ### Multitaps on Regular Keys
+On regular keys, that are *not* associated with an alternative letter (e.g. “ለ”, “መ ”, “ረ”, “በ”, etc.),
+a single multitap is defined to enter the first-order syllable of the primary key (which is sixth-order
+letter on most GFF keyboards).  Thus from the “ል” key, “ለ” can be entered with a double-tap action.
+The first-order letter is chosen under productivity and fatigue minimization rationale. In Amharic, and
+other Ethio-Semitic languages, the first-order letter is the next most frequently occuring letter after
+the sixth-order.
 
 ### Multitaps on Keys with Alternatives
+When an alterantive key is present
+
+For example, the “ስ” key will display “ሥ” as a hint and will provide “ሰ” as the double-tap, and “ሠ” as the triple-tap.
+Unlike the related flick action, no layer change occurs for after “ሠ ” is entered via the triple-tap since no
+further composition of “ሠ ” will be possible. The related north-flick should be used if the typist does wish
+to enter into “ሥ” syllabic composition.
 
 ## Longresses
 "No side effects"
