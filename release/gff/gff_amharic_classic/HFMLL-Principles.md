@@ -178,7 +178,7 @@ other Ethio-Semitic languages, the first-order letter is the next most frequentl
 the sixth-order.
 
 ### Multitaps on Keys with Alternatives
-When an alterantive key is present
+When an alterantive key is associated with a primary key, it's first-order can be entered via an additional tap.
 
 For example, the “ስ” key will display “ሥ” as a hint and will provide “ሰ” as the double-tap, and “ሠ” as the triple-tap.
 Unlike the related flick action, no layer change occurs for after “ሠ ” is entered via the triple-tap since no
@@ -186,11 +186,22 @@ further composition of “ሠ ” will be possible. The related north-flick shou
 to enter into “ሥ” syllabic composition.
 
 ## Longresses
-"No side effects"
+A “longpress” on a Keyman touch keyboard will present a pop-up array of available letters or other symbols that
+the user may select for entry in place of the letter on the key that has been pressed. Selecting a letter in this
+way may be preferable and labor saving to some users over changing layers to locate, compose, and enter the same
+characters.
+
+GFF keyboards apply the Identical policy that governs entry by flicks. Layer changes do not occur when a longpress is
+used *except* in a few cases where further composition remains possible. The regular usage and exceptional cases will be
+discussed in the following.
 
 ### Longresses on Regular Keys
+only the non-sadis letters appear.
 
 ### Longresses on Keys with Alternatives
+appear in 2nd row, selecting the sadis form will change layers (verify) or this only occurs when the associated sadis
+order is added to popups for 12-family member groups.
+
 
 ## Haptic
 Thoughts on haptic feedback, mostly for errors or unavailable input keys?  It may not be applicable if the layer
