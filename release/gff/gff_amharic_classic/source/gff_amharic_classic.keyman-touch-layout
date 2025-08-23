@@ -59774,8 +59774,8 @@
                 }
               },
               {
-                "id": "U_002C",
-                "text": ","
+                "id": "U_003A",
+                "text": ":"
               },
               {
                 "id": "U_003B",
@@ -59849,49 +59849,13 @@
                 }
               },
               {
-                "id": "U_0027",
-                "text": "'",
-                "hint": "‹›",
-                "sk": [
-                  {
-                    "text": "‹",
-                    "id": "U_2039",
-                    "default": true
-                  },
-                  {
-                    "text": "›",
-                    "id": "U_203A"
-                  },
-                  {
-                    "text": "`",
-                    "id": "U_0060"
-                  },
-                  {
-                    "text": "‘",
-                    "id": "U_2018"
-                  },
-                  {
-                    "text": "’",
-                    "id": "U_2019"
-                  }
-                ],
-                "flick": {
-                  "s": {
-                    "text": "‹",
-                    "id": "U_2039"
-                  }
-                },
-                "multitap": [
-                  {
-                    "text": "›",
-                    "id": "U_203A"
-                  }
-                ]
+                "id": "K_2",
+                "text": "@",
+                "layer": "shift"
               },
               {
-                "id": "K_QUOTE",
-                "text": "\"",
-                "layer": "shift",
+                "id": "U_201C",
+                "text": "“",
                 "hint": "«»",
                 "sk": [
                   {
@@ -59914,6 +59878,10 @@
                   {
                     "text": "”",
                     "id": "U_201D"
+                  },
+                  {
+                    "text": "\"",
+                    "id": "U_0022"
                   }
                 ],
                 "flick": {
@@ -59936,17 +59904,9 @@
             "key": [
               {
                 "id": "K_SHIFT",
-                "text": "@",
-                "width": 170,
+                "text": "#+=",
                 "sp": 1,
                 "nextlayer": "punctuation-2",
-                "sk": [
-                  {
-                    "text": "ሀለሐ",
-                    "id": "K_LOWER",
-                    "nextlayer": "default"
-                  }
-                ],
                 "flick": {
                   "s": {
                     "id": "T_NUL",
@@ -59957,7 +59917,7 @@
               {
                 "id": "K_PERIOD",
                 "text": ".",
-                "pad": 70,
+                "pad": 80,
                 "width": 120,
                 "layer": "default",
                 "hint": "…",
@@ -59975,38 +59935,15 @@
                 }
               },
               {
-                "id": "U_003A",
-                "text": ":",
+                "id": "U_002C",
+                "text": ",",
+                "pad": 40,
                 "width": 120
-              },
-              {
-                "id": "K_2",
-                "text": "@",
-                "width": 120,
-                "layer": "shift"
-              },
-              {
-                "id": "K_1",
-                "text": "!",
-                "width": 120,
-                "layer": "shift",
-                "hint": "¡",
-                "sk": [
-                  {
-                    "text": "¡",
-                    "id": "U_00A1"
-                  }
-                ],
-                "flick": {
-                  "s": {
-                    "text": "¡",
-                    "id": "U_00A1"
-                  }
-                }
               },
               {
                 "id": "K_SLASH",
                 "text": "?",
+                "pad": 40,
                 "width": 120,
                 "layer": "shift",
                 "hint": "¿",
@@ -60024,10 +59961,75 @@
                 }
               },
               {
+                "id": "K_1",
+                "text": "!",
+                "pad": 40,
+                "width": 120,
+                "layer": "shift",
+                "hint": "¡",
+                "sk": [
+                  {
+                    "text": "¡",
+                    "id": "U_00A1"
+                  }
+                ],
+                "flick": {
+                  "s": {
+                    "text": "¡",
+                    "id": "U_00A1"
+                  }
+                }
+              },
+              {
+                "id": "U_2018",
+                "text": "‘",
+                "pad": 40,
+                "width": 120,
+                "hint": "‹›",
+                "sk": [
+                  {
+                    "text": "‹",
+                    "id": "U_2039",
+                    "default": true
+                  },
+                  {
+                    "text": "›",
+                    "id": "U_203A"
+                  },
+                  {
+                    "text": "`",
+                    "id": "U_0060"
+                  },
+                  {
+                    "text": "‘",
+                    "id": "U_2018"
+                  },
+                  {
+                    "text": "’",
+                    "id": "U_2019"
+                  },
+                  {
+                    "text": "'",
+                    "id": "U_0027"
+                  }
+                ],
+                "flick": {
+                  "s": {
+                    "text": "‹",
+                    "id": "U_2039"
+                  }
+                },
+                "multitap": [
+                  {
+                    "text": "›",
+                    "id": "U_203A"
+                  }
+                ]
+              },
+              {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "pad": 65,
-                "width": 170,
+                "pad": 95,
                 "sp": 1,
                 "flick": {
                   "s": {
@@ -60042,9 +60044,8 @@
             "id": 4,
             "key": [
               {
-                "id": "K_LOPT",
-                "text": "*Menu*",
-                "width": 170,
+                "id": "K_SHIFT",
+                "text": "ሀለሐ",
                 "sp": 1,
                 "nextlayer": "default",
                 "flick": {
@@ -60055,9 +60056,20 @@
                 }
               },
               {
+                "id": "K_LOPT",
+                "text": "*Menu*",
+                "width": 100,
+                "sp": 1,
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
+              },
+              {
                 "id": "K_SPACE",
                 "text": "",
-                "pad": 85,
                 "width": 630,
                 "sp": 0,
                 "hint": "፡",
@@ -60082,9 +60094,8 @@
               },
               {
                 "id": "K_ENTER",
-                "text": "*Enter*",
-                "pad": 80,
-                "width": 170,
+                "text": "return",
+                "width": 260,
                 "sp": 1,
                 "flick": {
                   "s": {
@@ -60161,7 +60172,17 @@
               },
               {
                 "id": "K_EQUAL",
-                "text": "="
+                "text": "=",
+                "sk": [
+                  {
+                    "text": "≈",
+                    "id": "U_2248"
+                  },
+                  {
+                    "text": "≠",
+                    "id": "U_2260"
+                  }
+                ]
               }
             ]
           },
@@ -60219,28 +60240,13 @@
               {
                 "id": "K_SHIFT",
                 "text": "፩፪፫",
-                "width": 170,
                 "sp": 1,
-                "nextlayer": "ethiopic-punctuation",
-                "sk": [
-                  {
-                    "text": "ሀለሐ",
-                    "id": "K_SHIFT",
-                    "sp": 1,
-                    "nextlayer": "default"
-                  }
-                ],
-                "flick": {
-                  "s": {
-                    "id": "T_NUL",
-                    "nextlayer": "default"
-                  }
-                }
+                "nextlayer": "ethiopic-punctuation"
               },
               {
                 "id": "K_PERIOD",
                 "text": ".",
-                "pad": 70,
+                "pad": 80,
                 "width": 120,
                 "layer": "default",
                 "hint": "…",
@@ -60259,18 +60265,14 @@
               },
               {
                 "id": "U_003A",
-                "text": ":",
+                "text": ",",
+                "pad": 40,
                 "width": 120
-              },
-              {
-                "id": "K_2",
-                "text": "@",
-                "width": 120,
-                "layer": "shift"
               },
               {
                 "id": "K_1",
                 "text": "!",
+                "pad": 40,
                 "width": 120,
                 "layer": "shift",
                 "hint": "¡",
@@ -60290,6 +60292,7 @@
               {
                 "id": "K_SLASH",
                 "text": "?",
+                "pad": 40,
                 "width": 120,
                 "layer": "shift",
                 "hint": "¿",
@@ -60307,10 +60310,55 @@
                 }
               },
               {
+                "id": "U_2018",
+                "text": "‘",
+                "pad": 40,
+                "width": 120,
+                "hint": "‹›",
+                "sk": [
+                  {
+                    "text": "‹",
+                    "id": "U_2039",
+                    "default": true
+                  },
+                  {
+                    "text": "›",
+                    "id": "U_203A"
+                  },
+                  {
+                    "text": "`",
+                    "id": "U_0060"
+                  },
+                  {
+                    "text": "‘",
+                    "id": "U_2018"
+                  },
+                  {
+                    "text": "’",
+                    "id": "U_2019"
+                  },
+                  {
+                    "text": "'",
+                    "id": "U_0027"
+                  }
+                ],
+                "flick": {
+                  "s": {
+                    "text": "‹",
+                    "id": "U_2039"
+                  }
+                },
+                "multitap": [
+                  {
+                    "text": "›",
+                    "id": "U_203A"
+                  }
+                ]
+              },
+              {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "pad": 65,
-                "width": 170,
+                "pad": 95,
                 "sp": 1,
                 "flick": {
                   "s": {
@@ -60325,9 +60373,8 @@
             "id": 4,
             "key": [
               {
-                "id": "K_LOPT",
-                "text": "*Menu*",
-                "width": 170,
+                "id": "K_SHIFT",
+                "text": "ሀለሐ",
                 "sp": 1,
                 "nextlayer": "default",
                 "flick": {
@@ -60338,9 +60385,19 @@
                 }
               },
               {
+                "id": "K_LOPT",
+                "text": "*Menu*",
+                "sp": 1,
+                "flick": {
+                  "s": {
+                    "id": "T_NUL",
+                    "nextlayer": "default"
+                  }
+                }
+              },
+              {
                 "id": "K_SPACE",
                 "text": "",
-                "pad": 85,
                 "width": 630,
                 "sp": 0,
                 "hint": "፡",
@@ -60365,9 +60422,8 @@
               },
               {
                 "id": "K_ENTER",
-                "text": "*Enter*",
-                "pad": 80,
-                "width": 170,
+                "text": "return",
+                "width": 260,
                 "sp": 1,
                 "flick": {
                   "s": {
