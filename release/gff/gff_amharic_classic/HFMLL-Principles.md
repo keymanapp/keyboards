@@ -1,5 +1,5 @@
 # Principles for Hints, Flicks, and Multitaps, Longpresses, and Layer Shifting in Ethiopic Keyboards
-“”
+
 ## Preamble
 This documentation of design “principles” started as personal notes to keep track of decisions
 made for defining and interweaving the various entry types in some optimal fashion that minimizes
@@ -55,6 +55,8 @@ minimizing the physicial effort needed for the desired character composition and
     covered in these recommendations under a multilingual context (but will apply for a Gurage-only keyboard).
   * Assumption that letter-family specific layers are used by the keyboard to support entry of the syllables
     associated with a base letter displayed in the intial, or shifted, state of the keyboard.
+  * Design considerations are biased for right-handed typists, typing with a single finger.  Some rules
+    might apply in the first for left-handed typists.
 
 ## Hints
 Hints are a means of informing the typist of addition characters available from a given key. Accessing the associated
@@ -151,6 +153,15 @@ A special case is when the layer *of the letter* has been loaded. For example on
 “ለ” family. On these letter-family layers, the south-flick of the associated base key, the “ለ” key, can be used to
 return to the default layer. No letter input should occur.
 
+#### Laterl Flicks (Experimental)
+On regular keys for letters, flicking to produce the next most frequent letters can be applied. Tried experimentally
+on GFF keyboards, an East flick enters the first-order character (e.g. “ለ”, while a west-flick enters the 4th order
+(e.g “ላ”) as these are the two most frequenlty occuring Amaharic letters after the sixth order.
+
+The assumption is made here that East flick is an easier (lower strain) finger motion than a West flick.  A keyboard
+designed for left handed person should reverse these mappings.
+
+
 ### Flicks on Keys with Alternatives
 On keys that support more than one letter family, such as a key that is primarily for the “ሰ” family, but also supports
 “ሠ”, as a secondary entry (perhaps in combination with a `shift`, `alt`, or double-tap), the “north” flick should
@@ -160,13 +171,11 @@ composition of the syllable.  Thus these keys will have both the south and north
 In our example, the “ስ” key will display “ሥ” as a hint and will provide “ስ” as the south-flick, and “ሥ” as the
 north-flick which will also change the layout to the “ሠ-layer” to suport further compoistion of "ሥ”.
 
-
 ### Flicks on Modifier Keys
 South flicks on keys that act to change the displayed sylalble of a letter (for example, from “ል” to “ሌ”, should likewise
 support the "General Rule" of south flicks and be used to input the displayed key without a layer change.  This
 is done largely for consistancy, but is also helpful for composing words where some form of the base letter appears
 twice (“ሌሊት”, “ሚሚ ”, etc.).
-
 
 ### Flicks on Control Keys
 Control keys, and other “special” keys, that do not enter a letter directly, can be leveraged to help support the
