@@ -153,7 +153,7 @@ A special case is when the layer *of the letter* has been loaded. For example on
 “ለ” family. On these letter-family layers, the south-flick of the associated base key, the “ለ” key, can be used to
 return to the default layer. No letter input should occur.
 
-#### Laterl Flicks (Experimental)
+#### Lateral Flicks (Experimental)
 On regular keys for letters, flicking to produce the next most frequent letters can be applied. Tried experimentally
 on GFF keyboards, an East flick enters the first-order character (e.g. “ለ”, while a west-flick enters the 4th order
 (e.g “ላ”) as these are the two most frequenlty occuring Amaharic letters after the sixth order.
