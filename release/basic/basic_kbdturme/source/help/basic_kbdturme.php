@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 <p>
-    Turkmen Basic 1.1 (Latin script) generated from template.
+    The keyboard layout follows the Windows 10 Turkmen Basic (Latin script) keyboard layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

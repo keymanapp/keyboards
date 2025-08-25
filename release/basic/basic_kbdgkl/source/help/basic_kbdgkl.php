@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Greek Latin Basic generated from template.
+    The keyboard layout follows the Windows 10 Greek Latin Basic keyboard layout.
 </p>
 <p>This keyboard makes use of the SHIFT+RALT+O key which is set by default when Keyman is installed.
 	To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off".

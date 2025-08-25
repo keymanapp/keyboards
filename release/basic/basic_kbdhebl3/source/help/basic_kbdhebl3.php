@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Hebrew (Standard) Basic generated from Microsoft Win10 keyboard.
+    The keyboard layout follows the Windows 10 Hebrew (Standard) Basic keyboard layout.
 </p>
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
