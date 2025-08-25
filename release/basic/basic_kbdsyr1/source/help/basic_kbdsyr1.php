@@ -7,7 +7,7 @@
 
 
 <p>
-    Syriac Basic 1.3 generated from template.
+    The keyboard layout follows the Windows 10 Syriac Basic keyboard layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

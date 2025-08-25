@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Syriac Phonetic Basic 1.2 generated from template.
+    The keyboard layout follows the Windows 10 Syriac Phonetic Basic keyboard layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
