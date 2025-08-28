@@ -7,7 +7,7 @@
 
 
 <p>
-    Tatar Basic generated from template.
+    The keyboard layout follows the Windows 10 Tatar Basic keyboard layout.
 </p>
 <p>This keyboard makes use of SHIFT+RALT+O and SHIFT+RALT+M keys which are set by default when Keyman is installed. To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". Either change the hotkey or turn it off. Do the same for "Open Keyboard Menu" and for "Open Language Switcher".</p>
 
