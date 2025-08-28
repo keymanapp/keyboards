@@ -20,6 +20,8 @@ builder_describe \
 builder_parse "$@"
 
 function _notify_api() {
+  local API_URL URL HTTPRESULT STATUSCODE
+
   API_URL=$1
   URL="https://${API_URL}/_control/webhook/keyboards-build-success.json?token=${WEBHOOK_TOKEN}"
   HTTPRESULT=$(curl --silent --write-out "\n\nHTTP status code: %{http_code}" "${URL}")

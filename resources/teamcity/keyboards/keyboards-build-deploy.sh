@@ -25,6 +25,12 @@ builder_describe \
 
 builder_parse "$@"
 
+export DOWNLOADS_KEYMAN_COM_URL
+export HELP_KEYMAN_COM
+export S_KEYMAN_COM
+export REMOTE_RSYNC_PATH
+export RSYNC_DEST
+
 function do_build() {
   builder_echo "Building all keyboards"
   "${REPO_ROOT}/build.sh"
@@ -56,6 +62,18 @@ function _upload_to_help_keyman_com() {
 }
 
 function do_publish() {
+  if [[ -z "${DOWNLOADS_KEYMAN_COM_URL:-}" ]]; then
+    builder_die "Option --downloads-keyman-com must be specified for publish action"
+  elif [[ -z "${HELP_KEYMAN_COM:-}" ]]; then
+    builder_die "Option --help-keyman-com must be specified for publish action"
+  elif [[ -z "${S_KEYMAN_COM:-}" ]]; then
+    builder_die "Option --s-keyman-com must be specified for publish action"
+  elif [[ -z "${REMOTE_RSYNC_PATH:-}" ]]; then
+    builder_die "Option --rsync-path must be specified for publish action"
+  elif [[ -z "${RSYNC_DEST:-}" ]]; then
+    builder_die "Option --rsync-dest must be specified for publish action"
+  fi
+
   _upload_to_downloads_keyman_com
   _upload_to_s_keyman_com
   _upload_to_help_keyman_com
