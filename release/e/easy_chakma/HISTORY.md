@@ -1,6 +1,10 @@
 Easy Chakma Keyboard Change History
 ============================
 
+2.0.1 (29 Aug 2025)
+-----------------
+* Update to use ChakmaUnicode font
+
 2.0.0 (27 Jan 2025)
 -----------------
 * Update versioning consistency
@@ -20,7 +24,6 @@ Easy Chakma Keyboard Change History
 * Updated font
 * Updated guidelines
 * Updated icon
-
 
 1.18 (31 Jan 2018)
 -----------------
