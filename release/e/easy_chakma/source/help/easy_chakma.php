@@ -1151,7 +1151,7 @@ color:#C00000'>&nbsp;</span></p>
 
 <p class=MsoBodyText><span style='font-size:10.0pt'>&nbsp;</span></p>
 
-<h2>Typing Guide Lines Example with Cucengya Kaa [&#69895;]</p>
+<h2>Typing Guide Lines Example with Cucengya Kaa [&#69895;]</h2>
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=708
  style='width:530.75pt;border-collapse:collapse;border:none'>
@@ -12146,72 +12146,52 @@ src="images/image006.png"></span></span></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;font-family:ChakmaUnicode'>&nbsp;</span></p>
 
-<p class=MsoNormal><a href="http://hilledu.com/"><span style='font-size:21.0pt'>Bivuti
-Chakma</span></a><span style='font-size:21.0pt;color:blue'> (Suz Moriz)</span><span
-style='font-size:21.0pt;font-family:SutonnyMJ;color:red'>.....</span></p>
+<p><a href="http://hilledu.com/"><span>Bivuti Chakma</span></a> (Suz Moriz).....</p>
 
-<p class=MsoNoSpacing><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'>I would love to introduce myself to a new friend over the globe!  <br>
+<p>I would love to introduce myself to a new friend over the globe!  <br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
 color:black'>&#128204;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
 color:black'> I am Chakma font developer and&nbsp;Chakma keyboard layout
 Creator. My name is Bivuti Chakma from Bangladesh. Nick name is Suz Moriz. I
-was born in 30 April&nbsp;</span><a href="tel:1978"><span style='font-size:
-13.5pt;font-family:"Nirmala UI",sans-serif'>1978</span></a><span
-style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'>&nbsp;at
+was born in 30 April 1978 at
 5 No Bandukbhang UP, Rangamati Sadar Thana under Rangamati District of
 Bangladesh. My village name is Lekshongchara (Noadam).<br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128221;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> I was studied at Noadam Govt Primary School, Bandukbhanga High
+color:black'>&#128221;</span> I was studied at Noadam Govt Primary School, Bandukbhanga High
 School, Moanoghar Residential High School &amp; Rangamati Govt College. I
-passed SSC from science group with first division in&nbsp;</span><a
-href="tel:1996"><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif'>1996</span></a><span
-style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'>&nbsp;from
+passed SSC from science group with first division in&nbsp; 1996 from
 Moanoghar Residential High School and HSC from science group with first
-division in&nbsp;</span><a href="tel:1999"><span style='font-size:13.5pt;
-font-family:"Nirmala UI",sans-serif'>1999</span></a><span style='font-size:
-13.5pt;font-family:"Nirmala UI",sans-serif;color:black'>&nbsp;from Rangamati
-Govt College.<br>
+division in&nbsp; 1999 from Rangamati Govt College.<br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128204;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> I have been working with Chakma Script from&nbsp;</span><a
-href="tel:1998"><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif'>1998</span></a><span
-style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'>&nbsp;at
+color:black'>&#128204;</span> I have been working with Chakma Script from 1998 at
 present. I am skillful of Office Program, FontForge, FontLab, Fontographer,
 TypeTool, I am excellent typist of Chakma, Bangla &amp; English Languages. I am
 the writer of “Chakma Mini Grammar”. I also write various Chakma Book and web
 design in my leisure time. I am the creator of most used Chakma Unicode Font of
 “ChakmaUnicode” helping by Paul D. Hunt (Adobe Corporation) &amp; Andrew Glass
-(Microsoft). I also made “Easy Chakma” Keyboard helping<br>
-by Dr. Andrew Glass, program manager at Microsoft Corporation and Marc Durdin,
-the founder of Keyman, who helped creating this keyboard, and Makara Sok, the
+(Microsoft). I also made “Easy Chakma” Keyboard helped by Dr. Andrew Glass, program manager at Microsoft Corporation and Marc Durdin,
+the founder of Keyman, who helped create this keyboard, and Makara Sok, the
 project support specialist at Keyman, who help updating this keyboard and
 fixing bugs.<br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128204;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> I am now working with Translation Commons, Unicode Consortium,
+color:black'>&#128204;</span> I am now working with Translation Commons, Unicode Consortium,
 Google, Microsoft, Adobe, Facebook &amp; Keyman team for implementation the
 Chakma language over the globe. Moreover, I am working with Liang Hai.<br>
 Also working on CLDR Project of Unicode Consortium as a individual contributor
-from Bangladesh.</span></p>
+from Bangladesh.</p>
 
 <p class=MsoNoSpacing><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
 color:black'>&nbsp;</span></p>
 
-<p class=MsoNoSpacing><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'><br>
-<br>
-</span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128221;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> My interview focuses on the article about the Chakma language to
+<p><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
+color:black'>&#128221;</span> My interview focuses on the article about the Chakma language to
 digitize. When you feel free just look at a glance. The interview to ABC news
 in Australia to Gary. Here's the article link:<br>
-</span><a
+<a
 href="https://mobile.abc.net.au/news/2019-10-13/smartphone-keyboards-for-traditional-language-at-cutting-edge/11513462?pfmredir=sm&amp;fbclid=IwAR04BVnzE7_NQBs0xhnyF2wmcWqGHN-7J643m_yVbFZUllQOXNSZZ-rZIto"><span
 style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif'>https://mobile.abc.net.au/news/2019-10-13/smartphone-keyboards-for-traditional-language-at-cutting-edge/11513462?pfmredir=sm&amp;fbclid=IwAR04BVnzE7_NQBs0xhnyF2wmcWqGHN-7J643m_yVbFZUllQOXNSZZ-rZIto</span></a><span
 style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'><br>
@@ -12238,18 +12218,15 @@ please around when you feel free:<br>
 style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'><br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128204;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> I am trying to my best to digitize, revitalize, revive, promote,
+color:black'>&#128204;</span> I am trying to my best to digitize, revitalize, revive, promote,
 and preserve the Chakma language over the globe and implement it quickly in
 modern technology.<br>
-</span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#128204;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'> Here is my YouTube channel (Chakma language resources) to spread
+<span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
+color:black'>&#128204;</span> Here is my YouTube channel (Chakma language resources) to spread
 out our language on internet and connect with social media:<br>
 <br>
 </span><span style='font-size:13.5pt;font-family:"Segoe UI Emoji",sans-serif;
-color:black'>&#9989;</span><span style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;
-color:black'>&nbsp;</span><a
+color:black'>&#9989;</span><a
 href="https://www.youtube.com/channel/UCpadb5MfKlxeF0eR5diEDXA"><span
 style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif'>https://www.youtube.com/channel/UCpadb5MfKlxeF0eR5diEDXA</span></a><span
 style='font-size:13.5pt;font-family:"Nirmala UI",sans-serif;color:black'><br>
