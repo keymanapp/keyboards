@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">  <title>The Geʾez Frontier Foundation Classic QWERTY Keyboard for Amharic (አማርኛ) Language</title>
+
+<style type="text/css" media="screen">
+  img.indented { text-indent: 10%}
+
+table.flat { border-spacing: 0; margin: 0.5em 0 }
+table.flat td, table.kb th { border: thin solid #666; text-align: center ; padding: 0.3em }
+table.flat { border-bottom: hidden }
+table.flat { empty-cells: show }
+table.flat th { text-align: center; border: thin solid #666; background-color: #e0dacf }
+table.flat caption { margin: 0.5em 0 0 0 }
+
+   td.divide { border-left: 1px solid black }
+   td.flat-bottom { border-bottom: 1px solid black }
+   td.flat-top { border-top: 1px solid black }
+  .note { background: #ffa }
+  .note-emph { background: #ffa; font-style: italic }
+  .question-unanswered { background: #ffa; font-style: italic; color: #ff0000 }
+  .question-answered { background: #bfffa0; font-style: italic; text-decoration: line-through }
+
+table.flat2 th { padding-left: 4px; padding-right: 4px;}
+
+table.kb th, table.kb td { padding: 0.3em }
+table.kb th:first-child { background-color: #e0dacf; }
+table.kb tr:first-child { background-color: #e0dacf; font-weight:bold; }
+table.kb tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
+table.kb tr:first-child th:last-child { background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff }
+table.kb th { background-color: #e0dacf; border-left-color: #ffffff }
+table.kb td, table.kb th { border: thin solid #666; text-align: center }
+table.kb th { text-align: center; background-color: #d7d0b9 }
+table.kb { border-bottom: hidden }
+table.kb { empty-cells: show }
+table.kb caption { margin: 0.5em 0 0 0 }
+table.kb tr:last-child { text-align: center; background-color: #d7d0b9; font-weight:bold; }
+table.kb tr:last-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff }
+dd {margin: 0 0 1em; padding: 0}
+
+table.punct th { font-weight: bold;  padding: 0.3em }
+table.punct td { font-weight: normal; padding: 0.3em }
+table.punct th:first-child { background-color: #e0dacf; }
+table.punct tr:first-child { background-color: #e0dacf; }
+table.punct tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
+table.punct th { background-color: #e0dacf; border-left-color: #ffffff }
+table.punct td, table.punct th { border: thin solid #666; text-align: center }
+table.punct th { text-align: center; background-color: #d7d0b9 }
+table.punct { border-bottom: hidden }
+table.punct { empty-cells: show }
+
+table.zaima th { font-weight: bold;  padding: 0.3em }
+table.zaima td { font-weight: normal; padding: 0.3em }
+table.zaima th:first-child { background-color: #e0dacf;}
+table.zaima tr:first-child th  { background-color: #e0dacf; }
+table.zaima tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
+table.zaima th { background-color: #e0dacf; border-left-color: #ffffff }
+table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
+table.zaima th { text-align: center; background-color: #d7d0b9 }
+table.zaima { border-bottom: hidden }
+table.zaima { empty-cells: show }
+.tabs{
+    /* width: 600px; */
+    /* display: block; */
+    margin: 40px auto;
+    position: relative;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+}
+
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #4A83FD;
+}
+
+.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    /* width: 600px; */
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    /* background: #303030; */
+    /* color: #DFDFDF; */
+    border: solid black 1px;
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
+}
+
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+}
+
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+.keys {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px; /* Add some space inside the box */
+  margin: 0 2px; /* Add some space between the boxes */
+}
+kbd {
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid black;
+  margin: 0 2px; /* Add some space between the boxes */
+}
+.output {
+  border-radius: 2px;
+  padding: 2px;
+  border: 2px solid green;
+}
+.input {
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid black;
+}
+.key_example
+{
+  text-indent: 0px;
+  background-color: #ebebeb;
+}
+.geez {
+  background:  #e2f0cb ; 
+}
+.kaib {
+  background:  #ffffb5 ;
+}
+.salis {
+  background:  #fea3aa ;
+}
+.rabi {
+  background: #ccf1ff ;
+}
+.hamis {
+  background: #e0d7ff ;
+}
+.sabi {
+  background: #fad6b6 ;
+}
+.zemede-geez {
+  background: #ffffff;  color: black ;
+  background: linear-gradient(180deg, #ffffff 0%, #e2f0cb 100%);
+}
+.zemede-kaib {
+  background: #ffffff; color: black ;
+  background: linear-gradient(180deg, #ffffff 0%, #eceae4 100%);
+}
+.zemede-salis {
+  background: #ffffff;  color: black ;
+  background: linear-gradient(180deg, #ffffff 0%, #fea3aa 100%);
+}
+.zemede-rabi {
+  background: #ffffff;  color: black ;
+  background: linear-gradient(180deg, #ffffff 0%, #ccf1ff 100%);
+}
+.zemede-hamis {
+  background: #ffffff;  color: black ;
+  background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
+}
+.epunct {
+  background: #f4eee7 ;
+}
+.etens {
+  background: #f3d6ce ;
+}
+</style>
+</head>
+<body>
+
+<h1>The Geʾez Frontier Foundation Classic QWERTY Keyboard for the Amharic (አማርኛ) Language</h1>
+
+<h2><a id="abstract" name="abstract"></a>Introduction</h2>
+<p>Thank you for installing the Geʾez Frontier Foundation&rsquo;s Amharic Classic QWERTY Keyboard! The keyboard will have a familair layout to iPhone
+&amp; iPad users with additions that making typing in Amharic (also Tigrinya, Khimtanga, and related langaues) a natural experience.  
+
+<h3>Quick Guide to Flicks and Taps</h3>
+
+<table class="flat flat2">
+<tr>
+  <th style="border-top: 0px; border-left: 0px; background: white;">&nbsp;</th>
+  <th>Regular Keys</th>
+  <th>Related Keys</th>
+  <th>Number Keys</th>
+  <th>Control Keys</th>
+</tr>
+<tr>
+  <th align="right">1 Tap</th>
+  <td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ ብ</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ን</td>
+  <td><kbd class="key_example">2<sup>፪</sup></kbd> ⮕ 2</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <th align="right">2 Taps</th>
+  <td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ በ</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ነ</td>
+  <td><kbd class="key_example">2<sup>፪</sup></kbd> ⮕ ፪</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <th align="right">3 Tap</th>
+  <!-- td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ ብ</td -->
+  <td>&nbsp;</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ኘ</td>
+  <td><kbd class="key_example">2<sup>፪</sup></kbd> ⮕ ፳</td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <th align="right">↓ Flick</th>
+  <td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ ብ</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ን</td>
+  <td><kbd class="key_example">2<sup>፪</sup></kbd> ⮕ ፪</td>
+  <td>⮌ (return to start)</td>
+</tr>
+<tr>
+  <th align="right">↑ Flick</th>
+  <td>&nbsp;</td>
+  <!-- td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ ብ</td -->
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ኝ</td>
+  <td><kbd class="key_example">2<sup>፪</sup></kbd> ⮕ ፳</td>
+  <td>⮌ (return to start)</td>
+</tr>
+<tr>
+  <th align="right">→ Flick</th>
+  <td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ በ</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ነ</td>
+  <td>&nbsp;</td>
+  <td>⮌ (return to start)</td>
+</tr>
+<tr>
+  <th align="right">← Flick</th>
+  <td><kbd class="key_example">ብ<sup>B</sup></kbd> ⮕ ባ</td>
+  <td><kbd class="key_example">ን<sup>ኝN</sup></kbd> ⮕ ና</td>
+  <td>&nbsp;</td>
+  <td>⮌ (return to start)</td>
+</tr>
+</table>
+
+
+<p>For a detailed overview, select your device from the list below to read the appropriate manual:</p>
+
+<div id="phone">
+<details>
+<summary>📱 Mobile (Phone)</summary>
+<h1>Mobile Phone Keyboard</h1>
+
+<h2>Letters</h2>
+
+<p>
+When the GFF Amharic Classic QWERTY mobile keyboard starts, the key layout appears as shown in the following image. The layout follows the Latin
+QWERTY style of typing as used in desktop and laptop computers.  Note the Latin letters in the top right corner of the keys (called a “hint”):
+</p>
+
+<img src="gff_amharic-phone-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+Tapping a key once, the vowel keys (<kbd>አ</kbd>, <kbd>ኡ</kbd>, <kbd>ኢ</kbd>, <kbd>ኣ</kbd>, <kbd>ኤ</kbd>, and <kbd>ኦ</kbd>) will change to show
+what related letter will come next when typed.  For example, tapping <kbd>ግ</kbd> the vowel keys change to 
+<kbd class='geez'>ገ</kbd>, <kbd class='kaib'>ጉ</kbd>, <kbd class='salis'>ጊ</kbd>, <kbd class='rabi'>ጋ</kbd>, <kbd class='hamis'>ጌ</kbd>, and <kbd class='sabi'>ጎ</kbd> .  If the updated vowel keys is tapped, ግ will be updated on screen.
+</p>
+
+<img src="gff_amharic-phone-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<h3>Shifting</h3>
+
+<p>
+As with typing Amharic on computers with Latin keyboards, the <kbd>shift</kbd> key is used to type related letters.  Notice that the “hint” on some keys will show which letter is available on that key when shifted.  For example, the ‘ት’ key appears with 2 hints, <kbd class="key_example">ት<sup>ጥT</sup></kbd>, ‘T’ is the usual Latin keyboard letter, and ‘ጥ’ becomes the Amharic letter on the key after pressing <kbd>shift</kbd>. The shift layout is shown below:
+</p>
+
+<img src="gff_amharic-phone-shift-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<h3>Long Presses</h3>
+<p>
+Another way to type a letter, that does not change the vowel keys, is to hold a key down for a few moments (called a “longpress”) a popup menu appears where you can tap the letter desired.  The popup menu for <kbd>ግ</kbd> is shown below:
+</p>
+
+<img src="gff_amharic-phone-default-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+The punctuation keys, <kbd>።</kbd> and <kbd>?</kbd> will also have popups help type more punctuation easily.  
+</p>
+
+<img src="gff_amharic-phone-default-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<h3>Tapping</h3>
+<p>
+By default, the keyboard keys enter the 6<sup>th</sup> order (ሳድስ) letter because the are the most frequent in Amharic vocabulary.
+Tapping a key quickly twice, a &ldquo;Double-Tap&rdquo;, will enter the 1<sup>st</sup> order (ግዕዝ) letter (the next most frequently occuring).
+When a letter has a hint, a &ldquo;Triple-Tap&rdquo; is also possible where the third tap will enter the hint letter in the first order.
+For example, the &lsquo;ን&rsquo; key has the hint &lsquo;ኝN&rsquo;, appearing as <kbd class="key_example">ን<sup>ኝN</sup></kbd>, tapping the key produces:
+</p>
+
+<dl style="text-indent: 20px">
+  <dd><kbd class="key_example">ን<sup>ኝN</sup></kbd> 1 tap: ን</dd>
+  <dd><kbd class="key_example">ን<sup>ኝN</sup></kbd> 2 taps: ነ</dd>
+  <dd><kbd class="key_example">ን<sup>ኝN</sup></kbd> 3 taps: ኝ</dd>
+</dl>
+
+<p>
+In other cases, such as for punctuation or numerals, multiple-taps can be used in addition to a flick to type the symbol shown in the hint.
+For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪&rsquo;, appearing as <kbd class="key_example">2<sup>፪</sup></kbd>, tapping the key produces: 
+</p>
+
+<dl style="text-indent: 20px">
+  <dd><kbd class="key_example">2<sup>፪</sup></kbd> 1 tap: 2</dd>
+  <dd><kbd class="key_example">2<sup>፪</sup></kbd> 2 taps: ፪</dd>
+  <dd><kbd class="key_example">2<sup>፪</sup></kbd> 3 taps: ፳</dd>
+</dl>
+
+<h3>Flicking</h3>
+<p>
+Key &ldquo;flicking&rdquo; is widely supoorted throughout the keyboard.  A flick is a quick stroke (like a swipe) made on the key usually in
+the downward direction, but also upward, and side to side. Flicks are very convenient since they can save you from having to shift to the next
+keyboard view to access a letter, or avoid additioning typing motions that become fatiguing. Most every key will support a flick in some way.
+
+<h4>Flicks on letter keys</h4>
+Some examples:
+
+Keys with hints can be &ldquo;flicked&rdquo; to type the symbol shown in the hint. 
+</p>
+
+<dl style="text-indent: 20px">
+  <dd><b>↓</b> flicking the <kbd class="key_example">ብ<sup>B</sup></kbd> key will type &lsquo;ብ&rsquo; <em>without</em> changing the vowels.</dd>
+  <dd><b>→</b> flicking the <kbd class="key_example">ብ<sup>B</sup></kbd> key will type &lsquo;በ&rsquo;</dd>
+  <dd><b>←</b> flicking the <kbd class="key_example">ብ<sup>B</sup></kbd> key will type &lsquo;ባ&rsquo;</dd>
+  <dd><b>↑</b> flicking the <kbd class="key_example">ስ<sup>ሥ</sup></kbd> key will type &lsquo;ሥ &rsquo; instead of &lsquo;ስ&rsquo; (and change the vowels).</dd>
+</dl>
+
+<h4>Flicks on other keys</h4>
+On other keys, such as punctuation and number keys, a downward flick will will enter the symbol shown in the <em>hint</em>. 
+For example, <span style="font-family:Arial;">↓</span>-flicking the <kbd class="key_example">$<sup>€</sup></kbd> key will type &lsquo;€&rsquo; instead of &lsquo;$&rsquo;.
+The flick options will mirror those on iPhone and iPad keyboards. On the number keys after pressing the <kbd class="epunct">123</kbd> key,
+downward and upward flicks work to enter the Geʾez numbers following:
+
+<dl style="text-indent: 20px">
+  <dd><kbd class="key_example">2<sup>፪</sup></kbd> <span style="font-family:Arial;">↑</span>-flick: ፪</dd>
+  <dd><kbd class="key_example">2<sup>፪</sup></kbd> <span style="font-family:Arial;">↓</span>-flick: ፳</dd>
+</dl>
+
+
+<h4>Return flicks</h4>
+Any of the special keys, such as <kbd>shift</kbd>, <kbd>space</kbd>, <kbd>⌫</kbd>, <kbd>return</kbd>, and others on the bottom row
+of the keyboard, can be flicked in any direction to return to the starting keyboard position. For example, from any keyboard view on
+the screen, flicking <span style="font-family:Arial;">←</span> , <span style="font-family:Arial;">→</span> or <span style="font-family:Arial;">↓</span> on the <kbd>space</kbd> key will bring the keyboard back to its starting point.
+
+A special return flick is also provided on a key after typing it. For example, after typing the <kbd>ግ</kbd> key and seeing the vowel
+letters change, a <span style="font-family: Arial;">↓</span> on <kbd>ግ</kbd> will bring the keyboard back to the start (instead of entering &lsquo;ግ&rsquo; as a <span style="font-family:Arial;">↓</span> flick normallay would).
+
+
+<h2>Punctuation</h2>
+
+<p>When typing letters, the <kbd class='epunct'>!</kbd> and <kbd class='epunct'>።</kbd> keys are available for entering the most common punctuation without shifting to another “layer”.  The following image shows the punctuation for a longpress of <kbd class='epunct'>!</kbd>:</p>
+
+<img src="gff_amharic-phone-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>The punctuation for a longpress of <kbd class='epunct'>።</kbd>:</p>
+
+<img src="gff_amharic-phone-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>For additional punctuation and numerals, tap the <kbd class='epunct'>123</kbd> key to shift to the next layer:</p>
+
+<img src="gff_amharic-phone-punctuation-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Note that numerals on the punctuation layer use the long press feature to make Geʾez numerals available:</p>
+
+<img src="gff_amharic-phone-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Tapping the <kbd class='epunct'>@</kbd> shifts to a 2nd layer to access all remaining punctuation:</p>
+
+<img src="gff_amharic-phone-punctuation-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>A tap of the <kbd class='epunct'>፩</kbd> key will go to the final layer where Geʾez numbers and some less used, and non-Amharic letters, can be accessed.</p>
+
+<h2>Numerals</h2>
+
+<p>The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the initial letters layer.</p>
+
+<p>Note the arrow button, <kbd class='etens'>▶</kbd>, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the remaining numbers that are orders of ten (e.g. ፳, ፴, ፵, etc.):</p>
+
+<img src="gff_amharic-phone-numerals-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>After tapping the <kbd class='etens'>▶</kbd> button, the Geʾez orders of ten appear as shown:</p>
+
+<img src="gff_amharic-phone-numerals-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Tapping the <kbd class="key_example">▶</kbd> button again slides to the western digits, a final tap will return to the initial Geʾez numerals.</p>
+
+<img src="gff_amharic-phone-numerals-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Simply tap the <kbd class='epunct'>ሀለሐ</kbd> key to return to the starting letters layers.</p>
+
+<hr/>
+</details>
+</div>
+
+<div id="tablet">
+<details>
+<summary>🔲 Tablet</summary>
+<h1>Tablet Keyboard</h1>
+
+<h2>Letters</h2>
+
+<p>
+When the GFF Amharic mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the <b>middle</b> row and <b>top</b> row:
+</p>
+
+<img src="gff_amharic-tablet-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+Tapping a key once, the modifier letters to the left (<kbd class='geez'>አ</kbd>, <kbd class='kaib'>ኡ</kbd>, <kbd class='salis'>ኢ</kbd>) and right  (<kbd class='rabi'>ኣ</kbd>, <kbd class='hamis'>ኤ</kbd>, <kbd class='sabi'>ኦ</kbd>) of the spacebar. For example, tapping <kbd>ግ</kbd> the modifiers change to <kbd class='geez'>ገ</kbd>, <kbd class='kaib'>ጉ</kbd>, <kbd class='salis'>ጊ</kbd>, <kbd class='rabi'>ጋ</kbd>, <kbd class='hamis'>ጌ</kbd>, and <kbd class='sabi'>ጎ</kbd> .  If a modifier is tapped, ግ will be updated on screen.
+</p>
+<p>
+Observe that some keys have a small “hint” letter in the upper right corner. The hint letters can be typed by making a quick, light, downward “flick” on the key. These letters can also be typed using the “longress” approach explained in a following example.
+</p>
+
+<img src="gff_amharic-tablet-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<h3>Long Presses</h3>
+<p>
+As an alternative, if preferred, holding a key down for a few moments (called a “longpress”) a popup menu appears where you can tap the letter desired.  The popup menu for <kbd>ግ</kbd> is shown below:
+</p>
+
+<img src="gff_amharic-tablet-default-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+The modifier keys will also have popups as applicable.  To enter the extended syllables for <kbd class='zemede-geez'>ጐ</kbd>, 
+<kbd class='zemede-kaib'>ጕ</kbd>, <kbd class='zemede-salis'>ጒ</kbd>, <kbd class='zemede-rabi'>ጓ</kbd>, and <kbd class='zemede-hamis'>ጔ</kbd>
+type the related key. For example, the <kbd class='rabi'>ጋ<sup style="color: #777">ጓ</sup></kbd> key has the popup key <kbd class='zemede-rabi'>ጓ</kbd>
+as shown:
+</p>
+
+<img src="gff_amharic-tablet-default-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Note that Geʾez numerals are available by using a long press on the number keys:</p>
+
+<img src="gff_amharic-tablet-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<h3>Flicks</h3>
+<p>
+Keys with hints can be &ldquo;flicked&rdquo; to type the symbol shown in the hint. A flick is a quick downward stroke (like a swipe) made on the key.
+Flicks are very convenient since they can save you from having to shift to the next keyboard view to access a letter, or avoid the need of
+making additional finger motions to type a letter. Some examples:
+</p>
+
+<dl style="text-indent: 20px">
+  <dd>• Flicking the <kbd class="key_example">ስ<sup>ሥ</sup></kbd> key will type &lsquo;ሥ &rsquo; instead of &lsquo;ስ&rsquo;.</dd>
+  <dd>• Flicking the <kbd class="key_example">$<sup>€</sup></kbd> key will type &lsquo;€&rsquo; instead of &lsquo;$&rsquo;.</dd>
+  <dd>• Flicking the <kbd class="key_example">2<sup>፪@</sup></kbd> key will type &lsquo;፪&rsquo; instead of &lsquo;2&rsquo;.</dd>
+</dl>
+
+<p>
+Note that two flicks are possible on the numeral keys. An <em>upward</em> flick is also available, for example an upward flick on the
+<kbd class="key_example">2<sup>፪@</sup></kbd> key will type &lsquo;@&rsquo; instead of &lsquo;2&rsquo;.</dd>
+</p>
+
+
+<h3>Taps</h3>
+<p>
+By default, the keyboard keys enter the 6<sup>th</sup> order (ሳድስ) letter because the are the most frequent in Amharic vocabulary.
+Tapping a key quickly twice, a &ldquo;Double-Tap&rdquo;, will enter the 1<sup>st</sup> order (ግዕዝ) letter (the next most frequently occuring).
+When a letter has a hint, a &ldquo;Triple-Tap&rdquo; is also possible where the third tap will enter the hint letter in the first order.
+For example, the &lsquo;ብ&rsquo; key has the hint &lsquo;ቭ&rsquo;, appearing as <kbd class="key_example">ብ<sup>ቭ</sup></kbd>, tapping the key produces:
+</p>
+
+<dl style="text-indent: 20px">
+  <dd><kbd class="key_example">ብ<sup>ቭ</sup></kbd> 1 tap: ብ</dd>
+  <dd><kbd class="key_example">ብ<sup>ቭ</sup></kbd> 2 taps: በ</dd>
+  <dd><kbd class="key_example">ብ<sup>ቭ</sup></kbd> 3 taps: ቨ</dd>
+</dl>
+
+<p>
+In other cases, such as for punctuation or numerals, multiple-taps can be used in addition to a flick to type the symbol shown in the hint.
+For example, the &lsquo;2&rsquo; key has the hint &lsquo;፪@&rsquo;, appearing as <kbd class="key_example">2<sup>፪@</sup></kbd>, tapping the key produces: 
+</p>
+
+<dl style="text-indent: 20px">
+  <dd><kbd class="key_example">2<sup>፪@</sup></kbd> 1 tap: 2</dd>
+  <dd><kbd class="key_example">2<sup>፪@</sup></kbd> 2 taps: @</dd>
+</dl>
+
+
+<h2>Punctuation</h2>
+
+<p>When typing letters, the <kbd>!</kbd> and <kbd class='epunct'>።</kbd> keys are available for entering the most common punctuation without shifting to another “layer”.  The following image shows the punctuation for a longpress of <kbd>!</kbd>:</p>
+
+<img src="gff_amharic-tablet-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>The punctuation for a longpress of <kbd class='epunct'>።</kbd>:</p>
+
+<img src="gff_amharic-tablet-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>For additional punctuation and numerals, tap the <kbd class='epunct'>@</kbd> key to shift to the next layer:</p>
+
+<img src="gff_amharic-tablet-punctuation-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>A tap of the <kbd class='epunct'>፩፪፫</kbd> key will go to the final layer where Geʾez numbers and some less used, and non-Amharic letters, can be accessed.</p>
+
+<h2>Numerals</h2>
+
+<p>The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the initial letters layer.</p>
+
+<img src="gff_amharic-tablet-numerals-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Simply tap the <kbd class='epunct'>ሀለሐ</kbd> key to return to the starting letters layers.</p>
+
+</details>
+</div>
+
+
+<p><br/></p>
+<hr/>
+
+<h2>License</h2>
+
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 1997-2025. It is distributed under the MIT free software license:</p>
+
+<div style="margin-left: 1em;">
+  <table>
+    <tr>
+      <td style="border: thin solid #666; text-align: justify; padding-left: 5px; padding-right: 5px;" width="700px">
+        <h5>The MIT License (MIT)</h5>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+</html>
