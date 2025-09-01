@@ -177,7 +177,7 @@ support the "General Rule" of south flicks and be used to input the displayed ke
 is done largely for consistancy, but is also helpful for composing words where some form of the base letter appears
 twice (“ሌሊት”, “ሚሚ ”, etc.).
 
-### Flicks on Control Keys
+### Flicks on Control Keys (Return-Flicks)
 Control keys, and other “special” keys, that do not enter a letter directly, can be leveraged to help support the
 return-to-start requirement. For example, this has been done with the GFF kebyoards on the `shift`, `globe`,
 `punctuation-shift`, `spacebar`, `enter`, and `backspace` keys.  On these keys, the south flick will return the keyboard
@@ -216,17 +216,63 @@ the user may select for entry in place of the letter on the key that has been pr
 way may be preferable and labor saving to some users over changing layers to locate, compose, and enter the same
 characters.
 
-GFF keyboards apply the Identical policy that governs entry by flicks. Layer changes do not occur when a longpress is
+GFF keyboards apply the identical policy that governs entry by flicks. Layer changes do not occur when a longpress is
 used *except* in a few cases where further composition remains possible. The regular usage and exceptional cases will be
 discussed in the following.
 
 ### Longresses on Regular Keys
-only the non-sadis letters appear.
+On regular keys, of letters having 7 or 8 family members, the longpress menu should present all family members,
+as used by the target language of the keyboad, save for the 6th order letter which appears on they key itself
+and is available by a simple press. The letters should appear in-order so as to make them easy to locate and
+select.  
+
+The first order letter is a sensible longress default opion as it is the most frequently used. However, since the
+1st and 4th order may also be available using flicks or multitaps, another default key can be set to the 4th must
+frequently occuring letter in the target language.
 
 ### Longresses on Keys with Alternatives
-appear in 2nd row, selecting the sadis form will change layers (verify) or this only occurs when the associated sadis
-order is added to popups for 12-family member groups.
+When a key also supports an alterative entry letter, such as “ሥ” on the “ስ” key, the family members of alternative 
+letter should also be made available from the longpress pop-up menu. Ideally, the two letter families will appear
+on separate rows, where the primary letter family will reside on the lower row, and the alternatives on an upper
+(further to reach) row.
 
+Unlike the regular keys, the longpress menu must present the 6th order family member of alternative letter which is
+otherwise unavailable. Doing so creates unbalanced rows, where an upper row may have 8 cells and the lower row 7.
+In this scenario, the 6th order letter of the primary family should also be made available to balance the rows
+and help maintain the separation of letter families across the two rows.  The 6th order letter of the primary 
+family may be set as the default selection which offers a neutral starting point for selecting the desired letter
+from the pop-up offerings.
+
+[screenshot example]
+
+When a key spports an alternative entry letter, and the primary letter is in 12 member family, the longpress sould 
+present the 6 basic family members on the first row (sans the 6th order) and the 5 extended members on the upper
+row (lesser used and so may be more distant), along with the 6th order alternative letter as the final (left-to-right
+ordering) entry on the upper row.  Selecting the alternative member from the longpress should also change to its
+respective layer.
+
+[screenshot example]
+
+### Longress on Returning vs Non-Returning Layered Composition Approaches
+
+When a layer is used for letter composition (e.g. the “ለ” layer provides composition further composition to
+form its family members “ሉ”, “ሊ”, “ላ”, “ሌ”, “ል”, “ሎ”, and “ሏ”) the keyboard designer must decide between
+one of two follow up actions at the completion of composition.  Once the family member is fully composed, the
+keyboard may then remain on the same layer, or return to the default layer.
+
+Remaining on the same layer is sensible to help minimize the composition effort when a word contains members of
+a letter family occuring in succession (e.g. “ሌሊት”, “ሚሚ ”, etc. as referenced earlier), and eliminates
+a keypress.  On the other hand, returning to the default layout following composition may be a more user friendly
+approach preferred by some users. In the later case, the longpress pop-ups are less likely to be utilized and
+need not be provided on the composition layers -the user has already opted for the layered base composition
+pathway over the use of longpresses for the initial letter of the word and will most likely fully compose
+the word under the same approach..
+
+In this later case, an argument could be made that *only* the keys used to compose a letter need be provided on
+the composition layer.  However, the GFF keyboards do provide all of the same letters from the default layer
+to help maintain visual continuity on screen, as well as to support the very frequent occurence of consonant
+clusters found in Amharic and related languages.  “ትምህርት”, for example can thusly be composed with 5 keypresses
+instead of 10 that would otherwise be necessary.
 
 ## Haptic
 Thoughts on haptic feedback, mostly for errors or unavailable input keys?  It may not be applicable if the layer
