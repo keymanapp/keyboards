@@ -1,6 +1,6 @@
 # አማርኛ (Amharic) Classic Keyboard
 
-Version 3.0, Copyright (C) 1997-2025, Geʾez Frontier Foundation
+Version 3.0, Copyright © 1997-2025, Geʾez Frontier Foundation
 
 
 ## Description
@@ -11,16 +11,28 @@ The package should *only* be installed on mobile and tablet devices.
 The keyboard is also suitable for Tigirnya and Agew languages such as Awngi, Blin, and Khimtanga.
 
 ### Keyboard Initial State
+The keyboard begins in the familiar layout used on English (Latin Alphabet) keyboards:
 
-![Desktop Keyboard Initial](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/GFF-Geez-OnScreen-Keyboard-Default-Layer-920w.png)
+![Mobile Default Layer](https://raw.githubusercontent.com/dyacob/keyboards/d942392ed8e72ef74633ec1bbcc45b7ce672abb1/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-default-1-920w.jpeg)
+
+The keyboard updates as you type.  For example, this is the keyboard change after pressing the ግ key:
+
+![Mobile ግ-Pressed Layer](https://raw.githubusercontent.com/dyacob/keyboards/d942392ed8e72ef74633ec1bbcc45b7ce672abb1/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-default-2-920w.jpeg)
 
 ### Keyboard Shifted State
+Just as with English keyboards, the SHIFT key makes more letters appear:
 
-![Desktop Keyboard Initial](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/GFF-Geez-OnScreen-Keyboard-Default-Layer-920w.png)
+![Mobile Shifted Layer](https://raw.githubusercontent.com/dyacob/keyboards/04490307acc0c70e6a461e1b936f58430ce6a104/release/gff/gff_amharic_classic/source/welcome/gff_amharic_classic-phone-shift-1.jpeg)
 
 ### Flick Typing
+Every key supports "flicking" to making typing even faster.  See the help file for full details.
 
-![Desktop Keyboard Initial](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/GFF-Geez-OnScreen-Keyboard-Default-Layer-920w.png)
+![Flick typing](https://raw.githubusercontent.com/dyacob/keyboards/27e82ec2db42dfb44d5944b574f9d3fb0be187a7/release/gff/gff_amharic_classic/source/welcome/gff_amharic_classic-phone-flick-typing-1.png)
+
+### Multitap Typing
+Every key also supports "multitaps" to making typing even faster.  See the help file for full details.
+
+![Multitap typing](https://raw.githubusercontent.com/dyacob/keyboards/27e82ec2db42dfb44d5944b574f9d3fb0be187a7/release/gff/gff_amharic_classic/source/welcome/gff_amharic_classic-phone-multitap-typing-1.png)
 
 
 
