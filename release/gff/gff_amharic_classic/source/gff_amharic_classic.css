@@ -9,8 +9,8 @@
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],    .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-special[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-special[id$='K_ENTER'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
-.phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'],   .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
-.phone div.kmw-key.kmw-key-special[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='K_SHIFT'],
+.phone div.kmw-key.kmw-key-shift[id$='_SHIFT'],   .tablet div.kmw-key.kmw-key-shift[id$='_SHIFT'],
+.phone div.kmw-key.kmw-key-special[id$='_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='_SHIFT'],
 .phone div.kmw-key.kmw-key-shift[id$='T_EMPTY'],   .tablet div.kmw-key.kmw-key-shift[id$='T_EMPTY'],
 .phone div.kmw-key.kmw-key-default[id$='T_STOP'],   .tablet div.kmw-key.kmw-key-default[id$='T_STOP'],
 .phone div.kmw-key.kmw-key-deadkey[id$='T_SPACER'], .tablet div.kmw-key.kmw-key-deadkey[id$='T_SPACER']  
@@ -843,9 +843,12 @@ div.kmw-key.kmw-key-default[id$='_137B']  div.kmw-key-popup-icon.kmw-key-text
     box-shadow: 0;
 }
 */
+div.kmw-key.kmw-key-special[id$='K_ENTER'] span.kmw-key-text,
+div.kmw-key.kmw-key-special[id$='T_SHIFT'] span.kmw-key-text
+{ font-size: 60% !important; }
 
 div.kmw-key.kmw-key-special[id$='K_ENTER'] span.kmw-key-text,
-div.kmw-key.kmw-key-special[id$='K_SHIFT'] span.kmw-key-text
+div.kmw-key.kmw-key-special[id$='_SHIFT'] span.kmw-key-text
     {font-family: system-ui, -apple-system, 'San Francisco', 'Segoe UI', Arial; background-color: #ece1d5; color: #000000; }
 
 div.kmw-key.kmw-key-default[id^='punctuation'] span.kmw-key-text,
