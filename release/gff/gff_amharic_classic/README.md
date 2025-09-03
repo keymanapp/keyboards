@@ -1,14 +1,12 @@
 # አማርኛ (Amharic) Classic Keyboard
 
-Copyright (C) 1997-2025 Ge'ez Frontier Foundation, SIL International
+Copyright (C) 1997-2025, Ge'ez Frontier Foundation, Version 3.0
 
-Version 3.0
-
-This is an Amharic (amh, አማርኛ) language mnemonic input method for mobile platforms based on a US-QWERTY layout. The package should *only* be installed on mobile and tablet devices.
 
 ## Description
 
-TBD - make this compatible with the KMD `Description` field.
+This is an Amharic (amh, አማርኛ) language mnemonic input method for mobile platforms based on a US-QWERTY layout. The package should *only* be installed on mobile and tablet devices.
+
 
 ## Technical Note
 
@@ -17,8 +15,8 @@ This package is identical to the `gff_amharic` keyboard where only the `.keyman-
 ## Links
 
  * Home:     <http://keyman.com/amharic>
- * Deployed: <http://keyman.com/keyboards/gff_amharic>
- * Help:     <http://help.keyman.com/keyboard/gff_amharic>
+ * Deployed: <http://keyman.com/keyboards/gff_amharic_classic>
+ * Help:     <http://help.keyman.com/keyboard/gff_amharic_classic>
  * Contact:  <support@keyman.com>
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
