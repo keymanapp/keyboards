@@ -6,7 +6,7 @@
 
 /* functional keys */
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'],    .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
-.phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],    .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
+.phone div.kmw-key.kmw-key-special[id$='K_BKSP'],    .tablet div.kmw-key.kmw-key-special[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-special[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-special[id$='K_ENTER'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
 .phone div.kmw-key.kmw-key-shift[id$='_SHIFT'],   .tablet div.kmw-key.kmw-key-shift[id$='_SHIFT'],
@@ -866,3 +866,5 @@ div.kmw-key.kmw-key-default[id='popup-default-U_00BB'] span.kmw-key-text,
 div.kmw-key-popup-icon.kmw-key-text
 {font-family: system-ui, -apple-system, 'San Francisco', 'Segoe UI', Arial; }
 
+div.kmw-key.kmw-key-special[id$='K_BKSP'] span.kmw-key-text
+{font-family: system-ui, -apple-system, 'San Francisco', 'Segoe UI', Arial !important; }
