@@ -23,7 +23,7 @@
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © Ge'ez Frontier Foundation.</p>
 
 <div id='Overview'>
 <h2>Overview</h2>
@@ -486,25 +486,18 @@ letters change, a <span style="font-family: Arial;">↓</span> on <kbd>ግ</kbd>
 </p>
 <h3>Unicode Version</h3>
 <p>This keyboard complies with Unicode 4.1</p>
-
 </div>
-
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 2.0, 21 Dec 2020</dt>
-</dl>
 
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by the Ge'ez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
+This keyboard was created by the Ge'ez Frontier Foundation.  SIL Global graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Mogile and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2025 Ge'ez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic Classic QWERTY keyboard layout for Keyman Mobile and KeymanWeb is copyright © Ge'ez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

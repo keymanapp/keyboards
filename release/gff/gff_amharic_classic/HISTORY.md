@@ -1,7 +1,7 @@
 gff_amharic_classic Change History
 ==========================
 
-3.0 (X Sep 2025)
+3.0 (4 Sep 2025)
 ----------------
 * Re-based version off of gff_amharic.
 * Adds flicks, multitaps, popups, layers, css.

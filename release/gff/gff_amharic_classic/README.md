@@ -1,6 +1,6 @@
 # አማርኛ (Amharic) Classic Keyboard
 
-Version 3.0, Copyright © 1997-2025, Geʾez Frontier Foundation
+Copyright © Geʾez Frontier Foundation
 
 
 ## Description
