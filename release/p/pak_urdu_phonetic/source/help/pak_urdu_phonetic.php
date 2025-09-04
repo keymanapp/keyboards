@@ -4,9 +4,6 @@
 
   $pagestyle = <<<END
     .container { max-width: 900px; margin: 20px auto; padding: 20px; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
-    h1 { font-size: 24px; color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
-    h2 { font-size: 20px; color: #2980b9; margin-top: 30px; }
-    h3 { font-size: 18px; margin-top: 20px; color: #2c3e50; }
     ul, ol { padding-left: 20px; }
     table { width: 100%; border-collapse: collapse; margin-top: 15px; }
     th, td { padding: 8px 12px; border: 1px solid #ccc; }
@@ -22,7 +19,7 @@
 ?>
 
 <div class="container">
-  <h1>🎉 Welcome to Pak Urdu Phonetic!</h1>
+  <h2>🎉 Welcome to Pak Urdu Phonetic!</h2>
 
    <div class="introduction_ur">
 

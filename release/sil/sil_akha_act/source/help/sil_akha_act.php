@@ -10,7 +10,7 @@
     A keyboard is designed for the Akha language in Latin Script.
 </p>
 
-<h1> Key features:</h1>
+<h2> Key features:</h2>
 <ol>
 	<li>Press on any of these keys ([]\{}|) twice to output the brackets instead of the Akha tone marks.</li>
 	<li>On computer, please use AltGr and Shift AltGr to get "ôóõòñöÔÓÕÒÑÖ" as shown in the screenshots below.</li>

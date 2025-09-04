@@ -6,7 +6,6 @@
   
 ?>
 
-  <h1>Nailangs Keyboard</h1>
   
   <p><img src='Android-promo-graphic-for-desktop-Futago-copy.png' alt='Promo'></p>
 
@@ -25,6 +24,6 @@
   
   <p><img src='1lang.jpg' alt='Supported Languages'></p>
    
-  <h2>Layout</h2>
-  
-  <p><img src='layout.png' alt='Keyboard Layout'></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>

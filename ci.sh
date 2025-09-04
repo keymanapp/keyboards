@@ -35,7 +35,6 @@ else
   APP7Z="/c/Program Files/7-Zip/7z.exe"
 fi
 
-. "$KEYBOARDROOT/servervars.sh"
 . "$KEYBOARDROOT/resources/util.inc.sh"
 . "$KEYBOARDROOT/resources/rsync-tools.sh"
 

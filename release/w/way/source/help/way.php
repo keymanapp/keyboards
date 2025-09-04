@@ -21,7 +21,7 @@
       This QWERTY-based keyboard was designed for users of the Wayana language in Suriname and Brazil, with simple substitutions for the <code>f</code> and <code>y</code> keys.
     </p>
     
-    <h2><b>Desktop Modifier Keys</b></h2>
+    <h2>Desktop Modifier Keys</h2>
     <p>
       The <code>f</code> and <code>y</code> keys on the QWERTY keyboard layout are automatically converted into <code>ï</code> and <code>ë</code> characters, respectively.
       To type an <code>f</code> or <code>y</code> using the Wayana keyboard, use the <code>;</code> semicolon key to change the next <code>ï</code> or <code>ë</code> back into the original <code>f</code> or <code>y</code> character.
@@ -67,7 +67,7 @@
     </tbody>
     </table>
 
-    <h2><b>Mobile Device Modifier Keys</b></h2>
+    <h2>Mobile Device Modifier Keys</h2>
     <p>
       The <code>f</code> and <code>y</code> keys on the QWERTY keyboard layout have been replaced with <code>ï</code> and <code>ë</code> characters, respectively.
       To type an <code>f</code> or <code>y</code> using the Wayana keyboard, long press its corresponding key until the alternate character appears.

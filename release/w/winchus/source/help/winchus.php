@@ -16,7 +16,6 @@ END;
 <!-- INICIO_SECCIÓN#01 -->
 <!-- #region SECCIÓN#01 -->
 <br /> 
-    <h1>Winchus</h1><br />
     <div style="text-align: center;">
         <p><i>Escribe en cualquier idioma Quechua<br />
             con la agilidad de un colibrí.</i></p>
