@@ -33,22 +33,9 @@ c-&gt;च्, C-&gt;छ्, z-&gt;श्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&
 <li>The motivation behind additions made to the basic ITRANS scheme is described in <a href="https://sanskrit-coders.github.io/input/optitrans/">https://sanskrit-coders.github.io/input/optitrans/</a>, along with a tabulated comparison with several other transliteration schemes.</li>
 </ul>
 
-<h2>Keyboard layouts</h2>
+<h3>Consonants</h3>
 
-<p>The default and shifted layouts cover Devanagari digits, consonants, vowels and other 
-commonly used characters.</p>
-
-<center>
-<h2>Default (unshifted)</h2>
-<p><img src="itrans_devanagari_sanskrit_pre_vedicU_.png" alt="Default (unshifted) state"/>
-</p>
-<h2>Shift</h2>
-<p><img src="itrans_devanagari_sanskrit_pre_vedicU_S.png" alt="Shift state"/></p>
-</center>
-
-<h2>Consonants</h2>
-
-<p>The following table shows the English letters to type to get Devanagari consonants. e.g. type <kbd>k</kbd> for <samp>क्</samp>, <kbd>ka</kbd> for <samp>क</samp>, <kbd>R</kbd> for <samp>र्‍</samp> (eyelash Ra for Marathi), <kbd>RR</kbd> for <samp>ऋ</samp>, <kbd>RR^</kbd> for <samp>ॠ</samp>, <kbd>LL</kbd> for <samp>ऌ</samp>, etc.</p>
+<p>The following table shows the English letters to type to get Devanagari consonants. e.g. type <kbd>k</kbd> for <samp>क्</samp>, <kbd>ka</kbd> for <samp>क</samp>, <kbd>R</kbd> for <samp>र्‍</samp> (eyelash Ra for Marathi), <kbd>R</kbd> for <samp>ऋ</samp>, <kbd>RR</kbd> for <samp>ॠ</samp>, <kbd>LLi</kbd> for <samp>ऌ</samp>, etc.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
@@ -194,42 +181,68 @@ Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inheren
 </table>
 
 
-<p>The following table shows additional vowel signs used in Devanagari script by other languages. 
-<table class="inputSequences" style="margin-left: auto; margin-right: auto; text-align: center;">
-<tbody>
-<thead>
-<tr>
-<th>ea</th>
-<th>oa</th>
-<th>e</th>
-<th>o</th>
-</tr>
-<tr>
-<th>kea</th>
-<th>koa</th>
-<th>ke</th>
-<th>ko</th>
-</tr>
-</thead>
-<tr>
-<td>ऍ</td>
-<td>ऑ</td>
-<td>ऎ</td>
-<td>ऒ</td>
-</tr>
-<tr>
-<td>ॅ</td>
-<td>ॉ</td>
-<td>ॆ</td>
-<td>ॊ</td>
-</tr>
-<tr>
-<td>कॅ</td>
-<td>कॉ</td>
-<td>कॆ</td>
-<td>कॊ</td>
-</tr>
-</tbody>
+<p>The following table shows additional vowel signs used in Devanagari script by other languages.
+<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+    <tbody>
+    <tr>
+        <td>क</td><td>ka</td><td></td>
+        <td>ख</td><td>Ka/kha</td><td></td>
+        <td>ग</td><td>ga</td><td></td>
+        <td>घ</td><td>Ga/gha</td><td></td>
+        <td>ङ</td><td>~Na</td>
+    </tr>
+    <tr>
+        <td>च</td><td>ca/cha</td><td></td>
+        <td>छ</td><td>Ca/Cha</td><td></td>
+        <td>ज</td><td>ja</td><td></td>
+        <td>झ</td><td>Ja/jha</td><td></td>
+        <td>ञ</td><td>~na</td>
+    </tr>
+    <tr>
+        <td>ट</td><td>Ta</td><td></td>
+        <td>ठ</td><td>Tha</td><td></td>
+        <td>ड</td><td>Da</td><td></td>
+        <td>ढ</td><td>Dha</td><td></td>
+        <td>ण</td><td>Na</td>
+    </tr>
+    <tr>
+        <td>त</td><td>ta</td><td></td>
+        <td>थ</td><td>tha</td><td></td>
+        <td>द</td><td>da</td><td></td>
+        <td>ध</td><td>dha</td><td></td>
+        <td>न</td><td>na</td>
+    </tr>
+    <tr>
+        <td>प</td><td>pa</td><td></td>
+        <td>फ</td><td>pha</td><td></td>
+        <td>ब</td><td>ba</td><td></td>
+        <td>भ</td><td>bha</td><td></td>
+        <td>म</td><td>ma</td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td>य</td><td>ya</td><td></td>
+        <td>र</td><td>ra</td><td></td>
+        <td>ल</td><td>la</td><td></td>
+        <td>ळ</td><td>La</td><td></td>
+        <td>व</td><td>va/wa</td>
+    </tr>
+    <tr>
+        <td>श</td><td>sha</td><td></td>
+        <td>ष</td><td>Sa/Sha</td><td></td>
+        <td>स</td><td>sa</td><td></td>
+        <td>ह</td><td>ha</td><td></td>
+        <td>क्</td><td>k</td>
+    </tr>
+    <tr>
+        <td>क्ष</td><td>xa/kSa</td><td></td>
+        <td>ऱ्</td><td>rH</td>
+        <td>ऴ्</td><td>LH</td>
+        <td>ज़्</td><td>z</td>
+        <td>फ़्</td><td>F</td>
+    </tr>
+    </tbody>
 </table>
 
 <h2>Consonantal Diacritics</h2>
@@ -321,6 +334,10 @@ various dependent vowel signs and consonantal diacritics ं and ः.
 <p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> 
 produces <samp>क्त्‌</samp>. 
 
+<h3>Explicit Virama</h3>
+
+<p>To force an explicit virama at end of word, use <kbd>.h</kbd> e.g. <kbd>k</kbd> 
+<kbd>t</kbd> <kbd>.h</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
 
 <h2>Punctuation</h2>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
