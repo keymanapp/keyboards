@@ -40,10 +40,10 @@ commonly used characters.</p>
 
 <center>
 <h2>Default (unshifted)</h2>
-<p><img src="itrans_devanagari_sanskrit_vedicU_.png" alt="Default (unshifted) state"/>
+<p><img src="itrans_devanagari_sanskrit_pre_vedicU_.png" alt="Default (unshifted) state"/>
 </p>
 <h2>Shift</h2>
-<p><img src="itrans_devanagari_sanskrit_vedicU_S.png" alt="Shift state"/></p>
+<p><img src="itrans_devanagari_sanskrit_pre_vedicU_S.png" alt="Shift state"/></p>
 </center>
 
 <h2>Consonants</h2>
