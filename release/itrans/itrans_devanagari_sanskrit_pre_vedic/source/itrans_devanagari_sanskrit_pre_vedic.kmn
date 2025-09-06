@@ -22,6 +22,7 @@ begin Unicode	>	use(main)
 group(main) using keys
 
 
+"." + " "	>	"। "
 "." + "."	>	"।"	c twice for DANDA
 "।" + "."	>	"॰"	c	DEVANAGARI ABBREVIATION SIGN
 "॰" + "."	>	"…"	c four dots for a HORIZONTAL ELLIPSIS
@@ -118,6 +119,7 @@ c Consonants
 + "l"	>	"ल्"
 + "L"	>	"ळ्"
 + "m"	>	"म्"
+"ज्" + "n"	>	"ज्ञ्"
 + "n"	>	"न्"
 + "N"	>	"ण्"
 + "p"	>	"प्"
@@ -130,16 +132,27 @@ c Consonants
 + "v"	>	"व्"
 + "w"	>	"व्"
 + "x"	>	"क्ष्"
+"क्स्" + "h"	>	"क्ष्"
 + "y"	>	"य्"
 
 + "Y"	>	"य़्"
 + "f"	>	"फ़्"
 + "z"	>	"ज़्"
-"ऋ" + "H"	>	"ऱ्"
+
+c The below are useful for tamil & maNipravALa.
+
+"ऋ" + "H"	>	"ऱ्" 
 "ळ्" + "H"	>	"ऴ्"
+"न्" + "H"	>	"ऩ्"
+"णृ" + "H"	>	"ऩ्ऱ्"
+"नृ" + "H"	>	"ऩ्ऱ्"
+"ॠ" + "H"	>	"ऱ्ऱ्"
+"र्" + "H"	>	"ऱ्"
+
 
 c Nukta with preceding dot
 "." + "k"	>	"क़्" c .k
+"." + "K"	>	"ख़्" c .k
 "क़्" + "h"	>	"ख़्" c .kh
 "." + "g"	>	"ग़्" c .g
 "." + "j"	>	"ज़्" c .j
@@ -148,6 +161,7 @@ c Nukta with preceding dot
 "ड़्" + "h"	>	"ढ़्" c .Dh
 "." + "r"	>	"ऱ्" c .r
 "." + "y"	>	"य़्" c .y
+";" + "n"	>	"ऩ्" c .n
 
 c alternate mapping with ~
 "~" + "n"	>	"ञ्" c ~n
@@ -174,7 +188,9 @@ c special combinations
 "न्" + "c"	>	"nc"
 "nc" + "h"	>	"ञ्च्"	c nch
 "न्" + "j"	>	"ञ्ज्"
-"j" + "n"	>	"ज्ञ्"	c	jn
+"घ्" + "Y"	>	"ज्ञ्"	
+"द्न्" + "y"	>	"ज्ञ्"	
+"ज्" + "n"	>	"ज्ञ्"
 "ओ" + "M" > "ॐ"	c	OM
 
 c Rules for Consonants + Vowel Signs
@@ -190,9 +206,9 @@ store(aPlusMaatraaU) "ा" "े" "ो" "ू" "ृ"
 any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"्" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"्""ळ्ळ्" + "i"	>	 index(Vyanjana,1)"ॢ"
+any(Vyanjana)"्""ळ्ळ्" + "I"	>	 index(Vyanjana,1)"ॣ"
 any(Vyanjana)"ि" + "i"	>	 index(Vyanjana,1)"ी"	 c ii
-any(Vyanjana)"ळ्ळ्" + "i"	>	 index(Vyanjana,1)"ॢ"
-any(Vyanjana)"ळ्ळ्" + "I"	>	 index(Vyanjana,1)"ॣ"
 any(Vyanjana)"ु" + "u"	>	 index(Vyanjana,1)"ू"	 c uu
 any(Vyanjana)"ॆ" + "e"	>	 index(Vyanjana,1)"े"	 c ee
 any(Vyanjana)"ॊ" + "o"	>	 index(Vyanjana,1)"ो"	 c oo
@@ -211,7 +227,5 @@ any(NuktaVyanjana)"़""ॆ" + "e"	>	 index(NuktaVyanjana,1)"़""े"	 c ee
 any(NuktaVyanjana)"़""ॊ" + "o"	>	 index(NuktaVyanjana,1)"़""ो"	 c oo
 any(NuktaVyanjana)"़""ा" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
 any(NuktaVyanjana)"़""ा" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
-
-
 
 c EOF
