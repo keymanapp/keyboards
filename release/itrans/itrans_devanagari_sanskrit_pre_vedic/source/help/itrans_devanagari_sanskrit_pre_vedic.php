@@ -17,20 +17,25 @@ END;
 <h2 id="description">Description</h2>
 <p>Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS) keyboard is Sanskrit devanAgarI input method by a modified version of ITRANS and Harvard-Kyoto transliteration systems with the following special features:</p>
 <ul>
-<li>added support for reconstructed vedic pronunciation ai=ए, Ai=ऐ, au=ओ, Au=औ.</li>
-<li>allow input of hrasva ऎ and ऒ.</li>
+    <li>greater reliance on reconstructed early vedic pronunciation (details and demo <a href="https://vishvAsa.github.io/sanskrit/registers/early-vedic">here</a>) <ul>
+        <li>ai=ए, Ai=ऐ, au=ओ, Au=औ.</li>
+        <li>emphasis on the udAtta accent instead of svarita.</li>
+    </ul>
+    </li>
+    <li>allow input of hrasva ऎ and ऒ.</li>
+    <li>support for common dravidian sounds (useful for maNipravALa).</li>
 </ul>
 <p>You can use all the standard ITRANS key sequences plus key
-sequences such as the below.</p>
+    sequences such as the below.</p>
 <p>nk-&gt;ङ्क्, nkh-&gt;ङ्ख्, ng-&gt;ङ्ग्, ngh-&gt;ङ्घ्
-nch-&gt;ञ्च्, nCh-&gt;ञ्छ्, nc-&gt;ञ्च्, nC-&gt;ञ्छ्, nchh-&gt;ञ्छ्,
-nj-&gt;ञ्ज्, njh-&gt;ञ्झ्, nT-&gt;ण्ट्, nTh-&gt;ण्ठ्, nD-&gt;ण्ड्, nDh-&gt;ण्ढ्
-c-&gt;च्, C-&gt;छ्, z-&gt;श्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&gt;ऋ</p>
-<p>Examples: Type <code>saMskRta</code> for संस्कृत. </p>
+    nch-&gt;ञ्च्, nCh-&gt;ञ्छ्, nc-&gt;ञ्च्, nC-&gt;ञ्छ्, nchh-&gt;ञ्छ्,
+    nj-&gt;ञ्ज्, njh-&gt;ञ्झ्, nT-&gt;ण्ट्, nTh-&gt;ण्ठ्, nD-&gt;ण्ड्, nDh-&gt;ण्ढ्
+    c-&gt;च्, C-&gt;छ्, z-&gt;श्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&gt;ऋ</p>
+<p>Examples: Type <code>saMskRta</code> for संस्कृत.</p>
 <h2 id="details">Details</h2>
 <ul>
-<li>The closely related m17n keyboard <a href="https://github.com/indic-transliteration/m17n-db-indic/blob/master/sa-vedic-itrans.mim">here</a></li>
-<li>The motivation behind additions made to the basic ITRANS scheme is described in <a href="https://sanskrit-coders.github.io/input/optitrans/">optitrans page</a>, along with a tabulated comparison with several other transliteration schemes.</li>
+    <li>The closely related m17n keyboard <a href="https://github.com/indic-transliteration/m17n-db-indic/blob/master/sa-vedic-itrans.mim">here</a></li>
+    <li>The motivation behind some basic additions made to the basic ITRANS scheme is described <a href="https://sanskrit-coders.github.io/input/optitrans/https://sanskrit-coders.github.io/input/optitrans/">here</a>, along with a tabulated comparison with several other transliteration schemes.</li>
 </ul>
 
 <h3>Consonants</h3>
@@ -253,80 +258,81 @@ Another diacritic used in other languages written in Devanagari script is the
 candrabindu/anunāsika ँ <kbd>M</kbd><kbd>M</kbd> (अँ). These consonantal diacritics follow the 
 vowel signs including the implicit `a`. The following table shows consonant `k` followed by 
 various dependent vowel signs and consonantal diacritics ं and ः.
+
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<thead>
-<tr>
-<th></th>
-<th>ka</th>
-<th>kA</th>
-<th>ki</th>
-<th>kI</th>
-<th>ku</th>
-<th>kU</th>
-<th>kR</th>
-<th>kRR</th>
-<th>kLLi</th>
-<th>kLLI</th>
-<th>kai/kE</th>
-<th>kAi</th>
-<th>kau/kO</th>
-<th>kAu</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>M</strong></td>
-<td>कं</td>
-<td>कां</td>
-<td>किं</td>
-<td>कीं</td>
-<td>कुं</td>
-<td>कूं</td>
-<td>कृं</td>
-<td>कॄं</td>
-<td>कॢं</td>
-<td>कॣं</td>
-<td>कें</td>
-<td>कैं</td>
-<td>कों</td>
-<td>कौं</td>
-</tr>
-<tr>
-<td><strong>H</strong></td>
-<td>कः</td>
-<td>काः</td>
-<td>किः</td>
-<td>कीः</td>
-<td>कुः</td>
-<td>कूः</td>
-<td>कृः</td>
-<td>कॄः</td>
-<td>कॢः</td>
-<td>कॣः</td>
-<td>केः</td>
-<td>कैः</td>
-<td>कोः</td>
-<td>कौः</td>
-</tr>
-<tr>
-<td><strong>.N</strong></td>
-<td>कँ</td>
-<td>काँ</td>
-<td>किँ</td>
-<td>कीँ</td>
-<td>कुँ</td>
-<td>कूँ</td>
-<td>कृँ</td>
-<td>कॄँ</td>
-<td>कॢँ</td>
-<td>कॣँ</td>
-<td>केँ</td>
-<td>कैँ</td>
-<td>कोँ</td>
-<td>कौँ</td>
-</tr>
-</tbody>
+    <tbody>
+    <thead>
+    <tr>
+        <th></th>
+        <th>ka</th>
+        <th>kA</th>
+        <th>ki</th>
+        <th>kI</th>
+        <th>ku</th>
+        <th>kU</th>
+        <th>kR</th>
+        <th>kRR</th>
+        <th>kLLi</th>
+        <th>kLLI</th>
+        <th>kai/kE</th>
+        <th>kAi</th>
+        <th>kau/kO</th>
+        <th>kAu</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>M</strong></td>
+        <td>कं</td>
+        <td>कां</td>
+        <td>किं</td>
+        <td>कीं</td>
+        <td>कुं</td>
+        <td>कूं</td>
+        <td>कृं</td>
+        <td>कॄं</td>
+        <td>कॢं</td>
+        <td>कॣं</td>
+        <td>कें</td>
+        <td>कैं</td>
+        <td>कों</td>
+        <td>कौं</td>
+    </tr>
+    <tr>
+        <td><strong>H</strong></td>
+        <td>कः</td>
+        <td>काः</td>
+        <td>किः</td>
+        <td>कीः</td>
+        <td>कुः</td>
+        <td>कूः</td>
+        <td>कृः</td>
+        <td>कॄः</td>
+        <td>कॢः</td>
+        <td>कॣः</td>
+        <td>केः</td>
+        <td>कैः</td>
+        <td>कोः</td>
+        <td>कौः</td>
+    </tr>
+    <tr>
+        <td><strong>.N</strong></td>
+        <td>कँ</td>
+        <td>काँ</td>
+        <td>किँ</td>
+        <td>कीँ</td>
+        <td>कुँ</td>
+        <td>कूँ</td>
+        <td>कृँ</td>
+        <td>कॄँ</td>
+        <td>कॢँ</td>
+        <td>कॣँ</td>
+        <td>केँ</td>
+        <td>कैँ</td>
+        <td>कोँ</td>
+        <td>कौँ</td>
+    </tr>
+    </tbody>
 </table>
 
 <h2>Conjuncts</h2>
