@@ -10,7 +10,7 @@ c 20250810 - Created Initial Version
 store(&VERSION) "10.0" 
 store(&NAME) 'Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© sanskrit-coders'
+store(&COPYRIGHT) '© None'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard with support for Pre-Vedic Sanskrit.'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
 store(&KEYBOARDVERSION) '1.0.0'
@@ -67,7 +67,7 @@ c standalone vowel signs with .
 "ॊ" + "o"	>	"ो"
 "." + "R"	>	"ृ"
 "ृ" + "R"	>	"ॄ" c .RR
-".LL" + "i"	>	"ॢ"
+".L" + "i"	>	"ॢ"
 ".LL" + "I"	>	"ॣ" 
 "ॢ" + "i"	>	"ॣ" c .LLii
 "." + "h"	>	"्"
@@ -132,22 +132,22 @@ c Consonants
 + "x"	>	"क्ष्"
 + "y"	>	"य्"
 
++ "Y"	>	"य़्"
 + "f"	>	"फ़्"
 + "z"	>	"ज़्"
 "ऋ" + "H"	>	"ऱ्"
 "ळ्" + "H"	>	"ऴ्"
 
 c Nukta with preceding dot
-"." + "k"	>	"क़्" c .k
-"क़्" + "h"	>	"ख़्" c .kh
+"." + "k"	>	"क़्" c .k
+"क़्" + "h"	>	"ख़्" c .kh
 "." + "g"	>	"ग़्" c .g
-"." + "j"	>	"ज़्" c .j
+"." + "j"	>	"ज़्" c .j
 "ज़्" + "h"	>	"झ़्" c .jh
 "." + "D"	>	"ड़्" c .D
 "ड़्" + "h"	>	"ढ़्" c .Dh
-"." + "r"	>	"ऱ्" c .r
-"." + "L"	>	"ऴ्" c .L
-"." + "y"	>	"य़्" c .y
+"." + "r"	>	"ऱ्" c .r
+"." + "y"	>	"य़्" c .y
 
 c alternate mapping with ~
 "~" + "n"	>	"ञ्" c ~n
@@ -191,6 +191,8 @@ any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"्" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
 any(Vyanjana)"ि" + "i"	>	 index(Vyanjana,1)"ी"	 c ii
+any(Vyanjana)"ळ्ळ्" + "i"	>	 index(Vyanjana,1)"ॢ"
+any(Vyanjana)"ळ्ळ्" + "I"	>	 index(Vyanjana,1)"ॣ"
 any(Vyanjana)"ु" + "u"	>	 index(Vyanjana,1)"ू"	 c uu
 any(Vyanjana)"ॆ" + "e"	>	 index(Vyanjana,1)"े"	 c ee
 any(Vyanjana)"ॊ" + "o"	>	 index(Vyanjana,1)"ो"	 c oo
@@ -202,6 +204,8 @@ any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"
 any(NuktaVyanjana)"़" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
 any(NuktaVyanjana)"़""्" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"़" index(ViramaMaatraaU,4) 
 any(NuktaVyanjana)"़""ि" + "i"	>	 index(NuktaVyanjana,1)"़""ी"	 c ii
+any(NuktaVyanjana)"़""ळ्ळ्" + "i"	>	 index(NuktaVyanjana,1)"़""ॢ"
+any(NuktaVyanjana)"़""ळ्ळ्" + "I"	>	 index(NuktaVyanjana,1)"़""ॣ"
 any(NuktaVyanjana)"़""ु" + "u"	>	 index(NuktaVyanjana,1)"़""ू"	 c uu
 any(NuktaVyanjana)"़""ॆ" + "e"	>	 index(NuktaVyanjana,1)"़""े"	 c ee
 any(NuktaVyanjana)"़""ॊ" + "o"	>	 index(NuktaVyanjana,1)"़""ो"	 c oo
