@@ -30,7 +30,7 @@ c-&gt;च्, C-&gt;छ्, z-&gt;श्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&
 <h2 id="details">Details</h2>
 <ul>
 <li>The closely related m17n keyboard <a href="https://github.com/indic-transliteration/m17n-db-indic/blob/master/sa-vedic-itrans.mim">here</a></li>
-<li>The motivation behind additions made to the basic ITRANS scheme is described in <a href="https://sanskrit-coders.github.io/input/optitrans/">https://sanskrit-coders.github.io/input/optitrans/</a>, along with a tabulated comparison with several other transliteration schemes.</li>
+<li>The motivation behind additions made to the basic ITRANS scheme is described in <a href="https://sanskrit-coders.github.io/input/optitrans/">optitrans page</a>, along with a tabulated comparison with several other transliteration schemes.</li>
 </ul>
 
 <h3>Consonants</h3>
