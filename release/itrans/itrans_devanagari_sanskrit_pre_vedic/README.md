@@ -3,9 +3,11 @@
 
 Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS) keyboard is Sanskrit devanAgarI input method by a modified version of ITRANS and Harvard-Kyoto transliteration systems with the following special features:
 
-- reliance on reconstructed vedic pronunciation ai=ए, Ai=ऐ, au=ओ, Au=औ.
-- emphasis on the udAtta accent instead of svarita.
+- greater reliance on reconstructed early vedic pronunciation (details and demo [here](https://vishvAsa.github.io/sanskrit/registers/early-vedic)) 
+  - ai=ए, Ai=ऐ, au=ओ, Au=औ.
+  - emphasis on the udAtta accent instead of svarita.
 - allow input of hrasva ऎ and ऒ.
+- support for common dravidian sounds (useful for maNipravALa).
 
 You can use all the standard ITRANS key sequences plus key
 sequences such as the below.
@@ -20,6 +22,5 @@ Examples: Type `saMskRta` for संस्कृत.
 ## Details
 
 - The closely related m17n keyboard [here](https://github.com/indic-transliteration/m17n-db-indic/blob/master/sa-vedic-itrans.mim)
-- The motivation behind some basic additions made to the basic ITRANS scheme is described [here](https://sanskrit-coders.github.io/input/optitrans/), along with a tabulated comparison with several other transliteration schemes.
-
+- The motivation behind some basic additions made to the basic ITRANS scheme is described [here](https://sanskrit-coders.github.io/input/optitrans/https://sanskrit-coders.github.io/input/optitrans/), along with a tabulated comparison with several other transliteration schemes.
 
