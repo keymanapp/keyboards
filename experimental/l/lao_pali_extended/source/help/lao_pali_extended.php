@@ -2,7 +2,7 @@
   $pagename = 'Lao Pali Extended Keyboard Help';
   $pagetitle = $pagename;
     $style = <<<END
-    .lao {font-family: Lanexang Pali25; font-size: 15pt;}
+    .lao {font-family: "Lanexang Pali25"; font-size: 15pt;}
 END;
   
   require_once('header.php');
@@ -24,6 +24,10 @@ END;
 <li><span class="lao">&#x0EA4;</span> U+0EA4 LAO LETTER “RUE” - corresponding to Thai U+0E34 (phonetically /reu/)</li>
 </ul>  
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt'>
-</div>
+  <h2>Desktop Keyboard layout</h2>
+	<h3>Default (unshifted)</h3>
+	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+	<h3>Right ALT (unshifted)</h3>
+	<p><a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a></p>
