@@ -1,7 +1,11 @@
 gff_harari Change History
 ==========================
 
-1.0.6 (09 Sep 2025)
+1.0.7 (05 Sep 2025)
+-------------------
+* Fixes warnings for mismatched index() and any() lengths.
+
+1.0.6 (05 Sep 2025)
 -------------------
 * WashRa fonts are fully retired.
 
