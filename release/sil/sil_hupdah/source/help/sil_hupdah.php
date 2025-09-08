@@ -5,9 +5,9 @@
 
   $pagestyle = <<< END
         table {
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
         }
         th, td {
             border: 1px solid #ddd;
@@ -28,7 +28,7 @@
         .key-combo {
             font-weight: bold;
         }
-    END
+    END;
 ?>
 
 <div>
