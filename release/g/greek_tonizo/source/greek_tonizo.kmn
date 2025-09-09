@@ -4,7 +4,7 @@ store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.4'
+store(&KEYBOARDVERSION) '1.0.5'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -32,7 +32,7 @@ group(PostKeystroke) readonly
     c Okay, let's stay on the numeric layer if we are there already
     store(digit) '0123456789,:/'
     if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
-    if(&newLayer = "") if(&layer = 'alt') any(exo) > context
+    if(&newLayer = "") if(&layer = 'Alt') any(exo) > context
 
     c Same for caps
     store(char) 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫ'
@@ -63,7 +63,7 @@ group(detectStartOfSentence) readonly
     if(&newLayer = 'shift') > layer('shift')
     if(&newLayer = 'numeric') > layer('numeric')
     if(&newLayer = 'caps') > layer('caps')
-    if(&newLayer = 'alt') > layer('alt')
+    if(&newLayer = 'Alt') > layer('Alt')
 
     c else, default layer
     nomatch > layer('default')
@@ -91,8 +91,8 @@ store(dialy)    [SHIFT K_COLON]
 c same for ypoge as longpress in omega alpha and eta 
 store(ypoge)    [SHIFT K_LBRKT] 
 c Attention: There is no makron & vrachy symbol in unicode
-store(makron)   [ALT K_HYPHEN]
-store(vrachy)   [ALT K_LBRKT]
+store(makron)   [Alt K_HYPHEN]
+store(vrachy)   [Alt K_LBRKT]
 c
 c 1.1. Keys lost to accents, punctuation
 c
@@ -132,16 +132,22 @@ store(omicroncaps)[CAPS K_O]
 store(upsiloncaps)[CAPS K_Y] 
 store(omegacaps)  [CAPS K_V] 
 c
-store(alphacs)    [CAPS SHIFT K_A]  c CAPS SHIFT = lower case vowels w/o breathing
-store(epsiloncs)  [CAPS SHIFT K_E] 
-store(etacs)      [CAPS SHIFT K_H] 
-store(iotacs)     [CAPS SHIFT K_I] 
-store(omicroncs)  [CAPS SHIFT K_O] 
-store(upsiloncs)  [CAPS SHIFT K_Y] 
-store(omegacs)    [CAPS SHIFT K_V]  
-c
-store(alphalc)    [RALT K_A]
+c store(alphacs)    [CAPS SHIFT K_A]  c CAPS SHIFT = lower case vowels w/o breathing
+c store(epsiloncs)  [CAPS SHIFT K_E]  c Used in current production version
+c store(etacs)      [CAPS SHIFT K_H] 
+c store(iotacs)     [CAPS SHIFT K_I] 
+c store(omicroncs)  [CAPS SHIFT K_O] 
+c store(upsiloncs)  [CAPS SHIFT K_Y] 
+c store(omegacs)    [CAPS SHIFT K_V]  
 
+store(alphacs)    [CTRL ALT K_A]  c Use Ralt for lower case vowels w/o breathing
+store(epsiloncs)  [CTRL ALT K_E] 
+store(etacs)      [CTRL ALT K_H] 
+store(iotacs)     [CTRL ALT K_I] 
+store(omicroncs)  [CTRL ALT K_O] 
+store(upsiloncs)  [CTRL ALT K_Y] 
+store(omegacs)    [CTRL ALT K_V]  
+c
 c
 c 2 - CONSONANTS: No differentiation between CAPS, NCAPS, SHIFT needed
 c 
@@ -190,51 +196,51 @@ store(&CasedKeys)   [K_A] [K_E] [K_H] [K_I] [K_O] [K_Y] [K_V] \
                     [K_M] [K_N] [K_J] [K_P] [K_S] [K_W] [K_T] \
                     [K_F] [K_X] [K_C] [K_R]
 c
-c 5 - characters involving ALT
+c 5 - characters involving Alt
 c
-store(katokeraia)       [ALT K_COMMA]  c     U+0374
-store(anokeraia)        [ALT K_PERIOD] c     U+0375
-store(euro)             [ALT K_4]     C USE DOLLAR KEY FOR EURO
-store(betavar)          [ALT K_B]     C  U+03D0  (GREEK BETA SYMBOL)
-store(thetavar)         [ALT K_U]     C  U+03D1  (GREEK THETA SYMBOL)
-store(thetavarup)       [ALT K_H]     C  U+03F4  (GREEK CAPITAL THETA SYMBOL)
-store(upsilonvarup)     [ALT K_Y]     C  U+03D2  (GREEK UPSILON WITH HOOK) 
-store(jot)              [ALT K_J]     C  U+03F3 (YOT)
+store(katokeraia)       [Alt K_COMMA]  c     U+0374
+store(anokeraia)        [Alt K_PERIOD] c     U+0375
+store(euro)             [Alt K_4]     C USE DOLLAR KEY FOR EURO
+store(betavar)          [Alt K_B]     C  U+03D0  (GREEK BETA SYMBOL)
+store(thetavar)         [Alt K_U]     C  U+03D1  (GREEK THETA SYMBOL)
+store(thetavarup)       [Alt K_H]     C  U+03F4  (GREEK CAPITAL THETA SYMBOL)
+store(upsilonvarup)     [Alt K_Y]     C  U+03D2  (GREEK UPSILON WITH HOOK) 
+store(jot)              [Alt K_J]     C  U+03F3 (YOT)
 c GREEK UPSILON WITH HOOK AND DIAIRESIS, GREEK UPSILON WITH HOOK AND OXEIA, NOT INCLUDED
-store(phivar)           [ALT K_F]     C  U+03D5  (GREEK PHI SYMBOL)
-store(pivar)            [ALT K_P]     C  U+03D6  (GREEK PI SYMBOL)
-store(kai)              [ALT K_7]     C  U+03D7  (GREEK KAI SYMBOL)
-store(kappavar)         [ALT K_K]     C  U+03F0  (GREEK KAPPA SYMBOL)
-store(rhovar)           [ALT K_R]     C  U+03F1  (GREEK RHO SYMBOL)
-store(rhovarstroke)     [ALT K_T]     C  U+03FC  (GREEK RHO WITH STROKE           
-store(epsilonvar)       [ALT K_E]     C  U+03F5  (GREEK LUNATE EPSILON)
-store(epsilonreversed)  [ALT K_3]     C  U+03F6  (REVERSED LUNATE EPSILON)                       
-store(revlunate)        [ALT K_2]     C  U+037B  (SMALL REVERSED LUNATE)
-store(revlunateup)      [ALT K_1]     C  U+03FD  (GREEK CAPITAL REVERSED LUNATE SIGMA)
-store(revdottedlunate)  [ALT K_5]     C  U+037D  (SMALL REVERSED DOTTED LUNATE)
-store(revdottedlunateup)[ALT K_6]     C  U+03FF  (GREEK CAPITAL REVERSED DOTTED LUNATE SIGMA
-store(koppaarchaicup)   [ALT K_A]     C  U+03D8  (ARCHAIC KOPPA)
-store(koppaarchaic)     [ALT K_Q]     C  U+03D9  (ARCHAIC KOPPA SMALL)
-store(stigmaup)         [ALT K_S]     C  U+03DA  (STIGMA)
-store(stigma)           [ALT K_W]     C  U+03DB  (STIGMA SMALL)
-store(digammaup)        [ALT K_V]     C  U+03DC  (DIGAMMA)
-store(digamma)          [ALT K_G]     C  U+03DD  (DIGAMMA SMALL)
+store(phivar)           [Alt K_F]     C  U+03D5  (GREEK PHI SYMBOL)
+store(pivar)            [Alt K_P]     C  U+03D6  (GREEK PI SYMBOL)
+store(kai)              [Alt K_7]     C  U+03D7  (GREEK KAI SYMBOL)
+store(kappavar)         [Alt K_K]     C  U+03F0  (GREEK KAPPA SYMBOL)
+store(rhovar)           [Alt K_R]     C  U+03F1  (GREEK RHO SYMBOL)
+store(rhovarstroke)     [Alt K_T]     C  U+03FC  (GREEK RHO WITH STROKE           
+store(epsilonvar)       [Alt K_E]     C  U+03F5  (GREEK LUNATE EPSILON)
+store(epsilonreversed)  [Alt K_3]     C  U+03F6  (REVERSED LUNATE EPSILON)                       
+store(revlunate)        [Alt K_2]     C  U+037B  (SMALL REVERSED LUNATE)
+store(revlunateup)      [Alt K_1]     C  U+03FD  (GREEK CAPITAL REVERSED LUNATE SIGMA)
+store(revdottedlunate)  [Alt K_5]     C  U+037D  (SMALL REVERSED DOTTED LUNATE)
+store(revdottedlunateup)[Alt K_6]     C  U+03FF  (GREEK CAPITAL REVERSED DOTTED LUNATE SIGMA
+store(koppaarchaicup)   [Alt K_A]     C  U+03D8  (ARCHAIC KOPPA)
+store(koppaarchaic)     [Alt K_Q]     C  U+03D9  (ARCHAIC KOPPA SMALL)
+store(stigmaup)         [Alt K_S]     C  U+03DA  (STIGMA)
+store(stigma)           [Alt K_W]     C  U+03DB  (STIGMA SMALL)
+store(digammaup)        [Alt K_V]     C  U+03DC  (DIGAMMA)
+store(digamma)          [Alt K_G]     C  U+03DD  (DIGAMMA SMALL)
 store(koppaup)          [U_03DE]      C  U+03DE  (KOPPA)
-store(koppa)            [ALT K_QUOTE] C  U+03DF  (KOPPA SMALL)
-store(sampiup)          [ALT K_L]     C  U+03E0  (SAMPI)
-store(sampi)            [ALT K_O]     C  U+03E1  (SAMPI SMALL)
-store(sigmalunate)      [ALT K_D]     C  U+03F2  (GREEK LUNATE SIGMA)
-store(sigmalunateup)    [ALT K_C]     C  U+03F9  (GREEK CAPITAL LUNATE SIGMA)  
-store(lunatedotted)     [ALT K_8]     C  U+037C  (GREEK SMALL DOTTED LUNATE)
-store(lunatedottedup)   [ALT K_I]     C  U+03FE  (GREEK CAPITAL LUNATE DOTTED)
-store(sanup)            [ALT K_N]     C  U+03FA  (GREEK CAPITAL LETTER SAN )
-store(san)              [ALT K_M]     C  U+03FB  (GREEK SMALL LETTER SAN)                                             
-store(sho)              [ALT K_9]     C  U+03F8  (GREEK LETTER SHO)
-store(shoup)            [ALT K_0]     C  U+03F7  (GREEK CAPITAL LETTER SHO)
+store(koppa)            [Alt K_QUOTE] C  U+03DF  (KOPPA SMALL)
+store(sampiup)          [Alt K_L]     C  U+03E0  (SAMPI)
+store(sampi)            [Alt K_O]     C  U+03E1  (SAMPI SMALL)
+store(sigmalunate)      [Alt K_D]     C  U+03F2  (GREEK LUNATE SIGMA)
+store(sigmalunateup)    [Alt K_C]     C  U+03F9  (GREEK CAPITAL LUNATE SIGMA)  
+store(lunatedotted)     [Alt K_8]     C  U+037C  (GREEK SMALL DOTTED LUNATE)
+store(lunatedottedup)   [Alt K_I]     C  U+03FE  (GREEK CAPITAL LUNATE DOTTED)
+store(sanup)            [Alt K_N]     C  U+03FA  (GREEK CAPITAL LETTER SAN )
+store(san)              [Alt K_M]     C  U+03FB  (GREEK SMALL LETTER SAN)                                             
+store(sho)              [Alt K_9]     C  U+03F8  (GREEK LETTER SHO)
+store(shoup)            [Alt K_0]     C  U+03F7  (GREEK CAPITAL LETTER SHO)
 c
 c The following key combinations produce nothing 
-store(altz)             [ALT K_Z]
-store(altx)             [ALT K_X]
+store(Altz)             [Alt K_Z]
+store(Altx)             [Alt K_X]
 c 
 c  6. Chars on longpress keys in mobile devices
 c
@@ -251,17 +257,18 @@ c
 c   GROUPS OF CHARACTERS NEEDED IN AUTOMATIC BREATHING RULES
 c 
 store(vowels) [NCAPS K_A] [NCAPS K_E] [NCAPS K_H] [NCAPS K_I] [NCAPS K_O] [NCAPS K_Y] [NCAPS K_V] \ 
-              [NCAPS SHIFT K_A] [NCAPS SHIFT K_E] [NCAPS SHIFT K_H] [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] [NCAPS SHIFT K_Y] [NCAPS SHIFT K_V]
+              [NCAPS SHIFT K_A] [NCAPS SHIFT K_E] [NCAPS SHIFT K_H] [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] \
+              [NCAPS SHIFT K_Y] [NCAPS SHIFT K_V] 
 store(fwn) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 \
-           U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
+           U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9 
 c
 store(fwnWithBreathing) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
                         U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68
 c                                                                                                                                   U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68 \
 c
 c Needed for CAPS lock processing (initial vowels w/o breathing)
-store(vowelscaps) outs(alphacaps) outs(epsiloncaps) outs(etacaps) outs(iotacaps) outs(omicroncaps) outs(upsiloncaps) outs(omegacaps) 
-store(fwncaps) U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
+store(vowelscaps) outs(alphacaps) outs(epsiloncaps) outs(etacaps) outs(iotacaps) outs(omicroncaps) outs(upsiloncaps) outs(omegacaps)  
+store(fwncaps) U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9 
 store(vowelscs) outs(alphacs) outs(epsiloncs) outs(etacs) outs(iotacs) outs(omicroncs) outs(upsiloncs) outs(omegacs) 
 store(fwncs) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
 c
@@ -320,7 +327,7 @@ store(exotics) outs(anoteleia)  outs(greekcolon)          \
                outs(sho) outs(shoup)
 c 
 store(exo)     U+0387 U+003A        \
-               U+02BC U+037E        \
+               U+02bc U+037E        \
                U+005C U+007C        \
                U+007B               \
                U+03D7               \
@@ -624,7 +631,7 @@ c
 c Used in rule 4
 store(vowels-oxeia-breath)  U+1F04 U+1F14 U+1F24 U+1F34 U+1F44 U+1F55 U+1F64 \
                             U+1F0C U+1F1C U+1F2C U+1F3C U+1F4C U+1F5D U+1F6C
-store(vowels-perisp-breath) U+1F06 U+1F10 U+1F26 U+1F36 U+1F40 U+1F57 U+1F67 \
+store(vowels-perisp-breath) U+1F06 U+1F10 U+1F26 U+1F36 U+1F40 U+1F57 U+1F66 \
                             U+1F0E U+1F18 U+1F2E U+1F3E U+1F48 U+1F5F U+1F6E
 store(vowels-vareia-breath) U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F53 U+1F62 \
                             U+1F0A U+1F1A U+1F2A U+1F3A U+1F4A U+1F5B U+1F6A
@@ -730,7 +737,20 @@ store(vrachea) [K_E] [SHIFT K_E] [K_O] [SHIFT K_O]
 store(vrachea_codes) U+03B5 U+0395 U+03BF U+039F
 store(perisp_accents) U+1FCF U+1FDF
 any(perisp_accents) + any(vrachea) > index(vrachea_codes,2) index(perisp_accents,1)
-
+c
+c
+c ----- rules for accents to be placed on bare vowels produced by CAPS + SHIFT
+c
+any(tonoi-comb) + any(alphacs) > index(alpha-acc,1)
+any(tonoi-comb) + any(epsiloncs) > index(epsilon-acc,1)
+any(tonoi-comb) + any(etacs) > index(eta-acc,1)
+any(tonoi-comb) + any(iotacs) > index(iota-acc,1)
+any(tonoi-comb) + any(omicroncs) > index(omicron-acc,1)
+any(tonoi-comb) + any(upsiloncs) > index(upsilon-acc,1)
+any(tonoi-comb) + any(omegacs) > index(omega-acc,1)
+c
+c
+c
 any(tonoi-comb) + any(alpha) > index(alpha-acc,1)
 any(tonoi-comb) + any(epsilon) > index(epsilon-acc,1)
 any(tonoi-comb) + any(eta) > index(eta-acc,1)
@@ -812,6 +832,12 @@ any(vowels-arithm-psili) + '.' > index(vowels-arithm,1) U+002E
 'ἰη' + '.' > 'ιη.' 
 'αἰ' + '.' > 'αἰ.'      c exception to the rule
 'ἰ' any(symfwn) + '.' > 'ι' index(symfwn,2) U+002E
+c
+c
+c ------- Production of greek quotes by double keying of < and >
+c
+'<' + '<' > U+00AB
+'>' + '>' > U+00BB
 c
 c
 c ------- FOR ALL OTHER CASES, DEFAULT -------------------
