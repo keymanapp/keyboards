@@ -8,15 +8,15 @@ c sil_ipa - https://github.com/keymanapp/keyboards/tree/master/release/sil/sil_i
 c Version 1.0.0
 c 20250810 - Created Initial Version
 store(&VERSION) "10.0" 
-store(&NAME) 'Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS)'
+store(&NAME) 'Pre-Vedic Sanskrit Devanagari Phonetic (OPTITRANS)'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© Sanskrit Coders'
-store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard with support for Pre-Vedic Sanskrit.'
+store(&MESSAGE) 'A Phonetic Devanagari (OPTITRANS) keyboard with support for Pre-Vedic Sanskrit.'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
 store(&KEYBOARDVERSION) '1.0.0'
-store(&BITMAP) 'itrans_devanagari_sanskrit_pre_vedic.ico'
-store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_pre_vedic.kvks'
-store(&LAYOUTFILE) 'itrans_devanagari_sanskrit_pre_vedic.keyman-touch-layout'
+store(&BITMAP) 'optitrans_devanagari_sanskrit_pre_vedic.ico'
+store(&VISUALKEYBOARD) 'optitrans_devanagari_sanskrit_pre_vedic.kvks'
+store(&LAYOUTFILE) 'optitrans_devanagari_sanskrit_pre_vedic.keyman-touch-layout'
 
 begin Unicode	>	use(main)
 group(main) using keys
@@ -191,7 +191,6 @@ c special combinations
 "न्" + "j"	>	"ञ्ज्"
 "घ्" + "Y"	>	"ज्ञ्"	
 "द्न्" + "y"	>	"ज्ञ्"	
-"ज्" + "n"	>	"ज्ञ्"
 "ओ" + "M" > "ॐ"	c	OM
 
 c Rules for Consonants + Vowel Signs

@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS) ';
-  $pagetitle = 'Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS) ';
+  $pagename = 'Pre-Vedic Sanskrit Devanagari Phonetic (OPTITRANS) ';
+  $pagetitle = 'Pre-Vedic Sanskrit Devanagari Phonetic (OPTITRANS) ';
   $pagestyle = <<<END
     samp {font-family: Siddhanta; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
@@ -15,7 +15,7 @@ END;
 ?>
 
 <h2 id="description">Description</h2>
-<p>Pre-Vedic Sanskrit Devanagari Phonetic (ITRANS) keyboard is Sanskrit devanAgarI input method by a modified version of ITRANS and Harvard-Kyoto transliteration systems with the following special features:</p>
+<p>Pre-Vedic Sanskrit Devanagari Phonetic (OPTITRANS) keyboard is Sanskrit devanAgarI input method by a modified version of OPTITRANS and Harvard-Kyoto transliteration systems with the following special features:</p>
 <ul>
     <li>greater reliance on reconstructed early vedic pronunciation (details and demo <a href="https://vishvAsa.github.io/sanskrit/registers/early-vedic">here</a>) <ul>
         <li>ai=ए, Ai=ऐ, au=ओ, Au=औ.</li>
@@ -107,7 +107,7 @@ END;
 <h2>Vowels and Vowel Signs</h2>
 
 <p>In the following table, independent vowels, dependent vowel signs and vowel signs 
-combined with the consonant 'k' are shown in ITRANS Sanskrit Vedic transliteration 
+combined with the consonant 'k' are shown in OPTITRANS Sanskrit Pre-Vedic transliteration 
 scheme on the top two rows. The third row shows Devanagari Vowels in their independent 
 form on the left and their corresponding dependent form (maatraa or vowel sign) on the 
 right. The fourth row shows the vowel sign combined with the consonant 'k' in 
@@ -140,10 +140,10 @@ Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inheren
 <th>ii</th><th>kI</th>
 <th>u</th><th>ku</th>
 <th>uu</th><th>kU</th>
+<th>R</th><th>kR</th>
 <th>RR</th><th>kRR</th>
-<th>RR^</th><th>kRR^</th>
-<th>LL</th><th>kLL</th>
-<th>LL^</th><th>kLL^</th>
+<th>LLi</th><th>kLLi</th>
+<th>LLI</th><th>kLLI</th>
 <th>e</th><th>ke</th>
 <th>ai</th><th>kai</th>
 <th>o</th><th>ko</th>
