@@ -1,7 +1,6 @@
 <?php 
   $pagename = 'Hupdah (SIL) Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
 
   $pagestyle = <<< END
         table {
@@ -29,6 +28,8 @@
             font-weight: bold;
         }
     END;
+
+    require_once('header.php');
 ?>
 
 <div>
