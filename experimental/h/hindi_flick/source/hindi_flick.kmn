@@ -4,7 +4,7 @@ store(&BITMAP) 'hindi_flick.ico'
 store(&LAYOUTFILE) 'hindi_flick.keyman-touch-layout'
 store(&COPYRIGHT) '© SIL Global'
 store(&MESSAGE) 'A mobile keyboard layout designed for Hindi, utilizing a flick input method.'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 
 begin Unicode > use(main)
@@ -46,14 +46,14 @@ group(checkMatra)
   nul U+0943 > U+090B c ri
   nul U+0949 > U+0911 c aw
   c linebreak, add full svara.
-  U+000A U+094D > U+000A U+0905 c a
-  U+000A U+093E > U+000A U+0905 c a
-  U+000A U+093F > U+000A U+0907 c i
-  U+000A U+0941 > U+000A U+0909 c u
-  U+000A U+0947 > U+000A U+090F c e
-  U+000A U+094B > U+000A U+0913 c o
-  U+000A U+0943 > U+000A U+090B c ri
-  U+000A U+0949 > U+000A U+0911 c aw
+  U+000A U+094D > context use(linebreakFullSvara) c a
+  U+000A U+093E > context use(linebreakFullSvara) c a
+  U+000A U+093F > context use(linebreakFullSvara) c i
+  U+000A U+0941 > context use(linebreakFullSvara) c u
+  U+000A U+0947 > context use(linebreakFullSvara) c e
+  U+000A U+094B > context use(linebreakFullSvara) c o
+  U+000A U+0943 > context use(linebreakFullSvara) c ri
+  U+000A U+0949 > context use(linebreakFullSvara) c aw
   c svara behind, add full svara.
   any(svara) U+094D > context(1)  c a
   any(svara) U+093E > context(1) U+0905 c aa
@@ -446,3 +446,19 @@ c + [K_A] > 'ा' use(checkMatra)
 c + [K_W] > 'ं' use(checkMatra)
 c + [SHIFT K_W] > '़'use(checkMatra)
 c + [SHIFT K_Q] > 'ः' use(checkMatra)
+
+group(linebreakFullSvara)
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+U+094D > U+0905 c a
+U+093E > U+0905 c a
+U+093F > U+0907 c i
+U+0941 > U+0909 c u
+U+0947 > U+090F c e
+U+094B > U+0913 c o
+U+0943 > U+090B c ri
+U+0949 > U+0911 c aw
