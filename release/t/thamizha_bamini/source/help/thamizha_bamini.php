@@ -1,21 +1,20 @@
 <?php /*
   Name:             keyboard_ekwbamuni
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'சுரதா-பாமுனி | Suratha Bamini Keyboard Help';
   $pagetitle = $pagename;
   $style = '.lang2 {font-size:130%}';
@@ -34,10 +33,10 @@
 
 
 <p>
-This keyboard, usually known as the Bamini layout, is designed for the Tamil language. 
-It is originally based on a Tamil typewriter keyboard, and is used particularly in 
-Sri Lanka. The keyboard is designed for users who are familiar with both this layout 
-and the Tamil script, as consonants and vowels are typed in written order, and is 
+This keyboard, usually known as the Bamini layout, is designed for the Tamil language.
+It is originally based on a Tamil typewriter keyboard, and is used particularly in
+Sri Lanka. The keyboard is designed for users who are familiar with both this layout
+and the Tamil script, as consonants and vowels are typed in written order, and is
 intended for use with a normal QWERTY (English) keyboard. </p>
 
 
@@ -48,13 +47,13 @@ intended for use with a normal QWERTY (English) keyboard. </p>
 <div id='osk'>
   <h3>Desktop Keyboard layout</h3>
 </div>
-		
+
 
 <div id='Quickstart'>
 <h3>Quickstart</h3>
 		<!-- Basic instructions designed to get users up and running with typing -->
 
-<p>This keyboard layout was designed for ease of typing.  Characters are arranged on the keyboard according to how frequently they are used.  Grantha letters, which are used for typing Sanskrit, are typed using the <span class='keys'>[S*]</span> key. 
+<p>This keyboard layout was designed for ease of typing.  Characters are arranged on the keyboard according to how frequently they are used.  Grantha letters, which are used for typing Sanskrit, are typed using the <span class='keys'>[S*]</span> key.
 Short and long vowels appear next to each other.  For example, <span class='highlightExample'>ஆ</span> (<span class='keys'>[Sm]</span> key) is above <span class='highlightExample'>அ</span> (<span class='keys'>m;</span> key) , and <span class='highlightExample'>ஓ</span> (<span class='keys'>[Sx]</span> key) is beside <span class='highlightExample'>ஒ</span> (<span class='keys'>x</span> key).  Characters which normally appear together are also close together on the keyboard.</p>
 
 <p>Most of the characters used in Tamil are combinations of consonants and vowels, and these do not appear on the keyboard. Combined consonant-vowel characters are entered by typing the consonant, then the vowel.  To enter <span class='highlightExample'>ஙா</span>, which is a combination of <span class='highlightExample'>ங</span> and <span class='highlightExample'>ஆ</span>,
@@ -91,7 +90,7 @@ Short and long vowels appear next to each other.  For example, <span class='high
 <div id="Documentation">
 <h3>Full Documentation</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>This keyboard uses a consonant-vowel order for text input, so the consonant character is always typed before the vowel, regardless of where (relative to the consonant) the vowel marker symbol appears.  As syllables are typed, the characters entered are automatically converted to the appropriate consonant-vowel combinant.  While only the combinant characters are displayed on screen, the consonant and vowel are both stored, so that pressing Backspace once after a combinant deletes only the vowel component.  This means it is necessary to press Backspace twice to delete a combinant character.  However, pressing the Delete key with the cursor in front of a combinant character removes the whole character with one keystroke.</p>
 
 <p>The full keyboard layout consists of the twelve vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ</span>, the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, the five Grantha consonants <span class='lang2'>ஸ ஷ ஜ ஹ க்ஷ</span>, the SRii consonant <span class='lang2'>ஸ்ரீ</span>, and the Pulli <span class='lang2'>்</span> and Aytham <span class='lang2'>ஃ</span> marks.</p>
@@ -637,7 +636,7 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
 		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
 		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
-	</tr> 
+	</tr>
 	</table>
 </div>
 
