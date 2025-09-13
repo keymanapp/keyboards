@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toaq</title>
     <style type="text/css">
+        * {
+            --key-border-radius: 5px;
+            --key-border-width: 1px;
+        }
+
         body {
             font-family: "Tahoma", sans-serif;
             font-size: 10pt;
@@ -28,7 +33,70 @@
             background-color: #f8f9fa;
             padding: 5px;
             border: 1px solid #000;
-            border-collapse: collapse
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .layout {
+            border-collapse: separate;
+            border-radius: var(--key-border-radius);
+            border-spacing: 0;
+        }
+
+        .layout td {
+            border-width: 0px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .layout .t {
+            border-top-width: var(--key-border-width);
+            padding-bottom: 2px;
+        }
+
+        .layout .b {
+            border-bottom-width: var(--key-border-width);
+            padding-top: 2px;
+        }
+
+        .layout .l,
+        .layout .m {
+            border-left-width: var(--key-border-width);
+            padding-right: 2px;
+        }
+
+        .layout .altgr {
+            color: blue;
+        }
+
+        .layout .r,
+        .layout .m {
+            border-right-width: 1px;
+            padding-left: 2px;
+        }
+
+        .layout .m {
+            text-align: center;
+        }
+
+        .layout .t.l,
+        .layout .t.m {
+            border-top-left-radius: var(--key-border-radius);
+        }
+
+        .layout .t.r,
+        .layout .t.m {
+            border-top-right-radius: var(--key-border-radius);
+        }
+
+        .layout .b.l,
+        .layout .b.m {
+            border-bottom-left-radius: var(--key-border-radius);
+        }
+
+        .layout .b.r,
+        .layout .b.m {
+            border-bottom-right-radius: var(--key-border-radius);
         }
     </style>
 </head>
@@ -39,10 +107,263 @@
 
     <p>A keyboard layout for typing Toaq with the Latin script.</p>
 
-    <h2>Desktop</h2>
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#desktop">Desktop</a></li>
+        <li><a href="#mobile">Mobile</a></li>
+    </ul>
+    <h2 id="desktop">Desktop</h2>
+
+    <table class="layout">
+        <tbody>
+            <tr>
+                <td class="t l" colspan="2">~</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">!</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">#</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">@</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">$</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">%</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">^</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">&</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">*</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">(</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">)</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">-</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">=</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t m" colspan="8"></td>
+            </tr>
+            <tr>
+                <td class="b l" colspan="2">`</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">1</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">2</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">3</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">4</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">5</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">6</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">7</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">8</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">9</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">0</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">-</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">=</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b m" colspan="8">Backspace</td>
+            </tr>
+
+            <tr>
+                <td class="t m" colspan="6"></td>
+                <td class="t l" colspan="2">Q</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">Ꝡ</td>
+                <td class="t r altgr" colspan="2">W</td>
+                <td class="t l" colspan="2">E</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">R</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">T</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">Y</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">U</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">I</td>
+                <td class="t r altgr" colspan="2">İ</td>
+                <td class="t l" colspan="2">O</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">P</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">‹</td>
+                <td class="t r altgr" colspan="2">{</td>
+                <td class="t l" colspan="2">›</td>
+                <td class="t r altgr" colspan="2">}</td>
+                <td class="t l" colspan="2">|</td>
+                <td class="t r altgr" colspan="2">◌̃</td>
+            </tr>
+            <tr>
+                <td class="b m" colspan="6">Tab</td>
+                <td class="b l" colspan="2">q</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">ꝡ</td>
+                <td class="b r altgr" colspan="2">w</td>
+                <td class="b l" colspan="2">e</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">r</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">t</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">y</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">u</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">ı</td>
+                <td class="b r altgr" colspan="2">i</td>
+                <td class="b l" colspan="2">o</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">p</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">«</td>
+                <td class="b r altgr" colspan="2">[</td>
+                <td class="b l" colspan="2">»</td>
+                <td class="b r altgr" colspan="2">]</td>
+                <td class="b l" colspan="2">\</td>
+                <td class="b r altgr" colspan="2">◌̌</td>
+            </tr>
+
+            <tr>
+                <td class="t m" colspan="7"></td>
+                <td class="t l" colspan="2">A</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">S</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">D</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">F</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">G</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">H</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">J</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">K</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">L</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">◌̉</td>
+                <td class="t r altgr" colspan="2">:</td>
+                <td class="t l" colspan="2">◌̈</td>
+                <td class="t r altgr" colspan="2">"</td>
+                <td class="t m" colspan="9"></td>
+            </tr>
+            <tr>
+                <td class="b m" colspan="7">Caps</td>
+                <td class="b l" colspan="2">a</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">s</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">d</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">f</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">g</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">h</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">j</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">k</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">l</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">◌̂</td>
+                <td class="b r altgr" colspan="2">;</td>
+                <td class="b l" colspan="2">◌́</td>
+                <td class="b r altgr" colspan="2">'</td>
+                <td class="b m" colspan="9">Enter</td>
+            </tr>
+
+            <tr>
+                <td class="t m" colspan="5"></td>
+                <td class="t l" colspan="2">|</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">Z</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">◌̄</td>
+                <td class="t r altgr" colspan="2">X</td>
+                <td class="t l" colspan="2">C</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">◌̀</td>
+                <td class="t r altgr" colspan="2">V</td>
+                <td class="t l" colspan="2">B</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">N</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">M</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">&lt;</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">&gt;</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t l" colspan="2">?</td>
+                <td class="t r altgr" colspan="2"></td>
+                <td class="t m" colspan="11"></td>
+            </tr>
+            <tr>
+                <td class="b m" colspan="5">Shift</td>
+                <td class="b l" colspan="2">\</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">z</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">’</td>
+                <td class="b r altgr" colspan="2">x</td>
+                <td class="b l" colspan="2">c</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">◌̣</td>
+                <td class="b r altgr" colspan="2">v</td>
+                <td class="b l" colspan="2">b</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">n</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">m</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">,</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">.</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b l" colspan="2">/</td>
+                <td class="b r altgr" colspan="2"></td>
+                <td class="b m" colspan="11">Shift</td>
+            </tr>
+
+            <tr>
+                <td class="t m" colspan="4"></td>
+                <td class="t m" colspan="4"></td>
+                <td class="t m" colspan="4"></td>
+                <td class="t m" colspan="4"></td>
+                <td class="t m" colspan="34"></td>
+                <td class="t m" colspan="4"></td>
+                <td class="t m" colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="b m" colspan="4">Ctrl</td>
+                <td class="b m" colspan="4">Fn</td>
+                <td class="b m" colspan="4">Win</td>
+                <td class="b m" colspan="4">Alt</td>
+                <td class="b m" colspan="34">Space</td>
+                <td class="b m" colspan="4"><span style="color:blue;">AltGr</span></td>
+                <td class="b m" colspan="4">Ctrl</td>
+            </tr>
+        </tbody>
+    </table>
 
     <table class="wikitable">
         <tbody>
+            <caption>Cheatsheet (based on US QWERTY)</caption>
             <tr>
                 <th></th>
                 <th>Without underdot</th>
@@ -202,10 +523,13 @@
         macrons and hooks above.
     </p>
 
-    <h2>Mobile</h2>
+    <h2 id="mobile">Mobile</h2>
+
+    The mobile layout is similar to QWERTY mobile keyboards with a few differences.
 
     <table class="wikitable">
         <tbody>
+            <caption>Cheatsheet</caption>
             <tr>
                 <th>
                 </th>
