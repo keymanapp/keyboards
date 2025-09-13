@@ -1,0 +1,84 @@
+﻿c Spanish Telex keyboard for Spanish
+store(&VERSION) '15.0'
+store(&NAME) 'spanish telex'
+store(&COPYRIGHT) 'Copyright © Cathaylab'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'spanish_telex.ico'
+store(&VISUALKEYBOARD) 'spanish_telex.kvks'
+store(&LAYOUTFILE) 'spanish_telex.keyman-touch-layout'
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+any(sentencePunctuation) ' ' > layer('shift')
+any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+
+'a' + 'a' > 'á'
+'e' + 'e' > 'é'
+'i' + 'i' > 'í'
+'o' + 'o' > 'ó'
+'u' + 'u' > 'ú'
+'w' + 'w' > 'ü'
+'n' + 'n' > 'ñ'
+'A' + 'A' > 'Á'
+'E' + 'E' > 'É'
+'I' + 'I' > 'Í'
+'O' + 'O' > 'Ó'
+'U' + 'U' > 'Ú'
+'W' + 'W' > 'Ü'
+'N' + 'N' > 'Ñ'
+'A' + 'a' > 'Á'
+'E' + 'e' > 'É'
+'I' + 'i' > 'Í'
+'O' + 'o' > 'Ó'
+'U' + 'u' > 'Ú'
+'W' + 'w' > 'Ü'
+'N' + 'n' > 'Ñ'
+'á' + 'a' > 'aa'
+'é' + 'e' > 'ee'
+'í' + 'i' > 'ii'
+'ó' + 'o' > 'oo'
+'ú' + 'u' > 'uu'
+'ü' + 'w' > 'ww'
+'ñ' + 'n' > 'nn'
+'Á' + 'A' > 'AA'
+'É' + 'E' > 'EE'
+'Í' + 'I' > 'II'
+'Ó' + 'O' > 'OO'
+'Ú' + 'U' > 'UU'
+'Ü' + 'W' > 'WW'
+'Ñ' + 'N' > 'NN'
+'Á' + 'a' > 'Aa'
+'É' + 'e' > 'Ee'
+'Í' + 'i' > 'Ii'
+'Ó' + 'o' > 'Oo'
+'Ú' + 'u' > 'Uu'
+'Ü' + 'w' > 'Ww'
+'Ñ' + 'n' > 'Nn'
+
+'?' + '?' > '¿' 
+'!' + '!' > '¡'
+'¿' + '?' > '??' 
+'¡' + '!' > '!!' 
