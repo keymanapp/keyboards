@@ -1,0 +1,590 @@
+﻿c Version 3.1 - Add toakao words into lexical model
+c Version 3.0 - Lexical model
+c Version 2.0 - Add mobile layout
+c Version 1.1 - Koamtoaq compat + y-underdot for convenience
+c Version 1.0 - initial version
+store(&Version) "17.0"
+store(&NAME) 'Toaqzu (Latin) QWERTY'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'toaq.kvks'
+store(&COPYRIGHT) 'Copyright © Mí Inhaqhıka'
+store(&KEYBOARDVERSION) '3.1'
+store(&LAYOUTFILE) 'toaq.keyman-touch-layout'
+store(&BITMAP) 'toaq.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+0029
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0040
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+0023
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+0024
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+0025
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+005e
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+0026
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+002a
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0028
+
++ [NCAPS K_A] > U+0061
++ [CAPS K_A] > U+0041
++ [NCAPS SHIFT K_A] > U+0041
++ [CAPS SHIFT K_A] > U+0061
+
++ [NCAPS K_B] > U+0062
++ [CAPS K_B] > U+0042
++ [NCAPS SHIFT K_B] > U+0042
++ [CAPS SHIFT K_B] > U+0062
+
++ [NCAPS K_C] > U+0063
++ [CAPS K_C] > U+0043
++ [NCAPS SHIFT K_C] > U+0043
++ [CAPS SHIFT K_C] > U+0063
+
++ [NCAPS K_D] > U+0064
++ [CAPS K_D] > U+0044
++ [NCAPS SHIFT K_D] > U+0044
++ [CAPS SHIFT K_D] > U+0064
+
++ [NCAPS K_E] > U+0065
++ [CAPS K_E] > U+0045
++ [NCAPS SHIFT K_E] > U+0045
++ [CAPS SHIFT K_E] > U+0065
+
++ [NCAPS K_F] > U+0066
++ [CAPS K_F] > U+0046
++ [NCAPS SHIFT K_F] > U+0046
++ [CAPS SHIFT K_F] > U+0066
+
++ [NCAPS K_G] > U+0067
++ [CAPS K_G] > U+0047
++ [NCAPS SHIFT K_G] > U+0047
++ [CAPS SHIFT K_G] > U+0067
+
++ [NCAPS K_H] > U+0068
++ [CAPS K_H] > U+0048
++ [NCAPS SHIFT K_H] > U+0048
++ [CAPS SHIFT K_H] > U+0068
+
++ [NCAPS K_I] > U+0131
++ [CAPS K_I] > U+0049
++ [NCAPS SHIFT K_I] > U+0049
++ [CAPS SHIFT K_I] > U+0131
++ [RALT NCAPS K_I] > U+0069
++ [RALT CAPS K_I] > U+0130
++ [RALT NCAPS SHIFT K_I] > U+0130
++ [RALT CAPS SHIFT K_I] > U+0069
+
++ [NCAPS K_J] > U+006a
++ [CAPS K_J] > U+004a
++ [NCAPS SHIFT K_J] > U+004a
++ [CAPS SHIFT K_J] > U+006a
+
++ [NCAPS K_K] > U+006b
++ [CAPS K_K] > U+004b
++ [NCAPS SHIFT K_K] > U+004b
++ [CAPS SHIFT K_K] > U+006b
+
++ [NCAPS K_L] > U+006c
++ [CAPS K_L] > U+004c
++ [NCAPS SHIFT K_L] > U+004c
++ [CAPS SHIFT K_L] > U+006c
+
++ [NCAPS K_M] > U+006d
++ [CAPS K_M] > U+004d
++ [NCAPS SHIFT K_M] > U+004d
++ [CAPS SHIFT K_M] > U+006d
+
++ [NCAPS K_N] > U+006e
++ [CAPS K_N] > U+004e
++ [NCAPS SHIFT K_N] > U+004e
++ [CAPS SHIFT K_N] > U+006e
+
++ [NCAPS K_O] > U+006f
++ [CAPS K_O] > U+004f
++ [NCAPS SHIFT K_O] > U+004f
++ [CAPS SHIFT K_O] > U+006f
+
++ [NCAPS K_P] > U+0070
++ [CAPS K_P] > U+0050
++ [NCAPS SHIFT K_P] > U+0050
++ [CAPS SHIFT K_P] > U+0070
+
++ [NCAPS K_Q] > U+0071
++ [CAPS K_Q] > U+0051
++ [NCAPS SHIFT K_Q] > U+0051
++ [CAPS SHIFT K_Q] > U+0071
+
++ [NCAPS K_R] > U+0072
++ [CAPS K_R] > U+0052
++ [NCAPS SHIFT K_R] > U+0052
++ [CAPS SHIFT K_R] > U+0072
+
++ [NCAPS K_S] > U+0073
++ [CAPS K_S] > U+0053
++ [NCAPS SHIFT K_S] > U+0053
++ [CAPS SHIFT K_S] > U+0073
+
++ [NCAPS K_T] > U+0074
++ [CAPS K_T] > U+0054
++ [NCAPS SHIFT K_T] > U+0054
++ [CAPS SHIFT K_T] > U+0074
+
++ [NCAPS K_U] > U+0075
++ [CAPS K_U] > U+0055
++ [NCAPS SHIFT K_U] > U+0055
++ [CAPS SHIFT K_U] > U+0075
+
++ [NCAPS K_V] > "." dk(dot)
++ [CAPS K_V] > "." dk(dot)
++ [NCAPS SHIFT K_V] > "`" dk(grave)
++ [CAPS SHIFT K_V] > "`" dk(grave)
++ [RALT NCAPS K_V] > U+0076
++ [RALT CAPS K_V] > U+0056
++ [RALT NCAPS SHIFT K_V] > U+0056
++ [RALT CAPS SHIFT K_V] > U+0076
+
++ [NCAPS K_W] > U+A761
++ [CAPS K_W] > U+A760
++ [NCAPS SHIFT K_W] > U+A760
++ [CAPS SHIFT K_W] > U+A761
++ [RALT NCAPS K_W] > U+0077
++ [RALT CAPS K_W] > U+0057
++ [RALT NCAPS SHIFT K_W] > U+0057
++ [RALT CAPS SHIFT K_W] > U+0077
+
++ [NCAPS K_X] > U+2019
++ [CAPS K_X] > U+2019
++ [NCAPS SHIFT K_X] > "ˉ" dk(macron)
++ [CAPS SHIFT K_X] > "ˉ" dk(macron)
++ [RALT NCAPS K_X] > U+0078
++ [RALT CAPS K_X] > U+0058
++ [RALT NCAPS SHIFT K_X] > U+0058
++ [RALT CAPS SHIFT K_X] > U+0078
+
++ [NCAPS K_Y] > U+0079
++ [CAPS K_Y] > U+0059
++ [NCAPS SHIFT K_Y] > U+0059
++ [CAPS SHIFT K_Y] > U+0079
+
++ [NCAPS K_Z] > U+007a
++ [CAPS K_Z] > U+005a
++ [NCAPS SHIFT K_Z] > U+005a
++ [CAPS SHIFT K_Z] > U+007a
+
++ [K_COLON] > "ˆ" dk(tone4)
++ [SHIFT K_COLON] > "ˀ" dk(hookabove)
++ [RALT K_COLON] > U+003b
++ [RALT SHIFT K_COLON] > U+003a
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [K_COMMA] > U+002C
++ [SHIFT K_COMMA] > U+003c
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+003e
+
++ [K_SLASH] > U+002f
++ [SHIFT K_SLASH] > U+003f
+
++ [K_BKQUOTE] > U+0060
++ [SHIFT K_BKQUOTE] > U+007e
+
++ [K_LBRKT] > U+00AB
++ [SHIFT K_LBRKT] > U+2039
++ [RALT K_LBRKT] > U+005b
++ [RALT SHIFT K_LBRKT] > U+007b
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+007c
++ [RALT K_BKSLASH] > "ˇ" dk(caron)
++ [RALT SHIFT K_BKSLASH] > "˜" dk(tilde)
+
++ [K_RBRKT] > U+00BB
++ [SHIFT K_RBRKT] > U+203A
++ [RALT K_RBRKT] > U+005d
++ [RALT SHIFT K_RBRKT] > U+007d
+
++ [K_QUOTE] > "ˊ" dk(tone2)
++ [SHIFT K_QUOTE] > "¨" dk(tone3)
++ [RALT K_QUOTE] > U+0027
++ [RALT SHIFT K_QUOTE] > U+0022
+
++ [K_oE2] > U+005c
++ [SHIFT K_oE2] > U+007c
+
+store(&CasedKeys) [K_A] [K_E] [K_I] [K_O] [K_U] [K_V] [K_Y]
+
+c No accent (tone 1), with underdot
+"." dk(dot) + "a" > U+1EA1
+"." dk(dot) + "e" > U+1EB9
+"." dk(dot) + "i" > U+0131 U+0323
+"." dk(dot) + "o" > U+1ECD
+"." dk(dot) + "u" > U+1EE5
+"." dk(dot) + "y" > U+1EF5
+"." dk(dot) + "A" > U+1EA0
+"." dk(dot) + "E" > U+1EB8
+"." dk(dot) + "I" > U+1ECA
+"." dk(dot) + "O" > U+1ECC
+"." dk(dot) + "U" > U+1EE4
+"." dk(dot) + "Y" > U+1EF4
+"a" + "v" > U+1EA1
+"e" + "v" > U+1EB9
+"ı" + "v" > U+0131 U+0323
+"o" + "v" > U+1ECD
+"u" + "v" > U+1EE5
+"y" + "v" > U+1EF5
+"A" + "v" > U+1EA0
+"E" + "v" > U+1EB8
+"I" + "v" > U+1ECA
+"O" + "v" > U+1ECC
+"U" + "v" > U+1EE4
+"Y" + "v" > U+1EF4
+
+c Acute accent (tone 2)
+"ˊ" dk(tone2) + " " > U+0027
+"ˊ" dk(tone2) + "'" > U+0027
+"ˊ" dk(tone2) + "a" > U+00E1
+"ˊ" dk(tone2) + "e" > U+00E9
+"ˊ" dk(tone2) + "i" > U+00ED
+"ˊ" dk(tone2) + "o" > U+00F3
+"ˊ" dk(tone2) + "u" > U+00FA
+"ˊ" dk(tone2) + "y" > U+00FD
+"ˊ" dk(tone2) + "A" > U+00C1
+"ˊ" dk(tone2) + "E" > U+00C9
+"ˊ" dk(tone2) + "I" > U+00CD
+"ˊ" dk(tone2) + "O" > U+00D3
+"ˊ" dk(tone2) + "U" > U+00DA
+"ˊ" dk(tone2) + "Y" > U+00DD
+c With underdot
+"ˊ" dk(tone2) "." dk(dot) + "a"   > U+00E1 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "e"   > U+00E9 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "i"   > U+00ED U+0323
+"ˊ" dk(tone2) "." dk(dot) + "o"   > U+00F3 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "u"   > U+00FA U+0323
+"ˊ" dk(tone2) "." dk(dot) + "y"   > U+00FD U+0323
+"ˊ" dk(tone2) "." dk(dot) + "A"   > U+00C1 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "E"   > U+00C9 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "I"   > U+00CD U+0323
+"ˊ" dk(tone2) "." dk(dot) + "O"   > U+00D3 U+0323
+"ˊ" dk(tone2) "." dk(dot) + "U"   > U+00DA U+0323
+"ˊ" dk(tone2) "." dk(dot) + "Y"   > U+00DD U+0323
+"." dk(dot) "ˊ" dk(tone2) + "a"   > U+00E1 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "e"   > U+00E9 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "i"   > U+00ED U+0323
+"." dk(dot) "ˊ" dk(tone2) + "o"   > U+00F3 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "u"   > U+00FA U+0323
+"." dk(dot) "ˊ" dk(tone2) + "y"   > U+00FD U+0323
+"." dk(dot) "ˊ" dk(tone2) + "A"   > U+00C1 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "E"   > U+00C9 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "I"   > U+00CD U+0323
+"." dk(dot) "ˊ" dk(tone2) + "O"   > U+00D3 U+0323
+"." dk(dot) "ˊ" dk(tone2) + "U"   > U+00DA U+0323
+"." dk(dot) "ˊ" dk(tone2) + "Y"   > U+00DD U+0323
+U+00E1 + "v" > U+00E1 U+0323
+U+00E9 + "v" > U+00E9 U+0323
+U+00ED + "v" > U+00ED U+0323
+U+00F3 + "v" > U+00F3 U+0323
+U+00FA + "v" > U+00FA U+0323
+U+00FD + "v" > U+00FD U+0323
+U+00C1 + "v" > U+00C1 U+0323
+U+00C9 + "v" > U+00C9 U+0323
+U+00CD + "v" > U+00CD U+0323
+U+00D3 + "v" > U+00D3 U+0323
+U+00DA + "v" > U+00DA U+0323
+U+00DD + "v" > U+00DD U+0323
+
+
+c Diaeresis accent (tone 3)
+"¨" dk(tone3) + " " > U+0022
+"¨" dk(tone3) + '"' > U+0022
+"¨" dk(tone3) + "a" > U+00E4
+"¨" dk(tone3) + "e" > U+00EB
+"¨" dk(tone3) + "i" > U+00EF
+"¨" dk(tone3) + "o" > U+00F6
+"¨" dk(tone3) + "u" > U+00FC
+"¨" dk(tone3) + "y" > U+00FF
+"¨" dk(tone3) + "A" > U+00C4
+"¨" dk(tone3) + "E" > U+00CB
+"¨" dk(tone3) + "I" > U+00CF
+"¨" dk(tone3) + "O" > U+00D6
+"¨" dk(tone3) + "U" > U+00DC
+"¨" dk(tone3) + "Y" > U+0178
+c With underdot
+"¨" dk(tone3) "." dk(dot) + "a"  > U+00E4 U+0323
+"¨" dk(tone3) "." dk(dot) + "e"  > U+00EB U+0323
+"¨" dk(tone3) "." dk(dot) + "i"  > U+00EF U+0323
+"¨" dk(tone3) "." dk(dot) + "o"  > U+00F6 U+0323
+"¨" dk(tone3) "." dk(dot) + "u"  > U+00FC U+0323
+"¨" dk(tone3) "." dk(dot) + "y"  > U+00FF U+0323
+"¨" dk(tone3) "." dk(dot) + "A"  > U+00C4 U+0323
+"¨" dk(tone3) "." dk(dot) + "E"  > U+00CB U+0323
+"¨" dk(tone3) "." dk(dot) + "I"  > U+00CF U+0323
+"¨" dk(tone3) "." dk(dot) + "O"  > U+00D6 U+0323
+"¨" dk(tone3) "." dk(dot) + "U"  > U+00DC U+0323
+"¨" dk(tone3) "." dk(dot) + "Y"  > U+0178 U+0323
+"." dk(dot) "¨" dk(tone3) + "a"  > U+00E4 U+0323
+"." dk(dot) "¨" dk(tone3) + "e"  > U+00EB U+0323
+"." dk(dot) "¨" dk(tone3) + "i"  > U+00EF U+0323
+"." dk(dot) "¨" dk(tone3) + "o"  > U+00F6 U+0323
+"." dk(dot) "¨" dk(tone3) + "u"  > U+00FC U+0323
+"." dk(dot) "¨" dk(tone3) + "y"  > U+00FF U+0323
+"." dk(dot) "¨" dk(tone3) + "A"  > U+00C4 U+0323
+"." dk(dot) "¨" dk(tone3) + "E"  > U+00CB U+0323
+"." dk(dot) "¨" dk(tone3) + "I"  > U+00CF U+0323
+"." dk(dot) "¨" dk(tone3) + "O"  > U+00D6 U+0323
+"." dk(dot) "¨" dk(tone3) + "U"  > U+00DC U+0323
+"." dk(dot) "¨" dk(tone3) + "Y"  > U+0178 U+0323
+U+00E4 + "v" > U+00E4 U+0323
+U+00EB + "v" > U+00EB U+0323
+U+00EF + "v" > U+00EF U+0323
+U+00F6 + "v" > U+00F6 U+0323
+U+00FC + "v" > U+00FC U+0323
+U+00FF + "v" > U+00FF U+0323
+U+00C4 + "v" > U+00C4 U+0323
+U+00CB + "v" > U+00CB U+0323
+U+00CF + "v" > U+00CF U+0323
+U+00D6 + "v" > U+00D6 U+0323
+U+00DC + "v" > U+00DC U+0323
+U+0178 + "v" > U+0178 U+0323
+
+
+c Circumflex accent (tone 4)
+"ˆ" dk(tone4) + " " > U+003B
+"ˆ" dk(tone4) + ";" > U+003B
+"ˆ" dk(tone4) + "a" > U+00E2
+"ˆ" dk(tone4) + "e" > U+00EA
+"ˆ" dk(tone4) + "i" > U+00EE
+"ˆ" dk(tone4) + "o" > U+00F4
+"ˆ" dk(tone4) + "u" > U+00FB
+"ˆ" dk(tone4) + "y" > U+0177
+"ˆ" dk(tone4) + "A" > U+00C2
+"ˆ" dk(tone4) + "E" > U+00CA
+"ˆ" dk(tone4) + "I" > U+00CE
+"ˆ" dk(tone4) + "O" > U+00D4
+"ˆ" dk(tone4) + "U" > U+00DB
+"ˆ" dk(tone4) + "Y" > U+0176
+c With underdot
+"ˆ" dk(tone4) "." dk(dot) + "a"   > U+00E2 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "e"   > U+00EA U+0323
+"ˆ" dk(tone4) "." dk(dot) + "i"   > U+00EE U+0323
+"ˆ" dk(tone4) "." dk(dot) + "o"   > U+00F4 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "u"   > U+00FB U+0323
+"ˆ" dk(tone4) "." dk(dot) + "y"   > U+0177 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "A"   > U+00C2 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "E"   > U+00CA U+0323
+"ˆ" dk(tone4) "." dk(dot) + "I"   > U+00CE U+0323
+"ˆ" dk(tone4) "." dk(dot) + "O"   > U+00D4 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "U"   > U+00E2 U+0323
+"ˆ" dk(tone4) "." dk(dot) + "Y"   > U+0176 U+0323
+"." dk(dot) "ˆ" dk(tone4) + "a"   > U+00EA U+0323
+"." dk(dot) "ˆ" dk(tone4) + "e"   > U+00EE U+0323
+"." dk(dot) "ˆ" dk(tone4) + "i"   > U+00F4 U+0323
+"." dk(dot) "ˆ" dk(tone4) + "o"   > U+00FB U+0323
+"." dk(dot) "ˆ" dk(tone4) + "u"   > U+00C2 U+0323
+"." dk(dot) "ˆ" dk(tone4) + "y"   > U+0177 U+0323
+"." dk(dot) "ˆ" dk(tone4) + "A"   > U+00CA U+0323
+"." dk(dot) "ˆ" dk(tone4) + "E"   > U+00CE U+0323
+"." dk(dot) "ˆ" dk(tone4) + "I"   > U+00D4 U+0323
+"." dk(dot) "ˆ" dk(tone4) + "O"   > U+00DB U+0323
+"." dk(dot) "ˆ" dk(tone4) + "U"   > U+00DA U+0323
+"." dk(dot) "ˆ" dk(tone4) + "Y"   > U+0176 U+0323
+U+00E2 + "v" > U+00E2 U+0323
+U+00EA + "v" > U+00EA U+0323
+U+00EE + "v" > U+00EE U+0323
+U+00F4 + "v" > U+00F4 U+0323
+U+00FB + "v" > U+00FB U+0323
+U+0177 + "v" > U+0177 U+0323
+U+00C2 + "v" > U+00C2 U+0323
+U+00CA + "v" > U+00CA U+0323
+U+00CE + "v" > U+00CE U+0323
+U+00D4 + "v" > U+00D4 U+0323
+U+00DB + "v" > U+00DB U+0323
+U+0176 + "v" > U+0176 U+0323
+
+
+c Old (Beta, Gamma) + Koamtoaq
+c Macron
+"ˉ" dk(macron) + "a" > U+0101
+"ˉ" dk(macron) + "e" > U+0113
+"ˉ" dk(macron) + "i" > U+012B
+"ˉ" dk(macron) + "o" > U+014D
+"ˉ" dk(macron) + "u" > U+016B
+"ˉ" dk(macron) + "y" > U+0233
+"ˉ" dk(macron) + "A" > U+0100
+"ˉ" dk(macron) + "E" > U+0112
+"ˉ" dk(macron) + "I" > U+012A
+"ˉ" dk(macron) + "O" > U+014C
+"ˉ" dk(macron) + "U" > U+016A
+"ˉ" dk(macron) + "Y" > U+0232
+c with underdot
+"ˉ" dk(macron) "." dk(dot) + "a" > U+0101 U+0323
+"ˉ" dk(macron) "." dk(dot) + "e" > U+0113 U+0323
+"ˉ" dk(macron) "." dk(dot) + "i" > U+012B U+0323
+"ˉ" dk(macron) "." dk(dot) + "o" > U+014D U+0323
+"ˉ" dk(macron) "." dk(dot) + "u" > U+016B U+0323
+"ˉ" dk(macron) "." dk(dot) + "y" > U+0233 U+0323
+"ˉ" dk(macron) "." dk(dot) + "A" > U+0100 U+0323
+"ˉ" dk(macron) "." dk(dot) + "E" > U+0112 U+0323
+"ˉ" dk(macron) "." dk(dot) + "I" > U+012A U+0323
+"ˉ" dk(macron) "." dk(dot) + "O" > U+014C U+0323
+"ˉ" dk(macron) "." dk(dot) + "U" > U+016A U+0323
+"ˉ" dk(macron) "." dk(dot) + "Y" > U+0232 U+0323
+"." dk(dot) "ˉ" dk(macron) + "a" > U+0101 U+0323
+"." dk(dot) "ˉ" dk(macron) + "e" > U+0113 U+0323
+"." dk(dot) "ˉ" dk(macron) + "i" > U+012B U+0323
+"." dk(dot) "ˉ" dk(macron) + "o" > U+014D U+0323
+"." dk(dot) "ˉ" dk(macron) + "u" > U+016B U+0323
+"." dk(dot) "ˉ" dk(macron) + "y" > U+0233 U+0323
+"." dk(dot) "ˉ" dk(macron) + "A" > U+0100 U+0323
+"." dk(dot) "ˉ" dk(macron) + "E" > U+0112 U+0323
+"." dk(dot) "ˉ" dk(macron) + "I" > U+012A U+0323
+"." dk(dot) "ˉ" dk(macron) + "O" > U+014C U+0323
+"." dk(dot) "ˉ" dk(macron) + "U" > U+016A U+0323
+"." dk(dot) "ˉ" dk(macron) + "Y" > U+0232 U+0323
+U+0101 + "v" > U+0101 U+0323
+U+0113 + "v" > U+0113 U+0323
+U+012B + "v" > U+012B U+0323
+U+014D + "v" > U+014D U+0323
+U+016B + "v" > U+016B U+0323
+U+0233 + "v" > U+0233 U+0323
+U+0100 + "v" > U+0100 U+0323
+U+0112 + "v" > U+0112 U+0323
+U+012A + "v" > U+012A U+0323
+U+014C + "v" > U+014C U+0323
+U+016A + "v" > U+016A U+0323
+U+0232 + "v" > U+0232 U+0323
+
+c Caron / Hacek
+"ˇ" dk(caron) + "a" > U+01CE
+"ˇ" dk(caron) + "e" > U+011B
+"ˇ" dk(caron) + "i" > U+01D0
+"ˇ" dk(caron) + "o" > U+01D2
+"ˇ" dk(caron) + "u" > U+01D4
+"ˇ" dk(caron) + "y" > U+0079 U+030C
+"ˇ" dk(caron) + "A" > U+01CD
+"ˇ" dk(caron) + "E" > U+011A
+"ˇ" dk(caron) + "I" > U+01CF
+"ˇ" dk(caron) + "O" > U+01D1
+"ˇ" dk(caron) + "U" > U+01D3
+"ˇ" dk(caron) + "Y" > U+0059 U+030C
+
+c Hook above
+"ˀ" dk(hookabove) + ":" > U+003A
+"ˀ" dk(hookabove) + " " > U+003A
+"ˀ" dk(hookabove) + "a" > U+1EA3
+"ˀ" dk(hookabove) + "e" > U+1EBB
+"ˀ" dk(hookabove) + "i" > U+1EC9
+"ˀ" dk(hookabove) + "o" > U+1ECF
+"ˀ" dk(hookabove) + "u" > U+1EE7
+"ˀ" dk(hookabove) + "y" > U+1EF7
+"ˀ" dk(hookabove) + "A" > U+1EA2
+"ˀ" dk(hookabove) + "E" > U+1EBA
+"ˀ" dk(hookabove) + "I" > U+1EC8
+"ˀ" dk(hookabove) + "O" > U+1ECE
+"ˀ" dk(hookabove) + "U" > U+1EE6
+"ˀ" dk(hookabove) + "Y" > U+1EF6
+c with underdot
+"ˀ" dk(hookabove) "." dk(dot) + "a" > U+1EA3 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "e" > U+1EBB U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "i" > U+1EC9 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "o" > U+1ECF U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "u" > U+1EE7 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "y" > U+1EF7 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "A" > U+1EA2 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "E" > U+1EBA U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "I" > U+1EC8 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "O" > U+1ECE U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "U" > U+1EE6 U+0323
+"ˀ" dk(hookabove) "." dk(dot) + "Y" > U+1EF6 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "a" > U+1EA3 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "e" > U+1EBB U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "i" > U+1EC9 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "o" > U+1ECF U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "u" > U+1EE7 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "y" > U+1EF7 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "A" > U+1EA2 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "E" > U+1EBA U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "I" > U+1EC8 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "O" > U+1ECE U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "U" > U+1EE6 U+0323
+"." dk(dot) "ˀ" dk(hookabove) + "Y" > U+1EF6 U+0323
+U+1EA3 + "v" > U+1EA3 U+0323
+U+1EBB + "v" > U+1EBB U+0323
+U+1EC9 + "v" > U+1EC9 U+0323
+U+1ECF + "v" > U+1ECF U+0323
+U+1EE7 + "v" > U+1EE7 U+0323
+U+1EF7 + "v" > U+1EF7 U+0323
+U+1EA2 + "v" > U+1EA2 U+0323
+U+1EBA + "v" > U+1EBA U+0323
+U+1EC8 + "v" > U+1EC8 U+0323
+U+1ECE + "v" > U+1ECE U+0323
+U+1EE6 + "v" > U+1EE6 U+0323
+U+1EF6 + "v" > U+1EF6 U+0323
+
+c Grave
+"`" dk(grave) + "a" > U+00E0
+"`" dk(grave) + "e" > U+00E8
+"`" dk(grave) + "i" > U+00EC
+"`" dk(grave) + "o" > U+00F2
+"`" dk(grave) + "u" > U+00F9
+"`" dk(grave) + "y" > U+1EF3
+"`" dk(grave) + "A" > U+00C0
+"`" dk(grave) + "E" > U+00C8
+"`" dk(grave) + "I" > U+00CC
+"`" dk(grave) + "O" > U+00D2
+"`" dk(grave) + "U" > U+00D9
+"`" dk(grave) + "Y" > U+1EF2
+"a" + "V" > U+00E0
+"e" + "V" > U+00E8
+"i" + "V" > U+00EC
+"o" + "V" > U+00F2
+"u" + "V" > U+00F9
+"y" + "V" > U+1EF3
+"A" + "V" > U+00C0
+"E" + "V" > U+00C8
+"I" + "V" > U+00CC
+"O" + "V" > U+00D2
+"U" + "V" > U+00D9
+"Y" + "V" > U+1EF2
+
+c Tilde
+"˜" dk(tilde) + "a" > U+00E3
+"˜" dk(tilde) + "e" > U+1EBD
+"˜" dk(tilde) + "i" > U+0129
+"˜" dk(tilde) + "o" > U+00F5
+"˜" dk(tilde) + "u" > U+0169
+"˜" dk(tilde) + "y" > U+1EF9
+"˜" dk(tilde) + "A" > U+00C3
+"˜" dk(tilde) + "E" > U+1EBC
+"˜" dk(tilde) + "I" > U+0128
+"˜" dk(tilde) + "O" > U+00D5
+"˜" dk(tilde) + "U" > U+0168
+"˜" dk(tilde) + "Y" > U+1EF8
