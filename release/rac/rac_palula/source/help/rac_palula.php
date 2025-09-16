@@ -3,9 +3,6 @@
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-<h1>The Rachitrali-Palula Keyman Keyboard Package</h1>
-      <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
-      2018-06-03</SPAN></P>
 
 <h2>Introduction</h2>
 <p>This keyboard is designed for the Palula language spoken in Chitral Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Palula Language developed by Pakistani linguist, author, researcher, scientist,  Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Palula Keyboard.

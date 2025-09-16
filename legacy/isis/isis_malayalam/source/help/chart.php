@@ -1,29 +1,28 @@
 <?php /*
   Name:             keyboard_isis_malayalam
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'ISIS Malayalam Keyboard Help';
   $pagetitle = 'ISIS Malayalam Keyboard Help';
   $style = 'lang2 {font-size:250%}';
-  
+
   require_once('header.php');
   ?>
 
-  
+
 <p style='margin:0px'>Keyboard &#169; 2008 Gautam Sengupta</p>
 
 <br/>
@@ -41,7 +40,7 @@
 <a style='margin-left:20px' href="#Authorship">Authorship</a><br/>
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
@@ -88,7 +87,7 @@ If a special font is needed for this language, most computers will download it a
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>The On Screen Keyboard shows the standalone vowels <span class='lang2' style='font-size:200%'>അ ആ ഇ ഈ ഉ ഊ ഋ എ ഏ ഐ ഒ ഓ ഔ</span>, and many of the normal consonants: <span class='lang2' style='font-size:200%'>ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല ശ ഷ സ ഹ ള ഴ റ</span>.  Other consonants are typed using more than one key.  The keyboard also includes Malayalam numbers, as well as punctuation and special characters.</p>
 
 <p>Malayalam vowels and consonants are usually combined, so when you type a consonant and a vowel part, they will be joined into one character.  If you use the arrow keys to move through the text, you only need to press an arrow key once to move past each character.  If you press Delete before (on the left of) a combined consonant and vowel, it will be erased completely, but if you press Backspace after a character, only the vowel part will be erased (even if the vowel part appears before the consonant).
@@ -153,7 +152,7 @@ If a special font is needed for this language, most computers will download it a
 	<tr style='text-align:center'>
 		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഔ</td><td class='lang2' style='font-size:200%'>കൌ</td><td><span class='keys'>kO</span></td>
 	</tr>
-	
+
 </table>
 
 </div>
@@ -960,7 +959,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		<td><span class='lang2' >।</span><br/><span class='keys'>|</span></td>
 	</tr>
 
-	
+
 </table>
 
 
