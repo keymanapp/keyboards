@@ -1,11 +1,7 @@
 <?php
   $pagename = 'Lao Phonetic Keyboard Help';
-  $pagetitle = 'Lao Phonetic Keyboard Help';
-  $style = <<<EXTRA
-  html * {font-family: Arial;background-color:#ffffe0;}
-  body p {margin-left: 10px}
-  p, li {line-height: 150%}
-  
+  $pagetitle = $pagename;
+  $style = <<<END
   span.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold;}
   span.wd {font-family: helvetica,Arial,sansserif; font-weight: bold; }
   
@@ -16,7 +12,7 @@
   
   img {margin-left:30px; margin-right:30px}
   img.inline {margin:0; height: 1em}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

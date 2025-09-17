@@ -1,24 +1,17 @@
 <?php 
   $pagename = 'Masaram Gondi (ITRANS) Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-?>
-
-  <style type="text/css">
-    @font-face {
-      font-display: swap;
-      font-family: 'Noto Sans Masaram Gondi';
-      src: URL('./NotoSansMasaramGondi-Regular.ttf') format('truetype');
-    }
+    $style = <<<END
     .gond { font-family:Noto Sans Masaram Gondi;}
     .char { font-family:Noto Sans Masaram Gondi; font-size: 28px;}
     .key  { font: 12pt Tahoma; color: #708090; }
     .cell-t{box-shadow:0 0 .25rem rgba(0,0,0,.075)!important}
     .cell-r{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important}
-  </style>
+END;
+  require_once('header.php');
+?>
 
-    <p>
-      This keyboard is designed for typing the Masaram Gondi language in the Gondi script. 
+    <p>This keyboard is designed for typing the Masaram Gondi language in the Gondi script. 
 A Gondi font is required for displaying the characters. This keyboard package 
 will install the <b>Noto Sans Masaram Gondi</b> font.
     </p>
@@ -386,5 +379,3 @@ will install the <b>Noto Sans Masaram Gondi</b> font.
   <p>
     Created by Rajesh Kumar Dhuriya 
   </p>
-</div>
-</div>
