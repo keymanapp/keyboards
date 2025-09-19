@@ -1,7 +1,19 @@
 <?php
   $pagename = 'Eastern Congo Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
+$pagestyle = <<<END
+    html,body {font-family: sans-serif;font-size: 100%;}
+    kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+    .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
+    .inputSequences th, .inputSequences td {padding: 7px 17px;}
+    .inputSequences thead th {border-bottom: 2px solid #6ea1cc;text-transform: uppercase;}
+    .inputSequences tbody td {border-bottom: 1px solid #e1edff;color: #353535;text-align: center;}
+    .inputSequences tbody tr:nth-child(odd) td {background-color: #f4fbff;}
+    .inputSequences tbody tr:hover td {background-color: #ffffa2;border-color: #ffff0f;}
+    samp {font-family: sans-serif;font-size: 1.8rem;}
+    img.keyboard {max-width: 760px;width: 100%;}
+END;
+require_once('header.php');
 ?>
 
     <p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
@@ -13,256 +25,465 @@
 
     <h2>Input sequences</h2>
     <h3>Alphabetic</h3>
-    <table class="inputSequences">
+  <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystroke</th><th>Character</th><th>Keystroke</th><th>Character</th>
+                <th>Keystroke</th>
+                <th>Character</th>
+                <th>Keystroke</th>
+                <th>Character</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>;a</td><td>ä</td><td>;A</td><td>Ä</td>
+                <td><kbd>;</kbd> <kbd>a</kbd></td>
+                <td>ä</td>
+                <td><kbd>;</kbd> <kbd>A</kbd></td>
+                <td>Ä</td>
             </tr>
             <tr>
-                <td>;b</td><td>ɓ</td><td>;B</td><td>Ɓ</td>
+                <td><kbd>;</kbd> <kbd>b</kbd></td>
+                <td>ɓ</td>
+                <td><kbd>;</kbd> <kbd>B</kbd></td>
+                <td>Ɓ</td>
             </tr>
             <tr>
-                <td>;c</td><td>ç</td><td>;C</td><td>Ç</td>
+                <td><kbd>;</kbd> <kbd>c</kbd></td>
+                <td>ç</td>
+                <td><kbd>;</kbd> <kbd>C</kbd></td>
+                <td>Ç</td>
             </tr>
             <tr>
-                <td>;d</td><td>ɗ</td><td>;D</td><td>Ɗ</td>
+                <td><kbd>;</kbd> <kbd>d</kbd></td>
+                <td>ɗ</td>
+                <td><kbd>;</kbd> <kbd>D</kbd></td>
+                <td>Ɗ</td>
             </tr>
             <tr>
-                <td>;e</td><td>ɛ</td><td>;E</td><td>Ɛ</td>
+                <td><kbd>;</kbd> <kbd>e</kbd></td>
+                <td>ɛ</td>
+                <td><kbd>;</kbd> <kbd>E</kbd></td>
+                <td>Ɛ</td>
             </tr>
             <tr>
-                <td>;r</td><td>ə</td><td>;R</td><td>Ə (make sure to use the correct lowercase character that goes with this uppercase character)</td>
+                <td><kbd>;</kbd> <kbd>r</kbd></td>
+                <td>ə</td>
+                <td><kbd>;</kbd> <kbd>R</kbd></td>
+                <td>Ə (make sure to use the correct lowercase character that goes with this uppercase character)</td>
             </tr>
             <tr>
-                <td>;t</td><td>ǝ</td><td>;T</td><td>Ǝ (make sure to use the correct lowercase character that goes with this uppercase character)</td>
+                <td><kbd>;</kbd> <kbd>t</kbd></td>
+                <td>ǝ</td>
+                <td><kbd>;</kbd> <kbd>T</kbd></td>
+                <td>Ǝ (make sure to use the correct lowercase character that goes with this uppercase character)</td>
             </tr>
             <tr>
-                <td>;h</td><td>ħ</td><td>;H</td><td>Ħ</td>
+                <td><kbd>;</kbd> <kbd>h</kbd></td>
+                <td>ħ</td>
+                <td><kbd>;</kbd> <kbd>H</kbd></td>
+                <td>Ħ</td>
             </tr>
             <tr>
-                <td>;j</td><td>ɦ</td><td>;J</td><td>Ɦ</td>
+                <td><kbd>;</kbd> <kbd>j</kbd></td>
+                <td>ɦ</td>
+                <td><kbd>;</kbd> <kbd>J</kbd></td>
+                <td>Ɦ</td>
             </tr>
             <tr>
-                <td>;i</td><td>ɨ</td><td>;I</td><td>Ɨ</td>
+                <td><kbd>;</kbd> <kbd>i</kbd></td>
+                <td>ɨ</td>
+                <td><kbd>;</kbd> <kbd>I</kbd></td>
+                <td>Ɨ</td>
             </tr>
             <tr>
-                <td>;8</td><td>ɩ</td><td>;*</td><td>Ɩ</td>
+                <td><kbd>;</kbd> <kbd>8</kbd></td>
+                <td>ɩ</td>
+                <td><kbd>;</kbd> <kbd>*</kbd></td>
+                <td>Ɩ</td>
             </tr>
             <tr>
-                <td>;6</td><td>ɪ</td><td></td><td></td>
+                <td><kbd>;</kbd> <kbd>6</kbd></td>
+                <td>ɪ</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>;m</td><td>ɲ</td><td>;M</td><td>Ɲ</td>
+                <td><kbd>;</kbd> <kbd>m</kbd></td>
+                <td>ɲ</td>
+                <td><kbd>;</kbd> <kbd>M</kbd></td>
+                <td>Ɲ</td>
             </tr>
             <tr>
-                <td>;n</td><td>ŋ</td><td>;N</td><td>Ŋ</td>
+                <td><kbd>;</kbd> <kbd>n</kbd></td>
+                <td>ŋ</td>
+                <td><kbd>;</kbd> <kbd>N</kbd></td>
+                <td>Ŋ</td>
             </tr>
             <tr>
-                <td>;o</td><td>ɔ</td><td>;O</td><td>Ɔ</td>
+                <td><kbd>;</kbd> <kbd>o</kbd></td>
+                <td>ɔ</td>
+                <td><kbd>;</kbd> <kbd>O</kbd></td>
+                <td>Ɔ</td>
             </tr>
             <tr>
-                <td>;9</td><td>ɵ</td><td>;(</td><td>Ɵ</td>
+                <td><kbd>;</kbd> <kbd>9</kbd></td>
+                <td>ɵ</td>
+                <td><kbd>;</kbd> <kbd>(</kbd></td>
+                <td>Ɵ</td>
             </tr>
             <tr>
-                <td>;p</td><td>ø</td><td>;P</td><td>Ø</td>
+                <td><kbd>;</kbd> <kbd>p</kbd></td>
+                <td>ø</td>
+                <td><kbd>;</kbd> <kbd>P</kbd></td>
+                <td>Ø</td>
             </tr>
             <tr>
-                <td>;u</td><td>ʉ</td><td>;U</td><td>Ʉ</td>
+                <td><kbd>;</kbd> <kbd>u</kbd></td>
+                <td>ʉ</td>
+                <td><kbd>;</kbd> <kbd>U</kbd></td>
+                <td>Ʉ</td>
             </tr>
             <tr>
-                <td>;7</td><td>ʊ</td><td>;&</td><td>Ʊ</td>
+                <td><kbd>;</kbd> <kbd>7</kbd></td>
+                <td>ʊ</td>
+                <td><kbd>;</kbd> <kbd>&</kbd></td>
+                <td>Ʊ</td>
             </tr>
             <tr>
-                <td></td><td></td><td>;G</td><td>ß</td>
+                <td></td>
+                <td></td>
+                <td><kbd>;</kbd> <kbd>G</kbd></td>
+                <td>ß</td>
             </tr>
         </tbody>
     </table>
 
     <h3>Diacritics</h3>
-    <table class="inputSequences">
+  <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystrokes</th><th>Character</th><th>Example keystrokes</th><th>Example result</th><th>Commments</th>
+                <th>Keystroke</th>
+                <th>Character</th>
+                <th>Example Keystroke</th>
+                <th>Example Result</th>
+                <th>Comments</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>&apos;</td><td>◌́</td><td>&apos;;E</td><td>Ɛ́</td><td>Combining mark (typed before any vowel and dDmMnNŋŊrRsSzZ)</td>
+                <td><kbd>&apos;</kbd></td>
+                <td>◌́</td>
+                <td><kbd>&apos;</kbd> <kbd>;</kbd> <kbd>E</kbd></td>
+                <td>Ɛ́</td>
+                <td>Combining mark (typed before any vowel and dDmMnNŋŊrRsSzZ)</td>
             </tr>
             <tr>
-                <td>`</td><td>◌̀</td><td>`;N</td><td>Ŋ̀</td><td>Combining mark (typed before any vowel and dDmMnNŋŊrRsSzZ)</td>
+                <td><kbd>`</kbd></td>
+                <td>◌̀</td>
+                <td><kbd>`;N</kbd></td>
+                <td>Ŋ̀</td>
+                <td>Combining mark (typed before any vowel and dDmMnNŋŊrRsSzZ)</td>
             </tr>
             <tr>
-                <td>^</td><td>◌̂</td><td>^A</td><td>Â</td><td></td>
+                <td><kbd>^</kbd></td>
+                <td>◌̂</td>
+                <td><kbd>^</kbd> <kbd>A</kbd></td>
+                <td>Â</td>
+                <td></td>
             </tr>
             <tr>
-                <td>!</td><td>◌̌</td><td>!;U</td><td>Ʉ̌</td><td></td>
+                <td><kbd>!</kbd></td>
+                <td>◌̌</td>
+                <td><kbd>!</kbd> <kbd>;</kbd> <kbd>U</kbd></td>
+                <td>Ʉ̌</td>
+                <td></td>
             </tr>
             <tr>
-                <td>:</td><td>◌̈</td><td>:;7</td><td>ʊ̈</td><td></td>
+                <td><kbd>:</kbd></td>
+                <td>◌̈</td>
+                <td><kbd>:</kbd> <kbd>;</kbd> <kbd>7</kbd></td>
+                <td>ʊ̈</td>
+                <td></td>
             </tr>
             <tr>
-                <td>@</td><td>◌̄</td><td>@;I</td><td>Ɨ̄</td><td></td>
+                <td><kbd>@</kbd></td>
+                <td>◌̄</td>
+                <td><kbd>@</kbd> <kbd>;</kbd> <kbd>I</kbd></td>
+                <td>Ɨ̄</td>
+                <td></td>
             </tr>
             <tr>
-                <td>~</td><td>◌̃</td><td>~;I</td><td>Ɨ̃</td><td></td>
+                <td><kbd>~</kbd></td>
+                <td>◌̃</td>
+                <td><kbd>~</kbd> <kbd>;</kbd> <kbd>I</kbd></td>
+                <td>Ɨ̃</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;&apos;</td><td>´</td><td>e;&apos;e</td><td>e´e</td><td>Spacing</td>
+                <td><kbd>;</kbd> <kbd>&apos;</kbd></td>
+                <td>´</td>
+                <td><kbd>e</kbd> <kbd>;</kbd> <kbd>&apos;</kbd> <kbd>e</kbd></td>
+                <td>e´e</td>
+                <td>Spacing</td>
             </tr>
             <tr>
-                <td>;`</td><td>ˋ</td><td>e;`e</td><td>eˋe</td><td>Spacing</td>
+                <td><kbd>;</kbd> <kbd>`</kbd></td>
+                <td>ˋ</td>
+                <td><kbd>e</kbd> <kbd>;</kbd> <kbd>`</kbd> <kbd>e</kbd></td>
+                <td>eˋe</td>
+                <td>Spacing</td>
             </tr>
             <tr>
-                <td>;^</td><td>ˆ</td><td>e;^e</td><td>eˆe</td><td>Spacing</td>
+                <td><kbd>;</kbd> <kbd>^</kbd></td>
+                <td>ˆ</td>
+                <td><kbd>e</kbd> <kbd>;</kbd> <kbd>^</kbd> <kbd>e</kbd></td>
+                <td>eˆe</td>
+                <td>Spacing</td>
             </tr>
             <tr>
-                <td>;!</td><td>ˇ</td><td>e;!e</td><td>eˇe</td><td>Spacing</td>
+                <td><kbd>;</kbd> <kbd>!</kbd></td>
+                <td>ˇ</td>
+                <td><kbd>e</kbd> <kbd>;</kbd> <kbd>!</kbd> <kbd>e</kbd></td>
+                <td>eˇe</td>
+                <td>Spacing</td>
             </tr>
             <tr>
-                <td>=;&apos;</td><td>◌́</td><td>e=;'</td><td>é</td><td>Combining mark (typed after the character)</td>
+                <td><kbd>=</kbd> <kbd>;</kbd> <kbd>&apos;</kbd></td>
+                <td>◌́</td>
+                <td><kbd>e</kbd> <kbd>=</kbd> <kbd>;</kbd> <kbd>&apos;</kbd></td>
+                <td>é</td>
+                <td>Combining mark (typed after the character)</td>
             </tr>
             <tr>
-                <td>=;`</td><td>◌̀</td><td>;i=;`</td><td>ɨ̀</td><td>Combining mark (typed after the character)</td>
+                <td><kbd>=</kbd> <kbd>;</kbd> <kbd>`</kbd></td>
+                <td>◌̀</td>
+                <td><kbd>;</kbd> <kbd>i</kbd> <kbd>=</kbd> <kbd>;</kbd> <kbd>`</kbd></td>
+                <td>ɨ̀</td>
+                <td>Combining mark (typed after the character)</td>
             </tr>
             <tr>
-                <td>=;^</td><td>◌̂</td><td>;u=;^</td><td>ʉ̂</td><td>Combining mark (typed after the character)</td>
+                <td><kbd>=</kbd> <kbd>;</kbd> <kbd>^</kbd></td>
+                <td>◌̂</td>
+                <td><kbd>;</kbd> <kbd>u</kbd> <kbd>=</kbd> <kbd>;</kbd> <kbd>^</kbd></td>
+                <td>ʉ̂</td>
+                <td>Combining mark (typed after the character)</td>
             </tr>
             <tr>
-                <td>=;!</td><td>◌̌</td><td>;(=;!</td><td>Ɵ̌</td><td>Combining mark (typed after the character)</td>
+                <td><kbd>=</kbd> <kbd>;</kbd> <kbd>!</kbd></td>
+                <td>◌̌</td>
+                <td><kbd>;</kbd> <kbd>(</kbd> <kbd>=</kbd> <kbd>;</kbd> <kbd>!</kbd></td>
+                <td>Ɵ̌</td>
+                <td>Combining mark (typed after the character)</td>
             </tr>
             <tr>
-                <td>=;@</td><td>◌̄</td><td>;e=;@</td><td>ɛ̄</td><td>Combining mark (typed after the character)</td>
+                <td><kbd>=</kbd> <kbd>;</kbd> <kbd>@</kbd></td>
+                <td>◌̄</td>
+                <td><kbd>;</kbd> <kbd>e</kbd> <kbd>=</kbd> <kbd>;</kbd> <kbd>@</kbd></td>
+                <td>ɛ̄</td>
+                <td>Combining mark (typed after the character)</td>
             </tr>
         </tbody>
     </table>
 
     <h3>Other</h3>
-    <table class="inputSequences">
+  <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystroke</th><th>Character</th><th>Comment</th>
+                <th>Keystroke</th>
+                <th>Character</th>
+                <th>Comments</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>;?</td><td>&#x02BC;</td><td>Glottal stop (modifier apostrophe)</td>
+                <td><kbd>;</kbd> <kbd>?</kbd></td>
+                <td>&#x02BC;</td>
+                <td>Glottal stop (modifier apostrophe)</td>
             </tr>
             <tr>
-                <td>;&apos;&apos;</td><td>&#xA78C;</td><td>Glottal stop (Saltillo)</td>
+                <td><kbd>;</kbd> <kbd>&apos;</kbd> <kbd>&apos;</kbd></td>
+                <td>&#xA78C;</td>
+                <td>Glottal stop (Saltillo)</td>
             </tr>
             <tr>
-                <td>;|</td><td>&#xA71C;</td><td>Downstep</td>
+                <td><kbd>;</kbd> <kbd>|</kbd></td>
+                <td>&#xA71C;</td>
+                <td>Downstep</td>
             </tr>
             <tr>
-                <td>;:</td><td>&#xA789;</td><td>Budu past tense</td>
+                <td><kbd>;</kbd>:</kbd></td>
+                <td>&#xA789;</td>
+                <td>Budu past tense</td>
             </tr>
             <tr>
-                <td>;=</td><td>&#xA78A;</td><td>Budu future tense</td>
+                <td><kbd>;</kbd> <kbd>=</kbd></td>
+                <td>&#xA78A;</td>
+                <td>Budu future tense</td>
             </tr>
             <tr>
-                <td>...</td><td>…</td><td></td>
+                <td><kbd>.</kbd> <kbd>.</kbd> <kbd>.</kbd></td>
+                <td>…</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;&lt;</td><td>‹</td><td></td>
+                <td><kbd>;</kbd> <kbd>&lt;</kbd></td>
+                <td>‹</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;&gt;</td><td>›</td><td></td>
+                <td><kbd>;</kbd> <kbd>&gt;</kbd></td>
+                <td>›</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;&lt;&lt;</td><td>«</td><td></td>
+                <td><kbd>;</kbd> <kbd>&lt;</kbd> <kbd>&lt;</kbd></td>
+                <td>«</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;&gt;&gt;</td><td>»</td><td></td>
+                <td><kbd>;</kbd> <kbd>&gt;</kbd> <kbd>&gt;</kbd></td>
+                <td>»</td>
+                <td></td>
             </tr>
             <tr>
-                <td>=`</td><td>‘</td><td></td>
+                <td><kbd>=</kbd> <kbd>`</kbd></td>
+                <td>‘</td>
+                <td></td>
             </tr>
             <tr>
-                <td>=&apos;</td><td>&#x2019;</td><td></td>
+                <td><kbd>=</kbd> <kbd>&apos;</kbd></td>
+                <td>&#x2019;</td>
+                <td></td>
             </tr>
             <tr>
-                <td>=``</td><td>“</td><td></td>
+                <td><kbd>=</kbd> <kbd>`</kbd> <kbd>`</kbd></td>
+                <td>“</td>
+                <td></td>
             </tr>
             <tr>
-                <td>=&apos;&apos;</td><td>”</td><td></td>
+                <td><kbd>=</kbd> <kbd>&apos;</kbd> <kbd>&apos;</kbd></td>
+                <td>”</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;_</td><td>—</td><td>Em dash</td>
+                <td><kbd>;</kbd> <kbd>_</kbd></td>
+                <td>—</td>
+                <td>Em dash</td>
             </tr>
             <tr>
-                <td>;-</td><td>–</td><td>En dash</td>
+                <td><kbd>;</kbd> <kbd>-</kbd></td>
+                <td>–</td>
+                <td>En dash</td>
             </tr>
             <tr>
-                <td>;x</td><td>×</td><td></td>
+                <td><kbd>;</kbd> <kbd>x</kbd></td>
+                <td>×</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;\</td><td>÷</td><td></td>
+                <td><kbd>;</kbd> <kbd>\</kbd></td>
+                <td>÷</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;1/4</td><td>¼</td><td></td>
+                <td><kbd>;</kbd> <kbd>1</kbd> <kbd>/</kbd> <kbd>4</kbd></td>
+                <td>¼</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;1/2</td><td>½</td><td></td>
+                <td><kbd>;</kbd> <kbd>1</kbd> <kbd>/</kbd> <kbd>2</kbd></td>
+                <td>½</td>
+                <td></td>
             </tr>
             <tr>
-                <td>;3/4</td><td>¾</td><td></td>
+                <td><kbd>;</kbd> <kbd>3</kbd> <kbd>/</kbd> <kbd>4</kbd></td>
+                <td>¾</td>
+                <td></td>
             </tr>
             <tr>
-                <td>(C)</td><td>©</td><td></td>
+                <td><kbd>(</kbd> <kbd>C</kbd> <kbd>)</kbd></td>
+                <td>©</td>
+                <td></td>
             </tr>
             <tr>
-                <td>(R)</td><td>®</td><td></td>
+                <td><kbd>(</kbd> <kbd>R</kbd> <kbd>)</kbd></td>
+                <td>®</td>
+                <td></td>
             </tr>
             <tr>
-                <td>space !</td><td> !</td><td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus exclamation mark</td>
+                <td><kbd>space</kbd> <kbd>!</kbd></td>
+                <td> !</td>
+                <td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus exclamation mark</td>
             </tr>
             <tr>
-                <td>space ?</td><td> ?</td><td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus question mark</td>
+                <td><kbd>space</kbd> <kbd>?</kbd></td>
+                <td> ?</td>
+                <td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus question mark</td>
             </tr>
             <tr>
-                <td>space ;</td><td> :</td><td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus semi-colon</td>
+                <td><kbd>space</kbd> <kbd>;</kbd></td>
+                <td> :</td>
+                <td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus semi-colon</td>
             </tr>
             <tr>
-                <td>space ; space</td><td> ; </td><td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus semi-colon plus space</td>
+                <td><kbd>space</kbd> <kbd>;</kbd> <kbd>space</kbd></td>
+                <td> ; </td>
+                <td>Narrow <abbr title="Non-breaking space">NBSP</abbr> plus semi-colon plus space</td>
             </tr>
             <tr>
-                <td>;&lt; space</td><td>‹ </td><td>Left single guillemet plus narrow <abbr title="Non-breaking space">NBSP</abbr></td>
+                <td><kbd>;&lt;</kbd> <kbd>space</kbd></td>
+                <td>‹ </td>
+                <td>Left single guillemet plus narrow <abbr title="Non-breaking space">NBSP</abbr></td>
             </tr>
             <tr>
-                <td>;&lt;&lt; space</td><td>« </td><td>Left double guillemet plus narrow <abbr title="Non-breaking space">NBSP</abbr></td>
+                <td><kbd>;&lt;</kbd> <kbd>&lt;</kbd> <kbd>space</kbd></td>
+                <td>« </td>
+                <td>Left double guillemet plus narrow <abbr title="Non-breaking space">NBSP</abbr></td>
             </tr>
             <tr>
-                <td>;s</td><td> </td><td>Narrow <abbr title="Non-breaking space">NBSP</abbr></td>
+                <td><kbd>;</kbd> <kbd>s</kbd></td>
+                <td> </td>
+                <td>Narrow <abbr title="Non-breaking space">NBSP</abbr></td>
             </tr>
             <tr>
-                <td>&apos;&apos;</td><td>&apos; </td><td></td>
+                <td><kbd>&apos;</kbd> <kbd>&apos;</kbd></td>
+                <td>&apos; </td>
+                <td></td>
             </tr>
             <tr>
-                <td>;;</td><td>; </td><td></td>
+                <td><kbd>;</kbd> <kbd>;</kbd></td>
+                <td>; </td>
+                <td></td>
             </tr>
             <tr>
-                <td>``</td><td>` </td><td></td>
+                <td><kbd>`</kbd> <kbd>`</kbd></td>
+                <td>` </td>
+                <td></td>
             </tr>
             <tr>
-                <td>""</td><td>" </td><td></td>
+                <td><kbd>&#x0022;</kbd> <kbd>&#x0022;</kbd></td>
+                <td>&#x0022;</td>
+                <td></td>
             </tr>
             <tr>
-                <td>==</td><td>= </td><td></td>
+                <td><kbd>=</kbd> <kbd>=</td>
+                <td>= </td>
+                <td></td>
             </tr>
             <tr>
-                <td>::</td><td>: </td><td></td>
+                <td><kbd>:</kbd> <kbd>:</td>
+                <td>: </td>
+                <td></td>
             </tr>
             <tr>
-                <td>^^</td><td>^ </td><td></td>
+                <td><kbd>^</kbd> <kbd>^</td>
+                <td>^ </td>
+                <td></td>
             </tr>
             <tr>
-                <td>@@</td><td>@ </td><td></td>
+                <td><kbd>@</kbd> <kbd>@</kbd></td>
+                <td>@ </td>
+                <td></td>
             </tr>
 
         </tbody>
