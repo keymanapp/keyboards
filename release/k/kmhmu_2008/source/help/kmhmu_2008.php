@@ -1,7 +1,7 @@
 <?php
   $pagename = 'Kmhmu 2008 (deprecated) Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
@@ -9,7 +9,7 @@
   img {width:100% ;max-width:750px;}
   th.narrow {width:40px;}
   th.medium {width:100px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

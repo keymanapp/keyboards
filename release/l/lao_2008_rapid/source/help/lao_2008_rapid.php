@@ -1,10 +1,10 @@
 <?php
   $pagename = 'Lao 2008 Rapid Keyboard Help';
-  $pagetitle = 'Lao 2008 Rapid Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
   img.kbdlayout {width:100% ;max-width:750px;}
   kbd {font-weight: bold;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

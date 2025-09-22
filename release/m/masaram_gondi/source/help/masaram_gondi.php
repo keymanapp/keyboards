@@ -1,7 +1,7 @@
 <?php 
   $pagename = 'Masaram Gondi (ITRANS) Keyboard Help';
   $pagetitle = $pagename;
-    $style = <<<END
+  $pagestyle = <<<END
     .gond { font-family:Noto Sans Masaram Gondi;}
     .char { font-family:Noto Sans Masaram Gondi; font-size: 28px;}
     .key  { font: 12pt Tahoma; color: #708090; }

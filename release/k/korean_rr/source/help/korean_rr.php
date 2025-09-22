@@ -16,8 +16,8 @@
   History:          09 Apr 2010 - jmdurdin - Initial version                    
 */
   $pagename = 'Korean RR Keyboard Help';
-  $pagetitle = 'Korean RR Keyboard Help';
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 table.usage {margin:10px;}  
 table.usage tr td {padding-right:10px;vertical-align:top;}
 table.usage tr td.demo {padding-right:10px;vertical-align:middle;}
