@@ -1,9 +1,9 @@
 <?php
   $pagename = 'Lao 2008 Basic Keyboard Help';
-  $pagetitle = 'Lao 2008 Basic Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
   img {width:100% ;max-width:750px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

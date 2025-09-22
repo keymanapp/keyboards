@@ -2,8 +2,8 @@
 */
 
   $pagename = 'Tibetan Direct Input Keyboard Help';
-  $pagetitle = 'Tibetan Direct Input Help';
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 /*
 ===========
 ==General==
