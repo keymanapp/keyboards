@@ -1,0 +1,63 @@
+﻿c Reprogrammed to combining characters for all diacrtics.
+c Added mobile keyboard.
+store(&NAME) 'Dakota UMinn'
+store(&COPYRIGHT) 'Copyright © Braden Thue'
+store(&KEYBOARDVERSION) '1.1'   c Switching to combining diacritics & adding mobile keyboard.
+store(&TARGETS) 'any'
+store(&BITMAP) 'dakota_uminn.ico'
+store(&VISUALKEYBOARD) 'dakota_uminn.kvks'
+store(&LAYOUTFILE) 'dakota_uminn.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Add combining characters to keyboard.
++ '[' > U+0301      c Combining acute accent for vowels.
++ '{' > U+0301
++ 'q' > U+0323      c Combining dot below for aspirated obstruents.
++ 'Q' > U+0323
++ ']' > U+0307      c Added for flexibility, as SMSC now uses an overdot for aspiration.
++ '}' > U+0307
+
+c Rules for other special consonants, treated as a single stroke.
++ 'r' > 'h' U+0307
++ 'R' > 'H' U+0307
++ 'j' > 'z' U+0307
++ 'J' > 'Z' U+0307
++ 'x' > 'g' U+0307
++ 'X' > 'G' U+0307
++ 'v' > 's' U+0307
++ 'V' > 'S' U+0307
++ 'f' > U+014B      c Letter eng.
++ 'F' > U+014A
+
+c Swap L and W for ease of typing in Dakota.
++ 'l' > 'w'     c 'wa' is a very common sequence in Dakota, but awkward to type. This makes it easier.
++ 'L' > 'W'
++ 'w' > 'l'     c This is a change for ease in Dakota, and may not make sense for Lakota.
++ 'W' > 'L'
+
+c Create ALT key combos to access original keys without switching keyboards.
++ [SHIFT ALT K_W] > 'W'
++ [SHIFT ALT K_V] > 'V'
++ [SHIFT ALT K_X] > 'X'
++ [SHIFT ALT K_L] > 'L'
++ [SHIFT ALT K_J] > 'J'
++ [SHIFT ALT K_F] > 'F'
++ [SHIFT ALT K_R] > 'R'
++ [SHIFT ALT K_Q] > 'Q'
++ [SHIFT ALT K_RBRKT] > '}'
++ [SHIFT ALT K_LBRKT] > '{'
++ [ALT K_W] > 'w'
++ [ALT K_V] > 'v'
++ [ALT K_X] > 'x'
++ [ALT K_L] > 'l'
++ [ALT K_J] > 'j'
++ [ALT K_F] > 'f'
++ [ALT K_R] > 'r'
++ [ALT K_Q] > 'q'
++ [ALT K_RBRKT] > ']'
++ [ALT K_LBRKT] > '['
+
+c End of keyboard.
