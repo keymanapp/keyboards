@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,9 @@
     <Copyright URL="">© 2021 WIn Publishing Trust</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>This Common Devanagari keyboard layout designed by WIn Publishing Trust
+in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid
+out based on Full deva winscript and Hindi winscript.</Description>
   </Info>
   <Files>
     <File>
@@ -64,12 +68,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Common Devanagari</Name>
       <ID>common_devanagari</ID>
-      <Version></Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="hi">Hindi</Language>
       </Languages>

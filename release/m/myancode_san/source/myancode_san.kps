@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">MyanCode-San</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL="">pndaza</Author>
     <Version URL=""></Version>
+    <Description URL="">Myanmar Keyboard support sanskrit extensions</Description>
   </Info>
   <Files>
     <File>
@@ -82,12 +85,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.php</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>MyanCode-San</Name>
       <ID>myancode_san</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <Languages>
         <Language ID="sa-Mymr">Sanskrit</Language>
       </Languages>

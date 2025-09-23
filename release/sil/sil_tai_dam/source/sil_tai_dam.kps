@@ -1,12 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1091.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,8 +20,14 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tai Dam (SIL)</Name>
-    <Copyright URL="">Copyright © 2007-2020 SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="">SIL International</Author>
+    <Description URL="">The Tai Dam (SIL) keyboard is designed for typing Tai Dam text using the
+Tai Viet script. It uses a mnemonic layout based on the US English
+keyboard. That is, each Tai Viet character is assigned to the key with
+the nearest equivalent US English letter. It is also possible to key the
+Tai Don aspirated consonants using two-key sequences, but the keyboard
+is not optimized for these characters.</Description>
   </Info>
   <Files>
     <File>
@@ -166,17 +174,38 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_tai_dam.js</Name>
+      <Description>File sil_tai_dam.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tai Dam (SIL)</Name>
       <ID>sil_tai_dam</ID>
-      <Version></Version>
+      <Version>2.3</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\tai_heritage_pro\TaiHeritagePro-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\tai_heritage_pro\TaiHeritagePro-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="blt-Tavt">Tai Dam (Tai Viet)</Language>
+        <Language ID="blt">Tai Dam</Language>
         <Language ID="twh-Tavt">Tai Don</Language>
       </Languages>
+      <Examples>
+        <Example ID="blt" Keys="y T d {" Text="ꪼꪕꪒꪾ" Note="Name of language"/>
+        <Example ID="twh-Tavt" Keys="y T" Text="ꪼꪕ" Note="Name of language"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="sil_tai_dam_typewriter"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

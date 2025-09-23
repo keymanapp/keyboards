@@ -1,0 +1,35 @@
+﻿store(&VERSION) '9.0'
+store(&TARGETS) 'desktop'
+store(&NAME) 'Sáliba'
+store(&COPYRIGHT) '© 2022 Jorge Emilio Rosés Labrada/Eddie Antonio Santos'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&ETHNOLOGUECODE) 'slc'
+store(&MESSAGE) 'Sáliba keyboard/teclado sáliba'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ 'ñ' > deadkey(virgulilla)
++ 'Ñ' > deadkey(virgulilla)
+c For keyboard layouts that lack a dedicated [Ñ] key:
++ [RALT K_N] > deadkey(virgulilla)
+c Workaround for macOS -- see https://github.com/keymanapp/keyman/issues/875
+platform('mac') + [ALT K_N] > deadkey(virgulilla)
+
+dk(virgulilla) + 'a' > 'ã'
+dk(virgulilla) + 'e' > 'ẽ'
+dk(virgulilla) + 'i' > 'ĩ'
+dk(virgulilla) + 'o' > 'õ'
+dk(virgulilla) + 'u' > 'ũ'
+dk(virgulilla) + 'n' > 'ñ'
+dk(virgulilla) + 'ñ' > 'ñ'
+
+dk(virgulilla) + 'A' > 'Ã'
+dk(virgulilla) + 'E' > 'Ẽ'
+dk(virgulilla) + 'I' > 'Ĩ'
+dk(virgulilla) + 'O' > 'Õ'
+dk(virgulilla) + 'U' > 'Ũ'
+dk(virgulilla) + 'N' > 'Ñ'
+dk(virgulilla) + 'Ñ' > 'Ñ'
+
+dk(virgulilla) + ' ' > '~'

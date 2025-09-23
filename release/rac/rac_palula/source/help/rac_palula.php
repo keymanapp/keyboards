@@ -1,11 +1,8 @@
 <?php 
-  $pagename = 'Rachitrali-Palula Keyman Keyboard Help';
+  $pagename = 'Rachitrali-Palula Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-<h1>The Rachitrali-Palula Keyman Keyboard Package</h1>
-      <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
-      2018-06-03</SPAN></P>
 
 <h2>Introduction</h2>
 <p>This keyboard is designed for the Palula language spoken in Chitral Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Palula Language developed by Pakistani linguist, author, researcher, scientist,  Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Palula Keyboard.
@@ -66,34 +63,5 @@ and selecting the On Screen Keyboard menu item.     </p>
 
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
-      <P>Rachitrali-Palula Keyman Keyboard is copyright © 2018 Rehmat Aziz Chitrali. 
+      <P>Rachitrali-Palula Keyman Keyboard is copyright © Rehmat Aziz Chitrali. 
       	It is distributed under The MIT License (MIT)</P>
-      <DIV class=Note>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</p></DIV>
-
-
-
-<h2>Release History</h2>
-<p>Version 1.0, released 06 June 2018</p>
-
-<h2>Links</h2>
-<ul>
-<li><a href='http://keymankeyboards.com/iso:phl'>Other keyboards for these languages</a></li>
-</ul>
-

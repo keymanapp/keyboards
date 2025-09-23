@@ -1,14 +1,12 @@
 Serbian (Cyrillic) Basic keyboard
 ==============
 
-© 2009-2020 SIL International
-
-Version 1.2.1
+© SIL International
 
 Description
 -----------
 
-Serbian (Cyrillic) Basic generated from template
+This keyboard layout is based on the Serbian (Cyrillic) Basic keyboard layout from Windows 10.
 
 Links
 -----

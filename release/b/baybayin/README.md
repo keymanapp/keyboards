@@ -1,13 +1,11 @@
 Baybayin
 =====================
-Copyright (c) 2020 Ilham Nurwansah
 
-Version 1.0
-
+Copyright (c) Ilham Nurwansah
 
 Keyboard for Tagalog with Baybayin script.
 
-This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. It covers every Baybayin characters listed on the Unicode Standard 13.0.
+This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. It covers every Baybayin characters listed on the Unicode Standard 15.0.
 
 
 Links

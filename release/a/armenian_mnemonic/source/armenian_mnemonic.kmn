@@ -3,13 +3,13 @@ c with name "Armenian Mnemonic"
 store(&VERSION) '14.0'
 store(&NAME) 'Armenian Mnemonic'
 store(&COPYRIGHT) '© Dotland'
-store(&KEYBOARDVERSION) '1.1.7'
+store(&KEYBOARDVERSION) '2.0.0'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'armenian_mnemonic.keyman-touch-layout'
 store(&BITMAP) 'armenian_mnemonic.ico'
 store(&VISUALKEYBOARD) 'armenian_mnemonic.kvks'
 c store(&MnemonicLayout) "1"
-store(&MESSAGE) 'The Armenian Mnemonic Keyman keyboard is distributed under the MIT License (MIT). Contributed by Tigran Sarukhanyan (tisarukhan@gmail.com). May-June 2022'
+store(&MESSAGE) 'The Armenian Mnemonic Keyman keyboard is distributed under the MIT License (MIT). Contributed by Tigran Sarukhanyan (tisarukhan@gmail.com). June 2022'
 
 begin Unicode > use(main)
 
@@ -50,7 +50,7 @@ group(main) using keys
 + [SHIFT RALT K_1] > '¹'
 + [SHIFT RALT K_BKQUOTE] > '~'
 
-+ [RALT K_SLASH] > '÷'
++ [RALT K_SLASH] > U+0301
 + [RALT K_PERIOD] > '·'
 + [RALT K_COMMA] > '՚'
 + [NCAPS RALT K_M] > '‰'
@@ -58,6 +58,7 @@ group(main) using keys
 + [NCAPS RALT K_V] > '√'
 + [NCAPS RALT K_C] > '℃'
 + [NCAPS RALT K_X] > '×'
++ [NCAPS RALT K_Z] > '÷'
 + [RALT K_QUOTE] > '՛'
 + [RALT K_COLON] > '…'
 + [NCAPS RALT K_L] > '₾'
@@ -67,6 +68,7 @@ group(main) using keys
 + [NCAPS RALT K_D] > '֏'
 + [NCAPS RALT K_S] > '§'
 + [NCAPS RALT K_A] > 'ª'
++ [RALT K_BKSLASH] > U+0300
 + [RALT K_RBRKT] > '”'
 + [RALT K_LBRKT] > '“'
 + [NCAPS RALT K_P] > '¶'
@@ -89,6 +91,11 @@ group(main) using keys
 + [RALT K_2] > '₂'
 + [RALT K_1] > '₁'
 + [RALT K_BKQUOTE] > '`'
+
+c Default letters by keys R, T, P
+store(option_key_r_letter_ra) '0' c Input letter ra by key R
+store(option_key_t_letter_tyun) '0' c Input letter tyun by key T
+store(option_key_p_letter_peh) '0' c Input letter peh by key P
 
 + [SHIFT K_SLASH] > '՞'
 + [SHIFT K_PERIOD] > '>'
@@ -130,8 +137,10 @@ group(main) using keys
 + [SHIFT K_BKSLASH] > '|'
 + [SHIFT K_RBRKT] > '}'
 + [SHIFT K_LBRKT] > '{'
-+ [NCAPS SHIFT K_P] > 'Փ'   c capital pyur
-+ [CAPS K_P] > 'Փ'          c capital pyur
+if(option_key_p_letter_peh != '1') + [NCAPS SHIFT K_P] > 'Փ' c capital pyur
+if(option_key_p_letter_peh != '1') + [CAPS K_P] > 'Փ'        c capital pyur
+if(option_key_p_letter_peh = '1') + [NCAPS SHIFT K_P] > 'Պ'  c capital peh
+if(option_key_p_letter_peh = '1') + [CAPS K_P] >  'Պ'        c capital peh
 + [NCAPS SHIFT K_O] > 'Օ'   c capital o
 + [CAPS K_O] > 'Օ'          c capital o
 + [NCAPS SHIFT K_I] > 'Ի'   c capital ini
@@ -140,10 +149,14 @@ group(main) using keys
 + [CAPS K_U] > 'Ո'          c capital vo
 + [NCAPS SHIFT K_Y] > 'Յ'   c capital hi
 + [CAPS K_Y] > 'Յ'          c capital hi
-+ [NCAPS SHIFT K_T] > dk(capital_to)
-+ [CAPS K_T] > dk(capital_to)
-+ [NCAPS SHIFT K_R] > 'Ր'   c capital reh
-+ [CAPS K_R] > 'Ր'          c capital reh
+if(option_key_t_letter_tyun != '1') + [NCAPS SHIFT K_T] > dk(capital_to)
+if(option_key_t_letter_tyun != '1') + [CAPS K_T] > dk(capital_to)
+if(option_key_t_letter_tyun = '1') + [NCAPS SHIFT K_T] > dk(capital_tyun)
+if(option_key_t_letter_tyun = '1') + [CAPS K_T] > dk(capital_tyun)
+if(option_key_r_letter_ra != '1') + [NCAPS SHIFT K_R] > 'Ր'  c capital reh
+if(option_key_r_letter_ra != '1') + [CAPS K_R] > 'Ր'         c capital reh
+if(option_key_r_letter_ra = '1') + [NCAPS SHIFT K_R] > 'Ռ'   c capital ra
+if(option_key_r_letter_ra = '1') + [CAPS K_R] > 'Ռ'          c capital ra
 + [NCAPS SHIFT K_E] > 'Ե'   c capital ech
 + [CAPS K_E] > 'Ե'          c capital ech
 + [NCAPS SHIFT K_W] > 'Ւ'   c capital vyun
@@ -216,8 +229,10 @@ group(main) using keys
 + [K_BKSLASH] > dk(backslash)
 + [K_RBRKT] > ']'
 + [K_LBRKT] > '['
-+ [NCAPS K_P] > 'փ'         c small pyur
-+ [CAPS SHIFT K_P] > 'փ'    c small pyur
+if(option_key_p_letter_peh != '1') + [NCAPS K_P] > 'փ'       c small pyur
+if(option_key_p_letter_peh != '1') + [CAPS SHIFT K_P] > 'փ'  c small pyur
+if(option_key_p_letter_peh = '1') + [NCAPS K_P] > 'պ'        c small peh
+if(option_key_p_letter_peh = '1') + [CAPS SHIFT K_P] > 'պ'   c small peh
 + [NCAPS K_O] > 'օ'         c small o
 + [CAPS SHIFT K_O] > 'օ'    c small o
 + [NCAPS K_I] > 'ի'         c small ini
@@ -226,10 +241,14 @@ group(main) using keys
 + [CAPS SHIFT K_U] > 'ո'    c small vo
 + [NCAPS K_Y] > 'յ'         c small hi
 + [CAPS SHIFT K_Y] > 'յ'    c small hi
-+ [NCAPS K_T] > dk(small_to)
-+ [CAPS SHIFT K_T] > dk(small_to)
-+ [NCAPS K_R] > 'ր'         c small reh
-+ [CAPS SHIFT K_R] > 'ր'    c small reh
+if(option_key_t_letter_tyun != '1') + [NCAPS K_T] > dk(small_to)
+if(option_key_t_letter_tyun != '1') + [CAPS SHIFT K_T] > dk(small_to)
+if(option_key_t_letter_tyun = '1') + [NCAPS K_T] > dk(small_tyun)
+if(option_key_t_letter_tyun = '1') + [CAPS SHIFT K_T] > dk(small_tyun)
+if(option_key_r_letter_ra != '1') + [NCAPS K_R] > 'ր'        c small reh
+if(option_key_r_letter_ra != '1') + [CAPS SHIFT K_R] > 'ր'   c small reh
+if(option_key_r_letter_ra = '1') + [NCAPS K_R] > 'ռ'         c small ra
+if(option_key_r_letter_ra = '1') + [CAPS SHIFT K_R] > 'ռ'    c small ra
 + [NCAPS K_E] > 'ե'         c small ech
 + [CAPS SHIFT K_E] > 'ե'    c small ech
 + [NCAPS K_W] > 'ւ'         c small vyun
@@ -242,6 +261,39 @@ group(main) using keys
 + [SHIFT K_oE2] > U+002F
 
 
+c Toggle letter input of key R by √ր or √ռ
+if(option_key_r_letter_ra != '1') U+221A + [NCAPS K_R] > set(option_key_r_letter_ra = '1') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra != '1') U+221A + [CAPS SHIFT K_R] > set(option_key_r_letter_ra = '1') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra != '1') U+221A + [U_0580] > set(option_key_r_letter_ra = '1') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra != '1') U+221A + [U_057C] > set(option_key_r_letter_ra = '1') save(option_key_r_letter_ra)
+
+if(option_key_r_letter_ra = '1') U+221A + [NCAPS K_R] > set(option_key_r_letter_ra = '0') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra = '1') U+221A + [CAPS SHIFT K_R] > set(option_key_r_letter_ra = '0') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra = '1') U+221A + [U_0580] > set(option_key_r_letter_ra = '0') save(option_key_r_letter_ra)
+if(option_key_r_letter_ra = '1') U+221A + [U_057C] > set(option_key_r_letter_ra = '0') save(option_key_r_letter_ra)
+
+c Toggle letter input of key T by √տ or √թ
+if(option_key_t_letter_tyun != '1') U+221A + [NCAPS K_T] > set(option_key_t_letter_tyun = '1') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun != '1') U+221A + [CAPS SHIFT K_T] > set(option_key_t_letter_tyun = '1') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun != '1') U+221A + [U_057F] > set(option_key_t_letter_tyun = '1') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun != '1') U+221A + [U_0569] > set(option_key_t_letter_tyun = '1') save(option_key_t_letter_tyun)
+
+if(option_key_t_letter_tyun = '1') U+221A + [NCAPS K_T] > set(option_key_t_letter_tyun = '0') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun = '1') U+221A + [CAPS SHIFT K_T] > set(option_key_t_letter_tyun = '0') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun = '1') U+221A + [U_057F] > set(option_key_t_letter_tyun = '0') save(option_key_t_letter_tyun)
+if(option_key_t_letter_tyun = '1') U+221A + [U_0569] > set(option_key_t_letter_tyun = '0') save(option_key_t_letter_tyun)
+
+c Toggle letter input of key P by √պ or √փ
+if(option_key_p_letter_peh != '1') U+221A + [NCAPS K_P] > set(option_key_p_letter_peh = '1') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh != '1') U+221A + [CAPS SHIFT K_P] > set(option_key_p_letter_peh = '1') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh != '1') U+221A + [U_057A] > set(option_key_p_letter_peh = '1') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh != '1') U+221A + [U_0583] > set(option_key_p_letter_peh = '1') save(option_key_p_letter_peh)
+
+if(option_key_p_letter_peh = '1') U+221A + [NCAPS K_P] > set(option_key_p_letter_peh = '0') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh = '1') U+221A + [CAPS SHIFT K_P] > set(option_key_p_letter_peh = '0') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh = '1') U+221A + [U_057A] > set(option_key_p_letter_peh = '0') save(option_key_p_letter_peh)
+if(option_key_p_letter_peh = '1') U+221A + [U_0583] > set(option_key_p_letter_peh = '0') save(option_key_p_letter_peh)
+
 c Armenian ligatures is disabled by default
 store(option_ligature_ew) '0' c ligature option for եւ
 store(option_ligature_mv) '0' c ligature option for մն, մե, մի, վն, մխ
@@ -250,6 +302,7 @@ c Toggle variable for { եւ } by √ւ
 if(option_ligature_ew != '1') U+221A + [NCAPS K_W] > set(option_ligature_ew = '1') save(option_ligature_ew)
 if(option_ligature_ew != '1') U+221A + [CAPS SHIFT K_W] > set(option_ligature_ew = '1') save(option_ligature_ew)
 if(option_ligature_ew != '1') U+221A + [U_0582] > set(option_ligature_ew = '1') save(option_ligature_ew)
+
 if(option_ligature_ew = '1') U+221A + [NCAPS K_W] > set(option_ligature_ew = '0') save(option_ligature_ew)
 if(option_ligature_ew = '1') U+221A + [CAPS SHIFT K_W] > set(option_ligature_ew = '0') save(option_ligature_ew)
 if(option_ligature_ew = '1') U+221A + [U_0582] > set(option_ligature_ew = '0') save(option_ligature_ew)
@@ -258,6 +311,7 @@ c Toggle variable for { մն, մե, մի, վն, մխ } by √մ
 if(option_ligature_mv != '1') U+221A + [NCAPS K_M] > set(option_ligature_mv = '1') save(option_ligature_mv)
 if(option_ligature_mv != '1') U+221A + [CAPS SHIFT K_M] > set(option_ligature_mv = '1') save(option_ligature_mv)
 if(option_ligature_mv != '1') U+221A + [U_0574] > set(option_ligature_mv = '1') save(option_ligature_mv)
+
 if(option_ligature_mv = '1') U+221A + [NCAPS K_M] > set(option_ligature_mv = '0') save(option_ligature_mv)
 if(option_ligature_mv = '1') U+221A + [CAPS SHIFT K_M] > set(option_ligature_mv = '0') save(option_ligature_mv)
 if(option_ligature_mv = '1') U+221A + [U_0574] > set(option_ligature_mv = '0') save(option_ligature_mv)
@@ -294,83 +348,160 @@ if(option_ligature_mv = '1') U+0574 dk(small_ken) + [CAPS SHIFT K_H] > U+FB17
 if(option_ligature_mv = '1') U+0574 + [U_056D] > U+FB17
 
 
-c Dead key pairs by small to
-dk(small_to) + [NCAPS K_T] > U+0569 dk(small_to)            c թթ
-dk(small_to) + [CAPS SHIFT K_T] > U+0569 dk(small_to)            c թթ
-dk(small_to) + [NCAPS SHIFT K_T] > U+0569 dk(capital_to)            c թԹ
-dk(small_to) + [CAPS K_T] > U+0569 dk(capital_to)            c թԹ
+c Dead key pairs by small to if option_key_t_letter_tyun is not set
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_T] > U+0569 dk(small_to)            c թթ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_T] > U+0569 dk(small_to)            c թթ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_T] > U+0569 dk(capital_to)            c թԹ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_T] > U+0569 dk(capital_to)            c թԹ
 
-dk(small_to) + [NCAPS K_D] > U+0569 dk(small_da)            c թդ
-dk(small_to) + [CAPS SHIFT K_D] > U+0569 dk(small_da)            c թդ
-dk(small_to) + [NCAPS SHIFT K_D] > U+0569 dk(capital_da)            c թԴ
-dk(small_to) + [CAPS K_D] > U+0569 dk(capital_da)            c թԴ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_D] > U+0569 dk(small_da)            c թդ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_D] > U+0569 dk(small_da)            c թդ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_D] > U+0569 dk(capital_da)            c թԴ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_D] > U+0569 dk(capital_da)            c թԴ
 
-dk(small_to) + [NCAPS K_G] > U+0569 dk(small_gim)            c թգ
-dk(small_to) + [CAPS SHIFT K_G] > U+0569 dk(small_gim)            c թգ
-dk(small_to) + [NCAPS SHIFT K_G] > U+0569 dk(capital_gim)            c թԳ
-dk(small_to) + [CAPS K_G] > U+0569 dk(capital_gim)            c թԳ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_G] > U+0569 dk(small_gim)            c թգ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_G] > U+0569 dk(small_gim)            c թգ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_G] > U+0569 dk(capital_gim)            c թԳ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_G] > U+0569 dk(capital_gim)            c թԳ
 
-dk(small_to) + [NCAPS K_K] > U+0569 dk(small_ken)            c թկ
-dk(small_to) + [CAPS SHIFT K_K] > U+0569 dk(small_ken)            c թկ
-dk(small_to) + [NCAPS SHIFT K_K] > U+0569 dk(capital_ken)            c թԿ
-dk(small_to) + [CAPS K_K] > U+0569 dk(capital_ken)            c թԿ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_K] > U+0569 dk(small_ken)            c թկ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_K] > U+0569 dk(small_ken)            c թկ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_K] > U+0569 dk(capital_ken)            c թԿ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_K] > U+0569 dk(capital_ken)            c թԿ
 
-dk(small_to) + [NCAPS K_Z] > U+0569 dk(small_za)            c թզ
-dk(small_to) + [CAPS SHIFT K_Z] > U+0569 dk(small_za)            c թզ
-dk(small_to) + [NCAPS SHIFT K_Z] > U+0569 dk(capital_za)            c թԶ
-dk(small_to) + [CAPS K_Z] > U+0569 dk(capital_za)            c թԶ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_Z] > U+0569 dk(small_za)            c թզ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_Z] > U+0569 dk(small_za)            c թզ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_Z] > U+0569 dk(capital_za)            c թԶ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_Z] > U+0569 dk(capital_za)            c թԶ
 
-dk(small_to) + [NCAPS K_C] > U+0569 dk(small_co)            c թց
-dk(small_to) + [CAPS SHIFT K_C] > U+0569 dk(small_co)            c թց
-dk(small_to) + [NCAPS SHIFT K_C] > U+0569 dk(capital_co)            c թՑ
-dk(small_to) + [CAPS K_C] > U+0569 dk(capital_co)            c թՑ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS K_C] > U+0569 dk(small_co)            c թց
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS SHIFT K_C] > U+0569 dk(small_co)            c թց
+if(option_key_t_letter_tyun != '1') dk(small_to) + [NCAPS SHIFT K_C] > U+0569 dk(capital_co)            c թՑ
+if(option_key_t_letter_tyun != '1') dk(small_to) + [CAPS K_C] > U+0569 dk(capital_co)            c թՑ
 
-dk(small_to) + [K_QUOTE] > U+0569 dk(apostrophe)            c թ'
-dk(small_to) + [SHIFT K_QUOTE] > U+0569 dk(double_quote)            c թ"
-dk(small_to) + [K_BKSLASH] > U+0569 dk(backslash)            c թ\
-dk(small_to) + [K_SLASH] > U+0569 dk(slash)            c թ/
+if(option_key_t_letter_tyun != '1') dk(small_to) + [K_QUOTE] > U+0569 dk(apostrophe)            c թ'
+if(option_key_t_letter_tyun != '1') dk(small_to) + [SHIFT K_QUOTE] > U+0569 dk(double_quote)            c թ"
+if(option_key_t_letter_tyun != '1') dk(small_to) + [K_BKSLASH] > U+0569 dk(backslash)            c թ\
+if(option_key_t_letter_tyun != '1') dk(small_to) + [K_SLASH] > U+0569 dk(slash)            c թ/
 
-c Dead key pairs by capital to
-dk(capital_to) + [NCAPS K_T] > U+0539 dk(small_to)            c Թթ
-dk(capital_to) + [CAPS SHIFT K_T] > U+0539 dk(small_to)            c Թթ
-dk(capital_to) + [NCAPS SHIFT K_T] > U+0539 dk(capital_to)            c ԹԹ
-dk(capital_to) + [CAPS K_T] > U+0539 dk(capital_to)            c ԹԹ
+c Dead key pairs by small tyun if option_key_t_letter_tyun is set
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_T] > U+057F dk(small_tyun)            c տտ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_T] > U+057F dk(small_tyun)            c տտ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_T] > U+057F dk(capital_tyun)            c տՏ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_T] > U+057F dk(capital_tyun)            c տՏ
 
-dk(capital_to) + [NCAPS K_D] > U+0539 dk(small_da)            c Թդ
-dk(capital_to) + [CAPS SHIFT K_D] > U+0539 dk(small_da)            c Թդ
-dk(capital_to) + [NCAPS SHIFT K_D] > U+0539 dk(capital_da)            c ԹԴ
-dk(capital_to) + [CAPS K_D] > U+0539 dk(capital_da)            c ԹԴ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_D] > U+057F dk(small_da)            c տդ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_D] > U+057F dk(small_da)            c տդ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_D] > U+057F dk(capital_da)            c տԴ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_D] > U+057F dk(capital_da)            c տԴ
 
-dk(capital_to) + [NCAPS K_G] > U+0539 dk(small_gim)            c Թգ
-dk(capital_to) + [CAPS SHIFT K_G] > U+0539 dk(small_gim)            c Թգ
-dk(capital_to) + [NCAPS SHIFT K_G] > U+0539 dk(capital_gim)            c ԹԳ
-dk(capital_to) + [CAPS K_G] > U+0539 dk(capital_gim)            c ԹԳ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_G] > U+057F dk(small_gim)            c տգ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_G] > U+057F dk(small_gim)            c տգ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_G] > U+057F dk(capital_gim)            c տԳ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_G] > U+057F dk(capital_gim)            c տԳ
 
-dk(capital_to) + [NCAPS K_K] > U+0539 dk(small_ken)            c Թկ
-dk(capital_to) + [CAPS SHIFT K_K] > U+0539 dk(small_ken)            c Թկ
-dk(capital_to) + [NCAPS SHIFT K_K] > U+0539 dk(capital_ken)            c ԹԿ
-dk(capital_to) + [CAPS K_K] > U+0539 dk(capital_ken)            c ԹԿ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_K] > U+057F dk(small_ken)            c տկ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_K] > U+057F dk(small_ken)            c տկ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_K] > U+057F dk(capital_ken)            c տԿ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_K] > U+057F dk(capital_ken)            c տԿ
 
-dk(capital_to) + [NCAPS K_Z] > U+0539 dk(small_za)            c Թզ
-dk(capital_to) + [CAPS SHIFT K_Z] > U+0539 dk(small_za)            c Թզ
-dk(capital_to) + [NCAPS SHIFT K_Z] > U+0539 dk(capital_za)            c ԹԶ
-dk(capital_to) + [CAPS K_Z] > U+0539 dk(capital_za)            c ԹԶ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_Z] > U+057F dk(small_za)            c տզ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_Z] > U+057F dk(small_za)            c տզ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_Z] > U+057F dk(capital_za)            c տԶ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_Z] > U+057F dk(capital_za)            c տԶ
 
-dk(capital_to) + [NCAPS K_C] > U+0539 dk(small_co)            c Թց
-dk(capital_to) + [CAPS SHIFT K_C] > U+0539 dk(small_co)            c Թց
-dk(capital_to) + [NCAPS SHIFT K_C] > U+0539 dk(capital_co)            c ԹՑ
-dk(capital_to) + [CAPS K_C] > U+0539 dk(capital_co)            c ԹՑ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS K_C] > U+057F dk(small_co)            c տց
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS SHIFT K_C] > U+057F dk(small_co)            c տց
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [NCAPS SHIFT K_C] > U+057F dk(capital_co)            c տՑ
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [CAPS K_C] > U+057F dk(capital_co)            c տՑ
 
-dk(capital_to) + [K_QUOTE] > U+0539 dk(apostrophe)            c Թ'
-dk(capital_to) + [SHIFT K_QUOTE] > U+0539 dk(double_quote)            c Թ"
-dk(capital_to) + [K_BKSLASH] > U+0539 dk(backslash)            c Թ\
-dk(capital_to) + [K_SLASH] > U+0539 dk(slash)            c Թ/
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [K_QUOTE] > U+057F dk(apostrophe)            c տ'
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [SHIFT K_QUOTE] > U+057F dk(double_quote)            c տ"
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [K_BKSLASH] > U+057F dk(backslash)            c տ\
+if(option_key_t_letter_tyun = '1') dk(small_tyun) + [K_SLASH] > U+057F dk(slash)            c տ/
+
+c Dead key pairs by capital to if option_key_t_letter_tyun is not set
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_T] > U+0539 dk(small_to)            c Թթ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_T] > U+0539 dk(small_to)            c Թթ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_T] > U+0539 dk(capital_to)            c ԹԹ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_T] > U+0539 dk(capital_to)            c ԹԹ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_D] > U+0539 dk(small_da)            c Թդ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_D] > U+0539 dk(small_da)            c Թդ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_D] > U+0539 dk(capital_da)            c ԹԴ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_D] > U+0539 dk(capital_da)            c ԹԴ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_G] > U+0539 dk(small_gim)            c Թգ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_G] > U+0539 dk(small_gim)            c Թգ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_G] > U+0539 dk(capital_gim)            c ԹԳ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_G] > U+0539 dk(capital_gim)            c ԹԳ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_K] > U+0539 dk(small_ken)            c Թկ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_K] > U+0539 dk(small_ken)            c Թկ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_K] > U+0539 dk(capital_ken)            c ԹԿ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_K] > U+0539 dk(capital_ken)            c ԹԿ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_Z] > U+0539 dk(small_za)            c Թզ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_Z] > U+0539 dk(small_za)            c Թզ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_Z] > U+0539 dk(capital_za)            c ԹԶ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_Z] > U+0539 dk(capital_za)            c ԹԶ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS K_C] > U+0539 dk(small_co)            c Թց
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS SHIFT K_C] > U+0539 dk(small_co)            c Թց
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [NCAPS SHIFT K_C] > U+0539 dk(capital_co)            c ԹՑ
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [CAPS K_C] > U+0539 dk(capital_co)            c ԹՑ
+
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [K_QUOTE] > U+0539 dk(apostrophe)            c Թ'
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [SHIFT K_QUOTE] > U+0539 dk(double_quote)            c Թ"
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [K_BKSLASH] > U+0539 dk(backslash)            c Թ\
+if(option_key_t_letter_tyun != '1') dk(capital_to) + [K_SLASH] > U+0539 dk(slash)            c Թ/
+
+c Dead key pairs by capital tyun if option_key_t_letter_tyun is set
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_T] > U+054F dk(small_tyun)            c Տտ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_T] > U+054F dk(small_tyun)            c Տտ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_T] > U+054F dk(capital_tyun)            c ՏՏ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_T] > U+054F dk(capital_tyun)            c ՏՏ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_D] > U+054F dk(small_da)            c Տդ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_D] > U+054F dk(small_da)            c Տդ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_D] > U+054F dk(capital_da)            c ՏԴ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_D] > U+054F dk(capital_da)            c ՏԴ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_G] > U+054F dk(small_gim)            c Տգ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_G] > U+054F dk(small_gim)            c Տգ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_G] > U+054F dk(capital_gim)            c ՏԳ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_G] > U+054F dk(capital_gim)            c ՏԳ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_K] > U+054F dk(small_ken)            c Տկ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_K] > U+054F dk(small_ken)            c Տկ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_K] > U+054F dk(capital_ken)            c ՏԿ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_K] > U+054F dk(capital_ken)            c ՏԿ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_Z] > U+054F dk(small_za)            c Տզ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_Z] > U+054F dk(small_za)            c Տզ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_Z] > U+054F dk(capital_za)            c ՏԶ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_Z] > U+054F dk(capital_za)            c ՏԶ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS K_C] > U+054F dk(small_co)            c Տց
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS SHIFT K_C] > U+054F dk(small_co)            c Տց
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [NCAPS SHIFT K_C] > U+054F dk(capital_co)            c ՏՑ
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [CAPS K_C] > U+054F dk(capital_co)            c ՏՑ
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [K_QUOTE] > U+054F dk(apostrophe)            c Տ'
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [SHIFT K_QUOTE] > U+054F dk(double_quote)            c Տ"
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [K_BKSLASH] > U+054F dk(backslash)            c Տ\
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) + [K_SLASH] > U+054F dk(slash)            c Տ/
 
 c Dead key pairs by small seh
-dk(small_seh) + [NCAPS K_T] > U+057D dk(small_to)            c սթ
-dk(small_seh) + [CAPS SHIFT K_T] > U+057D dk(small_to)            c սթ
-dk(small_seh) + [NCAPS SHIFT K_T] > U+057D dk(capital_to)            c սԹ
-dk(small_seh) + [CAPS K_T] > U+057D dk(capital_to)            c սԹ
+if(option_key_t_letter_tyun != '1') dk(small_seh) + [NCAPS K_T] > U+057D dk(small_to)            c սթ
+if(option_key_t_letter_tyun != '1') dk(small_seh) + [CAPS SHIFT K_T] > U+057D dk(small_to)            c սթ
+if(option_key_t_letter_tyun != '1') dk(small_seh) + [NCAPS SHIFT K_T] > U+057D dk(capital_to)            c սԹ
+if(option_key_t_letter_tyun != '1') dk(small_seh) + [CAPS K_T] > U+057D dk(capital_to)            c սԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_seh) + [NCAPS K_T] > U+057D dk(small_tyun)            c ստ
+if(option_key_t_letter_tyun = '1') dk(small_seh) + [CAPS SHIFT K_T] > U+057D dk(small_tyun)            c ստ
+if(option_key_t_letter_tyun = '1') dk(small_seh) + [NCAPS SHIFT K_T] > U+057D dk(capital_tyun)            c սՏ
+if(option_key_t_letter_tyun = '1') dk(small_seh) + [CAPS K_T] > U+057D dk(capital_tyun)            c սՏ
 
 dk(small_seh) + [NCAPS K_S] > U+057D dk(small_seh)            c սս
 dk(small_seh) + [CAPS SHIFT K_S] > U+057D dk(small_seh)            c սս
@@ -408,10 +539,15 @@ dk(small_seh) + [K_BKSLASH] > U+057D dk(backslash)            c ս\
 dk(small_seh) + [K_SLASH] > U+057D dk(slash)            c ս/
 
 c Dead key pairs by capital seh
-dk(capital_seh) + [NCAPS K_T] > U+054D dk(small_to)            c Սթ
-dk(capital_seh) + [CAPS SHIFT K_T] > U+054D dk(small_to)            c Սթ
-dk(capital_seh) + [NCAPS SHIFT K_T] > U+054D dk(capital_to)            c ՍԹ
-dk(capital_seh) + [CAPS K_T] > U+054D dk(capital_to)            c ՍԹ
+if(option_key_t_letter_tyun != '1') dk(capital_seh) + [NCAPS K_T] > U+054D dk(small_to)            c Սթ
+if(option_key_t_letter_tyun != '1') dk(capital_seh) + [CAPS SHIFT K_T] > U+054D dk(small_to)            c Սթ
+if(option_key_t_letter_tyun != '1') dk(capital_seh) + [NCAPS SHIFT K_T] > U+054D dk(capital_to)            c ՍԹ
+if(option_key_t_letter_tyun != '1') dk(capital_seh) + [CAPS K_T] > U+054D dk(capital_to)            c ՍԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_seh) + [NCAPS K_T] > U+054D dk(small_tyun)            c Ստ
+if(option_key_t_letter_tyun = '1') dk(capital_seh) + [CAPS SHIFT K_T] > U+054D dk(small_tyun)            c Ստ
+if(option_key_t_letter_tyun = '1') dk(capital_seh) + [NCAPS SHIFT K_T] > U+054D dk(capital_tyun)            c ՍՏ
+if(option_key_t_letter_tyun = '1') dk(capital_seh) + [CAPS K_T] > U+054D dk(capital_tyun)            c ՍՏ
 
 dk(capital_seh) + [NCAPS K_S] > U+054D dk(small_seh)            c Սս
 dk(capital_seh) + [CAPS SHIFT K_S] > U+054D dk(small_seh)            c Սս
@@ -449,10 +585,15 @@ dk(capital_seh) + [K_BKSLASH] > U+054D dk(backslash)            c Ս\
 dk(capital_seh) + [K_SLASH] > U+054D dk(slash)            c Ս/
 
 c Dead key pairs by small da
-dk(small_da) + [NCAPS K_T] > U+0564 dk(small_to)            c դթ
-dk(small_da) + [CAPS SHIFT K_T] > U+0564 dk(small_to)            c դթ
-dk(small_da) + [NCAPS SHIFT K_T] > U+0564 dk(capital_to)            c դԹ
-dk(small_da) + [CAPS K_T] > U+0564 dk(capital_to)            c դԹ
+if(option_key_t_letter_tyun != '1') dk(small_da) + [NCAPS K_T] > U+0564 dk(small_to)            c դթ
+if(option_key_t_letter_tyun != '1') dk(small_da) + [CAPS SHIFT K_T] > U+0564 dk(small_to)            c դթ
+if(option_key_t_letter_tyun != '1') dk(small_da) + [NCAPS SHIFT K_T] > U+0564 dk(capital_to)            c դԹ
+if(option_key_t_letter_tyun != '1') dk(small_da) + [CAPS K_T] > U+0564 dk(capital_to)            c դԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_da) + [NCAPS K_T] > U+0564 dk(small_tyun)            c դտ
+if(option_key_t_letter_tyun = '1') dk(small_da) + [CAPS SHIFT K_T] > U+0564 dk(small_tyun)            c դտ
+if(option_key_t_letter_tyun = '1') dk(small_da) + [NCAPS SHIFT K_T] > U+0564 dk(capital_tyun)            c դՏ
+if(option_key_t_letter_tyun = '1') dk(small_da) + [CAPS K_T] > U+0564 dk(capital_tyun)            c դՏ
 
 dk(small_da) + [NCAPS K_S] > U+0564 dk(small_seh)            c դս
 dk(small_da) + [CAPS SHIFT K_S] > U+0564 dk(small_seh)            c դս
@@ -485,10 +626,15 @@ dk(small_da) + [K_BKSLASH] > U+0564 dk(backslash)            c դ\
 dk(small_da) + [K_SLASH] > U+0564 dk(slash)            c դ/
 
 c Dead key pairs by capital da
-dk(capital_da) + [NCAPS K_T] > U+0534 dk(small_to)            c Դթ
-dk(capital_da) + [CAPS SHIFT K_T] > U+0534 dk(small_to)            c Դթ
-dk(capital_da) + [NCAPS SHIFT K_T] > U+0534 dk(capital_to)            c ԴԹ
-dk(capital_da) + [CAPS K_T] > U+0534 dk(capital_to)            c ԴԹ
+if(option_key_t_letter_tyun != '1') dk(capital_da) + [NCAPS K_T] > U+0534 dk(small_to)            c Դթ
+if(option_key_t_letter_tyun != '1') dk(capital_da) + [CAPS SHIFT K_T] > U+0534 dk(small_to)            c Դթ
+if(option_key_t_letter_tyun != '1') dk(capital_da) + [NCAPS SHIFT K_T] > U+0534 dk(capital_to)            c ԴԹ
+if(option_key_t_letter_tyun != '1') dk(capital_da) + [CAPS K_T] > U+0534 dk(capital_to)            c ԴԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_da) + [NCAPS K_T] > U+0534 dk(small_tyun)            c Դտ
+if(option_key_t_letter_tyun = '1') dk(capital_da) + [CAPS SHIFT K_T] > U+0534 dk(small_tyun)            c Դտ
+if(option_key_t_letter_tyun = '1') dk(capital_da) + [NCAPS SHIFT K_T] > U+0534 dk(capital_tyun)            c ԴՏ
+if(option_key_t_letter_tyun = '1') dk(capital_da) + [CAPS K_T] > U+0534 dk(capital_tyun)            c ԴՏ
 
 dk(capital_da) + [NCAPS K_S] > U+0534 dk(small_seh)            c Դս
 dk(capital_da) + [CAPS SHIFT K_S] > U+0534 dk(small_seh)            c Դս
@@ -521,10 +667,15 @@ dk(capital_da) + [K_BKSLASH] > U+0534 dk(backslash)            c Դ\
 dk(capital_da) + [K_SLASH] > U+0534 dk(slash)            c Դ/
 
 c Dead key pairs by small gim
-dk(small_gim) + [NCAPS K_T] > U+0563 dk(small_to)            c գթ
-dk(small_gim) + [CAPS SHIFT K_T] > U+0563 dk(small_to)            c գթ
-dk(small_gim) + [NCAPS SHIFT K_T] > U+0563 dk(capital_to)            c գԹ
-dk(small_gim) + [CAPS K_T] > U+0563 dk(capital_to)            c գԹ
+if(option_key_t_letter_tyun != '1') dk(small_gim) + [NCAPS K_T] > U+0563 dk(small_to)            c գթ
+if(option_key_t_letter_tyun != '1') dk(small_gim) + [CAPS SHIFT K_T] > U+0563 dk(small_to)            c գթ
+if(option_key_t_letter_tyun != '1') dk(small_gim) + [NCAPS SHIFT K_T] > U+0563 dk(capital_to)            c գԹ
+if(option_key_t_letter_tyun != '1') dk(small_gim) + [CAPS K_T] > U+0563 dk(capital_to)            c գԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_gim) + [NCAPS K_T] > U+0563 dk(small_tyun)            c գտ
+if(option_key_t_letter_tyun = '1') dk(small_gim) + [CAPS SHIFT K_T] > U+0563 dk(small_tyun)            c գտ
+if(option_key_t_letter_tyun = '1') dk(small_gim) + [NCAPS SHIFT K_T] > U+0563 dk(capital_tyun)            c գՏ
+if(option_key_t_letter_tyun = '1') dk(small_gim) + [CAPS K_T] > U+0563 dk(capital_tyun)            c գՏ
 
 dk(small_gim) + [NCAPS K_S] > U+0563 dk(small_seh)            c գս
 dk(small_gim) + [CAPS SHIFT K_S] > U+0563 dk(small_seh)            c գս
@@ -562,10 +713,15 @@ dk(small_gim) + [K_BKSLASH] > U+0563 dk(backslash)            c գ\
 dk(small_gim) + [K_SLASH] > U+0563 dk(slash)            c գ/
 
 c Dead key pairs by capital gim
-dk(capital_gim) + [NCAPS K_T] > U+0533 dk(small_to)            c Գթ
-dk(capital_gim) + [CAPS SHIFT K_T] > U+0533 dk(small_to)            c Գթ
-dk(capital_gim) + [NCAPS SHIFT K_T] > U+0533 dk(capital_to)            c ԳԹ
-dk(capital_gim) + [CAPS K_T] > U+0533 dk(capital_to)            c ԳԹ
+if(option_key_t_letter_tyun != '1') dk(capital_gim) + [NCAPS K_T] > U+0533 dk(small_to)            c Գթ
+if(option_key_t_letter_tyun != '1') dk(capital_gim) + [CAPS SHIFT K_T] > U+0533 dk(small_to)            c Գթ
+if(option_key_t_letter_tyun != '1') dk(capital_gim) + [NCAPS SHIFT K_T] > U+0533 dk(capital_to)            c ԳԹ
+if(option_key_t_letter_tyun != '1') dk(capital_gim) + [CAPS K_T] > U+0533 dk(capital_to)            c ԳԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_gim) + [NCAPS K_T] > U+0533 dk(small_tyun)            c Գտ
+if(option_key_t_letter_tyun = '1') dk(capital_gim) + [CAPS SHIFT K_T] > U+0533 dk(small_tyun)            c Գտ
+if(option_key_t_letter_tyun = '1') dk(capital_gim) + [NCAPS SHIFT K_T] > U+0533 dk(capital_tyun)            c ԳՏ
+if(option_key_t_letter_tyun = '1') dk(capital_gim) + [CAPS K_T] > U+0533 dk(capital_tyun)            c ԳՏ
 
 dk(capital_gim) + [NCAPS K_S] > U+0533 dk(small_seh)            c Գս
 dk(capital_gim) + [CAPS SHIFT K_S] > U+0533 dk(small_seh)            c Գս
@@ -603,10 +759,15 @@ dk(capital_gim) + [K_BKSLASH] > U+0533 dk(backslash)            c Գ\
 dk(capital_gim) + [K_SLASH] > U+0533 dk(slash)            c Գ/
 
 c Dead key pairs by small ken
-dk(small_ken) + [NCAPS K_T] > U+056F dk(small_to)            c կթ
-dk(small_ken) + [CAPS SHIFT K_T] > U+056F dk(small_to)            c կթ
-dk(small_ken) + [NCAPS SHIFT K_T] > U+056F dk(capital_to)            c կԹ
-dk(small_ken) + [CAPS K_T] > U+056F dk(capital_to)            c կԹ
+if(option_key_t_letter_tyun != '1') dk(small_ken) + [NCAPS K_T] > U+056F dk(small_to)            c կթ
+if(option_key_t_letter_tyun != '1') dk(small_ken) + [CAPS SHIFT K_T] > U+056F dk(small_to)            c կթ
+if(option_key_t_letter_tyun != '1') dk(small_ken) + [NCAPS SHIFT K_T] > U+056F dk(capital_to)            c կԹ
+if(option_key_t_letter_tyun != '1') dk(small_ken) + [CAPS K_T] > U+056F dk(capital_to)            c կԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_ken) + [NCAPS K_T] > U+056F dk(small_tyun)            c կտ
+if(option_key_t_letter_tyun = '1') dk(small_ken) + [CAPS SHIFT K_T] > U+056F dk(small_tyun)            c կտ
+if(option_key_t_letter_tyun = '1') dk(small_ken) + [NCAPS SHIFT K_T] > U+056F dk(capital_tyun)            c կՏ
+if(option_key_t_letter_tyun = '1') dk(small_ken) + [CAPS K_T] > U+056F dk(capital_tyun)            c կՏ
 
 dk(small_ken) + [NCAPS K_S] > U+056F dk(small_seh)            c կս
 dk(small_ken) + [CAPS SHIFT K_S] > U+056F dk(small_seh)            c կս
@@ -644,10 +805,15 @@ dk(small_ken) + [K_BKSLASH] > U+056F dk(backslash)            c կ\
 dk(small_ken) + [K_SLASH] > U+056F dk(slash)            c կ/
 
 c Dead key pairs by capital ken
-dk(capital_ken) + [NCAPS K_T] > U+053F dk(small_to)            c Կթ
-dk(capital_ken) + [CAPS SHIFT K_T] > U+053F dk(small_to)            c Կթ
-dk(capital_ken) + [NCAPS SHIFT K_T] > U+053F dk(capital_to)            c ԿԹ
-dk(capital_ken) + [CAPS K_T] > U+053F dk(capital_to)            c ԿԹ
+if(option_key_t_letter_tyun != '1') dk(capital_ken) + [NCAPS K_T] > U+053F dk(small_to)            c Կթ
+if(option_key_t_letter_tyun != '1') dk(capital_ken) + [CAPS SHIFT K_T] > U+053F dk(small_to)            c Կթ
+if(option_key_t_letter_tyun != '1') dk(capital_ken) + [NCAPS SHIFT K_T] > U+053F dk(capital_to)            c ԿԹ
+if(option_key_t_letter_tyun != '1') dk(capital_ken) + [CAPS K_T] > U+053F dk(capital_to)            c ԿԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_ken) + [NCAPS K_T] > U+053F dk(small_tyun)            c Կտ
+if(option_key_t_letter_tyun = '1') dk(capital_ken) + [CAPS SHIFT K_T] > U+053F dk(small_tyun)            c Կտ
+if(option_key_t_letter_tyun = '1') dk(capital_ken) + [NCAPS SHIFT K_T] > U+053F dk(capital_tyun)            c ԿՏ
+if(option_key_t_letter_tyun = '1') dk(capital_ken) + [CAPS K_T] > U+053F dk(capital_tyun)            c ԿՏ
 
 dk(capital_ken) + [NCAPS K_S] > U+053F dk(small_seh)            c Կս
 dk(capital_ken) + [CAPS SHIFT K_S] > U+053F dk(small_seh)            c Կս
@@ -685,10 +851,15 @@ dk(capital_ken) + [K_BKSLASH] > U+053F dk(backslash)            c Կ\
 dk(capital_ken) + [K_SLASH] > U+053F dk(slash)            c Կ/
 
 c Dead key pairs by small za
-dk(small_za) + [NCAPS K_T] > U+0566 dk(small_to)            c զթ
-dk(small_za) + [CAPS SHIFT K_T] > U+0566 dk(small_to)            c զթ
-dk(small_za) + [NCAPS SHIFT K_T] > U+0566 dk(capital_to)            c զԹ
-dk(small_za) + [CAPS K_T] > U+0566 dk(capital_to)            c զԹ
+if(option_key_t_letter_tyun != '1') dk(small_za) + [NCAPS K_T] > U+0566 dk(small_to)            c զթ
+if(option_key_t_letter_tyun != '1') dk(small_za) + [CAPS SHIFT K_T] > U+0566 dk(small_to)            c զթ
+if(option_key_t_letter_tyun != '1') dk(small_za) + [NCAPS SHIFT K_T] > U+0566 dk(capital_to)            c զԹ
+if(option_key_t_letter_tyun != '1') dk(small_za) + [CAPS K_T] > U+0566 dk(capital_to)            c զԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_za) + [NCAPS K_T] > U+0566 dk(small_tyun)            c զտ
+if(option_key_t_letter_tyun = '1') dk(small_za) + [CAPS SHIFT K_T] > U+0566 dk(small_tyun)            c զտ
+if(option_key_t_letter_tyun = '1') dk(small_za) + [NCAPS SHIFT K_T] > U+0566 dk(capital_tyun)            c զՏ
+if(option_key_t_letter_tyun = '1') dk(small_za) + [CAPS K_T] > U+0566 dk(capital_tyun)            c զՏ
 
 dk(small_za) + [NCAPS K_S] > U+0566 dk(small_seh)            c զս
 dk(small_za) + [CAPS SHIFT K_S] > U+0566 dk(small_seh)            c զս
@@ -726,10 +897,15 @@ dk(small_za) + [K_BKSLASH] > U+0566 dk(backslash)            c զ\
 dk(small_za) + [K_SLASH] > U+0566 dk(slash)            c զ/
 
 c Dead key pairs by capital za
-dk(capital_za) + [NCAPS K_T] > U+0536 dk(small_to)            c Զթ
-dk(capital_za) + [CAPS SHIFT K_T] > U+0536 dk(small_to)            c Զթ
-dk(capital_za) + [NCAPS SHIFT K_T] > U+0536 dk(capital_to)            c ԶԹ
-dk(capital_za) + [CAPS K_T] > U+0536 dk(capital_to)            c ԶԹ
+if(option_key_t_letter_tyun != '1') dk(capital_za) + [NCAPS K_T] > U+0536 dk(small_to)            c Զթ
+if(option_key_t_letter_tyun != '1') dk(capital_za) + [CAPS SHIFT K_T] > U+0536 dk(small_to)            c Զթ
+if(option_key_t_letter_tyun != '1') dk(capital_za) + [NCAPS SHIFT K_T] > U+0536 dk(capital_to)            c ԶԹ
+if(option_key_t_letter_tyun != '1') dk(capital_za) + [CAPS K_T] > U+0536 dk(capital_to)            c ԶԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_za) + [NCAPS K_T] > U+0536 dk(small_tyun)            c Զտ
+if(option_key_t_letter_tyun = '1') dk(capital_za) + [CAPS SHIFT K_T] > U+0536 dk(small_tyun)            c Զտ
+if(option_key_t_letter_tyun = '1') dk(capital_za) + [NCAPS SHIFT K_T] > U+0536 dk(capital_tyun)            c ԶՏ
+if(option_key_t_letter_tyun = '1') dk(capital_za) + [CAPS K_T] > U+0536 dk(capital_tyun)            c ԶՏ
 
 dk(capital_za) + [NCAPS K_S] > U+0536 dk(small_seh)            c Զս
 dk(capital_za) + [CAPS SHIFT K_S] > U+0536 dk(small_seh)            c Զս
@@ -767,10 +943,15 @@ dk(capital_za) + [K_BKSLASH] > U+0536 dk(backslash)            c Զ\
 dk(capital_za) + [K_SLASH] > U+0536 dk(slash)            c Զ/
 
 c Dead key pairs by small co
-dk(small_co) + [NCAPS K_T] > U+0581 dk(small_to)            c ցթ
-dk(small_co) + [CAPS SHIFT K_T] > U+0581 dk(small_to)            c ցթ
-dk(small_co) + [NCAPS SHIFT K_T] > U+0581 dk(capital_to)            c ցԹ
-dk(small_co) + [CAPS K_T] > U+0581 dk(capital_to)            c ցԹ
+if(option_key_t_letter_tyun != '1') dk(small_co) + [NCAPS K_T] > U+0581 dk(small_to)            c ցթ
+if(option_key_t_letter_tyun != '1') dk(small_co) + [CAPS SHIFT K_T] > U+0581 dk(small_to)            c ցթ
+if(option_key_t_letter_tyun != '1') dk(small_co) + [NCAPS SHIFT K_T] > U+0581 dk(capital_to)            c ցԹ
+if(option_key_t_letter_tyun != '1') dk(small_co) + [CAPS K_T] > U+0581 dk(capital_to)            c ցԹ
+
+if(option_key_t_letter_tyun = '1') dk(small_co) + [NCAPS K_T] > U+0581 dk(small_tyun)            c ցտ
+if(option_key_t_letter_tyun = '1') dk(small_co) + [CAPS SHIFT K_T] > U+0581 dk(small_tyun)            c ցտ
+if(option_key_t_letter_tyun = '1') dk(small_co) + [NCAPS SHIFT K_T] > U+0581 dk(capital_tyun)            c ցՏ
+if(option_key_t_letter_tyun = '1') dk(small_co) + [CAPS K_T] > U+0581 dk(capital_tyun)            c ցՏ
 
 dk(small_co) + [NCAPS K_S] > U+0581 dk(small_seh)            c ցս
 dk(small_co) + [CAPS SHIFT K_S] > U+0581 dk(small_seh)            c ցս
@@ -808,10 +989,15 @@ dk(small_co) + [K_BKSLASH] > U+0581 dk(backslash)            c ց\
 dk(small_co) + [K_SLASH] > U+0581 dk(slash)            c ց/
 
 c Dead key pairs by capital co
-dk(capital_co) + [NCAPS K_T] > U+0551 dk(small_to)            c Ցթ
-dk(capital_co) + [CAPS SHIFT K_T] > U+0551 dk(small_to)            c Ցթ
-dk(capital_co) + [NCAPS SHIFT K_T] > U+0551 dk(capital_to)            c ՑԹ
-dk(capital_co) + [CAPS K_T] > U+0551 dk(capital_to)            c ՑԹ
+if(option_key_t_letter_tyun != '1') dk(capital_co) + [NCAPS K_T] > U+0551 dk(small_to)            c Ցթ
+if(option_key_t_letter_tyun != '1') dk(capital_co) + [CAPS SHIFT K_T] > U+0551 dk(small_to)            c Ցթ
+if(option_key_t_letter_tyun != '1') dk(capital_co) + [NCAPS SHIFT K_T] > U+0551 dk(capital_to)            c ՑԹ
+if(option_key_t_letter_tyun != '1') dk(capital_co) + [CAPS K_T] > U+0551 dk(capital_to)            c ՑԹ
+
+if(option_key_t_letter_tyun = '1') dk(capital_co) + [NCAPS K_T] > U+0551 dk(small_tyun)            c Ցտ
+if(option_key_t_letter_tyun = '1') dk(capital_co) + [CAPS SHIFT K_T] > U+0551 dk(small_tyun)            c Ցտ
+if(option_key_t_letter_tyun = '1') dk(capital_co) + [NCAPS SHIFT K_T] > U+0551 dk(capital_tyun)            c ՑՏ
+if(option_key_t_letter_tyun = '1') dk(capital_co) + [CAPS K_T] > U+0551 dk(capital_tyun)            c ՑՏ
 
 dk(capital_co) + [NCAPS K_S] > U+0551 dk(small_seh)            c Ցս
 dk(capital_co) + [CAPS SHIFT K_S] > U+0551 dk(small_seh)            c Ցս
@@ -940,10 +1126,15 @@ dk(backslash) + [SHIFT K_QUOTE] > U+005C dk(double_quote)            c \"
 dk(backslash) + [K_BKSLASH] > U+005C dk(backslash)            c \\
 
 c Dead key pairs by slash
-dk(slash) + [NCAPS K_T] > U+002F dk(small_to)            c /թ
-dk(slash) + [CAPS SHIFT K_T] > U+002F dk(small_to)            c /թ
-dk(slash) + [NCAPS SHIFT K_T] > U+002F dk(capital_to)            c /Թ
-dk(slash) + [CAPS K_T] > U+002F dk(capital_to)            c /Թ
+if(option_key_t_letter_tyun != '1') dk(slash) + [NCAPS K_T] > U+002F dk(small_to)            c /թ
+if(option_key_t_letter_tyun != '1') dk(slash) + [CAPS SHIFT K_T] > U+002F dk(small_to)            c /թ
+if(option_key_t_letter_tyun != '1') dk(slash) + [NCAPS SHIFT K_T] > U+002F dk(capital_to)            c /Թ
+if(option_key_t_letter_tyun != '1') dk(slash) + [CAPS K_T] > U+002F dk(capital_to)            c /Թ
+
+if(option_key_t_letter_tyun = '1') dk(slash) + [NCAPS K_T] > U+002F dk(small_tyun)            c /տ
+if(option_key_t_letter_tyun = '1') dk(slash) + [CAPS SHIFT K_T] > U+002F dk(small_tyun)            c /տ
+if(option_key_t_letter_tyun = '1') dk(slash) + [NCAPS SHIFT K_T] > U+002F dk(capital_tyun)            c /Տ
+if(option_key_t_letter_tyun = '1') dk(slash) + [CAPS K_T] > U+002F dk(capital_tyun)            c /Տ
 
 dk(slash) + [NCAPS K_S] > U+002F dk(small_seh)            c /ս
 dk(slash) + [CAPS SHIFT K_S] > U+002F dk(small_seh)            c /ս
@@ -979,17 +1170,27 @@ match > use(deadkeys)
 group(deadkeys)
 
 c **********************        ␠          s               S
-store(to_base_keys)             U+0020      dk(small_seh)   dk(capital_seh)
+store(t_base_keys)              U+0020      dk(small_seh)   dk(capital_seh)
 c ---------------------- t      թ           ծ               ծ
 store(small_to_res)             U+0569      U+056E          U+056E
 c ---------------------- T      Թ           Ծ               Ծ
 store(capital_to_res)           U+0539      U+053E          U+053E
+c ---------------------- t      տ           ծ               ծ
+store(small_tyun_res)           U+057F      U+056E          U+056E
+c ---------------------- T      Տ           Ծ               Ծ
+store(capital_tyun_res)         U+054F      U+053E          U+053E
 
-dk(small_to) notany(to_base_keys) > U+0569 context(2)
-dk(small_to) any(to_base_keys) > index(small_to_res, 2)
+if(option_key_t_letter_tyun != '1') dk(small_to) notany(t_base_keys) > U+0569 context(3)
+if(option_key_t_letter_tyun != '1') dk(small_to) any(t_base_keys) > index(small_to_res, 3)
 
-dk(capital_to) notany(to_base_keys) > U+0539 context(2)
-dk(capital_to) any(to_base_keys) > index(capital_to_res, 2)
+if(option_key_t_letter_tyun != '1') dk(capital_to) notany(t_base_keys) > U+0539 context(3)
+if(option_key_t_letter_tyun != '1') dk(capital_to) any(t_base_keys) > index(capital_to_res, 3)
+
+if(option_key_t_letter_tyun = '1') dk(small_tyun) notany(t_base_keys) > U+057F context(3)
+if(option_key_t_letter_tyun = '1') dk(small_tyun) any(t_base_keys) > index(small_tyun_res, 3)
+
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) notany(t_base_keys) > U+054F context(3)
+if(option_key_t_letter_tyun = '1') dk(capital_tyun) any(t_base_keys) > index(capital_tyun_res, 3)
 
 
 c **********************        ␠          h            H
@@ -1076,28 +1277,28 @@ dk(capital_co) notany(co_base_keys) > U+0551 context(2)
 dk(capital_co) any(co_base_keys) > index(capital_co_res, 2)
 
 
-c **********************        ␠      w       W       e       E       r       R       t             T               p       P       j       J       c             C               -       ,       .       <       >       /          o       O       [       ]
-store(apostrophe_base_keys)     U+0020  U+0582  U+0552  U+0565  U+0535  U+0580  U+0550  dk(small_to)  dk(capital_to)  U+0583  U+0553  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+002D  U+002C  U+002E  U+003C  U+003E  dk(slash)  U+0585  U+0555  U+005B  U+005D
-c ---------------------- '      '       և       և       է       Է       ռ       Ռ       տ             Տ               պ       Պ       ճ       Ճ       ծ             Ծ               ֊       ՚       ·       ‹       ›       ՛          °       °       ‘       ’
-store(apostrophe_res)           U+0027  U+0587  U+0587  U+0567  U+0537  U+057C  U+054C  U+057F        U+054F          U+057A  U+054A  U+0573  U+0543  U+056E        U+053E          U+058A  U+055A  U+00B7  U+2039  U+203A  U+055B     U+00B0  U+00B0  U+2018  U+2019
+c **********************        ␠      w       W       e       E       j       J       c             C               -       ,       .       <       >       /          o       O       [       ]
+store(apostrophe_base_keys)     U+0020  U+0582  U+0552  U+0565  U+0535  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+002D  U+002C  U+002E  U+003C  U+003E  dk(slash)  U+0585  U+0555  U+005B  U+005D  U+0580  U+0550  U+057C  U+054C  dk(small_to)  dk(capital_to)  dk(small_tyun)  dk(capital_tyun)  U+0583  U+0553  U+057A  U+054A
+c ---------------------- '      '       և       և       է       Է       ճ       Ճ       ծ             Ծ               ֊       ՚       ·       ‹       ›       ՛          °       °       ‘       ’
+store(apostrophe_res)           U+0027  U+0587  U+0587  U+0567  U+0537  U+0573  U+0543  U+056E        U+053E          U+058A  U+055A  U+00B7  U+2039  U+203A  U+055B     U+00B0  U+00B0  U+2018  U+2019  U+057C  U+054C  U+0580  U+0550  U+057F        U+054F          U+0569          U+0539            U+057A  U+054A  U+0583  U+0553
 
 dk(apostrophe) notany(apostrophe_base_keys) > U+0027 context(2)
 dk(apostrophe) any(apostrophe_base_keys) > index(apostrophe_res, 2)
 
 
-c **********************        ␠      w       W       e       E       r       R       t             T               p       P       j       J       c             C               <       >       [       ]
-store(double_quote_base_keys)   U+0020  U+0582  U+0552  U+0565  U+0535  U+0580  U+0550  dk(small_to)  dk(capital_to)  U+0583  U+0553  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+003C  U+003E  U+005B  U+005D
-c ---------------------- "      "       և       և       Է       Է       Ռ       Ռ       Տ             Տ               Պ       Պ       Ճ       Ճ       Ծ             Ծ               «       »       “       ”
-store(double_quote_res)         U+0022  U+0587  U+0587  U+0537  U+0537  U+054C  U+054C  U+054F        U+054F          U+054A  U+054A  U+0543  U+0543  U+053E        U+053E          U+00AB  U+00BB  U+201C  U+201D
+c **********************        ␠      w       W       e       E       j       J       c             C               <       >       [       ]
+store(double_quote_base_keys)   U+0020  U+0582  U+0552  U+0565  U+0535  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+003C  U+003E  U+005B  U+005D  U+0580  U+0550  U+057C  U+054C  dk(small_to)  dk(capital_to)  dk(small_tyun)  dk(capital_tyun)  U+0583  U+0553  U+057A  U+054A
+c ---------------------- "      "       և       և       Է       Է       Ճ       Ճ       Ծ             Ծ               «       »       “       ”
+store(double_quote_res)         U+0022  U+0587  U+0587  U+0537  U+0537  U+0543  U+0543  U+053E        U+053E          U+00AB  U+00BB  U+201C  U+201D  U+054C  U+054C  U+0550  U+0550  U+054F        U+054F          U+0539          U+0539            U+054A  U+054A  U+0553  U+0553
 
 dk(double_quote) notany(double_quote_base_keys) > U+0022 context(2)
 dk(double_quote) any(double_quote_base_keys) > index(double_quote_res, 2)
 
 
-c **********************        ␠      -       /          l       L       x       X       o       O       a       A       e       E       =       t             T               v       V       b       B       u       U       c             C               *       8       +       <       >       [       ]       {       }
-store(backslash_base_keys)      U+0020  U+002D  dk(slash)  U+056C  U+053C  U+0568  U+0538  U+0585  U+0555  U+0561  U+0531  U+0565  U+0535  U+003D  dk(small_to)  dk(capital_to)  U+057E  U+054E  U+0562  U+0532  U+0578  U+0548  dk(small_co)  dk(capital_co)  U+002A  U+0038  U+002B  U+003C  U+003E  U+005B  U+005D  U+007B  U+007D
-c ---------------------- \      \       −       ÷          ∟       ∟       ×       ×       ∘       ∘       ∀       ∀       ∃       ∃       ≡       ⟂             ⟂              ∨       ∨       ∈       ∈       ∪       ∪      ⊂             ⊂               ∗       ∞       ±       ≤       ≥       〈       〉       ≺       ≻
-store(backslash_res)            U+005C  U+2212  U+00F7     U+221F  U+221F  U+00D7  U+00D7  U+2218  U+2218  U+2200  U+2200  U+2203  U+2203  U+2261  U+27C2        U+27C2          U+2228  U+2228  U+2208  U+2208  U+222A  U+222A  U+2282        U+2282          U+2217  U+221E  U+00B1  U+2264  U+2265  U+2329  U+232A  U+227A  U+227B
+c **********************        ␠      -       /          l       L       x       X       o       O       a       A       e       E       =       v       V       b       B       u       U       c             C               *       8       +       <       >       [       ]       {       }
+store(backslash_base_keys)      U+0020  U+002D  dk(slash)  U+056C  U+053C  U+0568  U+0538  U+0585  U+0555  U+0561  U+0531  U+0565  U+0535  U+003D  U+057E  U+054E  U+0562  U+0532  U+0578  U+0548  dk(small_co)  dk(capital_co)  U+002A  U+0038  U+002B  U+003C  U+003E  U+005B  U+005D  U+007B  U+007D  dk(small_to)  dk(capital_to)  dk(small_tyun)  dk(capital_tyun)
+c ---------------------- \      \       −       ÷          ∟       ∟       ×       ×       ∘       ∘       ∀       ∀       ∃       ∃       ≡       ∨       ∨       ∈       ∈       ∪       ∪      ⊂             ⊂               ∗       ∞       ±       ≤       ≥       〈       〉       ≺       ≻
+store(backslash_res)            U+005C  U+2212  U+00F7     U+221F  U+221F  U+00D7  U+00D7  U+2218  U+2218  U+2200  U+2200  U+2203  U+2203  U+2261  U+2228  U+2228  U+2208  U+2208  U+222A  U+222A  U+2282        U+2282          U+2217  U+221E  U+00B1  U+2264  U+2265  U+2329  U+232A  U+227A  U+227B  U+27C2        U+27C2          U+27C2          U+27C2
 
 dk(backslash) notany(backslash_base_keys) > U+005C context(2)
 dk(backslash) any(backslash_base_keys) > index(backslash_res, 2)

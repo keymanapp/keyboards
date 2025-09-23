@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Tamil99 Keyboard Help';
   $pagetitle = 'Tamil99 Keyboard Help';
   $style = 'lang2 {font-size:130%}';
@@ -326,7 +325,7 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 </p>
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright 2008 thamizha.com and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright thamizha.com and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
 </p>
 <p>
 THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY

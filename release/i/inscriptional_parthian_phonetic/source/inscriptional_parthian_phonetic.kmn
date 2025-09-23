@@ -1,0 +1,32 @@
+﻿
+store(&VERSION) '10.0'
+store(&NAME) 'Inscriptional Parthian (Phonetic)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'inscriptional_parthian_phonetic.ico'
+store(&VISUALKEYBOARD) 'inscriptional_parthian_phonetic.kvks'
+store(&LAYOUTFILE) 'inscriptional_parthian_phonetic.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(CharsK) "abgdhwzctiklmnsopeqrxy"
+store(CharsU) U+10B40 .. U+10B55
+
+store(DigitK) "12345678"
+store(DigitU) U+10B58 .. U+10B5F
+
+store(digitsK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0]
+store(digits) "1234567890"
+
+store(nul) "fjuvABCDEFGHIJKLMNOPQRSTUVWXYZ90"
+
+group(main) using keys
+
+
++ any(CharsK) > index(CharsU,1)
++ any(DigitK) > index(DigitU,1)
++ any(digitsK) > index(digits,1)
+
++ any(nul) > nul

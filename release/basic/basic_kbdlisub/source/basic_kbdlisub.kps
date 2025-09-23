@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Lisu (Basic) Basic</Name>
-    <Copyright URL="">(c) 2018 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
+    <Description URL="">This keyboard is designed for languages using the Lisu script.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -63,16 +67,21 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lisu (Basic) Basic</Name>
       <ID>basic_kbdlisub</ID>
-      <Version></Version>
+      <Version>1.0.2</Version>
       <Languages>
         <Language ID="atb-Lisu">Zaiwa (Lisu)</Language>
-        <Language ID="lis-Lisu">Lisu (Lisu)</Language>
-        <Language ID="lbc-Lisu">Lakkia (Lisu)</Language>
+        <Language ID="lis">Lisu</Language>
         <Language ID="lpo-Lisu">Lipo (Lisu)</Language>
         <Language ID="nxq-Lisu">Naxi (Lisu)</Language>
       </Languages>

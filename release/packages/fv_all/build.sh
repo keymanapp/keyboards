@@ -3,176 +3,247 @@
 set -e
 set -u
 
-#
-# Define paths (we are three levels down from KEYBOARDROOT)
-#
-KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../.." && pwd )"
+## START STANDARD BUILD SCRIPT INCLUDE
+# adjust relative paths as necessary
+THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
+. "${THIS_SCRIPT%/*}/../../../resources/builder.inc.sh"
+# END STANDARD BUILD SCRIPT INCLUDE
 
-. "$KEYBOARDROOT/resources/util.sh"
-. "$KEYBOARDROOT/resources/environment.sh"
+# Script runs from this path
 
-locate_kmcomp
+cd "$THIS_SCRIPT_PATH"
 
-# Parse parameters
+. "$REPO_ROOT/resources/util.inc.sh"
+. "$REPO_ROOT/resources/zip.inc.sh"
+. "$REPO_ROOT/tools/jq.inc.sh"
 
-FLAG_SILENT=
-FLAG_CLEAN=
-FLAG_COLOR=
-FLAG_DEBUG=
-FLAG_TARGET=
-FLAG_COMPILER_VERSION=
-PROJECT_TARGET=
-lastkey=
+builder_describe \
+  "Build fv_all package" \
+  clean \
+  configure \
+  build \
+  test
 
-# Parse args
-for key in "$@"; do
-  if [[ -z "$lastkey" ]]; then
-    case "$key" in
-      -s)
-        FLAG_SILENT=-s
-        ;;
-      -d)
-        FLAG_DEBUG=-d
-        ;;
-      -c)
-        FLAG_CLEAN=-c
-        ;;
-      -t)
-        lastkey="$key"
-        ;;
-      -no-color)
-        FLAG_COLOR=-no-color
-        ;;
-      -color)
-        FLAG_COLOR=-color
-        ;;
-      -no-compiler-version)
-        # This flag is used only for regression tests.
-        FLAG_COMPILER_VERSION=-no-compiler-version
-        ;;
-    esac
-  else
-    case "$lastkey" in
-      -t)
-        FLAG_TARGET=-t
-        PROJECT_TARGET="$key"
-        if [[ "$PROJECT_TARGET" != "fv_all.kps" ]]; then
-          echo "Skipping fv_all.kps"
-          exit 0;
-        fi
-        ;;
-    esac
-    lastkey=
-  fi
-done
+builder_describe_outputs \
+  configure   /node_modules
 
-util_set_log_color_mode "$FLAG_COLOR"
+builder_parse "$@"
 
-if [ ! -z "$FLAG_CLEAN" ]; then
+#------------------------------------------------------------
+# Definitions
+#------------------------------------------------------------
+
+if [[ -z ${KMC+x} ]]; then
+  export KMC="${REPO_ROOT}/node_modules/.bin/kmc"
+  readonly KMC
+fi
+
+# TODO: remove -W
+if [[ -z ${KMC_BUILD_PARAMS+x} ]]; then
+  export KMC_BUILD_PARAMS="build $builder_debug -W --for-publishing"
+  readonly KMC_BUILD_PARAMS
+fi
+
+function do_clean() {
   rm -f ./source/fv_all.kps
   rm -rf ./build/
-  exit 0
-fi
+}
 
-# For each keyboard in the following release folders:
-# fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
-# If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
-# The fonts which are shared across the packages are already listed in fv_all.kps.in.
-# If fonts need changing, manually update the file.
+function do_configure() {
+  pushd "$REPO_ROOT"
+  npm install
+  popd
+}
 
-FILE_LINES=
-KEYBOARD_LINES=
+# Convert Bash array to JSONArray
+function convertToJSONArray() {
+  local mergedKeyboards=("$@")
+  local length=${#mergedKeyboards[@]}
+  echo "["
+  for key in "${!mergedKeyboards[@]}";
+  do
+    separator=","
+    if [[ $key -eq $length-1 ]]; then
+      separator=""
+    fi
+    echo "${mergedKeyboards[$key]}${separator}"
+  done
+  echo "]"
+}
 
-for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../../basic/basic_kbdcan/ ; do
-  id=$(basename "$keyboard")
-  group=$(basename $(dirname $keyboard))
+function do_build_kmp() {
+  # For each keyboard in the following release folders:
+  # fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
+  # If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
+  # The fonts which are shared across the packages are already listed in fv_all.kps.in.
+  # If fonts need changing, manually update the file.
 
-  # Only interested in keyboards with a .kmx / .js
+  FILE_LINES=
+  KEYBOARD_LINES=
 
-  if [[ ! -f $keyboard/build/$id.kmx ]] && [[ ! -f $keyboard/build/$id.js ]]; then continue; fi
+  for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../../basic/basic_kbdcan/ ; do
+    id=$(basename "$keyboard")
+    group=$(basename $(dirname $keyboard))
 
-  echo "Extracting $id"
+    # Only interested in keyboards with a .kmx / .js
 
-  # Load relevant fields from the .kps file
+    if [[ ! -f $keyboard/build/$id.kmx ]] && [[ ! -f $keyboard/build/$id.js ]]; then continue; fi
 
-  mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
-  name=${kpsdata[0]}
-  version=${kpsdata[1]}
-  bcp47=${kpsdata[2]}
-  langname=${kpsdata[3]}
-  oskFont=${kpsdata[4]}
-  displayFont=${kpsdata[5]}
+    echo "Extracting $id"
 
-  # Override sil_euro_latin keyboard to English language
-  if [[ $id = 'sil_euro_latin' ]]; then
-    bcp47="en"
-    langname="English"
+    # Load relevant fields from the .kps file
+
+    mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
+    name=${kpsdata[0]}
+    # version assigned later
+    bcp47=${kpsdata[2]}
+    langname=${kpsdata[3]}
+    oskFont=${kpsdata[4]}
+    displayFont=${kpsdata[5]}
+
+    # Parse .keyboard_info file to override keyboard version because
+    # some are blank due to <FollowKeyboardVersion/> (#2143)
+    keyboardInfo="$REPO_ROOT/release/$group/$id/build/$id.keyboard_info"
+    if [[ ! -f $keyboardInfo ]]; then
+      die "$keyboardInfo does not exist"
+    fi
+
+    version=$(cat $keyboardInfo | $JQ -r '.version')
+
+    # Override sil_euro_latin keyboard to English language
+    if [[ $id = 'sil_euro_latin' ]]; then
+      name="English"
+      bcp47="en"  
+      langname="English"
+    elif [[ $id = 'basic_kbdcan' ]]; then
+      name="Français"
+      bcp47="fr-CA"
+      langname="French (Canada)"
+    fi
+
+    # Build a file entry
+    FILE_LINES_0=''
+    FILE_LINES_1=''
+    if [ -f $keyboard/build/$id.kmx ]; then
+      FILE_LINES_0='
+        <File>
+          <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.kmx</Name>
+          <Description>File '"$id"'.kmx</Description>
+          <CopyLocation>0</CopyLocation>
+          <FileType>.kmx</FileType>
+        </File>'
+    fi
+    if [ -f $keyboard/build/$id.js ]; then
+      FILE_LINES_1='
+        <File>
+          <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.js</Name>
+          <Description>File '"$id"'.js</Description>
+          <CopyLocation>0</CopyLocation>
+          <FileType>.js</FileType>
+        </File>'
+    fi
+    FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
+
+    # Check for optional font info
+    OSK_FONT_LINES_0=''
+    if [[ "$oskFont" != 'none' ]]; then
+      OSK_FONT_LINES_0='
+        <OSKFont>'"$oskFont"'</OSKFont>'
+    fi
+    DISPLAY_FONT_LINES_0=''
+    if [[ "$displayFont" != 'none' ]]; then
+      DISPLAY_FONT_LINES_0='
+        <DisplayFont>'"$displayFont"'</DisplayFont>'
+    fi
+
+    # Build a keyboard entry
+    KEYBOARD_LINES_0='
+      <Keyboard>
+        <Name>'"$name"'</Name>
+        <ID>'"$id"'</ID>
+        <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
+        <Languages>
+          <Language ID="'"$bcp47"'">'"$langname"'</Language>
+        </Languages>
+      </Keyboard>'
+
+    KEYBOARD_LINES="$KEYBOARD_LINES$KEYBOARD_LINES_0"
+  done
+
+  # Verify keyboards exist
+  if [[ $KEYBOARD_LINES = '' ]]; then
+    die "No built keyboards exist for fv_all"
   fi
 
-  # Build a file entry
-  FILE_LINES_0=''
-  FILE_LINES_1=''
-  if [ -f $keyboard/build/$id.kmx ]; then
-    FILE_LINES_0='
-      <File>
-        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.kmx</Name>
-        <Description>File '"$id"'.kmx</Description>
-        <CopyLocation>0</CopyLocation>
-        <FileType>.kmx</FileType>
-      </File>'
-  fi
-  if [ -f $keyboard/build/$id.js ]; then
-    FILE_LINES_1='
-      <File>
-        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.js</Name>
-        <Description>File '"$id"'.js</Description>
-        <CopyLocation>0</CopyLocation>
-        <FileType>.js</FileType>
-      </File>'
-  fi
-  FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
+  # Insert replaced text into fv_all.kps
 
-  # Check for optional font info
-  OSK_FONT_LINES_0=''
-  if [[ "$oskFont" != 'none' ]]; then
-    OSK_FONT_LINES_0='
-      <OSKFont>'"$oskFont"'</OSKFont>'
-  fi
-  DISPLAY_FONT_LINES_0=''
-  if [[ "$displayFont" != 'none' ]]; then
-    DISPLAY_FONT_LINES_0='
-      <DisplayFont>'"$displayFont"'</DisplayFont>'
+  kps=$(<source/fv_all.kps.in)
+  kps="${kps//@FILES/$FILE_LINES}"
+  echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
+
+  # Build fv_all.kmp, using kmc as per normal build script
+
+  mkdir -p build || builder_die "Failed to create build folder for fv_all"
+
+  $KMC $KMC_BUILD_PARAMS .
+
+  rm source/fv_all.kps
+}
+
+# Create keyboards.json by merging keyboards from kmp.json with regions.json
+# Then add keyboards.json to fv_all.kmp
+function do_build_region() {
+  if [[ ! -f "build/fv_all.kmp" ]]; then
+    builder_die "build/fv_all.kmp doesn't exist"
   fi
 
-  # Build a keyboard entry
-  KEYBOARD_LINES_0='
-    <Keyboard>
-      <Name>'"$name"'</Name>
-      <ID>'"$id"'</ID>
-      <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
-      <Languages>
-        <Language ID="'"$bcp47"'">'"$langname"'</Language>
-      </Languages>
-    </Keyboard>'
+  # Extract kmp.json (overwrite) from build/fv_all.kmp
+  unzip -o build/fv_all.kmp kmp.json -d build
+  [ -f "build/kmp.json" ] || builder_die "fv_all: Failed to extract kmp.json"
 
-  KEYBOARD_LINES="$KEYBOARD_LINES$KEYBOARD_LINES_0"
-done
+  kmpKeyboards=$("$JQ" -r '.keyboards' build/kmp.json)
 
-# Verify keyboards exist
-if [[ $KEYBOARD_LINES = '' ]]; then
-  die "No built keyboards exist for fv_all"
-fi
+  count=$("$JQ" length <<< "$kmpKeyboards")
+  declare -a regions=()
+  declare -a mergedKeyboards=()
 
-# Insert replaced text into fv_all.kps
+  # For each keyboard entry in kmp.json, determine the corresponding region and add property
+  for (( i=0; i < count; i++))
+  do
+    kmpKeyboard=$($JQ -r ".[$i]" <<< "$kmpKeyboards")
+    id=$($JQ -r ".id" <<< "$kmpKeyboard")
+    region=$($JQ -r ".$id" source/regions.json)
+    if [[ "${region}" == "null" ]]; then
+      builder_die "Region for $id not found in regions.json"
+    fi
 
-kps=$(<source/fv_all.kps.in)
-kps="${kps//@FILES/$FILE_LINES}"
-echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
+    # Add corresponding region info
+    keyboard=$($JQ ". += { region: \"${region}\" }" <<< "$kmpKeyboard")
+    mergedKeyboards+=( "$keyboard" )
+  done
 
-# Build fv_all.kmp, using kmcomp as per normal build script
+  # Convert to JSONArray and write to keyboards.json file
+  convertToJSONArray "${mergedKeyboards[@]}" > "build/keyboards.json"
+ 
+  # Add keyboards.json to kmp.json
+  if [[ ! -f "build/keyboards.json" ]]; then
+    builder_die "Failed to generate build/keyboards.json"
+  fi
+  add_zip_files build/fv_all.kmp ./build/keyboards.json
+}
 
-mkdir -p build || die "Failed to create build folder for fv_all"
+function do_build() {
+  do_build_kmp
+  do_build_region
+}
 
-$KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_COMPILER_VERSION $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
+function do_test() {
+  # no op
+  echo TODO: test
+}
 
-rm source/fv_all.kps
+builder_run_action clean      do_clean
+builder_run_action configure  do_configure
+builder_run_action build      do_build
+builder_run_action test       do_test
+

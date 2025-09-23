@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>english_shavian.jpg</GraphicFile>
+    <GraphicFile>english_shavian_igc.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,10 +20,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Shaw Imperial</Name>
-    <Copyright URL="">2020-2021 Shavian.info</Copyright>
-    <Author URL="mailto:contact@shavian.info">Ed Greville</Author>
+    <Copyright URL="">© Shavian.info</Copyright>
+    <Author URL="mailto:contact@shavian.info">Evan Gallagher</Author>
     <WebSite URL="www.shavian.info">www.shavian.info</WebSite>
     <Version URL=""></Version>
+    <Description URL="">Shavian alphabet keyboard for English, inspired by the Shavian Imperial
+Good Companion typewriter layout.</Description>
   </Info>
   <Files>
     <File>
@@ -47,12 +51,6 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>HenryHigginsSans-Regular.ttf</Name>
-      <Description>Font Henry Higgins Sans Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\shavian_alphabet_reading_key.png</Name>
@@ -97,23 +95,43 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>english_shavian.jpg</Name>
-      <Description>File english_shavian.jpg</Description>
+      <Name>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</Name>
+      <Description>Font Inter Alia Regular</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\shaw\inter_alia\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>english_shavian_igc.png</Name>
+      <Description>File english_shavian_igc.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Shaw Imperial</Name>
       <ID>english_shavian_igc</ID>
-      <Version>1.1</Version>
-      <OSKFont>HenryHigginsSans-Regular.ttf</OSKFont>
-      <DisplayFont>HenryHigginsSans-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en-Shaw">English (Shavian)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="english_shavian_qwerty"/>
+    <RelatedPackage ID="english_shavian_jafl"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

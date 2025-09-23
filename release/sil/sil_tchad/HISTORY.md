@@ -1,6 +1,19 @@
 Tchad Keyboard Change History
 =======================
 
+4.3.2 (31 Mar 2025)
+------------------
+* Adjust language tag for fub to fub-Latn and 
+  remove cds (Chadian Sign Language)
+
+4.3.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+4.3 (3 Jan 2023)
+------------------
+* Added tildes over some vowels in touch layout
+
 4.2.1 (17 Feb 2022)
 ------------------
 * Updated to use font from shared fonts

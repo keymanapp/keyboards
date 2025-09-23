@@ -1,0 +1,193 @@
+﻿c lavanya generated from template at 2025-05-06 13:09:03
+c with name "Lavanya"
+store(&VERSION) '10.0'
+store(&NAME) 'lavanya'
+store(&COPYRIGHT) 'Copyright © Prashanth'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'lavanya.ico'
+store(&VISUALKEYBOARD) 'lavanya.kvks'
+store(&LAYOUTFILE) 'lavanya.keyman-touch-layout'
+store(&MESSAGE) 'Phonetic based Telugu Keyboard'
+store(&KMW_HELPTEXT) 'Phonetic based Telugu Keyboard'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+group(main) using keys
+store(vowelKeys) 'AiIuUReEYoOVM:'
+store(vowels) 'ఆఇఈఉఊఋఎఏఐఒఓఔంః'
+
+c Vowel Matras for readability 'ా' 'ి' 'ీ'  'ు' 'ూ' 'ృ' 'ె' 'ే' 'ై' 'ొ' 'ో' 'ౌ' 'ం' 'ః'
+store(vowelMatras) 'ాిీుూృెేైొోౌంః'
+
+store(cons_weak_keys_1) 'kgcjpbl'
+store(cons_strong_keys_1) 'KGCJPBL'
+
+store(cons_weak_chars_1) 'కగచజపబల'
+store(cons_strong_chars_1) 'ఖఘఛఝఫభళ'
+
+store(cons_weak_keys_2) 'TDtds'
+store(cons_weak_chars_2) 'టడతదస'
+store(cons_strong_chars_2) 'ఠఢథధష'
+
+store(cons_remaining_keys) 'qQNnmyrvSH'
+store(cons_remaining_chars) 'ఙఞణనమయరవశహ'
+  
+
+store(consonants) outs(cons_weak_chars_1) outs(cons_strong_chars_1) outs(cons_weak_chars_2) outs(cons_strong_chars_2) outs(cons_remaining_chars) 'ఱఴ'
+
+store(allKeys) outs(cons_weak_keys_1) outs(cons_strong_keys_1) outs(cons_weak_keys_2) outs(cons_remaining_keys) outs(vowelKeys)
+
+any(cons_weak_chars_1) '్' + 'h' > index(cons_strong_chars_1, 1) '్'
+any(cons_weak_chars_2) '్' + 'h' > index(cons_strong_chars_2, 1) '్'
+
+
+c Adjust the behavior of 'a'
++ 'a' > 'అ'
+'అ' + 'a' > 'ఆ'
+'అ' + 'i' > 'ఐ'
+'అ' + 'u' > 'ఔ'
+
+
+
+c MODIFIED BEHAVIOR: consonants now produce consonant + virama by default
++ any(cons_weak_keys_1) > index(cons_weak_chars_1, 1) '్'
++ any(cons_strong_keys_1) > index(cons_strong_chars_1, 1) '్'
++ any(cons_weak_keys_2) > index(cons_weak_chars_2, 1) '్'
++ any(cons_remaining_keys) > index(cons_remaining_chars, 1) '్'
+
+c Add backspace handling for vowel matras
+any(consonants) any(vowelMatras) + [K_BKSP] > context(1) '్'
+
+c Adding vowel after consonant with virama
+c If 'a' key pressed after consonant with virama, remove virama to show inherent vowel
+any(consonants) '్' + 'a' > context(1) dk(a)
+ 
+c If 'a' key pressed again, add the long 'a' vowel mark
+any(consonants) dk(a) + 'a' > context(1) 'ా'
+any(consonants) dk(a) + 'i' > context(1) 'ై'
+any(consonants) dk(a) + 'u' > context(1) 'ౌ'
+
+c If any other vowel key pressed after consonant with virama, add appropriate matra
+any(consonants) '్' + any(vowelKeys) > context(1) index(vowelMatras, 3)
+
+
+c Adjust the behavior of 'e'
+'ఎ' + 'e' > 'ఏ'
+'ె' + 'e' > 'ే'
+
+c Adjust the behavior of 'i'
+'ఇ' + 'i' > 'ఈ'
+'ి' + 'i' > 'ీ'
+  
+c Adjust the behavior of o
+'ఒ' + 'o' > 'ఓ'
+'ొ' + 'o' > 'ో'
+'ఒ' + 'u' > 'ఔ'
+'ొ' + 'u' > 'ౌ'
+
+c Adjust the behavior of R
+'ఋ' + 'R' > 'ౠ'
+'ృ' + 'u' > 'ౄ'
+'ృ' + 'U' > 'ౄ'
+
+c Adjust the behavior of u
+'ఉ' + 'u' > 'ఊ'
+'ు' + 'u' > 'ూ'
+
+c Adjust the behavior of S
++ '(' > 'ఁ'  
+'`' dk(bt) + '(' > '('
+
+c Adjust the behavior of F
++ 'F' > nul
+'`' dk(bt) + 'F' > 'F'
+
++ 'f' > nul
+'`' dk(bt) + 'f' > 'f'
+
++ 'h' > nul
+'`' dk(bt) + 'h' > 'h'
+
++ 'w' > nul
+'`' dk(bt) + 'w' > 'w'
+
++ 'W' > nul
+'`' dk(bt) + 'W' > 'W'
+
++ 'z' > nul
+'`' dk(bt) + 'z' > 'z'
+
++ 'Z' > nul
+'`' dk(bt) + 'Z' > 'Z'
+
++ 'x' > nul
+'`' dk(bt) + 'x' > 'x'
+
++ 'X' > nul
+'`' dk(bt) + 'X' > 'X'
+
+c Adjust the behavior of f to force disjoiner
+any(consonants) + 'f' > context '్' U+200C
+any(consonants) '్' + 'f' > context U+200C
+any(consonants) + '^' > context '్' U+200C
+any(consonants) '్' + '^' > context U+200C
+  
+c to use the colon, preceding it with backtick is the only option
+c to use the $ symbol, preceding it with backtick is the only option
+c to use the ( symbol, preceding it with backtick is the only option
+c to use the ^ symbol, preceding it with backtick is the only option 
+store(WordFinalPunct) ' ",;.>!{[]}-\;/~@#%&*_+|<?)'
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
++ '$' > '₹'
+'`' dk(bt) + '$' > '$'
+'`' dk(bt) + '^' > '^'
+
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ఱ' '్'
+'=' dk(eq)+ 'l' > 'ఴ' '్'
+
+  
+c Restrict the ZW characters
+U+200C + 'f' > context beep
+U+200D + 'f' > context beep
+
+  
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"  
+
+c Dashes
+'--' + '`' > U+2013
+U+2013 + '`' > '--'
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'
+
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+  
+c numbers
+store(numberKeys) '1234567890'
+store(teluguNumbers) '౧౨౩౪౫౬౭౮౯౦'
+'`' dk(bt) + any(numberKeys) > index(teluguNumbers, 3)
+any(teluguNumbers) + any(numberKeys) > context index(teluguNumbers, 2)  
+
+c Original vowel key behavior is maintained
++ any(vowelKeys) > index(vowels, 1)
+
+c Support for special cases with ఱ and ఴ
+'ఱ' '్' + 'a' > 'ఱ'
+'ఴ' '్' + 'a' > 'ఴ'

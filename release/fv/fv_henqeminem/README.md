@@ -1,10 +1,7 @@
-Hǝn̓q̓ǝmin̓ǝm keyboard
+hǝn̓q̓ǝmin̓ǝm̓ keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-
-Hǝn̓q̓ǝmin̓ǝm keyboard layout for Unicode
+hǝn̓q̓ǝmin̓ǝm̓ keyboard layout for Unicode
 
 Links
 -----

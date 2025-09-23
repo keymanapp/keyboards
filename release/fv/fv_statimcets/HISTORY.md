@@ -1,5 +1,21 @@
 St̓át̓imcets Change History
 ============================
+9.2 (19 Jul 2024)
+------------------
+* Tweaked mobile layout
+* Added alternate way to type Slash for Google Workspace
+* Tidied documentation
+* Added alternate names to description
+
+9.1.4 (23 Feb 2024)
+------------------
+* Added crossplatform rules and stores
+* Normalised code points
+* Centered mobile keyboard
+
+9.1.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
 
 9.1.2 (12 May 2022)
 -------------------

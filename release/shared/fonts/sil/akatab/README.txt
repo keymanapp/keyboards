@@ -2,16 +2,16 @@ README
 Akatab
 ======
 
-Akatab is a Unicode font for rendering Tifinagh characters in the Tamahaq and 
-Tamashek languages. This font uses state-of-the-art OpenType and Graphite font 
-technologies to provide accurate typography including the formation of 
+Akatab is a Unicode font for rendering Tifinagh characters in the Tamahaq, 
+Tamashek and Tawallammat languages. This font uses state-of-the-art OpenType 
+font technology to provide accurate typography including the formation of 
 bi-consonant ligatures. Variations of characters are included in the font to 
 meet personal and regional preferences. For more information about supported 
 Unicode ranges and languages, smart font features and how to use them, please 
 see the documentation folder.
 
 Akatab is released under under the SIL Open Font License 
-(http://scripts.sil.org/OFL).  
+(https://openfontlicense.org).  
 
 The Latin glyphs are based on the OFL-licensed Source Sans Pro fonts 
 (https://github.com/adobe-fonts/source-sans-pro).
@@ -50,10 +50,10 @@ system keyboard, the Keyman program (www.keyman.com) can be helpful on
 Windows, macOS, and Linux systems. 
 
 Rendering:
-This font is designed to work with two advanced font technologies, Graphite 
-and OpenType. To take advantage of the advanced typographic capabilities of 
+This font is designed to work with OpenType advanced font technology. 
+To take advantage of the advanced typographic capabilities of 
 this font, you must be using applications that provide an adequate level of 
-support for Graphite or OpenType.
+support for OpenType.
 
 
 INSTALLATION AND CONFIGURATION

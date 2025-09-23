@@ -1,14 +1,13 @@
-tagbanwa_inscript keyboard
+Tagbanwa Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-This keyboard is designed for Central Tagbanwa language, using Tagbanwa script with an Inscript layout.
+This keyboard is designed for the Central Tagbanwa language, using the Tagbanwa script with an Inscript layout.
 
 Links
 -----
+https://keyman.com/keyboards/tagbanwa_inscript
 
 Copyright
 ---------

@@ -1,0 +1,37 @@
+/* Main key style: gradient grey-to-black, rounded, white text, soft polish */
+.kmw-key {
+  background: linear-gradient(to bottom, #cccccc 0%, #333333 100%);
+  color: #fff;
+  border-radius: 18px;           /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 1.5px 0 #fff inset; /* Soft polish effect */
+  border: 1px solid #444;
+  font-weight: 500;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+/* Key press effect: lighter polish, soft feel */
+.kmw-key:active,
+.kmw-key.kmw-key-pressed {
+  background: linear-gradient(to bottom, #e0e0e0 0%, #666 100%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.18) inset;
+}
+
+/* Popup keys (longpress popups): grey background, white text, rounded */
+.kmw-key-popup {
+  background: #888;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  border: 1px solid #aaa;
+}
+
+/* Optional: Make popup keys larger and more readable */
+.kmw-key-popup .kmw-key-text {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* Optional: Slightly more rounded corners for all keys */
+.kmw-key, .kmw-key-popup {
+  border-radius: 18px;
+}

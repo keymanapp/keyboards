@@ -1,10 +1,7 @@
 <?php
   $pagename = 'Kmhmu (SIL) Keyboard Help';
   $pagetitle = 'Kmhmu (SIL)  Keyboard Help';
-  $style = <<<EXTRA
-  p { font: 10pt Tahoma }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc }
+  $pagestyle = <<<END
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
@@ -12,15 +9,9 @@
   img {width:100% ;max-width:750px;}
   th.narrow {width:40px;}
   th.medium {width:100px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
-
-
-
-
-
-<h1>Kmhmu (SIL) Keyboard</h1>
 
 <h2>Desktop Keyboard Layout Notes</h2>
 <p>Keyboard layout (as shown below) follows the Lao standard, with the following minor differences to simplify entry of Kmhmu text:</p>
@@ -148,16 +139,19 @@ EXTRA;
   <td class='kmhmu'> ] or }</td>
 </tr>
 </table>
-<h2 style="clear: left; page-break-before: always">Desktop Keyboard layout - Unshifted</h2>
-<p><img alt="Kmhmu (SIL) Desktop keyboard layout: normal (default) state" src="sil_kmhmuU.png"/></p>
-<h2 style="clear: left; page-break-before: always">Desktop Keyboard layout - with Shift</h2>
-<p><img alt="Kmhmu (SIL) Desktop keyboard layout: shift state" src="sil_kmhmuU_S.png"/></p>
-<h2 style="clear: left; page-break-before: always">Desktop Keyboard layout - with Right Alt</h2>
-<p><img alt="Kmhmu (SIL) Desktop keyboard layout: AltGr state" src="sil_kmhmuU_RA.png"/></p>
-<h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - Default</h2>
-<p><img alt="Kmhmu (SIL) Mobile keyboard layout: Default" src="sil_kmhmumobile.jpg"/></p>
-<h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - with Symbol</h2>
-<p><img alt="Kmhmu (SIL) Mobile keyboard layout: Symbol" src="sil_kmhmumobile_symbol.jpg"/></p>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
+
+<h2>Mobile/Tablet Keyboard Layout</h2>
+
+<div id='osk-tablet' data-states='default symbol'>
+</div>
+
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
 <h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - with Longpress</h2>
 <p><img alt="Kmhmu (SIL) Mobile keyboard layout: Longpress" src="sil_kmhmumobile_longpress.jpg"/></p>
 
@@ -165,8 +159,3 @@ EXTRA;
   <p>The font <b>Kmhmu OT 2.002</b> and <b>Kmhmu MX</b> have been included with the keyboard layout.</p>
   <p>Both font will be installed on Windows, but Kmhmu OT 2.002 is selected by default for OSK and Keyman app.</p>
   <p>When using outside Keyman app, the default system font may be used instead.</p>
-
-<hr/>
-<p>&copy; SIL International</p>
-</body>
-</html>

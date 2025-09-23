@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.290.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -21,6 +23,11 @@
     <Copyright URL="">© Cibu C. J.</Copyright>
     <Author URL="mailto:cibucj@gmail.com">Cibu C. J.</Author>
     <WebSite URL="https://sites.google.com/site/cibu/mozhi2">https://sites.google.com/site/cibu/mozhi2</WebSite>
+    <Description URL="">Mozhi Malayalam Keyboard based on the Mozhi Spec 2.0. Transliteration
+scheme was originally developed for Varamozhi Application. It uses a
+unique English character sequence for each Malayalam letter. Please
+visit [Mozhi Spec](https://sites.google.com/site/cibu/mozhi2) for more
+information.</Description>
   </Info>
   <Files>
     <File>
@@ -28,12 +35,6 @@
       <Description>Keyboard Malayalam Mozhi</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\build\mozhi_malayalam.js</Name>
-      <Description>File mozhi_malayalam.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\mozhi_malayalam.kvk</Name>
@@ -60,33 +61,50 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\assets\AnjaliOldLipi-Regular.ttf</Name>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</Name>
       <Description>Font AnjaliOldLipi Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\assets\AnjaliOldLipi-Regular_LICENSE.txt</Name>
+      <Name>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular_LICENSE.txt</Name>
       <Description>File AnjaliOldLipi-Regular_LICENSE.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Malayalam Mozhi</Name>
       <ID>mozhi_malayalam</ID>
-      <Version>3.2.22.05.09.16</Version>
+      <Version>3.2.4</Version>
+      <OSKFont>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ml">Malayalam</Language>
       </Languages>
+      <Examples>
+        <Example ID="ml" Keys="m a l a y a a L a m" Text="മലയാളം" Note="Name of language"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="mozhi" Relationship="deprecates"/>
+    <RelatedPackage ID="mozhi_1_1_0" Relationship="deprecates"/>
+    <RelatedPackage ID="mozhi_5_1" Relationship="deprecates"/>
+    <RelatedPackage ID="mozhi51" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Prevents 'clear' on exit of mingw64 bash shell
@@ -62,11 +62,10 @@ done
 
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 CI_CACHE="$KEYBOARDROOT/.cache"
-JQ="$KEYBOARDROOT/tools/jq-win64.exe"
+. "$KEYBOARDROOT/tools/jq.inc.sh"
 keyboards_to_push=0
 
-. "$KEYBOARDROOT/servervars.sh"
-. "$KEYBOARDROOT/resources/util.sh"
+. "$KEYBOARDROOT/resources/util.inc.sh"
 
 echo "Uploading keyboard documentation to help.keyman.com"
 
@@ -200,6 +199,16 @@ function commit_and_push {
   pushd $HELP_KEYMAN_COM
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
+
+  local uuid=
+  if [[ -z ${BUILD_NUMBER+x} ]]; then
+    uuid=$(uuidgen)
+  else
+    uuid=TC-$BUILD_NUMBER
+  fi
+
+  local branch=auto/keyboards/upload/$uuid
+
   git add keyboard || return 1
   git diff --cached --no-ext-diff --quiet --exit-code && {
     # if no changes then don't do anything.
@@ -207,14 +216,31 @@ function commit_and_push {
     popd
     return 0
   }
-
   echo "changes added to cache...>>>"
-  git commit -m "Keyboard help deployment (automatic)" || return 1
-  git pull origin master || return 1
-  git push origin master || return 1
+
+  echo "creating new branch '$branch'"
+  git switch -c $branch
+  echo "committed help to '$branch'"
+  git commit -m "auto: Keyboard help deployment" || return 1
+  git push origin $branch || return 1
+  echo "Push to help.keyman.com complete"
+
+  hub pull-request -f --no-edit -l auto || return 1
+  echo "PR created"
+
+  git switch master || return 1
+  echo "switched back to master"
+
   popd
 
-  echo "Push to help.keyman.com complete"
+  return 0
+}
+
+function update_help_repo() {
+  pushd $HELP_KEYMAN_COM
+  echo "ensuring master is up to date"
+  git pull origin master || return 1
+  popd
 
   return 0
 }
@@ -223,5 +249,6 @@ function commit_and_push {
 # Main
 #
 
+update_help_repo || exit 1
 upload_keyboard_helps_by_target || exit 1
 commit_and_push || exit 1

@@ -10,8 +10,6 @@
     Fulfulde Latin (QWERTY) keyboard developed for use for the Adamawa Fulfulde, Maasina Fulfulde, Nigerian Fulfulde, Pular, Pulaar, and Western Niger Fulfulde languages.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

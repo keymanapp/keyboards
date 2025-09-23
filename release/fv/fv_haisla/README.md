@@ -1,12 +1,7 @@
 Haisla keyboard
 ==============
 
-© FirstVoices 2020
-
-Version 1.0
-
-Description
------------
+Haisla Unicode keyboard layout
 
 The Haisla keyboard has been developed by FirstVoices and updated to suit their orthographic changes.
 More information about the Haisla archive on FirstVoices can be found here: https://www.firstvoices.com/explore/FV/sections/Data/Haisla/Haisla/Haisla

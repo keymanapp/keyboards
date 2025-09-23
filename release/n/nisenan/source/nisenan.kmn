@@ -1,10 +1,12 @@
 ﻿c Keyboard for typing Nisenan using the current alphabet adopted by the Shingle Springs Band of Miwok Indians (SSBMI) for use in Nisenan language materials.
-c  
-c Version 1.0 developed by Jonathan Geary (jgeary@ssband.org).
+c 
+c Version 1.0-2.1 developed by Jonathan Geary (jgeary@ssband.org).
+c 
+c Please contact the SSBMI Language Program at language@ssband.org.
 store(&VERSION) '10.0'
 store(&NAME) 'Nisenan'
 store(&COPYRIGHT) '© 2022 Shingle Springs Band of Miwok Indians'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '2.1.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'nisenan.kvks'
 store(&LAYOUTFILE) 'nisenan.keyman-touch-layout'
@@ -12,57 +14,51 @@ store(&LAYOUTFILE) 'nisenan.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [SHIFT RALT K_T] > 'T́'
-+ [RALT K_T] > 't́'
-+ [SHIFT RALT K_K] > 'Ḱ'
-+ [RALT K_K] > 'ḱ'
-+ [SHIFT RALT K_C] > 'Ć'
-+ [RALT K_C] > 'ć'
-+ [SHIFT RALT K_P] > 'Ṕ'
-+ [RALT K_P] > 'ṕ'
-+ [RALT K_BKSLASH] > '˙'
++ [SHIFT RALT K_T] > 'T’'
++ [RALT K_T] > 't’'
++ [SHIFT RALT K_K] > 'K’'
++ [RALT K_K] > 'k’'
++ [SHIFT RALT K_C] > 'C’'
++ [RALT K_C] > 'c’'
++ [SHIFT RALT K_P] > 'P’'
++ [RALT K_P] > 'p’'
 + [SHIFT RALT K_BKSLASH] > '’'
-+ [SHIFT RALT K_RBRKT] > 'Ü'
-+ [RALT K_RBRKT] > 'ü'
-+ [SHIFT RALT K_LBRKT] > 'Ʉ'
-+ [RALT K_LBRKT] > 'ʉ'
-+ [SHIFT RALT K_BKQUOTE] > 'AĪ'
-+ [RALT K_BKQUOTE] > 'aī'
-+ [SHIFT RALT K_1] > 'A˙Ī'
-+ [RALT K_1] > 'a˙ī'
-+ [RALT K_U] > 'ŭ'
-+ [SHIFT RALT K_U] > 'Ŭ'
-+ [RALT K_I] > 'ĭ'
-+ [SHIFT RALT K_I] > 'Ĭ'
-+ [RALT K_O] > 'ŏ'
-+ [SHIFT RALT K_O] > 'Ŏ'
-+ [RALT K_E] > 'ĕ'
-+ [SHIFT RALT K_E] > 'Ĕ'
++ [RALT K_BKSLASH] > '’'
++ [SHIFT RALT K_E] > 'Ə'
++ [RALT K_E] > 'ə'
++ [SHIFT RALT K_I] > 'Ɨ'
++ [RALT K_I] > 'ɨ'
 
-+ [T_0061_012B]            > U+0061 U+012B
-+ [T_0061_02D9_012B]       > U+0061 U+02D9 U+012B
-+ [SHIFT T_0041_012A]      > U+0041 U+012A
-+ [SHIFT T_0041_02D9_012A] > U+0041 U+02D9 U+012A
++ [SHIFT T_0043_2019] > U+0043 U+2019
++ [T_0063_2019] > U+0063 U+2019
++ [SHIFT T_004B_2019] > U+004B U+2019
++ [T_006B_2019] > U+006B U+2019
++ [SHIFT T_0050_2019] > U+0050 U+2019
++ [T_0070_2019] > U+0070 U+2019
++ [SHIFT T_0054_2019] > U+0054 U+2019
++ [T_0074_2019] > U+0074 U+2019
 
-+ [T_0074_0301]       > U+0074 U+0301
-+ [SHIFT T_0054_0301] > U+0054 U+0301
++ [RALT K_QUOTE] > U+0301
++ [SHIFT RALT K_QUOTE] > U+0301
 
-'e' + [RALT K_HYPHEN] > 'ĕ'
-'i' + [RALT K_HYPHEN] > 'ĭ'
-'o' + [RALT K_HYPHEN] > 'ŏ'
-'u' + [RALT K_HYPHEN] > 'ŭ'
-'E' + [RALT K_HYPHEN] > 'Ĕ'
-'I' + [RALT K_HYPHEN] > 'Ĭ'
-'O' + [RALT K_HYPHEN] > 'Ŏ'
-'U' + [RALT K_HYPHEN] > 'Ŭ'
-+ [RALT K_HYPHEN] > '̆'
+'A' + [SHIFT RALT K_QUOTE] > U+00C1
+'a' + [SHIFT RALT K_QUOTE] > U+00E1
+'E' + [SHIFT RALT K_QUOTE] > U+00C9
+'e' + [SHIFT RALT K_QUOTE] > U+00E9
+'I' + [SHIFT RALT K_QUOTE] > U+00CD
+'i' + [SHIFT RALT K_QUOTE] > U+00ED
+'O' + [SHIFT RALT K_QUOTE] > U+00D3
+'o' + [SHIFT RALT K_QUOTE] > U+00F3
+'U' + [SHIFT RALT K_QUOTE] > U+00DA
+'u' + [SHIFT RALT K_QUOTE] > U+00FA
 
-'c' + [RALT K_EQUAL] > 'ć'
-'k' + [RALT K_EQUAL] > 'ḱ'
-'p' + [RALT K_EQUAL] > 'ṕ'
-'t' + [RALT K_EQUAL] > U+0074 U+0301
-'C' + [RALT K_EQUAL] > 'Ć'
-'K' + [RALT K_EQUAL] > 'Ḱ'
-'P' + [RALT K_EQUAL] > 'Ṕ'
-'T' + [RALT K_EQUAL] > U+0054 U+0301
-+ [RALT K_EQUAL] > '́'
+'A' + [RALT K_QUOTE] > U+00C1
+'a' + [RALT K_QUOTE] > U+00E1
+'E' + [RALT K_QUOTE] > U+00C9
+'e' + [RALT K_QUOTE] > U+00E9
+'I' + [RALT K_QUOTE] > U+00CD
+'i' + [RALT K_QUOTE] > U+00ED
+'O' + [RALT K_QUOTE] > U+00D3
+'o' + [RALT K_QUOTE] > U+00F3
+'U' + [RALT K_QUOTE] > U+00DA
+'u' + [RALT K_QUOTE] > U+00FA

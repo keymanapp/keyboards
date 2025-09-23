@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.258.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.239.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Keyman\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,20 +20,16 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Easy Chakma</Name>
-    <Copyright URL="">© 2015-2022 Bivuti Chakma</Copyright>
+    <Copyright URL="">© Bivuti Chakma</Copyright>
     <Author URL="mailto:bsereye@hotmail.com">Bivuti Chakma</Author>
     <WebSite URL=""></WebSite>
+    <Description URL="">The first Unicode Keyboard for Chakma community. It is easy to use and
+to input any Chakma complex words even any Chakma spell-bound.</Description>
   </Info>
   <Files>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -54,29 +52,60 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>Guideline.pdf</Name>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome\Guideline.pdf</Name>
       <Description>File Guideline.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\chakma\RibengUni-Regular.ttf</Name>
-      <Description>Font RibengUni Regular</Description>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cakm\ChakmaUnicode\ChakmaUnicode-Regular.ttf</Name>
+      <Description>Font Chakma Unicode Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cakm\ChakmaUnicode\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Easy Chakma</Name>
       <ID>easy_chakma</ID>
-      <Version>1.21</Version>
-      <OSKFont>..\..\..\shared\fonts\chakma\RibengUni-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\chakma\RibengUni-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\cakm\ChakmaUnicode\ChakmaUnicode-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\cakm\ChakmaUnicode\ChakmaUnicode-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="ccp-Cakm-BD">Chakma (Chakma, Bangladesh)</Language>
+        <Language ID="ccp">Chakma</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="easy chakma new" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

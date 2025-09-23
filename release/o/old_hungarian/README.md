@@ -18,7 +18,7 @@ Keyboard home: https://keyman.com/keyboards/old_hungarian
 
 The Unicode standard block for Old Hungarian: https://unicode.org/charts/PDF/U10C80.pdf
 
-The Kende-fonts project page: https://github.com/kende-font/kende-font
+The Kende-fonts project page: https://github.com/rovasiras/kende-font
 
 
 Supported Platforms

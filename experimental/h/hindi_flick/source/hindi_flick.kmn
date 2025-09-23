@@ -1,0 +1,464 @@
+store(&NAME) 'Hindi Flick'
+store(&VISUALKEYBOARD) 'hindi_flick.kvks'
+store(&BITMAP) 'hindi_flick.ico'
+store(&LAYOUTFILE) 'hindi_flick.keyman-touch-layout'
+store(&COPYRIGHT) '© SIL Global'
+store(&MESSAGE) 'A mobile keyboard layout designed for Hindi, utilizing a flick input method.'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+c comment these all out to go to design section
+store(svara) U+0904 .. U+0914
+store(small_svara) 'इउएओ'
+store(big_svara) 'ईऊऐऔ'
+store(vyanjan) U+0915 .. U+0939
+store(small_matraein) U+093F U+0941 U+0947 U+094B
+store(big_matraein) U+0940 U+0942 U+0948 U+094C
+store(matras) outs(small_matraein) outs(big_matraein)
+store(d_digits) U+0966 .. U+096F c devanagari digits
+store(h_digits) U+0030 .. U+0039 c hindu-arabic digits
+
+c comment this out to go to design section
+group(checkMatra)
+  c any(vyanjan) any(small_matraein) any(small_matraein)> context(1) context(3)
+  c any(vyanjan) any(small_matraein) any(big_matraein)> context(1) context(3)
+  c any(vyanjan) any(big_matraein) any(small_matraein)> context(1) context(3)
+  c any(vyanjan) any(big_matraein) any(big_matraein)> context(1) context(3)
+  c ा + ॅ -> ॉ (aa + chandra -> dr. o, i.e. o in doctor)
+  U+093E U+0945 > U+0949
+  c builds on previous rule, to get chandrabindu on aa
+  U+0949 U+0902 > U+093E U+0901
+  c same, but other way
+  U+093E U+0902 U+0945 > U+093E U+0901
+  U+0902 U+0902 > U+093C c anusvara to nukta
+  U+093C U+093C > U+0902 c nukta to anusvara
+  c halant on halant removes the original halant, making it a live consonant.
+  U+094D U+094D > nul
+  c no char behind, add full svara.
+  nul U+094D > U+0905 c a
+  nul U+093E > U+0905 c a
+  nul U+093F > U+0907 c i
+  nul U+0941 > U+0909 c u
+  nul U+0947 > U+090F c e
+  nul U+094B > U+0913 c o
+  nul U+0943 > U+090B c ri
+  nul U+0949 > U+0911 c aw
+  c linebreak, add full svara.
+  U+000A U+094D > context use(linebreakFullSvara) c a
+  U+000A U+093E > context use(linebreakFullSvara) c a
+  U+000A U+093F > context use(linebreakFullSvara) c i
+  U+000A U+0941 > context use(linebreakFullSvara) c u
+  U+000A U+0947 > context use(linebreakFullSvara) c e
+  U+000A U+094B > context use(linebreakFullSvara) c o
+  U+000A U+0943 > context use(linebreakFullSvara) c ri
+  U+000A U+0949 > context use(linebreakFullSvara) c aw
+  c svara behind, add full svara.
+  any(svara) U+094D > context(1)  c a
+  any(svara) U+093E > context(1) U+0905 c aa
+  any(svara) U+093F > context(1) U+0907 c i
+  any(svara) U+0941 > context(1) U+0909 c u
+  any(svara) U+0947 > context(1) U+090F c e
+  any(svara) U+094B > context(1) U+0913 c o
+  any(svara) U+0943 > context(1) U+090B c ri
+  any(svara) U+0949 > context(1) U+0911 c aw
+  c matra behind, add full svara.
+  any(small_matraein) U+094D > context(1)  c a
+  any(small_matraein) U+093E > context(1) U+0905 c aa
+  any(small_matraein) U+093F > context(1) U+0907 c i
+  any(small_matraein) U+0941 > context(1) U+0909 c u
+  any(small_matraein) U+0947 > context(1) U+090F c e
+  any(small_matraein) U+094B > context(1) U+0913 c o
+  any(small_matraein) U+0943 > context(1) U+090B c ri
+  any(small_matraein) U+0949 > context(1) U+0911 c aw
+
+  any(big_matraein) U+094D > context(1)  c a
+  any(big_matraein) U+093E > context(1) U+0905 c aa
+  any(big_matraein) U+093F > context(1) U+0907 c i
+  any(big_matraein) U+0941 > context(1) U+0909 c u
+  any(big_matraein) U+0947 > context(1) U+090F c e
+  any(big_matraein) U+094B > context(1) U+0913 c o
+  any(big_matraein) U+0943 > context(1) U+090B c ri
+  any(big_matraein) U+0949 > context(1) U+0911 c aw
+
+  U+093E U+094D > context(1)  c a
+  U+093E U+093E > context(1) U+0905 c aa
+  U+093E U+093F > context(1) U+0907 c i
+  U+093E U+0941 > context(1) U+0909 c u
+  U+093E U+0947 > context(1) U+090F c e
+  U+093E U+094B > context(1) U+0913 c o
+  U+093E U+0943 > context(1) U+090B c ri
+  U+093E U+0949 > context(1) U+0911 c aw
+  c when at start of new word in sentence
+  U+0020 U+094D > U+0020 U+0905 c a
+  U+0020 U+093E > U+0020 U+0905 c aa
+  U+0020 U+093F > U+0020 U+0907 c i
+  U+0020 U+0941 > U+0020 U+0909 c u
+  U+0020 U+0947 > U+0020 U+090F c e
+  U+0020 U+094B > U+0020 U+0913 c o
+  U+0020 U+0943 > U+0020 U+090B c ri
+  U+0020 U+0949 > U+0020 U+0911 c aw
+
+  c when in front of poorn viraam
+  U+0964 U+094D > U+0964 U+0905 c a
+  U+0964 U+093E > U+0964 U+0905 c aa
+  U+0964 U+093F > U+0964 U+0907 c i
+  U+0964 U+0941 > U+0964 U+0909 c u
+  U+0964 U+0947 > U+0964 U+090F c e
+  U+0964 U+094B > U+0964 U+0913 c o
+  U+0964 U+0943 > U+0964 U+090B c ri
+  U+0964 U+0949 > U+0964 U+0911 c aw
+
+  c when in front of double poorn viraam
+  U+0965 U+094D > U+0965 U+0905 c a
+  U+0965 U+093E > U+0965 U+0905 c aa
+  U+0965 U+093F > U+0965 U+0907 c i
+  U+0965 U+0941 > U+0965 U+0909 c u
+  U+0965 U+0947 > U+0965 U+090F c e
+  U+0965 U+094B > U+0965 U+0913 c o
+  U+0965 U+0943 > U+0965 U+090B c ri
+  U+0965 U+0949 > U+0965 U+0911 c aw
+
+
+  c when in front of numbers
+  any(d_digits) U+094D > context(1) U+0905 c a
+  any(d_digits) U+093E > context(1) U+0905 c aa
+  any(d_digits) U+093F > context(1) U+0907 c i
+  any(d_digits) U+0941 > context(1) U+0909 c u
+  any(d_digits) U+0947 > context(1) U+090F c e
+  any(d_digits) U+094B > context(1) U+0913 c o
+  any(d_digits) U+0943 > context(1) U+090B c ri
+  any(d_digits) U+0949 > context(1) U+0911 c aw
+
+  any(h_digits) U+094D > context(1) U+0905 c a
+  any(h_digits) U+093E > context(1) U+0905 c aa
+  any(h_digits) U+093F > context(1) U+0907 c i
+  any(h_digits) U+0941 > context(1) U+0909 c u
+  any(h_digits) U+0947 > context(1) U+090F c e
+  any(h_digits) U+094B > context(1) U+0913 c o
+  any(h_digits) U+0943 > context(1) U+090B c ri
+  any(h_digits) U+0949 > context(1) U+0911 c aw
+
+  c when in front of ZWNJ, use svar form and remove ZWNJ
+  U+200C U+094D > U+0905 c a
+  U+200C U+093E > U+0905 c aa
+  U+200C U+093F > U+0907 c i
+  U+200C U+0941 > U+0909 c u
+  U+200C U+0947 > U+090F c e
+  U+200C U+094B > U+0913 c o
+  U+200C U+0943 > U+090B c ri
+  U+200C U+0949 > U+0911 c aw
+
+  c when in front of anusvara, use svar form
+  U+0902 U+094D > U+0902 U+0905 c a
+  U+0902 U+093E > U+0902 U+0905 c aa
+  U+0902 U+093F > U+0902 U+0907 c i
+  U+0902 U+0941 > U+0902 U+0909 c u
+  U+0902 U+0947 > U+0902 U+090F c e
+  U+0902 U+094B > U+0902 U+0913 c o
+  U+0902 U+0943 > U+0902 U+090B c ri
+  U+0902 U+0949 > U+0902 U+0911 c aw
+
+  c when in front of chandrabindu, use svar form
+  U+0901 U+094D > U+0901 U+0905 c a
+  U+0901 U+093E > U+0901 U+0905 c aa
+  U+0901 U+093F > U+0901 U+0907 c i
+  U+0901 U+0941 > U+0901 U+0909 c u
+  U+0901 U+0947 > U+0901 U+090F c e
+  U+0901 U+094B > U+0901 U+0913 c o
+  U+0901 U+0943 > U+0901 U+090B c ri
+  U+0901 U+0949 > U+0901 U+0911 c aw
+
+  c when in front of visarga, use svar form
+  U+0903 U+094D > U+0903 U+0905 c a
+  U+0903 U+093E > U+0903 U+0905 c aa
+  U+0903 U+093F > U+0903 U+0907 c i
+  U+0903 U+0941 > U+0903 U+0909 c u
+  U+0903 U+0947 > U+0903 U+090F c e
+  U+0903 U+094B > U+0903 U+0913 c o
+  U+0903 U+0943 > U+0903 U+090B c ri
+  U+0903 U+0949 > U+0903 U+0911 c aw
+
+  c when in front of chandra, use svar form
+  U+0945 U+094D > U+0945 U+0905 c a
+  U+0945 U+093E > U+0945 U+0905 c aa
+  U+0945 U+093F > U+0945 U+0907 c i
+  U+0945 U+0941 > U+0945 U+0909 c u
+  U+0945 U+0947 > U+0945 U+090F c e
+  U+0945 U+094B > U+0945 U+0913 c o
+  U+0945 U+0943 > U+0945 U+090B c ri
+  U+0945 U+0949 > U+0945 U+0911 c aw
+
+  c ri matra
+  U+090B U+094D > U+0943
+  c chandra to chandrabindu
+  any(vyanjan) U+0945 U+0902 > context(1) U+0901
+  any(svara) U+0945 U+0902 > context(1) U+0901
+  any(matras) U+0945 U+0902 > context(1) U+0901
+  any(vyanjan) U+0902 U+0945 > context(1) U+0901
+  any(svara) U+0902 U+0945 > context(1) U+0901
+  any(matras) U+0902 U+0945 > context(1) U+0901
+
+group(smallToBig)
+  c Swap short and long vowels
+  any(vyanjan) U+094D   > context(1) U+093E
+  any(vyanjan) U+093E   > context(1)
+  any(vyanjan) U+094D  U+0902 > context(1) U+093E U+0902
+  any(vyanjan) U+093E  U+0902 > context(1) U+094D U+0902
+  any(vyanjan) U+093C  U+094D > context(1) U+093C U+093E
+  any(vyanjan) U+093C  U+093E > context(1) U+093C U+094D
+
+  any(vyanjan) U+093F   > context(1) U+0940  c ि + ि → ी
+  any(vyanjan) U+0940   > context(1) U+093F  c ी + ि → ि
+  any(vyanjan) U+093F  U+0902 > context(1) U+0940 U+0902  c िंि → ीं
+  any(vyanjan) U+0940  U+0902 > context(1) U+093F U+0902  c ींि → िं
+  any(vyanjan) U+093C  U+093F > context(1) U+093C U+0940  c ि़ि → ी़
+  any(vyanjan) U+093C  U+0940 > context(1) U+093C U+093F  c ी़ि → ि़
+
+  any(vyanjan) U+0941  > context(1) U+0942  c ु + ु → ू
+  any(vyanjan) U+0942  > context(1) U+0941  c ू + ु → ु
+  any(vyanjan) U+0941  U+0902 >context(1)  U+0942 U+0902  c ुंु → ूं
+  any(vyanjan) U+0942  U+0902 >context(1)  U+0941 U+0902  c ूंु → ुं
+  any(vyanjan) U+093C  U+0941 >context(1)  U+093C U+0942  c ु़ु → ू़
+  any(vyanjan) U+093C  U+0942 >context(1)  U+093C U+0941  c ू़ु → ु़
+
+  any(vyanjan) U+0943  > context(1) U+0944  c ृ + ृ → ॄ
+  any(vyanjan) U+0944  > context(1) U+0943  c ॄ + ृ → ृ
+  any(vyanjan) U+0943  U+0902  > context(1) U+0944 U+0902  c ृंृ → ॄं
+  any(vyanjan) U+0944  U+0902  > context(1) U+0943 U+0902  c ॄंृ → ृं
+  any(vyanjan) U+093C  U+0943  > context(1) U+093C U+0944  c ृ़ृ → ॄ़
+  any(vyanjan) U+093C  U+0944  > context(1) U+093C U+0943  c ॄ़ृ → ृ़
+
+  any(vyanjan) U+0962  > context(1) U+0963  c ॢ + ॢ → ॣ
+  any(vyanjan) U+0963  > context(1) U+0962  c ॣ + ॢ → ॢ
+  any(vyanjan) U+0962  U+0902 > context(1) U+0963 U+0902  c ॢंॢ → ॣं
+  any(vyanjan) U+0963  U+0902 > context(1) U+0962 U+0902  c ॣंॢ → ॢं
+  any(vyanjan) U+093C  U+0962 > context(1) U+093C U+0963  c ॢ़ॢ → ॣ़
+  any(vyanjan) U+093C  U+0963 > context(1) U+093C U+0962  c ॣ़ॢ → ॢ़
+
+  any(vyanjan) U+0947  > context(1) U+0948  c े + े → ै
+  any(vyanjan) U+0948  > context(1) U+0947  c ै + े → े
+  any(vyanjan) U+0947  U+0902  > context(1) U+0948 U+0902  c ेंे → ैं
+  any(vyanjan) U+0948  U+0902  > context(1) U+0947 U+0902  c ैंे → ें
+  any(vyanjan) U+093C  U+0947  > context(1) U+093C U+0948  c े़े → ै़
+  any(vyanjan) U+093C  U+0948  > context(1) U+093C U+0947  c ै़े → े़
+
+  any(vyanjan) U+094B > context(1) U+094C  c ो + ो → ौ
+  any(vyanjan) U+094C > context(1) U+094B  c ौ + ो → ो
+  any(vyanjan) U+094B  U+0902 > context(1) U+094C U+0902  c ोंो → ौं
+  any(vyanjan) U+094C  U+0902 > context(1) U+094B U+0902  c ौंो → ों
+  any(vyanjan) U+093C  U+094B > context(1) U+093C U+094C  c ो़ो → ौ़
+  any(vyanjan) U+093C  U+094C > context(1) U+093C U+094B  c ौ़ो → ो़
+
+  c small svara <-> big svara
+  U+0905 > U+0906 c a -> aa
+  U+0907 > U+0908 c i -> ii
+  U+0909 > U+090A c u -> uu
+  U+090F > U+0910 c e -> ai
+  U+0913 > U+0914 c o -> au
+  U+0906 > U+0905 c aa -> a
+  U+0908 > U+0907 c ii -> i
+  U+090A > U+0909 c uu -> u
+  U+0910 > U+090F c ai -> e
+  U+0914 > U+0913 c au -> o
+
+c TODO: Is this actually being used anywhere?
+group(delMatraIfExists)
+  any(small_matraein) any(small_matraein) > context(2)
+  any(big_matraein) any(small_matraein) > context(2)
+  any(small_matraein) U+094D > context(2)
+  any(big_matraein) U+094D > context(2)
+  U+093E any(small_matraein) > context(2)
+  any(small_matraein) U+093E > context(2)
+  U+093E any(big_matraein) > context(2)
+  any(big_matraein) U+093E > context(2)
+
+group(matraToSvar)
+  c matra + ZWNJ = svara
+  U+094D U+200C > U+094D c a
+  U+093E U+200C > U+0906 c aa
+  U+093F U+200C > U+0907 c i
+  U+0940 U+200C > U+0908 c ii
+  U+0941 U+200C > U+0909 c u
+  U+0942 U+200C > U+090A c uu
+  U+0947 U+200C > U+090F c e
+  U+0948 U+200C > U+0910 c ai
+  U+094B U+200C > U+0913 c o
+  U+094C U+200C > U+0914 c au
+  U+0943 U+200C > U+090B c ri
+  U+0949 U+200C > U+0911 c aw
+
+  c vyanjan + matra + ZWNJ = vyanjan + svara
+  c any(vyanjan) U+200C > context(1) U+0905        c a
+  any(vyanjan) U+094D U+200C > context(1) U+094D c halant
+  any(vyanjan) U+0905 U+200C > context(1)        c back to vyanjan
+  any(vyanjan) U+0906 U+200C > context(1) U+093E c aa
+  any(vyanjan) U+0907 U+200C > context(1) U+093F c i
+  any(vyanjan) U+0908 U+200C > context(1) U+0940 c ii
+  any(vyanjan) U+0909 U+200C > context(1) U+0941 c u
+  any(vyanjan) U+090A U+200C > context(1) U+0942 c uu
+  any(vyanjan) U+090F U+200C > context(1) U+0947 c e
+  any(vyanjan) U+0910 U+200C > context(1) U+0948 c ai
+  any(vyanjan) U+0913 U+200C > context(1) U+094B c o
+  any(vyanjan) U+0914 U+200C > context(1) U+094C c au
+  any(vyanjan) U+090B U+200C > context(1) U+0943 c ri
+  any(vyanjan) U+0911 U+200C > context(1) U+0949 c aw
+
+  c with bindu (aaaaaaaaaaahhhhhhhh)
+  U+094D U+0902 U+200C > U+094D U+0902 c a
+  U+093E U+0902 U+200C > U+0905 U+0902 c aa
+  U+093F U+0902 U+200C > U+0907 U+0902 c i
+  U+0940 U+0902 U+200C > U+0908 U+0902 c ii
+  U+0941 U+0902 U+200C > U+0909 U+0902 c u
+  U+0942 U+0902 U+200C > U+090A U+0902 c uu
+  U+0947 U+0902 U+200C > U+090F U+0902 c e
+  U+0948 U+0902 U+200C > U+0910 U+0902 c ai
+  U+094B U+0902 U+200C > U+0913 U+0902 c o
+  U+094C U+0902 U+200C > U+0914 U+0902 c au
+  U+0943 U+0902 U+200C > U+090B U+0902 c ri
+  U+0949 U+0902 U+200C > U+0911 U+0902 c aw
+
+  any(vyanjan) U+0905 U+0902 U+200C > context(1) U+093E U+0902 c aa
+  any(vyanjan) U+0907 U+0902 U+200C > context(1) U+093F U+0902 c i
+  any(vyanjan) U+0908 U+0902 U+200C > context(1) U+0940 U+0902 c ii
+  any(vyanjan) U+0909 U+0902 U+200C > context(1) U+0941 U+0902 c u
+  any(vyanjan) U+090A U+0902 U+200C > context(1) U+0942 U+0902 c uu
+  any(vyanjan) U+090F U+0902 U+200C > context(1) U+0947 U+0902 c e
+  any(vyanjan) U+0910 U+0902 U+200C > context(1) U+0948 U+0902 c ai
+  any(vyanjan) U+0913 U+0902 U+200C > context(1) U+094B U+0902 c o
+  any(vyanjan) U+0914 U+0902 U+200C > context(1) U+094C U+0902 c au
+  any(vyanjan) U+090B U+0902 U+200C > context(1) U+0943 U+0902 c ri
+  any(vyanjan) U+0911 U+0902 U+200C > context(1) U+0949 U+0902 c aw
+
+  c with chandrabindu (aaaaaaaaaaahhhhhhhh)
+  U+094D U+0901 U+200C > U+094D U+0901 c a
+  U+093E U+0901 U+200C > U+0905 U+0901 c aa
+  U+093F U+0901 U+200C > U+0907 U+0901 c i
+  U+0940 U+0901 U+200C > U+0908 U+0901 c ii
+  U+0941 U+0901 U+200C > U+0909 U+0901 c u
+  U+0942 U+0901 U+200C > U+090A U+0901 c uu
+  U+0947 U+0901 U+200C > U+090F U+0901 c e
+  U+0948 U+0901 U+200C > U+0910 U+0901 c ai
+  U+094B U+0901 U+200C > U+0913 U+0901 c o
+  U+094C U+0901 U+200C > U+0914 U+0901 c au
+  U+0943 U+0901 U+200C > U+090B U+0901 c ri
+  U+0949 U+0901 U+200C > U+0911 U+0901 c aw
+
+  any(vyanjan) U+0905 U+0901 U+200C > context(1) U+093E U+0901 c aa
+  any(vyanjan) U+0907 U+0901 U+200C > context(1) U+093F U+0901 c i
+  any(vyanjan) U+0908 U+0901 U+200C > context(1) U+0940 U+0901 c ii
+  any(vyanjan) U+0909 U+0901 U+200C > context(1) U+0941 U+0901 c u
+  any(vyanjan) U+090A U+0901 U+200C > context(1) U+0942 U+0901 c uu
+  any(vyanjan) U+090F U+0901 U+200C > context(1) U+0947 U+0901 c e
+  any(vyanjan) U+0910 U+0901 U+200C > context(1) U+0948 U+0901 c ai
+  any(vyanjan) U+0913 U+0901 U+200C > context(1) U+094B U+0901 c o
+  any(vyanjan) U+0914 U+0901 U+200C > context(1) U+094C U+0901 c au
+  any(vyanjan) U+090B U+0901 U+200C > context(1) U+0943 U+0901 c ri
+  any(vyanjan) U+0911 U+0901 U+200C > context(1) U+0949 U+0901 c aw
+
+  c vyanjan + chandrabindu +ZWNJ = vyanjan + a + chandrabindu
+  any(vyanjan) U+0901 U+200C > context(1) U+0905 U+0901
+  c vyanjan + bindu +ZWNJ = vyanjan + a + bindu
+  any(vyanjan) U+0902 U+200C > context(1) U+0905 U+0902
+  c vyanjan + chandra +ZWNJ = vyanjan + a + chandra
+  any(vyanjan) U+0945 U+200C > context(1) U+0905 U+0972
+  any(vyanjan) U+200C  > context(1) c remove zwnj if adding another vyanjan
+  any(svara) U+200C  > context(1) c remove zwnj if adding another svara
+  U+200C U+200C > U+200C c only one zwnj
+  U+0020 U+200C > U+0020 c if nothing behind, just don't add zwnj
+  nul U+200C > nul c if nothing behind, do nothing.
+
+group(handleNuqta)
+  U+0915 U+093C > U+0958 c ka -> qa
+  U+0916 U+093C > U+0959 c kha -> khha
+  U+0917 U+093C > U+095A c ga -> ghha
+  U+091C U+093C > U+095B c ja -> za
+  U+0921 U+093C > U+095C c da -> dddha
+  U+0922 U+093C > U+095D c ddha -> rha
+  U+092B U+093C > U+095E c pha -> fa
+  U+092F U+093C > U+095F c ya -> yya
+  U+0928 U+093C > U+0929 c na -> nnna (why again is this not in one line unicode????)
+  U+0930 U+093C > U+0931 c ra -> rra
+
+  c reverse order handling
+  U+0958 U+093C > U+0915
+  U+0959 U+093C > U+0916
+  U+095A U+093C > U+0917
+  U+095B U+093C > U+091C
+  U+095C U+093C > U+0921
+  U+095D U+093C > U+0922
+  U+095E U+093C > U+092B
+  U+095F U+093C > U+092F
+  U+0929 U+093C > U+0928
+  U+0931 U+093C > U+0930
+
+  c when in front of nuqta (need to reverse order for matra conversion to work)
+  U+094D U+093C > U+093C U+094D c a
+  U+093E U+093C > U+093C U+093E c aa
+  U+093F U+093C > U+093C U+093F c i
+  U+0941 U+093C > U+093C U+0941 c u
+  U+0947 U+093C > U+093C U+0947 c e
+  U+094B U+093C > U+093C U+094B c o
+  U+090B U+093C > U+093C U+0943 c ri
+  U+0911 U+093C > U+093C U+0949 c aw
+group(main) using keys
++ [U_0905] >  'ा' use(checkMatra)
++ [U_0907] >  'ि' use(checkMatra)
++ [U_0909] >  'ु' use(checkMatra)
++ [U_090F] >  'े' use(checkMatra)
++ [U_0913] >  'ो' use(checkMatra)
++ [U_090B] >  'ृ' use(checkMatra)
++ [U_0911] >  'ॉ' use(checkMatra)
++ [U_200C] >  U+200C use(matraToSvar)
+c + [U_] > 'ं' use(checkMatra)
+c + [U_] >  'ृ' use(checkMatra)
+c + [U_] > 'ॅ' use(checkMatra)
+c + [SHIFT K_W] > '़' use(checkMatra)
+c + [SHIFT K_Q] > 'ः' use(checkMatra)
++ [T_new_618] > use(smallToBig)
++ [T_KSHA] > "क्ष"
++ [T_TRA] > "त्र"
++ [T_GYA] > "ज्ञ"
++ [T_SHRA] > "श्र"
++ [U_093C] > U+093C use(handleNuqta)
+
+any(vyanjan) + "`" > context U+094D
+
+c for weird nuqta characters to go back to their normal forms on backspace
+U+0958 + [K_BKSP] > U+0915
+U+0959 + [K_BKSP] > U+0916
+U+095A + [K_BKSP] > U+0917
+U+095B + [K_BKSP] > U+091C
+U+095C + [K_BKSP] > U+0921
+U+095D + [K_BKSP] > U+0922
+U+095E + [K_BKSP] > U+092B
+U+095F + [K_BKSP] > U+092F
+U+0929 + [K_BKSP] > U+0928
+U+0931 + [K_BKSP] > U+0930
+c + [K_O] > 'ो' use(checkMatra)
+c + [K_U] > 'ु' use(checkMatra)
+c + [K_I] > 'ि' use(checkMatra)
+c + [K_Z] > 'ॅ' use(checkMatra)
+c + [K_E] > 'े' use(checkMatra)
+c + [K_D] > '्' use(checkMatra)
+c + [K_A] > 'ा' use(checkMatra)
+c + [K_W] > 'ं' use(checkMatra)
+c + [SHIFT K_W] > '़'use(checkMatra)
+c + [SHIFT K_Q] > 'ः' use(checkMatra)
+
+group(linebreakFullSvara)
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+U+094D > U+0905 c a
+U+093E > U+0905 c a
+U+093F > U+0907 c i
+U+0941 > U+0909 c u
+U+0947 > U+090F c e
+U+094B > U+0913 c o
+U+0943 > U+090B c ri
+U+0949 > U+0911 c aw

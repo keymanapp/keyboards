@@ -1,15 +1,59 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) "Khmer Angkor"
-store(&COPYRIGHT) '© 2015-2022 SIL International'
+store(&COPYRIGHT) '© SIL Global'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&TARGETS) 'any'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdkhmr/KbdKhmr.json'
 store(&LAYOUTFILE) 'khmer_angkor.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '2.2'
 store(&BITMAP) 'khmer_angkor.ico'
 store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
 begin Unicode > use(main)
+begin PostKeystroke > use(PostKeystroke)
 
+c This tells Keyman which keys should have casing behavior applied
+store(ShiftOutSingle) 'ឈ៊ទ៌ៗ៍ភ័គ៏អៀឯឲធឿឌឬឫឍះឃៈជពុំណំឡ'
+store(vCombo1)   'ុះ'
+store(vCombo2)  'ោះ'
+store(vCombo3)  'េះ'
+store(ShiftOutAll)  outs(ShiftOutSingle) outs(vCombo1) outs(vCombo2) outs(vCombo3) 
+
+
+store(digit) '១២៣៤៥៦៧៨៩០'
+store(number) '1234567890'
+
+c Various Unicode spacing characters
+store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
+
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    platform('touch') > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Do swap off the shift layer automatically
+    if(&newLayer = "") if(&layer = 'shift') any(ShiftOutSingle) > context layer('default')
+
+    c Okay, let's stay on the numeric layer if we are there already
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    platform('touch') if(&newLayer = "") if(&layer = 'western') any(number) > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
+
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+    nomatch > layer('default')
 
 
 c ==============================================STORES==============================================
@@ -24,26 +68,26 @@ store(c_key)           [K_K] [K_X] [SHIFT K_K] [SHIFT K_X] [K_G] \
                        [K_T] [K_F] [SHIFT K_T] [SHIFT K_F] [K_N] \
                        [K_B] [K_P] [SHIFT K_B] [SHIFT K_P] [K_M] \
                        [K_Y] [K_R] [K_L] [K_V] [K_S] [K_H] [SHIFT K_L] [SHIFT K_G] \
-                       [RALT K_K] [RALT K_B]                      
+                       [RALT K_K] [RALT K_B]
 store(c_out)           U+1780 U+1781 U+1782 U+1783 U+1784 \
     	   	   	       U+1785 U+1786 U+1787 U+1788 U+1789 \
     	   	   	       U+178A U+178B U+178C U+178D U+178E \
     	   	   	       U+178F U+1790 U+1791 U+1792 U+1793 \
     	   	   	       U+1794 U+1795 U+1796 U+1797 U+1798 \
     	   	   	       U+1799 U+179A U+179B U+179C U+179F U+17A0 U+17A1 U+17A2 \
-    	   	   	       U+179D U+179E c deprecated, but they are used in minority languages	
+    	   	   	       U+179D U+179E c deprecated, but they are used in minority languages
 
 c All genuine dependent vowels
 
 store(v_gen_key)       [K_A] [K_I] [SHIFT K_I] [K_W] [SHIFT K_W] [K_U] [SHIFT K_U] [SHIFT K_Y] \
-                       [K_COLON] [SHIFT K_LBRKT] [K_LBRKT] [K_E] [SHIFT K_E] [SHIFT K_S] [K_O] [SHIFT K_O] 
+                       [K_COLON] [SHIFT K_LBRKT] [K_LBRKT] [K_E] [SHIFT K_E] [SHIFT K_S] [K_O] [SHIFT K_O]
 store(v_gen)           U+17B6 U+17B7 U+17B8 U+17B9 U+17BA U+17BB U+17BC U+17BD \
-                       U+17BE U+17BF U+17C0 U+17C1 U+17C2 U+17C3 U+17C4 U+17C5 
+                       U+17BE U+17BF U+17C0 U+17C1 U+17C2 U+17C3 U+17C4 U+17C5
                        
 c All pseudo dependent vowels
 
 store(v_pseudo_key)       [SHIFT K_M] [SHIFT K_H] [RALT K_QUOTE]
-store(v_pseudo)           U+17C6 U+17C7 U+17C8 
+store(v_pseudo)           U+17C6 U+17C7 U+17C8
 
 c Both genuine and pseudo vowels
 
@@ -53,11 +97,11 @@ store(v_any)           outs(v_out)
 
 c These seven vowels can be concatenated with Reahmuk (U+17C7) to make េះ  ោះ  ុះ  ិះ  ីះ  ឹះ  and ែះ.
 
-store(v_combo_R)       U+17C1 U+17C4 U+17BB U+17B7 U+17B8 U+17B9 U+17C2 
+store(v_combo_R)       U+17C1 U+17C4 U+17BB U+17B7 U+17B8 U+17B9 U+17C2
 
 c these two vowels can be concatenated with Nikahit (U+17C6) to make ាំ and ុំ.
 
-store(v_combo_N)       U+17B6 U+17BB 
+store(v_combo_N)       U+17B6 U+17BB
 store(v_combo)         outs(v_combo_R) outs(v_combo_N)
 
 c Independent vowels
@@ -65,24 +109,24 @@ c Independent vowels
 store(ind_v_key)       [K_HYPHEN] [RALT K_I] [SHIFT K_RBRKT] [RALT K_T] [RALT K_LBRKT] [K_RBRKT] [RALT K_R] [SHIFT K_R] \
                        [SHIFT K_BKSLASH] [K_BKSLASH] [RALT K_E] [RALT K_P] [RALT K_O] [K_EQUAL] [RALT K_RBRKT]   
 store(ind_v_out)       U+17A5 U+17A6 U+17A7 U+17A8 U+17A9 U+17AA U+17AB U+17AC \
-                       U+17AD U+17AE U+17AF U+17B0 U+17B1 U+17B2 U+17B3 
+                       U+17AD U+17AE U+17AF U+17B0 U+17B1 U+17B2 U+17B3
 
 c Diacritics
 
 store(diacritic_key)       [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [RALT K_QUOTE] \  
                            [RALT K_EQUAL] [RALT K_3] [RALT K_W] [RALT K_Q] [K_J] 
 store(diacritic_out)       U+17CB U+17D0 U+17CC U+17CF U+17CD U+17C8 \
-                           U+17CE U+17D1 U+17DD U+17DC U+17D2  
+                           U+17CE U+17D1 U+17DD U+17DC U+17D2
 
 c Consonant shifter--Muusikatoan(U+17C9) and Triisap(U+17CA)
 
 store(c_shifter_key)   [SHIFT K_QUOTE] [K_SLASH]
-store(c_shifter)       U+17C9          U+17CA  
+store(c_shifter)       U+17C9          U+17CA
 
 c punctuations
 
 store(punct_key)       [K_PERIOD] [SHIFT K_PERIOD] [RALT K_COLON] [SHIFT K_2] [RALT K_L] [RALT K_6] [RALT K_7] [RALT K_M]  
-store(punct_out)       U+17D4     U+17D5           U+17D6         U+17D7      U+17D8     U+17D9     U+17DA  U+17D3 
+store(punct_out)       U+17D4     U+17D5           U+17D6         U+17D7      U+17D8     U+17D9     U+17DA  U+17D3
 
 store(latin_punct_key)       [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_9] [SHIFT K_0] [SHIFT K_1] [SHIFT K_3] \
                              [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [RALT K_9] [RALT K_0] [RALT K_BKSLASH] \
@@ -95,26 +139,26 @@ store(latin_punct_out)       U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
                              U+0040 U+002A U+002C U+00D7 U+002E U+002F \
     	                     U+005B U+005D U+200D U+200C U+002B U+002D \
     	                     U+00F7 U+003A U+2248 U+2018 U+2019 U+003B \
-    	                     U+003C U+003E U+0023 U+0026   
+    	                     U+003C U+003E U+0023 U+0026
 c white space, ZWSP, ZWJ
 store(spaces_key)   	   	 [K_SPACE] [SHIFT K_SPACE] [RALT K_SPACE]
-store(spaces_out)    	     U+200B U+0020 U+00A0             
+store(spaces_out)    	     U+200B U+0020 U+00A0
 
 c Currency: Riel, Dollar and Euro
 
-store(currency_key)       [SHIFT K_4] [RALT K_4] [RALT K_5]  
+store(currency_key)       [SHIFT K_4] [RALT K_4] [RALT K_5]
 store(currency_out)       U+17DB      U+0024     U+20AC
 
 c Khmer digits 0 through 9
 
-store(digit_key)       [K_0]  [K_1]  [K_2]  [K_3]  [K_4]  [K_5]  [K_6]  [K_7]  [K_8]  [K_9]  
+store(digit_key)       [K_0]  [K_1]  [K_2]  [K_3]  [K_4]  [K_5]  [K_6]  [K_7]  [K_8]  [K_9]
 store(digit_out)       U+17E0 U+17E1 U+17E2 U+17E3 U+17E4 U+17E5 U+17E6 U+17E7 U+17E8 U+17E9
 
 c Khmer Lek Attak (a.k.a. divination lore)
 store(lek_attak_key)   [SHIFT RALT K_0] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] \
-                       [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9]                    
+                       [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9]         
 store(lek_attak_out)   U+17F0 U+17F1 U+17F2 U+17F3 U+17F4 \
-                       U+17F5 U+17F6 U+17F7 U+17F8 U+17F9     
+                       U+17F5 U+17F6 U+17F7 U+17F8 U+17F9
 
 c Lunar date format (Khmer style)
 
@@ -131,7 +175,7 @@ store(lunar_date_out)  U+19EC U+19FB U+19F9 U+19EE U+19E2 \
     	               U+19E9 U+19E0 U+19E3 U+19ED U+19E4 \
     	               U+19E6 U+19FA U+19E1 U+19F8 U+19E5 \
     	               U+19F7 U+19F5 U+19FE U+19FF U+19EA \
-    	               U+19EB U+19F6 
+    	               U+19EB U+19F6
 
 c Subscripts​ for mobile/table layouts
 
@@ -144,10 +188,10 @@ store(input_subcons) \
 
 store(subcons) \
                        U+1780 U+1781 U+1782 U+1783 U+1784 U+1785 U+1786 U+1787 \
-                       U+1788 U+1789 U+178A U+178B U+178C U+178D U+178E U+178F \
+                       U+1788 U+1789 U+178F U+178B U+178C U+178D U+178E U+178F \
                        U+1790 U+1791 U+1792 U+1793 U+1794 U+1795 U+1796 U+1797 \
                        U+1798 U+1799 U+179A U+179B U+179C U+179D U+179E U+179F \
-                       U+17A0 U+17A1 U+17A2                         
+                       U+17A0 U+17A1 U+17A2
                        
 c Arabic digits 0 through 9
 
@@ -195,7 +239,7 @@ c Basic rules with RALT key
  + any(currency_key)    > index(currency_out,1)
  + any(digit_key)       > index(digit_out,1)
  + any(lek_attak_key)   > index(lek_attak_out,1)
- + any(lunar_date_key)  > index(lunar_date_out,1) 
+ + any(lunar_date_key)  > index(lunar_date_out,1)
  + any(spaces_key)  	> index(spaces_out,1)
 
 c two-unicode-code-point vowels
@@ -204,7 +248,7 @@ c two-unicode-code-point vowels
 + [SHIFT K_V]          > U+17C1 U+17C7
 + [SHIFT K_COLON]      > U+17C4 U+17C7
 + [K_COMMA]            > U+17BB U+17C6
-+ [SHIFT K_COMMA]      > U+17BB U+17C7  
++ [SHIFT K_COMMA]      > U+17BB U+17C7
 
 c Constraints
 
@@ -213,6 +257,10 @@ any(v_pseudo) + [K_QUOTE]           > context beep c no Bantoc after any pseudo 
 any(c_shifter) + [K_QUOTE]          > context beep c no Bantoc after Triisap/Muusikatoan 
 U+17D2 any(c_out) + [K_QUOTE]       > context beep c no Bantoc on a subscript 
 any(c_shifter) + any(c_shifter_key) > context beep c no two Triisap/Muusikatoan
+
+c Unify identical subscripts - use U+18D2 U+178F always - see page 35 of https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf
+ 
+U+17D2 + [K_D] > context(1) U+178F
 
 c Rotation
 
@@ -237,6 +285,7 @@ any(shiftable_c_2nd_with_BA) U+17B6 U+17C6 + [K_U] > context(1) U+17C9 context(2
 c Consonant shifter constraints (beep when the consonant shifter is used in inappropriate environment)
 
 any(shiftable_c_1st) + [SHIFT K_QUOTE] > context U+17C9 beep 
+U+17D2 any(shiftable_c_2nd_with_BA) + [K_SLASH] > context U+17CA
 any(shiftable_c_2nd_with_BA) + [K_SLASH]       > context U+17CA beep
 
 c 1st series consonant clusters
@@ -467,9 +516,6 @@ c SPECIAL CASE -- the following clusters may accept either of the two consonant 
 U+1794 U+17D2 U+1799 any(c_shifter) > context
 U+179F U+17D2 U+1794 any(c_shifter) > context
 U+1786 U+17D2 U+1794 any(c_shifter) > context
-U+1794 U+17D2 U+1799 any(c_shifter) > context
-U+179F U+17D2 U+1794 any(c_shifter) > context
-U+1786 U+17D2 U+1794 any(c_shifter) > context
 
 c single --1st > 2nd series (without U+17BB)
 
@@ -583,11 +629,6 @@ U+1798 U+17D2 any(c_2nd_combo_MO) U+17CA U+17C1 U+17B8 > context(1) context(2) c
 c place Robat after a base before any vowel
 
 any(c_out) any(v_gen) U+17CC    > context(1) context(3) context(2)
-
-c Use appropriate identical subscript in two separate contexts. (Case #8)
-
-U+178E U+17D2 U+178F > context(1) context(2) U+178A 
-U+1793 U+17D2 U+178A > context(1) context(2) U+178F   
 
 c BONUSES​(note that these combinations are invalid and they can't be found in the CN dictionary 1967 nor RH 1997, but users think they are)
 

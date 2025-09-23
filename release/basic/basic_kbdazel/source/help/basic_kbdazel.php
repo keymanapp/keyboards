@@ -6,10 +6,8 @@
 ?>
 
 <p>
-    Azeri Latin Basic 1.1 generated from template.
+    Azeri Latin Basic. The keyboard layout follows the Windows 10 layout.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>

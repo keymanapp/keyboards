@@ -1,6 +1,14 @@
 Tepehuan (SIL) Change History
 ====================
 
+1.1.1 (2025-06-09)
+----------------
+* Updated Doulos SIL version
+
+1.1 (2024-09-12)
+----------------
+* Added tablet layout
+
 1.0 (2020-09-30)
 ----------------
 * Added support for Web

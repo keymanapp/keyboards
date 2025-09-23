@@ -8,7 +8,7 @@
     The Naskapi (Common) keyboard is a phonetic-style (type the word the way it sounds) layout. It uses Unified Canadian Aboriginal Syllabics.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p>
 The keyboard layout of this keyboard is like that of the QWERTY keyboard which most are already familair with. The system is essentially this: the user types in roman letters on a standard keyboard the way the word “sounds” in Naskapi. What he sees on the screen as he types is the word written in syllabics. 

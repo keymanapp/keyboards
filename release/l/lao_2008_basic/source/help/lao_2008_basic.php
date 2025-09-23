@@ -1,9 +1,9 @@
 <?php
   $pagename = 'Lao 2008 Basic Keyboard Help';
-  $pagetitle = 'Lao 2008 Basic Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
   img {width:100% ;max-width:750px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
@@ -29,6 +29,3 @@ EXTRA;
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
   <p><img alt="Lao 2008 Basic keyboard layout: AltGr state" src="lao_2008_basicU_RA.png"/></p>
 
-
-</body>
-</html>

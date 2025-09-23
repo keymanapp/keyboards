@@ -1,10 +1,6 @@
 Łingít keyboard
 ======================
 
-Copyright (c) 2015-2022 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation, parts 2007 Chris Harvey
-
-Version 10.0
-
 Łingít keyboard layout for Unicode
 
 Links

@@ -25,22 +25,19 @@ c SILGREEK.KMN 3.0  D I Bevan - 14-Mar-1997
 c See REVISION.TXT
 c ----------------------------------------------------------------------------
 
-store(&version) "9.0"
+store(&Version) '17.0'
 store(&name) "Polytonic Greek (SIL)"
 store(&BITMAP) 'sil_greek_polytonic.ico'
-c HOTKEY "^+G"
-store(&COPYRIGHT) '(c) 2002-2019 SIL International'
+store(&COPYRIGHT) '(c) SIL Global'
 store(&message) "The Greek (polytonic precomposed) keyboard is distributed under the MIT license."
 
-c LANGUAGE x208, x22
-
-c ----------------------------------------------------------------------------
-store(&TARGETS) 'windows macosx linux web'
-store(&ETHNOLOGUECODE) 'grc ell'
-store(&LANGUAGE) 'x0408'
-store(&WINDOWSLANGUAGES) 'x0408'
+store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) 'grc ell'
+c store(&LANGUAGE) 'x0408'
+c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.5'
+store(&KEYBOARDVERSION) '1.8.6'
+store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
 
 begin Unicode > use(MainU)
 
@@ -84,6 +81,10 @@ c keys for lowercase
 store(K_low)        "a"    "b"    "g"    "d"    "e"    "z"    "j"    "q"    "i" \
                     "k"    "l"    "m"    "n"    "x"    "o"  \
                     "p"    xff    "r"    "s"    "t"    "u"    "f"    "c"    "y"    "w"    xff
+c keys for lowercase
+store(K_low_nobr) [RALT K_A] xff  xff    xff [RALT K_E] xff [RALT K_J] xff  [RALT K_I] \
+                    xff    xff    xff    xff    xff [RALT K_O]  \
+                    xff    xff    xff    xff    xff [RALT K_U] xff   xff    xff [RALT K_W] xff
 c lowercase letters
 store(low)          U+03B1 U+03B2 U+03B3 U+03B4 U+03B5 U+03B6 U+03B7 U+03B8 U+03B9 \
                     U+03BA U+03BB U+03BC U+03BD U+03BE U+03BF \
@@ -233,7 +234,7 @@ store(SD_Di)        U+03CA U+1FD3 U+03CB U+1FE2 U+1FE3
 c i>     i>>    u>     u'<    u>>
 store(SD_Sm)        U+1F30 U+1F34 U+1F50 U+1F52 U+1F54
 
-c 
+c
 store(IU_in)        U+0308
 store(IU_IDi)       U+03CA
 store(IU_UDi)       U+03CB
@@ -278,6 +279,12 @@ store(Ac_Ac)        xff    xff    xff    U+1F71 U+1F04 U+1F05 U+1F73 U+1F14 U+1F
                     U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 U+1FB4 U+1F84 U+1F85 \
                     U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+1FD3 U+1FE3
 
+c Macron U+0304
+store(K_Macron) "#"
+store(Macron)   U+0304
+
+store(Ma_base) U+03B1 U+0391 U+03B9 U+0399 U+03C5 U+03A5
+store(Ma_comp) U+1FB1 U+1FB9 U+1FD1 U+1FD9 U+1FE1 U+1FE9
 c store(XA_in)        U+0313 U+0314 U+0300 U+0342 xff    xff    xff    xff
 c store(XA_Ac)        xff    xff    U+0301 U+0301 xff    xff    xff    xff
 
@@ -511,11 +518,13 @@ store(all)          outs(up)    outs(low)   \
                     outs(wi)    outs(br)
 
 c Illegal keys
-store(K_ill)        "#$Vv"
+store(K_ill)        "$Vv"
 
 c ----------------------------------------------------------------------------
 
 group(MainU) using keys
+
++ [SHIFT K_SPACE] > U+0020
 
 any(Sm_Ro)              + any(K_Ro) > context
 any(Sm_Sm)              + any(K_Sm) > context
@@ -560,7 +569,7 @@ any(Gr)                 + any(K_upV)    > index(upVGr,2)             c \A
 
 
 c LOWERCASE
-c Smooth Breathing
+c Smooth Breathing U+0313
 any(Sm_in)          + any(K_Sm) > index(Sm_Sm,1)                c a   + >  a>
 any(Sm_Ro)          + any(K_Sm) > index(Sm_Sm,1)                c a<  + >  a>
 any(SD_Di)          + any(K_Sm) > index(SD_Sm,1)                c i"  + >  i>   (iu)
@@ -597,7 +606,7 @@ any(updipURo) any(upU) + any(K_Sm) > index(updipUSm,1) \
                                     outs(upU)                   c <AU + >  >AU
 
 
-c Rough Breathing
+c Rough Breathing U+0314
 any(Ro_in)          + any(K_Ro)     > index(Ro_Ro,1)            c a   + <  a<
 any(Sm_Sm)          + any(K_Ro)     > index(Sm_Ro,1)            c a>  + <  a<
 any(Di_Di)          + any(K_Ro)     > index(Di_Ro,1)            c i"  + <  i< (iu)
@@ -628,7 +637,7 @@ any(rRo)             + any(K_Del) > outs(r)                     c r<  + *  r
 any(upVSm_Sm)        + any(K_Del) > index(upVSm,1)              c >A  + *  A
 any(Sm) any(upU)     + any(K_Del) > index(upU,2)                c >U  + *  U
 any(upVSmAc)         + any(K_Del) > index(upVSm_Sm,1)           c >/A + *  /A
-any(upVRo)           + any(K_Del) > index(upV,2)                c <A  + *  A
+any(upVRo)           + any(K_Del) > index(upV,1)                c <A  + *  A
 
 any(upRRo)           + any(K_Del) > outs(upR)                   c <R  + *  R
 
@@ -641,7 +650,7 @@ any(updipUSm) any(upU)  + any(K_Del) > index(updipU,1) \
 any(updipURo) any(upU)  + any(K_Del) > index(updipU,1) \
                                                     outs(upU)   c <AU + *  AU  (AEJO)
 
-c Diaresis
+c Diaresis U+0308
 any(Di_Dilowiu)  + any(K_Ci) > index(Di_DiCilowiu,1)            c i"^
 any(Di_Cilowiu)  + any(K_Di) > index(Di_DiCilowiu,1)            c i^"
 any(Di_in)  + any(K_Di) > index(Di_Di,1)                        c i   + "  i"
@@ -679,7 +688,7 @@ any(upV)                  + any(K_Gr) > index(upVGr,1)          c A   + \  >A
 any(upVSm_Sm)             + any(K_Gr) > index(upVSmGr,1)         c >A  + \  >\A
 any(upVSm_Gr)             + any(K_Sm) > index(upVSmGr,1)         c >A  + \  >\A
 
-c smooth/grave
+c smooth/grave  U+0300
 nul                       + any(K_Gr) > outs(Sm) outs(Gr)              c 0   + \  >\.
 nul any(lbr)              + any(K_Gr) > context outs(Sm) outs(Gr)      c 0[  + \  >\.
 nul any(lbr) any(lbr)     + any(K_Gr) > context outs(Sm) outs(Gr)      c 0[[ + \  >\.
@@ -688,7 +697,12 @@ any(wi) any(lbr)          + any(K_Gr) > context outs(Sm) outs(Gr)      c _[  + \
 any(wi) any(lbr) any(lbr) + any(K_Gr) > context outs(Sm) outs(Gr)      c _[[ + \  >\.
                           + any(K_Gr) > outs(Gr)                       c     + \  \.
 
-c Acute Accent
+c macron U+0304 minimally implemented 2024-09-17 but doesn't include all the rules other diacritics support
+nul + any(K_Macron) > outs(Macron)
+any(Ma_base) + any(K_Macron) > index(Ma_comp,1)
+any(Ma_comp) + [K_BKSP] > index(Ma_base,1)
+
+c Acute Accent U+0301
 any(Ac_in)                + any(K_Ac) > index(Ac_Ac,1)          c a   + /  a/
 any(Gr_Gr)                + any(K_Ac) > index(Gr_Ac,1)          c a\  + /  a/
 any(Ci_Ci)                + any(K_Ac) > index(Ci_Ac,1)          c a^  + /  a/
@@ -704,7 +718,7 @@ any(wi)                   + any(K_Ac) > context outs(Sm) outs(Ac)      c _   + /
 any(wi) any(lbr)          + any(K_Ac) > context outs(Sm) outs(Ac)      c _[  + /  >/
 any(wi) any(lbr) any(lbr) + any(K_Ac) > context outs(Sm) outs(Ac)      c _[[ + /  >/
                           + any(K_Ac) > outs(Ac)                       c     + /  /
-c Circumflex/Tilde
+c Circumflex/Tilde U+0342
 any(Ci_in)                + any(K_Ci) > index(Ci_Ci,1)                 c a   + ^  a^  aiujw
 any(GC_Gr)                + any(K_Ci) > index(GC_Ci,1)                 c a\  + ^  a^  aiujw
 any(Ci_Ac)                + any(K_Ci) > index(Ci_Ci,1)                 c a/  + ^  a^  aiujw
@@ -718,7 +732,7 @@ any(wi) any(lbr)          + any(K_Ci) > context outs(Sm) outs(Ci)      c _[  + ^
 any(wi) any(lbr) any(lbr) + any(K_Ci) > context outs(Sm) outs(Ci)      c _[[ + ^  >^
                           + any(K_Ci) > outs(Ci)                       c     + ^  ^
 
-c Iota Subscript
+c Iota Subscript U+0345
 any(Io_in) + any(K_Io)   > index(Io_Io,1)                               c a   + !  a!
 any(vUIo1) + any(K_Io)   > index(vUIo2,1)                               c A   + !  A!
 any(Io)    + any(K_UvIo) > index(vUIo2,2)                               c !   + A  A!
@@ -776,6 +790,10 @@ any(sFin) any(br)         + any(K_low) > outs(sMed) \
 any(sFin) any(br) any(br) + any(K_low) > outs(sMed) \
                           index(br,2) index(br,3) index(low,4)  c v[[ + a  s[[a
 
+c Forced medial sigma
+
++ [RALT K_S]                   > outs(sMed)
+
 c Initial vowel and rho
 
 
@@ -814,8 +832,6 @@ any(wi)                   + any(K_upVSm)  > context  \
 any(wi)                   + any(K_upU)    > context  \
                                             index(upU,2) outs(Sm)   c _   + U  >U
 any(wi) any(lbr)          + any(K_upVSm)  > context \
-                                            index(upVSm_Sm,3)      c _[  + A  >A
-any(wi) any(lbr)          + any(K_upVSm)  > context  \
                                             index(upVSm_Sm,3)      c _[  + A  >A
 any(wi) any(lbr) any(lbr) + any(K_upVSm)  > context  \
                                             index(upVSm_Sm,4)      c _[[ + A  >A
@@ -935,17 +951,17 @@ nul any(lbr) any(lbr) any(upVSm) any(up)     + [K_BKSP] > \
 nul any(lbr) any(lbr) any(upVSm) any(up)     + [SHIFT K_BKSP] > \
                 index(lbr,2) index(lbr,3) index(upVSm_Sm,4)
 any(wi) any(upVSm) any(up)                   + [K_BKSP] > \
-    index(wi,1)                           index(upVSm_Sm,2) c _AB + <- _>A
+    context use(backspace-near-start-of-line)                c _AB + <- _>A
 any(wi) any(upVSm) any(up)                   + [SHIFT K_BKSP] > \
-    index(wi,1)                           index(upVSm_Sm,2)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(upVSm) any(up)          + [K_BKSP] > \
-    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)  c _[AB+ <- _[>A
+    context use(backspace-near-start-of-line)                c _[AB+ <- _[>A
 any(wi) any(lbr) any(upVSm) any(up)          + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4) c _[[AB <- _[[>A
+    context use(backspace-near-start-of-line)                c _[[AB <- _[[>A
 any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4)
+    context use(backspace-near-start-of-line)
 
 nul any(upR) any(up)                       + [K_BKSP] > \
                                           outs(upRRo)     c 0RB + <- 0<R
@@ -960,26 +976,68 @@ nul any(lbr) any(lbr) any(upR) any(up)     + [K_BKSP] > \
 nul any(lbr) any(lbr) any(upR) any(up)     + [SHIFT K_BKSP] > \
                 index(lbr,2) index(lbr,3) outs(upRRo)
 any(wi) any(upR) any(up)                   + [K_BKSP] > \
-    index(wi,1)                           outs(upRRo)    c _RB + <- _<R
+    context use(backspace-near-start-of-line)            c _RB + <- _<R
 any(wi) any(upR) any(up)                   + [SHIFT K_BKSP] > \
-    index(wi,1)                           outs(upRRo)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(upR) any(up)          + [K_BKSP] > \
-    index(wi,1) index(lbr,2)              outs(upRRo)    c _[RB+ <- _[<R
+    context use(backspace-near-start-of-line)            c _[RB+ <- _[<R
 any(wi) any(lbr) any(upR) any(up)          + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2)              outs(upRRo)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)    c _[[RB <- _[[<R
+    context use(backspace-near-start-of-line)            c _[[RB <- _[[<R
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)
+    context use(backspace-near-start-of-line)
 
-                    + any(K_low)   > index(low,1)
-                    + any(K_up)    > index(up,1)
+                    + any(K_low)      > index(low,1)
+                    + any(K_up)       > index(up,1)
+                    + any(K_low_nobr) > index(low,1) c RALT keys
 
 
 any(all)    + [K_BKSP]          > nul
 any(all)    + [SHIFT K_BKSP]    > nul
 c Illegal keys
             + any(K_ill)        > beep
+
+
+
+c ----------------------------------------------------------------------------
+
+
+group(backspace-near-start-of-line) using keys
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+
+any(upVSm) any(up)                   + [K_BKSP] > \
+                              index(upVSm_Sm,1) c _AB + <- _>A
+any(upVSm) any(up)                   + [SHIFT K_BKSP] > \
+                              index(upVSm_Sm,1)
+any(lbr) any(upVSm) any(up)          + [K_BKSP] > \
+    index(lbr,1)              index(upVSm_Sm,2)  c _[AB+ <- _[>A
+any(lbr) any(upVSm) any(up)          + [SHIFT K_BKSP] > \
+    index(lbr,1)              index(upVSm_Sm,2)
+any(lbr) any(lbr) any(upVSm) any(up) + [K_BKSP] > \
+    index(lbr,1) index(lbr,2) index(upVSm_Sm,3) c _[[AB <- _[[>A
+any(lbr) any(lbr) any(upVSm) any(up) + [SHIFT K_BKSP] > \
+    index(lbr,1) index(lbr,2) index(upVSm_Sm,3)
+
+
+any(upR) any(up)                   + [K_BKSP] > \
+                              outs(upRRo)    c _RB + <- _<R
+any(upR) any(up)                   + [SHIFT K_BKSP] > \
+                              outs(upRRo)
+any(lbr) any(upR) any(up)          + [K_BKSP] > \
+    index(lbr,1)              outs(upRRo)    c _[RB+ <- _[<R
+any(lbr) any(upR) any(up)          + [SHIFT K_BKSP] > \
+    index(lbr,1)              outs(upRRo)
+any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
+    index(lbr,1) index(lbr,2) outs(upRRo)    c _[[RB <- _[[<R
+any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
+    index(lbr,1) index(lbr,2) outs(upRRo)
+
 
 c ----------------------------------------------------------------------------
 c End of keyboard

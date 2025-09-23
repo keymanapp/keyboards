@@ -9,7 +9,7 @@
 
 
 <p>
-Lithuanian Basic generated from template. This keyboard 
+The keyboard layout follows the Windows 10 Lithuanian Basic keyboard layout. This keyboard 
 layout is designed for Lithuanian. It includes an on screen 
 keyboard which can be viewed by clicking on the Keyman 
 icon and selecting the On Screen Keyboard menu item. 

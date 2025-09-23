@@ -1,10 +1,7 @@
 Tai Dam Typewriter (SIL) Keyboard
 =========================
 
-Copyright © 2007-2022 SIL International
-
-Version 1.1
-
+Copyright © SIL International
 
 __DESCRIPTION__
 
@@ -17,3 +14,5 @@ Supported Platforms
  * Linux
  * macOS
  * web
+ * Mobile
+

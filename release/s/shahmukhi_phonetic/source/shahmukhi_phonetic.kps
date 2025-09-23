@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.228.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Shahmukhi Phonetic</Name>
-    <Copyright URL="">© 2021 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description URL="">Shahmukhi is a modified Perso-Arab script for the Punjabi language. This keyboard intends to include support for characters not supported by the Urdu phonetics keyboard such as ArNoon (ݨ) and ArLaam (ࣇ U+08C7), (ਣ and ਲ਼ in Gurmukhi, respectively). ArLaam was added to Unicode recently and proper positioning may not work in all applications. The Scheherazade New font supports the ArLaam and is included in this keyboard package.</Description>
   </Info>
   <Files>
     <File>
@@ -106,16 +109,21 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Shahmukhi Phonetic</Name>
       <ID>shahmukhi_phonetic</ID>
-      <Version>1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="pnb-Arab">Western Panjabi (Arabic)</Language>
+        <Language ID="pnb">Western Panjabi</Language>
+        <Language ID="lah">Lahnda</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

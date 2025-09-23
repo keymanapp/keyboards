@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>sil_tchad_logo.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,8 +21,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tchad</Name>
-    <Copyright URL="">© 2017-2022 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="mailto:langtech_chad@sil.org">Jeff Heath</Author>
+    <Description URL="">This keyboard enables the typing of all Chadian languages using the
+Chadian National Alphabet.</Description>
   </Info>
   <Files>
     <File>
@@ -95,12 +99,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tchad</Name>
       <ID>sil_tchad</ID>
-      <Version>4.2</Version>
+      <Version>4.3.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
@@ -119,7 +129,6 @@
         <Language ID="bub">Bua</Language>
         <Language ID="bdm">Buduma</Language>
         <Language ID="bso">Buso</Language>
-        <Language ID="cds">Chadian Sign Language</Language>
         <Language ID="dgk">Dagba</Language>
         <Language ID="djc">Dar Daju Daju</Language>
         <Language ID="dau">Dar Sila Daju</Language>
@@ -130,7 +139,7 @@
         <Language ID="fni">Fania</Language>
         <Language ID="fgr">Fongoro</Language>
         <Language ID="fr">French</Language>
-        <Language ID="fub">Adamawa Fulfulde</Language>
+        <Language ID="fub-Latn">Adamawa Fulfulde (Latin)</Language>
         <Language ID="fui">Bagirmi Fulfulde</Language>
         <Language ID="fuv">Nigerian Fulfulde</Language>
         <Language ID="fvr">Fur</Language>
@@ -238,5 +247,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="tchadunicode_with_charis_fonts" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

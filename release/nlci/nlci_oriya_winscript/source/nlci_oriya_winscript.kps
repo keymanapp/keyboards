@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1201.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>nlci_oriya_winscript_splash.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,10 +19,16 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">2.0</Version>
-    <Name URL="">Oriya WinScript(NLCI)</Name>
-    <Copyright URL="">© 2002-2019 NLCI, Bangalore</Copyright>
+    <Version URL=""></Version>
+    <Name URL="">Oriya WinScript (NLCI)</Name>
+    <Copyright URL="">© NLCI, Bangalore</Copyright>
     <Author URL="mailto:support@nlife.in">Binila Sanki [SG, NLCI]</Author>
+    <Description URL="">This Keyboard mimic Oriya WinScript Keyboard Layout designed by NLCI in
+1988. Several linguists and members of translation community are still
+using this keyboard layout for keyboarding the text. This is a phonetic
+based keyboarding system designed with the objective of keyboarding text
+with minimal keystrokes. Keys are also layed out according the frequency
+of occurance, yet tried to follow a phonetic based keyboarding system.</Description>
   </Info>
   <Files>
     <File>
@@ -37,7 +45,7 @@
     </File>
     <File>
       <Name>..\build\nlci_oriya_winscript.kmx</Name>
-      <Description>Keyboard Oriya WinScript [NLCI]</Description>
+      <Description>Keyboard Oriya WinScript (NLCI)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
@@ -59,12 +67,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Oriya WinScript Keyboard [NLCI]</Name>
+      <Name>Oriya WinScript (NLCI)</Name>
       <ID>nlci_oriya_winscript</ID>
-      <Version>2.0</Version>
+      <Version>2.1</Version>
       <Languages>
         <Language ID="or">Oriya</Language>
       </Languages>

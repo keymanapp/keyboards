@@ -1,0 +1,91 @@
+﻿c Thanks for typing with the Paleohispanic keyboard.
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'paleohispanic.ico'
+store(&VISUALKEYBOARD) 'paleohispanic.kvks'
+store(&LAYOUTFILE) 'paleohispanic.keyman-touch-layout'
+store(&NAME) 'Paleohispanic'
+store(&COPYRIGHT) '© SIL International'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(nul) "PRSFHB>"
+
+group(main) using keys
+
++ any(nul) > nul
++ [K_1] > U+10233
++ [K_2] > U+10233 U+10233
++ [K_3] > U+10233 U+10233 U+10233
++ [K_4] > U+10233 U+10233 U+10233 U+10233
++ [K_5] > U+10235
++ [K_6] > U+10235 U+10233
++ [K_7] > U+10235 U+10233 U+10233 
++ [K_8] > U+10235 U+10233 U+10233 U+10233
++ [K_9] > U+10235 U+10233 U+10233 U+10233 U+10233
++ [K_0] > U+10234
++ [K_HYPHEN] > U+10236
++ [K_EQUAL] > U+10237
+
+
++ [K_Q] > U+10219
++ [K_W] > U+10220
++ [K_E] > U+10203
++ [K_R] > U+1022c
++ [K_T] > U+1021e
++ [K_Y] > U+1022e
++ [K_U] > U+10209
++ [K_I] > U+10205
++ [K_O] > U+10207
++ [K_P] > U+1020c
+
++ [K_A] > U+10200
++ [K_S] > U+10231
++ [K_D] > U+10224
++ [K_F] > U+1020a
++ [K_G] > U+10216
++ [K_H] > U+1020e
++ [K_J] > U+10218
++ [K_K] > U+10211
++ [K_L] > U+10225
++ [K_COLON] > U+1020d
+
++ [K_Z] > U+10230
++ [K_X] > U+1021C 
++ [K_C] > U+10214 
++ [K_V] > U+10222 
++ [K_B] > U+1020B 
++ [K_N] > U+10229 
++ [K_M] > U+10227 
+
++ [K_COMMA] > U+1022a
++ [K_PERIOD] > U+10238
+
+
+
++ [SHIFT K_Q] > U+1021a
++ [SHIFT K_W] > U+1021f
++ [SHIFT K_E] > U+10202
+
++ [SHIFT K_T] > U+1021d
++ [SHIFT K_Y] > U+1022d
++ [SHIFT K_U] > U+10208
++ [SHIFT K_I] > U+10204
++ [SHIFT K_O] > U+10206
+
++ [SHIFT K_A] > U+10201
++ [SHIFT K_D] > U+10223
++ [SHIFT K_G] > U+10215
++ [SHIFT K_J] > U+10217
++ [SHIFT K_K] > U+10210
++ [SHIFT K_L] > U+10226
+
++ [SHIFT K_Z] > U+1022f
++ [SHIFT K_X] > U+1021b
++ [SHIFT K_C] > U+10213
++ [SHIFT K_V] > U+10221
++ [SHIFT K_N] > U+10228
++ [SHIFT K_M] > U+10232
++ [SHIFT K_COMMA] > U+1022b

@@ -1,5 +1,22 @@
-Nuučaan̓uł Change History
+nuučaan̓uł Change History
 ============================
+9.2 (12 Jul 2024)
+-------------------
+* Tweaked mobile layout
+* Tidied documentation
+* Added TODO to README
+* Updated to new capital barred lamda code point
+* Removed web help in favour of OSK
+
+9.1.4 (18 Oct 2023)
+-------------------
+* Update to single code point output where possible
+* Centered mobile keyboard
+* Updated name to better reflect language name
+
+9.1.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
 
 9.1.2 (12 May 2022)
 -------------------

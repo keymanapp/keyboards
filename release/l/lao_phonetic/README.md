@@ -1,7 +1,7 @@
 Lao Phonetic keyboard
 ==============
 
-© 2015-2022 John Durdin
+© John Durdin
 
 
 Description
@@ -13,6 +13,7 @@ be tidied up in a future version.
 
 Links
 -----
+https://keyman.com/keyboards/lao_phonetic
 http://www.laoscript.net/
 
 Supported Platforms
@@ -22,4 +23,4 @@ Supported Platforms
  * Linux
  * Web
  * Desktop devices
- 
+ * Touch devices

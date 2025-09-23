@@ -1,13 +1,13 @@
 <?php
   $pagename = 'Rawang Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   .highlightExample {font-weight: bold; color: #0000ff}
   .highlightKeys img {vertical-align:baseline !important}
   .input {font-weight: bold; font-size: 1.2em; color: #a64826}
   .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
   .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
@@ -16,7 +16,7 @@ EXTRA;
     This keyboard is intended for the Rawang language of Myanmar and India. The keyboard is designed to be used with a standard (QWERTY) keyboard.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <div id="Documentation">
 <h3>Typing Instructions</h3>
@@ -58,15 +58,19 @@ EXTRA;
 <p style='margin-left:40px'>For <span class='highlightExample'>></span>, type <span class='keys'>[RALT .]</span>.</p>
 
 </div>
-</div>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<p>High, low, and middle tones are available on long presses for keys: (a, e, i, o, u, v, ø)
+  Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<p>Numerals are available as longpresses on the top row of keys</p>
+<p>More punctuation are available as longpresses on the period key</p>
 
-<div id='osk-tablet' data-states='default shift'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
+
+<h3 id="rawang-gesture-table">rawang Gesture Table</h3>
+<p>Gestures for the Mobile Keyboard layers are described in <a href="rawang-tablet"> Rawang gesture tables</a></p>

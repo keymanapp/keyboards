@@ -1,6 +1,33 @@
 Change History
 =======================
 
+6.1.1 (2024-12-03)
+----------------
+* Fixed language tags
+
+6.1.0 (2023-Dec)
+-----------------
+Restyling KB CSS.
+Add Readme to KPS.
+Update Doc CSS.
+
+6.0.9 (2023-Sep)
+-----------------
+Add Caps Lock.
+Minor style change.
+Update Docs.
+
+6.0.8
+-----------------
+* More diaeresis and style updates.
+* Removing NOCAPS from touch
+* Revert https://github.com/keymanapp/keyboards/commit/8e0c7a4d0bc82e06ae68fb6f00122fa24b32230a in favor of CasedKeys
+* Revert Latn in Language codes where this is the default.
+
+6.0.6
+-----------------
+* Updates related to https://github.com/keymanapp/keyman/issues/2241 and diaeresis
+
 6.0.5 (2022-May 12)
 -------------------
 * Add NCAPS modifier to some rules to avoid inconsistent matches

@@ -4,7 +4,7 @@
   <title>«Armenian Mnemonic R» ստեղնաշարի կարգավորումները</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <style type='text/css'>
-    html, body { font-family: Sylfaen,Tahoma,helvetica,serif; padding: 0; margin: 0; overflow: hidden }
+    html, body { font-family: Calibri,Arial,Sylfaen,Tahoma,helvetica,sans-serif; padding: 0; margin: 0; overflow: hidden }
     #size { padding: 12px; border: solid 1px black; background: #ffffff }
     p, label { font-size: 12pt }
     h3 { font: bold 14pt; margin-top: 4px; }
@@ -15,16 +15,15 @@
 </head>
 <body>
 <div id='size'>
-  <h3>«Armenian Mnemonic R» ստեղնաշարի կարգավորումները</h1>
   <form method='get' action='keyman:ok'>
     <div id='formopt'>
 	<fieldset>
 	<label>Ընտրեք կցագրերի օգտագործումը.</label>
       <p>
 		<input type='checkbox' value='1' name='option_ligature_ew' id='option_ligature_ew' />
-		<label for='option_ligature_ew'> Օգտագործել կցագիր <b>ե ւ</b> կից տառերի համար</label> <br />
+		<label for='option_ligature_ew'> Միացնել <i>ե ւ</i> կից տառերի համար</label> <br />
 		<input type='checkbox' value='1' name='option_ligature_mv' id='option_ligature_mv' />
-		<label for='option_ligature_mv'> Օգտագործել կցագրեր <b>մ ն, մ ե, մ ի, վ ն, մ խ</b> կից տառերի համար</label> <br />
+		<label for='option_ligature_mv'> Միացնել <i>մ ն, մ ե, մ ի, վ ն, մ խ</i> կից տառերի համար</label> <br />
 	  </p>
 	</fieldset>
 
@@ -35,6 +34,7 @@
 </div>
 
   <script type='text/javascript'>
+  //<![CDATA[
     (function() {
       var loc = window.location.search.substr(1).split('&');
       for(var i = 0; i < loc.length; i++)
@@ -55,6 +55,7 @@
         }
       }
     })();
+  //]]>
   </script>
 
 </body>

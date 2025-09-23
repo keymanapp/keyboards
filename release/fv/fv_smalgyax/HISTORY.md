@@ -1,5 +1,20 @@
 Sm'algya̱x Change History
 ============================
+9.3 (30 Jul 2024)
+------------------
+* Tidied documentation
+* Removed web help in favour of OSK
+* Corrected keyboard name
+
+9.2 (25 Jun 2024)
+------------------
+* Normalised where possible
+* Straightned mobile layout
+* Added alternate slash option for use in Google Suite
+
+9.1.3 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
 
 9.1.2 (12 May 2022)
 -------------------

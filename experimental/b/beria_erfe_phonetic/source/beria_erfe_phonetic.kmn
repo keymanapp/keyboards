@@ -1,0 +1,38 @@
+﻿store(&VERSION) '15.0'
+store(&NAME) 'Beria Erfe Phonetic'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.2.1'
+store(&BITMAP) 'beria_erfe_phonetic.ico'
+store(&VISUALKEYBOARD) 'beria_erfe_phonetic.kvks'
+store(&LAYOUTFILE) 'beria_erfe_phonetic.keyman-touch-layout'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+c no V/v
+c macron above, acute and grave
+store(LtrsK) "ABDEFGHIJKLMNXZOPRQSCTUWY" "abdefghijklmnxzoprqsctuwy"
+store(LtrsU) U+16EA0 .. U+16EB8 U+16EBB .. U+16ED3
+
+store(Vow) U+16EA0 U+16EA3 U+16EA7 U+16EAF U+16EB6  U+16EBB U+16EBE U+16EC2 U+16ECA U+16ED1
+
+group(main) using keys
+
++ any(LtrsK)  > index(LtrsU,1)
+any(Vow) + [SHIFT K_V]       > index(Vow,1) U+0301
+any(Vow) + [K_V] > index(Vow,1) U+0304
+any(Vow) + [K_BKQUOTE] > index(Vow,1) U+0300
+any(Vow) + [SHIFT K_BKQUOTE] > index(Vow,1) U+0307 c probably not used
+
+c guillemot
++ [RALT K_O] > U+201C
++ [RALT K_P] > U+201D
++ [RALT K_N] > U+2018
++ [RALT K_M] > U+2019
+ 
+c curly quotes
++ [RALT K_LBRKT] > U+00AB
++ [RALT K_RBRKT] > U+00BB
++ [RALT K_COMMA] > U+2039
++ [RALT K_PERIOD] > U+203A
+

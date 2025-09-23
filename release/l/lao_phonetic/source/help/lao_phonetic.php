@@ -1,11 +1,7 @@
 <?php
   $pagename = 'Lao Phonetic Keyboard Help';
-  $pagetitle = 'Lao Phonetic Keyboard Help';
-  $style = <<<EXTRA
-  html * {font-family: Arial;background-color:#ffffe0;}
-  body p {margin-left: 10px}
-  p, li {line-height: 150%}
-  
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
   span.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold;}
   span.wd {font-family: helvetica,Arial,sansserif; font-weight: bold; }
   
@@ -16,7 +12,7 @@
   
   img {margin-left:30px; margin-right:30px}
   img.inline {margin:0; height: 1em}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
@@ -309,7 +305,4 @@ type any vowel letter, then press backspace to delete the Lao vowel character, l
   <b> + `</b><span class="wd"> &#8594; </span><b>¥</b>
   <b> + `</b><span class="wd"> &#8594; </span><b>$</b>
 </li></ul>
-<p>Copyright 2015-2022 <a href="http://laoscript.net/">Dr John M Durdin</a>, <a href="http://laoscript.net/">laoscript.net</a></p>
-
-</body>
-</html>
+<p>Copyright <a href="http://laoscript.net/">Dr John M Durdin</a>, <a href="http://laoscript.net/">laoscript.net</a></p>

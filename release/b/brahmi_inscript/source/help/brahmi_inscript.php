@@ -10,7 +10,7 @@
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt'>
+<div id='osk' data-states='default shift alt'>
 </div>
 
 <h2>Phone Keyboard Layout</h2>

@@ -15,8 +15,6 @@ The fonts that work best with Ishkashimi letters are Cambria, Calibri, Noto Sans
 
 <p> См. <a href="file:ishkashimi_cyrillic_help.pdf">здесь</a> для инструкций на русском языке.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift ctrl'>
 </div>

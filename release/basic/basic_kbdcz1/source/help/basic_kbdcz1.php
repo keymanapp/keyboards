@@ -7,7 +7,7 @@
 
 
 <p>
-    Czech (QWERTY) Basic generated from template.
+    The keyboard layout follows the Windows 10 Czech (QWERTY) Basic keyboard layout.
 </p>
 
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
@@ -18,9 +18,6 @@
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
 <p>^a will produce â (available on aAeEiIoOuU).</p>
 <p>˝o will produce ő (available on oOuU).</p>
-
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>

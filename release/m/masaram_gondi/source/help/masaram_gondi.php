@@ -1,28 +1,17 @@
 <?php 
   $pagename = 'Masaram Gondi (ITRANS) Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-?>
-
-  <style type="text/css">
-    @font-face {
-      font-display: swap;
-      font-family: 'Noto Sans Masaram Gondi';
-      src: URL('./NotoSansMasaramGondi-Regular.ttf') format('truetype');
-    }
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 14pt Tahoma; color: #4444cc; }
-    h3 { font: bold 12pt Tahoma; color: #4444cc; }
+  $pagestyle = <<<END
     .gond { font-family:Noto Sans Masaram Gondi;}
     .char { font-family:Noto Sans Masaram Gondi; font-size: 28px;}
     .key  { font: 12pt Tahoma; color: #708090; }
     .cell-t{box-shadow:0 0 .25rem rgba(0,0,0,.075)!important}
     .cell-r{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important}
-  </style>
+END;
+  require_once('header.php');
+?>
 
-    <p>
-      This keyboard is designed for typing the Masaram Gondi language in the Gondi script. 
+    <p>This keyboard is designed for typing the Masaram Gondi language in the Gondi script. 
 A Gondi font is required for displaying the characters. This keyboard package 
 will install the <b>Noto Sans Masaram Gondi</b> font.
     </p>
@@ -380,15 +369,13 @@ will install the <b>Noto Sans Masaram Gondi</b> font.
           My self Rajesh Kumar Dhuriya a full time Computer teacher and freelauncer software & web developer.
         </p>
         <p class="text-muted">Contact us</p>
-        <address>
+        <p>
           Siddharth Nagar, UP(E), India <br />
           Email us: <a href="mailto:hinditutorpoint@gmail.com">hinditutorpoint[at]gmail[dot]com</a>
-        </address>
+        </p>
       </div>
     </div>
   </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-    Created by Rajesh Kumar Dhuriya &middot; &copy; 2021-2022 
-  </footer>
-</div>
-</div>
+  <p>
+    Created by Rajesh Kumar Dhuriya 
+  </p>

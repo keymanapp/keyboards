@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>GFF Ge'ez Keyboard</Folder>
+    <Folder>GFF Geʾez Keyboard</Folder>
     <AddUninstallEntry/>
     <Items>
       <Item>
-        <Name>Ge'ez Keyboard</Name>
+        <Name>Geʾez Keyboard</Name>
         <FileName>(Start Product)</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>Ge'ez Keyboard Manual</Name>
+        <Name>Geʾez Keyboard Manual</Name>
         <FileName>GeezTyping-English.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
@@ -48,10 +50,35 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">GFF Ge'ez Keyboard</Name>
-    <Copyright URL="">© 2009-2021 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Name URL="">GFF Geʾez</Name>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description URL="">This is a Geʾez (ግዕዝ, also spelled Ge'ez, and Geez) language keyboard where the letters available are
+restricted to ***only*** those used in the Geʾez language. The additional
+letters used in modern Ethiopic languages are ***not*** available from the
+keyboard. Thus these letters cannot be accidentally typed when composing
+a Geʾez language document. A preview of the deskotp keyboard appears below.
+
+### Keyboard Initial State
+
+![Desktop Keyboard Initial](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/GFF-Geez-OnScreen-Keyboard-Default-Layer-920w.png)
+
+### Keyboard Shifted State
+
+![Desktop Keyboard Initial](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/GFF-Geez-OnScreen-Keyboard-Shift-Layer-920w.png)
+
+## Yaredic Zaima Typing
+
+This keyboard is designed very specifically to aid in the typing of Yaredic
+Zaima notation.  For example:
+
+![Zaima Sample](https://raw.githubusercontent.com/dyacob/keyboards/5dd8f116e3db3fa56ff4a1184b71bb2989ae6454/release/gff/gff_geez/source/images/Zaima-Sample-Wazaima-Digua-ZeYohannes.png)
+
+See the provided manual for instructions for typing with the following
+and other symbols:
+
+![Zaima List ](https://raw.githubusercontent.com/dyacob/keyboards/cb925e81fb37e48e867c39a25067eefbbd030a19/release/gff/gff_geez/source/images/Zaima-Qirts-List.png)</Description>
   </Info>
   <Files>
     <File>
@@ -68,7 +95,7 @@
     </File>
     <File>
       <Name>..\build\gff_geez.kmx</Name>
-      <Description>Keyboard Ge'ez</Description>
+      <Description>Keyboard Geʾez</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
@@ -77,12 +104,6 @@
       <Description>File GeezTyping-English.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
-      <Description>Font Brana Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
@@ -103,33 +124,74 @@
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>AbbaGarima-Regular.ttf</Name>
+      <Description>Font Abba Garima Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
+      <Description>Font Brana Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
       <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL (Connected)</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\build\gff_geez.js</Name>
-      <Description>File gff_geez.js</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateOne-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate One</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateTwo-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate Two</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf</Name>
+      <Description>Font NotoSerifEthiopic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>ግዕዝ (Ge'ez)</Name>
       <ID>gff_geez</ID>
-      <Version>1.6</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="gez-Ethi">Geez</Language>
+        <Language ID="gez">Geez</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="gff_gez_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-gez-7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-gez-powerpack-7" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

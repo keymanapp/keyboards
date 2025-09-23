@@ -1,12 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1108.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,15 +20,13 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Dzongkha (SIL)</Name>
-    <Copyright URL="">© 2012-2018 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for the Dzongkha language of Bhutan. The
+keyboard follows the current (October 2009) official Dzongkha layout
+approved by the Department of Information Technology and Dzongkha
+Development Authority of the Government of Bhutan.</Description>
   </Info>
   <Files>
-    <File>
-      <Name>..\assets\DDC_Uchen.ttf</Name>
-      <Description>Font DDC_Uchen</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -51,18 +51,45 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</Name>
+      <Description>Font DDC_Uchen</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_dzongkha.js</Name>
+      <Description>File sil_dzongkha.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dzongkha (SIL)</Name>
       <ID>sil_dzongkha</ID>
-      <Version></Version>
-      <OSKFont>..\assets\DDC_Uchen.ttf</OSKFont>
-      <DisplayFont>..\assets\DDC_Uchen.ttf</DisplayFont>
+      <Version>1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</DisplayFont>
       <Languages>
         <Language ID="dz-BT">Dzongkha (Bhutan)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="dzongkha" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

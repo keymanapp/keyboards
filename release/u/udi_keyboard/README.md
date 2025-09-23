@@ -1,14 +1,11 @@
 ﻿Udi Keyboard 
 ==============
 
-©SIL International (Eurasia)
-
-Version 1.01
+© SIL Global (Eurasia)
 
 Description
 -----------
-
-Udi Keyboard generated from template
+This keyboard layout is designed for Udi language of Azerbaijan.
 
 Links
 -----

@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.2"
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "bcr"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) "Nedut’en-Witsuwit'en"
 store(&BITMAP) 'fv_natwits.ico'
 store(&VISUALKEYBOARD) 'fv_natwits.kvks'
@@ -16,7 +16,7 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) "fv_natwits.keyman-touch-layout"
+store(&LAYOUTFILE) 'fv_natwits.keyman-touch-layout'
 
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
@@ -86,7 +86,7 @@ c original punctuation
 + [RALT K_BKQUOTE] > '`'
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
-+ [NCAPS RALT K_SLASH] > '/'     
++ [NCAPS RALT K_SLASH] > '/'   
 + [NCAPS SHIFT RALT K_SLASH] > '?'
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
@@ -125,6 +125,14 @@ c Quotes
 
 + "`" > "́" 
 "́"  + "`" > context beep
+
+store(Vowels) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+
+any(Vowels) + [K_BKQUOTE] > index(HasAcute,1)
+
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NonLetters) + [K_BKQUOTE] > index(NonLetters,1)
 
 
 nomatch > use(x)                            

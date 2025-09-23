@@ -15,8 +15,8 @@
 
   Authors:     Albert Bickford (SIL)
 */
-  $pagename = 'Bickford Unicode Keyboard Help';
-  $pagetitle = 'Bickford Unicode Keyboard Help';
+  $pagename = 'Bickford Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Bickford Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <h1>The BU Keyboarding System</h1>

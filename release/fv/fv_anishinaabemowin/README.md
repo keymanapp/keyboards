@@ -1,11 +1,7 @@
-Anishinaabemowin keyboard
+Anishinaabemowin - Anihšināpēmowin keyboard
 ======================
 
-Copyright (c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.1
-
-Anishinaabemowin keyboard layout for Unicode
+Anishinaabemowin - Anihšināpēmowin keyboard layout for Unicode
 
 Links
 -----
@@ -17,4 +13,8 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+* Windows
+* macOS
+* Linux
+* Web
+* Mobile

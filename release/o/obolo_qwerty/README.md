@@ -1,9 +1,7 @@
 Obolo Qwerty keyboard
 ==============
 
-© 2020 - 2021 Rogers Katelem Edeh
-
-Version 1.1
+© Rogers Katelem Edeh
 
 Description
 -----------
@@ -12,6 +10,7 @@ Obolo Qwerty Keyboard is a simple keyboard in QWERTY layout, for the Obolo langu
 
 Links
 -----
+https://keyman.com/keyboards/obolo_qwerty
 
 Supported Platforms
 -------------------

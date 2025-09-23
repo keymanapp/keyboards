@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Kadu (Kadu)</Name>
+    <Copyright URL="">Copyright © SIL Global</Copyright>
+    <Author URL="">Omar Ray Chan</Author>
+    <Description URL="">This is an experimental keyboard for the Kadu language of Myanmar. It uses the Kadu script, which was invented around 2016. The Kadu script is not yet included in Unicode.</Description>
+    <Version URL=""></Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\kadu_kadu.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\kadu_kadu.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\assets\kadu2-Regular.ttf</Name>
+      <Description>Font kadu2 Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\build\kadu_kadu.js</Name>
+      <Description>File kadu_kadu.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>kadu_kadu</ID>
+      <OSKFont>..\assets\kadu2-Regular.ttf</OSKFont>
+      <DisplayFont>..\assets\kadu2-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="zkd-Zyyy">Kadu (Code for undetermined script)</Language>
+      </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\assets\kadu2-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\assets\kadu2-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

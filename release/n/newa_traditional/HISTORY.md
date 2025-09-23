@@ -1,6 +1,10 @@
 Newa Traditional Change History
 ====================
 
+1.2.1 (2022-09-07)
+----------------
+* Change to use "shared" ttf
+
 1.2 (2021-01-26)
 ----------------
 * fix '7' key in phone numeric layout. remove some repeated characters.

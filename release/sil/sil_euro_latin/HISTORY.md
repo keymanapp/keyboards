@@ -1,5 +1,23 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 3.0.3 (3 Dec 2024)
+* Update language tags
+* Update documentation for punctuation
+## 3.0.2 (12 Apr 2024)
+* Change blank keys on currency layer to spacers
+## 3.0.1 (12 Mar 2024)
+* Fixed key-caps for right-parentheses subkeys
+## 3.0.0 (4 Mar 2024)
+* Added support for flick-down gestures on touch devices with Keyman 17.0
+* Rearranged the numeric/symbol layer on touch devices to make it consistent with the flick-down layout and moved less-used letters to longpress and/or flick gestures.
+## 2.0.4 (29 Sep 2023)
+* Fix longpress commas on touch layout
+## 2.0.3 (30 Jan 2023)
+* Fix duplicated language codes (`ik`, `ff`, `gn`, `qu`)
+## 2.0.2 (30 Jan 2023)
+* Fix duplicated Albanian language code (`sq`)
+## 2.0.1 (20 Jan 2023)
+* Add support for Dutch acute on j
 ## 2.0 (5 Jul 2022)
 * add Caps Lock support and start of sentence detection for mobile devices.
 ## 1.9.6 (11 Apr 2022)

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Tifinagh (Basic) Basic</Name>
-    <Copyright URL="">(c) 2018 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
     <Author URL=""></Author>
+    <Description URL="">This keyboard is designed for the Central Atlas Tamazight language of Morocco (Tifinagh script).</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -69,14 +73,62 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Black.ttf</Name>
+      <Description>Font Tirra Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Bold.ttf</Name>
+      <Description>Font Tirra Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-ExtraBold.ttf</Name>
+      <Description>Font Tirra ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Medium.ttf</Name>
+      <Description>Font Tirra Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</Name>
+      <Description>Font Tirra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tirra\Tirra-SemiBold.ttf</Name>
+      <Description>Font Tirra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tifinagh (Basic) Basic</Name>
       <ID>basic_kbdtifi</ID>
-      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\tirra\Tirra-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="tzm-Tfng-MA">Central Atlas Tamazight</Language>
+        <Language ID="tzm-Tfng">Central Atlas Tamazight</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

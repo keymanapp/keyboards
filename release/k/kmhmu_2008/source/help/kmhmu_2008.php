@@ -1,10 +1,7 @@
 <?php
-  $pagename = 'Kmhmu 2008 Keyboard Help';
-  $pagetitle = 'Kmhmu 2008  Keyboard Help';
-  $style = <<<EXTRA
-  p { font: 10pt Tahoma }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc }
+  $pagename = 'Kmhmu 2008 (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
@@ -12,13 +9,9 @@
   img {width:100% ;max-width:750px;}
   th.narrow {width:40px;}
   th.medium {width:100px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
-
-
-
-
 
 <h2>Keyboard Layout Notes</h2>
 <p>Keyboard layout (as shown below) follows the Lao standard, with the following minor differences to simplify entry of Kmhmu text:</p>

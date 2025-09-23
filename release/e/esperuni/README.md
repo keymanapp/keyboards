@@ -1,9 +1,7 @@
 Esperanto Cx keyboard
 ==============
 
-(c) 2001-2020 Gyula Zsigri
-
-Version 1.1
+(c) Gyula Zsigri
 
 Description
 -----------
@@ -20,5 +18,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 
 

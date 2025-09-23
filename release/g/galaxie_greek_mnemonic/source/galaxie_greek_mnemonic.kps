@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1201.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,15 +20,15 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Galaxie Greek (Mnemonic)</Name>
-    <Copyright URL="">© 2004-2021 Galaxie Software and SIL International</Copyright>
+    <Copyright URL="">© Galaxie Software and SIL Global</Copyright>
+    <Description URL="">This Keyman keyboard is designed for Koine Greek, a trade language of
+the ancient Mediterranean and the language of the Septuagint and New
+Testament Scriptures. It is a mnemonic keyboard. This means that the
+arrangement of the letters in the Keyman keyboard will depend on the
+order of the keys on your hardware layout.</Description>
+    <Author URL="">Hampton Keathley</Author>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\galaxie_greek_mnemonic.kvk</Name>
-      <Description>File galaxie_greek_mnemonic.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
     <File>
       <Name>..\build\galaxie_greek_mnemonic.kmx</Name>
       <Description>Keyboard Galaxie Greek (Mnemonic)</Description>
@@ -57,17 +59,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\galaxie_greek_mnemonic.kvk</Name>
+      <Description>File galaxie_greek_mnemonic.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Greek (Mnemonic)</Name>
       <ID>galaxie_greek_mnemonic</ID>
-      <Version></Version>
+      <Version>3.3</Version>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiebiblescriptmnemonic" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
