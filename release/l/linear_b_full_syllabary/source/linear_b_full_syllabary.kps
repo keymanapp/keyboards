@@ -1,63 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.241.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.240.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
+    <ExecuteProgram/>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
     <WelcomeFile>welcome.htm</WelcomeFile>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <MSIFileName/>
+    <MSIOptions/>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
     <Name URL="">Linear B Full Syllabary Signs</Name>
-    <Copyright URL="">Copyright ©Joshua Wang</Copyright>
+    <Copyright URL="">Copyright © Joshua Wang</Copyright>
     <Author URL="">Joshua Wang</Author>
     <Description URL="">This keyboard is designed for the Mycenean Greek language, using the Linear B script. This keyboard contains special signs, as well as signs with unknown values.</Description>
-    <Version URL=""></Version>
+    <Version URL=""/>
   </Info>
   <Files>
     <File>
       <Name>..\build\linear_b_full_syllabary.kmx</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\linear_b_full_syllabary.js</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\linear_b_full_syllabary.kvk</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>welcome.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
@@ -98,17 +98,23 @@
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>keyboards\release\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</Name>
       <Description>Font Noto Sans Linear B Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Linb\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>linear_b_full_syllabary</ID>
-      <OSKFont>keyboards\release\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</OSKFont>
-      <DisplayFont>keyboards\release\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="gmy">Mycenaean Greek</Language>
       </Languages>
@@ -116,4 +122,3 @@
   </Keyboards>
   <Strings/>
 </Package>
-
