@@ -5,8 +5,6 @@
 ?>
 
 
-<h1>Start Using Linear B Full Syllabary Signs</h1>
-
 <p>
   This keyboard is designed for the Mycenean Greek language, using the Linear B script. This keyboard contains special signs, as well as signs with unknown values.
 </p>
@@ -21,3 +19,4 @@
 </div>
 
 <p>Copyright © Joshua Wang</p>
+
