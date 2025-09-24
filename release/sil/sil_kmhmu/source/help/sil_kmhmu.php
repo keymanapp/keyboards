@@ -4,7 +4,6 @@
   $pagestyle = <<<END
   .kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt; }
   .display { border-collapse: collapse; width:640px;}
-  img {width:100% ;max-width:750px;}
   .narrow {width:40px;}
   .medium {width:100px;}
 END;
