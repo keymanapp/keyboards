@@ -2,7 +2,7 @@
   $pagename = 'Lao 2008 Basic Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-  img {width:100% ;max-width:750px;}
+  img {width:100%; max-width:750px;}
 END;
   require_once('header.php');
 ?>

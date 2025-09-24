@@ -2,8 +2,7 @@
   $pagename = 'Lao 2008 Rapid Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-  img.kbdlayout {width:100% ;max-width:750px;}
-  kbd {font-weight: bold;}
+  img {width:100%; max-width:750px;}
 END;
   require_once('header.php');
 ?>
@@ -24,8 +23,8 @@ END;
 
 
   <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: normal (default) state" src="lao_2008_rapidU_.png"/></p>
+  <p><img alt="Lao 2008 Rapid keyboard layout: normal (default) state" src="lao_2008_rapidU_.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
+  <p><img alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
-  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>
+  <p><img alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>

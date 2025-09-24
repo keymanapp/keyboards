@@ -2,8 +2,7 @@
   $pagename = 'Lao Pali Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-  img {width:100% ;max-width:750px;}
-  kbd {font-weight: bold;}
+  img {width:100%; max-width:750px;}
 END;
   require_once('header.php');
 ?>
