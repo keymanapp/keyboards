@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.241.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>ladino.png</GraphicFile>
     <LicenseFile>LICENSE.htm</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -28,10 +29,46 @@
   <Info>
     <Version URL="">1.0.0</Version>
     <Name URL="">Teklado Ladino</Name>
-    <Copyright URL="">© Julian Vargo 2025</Copyright>
+    <Copyright URL="">© Julian Vargo</Copyright>
     <Author URL="mailto:julianvargo@berkeley.edu">Julian Vargo</Author>
     <WebSite URL="https://sites.google.com/berkeley.edu/julian-vargo/home?authuser=0">https://sites.google.com/berkeley.edu/julian-vargo/home?authuser=0</WebSite>
-    <Description URL="">Paket del teklado Ladino. Ladino keyboard package.</Description>
+    <Description URL=""># Teklado Ladino keyboard
+
+## Description
+
+Un teklado fonetiko para eskrivir Ladino kon letras de Merubah i Rashi.
+
+A phonetic keyboard for writing Ladino with Merubah and Rashi letters.
+
+Ladino'da Merubah ve Rashi harfleriyle yazmak için fonetik bir klavye.
+
+## 
+
+## Links
+
+Keyboard Homepage: https://keyman.com/keyboards/teklado\_ladino
+
+## 
+
+## Copyright
+
+See [LICENSE.md](LICENSE.md)
+
+## 
+
+## Supported Platforms
+
+* Windows
+* macOS
+* Linux
+* Web
+* iPhone
+* iPad
+* Android phone
+* Android tablet
+* Mobile devices
+* Desktop devices
+* Tablet devices</Description>
   </Info>
   <Files>
     <File>
@@ -45,12 +82,6 @@
       <Description>File LICENSE.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>NotoRashiHebrew-VariableFont_wght.ttf</Name>
-      <Description>Font Noto Rashi Hebrew Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>ladino.ico</Name>
@@ -83,41 +114,23 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\welcome\welcome.htm</Name>
+      <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\welcome\alt.png</Name>
-      <Description>File alt.png</Description>
+      <Name>..\..\..\shared\fonts\hebr\noto_rashi_hebrew\NotoRashiHebrew-VariableFont_wght.ttf</Name>
+      <Description>Font Noto Rashi Hebrew Regular</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>..\welcome\alt_shift.png</Name>
-      <Description>File alt_shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>..\welcome\basic.png</Name>
-      <Description>File basic.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>..\welcome\shift.png</Name>
-      <Description>File shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>ladino</ID>
-      <OSKFont>NotoRashiHebrew-VariableFont_wght.ttf</OSKFont>
-      <DisplayFont>NotoRashiHebrew-VariableFont_wght.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\hebr\noto_rashi_hebrew\NotoRashiHebrew-VariableFont_wght.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\hebr\noto_rashi_hebrew\NotoRashiHebrew-VariableFont_wght.ttf</DisplayFont>
       <Languages>
         <Language ID="lad-001">Ladino (World)</Language>
       </Languages>
