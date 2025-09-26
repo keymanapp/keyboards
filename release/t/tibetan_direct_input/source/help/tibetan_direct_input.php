@@ -2,8 +2,8 @@
 */
 
   $pagename = 'Tibetan Direct Input Keyboard Help';
-  $pagetitle = 'Tibetan Direct Input Help';
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 /*
 ===========
 ==General==
@@ -224,24 +224,25 @@ END;
 	<p>This keyboard also features special menus for Tibetan symbols.</p>
 	<h4>Fonts</h4>
 	<p>This is a Unicode keyboard and works with any Unicode font which has support for Tibetan script. The <b>Tibetan Machine Uni</b> font supports Tibetan script and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
-  </section>
+
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 
 
-  <section id='details'  class='break'>
-	<h2>Keyboard Details</h2>
+ 	<h2>Keyboard Details</h2>
 	<p>This keyboard can be used to type:</p>
 	<ul>
 		<li><a href='#di'>Tibetan using Direct Input</a></li>
 		<li><a href='#sym'>Extended Tibetan symbols using special menus</a></li>
 	</ul>
+ 
 	<section id='di'>
 		<h3>Typing Tibetan Using Direct Input</h3>
-		<section id='letters'>
+
 			<h4>Letters, Diacritics + Stacks</h4>
+
 			<p>This keyboard uses a phonetic style system based on the English (QWERTY) layout. Where a Tibetan letter has an equivalent letter in English, it's as easy as typing the English key to get the Tibetan letter:</p>
 			<p class='example'><b>Example:</b> type <kbd>a</kbd> to get <samp>ཨ</samp>.</p>
 			<p class='example'><b>Example:</b> type <kbd>m</kbd> to get <samp>མ</samp>.</p>
@@ -760,15 +761,13 @@ END;
 					</tbody>
 				</table>
 			</article>
-		</section>
-		<section id='tsheg' class='break'>
+
 			<h4>Tsheg + White Space</h4>
 			<p>This keyboard includes two different tshegs. Typing <kbd>Space</kbd> creates a standard tsheg. To clear a standard tsheg, type <kbd>Space</kbd> again. For a non-breaking tsheg, type <kbd>-</kbd>. If you need to type multiple tshegs, you should use the non-breaking tsheg <kbd>-</kbd>. To get white space, type <kbd>_</kbd>.</p>
 			<p class='example'><b>Example:</b> type <kbd>Space</kbd> for <samp>་</samp>.</p>
 			<p class='example'><b>Example:</b> type <kbd>-</kbd><kbd>-</kbd> for <samp>༌༌</samp>.</p>
 			<p class='example'><b>Example:</b> type <kbd>_</kbd> for white space.</p>
-		</section>
-		<section id='symbols'>
+
 			<h4>Numbers + Punctuation</h4>
 			<p>This keyboard also enables you to type a collection of basic Tibetan symbols, as follows:</p>
 			<article class='guide'>
@@ -1002,8 +1001,8 @@ END;
 					</tbody>
 				</table>
 			</article>
-		</section>
 	</section>
+
 	<section id='sym' class='break'>
 		<h3>Typing Extended Tibetan Symbols Using Menus</h3>
 		<p>Tibetan Direct Input includes menus to make it easier to type extended Tibetan symbols. To pull up a menu, type <kbd>\</kbd> and the name of the menu. Then select a menu item by typing the number of the item.</p>
@@ -1065,7 +1064,7 @@ END;
 				</tbody>
 			</table>
 		</article>
-	</section>
+
   </section>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>

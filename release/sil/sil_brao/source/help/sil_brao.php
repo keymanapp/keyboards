@@ -1,8 +1,7 @@
 <?php 
   $pagename = 'Brao (SIL) Keyboard Help';
   $pagetitle = $pagename;
-  // Header we will tidy up later  
-    $style = <<<END
+  $pagestyle = <<<END
     p { font: 12pt Busra; }
 	ul { font: 12pt Busra; }
     h2 { font: bold 16pt Busra; color: #4444cc; margin-bottom: 2px }

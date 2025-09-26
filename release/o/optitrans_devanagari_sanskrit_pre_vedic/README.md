@@ -24,3 +24,6 @@ Examples: Type `saMskRta` for संस्कृत.
 - The closely related m17n keyboard [here](https://github.com/indic-transliteration/m17n-db-indic/blob/master/sa-vedic-itrans.mim)
 - The motivation behind some basic additions made to the basic ITRANS scheme is described [here](https://sanskrit-coders.github.io/input/optitrans/), along with a tabulated comparison with several other transliteration schemes.
 
+## Contribution
+Fixes and improvements are welcome.  
+Helpful commands - `kmc build .` .
