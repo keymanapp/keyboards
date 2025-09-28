@@ -32,7 +32,7 @@ Phone châta touch layout chhao he hawhna heta pachhuahpa châ ta, Mara reihchâ
 
 ## Links
 
-* Keyboard Homepage: [https://keyman.com/keyboards/mara_keyboard](https://keyman.com/keyboards/mara_keyboard)
+* Keyboard Homepage: [https://keyman.com/keyboards/mara](https://keyman.com/keyboards/mara)
 
 ## Author
 
@@ -59,18 +59,18 @@ See [LICENSE.md](LICENSE.md) for copyright information.
 
 **Unshifted**
 
-![Desktop Layout](source/screenshots/PC_Unshifted.png)
+![Desktop Layout](source/PC_Unshifted.png)
 
 **Shifted**
 
-![Desktop Layout Shifted](source/screenshots/PC_Shifted.png)
+![Desktop Layout Shifted](source/PC_Shifted.png)
 
 ### Touch
 
 **Unshifted**
 
-![Touch Layout](source/screenshots/Phone_Unshifted.jpg)
+![Touch Layout](source/Phone_Unshifted.jpg)
 
 **Shifted**
 
-![Touch Layout Shifted](source/screenshots/Phone_Shifted.jpg)
+![Touch Layout Shifted](source/Phone_Shifted.jpg)

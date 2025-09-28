@@ -1,5 +1,6 @@
-# Mara Keyboard Change History
+Mara Change History
+====================
 
-## 1.0 (2025-09-26)
-
+1.0 (2025-09-28)
+----------------
 * Created by Laitei
