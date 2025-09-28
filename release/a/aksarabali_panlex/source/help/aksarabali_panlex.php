@@ -1,9 +1,9 @@
 ﻿<?php
   $pagename = 'Aksara Bali Keyboard Help';
-  $pagetitle = 'Aksara Bali Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+ $pagestyle = <<<END
   span.bali {font-family: "Vimala","Noto Sans Balinese"; font-size: 12pt }
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
