@@ -11,7 +11,7 @@
 <p>
   <p>the Script of National Language for Hoisanese台山話國語字</p>
  <p> 台山話國語字係一種羅馬化嘅粵語文字 <p>
-    <p> Hòi Sán Vạ Coc Ngũi Tụ hại yât chủng Lò-Mã phá ké Oạt Ngũi mùn tụ. <p>
+    <p> Hòi Sán Vạ Coc Ngũi Tụ hại yât chủng Lò-Mã phá ké Oạt Ngũi mồn tụ. <p>
 <p>
 
 <h1>音韻表 phonologic map</h1>
@@ -22,11 +22,26 @@
 <img src='consonants.png' alt='Keyboard Layout'>
 <p>位於字母a â ă u ư o ô ơ 之前嘅韻首k可以轉變為c</p>
 <p>The consonant "k" before vowels a â ă u ư o ô ơ can be transformed to "c"</p>
+  <p>位於字母i ê e之前嘅韻首ng可以轉變為ngh</p>
+  <p>The consonant "ng" before vowels i ê e can be transformed to "ngh"</p>*
+<p>字母"f"嘅發音同"ph"相同，主要用嚟表音同書寫外來詞語</p>
+ <p>The letter "f" has the same pronunciation with consonant "ph". "f" is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+ <p>字母"d" 字母"z" 同字母組合 "dz" 喺粵語源頭嘅詞語入面與韻首"y"有一樣嘅作用，發音係/j/或者/z/</p>
+ <p>Letter "d", letter "z", and letter combination "dz" have the same application with the consonant "y" in Cantonese origin words, the pronunciation is /j/ or /z/</p> 
+
 
 <h1>韻腹vowels</h1>
 <img src='vowels.png' alt='Keyboard Layout'>
 <p>如果韻腹i單獨出現，音調係陰聲í ỉ，頭先嘅韻首係y，咁韻首y可以俾省略</p>
 <p>If vowel "i" appear alone, the tone is a high tone, such as "í" or "ỉ", and the consonant is "y", then the consonant "y" can be omitted.
+<p>喺台山話國語字系統入面，使用正寫"iêng"同韻腹"ênh"嘅作用一樣，正寫"iêc"同韻腹"êc"嘅作用一樣</p>
+ <p>In the Hoisanese National Language system, the spelling "iêng" has the same effect with "ênh" sound, the spelling "iêc" has the same effect with "êc" sound</p>
+ <p>使用正寫"im"同韻腹"âm"嘅作用一樣，正寫"in"同韻腹"ân"嘅作用一樣，正寫"iu"同韻腹"ưu"嘅作用一樣</p>
+ <p>The spelling "im" has the same effect with "âm" sound, the spelling "iu" has the same effect with "ưu" sound</p>
+  <p>正寫"ut"同韻腹"ôt"嘅作用一樣，正寫"un"同韻腹"ôn"嘅作用一樣</p>
+ <p>the spelling "ut" has the same effect with "ôt" sound, the spelling "un" has the same effect with "ôn" sound</p>
+<p>正寫"ôi"同韻腹"ui"嘅作用一樣</p>
+ <p>the spelling "ôi" has the same effect with "ui" sound</p>
 <h1>音調tones</h1>
 <img src='tones.png' alt='Keyboard Layout'>
 
@@ -172,7 +187,7 @@
 
 <p>範文：南國山河 Nàm Coc Sán Hò<p>
 <p>南國山河南帝居 Nàm Coc Sán Hò Nàm Ái Cúi<p>
-<p>截然定分在天書 Tiệt Ngình Ịnh Phún Tọi Hính Sí<p>
+<p>截然定分在天書 Tiệt Ngình Ịnh Phốn Tọi Hính Sí<p>
 <p>如何逆虜來侵犯 Ngùi Hò Ngịch Lũ Lòi Xấm Phạn<p>
 <p>汝等行看取敗虛 Nỹ Ảnh Hành Hón Xủi Bại Húi<p>
 
