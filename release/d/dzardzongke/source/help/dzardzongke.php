@@ -1,4 +1,4 @@
-<?phpdzardzongke
+<?php
 $pagename = 'Dzardzongke Keyboard Help';
 $pagetitle = $pagename;
 // Header
@@ -23,7 +23,4 @@ Dzardzongke keyboard based on basic keyboard.
 
 <h2>Predictive text on a phone or tablet</h2>
 <p> If you are using a phone or tablet, you can also download a 'lexical model' to enable predictive text on your device. Follow this link https://github.com/kitty-liu-wy/dzardzongke-resources to download it and view more information. </p>
-<div id='osk-phone' data-states='default shift numeric'>
-
-</div>
 
