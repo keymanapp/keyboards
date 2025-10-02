@@ -1,7 +1,6 @@
 <?php
   $pagename = 'Mara Keyboard Help';
   $pagetitle = 'Mara Keyboard Help';
-
   require_once('header.php');
 ?>
 
@@ -40,7 +39,7 @@
 
     <h2>Author & Copyright</h2>
     <p>This keyboard was created by Laitei.</p>
-    <p>See <a href="LICENSE.md">LICENSE.md</a> for copyright information.</p>
+    <p>Copyright © Laitei</p>
     
     <h2>Supported Platforms</h2>
     <ul>
@@ -52,30 +51,15 @@
         <li>Android phone & tablet</li>
     </ul>
 
-    <h2>Keyboard Layout</h2>
-    <h3>Desktop</h3>
-    <p><strong>Unshifted</strong></p>
-    <?php
-        render_keyboard('mara', 'default', 'desktop'); 
-    ?>
-    <p><strong>Shifted</strong></p>
-    <?php
-        render_keyboard('mara', 'shift', 'desktop'); 
-    ?>
-    
-    <h3>Touch</h3>
-    <p><strong>Unshifted</strong></p>
-    <?php
-        render_keyboard('mara', 'default', 'phone'); 
-    ?>
-    <p><strong>Shifted</strong></p>
-    <?php
-        render_keyboard('mara', 'shift', 'phone'); 
-    ?>
+    <h2>Keyboard Layouts</h2>
+    <h3>Desktop Layout</h3>
+    <div id='osk' data-states='default shift'></div>
+
+    <h3>Phone Layout</h3>
+    <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
 
 <style>
-   
     :root {
         --primary-bg: #f8f9fa;
         --primary-text: #212529;
@@ -113,7 +97,7 @@
         transition: background-color var(--transition-speed), color var(--transition-speed);
     }
 
-   
+    
     .container {
         max-width: 800px;
         margin: 20px auto;
@@ -176,7 +160,6 @@
         margin-right: auto;
     }
 
- 
     ul {
         padding-left: 20px;
     }
@@ -185,4 +168,3 @@
         margin-bottom: 0.5em;
     }
 </style>
-
