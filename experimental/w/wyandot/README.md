@@ -19,11 +19,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
 
