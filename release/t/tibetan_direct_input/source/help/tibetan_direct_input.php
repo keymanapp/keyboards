@@ -1,6 +1,4 @@
-﻿<?php /*
-*/
-
+﻿<?php 
   $pagename = 'Tibetan Direct Input Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
@@ -9,27 +7,15 @@
 ==General==
 ===========
 */
-body {
-	margin: 30px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;color: #2D2C2C;}
-img {border: none; }
-
-p {font-size: 10pt; margin:5px 0px 0px; line-height:20px;}
 p.example {margin-left:40px; line-height:45px;}
 
-section {clear:left;}
+article section {clear:left;}
 
-article{clear:left; margin-bottom:60px;}
+article article{clear:left; margin-bottom:60px;}
+
 
 /* Headers */
 h1, h2, h3{color: #AD4A28; font-weight: bold;}
-
-h1 {font-size: 22pt; margin: 22px 0px 11px; padding:0px;}
-h2 {font-size: 16pt; margin: 14px 0px 7px; padding:0px;}
-h3 {font-size: 12pt; margin: 12px 0px 6px; padding:0px;}
-h4 {font-size: 11pt; margin: 10px 0px 5px; padding:0px;}
-h5 {font-size: 10pt; margin: 8px 0px 4px; padding:0px;}
 
 /* Links */
 a:link {color: #AD4A28; text-decoration: none;}
@@ -82,86 +68,6 @@ table kbd {color:black; font:12pt Arial; border:solid 1px grey; background:#ccc;
 p samp {font-size:22pt;}
 p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; margin:0px 1px; padding:0px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 
-/* OSK Keys */
-        .key {
-            float: left;
-            display: block;
-            position: relative;
-            overflow: hidden;
-            height: 35px;
-            margin: 2px 0px 0px 2px;
-            border: solid 1px grey;
-			-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
-        }
-
-        .plain {
-          background-repeat: no-repeat;
-          width: 34px;
-        }
-		.empty {
-		  background:#eee;
-		}
-		.K_BKQUOTE {
-		width:34px;
-		}
-        .K_BKSP {
-		width: 60px;
-		}
-		.K_TAB {
-		width: 52px;
-		}
-        .K_BKSLASH {
-        width: 42px;
-        }
-		.K_CAPS {
-		width: 62px;
-		}
-		.K_ENTER {
-        width: 70px;
-		}
-		.K_ENTER-EU1 {
-        width: 42px;
-		-webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px;
-		}
-		.K_ENTER-EU1 .key kbd {
-		left:3px !important;
-		}
-		.K_ENTER-EU2 {
-        width: 32px;
-		margin-top:-1px !important;
-		border-top:none !important;
-		height:39px !important;
-		-webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px;
-		}
-        .K_SHIFTL {
-          width: 85px;
-        }
-        .K_SHIFTL-EU {
-          width: 47px;
-        }
-        .K_oE2 {
-          display:none;
-        }
-		.K_SHIFTR {
-          width: 85px;
-        }
-		.K_CTRLL {
-		  width:60px;
-		  margin-right: 40px;
-        }
-		.K_ALTL {
-          width: 40px;
-        }
-        .K_SPACE , .K_SPACE samp{
-          width: 224px;
-        }
-		.K_ALTR {
-          width: 40px;
-        }
-		.K_CTRLR {
-          width: 60px;
-		  margin-left: 76px;
-		}
 @media print {.K_CTRLR {
 			  margin-left:71px;
 			}
@@ -761,13 +667,14 @@ END;
 					</tbody>
 				</table>
 			</article>
-
+</section>
+<section id='ts'>
 			<h4>Tsheg + White Space</h4>
 			<p>This keyboard includes two different tshegs. Typing <kbd>Space</kbd> creates a standard tsheg. To clear a standard tsheg, type <kbd>Space</kbd> again. For a non-breaking tsheg, type <kbd>-</kbd>. If you need to type multiple tshegs, you should use the non-breaking tsheg <kbd>-</kbd>. To get white space, type <kbd>_</kbd>.</p>
 			<p class='example'><b>Example:</b> type <kbd>Space</kbd> for <samp>་</samp>.</p>
 			<p class='example'><b>Example:</b> type <kbd>-</kbd><kbd>-</kbd> for <samp>༌༌</samp>.</p>
 			<p class='example'><b>Example:</b> type <kbd>_</kbd> for white space.</p>
-
+</section>
 			<h4>Numbers + Punctuation</h4>
 			<p>This keyboard also enables you to type a collection of basic Tibetan symbols, as follows:</p>
 			<article class='guide'>
@@ -1066,8 +973,9 @@ END;
 		</article>
 
   </section>
-
+	<section id='mob' class='break'>
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift'>
 </div>
+  </section>
 
