@@ -1,6 +1,11 @@
 cantonese telex Change History
 ====================
 
+3.1 (2025-09-11)
+----------------
+* added explaination for consonants "f" "d" "z" and "dz"
+* fixed bug in letter generation rules
+
 3.1 (2025-08-20)
 ----------------
 * changed the spelling of "yừ" "yữ" "yự" to "ừ" "ữ" "ự"
