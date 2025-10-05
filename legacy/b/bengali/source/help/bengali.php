@@ -1,29 +1,28 @@
 <?php /*
   Name:             bengali
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Traditional Bengali (deprecated) Keyboard Help';
   $pagetitle = 'Traditional Bengali (deprecated) Keyboard Help';
   $style = 'lang2 {font-size:250%}';
-  
+
   require_once('header.php');
 ?>
 
-  
+
 <p style='margin:0px'>Keyboard &#169; 2008 Tavultesoft</p>
 
 <br/>
@@ -43,12 +42,12 @@
 <h4><a target="_blank" href="chart.pdf"><img border=0 style='vertical-align:bottom' src="<?php echo cdn('img/pdficon_small.gif'); ?>" /></a> Download this documentation in <a target="_blank" href="chart.pdf">PDF format</a>.</h4>
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
 <p>
-This keyboard lets you type in Bengali (Bangla).  It is easy to use for people familiar with Bengali and the Inscript keyboard layout.  
+This keyboard lets you type in Bengali (Bangla).  It is easy to use for people familiar with Bengali and the Inscript keyboard layout.
 It includes some characters which are not found on the Inscript keyboard.  It uses a normal English (QWERTY) keyboard.
 </p>
 <p class='keymanweb'>
@@ -93,7 +92,7 @@ For example, typing <span class='keys'>F</span> will produce the vowel <span cla
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>The On Screen Keyboard shows the 35 normal consonants <span class='lang2' style='font-size:200%'>ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ ম য় র ল শ ষ স হ য ড় ঢ়</span>, the vowels <span class='lang2' style='font-size:200%'>অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ  ্ া ি ী ু ূ ৃ ে ৈ ো ৌ</span>, and the <span class='lang2' style='font-size:200%'>্ ত্ ং ঃ ঁ</span> marks.  To type numbers and some other characters which are used less often, use <span class='keys'>[CA*]</span> or <span class='keys'>[CSA*]</span>.</p>
 
 <p>Bengali vowels and consonants are usually combined, so when you type a consonant and a vowel part, they will be joined into one character.  If you use the arrow keys to move through the text, you only need to press an arrow key once to move past each character.  If you press Delete before (on the left of) a combined consonant and vowel, it will be erased completely, but if you press Backspace after a character, only the vowel part will be erased (even if the vowel part appears before the consonant).
@@ -152,7 +151,7 @@ For example, typing <span class='keys'>F</span> will produce the vowel <span cla
 	<tr style='text-align:center'>
 		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ঔ</td><td class='lang2' style='font-size:200%'>কৌ</td><td><span class='keys'>kq</span></td>
 	</tr>
-	
+
 </table>
 
 </div>

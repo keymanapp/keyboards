@@ -7,9 +7,6 @@
 <p>
     This is a keyboard for typing chinuk wawa for both desktop (Windows/Mac) and mobile (Android/iPhone/iPad) client.
 </p>
-
-<h1>Keyboard Layout</h1>
-
 To type the following chinuk wawa characters, use the SHIFT key on desktop or long press on mobile:
 
 <table><table border="width">

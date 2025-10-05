@@ -54,10 +54,6 @@
  <p>If a "yi" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「衣y」「倚ỷ」「意ỷ」</p>
  <p>如果一個單獨嘅yi音嘅音節聲調係第4、5、6聲調，咁要寫yi，譬如話「移yì」「以yĩ」「易yị」</p>
  <p>If a "yi" sound syllable has forth, fifth, or sixth tone, it should be spelled as "yi", such as 「移yì」「以yĩ」「易yị」</p>
- <p>如果一個單獨嘅yư音嘅音節聲調係第1、2、3聲調，咁唔使寫前邊嘅y，譬如話「於ư」「傴ử」「淤ứ」</p>
- <p>If a "yư" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「於ư」「傴ử」「淤ứ」</p>
- <p>如果一個單獨嘅yư音嘅音節聲調係第4、5、6聲調，咁要寫yư，譬如話「輿yừ」「與yữ」「預yự」</p>
- <p>If a "yư" sound syllable has forth, fifth, or sixth tone, it should be spelled as "yi", such as 「輿yừ」「與yữ」「預yự」</p>
  <p>如果一個單獨嘅uy音嘅音節聲調係第4、5、6聲調，咁可以寫成vy，譬如話「為vỳ」「偉vỹ」「位vỵ」</p>
  <p>If a "vy" sound syllable has forth, fifth, or sixth tone, it can be spelled as "vy", such as 「為vỳ」「偉vỹ」「位vỵ」</p>
  <p>如果一個單獨嘅yiêt, yiên, yiêm音嘅音節聲調係第1、2、3聲調，咁唔使寫中間嘅i，譬如話「噎yết」「煙yên」「腌yêm」</p>
@@ -231,13 +227,13 @@
 
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/oatnguquocnguti.yaml">Dictionary for the script of National Language universal version Quóc Ngữ Tị大粤國音字匯－粵語國語字字典總合通用版</a>
   <p></p>
-  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for the script of National Language for Hong Kong and Canton city accent Quóc Yữ Chị粵語國語字字典香港同廣州音</a>
+  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for the script of National Language for Hong Kong and Canton city accent Quóc Ữ Chị粵語國語字字典香港同廣州音</a>
   <p></p>
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocnguytihoisanva.dict.yaml">Dictionary for the script of National Language for Hoisanese accent Koc Ngũi Tụ台山話國語字字典</a>
   <p></p>
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocngutihamchauva.yaml">Dictionary for the script of National Language for Yamchow accent Quóc Yĩ Chì粵語國語字字典欽州音</a>
   <p></p>
-  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchinamninhva.yaml">Dictionary for the script of National Language for Namning accent Quóc Yữ Chị粵語國語字字典南寧音</a>
+  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchinamninhva.yaml">Dictionary for the script of National Language for Namning accent Quóc Ữ Chị粵語國語字字典南寧音</a>
   <p></p>
   <p>粵語國語字通用版本係一種收納咗多種粵語口音發音嘅粵語文字，粵語國語字通用版本嘅使用同粵語國語字嘅廣州音、台山音、南寧音、欽州音等等粵語口音嘅版本嘅使用之間唔衝突</p>
   <p>Oạt Ngữ Quóc Ngữ Tị thung yụng bản bổn hệ yât chủng sưu-nạp chỏ đo-chủng Oạt Ngữ hẩu yâm ké Oạt-Ngữ mần-tị, Oạt Ngữ Quóc Ngữ Tị thung yụng bản bổn ké sỉ-yụng thùng Oạt Ngữ Quóc Ngữ Tị ké Quỏng Châu yâm, Thòi San yâm, Nàm Nình Yâm, Yâm Châu yâm đ.đ. Oạt Ngữ hẩu yâm ké bản-bổn ké sỉ-yụng m̀ trung-đật </p>

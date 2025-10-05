@@ -2,7 +2,7 @@
 store(&NAME) 'Aksara Bali'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© The PanLex Project of The Long Now Foundation'
-store(&KEYBOARDVERSION) '1.1.2'
+store(&KEYBOARDVERSION) '1.1.3'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
 store(&BITMAP) 'aksarabali_panlex.ico'
 store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
@@ -19,7 +19,6 @@ store(candra)  'ᬁ'
 store(ricem)   'ᬀ'
 store(rerekan) '᬴'
 store(zwnj)    U+200C
-store(lf)      U+0A
 
 store(cons_key)  [K_Q] [K_W] [K_R] [K_T] [K_Y] [K_P] \
                  [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
@@ -53,7 +52,7 @@ store(dvowel_key)         outs(dvowel_auto_ha_key) \
                           [SHIFT K_A] [CTRL SHIFT K_E] [T_TALING_REPA] [T_TALING_REPA_TEDONG] \
                           [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
 store(dvowel)             outs(dvowel_auto_ha) \
-                          'ᬵᬿᬿᭁ' \ 
+                          'ᬵᬿᬿᭁ' \
                           'ᬺᬻᬼᬽ'
 store(dvowel_front)       'ᬶᬾ'
 store(dvowel_back)        'ᬸᭀ'
@@ -82,8 +81,8 @@ store(punc_key) [SHIFT K_SPACE] [K_COMMA] [CTRL K_COMMA] [K_PERIOD] [CTRL K_PERI
 store(punc)     ' ᭞,᭟.᭝᭠·᭚᭛᭜—|❖⏑⏓/' \
                 '[]-'
 
-store(endpunc_key) [K_COMMA] [K_PERIOD] [SHIFT K_COLON] [K_ENTER]
-store(endpunc)     '᭞᭟᭝' $lf
+store(endpunc_key) [K_COMMA] [K_PERIOD] [SHIFT K_COLON]
+store(endpunc)     '᭞᭟᭝'
 
 store(numeral_key) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] \
                    [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
@@ -194,6 +193,8 @@ group(main) using keys
   '?' + any(adeg_key) > $adeg set(adeg_flag='0')
   + [K_SLASH] > $adeg set(adeg_flag='0')
   '?' + any(endpunc_key) > $adeg index(endpunc, 2)
+  '?' + [K_ENTER] > $adeg use(emit)
+
   $adeg + any(adeg_key) > context set(adeg_flag='1')
 
   c diphthongs
@@ -258,3 +259,6 @@ group(main) using keys
   $adeg + any(dvowel_auto_ha_key) > context $zwnj 'ᬳ' index(dvowel_auto_ha, 2)
   + [K_A] > 'ᬳ'
   + any(dvowel_auto_ha_key) > 'ᬳ' index(dvowel_auto_ha, 1)
+
+group(emit) using keys
+  c empty final group causes keystroke to be emitted to app

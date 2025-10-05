@@ -10,7 +10,7 @@
 
 <a id="slc_saliba-es"></a>
 
-<h1 lang="es">Usando el teclado sáliba</h1>
+<h2 lang="es">Usando el teclado sáliba</h2>
 
 <p lang="es">El teclado sáliba te permite escribir las letras ã/ẽ/ĩ/õ/ũ/ñ del
 alfabeto sáliba en tu computadora de una manera fácil. Todas las otras letras
@@ -18,7 +18,7 @@ del alfabeto sáliba ya se pueden escribir con cualquier teclado (por ejemplo,
 el teclado del español que viene en la mayoría de las computadores en
 Colombia) y tienen la misma correspondencia en este teclado.</p>
 
-<h1 lang="es">Teclas</h1>
+<h2 lang="es">Teclas</h2>
 
 <p lang="es">En este teclado, la tecla <kbd>Ñ</kbd> se convierta en una
 “tecla muerta”.  Presionar esta tecla no nos permite escribe una letra como en
@@ -55,7 +55,7 @@ usar la combinación <kbd>AltGr</kbd>+<kbd>N</kbd> en lugar de <kbd>Ñ</kbd>.</p
   </tbody>
 </table>
 
-<h2 lang="es">Como usar <kbd>AltGr</kbd>+<kbd>N</kbd></h2>
+<h3 lang="es">Como usar <kbd>AltGr</kbd>+<kbd>N</kbd></h3>
 
 <p lang="es">Si no tienes una tecla <kbd>Ñ</kbd> en tu teclado, hay que
 presionar las teclas <kbd>AltGr</kbd> y <kbd>N</kbd> a la misma vez, después
@@ -91,11 +91,11 @@ derecho de la barra espaciadora.</p>
   </tbody>
 </table>
 
-<h1 lang="es">Para descargar el teclado</h1>
+<h2 lang="es">Para descargar el teclado</h2>
 
 <p lang="es">Este teclado se puede descargar aquí: <a href="https://keyman.com/keyboards/slc_saliba">keyman.com/keyboards/slc_saliba</a></p>
 
-<h1 lang="es">Crédito</h1>
+<h2 lang="es">Crédito</h2>
 
 <p lang="es">La creación de este teclado fue posible gracias al apoyo
 financiero de un proyecto SSHRC Insight Grant de Jorge Emilio Rosés Labrada
@@ -111,7 +111,7 @@ be typed on a typical keyboard (for example, on the Latin American keyboard
 included with most computers in Colombia), and those letters have the same
 keys on this keyboard layout.</p>
 
-<h1>Characters</h1>
+<h2>Characters</h2>
 
 <p>In this keyboard <kbd>Ñ</kbd> becomes a “dead key” which means pressing
 it once will not insert any letter (as opposed to the Latin American keyboard,
@@ -148,7 +148,7 @@ combination <kbd>AltGr</kbd>+<kbd>N</kbd> (Windows/Linux) or
   </tbody>
 </table>
 
-<h2>How to use <kbd>AltGr</kbd>+<kbd>N</kbd></h2>
+<h3>How to use <kbd>AltGr</kbd>+<kbd>N</kbd></h3>
 
 <p>If you do not have a dedicated <kbd>Ñ</kbd> key on your keyboard, you must
 press <kbd>AltGr</kbd> and <kbd>N</kbd> at the same time, let go of both keys,
@@ -181,18 +181,13 @@ then press the letter that the tilde (~) will go over.</p>
   </tbody>
 </table>
 
-<h1>Keyboard Source</h1>
+<h2>Keyboard Source</h2>
 
 <p>This keyboard is available online at <a href='https://keyman.com/keyboards/slc_saliba'>keyman.com/keyboards/slc_saliba</a></p>
 
-<h1>Credits</h1>
+<h2>Credits</h2>
 
 <p>The creation of this keyboard was supported by a SSHRC Insight Grant to
 Jorge Emilio Rosés Labrada [Award No. 435-2021-0468].</p>
 
-<hr>
-
-<h1>Change History</h1>
-<p>1.0.0: Initial release.</p>
-
-<p>&copy; 2022 Jorge Emilio Rosés Labrada and Eddie Antonio Santos</p>
+<p>&copy; Jorge Emilio Rosés Labrada and Eddie Antonio Santos</p>

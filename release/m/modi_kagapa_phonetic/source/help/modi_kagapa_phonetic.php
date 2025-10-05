@@ -75,8 +75,6 @@
   require_once( 'header.php' ) ;
 ?>
 
-<h1 id="Modi-kagapa-phonetic-keyboard-–-key-mapping-tables">Modi KaGaPa Phonetic Keyboard – Getting Started</h1>
-
 <p>This layout is the KaGaPa phonetic layout for a historically important script, called 'Modi'. It was prominently used to write Marathi, and in a few instances, for Hindi and Sanskrit. It is phonetically equivalent to Devanagari KaGaPa Phonetic, i.e., using similar character mapping, but for Modi letters.</p>
 
 <p>This document provides key mappings for the layout across four layers:</p>

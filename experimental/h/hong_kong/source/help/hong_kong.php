@@ -6,11 +6,11 @@
 ?>
 
   <p>Hong Kong keyboard for the Script of National Language for Cantonese of Hong Kong and Canton city accent</p> 
-  <p>Oạt Yữ Quóc Yữ Chị Hương Cỏng Thùng Quỏng Châu Yâm粵語國語字香港同廣州音</p> 
+  <p>Oạt Ữ Quóc Ữ Chị Hương Cỏng Thùng Quỏng Châu Yâm粵語國語字香港同廣州音</p> 
   <p>Bộ gõ Chữ Quốc Ngữ tiếng Quảng Đông giọng Quảng Châu và Hương Cảng</p>
 
    <p>粵語國語字係一種拉丁化嘅粵語文字，意在發展粵語表音文字，縮短粵文學習同書寫時間，增強粵語使用者之間嘅凝聚力同自我認同 </p>
-   <p> Oạt-Yữ Quóc-Ngữ-Chị hệ yât chủng Lai-đinh-phá ké Oạt-Yữ mần-chị, ý-chọi phát-chiển Oạt-Yữ biểu-yâm mần-chị, suc-đoản Oạt-Mần học-chập thùng sư-sẻ sị-kan, chăng-khường Oạt-Yữ sỉ-yụng-chẻ chi-kan ké yình-chụi-lịch thùng chị-ngõ yịnh-thùng</p>
+   <p> Oạt-Ữ Quóc-Ngữ-Chị hệ yât chủng Lai-đinh-phá ké Oạt-Ữ mần-chị, ý-chọi phát-chiển Oạt-Ữ biểu-yâm mần-chị, suc-đoản Oạt-Mần học-chập thùng sư-sẻ sị-kan, chăng-khường Oạt-Ữ sỉ-yụng-chẻ chi-kan ké yình-chụi-lịch thùng chị-ngõ yịnh-thùng</p>
    <p> Chữ Quốc Ngữ tiếng Quảng Đông là một loại chữ viết La-tinh hóa của tiếng Quảng Đông, nhằm mục đích phát triển chữ viết biểu âm của tiếng Quảng Đông, giảm bớt thời gian học và viết tiếng Quảng Đông, nâng cao sức hướng tâm và ý thức về cá tính mình của những người sử dụng tiếng Quảng Đông</p>
   <p> The script of national language for Cantonese is a romanized Cantonese script aimed at developing a phonetic writing system for Cantonese, reduce the time of learning and writing of Cantonese, while strengthening the cohesion and self-identity among Cantonese speakers.</p>
    <p>
@@ -29,14 +29,10 @@
   <p>The "iu" "im" "in" "ip" "it" combiniation can be used to replace "iêu" "iêm" "iên" "iêp" "iêt" when representing sounds and spelling words without Cantonese origin and without sino-cantonese origin, for example loanword from English, such as "lip" and "thin-nà sủi", or in case of using chinese characters to represent sounds or a word but the meaning of the character is not linked with its origin meaning, such as "點解đỉm-cải"</p>
    <p>ê同ay用嚟表示一於嘅發音，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫少部分嘅非漢字嘅詞語或者係漢字但係係由不規則音變產生呢個讀音嘅字，譬如話「嚟lày」「睇thảy」「咪may」「咪mạy」「米may」「呢nay」「揮phay」「僞ngạy」「魏ngày」「危ngày」「矮ảy」「哎áy」「曳yay」「喺hảy」「使sảy」「费pháy」「沸pháy」</p>
  <p>"ê" and "ay" are used to represent same pronunciation. "ê" is used to spell sino-cantonese words and the words with clear etymology that pronounce this vowel in ancient time. "ay" is used to spell few non-sino-cantonese words and sino-cantonese words with irregular sound change, such as「嚟lày」「睇thảy」「咪may」「咪mạy」「米may」「呢nay」「揮phay」「僞ngạy」「魏ngày」「危ngày」「矮ảy」「哎áy」「曳yay」「喺hảy」「使sảy」「费pháy」「沸pháy」</p>
- <p>如果一個單獨嘅yi音嘅音節聲調係第1、2、3聲調，咁唔使寫後邊嘅i，譬如話「衣y」「倚ỷ」「意ỷ」</p>
- <p>If a "yi" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「衣y」「倚ỷ」「意ỷ」</p>
+ <p>如果一個單獨嘅yi音嘅音節聲調係第1、2、3聲調，咁唔使寫後邊嘅i，譬如話「衣y」「倚ỷ」「意ý」</p>
+ <p>If a "yi" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「衣y」「倚ỷ」「意ý」</p>
  <p>如果一個單獨嘅yi音嘅音節聲調係第4、5、6聲調，咁要寫yi，譬如話「移yì」「以yĩ」「易yị」</p>
  <p>If a "yi" sound syllable has forth, fifth, or sixth tone, it should be spelled as "yi", such as 「移yì」「以yĩ」「易yị」</p>
-   <p>如果一個單獨嘅yư音嘅音節聲調係第1、2、3聲調，咁唔使寫前邊嘅y，譬如話「於ư」「傴ử」「淤ứ」</p>
- <p>If a "yư" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「於ư」「傴ử」「淤ứ」</p>
- <p>如果一個單獨嘅yư音嘅音節聲調係第4、5、6聲調，咁要寫yư，譬如話「輿yừ」「與yữ」「預yự」</p>
- <p>If a "yư" sound syllable has forth, fifth, or sixth tone, it should be spelled as "yi", such as 「輿yừ」「與yữ」「預yự」</p>
  <p>如果一個單獨嘅uy音嘅音節聲調係第4、5、6聲調，咁可以寫成vy，譬如話「為vỳ」「偉vỹ」「位vỵ」</p>
  <p>If a "vy" sound syllable has forth, fifth, or sixth tone, it can be spelled as "vy", such as 「為vỳ」「偉vỹ」「位vỵ」</p>
  <p>如果一個單獨嘅yiêt, yiên, yiêm音嘅音節聲調係第1、2、3聲調，咁唔使寫中間嘅i，譬如話「噎yết」「煙yên」「腌yêm」</p>
@@ -205,7 +201,7 @@
   <p> tap Z key to remove tonations  <p>
   <p> 使用Z鍵取消音調轉換 <p>
 
-    <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for Cantonese Quóc Yữ Chị粵語國語字字典香港同廣州音</a>
+    <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for Cantonese Quóc Ữ Chị粵語國語字字典香港同廣州音</a>
     <p></p>
     <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/oatnguquocnguti.yaml">Dictionary for the script of National Language universal version Quóc Ngữ Tị大粵國音字匯－粵語國語字字典總合通用版</a>
 <p></p>
@@ -220,8 +216,8 @@
 <p>截然定分在天書</p>
 <p>Chiệt Yiền Định Phân chọi Thiên Sư</p>
 <p>如何逆虜來侵犯</p>
-<p>Yừ Hò Yịch Lỗ Lòi Xâm Phạn</p>
+<p>Ừ Hò Yịch Lỗ Lòi Xâm Phạn</p>
 <p>汝等行看取敗虛</p>
-<p>Yữ Đẳng Hành Hón Xủi Bại Hui</p>
+<p>Ữ Đẳng Hành Hón Xủi Bại Hui</p>
 
 <p>© cathaylab</p>

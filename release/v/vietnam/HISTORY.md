@@ -1,6 +1,16 @@
 vietnam Change History
 ====================
 
+2.0.2 (2025-09-12)
+----------------
+* Updated by cathaylab
+* fixing bug of keyboard codes
+
+2.0.1 (2025-07-12)
+----------------
+* Updated by cathaylab
+* fixing several bugs of keyboard codes
+
 2.0 (2025-07-03)
 ----------------
 * Updated by cathaylab

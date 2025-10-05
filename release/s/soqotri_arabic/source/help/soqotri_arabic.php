@@ -4,10 +4,7 @@
   require_once('header.php');
 ?>
   <style type="text/css">
-    li, p { font: 10pt Tahoma }
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 12pt Tahoma; color: #4444cc }
-    h3 { clear: both;}
+    li { font: 10pt Tahoma }
     .a { font: 14pt Arial }
   </style>
 <p style="text-align: right; dir=rtl; font-size:100%">لوحة المفاتيح هذه مجعولة للكتابة باللغة السقطرية.</p>

@@ -126,7 +126,7 @@ Este teclado solo tiene texto predictivo triqui y sugerirá palabras triqui incl
 
 </p>
 
-<h1>Itunyoso Triqui Keyboard Instructions</h1>
+<h2>Itunyoso Triqui Keyboard Instructions</h2>
 
 <p>
 Typing with the Itunyoso Triqui Keyboard:

@@ -6,7 +6,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    22 April 2025
+  Modified Date:    25 July 2025
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -276,6 +276,13 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <p>Numeral composition will continue as 0s are entered up to ፼፼ (100,000,000).</p>
 
+</div>
+
+<h2><a id="ethiopic-font-samples" name="ethiopic-font-samples"></a>Included Ethiopic Fonts</h2>
+
+<div style="margin-left: 1em;">
+<p>The following fonts have been included with the desktop keyboard.</p>
+<img src="images/Ethiopic-Font-Samples-920w.png" />
 </div>
 
 

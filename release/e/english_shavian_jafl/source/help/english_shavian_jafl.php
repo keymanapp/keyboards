@@ -3,7 +3,8 @@
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-  <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it.</p><img src="shavian_alphabet_reading_key.png" alt="A table of Shavian alphabet letters and the sounds they represent.">
+  <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it.</p>
+  <img src="shavian_alphabet_reading_key.png"  width="800" alt="A table of Shavian alphabet letters and the sounds they represent.">
   <p>For further information about the Shavian alphabet visit <a href="https://www.shavian.info">Shavian.info</a>.</p>
   <p>Shavian.info has developed a keyboard layout called Shaw JAFL, short for ‘Just another “fabulous” layout’. Shaw JAFL:</p>
   <ul>
@@ -12,7 +13,7 @@
     <li>places less common letters in the SHIFT layer, and</li>
     <li>uses key combinations to access compound letters.</li>
   </ul>
-  <h1>Keyboard Layout</h1>
+
   <h2>Desktop and onscreen layouts</h2>
   <p>The desktop and onscreen layouts are identical.</p>
   <div id='osk' data-states='default shift'></div>

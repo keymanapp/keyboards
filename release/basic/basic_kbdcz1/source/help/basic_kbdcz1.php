@@ -7,7 +7,7 @@
 
 
 <p>
-    Czech (QWERTY) Basic generated from template.
+    The keyboard layout follows the Windows 10 Czech (QWERTY) Basic keyboard layout.
 </p>
 
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>

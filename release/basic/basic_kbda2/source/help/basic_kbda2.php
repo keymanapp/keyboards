@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Arabic (102) Basic generated from template.
+    The keyboard layout follows the Windows 10 Arabic (102) Basic keyboard layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
