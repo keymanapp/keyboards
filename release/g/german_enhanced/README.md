@@ -1,7 +1,7 @@
 German enhanced keyboard
 ==============
 
-(c) 2009-2019 SIL International
+(c) 2025 Xaver Nitsch
 
 Version 1.0
 
