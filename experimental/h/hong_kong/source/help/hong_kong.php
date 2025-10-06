@@ -23,11 +23,18 @@
   <img src='consonants.png' alt='Keyboard Layout'>
   <p>位於字母a â ă u ư o ô ơ 之前嘅韻首k可以轉變為c</p>
   <p>The consonant "k" before vowels a â ă u ư o ô ơ can be transformed to "c"</p>
+  <p>位於字母i ê e之前嘅韻首ng可以轉變為ngh</p>
+  <p>The consonant "ng" before vowels i ê e can be transformed to "ngh"</p>
+   <p>字母"f"嘅發音同"ph"相同，主要用嚟表音同書寫外來詞語</p>
+ <p>The letter "f" has the same pronunciation with consonant "ph". "f" is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+ <p>字母"d" 字母"z" 同字母組合 "dz" 喺粵語源頭嘅詞語入面與韻首"y"有一樣嘅作用，發音係/j/或者/z/</p>
+ <p>Letter "d", letter "z", and letter combination "dz" have the same application with the consonant "y" in Cantonese origin words, the pronunciation is /j/ or /z/</p> 
+
   <h1>韻腹 Nguyên Âm và Phụ Âm Cuối vowels and end consonants</h1> 
   <img src='vowels.png' alt='Keyboard Layout'>
-  <p>"iu" "im" "in" "ip" "it"組合用於取代"iêu" "iêm" "iên" "iêp" "iêt"當用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字，譬如話「點解đỉm-cải」</p>
-  <p>The "iu" "im" "in" "ip" "it" combiniation can be used to replace "iêu" "iêm" "iên" "iêp" "iêt" when representing sounds and spelling words without Cantonese origin and without sino-cantonese origin, for example loanword from English, such as "lip" and "thin-nà sủi", or in case of using chinese characters to represent sounds or a word but the meaning of the character is not linked with its origin meaning, such as "點解đỉm-cải"</p>
-   <p>ê同ay用嚟表示一於嘅發音，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫少部分嘅非漢字嘅詞語或者係漢字但係係由不規則音變產生呢個讀音嘅字，譬如話「嚟lày」「睇thảy」「咪may」「咪mạy」「米may」「呢nay」「揮phay」「僞ngạy」「魏ngày」「危ngày」「矮ảy」「哎áy」「曳yay」「喺hảy」「使sảy」「费pháy」「沸pháy」</p>
+  <p>"iu" "im" "in" "ip" "it"組合用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字。呢啲正寫嘅發音同廣州話嘅"iêu" "iêm" "iên" "iêp" "iêt"一樣</p>
+  <p>The "iu" "im" "in" "ip" "it" combiniation can be represent sounds and spell words without Cantonese origin and without sino-cantonese origin,  for example loanword from English, such as "lip" and "thin-nà sủi", or in case of using chinese characters to represent sounds or a word but the meaning of the character is not linked with its origin meaning. Their pronunciation is same as "iêu" "iêm" "iên" "iêp" "iêt" in Canton city accent.</p>
+   <p>ê同ay用嚟表示一樣嘅發音，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫少部分嘅非漢字嘅詞語或者係漢字但係係由不規則音變產生呢個讀音嘅字，譬如話「嚟lày」「睇thảy」「咪may」「咪mạy」「米may」「呢nay」「揮phay」「僞ngạy」「魏ngày」「危ngày」「矮ảy」「哎áy」「曳yay」「喺hảy」「使sảy」「费pháy」「沸pháy」</p>
  <p>"ê" and "ay" are used to represent same pronunciation. "ê" is used to spell sino-cantonese words and the words with clear etymology that pronounce this vowel in ancient time. "ay" is used to spell few non-sino-cantonese words and sino-cantonese words with irregular sound change, such as「嚟lày」「睇thảy」「咪may」「咪mạy」「米may」「呢nay」「揮phay」「僞ngạy」「魏ngày」「危ngày」「矮ảy」「哎áy」「曳yay」「喺hảy」「使sảy」「费pháy」「沸pháy」</p>
  <p>如果一個單獨嘅yi音嘅音節聲調係第1、2、3聲調，咁唔使寫後邊嘅i，譬如話「衣y」「倚ỷ」「意ý」</p>
  <p>If a "yi" sound syllable has first, second, or third tone, the "i" behind can be removed, such as 「衣y」「倚ỷ」「意ý」</p>
@@ -41,7 +48,17 @@
  <p>If "y" and "ê" vowels appear without a consonant before, it should be spelled as "ơi" "ay", such as 「誒ợi」「哎áy」</p>
  <p>如果"â"嘅元音後邊冇韻尾單獨出現，咁要寫"ơ"，譬如話「㗎cớ」「嘞lớ」</p>
  <p>If "â" vowels appear without a consonant behind, the vowel should be spelled as "ơ", such as 「㗎cớ」「嘞lớ」</p>
-  <h1>音調 Thanh Điệu tones</h1>
+  <p>喺粵語國語字系統入面，正寫"uôc"同韻腹"uoc"嘅作用一樣，正寫"ây"同韻腹"ay"嘅作用一樣</p>
+ <p>In the Cantonese National Language system, the spelling "uôc" has the same effect with "uoc" sound, the spelling "ây" has the same effect with "ay" sound</p>
+ <p>使用正寫"iêng" "eng"同韻腹"ênh"嘅作用一樣，正寫"iêc" "ek"同韻腹"êc"嘅作用一樣</p>
+ <p>The spelling "iêng" "eng" has the same effect with "ênh" sound, the spelling "iêc" "ek" has the same effect with "êc" sound</p>
+ <p>使用正寫"iong"同韻腹"ương"嘅作用一樣，正寫"iok"同韻腹"ươc"嘅作用一樣</p>
+ <p>The spelling "iong" has the same effect with "ương" sound, the spelling "iok" has the same effect with "ươc" sound</p>
+ <p>正寫"uyên"同韻腹"oan"嘅作用一樣，正寫"uyêt"同韻腹"oat"嘅作用一樣, 正寫"viêt"同音節"oat"嘅作用一樣, 正寫"viên"同音節"oan"嘅作用一樣, 正寫"uyên"同音節"oan"嘅作用一樣</p>
+ <p>The spelling "uyên" has the same effect with "oan" sound, the spelling "uyêt" has the same effect with "oat" sound, the spelling "viêt" has the same effect with "oat" syllable, the spelling "viên" has the same effect with "oan" syllable, the spelling "uyên" has the same effect with "oan" syllable</p>
+  <p>韻尾字母k同韻尾字母c ch嘅作用一樣</p>
+ <p>The end consonant letter "k" has the same effect as the end consonant letter "c" and "ch"</p>
+ <h1>音調 Thanh Điệu tones</h1>
   <img src='tones.png' alt='Keyboard Layout'>
 
 
@@ -191,7 +208,10 @@
 <p>In a multi-syllable combined word or a Cantonese origin or Sino-cantonese origin word, the hyphen "-" can be added between each syllable for avoid confusion</p>
 <p>係一個多音節嘅組合詞或者粵語詞或者漢粵詞嘅每一個音節之間，可以加入一個連字符"-"避免撈亂</p>
 <p>Other punctuation works similar with punctuations in English and Vietnamese</p>
+<p>等等đẳng đẳng嘅縮寫係đ.đ.</p>
+<p>The acronym of "đẳng đẳng" is "đ.đ."</p>
 <p>其他標點嘅作用同英文同越南文類似</p>
+<p>Other uses of punctuation are similar with English and Vietnamese</p>
 <p></p>
   <p> doubletaping leads to generate original letters:  <p>
   <p> 雙擊音調鍵同特殊轉化鍵，取消轉化，變返原本嘅拼寫 <p>  
