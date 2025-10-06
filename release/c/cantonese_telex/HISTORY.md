@@ -1,7 +1,7 @@
 cantonese telex Change History
 ====================
 
-3.1 (2025-09-11)
+3.1.1 (2025-09-11)
 ----------------
 * added explaination for consonants "f" "d" "z" and "dz"
 * fixed bug in letter generation rules
@@ -55,3 +55,4 @@ cantonese telex Change History
 1.0 (2024-05-25)
 ----------------
 * Created by cathaylab
+
