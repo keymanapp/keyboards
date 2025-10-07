@@ -61,9 +61,7 @@
  <h1>音調 Thanh Điệu tones</h1>
   <img src='tones.png' alt='Keyboard Layout'>
 
-
-</p>
-<p>Specific Alphabet mẫu tự đặc biệt 特別字母<p>
+<p>Specific Alphabet mẫu tự đặc biệt 特別字母</p>
 <table>
   <tbody>
   <tr>
@@ -93,7 +91,7 @@
     <tr>
     <td>iê</td>
     <td>ii</td>
-    <td>th</strong>i<strong>i</strong>n</td>
+    <td>thi<strong>i</strong>n</td>
     <td>thiên天</td>
     <tr>
       <td>ô</td>
@@ -110,9 +108,9 @@
   </tbody>
 </table>
 
-<p>tone rules quy tắc thanh điệu 音調規則<p>
-  <p> 對應粵拼嘅第一聲唔使打，第二聲打r，第三聲打s，第四聲打f，第五聲打x，第六聲打j <p>
-  <p> tone 1 for nothing, tone 2 = r, tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j <p>
+<p>tone rules quy tắc thanh điệu 音調規則</p>
+  <p> 對應粵拼嘅第一聲唔使打，第二聲打r，第三聲打s，第四聲打f，第五聲打x，第六聲打j </p>
+  <p> tone 1 for nothing, tone 2 = r, tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j </p>
 <h2>Tonal diacritics</h2>
 
 <table>
@@ -213,13 +211,13 @@
 <p>其他標點嘅作用同英文同越南文類似</p>
 <p>Other uses of punctuation are similar with English and Vietnamese</p>
 <p></p>
-  <p> doubletaping leads to generate original letters:  <p>
-  <p> 雙擊音調鍵同特殊轉化鍵，取消轉化，變返原本嘅拼寫 <p>  
+  <p> doubletaping leads to generate original letters:  </p>
+  <p> 雙擊音調鍵同特殊轉化鍵，取消轉化，變返原本嘅拼寫 </p>  
     <p>
       If more than one tone marking key is pressed, the last one will be used. For example, typing <code>asf</code> will return "à". To write a tone marking key as a normal character, one has to press it twice: <code>her</code> becomes <code>hẻ</code>, while <code>herr</code> becomes <code>her</code>.
     </p>
-  <p> tap Z key to remove tonations  <p>
-  <p> 使用Z鍵取消音調轉換 <p>
+  <p> tap Z key to remove tonations</p>
+  <p> 使用Z鍵取消音調轉換 </p>
 
     <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for Cantonese Quóc Ữ Chị粵語國語字字典香港同廣州音</a>
     <p></p>
@@ -241,3 +239,5 @@
 <p>Ữ Đẳng Hành Hón Xủi Bại Hui</p>
 
 <p>© cathaylab</p>
+</body>
+</html>
