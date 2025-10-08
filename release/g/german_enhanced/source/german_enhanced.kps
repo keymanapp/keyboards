@@ -1,49 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.61.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.241.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
+    <ExecuteProgram/>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName/>
+    <MSIOptions/>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
     <Name URL="">German Enhanced</Name>
-    <Copyright URL="https://github.com/xavernitsch">(c) 2025 Xaver Nitsch</Copyright>
+    <Copyright URL="https://github.com/xavernitsch">(c) Xaver Nitsch</Copyright>
     <Author URL="">Xaver Nitsch</Author>
-    <Description>Enhanced version of German Basic 1.1 (basic_kbdgr)</Description>
+    <Description URL="">Enhanced version of German Basic 1.1 (basic_kbdgr)</Description>
+    <Version URL=""/>
   </Info>
   <Files>
     <File>
       <Name>..\build\german_enhanced.kmx</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\german_enhanced.js</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\german_enhanced.kvk</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -79,28 +81,24 @@
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>German Enhanced</Name>
       <ID>german_enhanced</ID>
-      <Version>1.0</Version>
       <Languages>
         <Language ID="de">German</Language>
       </Languages>
       <Examples>
-        <Example ID="de" Keys="S c h u h g r ö ß e ^ ^" Text="Schuhgröße^" Note="&quot;Shoe size^&quot;" />
+        <Example ID="de" Keys="S c h u h g r ö ß e ^ ^" Text="Schuhgröße^" Note="&quot;Shoe size^&quot;"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="basic_kbdgr" />
-    <RelatedPackage ID="german" Relationship="deprecates" />
-    <RelatedPackage ID="kbdgr" Relationship="deprecates" />
+    <RelatedPackage ID="basic_kbdgr"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
