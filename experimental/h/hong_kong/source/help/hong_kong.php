@@ -13,11 +13,10 @@
    <p> Oạt-Ữ Quóc-Ngữ-Chị hệ yât chủng Lai-đinh-phá ké Oạt-Ữ mần-chị, ý-chọi phát-chiển Oạt-Ữ biểu-yâm mần-chị, suc-đoản Oạt-Mần học-chập thùng sư-sẻ sị-kan, chăng-khường Oạt-Ữ sỉ-yụng-chẻ chi-kan ké yình-chụi-lịch thùng chị-ngõ yịnh-thùng</p>
    <p> Chữ Quốc Ngữ tiếng Quảng Đông là một loại chữ viết La-tinh hóa của tiếng Quảng Đông, nhằm mục đích phát triển chữ viết biểu âm của tiếng Quảng Đông, giảm bớt thời gian học và viết tiếng Quảng Đông, nâng cao sức hướng tâm và ý thức về cá tính mình của những người sử dụng tiếng Quảng Đông</p>
   <p> The script of national language for Cantonese is a romanized Cantonese script aimed at developing a phonetic writing system for Cantonese, reduce the time of learning and writing of Cantonese, while strengthening the cohesion and self-identity among Cantonese speakers.</p>
-   <p>
 
   <h1>音韻表 phonologic map</h1>
-  <p> 建議以下嘅粵語國語字音韻表打字<p>
-  <p> The suggested form of spelling of Cantonese Romanization<p></p>
+  <p> 建議以下嘅粵語國語字音韻表打字</p>
+  <p> The suggested form of spelling of Cantonese Romanization</p>
   
   <h1>韻首 Phụ Âm consonants</h1>
   <img src='consonants.png' alt='Keyboard Layout'>
@@ -186,9 +185,9 @@
   </tbody>
 </table>
 
-<p>examples: 舉例： <p>
-  <p> ar > ả, as > á, af > à, ax > ã, aj > ạ <p>
-  <p> 譬如話：‘兩’ 嘅羅馬字係‘lưỡng’， 咁輸入內容就係‘luongwx’<p>
+<p>examples: 舉例： </p>
+  <p> ar > ả, as > á, af > à, ax > ã, aj > ạ </p>
+  <p> 譬如話：‘兩’ 嘅羅馬字係‘lưỡng’， 咁輸入內容就係‘luongwx’</p>
 
 <h2>Punctuation and Capitalization標點同大小寫biêu điểm thùng đại siểu sẻ</h2>
 <p>A space " " should be added betweem each words or between each syllable of cantonese origin or sino-cantonese origin words.</p>
@@ -239,5 +238,3 @@
 <p>Ữ Đẳng Hành Hón Xủi Bại Hui</p>
 
 <p>© cathaylab</p>
-</body>
-</html>
