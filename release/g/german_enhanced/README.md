@@ -1,9 +1,7 @@
 German enhanced keyboard
 ==============
 
-(c) 2025 Xaver Nitsch
-
-Version 1.0
+(c) Xaver Nitsch
 
 Description
 -----------
