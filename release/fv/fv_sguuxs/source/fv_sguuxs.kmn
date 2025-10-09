@@ -108,9 +108,6 @@ c --- Constraints ---
 store(underaccent) "̲"
 store(underaccentkey) [K_HYPHEN]
 
-store(overaccent) "̈"
-store(overaccentkey) [K_LBRKT]
-
 any(underaccent) + any(underaccentkey) > context beep
 U+0331 + any(underaccentkey) > context beep
 any(HasLowline) + any(underaccentkey) > context beep
@@ -119,23 +116,33 @@ U+0308 + any(overaccentkey) > context beep
 any(HasDiaeresis) + any(overaccentkey) > context beep
 any(underaccent) any(overaccent) + any(underaccentkey) > context beep
 
-store(AccentKeys) [K_HYPHEN] [K_LBRKT]
+store(AccentKeys) [K_HYPHEN]
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(AccentKeys) > context beep
-
-c --- Language keys ---
-
-+ [K_COLON] > 'ł'
-+ [SHIFT K_COLON] > 'Ł'
-+ [K_HYPHEN] > U+0331 c lowline
-+ [K_LBRKT] > U+0308 c diaeresis
-+ [K_BKQUOTE] > '̣' 
 
 c --- original punctuation ---
 
 + [RALT K_COLON] > ';'
 + [RALT SHIFT K_COLON] > ':'
-+ [RALT K_HYPHEN] > '-'
-+ [RALT K_LBRKT] > '['
++ [RALT K_COLON] > ';'
++ [NCAPS RALT K_LBRKT] > '['
++ [NCAPS RALT K_RBRKT] > ']'
 + [RALT K_BKQUOTE] > '`'
++ [NCAPS RALT K_SLASH] > '/'
++ [RALT K_BKSLASH] > '\'
 
+c --- Language keys ---
+
++ ";" > U+0331
++ "\" > "ł"
++ "/" > "`"
+
++ [K_COLON] > 'ł'
++ [K_HYPHEN] > U+0331 c lowline
++ [K_BKQUOTE] > '̣' 
+
++ [caps shift K_LBRKT] > 'ü'   
++ [ncaps K_LBRKT] > 'ü'
+
++ [caps shift K_RBRKT] > 'ẅ'   
++ [ncaps K_RBRKT] > 'ẅ'
