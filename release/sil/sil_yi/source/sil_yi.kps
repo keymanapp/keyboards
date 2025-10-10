@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,11 +20,18 @@
   <Info>
     <Name URL="">SIL Yi</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2000-2022 SIL International</Copyright>
-    <Description>Yi keyboard layout using pinyin input for typing standard Nuosu Yi
-characters and basic full-width punctuation.</Description>
+    <Copyright URL="">© 2000-2025 SIL Global</Copyright>
+    <Description URL="">Enter standardized Yi syllables, radicals, and full-width punctuation. Yi quanpin for desktop. Two keystrokes for mobile: Yi Pinyin initial + final.</Description>
+    <Author URL="">Andy Eatough, Dennis Walters, David Rowe</Author>
+    <WebSite URL="https://keyman.com/keyboards/sil_yi">https://keyman.com/keyboards/sil_yi</WebSite>
   </Info>
   <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
     <File>
       <Name>..\build\sil_yi.kmx</Name>
       <Description>Keyboard SIL Yi</Description>
@@ -31,16 +39,10 @@ characters and basic full-width punctuation.</Description>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>welcome\welcome.htm</Name>
-      <Description>File welcome.htm</Description>
+      <Name>..\build\sil_yi.kvk</Name>
+      <Description>File sil_yi.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
+      <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>..\build\sil_yi.js</Name>
@@ -49,10 +51,28 @@ characters and basic full-width punctuation.</Description>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\sil_yi.kvk</Name>
-      <Description>File sil_yi.kvk</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yiii\NotoSansYi-Regular.ttf</Name>
+      <Description>Font Noto Sans Yi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Yiii\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\sil\nuosu\FONTLOG.txt</Name>
@@ -67,12 +87,6 @@ characters and basic full-width punctuation.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\nuosu\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\sil\nuosu\OFL-FAQ.txt</Name>
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
@@ -84,27 +98,27 @@ characters and basic full-width punctuation.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>SIL Yi</Name>
       <ID>sil_yi</ID>
-      <Version>1.3.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\nuosu\NuosuSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\nuosu\NuosuSIL-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\noto\Yiii\NotoSansYi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Yiii\NotoSansYi-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ii">Sichuan Yi, Nuosu</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Yiii\NotoSansYi-Regular.ttf"/>
+        <Font Filename="..\..\..\shared\fonts\sil\nuosu\NuosuSIL-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Yiii\NotoSansYi-Regular.ttf"/>
+        <Font Filename="..\..\..\shared\fonts\sil\nuosu\NuosuSIL-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="yi" Relationship="deprecates" />
+    <RelatedPackage ID="yi" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

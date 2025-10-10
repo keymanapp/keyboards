@@ -1,6 +1,10 @@
 SIL Yi Keyboard Change History
 =======================
 
+1.3.12 (8 Oct 2025) [draft that will become v2.0]
+--------------------
+* Add tablet touch layout
+
 1.3.1 (21 Oct 2022)
 --------------------
 * Fix keyboard to only support the Northern Yi dialect family ii-Yiii, variously called Nuosu Yi, Nosu Yi, Sichuan Yi, 
