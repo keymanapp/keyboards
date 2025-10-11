@@ -1,7 +1,6 @@
 <?php 
   $pagename = 'လၟေၚ်တက် Mon Anonta Keyboard Help';
   $pagetitle = $pagename;
-  // Header we will tidy up later  
   require_once('header.php');
 
 
@@ -14,24 +13,15 @@
 		</p>
 
 
-		<h3 id="1">
-			၁။ Mon Anonta Keyboard
-		</h3 >
-		<h4>ဟွံဂွံဍဵု Shift ဏီ</h4>
+<h3>Desktop Keyboard Layout</h3>
 
-	     <p><img src="mon_anonta.png"></p>
-		<h4>ဍဵုလဝ် Shift တုဲ</h4>
-      <p><img src="mon_anonta_s.png"></p>
-	  
-	    <h4>Mobile Default Layer </h4>  
-		<p><img src="mon_anonta_mobile_default.png"></p>
-		
-		 <h4>Mobile Shift Layer </h4>  
-		<p><img src="mon_anonta_mobile_shift.png"></p>
-		
-		<h4>Mobile Numeric Layer </h4>  
-		<p><img src="mon_anonta_mobile_numeric.png"></p>
-		
+<div id='osk' data-states='default shift'>
+</div>
+
+<h3>Mobile/Phone Keyboard Layout</h3>
+
+<div id='osk-phone' data-states='default shift numeric symbol'>
+</div>		
 		
 		<h3 id="2">
 			၂။ ဗီုဂွံတက်ဗျန်ကွက်ဂမၠိုၚ်
