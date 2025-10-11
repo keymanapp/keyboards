@@ -1,6 +1,6 @@
 <?php 
 $pagename = "Symbolic Logic";
-$pagetitle = "Symbolic Logic";
+  $pagetitle = $pagename;
 $pagestyle = <<<END
 
   <!--
@@ -26,15 +26,6 @@ $pagestyle = <<<END
 	margin-bottom:.0001pt;
 	font-size:12.0pt;
 	font-family:"Times New Roman",serif;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-right:0in;
-	margin-bottom:1.5pt;
-	margin-left:0in;
-	font-size:16.0pt;
-	font-family:"Tahoma",sans-serif;
-	color:#4444CC;
-	font-weight:bold;}
 h2
 	{mso-style-link:"Heading 2 Char";
 	margin-right:0in;
@@ -87,18 +78,16 @@ require_once('header.php')
 
 <div class=WordSection1>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>The
+<p>The
 Symbolic Logic keyboard for Keyman includes the complete Latin and Greek
 alphabets, all the most common symbols of logic and arithmetic, the symbols of set
 theory most commonly used in logic, and a handful of less common logical
 symbols. It also includes some superscripted numbers (no formatting required),
-for indicating the adicity of predicates.</span></p>
+for indicating the adicity of predicates.</p>
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
- width=94 style='width:70.6pt;background:white;border-collapse:collapse;
- margin-left:-2.25pt;margin-right:12.15pt;margin-top:9.9pt;margin-bottom:9.9pt'>
+<table border=0 cellspacing=0 cellpadding=0 align=left
+ width=94 style='width:70.6pt;border-collapse:collapse;
+ margin-left:2.25pt;margin-right:12.15pt;margin-top:9.9pt;margin-bottom:9.9pt'>
  <tr style='height:30.25pt'>
   <td width=47 style='width:35.3pt;border-top:solid black 1.5pt;border-left:
   solid black 1.5pt;border-bottom:none;border-right:none;background:transparent;
@@ -132,36 +121,26 @@ for indicating the adicity of predicates.</span></p>
 
 <p class=MsoNormal><span style='font-family:"Cambria Math",serif'>&nbsp;</span></p>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>The
+<p>The
 keyboard is easy to use. Each character key on a standard US keyboard can
 produce four different characters, depending on whether it is pressed alone,
-with <b>Shift</b>, with </span><b><span style='font-size:10.0pt;font-family:
-"Segoe UI",sans-serif'>Alt</span></b><span style='font-size:10.0pt;font-family:
-"Tahoma",sans-serif'>, or with <b>Shift&nbsp;+&nbsp;Alt</b>, as shown in the
-diagram.</span></p>
+with <b>Shift</b>, with <b>Alt</b>, or with <b>Shift&nbsp;+&nbsp;Alt</b>, as shown in the
+diagram.</p>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
+<p>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>Relatively
+<p>Relatively
 few fonts support all these symbols. Segoe UI Symbol does. Cambria and Cambria
-Math support all except the check mark (</span><span style='font-size:10.0pt;
-font-family:"Segoe UI Symbol",sans-serif'>✓</span><span style='font-size:10.0pt;
-font-family:"Tahoma",sans-serif'>), but my version of MS Word, at least,&nbsp;
+Math support all except the check mark (<span style='font-size:10.0pt;
+font-family:"Segoe UI Symbol",sans-serif'>✓</span>), but my version of MS Word, at least,&nbsp;
 automatically substitutes the check mark from Segoe UI Symbol. Use the Keyman
-Font Helper to find compatible fonts installed in your system.</span></p>
+Font Helper to find compatible fonts installed in your system.</p>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
+<p>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>You
-may have trouble with some of the </span><b><span style='font-size:10.0pt;
-font-family:"Segoe UI",sans-serif'>Shift&nbsp;+&nbsp;Alt</span></b><span
-style='font-size:10.0pt;font-family:"Tahoma",sans-serif'> combinations because
-they are Keyman hotkeys. To fix this, go to Keyman configuration and change the
-hotkeys to, for example,&nbsp;</span><b><span style='font-size:10.0pt;
-font-family:"Segoe UI",sans-serif'>Shift&nbsp;+&nbsp;Alt&nbsp;+&nbsp;left arrow</span></b><span
-style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>.</span></p>
+<p>You may have trouble with some of the <b>Shift&nbsp;+&nbsp;Alt</b> combinations because they are Keyman hotkeys. To fix this, go to Keyman configuration and change the hotkeys to, for example,&nbsp;<b>Shift&nbsp;+&nbsp;Alt&nbsp;+&nbsp;left arrow</b>.</p>
 
-<h1><span lang=EN>Keyboard Layout</span></h1>
+<h2>Keyboard Layout</h2>
 
 <p>Here is the complete map, with the most important logical symbols and a
 couple of common variants highlighted. The solid box and diamond are a
@@ -1392,6 +1371,5 @@ at it since.</p>
  </tr>
 </table>
 
-<h1><span lang=EN style='font-size:1.0pt'>&nbsp;</span></h1>
 
 </div>

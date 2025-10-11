@@ -2,7 +2,7 @@
 store(&VERSION) '17.0'
 store(&NAME) 'Hong Kong'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'hong_kong.ico'
 store(&VISUALKEYBOARD) 'hong_kong.kvks'
@@ -160,7 +160,7 @@ store(aie) 'aeiAEI'
 store(uo_end) 'cimnptuCIMNPTU'
 store(ai) 'aiAI'
 store(uw_end) 'aiptcmnuAIPTCMNU'
-store(ptcmni) 'ptcmniPTCMI'
+store(ptcmni) 'ptcmniPTCMNI'
 store(eioy) 'eioyEIOY'
 store(eioyw) 'eêioyươôăEÊIOYƯƠÔĂ'
 store(ptc) 'ptcPTC'
@@ -373,6 +373,10 @@ any(two_uw) 'ơ' any(two_u) + any(low_sfrxj) > index(two_uw, 1) index(low_ow_v, 
 any(two_uw) 'ơ' any(two_u) + any(upper_sfrxj) > index(two_uw, 1) index(low_ow_v, 4) index(two_u, 3)
 any(two_uw) 'Ơ' any(two_u) + any(low_sfrxj) > index(two_uw, 1) index(upper_ow_v, 4) index(two_u, 3)
 any(two_uw) 'Ơ' any(two_u) + any(upper_sfrxj) > index(two_uw, 1) index(upper_ow_v, 4) index(two_u, 3)
+any(two_u) 'y' any(two_u) + any(low_sfrxj) > index(two_u, 1) index(low_y_v, 4) index(two_u, 3)
+any(two_u) 'y' any(two_u) + any(upper_sfrxj) > index(two_u, 1) index(low_y_v, 4) index(two_u, 3)
+any(two_u) 'Y' any(two_u) + any(low_sfrxj) > index(two_u, 1) index(upper_y_v, 4) index(two_u, 3)
+any(two_u) 'Y' any(two_u) + any(upper_sfrxj) > index(two_u, 1) index(upper_y_v, 4) index(two_u, 3)
 
 any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3)
 'ư' any(ow) + 'w' > 'u' index(o, 2) 'w'
@@ -1849,3 +1853,7 @@ any(ie_consonants) any(i) 'A' any(n) any(g) + any(low_sfrxj) > index(ie_consonan
 any(ie_consonants) any(i) 'A' any(n) any(g) + any(upper_sfrxj) > index(ie_consonants, 1) index(i, 2) index(upper_a_v, 6) index(n, 4) index(g, 5)
 any(n) any(h) any(i) any(aou) + any(all_letters) > context index(all_letters, 5)
 any(n) any(h) any(i) any(aou) any(all_letters) + any(all_letters) > context index(all_letters, 6)
+any(low_u_v) "y" + any(two_u) > "u" index(low_y_v, 1) index(two_u, 3)
+any(upper_u_v) "y" + any(two_u) > "U" index(low_y_v, 1) index(two_u, 3)
+any(low_u_v) "Y" + any(two_u) > "u" index(upper_y_v, 1) index(two_u, 3)
+any(upper_u_v) "Y" + any(two_u) > "U" index(upper_y_v, 1) index(two_u, 3)
