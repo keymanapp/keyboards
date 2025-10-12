@@ -7,7 +7,7 @@ store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
 store(&BITMAP) 'obolo_chwerty.ico'
 store(&MESSAGE) 'A keyboard layout (chwerty) for the Obolo language of Nigeria. It covers the need of every dialect of Obolo.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.5.3'
 store(&KMW_EMBEDCSS) 'obolo_chwerty.css'
 
 begin Unicode > use(main)
@@ -254,3 +254,4 @@ any(spguyop) + any(erase) > index(spguy,1)
 any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants
 any(combdiac) + any(combdiackeys) > context beep c prevent diacritics stacking
 c notany(accentibles) + any(accents) > context beep c prevent diacritics stacking (on empty space, and plain consonants)
+
