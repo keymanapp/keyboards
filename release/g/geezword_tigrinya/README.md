@@ -1,4 +1,4 @@
-# Geezword Keyboard
+# Geezword Tigrinya Keyboard
 
 Keyboard for Tigrinya, Amharic and Geez, Tigre and Blin languages (ትግርኛ፡ አማርኛ፡ ግእዝ፡ ትግረ፡ ብለን)
 
@@ -14,4 +14,3 @@ Copyright © Geezsoft
 *	Linux
 *	Web
 *	Mobile
-

@@ -1,18 +1,17 @@
-Geezword_Tigrinya Change History
+geezword_tigrinya Change History
 =========================
-18.0 (8-10-2025)
+18.0 (10-16-2025)
 --------------------------
 * Initial Public Release Keyman keyboard
 
 Additional History of GeezWord 
-==========================
-Geezword was developed as a stand alone, by Phonetic Systems, on Apple and Windows computers, starting 1982-2025
-It was first developed ON Apple II computer (1981 1982)
-It was 
-lLater developed on Apple Macintosh (1985- 1987)
-It was developed on Windows 1993 as Geezgate
-Its Keyboard was developed for Keyman engine in 2002 (Licensed)
-reference: https://tigrinyadigitalinitiatives.org/
+==============================
+* Geezword was developed as a stand alone, by Phonetic Systems, on Apple and Windows computers, starting 1982-2025
+* It was first developed ON Apple II computer (1981 1982)
+* It was later developed on Apple Macintosh (1985- 1987)
+* It was developed on Windows 1993 as Geezgate
+* Its Keyboard was developed for Keyman engine in 2002 (Licensed)
+* Reference: https://tigrinyadigitalinitiatives.org/
 
 1982 On Apple II Computer
 -------------------
@@ -33,18 +32,12 @@ reference: https://tigrinyadigitalinitiatives.org/
 -------------------
 * Geez TrueType font - (ASCII)
 * Vowels e,i,o,u were used instead of numerals
--------------------
-
-* Easy Keyboard Program  for Amharic, Tigrinya, Geez & other languages.
 
 
 ***************************************************************** 
-* This keyboard program was adopted from previous old Stand alone Geezword versions
-* it uses the simplified set of phonetic keys for typing Geez script.
-****************************************************************** 
-* NOTE: This keyboard was created using the Keyman keyboard
-* programming tutorial.
-******************************************************************
+
+  This keyboard program was adopted from the previous old standalone Geezword versions.
+  It uses the simplified set of phonetic keys for typing Geez script.
 
 * Written by Yemane, October 1999
 * Updated for Keyman 5. on August 18, 2000
@@ -53,7 +46,4 @@ reference: https://tigrinyadigitalinitiatives.org/
 * Updated September 14, 2001
 * Updated September 15, 2001 , some errors corrected
 
---------------------
-* Geezword 2002 Keyboard - both ANSI and Unicode
-* Licensed Keyman Engine
---------------------
+
