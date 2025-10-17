@@ -7,7 +7,7 @@
 
 
 <p>
-  The Urdu Phonetic (CRULP) v. 1.2 keyboard is based on the <b>CRULP Urdu Phonetic Keyboard Layout v1.1 for Windows</b>. This keyboard also supports the Western Punjabi language.
+  The Urdu Phonetic (CRULP) keyboard is based on the <b>CRULP Urdu Phonetic Keyboard Layout v1.1 for Windows</b>. This keyboard also supports the Western Punjabi language.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
