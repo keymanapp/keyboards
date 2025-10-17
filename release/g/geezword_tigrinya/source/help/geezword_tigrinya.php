@@ -1228,14 +1228,14 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-The GeezWord Tigrinya keyboard was created by the Yemane Russom of Phonetic Systems (1982-2023) and GeezSoft (2023-2025).
+The GeezWord Tigrinya keyboard was created by the Yemane Russom of Phonetic Systems (1982-2023) and Geezsoft (2023-2025).
 </p>
 </div>
 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; 1982-2023 Phonetic Systems, 20232-2025 GeezSoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; 1982-2023 Phonetic Systems, 20232-2025 Geezsoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>
 
