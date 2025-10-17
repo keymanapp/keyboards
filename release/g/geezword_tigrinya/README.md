@@ -1,13 +1,14 @@
-# Geezword Tigrinya Keyboard
+# GeezWord Tigrinya Keyboard
 
-Keyboard for Tigrinya, Amharic and Geez, Tigre and Blin languages (ትግርኛ፡ አማርኛ፡ ግእዝ፡ ትግረ፡ ብለን)
+Phonetic keyboard for Tigrinya, Amharic and Geez, Tigre and Blin languages (ትግርኛ፡ አማርኛ፡ ግእዝ፡ ትግረ፡ ብለን).
 
-It uses a phonetic keyboard, and it includes the GeezMahtemStandard custom font.
-Copyright © Geezsoft
+Copyright © 1982-2023, Phonetic Systems, Copyright © 2023-2025, GeezSoft. All Rights Reserved.
+
 
 ## Links
 *	Other Info:  <https://www.geezword.com>
 *	Contact:  <info@geezword.com>
+
 ## Supported Platforms
 *	Windows
 *	macOS

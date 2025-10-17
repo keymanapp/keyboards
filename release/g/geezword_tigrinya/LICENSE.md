@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 1982-2025 Geezsoft (Phonetic Systems)
+Copyright © 1982-2023, Phonetic Systems, Copyright © 2023-2025, GeezSoft. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

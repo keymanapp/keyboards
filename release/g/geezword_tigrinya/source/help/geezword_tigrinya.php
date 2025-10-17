@@ -1235,7 +1235,7 @@ The GeezWord Tigrinya keyboard was created by the Yemane Russom of Phonetic Syst
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; Phonetic Systems, 1994-2025.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; Phonetic Systems, 1982-2023, GeezSoft 2023-2025.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>
 
