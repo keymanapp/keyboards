@@ -1,7 +1,7 @@
 Extended Urdu NP (SIL) keyboard
 ==============
 
-(c) SIL International
+(c) SIL Global
 
 Description
 -----------
