@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Charis - Font Features</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Charis - Font Features</h1>
+    </header>
+    <p>Charis is an OpenType-enabled font family that supports the Latin
+    and Cyrillic scripts. It includes a number of optional features that
+    may be useful or required for particular uses or languages. This
+    document lists all the available features.</p>
+    <p>These OpenType features are primarily specified using four-letter
+    tags (e.g. 'cv17'), although some applications may provide a direct
+    way to control certain common features such as small caps. For more
+    information on how to access OpenType features in specific
+    environments and applications, see <a
+    href="https://software.sil.org/fonts/features">Using Font
+    Features</a>.</p>
+    <p>This page uses web fonts (WOFF2) to demonstrate font features and
+    should display correctly in all modern browsers. For a more concise
+    example of how to use Charis as a web font see
+    <em>Charis-webfont-example.html</em> in the font package
+    <em>web</em> folder. For detailed information see <a
+    href="https://software.sil.org/fonts/webfonts">Using SIL Fonts on
+    Web Pages</a>.</p>
+    <p><em>If this document is not displaying correctly a PDF version is
+    also provided in the documentation/pdf folder of the release
+    package.</em></p>
+    <h2 id="complete-feature-list">Complete feature list</h2>
+    <h3 id="stylistic-alternates">Stylistic alternates</h3>
+    <h4 id="small-caps-from-lowercase">Small caps from lowercase
+    <a id="scmp"></a></h4>
+    <p><span class="affects">Affects: all lowercase letters with capital
+    equivalents and some bracketing punctuation</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">a ... z</span> (all letters with
+    capital equivalents) ( ) [ ] { }</td>
+    <td><code>smcp=0</code></td>
+    </tr>
+    <tr>
+    <td>Small caps</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;smcp&quot; 1">a ... z</span>
+    (all letters with capital equivalents) ( ) [ ] { }</td>
+    <td><code>smcp=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="small-caps-from-capitals">Small caps from capitals
+    <a id="c2sc"></a></h4>
+    <p><em>This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: all capitals</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">A ... Z</span> (all capitals)</td>
+    <td><code>c2sc=0</code></td>
+    </tr>
+    <tr>
+    <td>Small caps</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;c2sc&quot; 1">A ... Z</span>
+    (all capitals)</td>
+    <td><code>c2sc=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="single-story-a-and-g">Single-story a and g
+    <a id="ss01"></a></h4>
+    <p><em>This feature was formerly called 'Literacy
+    alternates'.</em></p>
+    <p><span class="affects">Affects: U+0061 U+00AA U+00E0 U+00E1 U+00E2
+    U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1
+    U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5
+    U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7
+    U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123
+    U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">a ª à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ
+    ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ
+    </span></td>
+    <td><code>ss01=0</code></td>
+    </tr>
+    <tr>
+    <td>Single-story</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;ss01&quot; 1">a ª à á â ã ä å ā
+    ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ
+    ǥ ḡ ꞡ ᵍ </span></td>
+    <td><code>ss01=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="single-story-a-only">Single-story a (only)
+    <a id="ss11"></a></h4>
+    <p><span class="affects">Affects: U+0061 U+00AA U+00E0 U+00E1 U+00E2
+    U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1
+    U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5
+    U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7
+    U+2C65 U+2090 U+1D43 U+0363</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">a ª à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ
+    ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span></td>
+    <td><code>ss11=0</code></td>
+    </tr>
+    <tr>
+    <td>Single-story</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;ss11&quot; 1">a ª à á â ã ä å ā
+    ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span></td>
+    <td><code>ss11=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="single-story-g-only">Single-story g (only)
+    <a id="ss12"></a></h4>
+    <p><span class="affects">Affects: U+0067 U+011D U+011F U+0121 U+0123
+    U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span></td>
+    <td><code>ss12=0</code></td>
+    </tr>
+    <tr>
+    <td>Single-story</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;ss12&quot; 1">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ
+    ꞡ ᵍ </span></td>
+    <td><code>ss12=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="barred-bowl-forms">Barred-bowl forms <a id="ss04"></a></h4>
+    <p><span class="affects">Affects: U+0111 U+0180 U+01E5</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">đ ƀ ǥ</span></td>
+    <td><code>ss04=0</code></td>
+    </tr>
+    <tr>
+    <td>Barred-bowl</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;ss04&quot; 1">đ ƀ ǥ</span></td>
+    <td><code>ss04=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="slant-italic-specials">Slant italic specials
+    <a id="ss05"></a></h4>
+    <p><span class="affects">Affects: U+0061 U+00E3 U+00E0 U+00E1 U+00E2
+    U+00E4 U+00E5 U+0101 U+0103 U+01CE U+01DF U+01E1 U+01FB U+0201
+    U+0203 U+0227 U+1E01 U+1E9A U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB
+    U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EA1 U+1EB7 U+2C65 U+0250
+    U+00E6 U+0066 U+1E1F U+0069 U+00EC U+00ED U+00EE U+00EF U+0129
+    U+012B U+012D U+012F U+01D0 U+0209 U+020B U+1E2D U+1E2F U+1EC9
+    U+1ECB U+0131 U+006C U+013A U+1E37 U+1E39 U+1E3B U+1E3D U+0076
+    U+1E7D U+1E7F U+007A U+017A U+017C U+017E U+1E91 U+1E93 U+1E95
+    U+0493 U+04FB U+F327 U+A749 U+A75F U+2097</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-I normal">a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ
+    ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị
+    ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span></td>
+    <td><code>ss05=0</code></td>
+    </tr>
+    <tr>
+    <td>Slanted</td>
+    <td><span class="charis-I normal"
+    style="font-feature-settings: &quot;ss05&quot; 1">a ã à á â ä å ā ă
+    ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ
+    į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi
+    ffi</span></td>
+    <td><code>ss05=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="character-alternates">Character alternates</h3>
+    <h4 id="b-hook">B hook <a id="cv13"></a></h4>
+    <p><span class="affects">Affects: U+0181</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ɓ</span></td>
+    <td><code>cv13=0</code></td>
+    </tr>
+    <tr>
+    <td>Lowercase-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv13&quot; 1">Ɓ</span></td>
+    <td><code>cv13=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="d-hook">D hook <a id="cv17"></a></h4>
+    <p><span class="affects">Affects: U+018A</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ɗ</span></td>
+    <td><code>cv17=0</code></td>
+    </tr>
+    <tr>
+    <td>Lowercase-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv17&quot; 1">Ɗ</span></td>
+    <td><code>cv17=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="h-stroke">H stroke <a id="cv28"></a></h4>
+    <p><span class="affects">Affects: U+0126</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ħ</span></td>
+    <td><code>cv28=0</code></td>
+    </tr>
+    <tr>
+    <td>Vertical stroke</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv28&quot; 1">Ħ</span></td>
+    <td><code>cv28=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="j-stroke-hook">J stroke hook <a id="cv37"></a></h4>
+    <p><span class="affects">Affects: U+0284</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ʄ</span></td>
+    <td><code>cv37=0</code></td>
+    </tr>
+    <tr>
+    <td>Top serif</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv37&quot; 1">ʄ</span></td>
+    <td><code>cv37=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="eng">Eng <a id="cv43"></a></h4>
+    <p><span class="affects">Affects: U+014A</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ŋ</span></td>
+    <td><code>cv43=0</code></td>
+    </tr>
+    <tr>
+    <td>Lowercase style on baseline</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv43&quot; 1">Ŋ</span></td>
+    <td><code>cv43=1</code></td>
+    </tr>
+    <tr>
+    <td>Uppercase style with descender</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv43&quot; 2">Ŋ</span></td>
+    <td><code>cv43=2</code></td>
+    </tr>
+    <tr>
+    <td>Alt. lowercase style on baseline</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv43&quot; 3">Ŋ</span></td>
+    <td><code>cv43=3</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="n-left-hook">N left hook <a id="cv44"></a></h4>
+    <p><span class="affects">Affects: U+019D</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ɲ</span></td>
+    <td><code>cv44=0</code></td>
+    </tr>
+    <tr>
+    <td>Uppercase-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv44&quot; 1">Ɲ</span></td>
+    <td><code>cv44=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="open-o">Open-O <a id="cv46"></a></h4>
+    <p><span class="affects">Affects: U+0186 U+0254 U+1D10 U+1D53
+    U+1D97</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ɔ ɔ ᴐ ᵓ ᶗ</span></td>
+    <td><code>cv46=0</code></td>
+    </tr>
+    <tr>
+    <td>Top serif</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv46&quot; 1">Ɔ ɔ ᴐ ᵓ
+    ᶗ</span></td>
+    <td><code>cv46=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ou">OU <a id="cv47"></a></h4>
+    <p><span class="affects">Affects: U+0222 U+0223 U+1D3D
+    U+1D15</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ȣ ȣ ᴕ ᴽ</span></td>
+    <td><code>cv47=0</code></td>
+    </tr>
+    <tr>
+    <td>Open</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv47&quot; 1">Ȣ ȣ ᴕ
+    ᴽ</span></td>
+    <td><code>cv47=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="p-hook">p hook <a id="cv49"></a></h4>
+    <p><span class="affects">Affects: U+01A5</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ƥ</span></td>
+    <td><code>cv49=0</code></td>
+    </tr>
+    <tr>
+    <td>Right hook</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv49&quot; 1">ƥ</span></td>
+    <td><code>cv49=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="r-tail">R tail <a id="cv55"></a></h4>
+    <p><span class="affects">Affects: U+2C64</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ɽ</span></td>
+    <td><code>cv55=0</code></td>
+    </tr>
+    <tr>
+    <td>Lowercase-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv55&quot; 1">Ɽ</span></td>
+    <td><code>cv55=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="t-hook">T hook <a id="cv57"></a></h4>
+    <p><span class="affects">Affects: U+01AC</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ƭ</span></td>
+    <td><code>cv57=0</code></td>
+    </tr>
+    <tr>
+    <td>Right hook</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv57&quot; 1">Ƭ</span></td>
+    <td><code>cv57=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="v-hook">V hook <a id="cv62"></a></h4>
+    <p><span class="affects">Affects: U+01B2 U+028B U+1DB9</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ʋ ʋ ᶹ</span></td>
+    <td><code>cv62=0</code></td>
+    </tr>
+    <tr>
+    <td>Straight with low hook</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv62&quot; 1">Ʋ ʋ ᶹ</span></td>
+    <td><code>cv62=1</code></td>
+    </tr>
+    <tr>
+    <td>Straight with high hook</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv62&quot; 2">Ʋ ʋ ᶹ</span></td>
+    <td><code>cv62=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="y-hook">Y hook <a id="cv68"></a></h4>
+    <p><span class="affects">Affects: U+01B3</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ƴ</span></td>
+    <td><code>cv68=0</code></td>
+    </tr>
+    <tr>
+    <td>Left hook</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv68&quot; 1">Ƴ</span></td>
+    <td><code>cv68=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ezh">Ezh <a id="cv20"></a></h4>
+    <p><span class="affects">Affects: U+01B7 U+04E0</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ʒ Ӡ</span></td>
+    <td><code>cv20=0</code></td>
+    </tr>
+    <tr>
+    <td>Reversed sigma</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv20&quot; 1">Ʒ Ӡ</span></td>
+    <td><code>cv20=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ezh-curl">ezh curl <a id="cv19"></a></h4>
+    <p><span class="affects">Affects: U+0293</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ʓ</span></td>
+    <td><code>cv19=0</code></td>
+    </tr>
+    <tr>
+    <td>Large bowl</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv19&quot; 1">ʓ</span></td>
+    <td><code>cv19=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="rams-horn">rams horn <a id="cv25"></a></h4>
+    <p><span class="affects">Affects: U+0264 U+10791</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ɤ 𐞑</span></td>
+    <td><code>cv25=0</code></td>
+    </tr>
+    <tr>
+    <td>Large bowl</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv25&quot; 1">ɤ 𐞑</span></td>
+    <td><code>cv25=1</code></td>
+    </tr>
+    <tr>
+    <td>Small gamma</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv25&quot; 2">ɤ 𐞑</span></td>
+    <td><code>cv25=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="clicks">Clicks <a id="cv69"></a></h4>
+    <p><span class="affects">Affects: U+01C0 U+01C1 U+01C2
+    U+2980</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard (descending)</td>
+    <td><span class="charis-R normal">ǀ ǁ ǂ ⦀</span></td>
+    <td><code>cv69=0</code></td>
+    </tr>
+    <tr>
+    <td>Baseline</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv69&quot; 1">ǀ ǁ ǂ
+    ⦀</span></td>
+    <td><code>cv69=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="diacritic-and-symbol-alternates">Diacritic and symbol
+    alternates</h3>
+    <h4 id="vietnamese-style-diacritics">Vietnamese-style diacritics
+    <a id="cv75"></a></h4>
+    <p><span class="affects">Affects: U+1EA4 U+1EA5 U+1EA6 U+1EA7 U+1EA8
+    U+1EA9 U+1EAA U+1EAB U+1EAE U+1EAF U+1EB0 U+1EB1 U+1EB2 U+1EB3
+    U+1EB4 U+1EB5 U+1EBE U+1EBF U+1EC0 U+1EC1 U+1EC2 U+1EC3 U+1EC4
+    U+1EC5 U+1ED0 U+1ED1 U+1ED2 U+1ED3 U+1ED4 U+1ED5 U+1ED6
+    U+1ED7</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể
+    Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td>
+    <td><code>cv75=0</code></td>
+    </tr>
+    <tr>
+    <td>Vietnamese-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv75&quot; 1">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ
+    Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td>
+    <td><code>cv75=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="kayan-diacritics">Kayan diacritics <a id="cv79"></a></h4>
+    <p><span class="affects">Affects: U+0300 U+0301</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">◌̀́</span></td>
+    <td><code>cv79=0</code></td>
+    </tr>
+    <tr>
+    <td>Side by side</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv79&quot; 1">◌̀́</span></td>
+    <td><code>cv79=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ogonek">Ogonek <a id="cv76"></a></h4>
+    <p><span class="affects">Affects: U+0328 U+0104 U+0105 U+0118 U+0119
+    U+012E U+012F U+0172 U+0173 U+01EA U+01EB U+01EC U+01ED</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ
+    Ǭǭ)</span></td>
+    <td><code>cv76=0</code></td>
+    </tr>
+    <tr>
+    <td>Straight</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv76&quot; 1">anything with ◌̨
+    (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span></td>
+    <td><code>cv76=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="caron">Caron <a id="cv77"></a></h4>
+    <p><span class="affects">Affects: U+010F U+013D U+013E
+    U+0165</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ď Ľ ľ ť</span></td>
+    <td><code>cv77=0</code></td>
+    </tr>
+    <tr>
+    <td>Global-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv77&quot; 1">ď Ľ ľ
+    ť</span></td>
+    <td><code>cv77=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="modifier-apostrophe">Modifier apostrophe
+    <a id="cv70"></a></h4>
+    <p><span class="affects">Affects: U+02BB U+02BC U+02BD U+0312 U+0314
+    U+A78B U+A78C</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ʻ ʼ ʽ ◌̒ ◌̔ Ꞌ ꞌ</span></td>
+    <td><code>cv70=0</code></td>
+    </tr>
+    <tr>
+    <td>Large</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv70&quot; 1">ʻ ʼ ʽ ◌̒ ◌̔ Ꞌ
+    ꞌ</span></td>
+    <td><code>cv70=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="modifier-colon">Modifier colon <a id="cv71"></a></h4>
+    <p><span class="affects">Affects: U+A789</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">꞉</span></td>
+    <td><code>cv71=0</code></td>
+    </tr>
+    <tr>
+    <td>Expanded</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv71&quot; 1">꞉</span></td>
+    <td><code>cv71=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="empty-set">Empty set <a id="cv98"></a></h4>
+    <p><span class="affects">Affects: U+2205</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">∅</span></td>
+    <td><code>cv98=0</code></td>
+    </tr>
+    <tr>
+    <td>Zero-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv98&quot; 1">∅</span></td>
+    <td><code>cv98=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="cyrillic-alternates">Cyrillic alternates</h3>
+    <p><em>There are also Cyrillic characters affected by the “Ezh” and
+    “Small capitals” features. Some languages may also use the “Modifier
+    apostrophe”.</em></p>
+    <h4 id="cyrillic-e">Cyrillic E <a id="cv80"></a></h4>
+    <p><span class="affects">Affects: U+042D U+044D</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">Э э</span></td>
+    <td><code>cv80=0</code></td>
+    </tr>
+    <tr>
+    <td>Mongolian-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv80&quot; 1">Э э</span></td>
+    <td><code>cv80=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="cyrillic-shha">Cyrillic shha <a id="cv81"></a></h4>
+    <p><span class="affects">Affects: U+04BB</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">һ</span></td>
+    <td><code>cv81=0</code></td>
+    </tr>
+    <tr>
+    <td>Uppercase-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv81&quot; 1">һ</span></td>
+    <td><code>cv81=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="cyrillic-breve">Cyrillic breve <a id="cv82"></a></h4>
+    <p><span class="affects">Affects: U+0306</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">anything with ◌̆ (Ә̆ә̆)</span></td>
+    <td><code>cv82=0</code></td>
+    </tr>
+    <tr>
+    <td>Cyrillic-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv82&quot; 1">anything with ◌̆
+    (Ә̆ә̆)</span></td>
+    <td><code>cv82=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="serbian-cyrillic-alternates">Serbian Cyrillic alternates
+    <a id="langsr"></a></h4>
+    <p><em>These alternate forms mainly affect italic styles. Unlike
+    other features this is activated by tagging the span of text as
+    being in the Serbian language, not by turning on an OpenType
+    feature. It is also not available through TypeTuner Web although a
+    similar feature is supported (cv84).</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442
+    U+0453</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>Serbian</td>
+    <td><span class="charis-I normal" lang="sr">б г д п т ѓ</span></td>
+    <td><code>lang='sr'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="macedonian-cyrillic-alternates">Macedonian Cyrillic
+    alternates <a id="langmk"></a></h4>
+    <p><em>These alternate forms mainly affect italic styles. Unlike
+    other features this is activated by tagging the span of text as
+    being in the Macedonian language, not by turning on an OpenType
+    feature. It is also not available through TypeTuner Web although a
+    similar feature is supported (cv84).</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442
+    U+0453</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>Macedonian</td>
+    <td><span class="charis-I normal" lang="mk">б г д п т ѓ</span></td>
+    <td><code>lang='mk'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="serbian-and-macedonian-cyrillic-alternates">Serbian and
+    Macedonian Cyrillic alternates <a id="cv84"></a></h4>
+    <p><em>This feature provides an alternate way to activate the
+    Serbian and Macedonian forms in applications that do not support
+    language-specific features. It cannot, however, be used to
+    explicitly turn off these forms in text tagged as being in the
+    Serbian or Macedonian languages.</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442
+    U+0453</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
+    <td><code>cv84=0</code></td>
+    </tr>
+    <tr>
+    <td>Serbian Macedonian forms</td>
+    <td><span class="charis-I normal"
+    style="font-feature-settings: &quot;cv84&quot; 1">б г д п т
+    ѓ</span></td>
+    <td><code>cv84=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="tone-alternates">Tone alternates</h3>
+    <h4 id="chinantec-tones">Chinantec tones <a id="cv90"></a></h4>
+    <p><span class="affects">Affects: U+02CB U+02C8 U+02C9
+    U+02CA</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">ˋ ˈ ˉ ˊ</span></td>
+    <td><code>cv90=0</code></td>
+    </tr>
+    <tr>
+    <td>Chinantec-style</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv90&quot; 1">ˋ ˈ ˉ
+    ˊ</span></td>
+    <td><code>cv90=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="tone-numbers">Tone numbers <a id="cv91"></a></h4>
+    <p><em>This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9
+    U+A712 U+A713 U+A714 U+A715 U+A716</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span></td>
+    <td><code>cv91=0</code></td>
+    </tr>
+    <tr>
+    <td>Numbers</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv91&quot; 1">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕
+    ꜖</span></td>
+    <td><code>cv91=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="hide-tone-contour-staves">Hide tone contour staves
+    <a id="cv92"></a></h4>
+    <p><em>This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9
+    U+A712 U+A713 U+A714 U+A715 U+A716</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨
+    ꜖꜓꜒꜔꜕)</span></td>
+    <td><code>cv92=0</code></td>
+    </tr>
+    <tr>
+    <td>Hide staves</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;cv92&quot; 1">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕
+    ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span></td>
+    <td><code>cv92=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="numeral-alternates">Numeral alternates</h3>
+    <h4 id="proportional-oldstyle-figures">Proportional oldstyle figures
+    <a id="onum"></a></h4>
+    <p><em>This feature only affects full-size numerals, not
+    superscripts, subscripts, fractions, or numeral-based
+    symbols.</em></p>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
+    U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>onum=0</code></td>
+    </tr>
+    <tr>
+    <td>Oldstyle</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;onum&quot; 1">0 1 2 3 4 5 6 7 8
+    9</span></td>
+    <td><code>onum=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="subscript-numerals">Subscript numerals
+    <a id="subs"></a></h4>
+    <p><em>This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
+    U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>subs=0</code></td>
+    </tr>
+    <tr>
+    <td>Subscript</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;subs&quot; 1">0 1 2 3 4 5 6 7 8
+    9</span></td>
+    <td><code>subs=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="superscript-numerals">Superscript numerals
+    <a id="sups"></a></h4>
+    <p><em>This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
+    U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>sups=0</code></td>
+    </tr>
+    <tr>
+    <td>Superscript</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;sups&quot; 1">0 1 2 3 4 5 6 7 8
+    9</span></td>
+    <td><code>sups=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="automatic-fractions">Automatic fractions
+    <a id="frac"></a></h4>
+    <p><em>When activated this feature will automatically create
+    fractions when numerals are separated by either the fraction slash
+    (U+2044) or the solidus (U+002F). This feature is not supported in
+    TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
+    U+0035 U+0036 U+0037 U+0038 U+0039 U+002F U+2044</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Standard (none)</td>
+    <td><span class="charis-R normal">1⁄2 456⁄789 1/2
+    456/789</span></td>
+    <td><code>frac=0</code></td>
+    </tr>
+    <tr>
+    <td>Automatic</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;frac&quot; 1">1⁄2 456⁄789 1/2
+    456/789</span></td>
+    <td><code>frac=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <!-- PRODUCT SITE ONLY
+    [font id='charis' face='Charis-Regular' italic='Charis-Italic' bold='Charis-Bold' bolditalic='Charis-BoldItalic' size='150%']
+    -->
+    <footer class="footer">
+        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis project</a> version 7 and is copyright © 1997-2025 SIL Global.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>
