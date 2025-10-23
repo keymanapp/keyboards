@@ -1235,6 +1235,8 @@ def dictforkey(s, layer):   # Create dictionary of JSON fields for Keyman for th
         if s == "NM" and layer != "radicals":
             d["sk"] = []
             d["sk"].append({"id": "T_RAD", "text": "꒐꒑꒒꒔", "nextlayer": "radicals"})
+            d["multitap"] = []
+            d["multitap"].append({"id": "T_RAD", "text": "꒐꒑꒒꒔", "nextlayer": "radicals"})
     elif s in YiTable and (s != "w" or layer != "default"):
         d["id"] = "U_" + YiTable[s]
         d["text"] = chr(int(YiTable[s], 16)) # key label is Yi syll char

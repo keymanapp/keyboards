@@ -12,7 +12,7 @@ store(&TARGETS) 'any'
 store(&COPYRIGHT) '© SIL Global'
 store(&VISUALKEYBOARD) 'sil_yi.kvks'
 store(&LAYOUTFILE) 'sil_yi.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.3.16'
+store(&KEYBOARDVERSION) '1.3.18'
 
 begin Unicode > use(main)
 
@@ -1397,8 +1397,6 @@ c ------------------------------------
 + '?'      > U+ff1f    c FULLWIDTH QUESTION MARK
 + '('      > U+ff08    c FULLWIDTH LEFT PARENTHESIS
 + ')'      > U+ff09    c FULLWIDTH RIGHT PARENTHESIS
-+ '['      > U+ff3b    c FULLWIDTH LEFT SQUARE BRACKET
-+ ']'      > U+ff3d    c FULLWIDTH RIGHT SQUARE BRACKET
 + '|'      > U+ff5c    c FULLWIDTH VERTICAL LINE
 + '{'      > U+ff5b    c FULLWIDTH LEFT CURLY BRACKET
 + '}'      > U+ff5d    c FULLWIDTH RIGHT CURLY BRACKET
@@ -1411,12 +1409,16 @@ c ------------------------------------
 + '$'      > U+00a5    c YEN SIGN - Chinese Yuan currency
 
 c ------------------------------------
-c angle brackets and quotation marks
+c special brackets and quotation marks
 c ------------------------------------
-+ '<'      > U+3008    c LEFT ANGLE BRACKET - Chinese l sg "shuminghao"
++ '<'         > U+3008    c LEFT ANGLE BRACKET - Chinese l sg "shuminghao"
 U+3008 + '<'  > U+300a    c LEFT DOUBLE ANGLE BRACKET - Chinese l db "shuminghao"
 + '>'         > U+3009    c RIGHT ANGLE BRACKET - Chinese r sg "shuminghao"
 U+3009 + '>'  > U+300b    c RIGHT DOUBLE ANGLE BRACKET - Chinese r db "shuminghao"
++ '['         > U+ff3b    c FULLWIDTH LEFT SQUARE BRACKET
+U+ff3b + '['  > U+3010    c LEFT BLACK LENTICULAR BRACKET
++ ']'         > U+ff3d    c FULLWIDTH RIGHT SQUARE BRACKET
+U+ff3d + ']'  > U+3011    c RIGHT BLACK LENTICULAR BRACKET
 + "`"         > U+2018    c LEFT SINGLE QUOTATION MARK - Chinese l sg quote
 U+2018 + "`"  > U+201c    c LEFT DOUBLE QUOTATION MARK - Chinese l db quote
 + "'"         > U+2019    c RIGHT SINGLE QUOTATION MARK - Chinese r sg quote
@@ -1435,7 +1437,8 @@ c Joining behavior of U+30FB is preferred over U+00B7
 c ------------------------------------
 c dashes
 c ------------------------------------
-+ '~'      > U+007e    c TILDE - Placeholder in dictionary examples
++ '~'         > U+007e    c TILDE - Placeholder in dictionary examples
+U+007e + '~'  > U+ff5e    c FULLWIDTH TILDE - Placeholder. Font support?
 c Keep adding '-'
 + "-"         > U+FF0d c hyphen converts to FULLWIDTH HYPHEN-MINUS 
 U+FF0D + "-"  > U+2013 c EN DASH - joining dash
