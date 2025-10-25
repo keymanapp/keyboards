@@ -1,15 +1,17 @@
 <?php 
-  $pagename = 'Engram Keyboard Help';
+  $pagename = 'Engram_2021 Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
 
-<p>The Engram layout (<a href="https://engram.dev">website</a> and <a href="https://github.com/binarybottle/engram-layout">GitHub repo</a>) 
-is a keyboard layout optimized for comfortable and efficient touch typing in English created by <a href="https://binarybottle.com">Arno Klein</a>, 
-with open source code to create other optimized key layouts.
+<p>The Engram_2021 layout (<a href="https://engram-layouts.xyz/engram_2021">website</a> 
+and <a href="https://github.com/binarybottle/engram">GitHub repo</a>) 
+is a key layout optimized for comfortable and efficient touch typing in English 
+created by <a href="https://arnoklein.info">Arno Klein</a>, 
+based on legacy open source code to create other optimized key layouts.
 Letters are optimally arranged to reduce lateral finger movements, 
-following ergonomics principles, and facilitating high-frequency letter pairs. 
+follow ergonomics principles, and facilitate high-frequency letter pairs. 
 The most common punctuation marks are logically grouped together in the middle columns 
 (accessed directly and by the Shift key) and numbers are paired with mathematical 
 and logic symbols (accessed by the Shift Key):</p>
@@ -25,4 +27,4 @@ and logic symbols (accessed by the Shift Key):</p>
 <div id='osk' data-states='default shift'>
 </div>
 
-<p>© Arno Klein</p>
+<p>© Arno Klein (MIT License)</p>

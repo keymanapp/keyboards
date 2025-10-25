@@ -1,5 +1,9 @@
-Engram Change History
-====================
+Engram_2021 Change History
+==========================
+
+2.2 (2025-10-31)
+----------------
+* Renamed to "engram_2021" to indicate legacy status, superceded by "engram_en" layout.
 
 2.1 (2024-08-30)
 ----------------
