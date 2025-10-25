@@ -16,9 +16,9 @@ and logic symbols (accessed by the Shift Key):</p>
 
 <p>[{ &nbsp;&nbsp; 1| &nbsp;&nbsp; 2= &nbsp;&nbsp; 3~ &nbsp;&nbsp; 4+ &nbsp;&nbsp; 5< &nbsp;&nbsp; 6> &nbsp;&nbsp; 7^ &nbsp;&nbsp; 8& &nbsp;&nbsp; 9% &nbsp;&nbsp; 0* &nbsp;&nbsp; ]} &nbsp;&nbsp; /\ <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp; bB &nbsp;&nbsp; yY &nbsp;&nbsp; oO &nbsp;&nbsp; uU &nbsp;&nbsp; '( &nbsp;&nbsp; ") &nbsp;&nbsp; lL &nbsp;&nbsp; dD &nbsp;&nbsp; wW &nbsp;&nbsp; vV &nbsp;&nbsp; zZ &nbsp;&nbsp; #$ &nbsp;&nbsp; @` <br> 
-&nbsp;&nbsp;&nbsp;&nbsp; cC &nbsp;&nbsp; iI &nbsp;&nbsp; eE &nbsp;&nbsp; aA &nbsp;&nbsp; ,; &nbsp;&nbsp; .: &nbsp;&nbsp; hH &nbsp;&nbsp; tT &nbsp;&nbsp; sS &nbsp;&nbsp; nN &nbsp;&nbsp; qQ  <br>
-&nbsp;&nbsp;&nbsp;&nbsp; gG &nbsp;&nbsp; xX &nbsp;&nbsp; jJ &nbsp;&nbsp; kK &nbsp;&nbsp; -_ &nbsp;&nbsp; ?! &nbsp;&nbsp; rR &nbsp;&nbsp; mM &nbsp;&nbsp; fF &nbsp;&nbsp; pP                 
+  &nbsp;&nbsp;&nbsp;&nbsp; bB &nbsp;&nbsp; yY &nbsp;&nbsp; oO &nbsp;&nbsp; uU &nbsp;&nbsp; '( &nbsp;&nbsp; ") &nbsp;&nbsp; dD &nbsp;&nbsp; nN &nbsp;&nbsp; gG &nbsp;&nbsp; vV &nbsp;&nbsp; qQ &nbsp;&nbsp; #$ &nbsp;&nbsp; @` <br> 
+  &nbsp;&nbsp;&nbsp;&nbsp; hH &nbsp;&nbsp; iI &nbsp;&nbsp; aA &nbsp;&nbsp; eE &nbsp;&nbsp; ,; &nbsp;&nbsp; .: &nbsp;&nbsp; tT &nbsp;&nbsp; rR &nbsp;&nbsp; sS &nbsp;&nbsp; cC &nbsp;&nbsp; zZ  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; kK &nbsp;&nbsp; jJ &nbsp;&nbsp; xX &nbsp;&nbsp; wW &nbsp;&nbsp; -_ &nbsp;&nbsp; ?! &nbsp;&nbsp; mM &nbsp;&nbsp; lL &nbsp;&nbsp; fF &nbsp;&nbsp; pP                 
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
