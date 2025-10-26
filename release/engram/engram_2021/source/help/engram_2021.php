@@ -5,8 +5,7 @@
   require_once('header.php');
 ?>
 
-<p>The Engram_2021 layout (<a href="https://engram-layouts.xyz/engram_2021">website</a> 
-and <a href="https://github.com/binarybottle/engram">GitHub repo</a>) 
+<p>The Engram_2021 layout (<a href="https://github.com/binarybottle/engram-2021">website</a>) 
 is a key layout optimized for comfortable and efficient touch typing in English 
 created by <a href="https://arnoklein.info">Arno Klein</a>, 
 based on legacy open source code to create other optimized key layouts.

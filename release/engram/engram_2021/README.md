@@ -10,7 +10,7 @@ Description
 
 Engram_2021 is the first Engram keyboard layout optimized for comfortable 
 and efficient touch typing in English created by [Arno Klein](https://arnoklein.info), 
-based on legacy [open source code](https://github.com/binarybottle/engram).
+based on legacy [open source code](https://github.com/binarybottle/engram-2021).
 
 Letters are optimally arranged according to a scoring model that reflects 
 ergonomics factors that promote reduction of lateral finger movements and 
@@ -34,7 +34,7 @@ Links
 -----
 https://keyman.com/keyboards/engram
 
-https://engram-layouts.xyz/engram_2021
+https://github.com/binarybottle/engram-2021
 
 https://github.com/binarybottle/engram
 
