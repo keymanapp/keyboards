@@ -7,12 +7,6 @@
 
 <div class=Section1>
 
-<h1><span style='mso-fareast-font-family:"Times New Roman"'>The
-Rachitrali-Wadiyara Keyboard Package<o:p></o:p></span></h1>
-
-<p><span class=authordatehits>Rehmat Aziz Chitrali, 2020-01-</span><span
-dir=RTL></span><span class=authordatehits><span lang=FA dir=RTL
-style='mso-bidi-language:FA'><span dir=RTL></span>29</span></span></p>
 
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>Introduction<o:p></o:p></span></h2>
 

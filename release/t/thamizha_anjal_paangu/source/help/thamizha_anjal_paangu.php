@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
-  require_once('servervars.php');
   $pagename = 'அஞ்சல் பாங்கு | Anjal Paangu Keyboard Help';
   $pagetitle = $pagename;
   $style = '.lang2 {font-size:130%}';

@@ -11,14 +11,14 @@
 - Bilgisayarda w/W için ʒ/Ʒ den sonra " tuşuna basın.</p>
 
 
-<h1>Klavye Düzeni</h1>
+<h2>Klavye Düzeni</h2>
 
 <div id='osk-container'>
-  <h2>Desktop Keyboard Layout</h2>
+  <h3>Desktop Keyboard Layout</h3>
   <div id='osk' data-states='default shift ctrl-alt shift-ctrl-alt'></div>
 </div>
 
 <div id='osk-phone-container'>
-  <h2>Phone Keyboard Layout</h2>
+  <h3>Phone Keyboard Layout</h3>
   <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
