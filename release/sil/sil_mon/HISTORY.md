@@ -1,6 +1,11 @@
 Mon (SIL) Change History
 ====================
 
+1.2.1 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
 1.2 (2025-07-30)
 * Modifications to some keystrokes based on community feedback. Especially changing P, Z, eE, uU, oO, and '" output.
 

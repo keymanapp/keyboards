@@ -1,7 +1,6 @@
 Orma keyboard
 ==============
 
-Version 1.0
 
 Description
 -----------
@@ -27,4 +26,6 @@ Supported Platforms
  * Mobile devices
  * Desktop devices
  * Tablet devices
+
+
 

@@ -1,15 +1,14 @@
 <?php
   $pagename = 'Kmhmu 2008 (deprecated) Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
   table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
   table.display { border-collapse: collapse; width:640px;}
-  img {width:100% ;max-width:750px;}
   th.narrow {width:40px;}
   th.medium {width:100px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
@@ -71,12 +70,9 @@ EXTRA;
 </tr>
 </table>
 
-<h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: normal (default) state" src="kmhmu_2008U_.png"/></p>
-<h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: shift state" src="kmhmu_2008U_S.png"/></p>
-<h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: AltGr state" src="kmhmu_2008U_RA.png"/></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
 
 <h2>Fonts</h2>
   <p>The font <b>Kmhmu MX</b> has been included with the keyboard layout.</p>

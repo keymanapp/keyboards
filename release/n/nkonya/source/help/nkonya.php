@@ -7,8 +7,6 @@
 Keyboard for Nkonya language of Ghana
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <p>Type:</p>
 <p>= + for ŋ Ŋ</p>
 <p>[ { for ɛ Ɛ</p>

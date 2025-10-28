@@ -1,15 +1,12 @@
 <?php
   $pagename = 'Kmhmu (SIL) Keyboard Help';
-  $pagetitle = 'Kmhmu (SIL)  Keyboard Help';
-  $style = <<<EXTRA
-  span.kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt }
-  table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
-  table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
-  table.display { border-collapse: collapse; width:640px;}
-  img {width:100% ;max-width:750px;}
-  th.narrow {width:40px;}
-  th.medium {width:100px;}
-EXTRA;
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
+  .kmhmu {font-family: "Leelawadee UI","Kmhmu MX","Kmhmu OT"; font-size: 12pt; }
+  .display { border-collapse: collapse; width:640px;}
+  .narrow {width:40px;}
+  .medium {width:100px;}
+END;
   require_once('header.php');
 ?>
 
