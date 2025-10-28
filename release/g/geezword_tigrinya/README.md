@@ -2,7 +2,7 @@
 
 Phonetic keyboard for Tigrinya, Amharic and Geez, Tigre and Blin languages (ትግርኛ፡ አማርኛ፡ ግእዝ፡ ትግረ፡ ብለን).
 
-Copyright © 1982-2023 Phonetic Systems, 20232-2025 Geezsoft. All Rights Reserved.
+Copyright © Geezsoft. All Rights Reserved.
 
 
 ## Links

@@ -2,10 +2,7 @@
   $pagetitle = 'GeezWord Tigrinya Keyboard Help';
   $pagename  = $pagetitle;
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
-  require_once('header.php');
-?>
-<style>
-<!--
+  $pagestyle = <<<END
 table { border: 0; cellspacing: 0; cellpadding: 0; border-collapse: collapse; }
 th, td { border: solid #bfbfbf 1.0pt; border-collapse: collapse; }
 th, td { width: 54; text-align: center; }
@@ -31,8 +28,10 @@ th { background: #95DCF7; }
   clear: both;
   display: table;
 }
--->
-</style>
+  END;
+  
+  require_once('header.php');
+?>
 
 <p style='margin:0px'>Keyboard &#169; GeezWord</p>
 
@@ -1235,7 +1234,7 @@ The GeezWord Tigrinya keyboard was created by the Yemane Russom of Phonetic Syst
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; 1982-2023 Phonetic Systems, 20232-2025 Geezsoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; Geezsoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>
 
