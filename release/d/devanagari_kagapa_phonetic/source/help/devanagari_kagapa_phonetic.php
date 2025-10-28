@@ -2,20 +2,6 @@
   $pagename = 'Devanagari KaGaPa Phonetic Keyboard Help' ;
   $pagetitle = $pagename ;
   $pagestyle = <<<END
-    body {
-      font-family: "Segoe UI", "Noto Sans", sans-serif;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
-      margin: 2em;
-    }
-
-    h1, h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.2em;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -74,8 +60,6 @@
   END;
   require_once( 'header.php' ) ;
 ?>
-
-<h1 id="devanagari-kagapa-phonetic-keyboard-–-key-mapping-tables">Devanagari KaGaPa Phonetic Keyboard – Getting Started</h1>
 
 <p>This layout is the KaGaPa phonetic layout for the Devanagari script, as distributed in Linux. This is a very intuitively designed layout, strictly following recommendations and key combinations as stated by Unicode, hence a well-compliant one.</p>
 

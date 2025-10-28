@@ -1,60 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.240.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
-    <Folder>GFF Amharic Keyboard</Folder>
+    <Folder>GFF Amharic Classic QWERTY Keyboard</Folder>
     <AddUninstallEntry/>
     <Items>
       <Item>
         <Name>Welcome</Name>
         <FileName>welcome.htm</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>Amharic Keyboard Manual (Amharic)</Name>
-        <FileName>AmharicTyping-Amharic.pdf</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>Amharic Keyboard Manual (English)</Name>
-        <FileName>AmharicTyping-English.pdf</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>OFL (Abyssinica SIL Licence)</Name>
-        <FileName>OFL.txt</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>GPL (WashRa + Free Serif Licence)</Name>
-        <FileName>GNU-GPLv2.txt</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>Amharic Typing Practice</Name>
-        <FileName>http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -65,10 +31,38 @@
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Name URL="">GFF Amharic Classic</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 1997-2020 Ge'ez Frontier Foundation, SIL International</Copyright>
+    <Copyright URL="">© Ge'ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
-    <Description>This is an Amharic (amh, አማርኛ) language mnemonic input method for mobile
-platforms based on a US-QWERTY layout.</Description>
+    <Description URL="">This is an Amharic (amh, አማርኛ) language mnemonic input method for mobile platforms designed in the
+style of English “QWERTY” layout as found on iPhones and iPads.
+The package should *only* be installed on mobile and tablet devices.
+The keyboard is also suitable for Tigrinya and Agew languages such as Awngi, Blin, and Khimtanga.
+
+If you are seeking an Amharic keyboard for a laptop, desktop, or workstation computer, please use [GFF Amharic](https://keyman.com/keyboards/gff_amharic) instead.
+
+### Keyboard Initial State
+The keyboard begins in the familiar layout used on English (Latin Alphabet) keyboards:
+
+![Mobile Default Layer](https://raw.githubusercontent.com/dyacob/keyboards/d942392ed8e72ef74633ec1bbcc45b7ce672abb1/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-default-1-920w.jpeg)
+
+The keyboard updates as you type.  For example, this is the keyboard change after pressing the ግ key:
+
+![Mobile ግ-Pressed Layer](https://raw.githubusercontent.com/dyacob/keyboards/d942392ed8e72ef74633ec1bbcc45b7ce672abb1/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-default-2-920w.jpeg)
+
+### Keyboard Shifted State
+Just as with English keyboards, the SHIFT key makes more letters appear:
+
+![Mobile Shifted Layer](https://raw.githubusercontent.com/dyacob/keyboards/dd93e9c1c09bc8488afbac0e08aac82244ea4701/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-shift-1-920w.jpeg)
+
+### Flick Typing
+Every key supports “flicking” to making typing even faster.  See the help file for full details.
+
+![Flick typing](https://raw.githubusercontent.com/dyacob/keyboards/dd93e9c1c09bc8488afbac0e08aac82244ea4701/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-flick-typing-1-432w.png)
+
+### Multitap Typing
+Every key also supports “multitaps” to making typing even faster.  See the help file for full details.
+
+![Multitap typing](https://raw.githubusercontent.com/dyacob/keyboards/dd93e9c1c09bc8488afbac0e08aac82244ea4701/release/gff/gff_amharic_classic/source/images/gff_amharic_classic-phone-multitap-typing-1-432w.png)</Description>
   </Info>
   <Files>
     <File>
@@ -84,112 +78,10 @@ platforms based on a US-QWERTY layout.</Description>
       <FileType>.bmp</FileType>
     </File>
     <File>
-      <Name>AmharicTyping-Amharic.pdf</Name>
-      <Description>File AmharicTyping-Amharic.pdf</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>AmharicTyping-English.pdf</Name>
-      <Description>File AmharicTyping-English.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\GNU-GPLv2.txt</Name>
-      <Description>File GNU-GPLv2.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
-      <Description>Font Ethiopic Fantuwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
-      <Description>Font Free Serif</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
-      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
-      <Description>Font Ethiopic Hiwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
-      <Description>Font Ethiopia Jiret</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
-      <Description>Font Ethiopia Jiret Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
-      <Description>Font Ethiopic Tint</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrabsl.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasb.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
-      <Description>Font Ethiopic Wookianos</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
-      <Description>Font Ethiopic Yebse</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.md</FileType>
     </File>
     <File>
       <Name>..\build\gff_amharic_classic.js</Name>
@@ -198,42 +90,172 @@ platforms based on a US-QWERTY layout.</Description>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
-      <Description>Font Brana</Description>
+      <Name>..\build\gff_amharic_classic.kvk</Name>
+      <Description>File gff_amharic_classic.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Name>welcome\gff_amharic_classic-phone-default-1.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-default-1.jpeg</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-default-2.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-default-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-default-3.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-default-3.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-default-punctuation-1.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-default-punctuation-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-default-punctuation-2.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-default-punctuation-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-flick-typing-1.png</Name>
+      <Description>File gff_amharic_classic-phone-flick-typing-1.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-multitap-typing-1.png</Name>
+      <Description>File gff_amharic_classic-phone-multitap-typing-1.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-numerals-1.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-numerals-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-punctuation-1.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-punctuation-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-punctuation-1-numbers.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-punctuation-1-numbers.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-punctuation-2.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-punctuation-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-phone-shift-1.jpeg</Name>
+      <Description>File gff_amharic_classic-phone-shift-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-default-1.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-default-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-default-2.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-default-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-default-3.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-default-3.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-default-punctuation-1.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-default-punctuation-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-default-punctuation-2.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-default-punctuation-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-flick-typing-1.png</Name>
+      <Description>File gff_amharic_classic-tablet-flick-typing-1.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-multitap-typing-1.png</Name>
+      <Description>File gff_amharic_classic-tablet-multitap-typing-1.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-numerals-1.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-numerals-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-punctuation-1.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-punctuation-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-punctuation-1-numbers.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-punctuation-1-numbers.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-punctuation-2.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-punctuation-2.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
+    </File>
+    <File>
+      <Name>welcome\gff_amharic_classic-tablet-shift-1.jpeg</Name>
+      <Description>File gff_amharic_classic-tablet-shift-1.jpeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpeg</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>አማርኛ (Amharic) Classic</Name>
       <ID>gff_amharic_classic</ID>
-      <Version>2.0</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
-      <Examples>
-        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
-      </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff_amharic" />
+    <RelatedPackage ID="gff_amharic"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

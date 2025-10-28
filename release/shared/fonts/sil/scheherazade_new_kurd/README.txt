@@ -5,10 +5,6 @@ Scheherazade New
 Thank you for your interest in the Scheherazade New font.
 We hope you find it useful!
 
-This release supports most of the Unicode 16.0 Arabic character 
-repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use).
-
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
 available. 
@@ -26,7 +22,7 @@ and licensing, please see the documentation on the website
 subfolder of this font package.
 
 TYPETUNER
-2024-10-21
+2025-08-11
 =========
 
 This package contains a TypeTuned version of the Scheherazade New fonts.
