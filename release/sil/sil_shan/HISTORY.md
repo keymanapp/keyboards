@@ -1,9 +1,14 @@
 Shan (SIL) Keyboard Change History
 =======================
 
-1.4.2 (02 June 2025)
+1.4.3 (28 Oct 2025)
 ------------------
 * Change Shift H key from U+1037 to U+1036
+
+1.4.2 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.00
+* Remove Padauk
 
 1.4.1 (2024-12-12)
 ------------------
@@ -25,3 +30,4 @@ Shan (SIL) Keyboard Change History
 1.3 (22 Jun 2018)
 -----------------
 * Source migrated to GitHub
+
