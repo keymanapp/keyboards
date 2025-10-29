@@ -3,31 +3,31 @@
   $pagename  = $pagetitle;
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
   $pagestyle = <<<END
-table { border: 0; cellspacing: 0; cellpadding: 0; border-collapse: collapse; }
-th, td { border: solid #bfbfbf 1.0pt; border-collapse: collapse; }
-th, td { width: 54; text-align: center; }
-th { background: #95DCF7; }
-* {
-  box-sizing: border-box;
-}
+  table { border: 0; cellspacing: 0; cellpadding: 0; border-collapse: collapse; }
+  th, td { border: solid #bfbfbf 1.0pt; border-collapse: collapse; }
+  th, td { width: 54; text-align: center; }
+  th { background: #95DCF7; }
+  * {
+    box-sizing: border-box;
+  }
 
-.row {
-  margin-left:-5px;
-  margin-right:-5px;
-}
-  
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
+  .row {
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+    
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   END;
   
   require_once('header.php');
