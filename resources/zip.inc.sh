@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#shellcheck shell=bash
 
 #
 # This script contains zip utilities to function for all environments.
@@ -30,21 +30,21 @@ function add_zip_files() {
     case "$1" in
       -r)
         # recursive paths - Identical flag to zip and 7z
-        ZIP_FLAGS+=($1)
-        SEVENZ_FLAGS+=($1)
+        ZIP_FLAGS+=("$1")
+        SEVENZ_FLAGS+=("$1")
         shift
         ;;
       -x@*)
         # Filename for a file containing list of files to exclude from the archive - Identical flag to zip and 7z
-        ZIP_FLAGS+=($1)
-        SEVENZ_FLAGS+=($1)
+        ZIP_FLAGS+=("$1")
+        SEVENZ_FLAGS+=("$1")
         shift
         ;;
 
       # Zip flags that have a corresponding 7z flag
       -q)
         # quiet mode  -> disable progress indicator, set output log level 0
-        ZIP_FLAGS+=($1)
+        ZIP_FLAGS+=("$1")
         SEVENZ_FLAGS+=("-bd")
         SEVENZ_FLAGS+=("-bb0")
         shift
@@ -54,7 +54,7 @@ function add_zip_files() {
         # -0 indicates no compression
         # -1 indicates low compression (fastest)
         # -9 indicates ultra compression (slowest)
-        ZIP_FLAGS+=($1)
+        ZIP_FLAGS+=("$1")
         if [[ $1 =~ -([0-9]) ]]; then
           SEVENZ_FLAGS+=("-mx${BASH_REMATCH[1]}")
         fi  
@@ -63,13 +63,13 @@ function add_zip_files() {
 
       -*)
         # Remaining zip flags that don't apply to 7z
-        ZIP_FLAGS+=($1)
+        ZIP_FLAGS+=("$1")
         shift
         ;;
 
       *)
         # files to include in the archive
-        INCLUDE+=($1)
+        INCLUDE+=("$1")
         shift
         ;;
     esac
@@ -100,7 +100,7 @@ function add_zip_files() {
 
   # Create archive
   # builder_echo_debug "${COMPRESS_CMD} ${SEVENZ_FLAGS[@]} ${ZIP_FLAGS[@]} ${ZIP_FILE} ${INCLUDE[@]}"
-  "${COMPRESS_CMD}" ${SEVENZ_FLAGS[@]} ${ZIP_FLAGS[@]} ${ZIP_FILE} ${INCLUDE[@]}
+  "${COMPRESS_CMD}" "${SEVENZ_FLAGS[@]}" "${ZIP_FLAGS[@]}" "${ZIP_FILE}" "${INCLUDE[@]}"
 
 }
 
