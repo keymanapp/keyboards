@@ -1,11 +1,14 @@
-<?php
-  $pagename = 'SIL Yi Keyboard Help';
-  $pagetitle = $pagename;
-  $pagestyle = <<<END
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>SIL Yi keyboard layout</title>
+ <style>
   table.inputSequences {  border: 1px solid #1C6EA4;  background-color: #FFFFFF; text-align: left;  border-collapse: collapse;}
   table.inputSequences td, table.inputSequences th {  border: 1px solid #FFFFFF;  padding: 3px 6px;  text-align:center;}
   table.inputSequences tr:nth-child(even) {  background: #D0E4F5;}
   table.inputSequences thead th {  font-weight: bold; }
+  /* table.inputSequences thead th:first-child {  border-left: none;} */
   table.inputSequences tfoot td {  font-size: 14px;}
   table.inputSequences tfoot .links {  text-align: right;}
   table.inputSequences tfoot .links a{  display: inline-block;  background: #1C6EA4;  color: #FFFFFF;  padding: 2px 8px; /* border-radius: 5px; */}
@@ -16,6 +19,9 @@
   p.centered+table {margin-top:2.0em; }
   .glyph.yi {font-family:'Microsoft Yi Baiti', 'Noto Sans Yi', NSimSun-18030, SimSun-18030, 'SIL Yi', Code2000; }
   table {table-layout: fixed; }
+/*  td:first-child, th:first-child {position:sticky;left:0;z-index:1;background-color:black;color: white; } */
+/*  thead tr th {position:sticky;top:0;background-color: black;color: white;} */
+/*  th:first-child, th:last-child {z-index:2;} */
   td { text-align: center; margin-left: 0.04in; margin-right: 0.04in; margin-top: 0.06in; margin-bottom: 0in }
   td.western { font-family: sans-serif }
   td.cjk { font-family: "Nuosu SIL" }
@@ -33,13 +39,12 @@
   th.cjk { font-family: sans-serif }
   th.ctl { font-family: sans-serif }
   kbd.cjk { font-family: "NSimSun", monospace }
-END;
-  require_once('header.php');
-?>
-
+ </style>
+</head>
+<body>
   <h1>SIL Yi 彝文键盘 - 移动和桌面平台使用<br>
       SIL Yi keyboard - Mobile & Desktop</h1>
-
+  
   <p>Mobile and desktop keyboards type Nuosu Yi syllables, Yi radicals, and full-width punctuation in Unicode encoding, viewable with fonts such as <a href="https://fonts.google.com/noto/specimen/Noto+Sans+Yi/">Noto Sans Yi</a> or <a href="https://software.sil.org/nuosu/">Nuosu SIL</a>.<br>
   用移动或者桌面键盘打凉山彝文音节字母、部首和全角标点符号，通过UNICODE编码字体显示。字体两种有<a href="https://fonts.google.com/noto/specimen/Noto+Sans+Yi/">Noto Sans Yi</a> 和 <a href="https://software.sil.org/nuosu/">Nuosu SIL</a>.</p>
   <h2>Mobile 移动平台</h2>
@@ -187,17 +192,17 @@ END;
    <td>Decimal point (full stop; period)<br>小数点</td>
   </tr>
   <tr>
-   <td>..</td>
+   <td>. .</td>
    <td class="glyph yi" title="U+3002 IDEOGRAPHIC FULL STOP">&#x3002;</td>
    <td>Ideographic full stop<br>句号</td>
   </tr>
   <tr>
-   <td>...</td>
+   <td>. . .</td>
    <td class="glyph yi" title="U+2026 HORIZONTAL ELLIPSIS">&#x2026;</td>
    <td>Ellipsis<br>省略号</td>
   </tr>
   <tr>
-   <td>....</td>
+   <td>. . . .</td>
    <td class="glyph yi" title="U+30FB KATAKANA MIDDLE DOT">&#x30FB;</td>
    <td>Middle dot in foreign names<br>间隔号</td>
   </tr>
@@ -222,12 +227,12 @@ END;
    <td>Right angle bracket<br>右单书名号</td>
   </tr>
   <tr>
-   <td>&lt;&lt;</td>
+   <td>&lt; &lt;</td>
    <td class="glyph yi" title="U+300A LEFT DOUBLE ANGLE BRACKET">&#x300a;</td>
    <td>Left double angle bracket<br>左书名号</td>
   </tr>
   <tr>
-   <td>&gt;&gt;</td>
+   <td>&gt; &gt;</td>
    <td class="glyph yi" title="U+300B RIGHT DOUBLE ANGLE BRACKET">&#x300b;</td>
    <td>Right double angle bracket<br>右书名号</td>
   </tr>
@@ -242,12 +247,12 @@ END;
    <td>Right single quotation mark<br>右单引号</td>
   </tr>
   <tr>
-    <td>``</td>
+    <td>` `</td>
    <td class="glyph yi" title="U+201C LEFT DOUBLE QUOTATION MARK">&#x201c;</td>
    <td>Left double quotation mark<br>左双引号</td>
   </tr>
   <tr>
-   <td>''</td>
+   <td>' '</td>
    <td class="glyph yi" title="U+201D RIGHT DOUBLE QUOTATION MARK">&#x201d;</td>
    <td>Right double quotation mark<br>右双引号</td>
   </tr>
@@ -257,12 +262,12 @@ END;
    <td>Fullwidth hyphen-minus<br>连字符减号</td>
   </tr>
   <tr>
-   <td>--</td>
+   <td>- -</td>
    <td class="glyph yi" title="U+2013 EN DASH">&#x2013;</td>
    <td>Joining dash (en dash) for a range of values<br>连接号</td>
   </tr>
   <tr>
-   <td>---</td>
+   <td>- - -</td>
    <td class="glyph yi" title="U+2014 EM DASH">&#x2014;</td>
    <td>Breaking dash (em dash) for a change of thought<br>破折号</td>
   </tr>
@@ -2378,3 +2383,5 @@ END;
   </tr>
  </tbody>
 </table>
+</body>
+</html>
