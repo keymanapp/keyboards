@@ -76,17 +76,18 @@ function add_zip_files() {
   done
 
   local COMPRESS_CMD=zip
-  if ! command -v zip 2>&1 > /dev/null; then
+  if ! command -v zip > /dev/null 2>&1; then
     # Fallback to 7z
     if [[ -z "${SEVENZ+x}" ]]; then
-      case "${OSTYPE}" in
-        "cygwin"|"msys")
-          SEVENZ="${SEVENZ_HOME}"/7z.exe
-          ;;
-        *)
-          SEVENZ=7z
-          ;;
-      esac
+      if builder_is_windows; then
+        if [[ -z "${SEVENZ_HOME+x}" ]]; then
+          SEVENZ="$(command -v 7z.exe)"
+        else
+          SEVENZ="${SEVENZ_HOME}/7z.exe"
+        fi
+      else
+        SEVENZ=7z
+      fi
     fi
 
     # 7z command to add files so clear zip flags
