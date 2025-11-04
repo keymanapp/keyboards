@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.312.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Bassa Vah</Name>
-    <Copyright URL="">Copyright © SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL Global</Copyright>
     <Author URL="">Lorna Evans</Author>
     <Version URL=""></Version>
-    <Description>This is a keyboard for the Bassa language using the Bassa Vah script. 
+    <Description URL="">This is a keyboard for the Bassa language using the Bassa Vah script. 
 This keyboard is based on the design found in one of the Unicode proposal documents. Feedback is welcomed.</Description>
   </Info>
   <Files>
@@ -106,15 +107,15 @@ This keyboard is based on the design found in one of the Unicode proposal docume
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Bassa Vah</Name>
       <ID>bassa_vah</ID>
-      <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Bass\NotoSansBassaVah-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Bass\NotoSansBassaVah-Bold.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSansBassaVah-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="bsq">Bassa</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Bass\NotoSansBassaVah-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

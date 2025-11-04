@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tawallammat Tifinagh (SIL)</Name>
-    <Copyright URL="">© 2017-2020 SIL International</Copyright>
-    <Description>This Tifinagh keyboard was developed to input characters for Tifinagh
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This Tifinagh keyboard was developed to input characters for Tifinagh
 scripts. You can use this keyboard with any Tifinagh Unicode font. This
 keyboard follows the Moroccan Tamazight Tifinagh keyboard specification
 plus additional keys needed for Tamajaq.</Description>
@@ -104,16 +105,40 @@ plus additional keys needed for Tamajaq.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tagmukay\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Bold.ttf</Name>
+      <Description>Font Tagmukay Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Regular.ttf</Name>
+      <Description>Font Tagmukay</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tawallammat Tifinagh (SIL)</Name>
       <ID>sil_tawallammat</ID>
-      <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ttq-Tfng">Tawallammat Tamajaq (Tifinagh)</Language>
         <Language ID="tzm-Tfng">Central Atlas Tamazight (Tifinagh)</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\sil\tagmukay\Tagmukay-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

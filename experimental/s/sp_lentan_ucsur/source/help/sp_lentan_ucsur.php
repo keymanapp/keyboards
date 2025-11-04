@@ -4,8 +4,6 @@
   $pagestyle = <<<END
     p, ol, ul, table { font: 10pt Tahoma; }
     th, td { padding-right: 2em; text-align: left; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
     /* SITELEN PONA */
     @font-face {
       font-family: "SitelenLukinLaFairfaxLili";

@@ -15,17 +15,17 @@ Haroi Keyboard is adapted from VNI.
 </p>
 <br/>
 
-<h1>Desktop Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 
-<h1>Mobile/Tablet Keyboard Layout</h1>
+<h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
-<h1>Letters with Tone Marks and Diacritics</h1>
+<h2>Letters with Tone Marks and Diacritics</h2>
 
-<h2>Tone Marks</h2>
+<h3>Tone Marks</h3>
 
 <p>Press any vowel key and then any numeral 1-5 to get the vowel with a tone mark. </p>
 <p>For example:</p>
@@ -47,7 +47,7 @@ Haroi Keyboard is adapted from VNI.
   
 </tbody></table>
 
-<h2>Vowel Qualities</h2>
+<h3>Vowel Qualities</h3>
 <p>Press any vowel key and then any numeral 6-8 to get the vowel with different vowel qualities. Some combinations are not possible.</p>
 <p>For example:</p>
 <ul style="font-family:'Charist SIL';">
@@ -64,7 +64,7 @@ Haroi Keyboard is adapted from VNI.
  <tr><td style="font-weight: bold; background-color: grey;">u</td><td>û</td><td>ư</td><td>ŭ</td></tr>
 </tbody></table>
 
-<h2>Vowel Quality and Tone Marks</h2>
+<h3>Vowel Quality and Tone Marks</h3>
 <p>To get a vowel with both vowel quality and tone mark, press the vowel then the number for vowel quality (i.e. 6, 7 or 8) then the number for tone mark (i.e. 1, 2, ,3 ,4 or 5).</p>
 <p>For example:</p>
 <ul style="font-family:'Charist SIL';">
@@ -91,7 +91,7 @@ Haroi Keyboard is adapted from VNI.
  <tr><td style="font-weight: bold; background-color: grey;">u8</td><td>ŭ́</td><td>ŭ̀</td><td>ŭ̉</td><td>ŭ̃</td><td>ụ̆</td></tr>
 </tbody></table>
 
-<h2>Other Characters</h2>
+<h3>Other Characters</h3>
 <ul style="font-family:'Charist SIL';">
 <li>d + 9 = đ </li> 
 <li>b + 9 = ƀ </li>
@@ -99,7 +99,7 @@ Haroi Keyboard is adapted from VNI.
 <li>c + 8 = č </li>
 </ul>
 
-<h2>Additional Strokes for Vowels</h2>
+<h3>Additional Strokes for Vowels</h3>
 <p>with vowel quality and shortening</p>
 <ul style="font-family:'Charist SIL';">
 <li>a68	> â̆</li>
