@@ -1,5 +1,9 @@
 Engram Change History
-====================
+==========================
+
+2.2 (2025-10-31)
+----------------
+* engram is superceded by the engram_en layout.
 
 2.1 (2024-08-30)
 ----------------
