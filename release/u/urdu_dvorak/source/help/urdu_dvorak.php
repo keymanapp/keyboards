@@ -11,15 +11,12 @@
 <img src="hindi_urdu_alphabet.png" style="width:40%; height:auto;" alt="" srcset=""><br>
 
 <h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift alt alt-shift'>
+</div>
 
-<img src="typing_layout.png" alt="" srcset=""><br>
-<img src="typing_layout_shift.png" alt="" srcset=""><br>
-<img src="typing_layout_alt.png" alt="" srcset=""><br>
-<img src="typing_layout_altshift.png" alt="" srcset=""><br>
+<h2>Mobile/Phone Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<h2>Mobile Desktop Layout</h2>
-
-<img src="mobile_layout.png" alt="" srcset=""><br>
-<img src="mobile_shift_layout.png" alt="" srcset=""><br>
-<img src="mobile_numbers_layout.png" alt="" srcset=""><br>
-<img src="mobile_symbols_layout.png" alt="" srcset=""><br>
+<div id='osk-phone' data-states='default shift numbers symbols'>
+</div>

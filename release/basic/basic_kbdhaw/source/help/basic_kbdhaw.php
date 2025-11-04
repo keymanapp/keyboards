@@ -8,8 +8,8 @@
 ?>
 
 
-<p style='margin: 16px 0 0 0'>
-Hawaiian Basic keyboard 1.0 is generated from template.
+<p>
+The keyboard layout follows the Windows 10 Hawaiian Basic keyboard layout.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>

@@ -1,5 +1,9 @@
 Tchad QWERTY Keyboard Change History
 =======================
+5.3.4
+------------------
+* Improved web integration: updated CSS
+  addition of the line: text aligned for PHP display
 
 5.3.3 (11 Apr 2025)
 ------------------

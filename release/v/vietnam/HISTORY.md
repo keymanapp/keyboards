@@ -1,6 +1,29 @@
 vietnam Change History
 ====================
 
+2.0.3 (2025-10-06)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyu" vowel
+
+2.0.2 (2025-09-12)
+----------------
+* Updated by cathaylab
+* fixing bug of keyboard codes
+
+2.0.1 (2025-07-12)
+----------------
+* Updated by cathaylab
+* fixing several bugs of keyboard codes
+
+2.0 (2025-07-03)
+----------------
+* Updated by cathaylab
+* significantly shortened the codes
+* deleted "iun" + "n" > "ương" rule
+* fixing several bugs in generation
+* improved the generation order of double pressing "n" for generate "nh", to avoid unnecessary generation.
+
 1.0.8 (2025-05-30)
 ----------------
 * Updated by cathaylab

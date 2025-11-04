@@ -1,15 +1,11 @@
 <?php 
   $pagename = 'Multi Pak Phonetic Keyboard Help';
-  $pagetitle = 'Multi Pak Phonetic Keyboard Help';
-  // Header we will tidy up later  
+  $pagetitle = $pagename;
   require_once('header.php');
-
-
 ?>
 
-
 <p>
-This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> designed for the following languages: <b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.
+This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> designed for the following languages: <b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu</b>.
 </p>
 
 
