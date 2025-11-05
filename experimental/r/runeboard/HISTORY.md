@@ -1,5 +1,9 @@
 Runeboard Change History
 ====================
+4.0 (2025-11-03)
+----------------
+* Repositioned various keys.
+
 3.0 (2024-07-11)
 ----------------
 * Removed duplicate character ᛅ.
