@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Initial version
 */
-  require_once('servervars.php');
   $pagename = 'Tamil Keyboards Help';
   $pagetitle = 'Tamil Keyboards Help';
   $style = '.lang2 {font-size:130%}';

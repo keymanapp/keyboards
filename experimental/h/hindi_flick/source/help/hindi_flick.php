@@ -22,7 +22,8 @@
     scripts (also known as <em>abugidas</em>) like Devanagari.</p>
  
   <h2>Functionality and Usage</h2>
-  <div id='osk-phone' data-states="default abc_noshift shift numeric"
+  
+  <div id='osk-phone' data-states='default abc_noshift shift numeric'>
   </div>
   
   <p>Each <em>akshara</em> (syllable) key is equipped with the ability to produce not only the character on the key, but
@@ -34,6 +35,7 @@
   <p>Each of these options can also be accessed by holding the key for at least a second, which brings up a list of the
     available characters to choose from.</p>
   <p>Finally, you can also cycle through the characters available by tapping on the key multiple times.</p>
+
   <h3>Vowels (<em>Svara</em>)</h3>
   <p>Vowels and their diacritics play a central role in designating sounds to consonants in most Indian scripts.
   <p>If you notice, the only vowels available on the key are the short vowels अ, इ, उ, ए, ओ (with additional, less used
@@ -45,6 +47,7 @@
     as the previous character (except अ, which outputs the ा diacritic, as each consonant has the अ sound by default and
     ा is probably one of the most frequently used matras). The keyboard has rules in place to dictate what should happen
     in different scenarios. A few of these include:</p>
+
   <ul>
     <li>If a <em>consonant</em> is found before adding a vowel, the vowel's diacritic is added. For example, क + इ = कि.
     </li>
@@ -55,7 +58,8 @@
     <li>If an <em>anusvara</em> (ं), <em>chandrabindu</em> (ँ) or <em>visarga</em> (ः) is found before adding a vowel,
       the whole new vowel is placed. For example, कं + उ = कंउ.</li>
   </ul>
-  <h4>Matra to Svara Key (े↔ए)</h4>
+
+  <h3>Matra to Svara Key (े↔ए)</h3>
   <p>Sometimes, it is not desired to put a matra right after a consonant, but rather a full vowel. This is where the
     <strong>े↔ए</strong> key comes in. It converts the matra to a full vowel and vice versa. For example, क + े = के,
     and pressing <strong>े↔ए</strong> makes it कए.</p>
@@ -73,5 +77,3 @@
   <p>A particular note for nuqtas, the order utilised (as with other parts of the keyboard) is consonant + nuqta +
     matra. Even if you add a matra first, the nuqta will be placed after the consonant. This is to ensure that the nuqta
     is always placed after the consonant, as is the norm in Devanagari.</p>
-
-  <p>Copyright © SIL Global</p>

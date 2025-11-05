@@ -1,9 +1,7 @@
 Jorai Keyboard
 =====================
 
-Copyright (C) 2018-2020 Jorai Bible Association
-
-Version 1.0.4
+Copyright (C) Jorai Bible Association
 
 __DESCRIPTION__
 The Jorai keyboard was designed for the Jorai (or Jarai) language of Viet Nam.

@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Tamil99 Extended (deprecated) Keyboard Help';
   $pagetitle = 'Tamil99 Extended (deprecated) Keyboard Help';
   $style = 'lang2 {font-size:130%}';

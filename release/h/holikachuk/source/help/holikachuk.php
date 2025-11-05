@@ -6,7 +6,7 @@
 
 <p>A keyboard for our partners 7000 Languages</p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <!-- Insert Keyboard Layout Images or HTML here -->
 <img

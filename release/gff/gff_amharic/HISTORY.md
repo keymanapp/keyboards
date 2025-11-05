@@ -1,5 +1,25 @@
 gff_amharic Change History
 ==========================
+3.3 (26 Jul 2025)
+-------------------
+* Update of the Waldba fonts.
+* No longer packaging the older WashRa fonts.
+* Adding Agbalumo and Menbere fonts.
+* Expanded `Description` section in the KPS file.
+* Removed the `ኝ` hint on the `ን/ኝ` key (mobile).
+
+3.2.3 (23 Jun 2025)
+-------------------
+* fixed nextlayer targets on multitap keys of the "extra" layers.
+
+3.2.2 (15 Jun 2025)
+-------------------
+* fixes to glow keys for alternative/secondary letters.
+* alternative/secondary letters are now presented on their respective layers,
+  the primary letter appears as the hint.
+* active key shade reset to sadis-key color.
+
+
 3.2.1 (18 May 2025)
 -------------------
 * mobile: "glow keys" introduced on a trial basis.
