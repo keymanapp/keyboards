@@ -1,6 +1,11 @@
 Naija Type Keyboard Change History
 =======================
 
+66 (2025-Nov-04)
+--------
+* Bugfix for flick down shifted layer (2 not @) on touch keyboard.
+* Doc updates to make welcome work better on desktop.
+
 65 (2025-Jul-24)
 --------
 * Added 02C4 (˄) as a modifier of ^ circumflex (shift-6) as a tone symbol for grh Tugbiri.
