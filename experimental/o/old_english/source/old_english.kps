@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.243.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Old English</Folder>
@@ -23,7 +24,7 @@
     <Author URL="">ᚱᚢᚾ᛫ᛗᚫᚾ</Author>
     <Version URL=""></Version>
     <WebSite URL="runerevival.online">runerevival.online</WebSite>
-    <Description>The Old English keyboard is designed for typing the Old English
+    <Description URL="">The Old English keyboard is designed for typing the Old English
 language, using the Latin script, with a standard 104- or 105-key
 layout. It can also be used to type Middle English. It contains all the
 characters needed to type in Old English and Middle English, including
@@ -66,12 +67,6 @@ on it.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>fonts\Catrinity.otf</Name>
-      <Description>Font Catrinity</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
       <Name>old_english.ico</Name>
       <Description>File old_english.ico</Description>
       <CopyLocation>0</CopyLocation>
@@ -107,13 +102,24 @@ on it.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</Name>
+      <Description>Font Catrinity</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Old English</Name>
       <ID>old_english</ID>
-      <Version>1.0</Version>
-      <DisplayFont>fonts\Catrinity.otf</DisplayFont>
+      <OSKFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</DisplayFont>
       <Languages>
         <Language ID="ang">Old English (ca. 450-1100)</Language>
         <Language ID="enm">Middle English (1100-1500)</Language>
