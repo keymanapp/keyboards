@@ -1,5 +1,11 @@
 Runeboard Change History
 ====================
+4.1 (2025-11-07)
+----------------
+* Fixed onscreen layout errors.
+* Added 1 key to shift+RAlt layer on desktop.
+* Changed longpress options on mobile due to visibility issues.
+
 4.0 (2025-11-03)
 ----------------
 * Repositioned various keys.

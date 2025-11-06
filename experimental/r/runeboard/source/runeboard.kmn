@@ -8,7 +8,7 @@ store(&TARGETS) 'any'
 store(&COPYRIGHT) '© MMXXV ᚱᚢᚾ᛫ᛗᚫᚾ'
 store(&NAME) 'Runes'
 store(&MESSAGE) 'The Runeboard is designed for typing the English language in Anglo-Saxon Futhorc runes & Proto-Germanic in Elder Futhark runes. However, as it includes the entire Unicode Runic Block, it can also be used for typing a variety of Germanic languages in runes, including Old Norse. Thanks for installing. To learn how to write today' U+0027 's English in runes, visit: https://runerevival.online & watch Rune Revival at: https://www.youtube.com/@LearnRunes'
-store(&KEYBOARDVERSION) '4.0'
+store(&KEYBOARDVERSION) '4.1'
 store(&BITMAP) 'runeboard.ico'
 store(&VISUALKEYBOARD) 'runeboard.kvks'
 store(&LAYOUTFILE) 'runeboard.keyman-touch-layout'
@@ -143,7 +143,7 @@ group(main) using keys
 + [RALT K_R] > 'ᛸ'
 + [RALT K_T] > 'ᛱ'
 + [RALT K_Y] > 'ᚡ'
-+ [RALT K_U] > nul
++ [RALT K_U] > nul c Reserved for Dalecarlian G-rune
 + [RALT K_I] > 'ᚴ'
 + [RALT K_O] > 'ᛧ'
 + [RALT K_P] > 'ᛲ'
@@ -168,13 +168,14 @@ group(main) using keys
 + [RALT K_X] > 'ᚭ'
 + [RALT K_C] > 'ᛴ'
 + [RALT K_V] > 'ᛍ'
-+ [RALT K_B] > nul
++ [RALT K_B] > nul c Reserved for Dalecarlian P-rune
 + [RALT K_N] > 'ᛓ'
 + [RALT K_M] > 'ᛙ'
 + [RALT K_COMMA] > ','
 + [RALT K_PERIOD] > '.'
-+ [RALT K_SLASH] > nul
++ [RALT K_SLASH] > nul c Reserved for Dalecarlian Z-rune
 
++ [RALT K_BKQUOTE] > '᛫᛫᛫' U+200B
 + [RALT SHIFT K_1] > 'Ⅰ'
 + [RALT SHIFT K_2] > 'Ⅴ'
 + [RALT SHIFT K_3] > 'Ⅹ'
