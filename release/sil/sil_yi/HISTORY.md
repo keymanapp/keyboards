@@ -3,7 +3,7 @@ SIL Yi Keyboard Change History
 
 2.0 (06 Nov 2025)
 --------------------
-* Add tablet touch layout
+* Add tablet touch layout (and remove phone touch layout)
 
 1.3.1 (21 Oct 2022)
 --------------------
@@ -75,3 +75,4 @@ Liangshan Yi, Standard Yi
 -----------------
 * Intial version of keyboard layout for Keyman 5.0
 * calls Unicode codepoints for Yi characters
+
