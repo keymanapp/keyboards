@@ -1,7 +1,7 @@
 SIL Yi Keyboard Change History
 =======================
 
-1.3.19 (28 Oct 2025) [to become 2.0]
+2.0 (06 Nov 2025)
 --------------------
 * Add tablet touch layout
 

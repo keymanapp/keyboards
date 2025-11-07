@@ -39,12 +39,12 @@ END;
 
   <h1>SIL Yi 彝文键盘 - 移动和桌面平台使用<br>
       SIL Yi keyboard - Mobile & Desktop</h1>
-
+  
   <p>Mobile and desktop keyboards type Nuosu Yi syllables, Yi radicals, and full-width punctuation in Unicode encoding, viewable with fonts such as <a href="https://fonts.google.com/noto/specimen/Noto+Sans+Yi/">Noto Sans Yi</a> or <a href="https://software.sil.org/nuosu/">Nuosu SIL</a>.<br>
-  用移动或者桌面键盘打凉山彝文音节字母、部首和全角标点符号，通过UNICODE编码字体显示。字体两种有<a href="https://fonts.google.com/noto/specimen/Noto+Sans+Yi/">Noto Sans Yi</a> 和 <a href="https://software.sil.org/nuosu/">Nuosu SIL</a>.</p>
+  用移动或者桌面键盘打凉山彝文音节字母、部首和全角标点符号，通过 Unicode 编码字体显示。字体两种有 <a href="https://fonts.google.com/noto/specimen/Noto+Sans+Yi/">Noto Sans Yi</a> 和 <a href="https://software.sil.org/nuosu/">Nuosu SIL</a>。</p>
   <h2>Mobile 移动平台</h2>
   <p>On mobile platforms, choose a Yi Pinyin consonant then vowel+tone. Syllables that begin with a vowel have null (Ø) consonant. This method lets you type any Yi syllable character with just two keystrokes.<br>
-  在移动平台上，先按彝语拼音声母一建，再按韵母声调一键。以元音开头的音节有零辅音(Ø)。此方法让用户只需按两次键即可输入任何彝语音节字符。</p>
+  在移动平台上，先按彝语拼音声母一键，再按韵母声调一键。以元音开头的音节有零辅音(Ø)。此方法让用户只需按两次键即可输入任何彝语音节字符。</p>
   <table>
     <tr>
       <th>Consonant<br>声母</th>
@@ -62,41 +62,41 @@ END;
       <td class="glyph yi" title="U+A396: YI SYLLABLE NRA">ꎖ</td>
     </tr>
   </table>
-  <p>In the default layer and the numeric layer, the backspace key removes the last code point that was typed. In other layers, the backspace key returns to the default layer without typing a character.<br>
-  在默认层和数字层中，退格键会删除最后一个输入的代码点。在其他层中，退格键会返回到默认层，而无需输入任何字符。</p>
-  <p>To type space, touch the <b>#.?</b> key to go to the numeric layer, then touch the key in the upper left corner. (The space key is automatically labelled with the keyboard name "sil_yi".)<br>
-  要输入空格，请触摸 <b>#.?</b> 键转到数字层，然后输入左上角的键。（空格键会自动标记为键盘名称“sil_yi”。）</p>
-  <p>To type a Yi radical, long press the <b>#.?</b> key, then touch a Yi radical. To type a variant form of a radical, long press the base form of the radical and choose the desired variant.<br>
-  要输入彝族部首，请长按 <b>#.?</b> 键，然后触摸该部首。要输入部首的异体字，请长按该部首的本字。</p>
+  <p>In the default layer and the numeric layer, <kbd>backspace</kbd> removes the last code point that was typed. In other layers, <kbd>backspace</kbd> returns to the default layer without typing a character.<br>
+  在默认层和数字层中，<kbd>退格</kbd>键会删除最后一个输入的代码点。在其他层中，<kbd>退格</kbd>键会返回到默认层，而无需输入任何字符。</p>
+  <p>To type space, touch <kbd>#.?</kbd> to go to the numeric layer, then touch the key in the upper left corner, labeled with the keyboard name.<br>
+  要输入空格，请触摸 <kbd>#.?</kbd> 键转到数字层，然后输入左上角的键。（<kbd>空格</kbd>键带着键盘名标记。）</p>
+  <p>To type a Yi radical, long press <kbd>#.?</kbd> and slide onto <kbd>꒐꒑꒒</kbd> to open the radicals layer. Press a radical key to enter it, or long press the base form of a radical and slide onto the desired form. Press <kbd>#.?</kbd> to return to the numeric layer.<br>
+  要输入彝文部首，长按 <kbd>#.?</kbd> 键，选 <kbd>꒐꒑꒒</kbd> 打开部首层。按所需的部首键或者长按部首的基本形式，滑动到所需的形式即可输入。按 <kbd>#.?</kbd> 键返回数字层。</p>
   <h2>Desktop 桌面平台</h2>
-  <p>Type Latin letters to spell a syllable in Yi Pinyin, then <kbd>space</kbd> to enter the syllable character. Type "w" + <kbd>space</kbd> to enter the syllable iteration mark ꀕ. To type a Yi radical, append "b" (for `ꀨ bop') to its Yi Pinyin name. See table "Yi radicals" below. <br>
-  按照彝语拼音输入拉丁字母拼写彝语音节，然后按空格键输入音节字符。输入“w”+“空格”输入音节重叠符号“ꀕ”。要输入彝文部首，请在其彝语拼音名称后添加“b”（代表“ꀨ bop”），参见下面“彝文部首”表。</p>
+  <p>Type Latin letters to spell a syllable in Yi Pinyin, then <kbd>space</kbd> to enter the syllable character. (In the <i>Standard Yi Syllabary Table</i> below, mouse over a Yi syllable character to see its code point and name.) Type <kbd>w</kbd> + <kbd>space</kbd> to enter the syllable iteration mark “ꀕ”. To type a Yi radical, append “b” (for ‘ꀨ bop’) to its Yi Pinyin name. See table “Yi radicals” below. <br>
+  按照彝拼音输入拉丁字母拼写彝语音节，然后按 <kbd>空格</kbd> 输入音节字符。（在下面《规范彝文字表》中，将鼠标悬停在彝文字符上，即可查看其码位和名称。）输入 <kbd>w</kbd> + <kbd>空格</kbd> 输入音节重叠符号 “ꀕ”。要输入彝文部首，请在其彝语拼音名称后添加 “b”（代表‘ꀨ bop’），参见下面“彝文部首”表。</p>
   <table>
     <tr>
       <th>Input<br>按键</th>
       <th>Display<br>显示</th>
     </tr>
     <tr>
-      <td>i + e + t + <kbd>space</kbd></td>
+      <td><kbd>i</kbd> + <kbd>e</kbd> + <kbd>t</kbd> + <kbd>space</kbd></td>
       <td class="glyph yi" title="U+A004: YI SYLLABLE IET">ꀄ</td>
     </tr>
     <tr>
-      <td>n + r + a + <kbd>space</kbd></td>
+      <td><kbd>n</kbd> + <kbd>r</kbd> + <kbd>a</kbd> + <kbd>space</kbd></td>
       <td class="glyph yi" title="U+A396: YI SYLLABLE NRA">ꎖ</td>
     </tr>
     <tr>
-      <td>w + <kbd>space</kbd></td>
+      <td><kbd>w</kbd> + <kbd>space</kbd></td>
       <td class="glyph yi" title="U+A015">ꀕ</td>
     </tr>
     <tr>
-      <td>z + o + t + b + <kbd>space</kbd></td>
+      <td><kbd>z</kbd> + <kbd>o</kbd> + <kbd>t</kbd> + <kbd>b</kbd> + <kbd>space</kbd></td>
       <td class="glyph yi" title="U+A4AB: YI RADICAL ZOT">꒫</td>
     </tr>
   </table>
   
   <h2>Typing punctuation 输入标点符号</h2>
-  <p>Note the keystrokes at the bottom of the list for typing book title brackets and left and right Chinese quotation marks. For instance, typing two left angle brackets in a row will produce a Chinese left double book title bracket. Typing a backslash produces a Chinese dunhao. Typing two left single quotes in a row produces a full-width left double quotation mark.<br>
-  按照下面的引导表打建输入彝文标点符号。例如：按两次左尖括号就输入左书名号；打输反斜杠会生成顿号。连续输入两个左单引号会生成全角左双引号。</p>
+  <p>Note the keystrokes for typing book title brackets and fullwidth quotation marks. For instance, typing two left angle brackets in a row produces an opening double book title bracket. Typing backslash produces an ideographic comma (顿号 dùnhào). Typing two left single quotes (back ticks) in a row produces a fullwidth left double quotation mark. In the punctuation table below, mouse over a mark in the “Display” column to see its code point and name.<br>
+  按照下面的引导表打键输入彝文标点符号。例如：按两次左单书名号就输入左书名号；打输反斜杠会生成顿号。连续输入两个左单引号会生成全角左双引号。在下面的标点符号表中，将鼠标悬停在“显示”列中的符号上，即可查看其码位和名称。</p>
 <table>
  <thead>
   <tr>
@@ -107,97 +107,22 @@ END;
  </thead>
  <tbody>
   <tr>
-   <td>!</td>
-   <td class="glyph yi" title="U+FF01 FULLWIDTH EXCLAMATION MARK">&#xff01;</td>
-   <td>Fullwidth exclamation mark<br>感叹号</td>
-  </tr>
-  <tr>
-   <td>?</td>
-   <td class="glyph yi" title="U+FF1F FULLWIDTH QUESTION MARK">&#xff1f;</td>
-   <td>Fullwidth question mark<br>问号</td>
-  </tr>
-  <tr>
-   <td>(</td>
-   <td class="glyph yi" title="U+FF08 FULLWIDTH LEFT PARENTHESIS">&#xff08;</td>
-   <td>Fullwidth left parenthesis<br>左括号</td>
-  </tr>
-  <tr>
-   <td>)</td>
-   <td class="glyph yi" title="U+FF09 FULLWIDTH RIGHT PARENTHESIS">&#xff09;</td>
-   <td>Fullwidth right parenthesis<br>右括号</td>
-  </tr>
-  <tr>
-   <td>[</td>
-   <td class="glyph yi" title="U+FF3B FULLWIDTH LEFT SQUARE BRACKET">&#xff3b;</td>
-   <td>Fullwidth left square bracket<br>左方括号</td>
-  </tr>
-  <tr>
-   <td>[ [</td>
-   <td class="glyph yi" title="U+3010 LEFT BLACK LENTICULAR BRACKET">&#x3010;</td>
-   <td>Fullwidth left lenticular bracket<br>左黑括号</td>
-  </tr>
-  <tr>
-   <td>]</td>
-   <td class="glyph yi" title="U+FF3D FULLWIDTH RIGHT SQUARE BRACKET">&#xff3d;</td>
-   <td>Fullwidth right square bracket<br>右方括号</td>
-  </tr>
-  <tr>
-   <td>] ]</td>
-   <td class="glyph yi" title="U+3011 RIGHT BLACK LENTICULAR BRACKET">&#x3011;</td>
-   <td>Fullwidth right lenticular bracket<br>右黑括号</td>
-  </tr>
-  <tr>
-   <td>|</td>
-   <td class="glyph yi" title="U+FF5C FULLWIDTH VERTICAL LINE">&#xff5c;</td>
-   <td>Fullwidth vertical line<br>垂直线标记</td>
-  </tr>
-  <tr>
-   <td>{</td>
-   <td class="glyph yi" title="U+FF5B FULLWIDTH LEFT CURLY BRACKET">&#xff5b;</td>
-   <td>Fullwidth left curly bracket<br>左花括号</td>
-  </tr>
-  <tr>
-   <td>}</td>
-   <td class="glyph yi" title="U+FF5D FULLWIDTH RIGHT CURLY BRACKET">&#xff5d;</td>
-   <td>Fullwidth right curly bracket<br>右花括号</td>
-  </tr>
-  <tr>
-   <td>:</td>
-   <td class="glyph yi" title="U+FF1A FULLWIDTH COLON">&#xff1a;</td>
-   <td>Fullwidth colon<br>冒号</td>
-  </tr>
-  <tr>
-   <td>;</td>
-   <td class="glyph yi" title="U+FF1B FULLWIDTH SEMICOLON">&#xff1b;</td>
-   <td>Fullwidth semicolon<br>分号</td>
-  </tr>
-  <tr>
-   <td>/</td>
-   <td class="glyph yi" title="U+FF0F FULLWIDTH SOLIDUS">&#xff0f;</td>
-   <td>Fullwidth solidus<br>正斜杠</td>
-  </tr>
-  <tr>
-   <td><kbd>space</kbd></td>
-   <td class="glyph yi" title="U+3000 IDEOGRAPHIC SPACE">&#x3000;</td>
-   <td>Ideographic space<br>空格</td>
-  </tr>
-  <tr>
    <td>.</td>
    <td class="glyph yi" title="U+002E FULL STOP">&#x002E;</td>
    <td>Decimal point (full stop; period)<br>小数点</td>
   </tr>
   <tr>
-   <td>..</td>
+   <td>. .</td>
    <td class="glyph yi" title="U+3002 IDEOGRAPHIC FULL STOP">&#x3002;</td>
    <td>Ideographic full stop<br>句号</td>
   </tr>
   <tr>
-   <td>...</td>
+   <td>. . .</td>
    <td class="glyph yi" title="U+2026 HORIZONTAL ELLIPSIS">&#x2026;</td>
    <td>Ellipsis<br>省略号</td>
   </tr>
   <tr>
-   <td>....</td>
+   <td>. . . .</td>
    <td class="glyph yi" title="U+30FB KATAKANA MIDDLE DOT">&#x30FB;</td>
    <td>Middle dot in foreign names<br>间隔号</td>
   </tr>
@@ -212,6 +137,96 @@ END;
    <td>Fullwidth comma<br>逗号</td>
   </tr>
   <tr>
+   <td>?</td>
+   <td class="glyph yi" title="U+FF1F FULLWIDTH QUESTION MARK">&#xff1f;</td>
+   <td>Fullwidth question mark<br>问号</td>
+  </tr>
+  <tr>
+   <td>!</td>
+   <td class="glyph yi" title="U+FF01 FULLWIDTH EXCLAMATION MARK">&#xff01;</td>
+   <td>Fullwidth exclamation mark<br>感叹号</td>
+  </tr>
+  <tr>
+   <td>(</td>
+   <td class="glyph yi" title="U+FF08 FULLWIDTH LEFT PARENTHESIS">&#xff08;</td>
+   <td>Fullwidth left parenthesis<br>左括号</td>
+  </tr>
+  <tr>
+   <td>)</td>
+   <td class="glyph yi" title="U+FF09 FULLWIDTH RIGHT PARENTHESIS">&#xff09;</td>
+   <td>Fullwidth right parenthesis<br>右括号</td>
+  </tr>
+  <tr>
+   <td>[</td>
+   <td class="glyph yi" title="U+FF3B FULLWIDTH LEFT SQUARE BRACKET">&#xff3b;</td>
+   <td>Fullwidth left square bracket<br>开始方括号</td>
+  </tr>
+  <tr>
+   <td>[ [</td>
+   <td class="glyph yi" title="U+3014 LEFT TORTOISE SHELL BRACKET">&#x3014;</td>
+   <td>Left tortoise shell bracket<br>开始六角括号</td>
+  </tr>
+  <tr>
+   <td>[ [ [</td>
+   <td class="glyph yi" title="U+3010 LEFT BLACK LENTICULAR BRACKET">&#x3010;</td>
+   <td>Fullwidth left lenticular bracket<br>开始方头括号</td>
+  </tr>
+  <tr>
+   <td>]</td>
+   <td class="glyph yi" title="U+FF3D FULLWIDTH RIGHT SQUARE BRACKET">&#xff3d;</td>
+   <td>Fullwidth right square bracket<br>结束方括号</td>
+  </tr>
+  <tr>
+   <td>] ]</td>
+   <td class="glyph yi" title="U+3015 RIGHT TORTOISE SHELL BRACKET">&#x3015;</td>
+   <td>Right tortoise shell bracket<br>结束六角括号</td>
+  </tr>
+  <tr>
+   <td>] ] ]</td>
+   <td class="glyph yi" title="U+3011 RIGHT BLACK LENTICULAR BRACKET">&#x3011;</td>
+   <td>Fullwidth right lenticular bracket<br>结束方头括号</td>
+  </tr>
+  <tr>
+   <td>|</td>
+   <td class="glyph yi" title="U+007C VERTICAL LINE">&#x007c;</td>
+   <td>Vertical line<br>垂直线标记</td>
+  </tr>
+  <tr>
+   <td>| |</td>
+   <td class="glyph yi" title="U+FF5C FULLWIDTH VERTICAL LINE">&#xff5c;</td>
+   <td>Fullwidth vertical line<br>全角垂直线标记</td>
+  </tr>
+  <tr>
+   <td>{</td>
+   <td class="glyph yi" title="U+FF5B FULLWIDTH LEFT CURLY BRACKET">&#xff5b;</td>
+   <td>Fullwidth left curly bracket<br>开始花括号</td>
+  </tr>
+  <tr>
+   <td>}</td>
+   <td class="glyph yi" title="U+FF5D FULLWIDTH RIGHT CURLY BRACKET">&#xff5d;</td>
+   <td>Fullwidth right curly bracket<br>结束花括号</td>
+  </tr>
+  <tr>
+   <td>:</td>
+   <td class="glyph yi" title="U+FF1A FULLWIDTH COLON">&#xff1a;</td>
+   <td>Fullwidth colon<br>冒号</td>
+  </tr>
+  <tr>
+   <td>;</td>
+   <td class="glyph yi" title="U+FF1B FULLWIDTH SEMICOLON">&#xff1b;</td>
+   <td>Fullwidth semicolon<br>分号</td>
+  </tr>
+  <tr>
+   <td>/</td>
+   <td class="glyph yi" title="U+002F SOLIDUS">&#x002f;</td>
+   <td>Solidus<br>分隔号（正斜杠）</td>
+  </tr>
+  <tr>
+   <td>/ /</td>
+   <td class="glyph yi" title="U+FF0F FULLWIDTH SOLIDUS">&#xff0f;</td>
+   <td>Fullwidth solidus<br>全角分隔号（全角正斜杠）</td>
+  </tr>
+  <tr>
    <td>&lt;</td>
    <td class="glyph yi" title="U+3008 LEFT ANGLE BRACKET">&#x3008;</td>
    <td>Left angle bracket<br>左单书名号</td>
@@ -222,12 +237,12 @@ END;
    <td>Right angle bracket<br>右单书名号</td>
   </tr>
   <tr>
-   <td>&lt;&lt;</td>
+   <td>&lt; &lt;</td>
    <td class="glyph yi" title="U+300A LEFT DOUBLE ANGLE BRACKET">&#x300a;</td>
    <td>Left double angle bracket<br>左书名号</td>
   </tr>
   <tr>
-   <td>&gt;&gt;</td>
+   <td>&gt; &gt;</td>
    <td class="glyph yi" title="U+300B RIGHT DOUBLE ANGLE BRACKET">&#x300b;</td>
    <td>Right double angle bracket<br>右书名号</td>
   </tr>
@@ -242,12 +257,12 @@ END;
    <td>Right single quotation mark<br>右单引号</td>
   </tr>
   <tr>
-    <td>``</td>
+    <td>` `</td>
    <td class="glyph yi" title="U+201C LEFT DOUBLE QUOTATION MARK">&#x201c;</td>
    <td>Left double quotation mark<br>左双引号</td>
   </tr>
   <tr>
-   <td>''</td>
+   <td>' '</td>
    <td class="glyph yi" title="U+201D RIGHT DOUBLE QUOTATION MARK">&#x201d;</td>
    <td>Right double quotation mark<br>右双引号</td>
   </tr>
@@ -257,12 +272,12 @@ END;
    <td>Fullwidth hyphen-minus<br>连字符减号</td>
   </tr>
   <tr>
-   <td>--</td>
+   <td>- -</td>
    <td class="glyph yi" title="U+2013 EN DASH">&#x2013;</td>
    <td>Joining dash (en dash) for a range of values<br>连接号</td>
   </tr>
   <tr>
-   <td>---</td>
+   <td>- - -</td>
    <td class="glyph yi" title="U+2014 EM DASH">&#x2014;</td>
    <td>Breaking dash (em dash) for a change of thought<br>破折号</td>
   </tr>
@@ -280,6 +295,11 @@ END;
    <td>$</td>
    <td class="glyph yi" title="U+00A5 YEN SIGN">&#x00a5;</td>
    <td>Chinese Yuan symbol<br>人民币符号</td>
+  </tr>
+  <tr>
+   <td><kbd>space</kbd></td>
+   <td class="glyph yi" title="U+3000 IDEOGRAPHIC SPACE">&#x3000;</td>
+   <td>Ideographic space<br>空格</td>
   </tr>
  </tbody>
 </table>
