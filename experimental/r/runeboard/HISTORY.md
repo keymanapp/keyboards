@@ -1,5 +1,11 @@
 Runeboard Change History
 ====================
+4.2 (2025-11-08)
+----------------
+* Removed excessive ZWJs.
+* Removed ZWSP after non-breaking hyphen.
+* Fixed issue on mobile caused by last update.
+
 4.1 (2025-11-07)
 ----------------
 * Fixed onscreen layout errors.
