@@ -1,10 +1,6 @@
 <?php
   $pagename = 'Lao Pali (US) Keyboard Help';
   $pagetitle = $pagename;
-  $pagestyle = <<<END
-  img {width:100% ;max-width:750px;}
-  kbd {font-weight: bold;}
-END;
   require_once('header.php');
 ?>
 
@@ -16,8 +12,7 @@ END;
   <p>
     The <b>SengBuhan</b> font also includes all characters output by the keyboard. 
   </p>
-  
-  <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-  <p><img alt="Lao Pali keyboard layout: normal (default) state" src="lao_pali_us_U.png"/></p>
-  <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-  <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_us_S.png"/></p>
+
+  <h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
