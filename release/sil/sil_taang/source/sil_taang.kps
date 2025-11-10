@@ -8,7 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,24 +18,36 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">TaangU</Name>
+    <Name URL="">Taang (SIL)</Name>
     <Copyright URL="">Copyright © SIL Global</Copyright>
     <Author URL="">Martin Hosken</Author>
-    <Description URL="">Taang Unicode</Description>
+    <Description URL="">Taang keyboard for Rumai</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
     <File>
-      <Name>..\build\taangu.kmx</Name>
+      <Name>..\build\sil_taang.kmx</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
+      <Name>welcome\welcome.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop_layout_default.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop_layout_shift.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -49,10 +61,16 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_taang.kvk</Name>
+      <Description>File sil_taang.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <ID>taangu</ID>
+      <ID>sil_taang</ID>
       <Languages>
         <Language ID="rbb">Rumai Palaung</Language>
       </Languages>

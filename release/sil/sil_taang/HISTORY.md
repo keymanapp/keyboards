@@ -1,10 +1,10 @@
-TaangU Change History
+SIL Taang Change History
 ====================
 
 
 1.2 (2025-11-12)
 ----------------
-* Rename to sil_taang keyboard package for Rumai language
+* Rename to sil_taang keyboard package for Rumai Palaung language
 * Revert punctuation keys for "()-=+'" and "
 * Add "[]" punctuation keys to shift layer
 
