@@ -1,11 +1,14 @@
-<?php
-  $pagename = 'SIL Yi Keyboard Help';
-  $pagetitle = $pagename;
-  $pagestyle = <<<END
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>SIL Yi keyboard layout</title>
+ <style>
   table.inputSequences {  border: 1px solid #1C6EA4;  background-color: #FFFFFF; text-align: left;  border-collapse: collapse;}
   table.inputSequences td, table.inputSequences th {  border: 1px solid #FFFFFF;  padding: 3px 6px;  text-align:center;}
   table.inputSequences tr:nth-child(even) {  background: #D0E4F5;}
   table.inputSequences thead th {  font-weight: bold; }
+  /* table.inputSequences thead th:first-child {  border-left: none;} */
   table.inputSequences tfoot td {  font-size: 14px;}
   table.inputSequences tfoot .links {  text-align: right;}
   table.inputSequences tfoot .links a{  display: inline-block;  background: #1C6EA4;  color: #FFFFFF;  padding: 2px 8px; /* border-radius: 5px; */}
@@ -16,6 +19,9 @@
   p.centered+table {margin-top:2.0em; }
   .glyph.yi {font-family:'Microsoft Yi Baiti', 'Noto Sans Yi', NSimSun-18030, SimSun-18030, 'SIL Yi', Code2000; }
   table {table-layout: fixed; }
+/*  td:first-child, th:first-child {position:sticky;left:0;z-index:1;background-color:black;color: white; } */
+/*  thead tr th {position:sticky;top:0;background-color: black;color: white;} */
+/*  th:first-child, th:last-child {z-index:2;} */
   td { text-align: center; margin-left: 0.04in; margin-right: 0.04in; margin-top: 0.06in; margin-bottom: 0in }
   td.western { font-family: sans-serif }
   td.cjk { font-family: "Nuosu SIL" }
@@ -33,10 +39,9 @@
   th.cjk { font-family: sans-serif }
   th.ctl { font-family: sans-serif }
   kbd.cjk { font-family: "NSimSun", monospace }
-END;
-  require_once('header.php');
-?>
-
+ </style>
+</head>
+<body>
   <h1>SIL Yi 彝文键盘 - 移动和桌面平台使用<br>
       SIL Yi keyboard - Mobile & Desktop</h1>
   
@@ -2398,3 +2403,5 @@ END;
   </tr>
  </tbody>
 </table>
+</body>
+</html>
