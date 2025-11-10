@@ -1,28 +1,27 @@
-masaba keyboard
-==============
+# masaba keyboard
 
-Description
------------
+Version 1.0.1
+
+## Description
+
 Masaba keyboard based on English (US). The Masaba script is not yet included in Unicode.
 
-Links
------
+## Links
 
-Copyright
----------
+## Copyright
+
 See [LICENSE.md](LICENSE.md)
 
-Supported Platforms
--------------------
- * Windows
- * macOS
- * Linux
- * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
+## Supported Platforms
 
+* Windows
+* macOS
+* Linux
+* Web
+* iPhone
+* iPad
+* Android phone
+* Android tablet
+* Mobile devices
+* Desktop devices
+* Tablet devices
