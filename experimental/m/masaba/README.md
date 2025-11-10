@@ -1,12 +1,12 @@
 # masaba keyboard
 
-Version 1.0.1
-
 ## Description
 
 Masaba keyboard based on English (US). The Masaba script is not yet included in Unicode.
 
 ## Links
+
+https://keyman.com/keyboards/masaba
 
 ## Copyright
 
