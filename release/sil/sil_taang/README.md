@@ -19,4 +19,4 @@ See [LICENSE.md](LICENSE.md)
 Supported Platforms
 -------------------
  * Desktop devices
-
+ * Web
