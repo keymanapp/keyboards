@@ -1,0 +1,60 @@
+﻿c la_rarler generated from template at 2025-11-13 21:11:07
+c with name "la rarler"
+store(&VERSION) '10.0'
+store(&NAME) 'la rarler'
+store(&COPYRIGHT) 'Copyright © la .ynis.'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'la_rarler.ico'
+store(&VISUALKEYBOARD) 'la_rarler.kvks'
+store(&LAYOUTFILE) 'la_rarler.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_H] > '󲢪'
++ [K_G] > '󲢲'
++ [K_F] > '󲢣'
++ [K_D] > '󲢱'
++ [K_S] > '󲢥'
++ [K_A] > '󲣀'
++ [K_P] > '󲢠'
++ [K_O] > '󲣃'
++ [K_I] > '󲣂'
++ [K_U] > '󲣄'
++ [K_Y] > '󲣅'
++ [K_T] > '󲢡'
++ [K_R] > '󲢴'
++ [K_E] > '󲣁'
++ [K_W] > '󲣋'
++ [K_Q] > '󲣊'
++ [K_J] > '󲢶'
++ [K_K] > '󲢢'
++ [K_L] > '󲢤'
++ [K_QUOTE] > '󲢪'
++ [K_Z] > '󲢵'
++ [K_X] > '󲢨'
++ [K_C] > '󲢦'
++ [K_V] > '󲢳'
++ [K_B] > '󲢰'
++ [K_N] > '󲢷'
++ [K_M] > '󲢧'
++ [K_PERIOD] > '󲢩'
++ [SHIFT K_A] > '󲣐'
++ [SHIFT K_E] > '󲣑'
++ [SHIFT K_I] > '󲣒'
++ [SHIFT K_O] > '󲣓'
++ [SHIFT K_U] > '󲣔'
++ [SHIFT K_Y] > '󲣕'
+c lowercase diphthongs
+"!" + [K_a] > U+F28C6   c ai
+"!" + [K_e] > U+F28C7   c ei
+"!" + [K_o] > U+F28C8   c oi
+"!" + [K_a] > U+F28C9   c au
+
+c uppercase diphthongs
+"?" + [K_I] > U+F28D6   c AI
+"?" + [K_I] > U+F28D7   c EI
+"?" + [K_I] > U+F28D8   c OI
+"?" + [K_U] > U+F28D9   c AU
+
