@@ -14,3 +14,12 @@ This keyboard is designed for Rumai Palaung language spoken in Myanmar and many 
 
 <div id='osk' data-states='default shift'>
 </div>
+
+<h2>Mobile Keyboard Layout</h2>
+
+<p>Press the top left key (dotted circle) to combine consonants.</p>
+<p>Flick down on the top row of keys on the default layer to get numbers.</p>
+<p>Several punctuation characters are on the longpress of the "." key.</p>
+
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
