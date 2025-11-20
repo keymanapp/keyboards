@@ -1,29 +1,31 @@
+<?xml version="1.0"?>
 <Package>
   <System>
     <KeymanDeveloperVersion>18.0.244.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
-
   <Options>
-    <ExecuteProgram></ExecuteProgram>
+    <ExecuteProgram/>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>atfn_logo_1.png</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
     <WelcomeFile>welcome.htm</WelcomeFile>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <MSIFileName/>
+    <MSIOptions/>
     <FollowKeyboardVersion/>
   </Options>
-
+  <StartMenu>
+    <Folder/>
+    <Items/>
+  </StartMenu>
   <Info>
-    <Version URL="">1.1</Version>
+    <Version URL=""/>
     <Name URL="">Temiskaming FN Algonquin</Name>
     <Copyright URL="">Copyright Temiskaming First Nation</Copyright>
-    <Description>Keyboard for the Algonquin language.</Description>
+    <Description URL="">Keyboard for the Algonquin language.</Description>
     <Author URL="mailto:rebekah.ingram@atfn.ca">Rebekah Ingram</Author>
     <WebSite URL="https://tfnadmin.wixsite.com/tfnadmin">https://tfnadmin.wixsite.com/tfnadmin</WebSite>
   </Info>
-
   <Files>
     <File>
       <Name>readme.htm</Name>
@@ -79,8 +81,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>images\keyboard_caps.png</Name>
+      <Description>File keyboard_caps.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>images\keyboard_small.png</Name>
+      <Description>File keyboard_small.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
-
   <Keyboards>
     <Keyboard>
       <ID>tfnalgonquin</ID>
@@ -89,4 +102,5 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <Strings/>
 </Package>
