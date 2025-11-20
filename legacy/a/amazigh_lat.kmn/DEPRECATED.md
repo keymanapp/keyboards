@@ -1,2 +1,1 @@
-This keyboard has been deprecated and replaced by legacy/a/amazigh_lat
-
+This keyboard has been deprecated and replaced by release/a/amazigh_latin
