@@ -1,9 +1,9 @@
-Amazigh Latin keyboard
+Amazigh Latin (SIL) keyboard
 ==============
 
 Description
 -----------
-This keyboard layout has been created to facilitate the Latin-script transcription of Amazigh languages. This is designed to support the systems of transcription commonly used amongst scholars of these languages. 
+This keyboard layout has been created to facilitate the Latin-script transcription of Amazigh languages. This is designed to support the systems of transcription commonly used amongst scholars of these languages. This keyboard specifically limits the possible characters to those that have meaning in the languages associated with this keyboard.
 
 Links
 -----

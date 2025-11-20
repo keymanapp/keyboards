@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Amazigh Latin Keyboard Help';
+  $pagename = 'Amazigh Latin (SIL) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
     samp {font-size:16pt; line-height:.8em;}
@@ -14,7 +14,7 @@ END;
 ?>
 
 <p>
-  This keyboard layout has been created to facilitate the Latin-script transcription of most of the Amazigh languages. This is designed to support the systems of transcription commonly used amongst scholars of these languages. 
+  This keyboard layout has been created to facilitate the Latin-script transcription of most of the Amazigh languages. This is designed to support the systems of transcription commonly used amongst scholars of these languages. This keyboard specifically limits the possible characters to those that have meaning in the languages associated with this keyboard.
 </p>
 <h2>To use</h2>
 
