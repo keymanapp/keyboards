@@ -10,12 +10,11 @@ For more information, contact: rebekah.ingram@atfn.ca
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/tfnalgonquin  
-(Will become active after acceptance into the Keyman repository.)
+Keyboard Homepage: https://keyman.com/keyboards/tfnalgonquin
 
 Copyright
 ---------
-© 2025–2029 Temiskaming First Nation  
+© Temiskaming First Nation  
 Released under the MIT License. See [LICENSE.md](LICENSE.md)
 
 Supported Platforms
@@ -31,5 +30,6 @@ Supported Platforms
 * Mobile devices
 * Desktop devices
 * Tablet devices
+
 
 
