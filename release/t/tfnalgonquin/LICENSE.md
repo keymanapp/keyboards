@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2025 Temiskaming First Nation
+Copyright © 2025 Timiskaming First Nation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
