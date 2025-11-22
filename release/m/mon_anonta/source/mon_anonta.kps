@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -22,7 +22,7 @@
     <Copyright URL="">© Anonta Mon</Copyright>
     <Author URL="mailto:monfonts@gmail.com">Anonta Mon</Author>
     <Version URL=""></Version>
-    <Description URL="">A Unicode keyboard for the Mon language (mnw).</Description>
+    <Description URL="">A Unicode keyboard for the Mon language (mnw).  The Pyidaungsu, and Padauk fonts are included in the keyboard package.</Description>
   </Info>
   <Files>
     <File>
@@ -104,12 +104,6 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Bold.ttf</Name>
-      <Description>Font Padauk Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Bold.ttf</Name>
       <Description>Font Padauk Book Bold</Description>
       <CopyLocation>0</CopyLocation>
@@ -118,12 +112,6 @@
     <File>
       <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</Name>
       <Description>Font Padauk Book</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</Name>
-      <Description>Font Padauk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -163,12 +151,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Medium.ttf</Name>
+      <Description>Font Padauk Book Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-SemiBold.ttf</Name>
+      <Description>Font Padauk Book SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Mon Anonta</Name>
       <ID>mon_anonta</ID>
-      <Version></Version>
       <OSKFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</DisplayFont>
       <Languages>

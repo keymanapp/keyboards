@@ -1,6 +1,10 @@
 Extended Urdu NP (SIL) Change History
 ====================
 
+6.0.1 (2025-Oct-17)
+----------------
+* Update Awami Nastaliq v3.400
+
 6.0 (2022-Mar-3)
 ----------------
 * Modified to move to Keyman github repository
