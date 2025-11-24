@@ -185,7 +185,9 @@ store(ou_wx)  'ơưƠƯ'
 any(ou_wx) + [K_X]           > index(ou_wx,1) U+0306 
 any(ou_wx) + [SHIFT K_X]     > index(ou_wx,1) U+0306 
 
-
-
+c Added per request on Nov 21, 2025
+store(iu) 'iuIU'
+store(circumflex_output) 'îûÎÛ'
+any(iu) + [SHIFT K_6] > index(circumflex_output,1)
 
 c EoF
