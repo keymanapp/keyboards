@@ -19,40 +19,39 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Yiddish Pasekh</Name>
-    <Copyright URL="">(C) Gyula Zsigri</Copyright>
-    <Description URL="">This keyboard layout is designed to type Yiddish by transliteration.
-This keyboard layout works best with a QWERTY (English) keyboard.</Description>
+    <Name URL="">Yiddish/Hebrew</Name>
+    <Copyright URL="">© Gyula Zsigri</Copyright>
+    <Description URL="">This layout, useful for both Yiddish and Hebrew, is based on a design created by Mark David for UYIP which was based on the standard Hebrew keyboard used in Israel (which itself was created from earlier Yiddish typewriter keyboard layouts). A retrofited design which is of particular ease of use for those who are already proficient with a standard Israeli keyboard. This version was implemented for Keyman by Gyula Zsigri.</Description>
     <Author URL="">Gyula Zsigri</Author>
   </Info>
   <Files>
     <File>
-      <Name>..\build\yiddish_pasekh.js</Name>
-      <Description>File yiddish_pasekh.js</Description>
+      <Name>..\build\yiddish_hebrew.js</Name>
+      <Description>File yiddish_hebrew.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\yiddish_pasekh.kvk</Name>
-      <Description>File yiddish_pasekh.kvk</Description>
+      <Name>..\build\yiddish_hebrew.kvk</Name>
+      <Description>File yiddish_hebrew.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\build\yiddish_pasekh.kmx</Name>
-      <Description>Keyboard Yiddish Pasekh</Description>
+      <Name>..\build\yiddish_hebrew.kmx</Name>
+      <Description>Keyboard Yiddish/Hebrew</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>welcome\LayoutU_.png</Name>
       <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
@@ -69,28 +68,21 @@ This keyboard layout works best with a QWERTY (English) keyboard.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
-      <Description>Font KbdHebr Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <ID>yiddish_pasekh</ID>
-      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
+      <ID>yiddish_hebrew</ID>
       <Languages>
         <Language ID="yi">Yiddish</Language>
         <Language ID="yih">Western Yiddish</Language>
@@ -98,8 +90,7 @@ This keyboard layout works best with a QWERTY (English) keyboard.</Description>
     </Keyboard>
   </Keyboards>
   <RelatedPackages>
-    <RelatedPackage ID="yidish2k" Relationship="deprecates"/>
-    <RelatedPackage ID="yiddish_hebrew"/>
+    <RelatedPackage ID="yiddish_pasekh"/>
   </RelatedPackages>
   <Strings/>
 </Package>
