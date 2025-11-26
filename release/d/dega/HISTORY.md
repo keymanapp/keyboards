@@ -1,6 +1,10 @@
 Dega Keyboard Change History
 ====================
 
+4.0 (2025-11-24)
+----------------
+* Add Û, û, Î, î, Û̆, û̆, Î̆, î̆
+
 3.1 (2024-04-23)
 ----------------
 * Add grave characters for Koho
