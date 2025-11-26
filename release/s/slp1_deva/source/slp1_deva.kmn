@@ -1,5 +1,5 @@
 ﻿store(&COPYRIGHT) '© The Sanskrit Library'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&BITMAP) 'slp1_deva.ico'
 store(&VISUALKEYBOARD) 'slp1_deva.kvks'
 store(&NAME) 'slp1_deva'
@@ -14,11 +14,11 @@ store(consonants) U+0915 U+0916 U+0917 U+0918 U+0919 U+091A U+091B U+091C U+091D
 store(extens) U+093E U+093F U+0940 U+0941 U+0942 U+0943 U+0944 U+0962 U+0963 U+0947 U+0948 U+094B U+094C
 
 store(vowels_set1) U+0905 U+0907 U+0909 U+090B U+090C
-store(vowels_set2) U+0906 U+0908 U+090A U+0960 U+0961 U+090F U+0910 U+091
+store(vowels_set2) U+0906 U+0908 U+090A U+0960 U+0961 U+090F U+0910 U+0913 U+0914
 store(extens_set1) U+093F U+0941 U+0943 U+0962
 store(extens_set2) U+093E U+0940 U+0942 U+0944 U+0963 U+0947 U+0948 U+094B U+094C
 
-store(keys_vowels) U+0041 U+0069 U+0049 U+0075 U+0055 U+0066 U+0046 U+0078 U+0058 U+0065 U+0045 U+006F U+004
+store(keys_vowels) U+0041 U+0069 U+0049 U+0075 U+0055 U+0066 U+0046 U+0078 U+0058 U+0065 U+0045 U+006F U+004F
 store(keys_modifiers) U+005C U+005E U+007E
 store(modifiers) U+0952 U+0951 U+0901
 store(HZVM) [SHIFT K_H] [SHIFT K_Z] [SHIFT K_V] [SHIFT K_M]
@@ -179,3 +179,4 @@ any(vowels_set2) U+0952 U+0969 U+0951 U+0952 + U+004D > index(vowels_set2, 1) U+
 any(consonants) any(extens_set1) U+0967 U+0951 U+0952 + U+004D > index(consonants, 1) index(extens_set1, 2) U+0967 U+094B U+0952 U+0902
 any(consonants) U+0967 U+0951 U+0952 + U+004D > index(consonants, 1) U+0967 U+0951 U+0952 U+0902
 any(consonants) any(extens_set2) U+0952 U+0969 U+0951 U+0952 + U+004D > index(consonants, 1) index(extens_set2, 2) U+0952 U+0969 U+0951 U+0952 U+0902
+
