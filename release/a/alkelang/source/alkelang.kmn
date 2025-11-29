@@ -1,0 +1,73 @@
+c Clavier Àlkèláŋg AZERTY mobile et tablet avec suggestions
+c Auteur : SOSA Developments
+c Version : 1.0
+c Licence : MIT
+c Langue : Bafut (bfd)
+c ------------------------------------------
+
+store(&NAME) 'Alkelang'
+store(&KeyboardVersion) '1.0'
+store(&COPYRIGHT) '(C) 2025 NIBANN ENGINEERING'
+store(&BITMAP) 'alkelang.ico'
+store(&LAYOUTFILE) 'alkelang.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&MESSAGE) 'Welcome to the Àlkèláŋg Keyboard'
+store(&KMW_EMBEDCSS) 'alkelang.css'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(digit) '0'..'9'
+
+store(ipa_shift_keys) 'ÆⱯΒƁÇƉƑƎƓɥŒɴɳΦᵁɄƔ⅄ƷƲʁɹʝɅƮƟʔʕƊ∅'
+store(ipa_keys) 'æɐβɓçɖƒɜɠɥœɲɳɸʊʉɣʎʒʋʁɹʝʌʈɵʔʕɗ∅'
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Stay on the numeric layer
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c --- Force le layer ipa ---
+    if(&newLayer = "") if(&layer = 'ipa') any(ipa_keys) > context
+
+    c --- Retour automatique du layer ipa_shift vers ipa ---
+    if(&newLayer = "") if(&layer = 'ipa_shift') any(ipa_shift_keys) > layer('ipa')
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c Détection du début de phrase uniquement pour les couches normales
+    if(&layer = 'default') > use(sentenceDetectionRules)
+    if(&layer = 'shift') > use(sentenceDetectionRules)
+
+group(sentenceDetectionRules) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+
+group(main) using keys
+
+c ===== SPECIAL =======
+    + [T_ENTER] > U+000A
+
+c ===== DEVISES =======
+    + [T_FCFA] > "FCFA"
+    + [T_CFA] > "CFA"
+    + [T_RFCFA] > "R₣"
+    + [T_GHC] > "GH₵"
+    + [T_EL] > "E£"
+    + [T_DZD] > "دج"
+    + [T_TND] > "د.ت"
