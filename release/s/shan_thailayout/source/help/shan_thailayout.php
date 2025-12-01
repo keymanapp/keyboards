@@ -14,10 +14,8 @@
 
 <h2>Keyboard Layout</h2>
 
-  <h3>Desktop Keyboard layouts</h3>
-  <div id='osk' data-states='default shift rightalt'>
-  </div>
+<h3>Desktop Keyboard layouts</h3>
+<img src="desktop_layout.png" alt="Shan (ThaiLayout) Desktop Layout" style="max-width: 100%; height: auto;" />
 
-  <h3>Touch Keyboard layouts</h3>
-  <div id='osk-tablet' data-states='default shift alt'>
-  </div>
+<h3>Touch Keyboard layouts</h3>
+<img src="tablet_layout.png" alt="Shan (ThaiLayout) Tablet Layout" style="max-width: 100%; height: auto;" />
