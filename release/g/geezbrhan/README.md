@@ -1,9 +1,7 @@
 Ge’ez-Berhan Keyboard
 ====================
 
-Copyright © 2021 Fr. Berhanemeskel M. Embaye OFM Cap.
-
-Version 1.0
+Copyright © Fr. Berhanemeskel M. Embaye OFM Cap.
 
 This is a Ge’ez Berhan mode (ዘግዕዝ-ብርሃን ቅጽ ተራ-ፊደል) that works as a computer-keyboard input.
 It requires a font supporting the Unicode 4.1 standard, “Abyssinica SIL” is recommended
@@ -17,5 +15,5 @@ Links
 
 Supported Platforms
 -------------------
- * Windows
+ * Desktop
 

@@ -1,9 +1,7 @@
 Lahu keyboard
 ==============
 
-(c) 2010-2020 Bob Prouty
-
-Version 1.1.1
+(c) Bob Prouty
 
 Description
 -----------

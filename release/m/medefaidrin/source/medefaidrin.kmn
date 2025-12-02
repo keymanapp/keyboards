@@ -1,0 +1,42 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Medefaidrin'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'medefaidrin.ico'
+store(&VISUALKEYBOARD) 'medefaidrin.kvks'
+store(&LAYOUTFILE) 'medefaidrin.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(UpperK) [SHIFT K_M] [SHIFT K_S] [SHIFT K_V] [SHIFT K_W] [SHIFT RALT K_T] [SHIFT K_Z] [SHIFT RALT K_K] [SHIFT K_P] \
+              [SHIFT K_T] [SHIFT K_G] [SHIFT K_F] [SHIFT K_I] [SHIFT K_K] [SHIFT K_A] [SHIFT K_J] [SHIFT K_E] \
+              [SHIFT K_B] [SHIFT K_C] [SHIFT K_U] [SHIFT RALT K_U] [SHIFT K_L] [SHIFT K_Q] [SHIFT K_H] [SHIFT RALT K_N] \
+              [SHIFT K_X] [SHIFT K_D] [SHIFT RALT K_O] [SHIFT K_N] [SHIFT K_R] [SHIFT K_O] [SHIFT RALT K_A] [SHIFT K_Y]
+
+store(UpperU) U+16E40 .. U+16E5F
+
+store(LowerK) [K_M] [K_S] [K_V] [K_W] [RALT K_T] [K_Z] [RALT K_K] [K_P] [K_T] [K_G] [K_F] [K_I] [K_K] [K_A] [K_J] [K_E] \
+              [K_B] [K_C] [K_U] [RALT K_U] [K_L] [K_Q] [K_H] [RALT K_N] [K_X] [K_D] [RALT K_O] [K_N] [K_R] [K_O] [RALT K_A] [K_Y]
+store(LowerU) U+16E60 .. U+16E7F
+
+store(DigitsK) "0123456789"
+store(DigitsU) U+16E80 .. U+16E89
+
+store(DigitsAltK) [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3]
+store(DigitsAltU) U+16E94 .. U+16E96
+
+store(NumK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(NumU) U+16E8A .. U+16E93
+
+store(PunctK) [K_COMMA] [K_PERIOD] [K_BKQUOTE] [SHIFT K_BKQUOTE] 
+store(PunctU) U+16E97 .. U+16E9A
+
+group(main) using keys
+
++ any(DigitsK) > index(DigitsU,1)
++ any(DigitsAltK) > index(DigitsAltU,1)
++ any(NumK) > index(NumU,1)
++ any(UpperK) > index(UpperU,1)
++ any(LowerK) > index(LowerU,1)
++ any(PunctK) > index(PunctU,1)

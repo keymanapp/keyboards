@@ -3,8 +3,6 @@ Sinhala Basic keyboard
 
 (c) SIL International
 
-Version 1.2
-
 Description
 -----------
 

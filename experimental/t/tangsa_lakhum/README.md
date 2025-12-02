@@ -1,12 +1,10 @@
-Tangsa Lukhum keyboard
+Tangsa Lakhum keyboard
 ==============
-
-Version 1.1
 
 Description
 -----------
 
-Tangsa Lukhum generated from template
+Experimental keyboard for Tangsa language using Tangsa Lakhum script.
 
 Links
 -----
@@ -18,6 +16,7 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 
 
 This layout uses a deadkey on the left bracket "[" position to generate additional Lakhum characters.

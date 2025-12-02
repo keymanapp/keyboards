@@ -1,9 +1,6 @@
 Sm'algya̱x keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-
 Sm'algya̱x keyboard layout for Unicode
 
 Links

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">© Joshua Wong</Copyright>
     <Author URL="">Joshua Wong</Author>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for Central Tagbanwa language, using Tagbanwa
+script with an Inscript layout.</Description>
   </Info>
   <Files>
     <File>
@@ -39,18 +42,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>NotoSansTagbanwa-Regular.ttf</Name>
-      <Description>Font Noto Sans Tagbanwa Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>tagbanwa_inscript.ico</Name>
-      <Description>File tagbanwa_inscript.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -76,14 +67,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Tagb\NotoSansTagbanwa-Regular.ttf</Name>
+      <Description>Font Noto Sans Tagbanwa Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tagbanwa Inscript</Name>
       <ID>tagbanwa_inscript</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>NotoSansTagbanwa-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansTagbanwa-Regular.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Tagb\NotoSansTagbanwa-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Tagb\NotoSansTagbanwa-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="tgt-Tagb">Central Tagbanwa</Language>
       </Languages>

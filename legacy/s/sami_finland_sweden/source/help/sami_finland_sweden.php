@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Sami (South) Keyboard Help';
-  $pagetitle = 'Sami (South) Keyboard Help';
+  $pagename = 'Sami (South) (deprecated) Keyboard Help';
+  $pagetitle = 'Sami (South) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

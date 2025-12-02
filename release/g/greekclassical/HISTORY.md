@@ -1,6 +1,10 @@
 Greek Classical Change History
 ==============================
 
+1.3 (2024-08-30)
+----------------
+* Added tablet layout
+
 1.2 (2020-Jun-22)
 ----------------
 * Move source to github
@@ -14,4 +18,4 @@ Greek Classical Change History
 
 1.0 (2003-Nov-06)
 ----------------------
-* Initial keyboard by Miguel Lopez
+* Initial keyboard by Manuel Lopez

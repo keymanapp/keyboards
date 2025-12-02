@@ -4,7 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Keyboard Layout</h1>
 <p> This keyboard is for typing the <strong>Makah (Qʷi·qʷi·diččaq)</strong> language.</p>
 <p> <strong>Note</strong>: The mobile layout (for Android, iPhone, iPad)
 operates differently than the desktop layout (for Windows, macOS, Linux). </p>

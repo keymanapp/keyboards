@@ -1,14 +1,12 @@
 Tuareg Tifinagh keyboard
 ==============
 
-© 2020 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
 
-Tuareg Tifinagh 1.0 is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. 
+Tuareg Tifinagh is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. 
 
 It is based on the Standard Moroccan Tamazight Tifinagh AZERTY keyboard and Microsoft's Central Atlas Tamazight (Tifinagh Extended) keyboard layout spec. 
 

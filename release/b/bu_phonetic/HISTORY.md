@@ -1,6 +1,10 @@
 BU Phonetic Change History
 ====================
 
+2.1 (2023-10-09)
+------------------
+* Replaced PUA codepoint for the "saltillo" with official Unicode codepoint U+A78C
+
 2.0.1 (2021-03-18)
 ------------------
 * Removed "Terms of Use" section

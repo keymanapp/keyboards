@@ -1,0 +1,66 @@
+﻿c Teclado para el idioma Nasa Yuwe de Colombia (Código BCP-47: pbb)
+store(&NAME) 'Nasa Yuwe'
+store(&COPYRIGHT) '©2022 SIL International'
+store(&KEYBOARDVERSION) '1.0.2'
+store(&MESSAGE) 'Nasa Yuwete kfxi' U+0027 'jsaa çaam'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'nasa_yuwe.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'nasa_yuwe.kvks'
+store(&BITMAP) 'nasa_yuwe.ico'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store( plainvowels )  'a' 'e' 'i' 'o' 'u' 'A' 'E' 'I' 'O' 'U'
+store( acutevowels )  'á' 'é' 'í' 'ó' 'ú'   'Á' 'É' 'Í' 'Ó' 'Ú'
+store( nasalvowels )  'ã'  'ẽ' 'ĩ' 'õ' 'ũ' 'Ã' 'Ẽ' 'Ĩ' 'Õ' 'Ũ'
+store( u )            'u' 'U'
+store( udieresis )    'ü' 'Ü'
+
+c Dead keys
++ "]" > deadkey(nasal)
++ "'" > deadkey(quote)
++ '"' > deadkey(doublequote)
+
+c Produce nasalized vowels
+deadkey(nasal) + any( plainvowels ) > index( nasalvowels, 2 )
+
+c Produce accented vowels
+deadkey(quote) + any( plainvowels ) > index( acutevowels, 2 )
+
+c Other special characters
+deadkey(quote) + "C" > "Ç"
+deadkey(quote) + "c" > "ç"
+deadkey(doublequote) + any( u ) > index( udieresis, 2 )  c Not documented, but provided as a convenience. 
+
+c We want colon and semi-colons to produce Ñ and ñ, respectively. But since we
+c also want it to be possible to type these punctuation marks, and they can
+c never come after an ñ, we can just make it so that typing them twice replaces
+c the ñ with the punctuation mark or typing them followed by a
+c space replaces the ñ with the punctuation mark plus the space.
++ ':' > 'Ñ'
++ ';' > 'ñ'
+"ñ" + " "  >  "; "
+"Ñ" + " "  >  ": "
+"ñ" + ";"  >  ";"
+"Ñ" + ":"  >  ":"
+
++ "~" > "¿"
++ "`" > "¡"
+
+c Lowercase saltillo - glottal stop
+deadkey(quote) + "'"  > U+A78C
+deadkey(quote) + '"'  > U+A78B
+deadkey(doublequote) + '"'  > U+A78B
+
+c Make an easy way to get chevrons to use as quotation marks
+deadkey(doublequote) + '<' > "«"
+deadkey(quote) + '<'           > "‹"
+deadkey(doublequote) + '>' > "»"
+deadkey(quote) + '>' > "›"
+
+c Just in case we need American quotes, here's a way to get them:
+deadkey(doublequote) + '{' > "“"
+deadkey(quote) + '{' > "‘"
+deadkey(doublequote) + '}' > "”"
+deadkey(quote) + '}' > "’"

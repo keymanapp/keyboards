@@ -154,13 +154,9 @@ END;
 <p>This keyboard outputs mostly precomposed (NFC) Unicode characters. However, please be aware that it is not completely NFC. </p>
 </div>
 
-<h3 style="clear:left">Unshifted</h3>
-  <h3>Default (Unshifted) state</h3>
-  <p><img src="sil_mali_qwertzU_.png" alt=" Clavier du Mali (Qwertz) Keyboard: Unshifted (default) state"></p>
-    <h3>Shift state</h3>
-    <p><img src="sil_mali_qwertzU_S.png" alt="Clavier du Mali (Qwertz) Keyboard: Shifted state"></p>
-    <h3>RALT state</h3>
-    <p><img src="sil_mali_qwertzU_RA.png" alt="Clavier du Mali (Qwertz) Keyboard: RALT state"></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
 
 
 <h2>Comment composer les caractères spéciaux (How to compose special characters)</h2>
@@ -407,7 +403,7 @@ END;
 
 <h2>Fonts</h2>
 
-<p>The <a href="https://software.sil.org/charis/">Charis SIL Mali</a> font family is included with the keyboard package.</p>
+<p>The <a href="https://software.sil.org/charis/">Charis Mali</a> font family is included with the keyboard package.</p>
 
 <hr></hr>
 

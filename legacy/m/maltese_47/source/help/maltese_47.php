@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Maltese (47-key) Keyboard Help';
-  $pagetitle = 'Maltest (47-key) Keyboard Help';
+  $pagename = 'Maltese (47-key) (deprecated) Keyboard Help';
+  $pagetitle = 'Maltest (47-key) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

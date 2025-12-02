@@ -1,8 +1,11 @@
 ᑌᓀ ᔭᕠᐁ Change History
 ============================
+9.2.1 (26 Oct 2023)
+-----------------
+* Changed order of layers to unscramble display on help page
 
 9.2 (16 July 2020)
-------------------
+-----------------
 * Use AboriginalSerifREGULAR.ttf font for touch layout
 
 9.1 (26 Oct 2018)

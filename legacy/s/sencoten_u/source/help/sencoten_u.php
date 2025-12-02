@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'SENĆOŦEN Unicode Keyboard Help';
-  $pagetitle = 'SENĆOŦEN Unicode Keyboard Help';
+  $pagename = 'SENĆOŦEN Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'SENĆOŦEN Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

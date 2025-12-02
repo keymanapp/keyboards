@@ -1,9 +1,7 @@
 Old Turkic UDW21 (QWERTY) keyboard
 ==============
 
-© 2022 Mehmet Oguz Derin and Takahiro Harada
-
-Version 1.0
+© Mehmet Oguz Derin and Takahiro Harada
 
 Description
 -----------

@@ -1,12 +1,9 @@
 <?php 
-  $pagename = 'Uyghur (Legacy) Basic Keyboard Help';
-  $pagetitle = 'Uyghur (Legacy) Basic Keyboard Help';
+  $pagename = 'Uyghur (Legacy) Basic (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
-
-
 ?>
-
 
 <p style='margin: 16px 0 0 0'>
 This keyboard is designed for the Uyghur language of China using the Arabic script.

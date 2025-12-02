@@ -1,6 +1,10 @@
 Mandaic Phonetic Change History
 ====================
 
+1.1.1 (2023-11-29)
+----------------
+* Use shared font instead of local
+
 1.1 (2021-09-20)
 ----------------
 * Add tablet layout

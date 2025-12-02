@@ -14,9 +14,6 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Odia/Oriya Phonetic (ITRANS)</h2>
-<h2>
-<span style="color: chocolate;">Odia/Oriya Phonetic (ITRANS)</span> Keyboard Version 1.0.0</h2>
 <p>This is a phonetic (ITRANS) keyboard layout for languages written in Odia/Oriya script. The input scheme is based on 
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme 
 with some modifications. You can phonetically type using the modified ITRANS scheme on a 

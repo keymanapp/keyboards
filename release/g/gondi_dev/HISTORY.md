@@ -1,6 +1,10 @@
 Gondi (Devanagari) Keyboard Change History
 ==========================================
 
+1.1.2 (15 Nov 2023)
+----------------
+* Updated to use new version of "shared" Annapurna SIL font
+
 1.1.1 (9 Dec 2021)
 ----------------
 * Add touch layout keyboard to package

@@ -2,9 +2,6 @@
   $pagename = 'Turkmen Cyrillic Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-p { font: 10pt Tahoma }
-h1 { font: bold 16pt Tahoma; color: #4444cc }
-h2 { font: bold 12pt Tahoma; color: #4444cc }
 table.display tr .gap { width: 16px; border: none; }
 table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px }
 table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: left }
@@ -18,7 +15,6 @@ END;
 keyboard also includes an On Screen Keyboard and includes the Cyrillic letters needed for Russian loan words.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p><b>;</b> or <b>:</b> are used as a deadkey with a second keystroke to allow input of the following letters:</p>
                            
 <table class='display'>

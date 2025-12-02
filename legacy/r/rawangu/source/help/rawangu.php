@@ -15,8 +15,8 @@
   Notes:            
   History:          4 October 2010 - pbaehr - Create Rawang Help
 */
-  $pagename = 'Rawang Keyboard Help';
-  $pagetitle = 'Rawang Keyboard Help';
+  $pagename = 'Rawang (deprecated) Keyboard Help';
+  $pagetitle = 'Rawang (deprecated) Keyboard Help';
   $keymanpromourl = 'https://keyman.com/keyboards/rawangu';
   $style = <<<EXTRA
   .highlightExample {font-weight: bold; color: #0000ff}

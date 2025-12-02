@@ -11,7 +11,7 @@
 </p>
 <p>Because there are so many characters in the Vai script, this keyboard requires multiple keystrokes to access most of the characters.</p>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 <p>Vowel marks are on the corresponding vowel keys. Syllable Ng is also on a keycap. 
 	<p>To type a consonant, you must type the consonant first, and then the vowel. For example:</p>
 <ul>ɓꔀ (be) will produce ꔇ.</ul>
@@ -26,8 +26,7 @@
 
 <p>The hyphen characters on the RIGHT ALT layer are used for accessing historic syllables. Type the character followed by a vowel and the historic syllable will be formed. There are not historic syllables for every vowel, so the hyphen may remain in the text unexpectedly).</p>
 
-<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
-<p>(c) 2008-2020 Athinkra, LLC</p>
+<p>(c) Athinkra, LLC</p>

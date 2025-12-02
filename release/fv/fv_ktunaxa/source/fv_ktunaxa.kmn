@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.1"
+store(&KEYBOARDVERSION) '10.0'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "kut"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2025 FirstVoices, SIL Global. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Ktunaxa'
 store(&BITMAP) 'fv_ktunaxa.ico'
 store(&VISUALKEYBOARD) 'fv_ktunaxa.kvks'
@@ -17,56 +17,34 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) "fv_ktunaxa.keyman-touch-layout"
+store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > '·' layer('default')
-+ [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-'Ȼ' + [SHIFT T_O] > 'Ȼ̓'
-'w' + [SHIFT T_O] > 'w̓'
-'Q' + [SHIFT T_O] > 'Q̓'
-'Y' + [SHIFT T_O] > 'Y̓'
-'p' + [SHIFT T_O] > 'p̓'
-'ȼ' + [SHIFT T_O] > 'ȼ̓'
-'q' + [SHIFT T_O] > 'q̓'
-'K' + [SHIFT T_O] > 'K̓'
-'y' + [SHIFT T_O] > 'y̓'
-'k' + [SHIFT T_O] > 'k̓'
-'T' + [SHIFT T_O] > 'T̓'
-'M' + [SHIFT T_O] > 'M̓'
-'t' + [SHIFT T_O] > 't̓'
-'N' + [SHIFT T_O] > 'N̓'
-'m' + [SHIFT T_O] > 'm̓'
-'W' + [SHIFT T_O] > 'W̓'
-'n' + [SHIFT T_O] > 'n̓'
-'P' + [SHIFT T_O] > 'P̓'
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
-+ [SHIFT T_F] > 'ʾ' layer('default')
 + [SHIFT T_G] > 'H' layer('default')
 + [SHIFT T_H_0] > 'K̓' layer('default')
 + [SHIFT T_H] > 'K' layer('default')
 + [SHIFT T_J_0] > 'L' layer('default')
 + [SHIFT T_J] > 'Ⱡ' layer('default')
-+ [SHIFT T_Z_0] > '!' layer('default')
-+ [SHIFT T_Z] > '?' layer('default')
++ [SHIFT T_F] > 'ʾ' layer('default')
++ [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'Ȼ̓' layer('default')
 + [SHIFT T_C] > 'Ȼ' layer('default')
-+ [SHIFT T_V] > ',' layer('default')
-+ [SHIFT T_B] > '.' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
@@ -76,49 +54,27 @@ store(&LAYOUTFILE) "fv_ktunaxa.keyman-touch-layout"
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > '·'
-+ [T_R] > '-'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
 + [T_U] > 'u'
 + [T_I] > 'i'
-'Ȼ' + [T_O] > 'Ȼ̓'
-'w' + [T_O] > 'w̓'
-'Q' + [T_O] > 'Q̓'
-'Y' + [T_O] > 'Y̓'
-'p' + [T_O] > 'p̓'
-'ȼ' + [T_O] > 'ȼ̓'
-'q' + [T_O] > 'q̓'
-'K' + [T_O] > 'K̓'
-'y' + [T_O] > 'y̓'
-'k' + [T_O] > 'k̓'
-'T' + [T_O] > 'T̓'
-'M' + [T_O] > 'M̓'
-'t' + [T_O] > 't̓'
-'N' + [T_O] > 'N̓'
-'m' + [T_O] > 'm̓'
-'W' + [T_O] > 'W̓'
-'n' + [T_O] > 'n̓'
-'P' + [T_O] > 'P̓'
 + [T_P_0] > 'p̓'
 + [T_P] > 'p'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'ʔ'
-+ [T_F] > 'ʾ'
 + [T_G] > 'h'
 + [T_H_0] > 'k̓'
 + [T_H] > 'k'
 + [T_J_0] > 'l'
 + [T_J] > 'ⱡ'
-+ [T_Z_0] > '!'
-+ [T_Z] > '?'
++ [T_F] > 'ʾ'
++ [T_R] > '-'
 + [T_X] > 'x'
 + [T_C_0] > 'ȼ̓'
 + [T_C] > 'ȼ'
-+ [T_V] > ','
-+ [T_B] > '.'
 + [T_N_0] > 'n̓'
 + [T_N] > 'n'
 + [T_M_0] > 'm̓'
@@ -126,8 +82,15 @@ store(&LAYOUTFILE) "fv_ktunaxa.keyman-touch-layout"
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- CROSS PLATFORM RULES AND STORES ---
+
+store(NeedsComApos) 'ȼkmnpqtwyȻKMNPQTWY'
+store(ComAposKeys) [T_O] [SHIFT T_O] [K_QUOTE]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
 
 c constraints
+store(Accents) U+030C U+0313
 
 store(glottalAccent) U+0313 
 any(glottalAccent) + [K_QUOTE] > context beep  
@@ -136,13 +99,15 @@ any(glottalAccent) + [K_6] > context beep
 store(hacek) U+030C U+010C U+010D U+0160 U+0161 
 any(hacek) + [K_6] > context beep 
 
+
 store(accentkey) [K_QUOTE] [K_6] 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep
+any(Accents) + any(accentkey) > context beep
 
 
 
-
+c original punctuation
 + [SHIFT RALT K_RBRKT] > '}'
 + [SHIFT RALT K_LBRKT] > '{'
 + [RALT K_COLON] > ';'
@@ -167,6 +132,7 @@ any(NumbersAndPunctuation) + any(accentkey) > context beep
 + [RALT K_HYPHEN] >   U+00AB 
 + [RALT K_EQUAL] > U+00BB  
 
+c language keys
 + [SHIFT K_0] > '0'
 + [SHIFT K_9] > '9'
 + [SHIFT K_8] > '8'
@@ -199,5 +165,3 @@ nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

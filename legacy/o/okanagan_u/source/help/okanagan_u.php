@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Okanagan Unicode Keyboard Help';
-  $pagetitle = 'Okanagan Unicode Keyboard Help';
+  $pagename = 'Okanagan Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Okanagan Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

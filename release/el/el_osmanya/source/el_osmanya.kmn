@@ -1,0 +1,68 @@
+﻿c osmanya10.kmn
+c 
+c Osmanya 1.0
+c 
+c Keyboard layout designed for Somali using the Osmanya script.
+c Uses the Latin orthography as an input model for the Osmanya script.
+c 
+c Andrew Cunningham    2005-12-12
+c andrewc AT vicnet.net.au
+c 
+
+
+store(&VERSION) '9.0'
+store(&Copyright) "© Andrew Cunningham"
+store(&Message) "A unicode based Osmanya keyboard layout using the Somali Latin orthography as the input mechanism"
+store(&NAME) 'Osmanya'
+store(&mnemoniclayout) "0"
+store(&VISUALKEYBOARD) 'el_osmanya.kvks'
+store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '1.0.1'
+
+begin Unicode > use(main)  
+
+store(digraph) "hH"
+store(char_nul) "pPzZvV"
+store(char_in) "btjxdrscgfqklmnwhyaeiouBTJXDRSCGFQKLMNWHYAEIOU\|"
+store(char_out) U+10481 U+10482 U+10483 U+10484 U+10486 U+10487 U+10488 U+1048b U+1048c U+1048d \
+                U+1048e U+1048f U+10490 U+10491 U+10492 U+10493 U+10494 U+10495 U+10496 U+10497 \
+                U+10498 U+10499 U+1049a U+10481 U+10482 U+10483 U+10484 U+10486 U+10487 U+10488 \
+                U+1048b U+1048c U+1048d U+1048e U+1048f U+10490 U+10491 U+10492 U+10493 U+10494 \
+                U+10495 U+10496 U+10497 U+10498 U+10499 U+1049a U+10480 U+10480
+
+store(numbers_in) "0123456789"
+store(numbers_out) U+104a0 U+104a1 U+104a2 U+104a3 U+104a4 U+104a5 U+104a6 U+104a7 U+104a8 U+104a9
+
+
+group(main) using keys
+
++ [CTRL ALT K_BKSLASH] > "\"
++ [SHIFT CTRL ALT K_BKSLASH] > "|"
+
++any(char_nul) > nul
+
+U+1048f + any(digraph) > U+10485
+
+U+10488 + any(digraph) > U+10489 
+
+U+10486 + any(digraph) > U+1048a
+
+U+10496 + "a" > U+1049b
+U+10496 + "A" > U+1049b
+
+U+10497 + "e" > U+1049c
+U+10497 + "E" > U+1049c
+
+U+10498 + "i" > U+10495
+U+10498 + "I" > U+10495
+
+U+10499 + "o" > U+1049d
+U+10499 + "O" > U+1049d
+
+U+1049a + "u" > U+10493
+U+1049a + "U" > U+10493
+
++ any(char_in) > index(char_out,1)
++ any(numbers_in) > index(numbers_out,1)
+
+c EOF

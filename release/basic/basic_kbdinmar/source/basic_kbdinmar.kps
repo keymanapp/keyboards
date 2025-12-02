@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Name URL="">Marathi Basic</Name>
     <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Marathi Basic generated from template. The default and shift layers of
+this keyboard are based on the Inscript layout.</Description>
   </Info>
   <Files>
     <File>
@@ -81,6 +84,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -90,7 +99,15 @@
       <Languages>
         <Language ID="mr">Marathi</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="mr" Keys="c j e &quot; r" Text="मराठी" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="kbdinmar" Relationship="deprecates" />
+    <RelatedPackage ID="marathi" Relationship="deprecates" />
+    <RelatedPackage ID="marathi_kab" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

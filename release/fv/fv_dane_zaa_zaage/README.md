@@ -1,10 +1,6 @@
 Dane-Z̲aa Z̲áágéʔ keyboard
 ==============
 
-Copyright © 2015 FirstVoices, First Peoples' Cultural Foundation, SIL International
-
-Version 9.2
-
 Dane-Z̲aa Z̲áágéʔ keyboard layout for Unicode
 
 Links
@@ -20,11 +16,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
+ * Mobile
 

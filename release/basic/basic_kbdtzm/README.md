@@ -1,17 +1,16 @@
 Central Atlas Tamazight Basic keyboard
 ==============
 
-(c) 2018 SIL International
-
-Version 1.0
+(c) SIL International
 
 Description
 -----------
 
-Central Atlas Tamazight Basic (Latin script) generated from template
+This keyboard is designed for the Central Atlas Tamazight language (Latin script) of Morocco.
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdtzm
 
 Supported Platforms
 -------------------

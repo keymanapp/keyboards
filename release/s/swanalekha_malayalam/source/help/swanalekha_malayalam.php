@@ -1,5 +1,5 @@
 ﻿<?php 
-  $pagename = 'Swanalekha Malayalam Keyman Keyboard Help';
+  $pagename = 'Swanalekha Malayalam Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

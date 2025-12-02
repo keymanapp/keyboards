@@ -1,12 +1,12 @@
 <?php 
-  $pagename = "ɁAreɂare";
-  $pagetitle = "ɁAreɂare Keyman Keyboard";
+  $pagename = "Ɂareɂare";
+  $pagetitle = "Ɂareɂare Keyman Keyboard";
   require_once('header.php');
 
   
 ?>
 
-<p>This keyboard is designed for use with the ɁAreɂare language of Solomon Islands. It includes an
+<p>This keyboard is designed for use with the Ɂareɂare language of Solomon Islands. It includes an
 on screen keyboard which can be viewed by clicking on the Keyman icon and 
 selecting the On Screen Keyboard menu item. </p>
 

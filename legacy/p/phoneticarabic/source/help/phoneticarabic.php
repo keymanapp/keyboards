@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Arabic Phonetic Keyboard Help';
-  $pagetitle = 'Arabic Phonetic Keyboard Help';
+  $pagename = 'Arabic Phonetic (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <h1 style='margin-bottom: 2px'>Arabic Phonetic Keyboard - Preliminary (beta) Version</h1>

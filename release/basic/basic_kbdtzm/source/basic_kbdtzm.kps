@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.273.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,8 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Central Atlas Tamazight Basic</Name>
-    <Copyright URL="">(c) 2018 SIL International</Copyright>
+    <Copyright URL="">(c) 2018-2022 SIL International</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
+    <Description>This keyboard is designed for the Central Atlas Tamazight language
+(Latin script) of Morocco.</Description>
   </Info>
   <Files>
     <File>
@@ -69,14 +73,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Central Atlas Tamazight Basic</Name>
       <ID>basic_kbdtzm</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <Languages>
-        <Language ID="tzm-Latn-MA">Central Atlas Tamazight</Language>
+        <Language ID="tzm">Central Atlas Tamazight</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

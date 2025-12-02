@@ -1,6 +1,10 @@
 Naskapi (Common) Keyboard Change History
 =======================
 
+1.4.1 (30 Oct 2023)
+-------------------
+* Updated font to better support the Cans script
+
 1.4 (Nov 2020)
 ------------------
 *  Fixed a broken link to the PDF on the welcome page

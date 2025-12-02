@@ -1,15 +1,14 @@
-Aksara Bali Unicode Keyboard
+Aksara Bali Keyboard
 ============================
 
-Copyright (C) 2019-2020 The PanLex Project of The Long Now Foundation
-
-Version 1.1.1
+Copyright (C) The PanLex Project of The Long Now Foundation
 
 __DESCRIPTION__
 This keyboard lets you type Aksara Bali (Balinese script) in Unicode. It is a Unicode reimplementation of the Bali Simbar keyboard (the de-facto standard keyboard in Bali for typing in Balinese script).
 
 Links
 -----
+https://keyman.com/keyboards/aksarabali_panlex
 
  * Contact:  <info@panlex.org>
 

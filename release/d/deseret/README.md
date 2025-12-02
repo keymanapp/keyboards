@@ -1,7 +1,7 @@
 Deseret Keyboard
 =====================
 
-Copyright © Samuel R Boylan Jr
+Copyright (c) Samuel R Boylan Jr
 
 
 DESCRIPTION

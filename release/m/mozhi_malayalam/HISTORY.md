@@ -1,3 +1,18 @@
+Malayalam Mozhi Change History
+====================
+
+3.2.6 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+3.2.5 (2024-09-18)
+----------------
+* Remove .js from .kps so people will not think mobile is supported.
+
+3.2.4 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 # History of Mozhi Layout
 Initially there was 'Kerala.com' guestbook, for Malayalees world over to come together and discuss. Tony Thomas, who pioneered writing in Malayalam characters, used 'Kerala' font by clicking on Malayalam letters in ‘Charmap’ application. The year was 1996.
 

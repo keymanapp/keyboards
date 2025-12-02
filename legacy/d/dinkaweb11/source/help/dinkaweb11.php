@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Dinka Keyboard Help';
-  $pagetitle = 'Dinka Keyboard Help';
+  $pagename = 'Dinka (deprecated) Keyboard Help';
+  $pagetitle = 'Dinka (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

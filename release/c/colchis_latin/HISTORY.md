@@ -1,5 +1,32 @@
-Colchis Latin
+Colchis Latin Change History
 ===============================
+
+1.6.1 (11 Jun 2025)
+------------------
+* Updated font to new version of Charis Colchis v7.000
+
+1.6 (8 Jan 2025)
+------------------
+* Added ɔ and q̌ on all layouts 
+
+1.5 (9 Sept 2024)
+------------------
+* Changed language tag for lzz to lzz-GE
+
+1.4.1 (4 Oct 2023)
+------------------
+* Add dotted T back in to the keyboard
+* Fix bugs in mobile layouts
+
+1.4 (20 Sept 2023)
+------------------
+* Update to use revised orthography
+* Include Charis SIL Colchis font (supports hachek on t rather than a comma form)
+
+1.3 (10 May 2023)
+------------------
+* Update to use revised orthography
+* Update tablet layout to use longpress keys
 
 1.2 (6 Jun 2022)
 ------------------

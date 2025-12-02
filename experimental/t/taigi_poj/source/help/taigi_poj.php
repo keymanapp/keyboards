@@ -1,5 +1,5 @@
 <?php
-$pagename = 'PhahTaigi POJ Help';
+$pagename = 'PhahTaigi POJ Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
@@ -8,8 +8,6 @@ require_once('header.php');
 <p>
 PhahTaigi POJ for Tâi-gí (Taiwanese) Pe̍h-ōe-jī.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift alt alt-shift'>

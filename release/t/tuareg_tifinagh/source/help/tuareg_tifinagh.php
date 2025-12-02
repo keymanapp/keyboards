@@ -5,7 +5,7 @@ $pagetitle = $pagename;
 require_once('header.php');
 ?>
 
-<p> Tuareg Tifinagh 1.0 is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. </p>
+<p> Tuareg Tifinagh is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. </p>
 <p>
 	It is based on the Standard Moroccan Tamazight Tifinagh AZERTY keyboard and 
 	Microsoft's Central Atlas Tamazight (Tifinagh Extended) keyboard layout spec.
@@ -14,15 +14,11 @@ require_once('header.php');
 	POP Directional Formatting key (U+202C) to reverse the right-to-left writing.
 </p>
 
-<h1>Keyboard Layout</h1>
+<p>The <b>Akatab</b> font is recommended for this keyboard.
+<b><a href="https://software.sil.org/akatab/" title="Download the latest version of the Akatab font" target="_blank" rel="noopener noreferrer">Download the latest version of the Akatab font</a></b>.
+</p>
 
-<!-- Insert Keyboard Layout Images or HTML here -->
-<p><b>Unshifted</b></p>
-<img src='tuareg_tifinaghU_.png' alt='Unshifted Keyboard Layout'>
-<p><b>Shifted</b></p>
-<img src='tuareg_tifinaghU_S.png' alt='Shifted Keyboard Layout'>
-<p><b>RightAlt (AltGr)</b></p>
-<img src='tuareg_tifinaghU_RA.png' alt='RightAlt Keyboard Layout'>
+<h2>Desktop Keyboard Layout</h2>
 
 <p>
    <b>Some tips for obscure keys</b><br>
@@ -31,12 +27,6 @@ require_once('header.php');
    Use RightAlt+f for POP DIRECTIONAL FORMATTING<br>
    Use RightAlt+g for LEFT-TO-RIGHT OVERRIDE (rappelez-vous <b>g</b>auche à droit)
 </p>
-
-<p>The <b>Akatab</b> font is recommended for this keyboard.
-<b><a href="https://software.sil.org/akatab/" title="Download the latest version of the Akatab font" target="_blank" rel="noopener noreferrer">Download the latest version of the Akatab font</a></b>.
-</p>
-
-<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
@@ -48,5 +38,3 @@ Press and hold on the key with a little dot on the top right to reveal them.</p>
 </div>
 <div id='osk-tablet' data-states='default shift rightalt'>
 </div>
-
-<p>© 2020 SIL International</p>

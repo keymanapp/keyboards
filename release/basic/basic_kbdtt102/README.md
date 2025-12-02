@@ -1,9 +1,9 @@
 Tatar Basic keyboard
 ==============
 
-© 2009-2019 SIL International
+© SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------

@@ -1,6 +1,10 @@
 Vai Typewriter (Athinkra) Change History
 ====================
 
+1.3 (29 August 2024)
+-----------------
+* Added tablet layout
+
 1.2.1 (2020-07-24)
 ----------------
 * Update title and id in Keyboard field of kps

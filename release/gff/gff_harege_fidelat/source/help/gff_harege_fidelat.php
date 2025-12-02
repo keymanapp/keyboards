@@ -1,35 +1,20 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_harege_fidelat
-  Copyright:        Keyboard © 2022 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
-  Last Update:      19 Nov 2022
+  Last Update:      08 Jul 2023
 */
-  $pagename = 'Harege Fidelat Keyboard Help';
   $pagetitle = 'Harege Fidelat Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
-  $style = <<<EXTRA
-  .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-  .highlightKeys img {vertical-align:baseline !important}
-  .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-  .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-  .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
   require_once('header.php');
 ?>
-<style type="text/css" media="screen">
-code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(175, 184, 193, 0.2);
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-</style>
 
-<p style='margin:0px'>Keyboard &#169; 2022. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -120,7 +105,7 @@ The Harege Fidelat tablet layout is identical to the mobile phone layout.
 
 <div id="Troubleshooting">
 <h2>Troubleshooting</h2>
-<p class='keymanweb'>It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
+<p class='keymanweb' style="text-align: justify;">It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
 Keyman with other apps, such as for text messaging.  This will be resolved in the near future when companies like Apple and Samsung update
 their products.</p>
 
@@ -133,56 +118,45 @@ their products.</p>
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
+<p><p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (Modern &amp; Legacy Geʾez)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanta">Awngi &amp; Khimtanga</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Ge'ez</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harari">Harari</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Me'en</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigre">Tigre</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
-</div>
 
+</div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a><br/>
-<a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a><br/>
+<a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a></p>
 </div>
 </div>
 
 <div id="Technical">
 <h2>Technical Information</h2>
 <h3>System Requirements</h3>
-<p>Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
+<p style="text-align: justify;">
+Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
 </p>
 <h3>Unicode Version</h3>
 <p>This keyboard complies with Unicode 14</p>
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 1.01 19 Nov 2022</dt>
-  <dd>Various <code>nextlayer</code> attributes fixed.</dd>
-  <dt>Version 1.0 12 Nov 2022</dt>
-  <dd>Initial release.</dd>
-</dl>
-
 <div id="Author">
 <h3>Keyboard Authorship</h3>
-<p>
+<p style="text-align: justify;">
 This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Mobile. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
-<p>
-The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+<p style="text-align: justify;">
+The Harege Fidelat keyboard layout for Keyman Mobile is Copyright Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>

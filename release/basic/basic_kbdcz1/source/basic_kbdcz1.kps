@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Czech (QWERTY) Basic</Name>
     <Copyright URL="">(c) 2009-2022 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Czech (QWERTY) Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -75,6 +77,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,7 +92,14 @@
       <Languages>
         <Language ID="cs">Czech</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="cs" Keys="4 e 3 t i n a" Text="čeština" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="czech_qwerty" Relationship="deprecates" />
+    <RelatedPackage ID="kbdcz1" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

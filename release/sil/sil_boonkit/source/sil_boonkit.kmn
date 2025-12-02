@@ -16,13 +16,14 @@ c DLR   0.6.3   13-Jun-2018     minor edits to welcome and help files
 c WDG   0.6.4   18-Dec-2018     Rename .png images in help files and boonkitofl.ttf font
 c MJPH  0.6.5   07-Oct-2022     Change \ from ( to sakot action (same as `) keep `
 
-store(&VERSION) '9.0'
-store(&NAME) 'Boonkit Unicode'
+store(&VERSION) '10.0'
+store(&NAME) 'Boonkit (SIL)'
 store(&VISUALKEYBOARD) 'sil_boonkit.kvks'
-store(&ETHNOLOGUECODE) 'NOD'
-store(&COPYRIGHT) '© 2018-2022 SIL International'
-store(&KEYBOARDVERSION) '0.6.5'
+c store(&ETHNOLOGUECODE) 'NOD'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '0.6.6'
 store(&BITMAP) 'sil_boonkit.ico'
+store(&TARGETS) 'desktop'
 
 begin Unicode > use(Main)
 

@@ -1,9 +1,6 @@
 Halq'eméylem keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-
 Halq'eméylem keyboard layout for Unicode
 
 Links

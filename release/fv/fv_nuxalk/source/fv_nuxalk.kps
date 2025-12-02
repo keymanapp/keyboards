@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Nuxalk</Name>
-    <Copyright URL="">(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Nuxalk language of the BC Coast region
+of Canada. This is part of a set of keyboards from FirstVoices.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -33,16 +37,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nuxalk</Name>
       <ID>fv_nuxalk</ID>
-      <Version></Version>
+      <Version>10.0</Version>
       <Languages>
         <Language ID="blc-Latn">Bella Coola (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_nuxalk_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

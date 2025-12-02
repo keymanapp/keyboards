@@ -7,6 +7,7 @@
 
 ?>
 
+<p>This keyboard is for the Guarani language of Paraguay, Bolivia, and Brazil. The Guarani Basic keyboard was imported with permission from the Windows 10 keyboard.</p>
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -16,14 +17,14 @@
 
 <p>Deadkeys are used to output vowels with accent marks.</p>
 <ul>
-<li>Type <span style="font-family:'Charis SIL'; font-size:14pt;">◌́</span> followed by any vowel (aeiouyAEIOUY) to output an acute accent on the vowel.</li>
-<li>Type <span style="font-family:'Charis SIL'; font-size:14pt;">◌̈</span> followed by any vowel (aeiouyAEIOU) to output a diaeresis/umlaut accent on the vowel.</li>
-<li>Type <span style="font-family:'Charis SIL'; font-size:14pt;">◌̂</span> followed by any vowel (aeiouAEIOU) to output a circumflex accent on the vowel.</li>
-<li>Type <span style="font-family:'Charis SIL'; font-size:14pt;">◌̃</span> followed by any vowel (aeiouyAEIOUY) to output a tilde accent on the vowel.</li>
-<li>Type <span style="font-family:'Charis SIL'; font-size:14pt;">◌̀</span> followed by any vowel (aeiouAEIOU) to output a tilde accent on the vowel.</li>
+<li>Type <span style="font-family:'Charis'; font-size:14pt;">◌́</span> followed by any vowel (aeiouyAEIOUY) to output an acute accent on the vowel.</li>
+<li>Type <span style="font-family:'Charis'; font-size:14pt;">◌̈</span> followed by any vowel (aeiouyAEIOU) to output a diaeresis/umlaut accent on the vowel.</li>
+<li>Type <span style="font-family:'Charis'; font-size:14pt;">◌̂</span> followed by any vowel (aeiouAEIOU) to output a circumflex accent on the vowel.</li>
+<li>Type <span style="font-family:'Charis'; font-size:14pt;">◌̃</span> followed by any vowel (aeiouyAEIOUY) to output a tilde accent on the vowel.</li>
+<li>Type <span style="font-family:'Charis'; font-size:14pt;">◌̀</span> followed by any vowel (aeiouAEIOU) to output a tilde accent on the vowel.</li>
 </ul>
 
-<table width="500px" style="text-align:center; border:1px solid; font-family:'Charis SIL'; font-size:16pt;">
+<table width="500px" style="text-align:center; border:1px solid; font-family:'Charis'; font-size:16pt;">
 <thead style="font-weight: bold; background-color: grey;"><tr><th></th><th>a</th><th>e</th><th>i</th><th>o</th><th>u</th><th>y</th><th>A</th><th>E</th><th>I</th><th>O</th><th>U</th><th>Y</th></tr></thead><tbody>
  <tr><td style="font-weight: bold; background-color: grey;">◌́</td><td>á</td><td>é</td><td>í</td><td>ó</td><td>ú</td><td>ý</td><td>Á</td><td>É</td><td>Í</td><td>Ó</td><td>Ú</td><td>Ý</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">◌̈</td><td>ä</td><td>ë</td><td>ï</td><td>ö</td><td>ü</td><td>ÿ</td><td>Ä</td><td>Ë</td><td>Ï</td><td>Ö</td><td>Ü</td><td>Y</td></tr>

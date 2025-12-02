@@ -1,10 +1,6 @@
 K'áshogot'ı̨nę́ Yatı̨́ keyboard
 ======================
 
-Copyright (c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.1
-
 K'áshogot'ı̨nę́ Yatı̨́ keyboard layout for Unicode
 
 Links
@@ -17,9 +13,12 @@ Links
 Supported Platforms
 -------------------
 
+ * Windows
+ * macOS
+ * Linux
+ * Web
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)
+TODO
+-------------------
+* Consult with community on if they prefer IPA Schwa (U+018F) or Latin small letter turned E (U+01DD).

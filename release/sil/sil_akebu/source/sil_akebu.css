@@ -1,0 +1,199 @@
+/*
+   Cameroon AZERTY CSS
+   Copyright 2023 SIL International
+*/
+
+/*Fix Baseline Height https://github.com/keymanapp/keyboards/issues/1399*/
+.kmw-keyboard-sil_akebu .kmw-key span  { line-height: 1;}
+
+       
+/* Active Keys */
+.phone.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on,
+.tablet.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on, 
+.phone.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on, 
+.tablet.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on {color: #ffffff;background-color:#88f; font-weight: bold;}
+.phone.android .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on,
+.tablet.android .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on, 
+.phone.android .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on, 
+.tablet.android .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on {color: #220868; background-color:#88f; font-weight: bold;}
+
+/* Styling on iOS, Default and light. */
+/* Green Diacritics */
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0300'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0304'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0301'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_030C'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0302'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0303'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0308'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0327'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC5'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC6'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC7'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC4'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_030D'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#ffffff, #aed39f); }
+
+/* Yellow Vowels  iOS Light */
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_Q'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_E'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_I'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_U'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_O'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_025B'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_01DD'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0269'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0254'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_028A'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0190'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_018E'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0196'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0186'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_01B1'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_P'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_T'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_F'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_H'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_P'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_T'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_F'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_H'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_P'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_T'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_F'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_H'],
+.ios .kmw-keyboard-sil_akebu .kmw-key[id='popup-default-U_0254'] { background: #beac40; background: linear-gradient(#ffffff, #fff09c); } 
+
+
+/* Styling on iOS, dark. */
+@media (prefers-color-scheme: dark) {
+  /* Green Diacritics */
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0300'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0304'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0301'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_030C'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0302'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0303'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0308'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0327'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC5'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC6'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC7'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC4'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_030D'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#3d3d3e, #598059);}
+  /* Yellow Vowels */
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_Q'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_E'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_I'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_U'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='K_O'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_025B'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_01DD'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0269'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0254'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_028A'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0190'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_018E'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0196'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_0186'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id*='U_01B1'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_P'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_T'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_F'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_H'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_P'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_T'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_F'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_H'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_P'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_T'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_F'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_H'],
+  .ios .kmw-keyboard-sil_akebu .kmw-key[id='popup-default-U_0254'] { background: #978833; background: linear-gradient(#3d3d3e, #beab40a2); }
+  /* Active Keys */
+  .phone.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on,
+  .tablet.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-special-on, 
+  .phone.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on, 
+  .tablet.ios .kmw-keyboard-sil_akebu .kmw-key.kmw-key-shift-on {color: #220868;background-color:#88f; font-weight: bold;}
+}
+
+
+
+/* Green Diacritics Android */
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0300'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0304'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0301'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_030C'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0302'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0303'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0308'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0327'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC5'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC6'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC7'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_1DC4'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_030D'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#7f7f7f, #598059); }
+
+/* Yellow Vowels  Android */
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='K_Q'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='K_E'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='K_I'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='K_U'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='K_O'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_025B'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_01DD'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_0269'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_0254'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_028A'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_0190'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_018E'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_0196'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_0186'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id*='U_01B1'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_P'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_T'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_F'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-K_H'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_P'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_T'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_F'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-caps-K_H'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_P'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_T'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_F'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id$='rightalt-shift-K_H'],
+.android .kmw-keyboard-sil_akebu .kmw-key[id='popup-default-U_0254'] { background: #978833; background: linear-gradient(#7f7f7f, #beab40); }
+
+/* Green Diacritics on web */
+.desktop .kmw-keyboard-sil_akebu #default-K_QUOTE,
+.desktop .kmw-keyboard-sil_akebu #default-K_LBRKT,
+.desktop .kmw-keyboard-sil_akebu #shift-K_LBRKT,
+.desktop .kmw-keyboard-sil_akebu #shift-K_QUOTE { background: #598059; background: linear-gradient(#ffffff, #598059); }
+/* Yellow Vowels on Web */
+.desktop .kmw-keyboard-sil_akebu #default-K_Q,
+.desktop .kmw-keyboard-sil_akebu #default-K_E,
+.desktop .kmw-keyboard-sil_akebu #default-K_I,
+.desktop .kmw-keyboard-sil_akebu #default-K_U,
+.desktop .kmw-keyboard-sil_akebu #default-K_O,
+.desktop .kmw-keyboard-sil_akebu #shift-K_Q,
+.desktop .kmw-keyboard-sil_akebu #shift-K_E,
+.desktop .kmw-keyboard-sil_akebu #shift-K_I,
+.desktop .kmw-keyboard-sil_akebu #shift-K_U,
+.desktop .kmw-keyboard-sil_akebu #shift-K_O,
+.desktop .kmw-keyboard-sil_akebu #rightalt-K_I,
+.desktop .kmw-keyboard-sil_akebu #rightalt-K_U,
+.desktop .kmw-keyboard-sil_akebu #rightalt-K_O,
+.desktop .kmw-keyboard-sil_akebu #rightalt-K_Q,
+.desktop .kmw-keyboard-sil_akebu #rightalt-K_E,
+.desktop .kmw-keyboard-sil_akebu #rightalt-shift-K_Q,
+.desktop .kmw-keyboard-sil_akebu #rightalt-shift-K_U,
+.desktop .kmw-keyboard-sil_akebu #rightalt-shift-K_I,
+.desktop .kmw-keyboard-sil_akebu #rightalt-shift-K_O,
+.desktop .kmw-keyboard-sil_akebu #rightalt-shift-K_E { background: #beac40; background: linear-gradient(#ffffff, #beac40); }
+
+
+
+
+

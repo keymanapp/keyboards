@@ -1,6 +1,11 @@
 Hebrew and Greek Transliteration (SIL) Keyboard Change History
 =======================
 
+1.2 17-Sep-2024
+-----------------
+* Added tablet layout
+* Changed ALT to RALT
+
 1.1 4-Sep-2018
 -----------------
 * Moved to GitHub

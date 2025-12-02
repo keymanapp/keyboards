@@ -1,7 +1,5 @@
-nabataean_inscript keyboard
+Nabataean Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Aramaic language, using the Nabataean script w
 
 Links
 -----
+https://keyman.com/keyboards/nabataean_inscript
 
 Copyright
 ---------

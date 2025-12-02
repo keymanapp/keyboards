@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder>Cham (East)</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Eastern Cham keyboard layout</Name>
+        <FileName>Eastern Cham Unicode Keyboard Layout.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Cham script (Eastern)</Name>
+    <Copyright URL="">© SIL International</Copyright>
+    <Author URL="">Jim Brase</Author>
+    <Description>This keyboard is for the Eastern Cham language using the Cham script. It is based on a US Qwerty layout.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\eastern_cham.kvk</Name>
+      <Description>File eastern_cham.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\eastern_cham.kmx</Name>
+      <Description>Keyboard Cham (Eastern)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\cham_east_binhthuan\ChamEastBinhThuan.ttf</Name>
+      <Description>Font Cham East BinhThuan</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\cham_east_binhthuan\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Cham (Eastern)</Name>
+      <ID>eastern_cham</ID>
+      <Version>1.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\cham_east_binhthuan\ChamEastBinhThuan.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\cham_east_binhthuan\ChamEastBinhThuan.ttf</DisplayFont>
+      <Languages>
+        <Language ID="cjm">Eastern Cham</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

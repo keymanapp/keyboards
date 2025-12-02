@@ -1,4 +1,4 @@
-Yorùbá 8 Change History
+YorÃ¹bÃ¡ 8 Change History
 ====================
 
 1.1 (2020-04-27)

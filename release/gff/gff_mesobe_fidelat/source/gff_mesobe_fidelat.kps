@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.272.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -36,8 +38,16 @@
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Name URL="">GFF Mesobe Fidelat</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2022 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
+    <Description URL="">This is a language-neutral touch (only) keyboard for mobile devices. The
+keyboard provides all Ethiopic letters in active use on a single layer
+in a circular, semi-clockwise orientation. It is meant to be intuitive
+for new typists and fits more comfortably on a tablet device than on a
+mobile phone.
+
+### Mobile Keyboard Preview
+![Mesobe Fidelat Preview](https://raw.githubusercontent.com/keymanapp/keyboards/d23eb63cc6aa7e5066c8a9cfda88046aac6445ab/release/gff/gff_mesobe_fidelat/extras/gff_mesobe_fidelat-default-1-920x500.jpeg)</Description>
   </Info>
   <Files>
     <File>
@@ -118,12 +128,16 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpeg</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Mesobe Fidelat</Name>
       <ID>gff_mesobe_fidelat</ID>
-      <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
@@ -135,21 +149,21 @@
         <Language ID="mdx">Dizin</Language>
         <Language ID="drs">Gedeo</Language>
         <Language ID="gez">Geez</Language>
-        <Language ID="amf">Hamer-Banna</Language>
+        <Language ID="amf-Ethi">Hamer-Banna (Ethiopic)</Language>
         <Language ID="har">Harari</Language>
         <Language ID="ior">Inor</Language>
         <Language ID="ktb">Kambaata</Language>
         <Language ID="gru">Kistane</Language>
-        <Language ID="kxc">Konso</Language>
+        <Language ID="kxc-Ethi">Konso (Ethiopic)</Language>
         <Language ID="mvz">Mesqan</Language>
         <Language ID="ahg">Qimant</Language>
         <Language ID="sgw">Sebat Bet Gurage</Language>
-        <Language ID="sid">Sidamo</Language>
+        <Language ID="sid-Ethi">Sidamo (Ethiopic)</Language>
         <Language ID="stv">Silt'e</Language>
         <Language ID="tig">Tigre</Language>
         <Language ID="ti">Tigrinya</Language>
         <Language ID="xan">Xamtanga</Language>
-        <Language ID="jnj">Yemsa</Language>
+        <Language ID="jnj-Ethi">Yemsa (Ethiopic)</Language>
         <Language ID="zwa">Zay</Language>
       </Languages>
     </Keyboard>

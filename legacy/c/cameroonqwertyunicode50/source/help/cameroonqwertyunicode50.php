@@ -4,8 +4,8 @@
   Description: This keyboard supports the languages of Cameroon with a single, standardized layout based on US English keyboard.  Please see <a href='http://cameroon.keymankeyboards.com/' onclick="if(typeof pageTracker == 'undefined') return true; pageTracker._link(this.href); return false;">cameroon.keymankeyboards.com</a> for alternative layouts and legacy keyboards.
   Authors:     Archie Trammell
 */
-  $pagename = 'Cameroon QWERTY Unicode Keyboard Help';
-  $pagetitle = 'Cameroon QWERTY Unicode Keyboard Help';
+  $pagename = 'Cameroon QWERTY Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Cameroon QWERTY Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type='text/css'>               

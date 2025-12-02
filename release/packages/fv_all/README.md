@@ -1,22 +1,26 @@
 FirstVoices Keyboard Package
 ==================================================
 
-(c) 2015-2022 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 12.4
+(c) 2015-2025 FirstVoices, SIL Global, 2015 First Peoples' Cultural Foundation
 
 __DESCRIPTION__
 
 This package includes all the FirstVoices keyboards for Windows, Android, and iOS. It is distributed as part of the FirstVoices project.
 
-Note that the package will not be listed under the languages included in the package on keyman.com, as we have 
+Note that the package will not be listed under the languages included in the package on keyman.com, as we have
 excluded them from the .keyboard_info. This is intentional: the package is included as a convenience for the distribution
 of the FirstVoices keyboards standalone on Windows.
+
+### Note for keyboard maintainers:
+* The fv_all keyboard package version is maintained in /source/fv_all.kps.in
+* When adding new keyboards to fv_all, the [regions.json](./source/regions.json) file also needs to get updated for the FirstVoices mobile apps to know what Region and to associate with the keyboard.
+
 
 Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Android
  * iOS
 

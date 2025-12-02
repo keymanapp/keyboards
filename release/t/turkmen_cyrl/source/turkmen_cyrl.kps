@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Version URL=""></Version>
     <Name URL="">Turkmen Cyrillic</Name>
     <Copyright URL="">© 2002-2020 David Gray</Copyright>
+    <Description>Turkmen Cyrillic is a Cyrillic script Unicode keyboard for Turkmen. This
+keyboard also includes the Cyrillic letters needed for Russian loan
+words.</Description>
   </Info>
   <Files>
     <File>
@@ -63,6 +67,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -75,4 +85,8 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tkmcaus3" Relationship="deprecates" />
+    <RelatedPackage ID="turkmen" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

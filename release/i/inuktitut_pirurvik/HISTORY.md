@@ -1,6 +1,10 @@
 Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ Change History
 ===================================
 
+1.4.1 (29 Apr 2025)
+-------------------
+* No changes, rebuild to address https://github.com/keymanapp/keyboards/issues/3473
+
 1.4 (16 Jul 2020)
 -----------------
 * Use AboriginalSerifREGULAR.ttf font for touch layout

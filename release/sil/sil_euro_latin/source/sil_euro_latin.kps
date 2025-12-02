@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,20 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">EuroLatin (SIL)</Name>
-    <Copyright URL="">Copyright (c) SIL International</Copyright>
+    <Copyright URL="">Copyright (c) SIL Global</Copyright>
+    <Description URL="">The EuroLatin keyboard enables you to type in all European languages
+which use Latin-script, and most Latin-script languages from the rest of
+the world. If you need a simple solution for typing multiple
+Latin-script languages from the same keyboard, this keyboard was
+designed for you.\
+\
+The EuroLatin keyboard is ideal for:
+
+-   Home-users who occasionally type or web browse in several languages
+-   Professional translators
+-   Scholars and agencies working with multiple European languages
+-   Libraries running multilingual databases
+-   Anyone who frequently types in more than one Latin-script language</Description>
   </Info>
   <Files>
     <File>
@@ -141,12 +156,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>EuroLatin (SIL)</Name>
       <ID>sil_euro_latin</ID>
-      <Version></Version>
+      <Version>3.0.3</Version>
       <OSKFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</DisplayFont>
       <Languages>
@@ -157,9 +178,8 @@
         <Language ID="aig">Antigua and Barbuda Creole English</Language>
         <Language ID="ale">Aleut</Language>
         <Language ID="aln">Gheg Albanian</Language>
-        <Language ID="als">Tosk Albanian</Language>
         <Language ID="an">Aragonese</Language>
-		<Language ID="ang">Anglo-Saxon</Language>
+        <Language ID="ang">Anglo-Saxon</Language>
         <Language ID="ast">Asturian</Language>
         <Language ID="azd">Eastern Durango Nahuatl (Latin)</Language>
         <Language ID="azn">Western Durango Nahuatl (Latin)</Language>
@@ -203,7 +223,6 @@
         <Language ID="eo">Esperanto</Language>
         <Language ID="es">Spanish</Language>
         <Language ID="esi">North Alaskan Inupiatun</Language>
-        <Language ID="esk">Northwest Alaska Inupiatun</Language>
         <Language ID="ess">Central Siberian Yupik</Language>
         <Language ID="esu">Central Yupik</Language>
         <Language ID="et">Estonian</Language>
@@ -211,7 +230,6 @@
         <Language ID="ext">Extremaduran</Language>
         <Language ID="fap">Palor</Language>
         <Language ID="fax">Fala</Language>
-        <Language ID="ff">Fulah</Language>
         <Language ID="ffm">Maasina Fulfulde</Language>
         <Language ID="fi">Finnish</Language>
         <Language ID="fil">Filipino</Language>
@@ -226,17 +244,17 @@
         <Language ID="frr">Northern Frisian</Language>
         <Language ID="frs">Eastern Frisian</Language>
         <Language ID="fub-Latn">Adamawa Fulfulde</Language>
-        <Language ID="fuc">Pulaar (Latin)</Language>
+        <Language ID="ff">Fulah</Language>
         <Language ID="fue">Borgu Fulfulde</Language>
         <Language ID="fuf">Pular</Language>
-        <Language ID="fuh-Latn">Western Niger Fulfulde</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
         <Language ID="fuq">Central-Eastern Niger Fulfulde</Language>
         <Language ID="fur">Friulian</Language>
         <Language ID="fuv">Nigerian Fulfulde</Language>
         <Language ID="fy">Western Frisian</Language>
         <Language ID="ga">Irish</Language>
         <Language ID="gag">Gagauz</Language>
-        <Language ID="gaz">West Central Oromo (Latin)</Language>
+        <Language ID="om">Oromo</Language>
         <Language ID="gcf">Guadeloupean Creole French</Language>
         <Language ID="gcr">Guianese Creole French</Language>
         <Language ID="gct">Colonia Tovar German</Language>
@@ -244,12 +262,11 @@
         <Language ID="geh">Hutterite German</Language>
         <Language ID="ghc">Hiberno-Scottish Gaelic</Language>
         <Language ID="gl">Galician</Language>
-        <Language ID="gn">Guarani</Language>
         <Language ID="gnw">Western Bolivian Guaraní</Language>
         <Language ID="gos">Gronings</Language>
         <Language ID="gsl">Gusilay</Language>
         <Language ID="gsw">Swiss German</Language>
-        <Language ID="gug">Paraguayan Guaraní (Latin)</Language>
+        <Language ID="gn">Guarani</Language>
         <Language ID="gui">Eastern Bolivian Guaraní</Language>
         <Language ID="gul">Sea Island Creole English</Language>
         <Language ID="gun">Mbyá Guaraní</Language>
@@ -278,7 +295,7 @@
         <Language ID="ktu">Kituba (Democratic Republic of Congo)</Language>
         <Language ID="kw">Cornish</Language>
         <Language ID="la">Latin</Language>
-        <Language ID="lad">Ladino</Language>
+        <Language ID="lad-Latn">Ladino</Language>
         <Language ID="lb">Luxembourgish</Language>
         <Language ID="li">Limburgan</Language>
         <Language ID="lij">Ligurian</Language>
@@ -348,7 +365,7 @@
         <Language ID="qud">Calderón Highland Quichua</Language>
         <Language ID="quf">Lambayeque Quechua</Language>
         <Language ID="qug">Chimborazo Highland Quichua</Language>
-        <Language ID="quh">South Bolivian Quechua</Language>
+        <Language ID="qu-BO">Quechua (Bolivia)</Language>
         <Language ID="quk">Chachapoyas Quechua</Language>
         <Language ID="qul">North Bolivian Quechua</Language>
         <Language ID="qup">Southern Pastaza Quechua</Language>
@@ -357,7 +374,6 @@
         <Language ID="quw">Tena Lowland Quichua</Language>
         <Language ID="qux">Yauyos Quechua</Language>
         <Language ID="quy">Ayacucho Quechua</Language>
-        <Language ID="quz">Cusco Quechua (Latin)</Language>
         <Language ID="qva">Ambo-Pasco Quechua</Language>
         <Language ID="qvc">Cajamarca Quechua</Language>
         <Language ID="qve">Eastern Apurímac Quechua</Language>
@@ -395,9 +411,8 @@
         <Language ID="rmn">Balkan Romani</Language>
         <Language ID="rmo">Sinte Romani</Language>
         <Language ID="rmw">Welsh Romani</Language>
-        <Language ID="rmy-Latn">Vlax Romani</Language>
+        <Language ID="rom">Romany</Language>
         <Language ID="ro">Romanian</Language>
-        <Language ID="rom">Romany (Latin)</Language>
         <Language ID="rop">Kriol</Language>
         <Language ID="rup">Macedo-Romanian</Language>
         <Language ID="ruq">Megleno Romanian</Language>
@@ -420,7 +435,7 @@
         <Language ID="snf">Noon</Language>
         <Language ID="spq">Loreto-Ucayali Spanish</Language>
         <Language ID="sq">Albanian</Language>
-        <Language ID="sr">Serbian</Language>
+        <Language ID="sr-Latn">Serbian</Language>
         <Language ID="srm">Saramaccan</Language>
         <Language ID="srn">Sranan Tongo</Language>
         <Language ID="sro">Campidanese Sardinian</Language>
@@ -431,8 +446,8 @@
         <Language ID="sv">Swedish</Language>
         <Language ID="svc">Vincentian Creole English</Language>
         <Language ID="swg">Swabian</Language>
-        <Language ID="swh">Swahili (individual language)</Language>
-        <Language ID="sxu">Upper Saxon</Language>
+        <Language ID="sw">Swahili (macrolanguage)</Language>
+        <Language ID="sxu-Latn">Upper Saxon</Language>
         <Language ID="szl">Silesian</Language>
         <Language ID="tcs">Torres Strait Creole</Language>
         <Language ID="tk">Turkmen</Language>
@@ -462,7 +477,6 @@
         <Language ID="zad">Cajonos Zapotec</Language>
         <Language ID="zae">Yareni Zapotec</Language>
         <Language ID="zaf">Ayoquesco Zapotec</Language>
-        <Language ID="zai">Isthmus Zapotec</Language>
         <Language ID="zam">Miahuatlán Zapotec</Language>
         <Language ID="zao">Ozolotepec Zapotec</Language>
         <Language ID="zap">Zapotec (Latin)</Language>
@@ -475,9 +489,9 @@
         <Language ID="zax">Xadani Zapotec</Language>
         <Language ID="zca">Coatecas Altas Zapotec</Language>
         <Language ID="zea">Zeeuws</Language>
-        <Language ID="zhd">Dai Zhuang</Language>
+        <Language ID="zhd-Latn">Dai Zhuang</Language>
         <Language ID="zhn">Nong Zhuang</Language>
-        <Language ID="zlj">Liujiang Zhuang</Language>
+        <Language ID="zlj-Latn">Liujiang Zhuang</Language>
         <Language ID="zoo">Asunción Mixtepec Zapotec</Language>
         <Language ID="zpa">Lachiguiri Zapotec</Language>
         <Language ID="zpb">Yautepec Zapotec</Language>
@@ -520,10 +534,13 @@
         <Language ID="ztx">Zaachila Zapotec</Language>
         <Language ID="zty">Yatee Zapotec</Language>
         <Language ID="zu">Zulu</Language>
-        <Language ID="zyb">Yongbei Zhuang</Language>
         <Language ID="zyj">Youjiang Zhuang</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="european" Relationship="deprecates"/>
+    <RelatedPackage ID="european2" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

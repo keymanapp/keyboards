@@ -1,9 +1,9 @@
 FONTLOG
-Gentium Plus
+Gentium
 ============
 
-This file provides detailed information on the Gentium Plus family of fonts.
-This information should be distributed along with the Gentium Plus fonts and
+This file provides detailed information on the Gentium family of fonts.
+This information should be distributed along with the Gentium fonts and
 any derivative works.
 
 ## About this project
@@ -14,7 +14,7 @@ the Latin script to produce readable, high-quality publications. The
 design is intended to be highly readable, reasonably compact, and visually 
 attractive. Gentium has won a "Certificate of Excellence in Typeface 
 Design" in two major international typeface design competitions: 
-bukva:raz! (2001), TDC2003 (2003). The Gentium Plus font family is based on
+bukva:raz! (2001), TDC2003 (2003). The Gentium font family is based on
 this original design.
 
 This project is intended to provide a free and open font family for all
@@ -29,7 +29,7 @@ base+diacritic combinations.
 
 The OFL prohibits the use of Reserved Font Names "Gentium" and "SIL" in
 the name of any font that is derived from the Original Version of Gentium.
-However, SIL International (the Copyright Holder) grants through
+However, SIL Global (the Copyright Holder) grants through
 this separate written agreement the right to use the Reserved Font Names
 in any Modified Version of this font created by using TypeTuner as long
 as the feature information contained in the Original Version is used, 
@@ -42,13 +42,461 @@ terms of the OFL. Specifically, the use of Reserved Font Names is
 prohibited when making derivatives of a TypeTuner-produced font. Anyone
 making a derivative of a TypeTuner font will need to find a different
 name. For example a TypeTuner-produced font may be named 
-"Gentium Plus Literacy SomeFarAwayPlace" but a derivative of that font made 
+"Gentium Literacy SomeFarAwayPlace" but a derivative of that font made 
 with other tools would not be allowed to use the "Gentium" and "SIL" 
 Reserved Font Names and would have to be named something like "Grace Foo".
 
 ## ChangeLog
 
 (This should list both major and minor changes, most recent first.)
+
+### 2 Jun 2025 (SIL WSTech Team) Gentium version 7.000
+
+***Note that this is a major upgrade with significant changes to family structure, line spacing, and glyph metrics. Please read the following carefully to understand how the changes may affect you.***
+
+#### Font names, family structure, and line metrics
+
+- Font family names have changed. It is possible to have both this release (v7) and the previous one (v6.2) installed at the same time. This is a permanent change intended to help with the transition from v6.2 to v7.
+    - *Gentium Plus* is now *Gentium*
+    - *Gentium Book Plus* is now *Gentium Book*
+
+- Gentium and Gentium Book families now have additional intermediate weights, with the previous Book family weights integrated into the main Gentium family. Previously existing weights in both families have not changed. Here is a comparison, with retained weights in **bold** and new weights in *italic*. The CSS values for the weights within each family are in parentheses. Italic faces follow a similar structure and correspondence.
+
+Gentium family            | Gentium Book family
+------------------        | -----------------------
+**Gentium Regular** (400) | 
+*Gentium Medium* (500)    | **Gentium Book Regular** (400)
+*Gentium SemiBold* (600)  | *Gentium Book Medium* (500)
+**Gentium Bold** (700)    | *Gentium Book SemiBold* (600)
+*Gentium ExtraBold* (800) | **Gentium Book Bold** (700)
+
+- The Gentium Book family is now a separate download and is no longer included in the main Gentium package.
+
+- The default line spacing has been significantly decreased to be more similar to other common text fonts.
+
+- There are no *Compact* variants. These are less needed since the default line spacing has been decreased. *Compact* versions of the v6.2 fonts remain available from https://software.sil.org/lcgfonts/download/
+
+- TypeTuner Web no longer offers line spacing alternatives for the v7 fonts (Normal, Tight, Loose). If you need Tight or Loose variants the v6.2 fonts remain available and support line spacing alternatives.
+
+- There are no ‘pre-tuned’ regional or *Literacy* special-purpose modified variants. The v6.2 variants, including *Literacy* versions, remain available from https://software.sil.org/lcgfonts/download/. You can still manually create v7 variants with TypeTuner Web that include literacy forms and other alternatives.
+
+#### New features and enhancements
+
+- Kerning has now been expanded to cover the full range of alphabetic symbols except for small caps (which will be included in a future update). **Warning: Because of the addition of extensive kerning, line, paragraph, and page lengths may be different from v6.2.**
+
+- Greek OpenType support is significantly more robust, with better handling of both combining and non-combining diacritics. Macron + diacritic combinations are now supported, as well as some rare epsilon and omicron diacritic combinations. Small caps (both `smcp` and `c2sc`) are supported, with diacritics bring removed.
+
+- Proportional Oldstyle figures are now supported through the standard OpenType feature (`onum`). These only apply to the main numerals, not fractions, superscripts, or numeral-based symbols.
+
+- The default form for capital N with left hook has been changed to the lowercase style to match the capital Eng. The related feature (`cv44`) has been changed to substitute the uppercase style form.
+    - U+019D LATIN CAPITAL LETTER N WITH LEFT HOOK
+
+- Additions to Modifier Apostrophe feature (`cv70`)
+    - U+02BB MODIFIER LETTER TURNED COMMA
+    - U+02BD MODIFIER LETTER REVERSED COMMA
+    - U+0312 COMBINING TURNED COMMA ABOVE
+    - U+0314 COMBINING REVERSED COMMA ABOVE
+
+- Addition to Rams Horn feature (`cv25`)
+    - U+10791 MODIFIER LETTER SMALL RAMS HORN
+
+- Small caps added for these parentheses and brackets
+    - U+0028 LEFT PARENTHESIS
+    - U+0029 RIGHT PARENTHESIS
+    - U+005B LEFT SQUARE BRACKET
+    - U+005D RIGHT SQUARE BRACKET
+    - U+007B LEFT CURLY BRACKET
+    - U+007D RIGHT CURLY BRACKET
+
+#### New character support
+
+- Unicode 16 additions
+    - U+1C89 CYRILLIC CAPITAL LETTER TJE
+    - U+1C8A CYRILLIC SMALL LETTER TJE
+    - U+A7CB LATIN CAPITAL LETTER RAMS HORN
+        - This was previously in the SIL PUA (U+F26E)
+    - U+A7CC LATIN CAPITAL LETTER S WITH DIAGONAL STROKE
+    - U+A7CD LATIN SMALL LETTER S WITH DIAGONAL STROKE
+    - U+A7DA LATIN CAPITAL LETTER LAMBDA
+    - U+A7DB LATIN SMALL LETTER LAMBDA
+    - U+A7DC LATIN CAPITAL LETTER LAMBDA WITH STROKE
+
+- Orthographic at signs
+    - U+24B6 CIRCLED LATIN CAPITAL LETTER A
+    - U+24D0 CIRCLED LATIN SMALL LETTER A
+
+- Additional Cyrillic modifiers
+    - U+A69C MODIFIER LETTER CYRILLIC HARD SIGN
+    - U+A69D MODIFIER LETTER CYRILLIC SOFT SIGN
+
+- Case mapping for Coptic eie
+    - U+2C89 COPTIC SMALL LETTER EIE
+
+- Upwards ancora (and revised downwards form)
+    - U+2E14 DOWNWARDS ANCORA
+    - U+2E15 UPWARDS ANCORA
+
+- Prosodic symbols
+    - U+23D1 METRICAL BREVE
+    - U+23D2 METRICAL LONG OVER SHORT
+    - U+23D3 METRICAL SHORT OVER LONG
+    - U+23D4 METRICAL LONG OVER TWO SHORTS
+    - U+23D5 METRICAL TWO SHORTS OVER LONG
+    - U+23D6 METRICAL TWO SHORTS JOINED
+    - U+2E3D VERTICAL SIX DOTS
+
+- Doubled brackets and parentheses
+    - U+27EA MATHEMATICAL LEFT DOUBLE ANGLE BRACKET
+    - U+27EB MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+    - U+2E28 LEFT DOUBLE PARENTHESIS
+    - U+2E29 RIGHT DOUBLE PARENTHESIS
+
+- Logical symbols
+    - U+21AE LEFT RIGHT ARROW WITH STROKE
+    - U+22BB XOR
+    - U+22BC NAND
+    - U+22BD NOR
+
+#### Improvements and fixes
+
+- Support added for complex positioning of bridging double diacritics and nearby marks. Correct rendering requires a very specific encoding sequence - see https://software.sil.org/fonts/bridging-diacritics/
+    - U+035C COMBINING DOUBLE BREVE BELOW
+    - U+035D COMBINING DOUBLE BREVE
+    - U+035E COMBINING DOUBLE MACRON
+    - U+035F COMBINING DOUBLE MACRON BELOW
+    - U+0360 COMBINING DOUBLE TILDE
+    - U+0361 COMBINING DOUBLE INVERTED BREVE
+    - U+0362 COMBINING DOUBLE RIGHTWARDS ARROW BELOW
+    - U+1DCD COMBINING DOUBLE CIRCUMFLEX ABOVE
+    - U+1DFC COMBINING DOUBLE INVERTED BREVE BELOW
+    - U+F17A COMBINING DOUBLE DIAERESIS (in SIL PUA)
+
+- Redesigned Central European carons
+    - U+010F LATIN SMALL LETTER D WITH CARON
+    - U+013D LATIN CAPITAL LETTER L WITH CARON
+    - U+013E LATIN SMALL LETTER L WITH CARON
+    - U+0165 LATIN SMALL LETTER T WITH CARON
+
+- Revised hooked letters to improve spacing (including kerning) and reduce collisions. Some collisions have been retained to reduce unwanted whitespace within words (e.g. ƴk).
+    - U+0188 LATIN SMALL LETTER C WITH HOOK
+    - U+01A5 LATIN SMALL LETTER P WITH HOOK
+    - U+01AD LATIN SMALL LETTER T WITH HOOK
+    - U+01B3 LATIN CAPITAL LETTER Y WITH HOOK
+    - U+01B4 LATIN SMALL LETTER Y WITH HOOK
+    - U+0260 LATIN SMALL LETTER G WITH HOOK
+    - U+02A0 LATIN SMALL LETTER Q WITH HOOK
+    - U+2C71 LATIN SMALL LETTER V WITH RIGHT HOOK
+    - U+2C72 LATIN CAPITAL LETTER W WITH HOOK
+    - U+2C73 LATIN SMALL LETTER W WITH HOOK
+    - U+1DF09 LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK
+
+- Fixed position of
+    - U+1D09 LATIN SMALL LETTER TURNED I
+    - U+1D4E MODIFIER LETTER SMALL TURNED I
+
+- Made Greek spacing letters non-combining
+    - U+037A GREEK YPOGEGRAMMENI
+    - U+0384 GREEK TONOS
+    - U+0385 GREEK DIALYTIKA TONOS
+
+- Fixed dotless form of
+    - U+1DF1A LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
+
+- Revised design of
+    - U+A720 MODIFIER LETTER STRESS AND HIGH TONE
+    - U+A721 MODIFIER LETTER STRESS AND LOW TONE
+
+- Based design on Greek form:
+    - U+1D61 MODIFIER LETTER SMALL CHI
+
+- Improved design of some combining diacritics
+    - U+032B COMBINING INVERTED DOUBLE ARCH BELOW
+    - U+033C COMBINING SEAGULL BELOW
+    - U+1AB7 COMBINING OPEN MARK BELOW
+    - U+1AB8 COMBINING DOUBLE OPEN MARK BELOW
+    - U+1AC7 COMBINING INVERTED DOUBLE ARCH ABOVE
+
+- Revised anchors on many letters to improve diacritic positioning, including these and related letters
+    - U+004A LATIN CAPITAL LETTER J
+    - U+0051 LATIN CAPITAL LETTER Q
+    - U+0059 LATIN CAPITAL LETTER Y
+    - U+0066 LATIN SMALL LETTER F
+    - U+0069 LATIN SMALL LETTER I
+    - U+006A LATIN SMALL LETTER J
+    - U+0079 LATIN SMALL LETTER Y
+    - U+0434 CYRILLIC SMALL LETTER DE
+
+- Added anchors to support use of diacritics on
+    - U+03C8 GREEK SMALL LETTER PSI
+    - U+03D1 GREEK THETA SYMBOL
+
+- Reviewed anchors on spacing acutes and graves
+    - U+0060 GRAVE ACCENT
+    - U+00B4 ACUTE ACCENT
+    - U+02CA MODIFIER LETTER ACUTE ACCENT
+    - U+02CB MODIFIER LETTER GRAVE ACCENT
+    - U+02CE MODIFIER LETTER LOW GRAVE ACCENT
+    - U+02CF MODIFIER LETTER LOW ACUTE ACCENT
+
+- Low-profile diacritics are used for capitals for Cyrillic as well as Latin.
+
+- Autohinting is more consistent across the font family
+
+### 1 Feb 2023 (SIL WSTech Team) Gentium Plus version 6.200
+
+This release is focused on adding features and glyphs, including support for over 180 additional characters mostly from Unicode 14 and 15. It does not include significant changes to line spacing, glyph widths, or kerning that might cause document reflow or layout changes - except for minor improvements to the size and weight of superscript, subscript, and modifier letters.
+
+#### New features, including *TypeTuner Web* support
+
+- Feature to display alternate design of clicks that sit on baseline
+    - Baseline clicks (cv69)
+ 
+- Standard 'subs' and 'sups' features for numerals. These are not supported by *TypeTuner Web*.
+    - Subscript numerals (subs)
+    - Superscript numerals (sups)
+
+- Feature to automatically construct fractions when using U+002F SOLIDUS or U+2044 FRACTION SLASH. This is not supported by *TypeTuner Web*.
+    - Automatic fractions (frac)
+
+#### New character support
+
+- Additional click (also supported by new baseline clicks feature)
+    - U+2980 TRIPLE VERTICAL BAR DELIMITER
+
+- Letters used for legacy Malayalam transliteration
+    - U+1DF25 LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
+    - U+1DF26 LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
+    - U+1DF27 LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
+    - U+1DF28 LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK
+    - U+1DF29 LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
+    - U+1DF2A LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
+
+- Letters used for Egyptological transliteration
+    - U+A7BA LATIN CAPITAL LETTER GLOTTAL A
+    - U+A7BB LATIN SMALL LETTER GLOTTAL A
+    - U+A7BC LATIN CAPITAL LETTER GLOTTAL I
+    - U+A7BD LATIN SMALL LETTER GLOTTAL I
+    - U+A7BE LATIN CAPITAL LETTER GLOTTAL U
+    - U+A7BF LATIN SMALL LETTER GLOTTAL U
+
+- Greek editorial combining marks
+    - U+1DC0 COMBINING DOTTED GRAVE ACCENT
+    - U+1DC1 COMBINING DOTTED ACUTE ACCENT
+
+- Combining marks
+    - U+1ABF COMBINING LATIN SMALL LETTER W BELOW
+    - U+1AC0 COMBINING LATIN SMALL LETTER TURNED W BELOW
+    - U+1AC6 COMBINING NUMBER SIGN ABOVE
+    - U+1AC7 COMBINING INVERTED DOUBLE ARCH ABOVE
+    - U+1AC8 COMBINING PLUS SIGN ABOVE
+    - U+1AC9 COMBINING DOUBLE PLUS SIGN ABOVE
+    - U+1ACA COMBINING DOUBLE PLUS SIGN BELOW
+    - U+1ACB COMBINING TRIPLE ACUTE ACCENT
+    - U+1ACC COMBINING LATIN SMALL LETTER INSULAR G
+    - U+1ACD COMBINING LATIN SMALL LETTER INSULAR R
+    - U+1ACE COMBINING LATIN SMALL LETTER INSULAR T
+    - U+1DDA COMBINING LATIN SMALL LETTER G
+    - U+1DDC COMBINING LATIN SMALL LETTER K
+    - U+1DFC COMBINING DOUBLE INVERTED BREVE BELOW
+
+- Combining marks that are not recommended for normal use and may not combine well with letters. Precomposed characters that include the hook should be used instead except in rare cases.
+    - U+0321 COMBINING PALATALIZED HOOK BELOW
+    - U+0322 COMBINING RETROFLEX HOOK BELOW
+
+- Modifier letters and symbols
+    - U+A7F2 MODIFIER LETTER CAPITAL C
+    - U+A7F3 MODIFIER LETTER CAPITAL F
+    - U+A7F4 MODIFIER LETTER CAPITAL Q
+    - U+AB69 MODIFIER LETTER SMALL TURNED W
+    - U+AB6A MODIFIER LETTER LEFT TACK
+    - U+AB6B MODIFIER LETTER RIGHT TACK
+    - U+10780 MODIFIER LETTER SMALL CAPITAL AA
+    - U+10781 MODIFIER LETTER SUPERSCRIPT TRIANGULAR COLON
+    - U+10782 MODIFIER LETTER SUPERSCRIPT HALF TRIANGULAR COLON
+    - U+10784 MODIFIER LETTER SMALL CAPITAL B
+    - U+10785 MODIFIER LETTER SMALL B WITH HOOK
+    - U+10787 MODIFIER LETTER SMALL DZ DIGRAPH
+    - U+10788 MODIFIER LETTER SMALL DZ DIGRAPH WITH RETROFLEX HOOK
+    - U+10789 MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
+    - U+1078A MODIFIER LETTER SMALL DEZH DIGRAPH
+    - U+1078B MODIFIER LETTER SMALL D WITH TAIL
+    - U+1078C MODIFIER LETTER SMALL D WITH HOOK
+    - U+1078D MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+    - U+10790 MODIFIER LETTER SMALL FENG DIGRAPH
+    - U+10792 MODIFIER LETTER SMALL CAPITAL G
+    - U+10793 MODIFIER LETTER SMALL G WITH HOOK
+    - U+10794 MODIFIER LETTER SMALL CAPITAL G WITH HOOK
+    - U+10796 MODIFIER LETTER SMALL CAPITAL H
+    - U+10797 MODIFIER LETTER SMALL HENG WITH HOOK
+    - U+10798 MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
+    - U+10799 MODIFIER LETTER SMALL LS DIGRAPH
+    - U+1079A MODIFIER LETTER SMALL LZ DIGRAPH
+    - U+1079B MODIFIER LETTER SMALL L WITH BELT
+    - U+1079C MODIFIER LETTER SMALL CAPITAL L WITH BELT
+    - U+1079D MODIFIER LETTER SMALL L WITH RETROFLEX HOOK AND BELT
+    - U+1079E MODIFIER LETTER SMALL LEZH
+    - U+1079F MODIFIER LETTER SMALL LEZH WITH RETROFLEX HOOK
+    - U+107A1 MODIFIER LETTER SMALL TURNED Y WITH BELT
+    - U+107A4 MODIFIER LETTER SMALL CLOSED OMEGA
+    - U+107A5 MODIFIER LETTER SMALL Q
+    - U+107A6 MODIFIER LETTER SMALL TURNED R WITH LONG LEG
+    - U+107A7 MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+    - U+107A8 MODIFIER LETTER SMALL R WITH TAIL
+    - U+107A9 MODIFIER LETTER SMALL R WITH FISHHOOK
+    - U+107AA MODIFIER LETTER SMALL CAPITAL R
+    - U+107AB MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
+    - U+107AC MODIFIER LETTER SMALL TS DIGRAPH
+    - U+107AD MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
+    - U+107AE MODIFIER LETTER SMALL TESH DIGRAPH
+    - U+107AF MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
+    - U+107B0 MODIFIER LETTER SMALL V WITH RIGHT HOOK
+    - U+107B3 MODIFIER LETTER GLOTTAL STOP WITH STROKE
+    - U+107B4 MODIFIER LETTER REVERSED GLOTTAL STOP WITH STROKE
+    - U+107B5 MODIFIER LETTER BILABIAL CLICK
+    - U+107B6 MODIFIER LETTER DENTAL CLICK
+    - U+107B7 MODIFIER LETTER LATERAL CLICK
+    - U+107B8 MODIFIER LETTER ALVEOLAR CLICK
+    - U+107B9 MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+    - U+107BA MODIFIER LETTER SMALL S WITH CURL
+
+- Cyrillic modifier letters, subscripts, and combining marks
+    - U+1E030 MODIFIER LETTER CYRILLIC SMALL A
+    - U+1E031 MODIFIER LETTER CYRILLIC SMALL BE
+    - U+1E032 MODIFIER LETTER CYRILLIC SMALL VE
+    - U+1E033 MODIFIER LETTER CYRILLIC SMALL GHE
+    - U+1E034 MODIFIER LETTER CYRILLIC SMALL DE
+    - U+1E035 MODIFIER LETTER CYRILLIC SMALL IE
+    - U+1E036 MODIFIER LETTER CYRILLIC SMALL ZHE
+    - U+1E037 MODIFIER LETTER CYRILLIC SMALL ZE
+    - U+1E038 MODIFIER LETTER CYRILLIC SMALL I
+    - U+1E039 MODIFIER LETTER CYRILLIC SMALL KA
+    - U+1E03A MODIFIER LETTER CYRILLIC SMALL EL
+    - U+1E03B MODIFIER LETTER CYRILLIC SMALL EM
+    - U+1E03C MODIFIER LETTER CYRILLIC SMALL O
+    - U+1E03D MODIFIER LETTER CYRILLIC SMALL PE
+    - U+1E03E MODIFIER LETTER CYRILLIC SMALL ER
+    - U+1E03F MODIFIER LETTER CYRILLIC SMALL ES
+    - U+1E040 MODIFIER LETTER CYRILLIC SMALL TE
+    - U+1E041 MODIFIER LETTER CYRILLIC SMALL U
+    - U+1E042 MODIFIER LETTER CYRILLIC SMALL EF
+    - U+1E043 MODIFIER LETTER CYRILLIC SMALL HA
+    - U+1E044 MODIFIER LETTER CYRILLIC SMALL TSE
+    - U+1E045 MODIFIER LETTER CYRILLIC SMALL CHE
+    - U+1E046 MODIFIER LETTER CYRILLIC SMALL SHA
+    - U+1E047 MODIFIER LETTER CYRILLIC SMALL YERU
+    - U+1E048 MODIFIER LETTER CYRILLIC SMALL E
+    - U+1E049 MODIFIER LETTER CYRILLIC SMALL YU
+    - U+1E04B MODIFIER LETTER CYRILLIC SMALL SCHWA
+    - U+1E04C MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
+    - U+1E04D MODIFIER LETTER CYRILLIC SMALL JE
+    - U+1E04E MODIFIER LETTER CYRILLIC SMALL BARRED O
+    - U+1E04F MODIFIER LETTER CYRILLIC SMALL STRAIGHT U
+    - U+1E050 MODIFIER LETTER CYRILLIC SMALL PALOCHKA
+    - U+1E051 CYRILLIC SUBSCRIPT SMALL LETTER A
+    - U+1E052 CYRILLIC SUBSCRIPT SMALL LETTER BE
+    - U+1E053 CYRILLIC SUBSCRIPT SMALL LETTER VE
+    - U+1E054 CYRILLIC SUBSCRIPT SMALL LETTER GHE
+    - U+1E055 CYRILLIC SUBSCRIPT SMALL LETTER DE
+    - U+1E056 CYRILLIC SUBSCRIPT SMALL LETTER IE
+    - U+1E057 CYRILLIC SUBSCRIPT SMALL LETTER ZHE
+    - U+1E058 CYRILLIC SUBSCRIPT SMALL LETTER ZE
+    - U+1E059 CYRILLIC SUBSCRIPT SMALL LETTER I
+    - U+1E05A CYRILLIC SUBSCRIPT SMALL LETTER KA
+    - U+1E05B CYRILLIC SUBSCRIPT SMALL LETTER EL
+    - U+1E05C CYRILLIC SUBSCRIPT SMALL LETTER O
+    - U+1E05D CYRILLIC SUBSCRIPT SMALL LETTER PE
+    - U+1E05E CYRILLIC SUBSCRIPT SMALL LETTER ES
+    - U+1E05F CYRILLIC SUBSCRIPT SMALL LETTER U
+    - U+1E060 CYRILLIC SUBSCRIPT SMALL LETTER EF
+    - U+1E061 CYRILLIC SUBSCRIPT SMALL LETTER HA
+    - U+1E062 CYRILLIC SUBSCRIPT SMALL LETTER TSE
+    - U+1E063 CYRILLIC SUBSCRIPT SMALL LETTER CHE
+    - U+1E064 CYRILLIC SUBSCRIPT SMALL LETTER SHA
+    - U+1E065 CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN
+    - U+1E066 CYRILLIC SUBSCRIPT SMALL LETTER YERU
+    - U+1E067 CYRILLIC SUBSCRIPT SMALL LETTER GHE WITH UPTURN
+    - U+1E068 CYRILLIC SUBSCRIPT SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+    - U+1E069 CYRILLIC SUBSCRIPT SMALL LETTER DZE
+    - U+1E06A CYRILLIC SUBSCRIPT SMALL LETTER DZHE
+    - U+1E06B MODIFIER LETTER CYRILLIC SMALL ES WITH DESCENDER
+    - U+1E06D MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE
+    - U+1E08F COMBINING CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+
+- Miscellaneous letters
+    - U+A7C7 LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY
+    - U+A7C8 LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY
+    - U+A7C9 LATIN CAPITAL LETTER S WITH SHORT STROKE OVERLAY
+    - U+A7CA LATIN SMALL LETTER S WITH SHORT STROKE OVERLAY
+    - U+AB66 LATIN SMALL LETTER DZ DIGRAPH WITH RETROFLEX HOOK
+    - U+AB67 LATIN SMALL LETTER TS DIGRAPH WITH RETROFLEX HOOK
+    - U+AB68 LATIN SMALL LETTER TURNED R WITH MIDDLE TILDE
+
+- Symbols
+    - U+2031 PER TEN THOUSAND SIGN
+    - U+203D INTERROBANG
+    - U+203E OVERLINE
+    - U+2042 ASTERISM
+    - U+204A TIRONIAN SIGN ET
+    - U+20C0 SOM SIGN
+    - U+218A TURNED DIGIT TWO
+    - U+218B TURNED DIGIT THREE
+    - U+21B6 ANTICLOCKWISE TOP SEMICIRCLE ARROW
+    - U+21B7 CLOCKWISE TOP SEMICIRCLE ARROW
+    - U+21BA ANTICLOCKWISE OPEN CIRCLE ARROW
+    - U+21BB CLOCKWISE OPEN CIRCLE ARROW
+    - U+2215 DIVISION SLASH
+    - U+2221 MEASURED ANGLE
+    - U+2227 LOGICAL AND
+    - U+2228 LOGICAL OR
+    - U+226E NOT LESS-THAN
+    - U+226F NOT GREATER-THAN
+    - U+2318 PLACE OF INTEREST SIGN
+    - U+25C9 FISHEYE
+    - U+25CB WHITE CIRCLE
+    - U+2610 BALLOT BOX
+    - U+2611 BALLOT BOX WITH CHECK
+    - U+2612 BALLOT BOX WITH X
+    - U+2639 WHITE FROWNING FACE
+    - U+263A WHITE SMILING FACE
+    - U+2713 CHECK MARK
+    - U+2717 BALLOT X
+    - U+27C2 PERPENDICULAR
+    - U+2AFD DOUBLE SOLIDUS OPERATOR
+    - U+2E3E WIGGLY VERTICAL LINE
+    - U+1F12F COPYLEFT SYMBOL
+    - U+1F610 NEUTRAL FACE
+
+#### Improvements and fixes
+
+- Kayan diacritics feature (cv79) now supported by TypeTuner Web
+
+- Combining letters, modifier letters, superscripts, and subscripts have been made more consistent in size and weight
+
+- Superscript and subscript metrics in OS/2 table are synchronized with the height of precomposed letters
+
+- Encoding fixed for U+1078E MODIFIER LETTER SMALL REVERSED E
+
+- Size increased for:
+    - U+02BE MODIFIER LETTER RIGHT HALF RING
+    - U+02BF MODIFIER LETTER LEFT HALF RING
+    - U+02D2 MODIFIER LETTER CENTRED RIGHT HALF RING
+    - U+02D3 MODIFIER LETTER CENTRED LEFT HALF RING
+
+- U+00AA FEMININE ORDINAL INDICATOR is now included in single-story/double-story features
+
+- The combination of U+0079 LATIN SMALL LETTER Y and U+0328 COMBINING OGONEK forms a ligature
+
+- Small cap form corrected for U+A78D LATIN CAPITAL LETTER TURNED H / U+0265 LATIN SMALL LETTER TURNED H
+
+- U+0328 COMBINING OGONEK repositioned to middle leg of U+006D LATIN SMALL LETTER M
+
+- Diacritic positioning improved for U+2183 ROMAN NUMERAL REVERSED ONE HUNDRED 
+
+- Position of dot changed for U+1E23 LATIN SMALL LETTER H WITH DOT ABOVE
+
+#### Notes
+
+- The next major version (7) will address some complex pending issues and features and may include substantial changes to line spacing, glyph metrics, kerning, and even font family structure. If you have any requests for future versions, please contact us as soon as possible. 
 
 ### 9 Feb 2022 (SIL WSTech Team) Gentium Plus version 6.101
 
@@ -392,18 +840,19 @@ good results - but is not yet complete enough.
 sure to add your name (N), email (E), web-address (W) and description (D). 
 This list is sorted by last name in alphabetical order.)
 
-N: Jon Coblentz, Sharon Correll, Lorna Evans, Bob Hallissy, Martin Hosken,
-Jonathan Kew, Annie Olsen, Iska Routamaa, Alan Ward
+N: Jon Coblentz, Sharon Correll, Lorna Evans, Bob Hallissy,
+Martin Hosken, Annie Olsen, David Raymond, Iska Routamaa, Becca Spalinger,
+Alan Ward
 E: https://software.sil.org/gentium/about/contact/
 W: https://software.sil.org/gentium/
 D: SIL designers and font engineers
 
 N: Victor Gaultney
-E: victor_gaultney@sil.org
+E: https://software.sil.org/gentium/about/contact/
 W: https://gaultney.org/jvgtype/
 D: Original Designer
 
-The Gentium and Gentium Plus fonts are maintained by SIL International, a global,
+The Gentium fonts are maintained by SIL Global, a global,
 faith-based nonprofit that works with local communities around the world
 to develop language solutions that expand possibilities for a better life.
 

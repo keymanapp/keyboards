@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +19,7 @@
     <Items>
       <Item>
         <Name>Welcome</Name>
-        <FileName>Welcome.htm</FileName>
+        <FileName>welcome.htm</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -58,6 +60,9 @@
     <Name URL="">GFF Amharic Keyboard</Name>
     <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Description URL="">This is an Amharic (amh, አማርኛ) language mnemonic input method. It
+requires a font supporting Ethiopic script under the Unicode 4.1
+standard.</Description>
   </Info>
   <Files>
     <File>
@@ -97,16 +102,10 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>Welcome.htm</Name>
-      <Description>File Welcome.htm</Description>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
-      <Description>Font Ethiopic Fantuwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
@@ -115,76 +114,22 @@
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
-      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
-      <Description>Font Ethiopic Hiwua</Description>
+      <Name>..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf</Name>
+      <Description>Font NotoSerifEthiopic Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
-      <Description>Font Ethiopia Jiret</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
-      <Description>Font Ethiopia Jiret Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
-      <Description>Font Ethiopic Tint</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrabsl.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasb.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
-      <Description>Font Ethiopic Wookianos</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
-      <Description>Font Ethiopic Yebse</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\build\gff_amh_7.kvk</Name>
-      <Description>File gff_amh_7.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
+      <FileType>.md</FileType>
     </File>
     <File>
       <Name>..\build\gff_amh_7.kmx</Name>
@@ -193,19 +138,22 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
+      <Name>..\build\gff_amh_7.kvk</Name>
+      <Description>File gff_amh_7.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.kvk</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name></Name>
-      <ID></ID>
-      <Version></Version>
-      <Languages/>
+      <ID>gff_amh_7</ID>
+      <Languages>
+        <Language ID="am">Amharic</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-amh-7" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

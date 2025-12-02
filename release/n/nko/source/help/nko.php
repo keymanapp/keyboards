@@ -16,8 +16,8 @@
   History:          01 Jun 2012 - pbaehr - Generate documentation from Keyman Desktop documentation
 */
   $pagename = "N'Ko Phonetic Keyboard Help";
-  $pagetitle = "N'Ko Phonetic Keyboard Help";
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 /* 
 ===========
 ==General==
@@ -102,8 +102,7 @@ END;
   require_once('header.php');
 ?>
  
-<body>
-  <p>Keyboard &#169; 2012-2020 Michael Everson and SIL International</p>
+  <p>Keyboard &#169; Michael Everson and SIL Global</p>
   <section id='overview'>
 	<h2>Overview</h2>
 	<p>This keyboard is designed for the N'Ko script of West Africa. The keyboard has been developed to make it easy to type all of the letters and diacritics necessary for N'Ko. This keyboard is fully compliant with the <a href='http://unicode.org/standard/standard.html'>Unicode Standard</a>.</p>
@@ -537,13 +536,3 @@ END;
 	</table>
    </section>	
    
-  <section id='history'>
-	<h2>Version History</h2>
-
-  <dl>
-    <dt>Version 1.0, 2012</dt>
-    <dd>2012, Initial version</dd>
-    
-    <dt>Version 1.1, 28 Apr 2015</dt>
-    <dd>Updated with web font for Android support</dd>
-  </dl>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Nəxʷsƛ̓ay̓əmúcən</Name>
-    <Version URL="">9.2</Version>
-    <Copyright URL="">© 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Version URL=""></Version>
+    <Copyright URL="">© 2015-2025 FirstVoices, SIL Global, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Description URL="">This keyboard is designed for the Nəxʷsƛ̓ay̓əmúcən language of the BC Coast region of Canada. The desktop layout is based on the original KlallamU keyboard by Tim Montler. This is part of a set of keyboards from FirstVoices.
+
+Alternate names: Klallam, Clallam</Description>
+    <Author URL=""></Author>
   </Info>
   <Files>
     <File>
@@ -33,16 +39,110 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>fv_nexwslayemucen.ico</Name>
+      <Description>File fv_nexwslayemucen.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>welcome\FVLogo.gif</Name>
+      <Description>File FVLogo.gif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.gif</FileType>
+    </File>
+    <File>
+      <Name>welcome\keyman.png</Name>
+      <Description>File keyman.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\klallam_U_.png</Name>
+      <Description>File klallam_U_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>help\fv_nexwslayemucen.php</Name>
+      <Description>File fv_nexwslayemucen.php</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.php</FileType>
+    </File>
+    <File>
+      <Name>..\build\fv_nexwslayemucen.kvk</Name>
+      <Description>File fv_nexwslayemucen.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\fv_nexwslayemucen.kmx</Name>
+      <Description>Keyboard Nəxʷsƛ̓ay̓əmúcən</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-Bold.ttf</Name>
+      <Description>Font BC Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-BoldItalic.ttf</Name>
+      <Description>Font BC Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-Italic.ttf</Name>
+      <Description>Font BC Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-Light.ttf</Name>
+      <Description>Font BC Sans Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-LightItalic.ttf</Name>
+      <Description>Font BC Sans Light Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\bcsans\BCSans-Regular.ttf</Name>
+      <Description>Font BC Sans Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nəxʷsƛ̓ay̓əmúcən</Name>
       <ID>fv_nexwslayemucen</ID>
-      <Version>9.2</Version>
+      <Version>11.0</Version>
+      <OSKFont>..\..\..\shared\fonts\bcsans\BCSans-Regular.ttf</OSKFont>
       <Languages>
-        <Language ID="clm-Latn">Clallam (Latin)</Language>
+        <Language ID="clm">Clallam</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_nexwslayemucen_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

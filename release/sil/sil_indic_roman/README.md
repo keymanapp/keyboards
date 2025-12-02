@@ -1,9 +1,7 @@
 Indic Roman Transliteration (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
-
-Version 1.3.1
+Copyright (C) SIL Global
 
 DESCRIPTION
 -----------
@@ -15,3 +13,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile

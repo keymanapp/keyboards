@@ -1,6 +1,14 @@
 BJCreeUNI (east) Change History
 =======================
 
+9.2.0 (20 Feb 2024)
+-------------------
+* Fixed a bug related to NFC and long vowels
+
+9.1.1 (30 Oct 2023)
+-------------------
+* Updated font to better support the Cans script
+
 9.1 (2 Aug 2022)
 -------------------
 * Convert keyboard to produce composed characters with decomposed available through options

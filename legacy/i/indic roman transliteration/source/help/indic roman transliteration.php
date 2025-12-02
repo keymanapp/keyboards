@@ -4,8 +4,8 @@
   Description: For use in typing transliterated Indic texts. This is a simplified keyboard for typing Roman script with accents or diacritics.
   Authors:     SIL
 */
-  $pagename = 'Indic Roman Transliteration Keyboard Help';
-  $pagetitle = 'Indic Roman Transliteration Keyboard Help';
+  $pagename = 'Indic Roman Transliteration (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

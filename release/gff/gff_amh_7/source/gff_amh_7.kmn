@@ -11,7 +11,8 @@ c
 c Specification : http://keyboards.ethiopic.org/specification/
 c 
 c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
-c Last Update   :  2008-11-10
+c Last Update     : 2025-07-17
+c Previous Update :  2008-11-10
 c 
 
 store(&VERSION) '9.0'
@@ -95,9 +96,9 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&LAYOUTFILE) 'gff_amh_7_layout.js'
-store(&KEYBOARDVERSION) '1.5'
-store(&TARGETS) 'any windows'
+c store(&LAYOUTFILE) 'gff_amh_7_layout.js'
+store(&KEYBOARDVERSION) '1.6'
+store(&TARGETS) 'windows macosx linux desktop'
 begin Unicode > use(main)
 group(main) using keys    
 

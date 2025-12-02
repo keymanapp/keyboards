@@ -55,7 +55,7 @@ END;
 
 <p>This keyboard mimics the modern Greek layout. It uses standard Unicode fonts.</p>
 
-<p><b>Note</b>: This keyboard makes use of AltGr or CTRL+ALT keys. It is also possible to activate Keyman's "Simulate AltGr with Ctrl+Alt" option. This can be done in <b>Keyman Configuration / Options / General</b>.</p>
+<p><b>Note</b>: This keyboard makes use of AltGr or CTRL+ALT keys. It is also possible to activate Keyman's "Simulate AltGr with Ctrl+Alt" option. This can be done in <b>Keyman Configuration / Options / General</b>. <b>This must be done in order for the CTRL+ALT keystrokes to produce the correct output.</b></p>
 
 <p><a href="#Related">Click here</a> to see other keyboards for Greek.</p>
 

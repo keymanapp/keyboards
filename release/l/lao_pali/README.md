@@ -1,9 +1,7 @@
 Lao Pali keyboard
 ==============
 
-© 2021 John Durdin
-
-Version 1.0
+© John Durdin
 
 Description
 -----------

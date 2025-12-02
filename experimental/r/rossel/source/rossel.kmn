@@ -12,19 +12,19 @@ store(&VERSION) '14.0'
 store(&NAME) 'rossel'
 c NAME "ROSS"
 c BITMAP "Png1_Unicode.bmp"
-store(&BITMAP) 'R.bmp'
+store(&BITMAP) 'rossel.ico'
 store(&TARGETS) 'any'
 store( acute ) "," "'" U+2018 U+2019
 store( hat ) '.'
 store( your ) '='   c "Your thing" needs an initial underlined continuant
 c                     eg. your bushknife written =taa to produce underlined naa
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.6.1'
 store(&MESSAGE) 'Rossel lg, Papua New Guinea'
-store(&COPYRIGHT) '© Jim Henderson 2022'
+store(&COPYRIGHT) '© Jim Henderson'
 store(&KMW_HELPTEXT) 'To add ^ over a, type .a and also for e and i. For acute over n, type ' U+0027 'n or ,n. Same for e or o. For colon for nasalization, type .. and for "your thing" type = before the word.'
 c store(&ETHNOLOGUECODE) 'yle'
+store(&KMW_HELPFILE) 'rossel-help.htm'
 store(&LAYOUTFILE) 'rossel.keyman-touch-layout'
-store(&VISUALKEYBOARD) 'rossel.kvks'
 
 begin Unicode > use(Umain)
 

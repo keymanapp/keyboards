@@ -1,7 +1,5 @@
-kharoshthi_inscript keyboard
+Kharoshthi Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for Sanskrit language, using the Kharoshthi script wit
 
 Links
 -----
+https://keyman.com/keyboards/kharoshthi_inscript
 
 Copyright
 ---------

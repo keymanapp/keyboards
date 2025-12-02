@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'DaiLue Keyboard Help';
-  $pagetitle = 'DaiLue Keyboard Help';
+  $pagename = 'DaiLue (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Pasifika Keyboard Help';
-  $pagetitle = 'Pasifika Keyboard Help';
+  $pagename = 'Pasifika (deprecated) Keyboard Help';
+  $pagetitle = 'Pasifika (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

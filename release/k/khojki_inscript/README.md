@@ -1,7 +1,5 @@
-khojki_inscript keyboard
+Khojki Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Sindhi language, using the Khojki script with 
 
 Links
 -----
+https://keyman.com/keyboards/khojki_inscript
 
 Copyright
 ---------

@@ -12,8 +12,8 @@ href='http://www.BethMardutho.org/'>Beth Mardutho: The Syriac Institute</a>.</p>
 
   Authors:     Tavultesoft Pty Ltd
 */
-  $pagename = 'Syriac/Aramaic Keyboard Help';
-  $pagetitle = 'Syriac/Aramaic Keyboard Help';
+  $pagename = 'Syriac/Aramaic (deprecated) Keyboard Help';
+  $pagetitle = 'Syriac/Aramaic (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">
@@ -100,7 +100,7 @@ table.display { border-collapse: collapse; }
 <h1 style='margin-bottom: 2px'>Syriac/Aramaic Keyboards</h1>
 <p style='margin-top: 2px'><i>&copy; 2007 Tavultesoft Pty Ltd</i></p>
 <p>This package includes 3 Syriac/Aramaic keyboards called: 
-    <b><img src='aramaic.ico' width='16' height='16' /> Aramaic (Hebrew layout)</b>, 
+    <b><img src='Aramaic.ico' width='16' height='16' /> Aramaic (Hebrew layout)</b>, 
     <b><img src='syriac_phonetic.ico' width='16' height='16' /> Syriac (Phonetic layout)</b>,
 and <b><img src='syriac_arabic.ico' width='16' height='16' /> Syriac (Arabic layout)</b> designed for use with <b>Aramaic</b> and <b>Syriac</b> and related languages.</p>
 

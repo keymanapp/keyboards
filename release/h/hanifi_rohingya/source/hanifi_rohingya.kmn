@@ -1,0 +1,37 @@
+﻿c hanifi_rohingya generated from template at 2024-05-03 10:29:34
+c with name "Hanifi Rohingya"
+store(&VERSION) '10.0'
+store(&NAME) 'Hanifi Rohingya'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'hanifi_rohingya.ico'
+store(&VISUALKEYBOARD) 'hanifi_rohingya.kvks'
+store(&LAYOUTFILE) 'hanifi_rohingya.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(digitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9]
+store(digitsU) U+10D30 .. U+10D39
+
+store(LettersK) [K_A] [K_B] [K_P] [K_COMMA] [K_T] [K_J] [K_COLON] [K_H] [K_Q] [K_F] [K_PERIOD] [K_D] [K_R] [K_SLASH] [K_Z] [K_S] \
+                [K_C] [K_K] [K_G] [K_L] [K_M] [K_N] [K_W] [K_LBRKT] [K_Y] [K_RBRKT] [K_X] [K_QUOTE] 
+store(LettersU) U+10D00 .. U+10D1B
+
+store(VowelsK) [K_V] [K_I] [K_U] [K_E] [K_O] 
+store(VowelsU) U+10D1D .. U+10D21
+
+store(OtherK) [K_BKQUOTE] [K_BKSLASH] [SHIFT K_H] [SHIFT K_T] [SHIFT K_A] [SHIFT K_BKQUOTE] [SHIFT K_L] [SHIFT K_COMMA] [SHIFT K_PERIOD]  [SHIFT K_SLASH]
+store(OtherU) U+10D22 .. U+10D27 U+061B U+060C U+06D4 U+061F
+
+store(nul) "QWERYUIOPSDFGJKZXCVBNM"
+
+group(main) using keys
++ any(nul) > nul
++ any(digitsK) > index(digitsU,1)
++ any(LettersK) > index(LettersU,1)
++ any(VowelsK) > index(VowelsU,1)
++ any(OtherK) > index(OtherU,1)
+
++ [SHIFT K_SPACE] > U+10D22

@@ -1,7 +1,7 @@
 Bengali Phonetic (ITRANS) 
 =================
 
-©2019-2022 sanskritdocuments.org
+© sanskritdocuments.org
 
 Description
 -------------
@@ -16,3 +16,4 @@ Supported Platforms
 * macOS
 * Linux
 * Web
+* Mobile

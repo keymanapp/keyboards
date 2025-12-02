@@ -7,10 +7,12 @@
 ?>
 
 <p>
-    Serbian (Cyrillic) Basic 1.2 generated from template.
+    This keyboard layout is based on the Serbian (Cyrillic) Basic keyboard layout from Windows 10.
 </p>
 
-<h1>Keyboard Layout</h1>
+<p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
+<p>'г will produce ѓ (available on гГкК).</p>
+
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
@@ -19,6 +21,3 @@
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
-
-<p>© 2009-2019 SIL International</p>
-

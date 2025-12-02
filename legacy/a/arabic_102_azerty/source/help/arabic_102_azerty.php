@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Arabic (102 AZERTY) Keyboard Help';
-  $pagetitle = 'Arabic (102 AZERTY) Keyboard Help';
+  $pagename = 'Arabic (102 AZERTY) (deprecated) Keyboard Help';
+  $pagetitle = 'Arabic (102 AZERTY) (deprecated) Keyboard Help';
   
   require_once('header.php');
 ?>

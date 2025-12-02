@@ -1,9 +1,7 @@
 Vai Typewriter (Athinkra) keyboard
 ==============
 
-(c) 2008-2020 Athinkra, LLC
-
-Version 1.2.1
+(c) Athinkra, LLC
 
 Description
 -----------
@@ -21,4 +19,8 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 
+To do
+-----
+This keyboard could use enhanced documentation. A table would be especially useful to help figure out how to type.

@@ -1,6 +1,10 @@
 Philippines (SIL) Keyboard Change History
 =======================
 
+1.1 (12 Sept 2024)
+------------------
+* Removed .js file from package as it inaccurately indicated mobile support
+
 1.0.2 (14 Sept 2018)
 ------------------
 * Removed reference to Andika

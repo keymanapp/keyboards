@@ -6,8 +6,8 @@
 The Korean KORDA keyboards are built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and computerizable.
   Authors:     Tavultesoft Pty Ltd
 */
-  $pagename = 'Korean KORDA Keyboard Help';
-  $pagetitle = 'Korean KORDA Keyboard Help';
+  $pagename = 'Korean KORDA (deprecated) Keyboard Help';
+  $pagetitle = 'Korean KORDA (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <link rel="stylesheet" href="style.css" type="text/css" />

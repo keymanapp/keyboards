@@ -11,26 +11,24 @@
 	Type TH for Warang Citi letter OT <br>
 	Type NG for Warang Citi letter ONG <br>
 	Type NJ for Warang Citi letter BINJ <br>
-Type NN for Warang Citi letter ENN <br>
-Type RR for Warang Citi letter HORR <br>
-Type V for Warang Citi letter ANG <br>
-Type X for Warang Citi letter SSU <br>
-Type @ for Warang Citi letter OWANG <br>
-<p>
-    Warang Citi Keyboard 1.0
+	Type NN for Warang Citi letter ENN <br>
+	Type RR for Warang Citi letter HORR <br>
+	Type V for Warang Citi letter ANG <br>
+	Type X for Warang Citi letter SSU <br>
+	Type @ for Warang Citi letter OWANG <br>
+
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk-phone' data-states='default shift numeric lock wara-default wara-shift wara-numeric wara-lock'>
+<div id='osk' data-states='default shift'>
 </div>
+
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 
-<div id='osk-phone' data-states='default shift numeric lock wara-default wara-shift wara-numeric wara-lock'>
+<div id='osk-phone' data-states='default wara-shift wara-numeric wara-lock'>
 </div>
 
 
-<p>© 2019-2022 Mangu Purty</p>
+<p>© Mangu Purty</p>
 

@@ -14,8 +14,6 @@ or Bengali. It solely supports the Mro script.</p>
 <p>This keyboard requires the use of a Mro font. <b>Mro Unicode</b> is included with this font package, but any
 	Mro script Unicode font could be used.</p>
 	
-<h1>Keyboard Layout</h1>
-
 <p>Each key has four possible options:</p>
 
 <ul>

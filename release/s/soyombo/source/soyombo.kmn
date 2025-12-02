@@ -1,0 +1,94 @@
+﻿store(&VERSION) '15.0'
+store(&NAME) 'Soyombo'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'soyombo.ico'
+store(&VISUALKEYBOARD) 'soyombo.kvks'
+store(&LAYOUTFILE) 'soyombo.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c Inscript keys
+
+c             candrabindu anusvara visarga          avagraha              jihvamuliya upadhmaniya      nukta      Altcandrabindu        
+store(SignsK) [SHIFT K_X] [K_X]    [SHIFT K_HYPHEN] [RALT SHIFT K_PERIOD] [RALT K_H]  [SHIFT RALT K_H] [K_RBRKT]  [RALT K_X]
+store(Signs)  U+11180 .. U+11182                     U+111C1 ..U+111C3                                 U+111CA    U+111CF
+
+c           a         i     ue           u     e     o     oe         ai          au        vr               vl                v length
+store(VowK) [K_QUOTE] [K_I] [SHIFT K_U] [K_U] [K_E] [K_O] [SHIFT K_O] [RALT K_I] [RALT K_U] [SHIFT RALT K_R] [SHIFT RALT K_L] [SHIFT K_BKQUOTE]
+store(Vow)  U+11A50 .. U+11A5B
+
+c            ka     kha        ga    gha         nga   ca    cha          ja    jha         nya        tta         ttha            dda        ddha             nna         ta    tha         da    dha         na    pa    pha         ba    bha         ma     tsa        tsha             dza        zha         za    -a          ya    ra    la   va    sha         ssa              sa     ha    kssa
+store(ConsK) [K_K] [SHIFT K_K] [K_G] [SHIFT K_G] [K_Q] [K_C] [SHIFT K_C] [K_J] [SHIFT K_J] [SHIFT K_N] [RALT K_T] [RALT SHIFT K_T] [RALT K_D] [RALT SHIFT K_D] [RALT K_N] [K_T] [SHIFT K_T] [K_D] [SHIFT K_D] [K_N] [K_P] [SHIFT K_P] [K_B] [SHIFT K_B] [K_M]  [RALT K_C] [SHIFT RALT K_C] [RALT K_J] [SHIFT K_Z] [K_Z] [K_HYPHEN]  [K_Y] [K_R] [K_L] [K_V] [SHIFT K_S] [RALT SHIFT K_S] [K_S] [K_H] [K_X]
+store(Cons)  U+11A5C .. U+11A83
+
+c             tsheg danda            doubledanda     elongation
+store(PunctK) [K_COLON] [SHIFT K_1] [SHIFT K_QUOTE] [SHIFT K_5]
+store(Punct)  U+11A9A .. U+11A9D
+
+store(DigitsK) "0123456789"
+store(Digits)  U+0030 .. U+0039
+
+c ^ dk
+store(ClusterInitK) [K_R] [K_L] [SHIFT K_S] [K_S] [SHIFT K_6]
+store(ClusterInitU) U+11A86 .. U+11A89 U+005E
+
+c + dk
+store(FinConsK) [K_G] [K_K] [K_Q] [K_D] [K_N] [K_B] [K_M] [K_R] [K_L] [SHIFT K_S] [K_S] [K_HYPHEN] [SHIFT K_EQUAL]
+store(FinConsU) U+11A8A .. U+11A95 U+002B
+
+c @ dk
+store(HeadK) [K_1] [K_2] [K_3] [SHIFT K_2]
+store(HeadU) U+11A9e .. U+11AA0 U+0040
+
+c # dk
+store(TermK) [K_1] [K_2] [SHIFT K_3]
+store(TermU) U+11AA1 .. U+11AA2 U+0023
+
+store(nul) "afwAEFHILMQRVWXY"
+
+store(ralt)  [RALT K_1] [RALT K_QUOTE] [RALT K_5] [RALT K_7] [RALT K_8] [RALT K_COMMA] [RALT K_HYPHEN] [RALT K_PERIOD] [SHIFT RALT K_COLON] [RALT K_COLON] [RALT SHIFT K_COMMA] [RALT SHIFT K_PERIOD] [RALT K_BKQUOTE]
+store(raltU) U+0021     U+0022         U+0025     U+0026     U+002A      U+002C        U+002D          U+002E          U+003A                U+003B         U+003C               U+003E                U+007E
+
+group(main) using keys
+
++ [SHIFT K_6] > dk(cluster) c ^
++ [SHIFT K_EQUAL] > dk(FinCons) c +
++ [SHIFT K_2] > dk(head) c @
++ [SHIFT K_3] > dk(term) c #
+dk(cluster) + any(ClusterInitK) > index(ClusterInitU,2)
+dk(FinCons) + any(FinConsK) > index(FinConsU,2)
+dk(head) + any(HeadK) > index(HeadU,2)
+dk(term) + any(TermK) > index(TermU,2)
+
++ any(nul) > nul
++ any(VowK)  > index(Vow,1)
++ any(ConsK)    > index(Cons,1)
++ any(PunctK)   > index(Punct,1)
++ any(DigitsK) > index(Digits,1)
++ any(ralt) > index(raltU,1)
+
+
++ [SHIFT K_COMMA] > U+11A84 c jihvamuliya
++ [SHIFT K_PERIOD] > U+11A85 c updhmaniya
++ [SHIFT K_8] > U+11A96 c anusvara
++ [SHIFT K_COLON] > U+11A97 c visarga
++ [K_COMMA] > U+11A98 c gemination
++ [SHIFT K_7] > U+11A99 c subjoiner
+
++ [K_LBRKT] > U+005B
++ [K_RBRKT] > U+005D
++ [K_BKSLASH] > U+005C
++ [SHIFT K_LBRKT] > U+007B
++ [SHIFT K_RBRKT] > U+007D
++ [SHIFT K_BKSLASH] > U+007C
++ [SHIFT K_9] > U+0028
++ [SHIFT K_0] > U+0029
++ [SHIFT K_4] > U+0024
++ [K_BKQUOTE] > U+0060
++ [K_SLASH] > U+002F
++ [SHIFT K_HYPHEN] > U+005F
++ [K_EQUAL] > U+003D
+
+

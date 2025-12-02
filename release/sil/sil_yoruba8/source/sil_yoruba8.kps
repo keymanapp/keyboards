@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Yorùbá 8</Folder>
@@ -29,6 +30,9 @@
     <Copyright URL="">© 2012-2020 SIL International</Copyright>
     <Version URL=""></Version>
     <Author URL="">P. Baehr</Author>
+    <Description>Yorùbá 8 is a simple Unicode keyboard for the Yorùbá language, with the
+option to use either the modern dot or the traditional bar under the
+letters ẹ, ọ and ṣ.</Description>
   </Info>
   <Files>
     <File>
@@ -73,6 +77,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -85,4 +95,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="yoruba8" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

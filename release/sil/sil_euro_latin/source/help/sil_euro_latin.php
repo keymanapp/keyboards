@@ -35,8 +35,16 @@
 <img src="prefix.png" />
 
     <h2>Mobile Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+    <p>
+    Variants of each letter may be found via longpress, while the letter in the top-right may be
+    typed by touching the key and then dragging down.
+    <br />
+    On the numeric layer, each key matches its position on the default layer. 
+    The second and third row's keys each offer a different key that may be typed using the same
+    touch-and-drag technique as described for the default layer. Curly brackets are available via longpress on the <kbd>(</kbd> and <kbd>)</kbd> keys.
+    <br />
+    Note that the keys have changed position compared to 2.x versions of the keyboard.
+    </p>
 
     <div id='osk-phone' data-states='default shift numeric symbol currency'></div>
 

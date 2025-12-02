@@ -1,14 +1,12 @@
-ɁAreɂare Keyboard
+Ɂareɂare Keyboard
 =================
 
-Copyright (C) 2017-2020 SIL International
-
-Version 1.0.2
+Copyright (C) SIL International
 
 Description
 -----------
 
-This keyboard is designed for the ɁAreɂare language spoken in Solomon Islands.
+This keyboard is designed for the Ɂareɂare language spoken in Solomon Islands.
 
 Links
 -----

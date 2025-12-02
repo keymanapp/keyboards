@@ -1,6 +1,10 @@
 Mi'gmawi'simg / Mi'kmawi'simk Change History
 ============================
 
+9.1.2 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
+
 9.1.1 (24 Feb 2021)
 -------------------
 * Updated htm files for readability on Linux

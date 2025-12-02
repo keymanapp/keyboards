@@ -1,7 +1,5 @@
-tagbanwa_inscript keyboard
+Tagbanwa Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Central Tagbanwa language, using the Tagbanwa 
 
 Links
 -----
+https://keyman.com/keyboards/tagbanwa_inscript
 
 Copyright
 ---------

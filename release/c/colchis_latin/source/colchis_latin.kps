@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\tavultesoft\build\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,10 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Colchis Latin</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <WebSite URL=""></WebSite>
     <Version URL=""></Version>
+    <Description URL="">This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.</Description>
   </Info>
   <Files>
     <File>
@@ -77,15 +80,93 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Bold.ttf</Name>
+      <Description>Font Charis Colchis Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-BoldItalic.ttf</Name>
+      <Description>Font Charis Colchis Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Italic.ttf</Name>
+      <Description>Font Charis Colchis Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Medium.ttf</Name>
+      <Description>Font Charis Colchis Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-MediumItalic.ttf</Name>
+      <Description>Font Charis Colchis Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Regular.ttf</Name>
+      <Description>Font Charis Colchis</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-SemiBold.ttf</Name>
+      <Description>Font Charis Colchis SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis Colchis SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_colchis\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Colchis Latin</Name>
       <ID>colchis_latin</ID>
-      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis_colchis\CharisColchis-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="xmf-Latn">Mingrelian (Latin)</Language>
-        <Language ID="lzz-Latn-GE">Laz (Latin, Georgia)</Language>
+        <Language ID="lzz-GE">Laz (Georgia)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -23,8 +23,8 @@
   else if($lang == 'muz') $langName = 'Mursi';
   else { $lang = 'mym'; $langName = "Me'en"; }
 
-  $pagename = "$langName (GFF) Keyboard Help";
-  $pagetitle = "$langName Keyboard Help";
+  $pagename = "$langName (GFF) (deprecated) Keyboard Help";
+  $pagetitle = "$langName (deprecated) Keyboard Help";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}

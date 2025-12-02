@@ -1,7 +1,7 @@
 Seereer Ajami (QWERTY) keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 
 Description

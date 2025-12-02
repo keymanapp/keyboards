@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,10 @@
     <Copyright URL="">(c) 2014-2020 SIL International</Copyright>
     <WebSite URL="http://www.cheyennelanguage.org/">http://www.cheyennelanguage.org/</WebSite>
     <Author URL="">Phil Leckrone</Author>
+    <Description>This keyboard allows you to type all the letters and special symbols
+used in the Cheyenne alphabet.
+
+-   [Cheyenne language website](http://www.cheyennelanguage.org/)</Description>
   </Info>
   <Files>
     <File>
@@ -137,6 +142,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -149,4 +160,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="chey-unicode" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

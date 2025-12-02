@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,13 @@
   </StartMenu>
   <Info>
     <Name URL="">Lithuanian Standard Basic</Name>
-    <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
+    <Copyright URL="">(c) SIL International</Copyright>
     <Author URL=""></Author>
+    <Description URL="">This keyboard layout is designed for Lithuanian. It includes an on
+screen keyboard which can be viewed by clicking on the Keyman icon and
+selecting the On Screen Keyboard menu item. The keyboard layout follows
+the Windows 10 Lithuanian Standard layout.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -63,16 +70,31 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\basic_kbdlt2.js</Name>
+      <Description>File basic_kbdlt2.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lithuanian Standard Basic</Name>
       <ID>basic_kbdlt2</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="lt">Lithuanian</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="kbdlt2" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

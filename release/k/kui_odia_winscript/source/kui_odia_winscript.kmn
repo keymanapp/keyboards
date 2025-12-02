@@ -1,0 +1,161 @@
+﻿c not used in Kui: U+0B0C U+0B3D U+0B56 U+0B57 U+0B61 U+0B62 U+0B63 U+0B70 U+0B72..U+0B77
+
+store(&VERSION) '10.0'
+store(&NAME) 'Kui Odia WinScript'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.0.2'
+store(&TARGETS) 'web desktop'
+store(&BITMAP) 'kui_odia_winscript.ico'
+store(&VISUALKEYBOARD) 'kui_odia_winscript.kvks'
+begin Unicode > use(main)
+
+store(nul) 'EOF' c no longer used
+store(lengthKeys) 'EOF'
+store(length) U+0307 U+0308 U+0B55
+
+store(vowelKeys) 'AiIuUReYoVMH'
+store(vowels)  U+0B06 U+0B07 U+0B08 U+0B09 U+0B0A U+0B0B U+0B0F U+0B10 U+0B13 U+0B14 U+0B02 U+0B03
+store(vowelMatras) U+0B3E U+0B3F U+0B40 U+0B41 U+0B42 U+0B43 U+0B47 U+0B48 U+0B4B U+0B4C U+0B02 U+0B03
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlv' [K_RBRKT] 'zZshL'
+
+store(cons) U+0B15 U+0B16 U+0B17 U+0B18 U+0B19 \
+    	   	U+0B1A U+0B1B U+0B1C U+0B1D U+0B1E \
+    	   	U+0B1F U+0B20 U+0B21 U+0B22 U+0B23 \
+    	   	U+0B24 U+0B25 U+0B26 U+0B27 U+0B28 \
+    	   	U+0B2A U+0B2B U+0B2C U+0B2D U+0B2E \
+    	   	U+0B2F U+0B30 U+0B32 U+0B71 U+0B35 U+0B36 U+0B37 U+0B38 U+0B39 U+0B33
+
+store(consonants) outs(cons) U+0B60 U+0B5D U+0B5C U+0B5F 
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'  
+
+store(numberKeys) '0123456789'
+store(oriyaNumbers) U+0B66 .. U+0B6F
+
+group(main) using keys
+
++ any(lengthKeys) > index(length,1)
+
+c Adjust the behavior of 'a'
++ 'a' > U+0B05   
+U+0B05 + 'a' > U+0B06               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > U+0B3E dk(aa)
+U+0B3E dk(aa) + 'a' > U+0B05
+
+c Adjust the behavior of 'i'
+U+0B07 + 'i' > U+0B08 
+U+0B3F + 'i' > U+0B40    
+
+c Adjust the behavior of l
+U+0B32 + 'l' > U+0B33
+  
+c Adjust the behavior of R
+U+0B0B + 'R' > U+0B60   
+U+0B43 + 'R' > U+0B44    
+   
+c Adjust the behavior of S
++ 'S' > U+0B01   
+'`' dk(bt) + 'S' > 'S'
+
+c Adjust the behavior of u
+U+0B09 + 'u' > U+0B0A    
+U+0B41 + 'u' > U+0B42
+
+c Adjust the behavior of s
+U+0B38 + 's'> U+0B37
+
+c Adjust the behavior of E
+ '`' dk(bt) + 'E' > 'E'          
+ 
+c Adjust the behavior of O
+ '`' dk(bt) + 'O' > 'O'
+ 
+ c Adjust the behavior of F
+ '`' dk(bt) + 'F' > 'F'
+
+c Adjust the behavior of y
+U+0B2F + 'y' > U+0B5F   
+
+c Adjust the behavior of f
+ +'f' > U+0B3C 
+ '`' dk(bt) + 'f' > 'f'  
+ 
+c Adjust the behavior of D and d
+U+0B22 + 'D' > U+0B5D
+U+0B21 + 'd' > U+0B5C   
+
+c Adjust the behavior of x and X
+'`' dk(bt) + 'x' > 'x'
+'`' dk(bt) + 'X' > 'X'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '୍' U+200C
+any(consonants) U+0B4D + 'X' > context U+200C
+store(WordFinalPunct) ' ",;:.>!]}-/;\~@#$%^&*(_+|:<?)' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > U+0B5C
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > "'"
+"'" + "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'   
+
+c full stop
+   + '.' > U+0964
+U+0964 + '.' > '.' 
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+c numbers
+'`' dk(bt) + any(numberKeys) > index(oriyaNumbers, 3)
+any(oriyaNumbers) + any(numberKeys) > context index(oriyaNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)  
+any(consonants) U+0B3C + any(vowelKeys) > context U+0B3C index(vowelMatras,3)
+
+
+c cons + virama
+any (consonants) + 'x' > context U+0B4D          
+
+c vowels + virama
+any(vowels) + 'x' > context U+0B4D 
+U+0B05 + 'x' > context U+0B4D
+any(vowelMatras) + 'x' > context U+0B4D      
+
+c Vowel sign elongation
+U+0B40 + 'i' > context U+0B40 
+U+0B42 + 'u' > context U+0B42
+U+0B3E + 'a' > context U+0B3E
+

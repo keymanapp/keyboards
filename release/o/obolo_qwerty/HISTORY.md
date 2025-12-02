@@ -1,6 +1,18 @@
 Obolo Qwerty Keyboard Change History
 ====================
 
+1.1.3 (2025-04-223)
+----------------
+* Improve On-Screen keyboard
+
+1.1.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+1.1.1 (2023-11-21)
+----------------
+* Update font to use shared Noto Sans
+
 1.1 (2021-07-23)
 ----------------
 * Replaced combining underdot button (◌̣) with o with dot below (ọ) on touch layout.

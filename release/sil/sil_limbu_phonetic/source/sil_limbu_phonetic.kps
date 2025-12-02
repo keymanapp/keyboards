@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Limbu Phonetic (SIL)</Name>
-    <Copyright URL="">© 2010-2019 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
+    <Description URL="">A Limbu keyboard layout where each Limbu letter is mapped as closely as
+possible to a corresponding key on the US English keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -26,12 +31,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\build\sil_limbu_phonetic.js</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\sil_limbu_phonetic.kvk</Name>
@@ -69,12 +68,74 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Bold.ttf</Name>
+      <Description>Font Namdhinggo Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-ExtraBold.ttf</Name>
+      <Description>Font Namdhinggo ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Medium.ttf</Name>
+      <Description>Font Namdhinggo Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Regular.ttf</Name>
+      <Description>Font Namdhinggo</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-SemiBold.ttf</Name>
+      <Description>Font Namdhinggo SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\namdhinggo\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_limbu_phonetic.js</Name>
+      <Description>File sil_limbu_phonetic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Limbu Phonetic (SIL)</Name>
       <ID>sil_limbu_phonetic</ID>
-      <Version>1.2</Version>
+      <Version>1.4</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Bold.ttf</DisplayFont>
       <Languages>
         <Language ID="lif-Limb">Limbu</Language>
       </Languages>

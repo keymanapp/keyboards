@@ -1,5 +1,13 @@
-Aksara Bali Unicode Keyboard Change History
+Aksara Bali Keyboard Change History
 ===========================================
+
+1.1.3 (10 Sep 2025)
+--------------------
+* Fixup handling of Enter key
+
+1.1.2 (30 Nov 2023)
+--------------------
+* Use shared font instead of local
 
 1.1.1 (30 July 2020)
 --------------------

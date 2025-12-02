@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  $pagename = 'Bench (GFF) Keyboard Help';
-  $pagetitle = 'Bench Keyboard Help';
+  $pagename = 'Bench (GFF) (deprecated) Keyboard Help';
+  $pagetitle = 'Bench (deprecated) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}

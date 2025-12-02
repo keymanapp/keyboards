@@ -1,0 +1,39 @@
+﻿store(&VERSION) '10.0'
+store(&TARGETS) 'any'
+store(&NAME) 'Dives Akuru Inscript'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'dives_akuru_inscript.ico'
+store(&VISUALKEYBOARD) 'dives_akuru_inscript.kvks'
+store(&LAYOUTFILE) 'dives_akuru_inscript.keyman-touch-layout'
+begin Unicode > use(main)
+
+store(IndVK) "DEFRGTSA"
+store(IndVU) U+11900 .. U+11906 U+11909
+
+store(DepVK) "efrgtswa"
+store(DepVU) U+11930 .. U+11935 U+11937 .. U+11938
+
+store(ConsK) "kKiIU;:p}'[{ClLoOvhHyYc/?jnbM<muNz"
+store(ConsU) U+1190C .. U+11913 U+11915 .. U+11916 U+11918 .. U+1192F
+
+store(OddK) "xXqd`VBJ]"
+store(OddU) U+1193B .. U+1193F U+11940 .. U+11943
+
+store(PunctK) ".,\"
+store(PunctU) U+11944 .. U+11946
+
+store(DigitsK) "0123456789"
+store(DigitsU) U+11950 .. U+11959
+
+store(nul) "QWZP>"
+
+group(main) using keys
+
++ any(nul) > nul
++ any(IndVK) > index(IndVU,1)
++ any(DepVK) > index(DepVU,1)
++ any(ConsK) > index(ConsU,1)
++ any(OddK) > index(OddU,1)
++ any(PunctK) > index(PunctU,1)
++ any(DigitsK) > index(DigitsU,1)

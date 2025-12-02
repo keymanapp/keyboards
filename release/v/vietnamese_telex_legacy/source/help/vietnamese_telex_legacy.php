@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Vietnamese Telex Keyboard (Legacy Mode) Help';
+  $pagename = 'Vietnamese Telex (Legacy Mode) (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   
   // Header
@@ -134,4 +134,4 @@
 
 <hr>
 
-<p>© 2022 Mike Vo &lt;<a href="mailto:info@miketvo.com">info@miketvo.com</a>&gt; | <a href="https://miketvo.com">miketvo.com</a></p>
+<p>© Mike Vo &lt;<a href="mailto:info@miketvo.com">info@miketvo.com</a>&gt; | <a href="https://miketvo.com">miketvo.com</a></p>

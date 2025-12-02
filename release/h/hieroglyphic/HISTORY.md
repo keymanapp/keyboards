@@ -1,6 +1,11 @@
 Hieroglyphic Keyboard Change History
 =======================
 
+1.4.1 (2023-11-30)
+----------------
+* Use shared font instead of local
+* Remove Gardiner font and just use newer version of Aegyptus
+
 1.4 (6 Jan 2021)
 -------------------
 * Add tablet layout

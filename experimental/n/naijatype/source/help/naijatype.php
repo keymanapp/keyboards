@@ -1,13 +1,10 @@
 <?php 
   $pagename = 'Naija Type Keyboard Help';
   $pagetitle = $pagename;
-  // Header we will tidy up later  
   require_once('header.php');
 ?>
 
-<p>This keyboard aims to serve all Nigerian languages, not just Hausa, Yoruba and Igbo, using the standard characters normally recommended for each script.</p>
-
-<h1>Keyboard Layout</h1>
+<p>This keyboard aims to serve all Nigerian languages, not just Hausa, Yoruba and Igbo, using the standard characters normally recommended for each language.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <ul><li>Press a key like the letter you want then use the semicolon to change its shape. <br/>eg <b>a ; → ə </b> <br /><b> U ; → Ʉ </b><br /><b> U ; ; ; → U̱</b></li>

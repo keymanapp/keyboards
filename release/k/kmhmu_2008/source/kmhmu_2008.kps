@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Version URL=""></Version>
     <Name URL="">Kmhmu 2008</Name>
     <Copyright URL="">© 2008-2018 John Durdin</Copyright>
+    <Description>Lao-script Kmhmu language keyboard</Description>
   </Info>
   <Files>
     <File>
@@ -87,6 +89,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -101,4 +109,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="kmhmu" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

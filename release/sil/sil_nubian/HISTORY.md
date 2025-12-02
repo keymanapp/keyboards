@@ -1,6 +1,14 @@
 Nubian (SIL) Change History
 =======================
 
+1.2.6 (2025-01-17)
+------------------
+* Fix link to Sophia Nubian font in help docs
+
+1.2.5 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.2.4 (27 Oct 2020)
 -------------------
 * Increment version number to force recompile of touch layout.

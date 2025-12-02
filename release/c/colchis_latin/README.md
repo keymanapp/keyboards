@@ -1,7 +1,7 @@
 Colchis Latin Keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------

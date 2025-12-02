@@ -1,10 +1,8 @@
 <?php
-  $pagename = 'Tamil (Visual Media) Keyboard Package Help';
+  $pagename = 'Tamil (Visual Media) Package Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-
-<h1>Tamil (Visual Media) Keyboard Package</h1>
 
 <p style='margin:0px'>&#169; 2008-2020 Visual Media and SIL International</p>
 

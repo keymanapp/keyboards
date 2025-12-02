@@ -4,8 +4,8 @@
   Description: A keyboard designed for Busa, Bokobaru and Boko languages in Africa.  Includes the Doulos SIL font.
   Authors:     Tavultesoft Pty Ltd
 */
-  $pagename = 'Busa Unicode Keyboard Help';
-  $pagetitle = 'Boko / Bokobaru / Busa Unicode Keyboard Help';
+  $pagename = 'Busa Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Boko / Bokobaru / Busa Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">

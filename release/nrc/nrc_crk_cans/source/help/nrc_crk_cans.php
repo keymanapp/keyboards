@@ -174,4 +174,4 @@ already pressed <kbd>ᑊ</kbd>, <kbd>ᐟ</kbd>, <kbd>ᐠ</kbd>, <kbd>ᐨ</kbd>,
 
 <hr/>
 
-<p>© 2019 National Research Council Canada</p>
+<p>© National Research Council Canada</p>

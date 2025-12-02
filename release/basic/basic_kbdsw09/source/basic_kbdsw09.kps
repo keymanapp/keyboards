@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,13 @@
   </StartMenu>
   <Info>
     <Name URL="">Sinhala - Wij 9 Basic</Name>
-    <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
+    <Copyright URL="">(c) SIL International</Copyright>
     <Author URL=""></Author>
+    <Description URL="">This keyboard layout is designed for Sinhala - wij 9. It includes an on
+screen keyboard which can be viewed by clicking on the Keyman icon and
+selecting the On Screen Keyboard menu item. The keyboard layout follows
+the Windows 10 Sinhala - wij 9 layout.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -69,16 +76,31 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\basic_kbdsw09.js</Name>
+      <Description>File basic_kbdsw09.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Sinhala - Wij 9 Basic</Name>
       <ID>basic_kbdsw09</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="si">Sinhala</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="kbdsw09" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

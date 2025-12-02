@@ -1,10 +1,18 @@
 Shan Change History
 =======================
 
+1.1.2 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
+1.1.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.1 (27 May 2022)
 -------------------
 * Change language id to "my" to allow Microsoft Word to pick up the correct locale.
-
 
 1.0.4 (27 Oct 2020)
 -------------------

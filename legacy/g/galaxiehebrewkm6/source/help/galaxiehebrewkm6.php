@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Hebrew (Phonetic) Keyboard Help';
-  $pagetitle = 'Hebrew (Phonetic) Keyboard Help';
+  $pagename = 'Hebrew (Phonetic) (deprecated) Keyboard Help';
+  $pagetitle = 'Hebrew (Phonetic) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

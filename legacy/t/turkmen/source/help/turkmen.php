@@ -6,8 +6,8 @@
 This package also includes a Cyrillic Turkmen keyboard.  Both keyboards are Unicode.
   Authors:     David Gray
 */
-  $pagename = 'Turkmen Latin and Cyrillic Unicode Keyboard Help';
-  $pagetitle = 'Turkmen Latin and Cyrillic Unicode Keyboard Help';
+  $pagename = 'Turkmen Latin and Cyrillic Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Turkmen Latin and Cyrillic Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">

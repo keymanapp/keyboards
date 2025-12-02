@@ -1,7 +1,7 @@
 Gurmukhi Phonetic (ITRANS)
 =================
 
-©2019 sanskritdocuments.org
+© sanskritdocuments.org
 
 Description
 -----------
@@ -17,3 +17,4 @@ Supported Platforms
 * macOS
 * Linux
 * Web
+* Mobile

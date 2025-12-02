@@ -1,0 +1,35 @@
+﻿c avestan_phonetic generated from template at 2024-10-22 14:22:49
+c with name "Avestan"
+store(&VERSION) '10.0'
+store(&NAME) 'Avestan'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'avestan_phonetic.ico'
+store(&VISUALKEYBOARD) 'avestan_phonetic.kvks'
+store(&LAYOUTFILE) 'avestan_phonetic.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(VowelsK) "aA]}\|[{eEoOiIuU"
+store(VowelsU) U+10B00 .. U+10B0F
+
+store(ConsK) "kxXVgGFcjtTdD'pfbBqQJnRNmMYyvrlszSZwWh"
+store(ConsU) U+10B10 .. U+10B35
+
+store(PunctK) "<:;,>./?" 
+store(PunctU) U+10B39 .. U+10B3F U+2E31
+
+group(main) using keys
+
++ any(Vowelsk) > index(VowelsU,1)
++ any(ConsK) > index(ConsU,1)
++ any(PunctK) > index(PunctU,1)
++ [SHIFT K_P] > U+200C c ZWNJ
+
+c ligatures
++ [SHIFT K_H] > U+10B00 U+10B35 c ah
++ [SHIFT K_K] > U+10B31 U+10B00 c Sa
++ [SHIFT K_C] > U+10B31 U+10B17 c Sc
++ [SHIFT K_L] > U+10B31 U+10B19 c St

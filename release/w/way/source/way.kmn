@@ -1,0 +1,23 @@
+﻿c way generated from template at 2024-06-17 14:54:23
+c with name "Wayana"
+store(&VERSION) '10.0'
+store(&NAME) 'Wayana'
+store(&COPYRIGHT) 'Copyright © SIL'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'way.ico'
+store(&VISUALKEYBOARD) 'way.kvks'
+store(&LAYOUTFILE) 'way.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(basekey) "yYfF"
+store(bardkey) "ëËïÏ"
+
+group(main) using keys
+
+c Replaces 'y' and 'f' keys with 'ë' and 'ï'
++ any(basekey) > index(bardkey,1)
+
+c Uses ';' as a modifier so it is still possible to type 'y' and 'f'
+";" + any(basekey) > index(basekey,2)

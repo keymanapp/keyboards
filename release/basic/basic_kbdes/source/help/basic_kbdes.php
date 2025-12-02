@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 <p>
-    Spanish Variation Basic 1.1 generated from template.
+    Spanish Variation Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
@@ -14,8 +14,6 @@
 <p>´a will produce á (available on aAeEiIoOuUy).</p>
 <p>¨a will produce ä (available on aAeEiIoOuUy).</p>
 <p>~a (RALT =) will produce ã (available on aAnNoO).</p>
-
-<h1>Keyboard Layout</h1>
 
 <div id='osk' data-states='default shift rightalt'>
 </div>

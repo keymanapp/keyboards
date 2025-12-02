@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  $pagename = 'Sebatbeit (GFF) Keyboard Help';
-  $pagetitle = 'Sebatbeit Keyboard Help';
+  $pagename = 'Sebatbeit (GFF) (deprecated) Keyboard Help';
+  $pagetitle = 'Sebatbeit (deprecated) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}

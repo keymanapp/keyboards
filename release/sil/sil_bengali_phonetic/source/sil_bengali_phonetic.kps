@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Bengali-Assamese Phonetic (SIL)</Name>
     <Copyright URL="">© 2006-2021 SIL International</Copyright>
     <Version URL=""></Version>
+    <Description>Bangla-Asamiya Keyboard for Keyman</Description>
   </Info>
   <Files>
     <File>
@@ -63,6 +65,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -77,4 +85,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="benasm" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

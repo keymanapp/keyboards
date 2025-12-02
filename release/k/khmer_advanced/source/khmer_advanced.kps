@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,9 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Khmer Advanced</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description URL="">Khmer Advanced keyboard is designed for typing Khmer characters which
+are rarely used: (1) divination signs, (2) lunar dates and (3)
+characters used in old Khmer or transliteration of Pali and Sanskrit.</Description>
   </Info>
   <Files>
     <File>
@@ -52,44 +58,44 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-B.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Bold.ttf</Name>
+      <Description>Font Busra Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-BI.ttf</Name>
-      <Description>Font Khmer Mondulkiri Bold Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-ExtraLight.ttf</Name>
+      <Description>Font Busra ExtraLight</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-I.ttf</Name>
-      <Description>Font Khmer Mondulkiri Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Light.ttf</Name>
+      <Description>Font Busra Light</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</Name>
-      <Description>Font Khmer Mondulkiri</Description>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Medium.ttf</Name>
+      <Description>Font Busra Medium</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</Name>
+      <Description>Font Busra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\Busra-SemiBold.ttf</Name>
+      <Description>Font Busra SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\busra\OFL.txt</Name>
       <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\khmer\mondulkiri\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
@@ -105,14 +111,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Khmer Advanced</Name>
       <ID>khmer_advanced</ID>
-      <Version>1</Version>
-      <OSKFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\busra\Busra-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="km">Central Khmer (Khmer, Cambodia)</Language>
       </Languages>

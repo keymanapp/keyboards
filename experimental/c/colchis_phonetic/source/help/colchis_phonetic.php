@@ -9,9 +9,7 @@
     Colchian Phonetic keyboard for the Mingrelian language using Asomtavruli.
 </p>
 
-<h2>Keyboard Layout</h2>
-
-<h3>Desktop Keyboard Layout</h3>
+<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 
@@ -20,5 +18,5 @@
 <p>Due to the size and number of keys, some characters are hidden in the long press. 
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<div id='osk-phone' data-states='default numeric'>
+<div id='osk-phone' data-states='default shift numeric'>
 </div>

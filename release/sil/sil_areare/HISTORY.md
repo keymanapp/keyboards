@@ -1,5 +1,9 @@
-ɁAreɂare Change History
+Ɂareɂare Change History
 =======================
+
+1.1 (9 Oct 2023)
+-------------------
+* Change name slightly
 
 1.0.2 (8 Jun 2020)
 -------------------

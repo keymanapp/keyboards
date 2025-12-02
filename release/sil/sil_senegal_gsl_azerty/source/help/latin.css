@@ -1,0 +1,293 @@
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href='http://fonts.googleapis.com/css?family="Andika Afr":400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+html,body{
+  min-width:290px;
+  /*color: #4d4e53;*/
+  color: black;
+  background-color: #ffffff;
+  font-family: "Andika Afr", Andika, Arial,sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+.svgtext { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 120%; font-style : normal; color: #000000;}
+p { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 120%; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; }
+pc { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 80%; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; text-align: center; }
+li { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 120%; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; }
+h1 { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 12pt; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; text-align: left;  }
+h1t { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 12pt; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; text-align: center;  }
+h1p { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 120%; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; text-align: center;  }
+h2 { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; font-size : 12pt; font-style : normal; color: #000000; margin-top: 0.07in; margin-bottom: 0.07in; text-align: left;  }
+a:link { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; color: #0000ff }
+a:visited { font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif; color: #800080 }
+table {
+          font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif;
+          font-size : 100%; font-style : normal;
+          border-collapse: collapse;
+          padding: 5px;
+          text-align: center;
+          color: #000000;
+}
+thead {
+          page-break-before: always;
+          page-break-inside: avoid;
+          page-break-after: avoid;
+          border: 1px solid Black;
+}
+tr {
+          page-break-before: auto;
+          page-break-inside: avoid;
+          page-break-after: auto;
+          border: 1px solid Black;
+}
+td {
+          font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif;
+          font-size : 100%; font-style : normal;
+          border: 1px solid Black;
+          border-collapse: collapse;
+          padding: 5px;
+          text-align: center;
+          color: #000000;
+          page-break-before: never;
+          page-break-inside: never;
+          page-break-after: never;
+}
+th{
+         font-family : "Andika Afr", andika, geneva, arial, helvetica, sans-serif;
+         font-size : 120%; font-style : normal;
+         border: 1px solid Black;
+         border-collapse: collapse;
+         background: LightGray;
+         padding: 5px;
+         text-align: center;
+         page-break-before: auto;
+         page-break-inside: never;
+         page-break-after: avoid;
+        }
+.pagebreak{
+          page-break-before: always;
+          page-break-inside: avoid;
+          page-break-after: auto;
+}
+.compact {border: 2px; padding: 0px;}
+.compactsans {border: 0px none !important; padding: 0px;}
+header{
+  color:black;
+  font-size: 1.125em;
+  margin:1px;
+  text-align: left;
+/*  font-size:1.8em;*/
+  font-weight:thin;
+}
+section article{
+  color: #4d4e53;
+  margin:15px;
+  font-size:0.96em;
+}
+section li {
+  margin:15px 0px 0px 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {flex-direction: row; justify-content: flex-start;}
+.col {flex-direction: column; align-items: flex-start;}
+
+.floatleft {
+  float:left;
+  }
+
+.block {
+  display: block;
+  float:left;
+}
+.empty-box {
+  background-color: #FFF;
+  width: 20px;
+  height: 2px;
+}
+.keyboard{
+  display:block;
+  float:left;
+  width:616px; height: 211px;
+  background-color: #111;
+  margin: 0px auto;
+  border-radius: 2px;
+  padding: 0px;
+  color: #eee;
+}
+.keyboard4{
+  display:block;
+  float:left;
+  width:320px; height: 168px;
+  background-color: #111;
+  margin: 0px;
+  border-radius: 2px;
+  padding: 0px;
+  color: black;
+}
+.key{
+  font-family : "Andika Afr", geneva, arial, helvetica, sans-serif;
+  font-size : 120%; font-style : normal;
+  width: 40px; height:40px;
+  display:block;
+  background-color:#333;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 29px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  margin-bottom:2px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+ }
+.keyt{
+  font-family : "Andika Afr", geneva, arial, helvetica, sans-serif;
+  font-size : 120%; font-style : normal;
+  width: 40px; height:40px;
+  display:block;
+  background-color:#DDDDDD;
+  color: black;
+  text-align: center;
+  /*padding-left: 8px;*/
+  line-height: 29px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  /*margin-bottom:2px;*/
+  margin:1px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+ }
+
+.lpc{
+  /*key letter borders*/
+  font-family : "Andika Afr", geneva, arial, helvetica, sans-serif;
+  font-size : 120%; font-style : normal;
+  width: 40px; height:40px;
+  display:block;
+  background-color:#FFFFFF !important;
+  color:#000000 !important;
+  text-align: center;
+  line-height:40px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  margin:1px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+  border:1px solid darkgray;
+ }
+
+.bar {
+  background-image: url('./bar.png') !important;
+  background-color: white !important;
+  background-repeat: no-repeat !important;
+  background-position: right top !important;
+}
+
+.small{font-size:12px; text-align: left;}
+.smallt{font-size:12px; text-align: center;}
+.space1{margin-right: 43px !important;}
+.space2{margin-right: 15px !important;}
+.backspacet  {width: 30px;text-align:center;line-height: 40px; color:#FFFFFF}
+.backspace   {width: 84px;text-align:center;line-height: 40px; color:#FFFFFF}
+.tab         {width: 50px; line-height: 40px; font-size:109%; color:#FFFFFF}
+.lettert     {width: 30px; text-align:center; line-height: 40px; background:white; color:black;}
+.letter      {width: 30px; text-align:center; line-height: 40px; color:#FFFFFF; direction:ltr;}
+.slash       {width: 64px; text-align:center;line-height: 40px; color:#FFFFFF}
+.caps        {width: 70px; font-size:12px; line-height:40px; color:#FFFFFF}
+.enter       {width: 92px; line-height:40px; text-align: center; padding-left:0; color:#FFFFFF}
+.entert      {width: 43px; line-height:40px; text-align: center; padding-left:0; color:#FFFFFF}
+.shift       {width: 30px;height:40px; font-size: 120%; text-align: center;}
+.shiftactive {width: 30px;height:40px;}
+.shiftleft102{width: 50px;line-height: 40px; font-size:109%; color:#FFFFFF}
+.shiftleft101{width: 90px;line-height: 40px; font-size:109%; color:#FFFFFF}
+.shiftright  {width:104px;line-height: 40px; font-size:109%; color:#FFFFFF}
+.num         {width: 30px; line-height: 40px; font-size:109%; text-align:center;}
+.globet      {width: 38px; line-height: 40px;}
+.spacet      {width:196px; text-align: center; color:#FFFFFF}
+.space1t      {width:159px; text-align: center; color:#FFFFFF}
+.space2t      {width:121px; text-align: center; color:#FFFFFF}
+/*.wide4		 {width:200px; text-align: center; color:black;}*/
+.extrat		 {width:37px; text-align:center; line-height: 40px; color:black;}
+.ctrl        {width:105px; line-height: 40px; font-size:109%; color:#FFFFFF}
+.alt         {width: 60px;line-height: 40px; font-size:109%; color:#FFFFFF}
+.space       {width:234px; text-align: center; color:#FFFFFF}
+.active      {background-color: DarkGray; color: #000000;}
+.activet     {background-color: DarkGray;color:white;}
+.floatleft   {float: left;}
+.textleft    {text-align: left;}
+.hidden      {visibility: hidden;}
+.hiddent     {visibility: hidden; font-size: 22pt; font-style: normal;}
+.top         {margin-top:0px;}
+.rowbspace   {width:25px;}
+.borders     {border:1px solid darkgray;}
+.blankkey    {width: 30px; text-align:center; line-height: 40px; background:#888888; color:#888888;}
+.spacer      {width: 10px; text-align:center; line-height: 40px; background:#000000; color:#000000;}
+/*.ajami{font-family : "Scheherazade SEB", "Scheherazade", "Harmattan SEB", "Harmattan";font-size : 22pt; font-style : normal;}*/
+
+.klb{
+  /*key letter borders*/
+  font-family : "Andika Afr", geneva, arial, helvetica, sans-serif;
+  font-size : 120%; font-style : normal;
+  width: 30px; height:40px;
+  display:block;
+  background-color:white;
+  color:black;
+  text-align: center;
+  /*padding-left: 8px;*/
+  /*line-height: 29px;*/
+  line-height:40px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  /*margin-bottom:2px;*/
+  margin:1px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+  border:1px solid darkgray;
+}
+
+.arrow {
+    width: 40px;
+    height: 30px;
+	margin-top: 5px;
+}
+
+.line {
+    margin-top: 10px;
+    width: 30px;
+    background: dimgray;
+    height: 10px;
+    float: left;
+}
+.point {
+    width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 10px solid dimgray;
+    float: right;
+}
+
+.klb4{
+  /*key letter borders*/
+  font-family : "Andika Afr", geneva, arial, helvetica, sans-serif;
+  font-size : 100%; font-style : normal;
+  width: 120px; height:40px;
+  display:block;
+  background-color:white;
+  color:black;
+  text-align: center;
+  /*padding-left: 8px;*/
+  /*line-height: 29px;*/
+  line-height:40px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  /*margin-bottom:2px;*/
+  margin:1px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+  border:1px solid darkgray;
+ }

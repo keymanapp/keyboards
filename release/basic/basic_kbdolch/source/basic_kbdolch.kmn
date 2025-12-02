@@ -13,7 +13,7 @@ store(&VISUALKEYBOARD) 'basic_kbdolch.kvks'
 store(&BITMAP) 'basic_kbdolch.ico'
 store(&LAYOUTFILE) 'basic_kbdolch.keyman-touch-layout'
 store(&COPYRIGHT) '© 2019 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 
 begin Unicode > use(main)
@@ -119,6 +119,6 @@ store(unused)   [K_BKQUOTE] [K_HYPHEN] [K_EQUAL] [K_Q] [K_W] [K_R] [K_T] \
                 [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_I] \
                 [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_X] [SHIFT K_V] 
 + any(unused)  > nul               
-store(symbols_key)  [SHIFT K_N] [SHIFT K_M] [SHIFT K_O] [SHIFT K_P] [SHIFTK_K] [SHIFT K_L] [SHIFT K_H] [SHIFT K_J] [SHIFT K_SLASH] [SHIFT K_BKSLASH] [SHIFT K_QUOTE]
+store(symbols_key)  [SHIFT K_N] [SHIFT K_M] [SHIFT K_O] [SHIFT K_P] [SHIFT K_K] [SHIFT K_L] [SHIFT K_H] [SHIFT K_J] [SHIFT K_SLASH] [SHIFT K_BKSLASH] [SHIFT K_QUOTE]
 store(symbols_out)  U+003C U+003E U+005B U+005D U+007B U+007D U+00AB U+00BB U+003F U+002F U+0022
 + any(symbols_key)  > index(symbols_out,1)

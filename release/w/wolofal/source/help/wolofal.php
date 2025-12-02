@@ -37,9 +37,4 @@
 <div id='osk-phone' data-states='default shift numeric'>
 
 </div>
-
-
-
-
-
-<p>© 2022 SIM</p>
+<p>© SIM</p>

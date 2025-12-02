@@ -1,6 +1,6 @@
 <?php 
   $pagename = 'Lushootseed Unicode Keyboard Help';
-  $pagetitle = 'Lushootseed Unicode Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

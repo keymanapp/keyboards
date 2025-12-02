@@ -1,12 +1,10 @@
 Multi Pak Phonetic Keyboard
 ===========================
 
-Copyright (c) 2007-2019 Zeeshan Hyder
-
-Version 1.1
+Copyright (c) Zeeshan Hyder
 
 __DESCRIPTION__
-This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> and the font <b>Pak Nastaleeq</b> designed for the following languages: \r\n<b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu
+This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> designed for the following languages: \r\n<b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu
 
 Links
 -----

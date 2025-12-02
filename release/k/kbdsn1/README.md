@@ -1,14 +1,12 @@
 ____________ keyboard
 =====================
 
-Copyright (C) 2008, 2018 Tavultesoft
-
-Version 1.0.1
+Copyright (C) Tavultesoft
 
 DESCRIPTION
 -----------
 
-This keyboard layout is designed for Sinhala. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. The included font KandyUnicode.ttf is recommended for Sinhala.
+This keyboard layout is designed for Sinhala. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
 
 Links
 -----

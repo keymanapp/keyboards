@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Urdu Keyboard Help';
-  $pagetitle = 'Urdu Keyboard Help';
+  $pagename = 'Urdu (deprecated) Keyboard Help';
+  $pagetitle = 'Urdu (deprecated) Keyboard Help';
   $pagestyle = "
   
   .desktop .kmw-key-default .kmw-key-text {

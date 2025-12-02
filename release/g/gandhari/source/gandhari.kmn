@@ -3,11 +3,11 @@ c
 c Meta details: Registered=1; Version=6400be
 c               Flags=0; HotKey=0
 c
-store(&VERSION) "10.0"
+store(&VERSION) "15.0"
 store(&NAME) "Gandhari" 
-store(&KEYBOARDVERSION) '2.8'
-store(&TARGETS) 'windows macosx linux web'
-store(&COPYRIGHT) '© 2004-2020 Andrew Glass'
+store(&KEYBOARDVERSION) '2.9'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Andrew Glass'
 
 store(BaseVowels) "aeiouAEIOU" c store(1)
 store(AcuteVowels) "áéíóúÁÉÍÓÚ" c store(2)
@@ -23,6 +23,7 @@ store(store11) "̧̱́̀̂̃̄̅̆̑̌̇̈̋̊̐̽"
 store(store12) "kKgGpPmM" 
 store(store13) "ḱḰǵǴṕṔḿḾ" 
 store(&VISUALKEYBOARD) 'gandhari.kvks'
+store(&LAYOUTFILE) 'gandhari.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -78,8 +79,6 @@ group(main) using keys
   deadkey(17)  + " " > "◊"  c line(0)
   deadkey(1)  + " " > "´"  c line(0)
   deadkey(2)  + " " > "`"  c line(0)
-  deadkey(3)  + " " > "^"  c line(0)
-  deadkey(4)  + " " > "¨"  c line(0)
   deadkey(5)  + " " > "ˉ"  c line(0)
   deadkey(6)  + " " > "˘"  c line(0)
   deadkey(7)  + " " > "~"  c line(0)

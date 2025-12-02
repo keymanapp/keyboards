@@ -3,14 +3,15 @@ c Author:   Lorna A. Priest
 c Date:     15-SEP-2011
 store(&VERSION) '9.0'
 store(&NAME) 'Lepcha (SIL)'
-store(&COPYRIGHT) '© SIL International'
+store(&COPYRIGHT) '© SIL Global'
 store(&BITMAP) 'sil_lepcha.ico'
 store(&mnemoniclayout) "1"
-store(&TARGETS) 'windows macosx linux web'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) 'lep'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&MESSAGE) 'This keyboard is designed for typing Lepcha text. The keyboard is a phonetic keyboard. This means that the keystrokes are tied to the Latin keyboard. '
 store(&VISUALKEYBOARD) 'sil_lepcha.kvks'
+store(&LAYOUTFILE) 'sil_lepcha.keyman-touch-layout'
 
 begin Unicode > use(main)
 

@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Tweaks
 */
-  $pagename = 'Pan-Sahelian Keyboard Help';
-  $pagetitle = 'Pan-Sahelian Keyboard Help';
+  $pagename = 'Pan-Sahelian (deprecated) Keyboard Help';
+  $pagetitle = 'Pan-Sahelian (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

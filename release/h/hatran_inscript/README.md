@@ -1,7 +1,5 @@
-hatran_inscript keyboard
+Hatran Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Aramaic language, using the Hatran script with
 
 Links
 -----
+https://keyman.com/keyboards/hatran_inscript
 
 Copyright
 ---------

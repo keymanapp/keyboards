@@ -1,0 +1,58 @@
+﻿c kawi_inscript generated from template at 2024-11-01 13:32:29
+c with name "Kawi Inscript"
+store(&VERSION) '10.0'
+store(&NAME) 'Kawi Inscript'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'kawi_inscript.ico'
+store(&VISUALKEYBOARD) 'kawi_inscript.kvks'
+store(&LAYOUTFILE) 'kawi_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(IndVowK) "DEFRGT+" "ZVB" "SWA" c standard INSCRIPT positions for ZVB would be: [RALT K_EQUAL] [RALT K_L] [RALT K_R]
+store(IndVowU) U+11F04 .. U+11F10
+
+store(ConjK) [RALT K_K] [RALT SHIFT K_K] [RALT K_I] [RALT SHIFT K_I] [RALT SHIFT K_U] \
+             [RALT K_COLON] [RALT SHIFT K_COLON] [RALT K_P] [RALT SHIFT K_P] \
+             [RALT SHIFT K_RBRKT] [RALT K_QUOTE] [RALT SHIFT K_QUOTE] \
+             [RALT K_LBRKT] [RALT SHIFT K_LBRKT] [RALT SHIFT K_C] [RALT K_L] [RALT SHIFT K_L] \
+             [RALT K_O] [RALT SHIFT K_O] [RALT K_V] [RALT K_H] [RALT K_Y] [RALT SHIFT K_Y] [RALT K_C] \
+             [RALT K_SLASH] [RALT K_J] [RALT K_N] [RALT SHIFT K_Q] [RALT SHIFT K_M] \
+             [RALT SHIFT K_COMMA] [RALT K_M] [RALT K_U] 
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] \
+             [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] \ 
+             [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] \
+             [K_LBRKT] [SHIFT K_LBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] \
+             [K_O] [SHIFT K_O] [K_V] [K_H] [K_Y] [SHIFT K_Y] [K_C] \
+             [K_SLASH] [K_J] [K_N] [SHIFT K_Q] [SHIFT K_M] \
+             [SHIFT K_COMMA] [K_M] [K_U] 
+store(ConsU) U+11F12 .. U+11F32
+
+store(DepVowK) "eafrgt=swq"
+store(DepVowU) U+11F34 .. U+11F3A U+11F3E .. U+11F40
+
+store(DigitsK) "0123456789"
+store(DigitsU) U+11F50 .. U+11F59
+
+store(SignsK) "Xxz" [RALT K_HYPHEN] "d\,." \
+              [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] \
+              [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0]  "]"
+store(SignsU) U+11F00 .. U+11F03 U+11F41 .. U+11F4F U+11F5A
+
+store(nul) "J>?"
+
+group(main) using keys
+
++ any(DigitsK) > index(DigitsU,1)
++ any(ConsK) > index(ConsU,1)
++ [SHIFT K_N] > U+11F33
++ any(IndVowK) > index(IndVowU,1)
++ any(DepVowK) > index(DepVowU,1)
++ any(SignsK) > index(SignsU,1)
++ any(ConjK) > U+11F42 index(ConsU,1)
+
+U+11F42 any(ConsU) + [K_BKSP] > nul c when backspacing delete the conjoiner too
+
++ any(nul) > nul

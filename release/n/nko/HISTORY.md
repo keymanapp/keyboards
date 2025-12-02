@@ -1,6 +1,10 @@
 N'Ko Phonetic Change History
 ====================
 
+1.3.1 (2023-12-1)
+----------------
+* Update to newer font in noto folder
+
 1.3 (2020-09-4)
 ----------------
 * Move source to github

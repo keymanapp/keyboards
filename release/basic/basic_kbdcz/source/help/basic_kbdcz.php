@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 <p>
-    Czech Basic 1.1 generated from template.
+    Czech Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <p>˝o will produce ő (available on oOuU).</p>
@@ -19,8 +19,6 @@
 <p>´a will produce á (available on aAcCeEiIlLnNoOrRsSuUyYzZ).</p>
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
 <p>¸c will produce ç (available on cCgGkKlLnNrRsStT).</p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>

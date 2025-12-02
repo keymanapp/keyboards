@@ -1,0 +1,211 @@
+﻿c =====================Begin Identity Section===================================================
+c
+c Mnemonic input method for Bench script on US-QWERTY
+c keyboards for Keyman version 7.1, compliant with Unicode 4.1 and later.
+c
+c License       :  http://creativecommons.org/licenses/by/3.0/
+c Info          :  http://keyboards.ethiopic.org/
+c Keyman        :  http://www.tavultesoft.com/
+c Bugs          :  keyboards@ethiopic.org
+c
+c Specification : http://keyboards.ethiopic.org/specification/
+c
+c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
+c Last Update   :  2008-11-10
+c
+
+store(&Version) "7.0"
+store(&Name) "Bench"
+store(&Bitmap) "../Bitmaps/BeitBE.bmp"
+store(&MnemonicLayout) "1"
+store(&CapsAlwaysOff) "1"
+store(&Copyright) "Creative Commons Attribution 3.0"
+store(&Message) "This is a Bench language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
+store(&EthnologueCode) "bcq"
+store(&VisualKeyboard) "gff-bcq-7.kvk"
+HOTKEY "^%B"
+c
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+c
+c Bench does not use the ፈ family, it is retained here however to prefent "[fF]" from being a deadkey
+c
+c
+c store(gIz) 'ሀለሐመሠረሰሸⶠቀበቨተቸⶨነአከወዘዠⶰየደጀገጠጨⶸጰጸፈፐ'   - the first form is not used in Bench, save for ሀ
+store(kaIb) 'ሁሉሑሙሡሩሱሹⶡቁቡቱቹⶩኑኡኩዉዙዡⶱዩዱጁጉጡጩⶹጱጹፑ'
+store(sals) 'ሂሊሒሚሢሪሲሺⶢቂቢቲቺⶪኒኢኪዊዚዢⶲዪዲጂጊጢጪⶺጲጺፒ'
+store(rabI) 'ሃላሓማሣራሳሻⶣቃባታቻⶫናኣካዋዛዣⶳያዳጃጋጣጫⶻጳጻፓ'
+store(hams) 'ሄሌሔሜሤሬሴሼⶤቄቤቴቼⶬኔኤኬዌዜዤⶴዬዴጄጌጤጬⶼጴጼፔ'
+store(sads) 'ህልሕምሥርስሽⶥቅብትችⶭንእክውዝዥⶵይድጅግጥጭⶽጵጽፕ'
+store(sabI) 'ሆሎሖሞሦሮሶሾⶦቆቦቶቾⶮኖኦኮዎዞዦⶶዮዶጆጎጦጮⶾጶጾፖ'
+
+store(keys) 'hlHm_rsx_qbtc_nekwzZ_ydjgTC_PSp'
+c the following is Bench specific
+store(extraKeys) 'LMRXBVvQNKWYDJG'
+store(extraSads) 'ልምርሽብብብቅንክውይድጅግ'
+
+c
+c Bench is a special case where the ecclesiastical comma, ፥, is used as a tone mark.
+c We map it onto the "F" key which is otherwise unused (the ፈ family does not  occur in Bench).
+c This avoids having a deadkey and helps break from the notion of the symbol as punctuation
+c under the Bench context. The glyph and Unicode address of the Bench tone marker is subject
+c to change later which is yet another reason to avoid over-binding to ፥.
+c
+store(toneKeys)  'fF'
+store(toneMarks) '፥፥'
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+store(loneVowelKeys)  'aAuUiIeEoO'
+store(loneVowelEthio) 'አአኡኡኢኢእእኦኦ'
+store(composableVowel) 'አኡኢእኦ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+c
+c Bench does not make use of the labiovelars
+c
+c ---------------------End Labiovelars----------------------------------------------------------
+
+c ---------------------Maps for Numbers---------------------------------------------------------
+store(arabNumbers) '123456789'
+store(arabNumbersWithZero) '0123456789'
+store(ColonOrComma) ':,'
+store(ethWordspaceOrComma) '፡፣'
+c ---------------------End Numbers--------------------------------------------------------------
+
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+store(gIz-key)  'eEäÄéÉèÈêÊëË'
+store(kaIb-key) 'uUùÙúÚûÛüÜ'
+store(sals-key) 'iIìÌíÍîÎïÏ'
+store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+store(hams-key) 'æÆ'
+store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+
+c =====================End Data Section=========================================================
+
+c =====================Begin Functional Section=================================================
+c
+begin Unicode > use(main)
+group(main) using keys
+
+c ---------------------Input of Special Symbols-------------------------------------------------
+c
+c The input section here is for rules that must precede other rules
+c
+  + '_' > U+135F c gemination
+  U+135F + '_' > '_'
+
+  + any(extraKeys) > index(extraSads,1)
+  + any(keys)      > index(sads,1)
+c ---------------------End Input of Special Symbols---------------------------------------------
+
+c ---------------------Input of Double Strike Letters-------------------------------------------
+  'ስ' + 's' > 'ሥ'
+  'ሽ' + 'x' > 'ⶥ'
+  'ሽ' + 'X' > 'ⶥ'
+  'ች' + 'c' > 'ⶭ'
+  'ዥ' + 'Z' > 'ⶵ'
+  'ጭ' + 'C' > 'ⶽ'
+c ---------------------End Input of Double Strike Letters---------------------------------------
+
+c ---------------------Input of Lone Vowels-----------------------------------------------------
+c
+c Alef-A Vowels as Vowels
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+
+  'አ' + any(gIz-key)  > 'እ'
+  'አ' + any(kaIb-key) > 'ኡ'
+  'አ' + any(sals-key) > 'ኢ'
+  'አ' + any(rabI-key) > 'ኣ'
+  'ኢ' + any(gIz-key)  > 'ኤ'
+  'አ' + any(sabI-key) > 'ኦ'
+
+c Bench does not use the Aynu-A
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(1)
+c
+c ---------------------End Input of Lone Vowels-------------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+c
+c any(sads) + any(gIz-key)  > index(gIz,1)
+c Bench does not use the first form, save for ሀ
+  'ህ' + any(gIz-key) > 'ሀ'
+  any(sads) + any(kaIb-key) > index(kaIb,1)
+  any(sads) + any(sals-key) > index(sals,1)
+  any(sads) + any(rabI-key) > index(rabI,1)
+  any(sads) + any(hams-key) > index(hams,1)
+  any(sals) + any(gIz-key)  > index(hams,1)
+  any(sads) + any(sabI-key) > index(sabI,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+c
+c Bench does not make use of the labiovelars
+c
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+c ---------------------Input of Tone Marks-----------------------------------------------------
+  + any(toneKeys) > index(toneMarks,1)
+c ---------------------End Input of Tone Marks-------------------------------------------------
+
+c ---------------------Input of Punctuation-----------------------------------------------------
+c
+c The only dead key for entry of special characters and
+c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
+c
+  any(sads)  + "'" > index(sads,1) deadkey(1)
+  deadkey(1) + "'" > "'"
+
+  + ':'     > '፡'
+  + [SHIFT ' '] > '፡'
+  '፡' + ':' > '።'
+  '።' + ':' > ':'
+  ':' + ':' > '፡'  c makes circular
+
+      + ',' > '፣'
+  '፣' + ',' > ','
+  ',' + ',' > '፣'  c makes circular
+
+      + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፤'  c makes circular
+
+  '፡' + '-' > '፦'
+
+      + '<' > '‹'
+      + '>' > '›'
+  '‹' + '<' > '«'
+  '›' + '>' > '»'
+  '«' + '<' > '<'
+  '»' + '>' > '>'
+c ---------------------End Input of Punctuation-------------------------------------------------
+
+c ---------------------Input of European Characters---------------------------------------------
+  store(euro) 'ÇçÐðÝýÿßÑñ'
+  store(euroMap) 'ጭችድድይይይጽንን'
+  + any(euro) > index(euroMap,1)
+
+  + '¨' > U+135F
+
+  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c this mapping has a Bench bias
+  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+  + any(euroVowels) > index(euroVowelsMap,1)
+c ---------------------End Input of European Characters-----------------------------------------
+
+c ---------------------Input of Numbers---------------------------------------------------------
+  any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+c
+c Bench does not use the Ethiopic Numerals
+c
+c ---------------------End Input of Numbers-----------------------------------------------------
+
+c =====================End Functional Section===================================================

@@ -3,7 +3,7 @@
 
 Copyright (c) 2021 Win Publishing Trust.
 
-Version 1.1
+Version 1.2
 
 __DESCRIPTION__
 

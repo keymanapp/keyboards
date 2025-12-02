@@ -15,8 +15,8 @@
   Notes:            
   History:          05 Sep 2011 - tpbaehr - Create online help from package help.
 */
-  $pagename = 'Galaxie BibleScript Mnemonic Keyboard Help';
-  $pagetitle = 'Galaxie BibleScript Mnemonic Keyboard Help';
+  $pagename = 'Galaxie BibleScript Mnemonic (deprecated) Keyboard Help';
+  $pagetitle = 'Galaxie BibleScript Mnemonic (deprecated) Keyboard Help';
   $style = <<<END
 /* General */
 body {

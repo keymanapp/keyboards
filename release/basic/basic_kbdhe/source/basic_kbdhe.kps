@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Greek Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Greek Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +71,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,7 +86,14 @@
       <Languages>
         <Language ID="el">Modern Greek (1453-)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="el" Keys="k a l ; h space m ; e r a , space t i space k ; a n e i w q" Text="καλή μέρα, τι κάνεις;" Note="&quot;Good morning, how are you?&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="greek" Relationship="deprecates" />
+    <RelatedPackage ID="kbdhe" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

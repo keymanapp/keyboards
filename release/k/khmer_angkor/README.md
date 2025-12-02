@@ -1,9 +1,7 @@
 Khmer Angkor keyboard
 =====================
 
-Copyright (C) 2015-2022 SIL International
-
-Version 1.3
+Copyright (C) SIL Global
 
 Description
 -----------

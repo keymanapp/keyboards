@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Maltese Keyboard Help';
+  $pagename = 'Maltese/Esperanto (obsolete non-Unicode) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

@@ -1,8 +1,6 @@
 Shaw QWERTY keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 

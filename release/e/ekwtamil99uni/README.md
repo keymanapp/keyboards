@@ -6,8 +6,7 @@ Tamil keyboard layout following the Tamil99 standard
 Links
 -----
 
- * Home:     <https://help.keyman.com/keyboard/ekwtamil99uni>
- * Deployed: <http://s.keyman.com/keyboard/ekwtamil99uni>
+ * Home:     <https://keyman.com/keyboard/ekwtamil99uni>
  * Help:     <http://help.keyman.com/keyboard/ekwtamil99uni>
  * Contact:  <support@keyman.com>
 

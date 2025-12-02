@@ -5,8 +5,8 @@
 
   Authors:     Tavultesoft
 */
-  $pagename = 'Hawaiian Unicode Keyboard Help';
-  $pagetitle = 'Hawaiian Unicode Keyboard Help';
+  $pagename = 'Hawaiian Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Hawaiian Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

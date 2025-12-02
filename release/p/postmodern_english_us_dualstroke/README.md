@@ -1,9 +1,7 @@
 Postmodern English US DualStroke keyboard
 ==============
 
-© 2022, The Postmodern English Project
-
-Version 1.0
+© 2022 - 2023, The Postmodern English Project
 
 Description
 -----------

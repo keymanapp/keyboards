@@ -1,68 +1,13 @@
 <?php 
-  $pagename = "GFF Gurage";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Ge&rsquo;ez Language";
-  $pagestyle = <<<END
-  img.indented { text-indent: 10%}
-
-table.flat { border-spacing: 0; margin: 0.5em 0 }
-table.flat td, table.kb th { border: thin solid #666; text-align: center ; padding: 0.3em }
-table.flat { border-bottom: hidden }
-table.flat { empty-cells: show }
-table.flat th { text-align: center; border: thin solid #666; background-color: #e0dacf }
-table.flat caption { margin: 0.5em 0 0 0 }
-
-   td.divide { border-left: 1px solid black }
-   td.flat-bottom { border-bottom: 1px solid black }
-   td.flat-top { border-top: 1px solid black }
-  .note { background: #ffa }
-  .note-emph { background: #ffa; font-style: italic }
-  .question-unanswered { background: #ffa; font-style: italic; color: #ff0000 }
-  .question-answered { background: #bfffa0; font-style: italic; text-decoration: line-through }
-   body { max-width: 1200px }
-
-table.kb th, table.kb td { padding: 0.3em }
-table.kb th:first-child { background-color: #e0dacf; }
-table.kb tr:first-child { background-color: #e0dacf; font-weight:bold; }
-table.kb tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.kb tr:first-child th:last-child { background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff }
-table.kb th { background-color: #e0dacf; border-left-color: #ffffff }
-table.kb td, table.kb th { border: thin solid #666; text-align: center }
-table.kb th { text-align: center; background-color: #d7d0b9 }
-table.kb { border-bottom: hidden }
-table.kb { empty-cells: show }
-table.kb caption { margin: 0.5em 0 0 0 }
-table.kb tr:last-child { text-align: center; background-color: #d7d0b9; font-weight:bold; }
-table.kb tr:last-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff }
-dd {margin: 0 0 1em; padding: 0}
-
-table.punct th { font-weight: bold;  padding: 0.3em }
-table.punct td { font-weight: normal; padding: 0.3em }
-table.punct th:first-child { background-color: #e0dacf; }
-table.punct tr:first-child { background-color: #e0dacf; }
-table.punct tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.punct th { background-color: #e0dacf; border-left-color: #ffffff }
-table.punct td, table.punct th { border: thin solid #666; text-align: center }
-table.punct th { text-align: center; background-color: #d7d0b9 }
-table.punct { border-bottom: hidden }
-table.punct { empty-cells: show }
-
-table.zaima th { font-weight: bold;  padding: 0.3em }
-table.zaima td { font-weight: normal; padding: 0.3em }
-table.zaima th:first-child { background-color: #e0dacf;}
-table.zaima tr:first-child th  { background-color: #e0dacf; }
-table.zaima tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.zaima th { background-color: #e0dacf; border-left-color: #ffffff }
-table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
-table.zaima th { text-align: center; background-color: #d7d0b9 }
-table.zaima { border-bottom: hidden }
-table.zaima { empty-cells: show }
-END;
+  $pagetitle = "GFF Gurage (Legacy) Keyboard Help";
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
+  $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');
-
-
 ?>
 
 
+<div id='Overview'>
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
@@ -96,14 +41,19 @@ have been derived from <a href="https://software.sil.org/abyssinica/">Abyssinica
   </dd>
 
   <dt><strong>Gurage Fider 1998</strong></dt>
-  <dd>The successor to the 1977 orthography developed to publish the Gurage Bible and becoming the reference glyphs under Unicode 4.1.  The glpyhs have been in use from 1998 until a new orthography was introduced in 2013. The glpyhs may also be generated from the <a href="https://scripts.sil.org/ttw/fonts3go.cgi">TypeTuner website</a> with the language selection "Sebat Bet Gurage".
+  <dd>The successor to the 1977 orthography developed to publish the Gurage Bible and becoming the reference glyphs under Unicode 4.1.  The glpyhs have been in use from 1998 until a new orthography was introduced in 2013. The glpyhs may also be generated from the <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner website</a> with the language selection "Sebat Bet Gurage".
   </dd>
 </dl>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is provided as a PDF file (<a target="_blank" href="GurageTyping-Legacy-English.pdf">English</a>,<a target="_blank" href="GurageTyping-Legacy-Gurage.pdf">ጉራጊና</a>) with this distribution.</p>
+</div>
 
+<h2>Note</h2>
+<p style="text-align: justify;">
+This keyboard package provides a mobile layout that is no longer actively maintained. The mobile layout was introduced as an interim solution while mobile operating systems are being updated to support the Modern Gurage Orthography under the Unicode 14 standard. The mobile layout will be removed once this transition period is complete.
+</p>
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Gurage may be typed with this keyboard. To type additional Ethiopic letters used by other languages,
@@ -227,6 +177,26 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
 </table>
 </div>
 
+
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
+
+<table style="margin-top: 0; white-space: nowrap;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+</div>
+
+
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
@@ -243,12 +213,17 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
   </tr>
 </table>
 
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፡’, ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50<br/>
+12፡50	⇒  12:50
+</dir>
+
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
 with a single keystroke as usual.  Those used to input Ethiopic symbols can be entered by
 hitting the punctuation key two or more times until it appears.</p>
-
-
 </div>
 
 <h2><a id="numerals" name="numerals"></a>Typing Numerals</h2>
@@ -294,7 +269,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2008-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

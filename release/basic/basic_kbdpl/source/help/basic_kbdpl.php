@@ -7,7 +7,7 @@
 
 
 <p>
-    Polish (214) Basic 1.1 generated from template.
+    Polish (214) Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <p>˝o will produce ő (available on oOuU).</p>

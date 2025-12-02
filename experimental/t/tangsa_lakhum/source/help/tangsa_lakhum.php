@@ -6,11 +6,14 @@
 ?>
 
 <p>
-    Experimental keyboard for Tangsa language using Tangsa Lakhum script which will be encoded in Unicode 14.0
+    Experimental keyboard for Tangsa language using Tangsa Lakhum script.
 </p>
 
 <p>This layout uses a deadkey on the left bracket "[" position to generate additional Lakhum characters.</p>
-<h1>Keyboard Layout</h1>
+
+<p>Use the left bracket with o, O, a, A, v, V, e, E, i, I, u, U, w, W, j, J, x, X, y, Y, q, Q, z, Z, r, R, t, T</p>
+
+<p>Doubling the left bracket gives the left bracket as output.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift ctrl'>

@@ -1,9 +1,7 @@
 Obolo Chwerty keyboard
 ==============
 
-© 2019 - 2022 Rogers Katelem Edeh
-
-Version 1.2.1
+© Rogers Katelem Edeh
 
 Description
 -----------

@@ -1,6 +1,18 @@
 Clavier du Mali (Qwertz) Keyboard Change History
 =======================
 
+3.4.2 (10 June 2025)
+------------------
+* Update font to Charis Mali
+
+3.4.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+3.4 (13-Sep-2024)
+-------------------
+* Removed .js file from package
+
 3.3.2 (18-Feb-2022)
 ------------------
 * Updated to use new fonts

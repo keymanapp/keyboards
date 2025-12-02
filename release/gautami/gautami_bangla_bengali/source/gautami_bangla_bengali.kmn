@@ -1,0 +1,305 @@
+﻿c "Gautami Bangla/Bengali"  2024-10-28
+
+store(&VERSION) '10.0'
+store(&NAME) 'Gautami Bangla/Bengali'
+store(&COPYRIGHT) '© Gautam Sengupta <gsghyd@gmail.com>'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'gautami_bangla_bengali.ico'
+store(&VISUALKEYBOARD) 'gautami_bangla_bengali.kvks'
+store(&LAYOUTFILE) 'gautami_bangla_bengali.keyman-touch-layout'
+store(&HOTKEY) [CTRL SHIFT K_B]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(deadkey) dk(a) dk(x)
+store(unasp) "কচটতপগজডদবড়স"
+store(asp) "খছঠথফঘঝঢধভঢ়শ"
+store(vowel) "অআইঈউঊঋৠঌৡএঐওঔ"
+store(matra) dk(a) "ািীুূৃৄৢৣেৈোৌ"
+store(m_bearer) "কখগঘঙচছজঝঞটঠডড়ঢঢ়ণতথদধনপফবভমযয়রৰলৱসশষহ"
+store(n_bearer) "বডঢয"
+store(n_bearing) "রড়ঢ়য়"
+store(digit) "1234567890১২৩৪৫৬৭৮৯০"
+store(currency_rota_1) "₹$€£৳"
+store(currency_rota_2) "$€£৳₹"
+store(currency_rota_3) "৲৹৴৵৶৷৸৻"
+store(currency_rota_4) "৹৴৵৶৷৸৻৲"
+
+c DEAD KEYS
++ [RALT K_X] > "x"
++ [K_X] > dk(x)
+dk(x) + [K_X] > "ক্ষ"
+'ক্ষ' + [K_X] > dk(x)
+
+c [SHIFT K_4] TOGGLES BETWEEN VARIOUS CURRENCY DENOMINATORS
++[RALT SHIFT K_3] > "#"
++[SHIFT K_3] > "৲"
+any(currency_rota_3) + [SHIFT K_3] > index(currency_rota_4, 1)
+
+c [SHIFT K_4] TOGGLES BETWEEN VARIOUS CURRENCY DENOMINATORS
++[RALT SHIFT K_4] > "$"
++[SHIFT K_4] > "₹"
+any(currency_rota_1) + [SHIFT K_4] > index(currency_rota_2, 1)
+
+c SHIFT-\ TOGGLES DANDA / DOUBLE DANDA
++ "|" > "।"                 use(transform)
+"।" + "|" > U+0965
+U+0965 + "|" > "।"
++ [RALT SHIFT K_BKSLASH] > "|"  use(transform)
+
+c [K_PERIOD] for NUKTA
++[RALT K_PERIOD] > "."
++[K_PERIOD] > "়"           use(transform)
+
+c K_BKQUOTE TOGGLES BETWEEN NASALS
++ [RALT K_BKQUOTE] > "`"     c BKQUOTE
++ [K_BKQUOTE] > "ঁ"     use(transform)
+"ঁ" + [K_BKQUOTE] > "ং"
+"ং" + [K_BKQUOTE] > "ৼ"
+"ৼ" + [K_BKQUOTE] > "ऀ"
+"ऀ" + [K_BKQUOTE] > "ঁ"
+
++[RALT SHIFT K_BKQUOTE] > "~"
++[SHIFT K_BKQUOTE] > '॒'
+'॒' + [SHIFT K_BKQUOTE] > '॑'
+'॑' + [SHIFT K_BKQUOTE] > '᳚'
+'᳚' + [SHIFT K_BKQUOTE] > U+0953
+U+0953 + [SHIFT K_BKQUOTE] > U+0954
+U+0954 + [SHIFT K_BKQUOTE] > '॒'
+
+c BKSLASH toggles between VIRAMA and HARD VIRAMA
++[RALT K_BKSLASH] > '\'
++[K_BKSLASH] > u+09cD
+dk(x) +[K_BKSLASH] > u+09cD U+200c 
+U+09cd +[K_BKSLASH] > context(1) U+200C
+U+09cd U+200c +[K_BKSLASH] > context(1)
+
++ [K_NPPLUS] > U+200d
++ [K_NPMINUS] > U+200c
+
++ [RALT K_QUOTE] > "'"
++ "'" > U+02bc
+
+c SLASH is JOINER/SPLITTER
++ [RALT K_SLASH] > '/'
+any(vowel) +[K_SLASH] > index(matra, 1)
+any(matra) +[K_SLASH] > index(vowel, 1)
+any(asp) + [K_SLASH] > index(unasp, 1) 'হ'
+any(unasp) 'হ' + [K_SLASH] > index(asp, 1)
+c SPLITTING
+U+09cd any(m_bearer) + [K_SLASH] > context(2)
+U+09cd any(m_bearer) '্' + [K_SLASH] > context(2) context(3)
+U+09cd any(m_bearer) '়' + [K_SLASH] > context(2) context(3)
+U+09cd any(m_bearer) '়' '্' + [K_SLASH] > context(2) context(3) context(4)
+c JOINING
+any(m_bearer) + [K_SLASH] > U+09cd context(1)
+any(m_bearer) '্' + [K_SLASH] > U+09cd context
+any(m_bearer) '়' + [K_SLASH] > U+09cd context(1) context(2)
+any(m_bearer) '়' '্' + [K_SLASH] > U+09cd context(1) context(2) context(3)
+
++ [RALT K_A] > "a"
++ [K_A] > "অ"                use(transform)   
+"অ" + [K_A] > "আ"
+"আ" + [K_A] > "অ"
++ [RALT SHIFT K_A] > "A"
++ [SHIFT K_A] > "আ"          use(transform)
+
++ [K_I] > "ই" use(transform)
++ [RALT K_I] > "i"
++ [SHIFT K_I] > 'ঈ' use(transform)
++ [RALT SHIFT K_I] > "I"
+"ই" + [K_I] > "ঈ"
+"ঈ" + [K_I] > "ই"
+U+09bf + [K_I] > U+09c0
+U+09c0 + [K_I] > U+09bf
+
++ [K_U] > U+0989 use(transform)
++ [SHIFT K_U] > U+098a use(transform)
++ [RALT K_U] > "u"
++ [RALT SHIFT K_U] > "U"
+U+0989 + [K_U] > U+098a
+U+098a + [K_U] > U+0989
+U+09c1 + [K_U] > U+09c2
+U+09c2 + [K_U] > U+09c1
+
++ [SHIFT K_COMMA] > "ঋ" use(transform)
+"ঋ" + [SHIFT K_COMMA] > "ৠ"
+"ৠ" + [SHIFT K_COMMA] > "ঋ"
++ [RALT SHIFT K_COMMA] > "<"
+"ৃ" + [SHIFT K_COMMA] > "ৄ"
+"ৄ" + [SHIFT K_COMMA] > "ৃ"
+
++ [SHIFT K_PERIOD] > "ঌ" use(transform)
++ [RALT SHIFT K_PERIOD] > ">" use(transform)
+"ঌ" + [SHIFT K_Period] > "ৡ"
+"ৡ" + [SHIFT K_Period] > "ঌ"
+"ৢ" + [SHIFT K_Period] > "ৣ"
+"ৣ" + [SHIFT K_Period] > "ৢ"
+
++ [RALT K_E] > "e"
++ [K_E] > U+098f use(transform)
++ [RALT SHIFT K_E] > "E"
++ [SHIFT K_E] > U+0990 use(transform)
+U+098f + [K_E] > U+0990
+U+0990 + [K_E] > U+098f
+U+09c7 + [K_E] > U+09c8
+U+09c8 + [K_E] > U+09c7
+
++ [RALT K_O] > "o"
++ [K_O] > U+0993 use(transform)
++ [RALT SHIFT K_O] > "O"
++ [SHIFT K_O] > U+0994 use(transform)
+U+0993 + [K_O] > U+0994
+U+0994 + [K_O] > U+0993
+U+09cb + [K_O] > U+09cc
+U+09cc + [K_O] > U+09cb
+
++ [K_K] > U+0995                use(transform)
++ [RALT K_K] > "k"
++ [K_C] > U+099a                use(transform)
++ [RALT K_C] > "c"
++ [SHIFT K_T] > U+099f          use(transform)
++ [RALT SHIFT K_T] > "T"
+
++ [RALT K_T] > "t"
++ [K_T] > "ত"                   use(transform)
+dk(x) + [K_T] > "ৎ"
+
++ [K_P] > "প"                   use(transform)
++ [RALT K_P] > "p"
+
++ [K_G] > U+0997                use(transform)
++ [K_J] > U+099c                use(transform)
++ [RALT K_G] > "g"
++ [RALT K_J] > "j"
++ [SHIFT K_D] > U+09a1          use(transform)
++ [RALT SHIFT K_D] > "D"
++ [K_D] > U+09a6                use(transform)
++ [RALT K_D] > "d"
++ [K_B] > U+09ac                use(transform)
++ [RALT K_B] > "b"
+
++ [RALT K_N] > "n"
++ [K_N] > "ন"                   use(transform)
+dk(x) + [K_N] > "ঞ"            use(transform)
+
++ [SHIFT K_N] > "ণ"             use(transform)
++ [RALT SHIFT K_N] > "N"
+
++ [RALT K_M] > "m"
++ [K_M] > "ম"                   use(transform)
+dk(x) + [K_M] > "ঙ"             use(transform)
+
++ [RALT SHIFT K_M] > "M"
++ [SHIFT K_M] > "ওঁ"
+'ওঁ' + [SHIFT K_M] > "৺"         c "৺" "ং" "৺"
+"৺" + [SHIFT K_M] > "ঀ"
+"ঀ" + [SHIFT K_M] > "ওঁ"
+
++ [RALT K_S] > "s"
++ [K_S] > "স"                   use(transform)
+
++ [SHIFT K_S] > "ষ"             use(transform)
++ [RALT SHIFT K_S] > "S"
+
++ [K_H] > 'হ'                   use(transform)
++ [RALT K_H] > "h"
+
++ [SHIFT K_H] > "ঃ"
+"ঃ" + [SHIFT K_H] > 'ঽ'
+'ঽ' + [SHIFT K_H] > 'ঃ'
++ [RALT SHIFT K_H] > "H"
+
++ [RALT K_Y] > "y"
++ [K_Y] > "য"                   use(transform)
+'য' + [K_Y] > 'য়'
+'য়' + [K_Y] > 'য'
+
+c [SHIFT K_Y is YAPHALA]
++ [SHIFT K_Y] > U+200d "্" 'য'
++ [RALT SHIFT K_Y] > "Y"
+
++ [K_R] > "র"                  use(transform)
++ [RALT K_R] > "r"
+dk(x) + [K_R] > "ৰ"
+
++ [RALT SHIFT K_R] > 'R'
++ [SHIFT K_R] > 'ড়'
+
++ [K_L] > 'ল'                  use(transform)
++ [RALT K_L] > "l"
+
++ [RALT K_V] > "v"
++ [K_V] > 'ব'                  use(transform)
+
++ [K_W] > 'ৱ'                  use(transform)
++ [RALT K_W] > "w"
+
+c NUKTA-BEARING CONSONANTS
++ [K_Q] > "ক়"                  use(transform)
++ [RALT K_Q] > "q"
++ [SHIFT K_Q] > "ক়"            use(transform)
++ [RALT SHIFT K_Q] > "Q"
++ [SHIFT K_K] > "খ়"            use(transform)
++ [RALT SHIFT K_K] > "K"
++ [SHIFT K_G] > "গ়"            use(transform)
++ [RALT SHIFT K_G] > "G"
++ [K_F] > "ফ়"                  use(transform)
++ [SHIFT K_F] > "ফ়"            use(transform)
++ [RALT K_F] > "f"
++ [RALT SHIFT K_F] > "F"
++ [K_Z] > "জ়"                  use(transform)
++ [RALT K_Z] > "z"
++ [SHIFT K_Z] > "জ়"            use(transform)
++ [RALT SHIFT K_Z] > "Z"
+
+c NUMERALS
++ [K_1] > U+09e7
++ [K_2] > U+09e8
++ [K_3] > U+09e9
++ [K_4] > U+09ea
++ [K_5] > U+09eb
++ [K_6] > U+09ec
++ [K_7] > U+09ed
++ [K_8] > U+09ee
++ [K_9] > U+09ef
++ [K_0] > U+09e6
+
++ [RALT K_1] > "1"
++ [RALT K_2] > "2"
++ [RALT K_3] > "3"
++ [RALT K_4] > "4"
++ [RALT K_5] > "5"
++ [RALT K_6] > "6"
++ [RALT K_7] > "7"
++ [RALT K_8] > "8"
++ [RALT K_9] > "9"
++ [RALT K_0] > "0"
+
+group(transform)
+c MATRA
+dk(a) 'অ' > 'া'
+any(deadkey) any(vowel) > context(2)
+any(m_bearer) any(vowel) > context(1) index(matra,2)
+any(m_bearer) '়' any(vowel) > context(1) context(2) index(matra,3)             c vowel --> matra / matra-bearing consonant ___
+
+any(unasp) 'হ' > index(asp,1)       c unasp --> asp / _____ h
+
+any(m_bearer) any(m_bearer) > context(1) U+09cd context(2)
+any(m_bearer) any(m_bearer) '়' > context(1) U+09cd context(2) context(3)
+'়' any(m_bearer) > context(1) U+09cd context(2)
+'়' any(m_bearer) '়' > context(1) U+09cd context(2) context(3)
+
+dk(x) any(m_bearer) > context(2)
+dk(x) any(m_bearer) '়' > context(2) context(3)
+
+c NUKTA RULES
+dk(x) '়' > '৽'
+any(n_bearing) '়' > context(1) beep
+any(m_bearer) '়' '়' > context(1) context(2) beep
+any(digit) '়' > context(1) "."
+
+c EOF

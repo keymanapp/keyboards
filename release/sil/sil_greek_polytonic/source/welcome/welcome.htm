@@ -1,12 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Polytonic Greek (SIL) Keyboard</title>
-    <style>
-        html, body { padding: 0; margin: 4px 4px 0 4px; font-family: sans-serif;}
-        div, p, li { margin-bottom: 8px }
-table.inputSequences {
+    <style type="text/css">
+        p { font: 10pt Tahoma; }
+        h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
+        h2 { font: bold 12pt Tahoma; color: #4444cc; }
+    table.inputSequences {
   border: 1px solid #1C6EA4;
   background-color: #FFFFFF;
   /*width: 100%;*/
@@ -63,10 +64,15 @@ table+table {margin-top: 1.0em;}
 
 <h1>Polytonic Greek (SIL) keyboard usage</h1>
 
-<h2>General layout</h2>
+<p>Greek keyboard layout supporting Polytonic Greek, using precomposed characters.</p>
 
-<p><img alt="Normal (default keyboard state)" src="sil_greek_polytonicU_.png"></p>
-<p><img alt="Shift state" src="sil_greek_polytonicU_S.png"></p>
+<h2>Desktop Keyboard layout</h2>
+<h3>Default (unshifted)</h3>
+<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+<h3>Shift</h3>
+<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+<h3>Right ALT (unshifted)</h3>
+<p><a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a></p>
 
 <h2>Keyboard Assignments</h2>
 <p>The main purpose of the keyboards is to provide a wide range of keying options, so many characters can be entered in multiple ways. If you are typing and make a mistake and use the backspace key to delete characters, the keyboard remembers the context.</p>
@@ -144,6 +150,8 @@ table+table {margin-top: 1.0em;}
 
 <p>The keyboard automatically chooses the correct code for the <em>sigma</em> depending upon the encoding and the context, so the correct final form is used when appropriate.</p>
 
+<p>When editing text, you may find you need to insert a medial sigma in the middle of a word; this can typed with <b class="input">AltGr+S</b>.</p>
+
 <table class="inputSequences">
     <tbody>
         <tr class="glyphs">
@@ -177,6 +185,7 @@ table+table {margin-top: 1.0em;}
 <td>ὰ</td>
 <td>ᾳ</td>
 <td>ϊ</td>
+<td>&#x1FB1;</td>
 </tr>
 <tr>
     <th>Type</th>
@@ -185,6 +194,7 @@ table+table {margin-top: 1.0em;}
     <td>` or \</td>
     <td>!, | , + or _</td>
     <td>"</td>
+    <td>#</td>
 </tr>
 </tbody>
 </table>
@@ -214,6 +224,7 @@ table+table {margin-top: 1.0em;}
 <p>For example, to type <span lang="grc">Οὐκ εἰμι ἐγω ὁ Χριστος. (ΙΩΑΝΝΗΝ 3 28)</span> you only need to press the following keys:<br>
 <b class="input">O u k SPACE e i m i SPACE e g w SPACE h o SPACE C r i s t o s PERIOD SPACE ( I W A N N J N SPACE 3 : 2 8 )</b></p>
 
+<p>You can use <b class="input">AltGr+vowel</b> to get an isolated lower case vowel or <em>rho</em> without breathing marks.</p>
 <p>You can also press <b class="input">*</b> to remove the breathing mark from a vowel or <em>rho</em>.</p>
 <p>In a few words, a vowel with <em>dieresis</em> follows an accented vowel. You will need to type <b class="input">@</b> before
 the vowel with <em>dieresis<em> to get the right behavior. For example, to get <span lang="grc">Ἰάϊρος</span>, type <b class="input">Ia/@i"ros</b>.</p>
@@ -317,6 +328,22 @@ Others can be typed by preceding them with <b class="input">@</b> (the <b class=
     </tbody>
 </table>
 
+<h2>Tablet Keyboard layout</h2>
+<p>The tablet layout follows the basic Desktop keyboard. However, due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+    <h2>Phone Keyboard layout</h2>
+    <p>Due to the size and number of keys, some characters are hidden in the long press. 
+        Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+    <h3>Default (unshifted)</h3>
+<p><a href="phone-default.png"><img class="keyboard" src="phone-default.png" alt="Default (unshifted) state" /></a></p>
+<h3>Shift</h3>
+<p><a href="phone-shift.png"><img class="keyboard" src="phone-shift.png" alt="Shift state" /></a></p>
+<h3>Numeric</h3>
+<p><a href="phone-numeric.png"><img class="keyboard" src="phone-numeric.png" alt="Numeric state" /></a></p>
+
+<h3>Longpress</h3>
+<p><a href="phone-longpress.png"><img class="keyboard" src="phone-longpress.png" alt="Numeric state" /></a></p>
 
 </body>
 </html>

@@ -15,8 +15,8 @@
   Notes:            
   History:          24 Nov 2009 - pbaehr - Wrote KMW help
 */
-  $pagename = 'Galaxie BibleScript Phonetic Keyboard Help';
-  $pagetitle = 'Galaxie BibleScript Phonetic Keyboard Help';
+  $pagename = 'Galaxie BibleScript Phonetic (deprecated) Keyboard Help';
+  $pagetitle = 'Galaxie BibleScript Phonetic (deprecated) Keyboard Help';
   $style = <<<END
 .lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.2em; color: #0000ff}
 h4 {font-size:11pt;}
