@@ -1,6 +1,11 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.7 (1 Dec 2025)
+-----------------
+
+* Added prompting keys to enable Windows 11 uptake
+
 4.0.4 (13 Jun 2023)
 -----------------
 
@@ -47,3 +52,4 @@ Indigenous NT Keyboard Change History
 -----------------
 
 * Ported to Keyman from MSKLC.
+
