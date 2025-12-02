@@ -1,6 +1,9 @@
-﻿store(&VERSION) '10.0'
+// Indigenous NT Keyboard — Windows 11 Optimized
+// Requires Keyman Developer 17.0+
+
+store(&VERSION) '10.0'
 store(&NAME) 'Indigenous NT'
-store(&KEYBOARDVERSION) '4.0.4'
+store(&KEYBOARDVERSION) '4.0.7'
 store(&TARGETS) 'any'
 store(&BITMAP) 'indigenous_nt.ico'
 store(&VISUALKEYBOARD) 'indigenous_nt.kvks'
@@ -11,7 +14,22 @@ begin Unicode > use(main)
 begin NewContext > use(NewContext)
 begin PostKeystroke > use(PostKeystroke)
 
+// Ensure Keyman loads early and stays active
+store(&HOTKEY) 'Ctrl+Shift+N'
+begin Unicode > use(main)
+
 group(main) using keys
+
+// ------------------------------------------------------------------
+// 1. PRIMING RULE: Activate TSF context on any keypress
+//    This ensures modifiers like RALT are recognized immediately
+// ------------------------------------------------------------------
+any(AnyKey) > index(AnyKey, 1)  // Pass through all keys, but "touch" context
+
+// ------------------------------------------------------------------
+// 2. ALtGr LAYER — Use RALT consistently
+// ------------------------------------------------------------------
+
 + [RALT K_SPACE] > ' '
 + [RALT K_0] > '̊'
 + [RALT K_6] > '̂'
@@ -155,3 +173,4 @@ group(detectStartOfSentence) readonly
     any(sentencePunctuation) '  ' > layer('shift')
     
     nomatch > layer('default')
+
