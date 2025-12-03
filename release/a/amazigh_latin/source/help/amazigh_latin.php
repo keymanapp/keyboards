@@ -16,7 +16,8 @@ END;
 <p>
   This keyboard layout has been created to facilitate the Latin-script transcription of most of the Amazigh languages. This is designed to support the systems of transcription commonly used amongst scholars of these languages. This keyboard specifically limits the possible characters to those that have meaning in the languages associated with this keyboard.
 </p>
-<h2>To use</h2>
+<h2>Desktop Keyboard layout</h2>
+<p>This keyboard follows a standard US Qwerty layout.</p>
 
 <p>The semi-colon key is a “dead key” that works in combination with the following key to produce the following characters. (Note: The semi-colon is typed before the base letter. For example, <kbd>;</kbd><kbd>a</kbd> outputs <samp>ɛ</samp>.)</p>
 
@@ -98,3 +99,10 @@ END;
 
 <p>Several diacritics can be added to the same letter, e.g. <samp>ḏ̣</samp>, <samp>ṣ́</samp>.  
 To get the normal symbol (e.g. a bracket [, {, etc.), type semi-colon followed by the [, {,  etc. </p>
+
+<h2>Phone Keyboard layout</h2>
+<div id='osk-phone' data-states='default shift numeric'></div>
+
+<h3>Longpress</h3>
+<p>Due to the size and number of keys, some characters are hidden in the long press. Press and hold on the key with a little dot, or hint, on the top right to reveal them.</p>
+<img src="phone-longpress.png">
