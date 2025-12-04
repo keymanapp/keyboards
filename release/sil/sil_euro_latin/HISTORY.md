@@ -1,5 +1,8 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 3.0.4 (3 Nov 2025)
+* Add Wynn
+
 ## 3.0.3 (3 Dec 2024)
 * Update language tags
 * Update documentation for punctuation
