@@ -88,7 +88,7 @@
   <h1>Keyboard Layouts</h1>
   <p>The keyboard layouts shown below show the position of the key to press to output the desired character.</p>
 
-  <h2>Desktop Keyboard layouts</h2>
+  <h2>Desktop Keyboard Layouts</h2>
 
   <h3>Unshifted</h3>
   <p><img src="unshifted.png" alt="Unshifted keyboard layout" width="624" height="233"></p>
@@ -98,7 +98,7 @@
 
   <hr>
 
-  <h2>Touch Keyboard layouts</h2>
+  <h2>Touch Keyboard Layouts</h2>
 
   <h3>Default</h3>
   <p><img src="touch_unshifted.png" alt="Default touch keyboard" width="624" height="400"></p>
@@ -109,13 +109,13 @@
   <h3>Numeric</h3>
   <p><img src="touch_numeric.png" alt="Numeric touch keyboard" width="624" height="400"></p>
 
-  <h2>Flicks and longpress</h2>
+  <h2>Flicks and Longpress</h2>
 
   <h3>Flicks</h3>
-  <p>If you put swipe down starting on the 'ŋ' key a '?' will be output. If you swipe up starting on the 'ŋ' key a '/' will be output.</p>
+  <p>If you swipe down starting on the 'ŋ' key a '?' will be output. If you swipe up starting on the 'ŋ' key a '/' will be output.</p>
 
   <h3>Long Press</h3>
-  <p>Alternatively if you press and hold the 'ŋ' a pop up with two options '?' or '/' you can then slide without lifting to the desired character. Note the full stop also has other punctuation on the long press.</p>
+  <p>Alternatively, if you press and hold the 'ŋ' a pop-up with two options, '?' or '/' you can then slide without lifting to the desired character. Note the full stop also has other punctuation on long press.</p>
 
   <h1>Keyboard rules</h1>
   <p>Keyboard for majority letters will follow the standard qwerty keyboard layout, except for the following in the table below.</p>
