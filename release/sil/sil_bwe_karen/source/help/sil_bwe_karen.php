@@ -1,11 +1,11 @@
 <?php
-  $pagename = 'SIL Bwe Karen Keyboard Help';
-  $pagetitle = 'SIL Bwe Karen Keyboard Help';
+  $pagename = 'Bwe Karen (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
       
 <h2>Font</h2>
-<p>The "SIL Bwe Karen" keyboard is designed to work with the Latin script using the Charis SIL Compact font.</p>
+<p>The "Bwe Karen (SIL)" keyboard is designed to work with the Latin script using the Charis font.</p>
 
 <h2>Keyboard Layout</h2>
 

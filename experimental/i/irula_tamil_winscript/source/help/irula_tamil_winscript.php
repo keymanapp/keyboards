@@ -1,86 +1,12 @@
 <?php 
   $pagename = 'Irula Tamil WinScript Keyboard Help';
   $pagetitle = $pagename;
+  $pagestyle = <<<END
+    samp {font-family: ThiruValluvar; font-size:20pt }
+    kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+END;
   require_once('header.php');
 ?>
-
- <style>
-
-        html, body {
-            font-family: sans-serif;
-            font-size: 100%;
-        }
-        samp {
-            font-family: ThiruValluvar; 
-            font-size:20pt; 
-            
-        }
-        kbd {
-            color:black; 
-            font: 0.8em sans-serif; 
-            border:solid 1px grey; 
-            background:#ccc; 
-            margin:2px 1px; 
-            padding:2px 3px; 
-            -webkit-border-radius: 3px; 
-            -moz-border-radius: 3px; 
-            border-radius: 3px;
-        }
-
-
-        /* Table */
-        .inputSequences {
-            border-collapse: collapse;
-            font-size: 14px;
-            min-width: 592px;
-        }
-
-        .inputSequences th, 
-        .inputSequences td {
-            padding: 7px 17px;
-        }
-        /* .inputSequences caption {
-            margin: 7px;
-        } */
-
-        /* Table Header */
-        .inputSequences thead th {
-            border-bottom: 2px solid #6ea1cc;
-            text-transform: uppercase;
-        }
-
-        /* Table Body */
-        .inputSequences tbody td {
-            border-bottom: 1px solid #e1edff;
-            color: #353535;
-            text-align: center;
-        }
-        .inputSequences tbody tr:nth-child(odd) td {
-            background-color: #f4fbff;
-        }
-        /* 
-        .inputSequences tbody td:nth-child(4),
-        .inputSequences tbody td:first-child,
-        .inputSequences tbody td:last-child {
-            text-align: right;
-        }
-        */
-        .inputSequences tbody tr:hover td {
-            background-color: #ffffa2;
-            border-color: #ffff0f;
-        }
-
-        /* Table Footer */
-        /* 
-            .inputSequences tfoot th {
-            border-top: 2px solid #6ea1cc;
-            text-align: right;
-        } 
-        */
-
-
-    </style>
-
 
     <p>This keyboard is based on the Tamil WinScript (NLCI) Keyboard Layout. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system. This keyboard includes experimental support for the Irula language.</p>
 

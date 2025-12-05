@@ -1,7 +1,13 @@
-﻿store(&TARGETS) 'any'
+﻿store(&VERSION) '10.0'
+store(&TARGETS) 'any'
 store(&NAME) 'Aleph With Beth'
 store(&BITMAP) 'alephwithbeth.ico'
+store(&COPYRIGHT) '© Cameron Briggs'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&VISUALKEYBOARD) 'alephwithbeth.kvks'
+store(&LAYOUTFILE) 'alephwithbeth.keyman-touch-layout'
+store(&DISPLAYMAP) '../../../../release/shared/fonts/kbd/kbdhebr/KbdHebr.json'
+store(&KMW_RTL) '1'
 
 store(letters-with-final-forms) "כמנפצ"
 store(sofit-forms-of-letters) "ךםןףץ"
@@ -16,11 +22,6 @@ store(normal-undageshed-sofit-forms-of-letters) "םןץ"
 store(punctuation) U+0591 .. U+05AF U+05BD .. U+05BF U+05C0 U+05C4
 store(whitespace) [K_SPACE] [K_ENTER] [K_TAB]
 
-store(&KMW_RTL) '1'
-store(&LAYOUTFILE) 'alephwithbeth.keyman-touch-layout'
-store(&COPYRIGHT) '© Cameron Briggs'
-store(&KEYBOARDVERSION) '1.0.6'
-store(&KMW_HELPTEXT) 'Aleph With Beth'
 
 begin Unicode > use(main)
 

@@ -1,6 +1,10 @@
 Korean Morse (SIL) Change History
 ====================
 
+2.0.1 (2025-05-13)
+----------------
+* Revert target to Windows-only
+
 2.0 (2020-09-07)
 ----------------
 * Moved to \release

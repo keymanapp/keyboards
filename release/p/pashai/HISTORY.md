@@ -1,7 +1,11 @@
 Pashai Change History
 ====================
 
-3.0 (2024-12-12)
+1.1 (2025-04-10)
+----------------
+* Change output of "i" to produce U+064A (and not U+06CC)
+
+1.0 (2024-12-12)
 ----------------
 * Created by importing Pashai MSKLC keyboard.
 

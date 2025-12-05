@@ -8,10 +8,10 @@ c store(&LANGUAGE) 'x045D'
 c store(&WINDOWSLANGUAGES) 'x045D'
 store(&LAYOUTFILE) 'inuktitut_pirurvik.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'inuktitut_pirurvik.css'
-store(&KEYBOARDVERSION) '1.4'
+store(&KEYBOARDVERSION) '1.4.1'
 begin Unicode > use(main)
 
-store(punct) ".,:;'\/!?" d34 
+store(punct) ".,:;'\/!?" d34
 store(unused) [T_TRANS_W][T_TRANS_E][T_TRANS_Y][T_TRANS_O][T_TRANS_D][T_TRANS_F][T_TRANS_Z][T_TRANS_X][T_TRANS_C][T_TRANS_B]
 group(main) using keys
 
@@ -130,10 +130,10 @@ U+155D + [T_TRANS_U] > U+1557
 U+1557 + [T_TRANS_U] > U+1558
 
 c additional syllables with R CARON
- + [T_TRANS_R_CARON] > U+15AE                        
+ + [T_TRANS_R_CARON] > U+15AE
 U+15AE + [T_TRANS_A] > U+15AC
 U+15AC + [T_TRANS_A] > U+15AD
-U+15AE + [T_TRANS_I] > U+15A8 
+U+15AE + [T_TRANS_I] > U+15A8
 U+15A8 + [T_TRANS_I] > U+15A9
 U+15AE + [T_TRANS_U] > U+15AA
 U+15AA + [T_TRANS_U] > U+15AB
@@ -149,7 +149,7 @@ U+1585 U+1585 +[T_TRANS_I] > context(1) U+146D
 U+1585 U+1585 +[T_TRANS_U] > context(1) U+146F
 
 c nng exception - combine
-U+14D0 U+14D0 + [T_TRANS_G] > U+1596  
+U+14D0 U+14D0 + [T_TRANS_G] > U+1596
 
 + any(punct) > index(punct,1)
 c nomatch > beep

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2004-2022 SIL International
+Copyright (c) 2004-2025 SIL Mali
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

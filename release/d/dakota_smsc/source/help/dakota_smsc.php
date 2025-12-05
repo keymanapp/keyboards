@@ -1,9 +1,7 @@
 ﻿<?php
-  $pagename = 'SMSC Dakota Language Keyboard Help';
+  $pagename = 'SMSC Dakota Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-?>
-    <style>
+  $pagestyle = <<<END
         .note {
             font-style: italic;
             color: gray;
@@ -46,7 +44,9 @@
         th {
             background-color: #f4f4f4;
         }
-    </style>
+    END;
+require_once('header.php');
+?>
 
     <p>
         The Dakota SMSC keyboard has been developed by the Shakopee Mdewakanton Sioux Community for use by all speakers of this dialect.

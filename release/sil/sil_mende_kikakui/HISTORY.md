@@ -1,9 +1,13 @@
 Mende Kikakui (SIL) Change History
 ====================
 
+1.0.4 (2025-04-10)
+----------------
+* Updated KeymanWeb help file to improve home page display
+
 1.0.3 (2024-07-02)
 ----------------
-- Updated explanation section of help from "le" to "lq"
+* Updated explanation section of help from "le" to "lq"
 
 1.0.2 (2024-07-02)
 ----------------

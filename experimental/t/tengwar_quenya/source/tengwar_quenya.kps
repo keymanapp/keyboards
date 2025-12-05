@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -115,12 +114,16 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>tengwar_quenya.css</Name>
+      <Description>File tengwar_quenya.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tengwar</Name>
       <ID>tengwar_quenya</ID>
-      <Version>1.3</Version>
       <OSKFont>..\..\..\shared\fonts\tengwar\tengtelc.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\tengwar\tengtelc.ttf</DisplayFont>
       <Languages>

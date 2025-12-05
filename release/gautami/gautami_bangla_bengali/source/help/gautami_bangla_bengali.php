@@ -1,5 +1,5 @@
 ﻿<?php
-  $pagename = 'Gautami Bangla/Bengali Help';
+  $pagename = 'Gautami Bangla/Bengali Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

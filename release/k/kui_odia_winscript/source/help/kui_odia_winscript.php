@@ -1,85 +1,19 @@
 <?php 
   $pagename = 'Kui Odia Winscript Keyboard Help';
   $pagetitle = $pagename;
+  $pagestyle = <<<END
+    samp {font-family: Japa Sans Oriya; font-size:120%;}
+    kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+    .inputSequences {border-collapse: collapse;font-size: 110%; min-width: 592px;}
+    .inputSequences th, .inputSequences td {padding: 7px 17px;}
+    .inputSequences thead th {border-bottom: 2px solid #6ea1cc;text-transform: uppercase;}
+    .inputSequences tbody td {border-bottom: 1px solid #e1edff;color: #353535;text-align: center;}
+    .inputSequences tbody tr:nth-child(odd) td {background-color: #f4fbff;}
+    .inputSequences tbody tr:hover td {background-color: #ffffa2;border-color: #ffff0f;}
+END;
   require_once('header.php');
 ?>
-  <style type="text/css">
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-      html, body {
-          font-family: sans-serif;
-          font-size: 100%;
-      }
-      samp {
-          font-family: Japa Sans Oriya; 
-          font-size:20pt; 
-          
-      }
-      kbd {
-          color:black; 
-          font: 0.8em sans-serif; 
-          border:solid 1px grey; 
-          background:#ccc; 
-          margin:2px 1px; 
-          padding:2px 3px; 
-          -webkit-border-radius: 3px; 
-          -moz-border-radius: 3px; 
-          border-radius: 3px;
-      }
 
-
-      /* Table */
-      .inputSequences {
-          border-collapse: collapse;
-          font-size: 14px;
-          min-width: 592px;
-      }
-
-      .inputSequences th, 
-      .inputSequences td {
-          padding: 7px 17px;
-      }
-      /* .inputSequences caption {
-          margin: 7px;
-      } */
-
-      /* Table Header */
-      .inputSequences thead th {
-          border-bottom: 2px solid #6ea1cc;
-          text-transform: uppercase;
-      }
-
-      /* Table Body */
-      .inputSequences tbody td {
-          border-bottom: 1px solid #e1edff;
-          color: #353535;
-          text-align: center;
-      }
-      .inputSequences tbody tr:nth-child(odd) td {
-          background-color: #f4fbff;
-      }
-      /* 
-      .inputSequences tbody td:nth-child(4),
-      .inputSequences tbody td:first-child,
-      .inputSequences tbody td:last-child {
-          text-align: right;
-      }
-      */
-      .inputSequences tbody tr:hover td {
-          background-color: #ffffa2;
-          border-color: #ffff0f;
-      }
-
-      /* Table Footer */
-      /* 
-          .inputSequences tfoot th {
-          border-top: 2px solid #6ea1cc;
-          text-align: right;
-      } 
-      */
-
-
-  </style>
 <p>This Keyboard is for the Kui language using the Odiya script. It follows a phonetic-based keyboarding system. This keyboard uses temporary codepoints for the dot above and double-dot above. When these characters are supported by Unicode the keyboard will be updated. Any data using these codepoints (U+0307 and U+0308) will need to be converted to the new codepoints.</p>
 
 <h2>Desktop Keyboard layout</h2>

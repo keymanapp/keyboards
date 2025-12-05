@@ -1,14 +1,7 @@
 <?php
   $pagename = 'NLCI Malayalam WinScript Keyboard Help';
-  $pagetitle = 'NLCI Malayalam WinScript Keyboard Help';
-  require_once('header.php');
-?>
- <style>
-
-        html, body {
-            font-family: sans-serif;
-            font-size: 100%;
-        }
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         samp {
             font-family: sans-serif; 
             font-size:20pt; 
@@ -77,10 +70,9 @@
         } 
         */
 
-
-    </style>
-</head>
-
+    END;
+require_once('header.php');
+?>
     <p>This Keyboard mimic Malayalam WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
     <h2>Keyboard layout</h2>
@@ -89,9 +81,9 @@
     <img src="malayalam.png" > </img>
     <h2>Input sequences</h2>
     
-	
-	 <table class="inputSequences">
-	 <h3>Special cases</h3>
+  
+   <table class="inputSequences">
+   <h3>Special cases</h3>
    
         <thead>
             <tr>
@@ -156,8 +148,8 @@
     </table>
 
     
-	
-	<h3>nta</h3>
+  
+  <h3>nta</h3>
 
 <table class="inputSequences">
         <thead>
@@ -178,9 +170,9 @@
 </tbody>
  </table>
    
-	
-	<h3>Using = </h3>
-	
+  
+  <h3>Using = </h3>
+  
       <table class="inputSequences">
         <thead>
             <tr>
@@ -202,10 +194,10 @@
             </tr>
 </tbody>
     </table>
-	
-	
-	<h3>Legacy nta </h3>
-	
+  
+  
+  <h3>Legacy nta </h3>
+  
       <table class="inputSequences">
         <thead>
             <tr>
@@ -225,40 +217,40 @@
                 <td>ന്റ</td>
                 
             </tr>
-			
+      
 </tbody>
     </table>
-	<h3>Vowel sign elongation</h3>
-	<P> Eg: <kbd>k</kbd><kbd>i</kbd><kbd>i</kbd> will generate <samp> കീ </samp>To generate vowel sign elongation of <samp>  ീ  </samp><kbd>k</kbd><kbd>i</kbd><kbd>i</kbd> + <kbd>i</kbd> will generate <samp> കീീ  </samp>
-	<P> Eg: <kbd>k</kbd><kbd>u</kbd><kbd>u</kbd> will generate <samp> കൂ </samp>To generate vowel sign elongation of <samp>  ൂ  </samp><kbd>k</kbd><kbd>u</kbd><kbd>u</kbd> + <kbd>u</kbd> will generate <samp> കൂൂ </samp>
-	
-	
-	<h3>Malayalam Vowel Sign Vocalic L</h3>
-	<p> <kbd>^</kbd> is used to generate Malayalam vowel sign vocalic L, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd>  will generate <samp>കൢ</samp></p>
-	<h3>Malayalam Vowel Sign Vocalic LL</h3>
-	<p> <kbd>^</kbd><kbd>^</kbd> is used to generate Malayalam vowel sign vocalic LL, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd><kbd>^</kbd>  will generate <samp>കൣ</samp></p>
+  <h3>Vowel sign elongation</h3>
+  <P> Eg: <kbd>k</kbd><kbd>i</kbd><kbd>i</kbd> will generate <samp> കീ </samp>To generate vowel sign elongation of <samp>  ീ  </samp><kbd>k</kbd><kbd>i</kbd><kbd>i</kbd> + <kbd>i</kbd> will generate <samp> കീീ  </samp>
+  <P> Eg: <kbd>k</kbd><kbd>u</kbd><kbd>u</kbd> will generate <samp> കൂ </samp>To generate vowel sign elongation of <samp>  ൂ  </samp><kbd>k</kbd><kbd>u</kbd><kbd>u</kbd> + <kbd>u</kbd> will generate <samp> കൂൂ </samp>
+  
+  
+  <h3>Malayalam Vowel Sign Vocalic L</h3>
+  <p> <kbd>^</kbd> is used to generate Malayalam vowel sign vocalic L, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd>  will generate <samp>കൢ</samp></p>
+  <h3>Malayalam Vowel Sign Vocalic LL</h3>
+  <p> <kbd>^</kbd><kbd>^</kbd> is used to generate Malayalam vowel sign vocalic LL, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd><kbd>^</kbd>  will generate <samp>കൣ</samp></p>
       
-	<h3>Praslesham</h3>
+  <h3>Praslesham</h3>
 
     <p>Praslesham <samp>ഽ</samp> can be typed using the <kbd>F</kbd> key. </p>
     
      <h3>Chandrakala</h3>
 
     <p> <kbd>x</kbd> is used as chandrakala Eg <kbd>k</kbd> <kbd>x</kbd>  will generate <samp>ക്‌</samp></p>
-	
-	 <h3>Conjuncts</h3>
+  
+   <h3>Conjuncts</h3>
 
     <p> <kbd>x</kbd> is used as conjuncts Eg <kbd>k</kbd> <kbd>x</kbd> <kbd>l</kbd> will generate <samp>ക്ല</samp></p>
-	
-	<h3> Using X </h3>
-	<p> Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>g</kbd> will generate <samp>ക്‌ഗ</samp>
-	
-	
+  
+  <h3> Using X </h3>
+  <p> Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>g</kbd> will generate <samp>ക്‌ഗ</samp>
+  
+  
     
-	<h3>Numbers</h3>
+  <h3>Numbers</h3>
 
     <p> <kbd>`</kbd> Backtick with number will get malayalam number Eg <kbd>`</kbd> <kbd>1</kbd> will generate <kbd>൧</kbd></p>  
 
-	<h3>Backtick for change into English</h3>
+  <h3>Backtick for change into English</h3>
 
     <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>ത</kbd> will generate <kbd>q</kbd></p>  

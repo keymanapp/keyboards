@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -39,6 +39,12 @@ characters.</Description>
       <FileType>.kmx</FileType>
     </File>
     <File>
+      <Name>..\build\sil_greek_polytonic.js</Name>
+      <Description>File sil_greek_polytonic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -63,38 +69,68 @@ characters.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\sil_greek_polytonic.js</Name>
-      <Description>File sil_greek_polytonic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</Name>
-      <Description>Font GentiumPlus Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Bold.ttf</Name>
-      <Description>Font Gentium Plus Bold</Description>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-Regular.ttf</Name>
+      <Description>Font Gentium Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-BoldItalic.ttf</Name>
-      <Description>Font Gentium Plus Bold Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-Bold.ttf</Name>
+      <Description>Font Gentium Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Italic.ttf</Name>
-      <Description>Font Gentium Plus Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-BoldItalic.ttf</Name>
+      <Description>Font Gentium Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-Italic.ttf</Name>
+      <Description>Font Gentium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-ExtraBold.ttf</Name>
+      <Description>Font Gentium ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-ExtraBoldItalic.ttf</Name>
+      <Description>Font Gentium ExtraBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-Medium.ttf</Name>
+      <Description>Font Gentium Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-MediumItalic.ttf</Name>
+      <Description>Font Gentium Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-SemiBold.ttf</Name>
+      <Description>Font Gentium SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium-SemiBoldItalic.ttf</Name>
+      <Description>Font Gentium SemiBold Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -104,20 +140,30 @@ characters.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\Gentium_README.txt</Name>
+      <Description>File Gentium_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Polytonic Greek (SIL)</Name>
       <ID>sil_greek_polytonic</ID>
-      <Version>1.8.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\gentium\Gentium-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\gentium\Gentium-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
       </Languages>
       <WebDisplayFonts>
-        <Font Filename="..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf"/>
+        <Font Filename="..\..\..\shared\fonts\sil\gentium\Gentium-Regular.ttf"/>
       </WebDisplayFonts>
     </Keyboard>
   </Keyboards>

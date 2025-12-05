@@ -1,6 +1,10 @@
 Hawaiian (SIL) Change History
 ====================
 
+2.3.1 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
 2.3 (2024-09-06)
 ----------------
 * Added a tablet layout

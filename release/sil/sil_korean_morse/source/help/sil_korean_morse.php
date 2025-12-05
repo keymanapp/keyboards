@@ -10,9 +10,9 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
 */
   $pagename = 'Korean Morse (SIL) Keyboard Help';
   $pagetitle = 'Korean Morse (SIL) Keyboard Help';
+  $pagestyle = "@import url('style.css');";
   require_once('header.php');
 ?>
-  <link rel="stylesheet" href="style.css" type="text/css" />
 
     <h2>Overview</h2>
     <p>The Korean Morse (SIL) keyboard is built to type Korean using the Morse transliteration system, also called SKATS (Standard Korean Alphabet Transliteration System). The Morse system is designed to make Latin-Korean transliteration 100% unambiguous.</p>

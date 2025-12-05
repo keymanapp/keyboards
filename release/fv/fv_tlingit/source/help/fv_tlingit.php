@@ -13,7 +13,6 @@ END;
 ?>
 
 
-<h1>Start Using Łingít</h1>
 <p>
     This keyboard is designed for the <b>Łingít</b> language of the Western Subarctic region of Canada.
 </p>

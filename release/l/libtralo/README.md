@@ -1,7 +1,7 @@
 LIBTRALO Keyboard
 =====================
 
-Copyright (C) 2008-2022 SIL International
+Copyright (C) 2008-2025 SIL Global
 Copyright (C) 1999-2003 Mark A. Konrad
 
 __DESCRIPTION__

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Sahu (SIL)</Name>
-    <Copyright URL="">2019-2021 SIL International</Copyright>
-    <Author URL="">SIL International</Author>
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for typing Sahu with Latin script.</Description>
+    <Description URL="">This keyboard is designed for typing Sahu with Latin script.</Description>
   </Info>
   <Files>
     <File>
@@ -49,32 +50,32 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL_README.txt</Name>
-      <Description>File CharisSIL_README.txt</Description>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis_README.txt</Name>
+      <Description>File Charis_README.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL-Bold.ttf</Name>
-      <Description>Font Charis SIL Bold</Description>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Bold.ttf</Name>
+      <Description>Font Charis Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL-BoldItalic.ttf</Name>
-      <Description>Font Charis SIL Bold Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-BoldItalic.ttf</Name>
+      <Description>Font Charis Bold Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL-Italic.ttf</Name>
-      <Description>Font Charis SIL Italic</Description>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Italic.ttf</Name>
+      <Description>Font Charis Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</Name>
-      <Description>Font Charis SIL</Description>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</Name>
+      <Description>Font Charis</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -102,16 +103,44 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-Medium.ttf</Name>
+      <Description>Font Charis Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-MediumItalic.ttf</Name>
+      <Description>Font Charis Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBold.ttf</Name>
+      <Description>Font Charis SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis\Charis-SemiBoldItalic.ttf</Name>
+      <Description>Font Charis SemiBold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_sahu.kvk</Name>
+      <Description>File sil_sahu.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Sahu (SIL)</Name>
       <ID>sil_sahu</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\Charis-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="saj-Latn">Sahu</Language>
+        <Language ID="saj">Sahu</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

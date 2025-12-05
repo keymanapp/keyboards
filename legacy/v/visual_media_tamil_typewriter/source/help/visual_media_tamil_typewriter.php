@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
-  require_once('servervars.php');
   $pagename = 'Tamil Typewriter (Visual Media) (deprecated) Keyboard Help';
   $pagetitle = 'Tamil Typewriter (Visual Media) (deprecated) Keyboard Help';
   $style = '.lang2 {font-size:130%}';

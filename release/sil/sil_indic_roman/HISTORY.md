@@ -1,6 +1,10 @@
 Indic Roman Transliteration (SIL) Keyboard Change History
 =======================
 
+1.4.2 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
 1.4.1 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file

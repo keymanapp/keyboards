@@ -11,7 +11,7 @@ Budukh keyboard developed by Ken Keyes, and prepared according to the alphabet d
 
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 <p>
     Lowercase
 </p>
