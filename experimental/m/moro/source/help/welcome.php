@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moro Keyboard Layout Welcome</title>
-  <style>
+<?php
+  $pagename = 'Moro Keyboard Layout';
+  $pagetitle = $pagename;
+  require_once('header.php');
+
+  $pagestyle = <<<END
     * {
       margin: 0;
       padding: 0;
@@ -80,9 +79,9 @@
       border: none;
       border-top: 1px solid #cccccc;
     }
-  </style>
-</head>
-<body>
+  END;
+?>
+
   <h1>Moro Keyboard</h1>
   <p>A keyboard for typing the Moro language. Moro is a language spoken in the Nuba Mountains of South Kordofan, Sudan.</p>
 
@@ -230,5 +229,3 @@
       <td>/</td>
     </tr>
   </table>
-</body>
-</html>
