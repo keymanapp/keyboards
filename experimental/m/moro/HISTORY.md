@@ -1,4 +1,4 @@
-moro_language Change History
+moro Change History
 ====================
 
 1.0 (2025-01-13)

@@ -1,4 +1,4 @@
-moro_language keyboard
+moro keyboard
 ==============
 
 Description
@@ -7,7 +7,7 @@ Keyboard for the Moro Language of Southern Kordofan.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/moro_language
+Keyboard Homepage: https://keyman.com/keyboards/moro
 
 Copyright
 ---------

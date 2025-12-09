@@ -1,13 +1,13 @@
-﻿c moro_language designed with Benjamin Angalo
+﻿c Created by Ross Cruickshank and Benjamin Angalo with input from Joseph Sitar
 c for the Moro Language.
 store(&VERSION) '10.0'
-store(&NAME) 'moro_language'
-store(&COPYRIGHT) 'Copyright © Ross Cruickshank'
+store(&NAME) 'Moro'
+store(&COPYRIGHT) 'Copyright © SIL Global'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
-store(&BITMAP) 'moro_language.ico'
-store(&VISUALKEYBOARD) 'moro_language.kvks'
-store(&LAYOUTFILE) 'moro_language.keyman-touch-layout'
+store(&BITMAP) 'moro.ico'
+store(&VISUALKEYBOARD) 'moro.kvks'
+store(&LAYOUTFILE) 'moro.keyman-touch-layout'
 store(&CasedKeys) [K_A] .. [K_Z]
 
 begin Unicode > use(main)
@@ -45,11 +45,11 @@ group(main) using keys
 + [CAPS K_SLASH] > 'Ŋ'
 
 
-c output original key caps 
+c output original key caps
 
 + [NCAPS SHIFT RALT K_BKSLASH] > '|'
 + [NCAPS SHIFT RALT K_RBRKT] > '}'
-+ [NCAPS SHIFT RALT K_LBRKT] > '{' 
++ [NCAPS SHIFT RALT K_LBRKT] > '{'
 + [NCAPS SHIFT RALT K_SLASH] > '?'
 + [NCAPS RALT K_BKSLASH] > '\'
 + [NCAPS RALT K_RBRKT] > ']'
