@@ -3,33 +3,6 @@ $pagename = 'Alkelang Keyboard Help';
 $pagetitle = 'Alkelang Keyboard Help';
 require_once('header.php');
 ?>
-
-<head>
-  <meta charset="utf-8">
-  <title>Àlkèláŋg Keyboard Help</title>
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
-  <link rel="icon" href="alkelang.ico" />
-  <style>
-      body {
-        font-family: sans-serif;
-        margin: 20px;
-        line-height: 1.6;
-      }
-      h1, h2 {
-        color: #333;
-      }
-      img {
-        max-width: 100%;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        margin: 10px 0;
-      }
-      .section {
-        margin-bottom: 30px;
-      }
-    </style>
-</head>
-<body>
     <h2>Bienvenue dans le Clavier Àlkèláŋg</h2>
 
     <div class="section">
@@ -80,5 +53,3 @@ require_once('header.php');
 
   <h2>Devises</h2>
   <img src="currencies-layout.png" height="250" alt="Devises">
-
-</body>
