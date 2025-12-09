@@ -1,6 +1,11 @@
 Hoisan Change History
 ====================
 
+2.1 (2025-12-09)
+----------------
+* Updated by cathaylab
+* use "tx" and "th" consonant to replace the former "x" consonant, use "x" consonant to replace former "tr" consonant
+
 2.0 (2025-09-29)
 ----------------
 * Updated by cathaylab
