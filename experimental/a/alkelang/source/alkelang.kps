@@ -1,97 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
- <Package>
-
+<?xml version="1.0"?>
+<Package>
   <System>
-    <KeymanDeveloperVersion>18.0.243</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.244.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
-
-    <Keyboard>
-      <SourceFile>source/alkelang.kmn</SourceFile>
-    </Keyboard>
-    <TouchLayout>
-      <SourceFile>sources/alkelang.keyman-touch-layout</SourceFile>
-    </TouchLayout>
-
-    <Info>
-      <ID>alkelang</ID>
-      <Name>Alkelang</Name>
-      <Description>Àlkèláŋg Keyboard</Description>
-      <Version>1.0.0</Version>
-      <Authors>SOSA Developments</Authors>
-      <Copyright>(C) 2025 NIBANN ENGINEERING</Copyright>
-      <!-- <WebsiteURL>https://example.com</WebsiteURL> -->
-      <ReadmeFile>README.md</ReadmeFile>
-    </Info>
-
-    <Options>
-      <ExecuteProgram></ExecuteProgram>
-      <ReadMeFile>..\README.md</ReadMeFile>
-      <LicenseFile>..\LICENSE.md</LicenseFile>
-      <WelcomeFile>welcome.htm</WelcomeFile>
-      <MSIFileName></MSIFileName>
-      <MSIOptions></MSIOptions>
-      <FollowKeyboardVersion>true</FollowKeyboardVersion>
-    </Options>
-    <StartMenu>
-      <Folder></Folder>
-      <Items/>
-    </StartMenu>
-
+  <Options>
+    <ExecuteProgram/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName/>
+    <MSIOptions/>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder/>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Alkelang</Name>
+    <Copyright URL="">© NIBANN ENGINEERING</Copyright>
+    <Description URL="">Àlkèláŋg Keyboard</Description>
+    <Author URL="">SOSA Developments</Author>
+    <Version URL=""/>
+  </Info>
   <Files>
     <File>
-      <Name>..\build\alkelang.kmx</Name>
-      <Description>Alkelang Keyboard</Description>
-      <CopyLocation>Keyboards</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
       <Name>..\build\alkelang.js</Name>
-      <Description>Keyboard for Web</Description>
-      <CopyLocation>Keyboards</CopyLocation>
+      <Description>File alkelang.js</Description>
+      <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>alkelang.ico</Name>
-      <Description>File alkelang.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</Name>
+      <Name>..\..\..\..\release\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</Name>
       <Description>Font Andika Afr</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\andika_subsets\AndikaSubsets_README.txt</Name>
-      <Description>File AndikaSubsets_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\andika_subsets\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\andika_subsets\OFL.txt</Name>
+      <Name>..\..\..\..\release\shared\fonts\sil\andika_subsets\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\andika_subsets\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
+      <Name>welcome\btn-abc.png</Name>
+      <Description>File btn-abc.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\btn-currencies.png</Name>
+      <Description>File btn-currencies.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\btn-ipa.png</Name>
+      <Description>File btn-ipa.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\btn-symbols.png</Name>
+      <Description>File btn-symbols.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\currencies-layout.png</Name>
+      <Description>File currencies-layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\default-layout.png</Name>
+      <Description>File default-layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\default-lexique.png</Name>
+      <Description>File default-lexique.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\ipa-layout.png</Name>
+      <Description>File ipa-layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\longpress-e.png</Name>
+      <Description>File longpress-e.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\symbols-layout.png</Name>
+      <Description>File symbols-layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
@@ -99,26 +114,14 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
-    <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
   </Files>
-
   <Keyboards>
     <Keyboard>
-      <Name>Alkelang</Name>
       <ID>alkelang</ID>
-      <Version>1.0.0</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
-      <Targets>mobile tablet</Targets>     
+      <OSKFont>..\..\..\..\release\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
-        <!-- 1rst by default -->
         <Language ID="bfd">Bafut</Language>
-
         <Language ID="aal">Afade</Language>
         <Language ID="agq">Aghem</Language>
         <Language ID="muc">Ajumbu</Language>
@@ -131,7 +134,6 @@
         <Language ID="bfj">Bafanji</Language>
         <Language ID="bwt">Bafaw-Balong</Language>
         <Language ID="ksf">Bafia</Language>
-        <!-- <Language ID="bfd">Bafut</Language> -->
         <Language ID="bkc">Baka</Language>
         <Language ID="bqz">Bakaka</Language>
         <Language ID="bkh">Bakoko</Language>
@@ -177,7 +179,7 @@
         <Language ID="bhs">Buwal</Language>
         <Language ID="mkk">Byep</Language>
         <Language ID="ckx">Caka</Language>
-        <Language ID="cug">Chungmboko</Language>
+        <Language ID="cnq">Chungmboko</Language>
         <Language ID="cuv">Cuvok</Language>
         <Language ID="dbq">Daba</Language>
         <Language ID="dmm">Dama</Language>
@@ -400,4 +402,5 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <Strings/>
 </Package>
