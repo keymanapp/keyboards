@@ -119,8 +119,8 @@
   <tr>
     <td>4 (low falling)</td>
     <td>f</td>
-    <td>tra<strong>f</strong></td>
-    <td>trà茶
+    <td>xa<strong>f</strong></td>
+    <td>xà茶
     </td></tr>
   <tr>
     <td>5 (low rising)</td>
@@ -174,7 +174,7 @@
 <p> tap Z key to remove tonations  
 
 
-<a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocnguytihoisanva.dict.yaml">台山話國語字字典dictionary for Hoisanese Coc Ngũy Tụ</a>
+<a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocnguytihoisanva.dict.yaml">台山話國語字字典dictionary for Hoisanese Coc Ngũi Tụ</a>
 
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
@@ -182,7 +182,7 @@
 <p>範文：南國山河 Nàm Coc Sán Hò</p>
 <p>南國山河南帝居 Nàm Coc Sán Hò Nàm Ái Cúi</p>
 <p>截然定分在天書 Tiệt Ngình Ịnh Phốn Tọi Hính Sí</p>
-<p>如何逆虜來侵犯 Ngùi Hò Ngịch Lũ Lòi Xấm Phạn</p>
-<p>汝等行看取敗虛 Nỹ Ảnh Hành Hón Xủi Bại Húi</p>
+<p>如何逆虜來侵犯 Ngùi Hò Ngịch Lũ Lòi Txấm Phạn</p>
+<p>汝等行看取敗虛 Nỹ Ảnh Hành Hón Txủi Bại Húi</p>
 
 <p>© cathaylab</p>
