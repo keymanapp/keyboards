@@ -29,19 +29,19 @@ group(main) using keys
 
 + [K_1] > U+0026
 + [SHIFT K_1] > U+0031
-+ [SHIFT LCTRL K_1] > '‍'
++ [SHIFT LCTRL K_1] > U+200d
 
 + [K_2] > U+00e9
 + [SHIFT K_2] > U+0032
-+ [SHIFT LCTRL K_2] > '‌'
++ [SHIFT LCTRL K_2] > U+200c
 
 + [K_3] > U+0022
 + [SHIFT K_3] > U+0033
-+ [SHIFT LCTRL K_3] > '‎'
++ [SHIFT LCTRL K_3] > U+200e
 
 + [K_4] > U+0027
 + [SHIFT K_4] > U+0034
-+ [SHIFT LCTRL K_4] > '‏'
++ [SHIFT LCTRL K_4] > U+200f
 + [RALT K_4] > U+00a4
 + [SHIFT RALT K_4] > U+00a4
 
@@ -123,7 +123,8 @@ group(main) using keys
 + [SHIFT RALT K_R] > U+0651 U+064c
 
 + [K_S] > U+0633
-+ [SHIFT K_S] > nul
++ [RALT K_S] > U+20c1
++ [SHIFT RALT K_S] > U+20c1
 
 + [K_T] > U+0641
 + [SHIFT K_T] > U+0644 U+0625
