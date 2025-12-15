@@ -18,7 +18,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Arabic Phonetic (SIL)</Name>
-    <Copyright URL="">© 2007-2020 SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL Global</Copyright>
     <Version URL=""></Version>
     <Author URL="">Marc Durdin and Tamara Duff</Author>
     <WebSite URL="https://keyman.com/keyboards/sil_arabic_phonetic">https://keyman.com/keyboards/sil_arabic_phonetic</WebSite>
@@ -74,12 +74,19 @@ using a standard English keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Arabic Phonetic (SIL)</Name>
       <ID>sil_arabic_phonetic</ID>
       <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
         <Language ID="ar">Arabic</Language>
         <Language ID="arq-Arab">Algerian Arabic</Language>
@@ -105,6 +112,9 @@ using a standard English keyboard.</Description>
         <Language ID="abh-Arab">Tajiki Arabic</Language>
         <Language ID="aeb-Arab">Tunisian Arabic</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

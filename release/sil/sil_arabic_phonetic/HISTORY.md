@@ -1,5 +1,8 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
+## 1.1 (15 Dec 2025)
+* Update keyboard to support OSK font for better display
+
 ## 1.0.2 (27 Oct 2020)
 * Increment version number to force recompile of touch layout.
 

@@ -1,5 +1,10 @@
 Arabic W/O Dots Change History
 ====================
+
+1.1 (2025-12-15)
+----------------
+* Update keyboard to support OSK font for better display
+
 1.0.1 (2025-01-21)
 ----------------
 * Changed redundant ar-Arab to ar
