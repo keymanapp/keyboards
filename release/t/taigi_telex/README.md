@@ -7,6 +7,7 @@ Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī and Teochewnese Tiê-chiu Pe�
 
 Links
 -----
+https://keyman.com/keyboards/taigi_telex
 
 Copyright
 ---------
@@ -25,5 +26,6 @@ Supported Platforms
  * Mobile devices
  * Desktop devices
  * Tablet devices
+
 
 
