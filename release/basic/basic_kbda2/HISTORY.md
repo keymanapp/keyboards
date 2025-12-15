@@ -1,6 +1,10 @@
 Arabic (102) Basic Change History
 ====================
 
+1.2 (2025-12-15)
+----------------
+* Update keyboard to support OSK font for better display
+
 1.1.1 (2023-07-19)
 ------------------
 * Fix key cap for longpress Shift key
