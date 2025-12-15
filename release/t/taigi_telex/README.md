@@ -1,8 +1,6 @@
 Taigi Telex keyboard
 ==============
 
-Version 2.0
-
 Description
 -----------
 Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī and Teochewnese Tiê-chiu Pe̍h-ūe-jī.
@@ -27,4 +25,5 @@ Supported Platforms
  * Mobile devices
  * Desktop devices
  * Tablet devices
+
 
