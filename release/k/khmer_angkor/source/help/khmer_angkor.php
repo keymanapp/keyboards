@@ -335,32 +335,20 @@ divination lore and Khmer lunar dates.</p>
 <h2 style='margin-left:.5in'><a name="_Toc515267263">Desktop Layout
 –Windows/macOS</a></h2>
 
-<p class=MsoNormal><img width=602 height=643
-src="khmer_angkor/image001.png"></p>
-<p class=MsoNormal><img width=602
-src="khmer_angkor/image002.png"></p>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 
 <h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout –Android/iOS</a></h2>
 
 <p class=MsoNormal>There is no Shift key nor subscript sign in the touch layout
 to switch between layouts. Strange, right? Yes, maybe, but it is not easy to
 reach for the “Shift” key one-handedly. More keys are embedded in each
-key—press and hold for a second or so to see more available keys. For example,
-to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Busra"'>&#6098;&#6042;</span>”<span style='font-size:
-10.0pt;line-height:105%'>,</span><span style='font-size:10.0pt;line-height:
-105%;font-family:"Busra"'> </span>“<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Busra"'>&#6060;</span>”<span
-style='font-size:10.0pt;line-height:105%'> or</span><span style='font-size:
-10.0pt;line-height:105%;font-family:DaunPenh'> </span>“<span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6059;</span>”,
-press and hold on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Busra"'>&#6042;</span>” for a short while, then more
-keys would appear, and then you may choose “<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Busra"'>&#6098;&#6042;</span>”.
-You may notice that on the Khmer Angkor keyboard for desktop, these four
-characters are on key <span style='font-family:"Khmer UI",sans-serif'>“</span>R”;
-which is why they are all packed into this one key hidden in the long press. </p>
+key:
+ <ul>
+  <li>Press and hold for a second or so to see more available keys.</li>
+  <li>Press a key and flick down</li>
+For example, to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
+font-family:"Busra"'>&#6098;&#6042;</span>” press and flick down on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
+font-family:"Busra"'>&#17A0;</span>”.
 
 <p class=MsoNormal>While using the touch keyboard, one has to be aware of the
 location of each key. This may take a while to get used to, but it would be
@@ -370,36 +358,25 @@ line-height:105%;font-family:"Busra"'>&#6098;</span>”<span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span>each
 time to get a subscript.</p>
 
-<p class=MsoNormal>Phone - Default layout with longpress triggered on រ key</p>
+<p class=MsoNormal>Phone - Default layout with a flick-up gesture on ហ key</p>
 
-<p class=MsoNormal><img width=308 height=202
-src="khmer_angkor/image003.png"></p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>Phone - Numeric layout</p>
-
-<p class=MsoNormal><img width=308 height=152
-src="khmer_angkor/image004.png"></p>
+<p class=MsoNormal><img width=308 height=152 src="./khmer_angkor/phoneDefaultGesture.gif"></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>Tablet - Default layout</p>
+<p class=MsoNormal>Phone - Shift layout</p>
 
-<p class=MsoNormal><img width=601 height=229
-src="khmer_angkor/tabletDefault.png"></p>
+<p class=MsoNormal><img width=308 height=152 src="./khmer_angkor/phoneShift.jpg"></p>
 
-<p class=MsoNormal>Tablet - Shift layout</p>
+<p class=MsoNormal>Phone - Khmer Numeric layout </p>
 
-<p class=MsoNormal><img width=601 height=227
-src="khmer_angkor/tabletShift.png"></p>
-
-<p class=MsoNormal>Tablet - AltGr layout</p>
-
-<p class=MsoNormal><img width=601 height=228
-src="khmer_angkor/tabletAltGr.png"></p>
+<p class=MsoNormal><img width=308 height=202 src="./khmer_angkor/phoneKhmerNumeric.jpg"></p>
 
 <p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Phone - Numeric layout with longpress triggered on / key</p>
+
+<p class=MsoNormal><img width=308 height=152 src="./khmer_angkor/phoneNumericLongPress.gif"></p>
 
 <p class=MsoNormal align=center style='text-align:center'><span
 style='font-size:16.0pt;line-height:105%;font-family:"Calibri Light",sans-serif;
@@ -3994,7 +3971,7 @@ superscript vowels or above vowels.</span></p>
 
 <p class=MsoFootnoteText><a name="_ftn4"></a><a href="#_ftnref4"><span
 class=MsoFootnoteReference><span lang=EN-GB style='font-size:8.0pt'>[4]</span></span></a>
-Three characters play a role similar to that of vowels, thus they are called
+Three characters play a role similar to that of vowels, thus they are called 
 ‘pseudo vowel’. <br>
 They are: <span lang=KHM style='font-size:8.0pt;font-family:"Busra"'>&#6086;
 </span><span style='font-family:"Courier New"'>[U+17C6]</span>,<span lang=KHM
