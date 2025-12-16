@@ -1,6 +1,10 @@
 cantonese telex Change History
 ====================
 
+3.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
+
 3.1.1 (2025-09-11)
 ----------------
 * added explaination for consonants "f" "d" "z" and "dz"
