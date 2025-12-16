@@ -347,8 +347,8 @@ key:
   <li>Press and hold for a second or so to see more available keys.</li>
   <li>Press a key and flick down</li>
 For example, to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Busra"'>&#6098;&#6042;</span>” press and flick down on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Busra"'>&#17A0;</span>”.
+font-family:"Busra"'>&#6098;&#6048;</span>” press and flick down on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
+font-family:"Busra"'>&#6048;</span>”.
 
 <p class=MsoNormal>While using the touch keyboard, one has to be aware of the
 location of each key. This may take a while to get used to, but it would be
