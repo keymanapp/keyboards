@@ -332,12 +332,11 @@ divination lore and Khmer lunar dates.</p>
 
 <h1><a name="_Toc515267262">Khmer Angkor Keyboard Layouts</a></h1>
 
-<h2 style='margin-left:.5in'><a name="_Toc515267263">Desktop Layout
-–Windows/macOS</a></h2>
+<h2 style='margin-left:.5in'><a name="_Toc515267263">Desktop Layout</a></h2>
 
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 
-<h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout –Android/iOS</a></h2>
+<h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout</a></h2>
 
 <p class=MsoNormal>There is no Shift key nor subscript sign in the touch layout
 to switch between layouts. Strange, right? Yes, maybe, but it is not easy to
@@ -358,7 +357,7 @@ line-height:105%;font-family:"Busra"'>&#6098;</span>”<span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span>each
 time to get a subscript.</p>
 
-<p class=MsoNormal>Phone - Default layout with a flick-up gesture on ហ key</p>
+<p class=MsoNormal>Phone - Default layout with flick gesture on ហ key</p>
 
 <p class=MsoNormal><img width=308 height=152 src="./khmer_angkor/phoneDefaultGesture.gif"></p>
 

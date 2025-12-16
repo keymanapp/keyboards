@@ -3,7 +3,7 @@ Khmer Angkor Change History
 
 2.4 (16 December 2025)
 ----------------
-* Update welcome.htm and keyboard images.
+* Update welcome.htm, keyboard images, and help document.
 
 2.3 (28 Nov 2025)
 ----------------
