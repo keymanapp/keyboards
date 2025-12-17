@@ -3,7 +3,7 @@ Arabic (101) Basic Change History
 
 1.2.1 (2025-12-18)
 ------------------
-* Fix OSK font name to KbdArabScheherazade
+* Fix OSK font name to Scheherazade
 
 1.2 (2025-12-15)
 ----------------
