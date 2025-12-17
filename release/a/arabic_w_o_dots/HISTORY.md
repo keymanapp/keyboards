@@ -1,7 +1,7 @@
 Arabic W/O Dots Change History
 ====================
 
-1.1 (2025-12-15)
+1.1 (2025-12-18)
 ----------------
 * Update keyboard to support OSK font for better display
 
