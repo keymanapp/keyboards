@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Package>
   <System>
     <KeymanDeveloperVersion>18.0.244.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <ExecuteProgram/>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName/>
+    <MSIOptions/>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
@@ -17,35 +20,47 @@
   </StartMenu>
   <Info>
     <Name URL="">carambolfulbhe</Name>
-    <Copyright URL="">Copyright © AYOUBA BARRY dit baba ibrahim</Copyright>
+    <Copyright URL="">Copyright © AYOUBA BARRY</Copyright>
     <Author URL="mailto:babaibrahimsalama@gmail.com">AYOUBA BARRY</Author>
     <Description URL="">Clavier poular armonisé pour écrire en poular avec les lettres poular les plus anciennes et les plus connues, clavier  multiplateforme et multisaisie. Avec  cet outil il est facile d'écrire en poular et de maîtriser l'arabe en même temps. Ce clavier est  pour toute la communauté peul ou fulah à travers le monde.</Description>
-    <Version URL=""></Version>
+    <Version URL=""/>
   </Info>
   <Files>
     <File>
-      <Name>carambolfulbhe.ico</Name>
-      <Description>File carambolfulbhe.ico</Description>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>carambolfulbhe.js</Name>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\carambolfulbhe.js</Name>
       <Description>File carambolfulbhe.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>carambolfulbhe.kmx</Name>
-      <Description>Keyboard carambolfulbhe</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>carambolfulbhe.kvk</Name>
+      <Name>..\build\carambolfulbhe.kvk</Name>
       <Description>File carambolfulbhe.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\carambolfulbhe.kmx</Name>
+      <Description>Keyboard carambolfulbhe</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -59,5 +74,3 @@
   <RelatedPackages>
     <RelatedPackage ID="karambolpoular"/>
   </RelatedPackages>
-  <Strings/>
-</Package>
