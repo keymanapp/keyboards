@@ -3,7 +3,7 @@ arabic_izza Change History
 
 1.2.3 (18 December 2025)
 ------------------------
-* Fix OSK fontname to Scheherazade
+* Fix OSK fontname to Scheherazade New
 
 1.2.2 (15 December 2025)
 ------------------------
