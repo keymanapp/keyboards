@@ -12,6 +12,9 @@ require_once('header.php');
 <div id="container">
 <img src="sil_tchad_logo.png" class="left responsive" />
 <img src="sil-logo-blue.png" class="right responsive" />
+<h1 style="text-align: center;" class="color" xml:lang="en">Chad <span class="qw">QWERTY</span> Keyboard <span class="keyman"> for Keyman</span>
+<br />by SIL Chad
+</h1>
 <p class="tagline" xml:lang="en">Welcome to the Chad QWERTY Keyboard!<br>
 This keyboard, maintained by the Language Technology team of <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Chad</a>,
 allows you to type all of the special characters of the languages of Chad.</p>
@@ -282,6 +285,9 @@ will be changed to curled quotes depending on the context. If you need to use st
 <img src="sil_tchad_logo.png" class="left responsive" />
 <img src="sil-logo-blue.png" class="right responsive" />
 
+<h1 style="text-align: center;" class="color" xml:lang="fr">Clavier Tchad QWERTY pour Keyman</span>
+<br />par SIL Tchad
+</h1>
 <p class="tagline" xml:lang="fr">Bienvenue au Clavier Tchad QWERTY !<br>
 Ce clavier, maintenu par l’équipe de Technologie Linguistique de <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Tchad</a>,
 vous permet de taper tous les caractères spéciaux des langues du Tchad. </p>
