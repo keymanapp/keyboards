@@ -1,9 +1,8 @@
 Tchad QWERTY Keyboard Change History
 =======================
-
-5.4
+5.3.5
 ------------------
-Changed `<Info><Name>` from "sil_tchad_qwerty" to "Tchad QWERTY" for web name display.
+* Produce composed characters from "c" and "s" with wedge (Caron)
 
 5.3.4
 ------------------
