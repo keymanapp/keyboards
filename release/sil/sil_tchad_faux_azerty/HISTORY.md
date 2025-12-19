@@ -1,6 +1,14 @@
 Tchad FAUX AZERTY Keyboard Change History
 =======================
 
+5.4.1 (19 Dec 2025)
+------------------
+* Produce composed characters from "c" and "s" with wedge (Caron)
+
+5.4 (19 Dec 2025)
+------------------
+* Changed `<Info><Name>` from "sil_tchad_false_azerty" to "Tchad FAUX AZERTY" for web name display
+
 5.3 (25 Jun 2025)
 ------------------
 * Change to positional layout (FALSE AZERTY only for this version)
