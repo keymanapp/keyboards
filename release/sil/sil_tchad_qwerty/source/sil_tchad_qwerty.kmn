@@ -2,7 +2,7 @@
 c pour une disposition positionnelle QWERTY
 c 
 c Jeff Heath & Roger Nadoumngar
-c Avril 2025
+c Décembre 2025
 
 store(&VERSION) '9.0'
 store(&NAME) 'Tchad QWERTY'
@@ -11,7 +11,7 @@ store(&copyright) '© SIL Global'
 store(&hotkey) '[CTRL ALT K_U]'  
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'sil_tchad_qwerty.keyman-touch-layout'
-store(&KEYBOARDVERSION) '5.4'
+store(&KEYBOARDVERSION) '5.3.5'
 store(&VISUALKEYBOARD) 'sil_tchad_qwerty.kvks'
 
 begin Unicode > use(Main)
@@ -64,6 +64,12 @@ c but it is questionable to say that fully composed is always better.
 c Many people will consider diacritics as a separate character, so
 c it may be helpful if you can delete it independently of the base
 c character.
+
+c Composed characters for c and s with Caron (wedge)
+'c' + '|' > U+010D
+'s' + '|' > U+0161
+'C' + '|' > U+010C
+'S' + '|' > U+0160
 
 c Additional composed characters (non-vowels)
 'c' + '`' > 'ç'
