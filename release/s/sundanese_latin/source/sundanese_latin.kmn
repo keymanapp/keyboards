@@ -1,9 +1,9 @@
-﻿store(&VERSION) '10.0'
+store(&VERSION) '10.0'
 store(&NAME) 'Sundanese Latin'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© Ilham Nurwansah'
-store(&KEYBOARDVERSION) '1.1'
-store(&MESSAGE) 'Latin keyboard for typing Sundanese language '
+store(&KEYBOARDVERSION) '1.2.5'
+store(&MESSAGE) 'Latin keyboard for typing Sundanese language'
 store(&BITMAP) 'sundanese_latin.ico'
 store(&VISUALKEYBOARD) 'sundanese_latin.kvks'
 store(&LAYOUTFILE) 'sundanese_latin.keyman-touch-layout'
@@ -11,6 +11,10 @@ store(&LAYOUTFILE) 'sundanese_latin.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
+
++ [K_BKSP] > U+0008
+
+c --- SHIFT LAYER ---
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
@@ -58,6 +62,8 @@ group(main) using keys
 + [SHIFT K_2] > '@'
 + [SHIFT K_1] > '!'
 + [SHIFT K_BKQUOTE] > '~'
+
+c --- NORMAL LAYER ---
 + [K_SLASH] > '/'
 + [K_PERIOD] > '.'
 + [K_COMMA] > ','
@@ -105,5 +111,7 @@ group(main) using keys
 + [K_2] > '2'
 + [K_1] > '1'
 + [K_BKQUOTE] > '|'
+
+c --- TOUCH LAYOUT EXTRA ---
 + [T_new_136] > 'é'
 + [T_new_272] > 'É'

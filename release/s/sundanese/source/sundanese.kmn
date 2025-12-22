@@ -2,7 +2,7 @@
 store(&VERSION) "10.0"
 store(&NAME) 'Sunda Baku'
 store(&COPYRIGHT) '© Ilham Nurwansah'
-store(&KEYBOARDVERSION) '1.0.7'
+store(&KEYBOARDVERSION) '1.0.8'
 store(&BITMAP) 'sundanese.ico'
 store(&KMW_HELPTEXT) 'https://kairaga.com/font-sunda/keyboard/help'
 store(&MESSAGE) 'Keyboard for Official Sundanese Script '
@@ -12,6 +12,7 @@ store(&TARGETS) 'any'
 begin Unicode > use(main)
 
 group(main) using keys
++ [K_BKSP] > U+0008
 + [K_BKSLASH] > '᮫'
 + [SHIFT K_BKSLASH] > '|'
 + [SHIFT K_QUOTE] > '"'
