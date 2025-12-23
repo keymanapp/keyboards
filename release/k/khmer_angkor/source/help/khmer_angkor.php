@@ -334,7 +334,7 @@ divination lore and Khmer lunar dates.</p>
 
 <h2 style='margin-left:.5in'><a name="_Toc515267263">Desktop Layout</a></h2>
 
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 
 <h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout</a></h2>
 
@@ -345,9 +345,10 @@ key:
  <ul>
   <li>Press and hold for a second or so to see more available keys.</li>
   <li>Press a key and flick down</li>
-For example, to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
+
+<p class=MsoNormal>For example, to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
 font-family:"Busra"'>&#6098;&#6048;</span>” press and flick down on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Busra"'>&#6048;</span>”.
+font-family:"Busra"'>&#6048;</span>”.</p>
 
 <p class=MsoNormal>While using the touch keyboard, one has to be aware of the
 location of each key. This may take a while to get used to, but it would be
