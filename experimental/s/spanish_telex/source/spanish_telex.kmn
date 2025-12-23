@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'spanish telex'
 store(&COPYRIGHT) 'Copyright © Cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'spanish_telex.ico'
 store(&VISUALKEYBOARD) 'spanish_telex.kvks'
@@ -34,6 +34,13 @@ any(sentencePunctuation) '  ' > layer('shift')
     nomatch > layer('default')
 
 group(main) using keys
+store(letters) 'abcdefghijklmnopqrstuvwxyzáéíóúüñABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ1234567890-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
++ [ALT K_QUOTE] > '‘'
++ [ALT SHIFT K_QUOTE] > '“'
+"‘" + [ALT K_QUOTE] > "‘’"
+"“" + [ALT SHIFT K_QUOTE] > "“”"
+any(letters) + [ALT K_QUOTE] > index(letters, 1) '’'
+any(letters) + [ALT SHIFT K_QUOTE] > index(letters, 1) '”'
 
 'a' + 'a' > 'á'
 'e' + 'e' > 'é'
