@@ -3,7 +3,7 @@ c This Version of Cantonese Romanization script simulate a proto-cantonese phono
 store(&VERSION) '17.0'
 store(&NAME) 'cantonese telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '3.1.1'
+store(&KEYBOARDVERSION) '3.1.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'cantonese_telex.ico'
 store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
@@ -1163,11 +1163,11 @@ any(un_s_consonants) any(l) any(s_no_d_letters) + any(punctuationc) > index(un_s
 any(un_s_consonants) any(l) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(un_s_consonants) any(l) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(un_s_consonants) any(l) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
-any(j) + any(punctuationc) > context index(punctuationc, 2)	
-any(j) any(all_letters) + any(punctuationc) > context index(punctuationc, 3)	
-any(j) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 4)
-any(j) any(all_letters) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 5)
-any(j) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 6)
+any(wj) + any(punctuationc) > context index(punctuationc, 2)	
+any(wj) any(all_letters) + any(punctuationc) > context index(punctuationc, 3)	
+any(wj) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 4)
+any(wj) any(all_letters) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 5)
+any(wj) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(wj) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(punctuationc) > context index(punctuationc, 7)
 any(qq) + any(all_letters) > context index(all_letters, 2)
 any(qq) any(no_ud_letters) + any(punctuationc) > context index(punctuationc, 3)

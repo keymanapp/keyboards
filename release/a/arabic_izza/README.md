@@ -1,9 +1,7 @@
 Arabic Izza keyboard
 ====================
 
-Copyright (C) 2017-2020 Prof. Abdelmalek Bouhadjera
-
-Version 1.2.1
+Copyright (C) 2017-2025 Prof. Abdelmalek Bouhadjera
 
 Arabic Izza: The pleasure of typing Arabic.
 استرجاع لهيبة العربية في عصر المعلوماتية

@@ -1,6 +1,16 @@
 slp1_deva Change History
 ====================
 
+1.0.3 (2025-11-28)
+------------------
+* Delete `U+0934`, add `U+0921` to store(consonants)
+* Change [SHIFT K_Q] output to `U+0922 U+094D`
+
+1.0.2 (2025-11-25)
+------------------
+* Fix missing U+004F (O) for <kbd>k</kbd> + <kbd>O</kbd> = `कौ` 
+* Fix platform supports in README.md
+
 1.0.1 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file
