@@ -1,4 +1,11 @@
-# Mara Change History
+# Mara Keyboard – Change History
+
+1.0.2 (2026-01-07)
+--------------------
+* Fixed CAPS LOCK behavior using NCAPS/CAPS model
+* Fixed Shift + Caps interaction
+* Restored Backspace, Delete, arrow keys, and control keys on Linux and Web
+* No layout or character changes
 
 1.0.1 (2025-10-04)
 --------------------
@@ -12,3 +19,6 @@
 * Initial version of the Mara keyboard
 
 Created by Laitei
+
+
+
