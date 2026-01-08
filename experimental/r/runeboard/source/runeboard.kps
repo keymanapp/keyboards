@@ -33,12 +33,13 @@
     </Items>
   </StartMenu>
   <Info>
-    <Name URL="">Runeboard - Runic Keyboard</Name>
+    <Name URL="">Runeboard - Runic</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© ⅯⅯⅩⅩⅣ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
-    <WebSite URL="https://www.youtube.com/@LearnRunens">https://www.youtube.com/@LearnRunens</WebSite>
+    <Copyright URL="">© ⅯⅯⅩⅩⅤ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
+    <WebSite URL="https://runerevival.online">https://runerevival.online</WebSite>
+    <WebSite URL="https://www.youtube.com/@LearnRunes">https://www.youtube.com/@LearnRunes</WebSite>
     <Author URL="">ᚱᚢᚾ᛫ᛗᚫᚾ</Author>
-    <Description URL="">Runeboard includes the entire Unicode Runic Block. It is designed for
+    <Description URL="">The Runeboard keyboard includes the entire Unicode Runic Block. It is designed for
 typing the English language (whether Old, Middle, or Modern) using the
 runic script (Anglo-Saxon Fuþorc runes), &amp; the Proto-Germanic language
 (Elder Fuþark runes), with a standard 104- or 105-key layout.
@@ -82,7 +83,7 @@ by which fonts are installed on that machine.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>fonts\Catrinity.otf</Name>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</Name>
       <Description>Font Catrinity</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
@@ -112,8 +113,14 @@ by which fonts are installed on that machine.</Description>
       <FileType>.png</FileType>
     </File>
     <File>
+      <Name>runeboard.ico</Name>
+      <Description>File runeboard.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
@@ -122,25 +129,27 @@ by which fonts are installed on that machine.</Description>
     <Keyboard>
       <Name>Runes</Name>
       <ID>runeboard</ID>
-      <Version>3.0</Version>
-      <OSKFont>fonts\Catrinity.otf</OSKFont>
-      <DisplayFont>fonts\Catrinity.otf</DisplayFont>
+      <Version>4.1</Version>
+      <OSKFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</DisplayFont>
       <Languages>
         <Language ID="en-Runr">English (Runic)</Language>
-        <Language ID="no-Runr">Norwegian (Runic)</Language>
-        <Language ID="da-Runr">Danish (Runic)</Language>
         <Language ID="ang-Runr">Old English (ca. 450-1100) (Runic)</Language>
         <Language ID="enm-Runr">Middle English (1100-1500) (Runic)</Language>
+        <Language ID="da-Runr">Danish (Runic)</Language>
         <Language ID="de-Runr">German (Runic)</Language>
-        <Language ID="non-Runr">Old Norse (Runic)</Language>
-        <Language ID="is-Runr">Icelandic (Runic)</Language>
-        <Language ID="sv-Runr">Swedish (Runic)</Language>
         <Language ID="fo-Runr">Faroese (Runic)</Language>
-        <Language ID="sco-Runr">Scots (Runic)</Language>
+        <Language ID="is-Runr">Icelandic (Runic)</Language>
         <Language ID="nds-Runr">Low German (Runic)</Language>
+        <Language ID="no-Runr">Norwegian (Runic)</Language>
+        <Language ID="non-Runr">Old Norse (Runic)</Language>
+        <Language ID="sco-Runr">Scots (Runic)</Language>
+        <Language ID="sv-Runr">Swedish (Runic)</Language>
         <Language ID="sxu-Runr">Upper Saxon (Runic)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
+
+

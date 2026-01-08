@@ -7,7 +7,7 @@
 
 
 <p>
-    Swiss German Basic 1.1 generated from template.
+    Swiss German Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
@@ -17,8 +17,6 @@
 <p>^a will produce â (available on aAeEiIoOuU).</p>
 <p>`a will produce à (available on aAeEiIoOuU).</p>
 <p>~a will produce ã (available on aAnNoO).</p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>

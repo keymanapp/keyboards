@@ -27,3 +27,4 @@
   Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
 <div id='osk-tablet' data-states='default shift'>
+</div>

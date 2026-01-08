@@ -6,7 +6,7 @@
 ?>
 
 
-<p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
+<p>Old Italic Basic based on Windows 10 layout.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>

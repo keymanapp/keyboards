@@ -14,18 +14,11 @@
 <p>'a will produce á (available on aAeEiIoOuUyY).</p>
 <p>`a will produce à (available on aAeEiIoOuUyY).</p>
 
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift symbol'>
+<div id='osk-tablet' data-states='default shift rightalt'>
 </div>
-
-
-<p>© SIL International</p>
-
-</body>
-</html>

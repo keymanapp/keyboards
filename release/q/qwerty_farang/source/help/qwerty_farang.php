@@ -69,12 +69,10 @@
 	<p>All other letters are arranged per the Royal Thai General System of Transcription (RTGS) or “loose” IPA.</p>
 	<p>And we left a few redundancies within for you to discover.</p>
 
-<h1>Keyboard Layout</h1>
-
-  <h2>Desktop</h2>
+  <h2>Desktop Keyboard Layout</h2>
    <div id='osk' data-states='default shift rightalt'></div>
 
-  <h2>Touch</h2>
+  <h2>Touch Keyboard Layout</h2>
    <div id='osk-tablet' data-states='default numeric'></div>
    <h3>Longpress</h3>
 	<p>Keys with a little dot on the top right can be pressed and held for more keys.</p>
@@ -87,4 +85,4 @@
 	<p>Press any initial character to get top three suggestions beginning with that character. The next character typed narrows down the suggestion.</p>	
 	<p><a href="ct5k.png"><img class="keyboard" src="ct5k.png" alt="Predictive Text" /></a></p>
 	
-<p>© 2021 Sebastian Restrepo & LatamAsia</p>
+<p>© Sebastian Restrepo & LatamAsia</p>

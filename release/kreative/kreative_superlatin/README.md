@@ -1,8 +1,6 @@
 Kreative SuperLatin keyboard
 ==============
 
-Version 1.1
-
 Description
 -----------
 Type every character in ISO Latin 1, Windows ANSI, MacRoman, and Latin Extended A.

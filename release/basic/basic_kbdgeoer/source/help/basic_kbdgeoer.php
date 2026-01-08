@@ -5,14 +5,12 @@
   require_once('header.php');
 ?>
 <p>
-    Georgian (Ergonomic) Basic 1.1 generated from template.
+    Georgian (Ergonomic) Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 <p>This keyboard defines one key that is set by default as a "hotkey" on Windows when Keyman is installed. 
 To use this keyboard on Windows, you will want to go to <b>Configuration.../Hotkeys</b>, 
 select the hotkey name, and either change the hotkey or turn it off. 
 Currently "Open Keyboard Menu" uses Shift+Alt+M </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
@@ -24,6 +22,3 @@ Currently "Open Keyboard Menu" uses Shift+Alt+M </p>
 
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
-
-
-<p>(c) 2009-2019 SIL International</p>

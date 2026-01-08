@@ -8,6 +8,7 @@ If you have any questions, comments, or concerns or if you need any help, please
 
 Links
 -----
+https://keyman.com/keyboards/miluk_hanis_siuslaw
 
 Supported Platforms
 -------------------

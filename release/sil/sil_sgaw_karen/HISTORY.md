@@ -1,6 +1,19 @@
 Sgaw Karen Change History
 ====================
 
+1.1.3 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
+1.1.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+1.1.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.1 (2022-11-08)
 ----------------
 * replace the single quotes on the equal key with = and + on Default and Shift layers of the computer layout respectively

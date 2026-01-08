@@ -1,6 +1,10 @@
 Syriac/Aramaic Keyboard Package Change History
 =======================
 
+1.4.1 (2 December 2024)
+-----------------
+* Update language tag
+
 1.4 (2024-09-04)
 ----------------
 * Add tablet layout

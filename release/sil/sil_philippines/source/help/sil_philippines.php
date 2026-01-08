@@ -25,8 +25,8 @@ in which column:</p>
 <h2>Additional Info</h2>
 
 <p>All of these characters may be displayed correctly with the <a target='_blank' href='https://software.sil.org/doulos/'>Doulos SIL</a>, 
-	<a target='_blank' href='https://software.sil.org/charis/'>Charis SIL</a>, and 
-	<a target='_blank' href='https://software.sil.org/gentium/'>Gentium Plus</a> fonts, as well as with more
+	<a target='_blank' href='https://software.sil.org/charis/'>Charis</a>, and 
+	<a target='_blank' href='https://software.sil.org/gentium/'>Gentium</a> fonts, as well as with more
 common Windows fonts like Times New Roman, Arial, Calibri, and Cambria.</p>
 
 <h2>Alphabetic Characters – A</h2>

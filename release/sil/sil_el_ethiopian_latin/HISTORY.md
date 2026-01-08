@@ -1,6 +1,15 @@
 SIL EL - Ethiopian Latin Change History
 =======================================
 
+1.4.4 (31 Mar 2025)
+-------------------
+* Since so many languages are already listed, and it caused errors, 
+  removed `mul (Multiple languages)` 
+
+1.4.3 (2 Dec 2024)
+-------------------
+* Update language tags
+
 1.4.2 (16 Sept 2024)
 -------------------
 * Removed .js from .kps so people do not expect a mobile layout

@@ -1,7 +1,7 @@
 Syriac/Aramaic Keyboard Package
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This package includes 3 Syriac/Aramaic keyboards called: Aramaic (Hebrew layout), Syriac (Phonetic layout),

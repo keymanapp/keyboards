@@ -2,8 +2,8 @@
 c with name "Cham (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Cham Phonetic (SIL)'
-store(&COPYRIGHT) 'Copyright © SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&BITMAP) 'sil_cham_phonetic.ico'
 store(&VISUALKEYBOARD) 'sil_cham_phonetic.kvks'
 store(&TARGETS) 'any'
@@ -25,7 +25,7 @@ group(main) using keys
 + [SHIFT K_A] > U+AA29  c vowel sign AA
 
 + [K_B]       > U+AA1D  c ba
-+ [SHIFT K_B] > U+AA1D  c bha
++ [SHIFT K_B] > U+AA1E  c bha
 + [RALT K_B]  > U+AA21  c bba
 
 + [K_C]       > U+AA0C c cha
@@ -43,6 +43,7 @@ group(main) using keys
 
 + [K_G]       > U+AA08 c ga
 + [SHIFT K_G] > U+AA09 c gha
++ [RALT K_G]  > U+AA0A c ngue ???
 
 + [K_H]       > U+AA28 c ha
 + [SHIFT K_H] > U+AA47 c letter final p
@@ -79,14 +80,13 @@ group(main) using keys
 + [K_Q]       > U+AA17 c nue ???
 + [SHIFT K_Q] > U+AA10 c nhue ???
 + [RALT K_Q]  > U+AA12 c nhja ???
-+ [SHIFT RALT K_Q] > U+AA0A c ngue ???
 
 + [K_R]       > U+AA23 c ra
 + [SHIFT K_R] > U+AA34 c consonant sign ra
 + [RALT K_R]  > U+AA49 c letter final r
 
 + [K_S]       > U+AA27 c sa
-+ [SHIFT K_S] > U+AA27 c ssa
++ [SHIFT K_S] > U+AA26 c ssa
 + [RALT K_S]  > U+AA4B c letter final ss
 
 + [K_T]       > U+AA13 c ta
@@ -115,22 +115,29 @@ group(main) using keys
 c + [K_Z] > U+AA1D c
 
 c Punctuation
-+ [K_PERIOD] > U+AA5D
-+ [SHIFT K_PERIOD] > U+AA5E
-+ [RALT K_PERIOD] > U+AA5F
++ [K_COMMA] > U+AA5D
++ [K_PERIOD] > U+AA5E
++ [SHIFT K_PERIOD] > U+AA5F
+
 + [K_SLASH] > U+002F
 + [SHIFT K_SLASH] > U+003F
 + [K_HYPHEN] > U+002D
 + [K_EQUAL] > U+003D
 + [K_COLON] > U+003A
-+ [K_COMMA] > U+002C
+
++ [SHIFT K_COMMA] > U+002C
+
 + [K_QUOTE] > U+0027
 + [SHIFT K_QUOTE] > U+0022
 + [K_BKQUOTE] > U+0060
+
 + [K_LBRKT] > U+005B
-+ [SHIFT K_LBRKT] > U+007B
 + [K_RBRKT] > U+005D
++ [SHIFT K_LBRKT] > U+007B
 + [SHIFT K_RBRKT] > U+007D
++ [RALT K_LBRKT] > U+003C
++ [RALT K_RBRKT] > U+003E
+
 + [K_BKSLASH] > U+005C
 + [SHIFT K_BKSLASH] > U+007C
 + [SHIFT K_8] > U+AA5C c spiral

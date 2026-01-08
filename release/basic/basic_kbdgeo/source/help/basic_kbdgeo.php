@@ -5,10 +5,8 @@
   require_once('header.php');
 ?>
 <p>
-    Georgian Basic 1.1 generated from template.
+    Georgian Basic. The keyboard layout follows the Windows 10 layout.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
@@ -18,6 +16,3 @@
 
 <div id='osk-tablet' data-states='default shift ctrl'>
 </div>
-
-
-<p>(c) 2009-2019 SIL International</p>

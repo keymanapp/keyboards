@@ -6,10 +6,8 @@
 ?>
 
 <p>
-    Arabic (102) Basic generated from template.
+    The keyboard layout follows the Windows 10 Arabic (102) Basic keyboard layout.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift leftctrl-shift'>
@@ -21,7 +19,4 @@
 
 <div id='osk-tablet' data-states='default shift ctrl'>
 </div>
-
-
-<p>(c) SIL International</p>
 

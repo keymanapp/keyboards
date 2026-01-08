@@ -2,14 +2,14 @@
   $pagename = 'Uganda-Tanzania Bantu (SIL) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-  h1,h2,h3,p {font-family: Charis SIL;}
-  p.footnote {font-family: Charis SIL;font-size: small;}
+  h1,h2,h3,p {font-family: Charis;}
+  p.footnote {font-family: Charis;font-size: small;}
   table {border-collapse: collapse;}
-  td {border: 1px solid ;font-family: Charis SIL;text-align: center;}
-  td.heading {border: 1px solid ;font-family: Charis SIL;text-align: center;font-weight: bold;padding-left: 8pt;padding-right: 8pt;}
-  td.phonetic {border: 1px solid ;font-family: Charis SIL;text-align: center;background-color: silver;}
-  td.diacritic {border: 1px solid ;font-family: Charis SIL;text-align: left;padding-left: 10pt;}
-  li {font-family: Charis SIL;}
+  td {border: 1px solid ;font-family: Charis;text-align: center;}
+  td.heading {border: 1px solid ;font-family: Charis;text-align: center;font-weight: bold;padding-left: 8pt;padding-right: 8pt;}
+  td.phonetic {border: 1px solid ;font-family: Charis;text-align: center;background-color: silver;}
+  td.diacritic {border: 1px solid ;font-family: Charis;text-align: left;padding-left: 10pt;}
+  li {font-family: Charis;}
 END;
   require_once('header.php');
 ?>

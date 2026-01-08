@@ -3,7 +3,7 @@ c with name "Swampy Cree (Tataskweyak)"
 store(&VERSION) '10.0'
 store(&NAME) 'Swampy Cree (Tataskweyak)'
 store(&COPYRIGHT) '© Bill Jancewicz'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.2.1'
 store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'bj_mista_wasaha_cree.kvks'
 
@@ -90,10 +90,8 @@ c           p      t      k      c      m      n       s      y       f
 store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0  U+14ED U+1526  U+1553 
 store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2  U+14EF U+1528  U+1555 
 store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3  U+14F0 U+1529  U+1556 
-store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+152A  U+1557 
-store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+152B  U+1558 
-store(Co)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+152A  U+1557 
-store(Coo) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+152B  U+1558 
+store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+152A  U+1557 c this would be "Co" as well
+store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+152B  U+1558  c this would be "Coo" as well
 store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7  U+14F4 U+152D  U+1559 
 store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8  U+14F5 U+152E  U+155A 
 
@@ -101,10 +99,8 @@ c Consonant sh and th followed by vowel:
 store(Ce_shth)  U+1510 U+15A7
 store(Ci_shth)  U+1511 U+15A8
 store(Cii_shth) U+1512 U+15A9
-store(Cu_shth)  U+1513 U+15AA
-store(Cuu_shth) U+1514 U+15AB
-store(Co_shth)  U+1513 U+15AA
-store(Coo_shth) U+1514 U+15AB
+store(Cu_shth)  U+1513 U+15AA c same as "Co_shth"
+store(Cuu_shth) U+1514 U+15AB c same as "Coo_shth"
 store(Ca_shth)  U+1515 U+15AC
 store(Caa_shth) U+1516 U+15AD
 
@@ -146,18 +142,17 @@ store(C_wfc) U+140D U+140F U+1411 U+1413 U+1415 U+1418 U+141A U+143B U+143D U+14
              U+1677 U+1678 U+1679 U+167A U+167B U+167C U+167D \
              U+18E3 U+1569 \
 
-c These are not needed for this language
 c Western Finals (long a) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
-c store(C_wf_long_a)        U+1418 U+1445 U+1462 U+147F U+149D U+14B7 U+14CC U+1501 U+1522 U+153A U+167C
-c store(C_wfc_long_a)       U+141A U+1447 U+1464 U+1481 U+149F U+14B9 U+14CE U+1503 U+1524 U+153C U+167D
+store(C_wf_long_a)        U+1418 U+1445 U+1462 U+147F U+149D U+14B7 U+14CC U+1501 U+1522 U+153A U+167C
+store(C_wfc_long_a)       U+141A U+1447 U+1464 U+1481 U+149F U+14B9 U+14CE U+1503 U+1524 U+153C U+167D
 
 c Western Finals (long i) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
-c store(C_wf_long_i)        U+140F U+143D U+145A U+1477 U+1495 U+14AF U+18C7 U+14F9 U+151A U+1532 U+1678
-c store(C_wfc_long_i)       U+1411 U+143F U+145C U+1479 U+1497 U+14B1 U+18C9 U+14FB U+151C U+1534 U+1679
+store(C_wf_long_i)        U+140F U+143D U+145A U+1477 U+1495 U+14AF U+18C7 U+14F9 U+151A U+1532 U+1678
+store(C_wfc_long_i)       U+1411 U+143F U+145C U+1479 U+1497 U+14B1 U+18C9 U+14FB U+151C U+1534 U+1679
 
 c Western Finals (long o/u) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
-c store(C_wf_long_u)          U+1413 U+1441 U+145E U+147B U+1499 U+14B3 U+18CB U+14FD U+151E U+1536 U+167A
-c store(C_wfc_long_u)         U+1415 U+1443 U+1460 U+147D U+149B U+14B5 U+18CD U+14FF U+1520 U+1538 U+167B
+store(C_wf_long_u)          U+1413 U+1441 U+145E U+147B U+1499 U+14B3 U+18CB U+14FD U+151E U+1536 U+167A
+store(C_wfc_long_u)         U+1415 U+1443 U+1460 U+147D U+149B U+14B5 U+18CD U+14FF U+1520 U+1538 U+167B
 
 c ================================================================
 c GROUP MAIN - convert keycodes
@@ -308,10 +303,8 @@ c Convert consonant followed by vowels into syllable:
     any(CC) U+1401 > index(Ce,1) 
     any(CC) U+1403 > index(Ci,1) 
     any(CC) U+1404 > index(Cii,1) 
-    any(CC) U+1405 > index(Cu,1) 
-    any(CC) U+1406 > index(Cuu,1) 
-c    any(CC) U+1405 > index(Co,1)  c duplicate of line 276
-c    any(CC) U+1406 > index(Coo,1) c duplicate of line 277
+    any(CC) U+1405 > index(Cu,1) c store is same as "Co"
+    any(CC) U+1406 > index(Cuu,1)  c store is same as "Coo"
     any(CC) U+140A > index(Ca,1) 
     any(CC) U+140B > index(Caa,1) 
 
@@ -321,8 +314,6 @@ c    any(CC) U+1406 > index(Coo,1) c duplicate of line 277
     any(CC_shth) U+1404 > index(Cii_shth,1) 
     any(CC_shth) U+1405 > index(Cu_shth,1) 
     any(CC_shth) U+1406 > index(Cuu_shth,1) 
-c    any(CC_shth) U+1405 > index(Co_shth,1)   c duplicate of line 287
-c    any(CC_shth) U+1406 > index(Coo_shth,1)   c duplicate of line 288
     any(CC_shth) U+140A > index(Ca_shth,1) 
     any(CC_shth) U+140B > index(Caa_shth,1) 
 
@@ -331,20 +322,16 @@ c Consonant + w + vowel   >   Consonant vowel w
     any(CC) U+1424  U+1401 > index(Ce,1) U+1427  
     any(CC) U+1424  U+1403 > index(Ci,1) U+1427
     any(CC) U+1427  U+1404 > index(Cii,1) U+1427 deadkey(1) 
-    any(CC) U+1424  U+1405 > index(Cu,1) U+1427  
-    any(CC) U+1427  U+1406 > index(Cuu,1) U+1427 deadkey(1) 
-c    any(CC) U+1424  U+1405 > index(Co,1) U+1427  c duplicate of line 299
-c    any(CC) U+1427  U+1406 > index(Coo,1) U+1427 deadkey(1)   c duplicate of line 300
+    any(CC) U+1424  U+1405 > index(Cu,1) U+1427   c "Co" would also work
+    any(CC) U+1427  U+1406 > index(Cuu,1) U+1427 deadkey(1)    c "Coo" would also work
     any(CC) U+1424  U+140A > index(Ca,1) U+1427  
     any(CC) U+1427  U+140B > index(Caa,1) U+1427 deadkey(1) 
 
     any(CC_shth) U+1424  U+1401 > index(Ce_shth,1) U+1427  
     any(CC_shth) U+1424  U+1403 > index(Ci_shth,1) U+1427
     any(CC_shth) U+1427  U+1404 > index(Cii_shth,1) U+1427 deadkey(1) 
-    any(CC_shth) U+1424  U+1405 > index(Cu_shth,1) U+1427  
-    any(CC_shth) U+1427  U+1406 > index(Cuu_shth,1) U+1427 deadkey(1) 
-c    any(CC_shth) U+1424  U+1405 > index(Co_shth,1) U+1427    c duplicate of line 309
-c    any(CC_shth) U+1427  U+1406 > index(Coo_shth,1) U+1427 deadkey(1)    c duplicate of line 310
+    any(CC_shth) U+1424  U+1405 > index(Cu_shth,1) U+1427  c "Co" would also work
+    any(CC_shth) U+1427  U+1406 > index(Cuu_shth,1) U+1427 deadkey(1)   c "Coo" would also work
     any(CC_shth) U+1424  U+140A > index(Ca_shth,1) U+1427  
     any(CC_shth) U+1427  U+140B > index(Caa_shth,1) U+1427 deadkey(1) 
     
@@ -354,23 +341,19 @@ c Vowel followed by duplicate vowel changes to long form:
     U+140A    U+140A > U+140B  
     any(Ci) U+1403 > index(Cii,1)  
     any(Cu) U+1405 > index(Cuu,1)  
-    any(Co) U+1405 > index(Coo,1)  
     any(Ca) U+140A > index(Caa,1)  
 
     any(Ci_shth) U+1403 > index(Cii_shth,1)  
     any(Cu_shth) U+1405 > index(Cuu_shth,1)  
-    any(Co_shth) U+1405 > index(Coo_shth,1)  
     any(Ca_shth) U+140A > index(Caa_shth,1) 
 
-c mid w
+c mid w i o/u a
     any(Ci) U+1427 U+1403 > index(Cii,1) U+1427 deadkey(1) 
     any(Cu) U+1427 U+1405 > index(Cuu,1) U+1427 deadkey(1)  
-    any(Co) U+1427 U+1405 > index(Coo,1) U+1427 deadkey(1)  
     any(Ca) U+1427 U+140A > index(Caa,1) U+1427 deadkey(1)  
 
     any(Ci_shth) U+1427 U+1403 > index(Cii_shth,1) U+1427 deadkey(1) 
     any(Cu_shth) U+1427 U+1405 > index(Cuu_shth,1) U+1427 deadkey(1)  
-    any(Co_shth) U+1427 U+1405 > index(Coo_shth,1) U+1427 deadkey(1)  
     any(Ca_shth) U+1427 U+140A > index(Caa_shth,1) U+1427 deadkey(1)
 
 c w + vowel = vowel w
@@ -396,12 +379,12 @@ if(option_key = '') any(C_wf) U+1427 deadkey(1) > index(C_wfc,2)
 
 c These are not needed for this language
 c long vowels
-c if(option_key = '') any(C_wf_long_a) U+140A > index(C_wfc_long_a,2)
+if(option_key = '') any(C_wf_long_a) U+140A > index(C_wfc_long_a,2)
 c if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
 c if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
 
-c if(option_key = '') any(C_wf_long_i) U+1403 > index(C_wfc_long_i,2)
-c if(option_key = '') any(C_wf_long_u) U+1405 > index(C_wfc_long_u,2)
+if(option_key = '') any(C_wf_long_i) U+1403 > index(C_wfc_long_i,2)
+if(option_key = '') any(C_wf_long_u) U+1405 > index(C_wfc_long_u,2)
 
 c If we did anything, then go back through again
     match > use(MakeSyllables)

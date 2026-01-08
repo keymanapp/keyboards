@@ -1,5 +1,8 @@
 Pan-Sahelian Change History
 ====================
+3.3.1 (20 Feb 2025)
+-----------------
+* Put OSKFont from .kps file into .kvks file
 
 3.3 (2024-08-30)
 ----------------

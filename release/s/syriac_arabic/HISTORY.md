@@ -1,6 +1,10 @@
 Syriac (Arabic layout) Keyboard Change History
 =======================
 
+1.3.1 (2 December 2024)
+-----------------
+* Update language tag
+
 1.3 (2024-09-04)
 ----------------
 * Add tablet layout

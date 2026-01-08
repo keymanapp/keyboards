@@ -11,13 +11,11 @@ At the same time, the alphabet devised by Peter von Uslar, consisting of Cyrilli
 
 The Latin alphabet was introduced in 1925. It was unified with Ingush in 1934, but abolished in 1938. In 1938–1992, only the Cyrillic alphabet was used for Chechen.
 
-The alphabet defined in this project was introduced in 1992 in the Chechen Republic of Ichkeria.
-
 Links
 -----
+Home: https://keyman.com/keyboards/chechen_latin
 
-[Wikipedia](https://en.wikipedia.org/wiki/Chechen_language)  
-[Archive](https://archive.org/details/ChR-alphabet-1992/mode/1up)
+[Wikipedia](https://en.wikipedia.org/wiki/Chechen_language)
 
 Copyright
 ---------

@@ -396,7 +396,7 @@ END;
 <tr><td>Alt-=</td><td>CLPE</td><td>combining long pi extension</td></tr>
 <tr><td>Alt-Shift-=</td><td>CLGE</td><td>combining long glyph extension</td></tr>
 </table>
-<p>© 2022 Kreative Software</p>
+<p>© Kreative Software</p>
 <script>
 	function prep() {
 		var ua = navigator.userAgent || navigator.appVersion;

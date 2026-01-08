@@ -9,7 +9,7 @@ store(&LAYOUTFILE) 'dega.keyman-touch-layout'
 store(&BITMAP) 'dega.ico'
 store(&CasedKeys)   [K_A] .. [K_Z]
 store(&MESSAGE) 'Dega Keyboard is created for indigenous people in the Central Highlands of Vietnam, to preserve their writing, this Dega Keyboard can be used by Êđê, Jơrai, Kơ’Ho, Mơnông, Bahnar and many other indigenous ethnic groups.'
-store(&KEYBOARDVERSION) '3.1'
+store(&KEYBOARDVERSION) '4.0'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -185,7 +185,9 @@ store(ou_wx)  'ơưƠƯ'
 any(ou_wx) + [K_X]           > index(ou_wx,1) U+0306 
 any(ou_wx) + [SHIFT K_X]     > index(ou_wx,1) U+0306 
 
-
-
+c Added per request on Nov 21, 2025
+store(iu) 'iuIU'
+store(circumflex_output) 'îûÎÛ'
+any(iu) + [SHIFT K_6] > index(circumflex_output,1)
 
 c EoF

@@ -1,7 +1,7 @@
 Syriac (Arabic layout) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 Syriac (Arabic layout) is designed for use with Aramaic, Syriac and related languages. The 

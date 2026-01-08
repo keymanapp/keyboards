@@ -1,9 +1,13 @@
 # Amharic (አማርኛ) & Gurage (ጉራጊና) Keyboards
 
-## 1.1(19 Jul 2023)
+## 1.1.1 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
+## 1.1 (19 Jul 2023)
 * Add .js files to kps
 
-## 1.0(05 Jul 2023)
+## 1.0 (05 Jul 2023)
 * Resync with Gurage 1.0 and Amharic 3.3 packages.
 
 ## 0.9 (19 Jul 2021)

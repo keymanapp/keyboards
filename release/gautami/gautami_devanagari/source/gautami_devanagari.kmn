@@ -1,0 +1,343 @@
+﻿c "Gautami Devanagari"  2024-10-30
+
+store(&VERSION) '10.0'
+store(&NAME) 'Gautami Devanagari'
+store(&COPYRIGHT) '© Gautam Sengupta'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'gautami_devanagari.ico'
+store(&VISUALKEYBOARD) 'gautami_devanagari.kvks'
+store(&LAYOUTFILE) 'gautami_devanagari.keyman-touch-layout'
+store(&HOTKEY) [CTRL SHIFT K_D]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(deadkey) dk(a) dk(x)
+store(unasp) "कचटतपगजडड़दबस"
+store(asp) "खछठथफघझढढ़धभश"
+store(vowel) "अआइईउऊऋॠऌॡएऎऐओऒऔ"
+store(matra) dk(a) U+093e U+093f U+0940 U+0941 U+0942 U+0943 U+0944 U+0962 U+0963 U+0947 U+0946 U+0948 U+094b U+094a  U+094c
+store(m_bearer) "कक़खख़गग़ॻघङचछजज़ॼॹझञटठडड़ॸढढ़णतथदॾधनऩपफफ़बॿभमयय़ॺरऱलळऴवसशषह"
+store(n_bearer) "नयरळकखगजडढफ"
+store(n_bearing)"ऩय़ऱऴक़ख़ग़ज़ड़ढ़फ़"
+store(c_bearer) "अआएा"
+store(c_bearing) U+0972 U+0911 U+090d U+0949
+store(digit) "१२३४५६७८९०1234567890"
+store(currency_rota_1) "₹$€£৳"
+store(currency_rota_2) "$€£৳₹"
+storE(u_dia) U+093c U+0956 U+0957
+c store(punc) ", .;!-_"
+
+c DEAD KEYS
++ [RALT K_X] > "x"
++ [K_X] > dk(x)             c SEPARATOR
+dk(x) + [K_X] > "क्ष"
++ [RALT SHIFT K_X] > "X"
++ [SHIFT K_X] > 'क्ष'         use(transform)
+
+c PUNCTUATIONS
+c + ',' > ','     use(transform)
+c + ' ' > ' '     use(transform)
+c + ';' > ';'     use(transform)
+c + '!' > '!'     use(transform)
+c + '-' > '-'     use(transform)
+c + '_' > '_'     use(transform)
+
+c CURRENCY
++[SHIFT K_4] > "₹"
++[RALT SHIFT K_4] > "$"
+any(currency_rota_1) + [SHIFT K_4] > index(currency_rota_2, 1)
+
+c SHIFT-\ TOGGLES DANDA / DOUBLE DANDA
++ "|" > "।"
+"।" + "|" > U+0965
+U+0965 + "|" > "।"
++ [RALT SHIFT K_BKSLASH] > "|"
+
+c CANDRA
++ [RALT SHIFT K_6] > '^'
++ "^" > U+0945                  c CANDRA ॅ
+U+0945 +[SHIFT K_6] > U+0955    c ॕ
+U+0955 +[SHIFT K_6] > U+0945    c ॅ
+'ा' +[SHIFT K_6] > U+0949
+U+0949 +[SHIFT K_6] > 'ा'
+'आ' +[SHIFT K_6] > U+0911
+U+0911 +[SHIFT K_6] > 'आ'
+'ए' +[SHIFT K_6] > U+090d
+U+090d +[SHIFT K_6] > 'ए'
+
+c UE & UUE (UNDER_BARS)
++ [RALT SHIFT K_HYPHEN] > '_'
++ [SHIFT K_HYPHEN] > U+0956
+U+0956 + '_' > U+0957
+U+0957 + '_' > U+0956
+
+c [K_PERIOD] toggles as NUKTA
++[RALT K_PERIOD] > "."          use(transform)
++[K_PERIOD] > "़"               use(transform)
+
+c ABBREV
+dk(x) +[K_PERIOD] > U+0970
+
++ [RALT K_BKQUOTE] > "`"     c BKQUOTE
++ [K_BKQUOTE] > "ं"        use(transform)
+"ं" + [K_BKQUOTE] > "ँ"
+'ँ' + [K_BKQUOTE] > "ৼ"
+'ৼ' + [K_BKQUOTE] > "ऀ"
+'ऀ' + [K_BKQUOTE] > "ं"
+
+c BKQUOTE TOGLES VEDIC ACCENTS
++[RALT SHIFT K_BKQUOTE] > "~"
++[SHIFT K_BKQUOTE] > '॒'
+'॒' + [SHIFT K_BKQUOTE] > '॑'
+'॑' + [SHIFT K_BKQUOTE] > '᳚'
+'᳚' + [SHIFT K_BKQUOTE] > U+0953
+U+0953 + [SHIFT K_BKQUOTE] > U+0954
+U+0954 + [SHIFT K_BKQUOTE] > '॒'
+
+c BKSLASH toggles between VIRAMA and HARD VIRAMA
++[RALT K_BKSLASH] > '\'
++[K_BKSLASH] > u+094D                       c HALANT or VIRAMA
+dk(x) +[K_BKSLASH] > u+094D U+200c          c HARD VIRAMA
+U+094d +[K_BKSLASH] > context(1) U+200C     c HARD VIRAMA
+U+094d U+200c +[K_BKSLASH] > context(1)
+
++ [K_NPPLUS] > U+200d       c    Keypad +    >   ZWJ
++ [K_NPMINUS] > U+200c      c    Keypad -    >   ZWNJ
+
+c SLASH is JOINER/SPLITTER
++ [RALT K_SLASH] > '/'
+any(vowel) +[K_SLASH] > index(matra, 1)
+any(matra) +[K_SLASH] > index(vowel, 1)
+any(asp) + [K_SLASH] > index(unasp, 1) 'ह'
+any(unasp) 'ह' + [K_SLASH] > index(asp, 1)
+c SPLITTING
+U+094d any(m_bearer) + [K_SLASH] > context(2)
+U+094d any(m_bearer) '्' + [K_SLASH] > context(2) context(3)
+U+094d any(m_bearer) '़' + [K_SLASH] > context(2) context(3)
+U+094d any(m_bearer) '़' '्' + [K_SLASH] > context(2) context(3) context(4)
+c JOINING
+any(m_bearer) + [K_SLASH] > U+094d context(1)
+any(m_bearer) '्' + [K_SLASH] > U+094d context
+any(m_bearer) '़' + [K_SLASH] > U+094d context(1) context(2)
+any(m_bearer) '़' '्' + [K_SLASH] > U+094d context(1) context(2) context(3)
+
++ [RALT K_A] > "a"
++ [K_A] > "अ"                use(transform)
+"अ" + [K_A] > "आ"
+"आ" + [K_A] > "अ"
++ [RALT SHIFT K_A] > "A"
++ [SHIFT K_A] > "आ"          use(transform)
+
++ [K_I] > "इ" use(transform)
++ [RALT K_I] > "i"
++ [SHIFT K_I] > "ई" use(transform)
++ [RALT SHIFT K_I] > "I"
+"इ" + [K_I] > "ई"
+"ई" + [K_I] > "इ"
+"ि" + [K_I] > "ी"
+"ी" + [K_I] > "ि"
+
++ [K_U] > "उ" use(transform)
++ [SHIFT K_U] > "ऊ" use(transform)
++ [RALT K_U] > "u"
++ [RALT SHIFT K_U] > "U"
+"उ" + [K_U] > "ऊ"
+"ऊ" + [K_U] > "उ"
+"ु" + [K_U] > "ू"
+"ू" + [K_U] > "ु"
+
++ [SHIFT K_COMMA] > "ऋ" use(transform)
+"ऋ" + [SHIFT K_COMMA] > "ॠ"
+"ॠ" + [SHIFT K_COMMA] > "ऋ"
++ [RALT SHIFT K_COMMA] > "<"
+"ृ" + [SHIFT K_COMMA] > "ॄ"
+"ॄ" + [SHIFT K_COMMA] > "ृ"
+
++ [SHIFT K_PERIOD] > "ऌ" use(transform)
++ [RALT SHIFT K_PERIOD] > ">" use(transform)
+"ऌ" + [SHIFT K_PERIOD] > "ॡ"
+"ॡ" + [SHIFT K_PERIOD] > "ऌ"
+"ॢ" + [SHIFT K_PERIOD] > "ॣ"
+"ॣ" + [SHIFT K_PERIOD] > "ॢ"
+
++ [RALT K_E] > "e"
++ [K_E] > "ए"           use(transform)
+'ए' + [K_E] > 'ऐ'
+'ऐ' + [K_E] > 'ए'
+"े" + [K_E] > "ै"
+"ै" + [K_E] > "े"
+
++ [RALT SHIFT K_E] > "E"
++ [SHIFT K_E] > "ऎ"       use(transform)
+
++ [RALT K_O] > "o"
++ [K_O] > "ओ"            use(transform)
+'ओ' + [K_O] > "औ"
+'औ' + [K_O] > "ओ"
+"ो" + [K_O] > "ौ"
+"ौ" + [K_O] > "ो"
+
++ [RALT SHIFT K_O] > "O"
++ [SHIFT K_O] > 'ऒ'      use(transform)
+
++ [RALT K_K] > "k"
++ [K_K] > "क"            use(transform)
+
++ [RALT K_C] > "c"
++ [K_C] > "च"             use(transform)
+
++ [RALT SHIFT K_T] > "T"
++ [SHIFT K_T] > "ट"       use(transform)
+
++ [RALT K_T] > "t"
++ [K_T] > "त"             use(transform)
+
++ [RALT K_P] > "p"
++ [K_P] > "प"               use(transform)
+
++ [RALT K_G] > "g"
++ [K_G] > "ग"               use(transform)
+dk(x) +[K_G] > 'ॻ'          use(transform)
+
++ [RALT K_J] > "j"
++ [K_J] > "ज"               Use(transform)
+dk(x) + [K_J] > 'ॼ'         use(transform)
++ [RALT SHIFT K_J] > "J"
++[SHIFT K_J] > 'ॹ'          use(transform)
+
++ [RALT SHIFT K_D] > "D"
++ [SHIFT K_D] > "ड"         use(transform)
+dk(x) +[SHIFT K_D] > 'ॸ'   use(transform)
+
++ [RALT K_D] > "d"
++ [K_D] > "द"               use(transform)
+dk(x) +[K_D] > 'ॾ'          use(transform)  c Sindhi Implosive
+
++ [RALT K_B] > "b"
++ [K_B] > "ब"               use(transform)
+
++ [RALT SHIFT K_B] > "B"
+dk(x) +[K_B] > 'ॿ'          use(transform)  c Sindhi Implosivea
+
++ [RALT K_N] > "n"
++ [K_N] > "न"               use(transform)
+dk(x) + [K_N] > "ञ"        use(transform)
+
++ [RALT SHIFT K_N] > "N"
++ [SHIFT K_N] > "ण"     use(transform)
+
++ [RALT K_M] > "m"
++ [K_M] > "म"           use(transform)
+dk(x) + [K_M] > "ङ"    use(transform)
+
++ [RALT SHIFT K_M] > 'M'
++ [SHIFT K_M] > U+0950  use(transform)
+
++ [RALT K_S] > "s"
++ [K_S] > "स"           use(transform)
+
++ [RALT SHIFT K_S] > "S"
++ [SHIFT K_S] > "ष"      use(transform)
+
++ [RALT K_H] > "h"
++ [K_H] > "ह"            use(transform)
+
++ [RALT SHIFT K_H] > "H"
++ [SHIFT K_H] > 'ः'
+'ः' + [SHIFT K_H] > 'ऽ'
+'ऽ' + [SHIFT K_H] > 'ः'
+
++ [RALT K_Y] > "y"
++ [K_Y] > "य"           use(transform)
+
++ [RALT SHIFT K_Y] > "Y"
++ [SHIFT K_Y] > U+097a  use(transform)
+
+dk(x) + [K_Y] > U+097a  use(transform)
+
++ [RALT K_R] > "r"
++ [K_R] > "र"           use(transform)
+c 'र' + [K_R] > 'ऱ'
+c 'ऱ' + [K_R] > 'र'
+
++ [RALT SHIFT K_R] > 'R'
++ [SHIFT K_R] > "ड़"     use(transform)
+
++ [RALT K_L] > "l"
++ [K_L] > "ल"           use(transform)
+
++[RALT SHIFT K_L] > "L"
++[SHIFT K_L] > "ळ"      use(transform)
+
++[K_V] > "व"            use(transform)
++[RALT K_V] > "v"
+
+c NUKTA-BEARING CONSONANTS
++ [RALT K_Q] > "q"
++ [K_Q] > "क़"           use(transform)
++ [RALT SHIFT K_K] > "K"
++[SHIFT K_K] > 'ख़'      use(transform)
++ [RALT SHIFT K_G] > "G"
++ [SHIFT K_G] > "ग़"     use(transform)
++ [RALT K_F] > "f"
++ [K_F] > "फ़"           use(transform)
++ [SHIFT RALT K_F] > "F"
++ [SHIFT K_F] > "फ़"     use(transform)
++ [RALT K_Z] > "z"
++ [K_Z] > "ज़"           use(transform)
+
+c NUMERALS
++ [K_1] > "१"
++ [K_2] > "२"
++ [K_3] > "३"
++ [K_4] > "४"
++ [K_5] > "५"
++ [K_6] > "६"
++ [K_7] > "७"
++ [K_8] > "८"
++ [K_9] > "९"
++ [K_0] > "०"
+
++ [RALT K_1] > "1"
++ [RALT K_2] > "2"
++ [RALT K_3] > "3"
++ [RALT K_4] > "4"
++ [RALT K_5] > "5"
++ [RALT K_6] > "6"
++ [RALT K_7] > "7"
++ [RALT K_8] > "8"
++ [RALT K_9] > "9"
++ [RALT K_0] > "0"
+        
+group(transform)
+c MATRA
+dk(a) 'अ' > U+093e
+any(deadkey) any(vowel) > context(2)
+any(m_bearer) any(vowel) > context(1) index(matra,2)
+any(m_bearer) any(u_dia) any(vowel) > context(1) context(2) index(matra,3)   c Matra possiblE aftEr ॖ or ॗ?
+
+c ASPIRATE
+any(unasp) 'ह' > index(asp,1)       c unasp --> asp / _____ h
+
+c JOIN ADJACENT CONSONANTS
+any(m_bearer) any(m_bearer) > context(1) U+094d context(2)
+'़' any(m_bearer) > context(1) U+09cd context(2)
+'़' any(m_bearer) '़' > context(1) U+094d context(2) context(3)
+
+c PURGE DEAD KEYS BETWEEN CONSONANTS, OTHERWISE [K_K] dk(a/x) [K_K] [K_SLASH] will not work as expected
+any(deadkey) any(m_bearer) > context(2)             c remove dead keys before consonants
+
+c NUKTA RULES
+any(n_bearer) '़' > index(n_bearing, 1)             c Fold in NUKTA
+any(n_bearer) dk(x) '़' > context(1) context(3)     c Do NOT fold in NUKTA
+c dk(x) '़' > '॰'
+any(n_bearing) '़' > context(1) beep
+any(n_bearing) any(deadkey) '़' > context(1) beep
+any(m_bearer) '़' '़' > context(1) context(2) beep
+any(m_bearer) '़' any(deadkey) '़' > context(1) context(2) beep
+any(digit) '़' > context(1) "."
+
+c EOF

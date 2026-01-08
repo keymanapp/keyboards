@@ -1,5 +1,9 @@
 ᐊᓂᔑᓇᐯᒧᐏᣙ (Ojibwa, i-finals, right w-dot) Change History
 ====================
+1.0.3 (20 Feb 2025)
+-----------------
+* Put OSKFont from .kps file into .kvks file
+
 1.0.2 (31 Jul 2024)
 ----------------
 * Corrected error in instructions

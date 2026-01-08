@@ -1,5 +1,10 @@
 Change History
 =======================
+
+6.1.1 (2024-12-03)
+----------------
+* Fixed language tags
+
 6.1.0 (2023-Dec)
 -----------------
 Restyling KB CSS.

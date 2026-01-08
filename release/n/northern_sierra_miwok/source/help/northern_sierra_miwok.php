@@ -1,20 +1,14 @@
 <?php 
-
   $pagename = 'Northern Sierra Miwok Keyboard Help';
-
   $pagetitle = $pagename;
-
-  // Header we will tidy up later  
-
   require_once('header.php');
-
 ?>
 
 <p>This keyboard is for typing <b>Northern Sierra Miwok</b> using the alphabet adopted by the <b>Shingle Springs Band of Miwok Indians (SSBMI)</b> for use in Northern Sierra Miwok language materials.</p>
 <p>&emsp;</p>
 
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p>The Northern Sierra Miwok alphabet uses a number of special symbols that are not available on a standard keyboard.</p>
 
@@ -34,10 +28,10 @@
 
 
 
-<h1>Comments/Questions</h1>
+<h2>Comments/Questions</h2>
 
 <p>The current version of the Northern Sierra Miwok Keyboard was developed by <b>Jonathan Geary (jgeary@ssband.org)</b>. Please contact Jonathan with any questions about the Northern Sierra Miwok Keyboard.
 
 <p>Please contact <b>the SSBMI Language Program (language@ssband.org)</b> with any questions or requests concerning the Northern Sierra Miwok language.</p>
 
-<p>© 2023 Shingle Springs Band of Miwok Indians</p>
+<p>© Shingle Springs Band of Miwok Indians</p>

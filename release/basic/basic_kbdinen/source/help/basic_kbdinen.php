@@ -8,8 +8,8 @@
 ?>
 
 
-<p style='margin: 16px 0 0 0'>
-    India Basic 1.0 generated from template. This keyboard uses the Latin script and is designed for transliteration.
+<p>
+    The keyboard layout follows the Windows 10 India Basic keyboard layout. This keyboard uses the Latin script and is designed for transliteration.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>

@@ -1,6 +1,15 @@
 Mon Anonta Change History
 ====================
 
+1.0.5 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
+1.0.4 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.0.3 (2022-06-28)
 -----------------
 * Bug fix

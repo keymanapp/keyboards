@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Kannada WinScript (NLCI)'
 store(&COPYRIGHT) '© NLCI Bangalore'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'nlci_kannada_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_kannada_winscript.kvks'
@@ -10,9 +10,9 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-store(vowelKeys) 'AiIuUReEYoOVMH'
+store(vowelKeys)   'AiIuUReEYoOVMH'
 store(vowels) 'ಆಇಈಉಊಋಎಏಐಒಓಔಂಃ'
-store(vowelMatras) 'ಾಿೀುೂೃೆೇೈೊೋೌಂಃ'
+store(vowelMatras) U+0CBE U+0CBF U+0CC0 U+0CC1 U+0CC2 U+0CC3 U+0CC6 U+0CC7 U+0CC8 U+0CCA U+0CCB U+0CCC U+0C82 U+0C83 
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
     	   	   	'tTdDN' \
@@ -45,8 +45,8 @@ c Adjust the behavior of 'i'
 'ಇ' + 'i' > 'ಈ' 
 
 c Adjust the behavior of l
-'ಲ' + 'l' > 'ಳ'
-'ಳ' + 'l' > 'ೞ'     
+'ಲ' + 'l' > 'ಳ' c U+0CB3 LLA
+'ಳ' + 'l' > 'ೞ' c U+0CDE FA     
 
 c Adjust the behavior of L
 'ಳ' + 'L' > 'ೞ' 
@@ -81,8 +81,8 @@ c Adjust the behavior of S
 '`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of X
-any(consonants) + 'X' > context '್' U+200C
-any(consonants) '್' + 'X' > context U+200C
+any(consonants) + 'X' > context '್' U+200C c ZWNJ
+any(consonants) '್' + 'X' > context U+200C c ZWNJ 
 store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
   
@@ -142,4 +142,24 @@ c Vowel sign elongation
 'ಿ' + 'i' > context 'ೀ' 
 'ು' + 'u' > context 'ೂ'
 'ಾ' + 'a' > context 'ಾ'
+
+c Added 2025-May
++ [RALT K_HYPHEN] > U+200C c ZWNJ
++ [RALT K_EQUAL] > U+200D c ZWJ
++ [RALT K_S] > U+0C81 c candrabindu
++ [RALT SHIFT K_S] > U+0C80 c spacing candrabindu
++ [RALT K_QUOTE] > U+0CBD c avagraha
+
++ [SHIFT RALT K_F] > U+0C8C c vocalic l
++ [SHIFT RALT K_R] > U+0CE1 c vocalic ll
++ [RALT K_F] > U+0CE2 c vowel sign vocalic l
++ [RALT K_R] > U+0CE3 c vowel sign vocalic ll
+
++ [K_RBRKT] > U+0CBC c nukta
++ [RALT K_COLON] > U+0CD5 c length mark
+
++ [RALT K_RBRKT] > U+005D
++ [RALT K_LBRKT] > U+005B
+
+
 

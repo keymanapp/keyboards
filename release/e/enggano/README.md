@@ -8,6 +8,7 @@ Keyboard for the Enggano language: allow typing of nasalized vowels with tilde, 
 
 Links
 -----
+https://keyman.com/keyboards/enggano
 
 Supported Platforms
 -------------------

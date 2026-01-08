@@ -1,9 +1,7 @@
 Landuma Keyboard
 =======================
 
-© 2019-2021 Ethnos360
-
-Version 1.1.2
+© Ethnos360
 
 DESCRIPTION
 -------------------

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -20,7 +20,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">myWin Extended (SIL)</Name>
-    <Copyright URL="">(c) SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
     <Description URL="">Burmese Keyboard for Unicode Encoding. This Layout has been designed to
 resemble that used by WinMyanmar Systems, however, it is much simplified
 because of the advantages of Unicode technology. Some keys have changed
@@ -88,18 +88,6 @@ as a result.</Description>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Bold.ttf</Name>
-      <Description>Font Padauk Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</Name>
-      <Description>Font Padauk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -111,14 +99,36 @@ as a result.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Bold.ttf</Name>
+      <Description>Font Padauk Book Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Medium.ttf</Name>
+      <Description>Font Padauk Book Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</Name>
+      <Description>Font Padauk Book</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-SemiBold.ttf</Name>
+      <Description>Font Padauk Book SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>myWin Extended (SIL)</Name>
       <ID>sil_myanmar_mywinext</ID>
-      <Version>1.5</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="my">Burmese</Language>
       </Languages>

@@ -3,7 +3,7 @@ hakka keyboard
 
 Description
 -----------
-hakka keyboard for Hak-kâ-ngî Pha̍k-và-sṳ̀
+hakka keyboard for Hak-kâ-ngî Pha̍k-và-sṳ̀ and 客家語漢字
 
 Links
 -----

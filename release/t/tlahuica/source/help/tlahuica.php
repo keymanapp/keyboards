@@ -28,5 +28,5 @@ Se podrían resumir todas las funciones del teclado en la siguiente imagen:</p>
 <img src="u_long_press.png">
 <p>De igual manera es el acceso a caracteres especiales de puntuación, monedas, etc. desde el teclado numérico.<br></p>
 <h2>Fuentes</h2>
-<p>Los caracteres de este teclado no son contemplados por la mayoría de las fuentes o tipografías que seguramente tenga instaladas en su computadora.<br>Se recomiendan las siguientes fuentes como algunas que soportan las letras del tlahuica:<br>Doulos SIL y DejaVu (vienen con el teclado al instalarse), Noto, Arial, Calibri, Times New Roman, Cambria, Charis SIL, Andika, Consolas, Courier New, Gentium Plus, Helvetica, Quivira, Segoe, Tahoma y Microsoft Sans Serif.</p>
+<p>Los caracteres de este teclado no son contemplados por la mayoría de las fuentes o tipografías que seguramente tenga instaladas en su computadora.<br>Se recomiendan las siguientes fuentes como algunas que soportan las letras del tlahuica:<br>Doulos SIL y DejaVu (vienen con el teclado al instalarse), Noto, Arial, Calibri, Times New Roman, Cambria, Charis, Andika, Consolas, Courier New, Gentium, Helvetica, Quivira, Segoe, Tahoma y Microsoft Sans Serif.</p>
 

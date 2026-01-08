@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>   
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Obolo Qwerty</Name>
-    <Copyright URL="">© 2020 - 2023 Rogers Katelem Edeh</Copyright>
+    <Copyright URL="">© Rogers Katelem Edeh</Copyright>
     <Author URL="">Rogers Katelem Edeh</Author>
-    <Description>Obolo Qwerty Keyboard is a simple keyboard in QWERTY layout, for the
+    <Description URL="">Obolo Qwerty Keyboard is a simple keyboard in QWERTY layout, for the
 Obolo language of Nigeria. It covers the need of every dialect in that
 language.</Description>
   </Info>
@@ -143,13 +144,11 @@ language.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Obolo Qwerty</Name>
       <ID>obolo_qwerty</ID>
-      <Version>1.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="ann-Latn">Obolo (Andoni)</Language>
+        <Language ID="ann">Obolo (Andoni)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

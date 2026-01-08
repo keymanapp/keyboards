@@ -13,8 +13,6 @@
     Version 1.0 developed by Jonathan Geary (JonathanGeary@ctuir.org), adapted from current CTUIR Umatilla Sahaptin keyboard for Keyman software.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

@@ -3,12 +3,10 @@
 
 Uso libre
 
-Version 1.0
-
 Description
 -----------
 
-Pa wañɇ muweñjɇ pjyɇkakjo :) Versión 1.0
+Pa wañɇ muweñjɇ pjyɇkakjo 
 
 Links
 -----

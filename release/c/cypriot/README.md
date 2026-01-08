@@ -1,7 +1,7 @@
 Cypriot Syllabary keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------

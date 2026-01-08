@@ -5,16 +5,13 @@
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Fulfulde Ajami (QWERTY)</h1>
-
 <p>
     Fulfulde Ajami (QWERTY) keyboard developed for use for the Adamawa Fulfulde, Maasina Fulfulde, Nigerian Fulfulde, Pular, Pulaar, and Western Niger Fulfulde languages. 
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard makes use of rotas for a few characters. For example: typing » twice will produce ›. Doing this works with «, ”, and “. It also works with turning <i>fatha</i>, <i>kasra</i>, and <i>damma</i> into <i>fathatan</i>, <i>kasratan</i>, and <i>dammatan</i> respectively.</p>
 <p>It may be difficult to tell, but kashida is on the SHIFT+7 key, and the hyphen is available on the RALT+- key.</p>
+
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

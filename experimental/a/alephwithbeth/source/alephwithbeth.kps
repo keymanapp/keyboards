@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -23,7 +23,7 @@
     <Copyright URL="">© Cameron Briggs</Copyright>
     <Author URL="">Cameron Briggs</Author>
     <WebSite URL="https://freehebrew.online">https://freehebrew.online</WebSite>
-    <Description URL="">alephwithbeth keyboard</Description>
+    <Description URL="">A Hebrew keyboard designed to intuitively match the standard QWERTY layout.</Description>
   </Info>
   <Files>
     <File>
@@ -80,12 +80,23 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Aleph With Beth</Name>
       <ID>alephwithbeth</ID>
-      <Version>1.0.4</Version>
+      <OSKFont>..\..\..\..\release\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
       <Languages>
         <Language ID="he">Hebrew</Language>
       </Languages>

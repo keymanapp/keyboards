@@ -1,9 +1,9 @@
-Yezidi keyboard
+Ezidi keyboard
 ==============
 
 Description
 -----------
-Keyboard for the Yezidi script.
+Keyboard for the Ezidi language using the Yezidi script.
 
 Links
 -----

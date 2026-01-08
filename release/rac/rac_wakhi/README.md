@@ -1,9 +1,7 @@
 Rachitrali-Wakhi Keyboard Data
 ------------------------------
 
-Copyright (C) 2018 Rehmat Aziz Chitrali
-
-Version 1.0
+Copyright (C) Rehmat Aziz Chitrali
 
 Description
 -----------

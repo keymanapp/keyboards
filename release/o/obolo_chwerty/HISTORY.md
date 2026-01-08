@@ -1,6 +1,20 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
+1.5.3 (2025-09-30)
+----------------
+* Added some keys to layer alt on desktop
+* Replaced ROPT key with HTAB on layer alt
+* Minor improvements on touch layout
+
+1.5.2 (2025-04-223)
+----------------
+* Improve On-Screen keyboard
+
+1.5.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.5 (2024-05-09)
 ----------------
 * Added numeric layer
@@ -14,7 +28,7 @@ Obolo Chwerty Keyboard Change History
 1.2.1 [1.4] (2022-06-19)
 ----------------
 * Updated kb to use caps and capslock
-* Removed longpress for Q (CH -- Ch) and H (SH -- Sh) keys. Those are now handled in shift layer.
+* Removed longpress for Q (CH – Ch) and H (SH – Sh) keys. Those are now handled in shift layer.
 * Moved accent key from numbers row on default layer, and from symbols row on shift layer.
 * Miscellaneous minor update to make kb tap into the power of km 15.
 

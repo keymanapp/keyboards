@@ -7,10 +7,9 @@
 
 
 <p>
-    Croatian/Slovenian Basic 1.1 generated from template.
+    Croatian/Slovenian Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 
 <p>˝o will produce ő (available on oOuU).</p>
@@ -32,5 +31,3 @@
 
 <div id='osk-tablet' data-states='default shift ctrl'>
 </div>
-
-<p>© 2009-2019 SIL International</p>

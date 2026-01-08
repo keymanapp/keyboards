@@ -1,6 +1,10 @@
 Tamil WinScript (NLCI) Keyboard Change History
 ====================
 
+2.2 (2025-02-03)
+----------------
+* Add ability to type U+1133C GRANTHA SIGN NUKTA
+
 2.1 (2024-08-28)
 ----------------
 * Added tablet layout

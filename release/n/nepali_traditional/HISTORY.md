@@ -16,3 +16,6 @@ Nepali Traditional Change History
 1.3 (2023-06-07)
 ----------------
 * add ऱ् instead of ऱ in desktop layout
+
+1.3.1 (2025-04-12)
+* fix incorrect labels in touch layout - औ zwj zwnj

@@ -11,7 +11,7 @@
 
      <img src="layout150.png" width="600">
   
-      <h1>Key Sequences</h1>
+      <h2>Key Sequences</h2>
       <h4>The SHIFT key</h4>
       <p>Pressing the shift key (in yellow), then one of those white keys in the layout (right) provides access to the symbols shown in the top right hand area of each key. e.g. the shift key, then the 'e' key will output schwa /ə/.</p>
     

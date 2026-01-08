@@ -8,7 +8,7 @@
     Taigi Viet Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 台語越式telex 會當拍台語白話字
 </p>
 <p>
-  Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks 
+Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks 
 </p>
 <p>
     台語越式telex版本，佇咧元音字母後爿抑是佇咧每一個音節後爿添字母‘s’ ‘f’ ‘r’ ‘j’佮‘w’ 去生成音調 
@@ -23,8 +23,11 @@
    <p> 特別ê字母specific letters: </p>
     <p> nn > ⁿ , oo > o͘</p>
   <p>  拍兩次字母，取消音調，產生原本ê字母 doubletaping leads to generate original letters: </p>
-    <p> 例example: fijj > fij,  kannn > kann, laww > law, beee > bee
-
+    <p> 例example: fijj > fij,  kannn > kann, laww > law, beee > bee </p>
+    <p>  拍字母Z，取消音調轉換 Press Z key to cancel the tones: </p>
+    <p> 例example: taifz > tai, girz > gi </p>
+    <p>  拍TAB, 産生漢文 press TAB, to generate Kanji </p>
+    <p> tâi gí + TAB > 台語
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

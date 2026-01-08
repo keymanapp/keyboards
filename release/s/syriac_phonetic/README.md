@@ -1,7 +1,7 @@
 Syriac (Phonetic layout) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 Syriac (Phonetic layout) is designed for use with Aramaic, Syriac and related languages. The 

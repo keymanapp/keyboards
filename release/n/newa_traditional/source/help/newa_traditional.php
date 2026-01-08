@@ -12,8 +12,6 @@ END;
 Traditional Layout for Nepal Bhasa in Newa (Prachalit) script with dead keys support for special characters
   </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

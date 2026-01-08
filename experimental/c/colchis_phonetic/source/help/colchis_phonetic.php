@@ -9,9 +9,7 @@
     Colchian Phonetic keyboard for the Mingrelian language using Asomtavruli.
 </p>
 
-<h2>Keyboard Layout</h2>
-
-<h3>Desktop Keyboard Layout</h3>
+<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 

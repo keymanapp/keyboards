@@ -1,5 +1,8 @@
 # Galaxie Hebrew (Positional) Keyboard Change History
 
+## 2.3.1 (30 Oct 2024)
+* Change to use KbdHebr display font for better OSK display
+
 ## 2.3 (18 Sep 2024)
 * Added mobile layout
 

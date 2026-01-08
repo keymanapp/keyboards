@@ -1,0 +1,57 @@
+﻿c Taiwan Austronesian keyboard for Taiwan Austronesian languages
+store(&VERSION) '10.0'
+store(&NAME) 'Taiwan Austronesian'
+store(&COPYRIGHT) 'Copyright © cathaylab'
+store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'any'
+store(&BITMAP) 'taiwan_austronesian.ico'
+store(&VISUALKEYBOARD) 'taiwan_austronesian.kvks'
+store(&LAYOUTFILE) 'taiwan_austronesian.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nomatch > layer('default')
+
+group(main) using keys
+
+"e" + [K_TAB] > "é"
+"é" + [K_TAB] > "ē"
+"ē" + [K_TAB] > "ə"
+"r" + [K_TAB] > "ṟ"
+"u" + [K_TAB] > "ʉ"
+"i" + [K_TAB] > "ɨ"
+
+"E" + [K_TAB] > "É"
+"É" + [K_TAB] > "Ē"
+"Ē" + [K_TAB] > "Ə"
+"R" + [K_TAB] > "Ṟ"
+"U" + [K_TAB] > "Ʉ"
+"I" + [K_TAB] > "Ɨ"
+
++ "'" > "ʼ"
+"ʼ"+ "'" > "'"
++ "[" > "⌃"
+"⌃" + "[" > "["
+"6" + [K_TAB] > "⌃"
+"^" + [K_TAB] > "⌃"
++ ";" > ":"
+":" + ";" > ";"

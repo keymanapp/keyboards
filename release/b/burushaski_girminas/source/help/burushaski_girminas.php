@@ -845,7 +845,7 @@
               Girminas. Remember, there is no seperate iOS App. <strong>Keyman</strong>
               engine already includes Burushaski&nbsp; Girminas. </p>
             <p>feedback and recommendations are welcomed. </p>
-            <p>Quwat K. Sunny © 2020 -2022</p>
+            <p>© Quwat K. Sunny</p>
           </td>
         </tr>
       </tbody>

@@ -1,6 +1,10 @@
 Devanagari Typewriter (SIL) Change History
 ====================
 
+1.1.3 (2025-03-31)
+----------------
+* Update language tag from kgy to kgy-Deva
+
 1.1.2 (2024-06-10)
 ----------------
 * Swap the OSKFont and DisplayFont entries which were reversed in the previous update.

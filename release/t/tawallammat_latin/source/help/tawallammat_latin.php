@@ -1,7 +1,7 @@
 <?php 
   $pagename = 'Tawallammat Latin Keyboard Help';
-  $pagetitle = 'Tawallammat Latin Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 	.kbd {
 		background-color: #eee;
 		border-radius: 3px;
@@ -19,12 +19,10 @@
 	.th, .td { text-align: center; padding: 8px; }
 	.tr:nth-child(even) { background-color: #f2f2f2 }
 	.th { background-color: #4CAF50; color: white; }
-EXTRA;
+END;
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Tawallammat Latin</h1>
 
 <p>
     This keyboard covers all posible characters needed to type Tamajaq language for Latin orthography. Additional characters have been added to avoid having to switch keyboard to French or English while typing.
@@ -32,7 +30,6 @@ EXTRA;
 
 <p>Thanks to Mr. Joseph Gallop for contributing to the development of this keyboard.</p>
 	
-<h1>Keyboard Layout</h1>
 	<h2>Desktop Keyboard Layout</h2>
 	<div id='osk' data-states='default shift'></div>
 
@@ -47,8 +44,8 @@ EXTRA;
 	<p><a href="tawallammat_latin_longpress_a.jpg"><img class="keyboard" src="tawallammat_latin_longpress_a.jpg" width=40% /></a></p>
 	
 
-<h1>Special Keystrokes</h1>
-<table style="font-family:'Charis SIL';">
+<h2>Special Keystrokes</h2>
+<table style="font-family:'Charis';">
 <thead><tr><th>Keystrokes</th><th> Outputs  </th></tr></thead><tbody>
  <tr><td><kbd>,</kbd> + <kbd>C</kbd></td><td> Ç  </td></tr>
  <tr><td><kbd>,</kbd> + <kbd>c</kbd></td><td> ç  </td></tr>
@@ -158,4 +155,4 @@ EXTRA;
  <tr><td><kbd>;</kbd> + <kbd>=</kbd></td><td> =  </td></tr>
 </tbody></table>
 
-<p>© 2020 Christian Grandouiller</p>
+<p>© Christian Grandouiller</p>

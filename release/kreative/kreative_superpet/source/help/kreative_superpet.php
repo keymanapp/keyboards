@@ -383,7 +383,7 @@ END;
 	<a href="http://www.kreativekorp.com/software/fonts/index.shtml#kore"
 	target="_blank">Kreative Kore</a> fonts.
 </p>
-<p>© 2019-2022 Kreative Software</p>
+<p>© Kreative Software</p>
 <script>
 	function prep() {
 		var ua = navigator.userAgent || navigator.appVersion;

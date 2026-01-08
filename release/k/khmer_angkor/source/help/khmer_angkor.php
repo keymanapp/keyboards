@@ -22,7 +22,7 @@
 	{font-family:MoolBoran;
 	panose-1:2 11 1 0 1 1 1 1 1 1;}
 @font-face
-	{font-family:"Khmer Mondulkiri";
+	{font-family:"Busra";
 	panose-1:2 0 0 0 0 0 0 0 0 0;}
 @font-face
 	{font-family:"Khmer UI";
@@ -347,17 +347,17 @@ to switch between layouts. Strange, right? Yes, maybe, but it is not easy to
 reach for the “Shift” key one-handedly. More keys are embedded in each
 key—press and hold for a second or so to see more available keys. For example,
 to get subscript “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6098;&#6042;</span>”<span style='font-size:
+font-family:"Busra"'>&#6098;&#6042;</span>”<span style='font-size:
 10.0pt;line-height:105%'>,</span><span style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'> </span>“<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6060;</span>”<span
+105%;font-family:"Busra"'> </span>“<span lang=KHM style='font-size:
+10.0pt;line-height:105%;font-family:"Busra"'>&#6060;</span>”<span
 style='font-size:10.0pt;line-height:105%'> or</span><span style='font-size:
 10.0pt;line-height:105%;font-family:DaunPenh'> </span>“<span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6059;</span>”,
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6059;</span>”,
 press and hold on key “<span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6042;</span>” for a short while, then more
+font-family:"Busra"'>&#6042;</span>” for a short while, then more
 keys would appear, and then you may choose “<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6042;</span>”.
+10.0pt;line-height:105%;font-family:"Busra"'>&#6098;&#6042;</span>”.
 You may notice that on the Khmer Angkor keyboard for desktop, these four
 characters are on key <span style='font-family:"Khmer UI",sans-serif'>“</span>R”;
 which is why they are all packed into this one key hidden in the long press. </p>
@@ -366,7 +366,7 @@ which is why they are all packed into this one key hidden in the long press. </p
 location of each key. This may take a while to get used to, but it would be
 easier, once passed the learning curve, than pressing “Shift” each time to get
 addition characters and pressing “<span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;</span>”<span lang=KHM
+line-height:105%;font-family:"Busra"'>&#6098;</span>”<span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span>each
 time to get a subscript.</p>
 
@@ -415,34 +415,34 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Consonant</span></b></p>
+  normal'><b><span style='font-size:12.0pt;font-family:"Busra"'>Consonant</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-size:12.0pt;font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=18 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-size:12.0pt;font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Consonant</span></b></p>
+  normal'><b><span style='font-size:12.0pt;font-family:"Busra"'>Consonant</span></b></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-size:12.0pt;font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6016;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6016;
   </span><span lang=KHM style='font-size:12.0pt;font-family:"Courier New"'>[</span><span
   style='font-size:12.0pt;font-family:"Courier New"'>U+</span><span lang=KHM
   style='font-size:12.0pt;font-family:"Courier New"'>1780]</span></p>
@@ -450,411 +450,411 @@ Desktop</a></h1>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>K</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>K</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6032;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6032;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1790]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>F</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>F</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6017;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6017;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1781]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>X</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>X</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6033;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6033;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1791]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift T</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift T</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6018;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6018;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1782]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift K</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift K</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6034;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6034;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1792]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift F</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift F</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6019;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6019;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1783]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift X</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift X</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6035;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6035;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1793]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>N</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>N</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6020;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6020;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1784]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>G</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>G</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6036;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6036;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1794]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>B</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>B</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6021;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6021;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1785]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>C</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>C</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6037;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6037;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1795]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>P</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>P</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6022;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6022;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1786]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Q</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Q</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6038;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6038;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1796]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift B</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift B</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6023;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6023;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1787]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift C</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift C</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6039;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6039;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1797]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift P</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift P</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6024;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6024;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1788]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift Q</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift Q</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6040;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6040;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1798]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>M</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>M</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6025;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6025;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1789]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift J</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift J</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6041;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6041;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+1799]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Y</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Y</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6026;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6026;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178A]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>D</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>D</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6042;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6042;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+179A]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>R</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>R</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6027;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6027;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178B]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Z</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Z</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6043;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6043;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+179B]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>L</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>L</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6028;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6028;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178C]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift D</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift D</span></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6044;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6044;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+179C]</span></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>V</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>V</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6029;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6029;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178D]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift Z</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift Z</span></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6047;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6047;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+179F]</span></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>S</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>S</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6030;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6030;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178E]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift N</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift N</span></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6048;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6048;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+17A0]</span></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>H</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>H</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6031;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6031;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+178F]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>T</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>T</span></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6049;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6049;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+17A1]</span></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift L</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift L</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&nbsp;</span></p>
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&nbsp;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&nbsp;</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>&nbsp;</span></p>
   </td>
   <td width=144 valign=top style='width:107.8pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>&#6050;
+  normal'><span lang=KHM style='font-size:12.0pt;font-family:"Busra"'>&#6050;
   </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+17A2]</span></p>
   </td>
   <td width=99 valign=top style='width:74.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'>Shift G</span></p>
+  normal'><span style='font-size:12.0pt;font-family:"Busra"'>Shift G</span></p>
   </td>
  </tr>
 </table>
@@ -868,311 +868,311 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Dependent Vowel</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Dependent Vowel</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=12 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Dependent Vowel</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Dependent Vowel</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6070;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6070;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>A</span></p>
+  normal'><span style='font-family:"Busra"'>A</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6080;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6080;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>[</span></p>
+  normal'><span style='font-family:"Busra"'>[</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6071;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6071;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>I</span></p>
+  normal'><span style='font-family:"Busra"'>I</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6081;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6081;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>E</span></p>
+  normal'><span style='font-family:"Busra"'>E</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6072;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6072;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift I</span></p>
+  normal'><span style='font-family:"Busra"'>Shift I</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6082;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6082;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift E</span></p>
+  normal'><span style='font-family:"Busra"'>Shift E</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6073;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6073;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>W</span></p>
+  normal'><span style='font-family:"Busra"'>W</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6083;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6083;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift S</span></p>
+  normal'><span style='font-family:"Busra"'>Shift S</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6074;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6074;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift W</span></p>
+  normal'><span style='font-family:"Busra"'>Shift W</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6084;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6084;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C4]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>O</span></p>
+  normal'><span style='font-family:"Busra"'>O</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6075;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6075;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>U</span></p>
+  normal'><span style='font-family:"Busra"'>U</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6085;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6085;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift O</span></p>
+  normal'><span style='font-family:"Busra"'>Shift O</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6076;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6076;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift U</span></p>
+  normal'><span style='font-family:"Busra"'>Shift U</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6075;&#6086;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6075;&#6086;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BB][U+17C6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>,</span></p>
+  normal'><span style='font-family:"Busra"'>,</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6077;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6077;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BD]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift Y</span></p>
+  normal'><span style='font-family:"Busra"'>Shift Y</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6070;&#6086;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6070;&#6086;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B6][U+17C6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift A</span></p>
+  normal'><span style='font-family:"Busra"'>Shift A</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6078;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6078;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BE]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>;</span></p>
+  normal'><span style='font-family:"Busra"'>;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6075;&#6087;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6075;&#6087;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BB][U+17C7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift ,</span></p>
+  normal'><span style='font-family:"Busra"'>Shift ,</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6079;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6079;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17BF]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift [</span></p>
+  normal'><span style='font-family:"Busra"'>Shift [</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6081;&#6087;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6081;&#6087;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C1][U+17C7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift V</span></p>
+  normal'><span style='font-family:"Busra"'>Shift V</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></p>
+  normal'><span style='font-family:"Busra"'>&nbsp;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></p>
+  normal'><span style='font-family:"Busra"'>&nbsp;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6084;&#6087;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6084;&#6087;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C4][U+17C7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift ;</span></p>
+  normal'><span style='font-family:"Busra"'>Shift ;</span></p>
   </td>
  </tr>
 </table>
@@ -1186,56 +1186,56 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Sign</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Sign</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6086;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6086;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift M</span></p>
+  normal'><span style='font-family:"Busra"'>Shift M</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6087;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6087;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift H</span></p>
+  normal'><span style='font-family:"Busra"'>Shift H</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6088;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6088;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C8]</span><a
   name="_ftnref1"></a><a href="#_ftn1"><span class=MsoFootnoteReference><span
-  lang=KHM style='font-size:8.0pt;font-family:"Khmer Mondulkiri"'>[1]</span></span></a></p>
+  lang=KHM style='font-size:8.0pt;font-family:"Busra"'>[1]</span></span></a></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr ’</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr ’</span></p>
   </td>
  </tr>
 </table>
@@ -1249,209 +1249,209 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Independent Vowel</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Independent Vowel</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=8 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Independent Vowel</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Independent Vowel</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6053;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6053;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17A5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>-</span></p>
+  normal'><span style='font-family:"Busra"'>-</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6061;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6061;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AD]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift \</span></p>
+  normal'><span style='font-family:"Busra"'>Shift \</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6054;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6054;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17A6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr I</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr I</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6062;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6062;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AE]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>\</span></p>
+  normal'><span style='font-family:"Busra"'>\</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6055;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6055;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17A7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift ]</span></p>
+  normal'><span style='font-family:"Busra"'>Shift ]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6063;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6063;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AF]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr E</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr E</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6057;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6057;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17A9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr [</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr [</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6064;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6064;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr P</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr P</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6058;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6058;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>]</span></p>
+  normal'><span style='font-family:"Busra"'>]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6065;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6065;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr O</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr O</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6059;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6059;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr R</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr R</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6066;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6066;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>=</span></p>
+  normal'><span style='font-family:"Busra"'>=</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6060;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6060;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17AC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift R</span></p>
+  normal'><span style='font-family:"Busra"'>Shift R</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6067;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6067;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17B3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr ]</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr ]</span></p>
   </td>
  </tr>
 </table>
@@ -1463,157 +1463,157 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Diacritics</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Diacritics</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=6 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Diacritics</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Diacritics</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6089;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6089;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17C9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift ’</span></p>
+  normal'><span style='font-family:"Busra"'>Shift ’</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6095;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6095;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CF]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift 8</span></p>
+  normal'><span style='font-family:"Busra"'>Shift 8</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6090;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6090;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>/</span></p>
+  normal'><span style='font-family:"Busra"'>/</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6096;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6096;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift 7</span></p>
+  normal'><span style='font-family:"Busra"'>Shift 7</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6091;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6091;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>’</span></p>
+  normal'><span style='font-family:"Busra"'>’</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6094;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6094;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CE]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr =</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr =</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6092;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6092;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift -</span></p>
+  normal'><span style='font-family:"Busra"'>Shift -</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6099;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6099;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr M</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr M</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6093;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6093;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17CD]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift 6</span></p>
+  normal'><span style='font-family:"Busra"'>Shift 6</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6098;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6098;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>J</span></p>
+  normal'><span style='font-family:"Busra"'>J</span></p>
   </td>
  </tr>
 </table>
@@ -1625,105 +1625,105 @@ Desktop</a></h1>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Native Punct.</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Native Punct.</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=4 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Native Punct.</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Native Punct.</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6100;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6100;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D4]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>.</span></p>
+  normal'><span style='font-family:"Busra"'>.</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6105;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6105;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr 6</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr 6</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6101;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6101;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift .</span></p>
+  normal'><span style='font-family:"Busra"'>Shift .</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6106;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6106;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17DA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr 7</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr 7</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6102;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6102;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr ;</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr ;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6103;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6103;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17D7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift 2</span></p>
+  normal'><span style='font-family:"Busra"'>Shift 2</span></p>
   </td>
  </tr>
 </table>
@@ -1738,210 +1738,210 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Latin
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Latin
   Punct.</span></b></p>
   </td>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=7 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Latin
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Latin
   Punct.</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>! </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>! </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+0021]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift 1</span></p>
+  normal'><span style='font-family:"Busra"'>Shift 1</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>« </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>« </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+00AB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>`</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>`</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>? </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>? </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+003F]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>Shift ?</span></p>
+  normal'><span style='font-family:"Busra"'>Shift ?</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>» </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>» </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+00BB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Shift `</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>Shift `</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>“ </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>“ </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+0022]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Shift 3</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>Shift 3</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>- </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'>- </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+002D]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr S</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr S</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>. </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>. </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+002E]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr .</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr .</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>: </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>: </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+003A]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr G</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr G</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>, </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>, </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+002C]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr ,</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr ,</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>‘ </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'>‘ </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+2018]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr H</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr H</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>; </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'>; </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+003B]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr N</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr N</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>’ </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'>’ </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+2019]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr J</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr J</span></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'># </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'># </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+0023]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr C</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr C</span></p>
   </td>
   <td valign=top style='border-top:solid windowtext 1.0pt;border-left:none;
   border-bottom:none;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>&nbsp;</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>&amp; </span><span
+  normal'><span lang=EN-GB style='font-family:"Busra"'>&amp; </span><span
   lang=EN-GB style='font-family:"Courier New"'>[U+0026]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>AltGr V</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>AltGr V</span></p>
   </td>
  </tr>
 </table>
@@ -1956,14 +1956,14 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";
+  text-align:center;line-height:normal'><span lang=KHM style='font-family:"Busra";
   color:black'>&#6107;</span><span lang=KHM style='font-size:12.0pt;font-family:
-  "Khmer Mondulkiri"'> </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+17DB]</span></p>
+  "Busra"'> </span><span style='font-size:12.0pt;font-family:"Courier New"'>[U+17DB]</span></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><span style='font-family:"Khmer Mondulkiri";
+  text-align:center;line-height:normal'><span style='font-family:"Busra";
   color:black'>Shift 4</span></p>
   </td>
  </tr>
@@ -1979,49 +1979,49 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Khmer
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Khmer
   Numeral</span></b></p>
   </td>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=6 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Khmer
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Khmer
   Numeral</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span lang=EN-GB style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr style='height:15.0pt'>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6113; </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6113; </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E1]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>1</span></p>
+  normal'><span style='font-family:"Busra"'>1</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6118;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6118;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
@@ -2034,20 +2034,20 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6114; </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6114; </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E2]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>2</span></p>
+  normal'><span style='font-family:"Busra"'>2</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6119;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6119;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
@@ -2060,21 +2060,21 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6115;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6115;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E3]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>3</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>3</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6120;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6120;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
@@ -2087,21 +2087,21 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6116;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6116;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E4]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>4</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>4</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6121;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6121;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
@@ -2114,21 +2114,21 @@ Desktop</a></h1>
   <td nowrap valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6117;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6117;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E5]</span></p>
   </td>
   <td nowrap valign=top style='border-top:none;border-left:none;border-bottom:
   solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=EN-GB style='font-family:"Khmer Mondulkiri"'>5</span></p>
+  normal'><span lang=EN-GB style='font-family:"Busra"'>5</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6112;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra"'>&#6112;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17E0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
@@ -2149,157 +2149,157 @@ name="_Toc515267275">Divination Lore</a></h2>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Divination Lore</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Divination Lore</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=6 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Divination Lore</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Divination Lore</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  normal'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6129;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6129;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 1</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 1</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6134;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6134;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 6</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 6</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6130;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6130;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 2</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 2</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6135;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6135;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 7</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 7</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6131;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6131;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 3</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 3</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6136;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6136;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 8</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 8</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6132;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6132;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F4]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 4</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 4</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6137;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6137;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 9</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 9</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6133;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6133;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 5</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 5</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6128;</span><span
-  lang=KHM style='font-size:12.0pt;font-family:"Khmer Mondulkiri"'> </span><span
+  normal'><span lang=KHM style='font-family:"Busra";color:black'>&#6128;</span><span
+  lang=KHM style='font-size:12.0pt;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;font-family:"Courier New"'>[U+17F0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift 0</span></p>
+  normal'><span style='font-family:"Busra"'>AltGr Shift 0</span></p>
   </td>
  </tr>
 </table>
@@ -2312,443 +2312,443 @@ name="_Toc515267276">Khmer Lunar Dates</a></h2>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Khmer Lunar Date</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Khmer Lunar Date</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
   <td rowspan=17 valign=top style='border:none;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>&nbsp;</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>&nbsp;</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Khmer Lunar Date</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Khmer Lunar Date</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6624;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6624;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift Q</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift Q</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6640;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6640;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F0]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift G</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift G</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6625;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6625;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift W</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift W</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6641;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6641;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift H</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift H</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6626;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6626;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift E</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift E</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6642;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6642;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F2]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift J</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift J</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6627;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6627;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift R</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift R</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6643;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6643;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift K</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift K</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6628;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6628;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E4]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift T</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift T</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6644;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6644;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F4]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift L</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift L</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6629;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6629;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift Y</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift Y</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6645;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6645;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F5]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift ;</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift ;</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6630;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6630;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift U</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift U</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6646;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6646;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F6]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift ’</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift ’</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6631;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6631;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift I</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift I</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6647;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6647;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F7]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift Z</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift Z</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6632;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6632;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift O</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift O</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6648;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6648;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift X</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift X</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6633;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6633;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19E9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift P</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift P</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6649;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6649;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19F9]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift C</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift C</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6634;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6634;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19EA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift [</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift [</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6650;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6650;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FA]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift V</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift V</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6635;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6635;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19EB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift ]</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift ]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6651;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6651;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FB]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift B</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift B</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6636;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6636;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19EC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift A</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift A</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6652;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6652;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift N</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift N</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6637;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6637;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19ED]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift S</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift S</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6653;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6653;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FD]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift M</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift M</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6638;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6638;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19EE]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift D</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift D</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6654;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6654;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FE]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift ,</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift ,</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6639;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6639;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19EF]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift F</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift F</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6655;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6655;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+19FF]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Shift . </span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Shift . </span></p>
   </td>
  </tr>
 </table>
@@ -2761,86 +2761,86 @@ name="_Toc515267277">Discouraged/Obsolete characters</a> </h2>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Character</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Character</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6104;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6104;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17D8]
   </span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr L</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr L</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6056;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6056;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17A8]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr T</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr T</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6108;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6108;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17DC]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr Q</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr Q</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6097;</span><a
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6097;</span><a
   name="_ftnref2"></a><a href="#_ftn2"><span class=MsoFootnoteReference><span
-  lang=EN-GB style='font-size:8.0pt;line-height:115%;font-family:"Khmer Mondulkiri";
+  lang=EN-GB style='font-size:8.0pt;line-height:115%;font-family:"Busra";
   color:black'>[2]</span></span></a><span lang=KHM style='font-size:12.0pt;
-  line-height:115%;font-family:"Khmer Mondulkiri"'> </span><span
+  line-height:115%;font-family:"Busra"'> </span><span
   style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17D1]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr 3</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr 3</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6099;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6099;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17D3]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr M</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr M</span></p>
   </td>
  </tr>
 </table>
@@ -2853,54 +2853,54 @@ name="_Toc515267278">Characters used in minority languages</a> </h2>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Other Character</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Other Character</span></b></p>
   </td>
   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><b><span style='font-family:"Khmer Mondulkiri"'>Keystroke</span></b></p>
+  115%'><b><span style='font-family:"Busra"'>Keystroke</span></b></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6045;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6045;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+179D]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr K</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr K</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6046;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6046;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+179E]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr B</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr B</span></p>
   </td>
  </tr>
  <tr>
   <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span lang=KHM style='font-family:"Khmer Mondulkiri";color:black'>&#6109;</span><span
-  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Khmer Mondulkiri"'>
+  115%'><span lang=KHM style='font-family:"Busra";color:black'>&#6109;</span><span
+  lang=KHM style='font-size:12.0pt;line-height:115%;font-family:"Busra"'>
   </span><span style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>[U+17DD]</span></p>
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  115%'><span style='font-family:"Khmer Mondulkiri"'>AltGr W</span></p>
+  115%'><span style='font-family:"Busra"'>AltGr W</span></p>
   </td>
  </tr>
 </table>
@@ -3006,7 +3006,7 @@ for the instructions.</p>
 based keyboard. <a name="_Hlk496269860">You may type a word in an order of how
 it is spelled, not how it appears to be, especially when the vowel is to the
 left of the consonant. For example, to type the word “</a><span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6031;&#6082;</span>”
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6031;&#6082;</span>”
 which means ‘tea’, one should type the consonant first and then the vowel (i.e.
 press key “T” and then “Shift E”).</p>
 
@@ -3029,30 +3029,30 @@ name="_Toc515267282">Subscript + Vowel</a></h3>
 
 <p class=MsoNormal>When a subscript and a vowel occur together, the vowel has
 to come after the subscript. For instance, “<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6017;&#6098;&#6040;&#6082;&#6042;</span>”<span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
-</span>and<span style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+10.0pt;line-height:105%;font-family:"Busra"'>&#6017;&#6098;&#6040;&#6082;&#6042;</span>”<span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>
+</span>and<span style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>
 </span><a name="_Hlk496010573">“</a><span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6017;&#6082;&#6098;&#6040;&#6042;</span>”<span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+line-height:105%;font-family:"Busra"'>&#6017;&#6082;&#6098;&#6040;&#6042;</span>”<span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>
 </span>look the same, but they are encoded differently. </p>
 
 <p class=MsoListParagraph style='margin-left:42.8pt;text-indent:-.25in'><span
 style='font-size:9.0pt;line-height:105%'>1.</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6017;&#6098;&#6040;&#6082;&#6042; = &#6017; <span
+"Busra"'>&#6017;&#6098;&#6040;&#6082;&#6042; = &#6017; <span
 style='background:lightgrey'>&#6098;&#6040; &#6082;</span> &#6042;</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&nbsp;&nbsp;&nbsp;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&nbsp;&nbsp;&nbsp;
 </span>(correct)</p>
 
 <p class=MsoListParagraph style='margin-left:42.8pt;text-indent:-.25in'><span
 style='font-size:9.0pt;line-height:105%'>2.</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6017;&#6082;&#6098;&#6040;&#6042; = &#6017; <span
+"Busra"'>&#6017;&#6082;&#6098;&#6040;&#6042; = &#6017; <span
 style='background:lightgrey'>&#6082; &#6098;&#6040;</span> &#6042;</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&nbsp;&nbsp;&nbsp;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&nbsp;&nbsp;&nbsp;
 </span>(incorrect)</p>
 
 <p class=MsoNormal>Thanks to the context dependent rules, Khmer Angkor keyboard
@@ -3061,17 +3061,17 @@ is able to output the second typing sequence the same as that of the first one.<
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 name="_Toc515267283">Subscript +</a><span lang=KHM style='font-size:19.5pt;
 line-height:105%;font-family:"MoolBoran",sans-serif'> </span><span lang=KHM
-style='font-size:11.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6042;</span><span
+style='font-size:11.0pt;line-height:105%;font-family:"Busra"'>&#6098;&#6042;</span><span
 lang=KHM style='font-size:19.5pt;line-height:105%;font-family:"MoolBoran",sans-serif'>
 </span><span style='font-family:"Courier New"'>[U+17D2] [U+179A]</span></h3>
 
 <p class=MsoNormal>According to the spelling rule, in a sequence of two
 subscript and one of which is <span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6042;</span><span
+line-height:105%;font-family:"Busra"'>&#6098;&#6042;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17D2]</span> <span style='font-family:"Courier New"'>[U+179A],</span>
-the <span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6042;</span><span
+the <span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6098;&#6042;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17D2] [U+179A]</span> should come after another subscript.</p>
@@ -3080,19 +3080,19 @@ lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 10.0pt;line-height:105%;font-family:Symbol'>·</span><span style='font-size:
 7.0pt;line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6016;&#6025;&#6098;&#6023;&#6098;&#6042;&#6073;&#6043; = &#6016;
+"Busra"'>&#6016;&#6025;&#6098;&#6023;&#6098;&#6042;&#6073;&#6043; = &#6016;
 &#6025; <span style='background:lightgrey'>&#6098;&#6023; &#6098;&#6042;</span>
 &#6073; &#6043;</span><span style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&nbsp;&nbsp; </span>(correct)</p>
+font-family:"Busra"'>&nbsp;&nbsp; </span>(correct)</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
 10.0pt;line-height:105%;font-family:Symbol'>·</span><span style='font-size:
 7.0pt;line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span><span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6016;&#6025;&#6098;&#6042;&#6098;&#6023;&#6073;&#6043; = &#6016;
+"Busra"'>&#6016;&#6025;&#6098;&#6042;&#6098;&#6023;&#6073;&#6043; = &#6016;
 &#6025; <span style='background:lightgrey'>&#6098;&#6042; &#6098;&#6023;</span>
 &#6073; &#6043;</span><span style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&nbsp;&nbsp; </span>(incorrect)</p>
+font-family:"Busra"'>&nbsp;&nbsp; </span>(incorrect)</p>
 
 <p class=MsoNormal>As you can see the two-character sequences yield the same
 visual output on the screen. Once again, Khmer Angkor will be able to
@@ -3111,12 +3111,12 @@ sequence. If one typed a consonant shifter before a subscript, the order would
 be switched silently.</span></p>
 
 <p class=MsoNormal><span lang=KHM style='font-size:12.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040;
+font-family:"Busra"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=KHM
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6040;
 <span style='background:lightgrey'>&#6089; &#6098;&#6041;</span> &#6070; &#6020;
 </span><span style='font-size:10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'> </span><span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6040;
 <span style='background:lightgrey'>&#6098;&#6041; &#6089;</span> &#6070; &#6020;</span></p>
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
@@ -3131,58 +3131,58 @@ name="_Toc515267286">Vowel with Nikahit </a><span style='font-family:"Courier Ne
 <p class=MsoNormal>Nikahit is considered as a sign in the Unicode Standard.
 However its function is more like that of a vowel. It is usually combined with
 another vowel, i.e. <span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6075;</span><span lang=KHM> </span><span
+font-family:"Busra"'>&#6075;</span><span lang=KHM> </span><span
 style='font-family:"Courier New"'>[U+17BB]</span><span lang=KHM
 style='font-family:"Courier New"'> </span><span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070;</span><span lang=KHM> </span><span
+line-height:105%;font-family:"Busra"'>&#6070;</span><span lang=KHM> </span><span
 style='font-family:"Courier New"'>[U+17B6],</span> and it should always be
 typed after these vowels.</p>
 
 <p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;
 <span style='background:lightgrey'>&#6086; &#6075;</span></span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>       </span><span
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>       </span><span
 style='font-size:10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'> </span><span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;
 <span style='background:lightgrey'>&#6075; &#6086;</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'> <span lang=KHM>&#6016; <span
+105%;font-family:"Busra"'> <span lang=KHM>&#6016; <span
 style='background:lightgrey'>&#6086; &#6070;</span> &nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 style='font-size:10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'> </span><span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;
 <span style='background:lightgrey'>&#6070; &#6086;</span></span></p>
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 name="_Toc515267287">Vowel </a><a name="_Hlk496014667"></a><span lang=KHM
-style='font-size:11.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6084;</span><span
+style='font-size:11.0pt;line-height:105%;font-family:"Busra"'>&#6084;</span><span
 lang=KHM style='font-size:19.5pt;line-height:105%;font-family:"MoolBoran",sans-serif'>
 </span><span style='font-family:"Courier New"'>[U+17C4]</span> and Vowel <span
-lang=KHM style='font-size:11.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6078;
+lang=KHM style='font-size:11.0pt;line-height:105%;font-family:"Busra"'>&#6078;
 </span><span style='font-family:"Courier New"'>[U+17BE]</span></h3>
 
 <p class=MsoNormal>These two vowels could be mistakenly typed by adding<span
 style='font-family:"Khmer UI",sans-serif'> </span><span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070;</span><span
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6070;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:"Khmer UI",sans-serif'>
 </span><span lang=KHM style='font-family:"Courier New"'>[</span><span
 style='font-family:"Courier New"'>U+17B6] </span>and<span style='font-family:
 "Khmer UI",sans-serif'> </span><span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6081;</span><span lang=KHM
+line-height:105%;font-family:"Busra"'>&#6081;</span><span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:"Khmer UI",sans-serif'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17C1] </span>respectively to <span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6081;</span><span
+10.0pt;line-height:105%;font-family:"Busra"'>&#6081;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17C1]</span>. Given this sequence, Khmer Angkor would
 transform them to <span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6084;</span><span lang=KHM style='font-size:
+font-family:"Busra"'>&#6084;</span><span lang=KHM style='font-size:
 10.0pt;line-height:105%;font-family:"Courier New"'> </span><span
 style='font-family:"Courier New"'>[U+17C4] </span>and <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6078;</span><span
-lang=KHM style='font-family:"Khmer Mondulkiri"'> </span><span style='font-family:
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6078;</span><span
+lang=KHM style='font-family:"Busra"'> </span><span style='font-family:
 "Courier New"'>[U+17BE]</span>, the correct vowel encodings.</p>
 
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
@@ -3190,22 +3190,22 @@ name="_Toc515267288">Visually Identical Subscript</a></h3>
 
 <p class=MsoNormal>Two subscripts look exactly the same, but they are encoded
 with different Unicode code points, <span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6026;</span><span
+line-height:105%;font-family:"Busra"'>&#6098;&#6026;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17D2][U+178A] </span>and<span lang=KHM style='font-size:18.0pt;
 line-height:105%;font-family:DaunPenh'> </span><span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;&#6031;</span><span
+10.0pt;line-height:105%;font-family:"Busra"'>&#6098;&#6031;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 lang=KHM style='font-family:"Courier New"'>[</span><span style='font-family:
 "Courier New"'>U+17D2][U+178F]</span>. According to the spelling rule, it
 governs that the first should come after <span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6030;</span><span lang=KHM
+line-height:105%;font-family:"Busra"'>&#6030;</span><span lang=KHM
 style='font-size:10.0pt;line-height:105%;font-family:"Khmer OS"'> </span><span
 lang=EN-GB style='font-family:"Courier New"'>[U+178E] </span>and the latter
 should come after<span style='font-size:10.0pt;line-height:105%;font-family:
 "Khmer OS"'> </span><span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6035;</span><span lang=KHM style='font-size:
+font-family:"Busra"'>&#6035;</span><span lang=KHM style='font-size:
 10.0pt;line-height:105%;font-family:"Khmer OS"'> </span><span lang=EN-GB
 style='font-family:"Courier New"'>[U+1793]</span>.</p>
 
@@ -3215,18 +3215,18 @@ style='font-family:"Courier New"'>[U+1793]</span>.</p>
 after another, the vowel would switch to the one typed last.<span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span>For
 example, if the current character is vowel <span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070;</span><span
+10.0pt;line-height:105%;font-family:"Busra"'>&#6070;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 style='font-family:"Courier New"'>[U+17B6]</span>, and then <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6082;</span><span
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6082;</span><span
 lang=KHM style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span><span
 style='font-family:"Courier New"'>[U+17C2]</span> is typed, the final output
-would be<span style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+would be<span style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>
 </span><span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6082;</span><span lang=KHM> </span><span
+"Busra"'>&#6082;</span><span lang=KHM> </span><span
 style='font-family:"Courier New"'>[U+17C2]</span>, not <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070;</span><span
-lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6070;</span><span
+lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>
 </span><span style='font-family:"Courier New"'>[U+17B6]</span>.</p>
 
 <p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -3238,31 +3238,31 @@ cases:</p>
 style='font-family:Symbol'>·</span><span style='font-size:7.0pt;line-height:
 105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>If the first vowel is <span lang=KHM style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'>&#6081;</span><span lang=KHM
+105%;font-family:"Busra"'>&#6081;</span><span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:"Khmer UI",sans-serif'> </span><span
 style='font-family:"Courier New"'>[U+17C1]</span><span style='font-family:"Khmer UI",sans-serif'>
 </span>and the second is <span lang=KHM style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'>&#6072; </span><span style='font-family:
+105%;font-family:"Busra"'>&#6072; </span><span style='font-family:
 "Courier New"'>[U+17B8]</span><span style='font-family:DaunPenh'>&#8203; </span>or
 vice versa, then the switch would not happen, but the output would be <span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6078;</span><span
-lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6078;</span><span
+lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>
 </span><span style='font-family:"Courier New"'>[U+17BE]</span> instead.</p>
 
 <p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'><span
 style='font-family:Symbol'>·</span><span style='font-size:7.0pt;line-height:
 105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>If the first vowel is <span lang=KHM style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'>&#6081;</span><span lang=KHM
+105%;font-family:"Busra"'>&#6081;</span><span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:"Khmer UI",sans-serif'> </span><span
 style='font-family:"Courier New"'>[U+17C1]</span><span style='font-family:"Khmer UI",sans-serif'>
 </span>and the second is <span lang=KHM style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'>&#6070;</span><span lang=KHM
-style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
+105%;font-family:"Busra"'>&#6070;</span><span lang=KHM
+style='font-size:12.0pt;line-height:105%;font-family:"Busra"'> </span><span
 style='font-family:"Courier New"'>[U+17B8]</span> or vice versa, then the
 switch would not happen, but the output would be <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6084;</span><span
-lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6084;</span><span
+lang=KHM style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>
 </span><span style='font-family:"Courier New"'>[U+17C4]</span> instead.</p>
 
 <p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'><span
@@ -3271,95 +3271,95 @@ style='font-family:Symbol'>·</span><span style='font-size:7.0pt;line-height:
 </span>If the first vowel is on the above vowels<a name="_ftnref3"></a><a
 href="#_ftn3"><span class=MsoFootnoteReference><span style='font-size:8.0pt;
 line-height:105%'>[3]</span></span></a> and the second is <span lang=KHM
-style='font-size:12.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6075;
+style='font-size:12.0pt;line-height:105%;font-family:"Busra"'>&#6075;
 </span><span style='font-family:"Courier New"'>[U+17BB]</span> or vice versa,
 then the switch would not happen, but the output would be the corresponding
 consonant shifter instead. For examples: a sequence of <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6047;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6047;
 &#6072; &#6075;</span> or <span lang=KHM style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'>&#6047; &#6075; &#6072;</span> would be
+105%;font-family:"Busra"'>&#6047; &#6075; &#6072;</span> would be
 automated as <span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6047;&#6090;&#6072; (&#6047; &#6090; &#6072;)</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>;</span>
-<span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040;
+font-family:"Busra"'>&#6047;&#6090;&#6072; (&#6047; &#6090; &#6072;)</span><span
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>;</span>
+<span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6040;
 &#6072; &#6075;</span><span lang=KHM style='font-size:18.0pt;line-height:105%;
 font-family:DaunPenh'> </span>or <span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040; &#6075; &#6072;</span>
+line-height:105%;font-family:"Busra"'>&#6040; &#6075; &#6072;</span>
 would be automated as <span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6040;&#6089;&#6072; (&#6040; &#6089; &#6072;)</span>.</p>
+font-family:"Busra"'>&#6040;&#6089;&#6072; (&#6040; &#6089; &#6072;)</span>.</p>
 
 <p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'><span
 style='font-family:Symbol'>·</span><span style='font-size:7.0pt;line-height:
 105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>When <span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6075; </span><span style='font-family:"Courier New"'>[U+17BB]</span>
+"Busra"'>&#6075; </span><span style='font-family:"Courier New"'>[U+17BB]</span>
 is typed after <span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6070;&#6086;</span>, it will be transformed
+font-family:"Busra"'>&#6070;&#6086;</span>, it will be transformed
 to a consonant shifter corresponding with the consonant before <span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070;&#6086;</span><span
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6070;&#6086;</span><span
 lang=KHM> </span>before which the shifter will be placed. For example, </p>
 
 <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6047;&#6070;&#6086;
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6047;&#6070;&#6086;
 </span><span style='font-family:"Courier New"'>+</span><span style='font-family:
 DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6075; &nbsp; </span><span style='font-size:
+font-family:"Busra"'>&#6075; &nbsp; </span><span style='font-size:
 10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span lang=KHM
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6047;&#6090;&#6070;&#6086;
+10.0pt;line-height:105%;font-family:"Busra"'> </span><span lang=KHM
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6047;&#6090;&#6070;&#6086;
 (&#6047; &#6090; &#6070;&#6086;)</span><span lang=KHM> </span><span
 style='font-family:"Khmer UI",sans-serif'>and</span></p>
 
 <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040;&#6070;&#6086;
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6040;&#6070;&#6086;
 </span><span style='font-family:"Courier New"'>+</span><span style='font-family:
 DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6075; &nbsp;&nbsp; </span><span
+font-family:"Busra"'>&#6075; &nbsp;&nbsp; </span><span
 style='font-size:10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6040;&#6089;&#6070;&#6086;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'> </span><span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6040;&#6089;&#6070;&#6086;
 (&#6040; &#6089; &#6070;&#6086;)</span>.</p>
 
 <p class=MsoListParagraph style='margin-left:.75in;text-indent:-.25in'><span
 style='font-family:Symbol'>·</span><span style='font-size:7.0pt;line-height:
 105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>When <span lang=KHM style='font-size:10.0pt;line-height:105%;font-family:
-"Khmer Mondulkiri"'>&#6070; </span>or <span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6075; </span>is typed after <span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6086;</span>,
+"Busra"'>&#6070; </span>or <span lang=KHM style='font-size:10.0pt;
+line-height:105%;font-family:"Busra"'>&#6075; </span>is typed after <span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6086;</span>,
 the order will be reversed. For example,</p>
 
 <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;
 </span><span style='font-family:"Courier New"'>+</span><span style='font-family:
 DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6086; </span><span style='font-family:"Courier New"'>+</span><span
+font-family:"Busra"'>&#6086; </span><span style='font-family:"Courier New"'>+</span><span
 style='font-family:DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6075;
+line-height:105%;font-family:"Busra"'>&#6075;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;line-height:
 105%;font-family:Symbol'>Þ</span><span style='font-size:10.0pt;line-height:
-105%;font-family:"Khmer Mondulkiri"'> </span><span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;&#6075;&#6086; (&#6016;
+105%;font-family:"Busra"'> </span><span lang=KHM style='font-size:
+10.0pt;line-height:105%;font-family:"Busra"'>&#6016;&#6075;&#6086; (&#6016;
 &#6075; &#6086;)</span><span lang=KHM> </span><span style='font-family:"Khmer UI",sans-serif'>and</span></p>
 
 <p class=MsoListParagraph style='margin-left:1.25in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o</span><span style='font-size:7.0pt;
 line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp; </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;
 </span><span style='font-family:"Courier New"'>+</span><span style='font-family:
 DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;line-height:105%;
-font-family:"Khmer Mondulkiri"'>&#6086; </span><span style='font-family:"Courier New"'>+</span><span
+font-family:"Busra"'>&#6086; </span><span style='font-family:"Courier New"'>+</span><span
 style='font-family:DaunPenh'> </span><span lang=KHM style='font-size:10.0pt;
-line-height:105%;font-family:"Khmer Mondulkiri"'>&#6070; &nbsp;&nbsp;&nbsp;&nbsp;
+line-height:105%;font-family:"Busra"'>&#6070; &nbsp;&nbsp;&nbsp;&nbsp;
 </span><span style='font-size:10.0pt;line-height:105%;font-family:Symbol'>Þ</span><span
-style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'> </span><span
-lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6016;&#6070;&#6086;
+style='font-size:10.0pt;line-height:105%;font-family:"Busra"'> </span><span
+lang=KHM style='font-size:10.0pt;line-height:105%;font-family:"Busra"'>&#6016;&#6070;&#6086;
 (&#6016; &#6070; &#6086;)</span>.</p>
 
 <p class=MsoNormal>&nbsp;</p>
@@ -3379,7 +3379,7 @@ line-height:105%'>[4]</span></span></a>, a consonant shifter or a subscript.</p>
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
 Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>No two consecutive subscript signs (<span lang=KHM style='font-size:
-10.0pt;line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;</span>) are
+10.0pt;line-height:105%;font-family:"Busra"'>&#6098;</span>) are
 allowed.</p>
 
 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
@@ -3419,17 +3419,17 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6033;&#6098;&#6036; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6033; &#6098;&#6036;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)</span></p>
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6033; &#6098;&#6036;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)</span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6049;</span></p>
   </td>
  </tr>
@@ -3443,18 +3443,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6036;&#6098;&#6025; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6036; &#6098;&#6025;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6036; &#6098;&#6025;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6059;</span></p>
   </td>
  </tr>
@@ -3468,18 +3468,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6059;&#6075; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6036; &#6098;&#6025;
-  &#6075;</span><span lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6036; &#6098;&#6025;
+  &#6075;</span><span lang=EN-GB style='font-size:10.0pt;font-family:"Busra";
   color:black'>) </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6060;</span></p>
   </td>
  </tr>
@@ -3493,18 +3493,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6061;&#6070; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6061; &#6070;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6061; &#6070;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6025;</span></p>
   </td>
  </tr>
@@ -3518,18 +3518,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6062;&#6070; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6062; &#6070;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6062; &#6070;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6025;</span></p>
   </td>
  </tr>
@@ -3543,18 +3543,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6038;&#6098;&#6025; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6038; &#6098;&#6025;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6038; &#6098;&#6025;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6061;</span></p>
   </td>
  </tr>
@@ -3568,18 +3568,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6061;&#6075; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6038; &#6098;&#6025;
-  &#6075;</span><span lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6038; &#6098;&#6025;
+  &#6075;</span><span lang=EN-GB style='font-size:10.0pt;font-family:"Busra";
   color:black'>) </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6062;</span></p>
   </td>
  </tr>
@@ -3593,20 +3593,20 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6038;&#6098;&#6027; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6038; &#6098;&#6027;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6038; &#6098;&#6027;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6064;</span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>&nbsp; </span></p>
+  font-family:"Busra";color:black'>&nbsp; </span></p>
   </td>
  </tr>
  <tr>
@@ -3619,18 +3619,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6055;&#6071; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6055; &#6071;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6055; &#6071;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6065;</span></p>
   </td>
  </tr>
@@ -3644,19 +3644,19 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6055;&#6092; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6055; &#6092;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)</span></p>
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6055; &#6092;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)</span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6065;</span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>&nbsp; </span></p>
+  font-family:"Busra";color:black'>&nbsp; </span></p>
   </td>
  </tr>
  <tr>
@@ -3669,20 +3669,20 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6055;&#6093; </span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6055; &#6093;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6055; &#6093;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6065;</span><span lang=EN-GB style='font-size:10.0pt;
-  font-family:"Khmer Mondulkiri";color:black'>&nbsp;&nbsp; </span></p>
+  font-family:"Busra";color:black'>&nbsp;&nbsp; </span></p>
   </td>
  </tr>
  <tr>
@@ -3695,18 +3695,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6026;&#6098;&#6034; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6026; &#6098;&#6034;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6026; &#6098;&#6034;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6026;&#6098;&#6027;</span></p>
   </td>
  </tr>
@@ -3720,18 +3720,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6033;&#6098;&#6027; </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>&#6033; &#6098;&#6027;</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>&#6033; &#6098;&#6027;</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>&#6033;&#6098;&#6034;</span></p>
   </td>
  </tr>
@@ -3745,18 +3745,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ពន្ឋ </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ព ន ្ឋ</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>ព ន ្ឋ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ពន្ធ</span></p>
   </td>
  </tr>
@@ -3770,18 +3770,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ព័ន្ឋ </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ព ័ ន ្ឋ</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>ព ័ ន ្ឋ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ព័ន្ធ</span></p>
   </td>
  </tr>
@@ -3795,18 +3795,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឪ្យ </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ឪ ្យ</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>ឪ ្យ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឱ្យ</span></p>
   </td>
  </tr>
@@ -3820,18 +3820,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឳ្យ </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ឳ ្យ</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>ឳ ្យ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឱ្យ</span></p>
   </td>
  </tr>
@@ -3845,18 +3845,18 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ញ្វ </span><span lang=EN-GB style='font-size:
-  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
-  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ញ ្វ</span><span
-  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  10.0pt;font-family:"Busra";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Busra";color:black'>ញ ្វ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Busra";color:black'>)&nbsp;
   </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ព្វា</span></p>
   </td>
  </tr>
@@ -3870,14 +3870,14 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>េ ្យ ឺ </span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឿ</span></p>
   </td>
  </tr>
@@ -3891,14 +3891,14 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>េ ្យ ឹ</span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឿ</span></p>
   </td>
  </tr>
@@ -3911,14 +3911,14 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>េ ្យ ី</span></p>
   </td>
   <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
-  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Busra";
   color:black'>ឿ</span></p>
   </td>
  </tr>
@@ -3966,24 +3966,24 @@ Note the different between this character and <span lang=KHM style='font-size:
 
 <p class=MsoFootnoteText><a name="_ftn3"></a><a href="#_ftnref3"><span
 class=MsoFootnoteReference><span lang=EN-GB style='font-size:8.0pt'>[3]</span></span></a>
-<span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6071;</span><span
+<span lang=KHM style='font-family:"Busra"'>&#6071;</span><span
 lang=KHM style='font-family:"Khmer OS"'> </span><span lang=EN-GB
 style='font-family:"Courier New"'>[U+17B7]</span><span lang=EN-GB>,</span><span
 lang=EN-GB style='font-family:"Khmer OS"'> </span><span lang=KHM
-style='font-family:"Khmer Mondulkiri"'>&#6072;</span><span lang=KHM
+style='font-family:"Busra"'>&#6072;</span><span lang=KHM
 style='font-family:"Khmer OS"'> </span><span lang=EN-GB style='font-family:
 "Courier New"'>[U+17B8]</span><span lang=EN-GB>,</span><span lang=EN-GB
-style='font-family:"Khmer OS"'> </span><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6073;
+style='font-family:"Khmer OS"'> </span><span lang=KHM style='font-family:"Busra"'>&#6073;
 </span><span lang=EN-GB style='font-family:"Courier New"'>[U+17B9]</span><span
 lang=EN-GB>,</span><span lang=EN-GB style='font-family:"Khmer OS"'> </span><span
-lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6074;</span><span lang=KHM
+lang=KHM style='font-family:"Busra"'>&#6074;</span><span lang=KHM
 style='font-family:"Khmer OS"'> </span><span lang=EN-GB style='font-family:
 "Courier New"'>[U+17BA]</span><span lang=EN-GB>,</span><span lang=EN-GB
-style='font-family:"Khmer OS"'> </span><span lang=KHM style='font-family:"Khmer Mondulkiri"'>&#6078;</span><span
+style='font-family:"Khmer OS"'> </span><span lang=KHM style='font-family:"Busra"'>&#6078;</span><span
 lang=KHM style='font-family:"Khmer OS"'> </span><span lang=EN-GB
 style='font-family:"Courier New"'>[U+17BE]</span><span lang=EN-GB>, and</span><span
 lang=EN-GB style='font-family:"Khmer OS"'> </span><span lang=KHM
-style='font-family:"Khmer Mondulkiri"'>&#6070;&#6086;</span><span lang=KHM
+style='font-family:"Busra"'>&#6070;&#6086;</span><span lang=KHM
 style='font-family:"Khmer OS"'> </span><span lang=EN-GB style='font-family:
 "Courier New"'>[U+17B6] [U+17C6]</span><span lang=EN-GB> are considered as
 superscript vowels or above vowels.</span></p>
@@ -3996,13 +3996,13 @@ superscript vowels or above vowels.</span></p>
 class=MsoFootnoteReference><span lang=EN-GB style='font-size:8.0pt'>[4]</span></span></a>
 Three characters play a role similar to that of vowels, thus they are called
 ‘pseudo vowel’. <br>
-They are: <span lang=KHM style='font-size:8.0pt;font-family:"Khmer Mondulkiri"'>&#6086;
+They are: <span lang=KHM style='font-size:8.0pt;font-family:"Busra"'>&#6086;
 </span><span style='font-family:"Courier New"'>[U+17C6]</span>,<span lang=KHM
 style='font-size:16.0pt;font-family:DaunPenh'> </span><span lang=KHM
-style='font-size:8.0pt;font-family:"Khmer Mondulkiri"'>&#6087;</span><span
+style='font-size:8.0pt;font-family:"Busra"'>&#6087;</span><span
 lang=KHM> </span><span style='font-family:"Courier New"'>[U+17C7]</span>, and<span
 lang=KHM style='font-size:16.0pt;font-family:DaunPenh'> </span><span lang=KHM
-style='font-size:8.0pt;font-family:"Khmer Mondulkiri"'>&#6088;</span><span
+style='font-size:8.0pt;font-family:"Busra"'>&#6088;</span><span
 lang=KHM> </span><span style='font-family:"Courier New"'>[U+17C8]</span>.</p>
 
 </div>
@@ -4020,7 +4020,7 @@ lang=KHM> </span><span style='font-family:"Courier New"'>[U+17C8]</span>.</p>
     To get Khmer fonts, you may visit one of the three sources below:
 <ul style="list-style-type:circle">
     <li><a href="http://www.khmeros.info/?q=en/fonts">Khmer Fonts by the Khmer Software Initiative</a></li>
-    <li><a href="https://software.sil.org/mondulkiri">Khmer Font by SIL International</a></li>
+    <li><a href="https://software.sil.org/busra">Khmer Font by SIL International</a></li>
     <li><a href="https://fonts.google.com/?subset=khmer">Khmer Fonts by Google</a> </li>
 </ul>
 

@@ -28,8 +28,6 @@ Except for the optional accents which are not required, the keyboard will notify
 <h4>Function</h4>
 <p>The Obolo Chwerty keyboard follows the English (QWERTY US) layout. On computers, you can type all of the special Obolo letters with a single keystroke using this keyboard. Here is how:</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

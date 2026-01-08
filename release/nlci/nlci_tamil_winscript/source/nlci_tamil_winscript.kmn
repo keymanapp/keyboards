@@ -4,7 +4,7 @@ store(&COPYRIGHT) '© NLCI Bangalore'
 store(&BITMAP) 'nlci_tamil_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_tamil_winscript.kvks'
 store(&TARGETS) 'any'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.2'
 store(&LAYOUTFILE) 'nlci_tamil_winscript.keyman-touch-layout'
 begin Unicode > use(main)
 
@@ -13,6 +13,8 @@ group(main) using keys
 store(vowelKeys) 'AiIuUeEYoOVH'
 store(vowels) 'ஆஇஈஉஊஎஏஐஒஓஔஃ'
 store(vowelMatras) 'ாிீுூெேைொோௌஃ'   
+store(Depvowels) U+0BBE .. U+0BC2 U+0BC6 .. U+0BCC
+store(Indvowels) U+0B85 .. U+0B8A U+0B8E .. U+0B90 U+0B92 .. U+0B94
 
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
@@ -37,6 +39,11 @@ c Adjust the behavior of 'a'
 any(consonants) + 'a' > context dk(a)
 dk(a) + 'a' > 'ா' dk(aa)
 'ா' dk(aa) + 'a' > 'அ'
+
+ c Add nukta
+any(Depvowels) + [K_F] > U+1133C index(Depvowels,1) c nukta must position before dependent vowels
+any(consonants) + [K_F] > context U+1133C
+any(Indvowels) + [K_F] > context U+1133C
 
 c Adjust the behavior of 'e'
 'எ' + 'e' > 'ஏ'      
@@ -106,6 +113,7 @@ c Add \
  '\' + 'L' > 'ழ'
  '\' + 'r' > 'ற'  
  
+
  c Restrict the ZW characters 
 U+200C + 'x' > context beep
 U+200D + 'X' > context beep

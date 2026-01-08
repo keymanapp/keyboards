@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Myanmar3 (SIL)</Name>
-    <Copyright URL="">© 2015-2021 SIL International</Copyright>
-    <Description>This keyboard is designed for typing in the Myanmar (Burmese) language.
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for typing in the Myanmar (Burmese) language.
 The Keyman keyboard is an updated and modified version of the Myanmar3
 keyboard layout originally developed by Myanmar NLP on MSKLC software.</Description>
   </Info>
@@ -86,18 +87,6 @@ keyboard layout originally developed by Myanmar NLP on MSKLC software.</Descript
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Bold.ttf</Name>
-      <Description>Font Padauk Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</Name>
-      <Description>Font Padauk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\build\sil_myanmar_my3.js</Name>
       <Description>File sil_myanmar_my3.js</Description>
       <CopyLocation>0</CopyLocation>
@@ -151,12 +140,34 @@ keyboard layout originally developed by Myanmar NLP on MSKLC software.</Descript
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Bold.ttf</Name>
+      <Description>Font Padauk Book Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Medium.ttf</Name>
+      <Description>Font Padauk Book Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</Name>
+      <Description>Font Padauk Book</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-SemiBold.ttf</Name>
+      <Description>Font Padauk Book SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Myanmar3 (SIL)</Name>
       <ID>sil_myanmar_my3</ID>
-      <Version>1.7.2</Version>
       <OSKFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</DisplayFont>
       <Languages>
@@ -164,9 +175,9 @@ keyboard layout originally developed by Myanmar NLP on MSKLC software.</Descript
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="myanmar" Relationship="deprecates" />
-    <RelatedPackage ID="burmese02" Relationship="deprecates" />
+    <RelatedPackage ID="myanmar" Relationship="deprecates"/>
+    <RelatedPackage ID="burmese02" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

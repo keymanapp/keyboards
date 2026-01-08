@@ -96,7 +96,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
     <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
 
 <h2>Notes on touch layout</h2>
-<div class='cree'>
+
 <h3>Unshifted</h3>
 <table class="keyboard-layer">
 <tr >
@@ -193,13 +193,14 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
 	<td  align='center'>⌫</td>
 </tr>
 </table>
+
 <div class='vspace'></div>
 <ul>
 	<li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.</li>
 	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
 	<li>Common punctuation marks can be found by pressing and holding on the full stop key (᙮) on the right side of the space bar on the Shifted layer.</li>
 </ul>
-<div class='vspace'></div></div>
+<div class='vspace'></div>
 <div class='vspace'></div>
 
 <h2>Keyboard Layouts</h2>
@@ -213,8 +214,3 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
   <h3>Mobile Keyboard Layout</h3>
   <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
--->
-
-</div>
-
-<br/>

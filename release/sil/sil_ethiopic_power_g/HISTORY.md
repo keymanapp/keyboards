@@ -1,6 +1,10 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.6 (2024-12-03)
+----------------
+* Fixed language tags
+
 1.2.5 (2024-09-16)
 -------------------
 * Removed .js from .kps so there are no expectations of working on mobile devices

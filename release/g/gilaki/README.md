@@ -1,7 +1,7 @@
 Gilaki keyboard
 ===============
 
-© SIL International
+© SIL Global
 
 Description
 -----------
