@@ -1,11 +1,11 @@
 ﻿c Mara Keyboard
-c Updated to CAPS / NCAPS model (Shavian-style)
+c Updated to CAPS / NCAPS model
 c Author: Laitei
 
 store(&VERSION) '10.0'
 store(&NAME) 'Mara'
 store(&COPYRIGHT) 'Copyright © Laitei'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&TARGETS) 'any'
 store(&BITMAP) 'mara.ico'
 store(&VISUALKEYBOARD) 'mara.kvks'
@@ -18,7 +18,7 @@ group(main) using keys
 c =========================
 c LETTERS (NCAPS = normal)
 c =========================
-
++ [K_SPACE] > U+0020
 + [NCAPS K_A] > 'a'
 + [NCAPS K_B] > 'b'
 + [NCAPS K_C] > 'c'
