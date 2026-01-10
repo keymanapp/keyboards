@@ -1,0 +1,143 @@
+<?php 
+  $pagename = 'sans serif vietnam Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
+<p>
+  Sans Serif Vietnam keyboard for mathematical Sans Serif font with a Vietnamese Telex keyboard
+</p>
+<h1>Keyboard Layout</h1>
+<p><b>Unshifted</b></p>
+<img src='U_.png' alt='Keyboard Layout'>
+<p><b>Shifted</b></p>
+<img src='U_S.png' alt='Keyboard Layout'>
+
+
+<p>
+  Because the Vietnamese alphabet uses a complex system of diacritical marks, Telex requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:
+</p>
+
+<h2>Non-tonal diacritics</h2>
+
+<table>
+  <tbody>
+  <tr>
+    <th>Character</th>
+    <th>Key pressed</th>
+    <th>Sample input</th>
+    <th>Sample output</th>
+  </tr>
+  <tr>
+    <td>𝖺̆</td>
+    <td>𝖺𝗐</td>
+    <td>𝗍𝗋𝖺𝗇𝗀<strong>𝗐</strong></td>
+    <td>𝗍𝗋𝖺̆𝗇𝗀</td>
+  </tr>
+  <tr>
+    <td>𝖺̂</td>
+    <td>𝖺𝖺</td>
+    <td>𝖼𝖺𝗇<strong>𝖺</strong></td>
+    <td>𝖼𝖺̂𝗇</td>
+  </tr>
+  <tr>
+    <td>𝖽̶</td>
+    <td>𝖽𝖽</td>
+    <td>𝖽<strong>𝖽</strong>𝖺<strong>𝖺</strong>𝗎</td>
+    <td>𝖽̶𝖺̂𝗎</td>
+  </tr>
+  <tr>
+    <td>𝖾̂</td>
+    <td>𝖾𝖾</td>
+    <td>𝖽<strong>𝖽</strong>𝖾<strong>𝖾</strong>𝗆</td>
+    <td>𝖽̶𝖾̂𝗆</td>
+  </tr>
+  <tr>
+    <td>𝗈̂</td>
+    <td>𝗈𝗈</td>
+    <td>𝗇𝗁𝗈<strong>𝗈</strong></td>
+    <td>𝗇𝗁𝗈̂</td>
+  </tr>
+  <tr>
+    <td>𝗈̛</td>
+    <td>𝗈𝗐</td>
+    <td>𝗆𝗈<strong>𝗐</strong></td>
+    <td>𝗆𝗈̛</td>
+  </tr>
+  <tr>
+    <td>𝗎̛</td>
+    <td>𝗎𝗐</td>
+    <td>𝗍𝗎<strong>𝗐</strong></td>
+    <td>𝗍𝗎̛</td>
+  </tr>
+  </tbody>
+</table>
+
+<p>
+  To write the pair of keys as two distinct characters, the second character has to be repeated. For example, the Vietnamese word cải xoong must be entered as <code>cari xooong</code> rather than <code>cari xoong</code> (*cải xông).
+</p>
+
+<h2>Tonal diacritics</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Tone</th>
+      <th>Keys added to syllable</th>
+      <th>Sample input</th>
+      <th>Sample output
+      </th>
+    </tr>
+    <tr>
+      <td>Ngang (level)</td>
+      <td>nothing</td>
+      <td>𝗇𝗀𝖺𝗇𝗀</td>
+      <td>𝗇𝗀𝖺𝗇𝗀</td>
+    </tr>
+    <tr>
+      <td>𝖧𝗎𝗒𝖾̂̀𝗇 (falling)</td>
+      <td>𝖿</td>
+      <td>𝗁𝗎𝗒𝖾𝗇<strong>𝖾</strong>𝗇<strong>𝖿</strong></td>
+      <td>𝗁𝗎𝗒𝖾̂̀𝗇
+      </td></tr>
+    <tr>
+      <td>𝖲𝖺̆́𝖼 (rising)</td>
+      <td>𝗌</td>
+      <td>𝗌𝖺<strong>𝗐</strong>𝖼<strong>𝗌</strong></td>
+      <td>𝗌𝖺̆́𝖼
+      </td>
+    </tr>
+    <tr>
+      <td>𝖧𝗈̉𝗂 (dipping-rising)</td>
+      <td>𝗋</td>
+      <td>𝗁𝗈𝗂<strong>𝗋</strong></td>
+      <td>𝗁𝗈̉𝗂
+      </td>
+    </tr>
+    <tr>
+      <td>𝖭𝗀𝖺̃ (rising glottalized)</td>
+      <td>𝗑</td>
+      <td>𝗇𝗀𝖺<strong>𝗑</strong></td>
+      <td>𝗇𝗀𝖺̃
+      </td>
+    </tr>
+    <tr>
+      <td>𝖭𝖺̣̆𝗇𝗀 (falling glottalized)</td>
+      <td>𝗃</td>
+      <td>𝗇𝖺<strong>𝗐</strong>𝗇𝗀<strong>𝗃</strong></td>
+      <td>𝗇𝖺̣̆𝗇𝗀
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  If more than one tone marking key is pressed, the last one will be used. For example, typing <code>asf</code> will return "𝖺̀". To write a tone marking key as a normal character, one has to press it twice: <code>𝗁𝖾𝗋</code> becomes <code>𝗁𝖾̉</code>, while <code>𝗁𝖾𝗋𝗋</code> becomes <code>𝗁𝖾𝗋</code>.
+</p>
+
+<div class="msg-ieioywrtant">
+  <p><b>Ieioywrtant Notice:</b> This keyboard uses <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_cũ">Quy tắc đặt dấu thanh kiểu cũ</a> (𝗈̀𝖺, 𝗈̀𝖾, 𝗎́𝗒) by default.</p>
+</div>
+
+<p>© cathaylab</p>
