@@ -1,0 +1,481 @@
+﻿c =============================================================================
+c  TECLADO UNIFICADO PARA IDIOMAS INDÍGENAS (COLOMBIA - VENEZUELA)
+c =============================================================================
+c
+c  AUTOR:       José Rosas - SIL [Americas Area]
+c  COPYRIGHT:   © 2026 SIL Global
+c  VERSIÓN:     2.0
+c  LICENCIA:    MIT
+c
+c  DESCRIPCIÓN:
+c  Este teclado normaliza la entrada de texto para más de 60 idiomas indígenas
+c  hablados en Colombia y Venezuela (Wayuunaiki, familias Tucano, Arawak, etc.).
+c  Se basa estrictamente en la distribución física Español Latinoamericano (ISO).
+c
+c  -----------------------------------------------------------------------------
+c  INVENTARIO DE CARACTERES SOPORTADOS
+c  (Todas las variaciones incluyen soporte para Mayúsculas)
+c  -----------------------------------------------------------------------------
+c  A: a, á, ã, ã́, ā, ä
+c  E: e, é, ẽ, ẽ́, ē, ë, ë́
+c  I: i, í, ĩ, ĩ́, ī, ï
+c  O: o, ó, õ, ṍ, ō, ö
+c  U: u, ú, ũ, ṹ, ū, ü
+c  Ɨ: ɨ, ɨ́, ɨ̃
+c  Ʉ: ʉ, ʉ́, ʉ̃, ʉ̃́
+c  Ꝋ: ꝋ, ꝋ́
+c  P: p, p̶, p̶̃, p'
+c  B: b, b̶, b'
+c  D: d, d̶, d'
+c  G: g, ǥ, g'
+c  C: c, ç
+c  S: s, s̃, s̈
+c  Y: y, ÿ
+c  T: t, t'
+c  K: k, k'
+c  Puntuación: — “ ” ‘ ’
+c
+c  -----------------------------------------------------------------------------
+c  MÉTODOS DE ENTRADA (LÓGICA DEL CÓDIGO)
+c  -----------------------------------------------------------------------------
+c  1. MÉTODO DE ROTACIÓN (Cíclico)
+c     - Tecla Activadora: Signo Más [+] (Físicamente K_RBRKT / Tecla ']')
+c     - Lógica: Escribir la letra base y presionar [+] repetidamente.
+c     - Ejemplo: a -> á -> ã -> ã́...
+c
+c  2. MÉTODO DE CONSTRUCCIÓN VISUAL (Prefijo)
+c     - Lógica: Escribir el diacrítico (que se muestra en pantalla) y luego la letra.
+c     - Gatillos Visuales:
+c       * Tilde (´)     : Tecla [
+c       * Diéresis (¨)  : Shift + [
+c       * Nasal (~)     : AltGr + ]
+c       * Barra (*)     : Shift + ]
+c       * Macrón (|)    : Tecla izquierda del 1
+c     - Optimización: "Normalización Visual". Permite orden libre de diacríticos
+c       (ej: ~´ se auto-corrige a ´~) antes de combinarse con la letra.
+c
+c  3. ATAJOS PEDAGÓGICOS (Macros)
+c     - Tecla { (Normal) : Tilde + Nasal (para ã́)
+c     - Tecla [ (Shift)  : Tilde + Nasal + Barra (para ʉ̃́)
+c     - Tecla } (Normal) : Nasal (~) - Alternativa rápida
+c     - Tecla ] (Shift)  : Nasal + Barra (para ɨ̃, p̶̃)
+c =============================================================================
+
+store(&VERSION) '15.0'
+store(&NAME) "Indígena (Col-Ven)"
+store(&KEYBOARDVERSION) "2.0"
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&COPYRIGHT) "© 2025 SIL Global"
+store(&VISUALKEYBOARD) "sil_colombia_venezuela.kvks"
+store(&LAYOUTFILE) "sil_colombia_venezuela.keyman-touch-layout"
+store(&BITMAP) 'sil_colombia_venezuela.ico'
+
+c Opción para forzar posición física (Hardware US)
+store(&MNEMONICLAYOUT) '0'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c =============================================================================
+c  1. GATILLOS VISUALES Y MAPEO FÍSICO BASE (LATINOAMERICANO)
+c  IMPORTANTE: Esto debe ir PRIMERO para definir qué carácter produce cada tecla.
+c =============================================================================
+
+c Teclas Especiales y Diacríticos
++ [K_LBRKT]       > '´'   c Tilde
++ [SHIFT K_LBRKT] > '¨'   c Diéresis
++ [K_RBRKT]       > '+'   c Más
++ [SHIFT K_RBRKT] > '*'   c Asterisco
++ [RALT K_RBRKT]  > '~'   c Nasal
++ [K_BKQUOTE]     > '|'   c Macrón
++ [SHIFT K_BKQUOTE] > '°' c Grados
+
+c Puntuación LatAm Base
++ [K_COLON]       > 'ñ'
++ [SHIFT K_COLON] > 'Ñ'
++ [K_QUOTE]       > '{'
++ [SHIFT K_QUOTE] > '['
++ [K_BKSLASH]     > '}'
++ [SHIFT K_BKSLASH] > ']'
++ [K_HYPHEN]      > U+0027 
++ [SHIFT K_HYPHEN] > '?'
++ [K_EQUAL]       > '¿'
++ [SHIFT K_EQUAL] > '¡'
++ [K_COMMA]       > ','
++ [SHIFT K_COMMA] > ';'
++ [K_PERIOD]      > '.'
++ [SHIFT K_PERIOD] > ':'
++ [K_SLASH]       > '-'
++ [SHIFT K_SLASH] > '_'
++ [K_oE2]         > '<'
++ [SHIFT K_oE2]   > '>'
++ [K_SPACE]       > ' '
+
+c Fila de Números (Mapeo LatAm estricto)
++ [K_1] > '1'
++ [SHIFT K_1] > '!'
++ [K_2] > '2'
++ [SHIFT K_2] > '"'
++ [K_3] > '3'
++ [SHIFT K_3] > '#'
++ [K_4] > '4'
++ [SHIFT K_4] > '$'
++ [K_5] > '5'
++ [SHIFT K_5] > '%'
++ [K_6] > '6'
++ [SHIFT K_6] > '&'
++ [K_7] > '7'
++ [SHIFT K_7] > '/'
++ [K_8] > '8'
++ [SHIFT K_8] > '('
++ [K_9] > '9'
++ [SHIFT K_9] > ')'
++ [K_0] > '0'
++ [SHIFT K_0] > '='
+
+c =============================================================================
+c  2. REGLAS DE ROTACIÓN (Tu Lógica de Stores)
+c =============================================================================
+
+c Definición de la tecla de rotación
+store(mas) [K_RBRKT]
+
+c Definición de grupos de vocales
+store(v)  'aeiouAEIOU'
+store(va) 'áéíóúÁÉÍÓÚ'
+store(vn) 'ãẽĩõũÃẼĨÕŨ'
+store(vr) 'āēīōūĀĒĪŌŪ'
+store(vd) 'äëïöüÄËÏÖÜ'
+
+c 1. Base -> Aguda
+any(v) + any(mas) > index(va, 1)
+
+c 2. Aguda -> Nasal
+any(va) + any(mas) > index(vn, 1)
+
+c 3. Nasal -> Nasal con Tilde
+any(vn) + any(mas) > index(vn, 1) U+0301
+
+c 4. Nasal con Tilde -> Macron
+any(vn) U+0301 + any(mas) > index(vr, 1)
+
+c 5. Macron -> Diéresis
+any(vr) + any(mas) > index(vd, 1)
+
+c --- Excepción Letra E ---
+'ë' + any(mas) > 'ë' U+0301
+'Ë' + any(mas) > 'Ë' U+0301
+'ë' U+0301 + any(mas) > 'e'
+'Ë' U+0301 + any(mas) > 'E'
+
+c 6. Diéresis -> Base
+any(vd) + any(mas) > index(v, 1)
+
+
+c =============================================================================
+c  3. ROTACIÓN DE OTROS CARACTERES (Explícito)
+c =============================================================================
+
+'c' + any(mas) > U+00E7
+U+00E7 + any(mas) > 'c'
+'C' + any(mas) > U+00C7
+U+00C7 + any(mas) > 'C'
+
+'s' + any(mas) > 's' U+0303
+'s' U+0303 + any(mas) > 's' U+0308
+'s' U+0308 + any(mas) > 's'
+'S' + any(mas) > 'S' U+0303
+'S' U+0303 + any(mas) > 'S' U+0308
+'S' U+0308 + any(mas) > 'S'
+
+'y' + any(mas) > 'ÿ'
+'ÿ' + any(mas) > 'y'
+'Y' + any(mas) > 'Ÿ'
+'Ÿ' + any(mas) > 'Y'
+
+store(cons_base) 'bdgptkBDGPTK'
+any(cons_base) + any(mas) > index(cons_base, 1) U+0027
+any(cons_base) U+0027 + any(mas) > index(cons_base, 1)
+
+c --- Vocales Indígenas ---
+'ɨ' + any(mas) > 'ɨ' U+0301
+'ɨ' U+0301 + any(mas) > 'ɨ' U+0303
+'ɨ' U+0303 + any(mas) > 'ɨ'
+'Ɨ' + any(mas) > 'Ɨ' U+0301
+'Ɨ' U+0301 + any(mas) > 'Ɨ' U+0303
+'Ɨ' U+0303 + any(mas) > 'Ɨ'
+
+'ꝋ' + any(mas) > 'ꝋ' U+0301
+'ꝋ' U+0301 + any(mas) > 'ꝋ'
+'Ꝋ' + any(mas) > 'Ꝋ' U+0301
+'Ꝋ' U+0301 + any(mas) > 'Ꝋ'
+
+'ʉ' + any(mas) > 'ʉ' U+0301
+'ʉ' U+0301 + any(mas) > 'ʉ' U+0303
+'ʉ' U+0303 + any(mas) > 'ʉ' U+0303 U+0301
+'ʉ' U+0303 U+0301 + any(mas) > 'ʉ'
+'Ʉ' + any(mas) > 'Ʉ' U+0301
+'Ʉ' U+0301 + any(mas) > 'Ʉ' U+0303
+'Ʉ' U+0303 + any(mas) > 'Ʉ' U+0303 U+0301
+'Ʉ' U+0303 U+0301 + any(mas) > 'Ʉ'
+
+'p' U+0336 + any(mas) > 'p' U+0336 U+0303
+'p' U+0336 U+0303 + any(mas) > 'p' U+0336
+'P' U+0336 + any(mas) > 'P' U+0336 U+0303
+'P' U+0336 U+0303 + any(mas) > 'P' U+0336
+
+
+c =============================================================================
+c  4. REGLAS DE CONSTRUCCIÓN VISUAL (REGLAS DE CONTEXTO)
+c =============================================================================
+
+c Normalización
+'~' + [K_LBRKT] > '´~'
+'¨' + [K_LBRKT] > '´¨'
+'*' + [K_LBRKT] > '´*'
+'*' + [RALT K_RBRKT] > '~*'
+
+c Atajo Excepción ʉ̃́
+'{*' + 'u' > 'ʉ' U+0303 U+0301
+'{*' + 'U' > 'Ʉ' U+0303 U+0301
+
+c --- Nivel 3 ---
+'´~*' + 'u' > 'ʉ' U+0303 U+0301
+'´~*' + 'U' > 'Ʉ' U+0303 U+0301
+
+c --- Nivel 2 ---
+store(nt_in)       'aeiouAEIOU'
+store(nt_out_base) 'ãẽĩõũÃẼĨÕŨ' 
+'´~' + any(nt_in) > index(nt_out_base, 3) U+0301
+'{'  + any(nt_in) > index(nt_out_base, 2) U+0301
+'[' + 'u' > 'ʉ' U+0303 U+0301
+'[' + 'U' > 'Ʉ' U+0303 U+0301
+
+store(keys_u_in)  [RALT K_U] [SHIFT RALT K_U]
+store(char_u_out) 'ʉɄ'
+'´~' + any(keys_u_in) > index(char_u_out, 3) U+0303 U+0301
+'{'  + any(keys_u_in) > index(char_u_out, 2) U+0303 U+0301
+
+'´¨' + 'e' > 'ë' U+0301
+'´¨' + 'E' > 'Ë' U+0301
+
+store(v_bar_in)       'iuoIUO'
+store(v_bar_out_base) 'ɨʉꝋƗɄꝊ'
+'~*' + any(v_bar_in) > index(v_bar_out_base, 3) U+0303
+']'  + any(v_bar_in) > index(v_bar_out_base, 2) U+0303
+
+'~*' + 'p' > 'p' U+0336 U+0303
+']'  + 'p' > 'p' U+0336 U+0303
+'~*' + 'P' > 'P' U+0336 U+0303
+']'  + 'P' > 'P' U+0336 U+0303
+
+store(ba_in)       'iuoIUO'
+store(ba_out_base) 'ɨʉꝋƗɄꝊ'
+'´*' + any(ba_in) > index(ba_out_base, 3) U+0301
+
+c --- Nivel 1 ---
+store(ac_base) 'aeiouAEIOU'
+store(ac_res)  'áéíóúÁÉÍÓÚ'
+'´' + any(ac_base) > index(ac_res, 2)
+'´' + 's' > 's' U+0301
+'´' + 'S' > 'S' U+0301
+
+store(nas_base) 'aeiouAEIOU'
+store(nas_res)  'ãẽĩõũÃẼĨÕŨ'
+'~' + any(nas_base) > index(nas_res, 2)
+'}' + any(nas_base) > index(nas_res, 2)
+'~' + 'n' > 'ñ'
+'}' + 'n' > 'ñ'
+'~' + 'N' > 'Ñ'
+'}' + 'N' > 'Ñ'
+
+store(mac_base) 'aeiouAEIOU'
+store(mac_res)  'āēīōūĀĒĪŌŪ'
+'|' + any(mac_base) > index(mac_res, 2)
+
+store(dier_in)  'aeiouyAEIOUY'
+store(dier_res) 'äëïöüÿÄËÏÖÜŸ'
+'¨' + any(dier_in) > index(dier_res, 2)
+'¨' + 's' > 's' U+0308
+'¨' + 'S' > 'S' U+0308
+
+store(bar_in_simple) 'iuoIUO'
+store(bar_res_simple) 'ɨʉꝋƗɄꝊ'
+'*' + any(bar_in_simple) > index(bar_res_simple, 2)
+'*' + 'p' > 'p' U+0336
+'*' + 'P' > 'P' U+0336
+'*' + 'b' > 'b' U+0336
+'*' + 'B' > 'B' U+0336
+'*' + 'd' > 'd' U+0336
+'*' + 'D' > 'D' U+0336
+'*' + 'g' > U+01E5
+'*' + 'G' > U+01E4
+
+',' + 'c' > U+00E7
+',' + 'C' > U+00C7
+
+c =============================================================================
+c  5. PUNTUACIÓN ESPECIAL (REPETICIÓN)
+c =============================================================================
+'-' + [K_SLASH] > '—'
+'<' + [K_oE2] > '“'
+'“' + [K_oE2] > '‘'
+'‘' + [K_oE2] > '<'
+'>' + [SHIFT K_oE2] > '”'
+'”' + [SHIFT K_oE2] > '’'
+'’' + [SHIFT K_oE2] > '>'
+'(' + [SHIFT K_8] > '“'
+'“' + [SHIFT K_8] > '‘'
+'‘' + [SHIFT K_8] > '('
+')' + [SHIFT K_9] > '”'
+'”' + [SHIFT K_9] > '’'
+'’' + [SHIFT K_9] > ')'
+
+c =============================================================================
+c  6. LETRAS BASE A-Z (FUNDAMENTAL)
+c  Se quedan al final para que no bloqueen los contextos anteriores.
+c =============================================================================
++ [K_A] > 'a'
++ [SHIFT K_A] > 'A'
++ [K_B] > 'b'
++ [SHIFT K_B] > 'B'
++ [K_C] > 'c'
++ [SHIFT K_C] > 'C'
++ [K_D] > 'd'
++ [SHIFT K_D] > 'D'
++ [K_E] > 'e'
++ [SHIFT K_E] > 'E'
++ [K_F] > 'f'
++ [SHIFT K_F] > 'F'
++ [K_G] > 'g'
++ [SHIFT K_G] > 'G'
++ [K_H] > 'h'
++ [SHIFT K_H] > 'H'
++ [K_I] > 'i'
++ [SHIFT K_I] > 'I'
++ [K_J] > 'j'
++ [SHIFT K_J] > 'J'
++ [K_K] > 'k'
++ [SHIFT K_K] > 'K'
++ [K_L] > 'l'
++ [SHIFT K_L] > 'L'
++ [K_M] > 'm'
++ [SHIFT K_M] > 'M'
++ [K_N] > 'n'
++ [SHIFT K_N] > 'N'
++ [K_O] > 'o'
++ [SHIFT K_O] > 'O'
++ [K_P] > 'p'
++ [SHIFT K_P] > 'P'
++ [K_Q] > 'q'
++ [SHIFT K_Q] > 'Q'
++ [K_R] > 'r'
++ [SHIFT K_R] > 'R'
++ [K_S] > 's'
++ [SHIFT K_S] > 'S'
++ [K_T] > 't'
++ [SHIFT K_T] > 'T'
++ [K_U] > 'u'
++ [SHIFT K_U] > 'U'
++ [K_V] > 'v'
++ [SHIFT K_V] > 'V'
++ [K_W] > 'w'
++ [SHIFT K_W] > 'W'
++ [K_X] > 'x'
++ [SHIFT K_X] > 'X'
++ [K_Y] > 'y'
++ [SHIFT K_Y] > 'Y'
++ [K_Z] > 'z'
++ [SHIFT K_Z] > 'Z'
+
+c --- ALTGR ---
++ [RALT K_I] > U+0268
++ [RALT K_U] > U+0289
++ [RALT K_O] > U+A74B
++ [SHIFT RALT K_I] > U+0197
++ [SHIFT RALT K_U] > U+0244
++ [SHIFT RALT K_O] > U+A74A
++ [RALT K_E] > 'ë'
++ [SHIFT RALT K_E] > 'Ë'
++ [RALT K_A] > 'ä'
++ [SHIFT RALT K_A] > 'Ä'
++ [RALT K_HYPHEN] > U+0294
++ [RALT K_4] > '$'
++ [RALT K_5] > 'Bs.'
++ [RALT K_Q] > '@'
++ [RALT K_P] > 'p' U+0336
++ [SHIFT RALT K_P] > 'P' U+0336
++ [RALT K_B] > 'b' U+0336
++ [SHIFT RALT K_B] > 'B' U+0336
++ [RALT K_D] > 'd' U+0336
++ [SHIFT RALT K_D] > 'D' U+0336
++ [RALT K_G] > U+01E5
++ [SHIFT RALT K_G] > U+01E4
++ [RALT K_C] > U+00E7
++ [SHIFT RALT K_C] > U+00C7
+c Alternativa para < > en teclados ANSI
++ [RALT K_COMMA]  > '<'
++ [RALT K_PERIOD] > '>'
+
+c =============================================================================
+c  SOPORTE TÁCTIL (Móvil)
+c =============================================================================
++ [T_e_nas_ac] > 'ẽ' U+0301
++ [T_e_dier_ac] > 'ë' U+0301
++ [T_t_apos] > 't' U+0027
++ [T_u_nas_ac] > 'ũ' U+0301
++ [T_u_bar_ac] > 'ʉ' U+0301
++ [T_u_bar_nas] > 'ʉ' U+0303
++ [T_u_bar_nas_ac] > 'ʉ' U+0303 U+0301
++ [T_i_nas_ac] > 'ĩ' U+0301
++ [T_i_bar_ac] > 'ɨ' U+0301
++ [T_i_bar_nas] > 'ɨ' U+0303
++ [T_o_nas_ac] > 'õ' U+0301
++ [T_o_bar_ac] > 'ꝋ' U+0301
++ [T_p_bar] > 'p' U+0336
++ [T_p_bar_nas] > 'p' U+0336 U+0303
++ [T_p_apos] > 'p' U+0027
++ [T_a_nas_ac] > 'ã' U+0301
++ [T_s_nas] > 's' U+0303
++ [T_s_dier] > 's' U+0308
++ [T_d_bar] > 'd' U+0336
++ [T_d_apos] > 'd' U+0027
++ [T_g_apos] > 'g' U+0027
++ [T_k_apos] > 'k' U+0027
++ [T_b_bar] > 'b' U+0336
++ [T_b_apos] > 'b' U+0027
+
++ [T_E_nas_ac_U] > 'Ẽ' U+0301
++ [T_E_dier_ac_U] > 'Ë' U+0301
++ [T_T_apos_U] > 'T' U+0027
++ [T_U_nas_ac_U] > 'Ũ' U+0301
++ [T_U_bar_ac_U] > 'Ʉ' U+0301
++ [T_U_bar_nas_U] > 'Ʉ' U+0303
++ [T_U_bar_nas_ac_U] > 'Ʉ' U+0303 U+0301
++ [T_I_nas_ac_U] > 'Ĩ' U+0301
++ [T_I_bar_ac_U] > 'Ɨ' U+0301
++ [T_I_bar_nas_U] > 'Ɨ' U+0303
++ [T_O_nas_ac_U] > 'Õ' U+0301
++ [T_O_bar_ac_U] > 'Ꝋ' U+0301
++ [T_P_bar_U] > 'P' U+0336
++ [T_P_bar_nas_U] > 'P' U+0336 U+0303
++ [T_P_apos_U] > 'P' U+0027
++ [T_A_nas_ac_U] > 'Ã' U+0301
++ [T_S_nas_U] > 'S' U+0303
++ [T_S_dier_U] > 'S' U+0308
++ [T_D_bar_U] > 'D' U+0336
++ [T_D_apos_U] > 'D' U+0027
++ [T_G_apos_U] > 'G' U+0027
++ [T_K_apos_U] > 'K' U+0027
++ [T_B_bar_U] > 'B' U+0336
++ [T_B_apos_U] > 'B' U+0027
+
++ [T_BS_KEY] > 'Bs.'
++ [T_COP_KEY] > 'COP'
++ [T_BRL_KEY] > 'R$'
++ [T_COMMA_EMOJI] > ','
++ [T_NUM] > layer('numeric')
++ [T_SYM] > layer('symbol')
++ [T_ABC] > layer('default')
++ [T_EMOJI_LINK] > layer('emoji')
