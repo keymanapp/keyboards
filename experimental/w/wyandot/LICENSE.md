@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2025 Michael Collins Gallaspy
+Copyright © 2025-2026 Michael Collins Gallaspy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
