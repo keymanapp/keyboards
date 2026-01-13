@@ -1,0 +1,60 @@
+﻿c Created by Ross Cruickshank and Benjamin Angalo with input from Joseph Sitar
+c for the Moro Language.
+store(&VERSION) '10.0'
+store(&NAME) 'Moro'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'moro.ico'
+store(&VISUALKEYBOARD) 'moro.kvks'
+store(&LAYOUTFILE) 'moro.keyman-touch-layout'
+store(&CasedKeys) [K_A] .. [K_Z]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [NCAPS K_X] > 'đ'
++ [NCAPS K_Z] > 'ṯ'
++ [NCAPS K_H] > 'ǝ'
++ [NCAPS K_Q] > 'ɽ'
+
++ [SHIFT NCAPS K_X] > 'Đ'
++ [SHIFT NCAPS K_Z] > 'Ṯ'
++ [SHIFT NCAPS K_H] > 'Ǝ'
++ [SHIFT NCAPS K_Q] > 'Ɽ'
+
++ [CAPS K_X] > 'Đ'
++ [CAPS K_Z] > 'Ṯ'
++ [CAPS K_H] > 'Ǝ'
++ [CAPS K_Q] > 'Ɽ'
+
++ [NCAPS K_LBRKT] > 'ñ'
++ [NCAPS K_RBRKT] > 'ë'
++ [NCAPS K_BKSLASH] > 'ḏ'
++ [NCAPS K_SLASH] > 'ŋ'
+
++ [SHIFT NCAPS K_LBRKT] > 'Ñ'
++ [SHIFT NCAPS K_RBRKT] > 'Ë'
++ [SHIFT NCAPS K_BKSLASH] > 'Ḏ'
++ [SHIFT NCAPS K_SLASH] > 'Ŋ'
+
++ [CAPS K_LBRKT] > 'Ñ'
++ [CAPS K_RBRKT] > 'Ë'
++ [CAPS K_BKSLASH] > 'Ḏ'
++ [CAPS K_SLASH] > 'Ŋ'
+
+
+c output original key caps
+
++ [NCAPS SHIFT RALT K_BKSLASH] > '|'
++ [NCAPS SHIFT RALT K_RBRKT] > '}'
++ [NCAPS SHIFT RALT K_LBRKT] > '{'
++ [NCAPS SHIFT RALT K_SLASH] > '?'
++ [NCAPS RALT K_BKSLASH] > '\'
++ [NCAPS RALT K_RBRKT] > ']'
++ [NCAPS RALT K_LBRKT] > '['
++ [NCAPS RALT K_SLASH] > '/'
+
+
+

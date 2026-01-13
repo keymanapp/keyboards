@@ -1,5 +1,14 @@
 Khmer Angkor Change History
 =======================
+
+2.4 (16 December 2025)
+----------------
+* Update welcome.htm, keyboard images, and help document.
+
+2.3 (28 Nov 2025)
+----------------
+* update welcome.htm
+
 2.2 (10 Apr 2025)
 ----------------
 * add rule to prevent beep sound
