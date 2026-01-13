@@ -1,5 +1,8 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
+## 1.2 (13 Jan 2026)
+* Add `ٱ` to Shift + E
+
 ## 1.1 (18 Dec 2025)
 * Update keyboard to support OSK font for better display
 
