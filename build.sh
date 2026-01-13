@@ -28,7 +28,7 @@ builder_describe \
   "--silent,-s               Suppress unnecessary messages"
 
 builder_describe_outputs \
-  configure   /node_modules
+  configure /node_modules
 
 builder_parse "$@"
 
@@ -63,7 +63,7 @@ function do_clean_externals() {
     pushd "$keyboard"
     clean_external_target_folder
     popd
-  done < build_external_targets.txt
+  done <build_external_targets.txt
 }
 
 function do_clean_targets() {
@@ -72,7 +72,7 @@ function do_clean_targets() {
   while IFS= read -r keyboard; do
     rm -rf "$keyboard/build/"
     rm -f "$keyboard/*.kpj.user"
-  done < build_targets.txt
+  done <build_targets.txt
 }
 
 #------------------------------------------------------------
@@ -107,11 +107,11 @@ function do_build_externals() {
       # TODO: consider verifying the .keyboard_info
     else
       # add it to list of build targets
-      echo "$keyboard" >> "$THIS_SCRIPT_PATH/build_targets.txt"
+      echo "$keyboard" >>"$THIS_SCRIPT_PATH/build_targets.txt"
     fi
 
     popd
-  done < build_external_targets.txt
+  done <build_external_targets.txt
 }
 
 function do_build_targets() {
@@ -135,7 +135,7 @@ function do_build_legacy() {
         cp "$path/source/$keyboard.kmp" "$path/build/"
       fi
     fi
-  done < build_legacy.txt
+  done <build_legacy.txt
 }
 
 function do_build_fv_all() {
@@ -156,14 +156,14 @@ function do_test() {
 
 if builder_has_option --keyboard; then
   # Split $KEYBOARD into an array, split with comma
-  IFS=',' read -ra TARGETS <<< "$KEYBOARD"
+  IFS=',' read -ra TARGETS <<<"$KEYBOARD"
 else
   TARGETS=(release experimental legacy)
 fi
 
 collect_build_targets
 
-builder_run_action clean      do_clean
-builder_run_action configure  do_configure
-builder_run_action build      do_build
-builder_run_action test       do_test
+builder_run_action clean do_clean
+builder_run_action configure do_configure
+builder_run_action build do_build
+builder_run_action test do_test
