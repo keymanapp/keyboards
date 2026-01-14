@@ -1,5 +1,11 @@
-Remington GAIL (SIL) keyboard
-(arabic numpad version)
+Modified Remington GAIL (SIL) keyboard Arabic numpad version
+
+Modified by Danish Khan
+
+This keyboard is a modified version of Remington-GAIL (SIL) keyboard where numpad keys are modified to type Arabic Numbers instead of Hindi numbers. This is done primarily to facilitate number typing by numpad as arabic numerals are widely used in India. Example : When pressing 1 on numpad, original keyboard types १ whereas this keyboard will type 1. Hindi numerals can always be typed using built in functionality using AltGr+number_row
+
+About Remington GAIL (SIL)
+
 ==============
 
 © SIL International
