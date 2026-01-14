@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -133,21 +133,27 @@ E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Gawri</Name>
       <ID>rac_gawri</ID>
-      <Version>1.0.1</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="gwc-Arab">Kalami (Arabic)</Language>
+        <Language ID="gwc">Kalami (Arabic)</Language>
       </Languages>
       <Examples>
-        <Example ID="gwc-Arab" Keys="g a w W r i" Text="گاؤری" Note="Name of language"/>
+        <Example ID="gwc" Keys="g a w W r i" Text="گاؤری" Note="Name of language"/>
       </Examples>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
