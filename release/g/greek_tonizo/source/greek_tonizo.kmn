@@ -1,10 +1,12 @@
 ﻿c Πολυτονικὸ πληκτρολόγιο βασισμένο στὴν διάταξη τοῦ πληκτρολογίου US-QWERTY προσαρμοσμένη στοὺς πρόσθετους τόνους καὶ πνεύματα τοῦ πολυτονικοῦ συστήματος. Γιὰ χρῆστες ποὺ θέλουν νὰ γράψουν διαχρονικὰ ἑλληνικὰ μὲ τὸν ἱστορικὸ τονισμὸ τῆς ἑλληνικῆς.
+c With wordStartBreathingRules group added - Dec 2025
+c Latest change January 2026
 
 store(&VERSION) '15.0'
-c
+c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.5'
+store(&KEYBOARDVERSION) '1.0.6'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -45,14 +47,14 @@ group(PostKeystroke) readonly
     c as the user hasn't attempted to change layer themselves.
     if(&newLayer = "") > use(detectStartOfSentence)
 
-
+        
 
 group(detectStartOfSentence) readonly
     c Sets the current layer according to the current context.
 
     c Some common end-of-sentence punctuation
     store(sentencePunctuation) '.!?' U+037E
-
+    
     c Start of paragraph: move to the Shift layer
     nul > layer('shift')
 
@@ -71,25 +73,25 @@ group(detectStartOfSentence) readonly
 
 
 group(main) using keys
-c
+c 
 c KEYBOARD CONFIGURATION
-c
+c 
 
 store(SHIFT)    [K_SHIFT]
 
 c 1 - diacritics
-c
-store(oxeia)    [K_COLON]
+c 
+store(oxeia)    [K_COLON] 
 store(daseia)   [K_Q]
-store(perispo)  [K_LBRKT]
-c in touch kbd, vareia is Longpress in oxeia
-store(vareia)   [K_QUOTE]
-c in touch kbd, psili is Longpress in daseia
-store(psili)    [K_RBRKT]
+store(perispo)  [K_LBRKT]   
+c in touch kbd, vareia is Longpress in oxeia 
+store(vareia)   [K_QUOTE]   
+c in touch kbd, psili is Longpress in daseia 
+store(psili)    [K_RBRKT]  
 c in touch kbd, dialytika are implemented combined as longpress in iota and upsilon
-store(dialy)    [SHIFT K_COLON]
-c same for ypoge as longpress in omega alpha and eta
-store(ypoge)    [SHIFT K_LBRKT]
+store(dialy)    [SHIFT K_COLON]  
+c same for ypoge as longpress in omega alpha and eta 
+store(ypoge)    [SHIFT K_LBRKT] 
 c Attention: There is no makron & vrachy symbol in unicode
 store(makron)   [ALT K_HYPHEN]
 store(vrachy)   [ALT K_LBRKT]
@@ -99,54 +101,54 @@ c
 store(leftCurlyBr)   [U_007B]
 store(leftSqBr)      [U_005B]
 store(erotimatiko)   [SHIFT K_SLASH]
-store(anoteleia)     [SHIFT K_W]
+store(anoteleia)     [SHIFT K_W]  
 store(greekcolon)    [SHIFT K_Q]
-store(apostrophe)    [K_BKQUOTE]
-store(backslash)     [K_BKSLASH]
+store(apostrophe)    [K_BKQUOTE]   
+store(backslash)     [K_BKSLASH] 
 store(verticalline)  [SHIFT K_BKSLASH]
-c
+c 
 c 2 - VOWELS: explicitly differentiate between NCAPS, SHIFT, CAPS, CAPS-SHIFT
 c             Because of automation, CAPS and SHIFT behave differently
+c 
+store(alpha)    [NCAPS K_A]     c NCAPS vowels = lower case vowels with breathing 
+store(epsilon)  [NCAPS K_E] 
+store(eta)      [NCAPS K_H] 
+store(iota)     [NCAPS K_I] 
+store(omicron)  [NCAPS K_O] 
+store(upsilon)  [NCAPS K_Y] 
+store(omega)    [NCAPS K_V]  
+c  
+store(alphaup)  [SHIFT K_A]     c SHIFT vowels = upper case vowels with breathing 
+store(epsilonup)[SHIFT K_E]  
+store(etaup)    [SHIFT K_H] 
+store(iotaup)   [SHIFT K_I] 
+store(omicronup)[SHIFT K_O] 
+store(upsilonup)[SHIFT K_Y] 
+store(omegaup)  [SHIFT K_V] 
 c
-store(alpha)    [NCAPS K_A]     c NCAPS vowels = lower case vowels with breathing
-store(epsilon)  [NCAPS K_E]
-store(eta)      [NCAPS K_H]
-store(iota)     [NCAPS K_I]
-store(omicron)  [NCAPS K_O]
-store(upsilon)  [NCAPS K_Y]
-store(omega)    [NCAPS K_V]
-c
-store(alphaup)  [SHIFT K_A]     c SHIFT vowels = upper case vowels with breathing
-store(epsilonup)[SHIFT K_E]
-store(etaup)    [SHIFT K_H]
-store(iotaup)   [SHIFT K_I]
-store(omicronup)[SHIFT K_O]
-store(upsilonup)[SHIFT K_Y]
-store(omegaup)  [SHIFT K_V]
-c
-store(alphacaps)  [CAPS K_A]    c CAPS vowels = upper case vowels w/o breathing
-store(epsiloncaps)[CAPS K_E]
-store(etacaps)    [CAPS K_H]
-store(iotacaps)   [CAPS K_I]
-store(omicroncaps)[CAPS K_O]
-store(upsiloncaps)[CAPS K_Y]
-store(omegacaps)  [CAPS K_V]
+store(alphacaps)  [CAPS K_A]    c CAPS vowels = upper case vowels w/o breathing    
+store(epsiloncaps)[CAPS K_E]  
+store(etacaps)    [CAPS K_H] 
+store(iotacaps)   [CAPS K_I] 
+store(omicroncaps)[CAPS K_O] 
+store(upsiloncaps)[CAPS K_Y] 
+store(omegacaps)  [CAPS K_V] 
 c
 store(alphacs)    [CAPS SHIFT K_A]  c CAPS SHIFT = lower case vowels w/o breathing
-store(epsiloncs)  [CAPS SHIFT K_E]
-store(etacs)      [CAPS SHIFT K_H]
-store(iotacs)     [CAPS SHIFT K_I]
-store(omicroncs)  [CAPS SHIFT K_O]
-store(upsiloncs)  [CAPS SHIFT K_Y]
-store(omegacs)    [CAPS SHIFT K_V]
+store(epsiloncs)  [CAPS SHIFT K_E] 
+store(etacs)      [CAPS SHIFT K_H] 
+store(iotacs)     [CAPS SHIFT K_I] 
+store(omicroncs)  [CAPS SHIFT K_O] 
+store(upsiloncs)  [CAPS SHIFT K_Y] 
+store(omegacs)    [CAPS SHIFT K_V]  
 c
 store(alphalc)    [RALT K_A]
 
 c
 c 2 - CONSONANTS: No differentiation between CAPS, NCAPS, SHIFT needed
-c
-store(beta)     [K_B]
-store(gamma)    [K_G]
+c 
+store(beta)     [K_B] 
+store(gamma)    [K_G]  
 store(delta)    [K_D]
 store(zeta)     [K_Z]
 store(theta)    [K_U]
@@ -162,9 +164,9 @@ store(sigmafmob)[U_03C2]
 store(tau)      [K_T]
 store(phi)      [K_F]
 store(chi)      [K_X]
-store(psi)      [K_C]
-store(rho)      [K_R]
-c
+store(psi)      [K_C]                
+store(rho)      [K_R] 
+c 
 store(betaup)   [SHIFT K_B]
 store(gammaup)  [SHIFT K_G]
 store(deltaup)  [SHIFT K_D]
@@ -181,7 +183,7 @@ store(tauup)    [SHIFT K_T]
 store(phiup)    [SHIFT K_F]
 store(chiup)    [SHIFT K_X]
 store(psiup)    [SHIFT K_C]
-store(rhoup)    [SHIFT K_R]
+store(rhoup)    [SHIFT K_R]    
 c
 c 3 - Cased keys - consonants only
 c
@@ -198,7 +200,7 @@ store(euro)             [ALT K_4]     C USE DOLLAR KEY FOR EURO
 store(betavar)          [ALT K_B]     C  U+03D0  (GREEK BETA SYMBOL)
 store(thetavar)         [ALT K_U]     C  U+03D1  (GREEK THETA SYMBOL)
 store(thetavarup)       [ALT K_H]     C  U+03F4  (GREEK CAPITAL THETA SYMBOL)
-store(upsilonvarup)     [ALT K_Y]     C  U+03D2  (GREEK UPSILON WITH HOOK)
+store(upsilonvarup)     [ALT K_Y]     C  U+03D2  (GREEK UPSILON WITH HOOK) 
 store(jot)              [ALT K_J]     C  U+03F3 (YOT)
 c GREEK UPSILON WITH HOOK AND DIAIRESIS, GREEK UPSILON WITH HOOK AND OXEIA, NOT INCLUDED
 store(phivar)           [ALT K_F]     C  U+03D5  (GREEK PHI SYMBOL)
@@ -206,9 +208,9 @@ store(pivar)            [ALT K_P]     C  U+03D6  (GREEK PI SYMBOL)
 store(kai)              [ALT K_7]     C  U+03D7  (GREEK KAI SYMBOL)
 store(kappavar)         [ALT K_K]     C  U+03F0  (GREEK KAPPA SYMBOL)
 store(rhovar)           [ALT K_R]     C  U+03F1  (GREEK RHO SYMBOL)
-store(rhovarstroke)     [ALT K_T]     C  U+03FC  (GREEK RHO WITH STROKE
+store(rhovarstroke)     [ALT K_T]     C  U+03FC  (GREEK RHO WITH STROKE           
 store(epsilonvar)       [ALT K_E]     C  U+03F5  (GREEK LUNATE EPSILON)
-store(epsilonreversed)  [ALT K_3]     C  U+03F6  (REVERSED LUNATE EPSILON)
+store(epsilonreversed)  [ALT K_3]     C  U+03F6  (REVERSED LUNATE EPSILON)                       
 store(revlunate)        [ALT K_2]     C  U+037B  (SMALL REVERSED LUNATE)
 store(revlunateup)      [ALT K_1]     C  U+03FD  (GREEK CAPITAL REVERSED LUNATE SIGMA)
 store(revdottedlunate)  [ALT K_5]     C  U+037D  (SMALL REVERSED DOTTED LUNATE)
@@ -224,18 +226,18 @@ store(koppa)            [ALT K_QUOTE] C  U+03DF  (KOPPA SMALL)
 store(sampiup)          [ALT K_L]     C  U+03E0  (SAMPI)
 store(sampi)            [ALT K_O]     C  U+03E1  (SAMPI SMALL)
 store(sigmalunate)      [ALT K_D]     C  U+03F2  (GREEK LUNATE SIGMA)
-store(sigmalunateup)    [ALT K_C]     C  U+03F9  (GREEK CAPITAL LUNATE SIGMA)
+store(sigmalunateup)    [ALT K_C]     C  U+03F9  (GREEK CAPITAL LUNATE SIGMA)  
 store(lunatedotted)     [ALT K_8]     C  U+037C  (GREEK SMALL DOTTED LUNATE)
 store(lunatedottedup)   [ALT K_I]     C  U+03FE  (GREEK CAPITAL LUNATE DOTTED)
 store(sanup)            [ALT K_N]     C  U+03FA  (GREEK CAPITAL LETTER SAN )
-store(san)              [ALT K_M]     C  U+03FB  (GREEK SMALL LETTER SAN)
+store(san)              [ALT K_M]     C  U+03FB  (GREEK SMALL LETTER SAN)                                             
 store(sho)              [ALT K_9]     C  U+03F8  (GREEK LETTER SHO)
 store(shoup)            [ALT K_0]     C  U+03F7  (GREEK CAPITAL LETTER SHO)
 c
-c The following key combinations produce nothing
+c The following key combinations produce nothing 
 store(altz)             [ALT K_Z]
 store(altx)             [ALT K_X]
-c
+c 
 c  6. Chars on longpress keys in mobile devices
 c
 store(alphayp)          [U_1FB3]
@@ -249,8 +251,8 @@ store(omegaypper)       [U_1FF7]
 store(omegaypdasper)    [U_1FA7]
 c
 c   GROUPS OF CHARACTERS NEEDED IN AUTOMATIC BREATHING RULES
-c
-store(vowels) [NCAPS K_A] [NCAPS K_E] [NCAPS K_H] [NCAPS K_I] [NCAPS K_O] [NCAPS K_Y] [NCAPS K_V] \
+c 
+store(vowels) [NCAPS K_A] [NCAPS K_E] [NCAPS K_H] [NCAPS K_I] [NCAPS K_O] [NCAPS K_Y] [NCAPS K_V] \ 
               [NCAPS SHIFT K_A] [NCAPS SHIFT K_E] [NCAPS SHIFT K_H] [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] [NCAPS SHIFT K_Y] [NCAPS SHIFT K_V]
 store(fwn) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 \
            U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
@@ -260,9 +262,9 @@ store(fwnWithBreathing) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
 c                                                                                                                                   U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68 \
 c
 c Needed for CAPS lock processing (initial vowels w/o breathing)
-store(vowelscaps) outs(alphacaps) outs(epsiloncaps) outs(etacaps) outs(iotacaps) outs(omicroncaps) outs(upsiloncaps) outs(omegacaps)
+store(vowelscaps) outs(alphacaps) outs(epsiloncaps) outs(etacaps) outs(iotacaps) outs(omicroncaps) outs(upsiloncaps) outs(omegacaps) 
 store(fwncaps) U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
-store(vowelscs) outs(alphacs) outs(epsiloncs) outs(etacs) outs(iotacs) outs(omicroncs) outs(upsiloncs) outs(omegacs)
+store(vowelscs) outs(alphacs) outs(epsiloncs) outs(etacs) outs(iotacs) outs(omicroncs) outs(upsiloncs) outs(omegacs) 
 store(fwncs) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
 c
 c
@@ -280,21 +282,21 @@ store(symfwn) U+03B2 U+03B3 U+03B4 U+03B6 \
               U+03B8 U+03BA U+03BB U+03BC \
               U+03BD U+03BE U+03C0        \
               U+03C3 U+03C2 U+03C2        \
-              U+03C4 U+03C6 U+03C7 U+03C8 U+03C1 \
+              U+03C4 U+03C6 U+03C7 U+03C8 U+03C1 \  
               U+0392 U+0393 U+0394 U+0396 \
-              U+0398 U+039A U+039B U+039C \
+              U+0398 U+039A U+039B U+039C \ 
               U+039D U+039E U+03A0 U+03A1 \
               U+03A3                      \
               U+03A4 U+03A6 U+03A7 U+03A8
 c ----- rhos with breathings -------
 store(rhos)       outs(rho) outs(rhoup)
-store(rhos_das)   U+1FE5 U+1FEC
-c
+store(rhos_das)   U+1FE5 U+1FEC 
+c 
 c Exotics contain special puctuation symbols, ancient greek special characters, numbers, the euro symbol, etc.
 c Includes puctuation
-c
+c 
 store(exotics) outs(anoteleia)  outs(greekcolon)          \
-               outs(apostrophe) outs(erotimatiko)         \
+               outs(apostrophe) outs(erotimatiko)         \ 
                outs(backslash) outs(verticalline)         \
                outs(leftCurlyBr)                          \
                outs(kai)                                  \
@@ -318,7 +320,7 @@ store(exotics) outs(anoteleia)  outs(greekcolon)          \
                outs(euro)                                 \
                outs(sanup) outs(san)                      \
                outs(sho) outs(shoup)
-c
+c 
 store(exo)     U+0387 U+003A        \
                U+02BC U+037E        \
                U+005C U+007C        \
@@ -330,7 +332,7 @@ store(exo)     U+0387 U+003A        \
                U+03D1 U+03F4        \
                U+03D6               \
                U+03E1 U+03E0        \
-               U+03F2 U+03F9        \
+               U+03F2 U+03F9        \ 
                U+037C U+03FE        \
                U+037B U+03FD        \
                U+037D U+03FF        \
@@ -338,19 +340,19 @@ store(exo)     U+0387 U+003A        \
                U+03F5 U+03F6        \
                U+03DD U+03DC        \
                U+03DF U+03DE        \
-               U+03F0 U+03D0 U+03F3 \
+               U+03F0 U+03D0 U+03F3 \      
                U+0374 U+0375        \
                U+03D2               \
                U+20AC               \
                U+03FA U+03FB        \
                U+03F8 U+03F7
-c
+c               
 c Characters usually found before words (to be used in order to set automatic breathings
 store(beforeWordChars)  U+0020 U+0028 U+002D U+0027 \
                         U+0022 U+003A U+007B U+00AB \
                         U+00B6 U+00A9 U+000A
 c
-c
+c 
 c CONVENTIONS CONVERNING ACCENTS:
 c 1. Tonos is used in place of oxeia.
 c 2. Accent grave (+0060) is used in place of vareia (U+1fef)
@@ -360,13 +362,13 @@ c 5. Breathings and/or accents replace other breathings and/or accents, when the
 c 6. Incompatible diacritics leave the vowel they are intended for, unchanged (i.e. perispomeni epsilon).
 c 7. Repetition of the same diacritic does not produce any effect.
 c 8. FOR MOBILE DEVICES ONLY: Accents are also present in the SHIFT layer. Their keys are changed dynamically.
-c
+c 
 store(all-accents) outs(oxeia) outs(vareia) outs(perispo) \
                    outs(daseia) outs(psili) \
                    outs(ypoge) outs(dialy) \
-                   outs(makron) outs(vrachy)
-store(all-tonoi)   U+0384 U+0060 U+1FC0 \
-                   U+1FFE U+1FBF \
+                   outs(makron) outs(vrachy) 
+store(all-tonoi)   U+0384 U+0060 U+1FC0 \ 
+                   U+1FFE U+1FBF \ 
                    U+037A U+00A8 \
                    U+02C9 U+02D8
 c
@@ -378,11 +380,11 @@ store(longpressHex)     U+1FB3 U+1FB7 U+1F87 \
                         U+1FC3 U+1FC7 U+1F97 \
                         U+1FF3 U+1FF7 U+1FA7
 c
-c
+c 
 c DIACRITICS COMBINATIONS
 c
 c Ypogegrammeni excluded because there is no ypog + accent single unicode char + glyph
-c
+c 
 store(tonoi)       U+0384 U+0060 U+1FC0 U+1FFE U+1FBF U+00A8 \
                    U+1FCD U+1FCE U+1FCF \
                    U+1FDD U+1FDE U+1FDF \
@@ -390,15 +392,15 @@ store(tonoi)       U+0384 U+0060 U+1FC0 U+1FFE U+1FBF U+00A8 \
 store(acc-oxeia)   U+0384 U+0384 U+0384 U+1FDE U+1FCE U+0385 \
                    U+1FCE U+1FCE U+1FCE \
                    U+1FDE U+1FDE U+1FDE \
-                   U+0385 U+0385 U+0385
+                   U+0385 U+0385 U+0385 
 store(acc-vareia)  U+0060 U+0060 U+0060 U+1FDD U+1FCD U+1FED \
                    U+1FCD U+1FCD U+1FCD \
                    U+1FDD U+1FDD U+1FDD \
-                   U+1FED U+1FED U+1FED
+                   U+1FED U+1FED U+1FED 
 store(acc-perispo) U+1FC0 U+1FC0 U+1FC0 U+1FDF U+1FCF U+1FC1 \
                    U+1FCF U+1FCF U+1FCF \
                    U+1FDF U+1FDF U+1FDF \
-                   U+1FC1 U+1FC1 U+1FC1
+                   U+1FC1 U+1FC1 U+1FC1 
 store(acc-daseia)  U+1FDE U+1FDD U+1FDF U+1FFE U+1FFE U+1FFE \
                    U+1FDD U+1FDE U+1FDF \
                    U+1FDD U+1FDE U+1FDF \
@@ -411,22 +413,28 @@ store(acc-dialy)   U+0385 U+1FED U+1FC1 U+00A8 U+00A8 U+00A8 \
                    U+1FED U+0385 U+1FC1 \
                    U+1FED U+0385 U+1FC1 \
                    U+0385 U+1FED U+1FC1
-c
+                   c Addition made in Jan 2026
+store(acc-ypoge)   U+1FCE U+1FCD U+1FCF U+1FFE U+1FBF U+1FBF \
+                   U+1FCD U+1FCE U+1FCF \
+                   U+1FDD U+1FDE U+1FDF \
+                   U+1FBF U+1FBF U+1FBF
+
+c 
 c COMBINATIONS OF DIACRITICS AND VOWELS - dialytika included.
 c
-c LOWER CASE
+c LOWER CASE 
 store(tonoi-comb)   U+0384 U+0060 U+1FC0 \
                     U+1FFE U+1FDE U+1FDD U+1FDF \
                     U+1FBF U+1FCE U+1FCD U+1FCF \
                     U+00A8 U+0385 U+1FED U+1FC1 \
                     U+037A \
-                    U+02C9 U+02D8
+                    U+02C9 U+02D8 
 store(alpha-acc)    U+03AC U+1F70 U+1FB6 \
                     U+1F01 U+1F05 U+1F03 U+1F07 \
                     U+1F00 U+1F04 U+1F02 U+1F06 \
                     U+00A8 U+0385 U+1FED U+1FC1 \
                     U+1FB3 \
-                    U+1FB1 U+1FB0
+                    U+1FB1 U+1FB0  
 store(alpha-yp)     U+1FB4 U+1FB2 U+1FB7 \
                     U+1F81 U+1F85 U+1F83 U+1F87 \
                     U+1F80 U+1F84 U+1F82 U+1F86 \
@@ -456,7 +464,7 @@ store(iota-acc)     U+03AF U+1F76 U+1FD6 \
                     U+1F30 U+1F34 U+1F32 U+1F36 \
                     U+03CA U+0390 U+1FD2 U+1FD7 \
                     U+0269 \
-                    U+1FD1 U+1FD0
+                    U+1FD1 U+1FD0 
 store(omicron-acc)  U+03CC U+1F78 U+03BF \
                     U+1F41 U+1F45 U+1F43 U+03BF \
                     U+1F40 U+1F44 U+1F42 U+03BF \
@@ -468,7 +476,7 @@ store(upsilon-acc)  U+03CD U+1F7A U+1FE6 \
                     U+1F50 U+1F54 U+1F52 U+1F56 \
                     U+03CB U+03B0 U+1FE2 U+1FE7 \
                     U+03C5   \
-                    U+1FE1 U+1FE0
+                    U+1FE1 U+1FE0 
 store(omega-acc)    U+03CE U+1F7C U+1FF6 \
                     U+1F61 U+1F65 U+1F63 U+1F67 \
                     U+1F60 U+1F64 U+1F62 U+1F66 \
@@ -487,7 +495,7 @@ store(alphaup-acc)  U+0386 U+1FBA U+0391 \
                     U+1F08 U+1F0C U+1F0A U+1F0E \
                     U+0391 U+0391 U+0391 U+0391 \
                     U+1FBC \
-                    U+1FB9 U+1FB8
+                    U+1FB9 U+1FB8   
 store(alphaup-yp)   U+0391 U+0391 U+0391 \
                     U+1F89 U+1F8D U+1F8B U+1F8F \
                     U+1F88 U+1F8C U+1F8A U+1F8E \
@@ -517,7 +525,7 @@ store(iotaup-acc)   U+038A U+1FDA U+0399 \
                     U+1F38 U+1F3C U+1F3A U+1F3E \
                     U+03AA U+03AA U+03AA U+03AA \
                     U+0399 \
-                    U+1FD9 U+1FD8
+                    U+1FD9 U+1FD8 
 store(omicronup-acc) U+038C U+1FF8 U+039F \
                     U+1F49 U+1F4D U+1F4B U+1F49 \
                     U+1F48 U+1F4C U+1F4A U+1F48 \
@@ -529,12 +537,12 @@ store(upsilonup-acc) U+038E U+1FEA U+03A5  \
                     U+03A5 U+03A5 U+03A5 U+03A5 \
                     U+03AB U+03AB U+03AB U+03AB \
                     U+03A5 \
-                    U+1FE9 U+1FE8
+                    U+1FE9 U+1FE8 
 store(omegaup-acc)  U+038F U+1FFA U+03A9 \
                     U+1F69 U+1F6D U+1F6B U+1F6F \
                     U+1F68 U+1F6C U+1F6A U+1F6E \
                     U+03A9 U+03A9 U+03A9 U+03A9 \
-                    U+1FFC \
+                    U+1FFC \ 
                     U+03A9 U+03A9
 store(omegaup-yp)   U+03A9 U+03A9 U+03A9 \
                     U+1FA9 U+1FAD U+1FAB U+1FAF \
@@ -542,28 +550,28 @@ store(omegaup-yp)   U+03A9 U+03A9 U+03A9 \
                     U+03A9 U+03A9 U+03A9 U+03A9 \
                     U+1FFC \
                     U+03A9 U+03A9
-c
+c 
 c
 c STORES USED FOR DIPHTHONG PROCESSING (at beginning of word)
 c
 c Used in Rule 1
 c Sequence of chars: psili / psili-oxeia / psili-perisp / psili-vareia / daseia / daseia-oxeia / daseia-perisp / daseia-vareia
-store(startingVowelWithAccBreath)   U+1F00 U+1F10 U+1F20 U+1F40 \
-                                    U+1F04 U+1F14 U+1F24 U+1F44 \
-                                    U+1F06 U+1F26               \
-                                    U+1F02 U+1F12 U+1F22 U+1F42 \
+store(startingVowelWithAccBreath)   U+1F00 U+1F10 U+1F20 U+1F40 \   
+                                    U+1F04 U+1F14 U+1F24 U+1F44 \      
+                                    U+1F06 U+1F26               \    
+                                    U+1F02 U+1F12 U+1F22 U+1F42 \ 
                                     U+1F01 U+1F11 U+1F21 U+1F41 \
                                     U+1F05 U+1F15 U+1F25 U+1F45 \
                                     U+1F07 U+1F27               \
                                     U+1F03 U+1F13 U+1F23 U+1F43 \
                                     U+1F08 U+1F18 U+1F28 U+1F48 \
-                                    U+1F0C U+1F1C U+1F2C U+1F4C \
+                                    U+1F0C U+1F1C U+1F2C U+1F4C \  
                                     U+1F0E U+1FE2               \
                                     U+1F0A U+1F1A U+1F2A U+1F4A \
                                     U+1F09 U+1F19 U+1F29 U+1F49 \
                                     U+1F0D U+1F1D U+1F2D U+1F4D \
                                     U+1F0F U+1F2F               \
-                                    U+1F0B U+1F1B U+1F2B U+1F4B
+                                    U+1F0B U+1F1B U+1F2B U+1F4B 
 store(startingVowel)                U+03B1 U+03B5 U+03B7 U+03BF \
                                     U+03B1 U+03B5 U+03B7 U+03BF \
                                     U+03B1 U+03B7               \
@@ -579,7 +587,7 @@ store(startingVowel)                U+03B1 U+03B5 U+03B7 U+03BF \
                                     U+0391 U+0395 U+0397 U+039F \
                                     U+0391 U+0395 U+0397 U+039F \
                                     U+0391 U+0397               \
-                                    U+0391 U+0395 U+0397 U+039F
+                                    U+0391 U+0395 U+0397 U+039F                                   
 store(IotaWithAccBreath)            U+1F30 U+1F30 U+1F30 U+1F30 \
                                     U+1F34 U+1F34 U+1F34 U+1F34 \
                                     U+1F36 U+1F36               \
@@ -595,7 +603,7 @@ store(IotaWithAccBreath)            U+1F30 U+1F30 U+1F30 U+1F30 \
                                     U+1F31 U+1F31 U+1F31 U+1F31 \
                                     U+1F35 U+1F35 U+1F35 U+1F35 \
                                     U+1F37 U+1F37               \
-                                    U+1F33 U+1F33 U+1F33 U+1F33
+                                    U+1F33 U+1F33 U+1F33 U+1F33  
 store(YpsilonWithAccBreath)         U+1F50 U+1F50 U+1F50 U+1F50 \
                                     U+1F54 U+1F54 U+1F54 U+1F54 \
                                     U+1F56 U+1F56               \
@@ -611,7 +619,7 @@ store(YpsilonWithAccBreath)         U+1F50 U+1F50 U+1F50 U+1F50 \
                                     U+1F51 U+1F51 U+1F51 U+1F51 \
                                     U+1F55 U+1F55 U+1F55 U+1F55 \
                                     U+1F57 U+1F57               \
-                                    U+1F53 U+1F53 U+1F53 U+1F53
+                                    U+1F53 U+1F53 U+1F53 U+1F53 
 c
 c Used in rule 2
 store(startingVowelWithPsili)     U+1F00 U+1F10 U+1F20 U+1F40 U+1F51 \
@@ -673,41 +681,54 @@ any(startingVowelWithPsili)  U+1FDE + any(upsilon) > index(VowelWithoutAcc,1) U+
 any(startingVowelWithPsili)  U+1FDF + any(upsilon) > index(VowelWithoutAcc,1) U+1F57
 any(startingVowelWithPsili)  U+1FDD + any(upsilon) > index(VowelWithoutAcc,1) U+1F53
 c
+c ------------ Rule 3a: psili entered after vowel with automatic psili -> automatic psili removed from initial vowel
+c ------------ Jan 2026
+c
+any(startingVowelWithPsili) + any(psili) > index(VowelWithoutAcc,1) u+1fbf
+
+c
 c ------------ Rule 4: If none of the above, -------------------------------------------
 c ------------ put DEFAULT BREATHING AT STARTING VOWEL (with or w/o accent) ----
 c ------------ perisp before epsilon or omikron is ignored ---------------------
+c 
+nul U+0384 + any(vowels) > index(vowels-oxeia-breath,3)
+any(beforeWordChars) U+0384 + any(vowels) > index(beforeWordChars,1) index(vowels-oxeia-breath,3)
+nul U+1FC0 + any(vowels) > index(vowels-perisp-breath,3)
+any(beforeWordChars) U+1FC0 + any(vowels) > index(beforeWordChars,1) index(vowels-perisp-breath,3)
+nul U+0060 + any(vowels) > index(vowels-vareia-breath,3)
+any(beforeWordChars) U+0060 + any(vowels) > index(beforeWordChars,1) index(vowels-vareia-breath,3)
 c
-nul U+0384 + any(vowels) > context use(wordStartBreathingRules)
-any(beforeWordChars) U+0384 + any(vowels) > context use(wordStartBreathingRules)
-nul U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
-any(beforeWordChars) U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
-nul U+0060 + any(vowels) > context use(wordStartBreathingRules)
-any(beforeWordChars) U+0060 + any(vowels) > context use(wordStartBreathingRules)
+c Jan 2026 - Correct error in handling sequences of perisp and ypoge and vice versa
+c
+nul any(tonoi) + any(ypoge) > index(acc-ypoge,2) U+037A  
+any(beforeWordChars) any(tonoi) + any(ypoge)  > U+0020 index(acc-ypoge,2) u+037a 
+c
 c
 c ------------- Rule 5: Ignore accents before consonants ----------------
-c ------------- Exception: Daseia before rho! ----------------------------
+c ------------- Exception: Daseia or psili before rho! -------
 c
-U+1FFE + any(rhos) > index(rhos_das, 2)
+U+1FFE + any(rhos) > index(rhos_das, 2) 
+U+1FBF + outs(rho) > U+1FE4                 c Jan 2026
 any(tonoi) + any(conson) > index(symfwn,2)
 c
 c ----- Combination of breathings and accents ---------------------------------
-c
+c 
 any(tonoi) + any(oxeia) > index(acc-oxeia,1)
 any(tonoi) + any(vareia) > index(acc-vareia,1)
 any(tonoi) + any(perispo) > index(acc-perispo,1)
 any(tonoi) + any(daseia) > index(acc-daseia,1)
-any(tonoi) + any(psili) > index(acc-psili,1)
-any(tonoi) + any(dialy) > index(acc-dialy,1)
-any(tonoi) + any(ypoge) > index(tonoi,1) U+037A
-c
+any(tonoi) + any(psili) > index(acc-psili,1) 
+any(tonoi) + any(dialy) > index(acc-dialy,1) 
+any(tonoi) + any(ypoge) > index(tonoi,1) U+037A   
+c 
 any(tonoi) u+037a + any(oxeia) > index(acc-oxeia,1)  u+037a
 any(tonoi) u+037a + any(vareia) > index(acc-vareia,1) u+037a
 any(tonoi) u+037a + any(perispo) > index(acc-perispo,1)  u+037a
 any(tonoi) u+037a + any(daseia) > index(acc-daseia,1)  u+037a
 any(tonoi) u+037a + any(psili) > index(acc-psili,1)  u+037a
-c
+c 
 c ------ ypoge + diacritics + vowels --> vowel with diacritics & ypoge
-c
+c 
 u+037a any(tonoi-comb)+ any(alpha) > index(alpha-yp,2)
 u+037a any(tonoi-comb)+ any(eta) >  index(eta-yp,2)
 u+037a any(tonoi-comb)+ any(omega) > index(omega-yp,2)
@@ -722,9 +743,9 @@ u+037a any(tonoi-comb)+ any(epsilonup) > beep
 u+037a any(tonoi-comb)+ any(iotaup) > beep
 u+037a any(tonoi-comb)+ any(upsilonup) > beep
 u+037a any(tonoi-comb)+ any(omicronup) > beep
-c
+c 
 c ---- diacritics + vowels --> vowel with diacritics
-c
+c 
 c Special case: any perisp + omikron|epsilon -> omikron|epsilon + any perisp
 store(vrachea) [K_E] [SHIFT K_E] [K_O] [SHIFT K_O]
 store(vrachea_codes) U+03B5 U+0395 U+03BF U+039F
@@ -738,17 +759,17 @@ any(tonoi-comb) + any(iota) > index(iota-acc,1)
 any(tonoi-comb) + any(omicron) > index(omicron-acc,1)
 any(tonoi-comb) + any(upsilon) > index(upsilon-acc,1)
 any(tonoi-comb) + any(omega) > index(omega-acc,1)
-c
+c 
 any(tonoi-comb) + any(alphaup) > index(alphaup-acc,1)
 any(tonoi-comb) + any(epsilonup) > index(epsilonup-acc,1)
 any(tonoi-comb) + any(etaup) > index(etaup-acc,1)
 any(tonoi-comb) + any(iotaup) > index(iotaup-acc,1)
 any(tonoi-comb) + any(omicronup) > index(omicronup-acc,1)
 any(tonoi-comb) + any(upsilonup) > index(upsilonup-acc,1)
-any(tonoi-comb) + any(omegaup) > index(omegaup-acc,1)
-c
+any(tonoi-comb) + any(omegaup) > index(omegaup-acc,1)  
+c 
 c ------- diacritics (single or combined) + ypoge + vowels --> vowel with diacritics & ypoge
-c
+c 
 any(tonoi-comb) U+037A + any(alpha) > index(alpha-yp,1)
 any(tonoi-comb) U+037A + any(eta) > index(eta-yp,1)
 any(tonoi-comb) U+037A + any(omega) > index(omega-yp,1)
@@ -769,8 +790,8 @@ c
 c -------------------------- MOBILE PLATFORMS ONLY --------------------------------
 c
 c ------- Keep normal sigma after chars marking the beginning of a word
-if(&platform = 'ios') any(beforeWordChars) + any(sigmafmob) > context U+03C3
-if(&platform = 'android') any(beforeWordChars) + any(sigmafmob) > context U+03C3
+if(&platform = 'ios') any(beforeWordChars) + any(sigmafmob) > index(beforeWordChars,2) U+03C3
+if(&platform = 'android') any(beforeWordChars) + any(sigmafmob) > index(beforeWordChars,2) U+03C3
 c
 c ------- Convert final sigma to U+03C3 (sigma) if followed by vowel, consonant, accent or longpress alpha, eta or omega
 if(&platform = 'ios') U+03C2 + any(vowels) > U+03C3 index(fwn,3)
@@ -798,24 +819,36 @@ nul + any(ypoge) > context U+037A U+1FBF
 any(beforeWordChars) + any(ypoge) > context U+037A U+1FBF
 c
 c
-c ------- RULES FOR REMOVAL OF AUTOMATIC PSILI in numerals followed by fullstop ---------
-c ------- i.e. α. β. ... ια. ιβ ... ιστ ...
+c ------- Jan 2026: REMOVAL OF AUTOMATIC PSILI in greek numerals followed by [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_QUOTE] [K_BKQUOTE]
+c ------- i.e. α. β. ... ια. ιβ. ... ιστ. ...
 c
+store(arithm-symbols)       [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_QUOTE] [K_BKQUOTE]
+store(arithm-symbols-hex)   U+002E U+002F U+0029 U+0027 U+02BC
 store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 \
-                            U+1F08 U+1F18 U+1F28 U+1F38 c stores used in following groups
+                            U+1F08 U+1F18 U+1F28 U+1F38  
 store(vowels-arithm)        U+0251 U+03B5 U+03B7 U+03B9 \
-                            U+0391 U+0395 U+0397 U+0399 c for dropping of automatic psili after single quite and space
-any(vowels-arithm-psili) + '.' > index(vowels-arithm,1) U+002E
-'ἰα' + '.' > 'ια.'
-'ἰε' + '.' > 'ιε.'
-'ἰστ' + '.' > 'ιστ.'
-'ἰη' + '.' > 'ιη.'
-'αἰ' + '.' > 'αἰ.'      c exception to the rule
-'ἰ' any(symfwn) + '.' > 'ι' index(symfwn,2) U+002E
+                            U+0391 U+0395 U+0397 U+0399  
+any(vowels-arithm-psili) + any(arithm-symbols) > index(vowels-arithm,1) index(arithm-symbols-hex,2) 
+'αἰ' + '.' > 'αἰ.'      c exception for αἰών
+c  
+store(vowels-arithm1)       'αβγδεζηθ'  c chars used after iota in greek arithmetics > 10
+store(iota-psili)           U+1F30
+any(iota-psili) any(vowels-arithm1) + any(arithm-symbols) > 'ι' index(vowels-arithm1,2) index(arithm-symbols-hex,3)
+'ἰστ' + '.' > 'ιστ.'        c rule does not seem to work with ἰστ
+'ἰστ' + '/' > 'ιστ/'
+'ἰστ' + ')' > 'ιστ)'
+'ἰστ' + [K_QUOTE] > 'ιστ' u+0027
+'ἰστ' + [K_BKQUOTE] > 'ιστ' u+02BC
+c
+c
+c ------- Production of greek quotes by double keying of < and > (Jan 2026)
+c
+'<' + '<' > U+00AB
+'>' + '>' > U+00BB
 c
 c
 c ------- FOR ALL OTHER CASES, DEFAULT -------------------
-c
+c 
 + any(all-accents) > index(all-tonoi,1)
 c
 + any(vowels) > index(fwn,1)
@@ -831,11 +864,11 @@ c
 group(WinOnlyRules) using keys
     store(gr-diacritics)     U+1FC0 U+037A U+1FBF    c  perispomeni, ypogegrammeni, psili
     store(eng-keybd-keys)    U+005B U+007B U+005D    c  replaced by [, {, ] respectively when followed by space
-    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1)
+    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1) 
 
     c automatic breathing dropped when single vowel followed by vareia and space -> vareia becomes single quote
     c This can reasonably happen only in Windows
-    any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020
+    any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020  
     'ἰα`' + U+0020 > 'ια' u+0027 u+0020
     'ἰε`' + U+0020 > 'ιε' u+0027 u+0020
     'ἰστ`' + U+0020 > 'ιστ' u+0027 u+0020
@@ -849,14 +882,3 @@ group(WinOnlyRules) using keys
 group(mobileOnlyRules) using keys
 c automatic psili dropped when single vowel used for numbering of ordered lists
     any(vowels-arithm-psili) U+0027 + U+0020 > index(vowels-arithm,1) U+0027 U+0020
-
-group(wordStartBreathingRules) using keys
-c
-c This group is setup to workaround a compatibility issue with Firefox; we
-c want to avoid deleting and re-emitting the LF (U+000A). For more details,
-c please see:
-c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
-c
-U+0060 + any(vowels) > index(vowels-vareia-breath,2)
-U+0384 + any(vowels) > index(vowels-oxeia-breath,2)
-U+1FC0 + any(vowels) > index(vowels-perisp-breath,2)
