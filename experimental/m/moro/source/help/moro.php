@@ -82,7 +82,6 @@
   END;
 ?>
 
-  <h1>Moro Keyboard</h1>
   <p>A keyboard for typing the Moro language. Moro is a language spoken in the Nuba Mountains of South Kordofan, Sudan.</p>
 
   <h1>Keyboard Layouts</h1>
