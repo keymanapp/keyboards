@@ -6,6 +6,11 @@ Remington GAIL (SIL) Change History
 * Numpad keys now type in Arabic Numerals (0,1,2..) instead of Indic (०,१,२..)
 * Indic numerals (०,१,२..) are mapped to Right Alt (Altgr)+Numpad keys
 
+1.0 (2023-Apr-20)
+----------------
+* Move keyboard to release
+* Add Annapurna SIL font to package
+
 0.7 (2023-Apr-5)
 ----------------
 * More changes comparing Hindi Indic Input 3 and APS Corporate 2000+
@@ -21,4 +26,5 @@ Remington GAIL (SIL) Change History
 ----------------
 * Created by Lorna Evans with significant assistance from Kaanchan Adhikary (Satchidananda), yogaedu.org
 * Added to experimental
+
 
