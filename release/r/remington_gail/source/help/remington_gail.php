@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagename = 'Remington GAIL (SIL) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
@@ -618,6 +618,13 @@ is an exception to the Reph rule and maintained for the legacy style of visual c
    <li><span class=deva>&#2325; + &#2367; = &#2325;&#2367;</span></li>
 </ul>
 
+<h2>Typing Numbers</h2>
+<p>Typing with number rows and numpad is made consistent as follows :</p>
+<h3>Arabic Numbers (0,1,2...)</h3>
+<p>The number row and numpad (without modifiers) type Arabic digits: 0 1 2 3 4 5 6 7 8 9.</p>
+<h3>Indic Numbers (०,१,२...)</h3>
+<p><b>&lt;AltGr&gt;+Numpad</b> and <b>&lt;AltGr&gt;+Number Row</b> type Indic digits ० १ २ ३ ४ ५ ६ ७ ८ ९]</p>
+
 <h2>Devanagari Alphabet to Keyboard Map</h2>
 <p><i>This section is expected to be populated in future revisions of this document.</i></p>
 
@@ -663,7 +670,7 @@ appear.</p>
 </div>
 
 <h3>Mobile/Tablet Keyboard Layout</h3>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
+<p>Due to the size and number of keys, some characters are hidden in the long press.
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
 <div id='osk-tablet' data-states='default shift'>
