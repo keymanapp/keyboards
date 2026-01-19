@@ -25,7 +25,6 @@ END;
 
 <h2>Desktop Layout</h2>
 <div id='osk' data-states='default shift'></div>
-<img src="tlingityooxatangi_map_desktop.png"/>
 
 <ul>
     <li>
