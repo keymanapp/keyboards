@@ -8,7 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -44,10 +44,22 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
+      <Name>welcome\welcome.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop-default.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop-shift.png</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -137,7 +149,6 @@
   <Keyboards>
     <Keyboard>
       <ID>sil_gawri</ID>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="gwc">Gawri</Language>
