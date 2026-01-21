@@ -3,7 +3,8 @@ NP Gawri (SIL) keyboard
 
 Description
 -----------
-Keyboard for Gawri languagei (originally MSKLC)
+Keyboard for Gawri language (Arabic script)
+Layout originally from MSKLC
 
 Links
 -----
