@@ -1,5 +1,8 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
+## 1.3 (27 Jan 2026)
+* Add `ٖ`, `ٗ`, `ٰ` to Shift O, Shift I, and Shift U.
+
 ## 1.2 (13 Jan 2026)
 * Add `ٱ` to Shift + E
 
