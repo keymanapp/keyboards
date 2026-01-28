@@ -2,7 +2,7 @@
 
 CHANGES
 
-## 1.0.5 (2026-01-14)
+## 1.0.6 (2026-01-14)
 
 ⦁   Double left and right pointing angles are converted into Greek quotation marks
 
@@ -15,6 +15,10 @@ CHANGES
 ⦁   Bug correction: psili entered after a vowel with automatic psili, causes automatic psili to be removed.
 
 ⦁       Psili automatically entered on Greek numerals is removed when the numerals are followed by a period, slash, right parenthesis, vareia (single quote key) or apostrophe.
+
+## 1.0.5 (2025-09-10)
+
+⦁   Additional handling for start-of-line scenarios
 
 ## 1.0.4 (2025-05-09)
 
