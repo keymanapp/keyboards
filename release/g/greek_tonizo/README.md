@@ -2,7 +2,7 @@
 
 ## Description
 
-Greek polytonic kbd for any device
+Greek polytonic keyboard for any device
 
 ## Links
 
