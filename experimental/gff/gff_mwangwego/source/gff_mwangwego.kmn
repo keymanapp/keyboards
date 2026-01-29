@@ -7,9 +7,9 @@ c dependent along with the pairing against specific mutuyo sequences. A better m
 c sequences, process them, and assume anything else is invalid. A later approach may use a single group to
 c handle each letter.  Experimentation will continue.
 
-store(&KEYBOARDVERSION) '1.1.0'
+store(&KEYBOARDVERSION) '0.9.1'
 store(&NAME) 'Mwangwego'
-store(&COPYRIGHT) '© 2024-2026 Geʾez Frontier Foundation'
+store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
 store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego16 font.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_M]'
@@ -28,233 +28,233 @@ c
 c Chichewa Digraphs
 c
 c store(H_Modifier) 'Hh'
-c store(H_DigraphBases) '󰀂󰀅󰀙󰀑󰀃󰀓'
-c store(H_DigraphTargets) '󰀂󰀆󰀉󰀒󰀛󰀟'
+c store(H_DigraphBases) '𖸂𖸅𖸙𖸑𖸃𖸓'
+c store(H_DigraphTargets) '𖸂𖸆𖸉𖸒𖸛𖸟'
 c store(L_Modifier) 'Ll'
-c store(L_DigraphBases) '󰀛󰀇'
-c store(L_DigraphTargets) '󰀛󰀜'
+c store(L_DigraphBases) '𖸛𖸇'
+c store(L_DigraphTargets) '𖸛𖸜'
 c store(S_Modifier) 'Ss'
-c store(S_DigraphBases) '󰀏󰀓'
-c store(S_DigraphTargets) '󰀕󰀔'
+c store(S_DigraphBases) '𖸏𖸓'
+c store(S_DigraphTargets) '𖸕𖸔'
 c store(Y_Modifier) 'Yy'
-c store(Y_DigraphBases) '󰀍'
-c store(Y_DigraphTargets) '󰀎'
+c store(Y_DigraphBases) '𖸍'
+c store(Y_DigraphTargets) '𖸎'
 c store(Z_Modifier) 'Zz'
-c store(Z_DigraphBases) '󰀃'
-c store(Z_DigraphTargets) '󰀚'
+c store(Z_DigraphBases) '𖸃'
+c store(Z_DigraphTargets) '𖸚'
 
 c
 c the below is the set of non-diagraphs when the digraph based approach is used.
 c
-c store(OrdersConsonantsRegular) '󰀁󰀂󰀃󰀄󰀅󰀇󰀈󰀊󰀋󰀌󰀍󰀏󰀐󰀑󰀓󰀖󰀗󰀘󰀙󰀝󰀞'
-store(OrdersShortA) '󰀀󰀁󰀂󰀃󰀄󰀅󰀆󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏󰀐󰀑󰀒󰀓󰀔󰀕󰀖󰀗󰀘󰀙󰀚󰀛󰀜󰀝󰀞󰀟'
-store(OrdersConsonants) '󰀀󰀁󰀂󰀃󰀄󰀅󰀆󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏󰀐󰀑󰀒󰀓󰀔󰀕󰀖󰀗󰀘󰀙󰀚󰀛󰀜󰀝󰀞󰀟'
-store(MwangwegoSyllables) U+F0000 .. U+F001F 
+c store(OrdersConsonantsRegular) '𖸁𖸂𖸃𖸄𖸅𖸇𖸈𖸊𖸋𖸌𖸍𖸏𖸐𖸑𖸓𖸖𖸗𖸘𖸙𖸝𖸞'
+store(OrdersShortA) '𖸀𖸁𖸂𖸃𖸄𖸅𖸆𖸇𖸈𖸉𖸊𖸋𖸌𖸍𖸎𖸏𖸐𖸑𖸒𖸓𖸔𖸕𖸖𖸗𖸘𖸙𖸚𖸛𖸜𖸝𖸞𖸟'
+store(OrdersConsonants) '𖸀𖸁𖸂𖸃𖸄𖸅𖸆𖸇𖸈𖸉𖸊𖸋𖸌𖸍𖸎𖸏𖸐𖸑𖸒𖸓𖸔𖸕𖸖𖸗𖸘𖸙𖸚𖸛𖸜𖸝𖸞𖸟'
+store(MwangwegoSyllables) U+16E00 .. U+16E40
 
 store(VowelKeys) 'AaEeIiOoUu'
-store(Vowels) '󰀀󰀀' 
-store(Masiri) '󰀠󰀠󰀡󰀡󰀢󰀢󰀣󰀣'
+store(Vowels) '𖸀𖸀' 
+store(Masiri) '𖸠𖸠𖸡𖸡𖸢𖸢𖸣𖸣'
 store(MasiriKeys) 'EeIiOoUu'
 store(FirstOrderKeys) 'Aa'
 
 
 store(MwangwegoLowercaseKeys) 'abcdfghjklmnprstvwyzxq'
-store(MwangwegoLowercaseConsonants) '󰀀󰀁󰀂󰀃󰀄󰀅󰀇󰀈󰀊󰀋󰀌󰀍󰀏󰀐󰀑󰀓󰀖󰀗󰀘󰀙󰀝󰀞'
+store(MwangwegoLowercaseConsonants) '𖸀𖸁𖸂𖸃𖸄𖸅𖸇𖸈𖸊𖸋𖸌𖸍𖸏𖸐𖸑𖸓𖸖𖸗𖸘𖸙𖸝𖸞'
 
 store(MwangwegoUppercaseKeys) 'ABCDFGHJKLMNPRSTVWYZXQ'
-store(MwangwegoUppercaseConsonants) '󰀀󰀁󰀂󰀛󰀄󰀆󰀜󰀉󰀊󰀋󰀌󰀎󰀕󰀐󰀒󰀟󰀖󰀗󰀘󰀚󰀝󰀞'
+store(MwangwegoUppercaseConsonants) '𖸀𖸁𖸂𖸛𖸄𖸆𖸜𖸉𖸊𖸋𖸌𖸎𖸕𖸐𖸒𖸟𖸖𖸗𖸘𖸚𖸝𖸞'
 
-store(Mutuyo) '󰀤󰀥󰀦󰀧󰀨󰀩󰀪󰀫󰀬󰀭󰀮󰀯'
-store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀪󰀮'  c '󰀤󰀥󰀦󰀧󰀨󰀪󰀮' 
-store(MutuyoCombining) '󰀫󰀬󰀭󰀯' c  '󰀩󰀫󰀬󰀭󰀯'  
-store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀵󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
-store(MituyoFinals) '󰀱󰀾󰀲󰀴󰀷󰀺󰀾'
+store(Mutuyo) '𖸤𖸥𖸦𖸧𖸨𖸩𖸪𖸫𖸬𖸭𖸮𖸯'
+store(MutuyoRegular) '𖸤𖸥𖸦𖸧𖸪𖸮'  c '𖸤𖸥𖸦𖸧𖸨𖸪𖸮' 
+store(MutuyoCombining) '𖸫𖸬𖸭𖸯' c  '𖸩𖸫𖸬𖸭𖸯'  
+store(Mituyo) '𖸰𖸱𖸲𖸳𖸴𖸵𖸶𖸷𖸸𖸹𖸺𖸻𖸼𖸽𖸾𖸿'
+store(MituyoFinals) '𖸱𖸾𖸲𖸴𖸷𖸺𖸾'
 store(MutuyoMituyo) outs(Mutuyo) outs(Mituyo)
 c store(Prefixable) outs(OrdersConsonants) outs(Masiri)
 
-c  󰀤  = 1  / MYU
-c  󰀥  = 2  / MI
-c  󰀦  = 3  / NI
-c  󰀧  = 4  / HI
-c  󰀨  = 5  / WAYA
-c  󰀩  = 6  / WAYA Below (combining)
+c  𖸤  = 1  / MYU
+c  𖸥  = 2  / MI
+c  𖸦  = 3  / NI
+c  𖸧  = 4  / HI
+c  𖸨  = 5  / WAYA
+c  𖸩  = 6  / WAYA Below (combining)
 store(WayaBelow) U+F0029
-c  󰀪  = 7  / SISA
-c  󰀫  = 8  / MURA  (combining)
+c  𖸪  = 7  / SISA
+c  𖸫  = 8  / MURA  (combining)
 store(Mura) U+F002B
-c  󰀬  = 9  / MULA (combining)
+c  𖸬  = 9  / MULA (combining)
 store(Mula) U+F002C
-c  󰀭  = 0  / PEWA (combining)
+c  𖸭  = 0  / PEWA (combining)
 store(Pewa) U+F002D
-c  󰀮  = -  / TUMBA
-c  󰀯  = =  / KWANTHU (combining)
+c  𖸮  = -  / TUMBA
+c  𖸯  = =  / KWANTHU (combining)
 store(Kwanthu) U+F002F
 
-store(WayaMutuyo) '󰀨󰀴󰀵󰀷󰀸󰀺󰀻󰀼󰀿' $WayaBelow
+store(WayaMutuyo) '𖸨𖸴𖸵𖸷𖸸𖸺𖸻𖸼𖸿' $WayaBelow
 
 store(MutuyoRegularNumberKeys) '12347-' c '123457-'
 store(MutuyoCombiningNumberKeys) '890=' c '6890='
 store(MutuyoKeys) '1234567890-='
 store(MutuyoKeyMenu) outs(MutuyoKeys) [K_TAB]
 
-store(󰀀_InvalidMituyo) '12467890'  c '12467890-'
-store(󰀁_InvalidMituyo) '347='
-store(󰀂_InvalidMituyo) '2890'        c '2890-'
-store(󰀃_InvalidMituyo) '240'       c '2470-='
-store(󰀄_InvalidMituyo) '247-'      c '12470-'
-store(󰀅_InvalidMituyo) '24890'     c '247890-'
-store(󰀆_InvalidMituyo) '12347890='
-store(󰀇_InvalidMituyo) '2347890'
-store(󰀈_InvalidMituyo) '2467890'     c '2467890-'
-store(󰀉_InvalidMituyo) '2467890-='  c '12467890-='
-store(󰀊_InvalidMituyo) '290'           c '2890-'
-store(󰀋_InvalidMituyo) '2347890-'
-store(󰀌_InvalidMituyo) '234890='     c '234890-='
-store(󰀍_InvalidMituyo) '234890'
-store(󰀎_InvalidMituyo) '2346890='
-store(󰀏_InvalidMituyo) '30-'
-store(󰀐_InvalidMituyo) '2347890-'
-store(󰀑_InvalidMituyo) '247890'        c '247890-'
-store(󰀒_InvalidMituyo) '248790'    c '2347890-='
-store(󰀓_InvalidMituyo) '20'                c '20-'
-store(󰀔_InvalidMituyo) '27890-'      c '237890-='
-store(󰀕_InvalidMituyo) '2347890-='
-store(󰀖_InvalidMituyo) '24789'      c '124789-='
-store(󰀗_InvalidMituyo) '1234567890='
-store(󰀘_InvalidMituyo) '234567890='
-store(󰀙_InvalidMituyo) '248'          c '2478-='
-store(󰀚_InvalidMituyo) '2467890-'
-store(󰀛_InvalidMituyo) '24567890-'
-store(󰀜_InvalidMituyo) '2467890-='  c '12467890-='  
-store(󰀝_InvalidMituyo) '24567890-'  c '124567890-='
-store(󰀞_InvalidMituyo) '24567890-'
-store(󰀟_InvalidMituyo) '1246789-='
-store(󰀀_󰀦_InvalidMituyo) '12347890-='
-store(󰀀_󰀮_InvalidMituyo) '123457890-='
-store(󰀁_󰀤_InvalidMituyo) '12347890-='
-store(󰀁_󰀥_InvalidMituyo) '12347890-='
-store(󰀁__InvalidMituyo) '12347890-='
-store(󰀂_󰀤_InvalidMituyo) '1237890-='
-store(󰀂_󰀦_InvalidMituyo) '12357890-'
-store(󰀂_󰀧_InvalidMituyo) '123457890-='
-store(󰀂_󰀮_InvalidMituyo) '123457890-='
-store(󰀂__InvalidMituyo) '124567890-='
-store(󰀂_󰀳_InvalidMituyo) '123467890-='
-store(󰀂_󰀹_InvalidMituyo) '12347890-='
-store(󰀃_󰀤_InvalidMituyo) '1247890-='
-store(󰀃_󰀦_InvalidMituyo) '12467890-='
-store(󰀃_󰀪_InvalidMituyo) '124567890-='
-store(󰀃__InvalidMituyo) '124567890-='
-store(󰀃_󰀮_InvalidMituyo) '123457890-='
-store(󰀄_󰀤_InvalidMituyo) '123457890-='
-store(󰀄_󰀦_InvalidMituyo) '12347890-='
-store(󰀅_󰀤_InvalidMituyo) '12347890-='
-store(󰀅_󰀦_InvalidMituyo) '12347890-='
-store(󰀅_󰀪_InvalidMituyo) '124567890-='
-store(󰀅_󰀮_InvalidMituyo) '123457890-='
-store(󰀅__InvalidMituyo) '124567890-='
-store(󰀆_󰀮_InvalidMituyo) '123467890-='
-store(󰀇_󰀤_InvalidMituyo) '123457890-='
-store(󰀇_󰀮_InvalidMituyo) '12347890-='
-store(󰀈_󰀤_InvalidMituyo) '123457890-='
-store(󰀈_󰀦_InvalidMituyo) '123457890-='
-store(󰀈_󰀮_InvalidMituyo) '123457890-='
-store(󰀈__InvalidMituyo) '124567890-='
-store(󰀉_󰀤_InvalidMituyo) '123457890-='
-store(󰀉_󰀦_InvalidMituyo) '12347890-='
-store(󰀊_󰀤_InvalidMituyo) '127890-='
-store(󰀊_󰀦_InvalidMituyo) '1237890-='
-store(󰀊_󰀧_InvalidMituyo) '12347890-='
-store(󰀊_󰀪_InvalidMituyo) '124567890-='
-store(󰀊_󰀮_InvalidMituyo) '123457890-='
-store(󰀊__InvalidMituyo) '124567890-='
-store(󰀊_󰀰_InvalidMituyo) '123567890-='
-store(󰀊_󰀳_InvalidMituyo) '123467890-='
-store(󰀊_󰀹_InvalidMituyo) '12347890-='
-store(󰀊_󰀾_InvalidMituyo) '123567890-='
-store(󰀊_󰀱_InvalidMituyo) '123467890-='
-store(󰀋_󰀤_InvalidMituyo) '123457890-='
-store(󰀌_󰀤_InvalidMituyo) '12347890-='
-store(󰀌_󰀮_InvalidMituyo) '123457890-='
-store(󰀍_󰀤_InvalidMituyo) '12347890-='
-store(󰀍_󰀮_InvalidMituyo) '12347890-='
-store(󰀎_󰀤_InvalidMituyo) '12347890-='
-store(󰀎_󰀮_InvalidMituyo) '12347890-='
-store(󰀏_󰀤_InvalidMituyo) '12347890-='
-store(󰀏_󰀥_InvalidMituyo) '1237890-='
-store(󰀏_󰀧_InvalidMituyo) '12347890-='
-store(󰀏_󰀸_InvalidMituyo) '123467890-='
-store(󰀏_󰀷_InvalidMituyo) '123457890-='
-store(󰀐_󰀤_InvalidMituyo) '12347890-='
-store(󰀑_󰀤_InvalidMituyo) '1247890-='
-store(󰀑_󰀦_InvalidMituyo) '12347890-='
-store(󰀑_󰀮_InvalidMituyo) '123457890-='
-store(󰀑__InvalidMituyo) '124567890-='
-store(󰀒_󰀤_InvalidMituyo) '12347890-='
-store(󰀒_󰀦_InvalidMituyo) '123457890-='
-store(󰀒_󰀮_InvalidMituyo) '123457890-='
-store(󰀓_󰀤_InvalidMituyo) '127890-='
-store(󰀓_󰀦_InvalidMituyo) '1237890-='
-store(󰀓_󰀧_InvalidMituyo) '12347890-='
-store(󰀓_󰀪_InvalidMituyo) '124567890-='
-store(󰀓_󰀮_InvalidMituyo) '123457890-='
-store(󰀓__InvalidMituyo) '124567890-='
-store(󰀓_󰀰_InvalidMituyo) '123567890-='
-store(󰀓_󰀹_InvalidMituyo) '12347890-=' 
-store(󰀓_󰀾_InvalidMituyo) '123567890-='
-store(󰀓_󰀱_InvalidMituyo) '123457890-='
-store(󰀔_󰀤_InvalidMituyo) '12347890-='
-store(󰀔_󰀦_InvalidMituyo) '12357890-='
-store(󰀔_󰀧_InvalidMituyo) '123457890-='
-store(󰀔__InvalidMituyo) '124567890-='
-store(󰀔_󰀹_InvalidMituyo) '123457890-='
-store(󰀕_󰀤_InvalidMituyo) '123467890-='
-store(󰀖_󰀤_InvalidMituyo) '123457890-='
-store(󰀖_󰀦_InvalidMituyo) '12347890-='
-store(󰀖__InvalidMituyo) '12467890-='
-store(󰀖_󰀮_InvalidMituyo) '123457890-='
-store(󰀖__InvalidMituyo) '124567890-='
-store(󰀘_󰀮_InvalidMituyo) '123457890-='
-store(󰀙_󰀤_InvalidMituyo) '1247890-='
-store(󰀙_󰀦_InvalidMituyo) '12347890-='
-store(󰀙_󰀪_InvalidMituyo) '124567890-='
-store(󰀙__InvalidMituyo) '12347890-='
-store(󰀙_󰀮_InvalidMituyo) '123457890-='
-store(󰀙__InvalidMituyo) '124567890-='
-store(󰀚_󰀤_InvalidMituyo) '12467890-='
-store(󰀚_󰀦_InvalidMituyo) '123467890-='
-store(󰀚__InvalidMituyo) '124567890-='
-store(󰀛_󰀤_InvalidMituyo) '123457890-='
-store(󰀛_󰀦_InvalidMituyo) '12347890-='
-store(󰀛__InvalidMituyo) '124567890-='
-store(󰀜_󰀤_InvalidMituyo) '1247890-='
-store(󰀜_󰀦_InvalidMituyo) '12347890-='
-store(󰀝_󰀤_InvalidMituyo) '12467890-='
-store(󰀝_󰀦_InvalidMituyo) '123467890-='
-store(󰀝__InvalidMituyo) '124567890-='
-store(󰀞_󰀤_InvalidMituyo) '123457890-='
-store(󰀞_󰀦_InvalidMituyo) '123467890-='
-store(󰀞__InvalidMituyo) '124567890-='
-store(󰀟_󰀦_InvalidMituyo) '123467890-='
-store(󰀟__InvalidMituyo) '12467890-='
+store(𖸀_InvalidMituyo) '12467890'  c '12467890-'
+store(𖸁_InvalidMituyo) '347='
+store(𖸂_InvalidMituyo) '2890'        c '2890-'
+store(𖸃_InvalidMituyo) '240'       c '2470-='
+store(𖸄_InvalidMituyo) '247-'      c '12470-'
+store(𖸅_InvalidMituyo) '24890'     c '247890-'
+store(𖸆_InvalidMituyo) '12347890='
+store(𖸇_InvalidMituyo) '2347890'
+store(𖸈_InvalidMituyo) '2467890'     c '2467890-'
+store(𖸉_InvalidMituyo) '2467890-='  c '12467890-='
+store(𖸊_InvalidMituyo) '290'           c '2890-'
+store(𖸋_InvalidMituyo) '2347890-'
+store(𖸌_InvalidMituyo) '234890='     c '234890-='
+store(𖸍_InvalidMituyo) '234890'
+store(𖸎_InvalidMituyo) '2346890='
+store(𖸏_InvalidMituyo) '30-'
+store(𖸐_InvalidMituyo) '2347890-'
+store(𖸑_InvalidMituyo) '247890'        c '247890-'
+store(𖸒_InvalidMituyo) '248790'    c '2347890-='
+store(𖸓_InvalidMituyo) '20'                c '20-'
+store(𖸔_InvalidMituyo) '27890-'      c '237890-='
+store(𖸕_InvalidMituyo) '2347890-='
+store(𖸖_InvalidMituyo) '24789'      c '124789-='
+store(𖸗_InvalidMituyo) '1234567890='
+store(𖸘_InvalidMituyo) '234567890='
+store(𖸙_InvalidMituyo) '248'          c '2478-='
+store(𖸚_InvalidMituyo) '2467890-'
+store(𖸛_InvalidMituyo) '24567890-'
+store(𖸜_InvalidMituyo) '2467890-='  c '12467890-='  
+store(𖸝_InvalidMituyo) '24567890-'  c '124567890-='
+store(𖸞_InvalidMituyo) '24567890-'
+store(𖸟_InvalidMituyo) '1246789-='
+store(𖸀_𖸦_InvalidMituyo) '12347890-='
+store(𖸀_𖸮_InvalidMituyo) '123457890-='
+store(𖸁_𖸤_InvalidMituyo) '12347890-='
+store(𖸁_𖸥_InvalidMituyo) '12347890-='
+store(𖸁__InvalidMituyo) '12347890-='
+store(𖸂_𖸤_InvalidMituyo) '1237890-='
+store(𖸂_𖸦_InvalidMituyo) '12357890-'
+store(𖸂_𖸧_InvalidMituyo) '123457890-='
+store(𖸂_𖸮_InvalidMituyo) '123457890-='
+store(𖸂__InvalidMituyo) '124567890-='
+store(𖸂_𖸳_InvalidMituyo) '123467890-='
+store(𖸂_𖸹_InvalidMituyo) '12347890-='
+store(𖸃_𖸤_InvalidMituyo) '1247890-='
+store(𖸃_𖸦_InvalidMituyo) '12467890-='
+store(𖸃_𖸪_InvalidMituyo) '124567890-='
+store(𖸃__InvalidMituyo) '124567890-='
+store(𖸃_𖸮_InvalidMituyo) '123457890-='
+store(𖸄_𖸤_InvalidMituyo) '123457890-='
+store(𖸄_𖸦_InvalidMituyo) '12347890-='
+store(𖸅_𖸤_InvalidMituyo) '12347890-='
+store(𖸅_𖸦_InvalidMituyo) '12347890-='
+store(𖸅_𖸪_InvalidMituyo) '124567890-='
+store(𖸅_𖸮_InvalidMituyo) '123457890-='
+store(𖸅__InvalidMituyo) '124567890-='
+store(𖸆_𖸮_InvalidMituyo) '123467890-='
+store(𖸇_𖸤_InvalidMituyo) '123457890-='
+store(𖸇_𖸮_InvalidMituyo) '12347890-='
+store(𖸈_𖸤_InvalidMituyo) '123457890-='
+store(𖸈_𖸦_InvalidMituyo) '123457890-='
+store(𖸈_𖸮_InvalidMituyo) '123457890-='
+store(𖸈__InvalidMituyo) '124567890-='
+store(𖸉_𖸤_InvalidMituyo) '123457890-='
+store(𖸉_𖸦_InvalidMituyo) '12347890-='
+store(𖸊_𖸤_InvalidMituyo) '127890-='
+store(𖸊_𖸦_InvalidMituyo) '1237890-='
+store(𖸊_𖸧_InvalidMituyo) '12347890-='
+store(𖸊_𖸪_InvalidMituyo) '124567890-='
+store(𖸊_𖸮_InvalidMituyo) '123457890-='
+store(𖸊__InvalidMituyo) '124567890-='
+store(𖸊_𖸰_InvalidMituyo) '123567890-='
+store(𖸊_𖸳_InvalidMituyo) '123467890-='
+store(𖸊_𖸹_InvalidMituyo) '12347890-='
+store(𖸊_𖸾_InvalidMituyo) '123567890-='
+store(𖸊_𖸱_InvalidMituyo) '123467890-='
+store(𖸋_𖸤_InvalidMituyo) '123457890-='
+store(𖸌_𖸤_InvalidMituyo) '12347890-='
+store(𖸌_𖸮_InvalidMituyo) '123457890-='
+store(𖸍_𖸤_InvalidMituyo) '12347890-='
+store(𖸍_𖸮_InvalidMituyo) '12347890-='
+store(𖸎_𖸤_InvalidMituyo) '12347890-='
+store(𖸎_𖸮_InvalidMituyo) '12347890-='
+store(𖸏_𖸤_InvalidMituyo) '12347890-='
+store(𖸏_𖸥_InvalidMituyo) '1237890-='
+store(𖸏_𖸧_InvalidMituyo) '12347890-='
+store(𖸏_𖸸_InvalidMituyo) '123467890-='
+store(𖸏_𖸷_InvalidMituyo) '123457890-='
+store(𖸐_𖸤_InvalidMituyo) '12347890-='
+store(𖸑_𖸤_InvalidMituyo) '1247890-='
+store(𖸑_𖸦_InvalidMituyo) '12347890-='
+store(𖸑_𖸮_InvalidMituyo) '123457890-='
+store(𖸑__InvalidMituyo) '124567890-='
+store(𖸒_𖸤_InvalidMituyo) '12347890-='
+store(𖸒_𖸦_InvalidMituyo) '123457890-='
+store(𖸒_𖸮_InvalidMituyo) '123457890-='
+store(𖸓_𖸤_InvalidMituyo) '127890-='
+store(𖸓_𖸦_InvalidMituyo) '1237890-='
+store(𖸓_𖸧_InvalidMituyo) '12347890-='
+store(𖸓_𖸪_InvalidMituyo) '124567890-='
+store(𖸓_𖸮_InvalidMituyo) '123457890-='
+store(𖸓__InvalidMituyo) '124567890-='
+store(𖸓_𖸰_InvalidMituyo) '123567890-='
+store(𖸓_𖸹_InvalidMituyo) '12347890-=' 
+store(𖸓_𖸾_InvalidMituyo) '123567890-='
+store(𖸓_𖸱_InvalidMituyo) '123457890-='
+store(𖸔_𖸤_InvalidMituyo) '12347890-='
+store(𖸔_𖸦_InvalidMituyo) '12357890-='
+store(𖸔_𖸧_InvalidMituyo) '123457890-='
+store(𖸔__InvalidMituyo) '124567890-='
+store(𖸔_𖸹_InvalidMituyo) '123457890-='
+store(𖸕_𖸤_InvalidMituyo) '123467890-='
+store(𖸖_𖸤_InvalidMituyo) '123457890-='
+store(𖸖_𖸦_InvalidMituyo) '12347890-='
+store(𖸖__InvalidMituyo) '12467890-='
+store(𖸖_𖸮_InvalidMituyo) '123457890-='
+store(𖸖__InvalidMituyo) '124567890-='
+store(𖸘_𖸮_InvalidMituyo) '123457890-='
+store(𖸙_𖸤_InvalidMituyo) '1247890-='
+store(𖸙_𖸦_InvalidMituyo) '12347890-='
+store(𖸙_𖸪_InvalidMituyo) '124567890-='
+store(𖸙__InvalidMituyo) '12347890-='
+store(𖸙_𖸮_InvalidMituyo) '123457890-='
+store(𖸙__InvalidMituyo) '124567890-='
+store(𖸚_𖸤_InvalidMituyo) '12467890-='
+store(𖸚_𖸦_InvalidMituyo) '123467890-='
+store(𖸚__InvalidMituyo) '124567890-='
+store(𖸛_𖸤_InvalidMituyo) '123457890-='
+store(𖸛_𖸦_InvalidMituyo) '12347890-='
+store(𖸛__InvalidMituyo) '124567890-='
+store(𖸜_𖸤_InvalidMituyo) '1247890-='
+store(𖸜_𖸦_InvalidMituyo) '12347890-='
+store(𖸝_𖸤_InvalidMituyo) '12467890-='
+store(𖸝_𖸦_InvalidMituyo) '123467890-='
+store(𖸝__InvalidMituyo) '124567890-='
+store(𖸞_𖸤_InvalidMituyo) '123457890-='
+store(𖸞_𖸦_InvalidMituyo) '123467890-='
+store(𖸞__InvalidMituyo) '124567890-='
+store(𖸟_𖸦_InvalidMituyo) '123467890-='
+store(𖸟__InvalidMituyo) '12467890-='
 
-store(󰀝_󰀤_menu) '[󰀰󰀝₃|󰀵󰀝₅]'
-store(󰀝󰀠_󰀤_menu) '[󰀰󰀝󰀠₃|󰀵󰀝󰀠₅]'
-store(󰀝󰀡_󰀤_menu) '[󰀰󰀝󰀡₃|󰀵󰀝󰀡₅]'
-store(󰀝󰀢_󰀤_menu) '[󰀰󰀝󰀢₃|󰀵󰀝󰀢₅]'
-store(󰀝󰀣_󰀤_menu) '[󰀰󰀝󰀣₃|󰀵󰀝󰀣₅]'
+store(𖸝_𖸤_menu) '[𖸰𖸝₃|𖸵𖸝₅]'
+store(𖸝𖸠_𖸤_menu) '[𖸰𖸝𖸠₃|𖸵𖸝𖸠₅]'
+store(𖸝𖸡_𖸤_menu) '[𖸰𖸝𖸡₃|𖸵𖸝𖸡₅]'
+store(𖸝𖸢_𖸤_menu) '[𖸰𖸝𖸢₃|𖸵𖸝𖸢₅]'
+store(𖸝𖸣_𖸤_menu) '[𖸰𖸝𖸣₃|𖸵𖸝𖸣₅]'
 
-store(󰀜_󰀤_menu) '[󰀰󰀜₃|󰀵󰀜₅|󰀤󰀜󰀩₆]'  
-store(󰀜󰀠_󰀤_menu) '[󰀰󰀜󰀠₃|󰀵󰀜󰀠₅|󰀤󰀜󰀠󰀩₆]'
-store(󰀜󰀡_󰀤_menu) '[󰀰󰀜󰀡₃|󰀵󰀜󰀡₅|󰀤󰀜󰀡󰀩₆]'
-store(󰀜󰀢_󰀤_menu) '[󰀰󰀜󰀢₃|󰀵󰀜󰀢₅|󰀤󰀜󰀢󰀩₆]'
-store(󰀜󰀣_󰀤_menu) '[󰀰󰀜󰀣₃|󰀵󰀜󰀣₅|󰀤󰀜󰀣󰀩₆]'
+store(𖸜_𖸤_menu) '[𖸰𖸜₃|𖸵𖸜₅|𖸤𖸜𖸩₆]'  
+store(𖸜𖸠_𖸤_menu) '[𖸰𖸜𖸠₃|𖸵𖸜𖸠₅|𖸤𖸜𖸠𖸩₆]'
+store(𖸜𖸡_𖸤_menu) '[𖸰𖸜𖸡₃|𖸵𖸜𖸡₅|𖸤𖸜𖸡𖸩₆]'
+store(𖸜𖸢_𖸤_menu) '[𖸰𖸜𖸢₃|𖸵𖸜𖸢₅|𖸤𖸜𖸢𖸩₆]'
+store(𖸜𖸣_𖸤_menu) '[𖸰𖸜𖸣₃|𖸵𖸜𖸣₅|𖸤𖸜𖸣𖸩₆]'
 
-store(󰀔_󰀦_menu) '[󰀹󰀔₄|󰀦󰀔󰀩₆]'
-store(󰀔󰀠_󰀦_menu) '[󰀹󰀔󰀠₄|󰀦󰀔󰀠󰀩₆]'
-store(󰀔󰀡_󰀦_menu) '[󰀹󰀔󰀡₄|󰀦󰀔󰀡󰀩₆]'
-store(󰀔󰀢_󰀦_menu) '[󰀹󰀔󰀢₄|󰀦󰀔󰀢󰀩₆]'
-store(󰀔󰀣_󰀦_menu) '[󰀹󰀔󰀣₄|󰀦󰀔󰀣󰀩₆]'
+store(𖸔_𖸦_menu) '[𖸹𖸔₄|𖸦𖸔𖸩₆]'
+store(𖸔𖸠_𖸦_menu) '[𖸹𖸔𖸠₄|𖸦𖸔𖸠𖸩₆]'
+store(𖸔𖸡_𖸦_menu) '[𖸹𖸔𖸡₄|𖸦𖸔𖸡𖸩₆]'
+store(𖸔𖸢_𖸦_menu) '[𖸹𖸔𖸢₄|𖸦𖸔𖸢𖸩₆]'
+store(𖸔𖸣_𖸦_menu) '[𖸹𖸔𖸣₄|𖸦𖸔𖸣𖸩₆]'
 
 store(MyuMituyoKeys_index) '356'
 c store(MyuMituyoKeys:index:beep) '1247890-='
@@ -272,8 +272,8 @@ c any(L_DigraphBases) + any(L_Modifier)  > index(L_DigraphTargets,1)
 c any(S_DigraphBases) + any(S_Modifier)  > index(S_DigraphTargets,1)
 c any(Y_DigraphBases) + any(Y_Modifier)  > index(Y_DigraphTargets,1)
 
-notany(MutuyoMituyo) '󰀓' + 't' > context(1) '󰀔'
-nul '󰀓' + 't' > '󰀔'
+notany(MutuyoMituyo) '𖸓' + 't' > context(1) '𖸔'
+nul '𖸓' + 't' > '𖸔'
 
 + any(MwangwegoLowercaseKeys) > index(MwangwegoLowercaseConsonants,1)
 + any(MwangwegoUppercaseKeys) > index(MwangwegoUppercaseConsonants,1)
@@ -288,18 +288,18 @@ any(OrdersConsonants) + any(MasiriKeys)     > context index(Masiri,2)
 
 deadkey(0) + any(MutuyoKeys) > context beep
 
-'󰀨󰀄' + any(MutuyoKeys) > context beep
-'󰀨󰀄󰀭' + any(MutuyoKeys) > context beep
-'󰀨󰀖' + any(MutuyoKeys) > context beep
-'󰀨󰀆' + any(MutuyoKeys) > context beep
-'󰀆󰀩' + any(MutuyoKeys) > context beep
+'𖸨𖸄' + any(MutuyoKeys) > context beep
+'𖸨𖸄𖸭' + any(MutuyoKeys) > context beep
+'𖸨𖸖' + any(MutuyoKeys) > context beep
+'𖸨𖸆' + any(MutuyoKeys) > context beep
+'𖸆𖸩' + any(MutuyoKeys) > context beep
 
 c any(Masiri) + any(MasiriKeys) > context beep
 
-'󰀱󰀊' + '5' > '󰀲󰀊'
-'󰀱󰀓' + '5' > '󰀲󰀓'
-'󰀱󰀊' any(Masiri) + '5' > '󰀲󰀊' context(2)
-'󰀱󰀓' any(Masiri) + '5' > '󰀲󰀓' context(2)
+'𖸱𖸊' + '5' > '𖸲𖸊'
+'𖸱𖸓' + '5' > '𖸲𖸓'
+'𖸱𖸊' any(Masiri) + '5' > '𖸲𖸊' context(2)
+'𖸱𖸓' any(Masiri) + '5' > '𖸲𖸓' context(2)
 c any(MituyoFinals) any(Prefixable) + any(MutuyoKeys) > context beep
 any(MituyoFinals) any(OrdersConsonants) any(Masiri) + any(MutuyoKeys) > context beep
 
@@ -317,161 +317,161 @@ c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Sequences With a Masiri Present
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 
-'󰀦󰀀' any(Masiri) + any(󰀀_󰀦_InvalidMituyo) > context beep
-'󰀦󰀀' any(Masiri) + '6' > context $WayaBelow deadkey(0)
-'󰀮󰀀' any(Masiri) + any(󰀀_󰀮_InvalidMituyo) > context beep
-'󰀤󰀁' any(Masiri) + any(󰀁_󰀤_InvalidMituyo) > context beep
-'󰀥󰀁' any(Masiri) + any(󰀁_󰀥_InvalidMituyo) > context beep
-'󰀁󰀭' any(Masiri) + any(󰀁__InvalidMituyo) > context beep
-'󰀤󰀂' any(Masiri) + any(󰀂_󰀤_InvalidMituyo) > context beep
-'󰀦󰀂' any(Masiri) + any(󰀂_󰀦_InvalidMituyo) > context beep
-'󰀧󰀂' any(Masiri) + any(󰀂_󰀧_InvalidMituyo) > context beep
-'󰀮󰀂' any(Masiri) + any(󰀂_󰀮_InvalidMituyo) > context beep
-'󰀂󰀯' any(Masiri) + any(󰀂__InvalidMituyo) > context beep
-'󰀳󰀂' any(Masiri) + any(󰀂_󰀳_InvalidMituyo) > context beep
-'󰀹󰀂' any(Masiri) + any(󰀂_󰀹_InvalidMituyo) > context beep
-'󰀤󰀃' any(Masiri) + any(󰀃_󰀤_InvalidMituyo) > context beep
-'󰀦󰀃' any(Masiri) + any(󰀃_󰀦_InvalidMituyo) > context beep
-'󰀪󰀃' any(Masiri) + any(󰀃_󰀪_InvalidMituyo) > context beep
-'󰀮󰀃' any(Masiri) + any(󰀃_󰀮_InvalidMituyo) > context beep
-'󰀃󰀯' any(Masiri) + any(󰀃__InvalidMituyo) > context beep
-'󰀤󰀄' any(Masiri) + any(󰀄_󰀤_InvalidMituyo) > context beep
-'󰀦󰀄' any(Masiri) + any(󰀄_󰀦_InvalidMituyo) > context beep
-'󰀤󰀅' any(Masiri) + any(󰀅_󰀤_InvalidMituyo) > context beep
-'󰀦󰀅' any(Masiri) + any(󰀅_󰀦_InvalidMituyo) > context beep
-'󰀪󰀅' any(Masiri) + any(󰀅_󰀪_InvalidMituyo) > context beep
-'󰀮󰀅' any(Masiri) + any(󰀅_󰀮_InvalidMituyo) > context beep
-'󰀅󰀯' any(Masiri) + any(󰀅__InvalidMituyo) > context beep
-'󰀮󰀆' any(Masiri) + any(󰀆_󰀮_InvalidMituyo) > context beep
-'󰀤󰀇' any(Masiri) + any(󰀇_󰀤_InvalidMituyo) > context beep
-'󰀮󰀇' any(Masiri) + any(󰀇_󰀮_InvalidMituyo) > context beep
-'󰀤󰀈' any(Masiri) + any(󰀈_󰀤_InvalidMituyo) > context beep
-'󰀤󰀈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀈' any(Masiri) + any(󰀈_󰀦_InvalidMituyo) > context beep
-'󰀦󰀈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀮󰀈' any(Masiri) + any(󰀈_󰀮_InvalidMituyo) > context beep
-'󰀈󰀯' any(Masiri) + any(󰀈__InvalidMituyo) > context beep
-'󰀤󰀉' any(Masiri) + any(󰀉_󰀤_InvalidMituyo) > context beep
-'󰀦󰀉' any(Masiri) + any(󰀉_󰀦_InvalidMituyo) > context beep
-'󰀦󰀉' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀊' any(Masiri) + any(󰀊_󰀤_InvalidMituyo) > context beep
-'󰀦󰀊' any(Masiri) + any(󰀊_󰀦_InvalidMituyo) > context beep
-'󰀧󰀊' any(Masiri) + any(󰀊_󰀧_InvalidMituyo) > context beep
-'󰀪󰀊' any(Masiri) + any(󰀊_󰀪_InvalidMituyo) > context beep
-'󰀮󰀊' any(Masiri) + any(󰀊_󰀮_InvalidMituyo) > context beep
-'󰀊󰀯' any(Masiri) + any(󰀊__InvalidMituyo) > context beep
-'󰀰󰀊' any(Masiri) + any(󰀊_󰀰_InvalidMituyo) > context beep
-'󰀳󰀊' any(Masiri) + any(󰀊_󰀳_InvalidMituyo) > context beep
-'󰀹󰀊' any(Masiri) + any(󰀊_󰀹_InvalidMituyo) > context beep
-'󰀾󰀊' any(Masiri) + any(󰀊_󰀾_InvalidMituyo) > context beep
-'󰀱󰀊' any(Masiri) + any(󰀊_󰀱_InvalidMituyo) > context beep
-'󰀤󰀋' any(Masiri) + any(󰀋_󰀤_InvalidMituyo) > context beep
-'󰀤󰀌' any(Masiri) + any(󰀌_󰀤_InvalidMituyo) > context beep
-'󰀮󰀌' any(Masiri) + any(󰀌_󰀮_InvalidMituyo) > context beep
-'󰀤󰀍' any(Masiri) + any(󰀍_󰀤_InvalidMituyo) > context beep
-'󰀮󰀍' any(Masiri) + any(󰀍_󰀮_InvalidMituyo) > context beep
-'󰀤󰀎' any(Masiri) + any(󰀎_󰀤_InvalidMituyo) > context beep
-'󰀤󰀎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'󰀎' rule will later block composition with Waya Below
-'󰀮󰀎' any(Masiri) + any(󰀎_󰀮_InvalidMituyo) > context beep
-'󰀮󰀎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀏' any(Masiri) + any(󰀏_󰀤_InvalidMituyo) > context beep
-'󰀥󰀏' any(Masiri) + any(󰀏_󰀥_InvalidMituyo) > context beep
-'󰀧󰀏' any(Masiri) + any(󰀏_󰀧_InvalidMituyo) > context beep
-'󰀸󰀏' any(Masiri) + any(󰀏_󰀸_InvalidMituyo) > context beep
-'󰀷󰀏' any(Masiri) + any(󰀏_󰀷_InvalidMituyo) > context beep
-'󰀤󰀐' any(Masiri) + any(󰀐_󰀤_InvalidMituyo) > context beep
-'󰀤󰀑' any(Masiri) + any(󰀑_󰀤_InvalidMituyo) > context beep
-'󰀦󰀑' any(Masiri) + any(󰀑_󰀦_InvalidMituyo) > context beep
-'󰀮󰀑' any(Masiri) + any(󰀑_󰀮_InvalidMituyo) > context beep
-'󰀑󰀯' any(Masiri) + any(󰀑__InvalidMituyo) > context beep
-'󰀤󰀒' any(Masiri) + any(󰀒_󰀤_InvalidMituyo) > context beep
-'󰀦󰀒' any(Masiri) + any(󰀒_󰀦_InvalidMituyo) > context beep
-'󰀮󰀒' any(Masiri) + any(󰀒_󰀮_InvalidMituyo) > context beep
-'󰀤󰀓' any(Masiri) + any(󰀓_󰀤_InvalidMituyo) > context beep
-'󰀦󰀓' any(Masiri) + any(󰀓_󰀦_InvalidMituyo) > context beep
-'󰀧󰀓' any(Masiri) + any(󰀓_󰀧_InvalidMituyo) > context beep
-'󰀪󰀓' any(Masiri) + any(󰀓_󰀪_InvalidMituyo) > context beep
-'󰀮󰀓' any(Masiri) + any(󰀓_󰀮_InvalidMituyo) > context beep
-'󰀓󰀯' any(Masiri) + any(󰀓__InvalidMituyo) > context beep
-'󰀰󰀓' any(Masiri) + any(󰀓_󰀰_InvalidMituyo) > context beep
-'󰀹󰀓' any(Masiri) + any(󰀓_󰀹_InvalidMituyo) > context beep
-'󰀾󰀓' any(Masiri) + any(󰀓_󰀾_InvalidMituyo) > context beep
-'󰀤󰀔' any(Masiri) + any(󰀔_󰀤_InvalidMituyo) > context beep
-'󰀦󰀔' any(Masiri) + any(󰀔_󰀦_InvalidMituyo) > context beep
-'󰀧󰀔' any(Masiri) + any(󰀔_󰀧_InvalidMituyo) > context beep
-'󰀔󰀯' any(Masiri) + any(󰀔__InvalidMituyo) > context beep
-'󰀹󰀔' any(Masiri) + any(󰀔_󰀹_InvalidMituyo) > context beep
-'󰀤󰀕' any(Masiri) + any(󰀕_󰀤_InvalidMituyo) > context beep
-'󰀤󰀖' any(Masiri) + any(󰀖_󰀤_InvalidMituyo) > context beep
-'󰀦󰀖' any(Masiri) + any(󰀖_󰀦_InvalidMituyo) > context beep
-'󰀖󰀭' any(Masiri) + any(󰀖__InvalidMituyo) > context beep
-'󰀮󰀖' any(Masiri) + any(󰀖_󰀮_InvalidMituyo) > context beep
-'󰀖󰀯' any(Masiri) + any(󰀖__InvalidMituyo) > context beep
-'󰀮󰀘' any(Masiri) + any(󰀘_󰀮_InvalidMituyo) > context beep
-'󰀮󰀘' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀙' any(Masiri) + any(󰀙_󰀤_InvalidMituyo) > context beep
-'󰀦󰀙' any(Masiri) + any(󰀙_󰀦_InvalidMituyo) > context beep
-'󰀪󰀙' any(Masiri) + any(󰀙_󰀪_InvalidMituyo) > context beep
-'󰀙󰀭' any(Masiri) + any(󰀙__InvalidMituyo) > context beep
-'󰀮󰀙' any(Masiri) + any(󰀙_󰀮_InvalidMituyo) > context beep
-'󰀙󰀯' any(Masiri) + any(󰀙__InvalidMituyo) > context beep
-'󰀤󰀚' any(Masiri) + any(󰀚_󰀤_InvalidMituyo) > context beep
-'󰀦󰀚' any(Masiri) + any(󰀚_󰀦_InvalidMituyo) > context beep
-'󰀚󰀯' any(Masiri) + any(󰀚__InvalidMituyo) > context beep
-'󰀤󰀛' any(Masiri) + any(󰀛_󰀤_InvalidMituyo) > context beep
-'󰀤󰀛' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀛' any(Masiri) + any(󰀛_󰀦_InvalidMituyo) > context beep
-'󰀦󰀛' any(Masiri) + '6' >  context $WayaBelow  deadkey(0)
-'󰀛󰀯' any(Masiri) + any(󰀛__InvalidMituyo) > context beep
-'󰀤󰀜' any(Masiri) + any(󰀜_󰀤_InvalidMituyo) > context beep
-'󰀦󰀜' any(Masiri) + any(󰀜_󰀦_InvalidMituyo) > context beep
-'󰀦󰀜' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀝' any(Masiri) + any(󰀝_󰀤_InvalidMituyo) > context beep
-'󰀦󰀝' any(Masiri) + any(󰀝_󰀦_InvalidMituyo) > context beep
-'󰀝󰀯' any(Masiri) + any(󰀝__InvalidMituyo) > context beep
-'󰀤󰀞' any(Masiri) + any(󰀞_󰀤_InvalidMituyo) > context beep
-'󰀤󰀞' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀞' any(Masiri) + any(󰀞_󰀦_InvalidMituyo) > context beep
-'󰀞󰀯' any(Masiri) + any(󰀞__InvalidMituyo) > context beep
-'󰀦󰀟' any(Masiri) + any(󰀟_󰀦_InvalidMituyo) > context beep
-'󰀟󰀭' any(Masiri) + any(󰀟__InvalidMituyo) > context beep
+'𖸦𖸀' any(Masiri) + any(𖸀_𖸦_InvalidMituyo) > context beep
+'𖸦𖸀' any(Masiri) + '6' > context $WayaBelow deadkey(0)
+'𖸮𖸀' any(Masiri) + any(𖸀_𖸮_InvalidMituyo) > context beep
+'𖸤𖸁' any(Masiri) + any(𖸁_𖸤_InvalidMituyo) > context beep
+'𖸥𖸁' any(Masiri) + any(𖸁_𖸥_InvalidMituyo) > context beep
+'𖸁𖸭' any(Masiri) + any(𖸁__InvalidMituyo) > context beep
+'𖸤𖸂' any(Masiri) + any(𖸂_𖸤_InvalidMituyo) > context beep
+'𖸦𖸂' any(Masiri) + any(𖸂_𖸦_InvalidMituyo) > context beep
+'𖸧𖸂' any(Masiri) + any(𖸂_𖸧_InvalidMituyo) > context beep
+'𖸮𖸂' any(Masiri) + any(𖸂_𖸮_InvalidMituyo) > context beep
+'𖸂𖸯' any(Masiri) + any(𖸂__InvalidMituyo) > context beep
+'𖸳𖸂' any(Masiri) + any(𖸂_𖸳_InvalidMituyo) > context beep
+'𖸹𖸂' any(Masiri) + any(𖸂_𖸹_InvalidMituyo) > context beep
+'𖸤𖸃' any(Masiri) + any(𖸃_𖸤_InvalidMituyo) > context beep
+'𖸦𖸃' any(Masiri) + any(𖸃_𖸦_InvalidMituyo) > context beep
+'𖸪𖸃' any(Masiri) + any(𖸃_𖸪_InvalidMituyo) > context beep
+'𖸮𖸃' any(Masiri) + any(𖸃_𖸮_InvalidMituyo) > context beep
+'𖸃𖸯' any(Masiri) + any(𖸃__InvalidMituyo) > context beep
+'𖸤𖸄' any(Masiri) + any(𖸄_𖸤_InvalidMituyo) > context beep
+'𖸦𖸄' any(Masiri) + any(𖸄_𖸦_InvalidMituyo) > context beep
+'𖸤𖸅' any(Masiri) + any(𖸅_𖸤_InvalidMituyo) > context beep
+'𖸦𖸅' any(Masiri) + any(𖸅_𖸦_InvalidMituyo) > context beep
+'𖸪𖸅' any(Masiri) + any(𖸅_𖸪_InvalidMituyo) > context beep
+'𖸮𖸅' any(Masiri) + any(𖸅_𖸮_InvalidMituyo) > context beep
+'𖸅𖸯' any(Masiri) + any(𖸅__InvalidMituyo) > context beep
+'𖸮𖸆' any(Masiri) + any(𖸆_𖸮_InvalidMituyo) > context beep
+'𖸤𖸇' any(Masiri) + any(𖸇_𖸤_InvalidMituyo) > context beep
+'𖸮𖸇' any(Masiri) + any(𖸇_𖸮_InvalidMituyo) > context beep
+'𖸤𖸈' any(Masiri) + any(𖸈_𖸤_InvalidMituyo) > context beep
+'𖸤𖸈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸈' any(Masiri) + any(𖸈_𖸦_InvalidMituyo) > context beep
+'𖸦𖸈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸮𖸈' any(Masiri) + any(𖸈_𖸮_InvalidMituyo) > context beep
+'𖸈𖸯' any(Masiri) + any(𖸈__InvalidMituyo) > context beep
+'𖸤𖸉' any(Masiri) + any(𖸉_𖸤_InvalidMituyo) > context beep
+'𖸦𖸉' any(Masiri) + any(𖸉_𖸦_InvalidMituyo) > context beep
+'𖸦𖸉' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸊' any(Masiri) + any(𖸊_𖸤_InvalidMituyo) > context beep
+'𖸦𖸊' any(Masiri) + any(𖸊_𖸦_InvalidMituyo) > context beep
+'𖸧𖸊' any(Masiri) + any(𖸊_𖸧_InvalidMituyo) > context beep
+'𖸪𖸊' any(Masiri) + any(𖸊_𖸪_InvalidMituyo) > context beep
+'𖸮𖸊' any(Masiri) + any(𖸊_𖸮_InvalidMituyo) > context beep
+'𖸊𖸯' any(Masiri) + any(𖸊__InvalidMituyo) > context beep
+'𖸰𖸊' any(Masiri) + any(𖸊_𖸰_InvalidMituyo) > context beep
+'𖸳𖸊' any(Masiri) + any(𖸊_𖸳_InvalidMituyo) > context beep
+'𖸹𖸊' any(Masiri) + any(𖸊_𖸹_InvalidMituyo) > context beep
+'𖸾𖸊' any(Masiri) + any(𖸊_𖸾_InvalidMituyo) > context beep
+'𖸱𖸊' any(Masiri) + any(𖸊_𖸱_InvalidMituyo) > context beep
+'𖸤𖸋' any(Masiri) + any(𖸋_𖸤_InvalidMituyo) > context beep
+'𖸤𖸌' any(Masiri) + any(𖸌_𖸤_InvalidMituyo) > context beep
+'𖸮𖸌' any(Masiri) + any(𖸌_𖸮_InvalidMituyo) > context beep
+'𖸤𖸍' any(Masiri) + any(𖸍_𖸤_InvalidMituyo) > context beep
+'𖸮𖸍' any(Masiri) + any(𖸍_𖸮_InvalidMituyo) > context beep
+'𖸤𖸎' any(Masiri) + any(𖸎_𖸤_InvalidMituyo) > context beep
+'𖸤𖸎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'𖸎' rule will later block composition with Waya Below
+'𖸮𖸎' any(Masiri) + any(𖸎_𖸮_InvalidMituyo) > context beep
+'𖸮𖸎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸏' any(Masiri) + any(𖸏_𖸤_InvalidMituyo) > context beep
+'𖸥𖸏' any(Masiri) + any(𖸏_𖸥_InvalidMituyo) > context beep
+'𖸧𖸏' any(Masiri) + any(𖸏_𖸧_InvalidMituyo) > context beep
+'𖸸𖸏' any(Masiri) + any(𖸏_𖸸_InvalidMituyo) > context beep
+'𖸷𖸏' any(Masiri) + any(𖸏_𖸷_InvalidMituyo) > context beep
+'𖸤𖸐' any(Masiri) + any(𖸐_𖸤_InvalidMituyo) > context beep
+'𖸤𖸑' any(Masiri) + any(𖸑_𖸤_InvalidMituyo) > context beep
+'𖸦𖸑' any(Masiri) + any(𖸑_𖸦_InvalidMituyo) > context beep
+'𖸮𖸑' any(Masiri) + any(𖸑_𖸮_InvalidMituyo) > context beep
+'𖸑𖸯' any(Masiri) + any(𖸑__InvalidMituyo) > context beep
+'𖸤𖸒' any(Masiri) + any(𖸒_𖸤_InvalidMituyo) > context beep
+'𖸦𖸒' any(Masiri) + any(𖸒_𖸦_InvalidMituyo) > context beep
+'𖸮𖸒' any(Masiri) + any(𖸒_𖸮_InvalidMituyo) > context beep
+'𖸤𖸓' any(Masiri) + any(𖸓_𖸤_InvalidMituyo) > context beep
+'𖸦𖸓' any(Masiri) + any(𖸓_𖸦_InvalidMituyo) > context beep
+'𖸧𖸓' any(Masiri) + any(𖸓_𖸧_InvalidMituyo) > context beep
+'𖸪𖸓' any(Masiri) + any(𖸓_𖸪_InvalidMituyo) > context beep
+'𖸮𖸓' any(Masiri) + any(𖸓_𖸮_InvalidMituyo) > context beep
+'𖸓𖸯' any(Masiri) + any(𖸓__InvalidMituyo) > context beep
+'𖸰𖸓' any(Masiri) + any(𖸓_𖸰_InvalidMituyo) > context beep
+'𖸹𖸓' any(Masiri) + any(𖸓_𖸹_InvalidMituyo) > context beep
+'𖸾𖸓' any(Masiri) + any(𖸓_𖸾_InvalidMituyo) > context beep
+'𖸤𖸔' any(Masiri) + any(𖸔_𖸤_InvalidMituyo) > context beep
+'𖸦𖸔' any(Masiri) + any(𖸔_𖸦_InvalidMituyo) > context beep
+'𖸧𖸔' any(Masiri) + any(𖸔_𖸧_InvalidMituyo) > context beep
+'𖸔𖸯' any(Masiri) + any(𖸔__InvalidMituyo) > context beep
+'𖸹𖸔' any(Masiri) + any(𖸔_𖸹_InvalidMituyo) > context beep
+'𖸤𖸕' any(Masiri) + any(𖸕_𖸤_InvalidMituyo) > context beep
+'𖸤𖸖' any(Masiri) + any(𖸖_𖸤_InvalidMituyo) > context beep
+'𖸦𖸖' any(Masiri) + any(𖸖_𖸦_InvalidMituyo) > context beep
+'𖸖𖸭' any(Masiri) + any(𖸖__InvalidMituyo) > context beep
+'𖸮𖸖' any(Masiri) + any(𖸖_𖸮_InvalidMituyo) > context beep
+'𖸖𖸯' any(Masiri) + any(𖸖__InvalidMituyo) > context beep
+'𖸮𖸘' any(Masiri) + any(𖸘_𖸮_InvalidMituyo) > context beep
+'𖸮𖸘' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸙' any(Masiri) + any(𖸙_𖸤_InvalidMituyo) > context beep
+'𖸦𖸙' any(Masiri) + any(𖸙_𖸦_InvalidMituyo) > context beep
+'𖸪𖸙' any(Masiri) + any(𖸙_𖸪_InvalidMituyo) > context beep
+'𖸙𖸭' any(Masiri) + any(𖸙__InvalidMituyo) > context beep
+'𖸮𖸙' any(Masiri) + any(𖸙_𖸮_InvalidMituyo) > context beep
+'𖸙𖸯' any(Masiri) + any(𖸙__InvalidMituyo) > context beep
+'𖸤𖸚' any(Masiri) + any(𖸚_𖸤_InvalidMituyo) > context beep
+'𖸦𖸚' any(Masiri) + any(𖸚_𖸦_InvalidMituyo) > context beep
+'𖸚𖸯' any(Masiri) + any(𖸚__InvalidMituyo) > context beep
+'𖸤𖸛' any(Masiri) + any(𖸛_𖸤_InvalidMituyo) > context beep
+'𖸤𖸛' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸛' any(Masiri) + any(𖸛_𖸦_InvalidMituyo) > context beep
+'𖸦𖸛' any(Masiri) + '6' >  context $WayaBelow  deadkey(0)
+'𖸛𖸯' any(Masiri) + any(𖸛__InvalidMituyo) > context beep
+'𖸤𖸜' any(Masiri) + any(𖸜_𖸤_InvalidMituyo) > context beep
+'𖸦𖸜' any(Masiri) + any(𖸜_𖸦_InvalidMituyo) > context beep
+'𖸦𖸜' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸝' any(Masiri) + any(𖸝_𖸤_InvalidMituyo) > context beep
+'𖸦𖸝' any(Masiri) + any(𖸝_𖸦_InvalidMituyo) > context beep
+'𖸝𖸯' any(Masiri) + any(𖸝__InvalidMituyo) > context beep
+'𖸤𖸞' any(Masiri) + any(𖸞_𖸤_InvalidMituyo) > context beep
+'𖸤𖸞' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸞' any(Masiri) + any(𖸞_𖸦_InvalidMituyo) > context beep
+'𖸞𖸯' any(Masiri) + any(𖸞__InvalidMituyo) > context beep
+'𖸦𖸟' any(Masiri) + any(𖸟_𖸦_InvalidMituyo) > context beep
+'𖸟𖸭' any(Masiri) + any(𖸟__InvalidMituyo) > context beep
 
 
 c
 c Misisi without Mutuyo present
 c
-'󰀀' any(Masiri) + any(󰀀_InvalidMituyo) > context beep
-'󰀁' any(Masiri) + any(󰀁_InvalidMituyo) > context beep
-'󰀂' any(Masiri) + any(󰀂_InvalidMituyo) > context beep
-'󰀃' any(Masiri) + any(󰀃_InvalidMituyo) > context beep
-'󰀄' any(Masiri) + any(󰀄_InvalidMituyo) > context beep
-'󰀅' any(Masiri) + any(󰀅_InvalidMituyo) > context beep
-'󰀆' any(Masiri) + any(󰀆_InvalidMituyo) > context beep
-'󰀇' any(Masiri) + any(󰀇_InvalidMituyo) > context beep
-'󰀈' any(Masiri) + any(󰀈_InvalidMituyo) > context beep
-'󰀉' any(Masiri) + any(󰀉_InvalidMituyo) > context beep
-'󰀊' any(Masiri) + any(󰀊_InvalidMituyo) > context beep
-'󰀋' any(Masiri) + any(󰀋_InvalidMituyo) > context beep
-'󰀌' any(Masiri) + any(󰀌_InvalidMituyo) > context beep
-'󰀍' any(Masiri) + any(󰀍_InvalidMituyo) > context beep
-'󰀎' any(Masiri) + any(󰀎_InvalidMituyo) > context beep
-'󰀏' any(Masiri) + any(󰀏_InvalidMituyo) > context beep
-'󰀐' any(Masiri) + any(󰀐_InvalidMituyo) > context beep
-'󰀑' any(Masiri) + any(󰀑_InvalidMituyo) > context beep
-'󰀒' any(Masiri) + any(󰀒_InvalidMituyo) > context beep
-'󰀓' any(Masiri) + any(󰀓_InvalidMituyo) > context beep
-'󰀔' any(Masiri) + any(󰀔_InvalidMituyo) > context beep
-'󰀕' any(Masiri) + any(󰀕_InvalidMituyo) > context beep
-'󰀖' any(Masiri) + any(󰀖_InvalidMituyo) > context beep
-'󰀗' any(Masiri) + any(󰀗_InvalidMituyo) > context beep
-'󰀘' any(Masiri) + any(󰀘_InvalidMituyo) > context beep
-'󰀙' any(Masiri) + any(󰀙_InvalidMituyo) > context beep
-'󰀚' any(Masiri) + any(󰀚_InvalidMituyo) > context beep
-'󰀛' any(Masiri) + any(󰀛_InvalidMituyo) > context beep
-'󰀜' any(Masiri) + any(󰀜_InvalidMituyo) > context beep
-'󰀝' any(Masiri) + any(󰀝_InvalidMituyo) > context beep
-'󰀞' any(Masiri) + any(󰀞_InvalidMituyo) > context beep
-'󰀟' any(Masiri) + any(󰀟_InvalidMituyo) > context beep
+'𖸀' any(Masiri) + any(𖸀_InvalidMituyo) > context beep
+'𖸁' any(Masiri) + any(𖸁_InvalidMituyo) > context beep
+'𖸂' any(Masiri) + any(𖸂_InvalidMituyo) > context beep
+'𖸃' any(Masiri) + any(𖸃_InvalidMituyo) > context beep
+'𖸄' any(Masiri) + any(𖸄_InvalidMituyo) > context beep
+'𖸅' any(Masiri) + any(𖸅_InvalidMituyo) > context beep
+'𖸆' any(Masiri) + any(𖸆_InvalidMituyo) > context beep
+'𖸇' any(Masiri) + any(𖸇_InvalidMituyo) > context beep
+'𖸈' any(Masiri) + any(𖸈_InvalidMituyo) > context beep
+'𖸉' any(Masiri) + any(𖸉_InvalidMituyo) > context beep
+'𖸊' any(Masiri) + any(𖸊_InvalidMituyo) > context beep
+'𖸋' any(Masiri) + any(𖸋_InvalidMituyo) > context beep
+'𖸌' any(Masiri) + any(𖸌_InvalidMituyo) > context beep
+'𖸍' any(Masiri) + any(𖸍_InvalidMituyo) > context beep
+'𖸎' any(Masiri) + any(𖸎_InvalidMituyo) > context beep
+'𖸏' any(Masiri) + any(𖸏_InvalidMituyo) > context beep
+'𖸐' any(Masiri) + any(𖸐_InvalidMituyo) > context beep
+'𖸑' any(Masiri) + any(𖸑_InvalidMituyo) > context beep
+'𖸒' any(Masiri) + any(𖸒_InvalidMituyo) > context beep
+'𖸓' any(Masiri) + any(𖸓_InvalidMituyo) > context beep
+'𖸔' any(Masiri) + any(𖸔_InvalidMituyo) > context beep
+'𖸕' any(Masiri) + any(𖸕_InvalidMituyo) > context beep
+'𖸖' any(Masiri) + any(𖸖_InvalidMituyo) > context beep
+'𖸗' any(Masiri) + any(𖸗_InvalidMituyo) > context beep
+'𖸘' any(Masiri) + any(𖸘_InvalidMituyo) > context beep
+'𖸙' any(Masiri) + any(𖸙_InvalidMituyo) > context beep
+'𖸚' any(Masiri) + any(𖸚_InvalidMituyo) > context beep
+'𖸛' any(Masiri) + any(𖸛_InvalidMituyo) > context beep
+'𖸜' any(Masiri) + any(𖸜_InvalidMituyo) > context beep
+'𖸝' any(Masiri) + any(𖸝_InvalidMituyo) > context beep
+'𖸞' any(Masiri) + any(𖸞_InvalidMituyo) > context beep
+'𖸟' any(Masiri) + any(𖸟_InvalidMituyo) > context beep
 
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
@@ -479,195 +479,195 @@ c Sequences Without a Masiri Present
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 
 
-'󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context beep
-'󰀦󰀀' + '6' > context $WayaBelow deadkey(0)
-'󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context beep
-'󰀤󰀁' + any(󰀁_󰀤_InvalidMituyo) > context beep
-'󰀥󰀁' + any(󰀁_󰀥_InvalidMituyo) > context beep
-'󰀁󰀭' + any(󰀁__InvalidMituyo) > context beep
-'󰀤󰀂' + any(󰀂_󰀤_InvalidMituyo) > context beep
-'󰀦󰀂' + any(󰀂_󰀦_InvalidMituyo) > context beep
-'󰀧󰀂' + any(󰀂_󰀧_InvalidMituyo) > context beep
-'󰀮󰀂' + any(󰀂_󰀮_InvalidMituyo) > context beep
-'󰀂󰀯' + any(󰀂__InvalidMituyo) > context beep
-'󰀳󰀂' + any(󰀂_󰀳_InvalidMituyo) > context beep
-'󰀹󰀂' + any(󰀂_󰀹_InvalidMituyo) > context beep
-'󰀤󰀃' + any(󰀃_󰀤_InvalidMituyo) > context beep
-'󰀦󰀃' + any(󰀃_󰀦_InvalidMituyo) > context beep
-'󰀪󰀃' + any(󰀃_󰀪_InvalidMituyo) > context beep
-'󰀮󰀃' + any(󰀃_󰀮_InvalidMituyo) > context beep
-'󰀃󰀯' + any(󰀃__InvalidMituyo) > context beep
-'󰀤󰀄' + any(󰀄_󰀤_InvalidMituyo) > context beep
-'󰀦󰀄' + any(󰀄_󰀦_InvalidMituyo) > context beep
-'󰀤󰀅' + any(󰀅_󰀤_InvalidMituyo) > context beep
-'󰀦󰀅' + any(󰀅_󰀦_InvalidMituyo) > context beep
-'󰀪󰀅' + any(󰀅_󰀪_InvalidMituyo) > context beep
-'󰀮󰀅' + any(󰀅_󰀮_InvalidMituyo) > context beep
-'󰀅󰀯' + any(󰀅__InvalidMituyo) > context beep
-'󰀮󰀆' + any(󰀆_󰀮_InvalidMituyo) > context beep
-'󰀤󰀇' + any(󰀇_󰀤_InvalidMituyo) > context beep
-'󰀮󰀇' + any(󰀇_󰀮_InvalidMituyo) > context beep
-'󰀤󰀈' + any(󰀈_󰀤_InvalidMituyo) > context beep
-'󰀤󰀈' + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀈' + any(󰀈_󰀦_InvalidMituyo) > context beep
-'󰀦󰀈' + '6' > context $WayaBelow  deadkey(0)
-'󰀮󰀈' + any(󰀈_󰀮_InvalidMituyo) > context beep
-'󰀈󰀯' + any(󰀈__InvalidMituyo) > context beep
-'󰀤󰀉' + any(󰀉_󰀤_InvalidMituyo) > context beep
-'󰀦󰀉' + any(󰀉_󰀦_InvalidMituyo) > context beep
-'󰀦󰀉' + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀊' + any(󰀊_󰀤_InvalidMituyo) > context beep
-'󰀦󰀊' + any(󰀊_󰀦_InvalidMituyo) > context beep
-'󰀧󰀊' + any(󰀊_󰀧_InvalidMituyo) > context beep
-'󰀪󰀊' + any(󰀊_󰀪_InvalidMituyo) > context beep
-'󰀮󰀊' + any(󰀊_󰀮_InvalidMituyo) > context beep
-'󰀊󰀯' + any(󰀊__InvalidMituyo) > context beep
-'󰀰󰀊' + any(󰀊_󰀰_InvalidMituyo) > context beep
-'󰀳󰀊' + any(󰀊_󰀳_InvalidMituyo) > context beep
-'󰀹󰀊' + any(󰀊_󰀹_InvalidMituyo) > context beep
-'󰀾󰀊' + any(󰀊_󰀾_InvalidMituyo) > context beep
-'󰀱󰀊' + any(󰀊_󰀱_InvalidMituyo) > context beep
-'󰀤󰀋' + any(󰀋_󰀤_InvalidMituyo) > context beep
-'󰀤󰀌' + any(󰀌_󰀤_InvalidMituyo) > context beep
-'󰀮󰀌' + any(󰀌_󰀮_InvalidMituyo) > context beep
-'󰀤󰀍' + any(󰀍_󰀤_InvalidMituyo) > context beep
-'󰀮󰀍' + any(󰀍_󰀮_InvalidMituyo) > context beep
-'󰀤󰀎' + any(󰀎_󰀤_InvalidMituyo) > context beep
-'󰀤󰀎' + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'󰀎' rule will later block composition with Waya Below
-'󰀮󰀎' + any(󰀎_󰀮_InvalidMituyo) > context beep
-'󰀮󰀎' + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀏' + any(󰀏_󰀤_InvalidMituyo) > context beep
-'󰀥󰀏' + any(󰀏_󰀥_InvalidMituyo) > context beep
-'󰀧󰀏' + any(󰀏_󰀧_InvalidMituyo) > context beep
-'󰀸󰀏' + any(󰀏_󰀸_InvalidMituyo) > context beep
-'󰀷󰀏' + any(󰀏_󰀷_InvalidMituyo) > context beep
-'󰀤󰀐' + any(󰀐_󰀤_InvalidMituyo) > context beep
-'󰀤󰀑' + any(󰀑_󰀤_InvalidMituyo) > context beep
-'󰀦󰀑' + any(󰀑_󰀦_InvalidMituyo) > context beep
-'󰀮󰀑' + any(󰀑_󰀮_InvalidMituyo) > context beep
-'󰀑󰀯' + any(󰀑__InvalidMituyo) > context beep
-'󰀤󰀒' + any(󰀒_󰀤_InvalidMituyo) > context beep
-'󰀦󰀒' + any(󰀒_󰀦_InvalidMituyo) > context beep
-'󰀮󰀒' + any(󰀒_󰀮_InvalidMituyo) > context beep
-'󰀤󰀓' + any(󰀓_󰀤_InvalidMituyo) > context beep
-'󰀦󰀓' + any(󰀓_󰀦_InvalidMituyo) > context beep
-'󰀧󰀓' + any(󰀓_󰀧_InvalidMituyo) > context beep
-'󰀪󰀓' + any(󰀓_󰀪_InvalidMituyo) > context beep
-'󰀮󰀓' + any(󰀓_󰀮_InvalidMituyo) > context beep
-'󰀓󰀯' + any(󰀓__InvalidMituyo) > context beep
-'󰀰󰀓' + any(󰀓_󰀰_InvalidMituyo) > context beep
-'󰀹󰀓' + any(󰀓_󰀹_InvalidMituyo) > context beep
-'󰀾󰀓' + any(󰀓_󰀾_InvalidMituyo) > context beep
-'󰀤󰀔' + any(󰀔_󰀤_InvalidMituyo) > context beep
-'󰀦󰀔' + any(󰀔_󰀦_InvalidMituyo) > context beep
-'󰀧󰀔' + any(󰀔_󰀧_InvalidMituyo) > context beep
-'󰀔󰀯' + any(󰀔__InvalidMituyo) > context beep
-'󰀹󰀔' + any(󰀔_󰀹_InvalidMituyo) > context beep
-'󰀤󰀕' + any(󰀕_󰀤_InvalidMituyo) > context beep
-'󰀤󰀖' + any(󰀖_󰀤_InvalidMituyo) > context beep
-'󰀦󰀖' + any(󰀖_󰀦_InvalidMituyo) > context beep
-'󰀖󰀭' + any(󰀖__InvalidMituyo) > context beep
-'󰀮󰀖' + any(󰀖_󰀮_InvalidMituyo) > context beep
-'󰀖󰀯' + any(󰀖__InvalidMituyo) > context beep
-'󰀮󰀘' + any(󰀘_󰀮_InvalidMituyo) > context beep
-'󰀮󰀘' + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀙' + any(󰀙_󰀤_InvalidMituyo) > context beep
-'󰀦󰀙' + any(󰀙_󰀦_InvalidMituyo) > context beep
-'󰀪󰀙' + any(󰀙_󰀪_InvalidMituyo) > context beep
-'󰀙󰀭' + any(󰀙__InvalidMituyo) > context beep
-'󰀮󰀙' + any(󰀙_󰀮_InvalidMituyo) > context beep
-'󰀙󰀯' + any(󰀙__InvalidMituyo) > context beep
-'󰀤󰀚' + any(󰀚_󰀤_InvalidMituyo) > context beep
-'󰀦󰀚' + any(󰀚_󰀦_InvalidMituyo) > context beep
-'󰀚󰀯' + any(󰀚__InvalidMituyo) > context beep
-'󰀤󰀛' + any(󰀛_󰀤_InvalidMituyo) > context beep
-'󰀤󰀛' + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀛' + any(󰀛_󰀦_InvalidMituyo) > context beep
-'󰀦󰀛' + '6' >  context $WayaBelow  deadkey(0)
-'󰀛󰀯' + any(󰀛__InvalidMituyo) > context beep
-'󰀤󰀜' + any(󰀜_󰀤_InvalidMituyo) > context beep
-'󰀦󰀜' + any(󰀜_󰀦_InvalidMituyo) > context beep
-'󰀦󰀜' + '6' > context $WayaBelow  deadkey(0)
-'󰀤󰀝' + any(󰀝_󰀤_InvalidMituyo) > context beep
-'󰀦󰀝' + any(󰀝_󰀦_InvalidMituyo) > context beep
-'󰀝󰀯' + any(󰀝__InvalidMituyo) > context beep
-'󰀤󰀞' + any(󰀞_󰀤_InvalidMituyo) > context beep
-'󰀤󰀞' + '6' > context $WayaBelow  deadkey(0)
-'󰀦󰀞' + any(󰀞_󰀦_InvalidMituyo) > context beep
-'󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
-'󰀦󰀟󰀭' + any(MutuyoKeys) > context beep 
-'󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
-'󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
+'𖸦𖸀' + any(𖸀_𖸦_InvalidMituyo) > context beep
+'𖸦𖸀' + '6' > context $WayaBelow deadkey(0)
+'𖸮𖸀' + any(𖸀_𖸮_InvalidMituyo) > context beep
+'𖸤𖸁' + any(𖸁_𖸤_InvalidMituyo) > context beep
+'𖸥𖸁' + any(𖸁_𖸥_InvalidMituyo) > context beep
+'𖸁𖸭' + any(𖸁__InvalidMituyo) > context beep
+'𖸤𖸂' + any(𖸂_𖸤_InvalidMituyo) > context beep
+'𖸦𖸂' + any(𖸂_𖸦_InvalidMituyo) > context beep
+'𖸧𖸂' + any(𖸂_𖸧_InvalidMituyo) > context beep
+'𖸮𖸂' + any(𖸂_𖸮_InvalidMituyo) > context beep
+'𖸂𖸯' + any(𖸂__InvalidMituyo) > context beep
+'𖸳𖸂' + any(𖸂_𖸳_InvalidMituyo) > context beep
+'𖸹𖸂' + any(𖸂_𖸹_InvalidMituyo) > context beep
+'𖸤𖸃' + any(𖸃_𖸤_InvalidMituyo) > context beep
+'𖸦𖸃' + any(𖸃_𖸦_InvalidMituyo) > context beep
+'𖸪𖸃' + any(𖸃_𖸪_InvalidMituyo) > context beep
+'𖸮𖸃' + any(𖸃_𖸮_InvalidMituyo) > context beep
+'𖸃𖸯' + any(𖸃__InvalidMituyo) > context beep
+'𖸤𖸄' + any(𖸄_𖸤_InvalidMituyo) > context beep
+'𖸦𖸄' + any(𖸄_𖸦_InvalidMituyo) > context beep
+'𖸤𖸅' + any(𖸅_𖸤_InvalidMituyo) > context beep
+'𖸦𖸅' + any(𖸅_𖸦_InvalidMituyo) > context beep
+'𖸪𖸅' + any(𖸅_𖸪_InvalidMituyo) > context beep
+'𖸮𖸅' + any(𖸅_𖸮_InvalidMituyo) > context beep
+'𖸅𖸯' + any(𖸅__InvalidMituyo) > context beep
+'𖸮𖸆' + any(𖸆_𖸮_InvalidMituyo) > context beep
+'𖸤𖸇' + any(𖸇_𖸤_InvalidMituyo) > context beep
+'𖸮𖸇' + any(𖸇_𖸮_InvalidMituyo) > context beep
+'𖸤𖸈' + any(𖸈_𖸤_InvalidMituyo) > context beep
+'𖸤𖸈' + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸈' + any(𖸈_𖸦_InvalidMituyo) > context beep
+'𖸦𖸈' + '6' > context $WayaBelow  deadkey(0)
+'𖸮𖸈' + any(𖸈_𖸮_InvalidMituyo) > context beep
+'𖸈𖸯' + any(𖸈__InvalidMituyo) > context beep
+'𖸤𖸉' + any(𖸉_𖸤_InvalidMituyo) > context beep
+'𖸦𖸉' + any(𖸉_𖸦_InvalidMituyo) > context beep
+'𖸦𖸉' + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸊' + any(𖸊_𖸤_InvalidMituyo) > context beep
+'𖸦𖸊' + any(𖸊_𖸦_InvalidMituyo) > context beep
+'𖸧𖸊' + any(𖸊_𖸧_InvalidMituyo) > context beep
+'𖸪𖸊' + any(𖸊_𖸪_InvalidMituyo) > context beep
+'𖸮𖸊' + any(𖸊_𖸮_InvalidMituyo) > context beep
+'𖸊𖸯' + any(𖸊__InvalidMituyo) > context beep
+'𖸰𖸊' + any(𖸊_𖸰_InvalidMituyo) > context beep
+'𖸳𖸊' + any(𖸊_𖸳_InvalidMituyo) > context beep
+'𖸹𖸊' + any(𖸊_𖸹_InvalidMituyo) > context beep
+'𖸾𖸊' + any(𖸊_𖸾_InvalidMituyo) > context beep
+'𖸱𖸊' + any(𖸊_𖸱_InvalidMituyo) > context beep
+'𖸤𖸋' + any(𖸋_𖸤_InvalidMituyo) > context beep
+'𖸤𖸌' + any(𖸌_𖸤_InvalidMituyo) > context beep
+'𖸮𖸌' + any(𖸌_𖸮_InvalidMituyo) > context beep
+'𖸤𖸍' + any(𖸍_𖸤_InvalidMituyo) > context beep
+'𖸮𖸍' + any(𖸍_𖸮_InvalidMituyo) > context beep
+'𖸤𖸎' + any(𖸎_𖸤_InvalidMituyo) > context beep
+'𖸤𖸎' + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'𖸎' rule will later block composition with Waya Below
+'𖸮𖸎' + any(𖸎_𖸮_InvalidMituyo) > context beep
+'𖸮𖸎' + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸏' + any(𖸏_𖸤_InvalidMituyo) > context beep
+'𖸥𖸏' + any(𖸏_𖸥_InvalidMituyo) > context beep
+'𖸧𖸏' + any(𖸏_𖸧_InvalidMituyo) > context beep
+'𖸸𖸏' + any(𖸏_𖸸_InvalidMituyo) > context beep
+'𖸷𖸏' + any(𖸏_𖸷_InvalidMituyo) > context beep
+'𖸤𖸐' + any(𖸐_𖸤_InvalidMituyo) > context beep
+'𖸤𖸑' + any(𖸑_𖸤_InvalidMituyo) > context beep
+'𖸦𖸑' + any(𖸑_𖸦_InvalidMituyo) > context beep
+'𖸮𖸑' + any(𖸑_𖸮_InvalidMituyo) > context beep
+'𖸑𖸯' + any(𖸑__InvalidMituyo) > context beep
+'𖸤𖸒' + any(𖸒_𖸤_InvalidMituyo) > context beep
+'𖸦𖸒' + any(𖸒_𖸦_InvalidMituyo) > context beep
+'𖸮𖸒' + any(𖸒_𖸮_InvalidMituyo) > context beep
+'𖸤𖸓' + any(𖸓_𖸤_InvalidMituyo) > context beep
+'𖸦𖸓' + any(𖸓_𖸦_InvalidMituyo) > context beep
+'𖸧𖸓' + any(𖸓_𖸧_InvalidMituyo) > context beep
+'𖸪𖸓' + any(𖸓_𖸪_InvalidMituyo) > context beep
+'𖸮𖸓' + any(𖸓_𖸮_InvalidMituyo) > context beep
+'𖸓𖸯' + any(𖸓__InvalidMituyo) > context beep
+'𖸰𖸓' + any(𖸓_𖸰_InvalidMituyo) > context beep
+'𖸹𖸓' + any(𖸓_𖸹_InvalidMituyo) > context beep
+'𖸾𖸓' + any(𖸓_𖸾_InvalidMituyo) > context beep
+'𖸤𖸔' + any(𖸔_𖸤_InvalidMituyo) > context beep
+'𖸦𖸔' + any(𖸔_𖸦_InvalidMituyo) > context beep
+'𖸧𖸔' + any(𖸔_𖸧_InvalidMituyo) > context beep
+'𖸔𖸯' + any(𖸔__InvalidMituyo) > context beep
+'𖸹𖸔' + any(𖸔_𖸹_InvalidMituyo) > context beep
+'𖸤𖸕' + any(𖸕_𖸤_InvalidMituyo) > context beep
+'𖸤𖸖' + any(𖸖_𖸤_InvalidMituyo) > context beep
+'𖸦𖸖' + any(𖸖_𖸦_InvalidMituyo) > context beep
+'𖸖𖸭' + any(𖸖__InvalidMituyo) > context beep
+'𖸮𖸖' + any(𖸖_𖸮_InvalidMituyo) > context beep
+'𖸖𖸯' + any(𖸖__InvalidMituyo) > context beep
+'𖸮𖸘' + any(𖸘_𖸮_InvalidMituyo) > context beep
+'𖸮𖸘' + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸙' + any(𖸙_𖸤_InvalidMituyo) > context beep
+'𖸦𖸙' + any(𖸙_𖸦_InvalidMituyo) > context beep
+'𖸪𖸙' + any(𖸙_𖸪_InvalidMituyo) > context beep
+'𖸙𖸭' + any(𖸙__InvalidMituyo) > context beep
+'𖸮𖸙' + any(𖸙_𖸮_InvalidMituyo) > context beep
+'𖸙𖸯' + any(𖸙__InvalidMituyo) > context beep
+'𖸤𖸚' + any(𖸚_𖸤_InvalidMituyo) > context beep
+'𖸦𖸚' + any(𖸚_𖸦_InvalidMituyo) > context beep
+'𖸚𖸯' + any(𖸚__InvalidMituyo) > context beep
+'𖸤𖸛' + any(𖸛_𖸤_InvalidMituyo) > context beep
+'𖸤𖸛' + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸛' + any(𖸛_𖸦_InvalidMituyo) > context beep
+'𖸦𖸛' + '6' >  context $WayaBelow  deadkey(0)
+'𖸛𖸯' + any(𖸛__InvalidMituyo) > context beep
+'𖸤𖸜' + any(𖸜_𖸤_InvalidMituyo) > context beep
+'𖸦𖸜' + any(𖸜_𖸦_InvalidMituyo) > context beep
+'𖸦𖸜' + '6' > context $WayaBelow  deadkey(0)
+'𖸤𖸝' + any(𖸝_𖸤_InvalidMituyo) > context beep
+'𖸦𖸝' + any(𖸝_𖸦_InvalidMituyo) > context beep
+'𖸝𖸯' + any(𖸝__InvalidMituyo) > context beep
+'𖸤𖸞' + any(𖸞_𖸤_InvalidMituyo) > context beep
+'𖸤𖸞' + '6' > context $WayaBelow  deadkey(0)
+'𖸦𖸞' + any(𖸞_𖸦_InvalidMituyo) > context beep
+'𖸞𖸯' + any(𖸞__InvalidMituyo) > context beep
+'𖸦𖸟𖸭' + any(MutuyoKeys) > context beep 
+'𖸦𖸟' + any(𖸟_𖸦_InvalidMituyo) > context beep
+'𖸟𖸭' + any(𖸟__InvalidMituyo) > context beep
 
 
 c
 c Misisi without Mutuyo present
 c
-'󰀀' deadkey(9) + any(󰀀_InvalidMituyo) > context beep
-'󰀁' deadkey(9) + any(󰀁_InvalidMituyo) > context beep
-'󰀂' deadkey(9) + any(󰀂_InvalidMituyo) > context beep
-'󰀃' deadkey(9) + any(󰀃_InvalidMituyo) > context beep
-'󰀄' deadkey(9) + any(󰀄_InvalidMituyo) > context beep
-'󰀅' deadkey(9) + any(󰀅_InvalidMituyo) > context beep
-'󰀆' deadkey(9) + any(󰀆_InvalidMituyo) > context beep
-'󰀇' deadkey(9) + any(󰀇_InvalidMituyo) > context beep
-'󰀈' deadkey(9) + any(󰀈_InvalidMituyo) > context beep
-'󰀉' deadkey(9) + any(󰀉_InvalidMituyo) > context beep
-'󰀊' deadkey(9) + any(󰀊_InvalidMituyo) > context beep
-'󰀋' deadkey(9) + any(󰀋_InvalidMituyo) > context beep
-'󰀌' deadkey(9) + any(󰀌_InvalidMituyo) > context beep
-'󰀍' deadkey(9) + any(󰀍_InvalidMituyo) > context beep
-'󰀎' deadkey(9) + any(󰀎_InvalidMituyo) > context beep
-'󰀏' deadkey(9) + any(󰀏_InvalidMituyo) > context beep
-'󰀐' deadkey(9) + any(󰀐_InvalidMituyo) > context beep
-'󰀑' deadkey(9) + any(󰀑_InvalidMituyo) > context beep
-'󰀒' deadkey(9) + any(󰀒_InvalidMituyo) > context beep
-'󰀓' deadkey(9) + any(󰀓_InvalidMituyo) > context beep
-'󰀔' deadkey(9) + any(󰀔_InvalidMituyo) > context beep
-'󰀕' deadkey(9) + any(󰀕_InvalidMituyo) > context beep
-'󰀖' deadkey(9) + any(󰀖_InvalidMituyo) > context beep
-'󰀗' deadkey(9) + any(󰀗_InvalidMituyo) > context beep
-'󰀘' deadkey(9) + any(󰀘_InvalidMituyo) > context beep
-'󰀙' deadkey(9) + any(󰀙_InvalidMituyo) > context beep
-'󰀚' deadkey(9) + any(󰀚_InvalidMituyo) > context beep
-'󰀛' deadkey(9) + any(󰀛_InvalidMituyo) > context beep
-'󰀜' deadkey(9) + any(󰀜_InvalidMituyo) > context beep
-'󰀝' deadkey(9) + any(󰀝_InvalidMituyo) > context beep
-'󰀞' deadkey(9) + any(󰀞_InvalidMituyo) > context beep
-'󰀟' deadkey(9) + any(󰀟_InvalidMituyo) > context beep
+'𖸀' deadkey(9) + any(𖸀_InvalidMituyo) > context beep
+'𖸁' deadkey(9) + any(𖸁_InvalidMituyo) > context beep
+'𖸂' deadkey(9) + any(𖸂_InvalidMituyo) > context beep
+'𖸃' deadkey(9) + any(𖸃_InvalidMituyo) > context beep
+'𖸄' deadkey(9) + any(𖸄_InvalidMituyo) > context beep
+'𖸅' deadkey(9) + any(𖸅_InvalidMituyo) > context beep
+'𖸆' deadkey(9) + any(𖸆_InvalidMituyo) > context beep
+'𖸇' deadkey(9) + any(𖸇_InvalidMituyo) > context beep
+'𖸈' deadkey(9) + any(𖸈_InvalidMituyo) > context beep
+'𖸉' deadkey(9) + any(𖸉_InvalidMituyo) > context beep
+'𖸊' deadkey(9) + any(𖸊_InvalidMituyo) > context beep
+'𖸋' deadkey(9) + any(𖸋_InvalidMituyo) > context beep
+'𖸌' deadkey(9) + any(𖸌_InvalidMituyo) > context beep
+'𖸍' deadkey(9) + any(𖸍_InvalidMituyo) > context beep
+'𖸎' deadkey(9) + any(𖸎_InvalidMituyo) > context beep
+'𖸏' deadkey(9) + any(𖸏_InvalidMituyo) > context beep
+'𖸐' deadkey(9) + any(𖸐_InvalidMituyo) > context beep
+'𖸑' deadkey(9) + any(𖸑_InvalidMituyo) > context beep
+'𖸒' deadkey(9) + any(𖸒_InvalidMituyo) > context beep
+'𖸓' deadkey(9) + any(𖸓_InvalidMituyo) > context beep
+'𖸔' deadkey(9) + any(𖸔_InvalidMituyo) > context beep
+'𖸕' deadkey(9) + any(𖸕_InvalidMituyo) > context beep
+'𖸖' deadkey(9) + any(𖸖_InvalidMituyo) > context beep
+'𖸗' deadkey(9) + any(𖸗_InvalidMituyo) > context beep
+'𖸘' deadkey(9) + any(𖸘_InvalidMituyo) > context beep
+'𖸙' deadkey(9) + any(𖸙_InvalidMituyo) > context beep
+'𖸚' deadkey(9) + any(𖸚_InvalidMituyo) > context beep
+'𖸛' deadkey(9) + any(𖸛_InvalidMituyo) > context beep
+'𖸜' deadkey(9) + any(𖸜_InvalidMituyo) > context beep
+'𖸝' deadkey(9) + any(𖸝_InvalidMituyo) > context beep
+'𖸞' deadkey(9) + any(𖸞_InvalidMituyo) > context beep
+'𖸟' deadkey(9) + any(𖸟_InvalidMituyo) > context beep
 
-'󰀀' + any(󰀀_InvalidMituyo) > context beep
-'󰀁' + any(󰀁_InvalidMituyo) > context beep
-'󰀂' + any(󰀂_InvalidMituyo) > context beep
-'󰀃' + any(󰀃_InvalidMituyo) > context beep
-'󰀄' + any(󰀄_InvalidMituyo) > context beep
-'󰀅' + any(󰀅_InvalidMituyo) > context beep
-'󰀆' + any(󰀆_InvalidMituyo) > context beep
-'󰀇' + any(󰀇_InvalidMituyo) > context beep
-'󰀈' + any(󰀈_InvalidMituyo) > context beep
-'󰀉' + any(󰀉_InvalidMituyo) > context beep
-'󰀊' + any(󰀊_InvalidMituyo) > context beep
-'󰀋' + any(󰀋_InvalidMituyo) > context beep
-'󰀌' + any(󰀌_InvalidMituyo) > context beep
-'󰀍' + any(󰀍_InvalidMituyo) > context beep
-'󰀎' + any(󰀎_InvalidMituyo) > context beep
-'󰀏' + any(󰀏_InvalidMituyo) > context beep
-'󰀐' + any(󰀐_InvalidMituyo) > context beep
-'󰀑' + any(󰀑_InvalidMituyo) > context beep
-'󰀒' + any(󰀒_InvalidMituyo) > context beep
-'󰀓' + any(󰀓_InvalidMituyo) > context beep
-'󰀔' + any(󰀔_InvalidMituyo) > context beep
-'󰀕' + any(󰀕_InvalidMituyo) > context beep
-'󰀖' + any(󰀖_InvalidMituyo) > context beep
-'󰀗' + any(󰀗_InvalidMituyo) > context beep
-'󰀘' + any(󰀘_InvalidMituyo) > context beep
-'󰀙' + any(󰀙_InvalidMituyo) > context beep
-'󰀚' + any(󰀚_InvalidMituyo) > context beep
-'󰀛' + any(󰀛_InvalidMituyo) > context beep
-'󰀜' + any(󰀜_InvalidMituyo) > context beep
-'󰀝' + any(󰀝_InvalidMituyo) > context beep
-'󰀞' + any(󰀞_InvalidMituyo) > context beep
-'󰀟' + any(󰀟_InvalidMituyo) > context beep
+'𖸀' + any(𖸀_InvalidMituyo) > context beep
+'𖸁' + any(𖸁_InvalidMituyo) > context beep
+'𖸂' + any(𖸂_InvalidMituyo) > context beep
+'𖸃' + any(𖸃_InvalidMituyo) > context beep
+'𖸄' + any(𖸄_InvalidMituyo) > context beep
+'𖸅' + any(𖸅_InvalidMituyo) > context beep
+'𖸆' + any(𖸆_InvalidMituyo) > context beep
+'𖸇' + any(𖸇_InvalidMituyo) > context beep
+'𖸈' + any(𖸈_InvalidMituyo) > context beep
+'𖸉' + any(𖸉_InvalidMituyo) > context beep
+'𖸊' + any(𖸊_InvalidMituyo) > context beep
+'𖸋' + any(𖸋_InvalidMituyo) > context beep
+'𖸌' + any(𖸌_InvalidMituyo) > context beep
+'𖸍' + any(𖸍_InvalidMituyo) > context beep
+'𖸎' + any(𖸎_InvalidMituyo) > context beep
+'𖸏' + any(𖸏_InvalidMituyo) > context beep
+'𖸐' + any(𖸐_InvalidMituyo) > context beep
+'𖸑' + any(𖸑_InvalidMituyo) > context beep
+'𖸒' + any(𖸒_InvalidMituyo) > context beep
+'𖸓' + any(𖸓_InvalidMituyo) > context beep
+'𖸔' + any(𖸔_InvalidMituyo) > context beep
+'𖸕' + any(𖸕_InvalidMituyo) > context beep
+'𖸖' + any(𖸖_InvalidMituyo) > context beep
+'𖸗' + any(𖸗_InvalidMituyo) > context beep
+'𖸘' + any(𖸘_InvalidMituyo) > context beep
+'𖸙' + any(𖸙_InvalidMituyo) > context beep
+'𖸚' + any(𖸚_InvalidMituyo) > context beep
+'𖸛' + any(𖸛_InvalidMituyo) > context beep
+'𖸜' + any(𖸜_InvalidMituyo) > context beep
+'𖸝' + any(𖸝_InvalidMituyo) > context beep
+'𖸞' + any(𖸞_InvalidMituyo) > context beep
+'𖸟' + any(𖸟_InvalidMituyo) > context beep
 
 
 c cccccccccccccccccccccccccccccccccccccccccccccccc
@@ -676,39 +676,39 @@ c cccccccccccccccccccccccccccccccccccccccccccccccc
 c
 c TUMBA WAYA BELOW
 c
-'󰀀' + '-' > '󰀮󰀀󰀩' deadkey(0)
-'󰀂' + '-' > '󰀮󰀂󰀩' deadkey(0)
-'󰀃' + '-' > '󰀮󰀃󰀩' deadkey(0)
-'󰀅' + '-' > '󰀮󰀅󰀩' deadkey(0)
-'󰀈' + '-' > '󰀮󰀈󰀩' deadkey(0)
-'󰀊' + '-' > '󰀮󰀊󰀩' deadkey(0)
-'󰀑' + '-' > '󰀮󰀑󰀩' deadkey(0)
-'󰀓' + '-' > '󰀮󰀓󰀩' deadkey(0)
-'󰀖' + '-' > '󰀮󰀖󰀩' deadkey(0)
-'󰀙' + '-' > '󰀮󰀙󰀩' deadkey(0)
-'󰀒' + '-' > '󰀮󰀒󰀩' deadkey(0)
-'󰀀' deadkey(9) + '-' > '󰀮󰀀󰀩' deadkey(0)
-'󰀂' deadkey(9) + '-' > '󰀮󰀂󰀩' deadkey(0)
-'󰀃' deadkey(9) + '-' > '󰀮󰀃󰀩' deadkey(0)
-'󰀅' deadkey(9) + '-' > '󰀮󰀅󰀩' deadkey(0)
-'󰀈' deadkey(9) + '-' > '󰀮󰀈󰀩' deadkey(0)
-'󰀊' deadkey(9) + '-' > '󰀮󰀊󰀩' deadkey(0)
-'󰀑' deadkey(9) + '-' > '󰀮󰀑󰀩' deadkey(0)
-'󰀓' deadkey(9) + '-' > '󰀮󰀓󰀩' deadkey(0)
-'󰀖' deadkey(9) + '-' > '󰀮󰀖󰀩' deadkey(0)
-'󰀙' deadkey(9) + '-' > '󰀮󰀙󰀩' deadkey(0)
-'󰀒' deadkey(9) + '-' > '󰀮󰀒󰀩' deadkey(0)
-'󰀀' any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀂'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀃'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀅'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀈'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀊'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀑'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀓'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀖'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀙'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
-'󰀒'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'𖸀' + '-' > '𖸮𖸀𖸩' deadkey(0)
+'𖸂' + '-' > '𖸮𖸂𖸩' deadkey(0)
+'𖸃' + '-' > '𖸮𖸃𖸩' deadkey(0)
+'𖸅' + '-' > '𖸮𖸅𖸩' deadkey(0)
+'𖸈' + '-' > '𖸮𖸈𖸩' deadkey(0)
+'𖸊' + '-' > '𖸮𖸊𖸩' deadkey(0)
+'𖸑' + '-' > '𖸮𖸑𖸩' deadkey(0)
+'𖸓' + '-' > '𖸮𖸓𖸩' deadkey(0)
+'𖸖' + '-' > '𖸮𖸖𖸩' deadkey(0)
+'𖸙' + '-' > '𖸮𖸙𖸩' deadkey(0)
+'𖸒' + '-' > '𖸮𖸒𖸩' deadkey(0)
+'𖸀' deadkey(9) + '-' > '𖸮𖸀𖸩' deadkey(0)
+'𖸂' deadkey(9) + '-' > '𖸮𖸂𖸩' deadkey(0)
+'𖸃' deadkey(9) + '-' > '𖸮𖸃𖸩' deadkey(0)
+'𖸅' deadkey(9) + '-' > '𖸮𖸅𖸩' deadkey(0)
+'𖸈' deadkey(9) + '-' > '𖸮𖸈𖸩' deadkey(0)
+'𖸊' deadkey(9) + '-' > '𖸮𖸊𖸩' deadkey(0)
+'𖸑' deadkey(9) + '-' > '𖸮𖸑𖸩' deadkey(0)
+'𖸓' deadkey(9) + '-' > '𖸮𖸓𖸩' deadkey(0)
+'𖸖' deadkey(9) + '-' > '𖸮𖸖𖸩' deadkey(0)
+'𖸙' deadkey(9) + '-' > '𖸮𖸙𖸩' deadkey(0)
+'𖸒' deadkey(9) + '-' > '𖸮𖸒𖸩' deadkey(0)
+'𖸀' any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸂'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸃'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸅'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸈'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸊'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸑'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸓'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸖'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸙'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
+'𖸒'  any(Masiri) + '-' > '𖸮' context $WayaBelow deadkey(0)
 
 c
 c WAYA BELOW
@@ -720,141 +720,141 @@ c any(MwangwegoSyllables) + '6' > context $WayaBelow deadkey(0)
 c
 c  SISA NI
 c
-'󰀃' + '7' > '󰀽󰀃'  deadkey(0)
-'󰀃' context(9) + '7' > '󰀽󰀃'  deadkey(0)
-'󰀃' any(Masiri) + '7' > '󰀽' context
-'󰀅' + '7' > '󰀽󰀅'
-'󰀅' context(9) + '7' > '󰀽󰀅'
-'󰀅' any(Masiri) + '7' > '󰀽' context
-'󰀙' + '7' > '󰀽󰀙'
-'󰀙' context(9) + '7' > '󰀽󰀙'
-'󰀙' any(Masiri) + '7' > '󰀽' context
+'𖸃' + '7' > '𖸽𖸃'  deadkey(0)
+'𖸃' context(9) + '7' > '𖸽𖸃'  deadkey(0)
+'𖸃' any(Masiri) + '7' > '𖸽' context
+'𖸅' + '7' > '𖸽𖸅'
+'𖸅' context(9) + '7' > '𖸽𖸅'
+'𖸅' any(Masiri) + '7' > '𖸽' context
+'𖸙' + '7' > '𖸽𖸙'
+'𖸙' context(9) + '7' > '𖸽𖸙'
+'𖸙' any(Masiri) + '7' > '𖸽' context
 
 c
 c NI WAYA BELOW
 c
-'󰀒' + '3' >  '󰀦󰀒󰀩' deadkey(0)
-'󰀒' context(9) + '3' >  '󰀦󰀒󰀩' deadkey(0)
-'󰀒' any(Masiri) + '3' >   '󰀦' context $WayaBelow deadkey(0)
+'𖸒' + '3' >  '𖸦𖸒𖸩' deadkey(0)
+'𖸒' context(9) + '3' >  '𖸦𖸒𖸩' deadkey(0)
+'𖸒' any(Masiri) + '3' >   '𖸦' context $WayaBelow deadkey(0)
 
 
 c
 c MYU WAYA BELOW
 c
-'󰀄' + '1' > '󰀤' context  $WayaBelow
-'󰀄' context(9) + '1' > '󰀤' context(1) $WayaBelow   
-'󰀄' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
+'𖸄' + '1' > '𖸤' context  $WayaBelow
+'𖸄' context(9) + '1' > '𖸤' context(1) $WayaBelow   
+'𖸄' any(Masiri) +  '1' > '𖸤' context  $WayaBelow
 
-'󰀉' + '1' > '󰀤' context  $WayaBelow
-'󰀉' context(9) + '1' > '󰀤' context(1) $WayaBelow
-'󰀉' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
+'𖸉' + '1' > '𖸤' context  $WayaBelow
+'𖸉' context(9) + '1' > '𖸤' context(1) $WayaBelow
+'𖸉' any(Masiri) +  '1' > '𖸤' context  $WayaBelow
 
-c '󰀎' + '1' > '󰀤' context  $WayaBelow
-c '󰀎' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
+c '𖸎' + '1' > '𖸤' context  $WayaBelow
+c '𖸎' any(Masiri) +  '1' > '𖸤' context  $WayaBelow
 
-'󰀖' + '1' > '󰀤' context  $WayaBelow
-'󰀖' context(9) + '1' > '󰀤' context(1) $WayaBelow
-'󰀖' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
+'𖸖' + '1' > '𖸤' context  $WayaBelow
+'𖸖' context(9) + '1' > '𖸤' context(1) $WayaBelow
+'𖸖' any(Masiri) +  '1' > '𖸤' context  $WayaBelow
 
 
 
 c
 c KWANTHU NI  TODO: Add any(Masiri)
 c
-'󰀖' + '=' > '󰀦' context $Kwanthu  deadkey(0)
-'󰀃' + '=' > '󰀦' context $Kwanthu  deadkey(0)
-'󰀔' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀙' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀚' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀛' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀝' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀞' + '=' > '󰀦' context $Kwanthu deadkey(0)
-'󰀒' + '=' > '󰀦' context $Kwanthu deadkey(0)
+'𖸖' + '=' > '𖸦' context $Kwanthu  deadkey(0)
+'𖸃' + '=' > '𖸦' context $Kwanthu  deadkey(0)
+'𖸔' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸙' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸚' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸛' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸝' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸞' + '=' > '𖸦' context $Kwanthu deadkey(0)
+'𖸒' + '=' > '𖸦' context $Kwanthu deadkey(0)
 
-'󰀖' context(9) + '=' > '󰀦' context(1) $Kwanthu  deadkey(0)
-'󰀃' context(9) + '=' > '󰀦' context(1) $Kwanthu  deadkey(0)
-'󰀔' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀙' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀚' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀛' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀝' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀞' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
-'󰀒' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'𖸖' context(9) + '=' > '𖸦' context(1) $Kwanthu  deadkey(0)
+'𖸃' context(9) + '=' > '𖸦' context(1) $Kwanthu  deadkey(0)
+'𖸔' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸙' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸚' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸛' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸝' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸞' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
+'𖸒' context(9) + '=' > '𖸦' context(1) $Kwanthu deadkey(0)
 
 c
 c PEWA WAYA
 c
-'󰀄' + '0' > '󰀨' context $Pewa  deadkey(0)
-'󰀄' context(9) + '0' > '󰀨' context(1) $Pewa  deadkey(0)
-'󰀄' any(Masiri) + '0' > '󰀨' context $Pewa  deadkey(0)
+'𖸄' + '0' > '𖸨' context $Pewa  deadkey(0)
+'𖸄' context(9) + '0' > '𖸨' context(1) $Pewa  deadkey(0)
+'𖸄' any(Masiri) + '0' > '𖸨' context $Pewa  deadkey(0)
 
-'󰀜' + '1'  > outs(󰀜_󰀤_menu)
-'󰀜' context(9) + '1'  > outs(󰀜_󰀤_menu) 
-'󰀜󰀠' + '1'  > outs(󰀜󰀠_󰀤_menu)
-'󰀜󰀡' + '1'  > outs(󰀜󰀡_󰀤_menu)
-'󰀜󰀢' + '1'  > outs(󰀜󰀢_󰀤_menu)
-'󰀜󰀣' + '1'  > outs(󰀜󰀣_󰀤_menu)
+'𖸜' + '1'  > outs(𖸜_𖸤_menu)
+'𖸜' context(9) + '1'  > outs(𖸜_𖸤_menu) 
+'𖸜𖸠' + '1'  > outs(𖸜𖸠_𖸤_menu)
+'𖸜𖸡' + '1'  > outs(𖸜𖸡_𖸤_menu)
+'𖸜𖸢' + '1'  > outs(𖸜𖸢_𖸤_menu)
+'𖸜𖸣' + '1'  > outs(𖸜𖸣_𖸤_menu)
 
-outs(󰀜_󰀤_menu) + any(MutuyoKeyMenu)  > use (󰀜_󰀤_group)
-outs(󰀜󰀠_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(1) use (󰀜_󰀤_group)
-outs(󰀜󰀡_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(2) use (󰀜_󰀤_group)
-outs(󰀜󰀢_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(3) use (󰀜_󰀤_group)
-outs(󰀜󰀣_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (󰀜_󰀤_group)
+outs(𖸜_𖸤_menu) + any(MutuyoKeyMenu)  > use (𖸜_𖸤_group)
+outs(𖸜𖸠_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(1) use (𖸜_𖸤_group)
+outs(𖸜𖸡_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(2) use (𖸜_𖸤_group)
+outs(𖸜𖸢_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(3) use (𖸜_𖸤_group)
+outs(𖸜𖸣_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (𖸜_𖸤_group)
 
 
-'󰀝' + '1'  > outs(󰀝_󰀤_menu)
-'󰀝' context(9) + '1'  > outs(󰀝_󰀤_menu)
-'󰀝󰀠' + '1'  > outs(󰀝󰀠_󰀤_menu)
-'󰀝󰀡' + '1'  > outs(󰀝󰀡_󰀤_menu)
-'󰀝󰀢' + '1'  > outs(󰀝󰀢_󰀤_menu)
-'󰀝󰀣' + '1'  > outs(󰀝󰀣_󰀤_menu)
+'𖸝' + '1'  > outs(𖸝_𖸤_menu)
+'𖸝' context(9) + '1'  > outs(𖸝_𖸤_menu)
+'𖸝𖸠' + '1'  > outs(𖸝𖸠_𖸤_menu)
+'𖸝𖸡' + '1'  > outs(𖸝𖸡_𖸤_menu)
+'𖸝𖸢' + '1'  > outs(𖸝𖸢_𖸤_menu)
+'𖸝𖸣' + '1'  > outs(𖸝𖸣_𖸤_menu)
  
-outs(󰀝_󰀤_menu) + any(MutuyoKeyMenu)  > use (󰀝_󰀤_group)
-outs(󰀝󰀠_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(1) use (󰀝_󰀤_group)
-outs(󰀝󰀡_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(2) use (󰀝_󰀤_group)
-outs(󰀝󰀢_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(3) use (󰀝_󰀤_group)
-outs(󰀝󰀣_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (󰀝_󰀤_group)
+outs(𖸝_𖸤_menu) + any(MutuyoKeyMenu)  > use (𖸝_𖸤_group)
+outs(𖸝𖸠_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(1) use (𖸝_𖸤_group)
+outs(𖸝𖸡_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(2) use (𖸝_𖸤_group)
+outs(𖸝𖸢_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(3) use (𖸝_𖸤_group)
+outs(𖸝𖸣_𖸤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (𖸝_𖸤_group)
 
-'󰀔' + '3'  > outs(󰀔_󰀦_menu)
-'󰀔' context(9) + '3'  > outs(󰀔_󰀦_menu)
-'󰀔󰀠' + '3'  > outs(󰀔󰀠_󰀦_menu)
-'󰀔󰀡' + '3'  > outs(󰀔󰀡_󰀦_menu)
-'󰀔󰀢' + '3'  > outs(󰀔󰀢_󰀦_menu)
-'󰀔󰀣' + '3'  > outs(󰀔󰀣_󰀦_menu)
+'𖸔' + '3'  > outs(𖸔_𖸦_menu)
+'𖸔' context(9) + '3'  > outs(𖸔_𖸦_menu)
+'𖸔𖸠' + '3'  > outs(𖸔𖸠_𖸦_menu)
+'𖸔𖸡' + '3'  > outs(𖸔𖸡_𖸦_menu)
+'𖸔𖸢' + '3'  > outs(𖸔𖸢_𖸦_menu)
+'𖸔𖸣' + '3'  > outs(𖸔𖸣_𖸦_menu)
  
-outs(󰀔_󰀦_menu) + any(MutuyoKeyMenu)  > use (󰀔_󰀦_group)
-outs(󰀔󰀠_󰀦_menu) + any(MutuyoKeyMenu) > deadkey(1) use (󰀔_󰀦_group)
-outs(󰀔󰀡_󰀦_menu) + any(MutuyoKeyMenu) > deadkey(2) use (󰀔_󰀦_group)
-outs(󰀔󰀢_󰀦_menu) + any(MutuyoKeyMenu) > deadkey(3) use (󰀔_󰀦_group)
-outs(󰀔󰀣_󰀦_menu) + any(MutuyoKeyMenu) > deadkey(4) use (󰀔_󰀦_group)
+outs(𖸔_𖸦_menu) + any(MutuyoKeyMenu)  > use (𖸔_𖸦_group)
+outs(𖸔𖸠_𖸦_menu) + any(MutuyoKeyMenu) > deadkey(1) use (𖸔_𖸦_group)
+outs(𖸔𖸡_𖸦_menu) + any(MutuyoKeyMenu) > deadkey(2) use (𖸔_𖸦_group)
+outs(𖸔𖸢_𖸦_menu) + any(MutuyoKeyMenu) > deadkey(3) use (𖸔_𖸦_group)
+outs(𖸔𖸣_𖸦_menu) + any(MutuyoKeyMenu) > deadkey(4) use (𖸔_𖸦_group)
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c  Lone Vowels:
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
-+ any(ShortE) > '󰀀󰀠'
-+ any(ShortI) > '󰀀󰀡'
-+ any(ShortO) > '󰀀󰀢'
-+ any(ShortU) > '󰀀󰀣'
++ any(ShortE) > '𖸀𖸠'
++ any(ShortI) > '𖸀𖸡'
++ any(ShortO) > '𖸀𖸢'
++ any(ShortU) > '𖸀𖸣'
 
 c isn't this redundant?
 c
-c any(Masiri) + any(ShortE) > context '󰀀󰀠'
-c any(Masiri) + any(ShortI) > context '󰀀󰀡'
-c any(Masiri) + any(ShortO) > context '󰀀󰀢'
-c any(Masiri) + any(ShortU) > context '󰀀󰀣'
+c any(Masiri) + any(ShortE) > context '𖸀𖸠'
+c any(Masiri) + any(ShortI) > context '𖸀𖸡'
+c any(Masiri) + any(ShortO) > context '𖸀𖸢'
+c any(Masiri) + any(ShortU) > context '𖸀𖸣'
 
 
 c
 c  These next two rules will change when the fonts are updated to present the visual order:
 c
 
-any(OrdersConsonants) deadkey(9) + '5' > '󰀨' context(1) deadkey(0)
+any(OrdersConsonants) deadkey(9) + '5' > '𖸨' context(1) deadkey(0)
 any(OrdersConsonants) deadkey(9)  + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,3) context(1)
 any(OrdersConsonants) deadkey(9)  + '6' > context(1) $WayaBelow deadkey(0)
 any(OrdersConsonants) deadkey(9)  + any(MutuyoCombiningNumberKeys) > context(1) index(MutuyoCombining,3)
 
-any(OrdersConsonants) + '5' > '󰀨' context deadkey(0)
+any(OrdersConsonants) + '5' > '𖸨' context deadkey(0)
 any(OrdersConsonants) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,2) context
 any(OrdersConsonants) + '6' > context $WayaBelow deadkey(0)
 any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,2)
@@ -862,7 +862,7 @@ any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCom
 c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
 c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
 
-any(OrdersConsonants) any(Masiri) + '5' > '󰀨' context deadkey(0)
+any(OrdersConsonants) any(Masiri) + '5' > '𖸨' context deadkey(0)
 any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)     > index(MutuyoRegular,3) context
 any(OrdersConsonants)  any(Masiri)+ '6' > context $WayaBelow deadkey(0)
 any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3)
@@ -876,63 +876,63 @@ c Mituyo Composition Rules
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 c Mituyo in Myu 
-'󰀤' any(MwangwegoSyllables) + '3' > '󰀰' context(2)
-'󰀰' any(MwangwegoSyllables) + '4' > '󰀱' context(2)
-c '󰀱' any(MwangwegoSyllables) + '5' > '󰀲' context(2)
-'󰀤' any(MwangwegoSyllables) + '4' > '󰀳' context(2)
-'󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2) deadkey(0)
-'󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)  deadkey(0)
+'𖸤' any(MwangwegoSyllables) + '3' > '𖸰' context(2)
+'𖸰' any(MwangwegoSyllables) + '4' > '𖸱' context(2)
+c '𖸱' any(MwangwegoSyllables) + '5' > '𖸲' context(2)
+'𖸤' any(MwangwegoSyllables) + '4' > '𖸳' context(2)
+'𖸳' any(MwangwegoSyllables) + '5' > '𖸴' context(2) deadkey(0)
+'𖸤' any(MwangwegoSyllables) + '5' > '𖸵' context(2)  deadkey(0)
 
-'󰀤' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀰' context(2) context(3)
-'󰀰' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀱' context(2) context(3)
-c '󰀱' any(MwangwegoSyllables) any(Masiri)  + '5' > '󰀲' context(2) context(3)  deadkey(0)
-'󰀤' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀳' context(2) context(3)
-'󰀳' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀴' context(2) context(3)  deadkey(0)
-'󰀤' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀵' context(2) context(3)  deadkey(0)
+'𖸤' any(MwangwegoSyllables) any(Masiri) + '3' > '𖸰' context(2) context(3)
+'𖸰' any(MwangwegoSyllables) any(Masiri) + '4' > '𖸱' context(2) context(3)
+c '𖸱' any(MwangwegoSyllables) any(Masiri)  + '5' > '𖸲' context(2) context(3)  deadkey(0)
+'𖸤' any(MwangwegoSyllables) any(Masiri) + '4' > '𖸳' context(2) context(3)
+'𖸳' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸴' context(2) context(3)  deadkey(0)
+'𖸤' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸵' context(2) context(3)  deadkey(0)
 
 
 c Mituyo in Mi
-'󰀥' any(MwangwegoSyllables) + '4' > '󰀶' context(2)
-'󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2) deadkey(0)
-'󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2) deadkey(0)
+'𖸥' any(MwangwegoSyllables) + '4' > '𖸶' context(2)
+'𖸶' any(MwangwegoSyllables) + '5' > '𖸷' context(2) deadkey(0)
+'𖸥' any(MwangwegoSyllables) + '5' > '𖸸' context(2) deadkey(0)
 
-'󰀥' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀶' context(2) context(3)
-'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2) context(3)  deadkey(0)
-'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2) context(3)  deadkey(0)
+'𖸥' any(MwangwegoSyllables) any(Masiri) + '4' > '𖸶' context(2) context(3)
+'𖸶' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸷' context(2) context(3)  deadkey(0)
+'𖸥' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸸' context(2) context(3)  deadkey(0)
 
 c Mituyo in Ni
-'󰀦' any(MwangwegoSyllables) + '4' > '󰀹' context(2)
-'󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)  deadkey(0)
-'󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)  deadkey(0)
+'𖸦' any(MwangwegoSyllables) + '4' > '𖸹' context(2)
+'𖸹' any(MwangwegoSyllables) + '5' > '𖸺' context(2)  deadkey(0)
+'𖸦' any(MwangwegoSyllables) + '5' > '𖸻' context(2)  deadkey(0)
 
-'󰀦' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀹' context(2) context(3)
-'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2) context(3)  deadkey(0)
-'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2) context(3)  deadkey(0)
+'𖸦' any(MwangwegoSyllables) any(Masiri) + '4' > '𖸹' context(2) context(3)
+'𖸹' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸺' context(2) context(3)  deadkey(0)
+'𖸦' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸻' context(2) context(3)  deadkey(0)
 
 c Mituyo in Hi
-'󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)  deadkey(0)
-'󰀧' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀼' context(2) context(3)
+'𖸧' any(MwangwegoSyllables) + '5' > '𖸼' context(2)  deadkey(0)
+'𖸧' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸼' context(2) context(3)
 
 c Mituyo in Sisa
-'󰀪' any(MwangwegoSyllables) + '3' > '󰀽' context(2) 
-'󰀽' any(MwangwegoSyllables) + '4' > '󰀾' context(2)
+'𖸪' any(MwangwegoSyllables) + '3' > '𖸽' context(2) 
+'𖸽' any(MwangwegoSyllables) + '4' > '𖸾' context(2)
 
-'󰀪' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀽' context(2) context(3)
-'󰀽' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀾' context(2) context(3)
+'𖸪' any(MwangwegoSyllables) any(Masiri) + '3' > '𖸽' context(2) context(3)
+'𖸽' any(MwangwegoSyllables) any(Masiri) + '4' > '𖸾' context(2) context(3)
 
 c Mituyo in Tumba
-'󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)  deadkey(0)
-'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2) context(3)  deadkey(0)
+'𖸮' any(MwangwegoSyllables) + '5' > '𖸿' context(2)  deadkey(0)
+'𖸮' any(MwangwegoSyllables) any(Masiri) + '5' > '𖸿' context(2) context(3)  deadkey(0)
 
 c Mituyo in Pewa
-c any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
+c any(MwangwegoSyllables) '𖸭' + '6' > context(1) '𖸭' '𖸩'
 any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow  deadkey(0)
 any(MwangwegoSyllables) any(Masiri) $Pewa + '6' > context $WayaBelow  deadkey(0)
 
 c
-any(MwangwegoSyllables) any(MutuyoCombining) + '5' > '󰀨' context deadkey(0) 
+any(MwangwegoSyllables) any(MutuyoCombining) + '5' > '𖸨' context deadkey(0) 
 any(MwangwegoSyllables) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,3) context 
-any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + '5' > '󰀨' context deadkey(0) 
+any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + '5' > '𖸨' context deadkey(0) 
 any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,4) context 
 
 
@@ -975,62 +975,62 @@ c
 + [RALT K_HYPHEN] > '-'
 + [RALT K_EQUALS] > '='
 
-  group(󰀜_󰀤_group) using keys
-  deadkey(1) + '3' > '󰀰󰀜󰀠' 
-  deadkey(2) + '3' > '󰀰󰀜󰀡' 
-  deadkey(3) + '3' >  '󰀰󰀜󰀢' 
-  deadkey(4) + '3' > '󰀰󰀜󰀣' 
-  deadkey(1) + '5' > '󰀵󰀜󰀠'  deadkey(0)
-  deadkey(2) + '5' > '󰀵󰀜󰀡'  deadkey(0)
-  deadkey(3) + '5' > '󰀵󰀜󰀢'  deadkey(0)
-  deadkey(4) + '5' > '󰀵󰀜󰀣'  deadkey(0)
-  deadkey(1) + '6' >  '󰀤󰀜󰀠󰀩'  deadkey(0)
-  deadkey(2) + '6' >  '󰀤󰀜󰀡󰀩'  deadkey(0)
-  deadkey(3) + '6' >  '󰀤󰀜󰀢󰀩'  deadkey(0)
-  deadkey(4) + '6' >  '󰀤󰀜󰀣󰀩'  deadkey(0)
-  + '3' > '󰀰󰀜'
-  + '5' > '󰀵󰀜'  deadkey(0)   
-  + '6' > '󰀤󰀜󰀩'  deadkey(0)
- c + any(MyuMituyoKeys:index:beep) > outs(󰀜_󰀤_menu) beep
-  + [K_TAB] > '󰀜'
-  nomatch >   outs(󰀜_󰀤_menu) beep
+  group(𖸜_𖸤_group) using keys
+  deadkey(1) + '3' > '𖸰𖸜𖸠' 
+  deadkey(2) + '3' > '𖸰𖸜𖸡' 
+  deadkey(3) + '3' >  '𖸰𖸜𖸢' 
+  deadkey(4) + '3' > '𖸰𖸜𖸣' 
+  deadkey(1) + '5' > '𖸵𖸜𖸠'  deadkey(0)
+  deadkey(2) + '5' > '𖸵𖸜𖸡'  deadkey(0)
+  deadkey(3) + '5' > '𖸵𖸜𖸢'  deadkey(0)
+  deadkey(4) + '5' > '𖸵𖸜𖸣'  deadkey(0)
+  deadkey(1) + '6' >  '𖸤𖸜𖸠𖸩'  deadkey(0)
+  deadkey(2) + '6' >  '𖸤𖸜𖸡𖸩'  deadkey(0)
+  deadkey(3) + '6' >  '𖸤𖸜𖸢𖸩'  deadkey(0)
+  deadkey(4) + '6' >  '𖸤𖸜𖸣𖸩'  deadkey(0)
+  + '3' > '𖸰𖸜'
+  + '5' > '𖸵𖸜'  deadkey(0)   
+  + '6' > '𖸤𖸜𖸩'  deadkey(0)
+ c + any(MyuMituyoKeys:index:beep) > outs(𖸜_𖸤_menu) beep
+  + [K_TAB] > '𖸜'
+  nomatch >   outs(𖸜_𖸤_menu) beep
 
-  group(󰀝_󰀤_group) using keys
-  deadkey(1) + '3' > '󰀰󰀝󰀠' 
-  deadkey(2) + '3' > '󰀰󰀝󰀡' 
-  deadkey(3) + '3' >  '󰀰󰀝󰀢' 
-  deadkey(4)  + '3' > '󰀰󰀝󰀣' 
-  deadkey(1) + '5' > '󰀵󰀝󰀠'  deadkey(0)
-  deadkey(2) + '5' > '󰀵󰀝󰀡'  deadkey(0)
-  deadkey(3) + '5' > '󰀵󰀝󰀢'  deadkey(0)
-  deadkey(4) + '5' > '󰀵󰀝󰀣'  deadkey(0)
-  deadkey(1) + '6' >  '󰀤󰀝󰀠󰀩'  deadkey(0)
-  deadkey(2) + '6' >  '󰀤󰀝󰀡󰀩'  deadkey(0)
-  deadkey(3) + '6' >  '󰀤󰀝󰀢󰀩'  deadkey(0)
-  deadkey(4) + '6' >  '󰀤󰀝󰀣󰀩'  deadkey(0)
-  + '3' > '󰀰󰀝'  
-  + '5' > '󰀵󰀝'  deadkey(0)
-  + '6' > '󰀤󰀝󰀩'  deadkey(0)
-  c + any(MyuMituyoKeys:index:beep) > outs(󰀝_󰀤_menu) beep
-  + [K_TAB] > '󰀝'
-  nomatch >  outs(󰀝_󰀤_menu) beep
+  group(𖸝_𖸤_group) using keys
+  deadkey(1) + '3' > '𖸰𖸝𖸠' 
+  deadkey(2) + '3' > '𖸰𖸝𖸡' 
+  deadkey(3) + '3' >  '𖸰𖸝𖸢' 
+  deadkey(4)  + '3' > '𖸰𖸝𖸣' 
+  deadkey(1) + '5' > '𖸵𖸝𖸠'  deadkey(0)
+  deadkey(2) + '5' > '𖸵𖸝𖸡'  deadkey(0)
+  deadkey(3) + '5' > '𖸵𖸝𖸢'  deadkey(0)
+  deadkey(4) + '5' > '𖸵𖸝𖸣'  deadkey(0)
+  deadkey(1) + '6' >  '𖸤𖸝𖸠𖸩'  deadkey(0)
+  deadkey(2) + '6' >  '𖸤𖸝𖸡𖸩'  deadkey(0)
+  deadkey(3) + '6' >  '𖸤𖸝𖸢𖸩'  deadkey(0)
+  deadkey(4) + '6' >  '𖸤𖸝𖸣𖸩'  deadkey(0)
+  + '3' > '𖸰𖸝'  
+  + '5' > '𖸵𖸝'  deadkey(0)
+  + '6' > '𖸤𖸝𖸩'  deadkey(0)
+  c + any(MyuMituyoKeys:index:beep) > outs(𖸝_𖸤_menu) beep
+  + [K_TAB] > '𖸝'
+  nomatch >  outs(𖸝_𖸤_menu) beep
   
-group(󰀔_󰀦_group) using keys
-  deadkey(1) + '4' > '󰀰󰀔󰀠' 
-  deadkey(2) + '4' > '󰀰󰀔󰀡' 
-  deadkey(3) + '4' >  '󰀰󰀔󰀢' 
-  deadkey(4)  + '4' > '󰀰󰀔󰀣' 
-  deadkey(1) + '6' >  '󰀤󰀔󰀠󰀩'  deadkey(0)
-  deadkey(2) + '6' >  '󰀤󰀔󰀡󰀩'  deadkey(0)
-  deadkey(3) + '6' >  '󰀤󰀔󰀢󰀩'  deadkey(0)
-  deadkey(4) + '6' >  '󰀤󰀔󰀣󰀩'  deadkey(0)
-  deadkey(1) + '=' > '󰀵󰀔󰀠'  deadkey(0)
-  deadkey(2) + '=' > '󰀵󰀔󰀡'  deadkey(0)
-  deadkey(3) + '=' > '󰀵󰀔󰀢'  deadkey(0)
-  deadkey(4) + '=' > '󰀵󰀔󰀣'  deadkey(0)
-  + '4' > '󰀹󰀔' 
-  + '6' > '󰀦󰀔󰀩'  deadkey(0)
-  + '=' > '󰀦󰀔󰀯'
-c  + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
-  + [K_TAB] >  '󰀔'
-  nomatch > outs(󰀔_󰀦_menu) beep
+group(𖸔_𖸦_group) using keys
+  deadkey(1) + '4' > '𖸰𖸔𖸠' 
+  deadkey(2) + '4' > '𖸰𖸔𖸡' 
+  deadkey(3) + '4' >  '𖸰𖸔𖸢' 
+  deadkey(4)  + '4' > '𖸰𖸔𖸣' 
+  deadkey(1) + '6' >  '𖸤𖸔𖸠𖸩'  deadkey(0)
+  deadkey(2) + '6' >  '𖸤𖸔𖸡𖸩'  deadkey(0)
+  deadkey(3) + '6' >  '𖸤𖸔𖸢𖸩'  deadkey(0)
+  deadkey(4) + '6' >  '𖸤𖸔𖸣𖸩'  deadkey(0)
+  deadkey(1) + '=' > '𖸵𖸔𖸠'  deadkey(0)
+  deadkey(2) + '=' > '𖸵𖸔𖸡'  deadkey(0)
+  deadkey(3) + '=' > '𖸵𖸔𖸢'  deadkey(0)
+  deadkey(4) + '=' > '𖸵𖸔𖸣'  deadkey(0)
+  + '4' > '𖸹𖸔' 
+  + '6' > '𖸦𖸔𖸩'  deadkey(0)
+  + '=' > '𖸦𖸔𖸯'
+c  + any(NiMituyoKeys:index:beep) > outs(𖸔_𖸦_menu) beep
+  + [K_TAB] >  '𖸔'
+  nomatch > outs(𖸔_𖸦_menu) beep
