@@ -6,7 +6,7 @@ store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.6'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -350,7 +350,7 @@ c
 c Characters usually found before words (to be used in order to set automatic breathings
 store(beforeWordChars)  U+0020 U+0028 U+002D U+0027 \
                         U+0022 U+003A U+007B U+00AB \
-                        U+00B6 U+00A9 U+000A
+                        U+00B6 U+00A9 U+000A U+00A0
 c
 c 
 c CONVENTIONS CONVERNING ACCENTS:
@@ -552,7 +552,7 @@ store(omegaup-yp)   U+03A9 U+03A9 U+03A9 \
                     U+03A9 U+03A9
 c 
 c
-c STORES USED FOR DIPHTHONG PROCESSING (at beginning of word)
+c STORES USED FOR DIPHTHONG PROCESSING at beginning of word
 c
 c Used in Rule 1
 c Sequence of chars: psili / psili-oxeia / psili-perisp / psili-vareia / daseia / daseia-oxeia / daseia-perisp / daseia-vareia
@@ -653,6 +653,7 @@ c -------------------- if iota or ypsilon follows (diphthong) ------------------
 c
 any(startingVowelWithAccBreath) + any(iota)  > index(startingVowel,1) index(IotaWithAccBreath,1)
 any(startingVowelWithAccBreath) + any(upsilon)  > index(startingVowel,1) index(YpsilonWithAccBreath,1)
+U+1F51 + any(iota)  >  U+03C5 U+1FFE        c handling of ὑι > υἱ  
 c
 c
 c ------------ Case 2: move breathing to next vowel, if accent follows (diphthong) ------------------------
@@ -681,22 +682,23 @@ any(startingVowelWithPsili)  U+1FDE + any(upsilon) > index(VowelWithoutAcc,1) U+
 any(startingVowelWithPsili)  U+1FDF + any(upsilon) > index(VowelWithoutAcc,1) U+1F57
 any(startingVowelWithPsili)  U+1FDD + any(upsilon) > index(VowelWithoutAcc,1) U+1F53
 c
-c ------------ Rule 3a: psili entered after vowel with automatic psili -> automatic psili removed from initial vowel
-c ------------ Jan 2026
+c ------------ Rule 3a: psili/daseia entered after vowel with automatic psili/daseia -> 
+c ------------ automatic psili/daseia removed from initial vowel (Jan 2026)
 c
 any(startingVowelWithPsili) + any(psili) > index(VowelWithoutAcc,1) u+1fbf
-
+any(startingVowelWithDaseia) + any(daseia) > index(VowelWithoutAcc,1) U+1FFE
+c
 c
 c ------------ Rule 4: If none of the above, -------------------------------------------
 c ------------ put DEFAULT BREATHING AT STARTING VOWEL (with or w/o accent) ----
 c ------------ perisp before epsilon or omikron is ignored ---------------------
 c 
-nul U+0384 + any(vowels) > index(vowels-oxeia-breath,3)
-any(beforeWordChars) U+0384 + any(vowels) > index(beforeWordChars,1) index(vowels-oxeia-breath,3)
-nul U+1FC0 + any(vowels) > index(vowels-perisp-breath,3)
-any(beforeWordChars) U+1FC0 + any(vowels) > index(beforeWordChars,1) index(vowels-perisp-breath,3)
-nul U+0060 + any(vowels) > index(vowels-vareia-breath,3)
-any(beforeWordChars) U+0060 + any(vowels) > index(beforeWordChars,1) index(vowels-vareia-breath,3)
+nul U+0384 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+0384 + any(vowels) > context use(wordStartBreathingRules)
+nul U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
+nul U+0060 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+0060 + any(vowels) > context use(wordStartBreathingRules)
 c
 c Jan 2026 - Correct error in handling sequences of perisp and ypoge and vice versa
 c
@@ -878,7 +880,20 @@ group(WinOnlyRules) using keys
     U+0060 + U+0020 > U+0027 U+0020
 
 
-
 group(mobileOnlyRules) using keys
 c automatic psili dropped when single vowel used for numbering of ordered lists
     any(vowels-arithm-psili) U+0027 + U+0020 > index(vowels-arithm,1) U+0027 U+0020
+
+
+group(wordStartBreathingRules) using keys
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+U+0060 + any(vowels) > index(vowels-vareia-breath,2)
+U+0384 + any(vowels) > index(vowels-oxeia-breath,2)
+U+1FC0 + any(vowels) > index(vowels-perisp-breath,2)
+
+
