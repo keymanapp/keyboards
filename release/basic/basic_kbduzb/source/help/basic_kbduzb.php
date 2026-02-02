@@ -17,6 +17,3 @@
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift'>
 </div>
-
-<p>© 2009-2019 SIL International</p>
-

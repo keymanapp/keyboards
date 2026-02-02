@@ -9,16 +9,12 @@ Lateef is named after Shah Abdul Lateef Bhitai, the famous Sindhi
 mystic and poet. It is intended to be an appropriate style for use 
 in Sindhi and other languages of the South Asian region.
 
-This release supports most of the Unicode 15.0 Arabic character 
-repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). 
-
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
 available. 
 
 Lateef is released under the SIL Open Font License.
-Lateef is a trademark of SIL International.
+Lateef is a trademark of SIL Global.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
@@ -35,7 +31,7 @@ TIPS
 As this font is distributed at no cost, we are unable to provide a 
 commercial level of personal technical support. The font has, however, 
 been through some testing on various platforms to be sure it works in most
-situations. In particular, it has been tested and shown to work on Windows 10.
+situations. In particular, it has been tested and shown to work on Windows 10/11. 
 
 If you do find a problem, please do report it through the website: 
 https://software.sil.org/lateef/support.
@@ -82,7 +78,7 @@ OpenType.
 
 CONTACT
 ========
-For more information please visit the Lateef page on SIL International's
+For more information please visit the Lateef page on SIL Global's
 Computers and Writing systems website: https://software.sil.org/lateef
 
 Support through the website: https://software.sil.org/lateef/support

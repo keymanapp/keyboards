@@ -1,6 +1,10 @@
 Korean KORDA Jamo (SIL) Change History
 ====================
 
+3.0.1 (2025-05-12)
+----------------
+* Update to correct target as Windows-only
+
 3.0 (2020-09-10)
 ----------------
 * Moved to \release from \legacy

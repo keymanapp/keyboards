@@ -1,6 +1,10 @@
 Esperanto Plus Change History
 =============================
 
+3.0.1 (2024.02.01)
+----------------
+- Corrected "bps" shorthand in keyboard layout, in the welcome and help files.
+
 3.0 (2024.01.30)
 ----------------
 - Removed the '-et-' key from the touch layout

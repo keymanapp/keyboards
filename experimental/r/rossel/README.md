@@ -1,16 +1,14 @@
 rossel keyboard
 ==============
 
-Version 1.6
-
 Description
 -----------
-rossel generated from template
 
 Keyman keyboard for the Rossel language (YLE) of Rossel Island, Milne Bay Province, Papua New Guinea
 
 Links
 -----
+https://keyman.com/keyboards/rossel
 
 Copyright
 ---------

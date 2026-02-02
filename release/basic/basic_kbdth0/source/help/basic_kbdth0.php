@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Thai Kedmanee Basic 1.1 generated from template.
+    Thai Kedmanee Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

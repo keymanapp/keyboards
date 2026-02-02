@@ -4,13 +4,11 @@
   require_once('header.php');
 ?>
 
-<h1>Khmer Advanced Keyboard</h1>
 
 <p style="text-align: justify;">
     Khmer Advanced keyboard is designed for typing Khmer characters which are rarely used: (1) divination signs, (2) lunar dates and (3) characters used in old Khmer or transliteration of Pali and Sanskrit.
 </p>
 
-<h1>Keyboard Layouts</h1>
 <h2>Desktop Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

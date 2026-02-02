@@ -1,6 +1,20 @@
 Balochi Urdu Change History
 ===============================
 
+1.6.1 (30 Mar 2024)
+------------------
+* Moved ** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER YEH BARREE to ctrl+b
+* Moved ** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER WAW to ctrl+d
+
+1.6 (24 Apr 2024)
+-----------------
+* New letters: 
+** ARABIC LETTER YEH WITH TWO DOTS BELOW AND HAMZA ABOVE
+* New double letters:
+** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER WAW
+** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER FARSI YEH
+** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER YEH BARREE
+
 1.5 (31 Aug 2022)
 -----------------
 * Update keyboard to include new version of Lateef font.

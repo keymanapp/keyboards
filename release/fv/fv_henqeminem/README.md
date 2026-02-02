@@ -1,7 +1,7 @@
-Hǝn̓q̓ǝmin̓ǝm keyboard
+hǝn̓q̓ǝmin̓ǝm̓ keyboard
 ======================
 
-Hǝn̓q̓ǝmin̓ǝm keyboard layout for Unicode
+hǝn̓q̓ǝmin̓ǝm̓ keyboard layout for Unicode
 
 Links
 -----

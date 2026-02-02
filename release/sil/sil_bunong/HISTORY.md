@@ -1,6 +1,18 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.6.1 (24 Mar 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+
+1.6 (06 Nov 2024)
+------------------
+* added riel sign and numpad layer
+
+1.5.1 (30 Oct 2024)
+------------------
+* Changed display font for .kvks
+
 1.5 (6 Apr 2023)
 -----------------
 

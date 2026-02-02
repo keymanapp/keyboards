@@ -19,8 +19,6 @@ keyboard layout follows the Windows 10 Greek (220) Latin layout.
 <p>΅ followed by space will produce ΅.</p>
 <p>These deadkeys do not appear to do much. However, the keyboard layout is intended to match the Greek (220) layout.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.263.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>splash.png</GraphicFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,6 +24,7 @@
     <Author URL="mailto:tisarukhan@gmail.com">Tigran Sarukhanyan</Author>
     <Version URL=""></Version>
     <WebSite URL="https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md">https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md</WebSite>
+    <Description URL="">Russian Mnemonic R keyboard layout</Description>
   </Info>
   <Files>
     <File>
@@ -126,15 +129,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Russian Mnemonic R</Name>
       <ID>russian_mnemonic_r</ID>
-      <Version>1.0.0</Version>
+      <Version></Version>
       <Languages>
         <Language ID="ru">Russian</Language>
       </Languages>
+      <Examples>
+        <Example ID="ru" Keys="R u s s k i j space space q z y k" Text="Русский язык" Note="Name of language" />
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,10 +18,13 @@
   </StartMenu>
   <Info>
     <Name URL="">SENĆOŦEN</Name>
-    <Copyright URL="">(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the SENĆOŦEN language of the BC Coast 
+region of Canada. To type in SENĆOŦEN on Mac or PC, turn CAPS LOCK on. 
+This is part of a set of keyboards from FirstVoices. Alternate name: Saanich</Description>
   </Info>
   <Files>
     <File>
@@ -131,6 +135,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -142,5 +152,10 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="sencoten_u" Relationship="deprecates"/>
+    <RelatedPackage ID="salish" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_sencoten_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

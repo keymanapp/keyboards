@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.100.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>Udi_splash.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -32,10 +34,11 @@
     </Items>
   </StartMenu>
   <Info>
-    <Name URL="">Udi Keyboard</Name>
-    <Copyright URL="">©2020 SIL International (Eurasia)</Copyright>
+    <Name URL="">Udi (SIL)</Name>
+    <Copyright URL="">© SIL Global (Eurasia)</Copyright>
     <Author URL="mailto:mark_mwanzia@sil.org">Mark Mwanzia</Author>
     <Version URL=""></Version>
+    <Description URL="">This keyboard layout is designed for the Udi language of Azerbaijan.</Description>
   </Info>
   <Files>
     <File>
@@ -122,12 +125,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Udi(SIL)</Name>
       <ID>udi_keyboard</ID>
-      <Version>1.01</Version>
+      <Version>1.2.0</Version>
       <Languages>
         <Language ID="udi-Latn">Udi (Latin)</Language>
       </Languages>

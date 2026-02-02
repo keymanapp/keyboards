@@ -1,8 +1,6 @@
 # Nias keyboard
 
-© 2021 Sirus Laia
-
-Version 1.0
+© Sirus Laia
 
 ## Description
 

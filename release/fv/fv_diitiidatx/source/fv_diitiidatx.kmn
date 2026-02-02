@@ -1,7 +1,7 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+store(&KEYBOARDVERSION) '9.2.1'
 store(&TARGETS) "any"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Diidiitidq'
 store(&BITMAP) 'fv_diitiidatx.ico'
 store(&VISUALKEYBOARD) 'fv_diitiidatx.kvks'
@@ -22,29 +22,6 @@ store(&LAYOUTFILE) 'fv_diitiidatx.keyman-touch-layout'
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'p' + [SHIFT T_R] > 'p̓'
-'c' + [SHIFT T_R] > 'c̓'
-'q' + [SHIFT T_R] > 'q̓'
-'d' + [SHIFT T_R] > 'd̓'
-'W' + [SHIFT T_R] > 'W̓'
-'K' + [SHIFT T_R] > 'K̓'
-'Y' + [SHIFT T_R] > 'Y̓'
-'t' + [SHIFT T_R] > 't̓'
-'L' + [SHIFT T_R] > 'L̓'
-'č' + [SHIFT T_R] > 'č̓'
-'Č' + [SHIFT T_R] > 'Č̓'
-'w' + [SHIFT T_R] > 'w̓'
-'B' + [SHIFT T_R] > 'B̓'
-'k' + [SHIFT T_R] > 'k̓'
-'P' + [SHIFT T_R] > 'P̓'
-'C' + [SHIFT T_R] > 'C̓'
-'Q' + [SHIFT T_R] > 'Q̓'
-'l' + [SHIFT T_R] > 'l̓'
-'D' + [SHIFT T_R] > 'D̓'
-'y' + [SHIFT T_R] > 'y̓'
-'ƛ' + [SHIFT T_R] > 'ƛ̓'
-'T' + [SHIFT T_R] > 'T̓'
-'b' + [SHIFT T_R] > 'b̓'
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
@@ -71,41 +48,18 @@ store(&LAYOUTFILE) 'fv_diitiidatx.keyman-touch-layout'
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V_0] > 'Č̓' layer('default')
-+ [SHIFT T_V] > 'Č' layer('default')
++ [SHIFT T_V_0] > 'Č' layer('default')
++ [SHIFT T_V] > 'Č' layer('default')
 + [SHIFT T_B_0] > 'B̓' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N_0] > 'ƛ̓' layer('default')
 + [SHIFT T_N] > 'ƛ' layer('default')
-+ [SHIFT T_M] > 'Š' layer('default')
++ [SHIFT T_M] > 'Š' layer('default')
 + [T_Q_0] > 'q̓'
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > 'e'
-'p' + [T_R] > 'p̓'
-'c' + [T_R] > 'c̓'
-'q' + [T_R] > 'q̓'
-'d' + [T_R] > 'd̓'
-'W' + [T_R] > 'W̓'
-'K' + [T_R] > 'K̓'
-'Y' + [T_R] > 'Y̓'
-'t' + [T_R] > 't̓'
-'L' + [T_R] > 'L̓'
-'č' + [T_R] > 'č̓'
-'Č' + [T_R] > 'Č̓'
-'w' + [T_R] > 'w̓'
-'B' + [T_R] > 'B̓'
-'k' + [T_R] > 'k̓'
-'P' + [T_R] > 'P̓'
-'C' + [T_R] > 'C̓'
-'Q' + [T_R] > 'Q̓'
-'l' + [T_R] > 'l̓'
-'D' + [T_R] > 'D̓'
-'y' + [T_R] > 'y̓'
-'ƛ' + [T_R] > 'ƛ̓'
-'T' + [T_R] > 'T̓'
-'b' + [T_R] > 'b̓'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
@@ -132,15 +86,22 @@ store(&LAYOUTFILE) 'fv_diitiidatx.keyman-touch-layout'
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
 + [T_C] > 'c'
-+ [T_V_0] > 'č̓'
-+ [T_V] > 'č'
++ [T_V_0] > 'č̓'
++ [T_V] > 'č'
 + [T_B_0] > 'b̓'
 + [T_B] > 'b'
 + [T_N_0] > 'ƛ̓'
 + [T_N] > 'ƛ'
-+ [T_M] > 'š'
++ [T_M] > 'š'
 
 c --- END OF TOUCH LAYOUT RULES ---
+
+c Shared stores and rules
+
+store(NeedsCApos) 'bcčdklpqtwyBCČDKLPQTWYƛ'
+store(CAposKeys) [SHIFT T_R] [T_R] [K_QUOTE]
+
+any(NeedsCApos) + any(CAposKeys) > index(NeedsCApos,1) U+0313
 
                 
 c constraints
@@ -205,17 +166,17 @@ c Language
 + [CAPS K_8] > 'Ł'
 + [CAPS K_7] > 'X̣'
 + [CAPS K_6] > nul
-+ [CAPS K_5] > ''
-+ [CAPS K_4] > 'C' U+030C
-+ [CAPS K_3] > 'S' U+030C
++ [CAPS K_5] > U+A7DC
++ [CAPS K_4] > 'Č'
++ [CAPS K_3] > 'Š'
 + [CAPS K_2] > 'ᵂ' 
 
 + [NCAPS SHIFT K_8] > 'Ł'
 + [NCAPS SHIFT K_7] > 'X̣'
 + [NCAPS SHIFT K_6] > nul
-+ [NCAPS SHIFT K_5] > ''
-+ [NCAPS SHIFT K_4] > 'C' U+030C
-+ [NCAPS SHIFT K_3] > 'S' U+030C
++ [NCAPS SHIFT K_5] > U+A7DC
++ [NCAPS SHIFT K_4] > 'Č'
++ [NCAPS SHIFT K_3] > 'Š'
 + [NCAPS SHIFT K_2] > 'ᵂ' 
 
 + [CAPS K_0] > 'ʕ'
@@ -224,8 +185,8 @@ c Language
 + [CAPS SHIFT K_7] > 'x̣'
 + [CAPS SHIFT K_6] > nul
 + [CAPS SHIFT K_5] > 'ƛ'
-+ [CAPS SHIFT K_4] > 'c' U+030C
-+ [CAPS SHIFT K_3] > 's' U+030C
++ [CAPS SHIFT K_4] > 'č'
++ [CAPS SHIFT K_3] > 'š'
 + [CAPS SHIFT K_2] > 'ʷ'
 + [CAPS K_1] > '̣'  
 
@@ -235,8 +196,8 @@ c Language
 + [NCAPS K_7] > 'x̣'
 + [NCAPS K_6] > nul
 + [NCAPS K_5] > 'ƛ'
-+ [NCAPS K_4] > 'c' U+030C
-+ [NCAPS K_3] > 's' U+030C
++ [NCAPS K_4] > 'č'
++ [NCAPS K_3] > 'š'
 + [NCAPS K_2] > 'ʷ'
 + [NCAPS K_1] > '̣'       
 

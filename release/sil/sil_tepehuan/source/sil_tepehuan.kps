@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.112.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Tepehuan (SIL)</Name>
-    <Copyright URL="">© 2008-2020 SIL Mexico</Copyright>
+    <Copyright URL="">© SIL Mexico</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description URL="">Southern Tepehuan/Durango Unicode keyboard in modified roman or phonetic
+script. Use this keyboard with fonts such as Doulos SIL. This keyboard
+includes the Unicode code points for glottal stops U+A78B and U+A78C.</Description>
   </Info>
   <Files>
     <File>
@@ -88,19 +93,35 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_tepehuan.js</Name>
+      <Description>File sil_tepehuan.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tepehuan (SIL)</Name>
       <ID>sil_tepehuan</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\doulos\DoulosSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\doulos\DoulosSIL-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="stp-Latn">Southeastern Tepehuan</Language>
-        <Language ID="tla-Latn">Southwestern Tepehuan</Language>
+        <Language ID="stp">Southeastern Tepehuan</Language>
+        <Language ID="tla">Southwestern Tepehuan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="spantepu" Relationship="deprecates"/>
+    <RelatedPackage ID="mextep" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

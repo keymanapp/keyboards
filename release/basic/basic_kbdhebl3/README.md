@@ -1,7 +1,7 @@
 Hebrew (Standard) Basic keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 
 Description

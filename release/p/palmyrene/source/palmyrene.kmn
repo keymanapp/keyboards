@@ -1,0 +1,29 @@
+﻿c palmyrene generated from template at 2024-09-03 14:44:25
+c with name "Palmyrene"
+store(&VERSION) '10.0'
+store(&NAME) 'Palmyrene'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'palmyrene.ico'
+store(&VISUALKEYBOARD) 'palmyrene.kvks'
+store(&LAYOUTFILE) 'palmyrene.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(nul) "ABCDEFGHIJKLMNOPQRSTUVWXYZ0fjv"
+store(CharsK) "abgdhwzctiklmunsopeqrxy"
+store(CharsU) U+10860 .. U+10876
+
+store(OtherK) "891234567"
+store(otherU) U+10877 .. U+1087F
+
+store(digitsK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] 
+store(digits) "1234567890"
+group(main) using keys
+
++ any(nul) > nul
++ any(digitsK) > index(digits,1)
++ any(CharsK) > index(CharsU,1)
++ any(OtherK) > index(OtherU,1)

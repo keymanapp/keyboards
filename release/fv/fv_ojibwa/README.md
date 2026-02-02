@@ -1,7 +1,7 @@
-ᐊᓂᔑᓇᐯᒧᐎᓐ keyboard
+ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa, a-finals, left w-dot) keyboard
 ======================
 
-ᐊᓂᔑᓇᐯᒧᐎᓐ keyboard layout for Unicode
+ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa, a-finals, left w-dot) keyboard layout for Unicode
 
 Links
 -----

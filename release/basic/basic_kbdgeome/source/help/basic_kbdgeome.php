@@ -9,7 +9,7 @@
 
 
 <p style='margin: 16px 0 0 0'>
-Georgian Ministry of Education and Science Schools Basic keyboard 1.0 is generated from template.
+The keyboard layout follows the Windows 10 Georgian Ministry of Education and Science Schools Basic keyboard layout.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,10 +18,13 @@
   </StartMenu>
   <Info>
     <Name URL="">Dɛnɛsųłįnɛ</Name>
-    <Copyright URL="">(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Dɛnɛsųłįnɛ language of the Western 
+Subarctic region of Canada. This is part of a set of keyboards from 
+FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -121,7 +125,7 @@
     </File>
     <File>
       <Name>..\build\fv_denesuline_epsilon.kmx</Name>
-      <Description>Keyboard Dënesųłıné</Description>
+      <Description>Keyboard Dɛnɛsųłiné</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
@@ -131,16 +135,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Dënesųłıné</Name>
+      <Name>Dɛnɛsųłįnɛ</Name>
       <ID>fv_denesuline_epsilon</ID>
-      <Version>9.1.4</Version>
+      <Version>10.0.2</Version>
       <Languages>
-        <Language ID="chp-Latn">Chipewyan (Latin)</Language>
+        <Language ID="chp">Chipewyan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_denesuline_epsilon_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

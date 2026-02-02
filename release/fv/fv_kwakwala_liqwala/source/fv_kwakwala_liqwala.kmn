@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.2.5'
+store(&KEYBOARDVERSION) '9.3'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "kwk"
-store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Kʷak̓ʷala'
 store(&BITMAP) 'fv_kwakwala_liqwala.ico'
 store(&VISUALKEYBOARD) 'fv_kwakwala_liqwala.kvks'
-store(&KMW_HELPFILE) 'fv_kwakwala_liqwala_kmw_help.htm'
 begin Unicode > use(main)
                                  
 group(main) using keys
@@ -54,12 +53,12 @@ any(NeedsApostrophe) + any(Apostrophe) > index(NeedsApostrophe,1) U+0313
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON] > 'Ł' layer('default')
 + [SHIFT T_Z_0] > 'ƛ̓' layer('default')
-+ [SHIFT T_Z] > 'ƛ' layer('default')
++ [SHIFT T_Z] > 'ƛ' layer('default') c see TODO
 + [SHIFT T_X_0] > 'X̌' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_B] > 'λ' layer('default')
++ [SHIFT T_B] > 'λ' layer('default') c see TODO
 + [SHIFT T_N] > 'B' layer('default')
 + [SHIFT T_M_0] > 'N̓' layer('default')
 + [SHIFT T_M] > 'N' layer('default')
@@ -101,7 +100,7 @@ any(NeedsApostrophe) + any(Apostrophe) > index(NeedsApostrophe,1) U+0313
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
 + [T_C] > 'c'
-+ [T_B] > 'λ'
++ [T_B] > 'λ' c see TODO
 + [T_N] > 'b'
 + [T_M_0] > 'n̓'
 + [T_M] > 'n'
@@ -112,10 +111,13 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c constraints
 
-store(overaccent)  U+0313  
+store(overaccent)  U+0313 U+030C
 store(overaccentkey) [K_Quote] 
+store(HasAccent) 'ēǧĒǦ'
  
 any(overaccent) + any(overaccentkey) > context beep  
+any(HasAccent) + any(overaccentkey) > context beep
+
 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + [K_Quote] > context beep
@@ -160,11 +162,12 @@ c original punc
 + [K_LBRKT] > U+2018   
 + "/" > "ʔ"    
 + [RALT K_SLASH] > "/" 
++ [SHIFT RALT K_SLASH] > '/' c alternate way to type Slash for Google Workspace
 
 + [CAPS K_0] > 'Ē'
 + [CAPS K_9] > 'Ɫ'
-+ [CAPS K_8] > ''
-+ [CAPS K_7] > U+F898
++ [CAPS K_8] > U+A7DC c Latin Capital Letter Lambda with Stroke, releasing with Unicode 16.0
++ [CAPS K_7] > U+A7DA c Latin Capital Letter Lambda, releasing with Unicode 16.0
 + [CAPS K_6] > "ᶻ"
 + [CAPS K_5] > 'Ǧ'
 + [CAPS K_4] > 'X̌'
@@ -174,8 +177,8 @@ c original punc
 
 + [NCAPS SHIFT K_0] > 'Ē'
 + [NCAPS SHIFT K_9] > 'Ɫ'   
-+ [NCAPS SHIFT K_8] > ''
-+ [NCAPS SHIFT K_7] > U+F898
++ [NCAPS SHIFT K_8] > U+A7DC c Latin Capital Letter Lambda with Stroke, releasing with Unicode 16.0
++ [NCAPS SHIFT K_7] > U+A7DA c Latin Capital Letter Lambda, releasing with Unicode 16.0
 + [NCAPS SHIFT K_6] > "ᶻ"
 + [NCAPS SHIFT K_5] > 'Ǧ'
 + [NCAPS SHIFT K_4] > 'X̌'
@@ -186,7 +189,7 @@ c original punc
 + [CAPS SHIFT K_0] > 'ē'
 + [CAPS SHIFT K_9] > 'ɫ'
 + [CAPS SHIFT K_8] > 'ƛ'
-+ [CAPS SHIFT K_7] > 'λ'
++ [CAPS SHIFT K_7] > 'λ' c see TODO
 + [CAPS SHIFT K_6] > "ᶻ"
 + [CAPS SHIFT K_5] > 'ǧ'
 + [CAPS SHIFT K_4] > 'x̌' 
@@ -197,7 +200,7 @@ c original punc
 + [NCAPS K_0] > 'ē'
 + [NCAPS K_9] > 'ɫ'
 + [NCAPS K_8] > 'ƛ'
-+ [NCAPS K_7] > 'λ'
++ [NCAPS K_7] > 'λ' c see TODO
 + [NCAPS K_6] > "ᶻ"
 + [NCAPS K_5] > 'ǧ'
 + [NCAPS K_4] > 'x̌' 

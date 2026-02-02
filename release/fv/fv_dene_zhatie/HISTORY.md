@@ -1,5 +1,20 @@
 Dene Zhatıé Change History
 ============================
+10.2.1 (9 Jul 2024)
+-----------------
+* Corrected error in documentation
+
+10.2 (5 Jul 2024)
+-----------------
+* Tidied documentation
+* Tweaked mobile layout
+* Added alternate way to type slash / when using Google Workspace
+* Added Aboriginal Sans and Serif to package
+
+10.0.3 (22 May 2024)
+-----------------
+* Corrected typo in documentation
+
 10.0.2 (24 Oct 2023)
 -----------------
 * Updated touch layout file to unscramble display on help page

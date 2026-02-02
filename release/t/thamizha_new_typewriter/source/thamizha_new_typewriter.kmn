@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.2.1'
 store(&Name) "புதிய தட்டெழுதி | New Typewriter"
-store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+store(&COPYRIGHT) '© thamizha.com and SIL Global'
 c *** Bugs Fixing Modifications by K. Sethu, March 2008
 c *** (addition of 5 lines at the bottom)
 store(&MESSAGE) 'New Type Writer Unicode Keyboard - Contributed by Umar(csd_one@yahoo.com), Mugunth (mugunth@gmail.com) and K. Sethu (skhome@gmail.com) ; March-October 2008'
@@ -11,7 +11,8 @@ c store(&WINDOWSLANGUAGES) 'x0449'
 c store(&LANGUAGE) 'x0449'
 c store(&ETHNOLOGUECODE) 'tam'
 store(&VISUALKEYBOARD) 'thamizha_new_typewriter.kvks'
-store(&TARGETS) 'web desktop'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'thamizha_new_typewriter.keyman-touch-layout'
 
 begin Unicode > use(main)
 group(main) using keys
@@ -24,7 +25,7 @@ store (EstrGr) "!$&+"
 store (TstrGr) U+0BB8 U+0B9C U+0BB7 U+0BB9
 store (Osubst1) "~@#*./>?|"
 store (Rsubst1) "*" '"' "%',.?_!"
-store (no_disp) "%^hpP[]{}ABZ"
+store (no_disp) "%^hpP[]{}AZ"
 store (Eukar1) "qQWERYUSDFGJKL"
 store (Tukar1) U+0BA3 U+0B9E U+0BB1 U+0BA8 U+0B9A U+0BB2 U+0BB0 U+0BB3 U+0BA9 U+0B95 U+0BB4 U+0BA4 U+0BAE U+0B9F
 store (ukar2) U+0B99 U+0BAA U+0BAF U+0BB5
@@ -61,7 +62,7 @@ any (TstrL)+ "h" > context U+0BBE  c --nedil---
 any (TstrL) + "p" > context U+0BBF c ---ikaram---
 any (TstrL) + "P" > context U+0BC0 c ---iikaaram--
 any (TstrL) U+0BBF + [K_BKSP] > nul
-any (TstrL) U+0BBF + [K_BKSP] > nul             
+
 c ---ukaram---
 c ukaram 1
 + any (Eukar1) > index (Tukar1,1) U+0BC1

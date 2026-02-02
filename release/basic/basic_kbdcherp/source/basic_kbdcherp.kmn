@@ -11,9 +11,10 @@ store(&VERSION) '10.0'
 store(&NAME) 'Cherokee Nation Phonetic Basic'
 store(&VISUALKEYBOARD) 'basic_kbdcherp.kvks'
 store(&BITMAP) 'basic_kbdcherp.ico'
-store(&COPYRIGHT) '(c) 2020-2022 SIL International'
-store(&KEYBOARDVERSION) '1.0.1'
-store(&TARGETS) 'web desktop'
+store(&COPYRIGHT) '(c) SIL International'
+store(&KEYBOARDVERSION) '1.1.0'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'basic_kbdcherp.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -21,7 +22,7 @@ group(main) using keys
 
 c store(nul) "bBfFpPrRzZ"
 store(nul) [NCAPS K_B] [NCAPS SHIFT K_B] [NCAPS K_F] [NCAPS SHIFT K_F] [NCAPS K_P] \
-           [NCAPS SHIFT_K_P] [NCAPS K_R] [NCAPS SHIFT K_R] [NCAPS K_Z] [NCAPS SHIFT K_Z]
+           [NCAPS SHIFT K_P] [NCAPS K_R] [NCAPS SHIFT K_R] [NCAPS K_Z] [NCAPS SHIFT K_Z]
 + any(nul) > nul
 
 + [K_SPACE] > U+0020

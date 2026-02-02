@@ -1,7 +1,7 @@
-Dene Dzage keyboard
+Danezāgéʼ keyboard
 ======================
 
-Dene Dzage keyboard layout for Unicode
+Danezāgéʼ keyboard layout for Unicode
 
 Links
 -----
@@ -13,9 +13,8 @@ Links
 Supported Platforms
 -------------------
 
+ * Windows
+ * macOS
+ * Linux
+ * Web
  * Mobile
-
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

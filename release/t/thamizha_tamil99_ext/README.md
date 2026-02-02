@@ -1,9 +1,7 @@
 த99-விரிவு | ta99 Extended Keyboard
 ==============
 
-(c) 2008-2020 thamizha.com and SIL International
-
-Version 2.1
+(c) thamizha.com and SIL International
 
 Description
 -----------
@@ -24,3 +22,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile

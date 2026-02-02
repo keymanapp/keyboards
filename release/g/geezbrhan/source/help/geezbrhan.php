@@ -26,7 +26,7 @@ This keyboard was created by Fr. Berhanemeskel M. Embaye.
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Ge’ez keyboard layout for Keyman Desktop Copyright © 2021 Fr. Berhanemeskel M. Embaye OFM Cap.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Ge’ez keyboard layout for Keyman Desktop Copyright © Fr. Berhanemeskel M. Embaye OFM Cap.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.244.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,8 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tagdal (SIL)</Name>
-    <Copyright URL="">© 2024 SIL International</Copyright>
-    <Author URL="">SIL International</Author>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Author URL="">SIL Global</Author>
+    <Description URL="">Tagdal keyboard with Latin script and some IPA characters.</Description>
   </Info>
   <Files>
     <File>
@@ -53,24 +56,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\desktop_default.png</Name>
-      <Description>File desktop_default.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\desktop_rightalt.png</Name>
-      <Description>File desktop_rightalt.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\desktop_shift.png</Name>
-      <Description>File desktop_shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\touch_default.png</Name>
       <Description>File touch_default.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -100,12 +85,40 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tagdal (SIL)</Name>
       <ID>sil_tagdal</ID>
-      <Version>1.0</Version>
       <Languages>
         <Language ID="tda-Latn">Tagdal (Latin)</Language>
       </Languages>

@@ -6,25 +6,24 @@
   Authors:     Tavultesoft
 */
   $pagename = 'Hawaiian (SIL) Keyboard Help';
-  $pagetitle = 'Hawaiian (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-
-<style type="text/css">
-p { font: 10pt Tahoma }
-h1 { font: bold 16pt Tahoma; color: #4444cc }
-h2 { font: bold 12pt Tahoma; color: #4444cc }
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 table.display tr .gap { width: 16px; border: none; }
 table.display tr td { font: 10pt "HI Keawe Unicode"; border: solid 1px #ccccff; padding: 4px }
 table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: left }
 table.display { border-collapse: collapse; }
-    </style>
+END;
+  require_once('header.php');
+?>
 
-<h1 style='margin-bottom: 2px'>Hawaiian (SIL) Keyboards</h1>
 <p>Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</p>
 
-<h2>Keyboard Layout Notes</h2>
-    
+<h2>Keyboard Layout</h2>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
+
 <table class='display'>
 <tr><th>Key</th><th>Output</th></tr>
 <tr><td>RightAlt+a</td><td>ā</td></tr>

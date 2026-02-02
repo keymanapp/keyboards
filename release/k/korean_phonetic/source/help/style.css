@@ -1,0 +1,171 @@
+/* 
+===========
+==General==
+===========
+*/
+body {
+	margin: 30px; 
+	font-family: 'Arial Unicode MS', Helvetica, sans-serif; 
+	font-size: 10pt;color: #2D2C2C;}
+img {border: none; }
+
+p {font-size: 10pt; margin:5px 0px 0px;}
+	
+/* Headers */
+h1, h2, h3{color: #AD4A28; font-weight: bold;}
+
+h1 {font-size: 22pt; margin: 22px 0px 11px; padding:0px;}
+h2 {font-size: 14pt; margin: 14px 0px 7px; padding:0px;}
+h3 {font-size: 12pt; margin: 12px 0px 6px; padding:0px;}
+h4 {font-size: 10pt; margin: 10px 0px 5px; padding:0px;}
+
+
+/* Links */
+a:link {color: #AD4A28; text-decoration: none;}
+a:visited {color: #AD4A28;text-decoration: none;}
+a:hover {color: #AD4A28;text-decoration: underline;}
+
+
+
+
+/*
+===========
+==Welcome==
+===========
+*/
+/* Tables */
+table {border-collapse:collapse !important; margin-left:40px;}
+.grid col {text-align:center;  background-color:#ffffff;}
+.grid th {text-align:center; font-weight:bold}
+.grid td, .grid th {padding:2px 5px;border-bottom:1px solid #ddd;}
+.grid tr {text-align:center; font-weight:normal;}
+
+/* Columns */
+.columns  {width:375px; -webkit-column-count: 2; -webkit-column-gap: 10px; -moz-column-count: 2; -moz-column-gap: 10px; column-count: 2; column-gap: 10px;}
+
+/* Floats */
+.consonants, .vowels {position:relative; width: 220px; float:left;}
+.vowels {padding-left:40px;}
+
+
+/* Language and Keycap Examples */
+.lang2,.languageExample {font-family:"Arial Unicode MS"; color:blue; }
+.lang2 {font-size:150%}
+
+.keys {border-style:solid; color:black; border-width:1px 1px 2px; border-color: #6B6867 #6B6867 #111111; background:#dddddd; margin:0px 1px; padding:2px 3px; line-height:30px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+/* OSK Keys */
+        .key { 
+            float: left;
+            display: block; 
+            position: relative;
+            overflow: hidden;
+            height: 35px;
+            
+                margin: 2px 0px 0px 2px;
+                border: solid 1px grey;
+				-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+              
+        }
+		#K_BKQUOTE {
+		width:34px;
+		}
+        #K_BKSP {
+		width: 60px;
+		}
+		#K_TAB {
+		width: 52px;		
+		}
+        #K_BKSLASH {
+          width: 42px; 
+        }
+		#K_CAPS {
+		width: 62px;
+		}
+		#K_ENTER {
+        width: 70px; 
+		}		
+		#K_ENTER-EU1 {
+        width: 42px; 
+		-webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px;
+		}
+		#K_ENTER-EU1 .keycap {
+		left:3px !important;
+		}   
+		#K_ENTER-EU2 {
+        width: 32px; 
+		margin-top:-1px !important; 
+		border-top:none !important;
+		height:39px !important;
+		-webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px;
+		}		
+        #K_SHIFTL {
+          width: 85px;
+        }                
+        #K_SHIFTL-EU {
+          width: 47px;
+        }    
+        #K_oE2 {
+            display:none;        
+        }     
+		#K_SHIFTR {
+          width: 85px;
+        }   			
+		#K_CTRLL {
+          width: 60px;
+        } 		
+		#K_ALTL {
+          width: 50px;
+        }   
+        #K_SPACE {
+          width: 234px;  
+        } 
+		#K_ALTR {
+          width: 50px;
+        } 
+		#K_CTRLR {
+          width: 60px;
+        } 			
+        .plain {
+          
+          background-repeat: no-repeat;
+          width: 34px;
+        }
+        
+        .special {
+          background-repeat: no-repeat;
+          
+            background: #c0c0c0;
+          
+        }
+        
+        .keycap {
+          font: bold 7pt Arial; 
+          position: absolute; 
+          left: 6px; 
+          top: 6px;
+        }
+        
+        .key .keycap {          
+          display: block;
+        }
+        
+        .special .keycap {
+          display: block;
+        }
+        
+        .keytext {
+          
+					font:
+						19px
+							 
+						"Arial Unicode MS"; 
+          position: absolute; 
+          display: block;
+          right: 5px;
+          bottom: 0px;
+          color: blue;
+        }
+		.hebrew .keytext {
+		font-family:"Ezra SIL";
+		}

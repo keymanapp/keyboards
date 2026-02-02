@@ -6,10 +6,8 @@
 ?>
 
 <p>
-    Greek Polytonic Basic 1.2 generated from template.
+    The keyboard layout follows the Windows 10 Greek Polytonic Basic keyboard layout.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>;α will produce ά (available on &#x03b1;&#x0391;&#x03b5;&#x0395;&#x03b7;&#x0397;&#x03b9;&#x0399;&#x03bf;&#x039f;&#x03c9;&#x03a9;&#x03c5;&#x03a5;&#x002e;).</p>

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,10 @@
     <Copyright URL="">© 2006-2020 Arun Sarkar</Copyright>
     <Author URL="">Arun Sarkar</Author>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for use with the languages of India and other
+regions in South Asia which use the Devanagari script. It uses standard
+Windows fonts. This is one of the most popular keyboard layouts for
+professional DTP work.</Description>
   </Info>
   <Files>
     <File>
@@ -76,6 +81,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -89,4 +100,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="hindi_modular_kab" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

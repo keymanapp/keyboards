@@ -1,9 +1,7 @@
 Syriac (Arabic layout) Keyboard
 =====================
 
-Copyright (C) 2007-2018 SIL International
-
-Version 1.2
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 Syriac (Arabic layout) is designed for use with Aramaic, Syriac and related languages. The 
@@ -21,7 +19,9 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
 
 
  

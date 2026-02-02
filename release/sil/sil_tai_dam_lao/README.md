@@ -1,7 +1,7 @@
 Tai Dam Lao (SIL) Keyboard
 =====================
 
-Copyright (c) 2016-2022 SIL International
+Copyright (c) SIL International
 
 
 __DESCRIPTION__
@@ -13,3 +13,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
+ 

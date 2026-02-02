@@ -1,5 +1,10 @@
 Nuxalk Change History
 ============================
+10.0.1 (12 Jul 2024)
+-----------------
+* Tidied documentation
+* Updated to new Project version
+
 10.0 (30 Oct 2023)
 -----------------
 * Added missing l key

@@ -1,4 +1,4 @@
-Tangsa Lukhum keyboard
+Tangsa Lakhum keyboard
 ==============
 
 Description
@@ -16,6 +16,7 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 
 
 This layout uses a deadkey on the left bracket "[" position to generate additional Lakhum characters.

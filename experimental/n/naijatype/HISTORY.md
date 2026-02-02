@@ -1,9 +1,52 @@
 Naija Type Keyboard Change History
 =======================
 
+66 (2025-Nov-04)
+--------
+* Bugfix for flick down shifted layer (2 not @) on touch keyboard.
+* Doc updates to make welcome work better on desktop.
+
+65 (2025-Jul-24)
+--------
+* Added 02C4 (˄) as a modifier of ^ circumflex (shift-6) as a tone symbol for grh Tugbiri.
+* (One for the Yorubas:) Ctrl-Alt-semicolon puts an underdot on underlinable letters before or after a tone diacritic.
+
+64 (2025-Jun-9)
+--------
+* Added diaeresis/umlaut to the tone rota after over dot (esp for Kamuku) and Kanuri reversed e on the Q key. Also disable small caps mode when backspacing a small cap to help those who activate it accidentally.
+* Updated the Andika font.
+
+63 (2024-Aug-20)
+---------
+* Update osk help file and related css to improve website behavior.
+
+62 (2024-Aug-13)
+---------
+* Corrected the New line indent for Description element.
+
+June 2024
+---------
+* v61 m̃ easier on touch, ḅ underdot and line on desktop and touch, ɦ on touch. 105 languages known covered.
+
+* v60 Doc updates, including assessment of more languages covered.
+
+* v59 Missing flicks and defaults added. Now every popup key should have a sensible default (underdot on i e o) and also an upflick shape variant. Diagonal accent flicks had been missing from shift keys.
+
+* v58 Added a load of (Requires Keyman 17) diagonal flicks for accents and down-flicks for all numbers on top row, side flicks on space bar and full stop (underdot), up-flicks for common alternate shapes. This should make use of the keyboard faster for power users. Added varying hopefully helpful defaults for the longpress menus. Updated the green hints. Updated documentation substantially.
+
+May 2024
+--------
+* v57 Added 00; and 00/ > empty set especially for discourse work. Fixed defects in the Touch Keyboard text output (wrong layer selected) which stopped some combinations working in the shift layer. Began adding number down-flicks on top row.
+
+April 2024
+----------
+* v52-56 Added Cicipu slash o.
+
+
 July 2023
 ---------
-* v50 Fix key cap for longpress menu key
+* v50 Fix key cap for longpress menu key.
+
 
 October 2022
 ------------

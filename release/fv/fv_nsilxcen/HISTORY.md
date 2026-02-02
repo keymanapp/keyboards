@@ -1,5 +1,23 @@
-Nsilxcən Change History
+Nsyilxcən Change History
 ============================
+10.0.1 (31 Jul 2024)
+------------------
+* Updated name in description to match rest of documentation
+* Closed missed bracket in .php
+
+10.0 (11 Jul 2024)
+------------------
+* Changed keyboard name
+* Tidied documentation
+* Added TODO to README
+* Updated capital barred lamda to code releasing fall 2024
+* Normalized further
+* Improved on stacking prevention
+* Removed web help in favour of OSK
+
+9.3 (6 Feb 2024)
+------------------
+* Added mid dot and č̓ to mobile layout
 
 9.2 (25 Apr 2023)
 -------------------

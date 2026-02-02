@@ -6,20 +6,17 @@
 ?>
 
 <p>
-    Gaelic Basic 1.1 generated from template.
+    Gaelic Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
 <p>This keyboard makes use of the SHIFT+RALT+O key which is set by default when Keyman is installed. 
 	To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". 
 	Either change the hotkey or turn it off.</p>
 
-
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
 <p>`a will produce à (available on aAeEiIoOuU).</p>
 <p>'a will produce á (available on aAeEiIoOuUyY).</p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>

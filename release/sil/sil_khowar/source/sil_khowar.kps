@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Khowar Phonetic (SIL)</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
+    <Description URL="">Khowar Phonetic (SIL) is for the Khowar language.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -57,14 +61,27 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_khowar.js</Name>
+      <Description>File sil_khowar.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Khowar Phonetic (SIL)</Name>
       <ID>sil_khowar</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
+      <RTL>True</RTL>
       <Languages>
-        <Language ID="khw-Arab">Khowar</Language>
+        <Language ID="khw">Khowar</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

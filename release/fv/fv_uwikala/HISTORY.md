@@ -1,5 +1,12 @@
 ’Wuìk̓ala Change History
 ============================
+9.4 (22 Jul 2024)
+-------------------
+* Removed web help in favour of OSK
+* Tweaked mobile layout
+* Tidied documentation
+* Added alternate way to type Slash for Google Workspace
+
 9.3 (7 Nov 2023)
 -------------------
 * Changed keyboard name to better reflect language

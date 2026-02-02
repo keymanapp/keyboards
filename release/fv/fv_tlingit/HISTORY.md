@@ -1,5 +1,13 @@
 Łingít Change History
 ============================
+10.1 (8 Jul 2024)
+----------------
+* Normalized outputs where possible
+* Tidied up rules and stores
+* Tidied documentation
+* Small update to mobile layout
+* Added alternate way to type slash with Google Workspace
+
 10.0.1 (25 Oct 2023)
 ----------------
 * Changed order of mobile layers to unscramble display on help page

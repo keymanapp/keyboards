@@ -1,7 +1,7 @@
-Homalco-Klahoose-Sliammon keyboard
+Éy7á7juuthem keyboard
 ======================
 
-Homalco-Klahoose-Sliammon keyboard layout for Unicode
+Éy7á7juuthem keyboard layout for Unicode
 
 Links
 -----
@@ -13,7 +13,9 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+* Desktop
+* Mobile
+* Tablet
 
 Todo
 ----

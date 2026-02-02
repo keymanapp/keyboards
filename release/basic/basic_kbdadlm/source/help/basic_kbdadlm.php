@@ -9,8 +9,6 @@
     This keyboard layout is designed for Adlam. it is based on the keyboard layout from Windows 10. The Ebrima font distributed with Windows 10 supports Adlam. Noto Sans Adlam also supports Adlam.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

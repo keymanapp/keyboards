@@ -1,5 +1,9 @@
 # ጉራጊና (Gurage) Change History
 
+## 2024-10-29 1.0.1
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 ## 2023-07-02 1.0
 * Revisions to synchronize with updates to other GFF keyboards.
 * Dynamic layers.

@@ -1,9 +1,7 @@
 Khmer Advanced keyboard
 =====================
 
-Copyright (C) 2020 SIL International
-
-Version 1.0
+Copyright (C) SIL Global
 
 Description
 -----------

@@ -1,11 +1,7 @@
-Keyboard Data
--------------
+Tem (kdh) Keyboard 
+=======================
 
-* Name:           Tem KDH
-* Copyright:      © 2017-2018 SIL International
-* Version:        1.2.1
-* Keyman Version: 9.0
-* BCP-47 codes:   kdh
+* Copyright: © SIL Global
 
 Description
 -----------
@@ -23,7 +19,7 @@ Supported Platforms
 -------------------
 
  * Windows
+ * Linux
  * MacOSX
  * Web
- * iOS
- * Android
+ * Mobile

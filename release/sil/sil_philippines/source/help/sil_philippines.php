@@ -1,16 +1,8 @@
 <?php
   $pagename = 'Philippines (SIL) Keyboard Help';
-  $pagetitle = 'Philippines (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
-
-
-  <meta charset="utf-8">
-
-
-
-
-<body>
 <p>This document describes the use of the Keyman keyboard designed for typing Philippine languages with a Unicode font.</p>
 
 <h2>Key to Reading the Chart</h2>
@@ -33,8 +25,8 @@ in which column:</p>
 <h2>Additional Info</h2>
 
 <p>All of these characters may be displayed correctly with the <a target='_blank' href='https://software.sil.org/doulos/'>Doulos SIL</a>, 
-	<a target='_blank' href='https://software.sil.org/charis/'>Charis SIL</a>, and 
-	<a target='_blank' href='https://software.sil.org/gentium/'>Gentium Plus</a> fonts, as well as with more
+	<a target='_blank' href='https://software.sil.org/charis/'>Charis</a>, and 
+	<a target='_blank' href='https://software.sil.org/gentium/'>Gentium</a> fonts, as well as with more
 common Windows fonts like Times New Roman, Arial, Calibri, and Cambria.</p>
 
 <h2>Alphabetic Characters – A</h2>

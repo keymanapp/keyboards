@@ -1,0 +1,2508 @@
+﻿c Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī.
+store(&VERSION) '15.0'
+store(&NAME) 'taigi telex'
+store(&COPYRIGHT) 'Copyright © cathaylab'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'taigi_telex.ico'
+store(&VISUALKEYBOARD) 'taigi_telex.kvks'
+store(&LAYOUTFILE) 'taigi_telex.keyman-touch-layout'
+
+c Note three entry points, rather than the traditional single entry point
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+
+c Vowels with tone numbers
+store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+store(no_h_letters) 'abcdefgijklmnopqrstuvwxyzABCDEFGIJKLMNOPQRSTUVWXYZ'
+store(no_shn_consonants) 'bdfgjlmqrvwxyzBDFGJLMQRVWXYZ'
+store(no_sh_consonants) 'bdfgjlmnqrvwxyzBDFGJLMNQRVWXYZ'
+store(all_consonants) 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+store(no_t_consonants) 'bcdfghjklmnpqrsvwxyzBCDFGHJKLMNPQRSVWXYZ'
+store(no_ct_consonants) 'bdfghjklmnpqrsvwxyzBDFGHJKLMNPQRSVWXYZ'
+store(no_hgn_consonants) 'bcdfjklmpqrtvwxyzBCDFJKLMPQRTVWXYZ'
+store(used_consonants) 'bghjklmnpstBCDFGHJKLMNPST'
+store(h_consonants) 'chkptCHKPT'
+store(no_h_consonants) 'bdfgjlmnqrsvwxyzBDFGJLMNQRSVWXYZ'
+store(unused_letters) 'dfqrvwxyDFQRVWXY'
+store(ng_letters) 'abeghkmnopstABEGHKMNOPST'
+store(un_ng_letters) 'cdfgijlqruvwxyzCDFGIJLQRUVWXYZ'
+store(ng_consonants) 'bghkmnpstBGHKMNPST'
+store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
+store(un_second_consonants)'qrtpdfklcvbmQRTPDFKLCVBM'
+store(s_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' ' 
+store(no_gn_letters) 'abcdefhijklmopqrstuvwxyzABCDEFHIJKLMOPQRSTUVWXYZ'
+store(ss) 'Ss'
+store(hh) 'Hh'
+store(vowels) 'aiueoAIUEO'
+store(vowels_tones) 'àìùèòÀÌÙÈÒ'
+store(vowels_tonef) 'âîûêôÂÎÛÊÔ'
+store(vowels_toner) 'áíúéóÁÍÚÉÓ'
+store(vowels_tonej) 'āīūēōĀĪŪĒŌ'
+store(vowels_tonew) 'ăĭŭĕŏĂĬŬĔŎ'
+store(vowels_tonex) 'ãĩũẽõÃĨŨẼÕ'
+store(endconsonants) 'ptkhmnPTKHMN'
+store(ptkmn) 'ptkmnPTKMN'
+store(ptkh) 'ptkhPTKH'
+store(th) 'thTH'
+store(pth) 'pthPTH'
+store(pkh) 'pkhPKH'
+store(t) 'tT'
+store(kh) 'khKH'
+store(un_tai_letters) 'qwrydfzxvQWRYDFZXV'
+store(o_s) 'oóòôōŏõOÓÒÔŌŎÕ'
+store(low_o_s) 'óòôōŏõ'
+store(upper_o_s) 'ÓÒÔŌŎÕ'
+store(low_a_s) 'áàâāăã'
+store(upper_a_s) 'ÁÀÂĀĂÃ'
+store(low_u_s) 'úùûūŭũ'
+store(upper_u_s) 'ÚÙÛŪŬŨ'
+store(low_i_s) 'íìîīĭĩ'
+store(upper_i_s) 'ÍÌÎĪĬĨ'
+store(low_rsfjw) 'rsfjwx'
+store(upper_rsfjw) 'RSFJWX'
+store(two_o) 'oO'
+store(two_a) 'aA'
+store(two_i) 'iI'
+store(two_e) 'eE'
+store(two_u) 'uU'
+store(n) 'nN'
+store(g) 'gG'
+store(iu) 'iuIU'
+store(ie) 'ieIE'
+store(ae) 'aeAE'
+store(iuo) 'iuoIUO'
+store(ou) 'uoUO'
+store(m) 'mM'
+store(aeo) 'aeoAEO'
+store(aeui) 'aeuiAEUI'
+store(aie) 'aeiAEI'
+store(aeou) 'aeouAEOU'
+store(mnnn) 'mnMNⁿ'
+store(s) 'sS'
+store(f) 'fF'
+store(r) 'rR'
+store(w) 'wW'
+store(j) 'jJ'
+store(x) 'xX'
+store(z) 'zZ'
+store(h) 'hH'
+store(hm) 'hHmM'
+
+any(iu) any(n) any(g) + any(all_letters) > index(iu, 1) index(n, 2) index(g, 3) index(all_letters, 4)
+any(two_o) any(two_o) + any(all_letters) > index(two_o, 1) index(two_o, 2) index(all_letters, 3)
+any(two_o) any(two_o) any(all_letters) + any(all_letters) > index(two_o, 1) index(two_o, 2) index(all_letters, 3) index(all_letters, 4)
+any(two_o) any(two_o) any(all_letters) any(all_letters) + any(all_letters) > index(two_o, 1) index(two_o, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_e) any(vowels) + any(all_letters) > index(two_e, 1) index(vowels, 2) index(all_letters, 3)
+any(two_e) any(vowels) any(all_letters) + any(all_letters) > index(two_e, 1) index(vowels, 2) index(all_letters, 3) index(all_letters, 4)
+any(two_e) any(vowels) any(all_letters) any(all_letters) + any(all_letters) > index(two_e, 1) index(vowels, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_a) any(aeo) + any(all_letters) > index(two_a, 1) index(aeo, 2) index(all_letters, 3)
+any(two_a) any(aeo) any(all_letters) + any(all_letters) > index(two_a, 1) index(aeo, 2) index(all_letters, 3) index(all_letters, 4)
+any(two_a) any(aeo) any(all_letters) any(all_letters) + any(all_letters) > index(two_a, 1) index(aeo, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_u) any(ou) + any(all_letters) > index(two_u, 1) index(ou, 2) index(all_letters, 3)
+any(two_u) any(ou) any(all_letters) + any(all_letters) > index(two_u, 1) index(ou, 2) index(all_letters, 3) index(all_letters, 4)
+any(two_u) any(ou) any(all_letters) any(all_letters) + any(all_letters) > index(two_u, 1) index(ou, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_i) any(two_i) + any(all_letters) > index(two_i, 1) index(two_i, 2) index(all_letters, 3)
+any(two_i) any(two_i) any(all_letters) + any(all_letters) > index(two_i, 1) index(two_i, 2) index(all_letters, 3) index(all_letters, 4)
+any(two_i) any(two_i) any(all_letters) any(all_letters) + any(all_letters) > index(two_i, 1) index(two_i, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_o) any(two_e) + any(m) > index(two_o, 1) index(two_e, 2) index(m, 3)
+any(two_o) any(two_e) any(m) + any(all_letters) > index(two_o, 1) index(two_e, 2) index(m, 3) index(all_letters, 4)
+any(two_o) any(two_e) any(m) any(all_letters) + any(all_letters) > index(two_o, 1) index(two_e, 2) index(m, 3) index(all_letters, 4) index(all_letters, 5)
+any(two_o) any(two_e) any(n) any(g) + any(all_letters) > index(two_o, 1) index(two_e, 2) index(n, 3) index(g, 4) index(all_letters, 5)
+
+c
+c Special input rules
+c
+'o͘' + any(low_rsfjw) > index(low_o_s, 3) U+0358
+'o͘' + any(upper_rsfjw) > index(low_o_s, 3) U+0358
+'O͘' + any(low_rsfjw) > index(upper_o_s, 3) U+0358
+'O͘' + any(upper_rsfjw) > index(upper_o_s, 3) U+0358
+any(o_s) + any(two_o) > index(o_s, 1) U+0358
+U+0358 + 'o' > 'o'
+U+0358 + 'O' > 'O'
+
+"n" + "n" > "ⁿ"
+"ⁿ" + "n" > "nn"
+"N" + "N" > "ⁿ"
+'ⁿ' + 'N' > 'NN'
+"e" + "e" > "ê"
+"ê" + "e" > "ee"
+'E' + 'e' > 'Ê'
+'Ê' + 'e' > 'Ee'
+
+'c'any(vowels) + any(all_letters) > 'c' index(vowels, 2) index(all_letters, 3)
+'c'any(vowels) any(all_letters) + any(all_letters) > 'c' index(vowels, 2) index(all_letters, 3) index(all_letters, 4)
+'c'any(vowels) any(all_letters) any(all_letters) + any(all_letters) > 'c' index(vowels, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'c'any(vowels) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'c' index(vowels, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'C'any(vowels) + any(all_letters) > 'C' index(vowels, 2) index(all_letters, 3)
+'C'any(vowels) any(all_letters) + any(all_letters) > 'C' index(vowels, 2) index(all_letters, 3) index(all_letters, 4)
+'C'any(vowels) any(all_letters) any(all_letters) + any(all_letters) > 'C' index(vowels, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'C'any(vowels) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'C' index(vowels, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(no_sh_consonants) 'h' + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3)
+any(no_sh_consonants) 'h' any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3) index(all_letters, 4)
+any(no_sh_consonants) 'h' any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(no_sh_consonants) 'h' any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(no_sh_consonants) 'h' any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(no_sh_consonants) 'h' any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'h' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(no_sh_consonants) 'H' + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3)
+any(no_sh_consonants) 'H' any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3) index(all_letters, 4)
+any(no_sh_consonants) 'H' any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(no_sh_consonants) 'H' any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(no_sh_consonants) 'H' any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(no_sh_consonants) 'H' any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_sh_consonants, 1) 'H' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(t) any(no_shn_consonants) + any(all_letters) > index(t, 1) index(no_shn_consonants, 2) index(all_letters, 3)
+any(t) any(no_shn_consonants) any(all_letters) + any(all_letters) > index(t, 1) index(no_shn_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(t) any(no_shn_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(t, 1) index(no_shn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(t) any(no_shn_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(t, 1) index(no_shn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) any(no_hgn_consonants) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3)
+any(all_consonants) any(no_hgn_consonants) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(all_consonants) any(no_hgn_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(all_consonants) any(no_hgn_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) any(no_hgn_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(all_consonants) any(no_hgn_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_hgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+
+'a' any(vowels) any(vowels) + any(all_letters) > 'a'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
+'A' any(vowels) any(vowels) + any(all_letters) > 'A'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
+'e' any(vowels) any(vowels) + any(all_letters) > 'e'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
+'E' any(vowels) any(vowels) + any(all_letters) > 'E'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
+
+any(vowels) any(vowels) any(vowels) any(no_h_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(no_h_letters, 4) index(all_letters, 5)
+any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8) index(all_letters, 9)
+
+any(no_h_consonants) "n" + "n" > index(no_h_consonants, 1) "nn"
+any(no_h_consonants) "N" + "N" > index(no_h_consonants, 1) "NN"
+
+any(vowels) any(all_consonants) any(vowels) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(vowels, 3) index(all_letters, 4)
+any(vowels) any(all_consonants) any(all_letters) any(vowels) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(vowels, 4) index(all_letters, 5)
+
+any(vowels) any(all_consonants) any(vowels) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5)
+
+any(vowels) any(all_consonants) any(vowels) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+
+any(unused_letters) + any(all_letters) > index(unused_letters, 1) index(all_letters, 2)
+any(unused_letters) any(all_letters) + any(all_letters) > index(unused_letters, 1) index(all_letters, 2) index(all_letters, 3)
+any(unused_letters) any(all_letters) any(all_letters) + any(all_letters) > index(unused_letters, 1) index(all_letters, 2) index(all_letters, 3) index(all_letters, 4)
+any(unused_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(unused_letters, 1) index(all_letters, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(unused_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(unused_letters, 1) index(all_letters, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+
+any(vowels) any(all_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5)
+any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6)
+any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8) index(all_letters, 9)
+any(all_consonants) any(un_second_consonants) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3)
+any(all_consonants) any(un_second_consonants) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(all_consonants) any(un_second_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(all_consonants) any(un_second_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) 'n' + any(no_gn_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3)
+any(all_consonants) 'n' any(no_gn_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+
+any(vowels) + any(s) > index(vowels_tones, 1)
+any(vowels) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3)
+
+any(vowels) + any(f) > index(vowels_tonef, 1)
+any(vowels) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3)
+
+any(vowels) + any(r) > index(vowels_toner, 1)
+any(vowels) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3)
+
+any(vowels) + any(j) > index(vowels_tonej, 1)
+any(vowels) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3)
+
+any(vowels) + any(w) > index(vowels_tonew, 1)
+any(vowels) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3)
+
+any(vowels) + any(x) > index(vowels_tonex, 1)
+any(vowels) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2)
+any(vowels) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3)
+
+any(vowels_tones) + 's' > index(vowels,1)'s'
+any(vowels_tones) + 'S' > index(vowels,1)'S'
+any(vowels_tonef) + 'f' > index(vowels,1)'f'
+any(vowels_tonef) + 'F' > index(vowels,1)'F'
+any(vowels_tonej) + 'j' > index(vowels,1)'j'
+any(vowels_tonej) + 'J' > index(vowels,1)'J'
+any(vowels_tonew) + 'w' > index(vowels,1)'w'
+any(vowels_tonew) + 'W' > index(vowels,1)'W'
+any(vowels_toner) + 'r' > index(vowels,1)'r'
+any(vowels_toner) + 'R' > index(vowels,1)'R'
+any(vowels_tonex) + 'x' > index(vowels,1)'x'
+any(vowels_tonex) + 'X' > index(vowels,1)'X'
+
+any(vowels_tones) + any(f) > index(vowels_tonef, 1) 
+any(vowels_tones) + any(r) > index(vowels_toner, 1) 
+any(vowels_tones) + any(j) > index(vowels_tonej, 1) 
+any(vowels_tones) + any(w) > index(vowels_tonew, 1) 
+any(vowels_tones) + any(x) > index(vowels_tonex, 1) 
+any(vowels_tonef) + any(s) > index(vowels_tones, 1) 
+any(vowels_tonef) + any(r) > index(vowels_toner, 1) 
+any(vowels_tonef) + any(j) > index(vowels_tonej, 1) 
+any(vowels_tonef) + any(w) > index(vowels_tonew, 1) 
+any(vowels_tonef) + any(x) > index(vowels_tonex, 1) 
+any(vowels_tonew) + any(s) > index(vowels_tones, 1) 
+any(vowels_tonew) + any(f) > index(vowels_tonef, 1) 
+any(vowels_tonew) + any(r) > index(vowels_toner, 1) 
+any(vowels_tonew) + any(j) > index(vowels_tonej, 1) 
+any(vowels_tonew) + any(x) > index(vowels_tonex, 1) 
+any(vowels_tonej) + any(s) > index(vowels_tones, 1) 
+any(vowels_tonej) + any(f) > index(vowels_tonef, 1) 
+any(vowels_tonej) + any(r) > index(vowels_toner, 1) 
+any(vowels_tonej) + any(w) > index(vowels_tonew, 1) 
+any(vowels_tonej) + any(x) > index(vowels_tonex, 1) 
+any(vowels_toner) + any(s) > index(vowels_tones, 1) 
+any(vowels_toner) + any(f) > index(vowels_tonef, 1) 
+any(vowels_toner) + any(j) > index(vowels_tonej, 1) 
+any(vowels_toner) + any(w) > index(vowels_tonew, 1) 
+any(vowels_toner) + any(x) > index(vowels_tonex, 1) 
+any(vowels_tonex) + any(s) > index(vowels_tones, 1) 
+any(vowels_tonex) + any(f) > index(vowels_tonef, 1) 
+any(vowels_tonex) + any(r) > index(vowels_toner, 1) 
+any(vowels_tonex) + any(w) > index(vowels_tonew, 1) 
+any(vowels_tonex) + any(j) > index(vowels_tonex, 1) 
+
+any(vowels_tones) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3) 
+any(vowels_tones) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3) 
+any(vowels_tones) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3) 
+any(vowels_tones) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3) 
+any(vowels_tones) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3) 
+any(vowels_tonef) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3) 
+any(vowels_tonef) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3) 
+any(vowels_tonef) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3) 
+any(vowels_tonef) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3) 
+any(vowels_tonef) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3) 
+any(vowels_tonew) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3) 
+any(vowels_tonew) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3) 
+any(vowels_tonew) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3) 
+any(vowels_tonew) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3) 
+any(vowels_tonew) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3) 
+any(vowels_tonej) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3) 
+any(vowels_tonej) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3) 
+any(vowels_tonej) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3) 
+any(vowels_tonej) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3) 
+any(vowels_tonej) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3) 
+any(vowels_toner) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3) 
+any(vowels_toner) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3) 
+any(vowels_toner) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3) 
+any(vowels_toner) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3) 
+any(vowels_toner) any(n) any(g) + any(x) > index(vowels_tonex, 1) index(n, 2) index(g, 3) 
+any(vowels_tonex) any(n) any(g) + any(s) > index(vowels_tones, 1) index(n, 2) index(g, 3) 
+any(vowels_tonex) any(n) any(g) + any(f) > index(vowels_tonef, 1) index(n, 2) index(g, 3) 
+any(vowels_tonex) any(n) any(g) + any(j) > index(vowels_tonej, 1) index(n, 2) index(g, 3) 
+any(vowels_tonex) any(n) any(g) + any(w) > index(vowels_tonew, 1) index(n, 2) index(g, 3) 
+any(vowels_tonex) any(n) any(g) + any(r) > index(vowels_toner, 1) index(n, 2) index(g, 3) 
+
+any(vowels_tones) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2) 
+any(vowels_tones) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2) 
+any(vowels_tones) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2) 
+any(vowels_tones) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2) 
+any(vowels_tones) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(x) > index(vowels_tonex, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(s) > index(vowels_tones, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(f) > index(vowels_tonef, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(j) > index(vowels_tonej, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(w) > index(vowels_tonew, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(r) > index(vowels_toner, 1) index(mnnn, 2) 
+any(vowels_tones) any(mnnn) + any(s) > index(vowels,1) index(mnnn, 2) index(s, 3)
+any(vowels_tonef) any(mnnn) + any(f) > index(vowels,1) index(mnnn, 2) index(f, 3)
+any(vowels_tonej) any(mnnn) + any(j) > index(vowels,1) index(mnnn, 2) index(j, 3)
+any(vowels_tonew) any(mnnn) + any(w) > index(vowels,1) index(mnnn, 2) index(w, 3)
+any(vowels_toner) any(mnnn) + any(r) > index(vowels,1) index(mnnn, 2) index(r, 3)
+any(vowels_tonex) any(mnnn) + any(x) > index(vowels,1) index(mnnn, 2) index(x, 3)
+any(vowels_tones) any(n) any(g) + any(s) > index(vowels,1) index(n, 2) index(g, 3) index(s, 3)
+any(vowels_tonef) any(n) any(g) + any(f) > index(vowels,1) index(n, 2) index(g, 3) index(f, 3)
+any(vowels_tonej) any(n) any(g) + any(j) > index(vowels,1) index(n, 2) index(g, 3) index(j, 3)
+any(vowels_tonew) any(n) any(g) + any(w) > index(vowels,1) index(n, 2) index(g, 3) index(w, 3)
+any(vowels_toner) any(n) any(g) + any(r) > index(vowels,1) index(n, 2) index(g, 3) index(r, 3)
+any(vowels_tonex) any(n) any(g) + any(x) > index(vowels,1) index(n, 2) index(g, 3) index(x, 3)
+any(vowels_tones) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_tonef) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_tonex) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_tonew) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_tonej) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_toner) any(mnnn) + any(z) > index(vowels, 1) index(mnnn, 2) 
+any(vowels_tones) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_tonef) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_tonex) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_tonew) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_tonej) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_toner) any(n) any(g) + any(z) > index(vowels, 1) index(n, 2) index(g, 3)
+any(vowels_tones) + any(z) > index(vowels, 1) 
+any(vowels_tonef) + any(z) > index(vowels, 1) 
+any(vowels_tonex) + any(z) > index(vowels, 1) 
+any(vowels_tonew) + any(z) > index(vowels, 1) 
+any(vowels_tonej) + any(z) > index(vowels, 1) 
+any(vowels_toner) + any(z) > index(vowels, 1) 
+
+"ó͘" + any(z) > "o͘"
+"ò͘" + any(z) > "o͘"
+"ô͘" + any(z) > "o͘"
+"ō͘" + any(z) > "o͘" 
+"ŏ͘" + any(z) > "o͘"
+"Ó͘" + any(z) > "O͘"
+"Ò͘" + any(z) > "O͘"
+"Ô͘" + any(z) > "O͘"
+"Ō͘" + any(z) > "O͘" 
+"Ŏ͘" + any(z) > "O͘"
+
+'a̍' any(ptkh) + [K_Z] > 'a' index(ptkh, 3)
+'i̍' any(ptkh) + [K_Z] > 'i' index(ptkh, 3)
+'u̍' any(ptkh) + [K_Z] > 'u' index(ptkh, 3)
+'e̍' any(ptkh) + [K_Z] > 'e' index(ptkh, 3)
+'o̍' any(ptkh) + [K_Z] > 'o' index(ptkh, 3)
+'o̍͘' any(ptkh) + [K_Z] > 'o͘' index(ptkh, 4)
+'A̍' any(ptkh) + [K_Z] > 'A' index(ptkh, 3)
+'I̍' any(ptkh) + [K_Z] > 'I' index(ptkh, 3)
+'U̍' any(ptkh) + [K_Z] > 'U' index(ptkh, 3)
+'E̍' any(ptkh) + [K_Z] > 'E' index(ptkh, 3)
+'O̍' any(ptkh) + [K_Z] > 'O' index(ptkh, 3)
+'O̍͘' any(ptkh) + [K_Z] > 'O͘' index(ptkh, 4)
+
+"a̍ih" + any(z) > "aih"
+"a̍uh" + any(z) > "auh" 
+"u̍ih" + any(z) > "uih"
+"n̍gh" + any(z) > "ngh"
+
+"ḿ" + any(z) > "m"
+"ńg" + any(z) > "ng" 
+"m̀" + any(z) > "m"
+"ǹg" + any(z) > "ng"
+"m̄" + any(z) > "m"
+"n̄g" + any(z) > "ng" 
+"m̆" + any(z) > "m"
+"n̆g" + any(z) > "ng"
+"m̂" + any(z) > "m"
+"n̂g" + any(z) > "ng" 
+"m̃" + any(z) > "m"
+"ñg" + any(z) > "ng" 
+c uppewcase
+"A̍IH" + any(z) > "AIH"
+"A̍UH" + any(z) > "AUH" 
+"U̍IH" + any(z) > "UIH"
+"M̍H" + any(z) > "MH"
+"N̍GH" + any(z) > "NGH"
+"Ḿ" + any(z) > "M"
+"ŃG" + any(z) > "NG" 
+"M̀" + any(z) > "M"
+"ǸG" + any(z) > "NG"
+"M̄" + any(z) > "M"
+"N̄G" + any(z) > "NG" 
+"M̆" + any(z) > "M"
+"N̆G" + any(z) > "NG"
+"M̂" + any(z) > "M"
+"N̂G" + any(z) > "NG" 
+"M̃" + any(z) > "M"
+"ÑG" + any(z) > "NG" 
+c capitalize
+"A̍ih" + any(z) > "Aih"
+"A̍uh" + any(z) > "Auh" 
+"U̍ih" + any(z) > "Uih"
+"N̍gh" + any(z) > "Ngh"
+"Ńg" + any(z) > "Ng" 
+"Ǹg" + any(z) > "Ng"
+"N̄g" + any(z) > "Ng" 
+"N̆g" + any(z) > "Ng"
+"N̂g" + any(z) > "Ng" 
+"Ñg" + any(z) > "Ng" 
+
+any(vowels_toner) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_tones) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_tonef) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_tonej) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_tonew) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_tonex) any(vowels) + any(z) > index(vowels, 1) index(vowels, 2)
+any(vowels_toner) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+any(vowels_tones) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+any(vowels_tonef) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+any(vowels_tonej) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+any(vowels_tonew) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+any(vowels_tonex) any(vowels) "ⁿ" + any(z) > index(vowels, 1) index(vowels, 2) "ⁿ"
+
+c Finals with tone numbers
+"a" any(iu) + any(low_rsfjw) > index(low_a_s, 3) index(iu, 2)
+"A" any(iu) + any(low_rsfjw) > index(upper_a_s, 3) index(iu, 2)
+"a" any(iu) + any(upper_rsfjw) > index(low_a_s, 3) index(iu, 2)
+"A" any(iu) + any(upper_rsfjw) > index(upper_a_s, 3) index(iu, 2)
+"u" any(aie) + any(low_rsfjw) > index(low_u_s, 3) index(aie, 2)
+"U" any(aie) + any(low_rsfjw) > index(upper_u_s, 3) index(aie, 2)
+"u" any(aie) + any(upper_rsfjw) > index(low_u_s, 3) index(aie, 2)
+"U" any(aie) + any(upper_rsfjw) > index(upper_u_s, 3) index(aie, 2)
+"o" any(aeui) + any(low_rsfjw) > index(low_o_s, 3) index(aeui, 2)
+"O" any(aeui) + any(low_rsfjw) > index(upper_o_s, 3) index(aeui, 2)
+"o" any(aeui) + any(upper_rsfjw) > index(low_o_s, 3) index(aeui, 2)
+"O" any(aeui) + any(upper_rsfjw) > index(upper_o_s, 3) index(aeui, 2)
+"a" any(iu) "ⁿ" + any(low_rsfjw) > index(low_a_s, 4) index(iu, 2) "ⁿ"
+"A" any(iu) "ⁿ" + any(low_rsfjw) > index(upper_a_s, 4) index(iu, 2) "ⁿ"
+"a" any(iu) "ⁿ" + any(upper_rsfjw) > index(low_a_s, 4) index(iu, 2) "ⁿ"
+"A" any(iu) "ⁿ" + any(upper_rsfjw) > index(upper_a_s, 4) index(iu, 2) "ⁿ"
+"u" any(aie) "ⁿ" + any(low_rsfjw) > index(low_u_s, 4) index(aie, 2) "ⁿ"
+"U" any(aie) "ⁿ" + any(low_rsfjw) > index(upper_u_s, 4) index(aie, 2) "ⁿ"
+"u" any(aie) "ⁿ" + any(upper_rsfjw) > index(low_u_s, 4) index(aie, 2) "ⁿ"
+"U" any(aie) "ⁿ" + any(upper_rsfjw) > index(upper_u_s, 4) index(aie, 2) "ⁿ"
+"o" any(aeui) "ⁿ" + any(low_rsfjw) > index(low_o_s, 4) index(aeui, 2) "ⁿ"
+"O" any(aeui) "ⁿ" + any(low_rsfjw) > index(upper_o_s, 4) index(aeui, 2) "ⁿ"
+"o" any(aeui) "ⁿ" + any(upper_rsfjw) > index(low_o_s, 4) index(aeui, 2) "ⁿ"
+"O" any(aeui) "ⁿ" + any(upper_rsfjw) > index(upper_o_s, 4) index(aeui, 2) "ⁿ"
+
+
+c Finals vith tone number j
+"a̍" any(ptkh) + any(j) > "a" index(ptkh, 3) index(j, 4)
+"a̍" any(h) "ⁿ" + any(j) > "a" index(h, 3) "ⁿ" index(j, 5)
+"a̍ⁿ" any(h) + any(j) > "aⁿ" index(h, 4) index(j, 5)  
+"i̍" any(pth) + any(j) > "i" index(pth, 3) index(j, 4)
+"i̍" any(h) "ⁿ" + any(j) > "i" index(h, 3) "ⁿ" index(j, 5) 
+"i̍ⁿ" any(h) + any(j) > "iⁿ" index(h, 4) index(j, 5) 
+"u̍" any(th) + any(j) > "u" index(th, 3) index(j, 4)
+"o̍" any(pkh) + any(j) > "o" index(pkh, 3) index(j, 4)
+"o̍͘" any(h) + any(j) > "o͘h" index(j, 4)
+"o̍͘ⁿ" any(h) + any(j) > "o͘ⁿ" index(h, 5) index(j, 6)
+"o̍͘" any(h) "ⁿ" + any(j) > "o͘" index(h, 4) "ⁿ" index(j, 6)
+"e̍" any(kh) + any(j) > "e" index(kh, 3) index(j, 4)
+"e̍" any(h) "ⁿ" + any(j) > "e" index(h, 3) "ⁿ" index(j, 5) 
+"e̍ⁿ" any(h) + any(j) > "eⁿ" index(h, 4) index(j, 5) 
+"o̍" any(h) "ⁿ" + any(j) > "o" index(h, 3) "ⁿ" index(j, 5)
+"o̍ⁿ" any(h) + any(j) > "oⁿ" index(h, 4) index(j, 5)
+"a̍" any(iu) any(h) + any(j) > "a" index(iu, 3) index(h, 4) index(j, 5)
+"a̍" any(iu) any(h) "ⁿ" + any(j) > "a" index(iu, 3) index(h, 4) "ⁿ" index(j, 6)
+"a̍" any(iu)"ⁿ" any(h) + any(j) > "a" index(iu, 3) "ⁿ" index(h, 5) index(j, 6) 
+"o̍" any(two_u) any(h) + any(j) > "o" index(two_u, 3) index(h, 4) index(j, 5)
+"o̍" any(two_u) any(h) "ⁿ" + any(j) > "o" index(two_u, 3) index(h, 4) "ⁿ" index(j, 6)
+"o̍" any(two_u)"ⁿ" any(h) + any(j) > "o" index(two_u, 3) "ⁿ" index(h, 5) index(j, 6)
+"u̍" any(two_i) any(h) + any(j) > "u" index(two_i, 3) index(h, 4) index(j, 5)
+"m̍" any(h) + any(j) > "m" index(h, 3) index(j, 4)
+"n̍" any(g) any(h) + any(j) > "n" index(g, 3) index(h, 4) index(j, 5)
+
+"ḿ" + any(r) > "m" index(r, 2)
+"ń" any(g) + any(r) > "n" index(g, 2) index(r, 3) 
+"m̀" + any(s) > "m" index(s, 3)
+"ǹ" any(g) + any(s) > "n" index(g, 2) index(s, 3)
+"m̄" + any(j) > "m" index(j, 3)
+"n̄" any(g) + any(j) > "n" index(g, 3) index(j, 4)
+"m̆" + any(w) > "m" index(w, 3)
+"n̆" any(g) + any(w) > "n" index(g, 3) index(w, 4)
+"m̂" + any(f) > "m" index(f, 3)
+"n̂" any(g) + any(f) > "n" index(g, 3) index(f, 4)
+"m̃" + any(x) > "m" index(x, 3)
+"ñ" any(g) + any(x) > "n" index(g, 2) index(x, 3)
+
+"a" any(ptkh) + any(j) > "a̍" index(ptkh, 2)
+"a" any(h) "ⁿ" + any(j) > "a̍" index(h, 2) "ⁿ"
+"aⁿ" any(h) + any(j) > "a̍ⁿ" index(h, 3)
+"i" any(pth) + any(j) > "i̍" index(pth, 2)
+"i" any(h) "ⁿ" + any(j) > "i̍" index(h, 2) "ⁿ"
+"iⁿ" any(h) + any(j) > "i̍ⁿ" index(h, 3)
+"u" any(th) + any(j) > "u̍" index(th, 2)
+"o" any(pkh) + any(j) > "o̍" index(pkh, 2)
+"o͘" any(h) + any(j) > "o̍͘" index(h, 3)
+"o͘ⁿ" any(h) + any(j) > "o̍͘ⁿ" index(h, 4)
+"o͘" any(h) "ⁿ" + any(j) > "o̍͘" index(h, 3) "ⁿ"
+"e" any(kh) + any(j) > "e̍" index(kh, 2)
+"e" any(h) "ⁿ" + any(j) > "e̍" index(h, 2) "ⁿ"
+"eⁿ" any(h) + any(j) > "e̍ⁿ" index(h, 3)
+"o" any(h) "ⁿ" + any(j) > "o̍" index(h, 2) "ⁿ"
+"oⁿ" any(h) + any(j) > "o̍ⁿ" index(h, 4)
+"a" any(iu) any(h) + any(j) > "a̍" index(iu, 2) index(h, 3)
+"a" any(iu) any(h) "ⁿ" + any(j) > "a̍" index(iu, 2) index(h, 3) "ⁿ"
+"a" any(iu)"ⁿ" any(h) + any(j) > "a̍" index(iu, 2) "ⁿ" index(h, 4)
+"o" any(two_u) any(h) + any(j) > "o̍" index(two_u, 2) index(h, 3)
+"o" any(two_u) any(h) "ⁿ" + any(j) > "o̍" index(two_u, 2) index(h, 3) "ⁿ"
+"o" any(two_u)"ⁿ" any(h) + any(j) > "o̍" index(two_u, 2) "ⁿ" index(h, 4)
+"u" any(two_i) any(h) + any(j) > "u̍" index(two_i, 2) index(h, 3)
+"m" any(h) + any(j) > "m̍" index(h, 2)
+"n" any(g) any(h) + any(j) > "n̍" index(g, 2) index(h, 3)
+"m" + any(r) > "ḿ"
+"n" any(g) + any(r) > "ń" index(g, 2)
+"m" + any(s) > "m̀"
+"n" any(g) + any(s) > "ǹ" index(g, 2)
+"m" + any(j) > "m̄"
+"n" any(g) + any(j) > "n̄" index(g, 2)
+"m" + any(w) > "m̆"
+"n" any(g) + any(w) > "n̆" index(g, 2)
+"m" + any(f) > "m̂"
+"n" any(g) + any(f) > "n̂" index(g, 2)
+"m" + any(x) > "m̃"
+"n" any(g) + any(x) > "ñ" index(g, 2)
+
+"A" any(ptkh) + any(j) > "A̍" index(ptkh, 2)
+"A" any(h) "ⁿ" + any(j) > "A̍" index(h, 2) "ⁿ"
+"Aⁿ" any(h) + any(j) > "A̍ⁿ" index(h, 3)
+"I" any(pth) + any(j) > "I̍" index(pth, 2)
+"I" any(h) "ⁿ" + any(j) > "I̍" index(h, 2) "ⁿ"
+"Iⁿ" any(h) + any(j) > "I̍ⁿ" index(h, 3)
+"U" any(th) + any(j) > "U̍" index(th, 2)
+"O" any(pkh) + any(j) > "O̍" index(pkh, 2)
+"O͘" any(h) + any(j) > "O̍͘" index(h, 3)
+"O͘ⁿ" any(h) + any(j) > "O̍͘ⁿ" index(h, 4)
+"O͘" any(h) "ⁿ" + any(j) > "O̍͘" index(h, 3) "ⁿ"
+"E" any(kh) + any(j) > "E̍" index(kh, 2)
+"E" any(h) "ⁿ" + any(j) > "E̍" index(h, 2) "ⁿ"
+"Eⁿ" any(h) + any(j) > "E̍ⁿ" index(h, 3)
+"O" any(h) "ⁿ" + any(j) > "O̍" index(h, 2) "ⁿ"
+"Oⁿ" any(h) + any(j) > "O̍ⁿ" index(h, 4)
+"A" any(iu) any(h) + any(j) > "A̍" index(iu, 2) index(h, 3)
+"A" any(iu) any(h) "ⁿ" + any(j) > "A̍" index(iu, 2) index(h, 3) "ⁿ"
+"A" any(iu)"ⁿ" any(h) + any(j) > "A̍" index(iu, 2) "ⁿ" index(h, 4)
+"O" any(two_u) any(h) + any(j) > "O̍" index(two_u, 2) index(h, 3)
+"O" any(two_u) any(h) "ⁿ" + any(j) > "O̍" index(two_u, 2) index(h, 3) "ⁿ"
+"O" any(two_u)"ⁿ" any(h) + any(j) > "O̍" index(two_u, 2) "ⁿ" index(h, 4)
+"U" any(two_i) any(h) + any(j) > "U̍" index(two_i, 2) index(h, 3)
+"M" any(h) + any(j) > "M̍" index(h, 2)
+"N" any(g) any(h) + any(j) > "N̍" index(g, 2) index(h, 3)
+"M" + any(r) > "Ḿ"
+"N" any(g) + any(r) > "Ń" index(g, 2)
+"M" + any(s) > "M̀"
+"N" any(g) + any(s) > "Ǹ" index(g, 2)
+"M" + any(j) > "M̄"
+"N" any(g) + any(j) > "N̄" index(g, 2)
+"M" + any(w) > "M̆"
+"N" any(g) + any(w) > "N̆" index(g, 2)
+"M" + any(f) > "M̂"
+"N" any(g) + any(f) > "N̂" index(g, 2)
+"M" + any(x) > "M̃"
+"N" any(g) + any(x) > "Ñ" index(g, 2)
+c uppewcase
+"A̍" any(ptkh) + any(j) > "A" index(ptkh, 3) index(j, 4)
+"A̍" any(h) "ⁿ" + any(j) > "A" index(h, 3) "ⁿ" index(j, 5)
+"A̍ⁿ" any(h) + any(j) > "Aⁿ" index(h, 4) index(j, 5)  
+"I̍" any(pth) + any(j) > "I" index(pth, 3) index(j, 4)
+"I̍" any(h) "ⁿ" + any(j) > "I" index(h, 3) "ⁿ" index(j, 5) 
+"I̍ⁿ" any(h) + any(j) > "Iⁿ" index(h, 4) index(j, 5) 
+"U̍" any(th) + any(j) > "U" index(th, 3) index(j, 4)
+"O̍" any(pkh) + any(j) > "O" index(pkh, 3) index(j, 4)
+"O̍͘" any(h) + any(j) > "O͘H" index(j, 4)
+"O̍͘ⁿ" any(h) + any(j) > "O͘ⁿ" index(h, 5) index(j, 6)
+"O̍͘" any(h) "ⁿ" + any(j) > "O͘" index(h, 4) "ⁿ" index(j, 6)
+"E̍" any(kh) + any(j) > "E" index(kh, 3) index(j, 4)
+"E̍" any(h) "ⁿ" + any(j) > "E" index(h, 3) "ⁿ" index(j, 5) 
+"E̍ⁿ" any(h) + any(j) > "Eⁿ" index(h, 4) index(j, 5) 
+"O̍" any(h) "ⁿ" + any(j) > "O" index(h, 3) "ⁿ" index(j, 5)
+"O̍ⁿ" any(h) + any(j) > "Oⁿ" index(h, 4) index(j, 5)
+"A̍" any(iu) any(h) + any(j) > "A" index(iu, 3) index(h, 4) index(j, 5)
+"A̍" any(iu) any(h) "ⁿ" + any(j) > "A" index(iu, 3) index(h, 4) "ⁿ" index(j, 6)
+"A̍" any(iu)"ⁿ" any(h) + any(j) > "A" index(iu, 3) "ⁿ" index(h, 5) index(j, 6) 
+"O̍" any(two_u) any(h) + any(j) > "O" index(two_u, 3) index(h, 4) index(j, 5)
+"O̍" any(two_u) any(h) "ⁿ" + any(j) > "O" index(two_u, 3) index(h, 4) "ⁿ" index(j, 6)
+"O̍" any(two_u)"ⁿ" any(h) + any(j) > "O" index(two_u, 3) "ⁿ" index(h, 5) index(j, 6)
+"U̍" any(two_i) any(h) + any(j) > "U" index(two_i, 3) index(h, 4) index(j, 5)
+"M̍" any(h) + any(j) > "M" index(h, 3) index(j, 4)
+"N̍" any(g) any(h) + any(j) > "N" index(g, 3) index(h, 4) index(j, 5)
+
+"Ḿ" + any(r) > "M" index(r, 2)
+"Ń" any(g) + any(r) > "N" index(g, 2) index(r, 3) 
+"M̀" + any(s) > "M" index(s, 3)
+"Ǹ" any(g) + any(s) > "N" index(g, 2) index(s, 3)
+"M̄" + any(j) > "M" index(j, 3)
+"N̄" any(g) + any(j) > "N" index(g, 3) index(j, 4)
+"M̆" + any(w) > "M" index(w, 3)
+"N̆" any(g) + any(w) > "N" index(g, 3) index(w, 4)
+"M̂" + any(f) > "M" index(f, 3)
+"N̂" any(g) + any(f) > "N" index(g, 3) index(f, 4)
+"M̃" + any(x) > "M" index(x, 3)
+"Ñ" any(g) + any(x) > "N" index(g, 2) index(x, 3)
+
+any(vowels_toner) any(vowels) + any(r) > index(vowels, 1) index(vowels, 2) index(r, 3)
+any(vowels_tones) any(vowels) + any(s) > index(vowels, 1) index(vowels, 2) index(s, 3)
+any(vowels_tonef) any(vowels) + any(f) > index(vowels, 1) index(vowels, 2) index(f, 3)
+any(vowels_tonej) any(vowels) + any(j) > index(vowels, 1) index(vowels, 2) index(j, 3)
+any(vowels_tonew) any(vowels) + any(w) > index(vowels, 1) index(vowels, 2) index(w, 3)
+any(vowels_tonex) any(vowels) + any(x) > index(vowels, 1) index(vowels, 2) index(x, 3)
+any(vowels_toner) any(vowels) "ⁿ" + any(r) > index(vowels, 1) index(vowels, 2) "ⁿ" index(r, 4)
+any(vowels_tones) any(vowels) "ⁿ" + any(s) > index(vowels, 1) index(vowels, 2) "ⁿ" index(s, 4)
+any(vowels_tonef) any(vowels) "ⁿ" + any(f) > index(vowels, 1) index(vowels, 2) "ⁿ" index(f, 4)
+any(vowels_tonej) any(vowels) "ⁿ" + any(j) > index(vowels, 1) index(vowels, 2) "ⁿ" index(j, 4)
+any(vowels_tonew) any(vowels) "ⁿ" + any(w) > index(vowels, 1) index(vowels, 2) "ⁿ" index(w, 4)
+any(vowels_tonex) any(vowels) "ⁿ" + any(x) > index(vowels, 1) index(vowels, 2) "ⁿ" index(x, 4)
+
+"ē" + any(ptkh) > "e̍" index(ptkh, 2)
+"ā" + any(ptkh) > "a̍" index(ptkh, 2)
+"ō" + any(ptkh) > "o̍" index(ptkh, 2)
+"ī" + any(ptkh) > "i̍" index(ptkh, 2)
+"ō͘" + any(ptkh) > "o̍͘" index(ptkh, 3)
+"Ē" + any(ptkh) > "E̍" index(ptkh, 2)
+"Ā" + any(ptkh) > "A̍" index(ptkh, 2)
+"Ō" + any(ptkh) > "O̍" index(ptkh, 2)
+"Ī" + any(ptkh) > "I̍" index(ptkh, 2)
+"Ō͘" + any(ptkh) > "O̍͘" index(ptkh, 3)
+"ū" + any(th) > "u̍" index(th, 2)
+"Ū" + any(th) > "U̍" index(th, 2)
+
+"ò͘" + any(r) > "ó͘"
+"ô͘" + any(r) > "ó͘"
+"ō͘" + any(r) > "ó͘"
+"ŏ͘" + any(r) > "ó͘"
+"ó͘" + any(s) > "ò͘"
+"ô͘" + any(s) > "ò͘"
+"ō͘" + any(s) > "ò͘"
+"ŏ͘" + any(s) > "ò͘"
+"ó͘" + any(f) > "ô͘"
+"ò͘" + any(f) > "ô͘"
+"ō͘" + any(f) > "ô͘"
+"ŏ͘" + any(f) > "ô͘"
+"ó͘" + any(j) > "ō͘"
+"ò͘" + any(j) > "ō͘"
+"ô͘" + any(j) > "ō͘"
+"ŏ͘" + any(j) > "ō͘"
+"ó͘" + any(w) > "ŏ͘"
+"ò͘" + any(w) > "ŏ͘"
+"ô͘" + any(w) > "ŏ͘"
+"ō͘" + any(w) > "ŏ͘"
+"Ò͘" + any(r) > "Ó͘"
+"Ô͘" + any(r) > "Ó͘"
+"Ō͘" + any(r) > "Ó͘"
+"Ŏ͘" + any(r) > "Ó͘"
+"Ó͘" + any(s) > "Ò͘"
+"Ô͘" + any(s) > "Ò͘"
+"Ō͘" + any(s) > "Ò͘"
+"Ŏ͘" + any(s) > "Ò͘"
+"Ó͘" + any(f) > "Ô͘"
+"Ò͘" + any(f) > "Ô͘"
+"Ō͘" + any(f) > "Ô͘"
+"Ŏ͘" + any(f) > "Ô͘"
+"Ó͘" + any(j) > "Ō͘"
+"Ò͘" + any(j) > "Ō͘"
+"Ô͘" + any(j) > "Ō͘"
+"Ŏ͘" + any(j) > "Ō͘"
+"Ó͘" + any(w) > "Ŏ͘"
+"Ò͘" + any(w) > "Ŏ͘"
+"Ô͘" + any(w) > "Ŏ͘"
+"Ō͘" + any(w) > "Ŏ͘"
+
+"à" any(iu) + any(r) > "á" index(iu, 2)
+"ă" any(iu) + any(r) > "á" index(iu, 2)
+"ā" any(iu) + any(r) > "á" index(iu, 2)
+"â" any(iu) + any(r) > "á" index(iu, 2)
+"ã" any(iu) + any(r) > "á" index(iu, 2)
+"á" any(iu) + any(s) > "à" index(iu, 2)
+"ă" any(iu) + any(s) > "à" index(iu, 2)
+"ā" any(iu) + any(s) > "à" index(iu, 2)
+"â" any(iu) + any(s) > "à" index(iu, 2)
+"ã" any(iu) + any(s) > "à" index(iu, 2)
+"á" any(iu) + any(w) > "ă" index(iu, 2)
+"à" any(iu) + any(w) > "ă" index(iu, 2)
+"ā" any(iu) + any(w) > "ă" index(iu, 2)
+"â" any(iu) + any(w) > "ă" index(iu, 2)
+"ã" any(iu) + any(w) > "ă" index(iu, 2)
+"á" any(iu) + any(j) > "ā" index(iu, 2)
+"à" any(iu) + any(j) > "ā" index(iu, 2)
+"ă" any(iu) + any(j) > "ā" index(iu, 2)
+"â" any(iu) + any(j) > "ā" index(iu, 2)
+"ã" any(iu) + any(j) > "ā" index(iu, 2)
+"á" any(iu) + any(f) > "â" index(iu, 2)
+"à" any(iu) + any(f) > "â" index(iu, 2)
+"ă" any(iu) + any(f) > "â" index(iu, 2)
+"ā" any(iu) + any(f) > "â" index(iu, 2)
+"ã" any(iu) + any(f) > "â" index(iu, 2)
+"á" any(iu) + any(x) > "ã" index(iu, 2)
+"à" any(iu) + any(x) > "ã" index(iu, 2)
+"â" any(iu) + any(x) > "ã" index(iu, 2)
+"ă" any(iu) + any(x) > "ã" index(iu, 2)
+"ā" any(iu) + any(x) > "ã" index(iu, 2)
+"à" any(iu) "ⁿ"+ any(r) > "á" index(iu, 2) "ⁿ"
+"ă" any(iu) "ⁿ"+ any(r) > "á" index(iu, 2) "ⁿ"
+"ā" any(iu) "ⁿ"+ any(r) > "á" index(iu, 2) "ⁿ"
+"â" any(iu) "ⁿ"+ any(r) > "á" index(iu, 2) "ⁿ"
+"ã" any(iu) "ⁿ"+ any(r) > "á" index(iu, 2) "ⁿ"
+"á" any(iu) "ⁿ"+ any(s) > "à" index(iu, 2) "ⁿ"
+"ă" any(iu) "ⁿ"+ any(s) > "à" index(iu, 2) "ⁿ"
+"ā" any(iu) "ⁿ"+ any(s) > "à" index(iu, 2) "ⁿ"
+"â" any(iu) "ⁿ"+ any(s) > "à" index(iu, 2) "ⁿ"
+"ã" any(iu) "ⁿ"+ any(s) > "à" index(iu, 2) "ⁿ"
+"á" any(iu) "ⁿ"+ any(w) > "ă" index(iu, 2) "ⁿ"
+"à" any(iu) "ⁿ"+ any(w) > "ă" index(iu, 2) "ⁿ"
+"ā" any(iu) "ⁿ"+ any(w) > "ă" index(iu, 2) "ⁿ"
+"â" any(iu) "ⁿ"+ any(w) > "ă" index(iu, 2) "ⁿ"
+"ã" any(iu) "ⁿ"+ any(w) > "ă" index(iu, 2) "ⁿ"
+"á" any(iu) "ⁿ"+ any(j) > "ā" index(iu, 2) "ⁿ"
+"à" any(iu) "ⁿ"+ any(j) > "ā" index(iu, 2) "ⁿ"
+"ă" any(iu) "ⁿ"+ any(j) > "ā" index(iu, 2) "ⁿ"
+"â" any(iu) "ⁿ"+ any(j) > "ā" index(iu, 2) "ⁿ"
+"ã" any(iu) "ⁿ"+ any(j) > "ā" index(iu, 2) "ⁿ"
+"á" any(iu) "ⁿ"+ any(f) > "â" index(iu, 2) "ⁿ"
+"à" any(iu) "ⁿ"+ any(f) > "â" index(iu, 2) "ⁿ"
+"ă" any(iu) "ⁿ"+ any(f) > "â" index(iu, 2) "ⁿ"
+"ā" any(iu) "ⁿ"+ any(f) > "â" index(iu, 2) "ⁿ"
+"ã" any(iu) "ⁿ"+ any(f) > "â" index(iu, 2) "ⁿ"
+"á" any(iu) "ⁿ"+ any(x) > "ã" index(iu, 2) "ⁿ"
+"à" any(iu) "ⁿ"+ any(x) > "ã" index(iu, 2) "ⁿ"
+"â" any(iu) "ⁿ"+ any(x) > "ã" index(iu, 2) "ⁿ"
+"ă" any(iu) "ⁿ"+ any(x) > "ã" index(iu, 2) "ⁿ"
+"ā" any(iu) "ⁿ"+ any(x) > "ã" index(iu, 2) "ⁿ"
+
+"ò" any(aeui) + any(r) > "ó" index(aeui, 2)
+"ŏ" any(aeui) + any(r) > "ó" index(aeui, 2)
+"ō" any(aeui) + any(r) > "ó" index(aeui, 2)
+"ô" any(aeui) + any(r) > "ó" index(aeui, 2)
+"õ" any(aeui) + any(r) > "ó" index(aeui, 2)
+"ó" any(aeui) + any(s) > "ò" index(aeui, 2)
+"ŏ" any(aeui) + any(s) > "ò" index(aeui, 2)
+"ō" any(aeui) + any(s) > "ò" index(aeui, 2)
+"ô" any(aeui) + any(s) > "ò" index(aeui, 2)
+"õ" any(aeui) + any(s) > "ò" index(aeui, 2)
+"ó" any(aeui) + any(w) > "ŏ" index(aeui, 2)
+"ò" any(aeui) + any(w) > "ŏ" index(aeui, 2)
+"ō" any(aeui) + any(w) > "ŏ" index(aeui, 2)
+"ô" any(aeui) + any(w) > "ŏ" index(aeui, 2)
+"õ" any(aeui) + any(w) > "ŏ" index(aeui, 2)
+"ó" any(aeui) + any(j) > "ō" index(aeui, 2)
+"ò" any(aeui) + any(j) > "ō" index(aeui, 2)
+"ŏ" any(aeui) + any(j) > "ō" index(aeui, 2)
+"ô" any(aeui) + any(j) > "ō" index(aeui, 2)
+"õ" any(aeui) + any(j) > "ō" index(aeui, 2)
+"ó" any(aeui) + any(f) > "ô" index(aeui, 2)
+"ò" any(aeui) + any(f) > "ô" index(aeui, 2)
+"ŏ" any(aeui) + any(f) > "ô" index(aeui, 2)
+"ō" any(aeui) + any(f) > "ô" index(aeui, 2)
+"õ" any(aeui) + any(f) > "ô" index(aeui, 2)
+"ó" any(aeui) + any(x) > "õ" index(aeui, 2)
+"ò" any(aeui) + any(x) > "õ" index(aeui, 2)
+"ŏ" any(aeui) + any(x) > "õ" index(aeui, 2)
+"ō" any(aeui) + any(x) > "õ" index(aeui, 2)
+"ô" any(aeui) + any(x) > "õ" index(aeui, 2)
+"ò" any(aeui) "ⁿ" + any(r) > "ó" index(aeui, 2) "ⁿ"
+"ŏ" any(aeui) "ⁿ" + any(r) > "ó" index(aeui, 2) "ⁿ"
+"ō" any(aeui) "ⁿ" + any(r) > "ó" index(aeui, 2) "ⁿ"
+"ô" any(aeui) "ⁿ" + any(r) > "ó" index(aeui, 2) "ⁿ"
+"õ" any(aeui) "ⁿ" + any(r) > "ó" index(aeui, 2) "ⁿ"
+"ó" any(aeui) "ⁿ" + any(s) > "ò" index(aeui, 2) "ⁿ"
+"ŏ" any(aeui) "ⁿ" + any(s) > "ò" index(aeui, 2) "ⁿ"
+"ō" any(aeui) "ⁿ" + any(s) > "ò" index(aeui, 2) "ⁿ"
+"ô" any(aeui) "ⁿ" + any(s) > "ò" index(aeui, 2) "ⁿ"
+"õ" any(aeui) "ⁿ" + any(s) > "ò" index(aeui, 2) "ⁿ"
+"ó" any(aeui) "ⁿ" + any(w) > "ŏ" index(aeui, 2) "ⁿ"
+"ò" any(aeui) "ⁿ" + any(w) > "ŏ" index(aeui, 2) "ⁿ"
+"ō" any(aeui) "ⁿ" + any(w) > "ŏ" index(aeui, 2) "ⁿ"
+"ô" any(aeui) "ⁿ" + any(w) > "ŏ" index(aeui, 2) "ⁿ"
+"õ" any(aeui) "ⁿ" + any(w) > "ŏ" index(aeui, 2) "ⁿ"
+"ó" any(aeui) "ⁿ" + any(j) > "ō" index(aeui, 2) "ⁿ"
+"ò" any(aeui) "ⁿ" + any(j) > "ō" index(aeui, 2) "ⁿ"
+"ŏ" any(aeui) "ⁿ" + any(j) > "ō" index(aeui, 2) "ⁿ"
+"ô" any(aeui) "ⁿ" + any(j) > "ō" index(aeui, 2) "ⁿ"
+"õ" any(aeui) "ⁿ" + any(j) > "ō" index(aeui, 2) "ⁿ"
+"ó" any(aeui) "ⁿ" + any(f) > "ô" index(aeui, 2) "ⁿ"
+"ò" any(aeui) "ⁿ" + any(f) > "ô" index(aeui, 2) "ⁿ"
+"ŏ" any(aeui) "ⁿ" + any(f) > "ô" index(aeui, 2) "ⁿ"
+"ō" any(aeui) "ⁿ" + any(f) > "ô" index(aeui, 2) "ⁿ"
+"õ" any(aeui) "ⁿ" + any(f) > "ô" index(aeui, 2) "ⁿ"
+"ó" any(aeui) "ⁿ" + any(x) > "õ" index(aeui, 2) "ⁿ"
+"ò" any(aeui) "ⁿ" + any(x) > "õ" index(aeui, 2) "ⁿ"
+"ŏ" any(aeui) "ⁿ" + any(x) > "õ" index(aeui, 2) "ⁿ"
+"ō" any(aeui) "ⁿ" + any(x) > "õ" index(aeui, 2) "ⁿ"
+"ô" any(aeui) "ⁿ" + any(x) > "õ" index(aeui, 2) "ⁿ"
+
+"ù" any(aie) + any(r) > "ú" index(aie, 2)
+"ŭ" any(aie) + any(r) > "ú" index(aie, 2)
+"ū" any(aie) + any(r) > "ú" index(aie, 2)
+"û" any(aie) + any(r) > "ú" index(aie, 2)
+"ũ" any(aie) + any(r) > "ú" index(aie, 2)
+"ú" any(aie) + any(s) > "ù" index(aie, 2)
+"ŭ" any(aie) + any(s) > "ù" index(aie, 2)
+"ū" any(aie) + any(s) > "ù" index(aie, 2)
+"û" any(aie) + any(s) > "ù" index(aie, 2)
+"ũ" any(aie) + any(s) > "ù" index(aie, 2)
+"ú" any(aie) + any(w) > "ŭ" index(aie, 2)
+"ù" any(aie) + any(w) > "ŭ" index(aie, 2)
+"ū" any(aie) + any(w) > "ŭ" index(aie, 2)
+"û" any(aie) + any(w) > "ŭ" index(aie, 2)
+"ũ" any(aie) + any(w) > "ŭ" index(aie, 2)
+"ú" any(aie) + any(j) > "ū" index(aie, 2)
+"ù" any(aie) + any(j) > "ū" index(aie, 2)
+"ŭ" any(aie) + any(j) > "ū" index(aie, 2)
+"û" any(aie) + any(j) > "ū" index(aie, 2)
+"ũ" any(aie) + any(j) > "ū" index(aie, 2)
+"ú" any(aie) + any(f) > "û" index(aie, 2)
+"ù" any(aie) + any(f) > "û" index(aie, 2)
+"ŭ" any(aie) + any(f) > "û" index(aie, 2)
+"ū" any(aie) + any(f) > "û" index(aie, 2)
+"ũ" any(aie) + any(f) > "û" index(aie, 2)
+"ú" any(aie) + any(x) > "ũ" index(aie, 2)
+"ù" any(aie) + any(x) > "ũ" index(aie, 2)
+"ŭ" any(aie) + any(x) > "ũ" index(aie, 2)
+"ū" any(aie) + any(x) > "ũ" index(aie, 2)
+"ũ" any(aie) + any(x) > "ũ" index(aie, 2)
+
+"ù" any(aie) "ⁿ" + any(r) > "ú" index(aie, 2) "ⁿ"
+"ŭ" any(aie) "ⁿ" + any(r) > "ú" index(aie, 2) "ⁿ"
+"ū" any(aie) "ⁿ" + any(r) > "ú" index(aie, 2) "ⁿ"
+"û" any(aie) "ⁿ" + any(r) > "ú" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(r) > "ú" index(aie, 2) "ⁿ"
+"ú" any(aie) "ⁿ" + any(s) > "ù" index(aie, 2) "ⁿ"
+"ŭ" any(aie) "ⁿ" + any(s) > "ù" index(aie, 2) "ⁿ"
+"ū" any(aie) "ⁿ" + any(s) > "ù" index(aie, 2) "ⁿ"
+"û" any(aie) "ⁿ" + any(s) > "ù" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(s) > "ù" index(aie, 2) "ⁿ"
+"ú" any(aie) "ⁿ" + any(w) > "ŭ" index(aie, 2) "ⁿ"
+"ù" any(aie) "ⁿ" + any(w) > "ŭ" index(aie, 2) "ⁿ"
+"ū" any(aie) "ⁿ" + any(w) > "ŭ" index(aie, 2) "ⁿ"
+"û" any(aie) "ⁿ" + any(w) > "ŭ" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(w) > "ŭ" index(aie, 2) "ⁿ"
+"ú" any(aie) "ⁿ" + any(j) > "ū" index(aie, 2) "ⁿ"
+"ù" any(aie) "ⁿ" + any(j) > "ū" index(aie, 2) "ⁿ"
+"ŭ" any(aie) "ⁿ" + any(j) > "ū" index(aie, 2) "ⁿ"
+"û" any(aie) "ⁿ" + any(j) > "ū" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(j) > "ū" index(aie, 2) "ⁿ"
+"ú" any(aie) "ⁿ" + any(f) > "û" index(aie, 2) "ⁿ"
+"ù" any(aie) "ⁿ" + any(f) > "û" index(aie, 2) "ⁿ"
+"ŭ" any(aie) "ⁿ" + any(f) > "û" index(aie, 2) "ⁿ"
+"ū" any(aie) "ⁿ" + any(f) > "û" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(f) > "û" index(aie, 2) "ⁿ"
+"ú" any(aie) "ⁿ" + any(x) > "ũ" index(aie, 2) "ⁿ"
+"ù" any(aie) "ⁿ" + any(x) > "ũ" index(aie, 2) "ⁿ"
+"ŭ" any(aie) "ⁿ" + any(x) > "ũ" index(aie, 2) "ⁿ"
+"ū" any(aie) "ⁿ" + any(x) > "ũ" index(aie, 2) "ⁿ"
+"ũ" any(aie) "ⁿ" + any(x) > "ũ" index(aie, 2) "ⁿ"
+
+"À" any(iu) + any(r) > "Á" index(iu, 2)
+"Ă" any(iu) + any(r) > "Á" index(iu, 2)
+"Ā" any(iu) + any(r) > "Á" index(iu, 2)
+"Â" any(iu) + any(r) > "Á" index(iu, 2)
+"Ã" any(iu) + any(r) > "Á" index(iu, 2)
+"Á" any(iu) + any(s) > "À" index(iu, 2)
+"Ă" any(iu) + any(s) > "À" index(iu, 2)
+"Ā" any(iu) + any(s) > "À" index(iu, 2)
+"Â" any(iu) + any(s) > "À" index(iu, 2)
+"Ã" any(iu) + any(s) > "À" index(iu, 2)
+"Á" any(iu) + any(w) > "Ă" index(iu, 2)
+"À" any(iu) + any(w) > "Ă" index(iu, 2)
+"Ā" any(iu) + any(w) > "Ă" index(iu, 2)
+"Â" any(iu) + any(w) > "Ă" index(iu, 2)
+"Ã" any(iu) + any(w) > "Ă" index(iu, 2)
+"Á" any(iu) + any(j) > "Ā" index(iu, 2)
+"À" any(iu) + any(j) > "Ā" index(iu, 2)
+"Ă" any(iu) + any(j) > "Ā" index(iu, 2)
+"Â" any(iu) + any(j) > "Ā" index(iu, 2)
+"Ã" any(iu) + any(j) > "Ā" index(iu, 2)
+"Á" any(iu) + any(f) > "Â" index(iu, 2)
+"À" any(iu) + any(f) > "Â" index(iu, 2)
+"Ă" any(iu) + any(f) > "Â" index(iu, 2)
+"Ā" any(iu) + any(f) > "Â" index(iu, 2)
+"Ã" any(iu) + any(f) > "Â" index(iu, 2)
+"Á" any(iu) + any(x) > "Ã" index(iu, 2)
+"À" any(iu) + any(x) > "Ã" index(iu, 2)
+"Â" any(iu) + any(x) > "Ã" index(iu, 2)
+"Ă" any(iu) + any(x) > "Ã" index(iu, 2)
+"Ā" any(iu) + any(x) > "Ã" index(iu, 2)
+"À" any(iu) "ⁿ" + any(r) > "Á" index(iu, 2) "ⁿ"
+"Ă" any(iu) "ⁿ" + any(r) > "Á" index(iu, 2) "ⁿ"
+"Ā" any(iu) "ⁿ" + any(r) > "Á" index(iu, 2) "ⁿ"
+"Â" any(iu) "ⁿ" + any(r) > "Á" index(iu, 2) "ⁿ"
+"Ã" any(iu) "ⁿ" + any(r) > "Á" index(iu, 2) "ⁿ"
+"Á" any(iu) "ⁿ" + any(s) > "À" index(iu, 2) "ⁿ"
+"Ă" any(iu) "ⁿ" + any(s) > "À" index(iu, 2) "ⁿ"
+"Ā" any(iu) "ⁿ" + any(s) > "À" index(iu, 2) "ⁿ"
+"Â" any(iu) "ⁿ" + any(s) > "À" index(iu, 2) "ⁿ"
+"Ã" any(iu) "ⁿ" + any(s) > "À" index(iu, 2) "ⁿ"
+"Á" any(iu) "ⁿ" + any(w) > "Ă" index(iu, 2) "ⁿ"
+"À" any(iu) "ⁿ" + any(w) > "Ă" index(iu, 2) "ⁿ"
+"Ā" any(iu) "ⁿ" + any(w) > "Ă" index(iu, 2) "ⁿ"
+"Â" any(iu) "ⁿ" + any(w) > "Ă" index(iu, 2) "ⁿ"
+"Ã" any(iu) "ⁿ" + any(w) > "Ă" index(iu, 2) "ⁿ"
+"Á" any(iu) "ⁿ" + any(j) > "Ā" index(iu, 2) "ⁿ"
+"À" any(iu) "ⁿ" + any(j) > "Ā" index(iu, 2) "ⁿ"
+"Ă" any(iu) "ⁿ" + any(j) > "Ā" index(iu, 2) "ⁿ"
+"Â" any(iu) "ⁿ" + any(j) > "Ā" index(iu, 2) "ⁿ"
+"Ã" any(iu) "ⁿ" + any(j) > "Ā" index(iu, 2) "ⁿ"
+"Á" any(iu) "ⁿ" + any(f) > "Â" index(iu, 2) "ⁿ"
+"À" any(iu) "ⁿ" + any(f) > "Â" index(iu, 2) "ⁿ"
+"Ă" any(iu) "ⁿ" + any(f) > "Â" index(iu, 2) "ⁿ"
+"Ā" any(iu) "ⁿ" + any(f) > "Â" index(iu, 2) "ⁿ"
+"Ã" any(iu) "ⁿ" + any(f) > "Â" index(iu, 2) "ⁿ"
+"Á" any(iu) "ⁿ" + any(x) > "Ã" index(iu, 2) "ⁿ"
+"À" any(iu) "ⁿ" + any(x) > "Ã" index(iu, 2) "ⁿ"
+"Â" any(iu) "ⁿ" + any(x) > "Ã" index(iu, 2) "ⁿ"
+"Ă" any(iu) "ⁿ" + any(x) > "Ã" index(iu, 2) "ⁿ"
+"Ā" any(iu) "ⁿ" + any(x) > "Ã" index(iu, 2) "ⁿ"
+
+"Ò" any(aeui) + any(r) > "Ó" index(aeui, 2)
+"Ŏ" any(aeui) + any(r) > "Ó" index(aeui, 2)
+"Ō" any(aeui) + any(r) > "Ó" index(aeui, 2)
+"Ô" any(aeui) + any(r) > "Ó" index(aeui, 2)
+"Õ" any(aeui) + any(r) > "Ó" index(aeui, 2)
+"Ó" any(aeui) + any(s) > "Ò" index(aeui, 2)
+"Ŏ" any(aeui) + any(s) > "Ò" index(aeui, 2)
+"Ō" any(aeui) + any(s) > "Ò" index(aeui, 2)
+"Ô" any(aeui) + any(s) > "Ò" index(aeui, 2)
+"Õ" any(aeui) + any(s) > "Ò" index(aeui, 2)
+"Ó" any(aeui) + any(w) > "Ŏ" index(aeui, 2)
+"Ò" any(aeui) + any(w) > "Ŏ" index(aeui, 2)
+"Ō" any(aeui) + any(w) > "Ŏ" index(aeui, 2)
+"Ô" any(aeui) + any(w) > "Ŏ" index(aeui, 2)
+"Õ" any(aeui) + any(w) > "Ŏ" index(aeui, 2)
+"Ó" any(aeui) + any(j) > "Ō" index(aeui, 2)
+"Ò" any(aeui) + any(j) > "Ō" index(aeui, 2)
+"Ŏ" any(aeui) + any(j) > "Ō" index(aeui, 2)
+"Ô" any(aeui) + any(j) > "Ō" index(aeui, 2)
+"Õ" any(aeui) + any(j) > "Ō" index(aeui, 2)
+"Ó" any(aeui) + any(f) > "Ô" index(aeui, 2)
+"Ò" any(aeui) + any(f) > "Ô" index(aeui, 2)
+"Ŏ" any(aeui) + any(f) > "Ô" index(aeui, 2)
+"Ō" any(aeui) + any(f) > "Ô" index(aeui, 2)
+"Õ" any(aeui) + any(f) > "Ô" index(aeui, 2)
+"Ó" any(aeui) + any(x) > "Õ" index(aeui, 2)
+"Ò" any(aeui) + any(x) > "Õ" index(aeui, 2)
+"Ŏ" any(aeui) + any(x) > "Õ" index(aeui, 2)
+"Ō" any(aeui) + any(x) > "Õ" index(aeui, 2)
+"Ô" any(aeui) + any(x) > "Õ" index(aeui, 2)
+"Ò" any(aeui) "ⁿ" + any(r) > "Ó" index(aeui, 2) "ⁿ"
+"Ŏ" any(aeui) "ⁿ" + any(r) > "Ó" index(aeui, 2) "ⁿ"
+"Ō" any(aeui) "ⁿ" + any(r) > "Ó" index(aeui, 2) "ⁿ"
+"Ô" any(aeui) "ⁿ" + any(r) > "Ó" index(aeui, 2) "ⁿ"
+"Õ" any(aeui) "ⁿ" + any(r) > "Ó" index(aeui, 2) "ⁿ"
+"Ó" any(aeui) "ⁿ" + any(s) > "Ò" index(aeui, 2) "ⁿ"
+"Ŏ" any(aeui) "ⁿ" + any(s) > "Ò" index(aeui, 2) "ⁿ"
+"Ō" any(aeui) "ⁿ" + any(s) > "Ò" index(aeui, 2) "ⁿ"
+"Ô" any(aeui) "ⁿ" + any(s) > "Ò" index(aeui, 2) "ⁿ"
+"Õ" any(aeui) "ⁿ" + any(s) > "Ò" index(aeui, 2) "ⁿ"
+"Ó" any(aeui) "ⁿ" + any(w) > "Ŏ" index(aeui, 2) "ⁿ"
+"Ò" any(aeui) "ⁿ" + any(w) > "Ŏ" index(aeui, 2) "ⁿ"
+"Ō" any(aeui) "ⁿ" + any(w) > "Ŏ" index(aeui, 2) "ⁿ"
+"Ô" any(aeui) "ⁿ" + any(w) > "Ŏ" index(aeui, 2) "ⁿ"
+"Õ" any(aeui) "ⁿ" + any(w) > "Ŏ" index(aeui, 2) "ⁿ"
+"Ó" any(aeui) "ⁿ" + any(j) > "Ō" index(aeui, 2) "ⁿ"
+"Ò" any(aeui) "ⁿ" + any(j) > "Ō" index(aeui, 2) "ⁿ"
+"Ŏ" any(aeui) "ⁿ" + any(j) > "Ō" index(aeui, 2) "ⁿ"
+"Ô" any(aeui) "ⁿ" + any(j) > "Ō" index(aeui, 2) "ⁿ"
+"Õ" any(aeui) "ⁿ" + any(j) > "Ō" index(aeui, 2) "ⁿ"
+"Ó" any(aeui) "ⁿ" + any(f) > "Ô" index(aeui, 2) "ⁿ"
+"Ò" any(aeui) "ⁿ" + any(f) > "Ô" index(aeui, 2) "ⁿ"
+"Ŏ" any(aeui) "ⁿ" + any(f) > "Ô" index(aeui, 2) "ⁿ"
+"Ō" any(aeui) "ⁿ" + any(f) > "Ô" index(aeui, 2) "ⁿ"
+"Õ" any(aeui) "ⁿ" + any(f) > "Ô" index(aeui, 2) "ⁿ"
+"Ó" any(aeui) "ⁿ" + any(x) > "Õ" index(aeui, 2) "ⁿ"
+"Ò" any(aeui) "ⁿ" + any(x) > "Õ" index(aeui, 2) "ⁿ"
+"Ŏ" any(aeui) "ⁿ" + any(x) > "Õ" index(aeui, 2) "ⁿ"
+"Ō" any(aeui) "ⁿ" + any(x) > "Õ" index(aeui, 2) "ⁿ"
+"Ô" any(aeui) "ⁿ" + any(x) > "Õ" index(aeui, 2) "ⁿ"
+
+"Ù" any(aie) + any(r) > "Ú" index(aie, 2)
+"Ŭ" any(aie) + any(r) > "Ú" index(aie, 2)
+"Ū" any(aie) + any(r) > "Ú" index(aie, 2)
+"Û" any(aie) + any(r) > "Ú" index(aie, 2)
+"Ũ" any(aie) + any(r) > "Ú" index(aie, 2)
+"Ú" any(aie) + any(s) > "Ù" index(aie, 2)
+"Ŭ" any(aie) + any(s) > "Ù" index(aie, 2)
+"Ū" any(aie) + any(s) > "Ù" index(aie, 2)
+"Û" any(aie) + any(s) > "Ù" index(aie, 2)
+"Ũ" any(aie) + any(s) > "Ù" index(aie, 2)
+"Ú" any(aie) + any(w) > "Ŭ" index(aie, 2)
+"Ù" any(aie) + any(w) > "Ŭ" index(aie, 2)
+"Ū" any(aie) + any(w) > "Ŭ" index(aie, 2)
+"Û" any(aie) + any(w) > "Ŭ" index(aie, 2)
+"Ũ" any(aie) + any(w) > "Ŭ" index(aie, 2)
+"Ú" any(aie) + any(j) > "Ū" index(aie, 2)
+"Ù" any(aie) + any(j) > "Ū" index(aie, 2)
+"Ŭ" any(aie) + any(j) > "Ū" index(aie, 2)
+"Û" any(aie) + any(j) > "Ū" index(aie, 2)
+"Ũ" any(aie) + any(j) > "Ū" index(aie, 2)
+"Ú" any(aie) + any(f) > "Û" index(aie, 2)
+"Ù" any(aie) + any(f) > "Û" index(aie, 2)
+"Ŭ" any(aie) + any(f) > "Û" index(aie, 2)
+"Ū" any(aie) + any(f) > "Û" index(aie, 2)
+"Ũ" any(aie) + any(f) > "Û" index(aie, 2)
+"Ú" any(aie) + any(x) > "Ũ" index(aie, 2)
+"Ù" any(aie) + any(x) > "Ũ" index(aie, 2)
+"Ŭ" any(aie) + any(x) > "Ũ" index(aie, 2)
+"Ū" any(aie) + any(x) > "Ũ" index(aie, 2)
+"Ũ" any(aie) + any(x) > "Ũ" index(aie, 2)
+
+"Ù" any(aie) "ⁿ" + any(r) > "Ú" index(aie, 2) "ⁿ"
+"Ŭ" any(aie) "ⁿ" + any(r) > "Ú" index(aie, 2) "ⁿ"
+"Ū" any(aie) "ⁿ" + any(r) > "Ú" index(aie, 2) "ⁿ"
+"Û" any(aie) "ⁿ" + any(r) > "Ú" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(r) > "Ú" index(aie, 2) "ⁿ"
+"Ú" any(aie) "ⁿ" + any(s) > "Ù" index(aie, 2) "ⁿ"
+"Ŭ" any(aie) "ⁿ" + any(s) > "Ù" index(aie, 2) "ⁿ"
+"Ū" any(aie) "ⁿ" + any(s) > "Ù" index(aie, 2) "ⁿ"
+"Û" any(aie) "ⁿ" + any(s) > "Ù" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(s) > "Ù" index(aie, 2) "ⁿ"
+"Ú" any(aie) "ⁿ" + any(w) > "Ŭ" index(aie, 2) "ⁿ"
+"Ù" any(aie) "ⁿ" + any(w) > "Ŭ" index(aie, 2) "ⁿ"
+"Ū" any(aie) "ⁿ" + any(w) > "Ŭ" index(aie, 2) "ⁿ"
+"Û" any(aie) "ⁿ" + any(w) > "Ŭ" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(w) > "Ŭ" index(aie, 2) "ⁿ"
+"Ú" any(aie) "ⁿ" + any(j) > "Ū" index(aie, 2) "ⁿ"
+"Ù" any(aie) "ⁿ" + any(j) > "Ū" index(aie, 2) "ⁿ"
+"Ŭ" any(aie) "ⁿ" + any(j) > "Ū" index(aie, 2) "ⁿ"
+"Û" any(aie) "ⁿ" + any(j) > "Ū" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(j) > "Ū" index(aie, 2) "ⁿ"
+"Ú" any(aie) "ⁿ" + any(f) > "Û" index(aie, 2) "ⁿ"
+"Ù" any(aie) "ⁿ" + any(f) > "Û" index(aie, 2) "ⁿ"
+"Ŭ" any(aie) "ⁿ" + any(f) > "Û" index(aie, 2) "ⁿ"
+"Ū" any(aie) "ⁿ" + any(f) > "Û" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(f) > "Û" index(aie, 2) "ⁿ"
+"Ú" any(aie) "ⁿ" + any(x) > "Ũ" index(aie, 2) "ⁿ"
+"Ù" any(aie) "ⁿ" + any(x) > "Ũ" index(aie, 2) "ⁿ"
+"Ŭ" any(aie) "ⁿ" + any(x) > "Ũ" index(aie, 2) "ⁿ"
+"Ū" any(aie) "ⁿ" + any(x) > "Ũ" index(aie, 2) "ⁿ"
+"Ũ" any(aie) "ⁿ" + any(x) > "Ũ" index(aie, 2) "ⁿ"
+
+'o̤' + any(s) > 'ò̤'
+'o̤' + any(f) > 'ô̤'
+'o̤' + any(r) > 'ó̤'
+'o̤' + any(j) > 'ō̤'
+'o̤' + any(w) > 'ŏ̤'
+'O̤' + any(s) > 'Ò̤'
+'O̤' + any(f) > 'Ô̤'
+'O̤' + any(r) > 'Ó̤'
+'O̤' + any(j) > 'Ō̤'
+'O̤' + any(w) > 'Ŏ̤'
+'Ô̤' + any(s) > 'Ò̤'
+'Ó̤' + any(s) > 'Ò̤'
+'Ō̤' + any(s) > 'Ò̤'
+'Ŏ̤' + any(s) > 'Ò̤'
+'Ò̤' + any(f) > 'Ô̤'
+'Ó̤' + any(f) > 'Ô̤'
+'Ō̤' + any(f) > 'Ô̤'
+'Ŏ̤' + any(f) > 'Ô̤'
+'Ò̤' + any(r) > 'Ó̤'
+'Ô̤' + any(r) > 'Ó̤'
+'Ō̤' + any(r) > 'Ó̤'
+'Ŏ̤' + any(r) > 'Ó̤'
+'Ò̤' + any(j) > 'Ō̤'
+'Ô̤' + any(j) > 'Ō̤'
+'Ó̤' + any(j) > 'Ō̤'
+'Ŏ̤' + any(j) > 'Ō̤'
+'Ò̤' + any(w) > 'Ŏ̤'
+'Ô̤' + any(w) > 'Ŏ̤'
+'Ó̤' + any(w) > 'Ŏ̤'
+'Ō̤' + any(w) > 'Ŏ̤'
+'ô̤' + any(s) > 'ò̤'
+'ó̤' + any(s) > 'ò̤'
+'ō̤' + any(s) > 'ò̤'
+'ŏ̤' + any(s) > 'ò̤'
+'ò̤' + any(f) > 'ô̤'
+'ó̤' + any(f) > 'ô̤'
+'ō̤' + any(f) > 'ô̤'
+'ŏ̤' + any(f) > 'ô̤'
+'ò̤' + any(r) > 'ó̤'
+'ô̤' + any(r) > 'ó̤'
+'ō̤' + any(r) > 'ó̤'
+'ŏ̤' + any(r) > 'ó̤'
+'ò̤' + any(j) > 'ō̤'
+'ô̤' + any(j) > 'ō̤'
+'ó̤' + any(j) > 'ō̤'
+'ŏ̤' + any(j) > 'ō̤'
+'ò̤' + any(w) > 'ŏ̤'
+'ô̤' + any(w) > 'ŏ̤'
+'ó̤' + any(w) > 'ŏ̤'
+'ō̤' + any(w) > 'ŏ̤'
+
+'o̤' any(m) + any(s) > 'ò̤' index(m, 3)
+'o̤' any(m) + any(f) > 'ô̤' index(m, 3)
+'o̤' any(m) + any(r) > 'ó̤' index(m, 3)
+'o̤' any(m) + any(j) > 'ō̤' index(m, 3)
+'o̤' any(m) + any(w) > 'ŏ̤' index(m, 3)
+'O̤' any(m) + any(s) > 'Ò̤' index(m, 3)
+'O̤' any(m) + any(f) > 'Ô̤' index(m, 3)
+'O̤' any(m) + any(r) > 'Ó̤' index(m, 3)
+'O̤' any(m) + any(j) > 'Ō̤' index(m, 3)
+'O̤' any(m) + any(w) > 'Ŏ̤' index(m, 3)
+'Ô̤' any(m) + any(s) > 'Ò̤' index(m, 3)
+'Ó̤' any(m) + any(s) > 'Ò̤' index(m, 3)
+'Ō̤' any(m) + any(s) > 'Ò̤' index(m, 3)
+'Ŏ̤' any(m) + any(s) > 'Ò̤' index(m, 3)
+'Ò̤' any(m) + any(f) > 'Ô̤' index(m, 3)
+'Ó̤' any(m) + any(f) > 'Ô̤' index(m, 3)
+'Ō̤' any(m) + any(f) > 'Ô̤' index(m, 3)
+'Ŏ̤' any(m) + any(f) > 'Ô̤' index(m, 3)
+'Ò̤' any(m) + any(r) > 'Ó̤' index(m, 3)
+'Ô̤' any(m) + any(r) > 'Ó̤' index(m, 3)
+'Ō̤' any(m) + any(r) > 'Ó̤' index(m, 3)
+'Ŏ̤' any(m) + any(r) > 'Ó̤' index(m, 3)
+'Ò̤' any(m) + any(j) > 'Ō̤' index(m, 3)
+'Ô̤' any(m) + any(j) > 'Ō̤' index(m, 3)
+'Ó̤' any(m) + any(j) > 'Ō̤' index(m, 3)
+'Ŏ̤' any(m) + any(j) > 'Ō̤' index(m, 3)
+'Ò̤' any(m) + any(w) > 'Ŏ̤' index(m, 3)
+'Ô̤' any(m) + any(w) > 'Ŏ̤' index(m, 3)
+'Ó̤' any(m) + any(w) > 'Ŏ̤' index(m, 3)
+'Ō̤' any(m) + any(w) > 'Ŏ̤' index(m, 3)
+'ô̤' any(m) + any(s) > 'ò̤' index(m, 3)
+'ó̤' any(m) + any(s) > 'ò̤' index(m, 3)
+'ō̤' any(m) + any(s) > 'ò̤' index(m, 3)
+'ŏ̤' any(m) + any(s) > 'ò̤' index(m, 3)
+'ò̤' any(m) + any(f) > 'ô̤' index(m, 3)
+'ó̤' any(m) + any(f) > 'ô̤' index(m, 3)
+'ō̤' any(m) + any(f) > 'ô̤' index(m, 3)
+'ŏ̤' any(m) + any(f) > 'ô̤' index(m, 3)
+'ò̤' any(m) + any(r) > 'ó̤' index(m, 3)
+'ô̤' any(m) + any(r) > 'ó̤' index(m, 3)
+'ō̤' any(m) + any(r) > 'ó̤' index(m, 3)
+'ŏ̤' any(m) + any(r) > 'ó̤' index(m, 3)
+'ò̤' any(m) + any(j) > 'ō̤' index(m, 3)
+'ô̤' any(m) + any(j) > 'ō̤' index(m, 3)
+'ó̤' any(m) + any(j) > 'ō̤' index(m, 3)
+'ŏ̤' any(m) + any(j) > 'ō̤' index(m, 3)
+'ò̤' any(m) + any(w) > 'ŏ̤' index(m, 3)
+'ô̤' any(m) + any(w) > 'ŏ̤' index(m, 3)
+'ó̤' any(m) + any(w) > 'ŏ̤' index(m, 3)
+'ō̤' any(m) + any(w) > 'ŏ̤' index(m, 3)
+
+'ò̤' + [K_Z] > 'o̤'
+'ô̤' + [K_Z] > 'o̤'
+'ó̤' + [K_Z] > 'o̤'
+'ō̤' + [K_Z] > 'o̤'
+'ŏ̤' + [K_Z] > 'o̤'
+'Ò̤' + [K_Z] > 'O̤'
+'Ô̤' + [K_Z] > 'O̤'
+'Ó̤' + [K_Z] > 'O̤'
+'Ō̤' + [K_Z] > 'O̤'
+'Ŏ̤' + [K_Z] > 'O̤'
+'ò̤' + [SHIFT K_Z] > 'o̤'
+'ô̤' + [SHIFT K_Z] > 'o̤'
+'ó̤' + [SHIFT K_Z] > 'o̤'
+'ō̤' + [SHIFT K_Z] > 'o̤'
+'ŏ̤' + [SHIFT K_Z] > 'o̤'
+'Ò̤' + [SHIFT K_Z] > 'O̤'
+'Ô̤' + [SHIFT K_Z] > 'O̤'
+'Ó̤' + [SHIFT K_Z] > 'O̤'
+'Ō̤' + [SHIFT K_Z] > 'O̤'
+'Ŏ̤' + [SHIFT K_Z] > 'O̤'
+
+'ò̤' any(m) + [K_Z] > 'o̤' index(m, 3)
+'ô̤' any(m) + [K_Z] > 'o̤' index(m, 3)
+'ó̤' any(m) + [K_Z] > 'o̤' index(m, 3)
+'ō̤' any(m) + [K_Z] > 'o̤' index(m, 3)
+'ŏ̤' any(m) + [K_Z] > 'o̤' index(m, 3)
+'Ò̤' any(m) + [K_Z] > 'O̤' index(m, 3)
+'Ô̤' any(m) + [K_Z] > 'O̤' index(m, 3)
+'Ó̤' any(m) + [K_Z] > 'O̤' index(m, 3)
+'Ō̤' any(m) + [K_Z] > 'O̤' index(m, 3)
+'Ŏ̤' any(m) + [K_Z] > 'O̤' index(m, 3)
+'ò̤' any(m) + [SHIFT K_Z] > 'o̤' index(m, 3)
+'ô̤' any(m) + [SHIFT K_Z] > 'o̤' index(m, 3)
+'ó̤' any(m) + [SHIFT K_Z] > 'o̤' index(m, 3)
+'ō̤' any(m) + [SHIFT K_Z] > 'o̤' index(m, 3)
+'ŏ̤' any(m) + [SHIFT K_Z] > 'o̤' index(m, 3)
+'Ò̤' any(m) + [SHIFT K_Z] > 'O̤' index(m, 3)
+'Ô̤' any(m) + [SHIFT K_Z] > 'O̤' index(m, 3)
+'Ó̤' any(m) + [SHIFT K_Z] > 'O̤' index(m, 3)
+'Ō̤' any(m) + [SHIFT K_Z] > 'O̤' index(m, 3)
+'Ŏ̤' any(m) + [SHIFT K_Z] > 'O̤' index(m, 3)
+
+'ṳ' + any(s) > 'ṳ̀'
+'ṳ' + any(f) > 'ṳ̂'
+'ṳ' + any(r) > 'ṳ́'
+'ṳ' + any(j) > 'ṳ̄'
+'ṳ' + any(w) > 'ṳ̆'
+'ṳ' + any(x) > 'ṳ̃'
+'Ṳ' + any(s) > 'Ṳ̀'
+'Ṳ' + any(f) > 'Ṳ̂'
+'Ṳ' + any(r) > 'Ṳ́'
+'Ṳ' + any(j) > 'Ṳ̄'
+'Ṳ' + any(w) > 'Ṳ̆'
+'Ṳ' + any(x) > 'Ṳ̃'
+'Ṳ̂' + any(s) > 'Ṳ̀'
+'Ṳ́' + any(s) > 'Ṳ̀'
+'Ṳ̄' + any(s) > 'Ṳ̀'
+'Ṳ̆' + any(s) > 'Ṳ̀'
+'Ṳ̃' + any(s) > 'Ṳ̀'
+'Ṳ̀' + any(f) > 'Ṳ̂'
+'Ṳ́' + any(f) > 'Ṳ̂'
+'Ṳ̄' + any(f) > 'Ṳ̂'
+'Ṳ̆' + any(f) > 'Ṳ̂'
+'Ṳ̃' + any(f) > 'Ṳ̂'
+'Ṳ̀' + any(r) > 'Ṳ́'
+'Ṳ̂' + any(r) > 'Ṳ́'
+'Ṳ̄' + any(r) > 'Ṳ́'
+'Ṳ̆' + any(r) > 'Ṳ́'
+'Ṳ̃' + any(r) > 'Ṳ́'
+'Ṳ̀' + any(j) > 'Ṳ̄'
+'Ṳ̂' + any(j) > 'Ṳ̄'
+'Ṳ́' + any(j) > 'Ṳ̄'
+'Ṳ̆' + any(j) > 'Ṳ̄'
+'Ṳ̃' + any(j) > 'Ṳ̄'
+'Ṳ̀' + any(w) > 'Ṳ̆'
+'Ṳ̂' + any(w) > 'Ṳ̆'
+'Ṳ́' + any(w) > 'Ṳ̆'
+'Ṳ̄' + any(w) > 'Ṳ̆'
+'Ṳ̃' + any(w) > 'Ṳ̆'
+'Ṳ̀' + any(x) > 'Ṳ̃'
+'Ṳ̂' + any(x) > 'Ṳ̃'
+'Ṳ́' + any(x) > 'Ṳ̃'
+'Ṳ̄' + any(x) > 'Ṳ̃'
+'Ṳ̆' + any(x) > 'Ṳ̃'
+'ṳ̂' + any(s) > 'ṳ̀'
+'ṳ́' + any(s) > 'ṳ̀'
+'ṳ̄' + any(s) > 'ṳ̀'
+'ṳ̆' + any(s) > 'ṳ̀'
+'ṳ̃' + any(s) > 'ṳ̀'
+'ṳ̀' + any(f) > 'ṳ̂'
+'ṳ́' + any(f) > 'ṳ̂'
+'ṳ̄' + any(f) > 'ṳ̂'
+'ṳ̆' + any(f) > 'ṳ̂'
+'ṳ̃' + any(f) > 'ṳ̂'
+'ṳ̀' + any(r) > 'ṳ́'
+'ṳ̂' + any(r) > 'ṳ́'
+'ṳ̄' + any(r) > 'ṳ́'
+'ṳ̆' + any(r) > 'ṳ́'
+'ṳ̃' + any(r) > 'ṳ́'
+'ṳ̀' + any(j) > 'ṳ̄'
+'ṳ̂' + any(j) > 'ṳ̄'
+'ṳ́' + any(j) > 'ṳ̄'
+'ṳ̆' + any(j) > 'ṳ̄'
+'ṳ̃' + any(j) > 'ṳ̄'
+'ṳ̀' + any(w) > 'ṳ̆'
+'ṳ̂' + any(w) > 'ṳ̆'
+'ṳ́' + any(w) > 'ṳ̆'
+'ṳ̄' + any(w) > 'ṳ̆'
+'ṳ̃' + any(w) > 'ṳ̆'
+'ṳ̀' + any(x) > 'ṳ̃'
+'ṳ̂' + any(x) > 'ṳ̃'
+'ṳ́' + any(x) > 'ṳ̃'
+'ṳ̄' + any(x) > 'ṳ̃'
+'ṳ̆' + any(x) > 'ṳ̃'
+
+'Ṳ̀' + any(s) > 'Ṳ' index(s, 3)
+'Ṳ́' + any(r) > 'Ṳ' index(r, 3)
+'Ṳ̂' + any(f) > 'Ṳ' index(f, 3)
+'Ṳ̄' + any(j) > 'Ṳ' index(j, 3)
+'Ṳ̆' + any(w) > 'Ṳ' index(w, 3)
+'Ṳ̆' + any(x) > 'Ṳ' index(x, 3)
+'ṳ̀' + any(s) > 'ṳ' index(s, 3)
+'ṳ́' + any(r) > 'ṳ' index(r, 3)
+'ṳ̂' + any(f) > 'ṳ' index(f, 3)
+'ṳ̄' + any(j) > 'ṳ' index(j, 3)
+'ṳ̆' + any(w) > 'ṳ' index(w, 3)
+'ṳ̆' + any(x) > 'ṳ' index(x, 3)
+'Ṳ̀' any(n) + any(s) > 'Ṳ' index(n, 3) index(s, 4)
+'Ṳ́' any(n) + any(r) > 'Ṳ' index(n, 3) index(r, 4)
+'Ṳ̂' any(n) + any(f) > 'Ṳ' index(n, 3) index(f, 4)
+'Ṳ̄' any(n) + any(j) > 'Ṳ' index(n, 3) index(j, 4)
+'Ṳ̆' any(n) + any(w) > 'Ṳ' index(n, 3) index(w, 4)
+'Ṳ̆' any(n) + any(x) > 'Ṳ' index(n, 3) index(x, 4)
+'ṳ̀' any(n) + any(s) > 'ṳ' index(n, 3) index(s, 4)
+'ṳ́' any(n) + any(r) > 'ṳ' index(n, 3) index(r, 4)
+'ṳ̂' any(n) + any(f) > 'ṳ' index(n, 3) index(f, 4)
+'ṳ̄' any(n) + any(j) > 'ṳ' index(n, 3) index(j, 4)
+'ṳ̆' any(n) + any(w) > 'ṳ' index(n, 3) index(w, 4)
+'ṳ̆' any(n) + any(x) > 'ṳ' index(n, 3) index(x, 4)
+'Ṳ̀' any(n) any(g) + any(s) > 'Ṳ' index(n, 3) index(g, 4) index(s, 5)
+'Ṳ́' any(n) any(g) + any(r) > 'Ṳ' index(n, 3) index(g, 4) index(r, 5)
+'Ṳ̂' any(n) any(g) + any(f) > 'Ṳ' index(n, 3) index(g, 4) index(f, 5)
+'Ṳ̄' any(n) any(g) + any(j) > 'Ṳ' index(n, 3) index(g, 4) index(j, 5)
+'Ṳ̆' any(n) any(g) + any(w) > 'Ṳ' index(n, 3) index(g, 4) index(w, 5)
+'Ṳ̆' any(n) any(g) + any(x) > 'Ṳ' index(n, 3) index(g, 4) index(x, 5)
+'ṳ̀' any(n) any(g) + any(s) > 'ṳ' index(n, 3) index(g, 4) index(s, 5)
+'ṳ́' any(n) any(g) + any(r) > 'ṳ' index(n, 3) index(g, 4) index(r, 5)
+'ṳ̂' any(n) any(g) + any(f) > 'ṳ' index(n, 3) index(g, 4) index(f, 5)
+'ṳ̄' any(n) any(g) + any(j) > 'ṳ' index(n, 3) index(g, 4) index(j, 5)
+'ṳ̆' any(n) any(g) + any(w) > 'ṳ' index(n, 3) index(g, 4) index(w, 5)
+'ṳ̆' any(n) any(g) + any(x) > 'ṳ' index(n, 3) index(g, 4) index(x, 5)
+
+'ṳ̀' + any(z) > 'ṳ'
+'ṳ̂' + any(z) > 'ṳ'
+'ṳ́' + any(z) > 'ṳ'
+'ṳ̄' + any(z) > 'ṳ'
+'ṳ̆' + any(z) > 'ṳ'
+'ṳ̃' + any(z) > 'ṳ'
+'Ṳ̀' + any(z) > 'Ṳ'
+'Ṳ̂' + any(z) > 'Ṳ'
+'Ṳ́' + any(z) > 'Ṳ'
+'Ṳ̄' + any(z) > 'Ṳ'
+'Ṳ̆' + any(z) > 'Ṳ'
+'Ṳ̃' + any(z) > 'Ṳ'
+
+'ṳ' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ' any(n) + any(x) > 'ṳ̃' index(n, 3)
+'Ṳ' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'Ṳ̂' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ́' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ̄' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ̆' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ̃' any(n) + any(s) > 'Ṳ̀' index(n, 3)
+'Ṳ̀' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ́' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ̄' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ̆' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ̃' any(n) + any(f) > 'Ṳ̂' index(n, 3)
+'Ṳ̀' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ̂' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ̄' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ̆' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ̃' any(n) + any(r) > 'Ṳ́' index(n, 3)
+'Ṳ̀' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ̂' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ́' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ̆' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ̃' any(n) + any(j) > 'Ṳ̄' index(n, 3)
+'Ṳ̀' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ̂' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ́' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ̄' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ̃' any(n) + any(w) > 'Ṳ̆' index(n, 3)
+'Ṳ̀' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'Ṳ̂' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'Ṳ́' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'Ṳ̄' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'Ṳ̆' any(n) + any(x) > 'Ṳ̃' index(n, 3)
+'ṳ̂' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ́' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ̄' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ̆' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ̃' any(n) + any(s) > 'ṳ̀' index(n, 3)
+'ṳ̀' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ́' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ̄' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ̆' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ̃' any(n) + any(f) > 'ṳ̂' index(n, 3)
+'ṳ̀' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ̂' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ̄' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ̆' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ̃' any(n) + any(r) > 'ṳ́' index(n, 3)
+'ṳ̀' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ̂' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ́' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ̆' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ̃' any(n) + any(j) > 'ṳ̄' index(n, 3)
+'ṳ̀' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ̂' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ́' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ̄' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ̃' any(n) + any(w) > 'ṳ̆' index(n, 3)
+'ṳ̀' any(n) + any(x) > 'ṳ̃' index(n, 3)
+'ṳ̂' any(n) + any(x) > 'ṳ̃' index(n, 3)
+'ṳ́' any(n) + any(x) > 'ṳ̃' index(n, 3)
+'ṳ̄' any(n) + any(x) > 'ṳ̃' index(n, 3)
+'ṳ̆' any(n) + any(x) > 'ṳ̃' index(n, 3)
+
+'ṳ' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(s) > 'Ṳ̀' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(f) > 'Ṳ̂' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(r) > 'Ṳ́' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(j) > 'Ṳ̄' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(w) > 'Ṳ̆' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(x) > 'Ṳ̃' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(s) > 'ṳ̀' index(n, 3) index(g, 4)
+'ṳ̀' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(f) > 'ṳ̂' index(n, 3) index(g, 4)
+'ṳ̀' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(r) > 'ṳ́' index(n, 3) index(g, 4)
+'ṳ̀' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(j) > 'ṳ̄' index(n, 3) index(g, 4)
+'ṳ̀' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(w) > 'ṳ̆' index(n, 3) index(g, 4)
+'ṳ̀' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(x) > 'ṳ̃' index(n, 3) index(g, 4)
+
+'Ṳ̀' any(two_i) + any(s) > 'Ṳ' index(two_i, 3) index(s, 4)
+'Ṳ́' any(two_i) + any(r) > 'Ṳ' index(two_i, 3) index(r, 4)
+'Ṳ̂' any(two_i) + any(f) > 'Ṳ' index(two_i, 3) index(f, 4)
+'Ṳ̄' any(two_i) + any(j) > 'Ṳ' index(two_i, 3) index(j, 4)
+'Ṳ̆' any(two_i) + any(w) > 'Ṳ' index(two_i, 3) index(w, 4)
+'Ṳ̃' any(two_i) + any(x) > 'Ṳ' index(two_i, 3) index(x, 4)
+'ṳ̀' any(two_i) + any(s) > 'ṳ' index(two_i, 3) index(s, 4)
+'ṳ́' any(two_i) + any(r) > 'ṳ' index(two_i, 3) index(r, 4)
+'ṳ̂' any(two_i) + any(f) > 'ṳ' index(two_i, 3) index(f, 4)
+'ṳ̄' any(two_i) + any(j) > 'ṳ' index(two_i, 3) index(j, 4)
+'ṳ̆' any(two_i) + any(w) > 'ṳ' index(two_i, 3) index(w, 4)
+'ṳ̃' any(two_i) + any(x) > 'ṳ' index(two_i, 3) index(x, 4)
+
+'ṳ̀' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'ṳ̂' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'ṳ́' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'ṳ̄' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'ṳ̆' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'ṳ̃' any(n) any(g) + any(z) > 'ṳ' index(n, 3) index(g, 4)
+'Ṳ̀' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+'Ṳ̂' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+'Ṳ́' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+'Ṳ̄' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+'Ṳ̆' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+'Ṳ̃' any(n) any(g) + any(z) > 'Ṳ' index(n, 3) index(g, 4)
+
+'ṳ' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'Ṳ' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ́' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(s) > 'Ṳ̀' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ́' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(f) > 'Ṳ̂' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(r) > 'Ṳ́' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ́' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(j) > 'Ṳ̄' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ́' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(w) > 'Ṳ̆' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'Ṳ́' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(x) > 'Ṳ̃' index(two_i, 3)
+'ṳ̂' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ́' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ̄' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ̆' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ̃' any(two_i) + any(s) > 'ṳ̀' index(two_i, 3)
+'ṳ̀' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ́' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ̄' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ̆' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ̃' any(two_i) + any(f) > 'ṳ̂' index(two_i, 3)
+'ṳ̀' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ̂' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ̄' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ̆' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ̃' any(two_i) + any(r) > 'ṳ́' index(two_i, 3)
+'ṳ̀' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ̂' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ́' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ̆' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ̃' any(two_i) + any(j) > 'ṳ̄' index(two_i, 3)
+'ṳ̀' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ̂' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ́' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ̄' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ̃' any(two_i) + any(w) > 'ṳ̆' index(two_i, 3)
+'ṳ̀' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'ṳ̂' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'ṳ́' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'ṳ̄' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'ṳ̆' any(two_i) + any(x) > 'ṳ̃' index(two_i, 3)
+'Ṳ̍' any(th) + any(j) > 'Ṳ' index(th, 3) index(j, 4)
+'ṳ̍' any(th) + any(j) > 'ṳ' index(th, 3) index(j, 4)
+'Ṳ̍' any(two_i) any(h) + any(j) > 'Ṳ' index(two_i, 3) index(h, 4) index(j, 5)
+'ṳ̍' any(two_i) any(h) + any(j) > 'ṳ' index(two_i, 3) index(h, 4) index(j, 5)
+'Ṳ̍' any(two_i) any(h) 'ⁿ' + any(j) > 'Ṳ' index(two_i, 3) index(h, 4) 'ⁿ'  index(j, 6)
+'ṳ̍' any(two_i) any(h) 'ⁿ' + any(j) > 'ṳ' index(two_i, 3) index(h, 4) 'ⁿ'  index(j, 6)
+'ṳ̀' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'ṳ̂' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'ṳ́' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'ṳ̄' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'ṳ̆' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'ṳ̃' any(two_i) + any(z) > 'ṳ' index(two_i, 3)
+'Ṳ̀' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+'Ṳ̂' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+'Ṳ́' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+'Ṳ̄' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+'Ṳ̆' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+'Ṳ̃' any(two_i) + any(z) > 'Ṳ' index(two_i, 3)
+
+'ṳⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 3)
+'ṳⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 3)
+'ṳⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 3)
+'ṳⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 3)
+'ṳⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 3)
+'ṳⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 3)
+'Ṳⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 3)
+'Ṳ̂ⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(s) > 'Ṳ̀ⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(f) > 'Ṳ̂ⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 4)
+'Ṳ̂ⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(r) > 'Ṳ́ⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 4)
+'Ṳ̂ⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(j) > 'Ṳ̄ⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 4)
+'Ṳ̂ⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(w) > 'Ṳ̆ⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 4)
+'Ṳ̂ⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(x) > 'Ṳ̃ⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(s) > 'ṳ̀ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(f) > 'ṳ̂ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(r) > 'ṳ́ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(j) > 'ṳ̄ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(w) > 'ṳ̆ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(x) > 'ṳ̃ⁿ' index(two_i, 4)
+'ṳ̀ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'ṳ̂ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'ṳ́ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'ṳ̄ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'ṳ̆ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'ṳ̃ⁿ' any(two_i) + any(z) > 'ṳⁿ' index(two_i, 4)
+'Ṳ̀ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+'Ṳ̂ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+'Ṳ́ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+'Ṳ̄ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+'Ṳ̆ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+'Ṳ̃ⁿ' any(two_i) + any(z) > 'Ṳⁿ' index(two_i, 4)
+
+'ṳ' any(two_i) any(h) + any(j) > 'ṳ̍' index(two_i, 2) index(h, 3)
+'Ṳ' any(two_i) any(h) + any(j) > 'Ṳ̍' index(two_i, 2) index(h, 3)
+'ṳ̍' any(two_i) any(h) + any(z) > 'ṳ' index(two_i, 3) index(h, 3)
+'Ṳ̍' any(two_i) any(h) + any(z) > 'Ṳ' index(two_i, 3) index(h, 3)
+"ṳ̄" + any(h) > "ṳ̍" index(h, 3)
+"ṳ̄" any(two_i) + any(h) > "ṳ̍" index(two_i, 3) index(h, 4)
+"Ṳ̄" + any(h) > "Ṳ̍" index(h, 3)
+"Ṳ̄" any(two_i) + any(h) > "Ṳ̍" index(two_i, 3) index(h, 4)
+'ṳ' any(two_i) any(h) 'ⁿ' + any(j) > 'ṳ̍' index(two_i, 2) index(h, 3) 'ⁿ'
+'Ṳ' any(two_i) any(h) 'ⁿ' + any(j) > 'Ṳ̍' index(two_i, 2) index(h, 3) 'ⁿ'
+'ṳ̍' any(two_i) any(h) 'ⁿ' + any(z) > 'ṳ' index(two_i, 3) index(h, 3) 'ⁿ'
+'Ṳ̍' any(two_i) any(h) 'ⁿ' + any(z) > 'Ṳ' index(two_i, 3) index(h, 3) 'ⁿ'
+
+"ṳ" any(th) + any(j) > "ṳ̍" index(th, 2)
+"Ṳ" any(th) + any(j) > "Ṳ̍" index(th, 2)
+"ṳ̍" any(h) + any(z) > "ṳ" index(h, 3)
+"Ṳ̍" any(h) + any(z) > "Ṳ" index(h, 3)
+
+'o̤' any(two_e) + any(s) > 'ò̤' index(two_e, 3)
+'o̤' any(two_e) + any(f) > 'ô̤' index(two_e, 3)
+'o̤' any(two_e) + any(r) > 'ó̤' index(two_e, 3)
+'o̤' any(two_e) + any(j) > 'ō̤' index(two_e, 3)
+'o̤' any(two_e) + any(w) > 'ŏ̤' index(two_e, 3)
+'O̤' any(two_e) + any(s) > 'Ò̤' index(two_e, 3)
+'O̤' any(two_e) + any(f) > 'Ô̤' index(two_e, 3)
+'O̤' any(two_e) + any(r) > 'Ó̤' index(two_e, 3)
+'O̤' any(two_e) + any(j) > 'Ō̤' index(two_e, 3)
+'O̤' any(two_e) + any(w) > 'Ŏ̤' index(two_e, 3)
+'Ô̤' any(two_e) + any(s) > 'Ò̤' index(two_e, 3)
+'Ó̤' any(two_e) + any(s) > 'Ò̤' index(two_e, 3)
+'Ō̤' any(two_e) + any(s) > 'Ò̤' index(two_e, 3)
+'Ŏ̤' any(two_e) + any(s) > 'Ò̤' index(two_e, 3)
+'Ò̤' any(two_e) + any(f) > 'Ô̤' index(two_e, 3)
+'Ó̤' any(two_e) + any(f) > 'Ô̤' index(two_e, 3)
+'Ō̤' any(two_e) + any(f) > 'Ô̤' index(two_e, 3)
+'Ŏ̤' any(two_e) + any(f) > 'Ô̤' index(two_e, 3)
+'Ò̤' any(two_e) + any(r) > 'Ó̤' index(two_e, 3)
+'Ô̤' any(two_e) + any(r) > 'Ó̤' index(two_e, 3)
+'Ō̤' any(two_e) + any(r) > 'Ó̤' index(two_e, 3)
+'Ŏ̤' any(two_e) + any(r) > 'Ó̤' index(two_e, 3)
+'Ò̤' any(two_e) + any(j) > 'Ō̤' index(two_e, 3)
+'Ô̤' any(two_e) + any(j) > 'Ō̤' index(two_e, 3)
+'Ó̤' any(two_e) + any(j) > 'Ō̤' index(two_e, 3)
+'Ŏ̤' any(two_e) + any(j) > 'Ō̤' index(two_e, 3)
+'Ò̤' any(two_e) + any(w) > 'Ŏ̤' index(two_e, 3)
+'Ô̤' any(two_e) + any(w) > 'Ŏ̤' index(two_e, 3)
+'Ó̤' any(two_e) + any(w) > 'Ŏ̤' index(two_e, 3)
+'Ō̤' any(two_e) + any(w) > 'Ŏ̤' index(two_e, 3)
+'ô̤' any(two_e) + any(s) > 'ò̤' index(two_e, 3)
+'ó̤' any(two_e) + any(s) > 'ò̤' index(two_e, 3)
+'ō̤' any(two_e) + any(s) > 'ò̤' index(two_e, 3)
+'ŏ̤' any(two_e) + any(s) > 'ò̤' index(two_e, 3)
+'ò̤' any(two_e) + any(f) > 'ô̤' index(two_e, 3)
+'ó̤' any(two_e) + any(f) > 'ô̤' index(two_e, 3)
+'ō̤' any(two_e) + any(f) > 'ô̤' index(two_e, 3)
+'ŏ̤' any(two_e) + any(f) > 'ô̤' index(two_e, 3)
+'ò̤' any(two_e) + any(r) > 'ó̤' index(two_e, 3)
+'ô̤' any(two_e) + any(r) > 'ó̤' index(two_e, 3)
+'ō̤' any(two_e) + any(r) > 'ó̤' index(two_e, 3)
+'ŏ̤' any(two_e) + any(r) > 'ó̤' index(two_e, 3)
+'ò̤' any(two_e) + any(j) > 'ō̤' index(two_e, 3)
+'ô̤' any(two_e) + any(j) > 'ō̤' index(two_e, 3)
+'ó̤' any(two_e) + any(j) > 'ō̤' index(two_e, 3)
+'ŏ̤' any(two_e) + any(j) > 'ō̤' index(two_e, 3)
+'ò̤' any(two_e) + any(w) > 'ŏ̤' index(two_e, 3)
+'ô̤' any(two_e) + any(w) > 'ŏ̤' index(two_e, 3)
+'ó̤' any(two_e) + any(w) > 'ŏ̤' index(two_e, 3)
+'ō̤' any(two_e) + any(w) > 'ŏ̤' index(two_e, 3)
+
+'ò̤' any(two_e) + any(z) > 'o̤' index(two_e, 3)
+'ô̤' any(two_e) + any(z) > 'o̤' index(two_e, 3)
+'ó̤' any(two_e) + any(z) > 'o̤' index(two_e, 3)
+'ō̤' any(two_e) + any(z) > 'o̤' index(two_e, 3)
+'ŏ̤' any(two_e) + any(z) > 'o̤' index(two_e, 3)
+'Ò̤' any(two_e) + any(z) > 'O̤' index(two_e, 3)
+'Ô̤' any(two_e) + any(z) > 'O̤' index(two_e, 3)
+'Ó̤' any(two_e) + any(z) > 'O̤' index(two_e, 3)
+'Ō̤' any(two_e) + any(z) > 'O̤' index(two_e, 3)
+'Ŏ̤' any(two_e) + any(z) > 'O̤' index(two_e, 3)
+"o̤" any(h) + any(j) > "o̤̍" index(h, 3)
+"o̤" any(two_e) any(h) + any(j) > "o̤̍" index(two_e, 3) index(h, 4)
+"O̤" any(h) + any(j) > "O̤̍" index(h, 3)
+"O̤" any(two_e) any(h) + any(j) > "O̤̍" index(two_e, 3) index(h, 4)
+"ō̤" + any(h) > "o̤̍" index(h, 3)
+"ō̤" any(two_e) + any(h) > "o̤̍" index(two_e, 3) index(h, 4)
+"Ō̤" + any(h) > "O̤̍" index(h, 3)
+"Ō̤" any(two_e) + any(h) > "O̤̍" index(two_e, 3) index(h, 4)
+"o̤̍h" + any(z) > "o̤h"
+"o̤̍eh" + any(z) > "o̤eh"
+"O̤̍h" + any(z) > "O̤h"
+"O̤̍eh" + any(z) > "O̤eh"
+"o̤̍H" + any(z) > "o̤H"
+"o̤̍eH" + any(z) > "o̤eH"
+"O̤̍H" + any(z) > "O̤H"
+"O̤̍eH" + any(z) > "O̤eH"
+"o̤̍EH" + any(z) > "o̤EH"
+"O̤̍EH" + any(z) > "O̤EH"
+
+'Ò̤' + any(s) > 'O̤' index(s, 3)
+'Ó̤' + any(r) > 'O̤' index(r, 3)
+'Ô̤' + any(f) > 'O̤' index(f, 3)
+'Ō̤' + any(j) > 'O̤' index(j, 3)
+'Ŏ̤' + any(w) > 'O̤' index(w, 3)
+'ò̤' + any(s) > 'o̤' index(s, 3)
+'ó̤' + any(r) > 'o̤' index(r, 3)
+'ô̤' + any(f) > 'o̤' index(f, 3)
+'ō̤' + any(j) > 'o̤' index(j, 3)
+'ŏ̤' + any(w) > 'o̤' index(w, 3)
+'Ò̤' any(two_e) + any(s) > 'O̤' index(two_e, 3) index(s, 4)
+'Ó̤' any(two_e) + any(r) > 'O̤' index(two_e, 3) index(r, 4)
+'Ô̤' any(two_e) + any(f) > 'O̤' index(two_e, 3) index(f, 4)
+'Ō̤' any(two_e) + any(j) > 'O̤' index(two_e, 3) index(j, 4)
+'Ŏ̤' any(two_e) + any(w) > 'O̤' index(two_e, 3) index(w, 4)
+'ò̤' any(two_e) + any(s) > 'o̤' index(two_e, 3) index(s, 4)
+'ó̤' any(two_e) + any(r) > 'o̤' index(two_e, 3) index(r, 4)
+'ô̤' any(two_e) + any(f) > 'o̤' index(two_e, 3) index(f, 4)
+'ō̤' any(two_e) + any(j) > 'o̤' index(two_e, 3) index(j, 4)
+'ŏ̤' any(two_e) + any(w) > 'o̤' index(two_e, 3) index(w, 4)
+"o̤̍h" + "j" > "o̤hj"
+"o̤̍eh" + "j" > "o̤ehj"
+"O̤̍h" + "j" > "O̤hj"
+"O̤̍eh" + "j" > "O̤ehj"
+"o̤̍H" + "j" > "o̤Hj"
+"o̤̍eH" + "j" > "o̤eHj"
+"O̤̍H" + "j" > "O̤Hj"
+"O̤̍eH" + "j" > "O̤eHj"
+"o̤̍EH" + "j" > "o̤EHj"
+"O̤̍EH" + "j" > "O̤EHj"
+"o̤̍h" + "J" > "o̤hJ"
+"o̤̍eh" + "J" > "o̤ehJ"
+"O̤̍h" + "J" > "O̤hJ"
+"O̤̍eh" + "J" > "O̤ehJ"
+"o̤̍H" + "J" > "o̤HJ"
+"o̤̍eH" + "J" > "o̤eHJ"
+"O̤̍H" + "J" > "O̤HJ"
+"O̤̍eH" + "J" > "O̤eHJ"
+"o̤̍EH" + "J" > "o̤EHJ"
+"O̤̍EH" + "J" > "O̤EHJ"
+'ā' any(iuo) + any(h) > 'a̍' index(iuo, 2) index(h, 3)
+'Ā' any(iuo) + any(h) > 'A̍' index(iuo, 2) index(h, 3)
+"ǹg" + any(r) > "ńg"
+"n̂g" + any(r) > "ńg"
+"n̄g" + any(r) > "ńg"
+"n̆g" + any(r) > "ńg"
+"ñg" + any(r) > "ńg"
+
+"ńg" + any(s) > "ǹg"
+"n̂g" + any(s) > "ǹg"
+"n̄g" + any(s) > "ǹg"
+"n̆g" + any(s) > "ǹg"
+"ñg" + any(s) > "ǹg"
+
+"ǹg" + any(f) > "n̂g"
+"ńg" + any(f) > "n̂g"
+"n̄g" + any(f) > "n̂g"
+"n̆g" + any(f) > "n̂g"
+"ñg" + any(f) > "n̂g"
+
+"ǹg" + any(j) > "n̄g"
+"ńg" + any(j) > "n̄g"
+"n̆g" + any(j) > "n̄g"
+"n̂g" + any(j) > "n̄g"
+"ñg" + any(j) > "n̄g"
+
+"ǹg" + any(w) > "n̆g"
+"ńg" + any(w) > "n̆g"
+"n̄g" + any(w) > "n̆g"
+"n̂g" + any(w) > "n̆g"
+"ñg" + any(w) > "n̆g"
+
+"ǹg" + any(x) > "ñg"
+"ńg" + any(x) > "ñg"
+"n̄g" + any(x) > "ñg"
+"n̂g" + any(x) > "ñg"
+"n̆g" + any(x) > "ñg"
+
+"ǸG" + any(r) > "ŃG"
+"N̂G" + any(r) > "ŃG"
+"N̄G" + any(r) > "ŃG"
+"N̆G" + any(r) > "ŃG"
+"ÑG" + any(r) > "ŃG"
+
+"ŃG" + any(s) > "ǸG"
+"N̂G" + any(s) > "ǸG"
+"N̄G" + any(s) > "ǸG"
+"N̆G" + any(s) > "ǸG"
+"ÑG" + any(s) > "ǸG"
+
+"ǸG" + any(f) > "N̂G"
+"ŃG" + any(f) > "N̂G"
+"N̄G" + any(f) > "N̂G"
+"N̆G" + any(f) > "N̂G"
+"ÑG" + any(f) > "N̂G"
+
+"ǸG" + any(j) > "N̄G"
+"ŃG" + any(j) > "N̄G"
+"N̆G" + any(j) > "N̄G"
+"N̂G" + any(j) > "N̄G"
+"ÑG" + any(j) > "N̄G"
+
+"ǸG" + any(w) > "N̆G"
+"ŃG" + any(w) > "N̆G"
+"N̄G" + any(w) > "N̆G"
+"N̂G" + any(w) > "N̆G"
+"ÑG" + any(w) > "N̆G"
+
+"ǸG" + any(x) > "ÑG"
+"ŃG" + any(x) > "ÑG"
+"N̄G" + any(x) > "ÑG"
+"N̂G" + any(x) > "ÑG"
+"N̆G" + any(x) > "ÑG"
+
+"Ǹg" + any(r) > "Ńg"
+"N̂g" + any(r) > "Ńg"
+"N̄g" + any(r) > "Ńg"
+"N̆g" + any(r) > "Ńg"
+"Ñg" + any(r) > "Ńg"
+
+"Ńg" + any(s) > "Ǹg"
+"N̂g" + any(s) > "Ǹg"
+"N̄g" + any(s) > "Ǹg"
+"N̆g" + any(s) > "Ǹg"
+"Ñg" + any(s) > "Ǹg"
+
+"Ǹg" + any(f) > "N̂g"
+"Ńg" + any(f) > "N̂g"
+"N̄g" + any(f) > "N̂g"
+"N̆g" + any(f) > "N̂g"
+"Ñg" + any(f) > "N̂g"
+
+"Ǹg" + any(j) > "N̄g"
+"Ńg" + any(j) > "N̄g"
+"N̆g" + any(j) > "N̄g"
+"N̂g" + any(j) > "N̄g"
+"Ñg" + any(j) > "N̄g"
+
+"Ǹg" + any(w) > "N̆g"
+"Ńg" + any(w) > "N̆g"
+"N̄g" + any(w) > "N̆g"
+"N̂g" + any(w) > "N̆g"
+"Ñg" + any(w) > "N̆g"
+
+"Ǹg" + any(x) > "Ñg"
+"Ńg" + any(x) > "Ñg"
+"N̄g" + any(x) > "Ñg"
+"N̂g" + any(x) > "Ñg"
+"N̆g" + any(x) > "Ñg"
+
+"m̀" + any(r) > "ḿ"
+"m̂" + any(r) > "ḿ"
+"m̄" + any(r) > "ḿ"
+"m̆" + any(r) > "ḿ"
+"m̃" + any(r) > "ḿ"
+
+"ḿ" + any(s) > "m̀"
+"m̂" + any(s) > "m̀"
+"m̄" + any(s) > "m̀"
+"m̆" + any(s) > "m̀"
+"m̃" + any(s) > "m̀"
+
+"m̀" + any(f) > "m̂"
+"ḿ" + any(f) > "m̂"
+"m̄" + any(f) > "m̂"
+"m̆" + any(f) > "m̂"
+"m̃" + any(f) > "m̂"
+
+"m̀" + any(j) > "m̄"
+"ḿ" + any(j) > "m̄"
+"m̆" + any(j) > "m̄"
+"m̂" + any(j) > "m̄"
+"m̃" + any(j) > "m̄"
+
+"m̀" + any(w) > "m̆"
+"ḿ" + any(w) > "m̆"
+"m̄" + any(w) > "m̆"
+"m̂" + any(w) > "m̆"
+"m̃" + any(w) > "m̆"
+
+"m̀" + any(x) > "m̃"
+"ḿ" + any(x) > "m̃"
+"m̄" + any(x) > "m̃"
+"m̂" + any(x) > "m̃"
+"m̆" + any(x) > "m̃"
+
+"M̀" + any(r) > "Ḿ"
+"M̂" + any(r) > "Ḿ"
+"M̄" + any(r) > "Ḿ"
+"M̆" + any(r) > "Ḿ"
+"M̃" + any(r) > "Ḿ"
+
+"Ḿ" + any(s) > "M̀"
+"M̂" + any(s) > "M̀"
+"M̄" + any(s) > "M̀"
+"M̆" + any(s) > "M̀"
+"M̃" + any(s) > "M̀"
+
+"M̀" + any(f) > "M̂"
+"Ḿ" + any(f) > "M̂"
+"M̄" + any(f) > "M̂"
+"M̆" + any(f) > "M̂"
+"M̃" + any(f) > "M̂"
+
+"M̀" + any(j) > "M̄"
+"Ḿ" + any(j) > "M̄"
+"M̆" + any(j) > "M̄"
+"M̂" + any(j) > "M̄"
+"M̃" + any(j) > "M̄"
+
+"M̀" + any(w) > "M̆"
+"Ḿ" + any(w) > "M̆"
+"M̄" + any(w) > "M̆"
+"M̂" + any(w) > "M̆"
+"M̃" + any(w) > "M̆"
+
+"M̀" + any(x) > "M̃"
+"Ḿ" + any(x) > "M̃"
+"M̄" + any(x) > "M̃"
+"M̂" + any(x) > "M̃"
+"M̆" + any(x) > "M̃"
+
+"ⁿ" + "g" > "nng"
+"ⁿ" + "G" > "NNG"
+"ōa" + any(ptkh) > "oa̍" index(ptkh, 3)
+"ōe" + any(kh) > "oe̍" index(kh, 3)
+"ŌA" + any(ptkh) > "OA̍" index(ptkh, 3)
+"ŌE" + any(kh) > "OE̍" index(kh, 3)
+"Ōa" + any(ptkh) > "Oa̍" index(ptkh, 3)
+"Ōe" + any(kh) > "Oe̍" index(kh, 3)
+
+"í" + "a" > "iá"
+"ì" + "a" > "ià"
+"î" + "a" > "iâ"
+"ĭ" + "a" > "iă"
+"ī" + "a" > "iā"
+"ĩ" + "a" > "iã"
+"í" + "o" > "ió"
+"ì" + "o" > "iò"
+"î" + "o" > "iô"
+"ĭ" + "o" > "iŏ"
+"ī" + "o" > "iō"
+"ĩ" + "o" > "iõ"
+"í" + "u" > "iú"
+"ì" + "u" > "iù"
+"î" + "u" > "iû"
+"ĭ" + "u" > "iŭ"
+"ī" + "u" > "iū"
+"ĩ" + "u" > "iũ"
+"í" + "e" > "ié"
+"ì" + "e" > "iè"
+"î" + "e" > "iê"
+"ĭ" + "e" > "iĕ"
+"ī" + "e" > "iē"
+"ĩ" + "e" > "iẽ"
+"Í" + "A" > "IÁ"
+"Ì" + "A" > "IÀ"
+"Î" + "A" > "IÂ"
+"Ĭ" + "A" > "IĂ"
+"Ī" + "A" > "IĀ"
+"Ĩ" + "A" > "IÃ"
+"Í" + "O" > "IÓ"
+"Ì" + "O" > "IÒ"
+"Î" + "O" > "IÔ"
+"Ĭ" + "O" > "IŎ"
+"Ī" + "O" > "IŌ"
+"Ĩ" + "O" > "IÕ"
+"Í" + "U" > "IÚ"
+"Ì" + "U" > "IÙ"
+"Î" + "U" > "IÛ"
+"Ĭ" + "U" > "IŬ"
+"Ī" + "U" > "IŪ"
+"Ĩ" + "U" > "IŨ"
+"Í" + "E" > "IÉ"
+"Ì" + "E" > "IÈ"
+"Î" + "E" > "IÊ"
+"Ĭ" + "E" > "IĔ"
+"Ī" + "E" > "IĒ"
+"Ĩ" + "E" > "IẼ"
+"Í" + "a" > "Iá"
+"Ì" + "a" > "Ià"
+"Î" + "a" > "Iâ"
+"Ĭ" + "a" > "Iă"
+"Ī" + "a" > "Iā"
+"Ĩ" + "a" > "Iã"
+"Í" + "o" > "Ió"
+"Ì" + "o" > "Iò"
+"Î" + "o" > "Iô"
+"Ĭ" + "o" > "Iŏ"
+"Ī" + "o" > "Iō"
+"Ĩ" + "o" > "Iõ"
+"Í" + "u" > "Iú"
+"Ì" + "u" > "Iù"
+"Î" + "u" > "Iû"
+"Ĭ" + "u" > "Iŭ"
+"Ī" + "u" > "Iū"
+"Ĩ" + "u" > "Iũ"
+"Í" + "e" > "Ié"
+"Ì" + "e" > "Iè"
+"Î" + "e" > "Iê"
+"Ĭ" + "e" > "Iĕ"
+"Ī" + "e" > "Iē"
+"Ĩ" + "e" > "Iẽ"
+
+"Ò͘" + any(s) > "O͘" index(s, 3)
+"Ô͘" + any(f) > "O͘" index(f, 3)
+"Ó͘" + any(r) > "O͘" index(r, 3)
+"Ō͘" + any(j) > "O͘" index(j, 3)
+"Ŏ͘" + any(w) > "O͘" index(w, 3)
+"ò͘" + any(s) > "o͘" index(s, 3)
+"ô͘" + any(f) > "o͘" index(f, 3)
+"ó͘" + any(r) > "o͘" index(r, 3)
+"ō͘" + any(j) > "o͘" index(j, 3)
+"ŏ͘" + any(w) > "o͘" index(w, 3)
+
+'U' + any(two_u) > 'Ṳ'
+'Ú' + any(two_u) > 'Ṳ́'
+'Ù' + any(two_u) > 'Ṳ̀'
+'Û' + any(two_u) > 'Ṳ̂'
+'Ū' + any(two_u) > 'Ṳ̄'
+'Ŭ' + any(two_u) > 'Ṳ̆'
+'Ũ' + any(two_u) > 'Ṳ̃'
+'u' + any(two_u) > 'ṳ'
+'ú' + any(two_u) > 'ṳ́'
+'ù' + any(two_u) > 'ṳ̀'
+'û' + any(two_u) > 'ṳ̂'
+'ū' + any(two_u) > 'ṳ̄'
+'ŭ' + any(two_u) > 'ṳ̆'
+'ũ' + any(two_u) > 'ṳ̃'
+'Ṳ' + any(two_u) > 'U' index(two_u, 2)
+'Ṳ́' + any(two_u) > 'Ú' index(two_u, 3)
+'Ṳ̀' + any(two_u) > 'Ù' index(two_u, 3)
+'Ṳ̂' + any(two_u) > 'Û' index(two_u, 3)
+'Ṳ̄' + any(two_u) > 'Ū' index(two_u, 3)
+'Ṳ̆' + any(two_u) > 'Ŭ' index(two_u, 3)
+'Ṳ̃' + any(two_u) > 'Ũ' index(two_u, 3)
+'ṳ' + any(two_u) > 'u' index(two_u, 2)
+'ṳ́' + any(two_u) > 'ú' index(two_u, 3)
+'ṳ̀' + any(two_u) > 'ù' index(two_u, 3)
+'ṳ̂' + any(two_u) > 'û' index(two_u, 3)
+'ṳ̄' + any(two_u) > 'ū' index(two_u, 3)
+'ṳ̆' + any(two_u) > 'ŭ' index(two_u, 3)
+'ṳ̃' + any(two_u) > 'ũ' index(two_u, 3)
+'A' + any(two_a) > 'O̤'
+'Á' + any(two_a) > 'Ó̤'
+'À' + any(two_a) > 'Ò̤'
+'Â' + any(two_a) > 'Ô̤'
+'Ā' + any(two_a) > 'Ō̤'
+'Ă' + any(two_a) > 'Ŏ̤'
+'a' + any(two_a) > 'o̤'
+'á' + any(two_a) > 'ó̤'
+'à' + any(two_a) > 'ò̤'
+'â' + any(two_a) > 'ô̤'
+'ā' + any(two_a) > 'ō̤'
+'ă' + any(two_a) > 'ŏ̤'
+'O̤' + any(two_a) > 'A' index(two_a, 3)
+'Ó̤' + any(two_a) > 'Á' index(two_a, 3) 
+'Ò̤' + any(two_a) > 'À' index(two_a, 3) 
+'Ô̤' + any(two_a) > 'Â' index(two_a, 3) 
+'Ō̤' + any(two_a) > 'Ā' index(two_a, 3) 
+'Ŏ̤' + any(two_a) > 'Ă' index(two_a, 3) 
+'o̤' + any(two_a) > 'a' index(two_a, 3)
+'ó̤' + any(two_a) > 'á' index(two_a, 3) 
+'ò̤' + any(two_a) > 'à' index(two_a, 3) 
+'ô̤' + any(two_a) > 'â' index(two_a, 3) 
+'ō̤' + any(two_a) > 'ā' index(two_a, 3) 
+'ŏ̤' + any(two_a) > 'ă' index(two_a, 3) 
+
++ [ALT K_QUOTE] > '‘'
++ [ALT SHIFT K_QUOTE] > '“'
+
+"‘" + [ALT K_QUOTE] > "‘’"
+"“" + [ALT SHIFT K_QUOTE] > "“”"
+
+any(punctuation) + [ALT K_QUOTE] > index(punctuation, 1)'’'
+any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1)'’'
+any(vowels_tones) + [ALT K_QUOTE] > index(vowels_tones, 1)'’'
+any(vowels_tonef) + [ALT K_QUOTE] > index(vowels_tonef, 1)'’'
+any(vowels_toner) + [ALT K_QUOTE] > index(vowels_toner, 1)'’'
+any(vowels_tonej) + [ALT K_QUOTE] > index(vowels_tonej, 1)'’'
+any(vowels_tonew) + [ALT K_QUOTE] > index(vowels_tonew, 1)'’'
+any(vowels_tonex) + [ALT K_QUOTE] > index(vowels_tonex, 1)'’'
+
+any(punctuation) + [ALT SHIFT K_QUOTE] > index(punctuation, 1)'”'
+any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1)'”'
+any(vowels_tones) + [ALT SHIFT K_QUOTE] > index(vowels_tones, 1)'”'
+any(vowels_tonef) + [ALT SHIFT K_QUOTE] > index(vowels_tonef, 1)'”'
+any(vowels_toner) + [ALT SHIFT K_QUOTE] > index(vowels_toner, 1)'”'
+any(vowels_tonej) + [ALT SHIFT K_QUOTE] > index(vowels_tonej, 1)'”'
+any(vowels_tonew) + [ALT SHIFT K_QUOTE] > index(vowels_tonew, 1)'”'
+any(vowels_tonex) + [ALT SHIFT K_QUOTE] > index(vowels_tonex, 1)'”'
+
+"o͘" + [ALT K_QUOTE] > "o͘’"
+"ò͘" + [ALT K_QUOTE] > "ò͘’"
+"ó͘" + [ALT K_QUOTE] > "ó͘’"
+"ô͘" + [ALT K_QUOTE] > "ô͘’"
+"ō͘" + [ALT K_QUOTE] > "ō͘’"
+"ŏ͘" + [ALT K_QUOTE] > "ŏ͘’"
+"ṳ" + [ALT K_QUOTE] > "ṳ’"
+"ṳ̀" + [ALT K_QUOTE] > "ṳ̀’"
+"ṳ́" + [ALT K_QUOTE] > "ṳ́’"
+"ṳ̂" + [ALT K_QUOTE] > "ṳ̂’"
+"ṳ̄" + [ALT K_QUOTE] > "ṳ̄’"
+"ṳ̆" + [ALT K_QUOTE] > "ṳ̆’"
+"ṳ̃" + [ALT K_QUOTE] > "ṳ̃’"
+"o̤" + [ALT K_QUOTE] > "o̤’"
+"ò̤" + [ALT K_QUOTE] > "ò̤’"
+"ó̤" + [ALT K_QUOTE] > "ó̤’"
+"ô̤" + [ALT K_QUOTE] > "ô̤’"
+"ō̤" + [ALT K_QUOTE] > "ō̤’"
+"ŏ̤" + [ALT K_QUOTE] > "ŏ̤’"
+"m̀" + [ALT K_QUOTE] > "m̀’"
+"ḿ" + [ALT K_QUOTE] > "ḿ’"
+"m̂" + [ALT K_QUOTE] > "m̂’"
+"m̄" + [ALT K_QUOTE] > "m̄’"
+"m̆" + [ALT K_QUOTE] > "m̆’"
+"m̃" + [ALT K_QUOTE] > "m̃’"
+"m̍" + [ALT K_QUOTE] > "m̍’"
+"ǹ" + [ALT K_QUOTE] > "ǹ’"
+"n̂" + [ALT K_QUOTE] > "n̂’"
+"ń" + [ALT K_QUOTE] > "ń’"
+"n̄" + [ALT K_QUOTE] > "n̄’"
+"n̆" + [ALT K_QUOTE] > "n̆’"
+"n̍" + [ALT K_QUOTE] > "n̍’"
+"a̍" + [ALT K_QUOTE] > "a̍’"
+"u̍" + [ALT K_QUOTE] > "u̍’"
+"i̍" + [ALT K_QUOTE] > "i̍’"
+"e̍" + [ALT K_QUOTE] > "e̍’"
+"o̍" + [ALT K_QUOTE] > "o̍’"
+"o̍͘" + [ALT K_QUOTE] > "o̍͘’"
+"ṳ̍" + [ALT K_QUOTE] > "ṳ̍’"
+"o̤̍" + [ALT K_QUOTE] > "o̤̍’"
+
+"O͘" + [ALT K_QUOTE] > "O͘’"
+"Ò͘" + [ALT K_QUOTE] > "Ò͘’"
+"Ó͘" + [ALT K_QUOTE] > "Ó͘’"
+"Ô͘" + [ALT K_QUOTE] > "Ô͘’"
+"Ō͘" + [ALT K_QUOTE] > "Ō͘’"
+"Ŏ͘" + [ALT K_QUOTE] > "Ŏ͘’"
+"Ṳ" + [ALT K_QUOTE] > "Ṳ’"
+"Ṳ̀" + [ALT K_QUOTE] > "Ṳ̀’"
+"Ṳ́" + [ALT K_QUOTE] > "Ṳ́’"
+"Ṳ̂" + [ALT K_QUOTE] > "Ṳ̂’"
+"Ṳ̄" + [ALT K_QUOTE] > "Ṳ̄’"
+"Ṳ̆" + [ALT K_QUOTE] > "Ṳ̆’"
+"Ṳ̃" + [ALT K_QUOTE] > "Ṳ̃’"
+"O̤" + [ALT K_QUOTE] > "O̤’"
+"Ò̤" + [ALT K_QUOTE] > "Ò̤’"
+"Ó̤" + [ALT K_QUOTE] > "Ó̤’"
+"Ô̤" + [ALT K_QUOTE] > "Ô̤’"
+"Ō̤" + [ALT K_QUOTE] > "Ō̤’"
+"Ŏ̤" + [ALT K_QUOTE] > "Ŏ̤’"
+"M̀" + [ALT K_QUOTE] > "M̀’"
+"Ḿ" + [ALT K_QUOTE] > "Ḿ’"
+"M̂" + [ALT K_QUOTE] > "M̂’"
+"M̄" + [ALT K_QUOTE] > "M̄’"
+"M̆" + [ALT K_QUOTE] > "M̆’"
+"M̃" + [ALT K_QUOTE] > "M̃’"
+"M̍" + [ALT K_QUOTE] > "M̍’"
+"Ǹ" + [ALT K_QUOTE] > "Ǹ’"
+"N̂" + [ALT K_QUOTE] > "N̂’"
+"Ń" + [ALT K_QUOTE] > "Ń’"
+"N̄" + [ALT K_QUOTE] > "N̄’"
+"N̆" + [ALT K_QUOTE] > "N̆’"
+"N̍" + [ALT K_QUOTE] > "N̍’"
+"A̍" + [ALT K_QUOTE] > "A̍’"
+"U̍" + [ALT K_QUOTE] > "U̍’"
+"I̍" + [ALT K_QUOTE] > "I̍’"
+"E̍" + [ALT K_QUOTE] > "E̍’"
+"O̍" + [ALT K_QUOTE] > "O̍’"
+"O̍͘" + [ALT K_QUOTE] > "O̍͘’"
+"Ṳ̍" + [ALT K_QUOTE] > "Ṳ̍’"
+"O̤̍" + [ALT K_QUOTE] > "O̤̍’"
+
+"o͘" + [ALT SHIFT K_QUOTE] > "o͘”"
+"ò͘" + [ALT SHIFT K_QUOTE] > "ò͘”"
+"ó͘" + [ALT SHIFT K_QUOTE] > "ó͘”"
+"ô͘" + [ALT SHIFT K_QUOTE] > "ô͘”"
+"ō͘" + [ALT SHIFT K_QUOTE] > "ō͘”"
+"ŏ͘" + [ALT SHIFT K_QUOTE] > "ŏ͘”"
+"ṳ" + [ALT SHIFT K_QUOTE] > "ṳ”"
+"ṳ̀" + [ALT SHIFT K_QUOTE] > "ṳ̀”"
+"ṳ́" + [ALT SHIFT K_QUOTE] > "ṳ́”"
+"ṳ̂" + [ALT SHIFT K_QUOTE] > "ṳ̂”"
+"ṳ̄" + [ALT SHIFT K_QUOTE] > "ṳ̄”"
+"ṳ̆" + [ALT SHIFT K_QUOTE] > "ṳ̆”"
+"ṳ̃" + [ALT SHIFT K_QUOTE] > "ṳ̃”"
+"o̤" + [ALT SHIFT K_QUOTE] > "o̤”"
+"ò̤" + [ALT SHIFT K_QUOTE] > "ò̤”"
+"ó̤" + [ALT SHIFT K_QUOTE] > "ó̤”"
+"ô̤" + [ALT SHIFT K_QUOTE] > "ô̤”"
+"ō̤" + [ALT SHIFT K_QUOTE] > "ō̤”"
+"ŏ̤" + [ALT SHIFT K_QUOTE] > "ŏ̤”"
+"m̀" + [ALT SHIFT K_QUOTE] > "m̀”"
+"ḿ" + [ALT SHIFT K_QUOTE] > "ḿ”"
+"m̂" + [ALT SHIFT K_QUOTE] > "m̂”"
+"m̄" + [ALT SHIFT K_QUOTE] > "m̄”"
+"m̆" + [ALT SHIFT K_QUOTE] > "m̆”"
+"m̃" + [ALT SHIFT K_QUOTE] > "m̃”"
+"m̍" + [ALT SHIFT K_QUOTE] > "m̍”"
+"ǹ" + [ALT SHIFT K_QUOTE] > "ǹ”"
+"n̂" + [ALT SHIFT K_QUOTE] > "n̂”"
+"ń" + [ALT SHIFT K_QUOTE] > "ń”"
+"n̄" + [ALT SHIFT K_QUOTE] > "n̄”"
+"n̆" + [ALT SHIFT K_QUOTE] > "n̆”"
+"n̍" + [ALT SHIFT K_QUOTE] > "n̍”"
+"a̍" + [ALT SHIFT K_QUOTE] > "a̍”"
+"u̍" + [ALT SHIFT K_QUOTE] > "u̍”"
+"i̍" + [ALT SHIFT K_QUOTE] > "i̍”"
+"e̍" + [ALT SHIFT K_QUOTE] > "e̍”"
+"o̍" + [ALT SHIFT K_QUOTE] > "o̍”"
+"o̍͘" + [ALT SHIFT K_QUOTE] > "o̍͘”"
+"ṳ̍" + [ALT SHIFT K_QUOTE] > "ṳ̍”"
+"o̤̍" + [ALT SHIFT K_QUOTE] > "o̤̍”"
+
+"O͘" + [ALT SHIFT K_QUOTE] > "O͘”"
+"Ò͘" + [ALT SHIFT K_QUOTE] > "Ò͘”"
+"Ó͘" + [ALT SHIFT K_QUOTE] > "Ó͘”"
+"Ô͘" + [ALT SHIFT K_QUOTE] > "Ô͘”"
+"Ō͘" + [ALT SHIFT K_QUOTE] > "Ō͘”"
+"Ŏ͘" + [ALT SHIFT K_QUOTE] > "Ŏ͘”"
+"Ṳ" + [ALT SHIFT K_QUOTE] > "Ṳ”"
+"Ṳ̀" + [ALT SHIFT K_QUOTE] > "Ṳ̀”"
+"Ṳ́" + [ALT SHIFT K_QUOTE] > "Ṳ́”"
+"Ṳ̂" + [ALT SHIFT K_QUOTE] > "Ṳ̂”"
+"Ṳ̄" + [ALT SHIFT K_QUOTE] > "Ṳ̄”"
+"Ṳ̆" + [ALT SHIFT K_QUOTE] > "Ṳ̆”"
+"Ṳ̃" + [ALT SHIFT K_QUOTE] > "Ṳ̃”"
+"O̤" + [ALT SHIFT K_QUOTE] > "O̤”"
+"Ò̤" + [ALT SHIFT K_QUOTE] > "Ò̤”"
+"Ó̤" + [ALT SHIFT K_QUOTE] > "Ó̤”"
+"Ô̤" + [ALT SHIFT K_QUOTE] > "Ô̤”"
+"Ō̤" + [ALT SHIFT K_QUOTE] > "Ō̤”"
+"Ŏ̤" + [ALT SHIFT K_QUOTE] > "Ŏ̤”"
+"M̀" + [ALT SHIFT K_QUOTE] > "M̀”"
+"Ḿ" + [ALT SHIFT K_QUOTE] > "Ḿ”"
+"M̂" + [ALT SHIFT K_QUOTE] > "M̂”"
+"M̄" + [ALT SHIFT K_QUOTE] > "M̄”"
+"M̆" + [ALT SHIFT K_QUOTE] > "M̆”"
+"M̃" + [ALT SHIFT K_QUOTE] > "M̃”"
+"M̍" + [ALT SHIFT K_QUOTE] > "M̍”"
+"Ǹ" + [ALT SHIFT K_QUOTE] > "Ǹ”"
+"N̂" + [ALT SHIFT K_QUOTE] > "N̂”"
+"Ń" + [ALT SHIFT K_QUOTE] > "Ń”"
+"N̄" + [ALT SHIFT K_QUOTE] > "N̄”"
+"N̆" + [ALT SHIFT K_QUOTE] > "N̆”"
+"N̍" + [ALT SHIFT K_QUOTE] > "N̍”"
+"A̍" + [ALT SHIFT K_QUOTE] > "A̍”"
+"U̍" + [ALT SHIFT K_QUOTE] > "U̍”"
+"I̍" + [ALT SHIFT K_QUOTE] > "I̍”"
+"E̍" + [ALT SHIFT K_QUOTE] > "E̍”"
+"O̍" + [ALT SHIFT K_QUOTE] > "O̍”"
+"O̍͘" + [ALT SHIFT K_QUOTE] > "O̍͘”"
+"Ṳ̍" + [ALT SHIFT K_QUOTE] > "Ṳ̍”"
+"O̤̍" + [ALT SHIFT K_QUOTE] > "O̤̍”"
+
+'o͘' + [K_BKSP] > nul
+'ò͘' + [K_BKSP] > nul
+'ô͘' + [K_BKSP] > nul
+'ó͘' + [K_BKSP] > nul
+'ō͘' + [K_BKSP] > nul
+'ŏ͘' + [K_BKSP] > nul
+'ṳ' + [K_BKSP] > nul
+'ṳ̀' + [K_BKSP] > nul
+'ṳ̂' + [K_BKSP] > nul
+'ṳ́' + [K_BKSP] > nul
+'ṳ̃' + [K_BKSP] > nul
+'ṳ̄' + [K_BKSP] > nul
+'ṳ̆' + [K_BKSP] > nul
+'o̤' + [K_BKSP] > nul
+'ò̤' + [K_BKSP] > nul
+'ô̤' + [K_BKSP] > nul
+'ó̤' + [K_BKSP] > nul
+'ō̤' + [K_BKSP] > nul
+'ŏ̤' + [K_BKSP] > nul
+'m̀' + [K_BKSP] > nul
+'m̂' + [K_BKSP] > nul
+'m̃' + [K_BKSP] > nul
+'m̄' + [K_BKSP] > nul
+'m̆' + [K_BKSP] > nul
+'n̂' + [K_BKSP] > nul
+'n̄' + [K_BKSP] > nul
+'n̆' + [K_BKSP] > nul
+'n̍' + [K_BKSP] > nul
+'a̍' + [K_BKSP] > nul
+'e̍' + [K_BKSP] > nul
+'i̍' + [K_BKSP] > nul
+'o̍' + [K_BKSP] > nul
+'o̍͘' + [K_BKSP] > nul
+'u̍' + [K_BKSP] > nul
+'ṳ̍' + [K_BKSP] > nul
+'o̤̍' + [K_BKSP] > nul
+
+'O͘' + [K_BKSP] > nul
+'Ò͘' + [K_BKSP] > nul
+'Ô͘' + [K_BKSP] > nul
+'Ó͘' + [K_BKSP] > nul
+'Ō͘' + [K_BKSP] > nul
+'Ŏ͘' + [K_BKSP] > nul
+'Ṳ' + [K_BKSP] > nul
+'Ṳ̀' + [K_BKSP] > nul
+'Ṳ̂' + [K_BKSP] > nul
+'Ṳ́' + [K_BKSP] > nul
+'Ṳ̃' + [K_BKSP] > nul
+'Ṳ̄' + [K_BKSP] > nul
+'Ṳ̆' + [K_BKSP] > nul
+'O̤' + [K_BKSP] > nul
+'Ò̤' + [K_BKSP] > nul
+'Ô̤' + [K_BKSP] > nul
+'Ó̤' + [K_BKSP] > nul
+'Ō̤' + [K_BKSP] > nul
+'Ŏ̤' + [K_BKSP] > nul
+'M̀' + [K_BKSP] > nul
+'M̂' + [K_BKSP] > nul
+'M̃' + [K_BKSP] > nul
+'M̄' + [K_BKSP] > nul
+'M̆' + [K_BKSP] > nul
+'N̂' + [K_BKSP] > nul
+'N̄' + [K_BKSP] > nul
+'N̆' + [K_BKSP] > nul
+'N̍' + [K_BKSP] > nul
+'A̍' + [K_BKSP] > nul
+'E̍' + [K_BKSP] > nul
+'I̍' + [K_BKSP] > nul
+'O̍' + [K_BKSP] > nul
+'O̍͘' + [K_BKSP] > nul
+'U̍' + [K_BKSP] > nul
+'Ṳ̍' + [K_BKSP] > nul
+'O̤̍' + [K_BKSP] > nul
+
+'o͘' + [SHIFT K_BKSP] > nul
+'ò͘' + [SHIFT K_BKSP] > nul
+'ô͘' + [SHIFT K_BKSP] > nul
+'ó͘' + [SHIFT K_BKSP] > nul
+'ō͘' + [SHIFT K_BKSP] > nul
+'ŏ͘' + [SHIFT K_BKSP] > nul
+'ṳ' + [SHIFT K_BKSP] > nul
+'ṳ̀' + [SHIFT K_BKSP] > nul
+'ṳ̂' + [SHIFT K_BKSP] > nul
+'ṳ́' + [SHIFT K_BKSP] > nul
+'ṳ̃' + [SHIFT K_BKSP] > nul
+'ṳ̄' + [SHIFT K_BKSP] > nul
+'ṳ̆' + [SHIFT K_BKSP] > nul
+'o̤' + [SHIFT K_BKSP] > nul
+'ò̤' + [SHIFT K_BKSP] > nul
+'ô̤' + [SHIFT K_BKSP] > nul
+'ó̤' + [SHIFT K_BKSP] > nul
+'ō̤' + [SHIFT K_BKSP] > nul
+'ŏ̤' + [SHIFT K_BKSP] > nul
+'m̀' + [SHIFT K_BKSP] > nul
+'m̂' + [SHIFT K_BKSP] > nul
+'m̃' + [SHIFT K_BKSP] > nul
+'m̄' + [SHIFT K_BKSP] > nul
+'m̆' + [SHIFT K_BKSP] > nul
+'n̂' + [SHIFT K_BKSP] > nul
+'n̄' + [SHIFT K_BKSP] > nul
+'n̆' + [SHIFT K_BKSP] > nul
+'n̍' + [SHIFT K_BKSP] > nul
+'a̍' + [SHIFT K_BKSP] > nul
+'e̍' + [SHIFT K_BKSP] > nul
+'i̍' + [SHIFT K_BKSP] > nul
+'o̍' + [SHIFT K_BKSP] > nul
+'o̍͘' + [SHIFT K_BKSP] > nul
+'u̍' + [SHIFT K_BKSP] > nul
+'ṳ̍' + [SHIFT K_BKSP] > nul
+'o̤̍' + [SHIFT K_BKSP] > nul
+
+'O͘' + [SHIFT K_BKSP] > nul
+'Ò͘' + [SHIFT K_BKSP] > nul
+'Ô͘' + [SHIFT K_BKSP] > nul
+'Ó͘' + [SHIFT K_BKSP] > nul
+'Ō͘' + [SHIFT K_BKSP] > nul
+'Ŏ͘' + [SHIFT K_BKSP] > nul
+'Ṳ' + [SHIFT K_BKSP] > nul
+'Ṳ̀' + [SHIFT K_BKSP] > nul
+'Ṳ̂' + [SHIFT K_BKSP] > nul
+'Ṳ́' + [SHIFT K_BKSP] > nul
+'Ṳ̃' + [SHIFT K_BKSP] > nul
+'Ṳ̄' + [SHIFT K_BKSP] > nul
+'Ṳ̆' + [SHIFT K_BKSP] > nul
+'O̤' + [SHIFT K_BKSP] > nul
+'Ò̤' + [SHIFT K_BKSP] > nul
+'Ô̤' + [SHIFT K_BKSP] > nul
+'Ó̤' + [SHIFT K_BKSP] > nul
+'Ō̤' + [SHIFT K_BKSP] > nul
+'Ŏ̤' + [SHIFT K_BKSP] > nul
+'M̀' + [SHIFT K_BKSP] > nul
+'M̂' + [SHIFT K_BKSP] > nul
+'M̃' + [SHIFT K_BKSP] > nul
+'M̄' + [SHIFT K_BKSP] > nul
+'M̆' + [SHIFT K_BKSP] > nul
+'N̂' + [SHIFT K_BKSP] > nul
+'N̄' + [SHIFT K_BKSP] > nul
+'N̆' + [SHIFT K_BKSP] > nul
+'N̍' + [SHIFT K_BKSP] > nul
+'A̍' + [SHIFT K_BKSP] > nul
+'E̍' + [SHIFT K_BKSP] > nul
+'I̍' + [SHIFT K_BKSP] > nul
+'O̍' + [SHIFT K_BKSP] > nul
+'O̍͘' + [SHIFT K_BKSP] > nul
+'U̍' + [SHIFT K_BKSP] > nul
+'Ṳ̍' + [SHIFT K_BKSP] > nul
+'O̤̍' + [SHIFT K_BKSP] > nul

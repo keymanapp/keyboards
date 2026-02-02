@@ -25,13 +25,14 @@ c Fix bug related to explicit virama
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Hindi Devanagari Phonetic (ITRANS)'
-store(&TARGETS) 'web desktop'
+store(&TARGETS) 'any'
 store(&COPYRIGHT) '© sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard for Hindi.'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
-store(&KEYBOARDVERSION) '1.2.1'
+store(&KEYBOARDVERSION) '1.4.0'
 store(&BITMAP) 'itrans_devanagari_hindi.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_hindi.kvks'
+store(&LAYOUTFILE) 'itrans_devanagari_hindi.keyman-touch-layout'
 
 begin Unicode > use(main)
 group(main) using keys

@@ -1,7 +1,7 @@
-Dɛnɛsųłiné keyboard
+Dënesųłıné keyboard
 ======================
 
-Dɛnɛsųłiné keyboard layout for Unicode
+Dënesųłıné keyboard layout for Unicode
 
 Links
 -----
@@ -15,7 +15,3 @@ Supported Platforms
 
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

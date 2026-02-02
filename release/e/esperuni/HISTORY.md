@@ -1,6 +1,10 @@
 Experanto Cx Change History
 ====================
 
+1.2 (2024-08-30)
+----------------
+* Added tablet layout
+
 1.1 (2020-Oct-07)
 ----------------
 * Source moved to Github

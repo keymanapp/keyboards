@@ -5,9 +5,9 @@ c Created by Keyman Developer 13.0.100.0)
 c with name "Udi Keyboard"
 
 store(&VERSION) '10.01'
-store(&NAME) 'Udi(SIL)'
-store(&COPYRIGHT) '©SIL International (Eurasia)'
-store(&KEYBOARDVERSION) '1.01'
+store(&NAME) 'Udi (SIL)'
+store(&COPYRIGHT) '© SIL Global (Eurasia)'
+store(&KEYBOARDVERSION) '1.2.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'udi_keyboard.kvks'
 store(&LAYOUTFILE) 'udi_keyboard.keyman-touch-layout'
@@ -40,7 +40,7 @@ c Output deadkeys only for the accent characters pressed
 c Rules for accented characters
 dk(opnbracket) + any( plainalphabet )  > index( groupopnbrk, 2 )
 dk(clsbracket) + any( plainalphabet1 ) > index( groupclsbrk, 2 )
-dk(quote)      + any( plainalphabet2 ) > index( groupquote, 2 )U+02B9 
+dk(quote)      + any( plainalphabet2 ) > index( groupquote, 2 ) U+02B9 
 dk(bkquote)    + any( plainalphabet3 ) > index( groupbkquote, 2 )
  
 

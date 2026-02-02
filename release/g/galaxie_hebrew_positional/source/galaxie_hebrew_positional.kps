@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Galaxie Hebrew (Positional)</Name>
-    <Copyright URL="">2004-2018 Galaxie Software and SIL International</Copyright>
+    <Copyright URL="">(c) Galaxie Software and SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for Biblical Hebrew, a Semitic language of the
+ancient Near East and the language of the Hebrew Bible</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -50,17 +55,57 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\galaxie_hebrew_positional.js</Name>
+      <Description>File galaxie_hebrew_positional.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\EzraSIL_Licenses.txt</Name>
+      <Description>File EzraSIL_Licenses.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</Name>
+      <Description>Font Ezra SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Hebrew (Positional)</Name>
       <ID>galaxie_hebrew_positional</ID>
-      <Version>2.2</Version>
+      <Version>2.3</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</DisplayFont>
       <Languages>
-        <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
+        <Language ID="hbo">Ancient Hebrew</Language>
         <Language ID="he">Hebrew</Language>
       </Languages>
+      <Examples>
+        <Example ID="hbo" Keys="b \\ = r @ a v ! y t" Text="בְּרֵאשִׁית" Note="&quot;In the beginning&quot; or &quot;Genesis&quot;"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates"/>
+    <RelatedPackage ID="galaxiehebrewkm6" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

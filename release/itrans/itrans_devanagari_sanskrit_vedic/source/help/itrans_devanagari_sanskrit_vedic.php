@@ -14,10 +14,6 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Vedic Sanskrit Devanagari Phonetic (ITRANS) </h2>
-
-<h3> <font color=Chocolate>Vedic Sanskrit Devanagari Phonetic (ITRANS) </font>Keyboard Version 1.2.1</h3>
-
 <p>This is a phonetic Devanagari keyboard layout with support for Vedic Sanskrit 
 (Devanagari Extended and Vedic Extensions Unicode ranges). 
 It is based on the <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong>

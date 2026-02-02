@@ -60,7 +60,7 @@ store(&NAME) "BJ-OjiCree (Kingfisher)"
 store(&BITMAP) 'bj_oji_cree.ico'
 store(&COPYRIGHT) 'Copyright (c) Bill Jancewicz NDC/SIL'
 store(&VISUALKEYBOARD) 'bj_oji_cree.kvks'
-store(&KEYBOARDVERSION) '9.1.1'
+store(&KEYBOARDVERSION) '9.2.0'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'bj_oji_cree.keyman-touch-layout'
 
@@ -220,6 +220,13 @@ U+202F + "_" > U+00A0 c standard non-breaking space
 U+2018 + "<" > U+201C c open double quote
 U+2019 + ">" > U+201D c close double quote
 
+c added backspace rules for when NFC is used to behave more like NFD did
+any(C_wfc_long_a) + [K_BKSP] > index(C_wf_long_a,1)
+any(C_wfc_long_i) + [K_BKSP] > index(C_wf_long_i,1)
+any(C_wfc_long_u) + [K_BKSP] > index(C_wf_long_u,1)
+any(C_wfc)        + [K_BKSP] > index(C_wf,1) 
+
+
 c If we did anything, then go look for syllables
     match   > use(MakeSyllables)
 
@@ -313,18 +320,23 @@ c Special rule for Christ (remember, ch is already c)
 c ch     r      i      s      t    > christ symbol
     U+1428 U+1552 U+1403 U+1422 U+141F > U+166D
 
-
+c These rules were added for when NFC was introduced 10-Aug-2022
+c ----
 c short vowels
 if(option_key = '') any(C_wf) U+1427 > index(C_wfc,2)
 if(option_key = '') any(C_wf) U+1427 deadkey(1) > index(C_wfc,2)
 
 c long vowels
 if(option_key = '') any(C_wf_long_a) U+140A > index(C_wfc_long_a,2)
-c $keymanonly: if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
-c $keymanonly: if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
-
 if(option_key = '') any(C_wf_long_i) U+1403 > index(C_wfc_long_i,2)
 if(option_key = '') any(C_wf_long_u) U+1405 > index(C_wfc_long_u,2)
+
+c These rules were added for NFC for long vowel followed by u to fix a bug when NFC 20-Feb-2024
+if(option_key = '') any(C_wfc_long_a) U+1427 > index(C_wfc_long_a,2) c bwaa mwaa outputting wrong NFC
+if(option_key = '') any(C_wfc_long_i) U+1427 > index(C_wfc_long_i,2) c bwii mwii 
+if(option_key = '') any(C_wfc_long_u) U+1427 > index(C_wfc_long_u,2) c bwuu mwuu 
+
+c end of rules related to NFC
 
 c If we did anything, then go back through again
     match > use(MakeSyllables)

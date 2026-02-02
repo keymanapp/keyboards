@@ -1,6 +1,10 @@
 Hebrew (Standard) Basic Change History
 ====================
 
+1.1.1 (1 Oct 2024)
+-----------------
+* Changed display font for .kvks
+
 1.1 (2022-02-02)
 ----------------
 * Updated OSK and touch layout

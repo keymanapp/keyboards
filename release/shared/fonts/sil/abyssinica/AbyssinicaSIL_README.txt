@@ -9,7 +9,7 @@ Abyssinica SIL provides glyphs for a wide range of Ethiopic and Latin.
 Please read the online documentation to see what ranges are supported. 
 
 Abyssinica SIL is released under the SIL Open Font License.
-Abyssinica SIL is a trademark of SIL International.
+Abyssinica SIL is a trademark of SIL Global.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
@@ -71,14 +71,11 @@ glyphs (symbols) in a font and allow you to enter them by clicking on the
 glyph you want.
 
 Rendering:
-This font is designed to work with either of two advanced font technologies, 
-Graphite or OpenType. To take advantage of the advanced typographic 
-capabilities of this font, you must be using applications that provide an
-adequate level of support for Graphite or OpenType. 
+This font is designed to work with the OpenType font technology. To take advantage of the advanced typographic capabilities of this font, you must be using applications that provide an adequate level of support for OpenType. The OpenType advanced capabilities provide access to the variant character forms used in some languages.
 
 CONTACT
 ========
-For more information please visit the Abyssinica SIL page on SIL International's
+For more information please visit the Abyssinica SIL page on SIL Global's
 Computers and Writing systems website:
 https://software.sil.org/abyssinica/
 

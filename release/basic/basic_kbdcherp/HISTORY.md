@@ -1,6 +1,11 @@
 Cherokee Nation Phonetic Basic Change History
 ====================
 
+1.1.0 (2024-08-28)
+------------------
+* Add true tablet layout
+* Changed language tag to minimal
+
 1.0.1 (2022-05-12)
 ------------------
 * Add NCAPS to nul store to avoid inconsistent matches

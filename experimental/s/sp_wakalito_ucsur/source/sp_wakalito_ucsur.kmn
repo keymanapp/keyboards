@@ -1,0 +1,448 @@
+﻿c Based on Wakalito for iOS and Espanso
+c by jan Likipi with kala pona Tonyu and jan Tepo.
+c Created for Keyman by jan Lepeka in 2024.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Sitelen Pona (Wakalito, UCSUR)'
+store(&COPYRIGHT) '© jan Lepeka, based on Wakalito by jan Likipi with kala pona Tonyu and jan Tepo'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sp_wakalito_ucsur.ico'
+store(&VISUALKEYBOARD) 'sp_wakalito_ucsur.kvks'
+store(&LAYOUTFILE) 'sp_wakalito_ucsur.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c punctuation and format controls
+store(zero_width_joiner)     U+200D
+store(ideographic_space)     U+3000
+store(ideographic_comma)     U+3001 U+FE01
+store(ideographic_full_stop) U+3002 U+FE01
+store(left_corner_bracket)   U+300C
+store(right_corner_bracket)  U+300D
+store(start_of_cartouche)    U+F1990
+store(end_of_cartouche)      U+F1991
+store(start_of_long_pi)      U+F194D U+F1997
+store(end_of_long_pi)        U+F1998
+store(stacking_joiner)       U+F1995
+store(scaling_joiner)        U+F1996
+store(start_of_extension)    U+F1997
+store(end_of_extension)      U+F1998
+store(start_of_reverse_ext)  U+F199A
+store(end_of_reverse_ext)    U+F199B
+
+c Wakalito radicals
+store(RSS) '〚' c indicates the start of a sequence of radicals
+store(RSE) '〛' c indicates the end of a sequence of radicals
+store(R_1) '󱲉'
+store(R_2) '󱲚'
+store(R_3) '󱲋'
+store(R_4) '󱲂'
+store(R_5) '󱲓'
+store(R_6) '󱲆'
+store(R_Q) '󱲐'
+store(R_W) '󱲙'
+store(R_E) '󱲈'
+store(R_R) '󱲃'
+store(R_T) '󱲔'
+store(R_Y) '󱲇'
+store(R_A) '󱲌'
+store(R_S) '󱲅'
+store(R_D) '󱲎'
+store(R_F) '󱲍'
+store(R_G) '󱲜'
+store(wr) $R_1 $R_2 $R_3 $R_4 $R_5 $R_6 $R_Q $R_W $R_E $R_R $R_T $R_Y $R_A $R_S $R_D $R_F $R_G
+
+c Wakalito keys
+store(wk) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_A] [K_S] [K_D] [K_F] [K_G]
+
+c non-Wakalito keys
+store(nk) [K_BKQUOTE] [K_7] [K_8] [K_9] [K_0] [K_HYPHEN] [K_EQUAL] [K_U] [K_I] [K_O] [K_P] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_H] [K_J] [K_K] [K_L] [K_COLON] [K_QUOTE] [K_oE2] [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] [K_COMMA] [K_PERIOD] [K_SLASH]
+
+c trigger keys
+$keymanonly: store(tk) [K_SPACE] [K_TAB] [K_ENTER] [K_NPENTER]
+$keymanweb:  store(tk) [K_SPACE] [K_TAB] [K_ENTER]
+
+c rules for entering radicals
+        + any(wk) > $RSS index(wr,1) $RSE
+$RSS    + any(wk) > context index(wr,2)
+any(wr) + any(wk) > context index(wr,2)
+$RSE    + any(wk) > index(wr,2) context
+        + any(nk) > beep
+
+c rules for backspacing
+$RSS         + [K_BKSP] > context beep
+$RSS    $RSE + [K_BKSP] > nul
+any(wr) $RSE + [K_BKSP] > $RSE
+
+c backspacing over the comma or the full stop should delete both the
+c punctuation and the variation selector, not just the variation selector
+outs(ideographic_comma)     + [K_BKSP] > nul
+outs(ideographic_full_stop) + [K_BKSP] > nul
+
+c rules for triggering
+$RSS    + any(tk) > context beep
+any(wr) + any(tk) > context beep
+$RSE    + any(tk) > context beep
+
+c punctuation
+c additions by jan Lepeka
+$RSS '󱲇󱲆'                   $RSE + any(tk) > outs(zero_width_joiner)
+$RSS '󱲆󱲇'                   $RSE + any(tk) > outs(ideographic_space)
+$RSS '󱲜'                     $RSE + any(tk) > outs(ideographic_comma)
+$RSS '󱲜󱲋'                   $RSE + any(tk) > outs(ideographic_full_stop)
+$RSS '󱲜󱲜'                   $RSE + any(tk) > outs(left_corner_bracket)
+$RSS '󱲜󱲜󱲋'                 $RSE + any(tk) > outs(right_corner_bracket)
+$RSS '󱲆'                     $RSE + any(tk) > outs(start_of_cartouche)
+$RSS '󱲇'                     $RSE + any(tk) > outs(end_of_cartouche)
+$RSS '󱲙󱲚󱲜'                 $RSE + any(tk) > outs(start_of_long_pi)
+$RSS '󱲙󱲚󱲋'                 $RSE + any(tk) > outs(end_of_long_pi)
+$RSS '󱲇󱲃󱲆'                 $RSE + any(tk) > outs(stacking_joiner)
+$RSS '󱲇󱲎󱲆'                 $RSE + any(tk) > outs(scaling_joiner)
+$RSS '󱲇󱲅󱲆'                 $RSE + any(tk) > outs(scaling_joiner)
+$RSS '󱲚󱲃󱲜'                 $RSE + any(tk) > outs(start_of_extension)
+$RSS '󱲃󱲚󱲜'                 $RSE + any(tk) > outs(start_of_extension)
+$RSS '󱲚󱲃󱲋'                 $RSE + any(tk) > outs(end_of_extension)
+$RSS '󱲃󱲚󱲋'                 $RSE + any(tk) > outs(end_of_extension)
+$RSS '󱲚󱲂󱲜'                 $RSE + any(tk) > outs(start_of_reverse_ext)
+$RSS '󱲂󱲚󱲜'                 $RSE + any(tk) > outs(start_of_reverse_ext)
+$RSS '󱲚󱲂󱲋'                 $RSE + any(tk) > outs(end_of_reverse_ext)
+$RSS '󱲂󱲚󱲋'                 $RSE + any(tk) > outs(end_of_reverse_ext)
+$RSS '󱲋'                     $RSE + any(tk) > '󱦜'
+$RSS '󱲋󱲋'                   $RSE + any(tk) > '󱦜󱦜'
+$RSS '󱲋󱲋󱲋'                 $RSE + any(tk) > '󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋'               $RSE + any(tk) > '󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋'             $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋󱲋'           $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋󱲋󱲋'         $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋'       $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋'     $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋󱲋'   $RSE + any(tk) > '󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜󱦜'
+$RSS '󱲌'                     $RSE + any(tk) > '󱦝'
+
+c nimi pu
+$RSS '󱲙󱲋󱲋'                 $RSE + any(tk) > '󱤀'     c a
+$RSS '󱲙󱲈󱲋'                 $RSE + any(tk) > '󱤀'     c a
+$RSS '󱲙󱲋󱲙󱲋'               $RSE + any(tk) > '󱤀󱤀󱤀' c a a a
+$RSS '󱲋󱲋󱲚󱲚󱲚󱲈'           $RSE + any(tk) > '󱤁'     c akesi
+$RSS '󱲈󱲚󱲚󱲚󱲋󱲋'           $RSE + any(tk) > '󱤁'     c akesi
+$RSS '󱲂󱲃'                   $RSE + any(tk) > '󱤂'     c ala
+$RSS '󱲉󱲙󱲚'                 $RSE + any(tk) > '󱤃'     c alasa
+$RSS '󱲉󱲙󱲚󱲃'               $RSE + any(tk) > '󱤃'     c alasa
+$RSS '󱲙󱲉󱲚'                 $RSE + any(tk) > '󱤃'     c alasa
+$RSS '󱲙󱲉󱲚󱲃'               $RSE + any(tk) > '󱤃'     c alasa
+$RSS '󱲈󱲉'                   $RSE + any(tk) > '󱤄'     c ale
+$RSS '󱲋󱲅󱲋'                 $RSE + any(tk) > '󱤅'     c anpa
+$RSS '󱲃󱲂'                   $RSE + any(tk) > '󱤆'     c ante
+$RSS '󱲂󱲙'                   $RSE + any(tk) > '󱤇'     c anu
+$RSS '󱲚󱲃󱲚'                 $RSE + any(tk) > '󱤈'     c awen
+$RSS '󱲃󱲃'                   $RSE + any(tk) > '󱤉'     c e
+$RSS '󱲙󱲚󱲙'                 $RSE + any(tk) > '󱤊'     c en
+$RSS '󱲔󱲙󱲓'                 $RSE + any(tk) > '󱤋'     c esun
+$RSS '󱲈'                     $RSE + any(tk) > '󱤌'     c ijo
+$RSS '󱲓'                     $RSE + any(tk) > '󱤍'     c ike
+$RSS '󱲎󱲙'                   $RSE + any(tk) > '󱤎'     c ilo
+$RSS '󱲙󱲎'                   $RSE + any(tk) > '󱤎'     c ilo
+$RSS '󱲋󱲋󱲅󱲋󱲋'             $RSE + any(tk) > '󱤏'     c insa
+$RSS '󱲅󱲋󱲋'                 $RSE + any(tk) > '󱤏'     c insa
+$RSS '󱲐󱲐󱲐'                 $RSE + any(tk) > '󱤐'     c jaki
+$RSS '󱲈󱲃'                   $RSE + any(tk) > '󱤑'     c jan
+$RSS '󱲈󱲎󱲃󱲚'               $RSE + any(tk) > '󱤒'     c jelo
+$RSS '󱲈󱲔󱲚'                 $RSE + any(tk) > '󱤓'     c jo
+$RSS '󱲃󱲈'                   $RSE + any(tk) > '󱤔'     c kala
+$RSS '󱲔󱲚󱲍'                 $RSE + any(tk) > '󱤕'     c kalama
+$RSS '󱲚󱲚󱲃'                 $RSE + any(tk) > '󱤖'     c kama
+$RSS '󱲈󱲈󱲙'                 $RSE + any(tk) > '󱤗'     c kasi
+$RSS '󱲈󱲙󱲈'                 $RSE + any(tk) > '󱤗'     c kasi
+$RSS '󱲙󱲈󱲈'                 $RSE + any(tk) > '󱤗'     c kasi
+$RSS '󱲙󱲙󱲂'                 $RSE + any(tk) > '󱤘'     c ken
+$RSS '󱲎󱲐󱲙'                 $RSE + any(tk) > '󱤙'     c kepeken
+$RSS '󱲎󱲙󱲐'                 $RSE + any(tk) > '󱤙'     c kepeken
+$RSS '󱲐󱲎󱲙'                 $RSE + any(tk) > '󱤙'     c kepeken
+$RSS '󱲐󱲙󱲎'                 $RSE + any(tk) > '󱤙'     c kepeken
+$RSS '󱲙󱲎󱲐'                 $RSE + any(tk) > '󱤙'     c kepeken
+$RSS '󱲓󱲓󱲔󱲙'               $RSE + any(tk) > '󱤚'     c kili
+$RSS '󱲓󱲔󱲓󱲙'               $RSE + any(tk) > '󱤚'     c kili
+$RSS '󱲂󱲃󱲚'                 $RSE + any(tk) > '󱤛'     c kiwen
+$RSS '󱲂󱲙󱲙󱲚'               $RSE + any(tk) > '󱤛'     c kiwen
+$RSS '󱲓󱲈󱲔'                 $RSE + any(tk) > '󱤜'     c ko
+$RSS '󱲔󱲈󱲓'                 $RSE + any(tk) > '󱤜'     c ko
+$RSS '󱲉󱲉󱲉󱲉'               $RSE + any(tk) > '󱤝'     c kon
+$RSS '󱲂󱲃󱲂󱲃'               $RSE + any(tk) > '󱤝'     c kon
+$RSS '󱲃󱲂󱲃󱲂'               $RSE + any(tk) > '󱤝'     c kon
+$RSS '󱲃󱲚'                   $RSE + any(tk) > '󱤞'     c kule
+$RSS '󱲃󱲚󱲚󱲚'               $RSE + any(tk) > '󱤞'     c kule
+$RSS '󱲈󱲈󱲈'                 $RSE + any(tk) > '󱤟'     c kulupu
+$RSS '󱲉󱲋'                   $RSE + any(tk) > '󱤠'     c kute
+$RSS '󱲋󱲉'                   $RSE + any(tk) > '󱤠'     c kute
+$RSS '󱲉'                     $RSE + any(tk) > '󱤡'     c la
+$RSS '󱲚󱲚󱲈'                 $RSE + any(tk) > '󱤢'     c lape
+$RSS '󱲈󱲈󱲙󱲚󱲃'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲈󱲈󱲙󱲃󱲚'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲃󱲚󱲈󱲙󱲈'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲃󱲚󱲙󱲈󱲈'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲙󱲈󱲈󱲚󱲃'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲙󱲈󱲈󱲃󱲚'             $RSE + any(tk) > '󱤣'     c laso
+$RSS '󱲈󱲚'                   $RSE + any(tk) > '󱤤'     c lawa
+$RSS '󱲎󱲙󱲙󱲙'               $RSE + any(tk) > '󱤥'     c len
+$RSS '󱲙󱲙󱲙󱲎'               $RSE + any(tk) > '󱤥'     c len
+$RSS '󱲂󱲚󱲃'                 $RSE + any(tk) > '󱤦'     c lete
+$RSS '󱲃󱲂󱲚'                 $RSE + any(tk) > '󱤦'     c lete
+$RSS '󱲃'                     $RSE + any(tk) > '󱤧'     c li
+$RSS '󱲂'                     $RSE + any(tk) > '󱤨'     c lili
+$RSS '󱲓󱲔'                   $RSE + any(tk) > '󱤩'     c linja
+$RSS '󱲔󱲓'                   $RSE + any(tk) > '󱤩'     c linja
+$RSS '󱲎'                     $RSE + any(tk) > '󱤪'     c lipu
+$RSS '󱲚󱲃󱲚󱲔'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲚󱲃󱲔󱲚'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲚󱲔󱲃󱲚'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲃󱲚󱲚󱲔'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲃󱲚󱲔󱲚'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲔󱲚󱲃󱲚'               $RSE + any(tk) > '󱤫'     c loje
+$RSS '󱲚󱲋'                   $RSE + any(tk) > '󱤬'     c lon
+$RSS '󱲋󱲚'                   $RSE + any(tk) > '󱤬'     c lon
+$RSS '󱲐'                     $RSE + any(tk) > '󱤭'     c luka
+$RSS '󱲈󱲋'                   $RSE + any(tk) > '󱤮'     c lukin
+$RSS '󱲔󱲙󱲙'                 $RSE + any(tk) > '󱤯'     c lupa
+$RSS '󱲙󱲔󱲙'                 $RSE + any(tk) > '󱤯'     c lupa
+$RSS '󱲙󱲙󱲔'                 $RSE + any(tk) > '󱤯'     c lupa
+$RSS '󱲈󱲚󱲙'                 $RSE + any(tk) > '󱤰'     c ma
+$RSS '󱲋󱲈'                   $RSE + any(tk) > '󱤱'     c mama
+$RSS '󱲚󱲈󱲚'                 $RSE + any(tk) > '󱤲'     c mani
+$RSS '󱲈󱲔'                   $RSE + any(tk) > '󱤲'     c mani
+$RSS '󱲓󱲈'                   $RSE + any(tk) > '󱤳'     c meli
+$RSS '󱲈󱲓'                   $RSE + any(tk) > '󱤳'     c meli
+$RSS '󱲙󱲈'                   $RSE + any(tk) > '󱤴'     c mi
+$RSS '󱲙󱲎󱲂'                 $RSE + any(tk) > '󱤴󱥡󱤂' c mi sona ala
+$RSS '󱲃󱲈󱲃'                 $RSE + any(tk) > '󱤵'     c mije
+$RSS '󱲚󱲔󱲐'                 $RSE + any(tk) > '󱤶'     c moku
+$RSS '󱲐󱲚󱲔'                 $RSE + any(tk) > '󱤶'     c moku
+$RSS '󱲐󱲔󱲚'                 $RSE + any(tk) > '󱤶'     c moku
+$RSS '󱲔󱲚󱲐'                 $RSE + any(tk) > '󱤶'     c moku
+$RSS '󱲈󱲂󱲃'                 $RSE + any(tk) > '󱤷'     c moli
+$RSS '󱲈󱲂󱲃󱲂󱲃'             $RSE + any(tk) > '󱤷'     c moli
+$RSS '󱲈󱲃󱲂󱲃󱲂'             $RSE + any(tk) > '󱤷'     c moli
+$RSS '󱲋󱲚󱲙󱲚'               $RSE + any(tk) > '󱤸'     c monsi
+$RSS '󱲋󱲆'                   $RSE + any(tk) > '󱤸'     c monsi
+$RSS '󱲈󱲋󱲈󱲈'               $RSE + any(tk) > '󱤹'     c mu
+$RSS '󱲈󱲈󱲋󱲈'               $RSE + any(tk) > '󱤹'     c mu
+$RSS '󱲈󱲈󱲈󱲋'               $RSE + any(tk) > '󱤹'     c mu
+$RSS '󱲉󱲉'                   $RSE + any(tk) > '󱤺'     c mun
+$RSS '󱲈󱲔󱲈'                 $RSE + any(tk) > '󱤻'     c musi
+$RSS '󱲙󱲙󱲙'                 $RSE + any(tk) > '󱤼'     c mute
+$RSS '󱲚󱲚󱲙󱲙'               $RSE + any(tk) > '󱤽'     c nanpa
+$RSS '󱲙󱲙󱲚󱲚'               $RSE + any(tk) > '󱤽'     c nanpa
+$RSS '󱲓󱲔󱲓'                 $RSE + any(tk) > '󱤾'     c nasa
+$RSS '󱲔󱲓󱲔'                 $RSE + any(tk) > '󱤾'     c nasa
+$RSS '󱲃󱲙'                   $RSE + any(tk) > '󱤿'     c nasin
+$RSS '󱲙󱲃'                   $RSE + any(tk) > '󱤿'     c nasin
+$RSS '󱲓󱲙󱲙'                 $RSE + any(tk) > '󱥀'     c nena
+$RSS '󱲙󱲓󱲙'                 $RSE + any(tk) > '󱥀'     c nena
+$RSS '󱲙󱲙󱲓'                 $RSE + any(tk) > '󱥀'     c nena
+$RSS '󱲙󱲂'                   $RSE + any(tk) > '󱥁'     c ni
+$RSS '󱲚󱲙󱲚󱲙'               $RSE + any(tk) > '󱥂'     c nimi
+$RSS '󱲙󱲚󱲙󱲚'               $RSE + any(tk) > '󱥂'     c nimi
+$RSS '󱲙󱲉󱲚󱲙'               $RSE + any(tk) > '󱥃'     c noka
+$RSS '󱲙󱲉󱲙'                 $RSE + any(tk) > '󱥃'     c noka
+$RSS '󱲙󱲋'                   $RSE + any(tk) > '󱥄'     c o
+$RSS '󱲂󱲓󱲓󱲂󱲓󱲓'           $RSE + any(tk) > '󱥅'     c olin
+$RSS '󱲓󱲓󱲂󱲓󱲓󱲂'           $RSE + any(tk) > '󱥅'     c olin
+$RSS '󱲚󱲈'                   $RSE + any(tk) > '󱥆'     c ona
+$RSS '󱲚󱲅'                   $RSE + any(tk) > '󱥇'     c open
+$RSS '󱲅󱲚'                   $RSE + any(tk) > '󱥇'     c open
+$RSS '󱲎󱲂󱲃'                 $RSE + any(tk) > '󱥈'     c pakala
+$RSS '󱲎󱲃󱲂'                 $RSE + any(tk) > '󱥈'     c pakala
+$RSS '󱲈󱲐'                   $RSE + any(tk) > '󱥉'     c pali
+$RSS '󱲐󱲈'                   $RSE + any(tk) > '󱥉'     c pali
+$RSS '󱲓󱲙󱲔󱲙'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲓󱲙󱲙󱲔'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲔󱲙󱲓󱲙'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲔󱲙󱲙󱲓'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲙󱲓󱲙󱲔'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲙󱲔󱲙󱲓'               $RSE + any(tk) > '󱥊'     c palisa
+$RSS '󱲂󱲂󱲂'                 $RSE + any(tk) > '󱥋'     c pan
+$RSS '󱲍󱲐'                   $RSE + any(tk) > '󱥌'     c pana
+$RSS '󱲐󱲍'                   $RSE + any(tk) > '󱥌'     c pana
+$RSS '󱲙󱲚'                   $RSE + any(tk) > '󱥍'     c pi
+$RSS '󱲂󱲓󱲓'                 $RSE + any(tk) > '󱥎'     c pilin
+$RSS '󱲓󱲓󱲂'                 $RSE + any(tk) > '󱥎'     c pilin
+$RSS '󱲓󱲓󱲔'                 $RSE + any(tk) > '󱥎'     c pilin
+$RSS '󱲂󱲃󱲃󱲚'               $RSE + any(tk) > '󱥏'     c pimeja
+$RSS '󱲃󱲚󱲂󱲃'               $RSE + any(tk) > '󱥏'     c pimeja
+$RSS '󱲚󱲙󱲚'                 $RSE + any(tk) > '󱥐'     c pini
+$RSS '󱲚󱲚󱲚󱲙󱲋󱲋'           $RSE + any(tk) > '󱥑'     c pipi
+$RSS '󱲋󱲋󱲙󱲚󱲚󱲚'           $RSE + any(tk) > '󱥑'     c pipi
+$RSS '󱲙󱲚󱲚󱲚󱲋󱲋'           $RSE + any(tk) > '󱥑'     c pipi
+$RSS '󱲅󱲋'                   $RSE + any(tk) > '󱥒'     c poka
+$RSS '󱲅'                     $RSE + any(tk) > '󱥓'     c poki
+$RSS '󱲔'                     $RSE + any(tk) > '󱥔'     c pona
+$RSS '󱲎󱲈󱲍󱲔'               $RSE + any(tk) > '󱥕'     c pu
+$RSS '󱲚󱲚'                   $RSE + any(tk) > '󱥖'     c sama
+$RSS '󱲋󱲍'                   $RSE + any(tk) > '󱥗'     c seli
+$RSS '󱲍󱲋'                   $RSE + any(tk) > '󱥗'     c seli
+$RSS '󱲚󱲚󱲙󱲚󱲚'             $RSE + any(tk) > '󱥘'     c selo
+$RSS '󱲚󱲙󱲙󱲙󱲙'             $RSE + any(tk) > '󱥘'     c selo
+$RSS '󱲙󱲚󱲙󱲙󱲙'             $RSE + any(tk) > '󱥘'     c selo
+$RSS '󱲋󱲐'                   $RSE + any(tk) > '󱥙'     c seme
+$RSS '󱲐󱲋'                   $RSE + any(tk) > '󱥙'     c seme
+$RSS '󱲔󱲔󱲙'                 $RSE + any(tk) > '󱥚'     c sewi
+$RSS '󱲙󱲔󱲔󱲙'               $RSE + any(tk) > '󱥚'     c sewi
+$RSS '󱲚󱲙󱲙󱲙'               $RSE + any(tk) > '󱥛'     c sijelo
+$RSS '󱲙󱲚󱲙󱲙'               $RSE + any(tk) > '󱥛'     c sijelo
+$RSS '󱲈󱲈'                   $RSE + any(tk) > '󱥜'     c sike
+$RSS '󱲍'                     $RSE + any(tk) > '󱥝'     c sin
+$RSS '󱲈󱲙'                   $RSE + any(tk) > '󱥞'     c sina
+$RSS '󱲚󱲙󱲚󱲋'               $RSE + any(tk) > '󱥟'     c sinpin
+$RSS '󱲇󱲋'                   $RSE + any(tk) > '󱥟'     c sinpin
+$RSS '󱲎󱲋󱲋'                 $RSE + any(tk) > '󱥠'     c sitelen
+$RSS '󱲎󱲋󱲋󱲋'               $RSE + any(tk) > '󱥠'     c sitelen
+$RSS '󱲎󱲍'                   $RSE + any(tk) > '󱥡'     c sona
+$RSS '󱲍󱲎'                   $RSE + any(tk) > '󱥡'     c sona
+$RSS '󱲉󱲋󱲋󱲙󱲙'             $RSE + any(tk) > '󱥢'     c soweli
+$RSS '󱲉󱲋󱲋󱲙󱲙󱲙󱲙'         $RSE + any(tk) > '󱥢'     c soweli
+$RSS '󱲉󱲙󱲙󱲋󱲋'             $RSE + any(tk) > '󱥢'     c soweli
+$RSS '󱲉󱲙󱲙󱲙󱲙󱲋󱲋'         $RSE + any(tk) > '󱥢'     c soweli
+$RSS '󱲚󱲉󱲋󱲋󱲙󱲙󱲙󱲙'       $RSE + any(tk) > '󱥢'     c soweli
+$RSS '󱲂󱲂'                   $RSE + any(tk) > '󱥣'     c suli
+$RSS '󱲙󱲂󱲙'                 $RSE + any(tk) > '󱥣'     c suli
+$RSS '󱲈󱲎'                   $RSE + any(tk) > '󱥤'     c suno
+$RSS '󱲚󱲙󱲙'                 $RSE + any(tk) > '󱥥'     c supa
+$RSS '󱲙󱲙󱲚'                 $RSE + any(tk) > '󱥥'     c supa
+$RSS '󱲋󱲃󱲃'                 $RSE + any(tk) > '󱥦'     c suwi
+$RSS '󱲃󱲋󱲃'                 $RSE + any(tk) > '󱥦'     c suwi
+$RSS '󱲃󱲃󱲋'                 $RSE + any(tk) > '󱥦'     c suwi
+$RSS '󱲂󱲓'                   $RSE + any(tk) > '󱥧'     c tan
+$RSS '󱲓󱲂'                   $RSE + any(tk) > '󱥧'     c tan
+$RSS '󱲚󱲙'                   $RSE + any(tk) > '󱥨'     c taso
+$RSS '󱲃󱲚󱲚'                 $RSE + any(tk) > '󱥩'     c tawa
+$RSS '󱲓󱲔󱲓󱲔'               $RSE + any(tk) > '󱥪'     c telo
+$RSS '󱲔󱲓󱲔󱲓'               $RSE + any(tk) > '󱥪'     c telo
+$RSS '󱲈󱲙󱲚'                 $RSE + any(tk) > '󱥫'     c tenpo
+$RSS '󱲈󱲍'                   $RSE + any(tk) > '󱥬'     c toki
+$RSS '󱲃󱲅'                   $RSE + any(tk) > '󱥭'     c tomo
+$RSS '󱲅󱲃'                   $RSE + any(tk) > '󱥭'     c tomo
+$RSS '󱲙󱲙'                   $RSE + any(tk) > '󱥮'     c tu
+$RSS '󱲓󱲓󱲂󱲈'               $RSE + any(tk) > '󱥯'     c unpa
+$RSS '󱲓󱲓󱲔󱲈'               $RSE + any(tk) > '󱥯'     c unpa
+$RSS '󱲚󱲔󱲋'                 $RSE + any(tk) > '󱥰'     c uta
+$RSS '󱲔󱲚󱲋'                 $RSE + any(tk) > '󱥰'     c uta
+$RSS '󱲂󱲂󱲃󱲂'               $RSE + any(tk) > '󱥱'     c utala
+$RSS '󱲂󱲃󱲂'                 $RSE + any(tk) > '󱥱'     c utala
+$RSS '󱲚󱲃󱲂'                 $RSE + any(tk) > '󱥲'     c walo
+$RSS '󱲃󱲚󱲂'                 $RSE + any(tk) > '󱥲'     c walo
+$RSS '󱲙'                     $RSE + any(tk) > '󱥳'     c wan
+$RSS '󱲋󱲋󱲃󱲙'               $RSE + any(tk) > '󱥴'     c waso
+$RSS '󱲃󱲙󱲋󱲋'               $RSE + any(tk) > '󱥴'     c waso
+$RSS '󱲙󱲈󱲙'                 $RSE + any(tk) > '󱥵'     c wawa
+$RSS '󱲍󱲙'                   $RSE + any(tk) > '󱥶'     c weka
+$RSS '󱲔󱲔'                   $RSE + any(tk) > '󱥷'     c wile
+
+c nimi pi pu ale
+$RSS '󱲋󱲎'                   $RSE + any(tk) > '󱥸'     c namako
+$RSS '󱲎󱲋'                   $RSE + any(tk) > '󱥸'     c namako
+$RSS '󱲙󱲂󱲃'                 $RSE + any(tk) > '󱥹'     c kin
+$RSS '󱲙󱲂󱲃󱲙'               $RSE + any(tk) > '󱥹'     c kin
+$RSS '󱲂󱲉󱲋'                 $RSE + any(tk) > '󱥺'     c oko
+$RSS '󱲋󱲙󱲋'                 $RSE + any(tk) > '󱥻'     c kipisi
+$RSS '󱲎󱲎'                   $RSE + any(tk) > '󱥼'     c leko
+$RSS '󱲂󱲂󱲂󱲂'               $RSE + any(tk) > '󱥽'     c monsuta
+$RSS '󱲃󱲃󱲃󱲃'               $RSE + any(tk) > '󱥽'     c monsuta
+$RSS '󱲈󱲚󱲚󱲙'               $RSE + any(tk) > '󱥾'     c tonsi
+$RSS '󱲈󱲚󱲙󱲚'               $RSE + any(tk) > '󱥾'     c tonsi
+$RSS '󱲈󱲙󱲚󱲚'               $RSE + any(tk) > '󱥾'     c tonsi
+$RSS '󱲓󱲔󱲓󱲔󱲙'             $RSE + any(tk) > '󱥿'     c jasima
+$RSS '󱲔󱲓󱲔󱲓󱲙'             $RSE + any(tk) > '󱥿'     c jasima
+$RSS '󱲙󱲓󱲔󱲓󱲔'             $RSE + any(tk) > '󱥿'     c jasima
+$RSS '󱲙󱲔󱲓󱲔󱲓'             $RSE + any(tk) > '󱥿'     c jasima
+$RSS '󱲈󱲙󱲙󱲙󱲓󱲃󱲙󱲙󱲙󱲋󱲋' $RSE + any(tk) > '󱦀'     c kijetesantakalu
+$RSS '󱲓󱲚󱲅'                 $RSE + any(tk) > '󱦁'     c soko
+$RSS '󱲈󱲅'                   $RSE + any(tk) > '󱦁'     c soko
+$RSS '󱲋󱲙󱲙'                 $RSE + any(tk) > '󱦂'     c meso
+$RSS '󱲙󱲋󱲙'                 $RSE + any(tk) > '󱦂'     c meso
+$RSS '󱲃󱲙󱲙'                 $RSE + any(tk) > '󱦃'     c epiku
+$RSS '󱲙󱲙󱲃'                 $RSE + any(tk) > '󱦃'     c epiku
+$RSS '󱲈󱲍󱲚'                 $RSE + any(tk) > '󱦄'     c kokosila
+$RSS '󱲍󱲈󱲚'                 $RSE + any(tk) > '󱦄'     c kokosila
+$RSS '󱲓󱲔󱲓󱲋'               $RSE + any(tk) > '󱦅'     c lanpan
+$RSS '󱲙󱲓'                   $RSE + any(tk) > '󱦆'     c n
+$RSS '󱲓󱲙󱲔󱲙󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲓󱲙󱲙󱲔󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲔󱲙󱲓󱲙󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲔󱲙󱲙󱲓󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲙󱲓󱲙󱲔󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲙󱲔󱲙󱲓󱲚'             $RSE + any(tk) > '󱦇'     c misikeke
+$RSS '󱲎󱲂󱲚󱲋'               $RSE + any(tk) > '󱦈'     c ku
+$RSS '󱲎󱲂󱲚󱲈󱲍󱲔'           $RSE + any(tk) > '󱦈'     c ku
+$RSS '󱲚󱲚󱲙'                 $RSE + any(tk) > '󱦠'     c pake
+$RSS '󱲙󱲚󱲚'                 $RSE + any(tk) > '󱦠'     c pake
+$RSS '󱲈󱲈󱲈󱲃'               $RSE + any(tk) > '󱦡'     c apeja
+$RSS '󱲈󱲈󱲃󱲈'               $RSE + any(tk) > '󱦡'     c apeja
+$RSS '󱲈󱲃󱲈󱲈'               $RSE + any(tk) > '󱦡'     c apeja
+$RSS '󱲃󱲈󱲈󱲈'               $RSE + any(tk) > '󱦡'     c apeja
+$RSS '󱲙󱲃󱲂'                 $RSE + any(tk) > '󱦣'     c powe
+
+c additions by jan Lepeka
+$RSS '󱲈󱲃󱲔'                 $RSE + any(tk) > '󱤄󱤧󱥔' c ale li pona
+$RSS '󱲈󱲍󱲔'                 $RSE + any(tk) > '󱥬‍󱥔'     c toki pona
+$RSS '󱲓󱲚󱲙'                 $RSE + any(tk) > '󱦁'     c soko
+$RSS '󱲓󱲚󱲙󱲚'               $RSE + any(tk) > '󱦁'     c soko
+$RSS '󱲓󱲚󱲚󱲙'               $RSE + any(tk) > '󱦁'     c soko
+$RSS '󱲍󱲔'                   $RSE + any(tk) > '󱦃'     c epiku
+$RSS '󱲔󱲍'                   $RSE + any(tk) > '󱦃'     c epiku
+$RSS '󱲍󱲚󱲚'                 $RSE + any(tk) > '󱦢'     c majuna
+$RSS '󱲚󱲍󱲚'                 $RSE + any(tk) > '󱦢'     c majuna
+$RSS '󱲚󱲚󱲍'                 $RSE + any(tk) > '󱦢'     c majuna
+
+c not in UCSUR
+c $RSS '󱲈󱲚󱲚󱲍'             $RSE + any(tk) > '󿫀'     c isipin
+c $RSS '󱲈󱲍󱲚󱲚'             $RSE + any(tk) > '󿫀'     c isipin
+c $RSS '󱲍󱲈󱲚󱲚'             $RSE + any(tk) > '󿫀'     c isipin
+c $RSS '󱲚󱲃󱲈󱲚󱲙'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲚󱲃󱲈󱲙󱲚'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲈󱲚󱲙󱲚󱲃'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲈󱲚󱲙󱲃󱲚'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲈󱲙󱲚󱲚󱲃'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲈󱲙󱲚󱲃󱲚'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲃󱲚󱲈󱲚󱲙'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲃󱲚󱲈󱲙󱲚'           $RSE + any(tk) > '󿫁'     c kapesi
+c $RSS '󱲃󱲃󱲃󱲂󱲂󱲂'         $RSE + any(tk) > '󿫃'     c kiki
+c $RSS '󱲃󱲃󱲃󱲃󱲂󱲂󱲂󱲂'     $RSE + any(tk) > '󿫃'     c kiki
+c $RSS '󱲙󱲚󱲙󱲋󱲋󱲋󱲔󱲓󱲙'   $RSE + any(tk) > '󿫄'     c linluwi
+c $RSS '󱲙󱲚󱲙󱲔󱲓󱲙󱲋󱲋󱲋'   $RSE + any(tk) > '󿫄'     c linluwi
+c $RSS '󱲙󱲚󱲙󱲙󱲋󱲋󱲋󱲔󱲓'   $RSE + any(tk) > '󿫄'     c linluwi
+c $RSS '󱲙󱲚󱲙󱲙󱲔󱲓󱲋󱲋󱲋'   $RSE + any(tk) > '󿫄'     c linluwi
+c $RSS '󱲚󱲃󱲈󱲈󱲈'           $RSE + any(tk) > '󿫈'     c mulapisu
+c $RSS '󱲈󱲈󱲈󱲚󱲃'           $RSE + any(tk) > '󿫈'     c mulapisu
+c $RSS '󱲈󱲈󱲈󱲃󱲚'           $RSE + any(tk) > '󿫈'     c mulapisu
+c $RSS '󱲃󱲚󱲈󱲈󱲈'           $RSE + any(tk) > '󿫈'     c mulapisu
+c $RSS '󱲉󱲉󱲚󱲃'             $RSE + any(tk) > '󿫊'     c unu
+c $RSS '󱲉󱲉󱲃󱲚'             $RSE + any(tk) > '󿫊'     c unu
+c $RSS '󱲚󱲃󱲉󱲉'             $RSE + any(tk) > '󿫊'     c unu
+c $RSS '󱲃󱲚󱲉󱲉'             $RSE + any(tk) > '󿫊'     c unu
+c $RSS '󱲙󱲔󱲔'               $RSE + any(tk) > '󿫋'     c wa
+c $RSS '󱲂󱲙󱲈'               $RSE + any(tk) > '󿫤'     c oke
+c $RSS '󱲈󱲂󱲙'               $RSE + any(tk) > '󿫤'     c oke
+c $RSS '󱲙󱲚󱲉'               $RSE + any(tk) > '󿫽'     c Pingo
+
+c emoticons
+$RSS '󱲌󱲓'                   $RSE + any(tk) > ':('
+$RSS '󱲌󱲆'                   $RSE + any(tk) > ':('
+$RSS '󱲌󱲉'                   $RSE + any(tk) > ':)'
+$RSS '󱲌󱲔'                   $RSE + any(tk) > ':)'
+$RSS '󱲌󱲇'                   $RSE + any(tk) > ':)'
+$RSS '󱲌󱲂'                   $RSE + any(tk) > ':v'
+$RSS '󱲌󱲚'                   $RSE + any(tk) > ':|'
+$RSS '󱲌󱲙'                   $RSE + any(tk) > ':|'
+
+c additions by jan Lepeka
+$RSS '󱲌󱲃'                   $RSE + any(tk) > ':>'
+$RSS '󱲌󱲉󱲉'                 $RSE + any(tk) > ':3'
+$RSS '󱲌󱲔󱲔'                 $RSE + any(tk) > ':3'
+$RSS '󱲌󱲇󱲇'                 $RSE + any(tk) > ':3'
+$RSS '󱲌󱲙󱲉'                 $RSE + any(tk) > ':D'
+$RSS '󱲌󱲚󱲔'                 $RSE + any(tk) > ':D'
+$RSS '󱲌󱲙󱲇'                 $RSE + any(tk) > ':D'
+$RSS '󱲌󱲚󱲐'                 $RSE + any(tk) > ':P'
+$RSS '󱲌󱲙󱲐'                 $RSE + any(tk) > ':P'

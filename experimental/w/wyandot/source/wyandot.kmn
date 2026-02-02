@@ -1,0 +1,30 @@
+﻿store(&TARGETS) 'any'
+store(&NAME) 'Wyandot'
+store(&COPYRIGHT) '© Michael Collins Gallaspy'
+store(&KEYBOARDVERSION) '1.1.0'
+store(&VISUALKEYBOARD) 'wyandot.kvks'
+store(&LAYOUTFILE) 'wyandot.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(oral_vowels) "aeoAEO"
+store(nasal_vowels) "ąęǫĄĘǪ"
+
+group(main) using keys
+
++ ";" > deadkey(semicolon)
+
+deadkey(semicolon) + ";" > ";"
+any(oral_vowels) + ";" > index(nasal_vowels, 1)
+
++ [RALT K_N] > 'ⁿ'
++ [RALT K_SLASH] > "ʔ"
+
++ [RALT K_S] > "š"
++ [RALT SHIFT K_S] > "Š"
+
++ [RALT K_Z] > "ž"
++ [RALT SHIFT K_Z] > "Ž"
+
++ [RALT K_QUOTE] > "́"
+

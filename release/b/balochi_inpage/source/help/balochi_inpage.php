@@ -9,8 +9,6 @@ require_once('header.php');
 It includes an on screen keyboard which can be viewed by clicking on the Keyman icon 
 and selecting the On Screen Keyboard menu item. Similar keyboards are also available for other desktop and mobile platforms.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift leftctrl leftctrl-shift'>
 </div>

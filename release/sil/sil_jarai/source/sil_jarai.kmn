@@ -2,12 +2,13 @@
 c with name "Jarai ចារាយ (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Jarai ចារាយ (SIL)'
-store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_jarai.kvks'
 store(&LAYOUTFILE) 'sil_jarai.keyman-touch-layout'
 store(&BITMAP) 'sil_jarai.ico'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdkhmr/KbdKhmr.json'
 
 
 begin Unicode > use(main)
@@ -39,8 +40,8 @@ group(main) using keys
 + [SHIFT K_A] > 'ាំ'
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > '_'
-+ [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
++ [RALT K_HYPHEN] > '='
 + [K_0] > '០'
 + [K_9] > '៩'
 + [K_8] > '៨'
@@ -51,6 +52,10 @@ group(main) using keys
 + [K_3] > '៣'
 + [K_2] > '២'
 + [K_1] > '១'
++ [K_RBRKT] > '‘'
++ [SHIFT K_RBRKT] > '’'
++ [K_BKSLASH] > '“'
++ [SHIFT K_BKSLASH] > '”'
 + [SHIFT K_0] > ')'
 + [SHIFT K_9] > '('
 + [SHIFT K_5] > '%'
@@ -58,6 +63,7 @@ group(main) using keys
 + [SHIFT K_2] > 'ៗ'
 + [K_BKQUOTE] > '«'
 + [SHIFT K_BKQUOTE] > '»'
++ [RALT K_BKQUOTE] > '~'
 + [RALT K_L] > ':'
 + [RALT K_COMMA] > ','
 + [RALT K_PERIOD] > '.'
@@ -72,6 +78,8 @@ group(main) using keys
 + [RALT K_COLON] > '៖'
 + [SHIFT K_1] > '!'
 + [SHIFT K_SLASH] > '?'
++ [RALT K_7] > '&'
++ [RALT K_8] > '*'
 + [SHIFT K_LBRKT] > 'ឿ'
 + [RALT K_K] > 'ឝ'
 + [RALT K_B] > 'ឞ'
@@ -97,6 +105,11 @@ group(main) using keys
 + [SHIFT K_I] > 'ី'
 + [K_I] > 'ិ'
 + [K_J] > '្'
++ [RALT K_EQUAL] > '៎'
++ [K_EQUAL] > 'ឲ'
++ [SHIFT K_R] > 'ឬ'
++ [RALT K_R] > 'ឫ'
++ [RALT K_E] > 'ឯ'
 + [SHIFT K_D] > 'ឌ'
 + [K_D] > 'ដ'
 + [K_S] > 'ស'
@@ -133,17 +146,18 @@ group(main) using keys
 + [K_COMMA] > 'ុំ'
 + [RALT K_W] > '៝'
 + [SHIFT K_6] > '៍'
-+ [SHIFT K_7] > '&'
-+ [SHIFT K_8] > '*'
++ [SHIFT K_7] > '័'
++ [SHIFT K_8] > '៏'
++ [SHIFT K_SPACE] > ' ' c U+2003 $EM_SPACE
+
 
 c nul keys
-store(nulShiftKeys)  [SHIFT K_R] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] [SHIFT K_PERIOD]
-store(nulDefaultKeys)   [K_RBRKT] [K_BKSLASH] 
-store(nulAltGrKeys) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] \
-                    [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] \
-                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H]\
+store(nulShiftKeys)   [SHIFT K_PERIOD]
+store(nulAltGrKeys) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] \
+                    [RALT K_Q] [RALT K_T] [RALT K_Y] [RALT K_U] \
+                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H] \
                     [RALT K_H] [RALT K_J] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_N] [RALT K_M]
-store(nulAllKeys)   outs(nulShiftKeys) outs(nulDefaultKeys) outs(nulAltGrKeys)
+store(nulAllKeys)   outs(nulShiftKeys) outs(nulAltGrKeys)
 
 + any(nulAllKeys)   > nul
 

@@ -1,9 +1,7 @@
 Dene keyboard
 ==============
 
-(c) 2013-2020 Jim Stauffer
-
-Version 2.1
+(c) Jim Stauffer
 
 Description
 -----------
@@ -20,5 +18,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
  
 

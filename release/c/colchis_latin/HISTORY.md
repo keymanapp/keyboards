@@ -1,5 +1,17 @@
-Colchis Latin
+Colchis Latin Change History
 ===============================
+
+1.6.1 (11 Jun 2025)
+------------------
+* Updated font to new version of Charis Colchis v7.000
+
+1.6 (8 Jan 2025)
+------------------
+* Added ɔ and q̌ on all layouts 
+
+1.5 (9 Sept 2024)
+------------------
+* Changed language tag for lzz to lzz-GE
 
 1.4.1 (4 Oct 2023)
 ------------------

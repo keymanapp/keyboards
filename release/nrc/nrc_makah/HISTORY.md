@@ -1,6 +1,14 @@
 Makah (Qʷi·qʷi·diččaq) Change History
 =====================================
 
+1.1.3 (2025-06-09)
+------------------
+* Updated version of Andika distributed with keyboard including new typefaces of Andika
+
+1.1.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.1.1 (2021-07-02)
 ----------------
 * Updated version of Andika distributed with keyboard including new typefaces of Andika (R/I/B/BI)

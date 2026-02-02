@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1106.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,14 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Nigeria Odd Vowels (SIL)</Name>
-    <Copyright URL="">2004-2018 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">This keyboard pairs with two other keyboards to cover the expected needs
+of most of Nigeria\'s languages. The three keyboards are identical
+except that the vowels are treated differently. The vowels on this
+keyboard can have a non-standar shape as well as the standard tone
+markings. The keyboard also includes standard hook (implosives),
+nasality, tone, and the Naira sign.</Description>
+    <Author URL="">Heidi Rosendall</Author>
   </Info>
   <Files>
     <File>
@@ -40,12 +49,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\sil_nigeria_odd_vowels.js</Name>
-      <Description>File sil_nigeria_odd_vowels.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>..\build\sil_nigeria_odd_vowels.kvk</Name>
       <Description>File sil_nigeria_odd_vowels.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -57,28 +60,39 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nigeria Odd Vowels (SIL)</Name>
       <ID>sil_nigeria_odd_vowels</ID>
-      <Version></Version>
+      <Version>1.6.1</Version>
       <Languages>
-        <Language ID="agc-Latn">Agatu (Latin)</Language>
-        <Language ID="bqp-Latn">Busa (Latin)</Language>
-        <Language ID="bwr-Latn">Bura-Pabir (Latin)</Language>
-        <Language ID="cky-Latn">Cakfem-Mushere (Latin)</Language>
-        <Language ID="hbb-Latn">Huba (Latin)</Language>
-        <Language ID="hia-Latn">Lamang (Latin)</Language>
-        <Language ID="hig-Latn">Kamwe (Latin)</Language>
-        <Language ID="idu-Latn">Idoma (Latin)</Language>
-        <Language ID="jen-Latn">Dza (Latin)</Language>
+        <Language ID="agc">Agatu</Language>
+        <Language ID="bqp">Busa</Language>
+        <Language ID="bwr">Bura-Pabir</Language>
+        <Language ID="cky">Cakfem-Mushere</Language>
+        <Language ID="hbb">Huba</Language>
+        <Language ID="hia">Lamang</Language>
+        <Language ID="hig">Kamwe</Language>
+        <Language ID="idu">Idoma</Language>
+        <Language ID="jen">Dza</Language>
         <Language ID="kby-Latn">Manga Kanuri (Latin)</Language>
-        <Language ID="kez-Latn">Kukele (Latin)</Language>
-        <Language ID="mbu-Latn">Mbula-Bwazza (Latin)</Language>
-        <Language ID="sur-Latn">Mwaghavul (Latin)</Language>
+        <Language ID="kez">Kukele</Language>
+        <Language ID="mbu">Mbula-Bwazza</Language>
+        <Language ID="sur">Mwaghavul</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="nigeria unicode odd vowels" Relationship="deprecates"/>
+    <RelatedPackage ID="sil_nigeria_underline"/>
+    <RelatedPackage ID="sil_nigeria_dot"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

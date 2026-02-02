@@ -1,9 +1,7 @@
 Tai Dam Latin (SIL) Keyboard
 =====================
 
-Copyright (C) 2009-2020 SIL International
-
-Version 1.4.1
+Copyright (C) SIL International
 
 Description
 -----------
@@ -16,4 +14,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
+
  

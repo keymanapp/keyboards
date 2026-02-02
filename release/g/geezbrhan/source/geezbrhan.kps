@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.282.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>geezbrhan-sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -35,8 +37,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Ge'ez Berhan</Name>
-    <Copyright URL="">Copyright © 2021 Fr. Berhanemeskel M. Embaye OFM Cap.</Copyright>
+    <Copyright URL="">Copyright © Fr. Berhanemeskel M. Embaye OFM Cap.</Copyright>
     <Author URL="mailto:berane9@gmail.com">Fr. Berhanemeskel M. Embaye</Author>
+    <Description URL="">This is a Ge'ez Berhan mode (ዘግዕዝ-ብርሃን ቅጽ ተራ-ፊደል) that works as a
+computer-keyboard input.</Description>
   </Info>
   <Files>
     <File>
@@ -105,6 +109,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -121,13 +131,13 @@
         <Language ID="byn">Bilin</Language>
         <Language ID="mym">Me'en (Ethiopic)</Language>
         <Language ID="muz">Mursi (Ethiopic)</Language>
-        <Language ID="suq">Suri (Ethiopic)</Language>
-        <Language ID="guk">Gumuz (Ethiopic)</Language>
+        <Language ID="suq-Ethi">Suri (Ethiopic)</Language>
+        <Language ID="guk-Ethi">Gumuz (Ethiopic)</Language>
         <Language ID="gez">Geez</Language>
         <Language ID="bst">Basketo (Ethiopic)</Language>
         <Language ID="gmv">Gamo (Ethiopic)</Language>
         <Language ID="gof">Gofa (Ethiopic)</Language>
-        <Language ID="dwr">Dawro (Ethiopic)</Language>
+        <Language ID="dwr-Ethi">Dawro (Ethiopic)</Language>
         <Language ID="har">Harari</Language>
         <Language ID="tig">Tigre</Language>
       </Languages>

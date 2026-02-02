@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.112.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Ahmao (SIL)</Name>
-    <Copyright URL="">(c) 2014-2020 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">This keyboard was designed for the Ahmao \[hmd\] language using the Miao
+script. The keyboard supports both the Augmented Traditional character set as well as the Normalised character set.  The Sapushan font is also packaged with this keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -141,16 +145,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Ahmao (SIL)</Name>
       <ID>sil_hmd_plrd</ID>
-      <Version></Version>
+      <Version>1.3</Version>
       <OSKFont>..\..\..\shared\fonts\sil\plrd\sapushan\Sapushan-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\plrd\sapushan\Sapushan-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="hmd-Plrd">Large Flowery Miao (Miao)</Language>
+        <Language ID="hmd">Large Flowery Miao</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

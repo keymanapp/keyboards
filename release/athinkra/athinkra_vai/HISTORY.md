@@ -1,6 +1,11 @@
 Vai (Athinkra) Change History
 ====================
 
+1.3 (29 August 2024)
+-----------------
+* Added tablet layout
+* Fixed 3 rules that were not firing (put on RALT SHIFT layer)
+
 1.2 (2020-07-10)
 ----------------
 * Move source to Github

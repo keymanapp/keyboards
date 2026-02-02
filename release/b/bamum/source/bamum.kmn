@@ -1,0 +1,39 @@
+﻿c bamum generated from template at 2024-04-29 11:46:30
+c with name "Bamum"
+store(&VERSION) '10.0'
+store(&NAME) 'Bamum'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'bamum.ico'
+store(&VISUALKEYBOARD) 'bamum.kvks'
+store(&LAYOUTFILE) 'bamum.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(defaultK) [K_BKQUOTE] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6]  [K_HYPHEN] [K_EQUAL] \
+                [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K_P] [K_LBRKT] [K_RBRKT] [K_BKSLASH] \
+                [K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] [K_COLON] [K_QUOTE] \
+                [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] [K_COMMA] [K_PERIOD] [K_SLASH]
+store(defaultU) U+A6F0 U+A6F2 U+A6F5 U+A6F3 U+A6F6 U+A6F4 U+A6F7 U+A6E2 U+A6E4 \
+                U+A6A0 U+A6A2 U+A6A4 U+A6A6 U+A6A8 U+A6AA U+A6AC U+A6AE U+A6B0 U+A6B2 U+A6B4 U+A6B6 U+0040 \
+                U+A6B8 U+A6BA U+A6BC U+A6BE U+A6C0 U+A6C2 U+A6C4 U+A6C6 U+A6C8 U+A6CA U+A6CC \
+                U+A6CE U+A6D0 U+A6D2 U+A6D4 U+A6D6 U+A6D8 U+A6DA U+A6DC U+A6DE U+A6E0
+
+store(shiftK)   [SHIFT K_BKQUOTE] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [SHIFT K_HYPHEN] [SHIFT K_EQUAL] \
+                [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] [SHIFT K_LBRKT] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] \
+                [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] [SHIFT K_COLON] [SHIFT K_QUOTE] \
+                [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] [SHIFT K_COMMA] [SHIFT K_PERIOD] [SHIFT K_SLASH]
+store(shiftU)   U+A6F1 U+A6E6 U+A6E7 U+A6E8 U+A6E9 U+A6EA U+A6EB U+A6EC U+A6ED U+A6EE U+A6EF U+A6E3 U+A6E5 \
+                U+A6A1 U+A6A3 U+A6A5 U+A6A7 U+A6A9 U+A6AB U+A6AD U+A6AF U+A6B1 U+A6B3 U+A6B5 U+A6B7 U+005C \
+                U+A6B9 U+A6BB U+A6BD U+A6BF U+A6C1 U+A6C3 U+A6C5 U+A6C7 U+A6C9 U+A6CB U+A6CD \
+                U+A6CF U+A6D1 U+A6D3 U+A6D5 U+A6D7 U+A6D9 U+A6DB U+A6DD U+A6DF U+A6E1
+
+store(nul) [K_7] [K_8] [K_9] [K_0]
+
+group(main) using keys
+
++ any(nul) > nul
+
++ any(defaultK) > index(defaultU,1)
++ any(shiftK) > index(shiftU,1)

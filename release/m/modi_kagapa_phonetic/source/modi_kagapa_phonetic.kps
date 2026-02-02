@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>modi.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder>Modi KaGaPa Phonetic</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Start</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Configuration</Name>
+        <FileName>(Product Configuration)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name URL="">Modi KaGaPa Phonetic</Name>
+    <Copyright URL="">Copyright © Abhishek Deshpande</Copyright>
+    <Author URL="mailto:abhishekdeshpande128@gmail.com">Abhishek Deshpande</Author>
+    <Description URL="">This layout is the KaGaPa phonetic layout for a historically important script, called 'Modi'. It was prominently used to write Marathi, and in a few instances, for Hindi and Sanskrit. It is phonetically equivalent to Devanagari KaGaPa Phonetic, i.e., using similar character mapping, but for Modi letters.</Description>
+    <Version URL=""></Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\modi_kagapa_phonetic.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\modi_kagapa_phonetic.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\modi_kagapa_phonetic.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>modi.png</Name>
+      <Description>File modi.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</Name>
+      <Description>Font Noto Sans Modi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>modi_kagapa_phonetic</ID>
+      <OSKFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="mr-Modi">Marathi (Modi)</Language>
+        <Language ID="hi-Modi">Hindi (Modi)</Language>
+        <Language ID="sa-Modi">Sanskrit (Modi)</Language>
+      </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

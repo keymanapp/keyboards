@@ -1,8 +1,7 @@
-# Gurmukhi WinScript (NLCI) Keyboard
+Gurmukhi WinScript (NLCI) Keyboard
+====================
 
 Copyright (c) NLCI, Bangalore
-
-Version 2.0
 
 __DESCRIPTION__
 This Keyboard follows the Gurmukhi WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of 
@@ -14,3 +13,4 @@ system designed with the objective of keyboarding text with minimal keystrokes. 
  * macOS
  * Linux
  * Web
+ * Mobile

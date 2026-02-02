@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Kwadacha Tsek’ene</Name>
-    <Copyright URL="">© 2023 FirstVoices, First Peoples' Cultural Council</Copyright>
-    <Author URL=""></Author>
+    <Copyright URL="">© 2023-2024 FirstVoices, First Peoples' Cultural Council</Copyright>
+    <Author URL="">Meryl Bishop</Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Kwadacha Tsek’ene language of the BC Interior region of Canada. 
+This is part of a set of keyboards from FirstVoices.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -77,12 +81,66 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ico</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLD.ttf</Name>
+      <Description>Font Aboriginal Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansREGULAR.ttf</Name>
+      <Description>Font Aboriginal Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLD.ttf</Name>
+      <Description>Font Aboriginal Serif Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</Name>
+      <Description>Font Aboriginal Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Kwadacha Tsek’ene</Name>
       <ID>fv_kwadacha_tsekene</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <Languages>
         <Language ID="sek-Latn">Sekani</Language>
       </Languages>

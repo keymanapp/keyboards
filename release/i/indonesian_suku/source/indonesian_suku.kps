@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>welcome\indosuku.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -33,11 +35,14 @@
     </Items>
   </StartMenu>
   <Info>
-    <Name URL="">Indonesian-Suku Basic Keyboard</Name>
-    <Copyright URL="">© 2020-2021 Benny Lin</Copyright>
+    <Name URL="">Indonesian-Suku Basic</Name>
+    <Copyright URL="">© Benny Lin</Copyright>
     <Author URL="mailto:bennylin.idwiki@hotmail.com">Benny Lin</Author>
     <WebSite URL="github.com/bennylin">github.com/bennylin</WebSite>
     <Version URL=""></Version>
+    <Description URL="">This keyboard is designed for the Indonesia language and other languages
+of Indonesia (700+ bahasa suku). It will also be useful for other
+languages that do not require special characters.</Description>
   </Info>
   <Files>
     <File>
@@ -124,6 +129,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -133,35 +144,38 @@
       <Languages>
         <Language ID="id">Bahasa Indonesia</Language>
         <Language ID="ms">Bahasa Melayu</Language>
-        <Language ID="jv-Latn">Basa Jawa</Language>
-        <Language ID="ban-Latn">Basa Bali</Language>
-        <Language ID="su-Latn">Basa Sunda</Language>
-        <Language ID="min-Latn">Baso Minang</Language>
-        <Language ID="ace-Latn">Bahsa Acèh</Language>
-        <Language ID="bjn-Latn">Basa Banjar</Language>
-        <Language ID="bug-Latn">Basa Bugi (Bugis)</Language>
-        <Language ID="gor-Latn">Basa Gorontalo</Language>
-        <Language ID="tet-Latn">Basa Tetun</Language>
+        <Language ID="jv">Basa Jawa</Language>
+        <Language ID="ban">Basa Bali</Language>
+        <Language ID="su">Basa Sunda</Language>
+        <Language ID="min">Baso Minang</Language>
+        <Language ID="ace">Bahsa Acèh</Language>
+        <Language ID="bjn">Basa Banjar</Language>
+        <Language ID="bug">Basa Bugi (Bugis)</Language>
+        <Language ID="gor">Basa Gorontalo</Language>
+        <Language ID="tet">Basa Tetun</Language>
         <Language ID="btd-Latn">Kata Pakpak (Dairi)</Language>
-        <Language ID="btx-Latn">Cakap Karo</Language>
-        <Language ID="bbc-Latn">Hata Batak Toba</Language>
-        <Language ID="nia-Latn">Li Niha (Nias)</Language>
-        <Language ID="mak-Latn">Basa Mangkasara' (Makassar)</Language>
-        <Language ID="sda-Latn">Toraja-Sa'dan</Language>
-        <Language ID="twu-Latn">Rote Termanu</Language>
-        <Language ID="mnx-Latn">Manikion/Mantion/Sougb</Language>
-        <Language ID="zlm-Latn">Malay (language)</Language>
-        <Language ID="kxd-Latn">Brunei Malay</Language>
-        <Language ID="zsm-Latn">Malaysian</Language>
-        <Language ID="jax-Latn">Jambi Malay (Latin)</Language>
-        <Language ID="meo-Latn">Kedah Malay (Latin)</Language>
-        <Language ID="kvr-Latn">Kerinci (Latin)</Language>
-        <Language ID="xmm-Latn">Manado Malay (Latin)</Language>
-        <Language ID="mui-Latn">Musi (Latin)</Language>
-        <Language ID="zmi-Latn">Negeri Sembilan</Language>
-        <Language ID="max-Latn">North Moluccan Malay (Latin)</Language>
+        <Language ID="btx">Cakap Karo</Language>
+        <Language ID="bbc">Hata Batak Toba</Language>
+        <Language ID="nia">Li Niha (Nias)</Language>
+        <Language ID="mak">Basa Mangkasara' (Makassar)</Language>
+        <Language ID="sda">Toraja-Sa'dan</Language>
+        <Language ID="twu">Rote Termanu</Language>
+        <Language ID="mnx">Manikion/Mantion/Sougb</Language>
+        <Language ID="zlm">Malay (language)</Language>
+        <Language ID="kxd">Brunei Malay</Language>
+        <Language ID="zsm">Malaysian</Language>
+        <Language ID="jax">Jambi Malay</Language>
+        <Language ID="meo">Kedah Malay</Language>
+        <Language ID="kvr">Kerinci</Language>
+        <Language ID="xmm">Manado Malay</Language>
+        <Language ID="mui">Musi</Language>
+        <Language ID="zmi">Negeri Sembilan</Language>
+        <Language ID="max">North Moluccan Malay</Language>
         <Language ID="mfa-Latn">Kelantan-Pattani Malay</Language>
       </Languages>
+      <Examples>
+        <Example ID="id" Keys="I n i space i b u space B u d i" Text="Ini ibu Budi" Note="&quot;Ini ibu Budi&quot;"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

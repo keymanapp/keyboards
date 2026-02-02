@@ -1,9 +1,7 @@
 Coptic (Greek) keyboard
 ========================
 
-© 2010-2019 Michael Everson, evertype.com.
-
-Version 2.2
+© Michael Everson, evertype.com.
 
 Description
 -----------
@@ -27,4 +25,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 

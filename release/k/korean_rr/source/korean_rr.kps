@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,13 @@
     <Version URL=""></Version>
     <Name URL="">Korean RR</Name>
     <Copyright URL="">© 2010-2023 SIL International</Copyright>
+    <Description>This keyboard is designed for entering the Korean language, supporting
+both the Hangeul alphabet and Hanja ideographic characters, as used in
+Republic of Korea. Korean text is entered using Latin alphabet
+characters, closely following the Korean standard Revised Romanization
+conventions and displayed as jamo character components, which are
+combined to form hangeul characters by pressing the space bar, or hanja
+ideographs by selecting from an IME (Input Method Editor) list.</Description>
   </Info>
   <Files>
     <File>
@@ -99,6 +107,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.dll</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -108,7 +122,10 @@
       <Languages>
         <Language ID="ko">Korean</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ko" Keys="h a n space g u k space" Text="한국" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

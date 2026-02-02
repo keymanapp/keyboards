@@ -1,0 +1,354 @@
+﻿c Complete support for monotonic and polytonic text, plus archaic Greek letters and symbols; also some characters used by scholars and publishers.
+c Μay not be redistributed without permission of the author.
+
+store(&version) '10.0'
+store(&NAME)    'Greek Polytonic Plus'
+store(&BITMAP)   'pi.bmp'
+store(&MESSAGE) 'This keyboard requires a Unicode Greek font.'
+store(&COPYRIGHT) 'Copyright © 2002–2024 by David J. Perry'
+store(&TARGETS)   'desktop web'
+store(&VISUALKEYBOARD) 'greek_polytonic_plus.kvks'
+c store(&BITMAP) 'greek_polytonic_plus.ico'
+store(&KEYBOARDVERSION) '2.0'
+
+begin Unicode > Use(Umain)
+
+store(LatinAlphabet) "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+store(TypedVowels) "aehioyvAEHIOYVrR"  c these are the English letters for 16 Grk vowels
+store(GreekAlphabet) U+03B1  U+03B2 U+03C8 U+03B4 U+03B5 U+03C6 U+03B3 U+03B7 \
+	 U+03B9 U+03BE U+03BA U+03BB U+03BC U+03BD U+03BF U+03C0 U+003B U+03C1 U+03C3 \
+	 U+03C4 U+03B8 U+03C9 U+03C2 U+03C7 U+03C5 U+03B6 U+0391 U+0392 U+03A8 U+0394 \
+	 U+0395 U+03A6 U+0393 U+0397 U+0399 U+039E U+039A U+039B U+039C U+039D U+039F \
+	 U+03A0 U+00B7 U+03A1 U+03A3 U+03A4 U+0398 U+03A9 U+03A3 U+03A7 U+03A5 U+0396
+    c note the single dot ano teleia on Q instead of :
+store(CircumflexVowels) "ahvAHV"
+
+c  First we store all the combinations of one diacritic plus base character
+c            alpha  epsiln  eta    iota   omicr upsiln omega  ALPHA  EPSILON ETA   IOTA   OMICRN UPSILN OMEGA  rho    RHO
+store(acute) U+1F71 U+1F73 U+1F75 U+1F77 U+1F79 U+1F7B U+1F7D U+1FBB U+1FC9 U+1FCB U+1FDB U+1FF9 U+1FEB U+1FFB U+FFFD U+FFFD
+store(grave) U+1F70 U+1F72 U+1F74 U+1F76 U+1F78 U+1F7A U+1F7C U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FEA U+1FFA U+FFFD U+FFFD
+store(peris) U+1FB6 U+FFFD U+1FC6 U+1FD6 U+FFFD U+1FE6 U+1FF6 U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD 
+    c there seem to be no uppercase vowels + circumflex
+    c  used replacement character for epsilon & omicron plus circumflex; add private use value here later
+store(lenis) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60 U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+FFFD U+1F68 U+1FE4 U+FFFD
+    c  used replacement character for Upsilon and Rho plus smooth; add private use area value here later
+store(asper) U+1F01 U+1F11 U+1F21 U+1F31 U+1F41 U+1F51 U+1F61 U+1F09 U+1F19 U+1F29 U+1F39 U+1F49 U+1F59 U+1F69 U+1FE5 U+1FEC
+store(iosub) U+1FB3 U+FFFD U+1FC3 U+FFFD U+FFFD U+FFFD U+1FF3 U+1FBC U+FFFD U+1FCC U+FFFD U+FFFD U+FFFD U+1FFC U+FFFD U+FFFD
+    c  used replacement character for all but alpha, eta, and omega
+store(macro) U+1FB1 U+FFFD U+FFFD U+1FD1 U+FFFD U+1FE1 U+FFFD U+1FB9 U+FFFD U+FFFD U+1FD9 U+FFFD U+1FE9 U+FFFD U+FFFD U+FFFD
+store(breve) U+1FB0 U+FFFD U+FFFD U+1FD0 U+FFFD U+1FE0 U+FFFD U+1FB8 U+FFFD U+FFFD U+1FD8 U+FFFD U+1FE8 U+FFFD U+FFFD U+FFFD
+    c  corrected Y-breve (was coming out as Y-macron)  10/24
+    c  used replacement character for epsilon, eta, omicron, and omega on macron and breve
+
+c  now we store the multiple diacritic + base character combinations
+store(le+gr) U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F52 U+1F62 U+1F0A U+1F1A U+1F2A U+1F3A U+1F4A U+FFFD U+1F6A U+FFFD U+FFFD
+    c  used replacement character for Upsilon plus smooth and grave; add private use area value here later
+store(as+gr) U+1F03 U+1F13 U+1F23 U+1F33 U+1F43 U+1F53 U+1F63 U+1F0B U+1F1B U+1F2B U+1F3B U+1F4B U+1F5B U+1F6B U+FFFD U+FFFD
+store(le+ac) U+1F04 U+1F14 U+1F24 U+1F34 U+1F44 U+1F54 U+1F64 U+1F0C U+1F1C U+1F2C U+1F3C U+1F4C U+FFFD U+1F6C U+FFFD U+FFFD
+    c  used replacement character for Upsilon plus smooth and acute; add private use area value here later
+store(as+ac) U+1F05 U+1F15 U+1F25 U+1F35 U+1F45 U+1F55 U+1F65 U+1F0D U+1F1D U+1F2D U+1F3D U+1F4D U+1F5D U+1F6D U+FFFD U+FFFD
+store(le+pe) U+1F06 U+FFFD U+1F26 U+1F36 U+FFFD U+1F56 U+1F66 U+1F0E U+FFFD U+1F2E U+1F3E U+FFFD U+FFFD U+1F6E U+FFFD U+FFFD
+store(as+pe) U+1F07 U+FFFD U+1F27 U+1F37 U+FFFD U+1F57 U+1F67 U+1F0F U+FFFD U+1F2F U+1F3F U+FFFD U+1F5F U+1F6F U+FFFD U+FFFD
+    c  used replacement character for epsilon, omicron, Epsilon, Omicron, Upsilon plus circumflex
+   
+c now we store the iota subscript + diacritic combinations
+c first the single breathing/accent plus iota subs, then multiple
+c               alpha   eta   omega  ALPHA   ETA   OMEGA
+store(le+io)    U+1F80 U+1F90 U+1FA0 U+1F88 U+1F98 U+1FA8
+store(as+io)    U+1F81 U+1F91 U+1FA1 U+1F89 U+1F99 U+1FA9
+store(gr+io)    U+1FB2 U+1FC2 U+1FF2 U+FFFD U+FFFD U+FFFD   c this and the next line added in v. 86
+store(ac+io)    U+1FB4 U+1FC4 U+1FF4 U+FFFD U+FFFD U+FFFD
+store(pe+io)    U+1FB7 U+1FC7 U+1FF7 U+FFFD U+FFFD U+FFFD   c this line added in v. .85
+    c used replacement character for capital circumflex+iota subs; these are not in Unicode
+store(le+gr+io) U+1F82 U+1F92 U+1FA2 U+1F8A U+1F9A U+1FAA
+store(as+gr+io) U+1F83 U+1F93 U+1FA3 U+1F8B U+1F9B U+1FAB
+store(le+ac+io) U+1F84 U+1F94 U+1FA4 U+1F8C U+1F9C U+1FAC
+store(as+ac+io) U+1F85 U+1F95 U+1FA5 U+1F8D U+1F9D U+1FAD
+store(le+pe+io) U+1F86 U+1F96 U+1FA6 U+1F8E U+1F9E U+1FAE
+store(as+pe+io) U+1F87 U+1F97 U+1FA7 U+1F8F U+1F9F U+1FAF
+
+c strings needed for monotonic Greek
+store(tonos) U+03AC U+03AD U+03AE U+03AF U+03CC U+03CD U+03CE U+0386 U+0388 U+0389 U+038A U+038C U+038E U+038F U+FFFD U+FFFD
+store(DiaeresisVowels) "iyIY"
+store(dialy) U+03CA U+03CB U+03AA U+03AB U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD 
+store(di+to) U+0390 U+03B0 U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD
+  c apparently no Unicode for Iota/Upsilon+dialytika+tonos
+
+c the polytonic diaeresis combos
+store(di+gr) U+1FD2 U+1FE2 U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD
+store(di+ac) U+1FD3 U+1FE3 U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD
+store(di+pe) U+1FD7 U+1FE7 U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD U+FFFD
+
+group(Umain) Using keys
+
++ any(LatinAlphabet) > index(GreekAlphabet,1) c this takes care of A-Z and a-z
+
+c this section takes care of vowels with only one accent or breathing
++ "'" > deadkey(1)
+dk(1) + any(TypedVowels) > index(acute,2)
+dk(1) + [K_SPACE] > "'"
++ '`' > deadkey(2)
+dk(2) + any(TypedVowels) > index(grave,2)
+dk(2) + [K_SPACE] > '`'
++ "^" > deadkey(3)
+dk(3) + any(TypedVowels) > index(peris,2) use(NoChar)
+dk(3) + [K_SPACE] > "^"
++ [SHIFT K_BKQUOTE] > deadkey(12)   c in case user likes curly form
+dk(12) + any(TypedVowels) > index(peris,2)
+dk(12) + [K_SPACE] > "~"
++ ">" > deadkey(4)
+dk(4) + any(TypedVowels) > index(lenis,2) use(NoChar)
+dk(4) + [K_SPACE] > ">"
++ "<" > deadkey(5)
+dk(5) + any(TypedVowels) > index(asper,2) use(NoChar)
+dk(5) + [K_SPACE] > "<"
++ [RALT K_I] > deadkey(6)     c the iota subscript
+dk(6) + any(TypedVowels) > index(iosub,2) use(NoChar)
+dk(6) + [K_SPACE] > U+037A
++ "/" > deadkey(7)            c  same as macron on Latin keyboard
+dk(7) + any(TypedVowels) > index(macro,2) use(NoChar)
+dk(7) + [K_SPACE] > "/"
++ "?" > deadkey(8)            c  same as breve on Latin keyboard
+dk(8) + any(TypedVowels) > index(breve,2)  use(NoChar)
+dk(8) + [K_SPACE] > "?"
+
+c this section takes care of vowels with breathing plus accent
+c the second line in each group enables the user to type diacritics in either order
+c the second order has not yet been tested
+dk(4) dk(2) + any(TypedVowels) > index(le+gr,3) use(NoChar)   c dk(4) is lenis, dk(2) is grave
+dk(2) dk(4) + any(TypedVowels) > index(le+gr,3) use(NoChar)
+dk(5) dk(2) + any(TypedVowels) > index(as+gr,3) use(NoChar)   c dk(5) is asper, dk(2) is grave 
+dk(2) dk(5) + any(TypedVowels) > index(as+gr,3) use(NoChar)
+dk(4) dk(1) + any(TypedVowels) > index(le+ac,3) use(NoChar)   c dk(4) is lenis, dk(1) is acute
+dk(1) dk(4) + any(TypedVowels) > index(le+ac,3) use(NoChar)
+dk(5) dk(1) + any(TypedVowels) > index(as+ac,3) use(NoChar)   c dk(5) is asper, dk(1) is acute
+dk(1) dk(5) + any(TypedVowels) > index(as+ac,3) use(NoChar)
+dk(4) dk(3) + any(TypedVowels) > index(le+pe,3) use(NoChar)   c dk(4) is lenis, dk(3) is perispomeni
+dk(3) dk(4) + any(TypedVowels) > index(le+pe,3) use(NoChar)
+dk(5) dk(3) + any(TypedVowels) > index(as+pe,3) use(NoChar)   c dk(5) is asper, dk(3) is perispomeni
+dk(3) dk(5) + any(TypedVowels) > index(as+pe,3) use(NoChar)
+dk(4) dk(12) + any(TypedVowels) > index(le+pe,3) use(NoChar)   c dk(4) is lenis, dk(12) is perispomeni on tilde
+dk(12) dk(4) + any(TypedVowels) > index(le+pe,3) use(NoChar)
+dk(5) dk(12) + any(TypedVowels) > index(as+pe,3) use(NoChar)   c dk(5) is asper, dk(12) is perispomeni on tilde
+dk(12) dk(5) + any(TypedVowels) > index(as+pe,3) use(NoChar)   c this line and three above added in v. .87
+
+c this section handles a single accent or breathing and iota subscript
+dk(2) dk(6) + any(CircumflexVowels) > index(gr+io,3)           c dk(2) is grave, dk(6) is iota subs.
+dk(6) dk(2) + any(CircumflexVowels) > index(gr+io,3)            
+dk(1) dk(6) + any(CircumflexVowels) > index(ac+io,3)           c dk(1) is acute, dk(6) is iota subs. 
+dk(6) dk(1) + any(CircumflexVowels) > index(ac+io,3)           c this line and the three above added in v. .86 
+
+dk(3) dk(6) + any(CircumflexVowels) > index(pe+io,3)           c dk(3) is perispomeni, dk(6) is iota subs.
+dk(6) dk(3) + any(CircumflexVowels) > index(pe+io,3)           c this line and the one above added in v. .85 
+dk(12) dk(6) + any(CircumflexVowels) > index(pe+io,3)           c dk(12) is perispomeni on tilde, dk(6) is iota subs.
+dk(6) dk(12) + any(CircumflexVowels) > index(pe+io,3)           c this line and the one above added in v. .87 
+
+dk(4) dk(6) + any(CircumflexVowels) > index(le+io,3)           c dk(4) is lenis, dk(6) is iota subs.
+dk(6) dk(4) + any(CircumflexVowels) > index(le+io,3)
+dk(5) dk(6) + any(CircumflexVowels) > index(as+io,3)           c dk(5) is asper, dk(6) is iota subs.
+dk(6) dk(5) + any(CircumflexVowels) > index(as+io,3)
+
+c and finally we need the vowels with breathing plus accent and iota subscript
+  c note that the user MUST type the iota subscript after the breathing and accent
+  c we would like to fix this in a future version
+dk(4) dk(2) dk(6) + any(CircumflexVowels) > index(le+gr+io,4)  c dk(4) is lenis, dk(2) grave, dk(6) iota subs.
+dk(2) dk(4) dk(6) + any(CircumflexVowels) > index(le+gr+io,4)
+dk(5) dk(2) dk(6) + any(CircumflexVowels) > index(as+gr+io,4)  c dk(5) is asper, dk(2) grave, dk(6) iota subs.
+dk(2) dk(5) dk(6) + any(CircumflexVowels) > index(as+gr+io,4)
+dk(4) dk(1) dk(6) + any(CircumflexVowels) > index(le+ac+io,4)  c dk(4) is lenis, dk(1) acute, dk(6) iota subs.
+dk(1) dk(4) dk(6) + any(CircumflexVowels) > index(le+ac+io,4)
+dk(5) dk(1) dk(6) + any(CircumflexVowels) > index(as+ac+io,4)  c dk(5) is asper, dk(1) acute, dk(6) iota subs.
+dk(1) dk(5) dk(6) + any(CircumflexVowels) > index(as+ac+io,4)
+dk(4) dk(3) dk(6) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(3) peris, dk(6) iota subs.
+dk(3) dk(4) dk(6) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(5) dk(3) dk(6) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(3) peris, dk(6) iota subs.
+dk(3) dk(5) dk(6) + any(CircumflexVowels) > index(as+pe+io,4)
+dk(4) dk(12) dk(6) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(12) peris on tilde, dk(6) iota subs.
+dk(12) dk(4) dk(6) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(5) dk(12) dk(6) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(12) peris on tilde, dk(6) iota subs.
+dk(12) dk(5) dk(6) + any(CircumflexVowels) > index(as+pe+io,4)  c this line and three above added in v. .87
+
+c new in 2.5c -- iota subs with breathing and accent in any order   COMPILES SUCCESSFULLY BUT DOESN'T WORK
+    c iota sub. typed second
+dk(4) dk(6) dk(2) + any(CircumflexVowels) > index(le+gr+io,4)  c dk(4) is lenis, dk(2) grave, dk(6) iota subs.
+dk(2) dk(6) dk(4) + any(CircumflexVowels) > index(le+gr+io,4)
+dk(5) dk(6) dk(2) + any(CircumflexVowels) > index(as+gr+io,4)  c dk(5) is asper, dk(2) grave, dk(6) iota subs.
+dk(2) dk(6) dk(5) + any(CircumflexVowels) > index(as+gr+io,4)
+dk(4) dk(6) dk(1) + any(CircumflexVowels) > index(le+ac+io,4)  c dk(4) is lenis, dk(1) acute, dk(6) iota subs.
+dk(1) dk(6) dk(4) + any(CircumflexVowels) > index(le+ac+io,4)
+dk(5) dk(6) dk(1) + any(CircumflexVowels) > index(as+ac+io,4)  c dk(5) is asper, dk(1) acute, dk(6) iota subs.
+dk(1) dk(6) dk(5) + any(CircumflexVowels) > index(as+ac+io,4)
+dk(4) dk(6) dk(3) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(3) peris, dk(6) iota subs.
+dk(3) dk(6) dk(4) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(5) dk(6) dk(3) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(3) peris, dk(6) iota subs.
+dk(3) dk(6) dk(5) + any(CircumflexVowels) > index(as+pe+io,4)
+dk(4) dk(6) dk(12) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(12) peris on tilde, dk(6) iota subs.
+dk(12) dk(6) dk(4) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(5) dk(6) dk(12) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(12) peris on tilde, dk(6) iota subs.
+dk(12) dk(6) dk(5) + any(CircumflexVowels) > index(as+pe+io,4)  c this line and three above added in v. .87
+
+    c iota sub. typed first
+dk(6) dk(4) dk(2) + any(CircumflexVowels) > index(le+gr+io,4)  c dk(4) is lenis, dk(2) grave, dk(6) iota subs.
+dk(6) dk(2) dk(4) + any(CircumflexVowels) > index(le+gr+io,4)
+dk(6) dk(5) dk(2) + any(CircumflexVowels) > index(as+gr+io,4)  c dk(5) is asper, dk(2) grave, dk(6) iota subs.
+dk(6) dk(2) dk(5) + any(CircumflexVowels) > index(as+gr+io,4)
+dk(6) dk(4) dk(1) + any(CircumflexVowels) > index(le+ac+io,4)  c dk(4) is lenis, dk(1) acute, dk(6) iota subs.
+dk(6) dk(1) dk(4) + any(CircumflexVowels) > index(le+ac+io,4)
+dk(6) dk(5) dk(1) + any(CircumflexVowels) > index(as+ac+io,4)  c dk(5) is asper, dk(1) acute, dk(6) iota subs.
+dk(6) dk(1) dk(5) + any(CircumflexVowels) > index(as+ac+io,4)
+dk(6) dk(4) dk(3) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(3) peris, dk(6) iota subs.
+dk(6) dk(3) dk(4) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(6) dk(5) dk(3) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(3) peris, dk(6) iota subs.
+dk(6) dk(3) dk(5) + any(CircumflexVowels) > index(as+pe+io,4)
+dk(6) dk(4) dk(12) + any(CircumflexVowels) > index(le+pe+io,4)  c dk(4) is lenis, dk(12) peris on tilde, dk(6) iota subs.
+dk(6) dk(12) dk(4) + any(CircumflexVowels) > index(le+pe+io,4)
+dk(6) dk(5) dk(12) + any(CircumflexVowels) > index(as+pe+io,4)  c dk(5) is asper, dk(12) peris on tilde, dk(6) iota subs.
+dk(6) dk(12) dk(5) + any(CircumflexVowels) > index(as+pe+io,4)  c this line and three above added in v. .87    
+c end new iota subs
+
+c now all the monotonic vowel combinations
++ ";" > deadkey(9)            c  the monotonic tonos on the semicolon
+dk(9) + any(TypedVowels) > index(tonos,2)
+dk(9) + [K_SPACE] > U+0384
++ ":" > deadkey(10)           c the monotonic dieresis on the colon
+dk(10) + any(DiaeresisVowels) > index(dialy,2)
+dk(10) + [K_SPACE] > U+00A8
++ [RALT K_COLON] > dk(11) c the monotonic tonos+dieresis on the AltGr-semicolon
+dk(11) + any(DiaeresisVowels) > index(di+to,2)
+dk(11) + [K_SPACE] > U+0385
+
+c now the polytonic diaeresis combos
+dk(2) dk(10) + any(DiaeresisVowels) > index(di+gr,3)  c dk(2) is grave, dk(10) diaeresis
+dk(10) dk(2) + any(DiaeresisVowels) > index(di+gr,3)
+dk(1) dk(10) + any(DiaeresisVowels) > index(di+ac,3)  c dk(1) is acute
+dk(10) dk(1) + any(DiaeresisVowels) > index(di+ac,3)
+dk(3) dk(10) + any(DiaeresisVowels) > index(di+pe,3)  c dk(3) is circumflex
+dk(10) dk(3) + any(DiaeresisVowels) > index(di+pe,3)
+dk(12) dk(10) + any(DiaeresisVowels) > index(di+pe,3)  c dk(12) is circumflex
+dk(10) dk(12) + any(DiaeresisVowels) > index(di+pe,3)  c this line and one above added in v. .87
+
+c the various single characters that use the AltGr key
+      c archaic letters original assignment; keep for compatibiliity with previous version
++ [SHIFT RALT K_C] > U+03F9     c lunate sigma
+      + [RALT K_C] > U+03F2     
++ [SHIFT RALT K_W] > U+03DC     c digamma
+      + [RALT K_W] > U+03DD
++ [SHIFT RALT K_Z] > U+03DE     c koppa numeric
+      + [RALT K_z] > U+03DF
++ [SHIFT RALT K_Q] > U+03D8     c koppa alphabetic; for Unicode 3.2
+      + [RALT K_q] > U+03D9
++ [SHIFT RALT K_P] > U+03E0     c sampi
+      + [RALT K_P] > U+03E1
++ [SHIFT RALT K_T] > U+03DA     c stigma
+      + [RALT K_T] > U+03DB
+
+      c other Greek letters and symbols
+      + [RALT K_R] > U+03FC     c rho with stroke; new in 2.5  
++ [SHIFT RALT K_J] > U+037F     c yod
+      + [RALT K_J] > U+03F3
+      + [RALT K_9] > U+0375     c numeric low (comes before)
+      + [RALT K_0] > U+0374     c numeric high (comes after)
++ [SHIFT RALT K_7] > U+03CF     c kai ligature; uppercase new in 2.5
+      + [RALT K_7] > U+03D7
+
+      c Coptic letters; keep for compatibility with previous version
++ [SHIFT RALT K_X] > U+03E2     c shei
+      + [RALT K_X] > U+03E3
++ [SHIFT RALT K_F] > U+03E4     c fei
+      + [RALT K_F] > U+03E5
++ [SHIFT RALT K_K] > U+03E6     c khei
+      + [RALT K_K] > U+03E7
++ [SHIFT RALT K_H] > U+03E8     c hori
+      + [RALT K_H] > U+03E9
++ [SHIFT RALT K_G] > U+03EA     c gangia
+      + [RALT K_G] > U+03EB
++ [SHIFT RALT K_O] > U+03EC     c shiwa
+      + [RALT K_O] > U+03ED
++ [SHIFT RALT K_D] > U+03EE     c dei
+      + [RALT K_D] > U+03EF
+
+c the same single characters as above, using CTRL+ALT
+c this section removed in 2.7
+
+c archaic letters using backslash deadkey; new in 2.5
++ "\" > deadkey(13)
+DK(13) + [SHIFT K_P] > U+03E0   c Sampi / sampi
+DK(13) +       [K_P] > U+03E1   
+DK(13) + [SHIFT K_Q] > U+03D8   c Koppa / koppa
+DK(13) +       [K_Q] > U+03D9   
+DK(13) + [SHIFT K_T] > U+03DA   c Stigma / stigma
+DK(13) +       [K_T] > U+03DB   
+DK(13) + [SHIFT K_W] > U+03DC   c Digamma / digamma
+DK(13) +       [K_W] > U+03DD   
+DK(13) + [SHIFT K_C] > U+03F9   c lunate Sigma / sigma
+DK(13) +       [K_C] > U+03F2   
+DK(13) + [SHIFT K_1] > U+03FD   c reversed lunate Sigma / sigma
+DK(13) +       [K_1] > U+037B   
+DK(13) + [SHIFT K_2] > U+03FE   c dotted lunate Sigma / sigma
+DK(13) +       [K_2] > U+037C   
+DK(13) + [SHIFT K_3] > U+03FF   c reversed dotted lunate Sigma / sigma
+DK(13) +       [K_3] > U+037D   
+DK(13) + [SHIFT K_S] > U+03FA   c San / san
+DK(13) +       [K_S] > U+03FB   
+DK(13) + [SHIFT K_H] > U+0370   c Heta / heta
+DK(13) +       [K_H] > U+0371   
+DK(13) + [SHIFT K_M] > U+0372   c archaic Sampi / sampi
+DK(13) +       [K_M] > U+0373   
+DK(13) + [SHIFT K_V] > U+0376   c Pamphylian digamma / digamma
+DK(13) +       [K_V] > U+0377   
+DK(13) + [SHIFT K_O] > U+03F7   c Sho / sho
+DK(13) +       [K_O] > U+03F8   
+dk(13) + [K_SPACE] > U+005C     c in order to get a real backslash if needed
+
+
+c the punctuation characters and symbols; same as Latin keyboard
+          + [RALT K_4] > U+20AF     c Drachma sign
+          + [RALT K_M] > U+2014     c em dash
+          + [RALT K_N] > U+2013     c en dash
+          + [RALT K_S] > U+00A7     c section sign
+c         + [RALT K_P] > U+00B6     c paragraph conflicts with sampi
+          + [RALT K_5] > U+2020     c dagger ; don't like these assignments
+    + [SHIFT RALT K_5] > U+2021     c double dagger
+    + [SHIFT RALT K_8] > U+2042     c asterism
+          + [RALT K_8] > U+203B     c reference mark
+          + [RALT K_B] > U+2022     c bullet
+      + [RALT K_LBRKT] > U+2039     c single guillemet
+      + [RALT K_RBRKT] > U+203A
++ [SHIFT RALT K_LBRKT] > U+00AB     c double guillemets
++ [SHIFT RALT K_RBRKT] > U+00BB
+    + [SHIFT RALT K_9] > U+2329     c opening angle bracket - 2.5 CJK 3008 replaced with non-CJK
+    + [SHIFT RALT K_0] > U+232A     c closing angle bracket - 2.5 CJK 3009 replaced with non-CJK
+             "[" + "[" > U+27E6     c double brackets typed twice -2.5 CJK 301A replaced with non-CJK
+             "]" + "]" > U+27E7     c 
+U+2329 + [SHIFT RALT K_9] > U+27EA  c for double angle brackets - 2.5 CJK replaced with non-CJK
+U+232A + [SHIFT RALT K_0] > U+27EB
+       c registered, copyright and inverted question / exclamation
+    c   not implemented on the Greek keyboard
+  
+c the same characters and symbols as above, but using CTRL+ALT
+c this section removed in 2.7
+  
+
+c the combining marks
+       + [RALT K_PERIOD] > U+0323   c combining dot below
+      + [RALT K_BKQUOTE] > U+0300   c combining grave	
+        + [RALT K_QUOTE] > U+0301   c combining acute
+      + [SHIFT RALT K_6] > U+0302   c combining circumflex (shouldn't use in Grk, but ...)      
+ + [SHIFT RALT K_PERIOD] > U+0313   c combining smooth br.	AltGr-] conflict w/ guillemet
+  + [SHIFT RALT K_COMMA] > U+0314   c combining rough br.	AltGr-[
+        + [RALT K_SLASH] > U+0304   c combining macron
+  + [SHIFT RALT K_SLASH] > U+0306   c combining breve
+  + [SHIFT RALT K_COLON] > U+0308   c combining dieresis
++ [SHIFT RALT K_BKQUOTE] > U+0342   c combining perispomeni
+      + [SHIFT RALT K_I] > U+0345   c combining ypogegrammeni
+      + [SHIFT RALT K_HYPHEN] > U+0343   c combining Greek coronis; added in 2.5
+
+c now the same combining marks with CTRL+ALT
+c this section removed in 2.7
+
+
+c to alert the user if he types a character or combination that does not exist
+group(NoChar)
+U+FFFD > context beep   c if I decide not to show the Repl Char, just delete "context"
+
+c end of file

@@ -196,7 +196,7 @@ lang=EN-US style='font-size:12.0pt;font-family:Arial'><a href='https://keyman.co
 <h1 style='margin-top:0cm'><span lang=EN-US>Fonts</span></h1>
 
 <p class=MsoNormal><span lang=EN-US>Three font families are included in this
-package.  These fonts are all licensed under the <a href='ofl.txt'>SIL Open Font License</a> (<a href='ofl-faq.txt'>FAQ</a>).</span></p>
+package.  These fonts are all licensed under the <a href='OFL.txt'>SIL Open Font License</a> (<a href='OFL-FAQ.txt'>FAQ</a>).</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
 lang=EN-US style='font-size:12.0pt;font-family:Arial'>Doulos SIL</span></b></p>

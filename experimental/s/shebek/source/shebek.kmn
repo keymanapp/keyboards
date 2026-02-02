@@ -1,0 +1,218 @@
+﻿
+store(&Version) "15.0"
+store(&Name) "Shebek"
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'shebek.kvks'
+store(&BITMAP) 'shebek.ico'
+store(&LAYOUTFILE) 'shebek.keyman-touch-layout'
+store(&COPYRIGHT) '© SIL International'
+store(&KMW_RTL) '1'
+store(&KEYBOARDVERSION) '0.9.2'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
++ [RALT SHIFT K_0] > U+0030
++ [RALT SHIFT K_1] > U+0031
++ [RALT SHIFT K_2] > U+0032
++ [RALT SHIFT K_3] > U+0033
++ [RALT SHIFT K_4] > U+0034
++ [RALT SHIFT K_5] > U+0035
++ [RALT SHIFT K_6] > U+0036
++ [RALT SHIFT K_7] > U+0037
++ [RALT SHIFT K_8] > U+0038
++ [RALT SHIFT K_9] > U+0039
+
++ [K_0] > U+0660
++ [SHIFT K_0] > U+0029
+
++ [K_1] > U+0661
++ [SHIFT K_1] > U+0021
++ [RALT K_1] > U+200d c ZWJ
+
++ [K_2] > U+0662
++ [SHIFT K_2] > U+0040
++ [RALT K_2] > U+200c c ZWNJ
+
++ [K_3] > U+0663
++ [SHIFT K_3] > U+0023
++ [RALT K_3] > U+200e c LRM
+
++ [K_4] > U+0664
++ [SHIFT K_4] > U+0024
++ [RALT K_4] > U+200f c RLM
+
++ [K_5] > U+0665
++ [SHIFT K_5] > U+0025
+
++ [K_6] > U+0666
++ [SHIFT K_6] > U+005e
+
++ [K_7] > U+0667
++ [SHIFT K_7] > U+0026
+
++ [K_8] > U+0668
++ [SHIFT K_8] > U+002a
+
++ [K_9] > U+0669
++ [SHIFT K_9] > U+0028
+
++ [K_A] > U+0634
++ [SHIFT K_A] > U+0650
+
++ [K_B] > U+0679 c this is a new decision
++ [SHIFT K_B] > U+0644 U+0627
++ [RALT K_B] > U+0644 U+0622
+
++ [K_C] > U+06c6
++ [SHIFT K_C] > U+007b
+
++ [K_D] > U+064A
++ [SHIFT K_D] > U+064A U+065B
++ [RALT K_D] > U+06cc c not needed except possibly for borrowed words
+
++ [K_E] > U+067e
++ [SHIFT K_E] > U+064f
+
++ [K_F] > U+0628
++ [SHIFT K_F] > nul c will possibly add something here
+
++ [K_G] > U+0644
++ [SHIFT K_G] > U+06b5
+
++ [K_H] > U+0627
++ [SHIFT K_H] > U+0623
+
++ [K_I] > U+06BE
++ [SHIFT K_I] > U+00ab
++ [RALT K_I] > U+0647
+
++ [K_J] > U+062a
++ [SHIFT K_J] > U+0640
+
++ [K_K] > U+0646
++ [SHIFT K_K] > U+060c
+
++ [K_L] > U+0645
++ [SHIFT K_L] > U+002f
+
++ [K_M] > U+06d5
++ [SHIFT K_M] > U+2019
+U+2019 + [SHIFT K_M] > U+201D
+
++ [K_N] > U+064A U+065A
++ [SHIFT K_N] > U+0622
+
++ [K_O] > U+062e
++ [SHIFT K_O] > U+00bb
++ [RALT K_O] > U+005b
+
++ [K_P] > U+062d
++ [SHIFT K_P] > U+061b
++ [RALT K_P] > U+005d
+
++ [K_Q] > U+0686
++ [SHIFT K_Q] > U+064e
+
++ [K_R] > U+0642
++ [SHIFT K_R] > U+064c
+
++ [K_S] > U+0633
++ [SHIFT K_S] > U+064d
+
++ [K_T] > U+0641
++ [SHIFT K_T] > U+0644 U+0625
+
++ [K_U] > U+0639
++ [SHIFT K_U] > U+2018
+U+2018 + [SHIFT K_U] > U+201C
+
++ [K_V] > U+0631
++ [SHIFT K_V] > U+007d
+
++ [K_W] > U+0635
++ [SHIFT K_W] > U+064b
+
++ [K_X] > U+0695
++ [SHIFT K_X] > U+0652
+
++ [K_Y] > U+063a
++ [SHIFT K_Y] > U+0625
+
++ [K_Z] > U+0626
++ [SHIFT K_Z] > U+0653
++ [RALT K_Z] > U+007e
+
++ [K_COLON] > U+0643
++ [SHIFT K_COLON] > U+003a
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [K_COMMA] > U+0648
++ [SHIFT K_COMMA] > U+002c
++ [RALT K_COMMA] > U+0648 U+0659 c new, but possibly poor decision
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
+
++ [K_PERIOD] > U+0632
++ [SHIFT K_PERIOD] > U+002e
++ [RALT K_PERIOD] > U+06C9 c new
+
++ [K_SLASH] > U+0698
++ [SHIFT K_SLASH] > U+061f
+
++ [K_BKQUOTE] > U+06a4
++ [SHIFT K_BKQUOTE] > U+0651
+
++ [K_LBRKT] > U+062c
++ [SHIFT K_LBRKT] > U+2039
++ [RALT K_LBRKT] > U+003C
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+007c
+
++ [K_RBRKT] > U+062f
++ [SHIFT K_RBRKT] > U+203a
++ [RALT K_RBRKT] > U+003E
+
++ [K_QUOTE] > U+06af
++ [SHIFT K_QUOTE] > U+0022
++ [RALT SHIFT K_QUOTE] > U+0027
+
++ [K_oE2] > U+005c
++ [SHIFT K_oE2] > U+007c
+
+
+
+c Added characters from Arabic 101 keyboard that aren't needed for Behdini
++ [RALT K_BKQUOTE] > U+0630
++ [RALT K_Q] > U+0636
++ [RALT K_E] > U+062B
++ [RALT K_G] > U+0644 U+0623
++ [RALT K_QUOTE] > U+0637
++ [RALT K_X] > U+0621
++ [RALT K_C] > U+0624
++ [RALT K_N] > U+0649
++ [RALT K_M] > U+0629
++ [RALT K_SLASH] > U+0638
+
++ [RALT SHIFT K_I] > U+00F7
++ [RALT SHIFT K_O] > U+00D7
+
+c These were added because the sorani keyboard has them
++ [RALT SHIFT K_E] > U+20AC
++ [RALT K_CoLON] > U+06A9
+
+
+
+
+
+
+
+
+

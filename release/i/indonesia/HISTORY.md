@@ -2,6 +2,10 @@ Indonesia Keyboard Layout Change History
 Riwayat Perubahan Tata Letak Papan Tombol Indonesia
 =======================================
 
+2.0.2 (6 Jan 2025)
+---------------------------------
+* Fix touch layout for zxq
+
 2.0.1 (19 July 2023)
 ---------------------------------
 * Fix key cap for longpress numeric layer switch key

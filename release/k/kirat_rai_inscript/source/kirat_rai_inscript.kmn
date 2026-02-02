@@ -1,0 +1,93 @@
+﻿store(&Version) "10.0"
+store(&NAME) 'Kirat Rai - INSCRIPT'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'kirat_rai_inscript.kvks'
+store(&BITMAP) 'kirat_rai_inscript.ico'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.1.1'
+store(&LAYOUTFILE) 'kirat_rai_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(digits)  U+0030 .. U+0039
+store(digitsKR) U+16D70 .. U+16DF9
+
+store(letters1)   [K_Y]   [K_U]   [K_I]   [K_O]     [K_P]     [K_LBRKT] \
+                  [K_H]   [K_K]   [K_L]   [K_COLON] [K_QUOTE] [K_M]
+store(letters1KR) U+16D59 U+16D62 U+16D46 U+16D54   U+16D4B   U+16D50 \
+                  U+16D57 U+16D44 U+16D52 U+16D49   U+16D4E   U+16D60
+store(letters2)   [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O]     [SHIFT K_P]     [SHIFT K_LBRKT] \
+                  [SHIFT K_H] [SHIFT K_K] [SHIFT K_L] [SHIFT K_COLON] [SHIFT K_QUOTE] [SHIFT K_M]
+store(letters2KR) U+16D5A     U+16D48     U+16D47     U+16D55         U+16D4C         U+16D51 \
+                  U+16D58     U+16D45     U+16D53     U+16D4A         U+16D4F         U+16D61
+
+store(vowels)   [K_Q]   [K_W]   [K_E]   [K_A]   [K_S]   [K_F]   [K_G]   [K_T]
+store(vowelsKR) U+16D6A U+16D68 U+16D63 U+16D69 U+16D67 U+16D64 U+16D65 U+16D66   
+
+store(nul) "rzQWERTASFGJZXCVBN<"
+
+group(main) using keys
+
++ any(digits)   > index(digitsKR,1)
++ any(letters1) > index(letters1KR,1)
++ any(letters2) > index(letters2KR,1)
++ any(vowels)   > index(vowelsKR,1) use(compose)
++ any(nul)      > nul
+
++ [K_B] > U+16D5F c va
++ [K_C] > U+16D5B c ma
++ [K_J] > U+16D5D c ra
++ [K_N] > U+16D5E c la
++ [K_V] > U+16D56 c na
++ [SHIFT K_D] > U+16D43 c letter a
++ [SHIFT K_RBRKT] > U+16D4D c nya
++ [SHIFT K_SLASH] > U+16D5C c ya
+
++ [K_X]            > U+16D40 c anusvara
++ [K_SLASH]        > U+16D41 c tonpi
++ [SHIFT K_HYPHEN] > U+16D42 c visarga
++ [K_D]     > U+16D6B c virama
++ [K_EQUAL] > U+16D6C c saat
++ [K_RBRKT] > U+16D6D use(compose) c yupi
++ [K_PERIOD]       > U+16D6E
++ [SHIFT K_PERIOD] > U+16D6F
+
++ [SHIFT K_1] > U+0021
++ [SHIFT K_2] > U+0040
++ [SHIFT K_9] > U+0028
++ [SHIFT K_0] > U+0029
+
++ [K_HYPHEN]  > U+002d
+
++ [K_COMMA] > U+002c
+
++ [K_BKQUOTE] > U+0060
++ [K_BKSLASH] > U+005C
++ [SHIFT K_BKQUOTE] > U+007E
++ [SHIFT K_BKSLASH] > U+007C
+
++ [SHIFT K_3] > U+0023
++ [SHIFT K_4] > U+0024
++ [SHIFT K_5] > U+0025
++ [SHIFT K_6] > U+005E
++ [SHIFT K_7] > U+0026
++ [SHIFT K_8] > U+002A
++ [SHIFT K_EQUAL] > U+002B
++ [RALT K_4]  > U+20B9 c rupee
+
++ [RALT K_LBRKT] > U+005B
++ [RALT K_RBRKT] > U+005D
++ [SHIFT RALT K_LBRKT] > U+007B
++ [SHIFT RALT K_RBRKT] > U+007D
++ [RALT K_COMMA] > U+003C
++ [RALT K_PERIOD] > U+003E
+
+group(compose)
+
+U+16D67 U+16D67 > U+16D68
+U+16D63 U+16D67 > U+16D69
+U+16D69 U+16D67 > U+16D6A
+U+16D63 U+16D68 > U+16D6A
+
+c This rule isn't technically a composition, but people type this way and they shouldn't
+U+16D65 U+16D6D > U+16D66

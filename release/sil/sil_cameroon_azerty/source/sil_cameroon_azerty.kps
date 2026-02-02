@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>splash.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,9 +21,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Cameroon AZERTY</Name>
-    <Copyright URL="">© 2018-2023 SIL Cameroon</Copyright>
+    <Copyright URL="">© SIL Cameroon</Copyright>
     <Author URL="mailto:keyboards_cameroon@sil.org">Matthew Lee</Author>
     <WebSite URL="LangTechCameroon.info">LangTechCameroon.info</WebSite>
+    <Description URL="">This keyboard supports the General Alphabet of Cameroonian Languages for
+an AZERTY (French) Keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -155,12 +160,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Cameroon AZERTY</Name>
       <ID>sil_cameroon_azerty</ID>
-      <Version>6.1.0</Version>
+      <Version>6.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
@@ -188,7 +199,7 @@
         <Language ID="baw">Bambili-Bambui</Language>
         <Language ID="bce">Bamenyam</Language>
         <Language ID="bqt">Bamukumbit</Language>
-        <Language ID="bax">Bamun</Language>
+        <Language ID="bax-Latn">Bamun</Language>
         <Language ID="bvm">Bamunka</Language>
         <Language ID="bcw">Bana</Language>
         <Language ID="bgf">Bangandu</Language>
@@ -425,7 +436,7 @@
         <Language ID="vem">Vemgo-Mabas</Language>
         <Language ID="bav">Vengo</Language>
         <Language ID="vut">Vute</Language>
-        <Language ID="mfi">Wandala</Language>
+        <Language ID="mfi-Latn">Wandala</Language>
         <Language ID="www">Wawa</Language>
         <Language ID="weh">Weh</Language>
         <Language ID="bqm">Wumboko</Language>
@@ -445,5 +456,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="cameroon azerty unicode" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

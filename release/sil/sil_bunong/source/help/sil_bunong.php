@@ -18,11 +18,11 @@ This keyboard is designed for typing Bunong language using Khmer characters.
 </p>
 
 <p style="text-align: justify; line-height:1.3">
-នតីលញចីស «Khmer Mondulkiri» គែសលាប់តាត្រោម កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»។  នោកឞ៝ន់ងលាប់ មោលាសរាហ្វាត់ កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»  គែសងលាប់​ មោលាសគែសរាហ្វាត់ នតីលញចីស «Khmer Mondulkiri» នទ្រែលដ៝ង់។ 
+នតីលញចីស «Busra» គែសលាប់តាត្រោម កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»។  នោកឞ៝ន់ងលាប់ មោលាសរាហ្វាត់ កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»  គែសងលាប់​ មោលាសគែសរាហ្វាត់ នតីលញចីស «Busra» នទ្រែលដ៝ង់។ 
 <br/>
-ពុម្ពអក្សរ «Khmer Mondulkiri» ត្រូវបានដាក់បញ្ចូលក្នុងកញ្ចប់ក្ដារចុចនេះស្រាប់។ ពុម្ពអក្សរនេះនឹងត្រូវបានដំឡើង និងលុបចេញ ជាមួយនឹងក្ដារចុចនេះ។
+ពុម្ពអក្សរ «Busra» ត្រូវបានដាក់បញ្ចូលក្នុងកញ្ចប់ក្ដារចុចនេះស្រាប់។ ពុម្ពអក្សរនេះនឹងត្រូវបានដំឡើង និងលុបចេញ ជាមួយនឹងក្ដារចុចនេះ។
 <br/>
-Khmer Mondulkiri font is included in the keyboard package. It will be installed and uninstalled along with the keyboard.
+Busra font is included in the keyboard package. It will be installed and uninstalled along with the keyboard.
 </p>
 
 <p style="text-align: justify; line-height:1.3">
@@ -192,6 +192,4 @@ Keyboard Layout</h1>
   </h2>
    <div id='osk-tablet' data-states='default shift'></div>
 
-
-<p>(c) 2021 - 2023 SIL International</p>
 

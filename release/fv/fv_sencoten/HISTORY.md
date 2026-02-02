@@ -1,5 +1,12 @@
 SENĆOŦEN Change History
 ============================
+9.2.3 (30 July 2024)
+-------------------
+* Updated help doc formatting
+
+9.2.2 (12 May 2024)
+-------------------
+* Centered mobile layout
 
 9.2.1 (6 Mar 2023)
 -------------------

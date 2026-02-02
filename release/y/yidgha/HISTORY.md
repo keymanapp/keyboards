@@ -1,6 +1,11 @@
 Yidgha Phonetic Change History
 ===============================
 
+1.0.4 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+* Change to Scheherazade New font
+
 1.0.3 (5 Jun 2020)
 -----------------
 * Updated htm files for readability on Linux

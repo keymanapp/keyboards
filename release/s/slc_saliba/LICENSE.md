@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2022 Jorge Emilio Rosés Labrada and Eddie Antonio Santos
+Copyright © 2022 Jorge Emilio Rosés Labrada and Eddie Antonio Santos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

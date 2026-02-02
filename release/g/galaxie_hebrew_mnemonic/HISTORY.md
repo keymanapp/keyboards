@@ -1,5 +1,11 @@
 # Galaxie Hebrew (Mnemonic) Keyboard Change History
 
+## 3.3.1 (30 Oct 2024)
+* Change to use KbdHebr display font for better OSK display
+
+## 3.3 (19 Sep 2024)
+* Changed targets
+
 ## 3.2.2 (8 Feb 2021)
 * Remove web and macos from supported platforms
 

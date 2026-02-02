@@ -21,8 +21,6 @@ layout follows the Windows 10 Sami Extended Finland-Sweden layout.
 <p>¨a will produce ä (available on aAeEiIoOuUwWyY).</p>
 <p>^a will produce â (available on aAcCeEgGhHiIjJoOsSuUwWyY).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

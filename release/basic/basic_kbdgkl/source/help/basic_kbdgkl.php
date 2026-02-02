@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Greek Latin Basic generated from template.
+    The keyboard layout follows the Windows 10 Greek Latin Basic keyboard layout.
 </p>
 <p>This keyboard makes use of the SHIFT+RALT+O key which is set by default when Keyman is installed.
 	To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off".
@@ -19,9 +19,6 @@
 <p>´a will produce á (available on aAeEiIoOuUyY).</p>
 <p>´c will produce ç (available on cC).</p>
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
-
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>

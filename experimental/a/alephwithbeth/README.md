@@ -3,10 +3,7 @@ alephwithbeth keyboard
 
 Description
 -----------
-alephwithbeth
-
 A Hebrew keyboard designed to intuitively match the standard QWERTY layout. 
------
 
 Copyright
 ---------

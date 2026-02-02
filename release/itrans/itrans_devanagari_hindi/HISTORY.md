@@ -1,6 +1,10 @@
 Hindi Devanagari Phonetic (ITRANS) Change History
 ==================================
 
+1.4.0 (2024-08-27)
+---------------------------
+* Add mobile layout
+
 1.3.0 (2023-12-06)
 ---------------------------
 * Add documentation

@@ -1,5 +1,13 @@
 Kwak̕wala Change History
 ============================
+9.2 (9 Jul 2024)
+------------------
+* Added rule to mobile to change U+0313 to U+0315 in the necessary contexts
+* Tidied documentation
+* Added alternate way to type Slash in Google Workspace
+* Corrected typo in documentation
+* Tweaked mobile layout
+* Removed web help
 
 9.1.2 (6 Mar 2023)
 -------------------

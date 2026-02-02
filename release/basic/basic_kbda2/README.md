@@ -1,10 +1,6 @@
 Arabic (102) Basic keyboard
 ==============
 
-(c) SIL International
-
-Version 1.1.1
-
 Description
 -----------
 

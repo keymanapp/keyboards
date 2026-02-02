@@ -19,8 +19,6 @@
 <p>`a will produce à (available on aAeEıIoOuUiİ).</p>
 <p>´a will produce á (available on aAeEıIoOuUiİ).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

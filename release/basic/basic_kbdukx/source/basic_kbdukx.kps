@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">United Kingdom Extended Basic</Name>
     <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>United Kingdom Extended Basic for Welsh.</Description>
   </Info>
   <Files>
     <File>
@@ -75,6 +77,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,7 +92,14 @@
       <Languages>
         <Language ID="cy">Welsh</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="cy" Keys="T h e space q u i c k space b r o w n space f o x" Text="The quick brown fox" Note="&quot;The quick brown fox&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="uk_extended" Relationship="deprecates" />
+    <RelatedPackage ID="kbdukx" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -14,9 +14,6 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Bengali Phonetic (ITRANS) Help</h2>
-<h2><span style="color: chocolate;">Bengali Phonetic (ITRANS)</span> Keyboard Version 1.0.0</h2>
-
 <p>This is a phonetic (ITRANS) keyboard layout for Bengali. It is based on 
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> 
 transliteration scheme with some modifications. You can type using the modified ITRANS scheme 

@@ -1,6 +1,14 @@
 LIBTRALO Keyboard Change History
 =======================
 
+1.6.6 (2025-06-09)
+------------------
+* Update fonts to new version of Charis and Charis Dan
+
+1.6.5 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.6.4 (18 Feb 2022)
 -----------------
 * Updated Charis SIL and Charis SIL Dan font to v 6.101

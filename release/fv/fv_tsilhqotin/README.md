@@ -1,7 +1,7 @@
-Tŝilhqot'in keyboard
+Tŝilhqot’in keyboard
 ======================
 
-Tŝilhqot'in keyboard layout for Unicode
+Tŝilhqot’in keyboard layout for Unicode
 
 Links
 -----

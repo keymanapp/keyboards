@@ -1,26 +1,11 @@
-<?php 
+<?php
   $pagename = 'Remington GAIL (SIL) Keyboard Help';
   $pagetitle = $pagename;
+  $pagestyle = <<<END
+    deva {font: 14pt Annapurna SIL;}
+  END;
   require_once('header.php');
 ?>
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Remington GAIL (SIL)</title>
-  <style type="text/css" media="screen">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-    h3 { font: bold 10pt Tahoma; color: #4444cc; }
-    h4 { font: 10pt Tahoma; color: #4444cc; }
-    li { font: 10pt Tahoma; }
-    .deva {font: 14pt Annapurna SIL;}
-    table.kb th, table.kb td { padding: 0.3em }
-    table.kb { border: 1; margin: 0.5em 0 }
-    table.kb tr:first-child {background-color: #e0dacf; font-weight:bold; }
-    table.kb td, table.kb th {font: 14pt Annapurna SIL; border: thin solid #666; text-align: center }
-
-  </style>
-</head>
 
 <p>This keyboard is an implementation
 of the Remington-GAIL typewriter layout for inputting Unicode-compliant Devanagari.
@@ -633,6 +618,13 @@ is an exception to the Reph rule and maintained for the legacy style of visual c
    <li><span class=deva>&#2325; + &#2367; = &#2325;&#2367;</span></li>
 </ul>
 
+<h2>Typing Numbers</h2>
+<p>Typing with number rows and numpad is made consistent as follows :</p>
+<h3>Arabic Numbers (0,1,2...)</h3>
+<p>The number row and numpad (without modifiers) type Arabic digits: 0 1 2 3 4 5 6 7 8 9.</p>
+<h3>Indic Numbers (०,१,२...)</h3>
+<p><b>&lt;AltGr&gt;+Numpad</b> and <b>&lt;AltGr&gt;+Number Row</b> type Indic digits ० १ २ ३ ४ ५ ६ ७ ८ ९]</p>
+
 <h2>Devanagari Alphabet to Keyboard Map</h2>
 <p><i>This section is expected to be populated in future revisions of this document.</i></p>
 
@@ -678,7 +670,7 @@ appear.</p>
 </div>
 
 <h3>Mobile/Tablet Keyboard Layout</h3>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
+<p>Due to the size and number of keys, some characters are hidden in the long press.
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
 <div id='osk-tablet' data-states='default shift'>

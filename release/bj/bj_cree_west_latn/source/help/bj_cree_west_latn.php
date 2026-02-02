@@ -8,7 +8,6 @@
 
 <p>Macrons over long vowels are available by typing two vowels in a row. Thus, typing "aa" would become "ā". The long vowels are aeio and AEIO.</p>
 
-<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

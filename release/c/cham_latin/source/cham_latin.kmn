@@ -1,0 +1,175 @@
+﻿c Author: Jim Brase, SIL International
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '1.1'
+store(&NAME) 'Cham (Latin)'
+store(&COPYRIGHT) '© SIL International'
+store(&MESSAGE) 'Keyboard for Romanized Cham and Vietnamese'
+c store(&ETHNOLOGUECODE) 'cjm'
+store(&BITMAP) 'cham_latin.ico'
+store(&VISUALKEYBOARD) 'cham_latin.kvks'
+store(&TARGETS) 'web desktop'
+begin Unicode > use(main)
+
+
+group(main) using keys  
+
+c On remapped keys, the original character is accessed by pressing the Right Alt key.
+c For anything mapped to an alphabetic character, CAPS Lock reverses the casing (as on a US kbd)
+
++ [RALT SHIFT K_BKSLASH] > '|'       c Vertical Line
++ [RALT K_BKSLASH] > '\'             c  Reverse Solidus 
++ [SHIFT K_BKSLASH] > U+A78C       c Latin Small Letter Saltillo   
++ [K_BKSLASH] > '\'                  c Reverse Solidus 
+
++ [NCAPS RALT SHIFT K_QUOTE] > U+0022   c ASCII Quotation Mark
++ [NCAPS RALT K_QUOTE] > U+0027         c ASCII Apostrophe
++ [CAPS RALT SHIFT K_QUOTE] > U+0027         c ASCII Apostrophe
++ [CAPS RALT K_QUOTE] > U+0022   c ASCII Quotation Mark
+
++ [NCAPS SHIFT K_QUOTE] > 'Ƀ'
++ [NCAPS K_QUOTE] > 'ƀ'        
++ [CAPS SHIFT K_QUOTE] > 'ƀ'
++ [CAPS K_QUOTE] > 'Ƀ'
+
+c Note: the tone marks are the same on shifted and unshifted keys
+        
++ [NCAPS RALT SHIFT K_0] > ')'
++ [NCAPS RALT K_0] > '0'
++ [CAPS RALT SHIFT K_0] > '0'
++ [CAPS RALT K_0] > ')'
+
++ [NCAPS SHIFT K_0] > U+0110      c Latin Capital Letter D With Stroke
++ [NCAPS K_0] > U+0111            c Latin Small Letter D With Stroke
++ [CAPS SHIFT K_0] > U+0111
++ [CAPS K_0] > U+0110      
+
++ [RALT SHIFT K_9] > '('
++ [RALT K_9] > '9'
++ [SHIFT K_9] > U+0323      c Combining Dot Below
++ [K_9] > U+0323            
+
++ [RALT SHIFT K_8] > '*'
++ [RALT K_8] > '8'
++ [SHIFT K_8] > U+0301      c Combining Acute Accent
++ [K_8] > U+0301      
+
++ [RALT SHIFT K_7] > '&'
++ [RALT K_7] > '7'
++ [SHIFT K_7] > U+0303      c Combining Tilde
++ [K_7] > U+0303
+
++ [RALT SHIFT K_6] > '^'      c  Circumflex Accent (ASCII character--not a combining mark)
++ [RALT K_6] > '6'
++ [SHIFT K_6] > U+0309      c Combining Hook Above
++ [K_6] > U+0309
+
++ [RALT SHIFT K_5] > '%'
++ [RALT K_5] > '5' 
++ [SHIFT K_5] > U+0300      c Combining Grave Accent
++ [K_5] > U+0300
+
++ [NCAPS RALT SHIFT K_4] > '$'
++ [NCAPS RALT K_4] > '4'         
++ [CAPS RALT SHIFT K_4] > '4'         
++ [CAPS RALT K_4] > '$'
+
++ [NCAPS SHIFT K_4] > 'O' U+0302    c Latin Capital Letter O + Combining Circumflex Accent
++ [NCAPS K_4] > 'o' U+0302          c Latin Small Letter o + Combininb Circumflex Accent
++ [CAPS SHIFT K_4] > 'o' U+0302
++ [CAPS K_4] > 'O' U+0302
+
++ [NCAPS RALT SHIFT K_3] > '#'
++ [NCAPS RALT K_3] > '3'            
++ [CAPS RALT SHIFT K_3] > '3'            
++ [CAPS RALT K_3] > '#'
+
++ [NCAPS SHIFT K_3] > 'E' U+0302    c Latin Capital Letter E + Combining Circumflex Accent
++ [NCAPS K_3] > 'e' U+0302          c Latin Small Letter e + Combining Circumflex Accent
++ [CAPS SHIFT K_3] > 'e' U+0302
++ [CAPS K_3] > 'E' U+0302
+
++ [NCAPS RALT SHIFT K_2] > '@'
++ [NCAPS RALT K_2] > '2'             
++ [CAPS RALT SHIFT K_2] > '2'             
++ [CAPS RALT K_2] > '@'
+
++ [NCAPS SHIFT K_2] > 'A' U+0302    c Latin Capital Letter A + Combining Circumflex Accent
++ [NCAPS K_2] > 'a' U+0302          c Latin Small Letter a + Combining Circumflex Accent       
++ [CAPS SHIFT K_2] > 'a' U+0302
++ [CAPS K_2] > 'A' U+0302  
+
++ [NCAPS RALT SHIFT K_1] > '!'
++ [NCAPS RALT K_1] > '1'
++ [CAPS RALT SHIFT K_1] > '1'
++ [CAPS RALT K_1] > '!'
+
++ [NCAPS SHIFT K_1] > 'A' U+0306    c Latin Capital Letter A + Combining Breve
++ [NCAPS K_1] > 'a' U+0306          c Latin Capital Letter A + Combining Breve
++ [CAPS SHIFT K_1] > 'a' U+0306
++ [CAPS K_1] > 'A' U+0306
+
++ [RALT SHIFT K_HYPHEN] > '_'       c ASCII Low Line
++ [RALT K_HYPHEN] > '-'             c ASCII Hyphen-Minus
++ [SHIFT K_HYPHEN] > '₫'            c Dong Sign
++ [K_HYPHEN] > '-'                  c ASCII Hyphen-Minus
+
++ [NCAPS RALT SHIFT K_RBRKT] > '}'
++ [NCAPS RALT K_RBRKT] > ']' 
++ [CAPS RALT SHIFT K_RBRKT] > ']' 
++ [CAPS RALT K_RBRKT] > '}'
+
++ [NCAPS SHIFT K_RBRKT] > 'O' U+031B      c Latin Capital Letter O + Combining Horn
++ [NCAPS K_RBRKT] > 'o' U+031B            c Latin Small Letter o + Combining Horn
++ [CAPS SHIFT K_RBRKT] > 'o' U+031B
++ [CAPS K_RBRKT] > 'O' U+031B
+
++ [NCAPS RALT SHIFT K_LBRKT] > '{'
++ [NCAPS RALT K_LBRKT] > '[' 
++ [CAPS RALT SHIFT K_LBRKT] > '[' 
++ [CAPS RALT K_LBRKT] > '{'
+
++ [NCAPS SHIFT K_LBRKT] > 'U' U+031B      c Latin Capital Letter U + Combining Horn
++ [NCAPS K_LBRKT] > 'u' U+031B             c Latin Small Letter u + Combining Horn
++ [CAPS SHIFT K_LBRKT] > 'u' U+031B
++ [CAPS K_LBRKT] > 'U' U+031B
+
++ [RALT SHIFT K_EQUAL] > '+'
++ [RALT SHIFT K_BKQUOTE] > '~'       c This is the ASCII tilde, not the Combining Tilde
++ [RALT K_EQUAL] > '='
++ [RALT K_BKQUOTE] > '`'             c This is the ASCII grave accent, not the Combining Grave Accent
++ [SHIFT K_EQUAL] > U+2019          c Right Single Quotation Mark
++ [SHIFT K_BKQUOTE] > U+2018        c Left Single Quotation Mark
++ [K_EQUAL] > U+201D                c Right Double Quotation Mark
++ [K_BKQUOTE] > U+201C              c Left Double Quotation Mark
+
+c Breve over vowel is typed by pressing vowel key twice.
+c Note: Even though A + Breve is available on K_1, it is also included here for consistency.
+'A' + [NCAPS SHIFT K_A] > 'A' U+0306
+'a' + [NCAPS K_A] > 'a' U+0306
+'E' + [NCAPS SHIFT K_E] > 'E' U+0306
+'e' + [NCAPS K_E] > 'e' U+0306
+'I' + [NCAPS SHIFT K_I] > 'I' U+0306
+'i' + [NCAPS K_I] > 'i' U+0306
+'O' + [NCAPS SHIFT K_O] > 'O' U+0306
+'o' + [NCAPS K_O] > 'o' U+0306
+'U' + [NCAPS SHIFT K_U] > 'U' U+0306
+'u' + [NCAPS K_U] > 'u' U+0306
+'O' U+031B + [NCAPS SHIFT K_RBRKT] > 'O' U+031B U+0306      c Latin Capital Letter O+ Combining Horn + Combining Breve 
+'o' U+031B + [NCAPS K_RBRKT] > 'o' U+031B U+0306             c Latin Small Letter o + Combining Horn + Combining Breve
+'U' U+031B + [NCAPS SHIFT K_LBRKT] > 'U' U+031B U+0306      c Latin Capital Letter U + Combining Horn + Combining Breve
+'u' U+031B + [NCAPS K_LBRKT] > 'u' U+031B U+0306             c Latin Small Letter u + Combining Horn + Combining Breve 
+
+'a' + [CAPS SHIFT K_A] > 'a' U+0306
+'A' + [CAPS K_A] > 'A' U+0306
+'e' + [CAPS SHIFT K_E] > 'e' U+0306
+'E' + [CAPS K_E] > 'E' U+0306
+'i' + [CAPS SHIFT K_I] > 'i' U+0306
+'I' + [CAPS K_I] > 'I' U+0306
+'o' + [CAPS SHIFT K_O] > 'o' U+0306
+'O' + [CAPS K_O] > 'O' U+0306
+'u' + [CAPS SHIFT K_U] > 'u' U+0306
+'U' + [CAPS K_U] > 'U' U+0306
+'o' U+031B + [CAPS SHIFT K_RBRKT] > 'o' U+031B U+0306
+'O' U+031B + [CAPS K_RBRKT] > 'O' U+031B U+0306
+'u' U+031B + [CAPS SHIFT K_LBRKT] > 'u' U+031B U+0306
+'U' U+031B + [CAPS K_LBRKT] > 'U' U+031B U+0306

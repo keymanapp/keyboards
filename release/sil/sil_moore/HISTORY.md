@@ -1,7 +1,19 @@
 Mooré - Burkina Faso Change History
 ====================
 
-120.1 (2021-07-01)
+2.1.2 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
+2.1.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+2.1 (2024-09-19)
+----------------
+* Added touch layout
+
+2.0.1 (2021-07-01)
 ----------------
 * Updated to use new version of Charis SIL
 

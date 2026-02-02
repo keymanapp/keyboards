@@ -12,7 +12,6 @@ which use the Devanagari script. It uses standard Windows fonts. This is one of 
 keyboard layouts for professional DTP work.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard allows the user to type "g" (for   ि ) either before <em>or</em> after the consonant. (The keyboard
 	will reorder the position of the <em>vowel sign i</em> to the proper position. </p>
 <p>The keyboard also allows the user to type a SHIFT RALT Z to follow a consonant which will then 

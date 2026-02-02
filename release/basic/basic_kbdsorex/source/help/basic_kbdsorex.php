@@ -23,8 +23,6 @@ item. The keyboard layout follows the Windows 10 Sorbian Extended layout.
 <p>'c will produce ç (available on cCsS).</p>
 <p>'o will produce ő (available on oOuU).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

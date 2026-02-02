@@ -1,5 +1,28 @@
 Runeboard Change History
 ====================
+4.2 (2025-11-08)
+----------------
+* Removed excessive ZWJs.
+* Removed ZWSP after non-breaking hyphen.
+* Fixed issue on mobile caused by last update.
+
+4.1 (2025-11-07)
+----------------
+* Fixed onscreen layout errors.
+* Added 1 key to shift+RAlt layer on desktop.
+* Changed longpress options on mobile due to visibility issues.
+
+4.0 (2025-11-03)
+----------------
+* Repositioned various keys.
+
+3.0 (2024-07-11)
+----------------
+* Removed duplicate character ᛅ.
+* Moved ZWJ to shift+space & repositioned various keys.
+* Added non-breaking hyphen, horizontal bar, guillemets (double & single), six vertical dots, & both trade mark symbols.
+* On Touch Layout, added 0 on number layer & repositioned various keys.
+
 2.3 (2023-12-05)
 ----------------
 * Changed Alt+Ctrl to RAlt

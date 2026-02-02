@@ -2,7 +2,7 @@ Rohingya Arabic Keyboard
 =====================
 
 * Name:           Rohingya Arabic
-* Copyright:      (C) SIL International
+* Copyright:      (C) SIL Global
 * BCP-47 codes:   rhg-Arab, rhg-Arab-x-fonna
 * Author:         Lorna Evans
 

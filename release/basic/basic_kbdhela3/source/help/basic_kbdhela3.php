@@ -21,8 +21,6 @@ keyboard layout follows the Windows 10 Greek (319) Latin layout.
 <p>~a will produce ã (available on aAnNoO).</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

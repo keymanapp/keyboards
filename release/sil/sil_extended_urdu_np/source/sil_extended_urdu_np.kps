@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.286.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Extended Urdu NP (SIL)</Name>
-    <Copyright URL="">(c) 2001-2022 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">Keyboard for typing Urdu, Panjabi, and other Northern Pakistan languages. The keyboard is mapped as closely as possible to a corresponding key on the US English keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -117,13 +120,40 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\awami\AwamiNastaliq-Bold.ttf</Name>
+      <Description>Font Awami Nastaliq Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\awami\AwamiNastaliq-ExtraBold.ttf</Name>
+      <Description>Font Awami Nastaliq ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\awami\AwamiNastaliq-Medium.ttf</Name>
+      <Description>Font Awami Nastaliq Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\awami\AwamiNastaliq-SemiBold.ttf</Name>
+      <Description>Font Awami Nastaliq SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Extended Urdu NP (SIL)</Name>
       <ID>sil_extended_urdu_np</ID>
-      <Version>6.0</Version>
-      <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>

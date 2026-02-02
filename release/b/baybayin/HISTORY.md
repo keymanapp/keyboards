@@ -1,4 +1,9 @@
 Baybayin Keyboard Changelog
+====================
+
+1.2.1 (2024-12-02)
+----------------
+* Adjusted language tags
 
 1.2 (2023-12-04)
 ----------------

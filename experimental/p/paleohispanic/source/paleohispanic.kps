@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.138.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Paleohispanic</Name>
+    <Copyright URL="">(c) 2024 SIL International</Copyright>
+    <Author URL=""/>
+    <Version URL=""/>
+    <Description>This keyboard is designed for typing the Iberian language, using the Northern Paleohispanic script. 
+Iberian was a pre-roman language spoken in the Iberian Peninsula region of Spain and Portugal from before the 
+7th to 1rd century BC. Please note that this keyboard (and associated font) is using codepoints that are not officially 
+accepted into The Unicode Standard. The Northern Paleohispanic script has not yet been accepted for encoding into the standard. 
+It is currently on the Unicode roadmap, but these codepoints can, and probably will, change. 
+Once the script is accepted into Unicode the encoding assignments may change. 
+Because this script is not encoded in Unicode, mobile devices will not include fonts supporting this keyboard. 
+Additionally, on mobile devices the keyboard will only display the correct characters within the Keyman application. 
+For help or to report bugs, please visit the Keyman community forums at: https://community.software.sil.org/</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\paleohispanic.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\paleohispanic.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\paleohispanic.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>PHN-Basiarebe.ttf</Name>
+      <Description>Font PHN-Basiarebe</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>layout-paleohispanic.png</Name>
+      <Description>File layout-paleohispanic.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Paleohispanic</Name>
+      <ID>paleohispanic</ID>
+      <Version>1.0</Version>
+      <OSKFont>PHN-Basiarebe.ttf</OSKFont>
+      <DisplayFont>PHN-Basiarebe.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="PHN-Basiarebe.ttf"/></WebDisplayFonts>
+      <Languages>
+        <Language ID="xib">Iberian</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

@@ -1,4 +1,4 @@
-c masaram_gondi with name "Masaram Gondi (ITRANS)" 
+c masaram_gondi with name "Masaram Gondi (ITRANS)"
 c Font
 c NotoSansMasaramGondi-Regular from Google
 c by Rajesh Kumar Dhuriya
@@ -19,7 +19,7 @@ store(&BITMAP) 'masaram_gondi.ico'
 begin Unicode > use(main)
 
 store(opt1) 'gondi'
-+ [RCTRL RALT K_0]	>	set(opt1='0') 
++ [RCTRL RALT K_0]	>	set(opt1='0')
 + [RCTRL RALT K_1]	>	reset(opt1)
 
 c	Special Symbols
@@ -41,7 +41,7 @@ store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" '"' "," "." "=" "<" ">
 + any(Punctuation)	>	index(Punctuation,1)
 
 + "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
-+ "@"	>	"@" 
++ "@"	>	"@"
 
 "," + ","	>	U+0970	c	DEVANAGARI ABBREVIATION SIGN
 
@@ -190,7 +190,7 @@ c add h to consonants
 "𑴘𑵄" + "h"	>	"𑴙𑵄"
 c "𑴛𑵄" + "h"	>	"𑴜𑵄" c see line 189
 "𑴝𑵄" + "h"	>	"𑴞𑵄"
-"𑴠𑵄" + "h"	>	"𑴡𑵄" 
+"𑴠𑵄" + "h"	>	"𑴡𑵄"
 "𑴢𑵄" + "h"	>	"𑴣𑵄"
 "𑴪𑵄" + "h"	>	"𑴪𑵄" c same S=Sh
 "𑴫𑵄" + "h"	>	"𑴩𑵄"
@@ -211,14 +211,14 @@ $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + any(opt1endings)	>	index(V
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + "`"	>	index(Vyanjana,2) "ʼ"
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana) + "^"	>	index(Vyanjana,2) "𑵄" U+200C
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + "^"	>	index(Vyanjana,2) "𑵅" U+200C
-$keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + any(Vyanjana)	>	index(Vyanjana,2) U+11D45
+c $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + any(Vyanjana)	>	index(Vyanjana,2) U+11D45
 any(Vyanjana)"𑵄" + "^"	>	index(Vyanjana,1)"𑵅"
 any(Vyanjana)"𑵄" + "a"	>	index(Vyanjana,1)
 
 c any(Vyanjana)"𑵄" + any(ViramaMaatraa)	>	index(Vyanjana,1) U+11D45
 
-any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
-any(Vyanjana)"𑵄" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2)
+any(Vyanjana)"𑵄" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3)
 
 any(Vyanjana)"𑴲" + "i"	>	 index(Vyanjana,1)"𑴳"	 c ii
 any(Vyanjana)"𑴴" + "u"	>	 index(Vyanjana,1)"𑴵"	 c uu
@@ -241,8 +241,8 @@ $keymanonly: if(opt1 = 'gondi') any(NuktaVyanjana)"𑵂" + "^"	>	index(NuktaVyan
 
 any(NuktaVyanjana)"𑵂""𑵄" + "^"	>	index(NuktaVyanjana,1)"𑵂""𑵄"
 any(NuktaVyanjana)"𑵂""𑵄" + "a"	>	index(NuktaVyanjana,1)"𑵂"
-any(NuktaVyanjana)"𑵂" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
-any(NuktaVyanjana)"𑵂""𑵄" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"𑵂" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"𑵂" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3)
+any(NuktaVyanjana)"𑵂""𑵄" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"𑵂" index(ViramaMaatraaU,4)
 any(NuktaVyanjana)"𑵂""𑴲" + "i"	>	 index(NuktaVyanjana,1)"𑵂""𑴳"	 c ii
 any(NuktaVyanjana)"𑵂""𑴴" + "u"	>	 index(NuktaVyanjana,1)"𑵂""𑴵"	 c uu
 any(NuktaVyanjana)"𑵂""𑴺" + "e"	>	 index(NuktaVyanjana,1)"𑵂""𑴳"	 c ee

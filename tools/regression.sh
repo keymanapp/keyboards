@@ -48,7 +48,7 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
 cd "$KEYBOARDROOT"
 
-. "$KEYBOARDROOT/resources/util.sh"
+. "$KEYBOARDROOT/resources/util.inc.sh"
 . "$KEYBOARDROOT/resources/environment.sh"
 . "$KEYBOARDROOT/resources/download-compiler.sh"
 . "$KEYBOARDROOT/resources/regression-build.sh"

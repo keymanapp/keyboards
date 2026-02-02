@@ -70,6 +70,9 @@ function regression_build {
   fi
   set -o pipefail
 
+  # We want build to fail if keyboard build fails but exit code is hidden by `tee` call
+  set -o pipefail
+
   if [ ! -z "$BUILDPATH" ]; then
     if $SHOULD_CLEAN; then
       "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
@@ -83,6 +86,8 @@ function regression_build {
     "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler $DEBUGBUILD $BUILDTARGET release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
     "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler $DEBUGBUILD $BUILDTARGET experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
   fi
+
+  set +o pipefail
 
   #
   # Copy results into target folder

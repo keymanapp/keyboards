@@ -13,8 +13,6 @@
 <p>This keyboard uses the orthography created by linguist Bruce Nevin in conjunction with language teachers Lisa Craig, Paul Cason, and Connor Yiamkis. 
 </p>
 
-<h1>Keyboard Layout</h1>
-
   <h2>Desktop Keyboard layout</h2>
 <p><b>High tone diacritic on vowels:</b>Press B after typing the desired vowel. </p>
 <p><b>Glottalized diacritic on consonants:</b> Press J after typing the desired consonant.</p>

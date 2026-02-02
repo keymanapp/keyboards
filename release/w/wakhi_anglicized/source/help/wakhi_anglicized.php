@@ -16,7 +16,6 @@ If you have problem using the Wakhi Anglicized keyboard based on English please 
 </p>
 
 <p> See <a href="file:wakhi_anglicized_help.pdf">here</a> for more information.</p>
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>

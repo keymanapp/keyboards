@@ -1,6 +1,11 @@
 Cipher Music (SIL) Change History
 =================================
 
+1.2 (2024-06-24)
+----------------
+* Added ability to type U+2012 FIGURE DASH on SHIFT + _ key 
+  (this is to indicate extended duration for jianpu)
+
 1.1.2 (2023-11-30)
 ----------------
 * Use shared font instead of local

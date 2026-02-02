@@ -1,17 +1,10 @@
 <?php
 $pagename = 'Esperanto Plus Keyboard Help';
 $pagetitle = 'Esperanto Plus Keyboard Help';
+$pagestyle = "@import url('eo_plus.css');";
 require_once('header.php');
 ?>
 
-<head>
-    <meta charset="utf-8"/>
-    <meta name="author" content="Andrea Vaccari"/>
-    <title>Esperanto Plus Keyboard Help</title>
-    <link rel="stylesheet" type="text/css" href="eo_plus.css">
-</head>
-
-<body>
     <p>
         This keyboard is designed to simplify the input of the Esperanto special characters,
         add the main suffixes and facilitate the writing of the most common words and phrases.
@@ -89,7 +82,7 @@ require_once('header.php');
         <div class="boxes">
             <div class="box box-3">
                 <div>bkn</div><div>=</div><div><span class="special-char">Bonan Kristnaskon</span></div>
-                <div>bps</div><div>=</div><div><span class="special-char">Bonan Paskvon</span></div>
+                <div>bps</div><div>=</div><div><span class="special-char">Bonan Paskon</span></div>
                 <div>fkn</div><div>=</div><div><span class="special-char">Feliĉan Kristnaskon</span></div>
             </div>
 
@@ -138,4 +131,4 @@ require_once('header.php');
         created for the <a href="https://keyman.com/keyboards/eo_plus" target="_blank">Esperanto Plus</a> keyboard, for use with touch devices, which
         shows suggestions of the most common words corresponding to the letters entered by the keyboard.        
     </p>
-</body>
+

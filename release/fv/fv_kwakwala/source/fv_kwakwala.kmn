@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.2'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "kwk"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Kwak̕wala'
 store(&BITMAP) 'fv_kwakwala.ico'
 store(&VISUALKEYBOARD) 'fv_kwakwala.kvks'
-store(&KMW_HELPFILE) 'fv_kwakwala_kmw_help.htm'
 
 
 begin Unicode > use(main)
@@ -42,10 +41,10 @@ store(&LAYOUTFILE) 'fv_kwakwala.keyman-touch-layout'
 + [SHIFT T_F] > 'G̱' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
-+ [SHIFT T_J_0] > 'Ḵ̓' layer('default')
-+ [SHIFT T_J_1] > 'Ḵ̕w' layer('default')
-+ [SHIFT T_J_2] > 'Ḵ̕W' layer('default')
-+ [SHIFT T_J] > 'Ḵ' layer('default')
++ [SHIFT T_J_0] > 'Ḵ̓' layer('default')
++ [SHIFT T_J_1] > 'Ḵ̕w' layer('default')
++ [SHIFT T_J_2] > 'Ḵ̕W' layer('default')
++ [SHIFT T_J] > 'Ḵ' layer('default')
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K_1] > 'K̕w' layer('default')
 + [SHIFT T_K_2] > 'K̕W' layer('default')
@@ -56,14 +55,6 @@ store(&LAYOUTFILE) 'fv_kwakwala.keyman-touch-layout'
 + [SHIFT T_Z] > 'Z' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'X̱' layer('default')
-'k' + [SHIFT T_V] > 'k̓'
-'t' + [SHIFT T_V] > 't̓'
-'p' + [SHIFT T_V] > 'p̓'
-'K' + [SHIFT T_V] > 'K̓'
-'Ḵ' + [SHIFT T_V] > 'Ḵ̓'
-'P' + [SHIFT T_V] > 'P̓'
-'T' + [SHIFT T_V] > 'T̓'
-'ḵ' + [SHIFT T_V] > 'ḵ̓'
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
@@ -87,9 +78,9 @@ store(&LAYOUTFILE) 'fv_kwakwala.keyman-touch-layout'
 + [T_F] > 'g̱'
 + [T_G] > 'g'
 + [T_H] > 'h'
-+ [T_J_0] > 'ḵ̓'
-+ [T_J_1] > 'ḵ̕w'
-+ [T_J] > 'ḵ'
++ [T_J_0] > 'ḵ̓'
++ [T_J_1] > 'ḵ̕w'
++ [T_J] > 'ḵ'
 + [T_K_0] > 'k̓'
 + [T_K_1] > 'k̕w'
 + [T_K] > 'k'
@@ -99,17 +90,27 @@ store(&LAYOUTFILE) 'fv_kwakwala.keyman-touch-layout'
 + [T_Z] > 'z'
 + [T_X] > 'x'
 + [T_C] > 'x̱'
-'k' + [T_V] > 'k̓'
-'t' + [T_V] > 't̓'
-'p' + [T_V] > 'p̓'
-'K' + [T_V] > 'K̓'
-'Ḵ' + [T_V] > 'Ḵ̓'
-'P' + [T_V] > 'P̓'
-'T' + [T_V] > 'T̓'
-'ḵ' + [T_V] > 'ḵ̓'
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
+
+store(NeedsComApos) 'kḵptKḴPT'
+store(ComAposKeys) [T_V] [SHIFT T_V]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+
+'k̓' + [T_W] > 'k̕w'
+'ḵ̓' + [T_W] > 'ḵ̕w'
+'t̓' + [T_R] > 't̕ł'
+'t̓' + [T_S] > 't̕s'
+'K̓' + [T_W] > 'K̕w'
+'K̓' + [SHIFT T_W] > 'K̕W' layer('default')
+'Ḵ̓' + [T_W] > 'Ḵ̕w'
+'Ḵ̓' + [SHIFT T_W] > 'Ḵ̕W' layer('default')
+'T̓' + [T_S] > 'T̕s'
+'T̓' + [SHIFT T_S] > 'T̕S' layer('default')
+'T̓' + [T_R] > 'T̕ł'
+'T̓' + [SHIFT T_R] > 'T̕Ł' layer('default')
 
 c --- END OF TOUCH LAYOUT RULES ---
                 
@@ -133,6 +134,7 @@ c original punctuation
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c added so slash can still be typed while using Google Drive
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
 + [SHIFT RALT K_BKSLASH] > '|'

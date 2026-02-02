@@ -1,0 +1,33 @@
+﻿c marchen_direct_input generated from template at 2024-10-03 16:44:23
+c with name "Marchen Direct Input"
+store(&VERSION) '10.0'
+store(&NAME) 'Marchen Direct Input'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'marchen_direct_input.ico'
+store(&VISUALKEYBOARD) 'marchen_direct_input.kvks'
+store(&LAYOUTFILE) 'marchen_direct_input.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(PuncK) "?/`~"
+store(PuncU) U+11C70 .. U+11C71 U+11CB5 .. U+11CB6
+store(LettersK) "k[g,cxj.t]dnpfbm\;=vwz'yrlqsha"
+store(LettersU) U+11C72 .. U+11C8F
+
+store(SubLettersK) "K{G<CXJ>T}DNPFBM|:+VWZYRLQSHA"
+store(SubLettersU) U+11C92 .. U+11CA7 U+11CA9 .. U+11CAF
+
+store(VowK) '"iueo'
+store(VowU) U+11CB0 .. U+11CB4
+store(nul) "EUIO"
+
+group(main) using keys
+
++ any(PuncK) > index(PuncU,1)
++ any(LettersK) > index(LettersU,1)
++ any(SubLettersK) > index(SubLettersU,1)
++ any(VowK) > index(VowU,1)
++ any(nul) > nul
+

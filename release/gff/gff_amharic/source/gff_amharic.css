@@ -3,11 +3,12 @@
  * Primarily from: https://www.behance.net/gallery/125405749/Top-10-trending-pastel-color-palettes-in-2021
  */
 
+
 /* functional keys */
-.phone div.kmw-key.kmw-key-shift[id$='K_LOPT'],     .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
-.phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],     .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
+.phone div.kmw-key.kmw-key-shift[id$='K_LOPT'],    .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
+.phone div.kmw-key.kmw-key-shift[id$='K_BKSP'],    .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'],   .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
-.phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'],    .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
+.phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'],   .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
 .phone div.kmw-key.kmw-key-special[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='K_SHIFT'],
 .phone div.kmw-key.kmw-key-shift[id$='T_EMPTY'],   .tablet div.kmw-key.kmw-key-shift[id$='T_EMPTY']
 /* { background: #f3d6ce  ; color: black; } */
@@ -17,8 +18,11 @@
 .phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE']
   { background: #f4eee7 ; color: #f4eee7 ; } /* eceae4 */
 
-.phone div.kmw-key.kmw-key-default[id$='K_1+shift'], .tablet div.kmw-key.kmw-key-default[id$='K_1+shift'], /* ! */
-.phone div.kmw-key.kmw-key-default[id$='U_1362'],    .tablet div.kmw-key.kmw-key-default[id$='U_1362']        /* ። */
+/* .phone div.kmw-key.kmw-key-default[id$='K_1+shift'],  .tablet div.kmw-key.kmw-key-default[id$='K_1+shift'],  /* ! */
+
+.phone div.kmw-key.kmw-key-default[id$='U_1362'],    .tablet div.kmw-key.kmw-key-default[id$='U_1362'],     /* ። */
+.phone div.kmw-key.kmw-key-default[id$='T_BANG'],                                                           /* ! */
+.phone div.kmw-key.kmw-key-default[id$='T_1362']                                                            /* ። */
   { background: #f4eee7 ; color: black ; }
 
 
@@ -36,7 +40,19 @@
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1366'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1366'], /* ፦ */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1367'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1367'], /* ፧ */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1360'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1360'], /* ፠ */
-.phone div.kmw-key.kmw-key-default[id$='extra-U_1368'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1368']  /* ፨ */
+.phone div.kmw-key.kmw-key-default[id$='extra-U_1368'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1368'], /* ፨ */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_1361'], /* ፡ */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_1363'], /* ፣ */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_1364'], /* ፤ */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_1366'], /* ፦ */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_00AB'], /* « */
+.tablet div.kmw-key.kmw-key-default[id='popup-default-U_00BB'], /* » */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_1361'], /* ፡ */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_1363'], /* ፣ */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_1364'], /* ፤ */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_1366'], /* ፦ */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_00AB'], /* « */
+.tablet div.kmw-key.kmw-key-default[id$='layer-U_00BB']  /* » */
   { background:  #f4eee7 ; color: black ; }
 
 /* amharic-extra layer: western numerals */
@@ -54,6 +70,9 @@
 .kmw-keyboard-gff_amharic #amharic-etens-extra-T_MORE  /* ▶ */
   { background:  #ebece6 ; color: black ; }
 
+.phone.ios div.kmw-key.kmw-key-special[id$='extra-T_MORE'] span.kmw-key-text
+    {font-family: "Arial"; }  /* ▶ */
+
 /* amharic-extra layer: ge'ez numerals */
 .phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE'],
 .phone div.kmw-key.kmw-key-default[id$='U_1369'], .tablet div.kmw-key.kmw-key-default[id$='U_1369'], /* ፩ */
@@ -65,7 +84,7 @@
 .phone div.kmw-key.kmw-key-default[id$='U_136F'], .tablet div.kmw-key.kmw-key-default[id$='U_136F'], /* ፯ */
 .phone div.kmw-key.kmw-key-default[id$='U_1370'], .tablet div.kmw-key.kmw-key-default[id$='U_1370'], /* ፰ */
 .phone div.kmw-key.kmw-key-default[id$='U_1371'], .tablet div.kmw-key.kmw-key-default[id$='U_1371'], /* ፱ */
-.phone div.kmw-key.kmw-key-default[id$='U_1372+shift'], .tablet div.kmw-key.kmw-key-default[id$='U_1372'],  /* ፲ */
+/* .phone div.kmw-key.kmw-key-default[id$='U_1372'], .tablet div.kmw-key.kmw-key-default[id$='U_1372'], */  /* ፲ */
 .kmw-keyboard-gff_amharic #amharic-tens-extra-T_MORE  /* ▶ */
   { background:  #ece1d5 ; color: black ; }
 
@@ -124,8 +143,10 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1340'], .tablet div.kmw-key.kmw-key-default[id$='U_1340'],  /* ፀ */
 .phone div.kmw-key.kmw-key-default[id$='U_1348'], .tablet div.kmw-key.kmw-key-default[id$='U_1348'],  /* ፈ */
 .phone div.kmw-key.kmw-key-default[id$='U_1350'], .tablet div.kmw-key.kmw-key-default[id$='U_1350'],  /* ፐ */
-.phone div.kmw-key.kmw-key-default[id$='T_ግዕዝ'], .tablet div.kmw-key.kmw-key-default[id$='T_ግዕዝ']
-  { background:  #e2f0cb ; color: black; } /*#baed91 */
+.phone div.kmw-key.kmw-key-default[id$='T_ግዕዝ'],   .tablet div.kmw-key.kmw-key-default[id$='T_ግዕዝ'],   /* አ */
+.phone .kmw-keyboard-gff_amharic #latin-punct-layer-K_2\+shift,
+.phone .kmw-keyboard-gff_amharic #ethio-punct-layer-T_1360  /* @, ፠ */
+  { background: #e2f0cb ; color: black; } /*#baed91 */
 
 /* default layer ካዕብ */
 .phone div.kmw-key.kmw-key-default[id$='U_1201'], .tablet div.kmw-key.kmw-key-default[id$='U_1201'],  /* ሁ */
@@ -166,8 +187,10 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1341'], .tablet div.kmw-key.kmw-key-default[id$='U_1341'],  /* ፁ */
 .phone div.kmw-key.kmw-key-default[id$='U_1349'], .tablet div.kmw-key.kmw-key-default[id$='U_1349'],  /* ፉ */
 .phone div.kmw-key.kmw-key-default[id$='U_1351'], .tablet div.kmw-key.kmw-key-default[id$='U_1351'],  /* ፑ */
-.phone div.kmw-key.kmw-key-default[id$='T_ካዕብ'], .tablet div.kmw-key.kmw-key-default[id$='T_ካዕብ']
-  { background:  #ffffb5 ; color: black; } /* #faf884 */ 
+.phone div.kmw-key.kmw-key-default[id$='T_ካዕብ'],   .tablet div.kmw-key.kmw-key-default[id$='T_ካዕብ'],   /* ኡ */
+.phone .kmw-keyboard-gff_amharic #latin-punct-layer-K_4\+shift,
+.phone .kmw-keyboard-gff_amharic #ethio-punct-layer-T_1365  /* $, ፥ */
+  { background: #ffffb5 ; color: black; } /* #faf884 */ 
 
 /* default layer ሣልስ */
 .phone div.kmw-key.kmw-key-default[id$='U_1202'], .tablet div.kmw-key.kmw-key-default[id$='U_1202'],  /* ሂ */
@@ -208,8 +231,9 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1342'], .tablet div.kmw-key.kmw-key-default[id$='U_1342'],  /* ፂ */
 .phone div.kmw-key.kmw-key-default[id$='U_134A'], .tablet div.kmw-key.kmw-key-default[id$='U_134A'],  /* ፊ */
 .phone div.kmw-key.kmw-key-default[id$='U_1352'], .tablet div.kmw-key.kmw-key-default[id$='U_1352'],  /* ፒ */
-.phone div.kmw-key.kmw-key-default[id$='T_ሣልስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ሣልስ']
-  { background:  #fea3aa  ; color: black; }
+.phone div.kmw-key.kmw-key-default[id$='T_ሣልስ'],  .tablet div.kmw-key.kmw-key-default[id$='T_ሣልስ'],  /* ኢ */
+.phone div.kmw-key.kmw-key-default[id$='T_00AB'], .phone div.kmw-key.kmw-key-default[id$='T_1366']   /* «, ፦ */
+  { background: #fea3aa ; color: black; }
 
 /* default layer ራብዕ */
 .phone div.kmw-key.kmw-key-default[id$='U_1203'], .tablet div.kmw-key.kmw-key-default[id$='U_1203'],  /* ሃ */
@@ -250,8 +274,9 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1343'], .tablet div.kmw-key.kmw-key-default[id$='U_1343'],  /* ፃ */
 .phone div.kmw-key.kmw-key-default[id$='U_134B'], .tablet div.kmw-key.kmw-key-default[id$='U_134B'],  /* ፋ */
 .phone div.kmw-key.kmw-key-default[id$='U_1353'], .tablet div.kmw-key.kmw-key-default[id$='U_1353'],  /* ፓ */
-.phone div.kmw-key.kmw-key-default[id$='T_ራብዕ'], .tablet div.kmw-key.kmw-key-default[id$='T_ራብዕ']
-  { background:  #ccf1ff  ; color: black; } /* #b2cefe */
+.phone div.kmw-key.kmw-key-default[id$='T_ራብዕ'], .tablet div.kmw-key.kmw-key-default[id$='T_ራብዕ'],    /* ኣ */
+.phone div.kmw-key.kmw-key-default[id$='T_00BB'], .phone div.kmw-key.kmw-key-default[id$='T_1361'] /* », : */
+  { background: #ccf1ff ; color: black; } /* #b2cefe */
 
 /* default layer ኃምስ */
 .phone div.kmw-key.kmw-key-default[id$='U_1204'], .tablet div.kmw-key.kmw-key-default[id$='U_1204'],  /* ሄ */
@@ -292,48 +317,25 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1344'], .tablet div.kmw-key.kmw-key-default[id$='U_1344'],  /* ፄ */
 .phone div.kmw-key.kmw-key-default[id$='U_134C'], .tablet div.kmw-key.kmw-key-default[id$='U_134C'],  /* ፌ */
 .phone div.kmw-key.kmw-key-default[id$='U_1354'], .tablet div.kmw-key.kmw-key-default[id$='U_1354'],  /* ፔ */
-.phone div.kmw-key.kmw-key-default[id$='T_ኃምስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ኃምስ']
-  { background:  #e0d7ff  ; color: black; } /* #f2a2e8 */
+.phone div.kmw-key.kmw-key-default[id$='T_ኃምስ'],  .tablet div.kmw-key.kmw-key-default[id$='T_ኃምስ'],  /* ኤ */
+.phone .kmw-keyboard-gff_amharic #latin-punct-layer-K_SLASH,
+           .phone .kmw-keyboard-gff_amharic #ethio-punct-layer-T_1363  /* /, ፣ */
+  { background: #e0d7ff ; color: black; } /* #f2a2e8 */
 
-/* default layer ሳድስ - used primarily when a sadis letter appears in a popup or on the -extra layers */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1205'], .tablet div.kmw-key.kmw-key-default[id$='U_1205'],  /* ህ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_120D'], .tablet div.kmw-key.kmw-key-default[id$='U_120D'],  /* ል */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1215'], .tablet div.kmw-key.kmw-key-default[id$='U_1215'],  /* ሕ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1E7E5'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7E5'], /* 𞟥 */ 
-/* .phone div.kmw-key.kmw-key-default[id$='U_121D'], .tablet div.kmw-key.kmw-key-default[id$='U_121D'],  /* ም */
-.phone div.kmw-key.kmw-key-default[id$='U_1225'], /* .tablet div.kmw-key.kmw-key-default[id$='U_1225'],  /* ሥ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_122D'], .tablet div.kmw-key.kmw-key-default[id$='U_122D'],  /* ር */
-.phone div.kmw-key.kmw-key-default[id$='U_1235'], .tablet div.kmw-key.kmw-key-default[id$='U_1235'],  /* ስ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_123D'], .tablet div.kmw-key.kmw-key-default[id$='U_123D'],  /* ሽ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1245'], .tablet div.kmw-key.kmw-key-default[id$='U_1245'],  /* ቅ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1255'], .tablet div.kmw-key.kmw-key-default[id$='U_1255'],  /* ቕ */
-.phone div.kmw-key.kmw-key-default[id$='U_1265'], .tablet div.kmw-key.kmw-key-default[id$='U_1265'],  /* ብ */
-.phone div.kmw-key.kmw-key-default[id$='U_126D'], .tablet div.kmw-key.kmw-key-default[id$='U_126D'],  /* ቭ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1275'], .tablet div.kmw-key.kmw-key-default[id$='U_1275'],  /* ት */
-/* .phone div.kmw-key.kmw-key-default[id$='U_127D'], .tablet div.kmw-key.kmw-key-default[id$='U_127D'],  /* ች */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1285'], .tablet div.kmw-key.kmw-key-default[id$='U_1285'],  /* ኅ */
-.phone div.kmw-key.kmw-key-default[id$='U_1295'], .tablet div.kmw-key.kmw-key-default[id$='U_1295'],  /* ን */
-.phone div.kmw-key.kmw-key-default[id$='U_129D'], /* .tablet div.kmw-key.kmw-key-default[id$='U_129D'],  /* ኝ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_12A5'], .tablet div.kmw-key.kmw-key-default[id$='U_12A5'],  /* እ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_12AD'], .tablet div.kmw-key.kmw-key-default[id$='U_12AD'],  /* ክ */ 
-/* .phone div.kmw-key.kmw-key-default[id$='U_12BD'], .tablet div.kmw-key.kmw-key-default[id$='U_12BD'],  /* ኽ */ 
-.phone div.kmw-key.kmw-key-default[id$='U_12CD'], .tablet div.kmw-key.kmw-key-default[id$='U_12CD'],  /* ው */ 
-/* .phone div.kmw-key.kmw-key-default[id$='U_12D5'], .tablet div.kmw-key.kmw-key-default[id$='U_12D5'],  /* ዕ */
-.phone div.kmw-key.kmw-key-default[id$='U_12DD'], .tablet div.kmw-key.kmw-key-default[id$='U_12DD'],  /* ዝ */
-.phone div.kmw-key.kmw-key-default[id$='U_12E5'], .tablet div.kmw-key.kmw-key-default[id$='U_12E5'],  /* ዥ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_12ED'], .tablet div.kmw-key.kmw-key-default[id$='U_12ED'],  /* ይ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_12F5'], .tablet div.kmw-key.kmw-key-default[id$='U_12F5'],  /* ድ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1305'], .tablet div.kmw-key.kmw-key-default[id$='U_1305'],  /* ጅ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_130D'], .tablet div.kmw-key.kmw-key-default[id$='U_130D'],  /* ግ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_131D'], .tablet div.kmw-key.kmw-key-default[id$='U_131D'],  /* ጝ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1325'], .tablet div.kmw-key.kmw-key-default[id$='U_1325'],  /* ጥ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_132D'], .tablet div.kmw-key.kmw-key-default[id$='U_132D'],  /* ጭ */
-.phone div.kmw-key.kmw-key-default[id$='U_1335'], .tablet div.kmw-key.kmw-key-default[id$='U_1335'],  /* ጵ */
-.phone div.kmw-key.kmw-key-default[id$='U_133D'], .tablet div.kmw-key.kmw-key-default[id$='U_133D'],  /* ጽ */
-.phone div.kmw-key.kmw-key-default[id$='U_1345'], /* .tablet div.kmw-key.kmw-key-default[id$='U_1345'],  /* ፅ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_134D'], .tablet div.kmw-key.kmw-key-default[id$='U_134D'],  /* ፍ */
-/* .phone div.kmw-key.kmw-key-default[id$='U_1355'], .tablet div.kmw-key.kmw-key-default[id$='U_1355'],  /* ፕ */
-.phone div.kmw-key.kmw-key-default[id$='T_ሳድስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ሳድስ']
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_1225'],   /* ሥ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1235'],   /* ስ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1265'],  /* ብ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_126D'],  /* ቭ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1295'],  /* ን */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_129D'],   /* ኝ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_12DD'],  /* ዝ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_12E5'],  /* ዥ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1335'],  /* ጵ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_133D'],  /* ጽ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1345'],  /* ፅ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='U_1355'],  /* ፕ */
+#kmw-popup-keys  div.kmw-key.kmw-key-default[id$='T_ሳድስ']
   { background: #eceae4; color: black; }
 
 /* default layer ሳብዕ */
@@ -374,9 +376,11 @@
 .phone div.kmw-key.kmw-key-default[id$='U_133E'], .tablet div.kmw-key.kmw-key-default[id$='U_133E'],  /* ጾ */
 .phone div.kmw-key.kmw-key-default[id$='U_1346'], .tablet div.kmw-key.kmw-key-default[id$='U_1346'],  /* ፆ */
 .phone div.kmw-key.kmw-key-default[id$='U_134E'], .tablet div.kmw-key.kmw-key-default[id$='U_134E'],  /* ፎ */
-.phone div.kmw-key.kmw-key-default[id$='U_1356'], .tablet div.kmw-key.kmw-key-default[id$='U_1356'],   /* ፖ */
-.phone div.kmw-key.kmw-key-default[id$='T_ሳብዕ'], .tablet div.kmw-key.kmw-key-default[id$='T_ሳብዕ']
-  { background:  #fad6b6  ; color: black; } /* f8b88b*/
+.phone div.kmw-key.kmw-key-default[id$='U_1356'], .tablet div.kmw-key.kmw-key-default[id$='U_1356'],  /* ፖ */
+.phone div.kmw-key.kmw-key-default[id$='T_ሳብዕ'],  .tablet div.kmw-key.kmw-key-default[id$='T_ሳብዕ'],   /* ኦ */
+.phone .kmw-keyboard-gff_amharic #latin-punct-layer-K_SLASH\+shift,
+.phone .kmw-keyboard-gff_amharic #ethio-punct-layer-T_1364    /* ?, ፤︁ */
+  { background: #fad6b6 ; color: black; } /* f8b88b*/
 
 /* default layer ዘመደ-ራብዕ */
 .phone div.kmw-key.kmw-key-default[id$='U_120F'], .tablet div.kmw-key.kmw-key-default[id$='U_120F'], /* ሏ */
@@ -405,7 +409,11 @@
 .phone div.kmw-key.kmw-key-default[id$='U_134F'], .tablet div.kmw-key.kmw-key-default[id$='U_134F'], /* ፏ */
 .phone div.kmw-key.kmw-key-default[id$='U_1357'], .tablet div.kmw-key.kmw-key-default[id$='U_1357'],  /* ፗ */
 .phone div.kmw-key.kmw-key-default[id$='T_WWA'], .tablet div.kmw-key.kmw-key-default[id$='T_WWA']
-  { background:  #e1cec9  ; color: black; }
+ /* { background:  #e1cec9  ; color: black; } */
+  {
+    background: #ffffff;  color: black ;
+    background: linear-gradient(180deg, #ffffff 0%, #ccf1ff 100%);
+  }
 
 /* ዘመደ-ግዕዝ */
 .phone div.kmw-key.kmw-key-default[id$='U_1248'], .tablet div.kmw-key.kmw-key-default[id$='U_1248'],  /* ቈ */
@@ -419,7 +427,8 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1380'], .tablet div.kmw-key.kmw-key-default[id$='U_1380'],  /* ᎀ */
 .phone div.kmw-key.kmw-key-default[id$='U_1384'], .tablet div.kmw-key.kmw-key-default[id$='U_1384'],  /* ᎄ */
 .phone div.kmw-key.kmw-key-default[id$='U_1388'], .tablet div.kmw-key.kmw-key-default[id$='U_1388'],  /* ᎈ */
-.phone div.kmw-key.kmw-key-default[id$='U_138C'], .tablet div.kmw-key.kmw-key-default[id$='U_138C']   /* ᎌ */
+.phone div.kmw-key.kmw-key-default[id$='U_138C'], .tablet div.kmw-key.kmw-key-default[id$='U_138C'],   /* ᎌ */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_WWE'], .tablet div.kmw-key.kmw-key-default[id$='T_WWE']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #e2f0cb 100%);
@@ -440,10 +449,12 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1387'], .tablet div.kmw-key.kmw-key-default[id$='U_1387'],  /* ᎇ */
 .phone div.kmw-key.kmw-key-default[id$='U_1E7FA'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FA'], /* 𞟺 */
 .phone div.kmw-key.kmw-key-default[id$='U_138B'], .tablet div.kmw-key.kmw-key-default[id$='U_138B'],  /* ᎋ */
-.phone div.kmw-key.kmw-key-default[id$='U_138F'], .tablet div.kmw-key.kmw-key-default[id$='U_138F']   /* ᎏ */
+.phone div.kmw-key.kmw-key-default[id$='U_138F'], .tablet div.kmw-key.kmw-key-default[id$='U_138F'],  /* ᎏ */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_WWU'], .tablet div.kmw-key.kmw-key-default[id$='T_WWU']
   {
     background: #ffffff; color: black ;
-    background: linear-gradient(180deg, #ffffff 0%, #eceae4 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffb5 100%);
+    /* background: linear-gradient(180deg, #ffffff 0%, #eceae4 100%); */
   }
 
 /* ዘመደ-ሣልስ */
@@ -461,7 +472,8 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1E7F3'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7F3'], /* 𞟳 */
 .phone div.kmw-key.kmw-key-default[id$='U_1E7F8'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7F8'], /* 𞟸 */
 .phone div.kmw-key.kmw-key-default[id$='U_1E7FB'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FB'], /* 𞟻 */
-.phone div.kmw-key.kmw-key-default[id$='U_1E7FD'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FD']  /* 𞟽 */
+.phone div.kmw-key.kmw-key-default[id$='U_1E7FD'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FD'], /* 𞟽 */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_WWI'], .tablet div.kmw-key.kmw-key-default[id$='T_WWI']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #fea3aa 100%);
@@ -474,7 +486,8 @@
 .phone div.kmw-key.kmw-key-default[id$='U_12B3'], .tablet div.kmw-key.kmw-key-default[id$='U_12B3'], /* ኳ */
 .phone div.kmw-key.kmw-key-default[id$='U_12C3'], .tablet div.kmw-key.kmw-key-default[id$='U_12C3'], /* ዃ */
 .phone div.kmw-key.kmw-key-default[id$='U_1313'], .tablet div.kmw-key.kmw-key-default[id$='U_1313'], /* ጓ */
-.phone div.kmw-key.kmw-key-default[id$='U_131F'], .tablet div.kmw-key.kmw-key-default[id$='U_131F']  /* ጟ */
+.phone div.kmw-key.kmw-key-default[id$='U_131F'], .tablet div.kmw-key.kmw-key-default[id$='U_131F'], /* ጟ */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_WWAA'], .tablet div.kmw-key.kmw-key-default[id$='T_WWAA']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #ccf1ff 100%);
@@ -495,7 +508,8 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1E7F6'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7F6'], /* 𞟶 */
 .phone div.kmw-key.kmw-key-default[id$='U_1E7F9'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7F9'], /* 𞟹 */
 .phone div.kmw-key.kmw-key-default[id$='U_1E7FC'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FC'], /* 𞟼 */
-.phone div.kmw-key.kmw-key-default[id$='U_1E7FE'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FE']  /* 𞟾 */
+.phone div.kmw-key.kmw-key-default[id$='U_1E7FE'], .tablet div.kmw-key.kmw-key-default[id$='U_1E7FE'], /* 𞟾 */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_WWEE'], .tablet div.kmw-key.kmw-key-default[id$='T_WWEE']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
@@ -505,13 +519,313 @@
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_1225'],
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_1345'],
 .phone.ios div.kmw-key.kmw-key-default[id$='extra-U_12E5'], .tablet.ios div.kmw-key.kmw-key-default[id$='extra-U_12E5'],
+
 .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN, .tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_EQUAL,  
-.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift
+/*
+.ios .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
+*/
+.tablet.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, 
+.ios .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
+.ios .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .phone.ios .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift,
+.ios .kmw-keyboard-gff_amharic #punctuation-K_4\+shift
   {background: #fdfdfe ; color: black ; }
 
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1225'],
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1345'],
 .phone.android div.kmw-key.kmw-key-default[id$='extra-U_12E5'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_12E5'],
 .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_HYPHEN, .tablet.android .kmw-keyboard-gff_amharic #punctuation-K_EQUAL, 
-.android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift
-  {background: #777 ; color: white ; }
+.android .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift,
+.android .kmw-keyboard-gff_amharic #punctuation-K_2\+shift,  .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_2\+shift,
+.android .kmw-keyboard-gff_amharic #punctuation-K_SLASH\+shift, .phone.android .kmw-keyboard-gff_amharic #punctuation-2-K_SLASH\+shift,
+.android .kmw-keyboard-gff_amharic #punctuation-K_4\+shift,
+.android .kmw-keyboard-gff_amharic #amharic-extra-K_SLASH\+shift , .phone.android .kmw-keyboard-gff_amharic #amharic-extra-2-K_SLASH\+shift,
+.phone.android div.kmw-key.kmw-key-default[id$='extra-K_SLASH+shift'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-K_SLASH+shift'],
+.phone.android div.kmw-key.kmw-key-default[id$='extra-K_1+shift'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-K_1+shift']
+/* .phone.android div.kmw-key.kmw-key-default[id$='extra-U_1367'], .tablet.android div.kmw-key.kmw-key-default[id$='extra-U_1367'] */
+  {background: #777 ; color: white ; } 
+
+/* change hint color for colored keys */
+
+div.kmw-key.kmw-key-default[id$='K_1']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_2']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_3']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_4']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_5']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_6']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_7']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_8']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_9']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_0']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='default-K_HYPHEN']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='layer-K_HYPHEN']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='K_EQUAL']  div.kmw-key-popup-icon.kmw-key-text,
+
+div.kmw-key.kmw-key-default[id$='extra-U_1369']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136A']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136B']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136C']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136D']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136E']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_136F']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_1370']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_1371']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='extra-U_1372']  div.kmw-key-popup-icon.kmw-key-text,
+
+div.kmw-key.kmw-key-default[id$='T_ግዕዝ']  div.kmw-key-popup-icon.kmw-key-text, 
+div.kmw-key.kmw-key-default[id$='T_ካዕብ']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='T_ሣልስ']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='T_ራብዕ']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='T_ኃምስ']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='T_ሳብዕ']  div.kmw-key-popup-icon.kmw-key-text,
+
+div.kmw-key.kmw-key-default[id$='_1360']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='_1361']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='_1362']  div.kmw-key-popup-icon.kmw-key-text,
+
+.phone div.kmw-key.kmw-key-default[id$='layer-K_1+shift']  div.kmw-key-popup-icon.kmw-key-text,
+.phone div.kmw-key.kmw-key-default[id='default-K_1+shift']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='T_BANG']  div.kmw-key-popup-icon.kmw-key-text,
+
+div.kmw-key.kmw-key-default[id$='K_2+shift']  div.kmw-key-popup-icon.kmw-key-text,
+
+div.kmw-key.kmw-key-default[id$='_00AB']  div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id$='_00BB']  div.kmw-key-popup-icon.kmw-key-text,
+
+/* phone only */
+div.kmw-key.kmw-key-default[id='latin-punct-layer-K_SLASH'] div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id='latin-punct-layer-K_SLASH+shift'] div.kmw-key-popup-icon.kmw-key-text,
+div.kmw-key.kmw-key-default[id='latin-punct-layer-K_4+shift'] div.kmw-key-popup-icon.kmw-key-text
+{color:  #777 ; }
+
+/* #kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_SLASH+shift'], */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_SLASH'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_002E'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_002C'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_003A'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2019'],
+
+
+/* #kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_COLON+shift'], */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_COMMA'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_COLON'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00AB'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00BB'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_1366'],
+
+/* #kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_COLON+shift'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_3+shift'], */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_20AC'],
+/* #kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_5+shift'], */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_2039'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_2018'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_201C'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_203A'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_2019'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_201D'],
+/*
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_9+shift'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_0+shift'],
+*/
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_20BD'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00A5'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00A2'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00A3'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_20A9'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2039'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_203A'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_0060'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2018'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2019'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_BKSLASH'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_201C'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_201D'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_201E'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2013'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2014'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2022'],
+
+/* #kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_1+shift'], */
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='K_PERIOD'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00B0'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00A1'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00A7'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_00BF'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2026'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_2030'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='shift'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='T_1368'],
+
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_1285'],
+#kmw-popup-keys div.kmw-key.kmw-key-default[id$='U_12BD']
+{
+  border-color: #d0d3d9;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.phone.ios div.kmw-key.kmw-key-default[id='ዐ-layer-U_12D5'], .tablet.ios div.kmw-key.kmw-key-default[id='ዐ-layer-U_12D5'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሸ-layer-K_X'], .tablet.ios div.kmw-key.kmw-key-default[id='ሸ-layer-K_X'],
+.phone.ios div.kmw-key.kmw-key-default[id='ጀ-layer-K_J'], .tablet.ios div.kmw-key.kmw-key-default[id='ጀ-layer-K_J'],
+.phone.ios div.kmw-key.kmw-key-default[id='ፈ-layer-K_F'], .tablet.ios div.kmw-key.kmw-key-default[id='ፈ-layer-K_F'],
+.phone.ios div.kmw-key.kmw-key-default[id='ቀ-layer-K_Q'], .tablet.ios div.kmw-key.kmw-key-default[id='ቀ-layer-K_Q'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሐ-layer-K_H+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ሐ-layer-K_H+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ቸ-layer-K_C'], .tablet.ios div.kmw-key.kmw-key-default[id='ቸ-layer-K_C'],
+.phone.ios div.kmw-key.kmw-key-default[id='ጨ-layer-K_C+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ጨ-layer-K_C+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='የ-layer-K_Y'], .tablet.ios div.kmw-key.kmw-key-default[id='የ-layer-K_Y'],
+.phone.ios div.kmw-key.kmw-key-default[id='ጰ-layer-K_P+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ጰ-layer-K_P+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ፐ-layer-K_P'], .tablet.ios div.kmw-key.kmw-key-default[id='ፐ-layer-K_P'],
+
+.phone.ios div.kmw-key.kmw-key-default[id='አ-layer-U_12A5'], .tablet.ios div.kmw-key.kmw-key-default[id='አ-layer-U_12A5'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሰ-layer-K_S'], .tablet.ios div.kmw-key.kmw-key-default[id='ሰ-layer-K_S'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሠ-layer-U_1225'], .tablet.ios div.kmw-key.kmw-key-default[id='ሠ-layer-U_1225'],
+.phone.ios div.kmw-key.kmw-key-default[id='ደ-layer-K_D'], .tablet.ios div.kmw-key.kmw-key-default[id='ደ-layer-K_D'],
+.phone.ios div.kmw-key.kmw-key-default[id='ረ-layer-K_R'], .tablet.ios div.kmw-key.kmw-key-default[id='ረ-layer-K_R'],
+.phone.ios div.kmw-key.kmw-key-default[id='ከ-layer-K_K'], .tablet.ios div.kmw-key.kmw-key-default[id='ከ-layer-K_K'],
+.phone.ios div.kmw-key.kmw-key-default[id='ኸ-layer-K_K+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ኸ-layer-K_K+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሀ-layer-K_H'], .tablet.ios div.kmw-key.kmw-key-default[id='ሀ-layer-K_H'],
+.phone.ios div.kmw-key.kmw-key-default[id='ኀ-layer-U_1285'], .tablet.ios div.kmw-key.kmw-key-default[id='ኀ-layer-U_1285'],
+.phone.ios div.kmw-key.kmw-key-default[id='ተ-layer-K_T'], .tablet.ios div.kmw-key.kmw-key-default[id='ተ-layer-K_T'],
+.phone.ios div.kmw-key.kmw-key-default[id='ጠ-layer-K_T+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ጠ-layer-K_T+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ለ-layer-K_L'], .tablet.ios div.kmw-key.kmw-key-default[id='ለ-layer-K_L'],
+.phone.ios div.kmw-key.kmw-key-default[id='ጸ-layer-K_S+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ጸ-layer-K_S+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ፀ-layer-U_1345'], .tablet.ios div.kmw-key.kmw-key-default[id='ፀ-layer-U_1345'],
+.phone.ios div.kmw-key.kmw-key-default[id='ዘ-layer-K_Z'], .tablet.ios div.kmw-key.kmw-key-default[id='ዘ-layer-K_Z'],
+.phone.ios div.kmw-key.kmw-key-default[id='ዠ-layer-K_Z+shift'], .tablet.ios div.kmw-key.kmw-key-default[id='ዠ-layer-K_Z+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ወ-layer-K_W'], .tablet.ios div.kmw-key.kmw-key-default[id='ወ-layer-K_W'],
+.phone.ios div.kmw-key.kmw-key-default[id='ገ-layer-K_G'], .tablet.ios div.kmw-key.kmw-key-default[id='ገ-layer-K_G'],
+.phone.ios div.kmw-key.kmw-key-default[id='በ-layer-K_B'], .tablet.ios div.kmw-key.kmw-key-default[id='በ-layer-K_B'],
+.phone.ios div.kmw-key.kmw-key-default[id='ቨ-layer-K_V'], .tablet.ios div.kmw-key.kmw-key-default[id='ቨ-layer-K_V'],
+.phone.ios div.kmw-key.kmw-key-default[id='ነ-layer-K_N'], .tablet.ios div.kmw-key.kmw-key-default[id='ነ-layer-K_N'],
+.phone.ios div.kmw-key.kmw-key-default[id='ኘ-layer-K_N'], .tablet.ios div.kmw-key.kmw-key-default[id='ኘ-layer-U_129D'],
+.phone.ios div.kmw-key.kmw-key-default[id='መ-layer-K_M'], .tablet.ios div.kmw-key.kmw-key-default[id='መ-layer-K_M'],
+
+.phone.ios div.kmw-key.kmw-key-default[id='ጘ-extra-U_131D'], .tablet.ios div.kmw-key.kmw-key-default[id='ጘ-extra-U_131D'],
+
+.phone.ios div.kmw-key.kmw-key-default[id='ቐ-extra-U_1255'],
+.phone.ios div.kmw-key.kmw-key-default[id='ዠ-extra-U_12E5'],
+.phone.ios div.kmw-key.kmw-key-default[id='ሠ-extra-U_1225'],
+.phone.ios div.kmw-key.kmw-key-default[id='ኸ-extra-K_K+shift'],
+.phone.ios div.kmw-key.kmw-key-default[id='ኀ-extra-U_1285'],
+.phone.ios div.kmw-key.kmw-key-default[id='ፀ-extra-U_1345'],
+.phone.ios div.kmw-key.kmw-key-default[id='ፐ-extra-K_P'],
+.phone.ios div.kmw-key.kmw-key-default[id='ቨ-extra-K_V'],
+
+.tablet.ios div.kmw-key.kmw-key-default[id='ቐ-extra-U_1255'],
+.tablet.ios div.kmw-key.kmw-key-default[id='ጘ-extra-U_1E318'],
+.tablet.ios div.kmw-key.kmw-key-default[id='𞟠-extra-U_1E7E5'],
+
+.phone.ios div.kmw-key.kmw-key-default[id='latin-punct-layer-T_BANG'], .phone.ios div.kmw-key.kmw-key-default[id='ethio-punct-layer-T_1362']
+{
+    /* background:#F6EEE3; */
+    /* background: #EBE8E2; */
+    background: #eceae4 ;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #777;
+     box-shadow: 0 0 1px 1px #777;
+}
+
+.tablet.ios div.kmw-key.kmw-key-default[id='ዀ-extra-U_12C0'],
+.tablet.ios div.kmw-key.kmw-key-default[id='𞟨-extra-U_1E7E8'],
+.tablet.ios div.kmw-key.kmw-key-default[id='ᎀ-extra-U_1380'],
+.tablet.ios div.kmw-key.kmw-key-default[id='ᎈ-extra-U_1388']
+{
+    background: #ffffff;  color: black ;
+    background: linear-gradient(180deg, #ffffff 0%, #e2f0cb 100%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777;
+    box-shadow: 0 0 1px 1px #777;
+}
+
+
+.phone.android div.kmw-key.kmw-key-default[id='ዐ-layer-U_12D5'], .tablet.android div.kmw-key.kmw-key-default[id='ዐ-layer-U_12D5'],
+.phone.android div.kmw-key.kmw-key-default[id='ሸ-layer-K_X'], .tablet.android div.kmw-key.kmw-key-default[id='ሸ-layer-K_X'],
+.phone.android div.kmw-key.kmw-key-default[id='ጀ-layer-K_J'], .tablet.android div.kmw-key.kmw-key-default[id='ጀ-layer-K_J'],
+.phone.android div.kmw-key.kmw-key-default[id='ፈ-layer-K_F'], .tablet.android div.kmw-key.kmw-key-default[id='ፈ-layer-K_F'],
+.phone.android div.kmw-key.kmw-key-default[id='ቀ-layer-K_Q'], .tablet.android div.kmw-key.kmw-key-default[id='ቀ-layer-K_Q'],
+.phone.android div.kmw-key.kmw-key-default[id='ሐ-layer-K_H+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ሐ-layer-K_H+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ቸ-layer-K_C'], .tablet.android div.kmw-key.kmw-key-default[id='ቸ-layer-K_C'],
+.phone.android div.kmw-key.kmw-key-default[id='ጨ-layer-K_C+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ጨ-layer-K_C+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='የ-layer-K_Y'], .tablet.android div.kmw-key.kmw-key-default[id='የ-layer-K_Y'],
+.phone.android div.kmw-key.kmw-key-default[id='ጰ-layer-K_P+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ጰ-layer-K_P+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ፐ-layer-K_P'], .tablet.android div.kmw-key.kmw-key-default[id='ፐ-layer-K_P'],
+
+.phone.android div.kmw-key.kmw-key-default[id='አ-layer-U_12A5'], .tablet.android div.kmw-key.kmw-key-default[id='አ-layer-U_12A5'],
+.phone.android div.kmw-key.kmw-key-default[id='ሰ-layer-K_S'], .tablet.android div.kmw-key.kmw-key-default[id='ሰ-layer-K_S'],
+.phone.android div.kmw-key.kmw-key-default[id='ሠ-layer-U_1225'], .tablet.android div.kmw-key.kmw-key-default[id='ሠ-layer-U_1225'],
+.phone.android div.kmw-key.kmw-key-default[id='ደ-layer-K_D'], .tablet.android div.kmw-key.kmw-key-default[id='ደ-layer-K_D'],
+.phone.android div.kmw-key.kmw-key-default[id='ረ-layer-K_R'], .tablet.android div.kmw-key.kmw-key-default[id='ረ-layer-K_R'],
+.phone.android div.kmw-key.kmw-key-default[id='ከ-layer-K_K'], .tablet.android div.kmw-key.kmw-key-default[id='ከ-layer-K_K'],
+.phone.android div.kmw-key.kmw-key-default[id='ኸ-layer-K_K+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ኸ-layer-K_K+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ሀ-layer-K_H'], .tablet.android div.kmw-key.kmw-key-default[id='ሀ-layer-K_H'],
+.phone.android div.kmw-key.kmw-key-default[id='ኀ-layer-U_1285'], .tablet.android div.kmw-key.kmw-key-default[id='ኀ-layer-U_1285'],
+.phone.android div.kmw-key.kmw-key-default[id='ተ-layer-K_T'], .tablet.android div.kmw-key.kmw-key-default[id='ተ-layer-K_T'],
+.phone.android div.kmw-key.kmw-key-default[id='ጠ-layer-K_T+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ጠ-layer-K_T+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ለ-layer-K_L'], .tablet.android div.kmw-key.kmw-key-default[id='ለ-layer-K_L'],
+.phone.android div.kmw-key.kmw-key-default[id='ጸ-layer-K_S+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ጸ-layer-K_S+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ፀ-layer-U_1345'], .tablet.android div.kmw-key.kmw-key-default[id='ፀ-layer-U_1345'],
+.phone.android div.kmw-key.kmw-key-default[id='ዘ-layer-K_Z'], .tablet.android div.kmw-key.kmw-key-default[id='ዘ-layer-K_Z'],
+.phone.android div.kmw-key.kmw-key-default[id='ዠ-layer-K_Z+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ዠ-layer-K_Z+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ወ-layer-K_W'], .tablet.android div.kmw-key.kmw-key-default[id='ወ-layer-K_W'],
+.phone.android div.kmw-key.kmw-key-default[id='ገ-layer-K_G'], .tablet.android div.kmw-key.kmw-key-default[id='ገ-layer-K_G'],
+.phone.android div.kmw-key.kmw-key-default[id='በ-layer-K_B'], .tablet.android div.kmw-key.kmw-key-default[id='በ-layer-K_B'],
+.phone.android div.kmw-key.kmw-key-default[id='ቨ-layer-K_V'], .tablet.android div.kmw-key.kmw-key-default[id='ቨ-layer-K_V'],
+.phone.android div.kmw-key.kmw-key-default[id='ነ-layer-K_N'], .tablet.android div.kmw-key.kmw-key-default[id='ነ-layer-K_N'],
+.phone.android div.kmw-key.kmw-key-default[id='ኘ-layer-K_N+shift'], .tablet.android div.kmw-key.kmw-key-default[id='ኘ-layer-U_129D'],
+.phone.android div.kmw-key.kmw-key-default[id='መ-layer-K_M'], .tablet.android div.kmw-key.kmw-key-default[id='መ-layer-K_M'],
+
+.phone.android div.kmw-key.kmw-key-default[id='ጘ-extra-U_131D'], .tablet.android div.kmw-key.kmw-key-default[id='ጘ-extra-U_131D'],
+
+.phone.android div.kmw-key.kmw-key-default[id='ቐ-extra-U_1255'],
+.phone.android div.kmw-key.kmw-key-default[id='ዠ-extra-U_12E5'],
+.phone.android div.kmw-key.kmw-key-default[id='ሠ-extra-U_1225'],
+.phone.android div.kmw-key.kmw-key-default[id='ኸ-extra-K_K+shift'],
+.phone.android div.kmw-key.kmw-key-default[id='ኀ-extra-U_1285'],
+.phone.android div.kmw-key.kmw-key-default[id='ፀ-extra-U_1345'],
+.phone.android div.kmw-key.kmw-key-default[id='ፐ-extra-K_P'],
+.phone.android div.kmw-key.kmw-key-default[id='ቨ-extra-K_V'],
+
+.tablet.android div.kmw-key.kmw-key-default[id='ቐ-extra-U_1255'],
+.tablet.android div.kmw-key.kmw-key-default[id='ጘ-extra-U_1E318'],
+.tablet.android div.kmw-key.kmw-key-default[id='𞟠-extra-U_1E7E5']
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eceae4;
+    box-shadow: 0 0 1px 1px #eceae4;
+}
+
+.tablet.android div.kmw-key.kmw-key-default[id='ዀ-extra-U_12C0'],
+.tablet.android div.kmw-key.kmw-key-default[id='𞟨-extra-U_1E7E8'],
+.tablet.android div.kmw-key.kmw-key-default[id='ᎀ-extra-U_1380'],
+.tablet.android div.kmw-key.kmw-key-default[id='ᎈ-extra-U_1388']
+{
+    background: #ffffff;  color: black ;
+    background: linear-gradient(180deg, #ffffff 0%, #e2f0cb 100%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eceae4;
+    box-shadow: 0 0 1px 1px #eceae4;
+}
+
+.phone.android div.kmw-key.kmw-key-default[id='latin-punct-layer-T_BANG'], .phone.android div.kmw-key.kmw-key-default[id='ethio-punct-layer-T_1362']
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccf1ff;
+    box-shadow: 0 0 1px 1px #ccf1ff;
+}
+
+/* For later:
+ *
+.phone.ios div.kmw-key.kmw-key-default[id='መ-layer-K_M']:click {
+    box-shadow: 0;
+}
+*/

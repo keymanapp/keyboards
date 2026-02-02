@@ -1,6 +1,14 @@
 Haroi Keyboard Change History
 =======================
 
+1.2.3 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
+1.2.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.2.1 (2021-07-01)
 ----------------
 * Updated to use new version of Charis SIL

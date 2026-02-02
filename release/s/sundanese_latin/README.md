@@ -1,14 +1,10 @@
 Sundanese Latin
 =====================
-Copyright (c) 2020 Ilham Nurwansah
-
-Version 1.0
-
+Copyright (c) Ilham Nurwansah
 
 Keyboard for Sundanese language with Latin script.
 
 This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item.
-
 
 Links
 -----
@@ -22,3 +18,5 @@ Supported Platforms
  * MacOS
  * Linux
  * Web
+ * Mobile
+ 

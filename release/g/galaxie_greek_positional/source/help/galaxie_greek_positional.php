@@ -12,7 +12,7 @@
     .grid thead tr{height:30px;}
     .grid .headrow {font-weight:bold; color:#AD4A28; background-color:#eee; text-align:left;} .columns {width:560px; -webkit-column-count: 3; -webkit-column-gap: 13px; -moz-column-count: 3; -moz-column-gap: 13px; column-count: 3; column-gap: 13px;}
     .columns2 {width:375px; -webkit-column-count: 2; -webkit-column-gap: 10px; -moz-column-count: 2; -moz-column-gap: 10px; column-count: 2; column-gap: 10px;} .button {text-decoration: none !important; margin:0px 1px; padding:1px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; white-space: nowrap; color: #2D2C2C !important; border:solid 1px #707070; background: #D4D4D4; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #F2F2F2), color-stop(0.47, #EBEBEB), color-stop(0.48, #DDDDDD), color-stop(0.9, #CFCFCF)); background-image: -webkit-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -moz-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -ms-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -o-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%);}
-    .button:hover {background: #BEE6FD; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #EAF6FD), color-stop(0.47, #D9F0FC), color-stop(0.48, #BEE6FD), color-stop(0.9, #A7D8F5)); background-image: -webkit-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -moz-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -ms-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -o-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%);} .lang2,.languageExample {font-family:"Gentium Plus"; color:blue; }
+    .button:hover {background: #BEE6FD; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #EAF6FD), color-stop(0.47, #D9F0FC), color-stop(0.48, #BEE6FD), color-stop(0.9, #A7D8F5)); background-image: -webkit-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -moz-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -ms-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -o-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%);} .lang2,.languageExample {font-family:"Gentium"; color:blue; }
     .lang2 {font-size:150%; line-height:1em;}
     .hebrew .lang2, .hebrew .languageExample {font-family:"Ezra SIL";} .keys {border-style:solid; color:black; border-width:1px 1px 2px; border-color: #6B6867 #6B6867 #111111; background:#dddddd; margin:0px 1px; padding:2px 3px; line-height:30px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;} .welcome {float:left; width:385px; height:540px;border:1px solid #dddddd;padding:8px 15px; margin-top:20px;margin-left:5px;}
     .right {} #osk_tabsheets { border: solid 1px #ad4a28; margin: 0 4px 4px 4px; background: white; z-index: 101; }
@@ -20,25 +20,10 @@
     .osk_tabsheet { display: none; }
     #osk_tabs { margin: 4px 4px 0px 0px; z-index: 100; }
     .osk_tab { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 0px 5px; height: 17px; -webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;}
-    .osk_tab_selected { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 1px; border-bottom: none; margin-top: -1px; height: 19px;-webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;} .key { float: left; display: block; position: relative; overflow: hidden; height: 35px; margin: 2px 0px 0px 2px; border: solid 1px grey; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; } #K_BKQUOTE { width:34px; } #K_BKSP { width: 60px; } #K_TAB { width: 52px; } #K_BKSLASH { width: 42px; } #K_CAPS { width: 62px; } #K_ENTER { width: 70px; } #K_ENTER-EU1 { width: 42px; -webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px; } #K_ENTER-EU1 .keycap { left:3px !important; } #K_ENTER-EU2 { width: 32px; margin-top:-1px !important; border-top:none !important; height:39px !important; -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; } #K_SHIFTL { width: 85px; } #K_SHIFTL-EU { width: 47px; } #K_oE2 { display:none; } #K_SHIFTR { width: 85px; } #K_CTRLL { width: 60px; } #K_ALTL { width: 50px; } #K_SPACE { width: 234px; } #K_ALTR { width: 50px; } #K_CTRLR { width: 60px; } .plain { background-repeat: no-repeat; width: 34px; } .special { background-repeat: no-repeat; background: #c0c0c0; } .keycap { font: bold 7pt Arial; position: absolute; left: 6px; top: 6px; } .key .keycap { display: block; } .special .keycap { display: block; } .keytext { font:	19px "Gentium Plus"; position: absolute; display: block; right: 5px; bottom: 0px; color: blue; } .keytext.LTN { font-size:12px !important; color: #AD4A28 !important; right:3px !important; } .hebrew .keytext { font-family:"Ezra SIL"; } .hebrew .diacritic { font-size:30px; color:green; right:15px; bottom:-6px; } .hebrew .top { bottom:-12px !important; } .hebrew .bot{ bottom:2px !important; } .lang2, .languageExample { font-family: "Galatia SIL"; color: blue } .lang2 { font-size: 150% } .highlightKeys img { display: none } .highlightKeys .key-print { display: inline }
+    .osk_tab_selected { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 1px; border-bottom: none; margin-top: -1px; height: 19px;-webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;} .key { float: left; display: block; position: relative; overflow: hidden; height: 35px; margin: 2px 0px 0px 2px; border: solid 1px grey; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; } #K_BKQUOTE { width:34px; } #K_BKSP { width: 60px; } #K_TAB { width: 52px; } #K_BKSLASH { width: 42px; } #K_CAPS { width: 62px; } #K_ENTER { width: 70px; } #K_ENTER-EU1 { width: 42px; -webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px; } #K_ENTER-EU1 .keycap { left:3px !important; } #K_ENTER-EU2 { width: 32px; margin-top:-1px !important; border-top:none !important; height:39px !important; -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; } #K_SHIFTL { width: 85px; } #K_SHIFTL-EU { width: 47px; } #K_oE2 { display:none; } #K_SHIFTR { width: 85px; } #K_CTRLL { width: 60px; } #K_ALTL { width: 50px; } #K_SPACE { width: 234px; } #K_ALTR { width: 50px; } #K_CTRLR { width: 60px; } .plain { background-repeat: no-repeat; width: 34px; } .special { background-repeat: no-repeat; background: #c0c0c0; } .keycap { font: bold 7pt Arial; position: absolute; left: 6px; top: 6px; } .key .keycap { display: block; } .special .keycap { display: block; } .keytext { font:	19px "Gentium"; position: absolute; display: block; right: 5px; bottom: 0px; color: blue; } .keytext.LTN { font-size:12px !important; color: #AD4A28 !important; right:3px !important; } .hebrew .keytext { font-family:"Ezra SIL"; } .hebrew .diacritic { font-size:30px; color:green; right:15px; bottom:-6px; } .hebrew .top { bottom:-12px !important; } .hebrew .bot{ bottom:2px !important; } .lang2, .languageExample { font-family: "Galatia SIL"; color: blue } .lang2 { font-size: 150% } .highlightKeys img { display: none } .highlightKeys .key-print { display: inline }
 END;
   require_once('header.php');
 ?>
-
-
-    <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
-
-    <br/>
-    <a href="#Overview">Overview</a><br/>
-    <a href="#UsingGreek">Greek Keyboard</a><br/>
-    <a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-    <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-    <a style='margin-left:20px' href="#Examples">Examples</a><br/>
-    <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-    <a style='margin-left:30px' target="_blank" href='keyboardchart.php'>Complete Typing Chart</a><br/>
-    <a href="#Technical">Technical Information</a><br/>
-    <a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
     <div id='Overview'>
         <h2>Overview</h2>
 
@@ -50,7 +35,7 @@ END;
 
     <div id='UsingGreek'>
 
-        <h1 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Greek Keyboard Layout</h1>
+        <h2 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Greek Keyboard Layout</h2>
 
         <h3 style="clear:left">Unicode : Unshifted</h3>
         <div class="key plain" id="K_BKQUOTE">
@@ -710,34 +695,4 @@ END;
 
     </div>
 
-
-    <div id="Technical">
-        <h2>Technical Information</h2>
-        <h3>System Requirements</h3>
-        <p>It is recommended that you use an English QWERTY hardware keyboard with this keyboard.
-        </p>
-        <h3>Unicode Version</h3>
-        <p>This keyboard complies with Unicode 5.1</p>
-
-    </div>
-
-    <div id="Author">
-        <h3>Keyboard Authorship</h3>
-        <p>
-            This keyboard was created by Hampton Keathley of Galaxie Software. SIL International graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His
-            effort has assisted greatly in enabling people to communicate in Koine Greek.
-        </p>
-
-        <p>
-            Version 2.1 released 15 December 2009. Full Greek documentation.<br /> Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br /> Version 2.01 released 13 March 2008. Fixed Hebrew: holem and other
-            letters in On Screen Keyboard, added support for final mem, peh, nun with enter.<br /> Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
-        </p>
-
-    </div>
-    <div id="Copyright">
-        <h3>Copyright and Terms of Use</h3>
-        <p>
-            The Galaxie Greek (Phonetic) keyboard layout for Keyman is Copyright 2004-2018 Galaxie Systems and SIL International. It is released under the MIT license.
-        </p>
-    </div>
 

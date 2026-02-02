@@ -10,6 +10,7 @@ Obolo Qwerty Keyboard is a simple keyboard in QWERTY layout, for the Obolo langu
 
 Links
 -----
+https://keyman.com/keyboards/obolo_qwerty
 
 Supported Platforms
 -------------------
