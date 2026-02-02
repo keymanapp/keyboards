@@ -1,2 +1,4 @@
-kmc build windows-package-installer source\gff_mwangwego.kps --msi .\keymandesktop.msi --exe .\setup-redist.exe --license .\LICENSE.md  --title-image source\sideimage-nolenc
-e-mwangwego.png --app-name "Mwangwego Keyboard" --out-file mwangwego_keyboard.exe
+#
+# Get newest keymandestop.msi & setup-redist.exe from: https://downloads.keyman.com/windows/stable/
+#
+kmc build windows-package-installer source\gff_mwangwego.kps --msi .\keymandesktop.msi --exe .\setup-redist.exe --license .\LICENSE.md  --title-image source\sideimage-nolence-mwangwego.png --app-name "Mwangwego Keyboard" --out-file mwangwego_keyboard.exe
