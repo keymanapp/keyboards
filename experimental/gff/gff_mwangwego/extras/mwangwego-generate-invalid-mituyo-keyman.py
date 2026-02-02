@@ -31,7 +31,7 @@ def main():
 
     # Create stores() for Invalid Mutuyo combinations with Masisi
     for row in df.index:
-        masisi = df['Letter'][row]
+        masisi = str( df['Letter'][row] )
         invalid = ""
         for mutuyo in columns:
             realized = df[mutuyo][row]
@@ -65,16 +65,16 @@ def main():
     
     # Create rules to block invalid 1 level mituyo stacks
     for row in df.index:
-        masisi = df['Letter'][row]
+        masisi = str( df['Letter'][row] )
         print( "'" + masisi + "' + any(" + masisi + "_InvalidMituyo) > beep" )
 
     # Create rules to block invalid 2, 3 & 4 level mituyo stacks
     mutuyo_map = {
-        '': '\uE0A9', # waya below
-        '': '\uE0AB', # mura
-        '': '\uE0AC', # mula
-        '': '\uE0AD', # pewa
-        '': '\uE0AF'  # kwanthu
+        '': '\u16E29', # waya below
+        '': '\u16E2B', # mura
+        '': '\u16E2C', # mula
+        '': '\u16E2D', # pewa
+        '': '\u16E2F'  # kwanthu
     }
     for key in masisi_mutuyo:
         masisi = key.split("_")[0] # split key to get the mutuyo before "_"
