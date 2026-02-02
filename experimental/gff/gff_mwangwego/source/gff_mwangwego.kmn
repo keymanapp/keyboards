@@ -9,8 +9,8 @@ c handle each letter.  Experimentation will continue.
 
 store(&KEYBOARDVERSION) '0.9.1'
 store(&NAME) 'Mwangwego'
-store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
-store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego16 font.'
+store(&COPYRIGHT) '© 2024-2026 Geʾez Frontier Foundation'
+store(&Message) 'This is an experimental Mwangwego keyboard that requires a font under the provisional Unicode encoding for Mwangwego.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_M]'
 store(&VISUALKEYBOARD) 'gff_mwangwego.kvks'
@@ -51,8 +51,6 @@ store(OrdersShortA) '𖸀𖸁𖸂𖸃𖸄𖸅𖸆𖸇𖸈𖸉𖸊𖸋𖸌𖸍�
 store(OrdersConsonants) '𖸀𖸁𖸂𖸃𖸄𖸅𖸆𖸇𖸈𖸉𖸊𖸋𖸌𖸍𖸎𖸏𖸐𖸑𖸒𖸓𖸔𖸕𖸖𖸗𖸘𖸙𖸚𖸛𖸜𖸝𖸞𖸟'
 store(MwangwegoSyllables) U+16E00 .. U+16E40
 
-store(VowelKeys) 'AaEeIiOoUu'
-store(Vowels) '𖸀𖸀' 
 store(Masiri) '𖸠𖸠𖸡𖸡𖸢𖸢𖸣𖸣'
 store(MasiriKeys) 'EeIiOoUu'
 store(FirstOrderKeys) 'Aa'
@@ -973,7 +971,7 @@ c
 + [RALT K_9] > '9'
 + [RALT K_0] > '0'
 + [RALT K_HYPHEN] > '-'
-+ [RALT K_EQUALS] > '='
++ [RALT K_EQUAL] > '='
 
   group(𖸜_𖸤_group) using keys
   deadkey(1) + '3' > '𖸰𖸜𖸠' 
