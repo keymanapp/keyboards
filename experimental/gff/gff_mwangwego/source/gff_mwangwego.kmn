@@ -7,14 +7,12 @@ c dependent along with the pairing against specific mutuyo sequences. A better m
 c sequences, process them, and assume anything else is invalid. A later approach may use a single group to
 c handle each letter.  Experimentation will continue.
 
-store(&KEYBOARDVERSION) '0.9.1'
 store(&NAME) 'Mwangwego'
 store(&COPYRIGHT) '© 2024-2026 Geʾez Frontier Foundation'
 store(&Message) 'This is an experimental Mwangwego keyboard that requires a font under the provisional Unicode encoding for Mwangwego.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_M]'
 store(&VISUALKEYBOARD) 'gff_mwangwego.kvks'
-store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'gff_mwangwego.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'gff_mwangwego.css'
 store(&BITMAP) 'gff_mwangwego.ico'
@@ -76,17 +74,17 @@ c  𖸦  = 3  / NI
 c  𖸧  = 4  / HI
 c  𖸨  = 5  / WAYA
 c  𖸩  = 6  / WAYA Below (combining)
-store(WayaBelow) U+F0029
+store(WayaBelow) U+16E29
 c  𖸪  = 7  / SISA
 c  𖸫  = 8  / MURA  (combining)
-store(Mura) U+F002B
+store(Mura) U+16E2B
 c  𖸬  = 9  / MULA (combining)
-store(Mula) U+F002C
+store(Mula) U+16E2C
 c  𖸭  = 0  / PEWA (combining)
-store(Pewa) U+F002D
+store(Pewa) U+16E2D
 c  𖸮  = -  / TUMBA
 c  𖸯  = =  / KWANTHU (combining)
-store(Kwanthu) U+F002F
+store(Kwanthu) U+16E2F
 
 store(WayaMutuyo) '𖸨𖸴𖸵𖸷𖸸𖸺𖸻𖸼𖸿' $WayaBelow
 
@@ -258,6 +256,8 @@ store(MyuMituyoKeys_index) '356'
 c store(MyuMituyoKeys:index:beep) '1247890-='
 store(NiMituyoKeys_index) '46='
 c store(NiMituyoKeys:index:beep) '12357890-'
+store(&TARGETS) 'windows macosx linux'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 group(main) using keys
