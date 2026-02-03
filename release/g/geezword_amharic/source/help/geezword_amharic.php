@@ -1,5 +1,5 @@
 ﻿<?php
-  $pagetitle = 'GeezWord Tigrinya Keyboard Help';
+  $pagetitle = 'GeezWord Amharic Keyboard Help';
   $pagename  = $pagetitle;
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
   $pagestyle = <<<END
@@ -40,9 +40,9 @@
 <p>
 This keyboard is designed for use with the Amharic language of Ethiopia in Africa. Typing follows a consonant-vowel pattern. It is designed for use with a standard (QWERTY) keyboard.
 </p>
-<p>In this document, you will find the short-guide for typing Tigrinya letters. A detailed guide is also provided as PDF files:
-<a target="_blank" href="https://help.keyman.com/keyboard/geezword_tigrinya/18.0/Geezword-Tigrinya-Mobile-Manual.pdf">Desktop Manual</a> ,
-<a target="_blank" href="https://help.keyman.com/keyboard/geezword_tigrinya/18.0/Geezword-Tigrinya-Mobile-Manual.pdf">Mobile Manual</a> .
+<p>In this document, you will find the short-guide for typing Amharic letters. A detailed guide is also provided as PDF files:
+<a target="_blank" href="https://help.keyman.com/keyboard/geezword_Amharic/18.0/Geezword-Amharic-Mobile-Manual.pdf">Desktop Manual</a> ,
+<a target="_blank" href="https://help.keyman.com/keyboard/geezword_amharic/18.0/Geezword-Amharic-Mobile-Manual.pdf">Mobile Manual</a> .
 </p>
 </div>
 
@@ -775,25 +775,26 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 </tbody>
 </table>
 
-<p><strong>Example:</strong> <kbd>m</kbd><kbd>e</kbd><kbd>x</kbd><kbd>h</kbd><kbd>h</kbd><kbd>a</kbd><kbd>f</kbd>= መጽሓፍ (Book)<br>
+<p><strong>Example:</strong> <kbd>m</kbd><kbd>e</kbd><kbd>x</kbd><kbd>h</kbd><kbd>h</kbd><kbd>a</kbd><kbd>f</kbd>= መጽሐፍ (Book)<br>
 <strong>Example:</strong> <kbd>p</kbd><kbd>p</kbd><kbd>i</kbd><kbd>l</kbd><kbd>a</kbd><kbd>t</kbd><kbd>t</kbd><kbd>o</kbd><kbd>s</kbd> = ጲላጦስ (Pilate Biblical name)</p>
 
-<p><img src="images/geezword-tigrinya-mobile-1.png" border="1"/><br/>
+<p><img src="images/geezword-amharic-mobile-1.png" border="1"/><br/>
 <em>The keys  with two dots indicate “Press Twice”.</em></p>
 
-<p><strong>Tigrinya Example:</strong></p>
+<p><strong>Amharic Example:</strong></p>
 
 <table>
 <thead>
 <tr>
 <th>መ</th>
 <th>ጽ</th>
-<th>ሓ</th>
+<th>ሐ</th>
 <th>ፍ</th>
 <th></th>
-<th>ጣ</th>
-<th>ው</th>
-<th>ላ</th>
+<th>ጠ</th>
+<th>ረ</th>
+<th>ጴ</th>
+<th>ዛ</th>
 </tr>
 </thead>
 
@@ -801,12 +802,14 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <tr>
 <td><strong>me</strong></td>
 <td><strong>X</strong></td>
-<td><strong>hha</strong></td>
+<td><strong>hhe</strong></td>
 <td><strong>f</strong></td>
 <td></td>
-<td><strong>tta</strong></td>
-<td><strong>w</strong></td>
-<td><strong>la</strong></td>
+<td><strong>Te</strong></td>
+<td><strong>re</strong></td>
+<td><strong>Pie</strong></td>
+<td><strong>za</strong></td>
+
 </tr>
 </tbody>
 </table>
@@ -818,7 +821,7 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <dir>
 
-<p><img src="images/geezword-tigrinya-mobile-2.png" border="1"/><br/>
+<p><img src="images/geezword-amharic-mobile-2.png" border="1"/><br/>
 <strong><em>Special consonant keys</em></strong> <strong>(እ, ዕ)</strong> <strong><em>and vowel</em></strong>  <strong>ኤ, <u>are directly accessible – no need to press the Shift key</u></strong></p>
 
 <p>Press እ, followed by any of the vowel keys (euiao) to generate the vowels = አኡኢኣኤእኦ</p>
@@ -990,7 +993,7 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 </tbody>
 </table>
 
-<p><strong>Example:</strong>  ኣስመራ = <kbd>a</kbd><kbd>s</kbd><kbd>m</kbd><kbd>e</kbd><kbd>r</kbd><kbd>a</kbd> (Tigrinya Spelling)</p>
+<p><strong>Example:</strong>  አስመራ = <kbd>a</kbd><kbd>s</kbd><kbd>m</kbd><kbd>e</kbd><kbd>r</kbd><kbd>a</kbd> (Amharic Spelling)</p>
 <p><strong>Example:</strong>  አዲስ አበባ = <kbd>e</kbd><kbd>d</kbd><kbd>i</kbd><kbd>s</kbd> <kbd>e</kbd><kbd>b</kbd><kbd>e</kbd><kbd>b</kbd><kbd>a</kbd> (Amharic Spelling)</p>
 </dir>
 
@@ -1026,7 +1029,7 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 </tbody>
 </table>
 
-<p><strong>Example:</strong> ሰላምታና ይብጻሕኩም። = <kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd><kbd>t</kbd><kbd>a</kbd><kbd>n</kbd><kbd>a</kbd> <kbd>y</kbd><kbd>b</kbd><kbd>x</kbd><kbd>a</kbd><kbd>h</kbd><kbd>h</kbd><kbd>k</kbd><kbd>u</kbd><kbd>m</kbd></p>
+<p><strong>Example:</strong> ሰላምታችን ይድረሳችሁ። = <kbd>s</kbd><kbd>e</kbd><kbd>l</kbd><kbd>a</kbd><kbd>m</kbd><kbd>t</kbd><kbd>a</kbd><kbd>n</kbd><kbd>a</kbd> <kbd>y</kbd><kbd>b</kbd><kbd>x</kbd><kbd>a</kbd><kbd>h</kbd><kbd>h</kbd><kbd>k</kbd><kbd>u</kbd><kbd>m</kbd></p>
 
 </dir>
 
@@ -1036,18 +1039,18 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <p>You can move up your finger to the popup screen to select the right Geez letter. In this example, we see two rows representing “ት”, and “ጥ”. Others may show a single row, for example the letter “ል”. Long Press is not recommended for speed typing as it is too slow. Instead use pressing a key once or twice. </p>
 
 
-<dir><img src="images/geezword-tigrinya-mobile-3.png" border="1"/></dir>
+<dir><img src="images/geezword-amharic-mobile-3.png" border="1"/></dir>
 
 <h3>Long Press to Select Punctuations</h3>
 <p>Long Press (means press and hold it a bit linger) the two dots (፡), a pop screen of two rows of punctuation symbols gets displayed. They are the most commonly used punctuation symbols for Geez and English as shown below. You can move up your finger to the popup screen to select the right symbol.</p>
 
 
-<dir><img src="images/geezword-tigrinya-mobile-4.png" border="1"/></dir>
+<dir><img src="images/geezword-amharic-mobile-4.png" border="1"/></dir>
 
 <h3>Long Press to Select Geez Numerals</h3>
 <p>Geez numerals can be accessed from the Numerals layer. Long Press (means press and hold it a bit longer) on any numeral key and the corresponding Geez numerals will pop up as shown below. You can move up your finger to the popup screen to select the desired Geez numeral.</p>
 
-<dir><img src="images/geezword-tigrinya-mobile-5.png" border="1"/></dir>
+<dir><img src="images/geezword-amharic-mobile-5.png" border="1"/></dir>
 
 <h3>Special Key ( “^”) to Duplicate previous letter</h3>
 <p>The “Press Twice” special letters, can be typed in duplicate with a little trick using <strong>“^”</strong>.</p>
@@ -1122,11 +1125,16 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <tbody>
 <tr>
 <td><strong>q</strong></td>
-<td>ቈ<strong>que</strong></td>
-<td>ቊ<strong>qui</strong></td>
-<td>ቋ<strong>qua</strong></td>
-<td>ቌ<strong>quie</strong></td>
-<td>ቍ<strong>quu</strong></td>
+<td>ቈ
+<strong>que</strong></td>
+<td>ቊ
+<strong>qui</strong></td>
+<td>ቋ
+<strong>qua</strong></td>
+<td>ቌ
+<strong>quie</strong></td>
+<td>ቍ
+<strong>quu</strong></td>
 </tr>
 <tr>
 <td><strong>Q</strong></td>
@@ -1138,27 +1146,42 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 </tr>
 <tr>
 <td><strong>k</strong></td>
-<td>ኰ<strong>kue</strong></td>
-<td>ኲ<strong>kui</strong></td>
-<td>ካ<strong>kua</strong></td>
-<td>ኴ<strong>kie</strong></td>
-<td>ኵ<strong>kuu</strong></td>
+<td>ኰ
+<strong>kue</strong></td>
+<td>ኲ
+<strong>kui</strong></td>
+<td>ካ
+<strong>kua</strong></td>
+<td>ኴ
+<strong>kie</strong></td>
+<td>ኵ
+<strong>kuu</strong></td>
 </tr>
 <tr>
 <td><strong>K</strong></td>
-<td>ዀ<strong>Kue</strong></td>
-<td>ዂ<strong>Kui</strong></td>
-<td>ዃ<strong>Kua</strong></td>
-<td>ዄ<strong>Kuie</strong></td>
-<td>ዅ<strong>Kuu</strong></td>
+<td>ዀ
+<strong>Kue</strong></td>
+<td>ዂ
+<strong>Kui</strong></td>
+<td>ዃ
+<strong>Kua</strong></td>
+<td>ዄ
+<strong>Kuie</strong></td>
+<td>ዅ
+<strong>Kuu</strong></td>
 </tr>
 <tr>
 <td><strong>g</strong></td>
-<td>ጐ<strong>gue</strong></td>
-<td>ጒ<strong>gui</strong></td>
-<td>ጓ<strong>gua</strong></td>
-<td>ጔ<strong>guie</strong></td>
-<td>ጕ<strong>guu</strong></td>
+<td>ጐ
+<strong>gue</strong></td>
+<td>ጒ
+<strong>gui</strong></td>
+<td>ጓ
+<strong>gua</strong></td>
+<td>ጔ
+<strong>guie</strong></td>
+<td>ጕ
+<strong>guu</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1184,22 +1207,34 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <tbody>
 <tr>
 <td><strong>G</strong></td>
-<td>ጘ<strong>Ge</strong></td>
-<td>ጙ<strong>Gu</strong></td>
-<td>ጚ<strong>Gi</strong></td>
-<td>ጛ<strong>Ga</strong></td>
-<td>ጜ<strong>Gie</strong></td>
-<td>ጝ<strong>G</strong></td>
-<td>ጞ<strong>Go</strong></td>
+<td>ጘ
+<strong>Ge</strong></td>
+<td>ጙ
+<strong>Gu</strong></td>
+<td>ጚ
+<strong>Gi</strong></td>
+<td>ጛ
+<strong>Ga</strong></td>
+<td>ጜ
+<strong>Gie</strong></td>
+<td>ጝ
+<strong>G</strong></td>
+<td>ጞ
+<strong>Go</strong></td>
 </tr>
 <tr>
 <td><strong>Gu</strong></td>
-<td>ⶓ<strong>Gue</strong></td>
+<td>ⶓ
+<strong>Gue</strong></td>
 <td></td>
-<td>ⶔ<strong>Gui</strong></td>
-<td>ጟ<strong>Gua</strong></td>
-<td>ⶕ<strong>Guie</strong></td>
-<td>ⶖ<strong>Guu</strong></td>
+<td>ⶔ
+<strong>Gui</strong></td>
+<td>ጟ
+<strong>Gua</strong></td>
+<td>ⶕ
+<strong>Guie</strong></td>
+<td>ⶖ
+<strong>Guu</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -1227,14 +1262,14 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-The GeezWord Tigrinya keyboard was created by the Yemane Russom of Phonetic Systems (1982-2023) and Geezsoft (2023-2025).
+The GeezWord Amharic keyboard was created by the Yemane Russom of Phonetic Systems (1982-2023) and Geezsoft (2023-2025).
 </p>
 </div>
 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The GeezWord Tigrinya keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; Geezsoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The GeezWord Amharic keyboard layout for Keyman Desktop, Keyman Mobile, and KeymanWeb is Copyright &copy; Geezsoft.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>
 

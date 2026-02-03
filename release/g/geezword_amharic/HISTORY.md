@@ -1,4 +1,4 @@
-geezword_tigrinya Change History
+geezword_amharic Change History
 =========================
 18.0 (10-16-2025)
 --------------------------
@@ -11,7 +11,7 @@ Additional History of GeezWord
 * It was later developed on Apple Macintosh (1985- 1987)
 * It was developed on Windows 1993 as Geezgate
 * Its Keyboard was developed for Keyman engine in 2002 (Licensed)
-* Reference: https://tigrinyadigitalinitiatives.org/
+* Reference: https://https://tigrinyadigitalinitiatives.org/
 
 1982 On Apple II Computer
 -------------------
