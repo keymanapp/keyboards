@@ -1,6 +1,11 @@
 Linear B Full Syllabary Change History
 ====================
 
+1.2 (2026-01-13)
+----------------
+* Re-amended to recover the on-screen Right Alt layer
+* Now the on-screen layout of this keyboard distinguishes between left and right Alt key.
+
 1.1 (2026-01-08)
 ----------------
 * Support RALT better
