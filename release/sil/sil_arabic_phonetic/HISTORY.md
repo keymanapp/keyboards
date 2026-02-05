@@ -1,5 +1,8 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
+## 1.4 (5 Feb 2026)
+* Edit rule `ٖ` to be a Unicode Code Point.
+
 ## 1.3 (27 Jan 2026)
 * Add `ٖ`, `ٗ`, `ٰ` to Shift O, Shift I, and Shift U.
 
