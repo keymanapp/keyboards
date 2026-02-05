@@ -2,6 +2,12 @@
 
 CHANGES
 
+## 1.0.8 (2026-02-04)
+
+⦁   Exclusion of vareia from the removal of automatic psili on Greek numerals (last change of v.1.0.6).
+
+⦁   Bug correction in processing of "ὑι".
+
 ## 1.0.7 (2026-01-27)
 
 ⦁   Workaround solution for the random insertion of U+00A0 with or instead of U+0020 (space) in Yahoo Mail running in Mozilla Firefox.

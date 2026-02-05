@@ -1,12 +1,12 @@
 ﻿c Πολυτονικὸ πληκτρολόγιο βασισμένο στὴν διάταξη τοῦ πληκτρολογίου US-QWERTY προσαρμοσμένη στοὺς πρόσθετους τόνους καὶ πνεύματα τοῦ πολυτονικοῦ συστήματος. Γιὰ χρῆστες ποὺ θέλουν νὰ γράψουν διαχρονικὰ ἑλληνικὰ μὲ τὸν ἱστορικὸ τονισμὸ τῆς ἑλληνικῆς.
 c With wordStartBreathingRules group added - Dec 2025
-c Latest change January 2026
+c Latest change February 2026
 
 store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.7'
+store(&KEYBOARDVERSION) '1.0.8'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -653,7 +653,7 @@ c -------------------- if iota or ypsilon follows (diphthong) ------------------
 c
 any(startingVowelWithAccBreath) + any(iota)  > index(startingVowel,1) index(IotaWithAccBreath,1)
 any(startingVowelWithAccBreath) + any(upsilon)  > index(startingVowel,1) index(YpsilonWithAccBreath,1)
-U+1F51 + any(iota)  >  U+03C5 U+1FFE        c handling of ὑι > υἱ  
+U+1F51 + any(iota)  >  U+03C5 U+1F31        c handling of ὑι > υἱ  
 c
 c
 c ------------ Case 2: move breathing to next vowel, if accent follows (diphthong) ------------------------
@@ -821,11 +821,12 @@ nul + any(ypoge) > context U+037A U+1FBF
 any(beforeWordChars) + any(ypoge) > context U+037A U+1FBF
 c
 c
-c ------- Jan 2026: REMOVAL OF AUTOMATIC PSILI in greek numerals followed by [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_QUOTE] [K_BKQUOTE]
+c ------- Jan 2026: REMOVAL OF AUTOMATIC PSILI in greek numerals followed by [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_BKQUOTE]
 c ------- i.e. α. β. ... ια. ιβ. ... ιστ. ...
+c         Removal of automatic psili on greek numerals followed by vareia/single quote is handled in WinOnlyRules
 c
-store(arithm-symbols)       [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_QUOTE] [K_BKQUOTE]
-store(arithm-symbols-hex)   U+002E U+002F U+0029 U+0027 U+02BC
+store(arithm-symbols)       [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_BKQUOTE]
+store(arithm-symbols-hex)   U+002E U+002F U+0029 U+02BC
 store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 \
                             U+1F08 U+1F18 U+1F28 U+1F38  
 store(vowels-arithm)        U+0251 U+03B5 U+03B7 U+03B9 \
@@ -839,7 +840,6 @@ any(iota-psili) any(vowels-arithm1) + any(arithm-symbols) > 'ι' index(vowels-ar
 'ἰστ' + '.' > 'ιστ.'        c rule does not seem to work with ἰστ
 'ἰστ' + '/' > 'ιστ/'
 'ἰστ' + ')' > 'ιστ)'
-'ἰστ' + [K_QUOTE] > 'ιστ' u+0027
 'ἰστ' + [K_BKQUOTE] > 'ιστ' u+02BC
 c
 c
@@ -864,12 +864,11 @@ c
 c ----------- Different processing for desktop and mobile platforms
 c
 group(WinOnlyRules) using keys
-    store(gr-diacritics)     U+1FC0 U+037A U+1FBF    c  perispomeni, ypogegrammeni, psili
-    store(eng-keybd-keys)    U+005B U+007B U+005D    c  replaced by [, {, ] respectively when followed by space
-    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1) 
+    store(gr-diacritics)     U+1FC0 U+037A U+1FBF   c  perispomeni, ypogegrammeni, psili 
+    store(eng-keybd-keys)    U+005B U+007B U+005D   c  replaced by [, {, ] respectively
+    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1)  c  when followed by space 
 
-    c automatic breathing dropped when single vowel followed by vareia and space -> vareia becomes single quote
-    c This can reasonably happen only in Windows
+    c automatic breathing dropped when vareia and space follow greek numerals
     any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020  
     'ἰα`' + U+0020 > 'ια' u+0027 u+0020
     'ἰε`' + U+0020 > 'ιε' u+0027 u+0020
@@ -877,8 +876,8 @@ group(WinOnlyRules) using keys
     'ἰη`' + U+0020 > 'ιη' u+0027 u+0020
     'ἰ' any(symfwn) U+0060 + U+0020 > 'ι' index(symfwn,2) U+0027 u+0020
     c default case: vareia becomes single quote if followed by space
-    U+0060 + U+0020 > U+0027 U+0020
-
+    U+0060 + U+0020 > U+0027 U+0020   
+ 
 
 group(mobileOnlyRules) using keys
 c automatic psili dropped when single vowel used for numbering of ordered lists
@@ -895,5 +894,4 @@ c
 U+0060 + any(vowels) > index(vowels-vareia-breath,2)
 U+0384 + any(vowels) > index(vowels-oxeia-breath,2)
 U+1FC0 + any(vowels) > index(vowels-perisp-breath,2)
-
 
