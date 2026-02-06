@@ -13,8 +13,8 @@ store(&Message) 'This is an experimental Mwangwego keyboard that requires a font
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_M]'
 store(&VISUALKEYBOARD) 'gff_mwangwego.kvks'
-store(&LAYOUTFILE) 'gff_mwangwego.keyman-touch-layout'
-store(&KMW_EMBEDCSS) 'gff_mwangwego.css'
+c store(&LAYOUTFILE) 'gff_mwangwego.keyman-touch-layout'
+c store(&KMW_EMBEDCSS) 'gff_mwangwego.css'
 store(&BITMAP) 'gff_mwangwego.ico'
 
 store(ShortA) 'Aa'
@@ -256,8 +256,8 @@ store(MyuMituyoKeys_index) '356'
 c store(MyuMituyoKeys:index:beep) '1247890-='
 store(NiMituyoKeys_index) '46='
 c store(NiMituyoKeys:index:beep) '12357890-'
-store(&TARGETS) 'windows macosx linux'
 store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'web desktop'
 
 begin Unicode > use(main)
 group(main) using keys
