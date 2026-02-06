@@ -3,9 +3,10 @@ The GFF Experimental Mwangwego Keyboard
 
 Copyright (C) Geʾez Frontier Foundation
 
-This is an experimental keyboard for the Mwangwego script.  It requires the included “Mwangwego Book” font 
-which in turn encodes the script under its provisional encoding for Unicode 19. See the typing manual for full 
-details of the typing rules.
+This is an experimental keyboard for the Mwangwego script. It requires the included “Mwangwego Book” font which
+in turn encodes the script under its provisional encoding for Unicode 19. See the typing manual for full details
+of the typing rules. Since this keyboard uses a provisional encoding, those codepoints can change. Any documents
+created using this keyboard could become obsolete if the codepoint assignments change.
 
 Links
 -----
