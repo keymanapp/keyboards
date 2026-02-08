@@ -1,6 +1,6 @@
 <?php 
   $pagename = "Mwangwego Keyboard";
-  $pagetitle = "The Geʾez Frontier Foundation Mwangwego Keyboard";
+  $pagetitle = "The Athinkra Mwangwego Keyboard";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -79,15 +79,17 @@ The <a target="_blank" href="Mwangwego-Typing-English.pdf">pdf manual</a> review
 
 <h3>Caveats</h3>
 <p style="text-align: justify;">
-This is an <i><b>exerimental</b></i> keyboard that is subject to change between updates as feedback is received.
-Your feedback is both encouraged and appreciated to help make the keyboard better and easier to type with.
+This is an <i><b>experimental</b></i> keyboard for the Mwangwego script. It requires the included “Mwangwego Book” font which
+in turn encodes the script under its provisional encoding for Unicode 19. See the typing manual for full details
+of the typing rules. Since this keyboard uses a provisional encoding, those codepoints can change. Any documents
+created using this keyboard could become obsolete if the codepoint assignments change.
 </p>
 
 <hr/>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Geʾez Frontier Foundation, 2024-2026. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Athinkra. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
