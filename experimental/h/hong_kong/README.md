@@ -3,7 +3,7 @@ Hong Kong keyboard
 
 Description
 -----------
-Hong Kong keyboard for the Script of National Language for Cantonese of Hong Kong and Canton city accent Oạt Yữ Quóc Yữ Chị Hương Kỏng Thùng Quỏng Châu Yâm粵語國語字香港同廣州音
+Hong Kong keyboard for the Script of National Language for Cantonese of Hong Kong and Canton city accent Oạt Ữ Quóc Ữ Chị Hương Cỏng Thùng Quỏng Châu Yâm粵語國語字香港同廣州音
 
 Links
 -----
