@@ -1,6 +1,10 @@
 Western Cree (TH-Woods) Change History
 ====================
 
+1.3.1 (12 Feb 2026)
+-------------------
+* Updated font to BJCree v7.000
+
 1.3 (12 Aug 2022)
 -------------------
 * Convert keyboard to produce composed characters with decomposed available through options
