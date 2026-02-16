@@ -9,7 +9,7 @@
 Manchu Cyrillic for Cyrillic Manchu Script Кирил Манҗу Хэргьэн
 </p>
 
-<h1>Alphabet Хэргьэн и битхэ</h1>
+<h2>Alphabet Хэргьэн и битхэ</h2>
 
   <table>
  <tbody>
@@ -245,5 +245,3 @@ Manchu Cyrillic for Cyrillic Manchu Script Кирил Манҗу Хэргьэн
 <img src='shifted_m.png' alt='Keyboard Layout'>
 
 <p>© cathaylab</p>
-</body>
-</html>
