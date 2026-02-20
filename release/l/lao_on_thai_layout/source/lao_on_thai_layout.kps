@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">lao_on_thai_layout</Name>
+    <Copyright URL="">Copyright ©</Copyright>
+    <Author URL=""></Author>
+    <Description URL="">Lao on Thai layout keyboard is a Lao script Unicode keyboard based on the standard Thai Kedmanee layout and deprecated the Lao Unicode on Thai keyboard.</Description>
+    <Version URL=""></Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\lao_on_thai_layout.kmx</Name>
+      <Description>Keyboard lao_on_thai_layout</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\lao_on_thai_layout.js</Name>
+      <Description>File lao_on_thai_layout.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>lao_on_thai_layout.ico</Name>
+      <Description>File lao_on_thai_layout.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>lao_on_thai_layout</ID>
+      <Languages>
+        <Language ID="lo">Lao</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="laounicodebasic_on_thaikbd" Relationship="deprecates"/>
+  </RelatedPackages>
+  <Strings/>
+</Package>
