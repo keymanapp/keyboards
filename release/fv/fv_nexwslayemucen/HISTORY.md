@@ -1,5 +1,10 @@
 Nəxʷsƛ̓ay̓əmúcən Change History
 ============================
+
+11.0.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 11.0 (30 July 2024)
 ----------------
 * Added desktop layout based on the original KlallamU layout by Tim Montler.

@@ -1,7 +1,7 @@
 Hawaiian (SIL) keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------

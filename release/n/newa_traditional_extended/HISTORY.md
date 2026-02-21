@@ -1,5 +1,9 @@
 # Newa Traditional Extended Change History
 
+## 1.0.3 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 ## 1.0.2 (2023-12-25)
 
 - Add 𑐾 (U+1143E) and 𑐿 (U+1143F) on touch layout

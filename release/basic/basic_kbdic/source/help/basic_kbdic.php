@@ -17,8 +17,6 @@
 <p>^a will produce â (available on aAeEiIoOuU).</p>
 
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>

@@ -29,7 +29,7 @@
 <p><b>vowel元音</b></p>
 <img src='vowel.png' alt='phonology'>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='uchauU_.png' alt='Keyboard Layout'>
@@ -38,7 +38,7 @@
 
 
 
-<p>© 2024 cathaylab</p>
+<p>© cathaylab</p>
 
 
 

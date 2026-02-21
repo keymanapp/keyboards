@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'taichow'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.4'
+store(&KEYBOARDVERSION) '2.0'
 store(&TARGETS) 'any'
 store(&BITMAP) 'taichow.ico'
 store(&VISUALKEYBOARD) 'taichow.kvks'
@@ -83,51 +83,51 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 
 
 
-    c Single-vowel nuclei accent qules - Upper and Lowercase
-    any(vowels) + 'q' > index(vowels_sac, 1)
-    any(vowels) + 'Q' > index(vowels_sac, 1)
+    c Single-vowel nuclei accent rules - Upper and Lowercase
+    any(vowels) + 'r' > index(vowels_sac, 1)
+    any(vowels) + 'R' > index(vowels_sac, 1)
     any(vowels) + 'x' > index(vowels_huyen, 1)
     any(vowels) + 'X' > index(vowels_huyen, 1)
 
-    any(vowels_sac) + 'q' > index(vowels, 1) 'q'
-    any(vowels_sac) + 'Q' > index(vowels, 1) 'Q'
+    any(vowels_sac) + 'r' > index(vowels, 1) 'r'
+    any(vowels_sac) + 'R' > index(vowels, 1) 'R'
     any(vowels_sac) + 'x' > index(vowels_huyen, 1)
     any(vowels_sac) + 'X' > index(vowels_huyen, 1)
 
-    any(vowels_huyen) + 'q' > index(vowels_sac, 1)
-    any(vowels_huyen) + 'Q' > index(vowels_sac, 1)
+    any(vowels_huyen) + 'r' > index(vowels_sac, 1)
+    any(vowels_huyen) + 'R' > index(vowels_sac, 1)
     any(vowels_huyen) + 'x' > index(vowels, 1) 'x'
     any(vowels_huyen) + 'X' > index(vowels, 1) 'X'
 
 
 
-    any(vowels) "ng" + "q" > index(vowels_sac, 1) "ng"
-    any(vowels) "NG" + "Q" > index(vowels_sac, 1) "NG"
+    any(vowels) "ng" + "r" > index(vowels_sac, 1) "ng"
+    any(vowels) "NG" + "R" > index(vowels_sac, 1) "NG"
     any(vowels) "ng" + "x" > index(vowels_huyen, 1) "ng"
     any(vowels) "NG" + "X" > index(vowels_huyen, 1) "NG"
 
-    any(vowels_sac) "ng" + "q" > index(vowels, 1) "ng" "q"
-    any(vowels_sac) "NG" + "Q" > index(vowels, 1) "NG" "Q"
+    any(vowels_sac) "ng" + "r" > index(vowels, 1) "ng" "r"
+    any(vowels_sac) "NG" + "R" > index(vowels, 1) "NG" "R"
     any(vowels_sac) "ng" + "x" > index(vowels_huyen, 1) "ng"
     any(vowels_sac) "NG" + "X" > index(vowels_huyen, 1) "NG"
 
-    any(vowels_huyen) "ng" + "q" > index(vowels_sac, 1) "ng"
-    any(vowels_huyen) "NG" + "Q" > index(vowels_sac, 1) "NG"
+    any(vowels_huyen) "ng" + "r" > index(vowels_sac, 1) "ng"
+    any(vowels_huyen) "NG" + "R" > index(vowels_sac, 1) "NG"
     any(vowels_huyen) "ng" + "x" > index(vowels, 1) "ng" "x"
     any(vowels_huyen) "NG" + "X" > index(vowels, 1) "NG" "X"
 
-    any(vowels) "n" + "q" > index(vowels_sac, 1) "n"
-    any(vowels) "N" + "Q" > index(vowels_sac, 1) "N"
+    any(vowels) "n" + "r" > index(vowels_sac, 1) "n"
+    any(vowels) "N" + "R" > index(vowels_sac, 1) "N"
     any(vowels) "n" + "x" > index(vowels_huyen, 1) "n"
     any(vowels) "N" + "X" > index(vowels_huyen, 1) "N"
 
-    any(vowels_sac) "n" + "q" > index(vowels, 1) "n" "q"
-    any(vowels_sac) "N" + "Q" > index(vowels, 1) "N" "Q"
+    any(vowels_sac) "n" + "r" > index(vowels, 1) "n" "r"
+    any(vowels_sac) "N" + "R" > index(vowels, 1) "N" "R"
     any(vowels_sac) "n" + "x" > index(vowels_huyen, 1) "n"
     any(vowels_sac) "N" + "X" > index(vowels_huyen, 1) "N"
 
-    any(vowels_huyen) "n" + "q" > index(vowels_sac, 1) "n"
-    any(vowels_huyen) "N" + "Q" > index(vowels_sac, 1) "N"
+    any(vowels_huyen) "n" + "r" > index(vowels_sac, 1) "n"
+    any(vowels_huyen) "N" + "R" > index(vowels_sac, 1) "N"
     any(vowels_huyen) "n" + "x" > index(vowels, 1) "n" "x"
     any(vowels_huyen) "N" + "X" > index(vowels, 1) "N" "X"
 
@@ -136,105 +136,105 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 'o' + 'o' > 'ô'
 'o' + 'e' > 'ö'
 'o' + 'n' > 'ön'
-'z' + 'q' > 'ź'
+'z' + 'r' > 'ź'
 'z' + 'x' > 'z̀'
-'s' + 'q' > 'ś'
+'s' + 'r' > 'ś'
 's' + 'x' > 's̀'
-'y' + 'q' > 'ý'
+'y' + 'r' > 'ý'
 'y' + 'x' > 'ỳ'
-'ng' + 'q' > 'nǵ'
+'ng' + 'r' > 'nǵ'
 'ng' + 'x' > 'ng̀'
-'n' + 'q' > 'ń'
+'n' + 'r' > 'ń'
 'n' + 'x' > 'ǹ'
-'m' + 'q' > 'ḿ'
+'m' + 'r' > 'ḿ'
 'm' + 'x' > 'm̀'
-'ü' + 'q' > 'ǘ'
+'ü' + 'r' > 'ǘ'
 'ü' + 'x' > 'ǜ'
-'ö' + 'q' > 'ö́'
+'ö' + 'r' > 'ö́'
 'ö' + 'x' > 'ö̀'
-'ün' + 'q' > 'ǘn'
+'ün' + 'r' > 'ǘn'
 'ün' + 'x' > 'ǜn'
-'ön' + 'q' > 'ö́n'
+'ön' + 'r' > 'ö́n'
 'ön' + 'x' > 'ö̀n'
 
 "a" + "e" > "æ"
-'æ' + 'q' > 'ǽ'
+'æ' + 'r' > 'ǽ'
 'æ' + 'x' > 'æ̀'
-'æn' + 'q' > 'ǽn'
+'æn' + 'r' > 'ǽn'
 'æn' + 'x' > 'æ̀n'
-'ô' + 'q' > 'ố'
+'ô' + 'r' > 'ố'
 'ô' + 'x' > 'ồ'
-'ông' + 'q' > 'ống'
+'ông' + 'r' > 'ống'
 'ông' + 'x' > 'ồng'
 
 'U' + 'U' > 'Ü'
 'O' + 'O' > 'Ô'
 'O' + 'E' > 'Ö'
 'O' + 'N' > 'ÖN'
-'Z' + 'Q' > 'Ź'
+'Z' + 'R' > 'Ź'
 'Z' + 'X' > 'Z̀'
-'S' + 'Q' > 'Ś'
+'S' + 'R' > 'Ś'
 'S' + 'X' > 'S̀'
-'Y' + 'Q' > 'Ý'
+'Y' + 'R' > 'Ý'
 'Y' + 'X' > 'Ỳ'
-'NG' + 'Q' > 'NǴ'
+'NG' + 'R' > 'NǴ'
 'NG' + 'X' > 'NG̀'
-'N' + 'Q' > 'Ń'
+'N' + 'R' > 'Ń'
 'N' + 'X' > 'Ǹ'
-'M' + 'Q' > 'Ḿ'
+'M' + 'R' > 'Ḿ'
 'M' + 'X' > 'M̀'
-'Ü' + 'Q' > 'Ǘ'
+'Ü' + 'R' > 'Ǘ'
 'Ü' + 'X' > 'Ǜ'
-'Ö' + 'Q' > 'Ö́'
+'Ö' + 'R' > 'Ö́'
 'Ö' + 'X' > 'Ö̀'
-'ÜN' + 'Q' > 'ǗN'
+'ÜN' + 'R' > 'ǗN'
 'ÜN' + 'X' > 'ǛN'
-'ÖN' + 'Q' > 'Ö́N'
+'ÖN' + 'R' > 'Ö́N'
 'ÖN' + 'X' > 'Ö̀N'
 'A' + 'E' > 'Æ'
-'Æ' + 'Q' > 'Ǽ'
+'Æ' + 'R' > 'Ǽ'
 'Æ' + 'X' > 'Æ̀'
-'ÆN' + 'Q' > 'ǼN'
+'ÆN' + 'R' > 'ǼN'
 'ÆN' + 'X' > 'Æ̀N'
-'Ô' + 'Q' > 'Ố'
+'Ô' + 'R' > 'Ố'
 'Ô' + 'X' > 'Ồ'
-'ÔNG' + 'Q' > 'ỐNG'
+'ÔNG' + 'R' > 'ỐNG'
 'ÔNG' + 'X' > 'ỒNG'
 
 'U' + 'u' > 'Ü'
 'O' + 'o' > 'Ô'
 'O' + 'e' > 'Ö'
 'O' + 'n' > 'Ön'
-'Z' + 'q' > 'Ź'
+'Z' + 'r' > 'Ź'
 'Z' + 'x' > 'Z̀'
-'S' + 'q' > 'Ś'
+'S' + 'r' > 'Ś'
 'S' + 'x' > 'S̀'
-'Y' + 'q' > 'Ý'
+'Y' + 'r' > 'Ý'
 'Y' + 'x' > 'Ỳ'
-'Ng' + 'q' > 'Nǵ'
+'Ng' + 'r' > 'Nǵ'
 'Ng' + 'x' > 'Ng̀'
-'NG' + 'q' > 'NǴ'
+'NG' + 'r' > 'NǴ'
 'NG' + 'x' > 'NG̀'
-'N' + 'q' > 'Ń'
+'N' + 'r' > 'Ń'
 'N' + 'x' > 'Ǹ'
-'M' + 'q' > 'Ḿ'
+'M' + 'r' > 'Ḿ'
 'M' + 'x' > 'M̀'
-'Ü' + 'q' > 'Ǘ'
+'Ü' + 'r' > 'Ǘ'
 'Ü' + 'x' > 'Ǜ'
-'Ö' + 'q' > 'Ö́'
+'Ö' + 'r' > 'Ö́'
 'Ö' + 'x' > 'Ö̀'
-'Ün' + 'q' > 'Ǘn'
+'Ün' + 'r' > 'Ǘn'
 'Ün' + 'x' > 'Ǜn'
-'Ön' + 'q' > 'Ö́n'
+'Ön' + 'r' > 'Ö́n'
 'Ön' + 'x' > 'Ö̀n'
 'A' + 'e' > 'Æ'
-'Æ' + 'q' > 'Ǽ'
+'Æ' + 'r' > 'Ǽ'
 'Æ' + 'x' > 'Æ̀'
-'Æn' + 'q' > 'Ǽn'
+'Æn' + 'r' > 'Ǽn'
 'Æn' + 'x' > 'Æ̀n'
-'Ô' + 'q' > 'Ố'
+'Ô' + 'r' > 'Ố'
 'Ô' + 'x' > 'Ồ'
-'Ông' + 'q' > 'Ống'
+'Ông' + 'r' > 'Ống'
 'Ông' + 'x' > 'Ồng'
 
 'ü' + 'u' > 'uu'
@@ -242,74 +242,74 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 'ön' + 'n' > 'on'
 'ün' + 'n' > 'un'
 'ô' + 'o' > 'oo'
-'ź' + 'q' > 'zq'
+'ź' + 'r' > 'zr'
 'z̀' + 'x' > 'zx'
-'ś' + 'q' > 'sq'
+'ś' + 'r' > 'sr'
 's̀' + 'x' > 'sx'
-'ý' + 'q' > 'yq'
+'ý' + 'r' > 'yr'
 'ỳ' + 'x' > 'yx'
-'nǵ' + 'q' > 'ngq'
+'nǵ' + 'r' > 'ngr'
 'ng̀' + 'x' > 'ngx'
-'ń' + 'q' > 'nq'
+'ń' + 'r' > 'nr'
 'ǹ' + 'x' > 'nx'
-'ḿ' + 'q' > 'mq'
+'ḿ' + 'r' > 'mr'
 'm̀' + 'x' > 'mx'
-'ǘ' + 'q' > 'üq'
+'ǘ' + 'r' > 'ür'
 'ǜ' + 'x' > 'üx'
 'æ' + 'e' > 'ae'
-'ǽ' + 'q' > 'æq'
+'ǽ' + 'r' > 'ær'
 'æ̀' + 'x' > 'æx'
-'ố' + 'q' > 'ôq'
+'ố' + 'r' > 'ôr'
 'ồ' + 'x' > 'ôx'
 
 'Ü' + 'U' > 'UU'
 'Ö' + 'E' > 'OE'
 'ÖN' + 'N' > 'ON'
 'Ô' + 'O' > 'OO'
-'Ź' + 'Q' > 'ZQ'
+'Ź' + 'R' > 'ZR'
 'Z̀' + 'X' > 'ZX'
-'Ś' + 'Q' > 'SQ'
+'Ś' + 'R' > 'SR'
 'S̀' + 'X' > 'SX'
-'Ý' + 'Q' > 'YQ'
+'Ý' + 'R' > 'YR'
 'Ỳ' + 'X' > 'YX'
-'NǴ' + 'Q' > 'NGQ'
+'NǴ' + 'R' > 'NGR'
 'NG̀' + 'X' > 'NGX'
-'Ń' + 'Q' > 'NQ'
+'Ń' + 'R' > 'NR'
 'Ǹ' + 'X' > 'NX'
-'Ḿ' + 'Q' > 'MQ'
+'Ḿ' + 'R' > 'MR'
 'M̀' + 'X' > 'MX'
-'Ǘ' + 'Q' > 'ÜQ'
+'Ǘ' + 'R' > 'ÜR'
 'Ǜ' + 'X' > 'ÜX'
 'Æ' + 'E' > 'AE'
-'Ǽ' + 'Q' > 'ÆQ'
+'Ǽ' + 'R' > 'ÆR'
 'Æ̀' + 'X' > 'ÆX'
-'Ố' + 'Q' > 'ÔQ'
+'Ố' + 'R' > 'ÔR'
 'Ồ' + 'X' > 'ÔX'
 
 'Ü' + 'u' > 'Uu'
 'Ö' + 'e' > 'Oe'
 'Ön' + 'n' > 'On'
 'Ô' + 'o' > 'Oo'
-'Ź' + 'q' > 'Zq'
+'Ź' + 'r' > 'Zr'
 'Z̀' + 'x' > 'Zx'
-'Ś' + 'q' > 'Sq'
+'Ś' + 'r' > 'Sr'
 'S̀' + 'x' > 'Sx'
-'Ý' + 'q' > 'Yq'
+'Ý' + 'r' > 'Yr'
 'Ỳ' + 'x' > 'Yx'
-'Nǵ' + 'q' > 'Ngq'
+'Nǵ' + 'r' > 'Ngr'
 'Ng̀' + 'x' > 'Ngx'
-'NǴ' + 'q' > 'NGq'
+'NǴ' + 'r' > 'NGr'
 'NG̀' + 'x' > 'NGx'
-'Ń' + 'q' > 'Nq'
+'Ń' + 'r' > 'Nr'
 'Ǹ' + 'x' > 'Nx'
-'Ḿ' + 'q' > 'Mq'
+'Ḿ' + 'r' > 'Mr'
 'M̀' + 'x' > 'Mx'
-'Ǘ' + 'q' > 'Üq'
+'Ǘ' + 'r' > 'Ür'
 'Ǜ' + 'x' > 'Üx'
 'Æ' + 'e' > 'Ae'
-'Ǽ' + 'q' > 'Æq'
+'Ǽ' + 'r' > 'Ær'
 'Æ̀' + 'x' > 'Æx'
-'Ố' + 'q' > 'Ôq'
+'Ố' + 'r' > 'Ôr'
 'Ồ' + 'x' > 'Ôx'
 
 "p" + "h" > "pʽ"
@@ -453,60 +453,60 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 "Oh" + "o" > "Ôh"
 "Uh" + "u" > "Üh"
 
-"ao" + "q" > "áo"
+"ao" + "r" > "áo"
 "ao" + "x" > "ào"
-"Ao" + "q" > "Áo"
+"Ao" + "r" > "Áo"
 "Ao" + "x" > "Ào"
-"AO" + "Q" > "ÁO"
+"AO" + "R" > "ÁO"
 "AO" + "X" > "ÀO"
 
-"áo" + "q" > "aoq"
+"áo" + "r" > "aor"
 "ào" + "x" > "aox"
-"Áo" + "q" > "Aoq"
+"Áo" + "r" > "Aor"
 "Ào" + "x" > "Aox"
-"ÁO" + "Q" > "AOQ"
+"ÁO" + "R" > "AOR"
 "ÀO" + "X" > "AOX"
 
-"au" + "q" > "áu"
+"au" + "r" > "áu"
 "au" + "x" > "àu"
-"Au" + "q" > "Áu"
+"Au" + "r" > "Áu"
 "Au" + "x" > "Àu"
-"AU" + "Q" > "ÁU"
+"AU" + "R" > "ÁU"
 "AU" + "X" > "ÀU"
 
-"áu" + "q" > "auq"
+"áu" + "r" > "aur"
 "àu" + "x" > "aux"
-"Áu" + "q" > "Auq"
+"Áu" + "r" > "Aur"
 "Àu" + "x" > "Aux"
-"ÁU" + "Q" > "AUQ"
+"ÁU" + "R" > "AUR"
 "ÀU" + "X" > "AUX"
 
-"eo" + "q" > "éo"
+"eo" + "r" > "éo"
 "eo" + "x" > "èo"
-"Eo" + "q" > "Éo"
+"Eo" + "r" > "Éo"
 "Eo" + "x" > "Èo"
-"EO" + "Q" > "ÉO"
+"EO" + "R" > "ÉO"
 "EO" + "X" > "ÈO"
 
-"éo" + "q" > "eoq"
+"éo" + "r" > "eor"
 "èo" + "x" > "eox"
-"Éo" + "q" > "Eoq"
+"Éo" + "r" > "Eor"
 "Èo" + "x" > "Eox"
-"ÉO" + "Q" > "EOQ"
+"ÉO" + "R" > "EOR"
 "ÈO" + "X" > "EOX"
 
-"eu" + "q" > "éu"
+"eu" + "r" > "éu"
 "eu" + "x" > "èu"
-"Eu" + "q" > "Éu"
+"Eu" + "r" > "Éu"
 "Eu" + "x" > "Èu"
-"EU" + "Q" > "ÉU"
+"EU" + "R" > "ÉU"
 "EU" + "X" > "ÈU"
 
-"éu" + "q" > "euq"
+"éu" + "r" > "eur"
 "èu" + "x" > "eux"
-"Éu" + "q" > "Euq"
+"Éu" + "r" > "Eur"
 "Èu" + "x" > "Eux"
-"ÉU" + "Q" > "EUQ"
+"ÉU" + "R" > "EUR"
 "ÈU" + "X" > "EUX"
 
 "a" + "w" > "ă"
@@ -564,7 +564,7 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 'W' + 'w' > 'W̆'
 
 
-'m̌' + 'm' > 'mm'
+'m̆' + 'm' > 'mm'
 'n̆' + 'n' > 'nn'
 'n̆g' + 'g' > 'ngg'
 'l̆' + 'l' > 'll'
@@ -604,12 +604,12 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 'n̆g' + 'h' > 'ngh'
 'l̆' + 'h' > 'lh'
 
-'M̆' + 'H' > 'MH'
+'M̌' + 'H' > 'MH'
 'N̆' + 'H' > 'NH'
 'N̆G' + 'H' > 'NGH'
 'L̆' + 'H' > 'LH'
 
-'M̆' + 'h' > 'Mh'
+'M̌' + 'h' > 'Mh'
 'N̆' + 'h' > 'Nh'
 'N̆G' + 'h' > 'NGh'
 'N̆g' + 'h' > 'Ngh'
@@ -631,88 +631,88 @@ store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
 "Æn" + "e" > "Ane"
 
 'ǽ' + 'x' > 'æ̀'
-'æ̀' + 'q' > 'ǽ'
+'æ̀' + 'r' > 'ǽ'
 'ǘ' + 'x' > 'ǜ'
-'ǜ' + 'q' > 'ǘ'
+'ǜ' + 'r' > 'ǘ'
 'ö́' + 'x' > 'ö̀'
-'ö̀' + 'q' > 'ö́'
+'ö̀' + 'r' > 'ö́'
 'ố' + 'x' > 'ồ'
-'ồ' + 'q' > 'ố'
+'ồ' + 'r' > 'ố'
 'ś' + 'x' > 's̀'
-'s̀' + 'q' > 'ś'
+'s̀' + 'r' > 'ś'
 'ź' + 'x' > 'z̀'
-'z̀' + 'q' > 'ź'
+'z̀' + 'r' > 'ź'
 'ý' + 'x' > 'ỳ'
-'ỳ' + 'q' > 'ý'
+'ỳ' + 'r' > 'ý'
 'ń' + 'x' > 'ǹ'
-'ǹ' + 'q' > 'ń'
+'ǹ' + 'r' > 'ń'
 'ḿ' + 'x' > 'm̀'
-'m̀' + 'q' > 'ḿ'
+'m̀' + 'r' > 'ḿ'
 
 'Ǽ' + 'X' > 'Æ̀'
-'Æ̀' + 'Q' > 'Ǽ'
+'Æ̀' + 'R' > 'Ǽ'
 'Ǘ' + 'X' > 'Ǜ'
-'Ǜ' + 'Q' > 'Ǘ'
+'Ǜ' + 'R' > 'Ǘ'
 'Ö́' + 'X' > 'Ö̀'
-'Ö̀' + 'Q' > 'Ö́'
+'Ö̀' + 'R' > 'Ö́'
 'Ố' + 'X' > 'Ồ'
-'Ồ' + 'Q' > 'Ố'
+'Ồ' + 'R' > 'Ố'
 'Ź' + 'X' > 'Z̀'
-'Z̀' + 'Q' > 'Ź'
+'Z̀' + 'R' > 'Ź'
 'Ś' + 'X' > 'S̀'
-'S̀' + 'Q' > 'Ś'
+'S̀' + 'R' > 'Ś'
 'Ý' + 'X' > 'Ỳ'
-'Ỳ' + 'Q' > 'Ý'
+'Ỳ' + 'R' > 'Ý'
 'Ń' + 'X' > 'Ǹ'
-'Ǹ' + 'Q' > 'Ń'
+'Ǹ' + 'R' > 'Ń'
 'Ḿ' + 'X' > 'M̀'
-'M̀' + 'Q' > 'Ḿ'
+'M̀' + 'R' > 'Ḿ'
 
 'Ǽ' + 'x' > 'Æ̀'
-'Æ̀' + 'q' > 'Ǽ'
+'Æ̀' + 'r' > 'Ǽ'
 'Ǘ' + 'x' > 'Ǜ'
-'Ǜ' + 'q' > 'Ǘ'
+'Ǜ' + 'r' > 'Ǘ'
 'Ö́' + 'x' > 'Ö̀'
-'Ö̀' + 'q' > 'Ö́'
+'Ö̀' + 'r' > 'Ö́'
 'Ố' + 'x' > 'Ồ'
-'Ồ' + 'q' > 'Ố'
+'Ồ' + 'r' > 'Ố'
 'Ź' + 'x' > 'Z̀'
-'Z̀' + 'q' > 'Ź'
+'Z̀' + 'r' > 'Ź'
 'Ś' + 'x' > 'S̀'
-'S̀' + 'q' > 'Ś'
+'S̀' + 'r' > 'Ś'
 'Ý' + 'x' > 'Ỳ'
-'Ỳ' + 'q' > 'Ý'
+'Ỳ' + 'r' > 'Ý'
 'Ń' + 'x' > 'Ǹ'
-'Ǹ' + 'q' > 'Ń'
+'Ǹ' + 'r' > 'Ń'
 'Ḿ' + 'x' > 'M̀'
-'M̀' + 'q' > 'Ḿ'
+'M̀' + 'r' > 'Ḿ'
 
 'ǽn' + 'x' > 'æ̀n'
-'æ̀n' + 'q' > 'ǽn'
+'æ̀n' + 'r' > 'ǽn'
 'ǘn' + 'x' > 'ǜn'
-'ǜn' + 'q' > 'ǘn'
+'ǜn' + 'r' > 'ǘn'
 'ö́n' + 'x' > 'ö̀n'
-'ö̀n' + 'q' > 'ö́n'
+'ö̀n' + 'r' > 'ö́n'
 'ống' + 'x' > 'ồng'
-'ồng' + 'q' > 'ống'
+'ồng' + 'r' > 'ống'
 
 'ǼN' + 'X' > 'Æ̀N'
-'Æ̀N' + 'Q' > 'ǼN'
+'Æ̀N' + 'R' > 'ǼN'
 'ǗN' + 'X' > 'ǛN'
-'ǛN' + 'Q' > 'ǗN'
+'ǛN' + 'R' > 'ǗN'
 'Ö́N' + 'X' > 'Ö̀N'
-'Ö̀N' + 'Q' > 'Ö́N'
+'Ö̀N' + 'R' > 'Ö́N'
 'ỐNG' + 'X' > 'ỒNG'
-'ỒNG' + 'Q' > 'ỐNG'
+'ỒNG' + 'R' > 'ỐNG'
 
 'Ǽn' + 'x' > 'Æ̀n'
-'Æ̀n' + 'q' > 'Ǽn'
+'Æ̀n' + 'r' > 'Ǽn'
 'Ǘn' + 'x' > 'Ǜn'
-'Ǜn' + 'q' > 'Ǘn'
+'Ǜn' + 'r' > 'Ǘn'
 'Ö́n' + 'x' > 'Ö̀n'
-'Ö̀n' + 'q' > 'Ö́n'
+'Ö̀n' + 'r' > 'Ö́n'
 'Ống' + 'x' > 'Ồng'
-'Ồng' + 'q' > 'Ống'
+'Ồng' + 'r' > 'Ống'
 
 'c' + 'u' > 'cü'
 'cʽ' + 'u' > 'cʽü'
@@ -1453,7 +1453,7 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'ön' + 'm' > 'onm'
 'ön' + 'o' > 'ono'
 'ön' + 'p' > 'onp'
-'ön' + 'r' > 'onr'
+'ön' + 'q' > 'onq'
 'ön' + 's' > 'ons'
 'ön' + 't' > 'ont'
 'ön' + 'u' > 'onu'
@@ -1476,7 +1476,7 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'Ön' + 'm' > 'Onm'
 'Ön' + 'o' > 'Ono'
 'Ön' + 'p' > 'Onp'
-'Ön' + 'r' > 'Onr'
+'Ön' + 'q' > 'Onq'
 'Ön' + 's' > 'Ons'
 'Ön' + 't' > 'Ont'
 'Ön' + 'u' > 'Onu'
@@ -1499,7 +1499,7 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'ÖN' + 'm' > 'ONm'
 'ÖN' + 'o' > 'ONo'
 'ÖN' + 'p' > 'ONp'
-'ÖN' + 'r' > 'ONr'
+'ÖN' + 'q' > 'ONq'
 'ÖN' + 's' > 'ONs'
 'ÖN' + 't' > 'ONt'
 'ÖN' + 'u' > 'ONu'
@@ -1508,9 +1508,9 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'ÖN' + 'y' > 'ONy'
 'ÖN' + 'z' > 'ONz'
 
-'qu' + 'e' > 'que'
+'ru' + 'e' > 'rue'
 'Qu' + 'e' > 'Que'
-'qu' + 'a' > 'qua'
+'ru' + 'a' > 'rua'
 'Qu' + 'a' > 'Qua'
 'tio' + 'n' > 'tion'
 'tc' + 'h' > 'tch'
@@ -1596,50 +1596,50 @@ any(vowels) any(consonants) 'y' + any(all_letters) > index(vowels, 1) index(cons
 any(vowels) any(consonants) 'Y' + any(all_letters) > index(vowels, 1) index(consonants, 2) 'Y' index(all_letters, 4)
 
 
-"ào" + "q" > "áo"
+"ào" + "r" > "áo"
 "áo" + "x" > "ào"
-"Ào" + "q" > "Áo"
+"Ào" + "r" > "Áo"
 "Áo" + "x" > "Ào"
-"ÀO" + "Q" > "ÁO"
+"ÀO" + "R" > "ÁO"
 "ÁO" + "X" > "ÀO"
 
-"èo" + "q" > "éo"
+"èo" + "r" > "éo"
 "éo" + "x" > "èo"
-"Èo" + "q" > "Éo"
+"Èo" + "r" > "Éo"
 "Éo" + "x" > "Èo"
-"ÈO" + "Q" > "ÉO"
+"ÈO" + "R" > "ÉO"
 "ÉO" + "X" > "ÈO"
 
-"àu" + "q" > "áu"
+"àu" + "r" > "áu"
 "áu" + "x" > "àu"
-"Àu" + "q" > "Áu"
+"Àu" + "r" > "Áu"
 "Áu" + "x" > "Àu"
-"ÀU" + "Q" > "ÁU"
+"ÀU" + "R" > "ÁU"
 "ÁU" + "X" > "ÀU"
 
-"èu" + "q" > "éu"
+"èu" + "r" > "éu"
 "éu" + "x" > "èu"
-"Èu" + "q" > "Éu"
+"Èu" + "r" > "Éu"
 "Éu" + "x" > "Èu"
-"ÈU" + "Q" > "ÉU"
+"ÈU" + "R" > "ÉU"
 "ÉU" + "X" > "ÈU"
 
-"tsʽ" + "q" > "tśʽ"
+"tsʽ" + "r" > "tśʽ"
 "tsʽ" + "x" > "ts̀ʽ"
-"Tsʽ" + "q" > "Tśʽ"
+"Tsʽ" + "r" > "Tśʽ"
 "Tsʽ" + "x" > "Ts̀ʽ"
-"TSʽ" + "q" > "TŚʽ"
+"TSʽ" + "r" > "TŚʽ"
 "TSʽ" + "x" > "TS̀ʽ"
-"TSʽ" + "Q" > "TŚʽ"
+"TSʽ" + "R" > "TŚʽ"
 "TSʽ" + "X" > "TS̀ʽ"
 
-"ts̀ʽ" + "q" > "tśʽ"
+"ts̀ʽ" + "r" > "tśʽ"
 "tśʽ" + "x" > "ts̀ʽ"
-"Ts̀ʽ" + "q" > "Tśʽ"
+"Ts̀ʽ" + "r" > "Tśʽ"
 "Tśʽ" + "x" > "Ts̀ʽ"
-"TS̀ʽ" + "q" > "TŚʽ"
+"TS̀ʽ" + "r" > "TŚʽ"
 "TŚʽ" + "x" > "TS̀ʽ"
-"TS̀ʽ" + "Q" > "TŚʽ"
+"TS̀ʽ" + "R" > "TŚʽ"
 "TŚʽ" + "X" > "TS̀ʽ"
 
 'ś' + any(vowels) > 's'index(vowels_sac, 2)

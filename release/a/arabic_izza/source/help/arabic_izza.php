@@ -3,8 +3,8 @@
   require_once('header.php');
 ?>
 
-<h1>Arabic Izza: The pleasure of typing and using Arabic Script</h1>
-<h1>استرجاع لهيبة العربية في عصر المعلوماتية</h1>
+<h2>Arabic Izza: The pleasure of typing and using Arabic Script</h2>
+<h2>استرجاع لهيبة العربية في عصر المعلوماتية</h2>
 
 <p>Supported languages: Arabic, Tamazight, Farsi, Ottoman (Turkish), etc.</p>
 <p>يمكن استعمال مفاتيح العزة لكتابة: العربية، الأمازيغية، الفارسية، العثمانية، إلخ</p>
@@ -77,4 +77,4 @@ in each line on the first layer, thus improving enormously the comfort and typin
 الأول، مما يضاعف من سرعة إدخال النصوص العربية</p>
 <br/>
 
-<p>© 1977-2018 Prof. Abdelmalek Bouhadjera</p>
+<p>© Prof. Abdelmalek Bouhadjera</p>

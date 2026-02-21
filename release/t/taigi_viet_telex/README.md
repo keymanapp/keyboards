@@ -3,7 +3,7 @@ taigi viet telex keyboard
 
 Description
 -----------
-taigi viet telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī and hàn-bûn.
+taigi viet telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī, Tiê-chiu Pe̍h-ūe-jī and hàn-bûn.
 
 Links
 -----

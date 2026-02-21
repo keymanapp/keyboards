@@ -13,8 +13,6 @@
 
 <p>~c will produce ć (available for acelnosxz to produce ąćęłńóśźż and their uppercase counterparts).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

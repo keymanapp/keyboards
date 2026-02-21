@@ -1,0 +1,63 @@
+c Keyboard created by KMDECOMP
+c
+c Meta details: Registered=1; Version=2d
+c               Flags=0; HotKey=0
+c
+
+store(&VERSION) "10.0"
+store(&NAME) "Yiddish/Hebrew" 
+store(&BITMAP) "yiddish_hebrew.ico" 
+store(&VISUALKEYBOARD) 'yiddish_hebrew.kvks'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Gyula Zsigri'
+store(&KEYBOARDVERSION) '2.0.1'
+store(&KMW_RTL) '1'
+store(&LAYOUTFILE) 'yiddish_hebrew.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(diacK) [RALT K_0]     [RALT K_1]      [RALT K_2]       [RALT K_3]     [RALT K_4]       [RALT K_5]     [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] \
+             [RALT K_EQUAL] [RALT K_HYPHEN] [RALT K_BKQUOTE] [RALT K_LBRKT] [RALT K_BKSLASH] [RALT K_RBRKT]
+store(diacU) U+05C1         U+05B1          U+05B2           U+05B3         U+05B4           U+05B5         U+05B6     U+05B7     U+05B8     U+05C2 \
+             U+05BC         U+05B9          U+05B0           U+05BD         U+05BB           U+05BF
+
+store(puncK) "'()-/" "`QqWwE<>[]{}V"
+store(puncU) ",)(-." ";“/„'”><][}{`"
+
+store(baseK) [K_COMMA] [K_PERIOD] [K_COLON] [SHIFT K_B] [SHIFT K_D] [SHIFT K_G] [SHIFT K_K] [SHIFT K_L] [SHIFT K_N] [SHIFT K_Y] [SHIFT K_Z] \
+             [K_A]     [K_B]      [K_C]     [K_D]       [K_E]       [K_F]       [K_G]       [K_H]       [K_I]       [K_J]       [K_K] \
+             [K_L]     [K_M]      [K_N]     [K_O]       [K_P]       [K_R]       [K_S]       [K_T]       [K_U]       [K_V]       [K_X] \
+             [K_Y]     [K_Z]
+store(baseU) U+05EA    U+05E5     U+05E3    U+05C0      U+05F3      U+05F1      U+05F2      U+05C3      U+05BE      U+05F0      U+20AA \
+             U+05E9    U+05E0     U+05D1    U+05D2      U+05E7      U+05DB      U+05E2      U+05D9      U+05DF      U+05D7      U+05DC \
+             U+05DA    U+05E6     U+05DE    U+05DD      U+05E4      U+05E8      U+05D3      U+05D0      U+05D5      U+05D4      U+05E1 \
+             U+05D8    U+05D6
+
+
+group(main) using keys
+
++ any(puncK) > index(puncU,1)
++ any(baseK) > index(baseU,1)
++ any(diacK) > index(diacU,1)
+
+  "–"  + "-" > "—"
+  "-"  + "-" > "–"
+
+   + "A" > U+05E9 U+05C2
+   + "C" > U+05D1 U+05BC
+  "׳"  + "D" > U+05F4
+   + "F" > U+05DB U+05BC
+   + "H" > U+05D9 U+05B4
+   + "I" > U+05D5 U+05B9
+   + "J" > U+05F2 U+05B7
+   + "M" > U+05EA U+05BC 
+   + "O" > U+05E4 U+05BF
+   + "P" > U+05E4 U+05BC
+   + "R" > U+05D0 U+05B8
+   + "S" > U+05E9 U+05C1
+   + "T" > U+05D0 U+05B7
+   + "U" > U+05D5 U+05BC
+   + "X" > U+05D1 U+05BF
+ 
+c EOF
+

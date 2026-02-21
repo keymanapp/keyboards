@@ -11,8 +11,6 @@ This phonetic keyboard layout is designed for Khalkha Mongolian Cyrillic. </br>
 It is based on the English QWERTY keyboard and also aligns with Chinese Pinyin.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Layout</h2>
 <img src="keyboard_layout.png" alt="Desktop Layout" style="width:800px";>
 <h2>Touch Layout</h2>

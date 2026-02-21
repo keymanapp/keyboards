@@ -10,8 +10,6 @@ END;
  require_once('header.php');
 ?>
 
-<h1>The SIL Khamti Keyman Keyboard Package</h1>
-
 <h2>Font</h2>
 <p style="text-align: justify;">
 The NamKio font is included in this keyboard package.
@@ -34,5 +32,3 @@ and selecting the On Screen Keyboard menu item.
   <h3>Mobile Keyboard Layout</h3>
   <div id='osk-phone' data-states='default shift' />
 </div>
-
-<p>© 2019-2023 SIL International</p>

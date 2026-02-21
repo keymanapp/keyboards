@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5.4 (2025-06-09)
+------------------
+* Update font to new version of Charis
+
 1.5.3 (2021-07-01)
 ----------------
 * Updated to use new version of Charis SIL

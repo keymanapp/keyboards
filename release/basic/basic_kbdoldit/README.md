@@ -1,14 +1,12 @@
 Old Italic Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
 
-Old Italic Basic generated from template
+Old Italic Basic based on Windows 10 layout.
 
 Links
 -----
@@ -28,6 +26,3 @@ Supported Platforms
  * Desktop devices
  * Tablet devices
 
-To do
------
-* Fix up version number in welcome.htm (should have been version 1.0)

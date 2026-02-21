@@ -1,5 +1,10 @@
-Colchis Latin
+Colchis Latin Change History
 ===============================
+
+1.6.1 (11 Jun 2025)
+------------------
+* Updated font to new version of Charis Colchis v7.000
+
 1.6 (8 Jan 2025)
 ------------------
 * Added ɔ and q̌ on all layouts 

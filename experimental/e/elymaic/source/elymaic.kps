@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.147.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.243.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,7 +22,7 @@
     <Copyright URL="">© M. R. Astle</Copyright>
     <Author URL="">M. R. Astle</Author>
     <Version URL=""></Version>
-    <Description>The Elymaic keyboard is designed for typing the Achaemenid Aramaic language in the Elymaic script. 
+    <Description URL="">The Elymaic keyboard is designed for typing the Achaemenid Aramaic language in the Elymaic script. 
 It could feasibly also be used to type other Aramaic dialects in the Elymaic script.</Description>
   </Info>
   <Files>
@@ -56,12 +57,6 @@ It could feasibly also be used to type other Aramaic dialects in the Elymaic scr
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>fonts\Catrinity.otf</Name>
-      <Description>Font Catrinity</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
       <Name>elymaic-keyboardU_.png</Name>
       <Description>File elymaic-keyboardU_.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -73,16 +68,24 @@ It could feasibly also be used to type other Aramaic dialects in the Elymaic scr
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</Name>
+      <Description>Font Catrinity</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Elymaic</Name>
       <ID>elymaic</ID>
-      <Version>1.0</Version>
-      <RTL>True</RTL>
-      <OSKFont>fonts\Catrinity.otf</OSKFont>
-      <DisplayFont>fonts\Catrinity.otf</DisplayFont>
-      <WebDisplayFonts><Font Filename="Catrinity.otf"/></WebDisplayFonts>
+      <OSKFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</DisplayFont>
       <Languages>
         <Language ID="tmr-Elym">Jewish Babylonian Aramaic (ca. 200-1200 CE)</Language>
         <Language ID="arc-Elym">Official Aramaic (700-300 BCE) (Elym)</Language>
@@ -92,4 +95,3 @@ It could feasibly also be used to type other Aramaic dialects in the Elymaic scr
   </Keyboards>
   <Strings/>
 </Package>
-

@@ -1,6 +1,12 @@
 foochow Change History
 ====================
 
+1.2.1 (2025-1-3)
+----------------
+* Updated by cathaylab
+* added more long-pressing keys in touch-layout
+* added more rules to avoid unexpected transformation
+
 1.2 (2024-11-19)
 ----------------
 * Updated by cathaylab 

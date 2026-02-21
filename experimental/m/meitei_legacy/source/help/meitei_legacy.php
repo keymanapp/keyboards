@@ -15,5 +15,3 @@ It follows the keystrokes of the legacy font Ratha99, but produces Unicode data.
 <h2 Usage Notes</h2>
 <p>
 Type "/" before a key to get the original English character.
-
-<p>© 2019 SIL International</p>

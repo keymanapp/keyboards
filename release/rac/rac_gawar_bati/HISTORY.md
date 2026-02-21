@@ -1,6 +1,10 @@
 Rachitrali-Gawar-Bati Change History
 =======================
 
+1.0.3 (13 Jan 2026)
+-----------------
+* Update keyboard to support OSK font for better display
+
 1.0.2 (11 Jun 2020)
 -----------------
 * Updated htm files for readability on Linux

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2004-2024 Galaxie Software and SIL Global
+Copyright (c) 2004-2025 Galaxie Software and SIL Global
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

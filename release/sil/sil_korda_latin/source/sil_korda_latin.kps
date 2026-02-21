@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.111.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Korean KORDA Latin (SIL)</Name>
-    <Copyright URL="">© 2006-2020 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>The Korean KORDA Latin (SIL) keyboard creates Korean hangeul from latin
+    <Description URL="">The Korean KORDA Latin (SIL) keyboard creates Korean hangeul from latin
 letters each time you press Spacebar. The Korean KORDA Latin keyboard is
 built to type Korean using the transliteration system KORDA (Korean
 Romanization for Data Application). KORDA is designed to make
@@ -85,17 +86,15 @@ Latin-Korean transliteration easy, accurate, and computerizable.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Korean KORDA Latin (SIL)</Name>
       <ID>sil_korda_latin</ID>
-      <Version>3.0</Version>
       <Languages>
         <Language ID="ko">Korean</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="korda" Relationship="deprecates" />
-    <RelatedPackage ID="sil_korda_jamo" />
+    <RelatedPackage ID="korda" Relationship="deprecates"/>
+    <RelatedPackage ID="sil_korda_jamo"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

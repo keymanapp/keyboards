@@ -10,8 +10,5 @@
 
 <h2>Keyboard Layout</h2>
 
-<!-- Insert Keyboard Layout Images or HTML here -->
-
-<p>
-{à paraître}
-</p>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>

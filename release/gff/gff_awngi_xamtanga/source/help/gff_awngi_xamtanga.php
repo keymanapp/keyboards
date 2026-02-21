@@ -1,77 +1,17 @@
 <?php 
-  $pagename = 'GFF Awngi & Khimtanga';
-  $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
-  $pagestyle = <<<END
-  img.indented { text-indent: 10%}
-
-table.flat { border-spacing: 0; margin: 0.5em 0 }B
-table.flat td, table.kb th { border: thin solid #666; text-align: center ; padding: 0.3em }
-table.flat { border-bottom: hidden }
-table.flat { empty-cells: show }
-table.flat th { text-align: center; border: thin solid #666; background-color: #e0dacf }
-table.flat caption { margin: 0.5em 0 0 0 }
-
-   td.divide { border-left: 1px solid black }
-   td.flat-bottom { border-bottom: 1px solid black }
-   td.flat-top { border-top: 1px solid black }
-  .note { background: #ffa }
-  .note-emph { background: #ffa; font-style: italic }
-  .question-unanswered { background: #ffa; font-style: italic; color: #ff0000 }
-  .question-answered { background: #bfffa0; font-style: italic; text-decoration: line-through }
-   body { max-width: 1200px }
-
-table.kb th, table.kb td { padding: 0.3em }
-table.kb th:first-child { background-color: #e0dacf; }
-table.kb tr:first-child { background-color: #e0dacf; font-weight:bold; }
-table.kb tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.kb tr:first-child th:last-child { background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff }
-table.kb th { background-color: #e0dacf; border-left-color: #ffffff }
-table.kb td, table.kb th { border: thin solid #666; text-align: center }
-table.kb th { text-align: center; background-color: #d7d0b9 }
-table.kb { border-bottom: hidden }
-table.kb { empty-cells: show }
-table.kb caption { margin: 0.5em 0 0 0 }
-table.kb tr:last-child { text-align: center; background-color: #d7d0b9; font-weight:bold; }
-table.kb tr:last-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff }
-dd {margin: 0 0 1em; padding: 0}
-
-table.punct th { font-weight: bold;  padding: 0.3em }
-table.punct td { font-weight: normal; padding: 0.3em }
-table.punct th:first-child { background-color: #e0dacf; }
-table.punct tr:first-child { background-color: #e0dacf; }
-table.punct tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.punct th { background-color: #e0dacf; border-left-color: #ffffff }
-table.punct td, table.punct th { border: thin solid #666; text-align: center }
-table.punct th { text-align: center; background-color: #d7d0b9 }
-table.punct { border-bottom: hidden }
-table.punct { empty-cells: show }
-
-table.zaima th { font-weight: bold;  padding: 0.3em }
-table.zaima td { font-weight: normal; padding: 0.3em }
-table.zaima th:first-child { background-color: #e0dacf;}
-table.zaima tr:first-child th  { background-color: #e0dacf; }
-table.zaima tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
-table.zaima th { background-color: #e0dacf; border-left-color: #ffffff }
-table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
-table.zaima th { text-align: center; background-color: #d7d0b9 }
-table.zaima { border-bottom: hidden }
-table.zaima { empty-cells: show }
-END;
+  $pagetitle = 'GFF Awngi & Khimtanga Keyboard Help';
+  $pagename  = $pagetitle;
+  $pagestyle = "@import url('kb.css'); @import url('html.css');";
+  $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');
-
-
 ?>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
-	<link rel="stylesheet" href="kb.css"/>
-</head>
+
 
 <div id="Overview">
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is an Awngi & Xamtanga/Khimtanga (አዊ &amp; ኽምጣጘ, ISO-639-3 awn & xan) language mnemonic input method and should also be suitable for the related Qimant (ahq) language.  
+This is an Awngi &amp; Xamtanga/Khimtanga (አዊ &amp; ኽምጣጘ, ISO-639-3 awn &amp; xan) language mnemonic input method and should also be suitable for the related Qimant (ahq) language.  
 It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
 The keyboard is “mnemonic” and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).

@@ -3,7 +3,7 @@ c with name "Jarai ចារាយ (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Jarai ចារាយ (SIL)'
 store(&COPYRIGHT) '© SIL Global'
-store(&KEYBOARDVERSION) '1.2.1'
+store(&KEYBOARDVERSION) '1.3'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_jarai.kvks'
 store(&LAYOUTFILE) 'sil_jarai.keyman-touch-layout'
@@ -148,16 +148,16 @@ group(main) using keys
 + [SHIFT K_6] > '៍'
 + [SHIFT K_7] > '័'
 + [SHIFT K_8] > '៏'
++ [SHIFT K_SPACE] > ' ' c U+2003 $EM_SPACE
 
 
 c nul keys
-store(nulShiftKeys)  [SHIFT K_R] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] [SHIFT K_PERIOD]
-store(nulDefaultKeys)   [K_RBRKT] [K_BKSLASH] 
-store(nulAltGrKeys) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] \
-                    [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] \
-                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H]\
+store(nulShiftKeys)   [SHIFT K_PERIOD]
+store(nulAltGrKeys) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] \
+                    [RALT K_Q] [RALT K_T] [RALT K_Y] [RALT K_U] \
+                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H] \
                     [RALT K_H] [RALT K_J] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_N] [RALT K_M]
-store(nulAllKeys)   outs(nulShiftKeys) outs(nulDefaultKeys) outs(nulAltGrKeys)
+store(nulAllKeys)   outs(nulShiftKeys) outs(nulAltGrKeys)
 
 + any(nulAllKeys)   > nul
 

@@ -1,7 +1,7 @@
 Keyman Vietnamese Telex keyboard
 ==============
 
-© 2022 Mike Vo
+© Mike Vo
 
 Description
 -----------
@@ -16,6 +16,8 @@ Report a bug:
 
 Links
 -----
+https://keyman.com/keyboards/vietnamese_telex
+
 https://miketvo.com
 
 Supported Platforms

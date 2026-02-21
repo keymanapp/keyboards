@@ -1,0 +1,198 @@
+﻿c Mara Keyboard
+c Updated to CAPS / NCAPS model
+c Author: Laitei
+
+store(&VERSION) '10.0'
+store(&NAME) 'Mara'
+store(&COPYRIGHT) 'Copyright © Laitei'
+store(&KEYBOARDVERSION) '1.0.3'
+store(&TARGETS) 'any'
+store(&BITMAP) 'mara.ico'
+store(&VISUALKEYBOARD) 'mara.kvks'
+store(&LAYOUTFILE) 'mara.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c =========================
+c LETTERS (NCAPS = normal)
+c =========================
+
++ [NCAPS K_A] > 'a'
++ [NCAPS K_B] > 'b'
++ [NCAPS K_C] > 'c'
++ [NCAPS K_D] > 'd'
++ [NCAPS K_E] > 'e'
++ [NCAPS K_F] > 'f'
++ [NCAPS K_G] > 'g'
++ [NCAPS K_H] > 'h'
++ [NCAPS K_I] > 'i'
++ [NCAPS K_J] > 'ch'
++ [NCAPS K_K] > 'k'
++ [NCAPS K_L] > 'l'
++ [NCAPS K_M] > 'm'
++ [NCAPS K_N] > 'n'
++ [NCAPS K_O] > 'o'
++ [NCAPS K_P] > 'p'
++ [NCAPS K_Q] > 'â'
++ [NCAPS K_R] > 'r'
++ [NCAPS K_S] > 's'
++ [NCAPS K_T] > 't'
++ [NCAPS K_U] > 'u'
++ [NCAPS K_V] > 'v'
++ [NCAPS K_W] > 'w'
++ [NCAPS K_X] > 'ô'
++ [NCAPS K_Y] > 'y'
++ [NCAPS K_Z] > 'z'
+
+c =========================
+c LETTERS (CAPS = same as NCAPS)
+c =========================
+
++ [CAPS K_A] > 'A'
++ [CAPS K_B] > 'B'
++ [CAPS K_C] > 'C'
++ [CAPS K_D] > 'D'
++ [CAPS K_E] > 'E'
++ [CAPS K_F] > 'F'
++ [CAPS K_G] > 'G'
++ [CAPS K_H] > 'H'
++ [CAPS K_I] > 'I'
++ [CAPS K_J] > 'CH'
++ [CAPS K_K] > 'K'
++ [CAPS K_L] > 'L'
++ [CAPS K_M] > 'M'
++ [CAPS K_N] > 'N'
++ [CAPS K_O] > 'O'
++ [CAPS K_P] > 'P'
++ [CAPS K_Q] > 'Â'
++ [CAPS K_R] > 'R'
++ [CAPS K_S] > 'S'
++ [CAPS K_T] > 'T'
++ [CAPS K_U] > 'U'
++ [CAPS K_V] > 'V'
++ [CAPS K_W] > 'W'
++ [CAPS K_X] > 'Ô'
++ [CAPS K_Y] > 'Y'
++ [CAPS K_Z] > 'Z'
+
+c =========================
+c SHIFT = UPPERCASE (NCAPS)
+c =========================
+
++ [NCAPS SHIFT K_A] > 'A'
++ [NCAPS SHIFT K_B] > 'B'
++ [NCAPS SHIFT K_C] > 'C'
++ [NCAPS SHIFT K_D] > 'D'
++ [NCAPS SHIFT K_E] > 'E'
++ [NCAPS SHIFT K_F] > 'F'
++ [NCAPS SHIFT K_G] > 'G'
++ [NCAPS SHIFT K_H] > 'H'
++ [NCAPS SHIFT K_I] > 'I'
++ [NCAPS SHIFT K_J] > 'CH'
++ [NCAPS SHIFT K_K] > 'K'
++ [NCAPS SHIFT K_L] > 'L'
++ [NCAPS SHIFT K_M] > 'M'
++ [NCAPS SHIFT K_N] > 'N'
++ [NCAPS SHIFT K_O] > 'O'
++ [NCAPS SHIFT K_P] > 'P'
++ [NCAPS SHIFT K_Q] > 'Â'
++ [NCAPS SHIFT K_R] > 'R'
++ [NCAPS SHIFT K_S] > 'S'
++ [NCAPS SHIFT K_T] > 'T'
++ [NCAPS SHIFT K_U] > 'U'
++ [NCAPS SHIFT K_V] > 'V'
++ [NCAPS SHIFT K_W] > 'W'
++ [NCAPS SHIFT K_X] > 'Ô'
++ [NCAPS SHIFT K_Y] > 'Y'
++ [NCAPS SHIFT K_Z] > 'Z'
+
+c =========================
+c SHIFT = UPPERCASE (CAPS)
+c =========================
+
++ [CAPS SHIFT K_A] > 'A'
++ [CAPS SHIFT K_B] > 'B'
++ [CAPS SHIFT K_C] > 'C'
++ [CAPS SHIFT K_D] > 'D'
++ [CAPS SHIFT K_E] > 'E'
++ [CAPS SHIFT K_F] > 'F'
++ [CAPS SHIFT K_G] > 'G'
++ [CAPS SHIFT K_H] > 'H'
++ [CAPS SHIFT K_I] > 'I'
++ [CAPS SHIFT K_J] > 'CH'
++ [CAPS SHIFT K_K] > 'K'
++ [CAPS SHIFT K_L] > 'L'
++ [CAPS SHIFT K_M] > 'M'
++ [CAPS SHIFT K_N] > 'N'
++ [CAPS SHIFT K_O] > 'O'
++ [CAPS SHIFT K_P] > 'P'
++ [CAPS SHIFT K_Q] > 'Â'
++ [CAPS SHIFT K_R] > 'R'
++ [CAPS SHIFT K_S] > 'S'
++ [CAPS SHIFT K_T] > 'T'
++ [CAPS SHIFT K_U] > 'U'
++ [CAPS SHIFT K_V] > 'V'
++ [CAPS SHIFT K_W] > 'W'
++ [CAPS SHIFT K_X] > 'Ô'
++ [CAPS SHIFT K_Y] > 'Y'
++ [CAPS SHIFT K_Z] > 'Z'
+
+c =========================
+c SYMBOLS (normal behavior)
+c =========================
+
++ [K_COMMA] > ','
++ [K_PERIOD] > '.'
++ [K_SLASH] > '/'
++ [K_COLON] > ';'
++ [K_QUOTE] > U+0027
++ [K_LBRKT] > '['
++ [K_RBRKT] > ']'
++ [K_BKSLASH] > '\'
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_BKQUOTE] > '`'
+
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_BKQUOTE] > '~'
+
+c =========================
+c NUMBERS
+c =========================
+
++ [K_0] > '0'
++ [K_1] > '1'
++ [K_2] > '2'
++ [K_3] > '3'
++ [K_4] > '4'
++ [K_5] > '5'
++ [K_6] > '6'
++ [K_7] > '7'
++ [K_8] > '8'
++ [K_9] > '9'
+
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
+
+c =========================
+c FALLBACK (CRITICAL)
+c =========================

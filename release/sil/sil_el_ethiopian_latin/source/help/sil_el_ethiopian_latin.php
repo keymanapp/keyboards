@@ -12,27 +12,27 @@
     span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
     span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
     .Code { font-size:10pt; margin-bottom:0.199cm; margin-top:0cm; font-family:'Courier New'; writing-mode:horizontal-tb; direction:ltr; }
-    .Footer { font-size:11pt; margin-bottom:0.199cm; margin-top:0cm; font-family:'Gentium Plus Compact'; writing-mode:horizontal-tb; direction:ltr; }
-    .Heading_20_3 { font-size:101%; margin-bottom:0.212cm; margin-top:0.247cm; font-family:'Gentium Plus Compact'; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
-    .Input-Character { font-size:12pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
-    .P1 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P10 { font-size:12pt; font-weight:bold; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P11 { font-size:12pt; font-weight:bold; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P12 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P13 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P14 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P2 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P3 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P4 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P5 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P6 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P7 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P8 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .P9 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; }
-    .Standard { font-size:11pt; font-family:'Gentium Plus Compact'; writing-mode:horizontal-tb; direction:ltr; margin-top:0cm; margin-bottom:0.199cm; }
-    .Title { font-size:18pt; margin-bottom:0.212cm; margin-top:0.423cm; font-family:'Gentium Plus Compact'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
-    .Unicode-Character { font-size:18pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
-    .Unicode-Value { font-size:7pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium Plus'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .Footer { font-size:11pt; margin-bottom:0.199cm; margin-top:0cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .Heading_20_3 { font-size:101%; margin-bottom:0.212cm; margin-top:0.247cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
+    .Input-Character { font-size:12pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
+    .P1 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P10 { font-size:12pt; font-weight:bold; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P11 { font-size:12pt; font-weight:bold; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P12 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P13 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P14 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P2 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P3 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P4 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P5 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Charis'; writing-mode:horizontal-tb; direction:ltr; }
+    .P6 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P7 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P8 { font-size:18pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .P9 { font-size:7pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; }
+    .Standard { font-size:11pt; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; margin-top:0cm; margin-bottom:0.199cm; }
+    .Title { font-size:18pt; margin-bottom:0.212cm; margin-top:0.423cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; font-weight:bold; }
+    .Unicode-Character { font-size:18pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
+    .Unicode-Value { font-size:7pt; margin-bottom:0cm; margin-top:0cm; font-family:'Gentium'; writing-mode:horizontal-tb; direction:ltr; text-align:center ! important; }
     .Table1 { width:17cm; margin-left:0cm; margin-right:auto;writing-mode:horizontal-tb; direction:ltr; }
     .Table10 { width:16.443cm; margin-left:0px; margin-right:auto;writing-mode:horizontal-tb; direction:ltr; }
     .Table11 { width:15.094cm; margin-left:0px; margin-right:auto;writing-mode:horizontal-tb; direction:ltr; }
@@ -1309,7 +1309,7 @@
     .Table9_A { width:1.6cm; }
     .Table9_B { width:1.349cm; }
     .Internet_20_link { color:#0000ff; text-decoration:underline; }
-    .Keyboard { font-family:'Gentium Plus Compact'; font-size:11pt; font-weight:bold; }
+    .Keyboard { font-family:'Gentium'; font-size:11pt; font-weight:bold; }
     /* ODF styles with no properties representable as CSS:
     .dp1 .Table1.1 .Table10.1 .Table11.1 .Table12.1 .Table13.1 .Table21.1 .Table21.10 .Table3.1 .Table6.1 .Table7.1 .Table9.1 .Table9.3 .T1 .T2 .T3 .T4 .T5 .T6 .T7 .T8 .WW8Num1z0 .WW8Num1z1 .WW8Num1z2 .WW8Num1z3 .WW8Num1z4 .WW8Num1z5 .WW8Num1z6 .WW8Num1z7 .WW8Num1z8  { } */
 END;

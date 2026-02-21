@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.111.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Korean Morse (SIL)</Name>
-    <Copyright URL="">© 2006-2020 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>The Korean Morse (SIL) keyboard creates Korean hangeul from jamo each
+    <Description URL="">The Korean Morse (SIL) keyboard creates Korean hangeul from jamo each
 time you press Spacebar. The Korean Morse (SIL) keyboard is built to
 type Korean using the Morse transliteration system, also called SKATS
 (Standard Korean Alphabet Transliteration System). The Morse system is
@@ -85,16 +86,14 @@ Korean pronunciation, use the Korean KORDA keyboards.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Korean Morse (SIL)</Name>
       <ID>sil_korean_morse</ID>
-      <Version>2.0</Version>
       <Languages>
         <Language ID="ko">Korean</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="korean_morse" Relationship="deprecates" />
+    <RelatedPackage ID="korean_morse" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

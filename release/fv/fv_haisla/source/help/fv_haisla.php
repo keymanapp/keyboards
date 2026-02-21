@@ -20,8 +20,6 @@ END;
     <h3><a href="https://www.firstvoices.com/haisla/">Haisla</a></h3>
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <p>
   The Haisla keyboard uses the English keyboard as a base, with added key combinations in order to create special characters.</p>
   <li>Most special characters are typed by typing a punctuation mark followed by a letter <strong>without</strong> a space between them.

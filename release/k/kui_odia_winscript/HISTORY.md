@@ -1,6 +1,10 @@
 Kui Odia Winscript Change History
 ====================
 
+1.0.2 (2025-04-24)
+----------------
+* Version bump to include new font
+
 1.0.1 (2024-06-10)
 ----------------
 * Fix keyboard name

@@ -4,22 +4,19 @@
   require_once('header.php');
 ?>
   <style type="text/css">
-    li, p { font: 10pt Tahoma }
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 12pt Tahoma; color: #4444cc }
-    h3 { clear: both;}
+    li { font: 10pt Tahoma }
     .a { font: 14pt Arial }
   </style>
-<p  dir="rtl">لوحة المفاتيح هذه مجعولة للكتابة باللغة السقطرية.</p>
+<p style="text-align: right; dir=rtl; font-size:100%">لوحة المفاتيح هذه مجعولة للكتابة باللغة السقطرية.</p>
 
-<h3 dir="rtl">تخطيط لوحة المفاتيح </h3>
-      <p dir="rtl">تخطيط لوحة المفاتيح معروض أدناه في الرسومات البيانية </p>
+<h3 style="text-align: right; dir=rtl; font-size:100%">تخطيط لوحة المفاتيح </h3>
+      <p style="text-align: right; dir=rtl; font-size:100%">تخطيط لوحة المفاتيح معروض أدناه في الرسومات البيانية </p>
       	
-      	<h4 dir="rtl">النسخة الأصلية</h4>
-      	<p dir="rtl"><img src="soqotriU_.png" alt="Base Version" style="width:600px;"></p>
+      	<h4 style="text-align: right; dir=rtl; font-size:100%">النسخة الأصلية</h4>
+      	<p><img src="soqotriU_.png" alt="Base Version" style="width:600px;"></p>
 
-      	<h4 dir="rtl">نسخة التحويل </h4>
-      	<p dir="rtl"><img src="soqotriU_S.png"  alt="Shift Version" style="width:600px;"></p>
+      	<h4 style="text-align: right; dir=rtl; font-size:100%">نسخة التحويل </h4>
+      	<p><img src="soqotriU_S.png"  alt="Shift Version" style="width:600px;"></p>
 
 
 <p>This is a keyboard for entering Soqotri.</p>

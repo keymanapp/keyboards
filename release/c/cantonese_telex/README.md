@@ -3,10 +3,11 @@ cantonese telex keyboard
 
 Description
 -----------
-cantonese telex for Yuẹt Yữ Quók Yữ Zị (Cantonese). Cantonese Telex粵語國語字輸入法
+cantonese telex for Việt Ngữ Quóc Ngữ Țị (Cantonese). Cantonese Telex粵語國語字輸入法
 
 Links
 -----
+https://keyman.com/keyboards/cantonese_telex
 
 Copyright
 ---------

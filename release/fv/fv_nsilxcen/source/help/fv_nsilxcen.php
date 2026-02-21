@@ -16,7 +16,6 @@ END;
     This keyboard is designed for the <b>Nsyilxcən</b> language of the BC Interior region of Canada.
 </p>
 
-<img src="nsilxcenU_help.png" alt="" height="198" width="514" border="0" /></h2>
 <ul>
     <li>The special characters of Nsyilxcən have been assigned to the number keys. To type the numerals, hold down the
         Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many
@@ -123,5 +122,5 @@ END;
 <br />
 
 <h2>Keyboard Layout</h2>
-     <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+     <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

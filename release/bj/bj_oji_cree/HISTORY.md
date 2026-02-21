@@ -1,6 +1,10 @@
 BJ-OjiCree (Kingfisher) Change History
 =======================
 
+9.2.1 (12 Feb 2026)
+-------------------
+* Updated font to BJCree v7.000
+
 9.2.0 (21 Feb 2024)
 -------------------
 * Fixed a bug related to NFC and long vowels

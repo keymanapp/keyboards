@@ -1,10 +1,7 @@
 ﻿<?php
   $pagename = 'Cheyenne Keyboard Help';
-  $pagetitle = 'Cheyenne Keyboard Help';
-  require_once('header.php');
-?>
-<head>
-	<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -83,9 +80,10 @@
 /* Language Examples */
 p samp {font-family: Times New Roman; font-size:20pt; line-height:.8em;}
 p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; margin:0px 1px; padding:0px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-    </style>
-</head>
-<body>
+END;
+  require_once('header.php');
+?>
+
   <p>This keyboard allows you to type all the letters and special symbols used in the Cheyenne alphabet.</p>
   <h2>Keyboard layout</h2>
 <h3 style="clear:left">Unicode : Unshifted</h3>
@@ -615,6 +613,3 @@ p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; marg
 <p>You can get the grave accent mark over the vowel by typing the <kbd>`</kbd> mark then the vowel. <kbd>`</kbd><kbd>a</kbd> gives you <samp>à</samp>. This is available on all vowel (aeiouAEIOU) characters.</p>
 <p>You can get the acute accent mark over the vowel by typing the <kbd>[</kbd> mark then the vowel. <kbd>[</kbd><kbd>a</kbd> gives you <samp>á</samp>. This is available on all vowel (aeiouAEIOU) characters.</p>
 <p>You can get the mid pitch mark over the vowel by typing the <kbd>~</kbd> mark then the vowel. <kbd>~</kbd><kbd>a</kbd> gives you <samp>ā</samp>. This is available on a, A, e, E, o, and O characters.</p>
-
-</body>
-</html>

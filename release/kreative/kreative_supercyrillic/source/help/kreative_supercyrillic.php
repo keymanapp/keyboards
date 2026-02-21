@@ -354,7 +354,7 @@ END;
 				<td colspan="6" class="b m">ctrl</td>
 			</tr>
 		</table>
-<p>© 2023 Kreative Software</p>
+<p>© Kreative Software</p>
 <script>
 	function prep() {
 		var ua = navigator.userAgent || navigator.appVersion;

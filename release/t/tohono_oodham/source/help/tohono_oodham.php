@@ -24,7 +24,7 @@ The main long-press keys used to type Tohono O'odham specific characters are:
 </p>
 
 <p>
-(c) 2018 James Wyly
+(c) James Wyly
 <br/>
 Released under the MIT license
 </p>

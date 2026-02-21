@@ -25,7 +25,7 @@ require_once ('header.php');
 <br />
 
 <h2>Keyboard Layout (Desktop)</h2>
-<div id='osk' data-states='default shift alt shift-alt'></div>
+<div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 
 <h3>Notes on desktop layout</h3>
 

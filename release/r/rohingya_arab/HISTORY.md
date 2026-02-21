@@ -1,6 +1,10 @@
 Rohingya Arabic Keyboard Change History
 =======================
 
+1.1.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.1.1 (2023-11-30)
 ----------------
 * Use shared font instead of local

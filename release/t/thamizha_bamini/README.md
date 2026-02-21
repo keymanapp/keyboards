@@ -1,7 +1,7 @@
 சுரதா-பாமுனி | Suratha Bamini keyboard
 ==============
 
-(c) thamizha.com and SIL International
+(c) thamizha.com and Global
 
 Description
 -----------

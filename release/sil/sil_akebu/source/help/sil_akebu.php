@@ -1,86 +1,11 @@
 <?php
-$pagename = 'Aide Clavier Akebu';
-$pagetitle = 'Aide Clavier Akebu';
+$pagename = 'Aide Clavier Akebu Keyboard Help';
+$pagetitle = $pagename;
+$pagestyle = <<<END
+    body {font-family: Charis; font-size: 100%;}
+END;
 require_once('header.php');
 ?>
-
-<!DOCTYPE html>
-<html lang="fr-TG">
-
-  <meta charset="utf-8">
-  <title>Clavier Akebu</title>
-
-
-
-  <style type="text/css">
-    p {
-      font-family: Charis SIL;
-    }
-
-    p.footnote {
-      font-family: Charis SIL;
-      font-size: small;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: Charis SIL;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    td {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-    }
-
-    td.heading {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-      font-weight: bold;
-      padding-left: 8pt;
-      padding-right: 8pt;
-    }
-
-    td.french {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: center;
-      background-color: silver;
-    }
-
-    td.diacritic {
-      border: 1px solid;
-      font-family: Charis SIL;
-      text-align: left;
-      padding-left: 10pt;
-    }
-
-    li {
-      font-family: Charis SIL;
-    }
-    .container {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-}
-  .child {
-    flex:1;
-    flex-basis: 45%;
-}
-  </style>
-</head>
-
-<body>
-  <h1>Le Clavier Akebu</h1>
 
   <p>Ce document explique l’usage du clavier Keyman élaboré pour taper la langue akebu de Togo avec une police Unicode.
   </p>
@@ -931,13 +856,10 @@ require_once('header.php');
 
   <h2>Des polices</h2>
 
-  <p>Assurez-vous d’avoir sélectionné une police Unicode (par exemple Charis SIL, Doulos SIL, Andika, Gentium, Times New
+  <p>Assurez-vous d’avoir sélectionné une police Unicode (par exemple Charis, Doulos SIL, Andika, Gentium, Times New
     Roman, etc.) avant de taper les caractères spéciaux.
   </p>
 
   <hr align="left" size="1" width="33%">
   <p class="footnote"><a name="fn1">†</a> Ces caractères sont pour l’orthographie française, et pas pour les langues
     togolaises.</p>
-
-</body>
-

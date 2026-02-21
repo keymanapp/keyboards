@@ -1,7 +1,7 @@
 Kayaw (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 

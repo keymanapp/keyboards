@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1206.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Torwali (SIL) Keyman Keyboard</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Torwali (SIL) Keyman Keyboard</Name>
-    <Copyright URL="">© 2016-2020 SIL International</Copyright>
+    <Name URL="">Torwali (SIL)</Name>
+    <Copyright URL="">© SIL Global</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:lorna_evans@sil.org">Lorna Evans</Author>
-    <Description>This keyboard was developed for keyboarding the Torwali language in the
+    <Description URL="">This keyboard was developed for keyboarding the Torwali language in the
 Arabic Script. The Torwali keyboard is designed to work with the
-Scheherazade font. However, you can use this keyboard with any extended
+Scheherazade New font. However, you can use this keyboard with any extended
 Arabic script Unicode font.</Description>
   </Info>
   <Files>
@@ -58,42 +59,6 @@ Arabic script Unicode font.</Description>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\LayoutU_.png</Name>
       <Description>File LayoutU_.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -111,18 +76,72 @@ Arabic script Unicode font.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew_README.txt</Name>
+      <Description>File ScheherazadeNew_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Bold.ttf</Name>
+      <Description>Font Scheherazade New Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Medium.ttf</Name>
+      <Description>Font Scheherazade New Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</Name>
+      <Description>Font Scheherazade New</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Torwali (SIL)</Name>
       <ID>sil_torwali</ID>
-      <Version></Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="trw-Arab">Torwali</Language>
+        <Language ID="trw">Torwali</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

@@ -1,6 +1,10 @@
 Khmer Basic Change History
 ====================
 
+1.2.2 (24 Mar 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+
 1.2.1 (30 Oct 2024)
 ------------------
 * Changed display font for .kvks
