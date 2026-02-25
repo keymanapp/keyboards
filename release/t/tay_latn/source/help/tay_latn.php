@@ -15,7 +15,7 @@
   <li>Typing "d" or "D" twice will produce "đ" or "Đ" respectively.</li>
 
 </ul>
-<
+
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
