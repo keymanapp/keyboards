@@ -1,4 +1,4 @@
-﻿c Jinland keyboard for Jin language. 晉國國語字輸入法
+﻿c Jinland keyboard for the Jin National Language script Țín Dử Quât Dử Țỵ 晉語國語字
 store(&VERSION) '17.0'
 store(&NAME) 'jinland'
 store(&COPYRIGHT) 'Copyright © cathaylab'
@@ -8,7 +8,7 @@ store(&VISUALKEYBOARD) 'jinland.kvks'
 store(&LAYOUTFILE) 'jinland.keyman-touch-layout'
 
 c Note three entry points, rather than the traditional single entry point
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -69,7 +69,7 @@ store(un_z_consonants) 'bcdfghjklmnpqrstvwxBCDFGHJKLMNPQRSTVWX'
 store(un_hrs_consonants) 'bcdfgjkmnpqtvwzBCDFGJKMNPQTVWZ'
 store(un_T_consonants) 'cdfghjlnqrvwxyzCDFGHJLNQRVWXYZ'
 store(no_u_letters) 'abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ'
-store(ie_consonants) 'đbcdghklmnprstvxyzĐBCDGHKLMNPRSTVXYZ'
+store(ie_consonants) 'đbcdghklmnprstvxyzșțĐBCDGHKLMNPRSTVXYZȘȚ'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(punctuationc) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_d_c) 'abcefghijklmnopqrstuvwxyzABCEFGHIJKLMNOPQRSTUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
@@ -242,7 +242,7 @@ store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
 store(two_q) 'qQ'
-store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆŕṛŔṚ'
+store(viet_letters) 'ăâêôơưđșțĂÂÊÔƠƯĐȘȚḿṃḾṂńǹñṇŃǸÑṆŕṛŔṚ'
 store(wj) 'wjWJ'
 store(yu) 'yuYU'
 store(yuia) 'yuiaYUIA'
@@ -656,6 +656,20 @@ any(ee) any(two_u) + 'E' > index(e, 1) index(two_u, 2) 'E'
 "đ" + "d" > "dd"
 "Đ" + "d" > "Dd"
 "Đ" + "D" > "DD"
+
+"t" + "t" > "ț"
+"T" + "t" > "Ț"
+"T" + "T" > "Ț"
+"ț" + "t" > "tt"
+"Ț" + "t" > "Tt"
+"Ț" + "T" > "TT"
+
+"s" + "s" > "ș"
+"S" + "s" > "Ș"
+"S" + "S" > "Ș"
+"ș" + "s" > "ss"
+"Ș" + "s" > "Ss"
+"Ș" + "S" > "SS"
 
 any(two_u) any(o) 'ng' + any(w) > index(two_uw, 1) index(ow, 2) 'ng'
 any(two_u) any(o) 'NG' + any(w) > index(two_uw, 1) index(ow, 2) 'NG'
@@ -1681,3 +1695,4 @@ any(two_uw) 'Ơ' any(r) + any(upper_sfrxj) > index(two_uw, 1) index(upper_ow_v, 
 'a' any(r) + any(upper_sfrxj) > index(low_a_v, 3) index(r, 2)
 'A' any(r) + any(low_sfrxj) > index(upper_a_v, 3) index(r, 2)
 'A' any(r) + any(upper_sfrxj) > index(upper_a_v, 3) index(r, 2)
+
