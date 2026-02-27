@@ -1,13 +1,13 @@
-Hoisan keyboard
+Jumjum keyboard
 ==============
 
 Description
 -----------
-Hoisan keyboard for Hòi Sán Vạ Coc Ngũi Tụ 台山話國語字 the National Language Script for Hoisanese
+A keyboard for the Jumjum language using Latin script.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/hoisan
+Keyboard Homepage: https://keyman.com/keyboards/jumjum
 
 Copyright
 ---------
