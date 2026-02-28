@@ -1,0 +1,90 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Tawrã-Kaman'
+store(&COPYRIGHT) 'Copyright © 2026 Neilac, Guwahati'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'tawra_kaman.ico'
+store(&VISUALKEYBOARD) 'tawra_kaman.kvks'
+store(&LAYOUTFILE) 'tawra_kaman.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- PRIMARY DIRECT ACCESS ---
++ [K_LBRKT]   > 'ü'
++ [K_RBRKT]   > 'ə'
++ [SHIFT K_LBRKT]   > 'Ü'
++ [SHIFT K_RBRKT]   > 'Ə'
+
+c --- SYMBOL RETRIEVAL (Double Tap) ---
+'ü' + [K_LBRKT]   > '['
+'Ü' + [SHIFT K_LBRKT] > '{'
+'ə' + [K_RBRKT]   > ']'
+'Ə' + [SHIFT K_RBRKT] > '}'
++ [K_BKSLASH]     > U+0303 
+U+0303 + [K_BKSLASH] > '\'
+'\' + [K_BKSLASH] > '|'
+
+c --- SMART TRANSFORM STORES ---
+store(v_pre_base)   'aeiouAEIOU'
+store(v_pre_acute)  'áéíóúÁÉÍÓÚ'
+store(v_pre_grave)  'àèìòùÀÈÌÒÙ'
+store(v_pre_macron) 'āēīōūĀĒĪŌŪ'
+store(v_pre_nasal)  'ãẽĩõũÃẼĨÕŨ'
+store(v_pre_circ)   'âêîôûÂÊÎÔÛ'
+
+c These are the problem characters
+store(v_comb_base)  'üəÜƏ'
+
+c --- SMART TRANSFORM RULES ---
+
+c 1. High Tone (Acute)
+any(v_pre_base) + [K_BKQUOTE] > index(v_pre_acute, 1)
+any(v_pre_base) + [T_ACUTE]   > index(v_pre_acute, 1)
+'ü' + [K_BKQUOTE] > 'ǘ'
+'Ü' + [K_BKQUOTE] > 'Ǘ'
+'ə' + [K_BKQUOTE] > 'ə' U+0301
+'Ə' + [K_BKQUOTE] > 'Ə' U+0301
+any(v_comb_base) + [T_ACUTE] > context U+0301
+
+c 2. Low Tone (Grave)
+any(v_pre_base) + [SHIFT K_BKQUOTE] > index(v_pre_grave, 1)
+any(v_pre_base) + [T_GRAVE]         > index(v_pre_grave, 1)
+'ü' + [SHIFT K_BKQUOTE] > 'ǜ'
+'Ü' + [SHIFT K_BKQUOTE] > 'Ǜ'
+'ə' + [SHIFT K_BKQUOTE] > 'ə' U+0300
+'Ə' + [SHIFT K_BKQUOTE] > 'Ə' U+0300
+any(v_comb_base) + [T_GRAVE] > context U+0300
+
+c 3. Mid Tone (Macron)
+any(v_pre_base) + [T_MACRON] > index(v_pre_macron, 1)
+any(v_comb_base) + [T_MACRON] > context U+0304
+c PC Double-tap logic
+any(v_pre_acute) + [K_BKQUOTE] > index(v_pre_macron, 1)
+'ǘ' + [K_BKQUOTE] > 'ǖ'
+'Ǘ' + [K_BKQUOTE] > 'Ǖ'
+U+0301 + [K_BKQUOTE] > U+0304
+
+c 4. Circumflex
+any(v_pre_base) + [SHIFT K_6] > index(v_pre_circ, 1)
+any(v_pre_base) + [T_CIRC]    > index(v_pre_circ, 1)
+any(v_comb_base) + [SHIFT K_6] > context U+0302
+any(v_comb_base) + [T_CIRC]    > context U+0302
+
+c 5. Nasalization & Spanish Ñ
+any(v_pre_base) + [K_BKSLASH] > index(v_pre_nasal, 1)
+any(v_pre_base) + [T_NASAL]   > index(v_pre_nasal, 1)
+any(v_comb_base) + [K_BKSLASH] > context U+0303
+any(v_comb_base) + [T_NASAL]   > context U+0303
+'n' + [K_BKSLASH] > 'ñ'
+'N' + [K_BKSLASH] > 'Ñ'
+'n' + [T_NASAL]   > 'ñ'
+'N' + [T_NASAL]   > 'Ñ'
+
+c --- FALLBACKS ---
++ [T_ACUTE]  > U+0301
++ [T_GRAVE]  > U+0300
++ [T_MACRON] > U+0304
++ [T_NASAL]  > U+0303
++ [T_CIRC]   > U+0302
