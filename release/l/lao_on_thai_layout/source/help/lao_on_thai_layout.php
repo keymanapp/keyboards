@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-<p>Lao on Thai layout keyboard is a Lao script Unicode keyboard based on the standard Thai Kedmanee layout and deprecated the Lao Unicode on Thai keyboard.</p>
+<p>Lao on Thai layout keyboard is a Lao script Unicode keyboard based on the standard Thai Kedmanee layout.</p>
 
 <p>This keyboard has an on-screen keyboard for Windows, macOS, and Linux and a touch layout for mobile. 
   Some characters are not visible on the OSK, please refer to the table below to see how to type the characters.

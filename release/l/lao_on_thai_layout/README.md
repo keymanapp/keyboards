@@ -1,13 +1,13 @@
-lao_on_thai_layout keyboard
+Lao on Thai layout keyboard
 ==============
 
 Description
 -----------
-Lao on Thai layout keyboard is a Lao script Unicode keyboard.
+Lao on Thai layout keyboard is a Lao script Unicode keyboard based on the standard Thai Kedmanee layout.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/laounicodebasic_on_thaikbd
+Keyboard Homepage: https://keyman.com/keyboards/lao_on_thai_layout
 
 Copyright
 ---------
