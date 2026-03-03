@@ -1,4 +1,4 @@
-moro keyboard
+Moro keyboard
 ==============
 
 Description
