@@ -1,5 +1,5 @@
 README 
-Mingzat Release 1.100
+Mingzat
 ========================
 
 Thank you for your interest in the Mingzat font.
@@ -12,7 +12,7 @@ Mingzat is released under the SIL Open Font License.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
-See the website (http://software.sil.org/mingzat) for further documentation. 
+See the website (https://software.sil.org/mingzat) for further documentation. 
 
 
 TIPS
@@ -22,10 +22,9 @@ As this font is distributed at no cost, we are unable to provide a
 commercial level of personal technical support. The font has, however, 
 been through some testing on various platforms to be sure it works in most
 situations. In particular, it has been tested and shown to work on 
-Windows 7. Graphite capabilities have been tested 
-on Graphite-supported platforms.
+Windows 11. 
 
-If you do find a problem, please do report it to fonts@sil.org.
+If you do find a problem, please do report it on the contact form at https://software.sil.org/mingzat.
 We can't guarantee any direct response, but will try to fix reported bugs in
 future versions. 
 
@@ -46,15 +45,15 @@ keyboard is available:
 https://keyman.com/keyboards/sil_lepcha
 
 Rendering:
-This font is designed to work with Graphite or Opentype advanced font 
-technologies. To take advantage of the advanced typographic 
+This font is designed to work with the Opentype advanced font 
+technology. To take advantage of the advanced typographic 
 capabilities of this font, you must be using applications that provide an
-adequate level of support for Graphite or OpenType. 
+adequate level of support for OpenType. 
 
 Lepcha is a complex Indic script which requires reordering. At this time, 
 there is little (or no) support for the Lepcha script in commercial rendering 
 systems. Thus, there are only a few applications which can adequately
-render Lepcha. Please see the Mingzat webpage (http://software.sil.org/mingzat)
+render Lepcha. Please see the Mingzat webpage (https://software.sil.org/mingzat)
 for information on which applications can be used with the Mingzat font.
 
 
@@ -67,9 +66,6 @@ instructions on font installations on various operating systems.
 
 CONTACT
 ========
-For more information please visit the Mingzat page on SIL International's
+For more information please visit the Mingzat page on SIL Global's
 Computers and Writing systems website:
-http://software.sil.org/mingzat
-
-Or send an email to fonts@sil.org
-
+https://software.sil.org/mingzat
