@@ -1,4 +1,4 @@
-﻿store(&VERSION) "10.0" 
+﻿store(&VERSION) '10.0' 
 store(&KEYBOARDVERSION) '1.1.1'
 store(&NAME) 'Odia/Oriya Phonetic (ITRANS)'
 store(©RIGHT) '© sanskritdocuments.org'
@@ -7,8 +7,6 @@ store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted and Right Ctrl layouts.'
 store(&BITMAP) 'itrans_odia.ico'
 store(&VISUALKEYBOARD) 'itrans_odia.kvks'
 store(&COPYRIGHT) '© sanskritdocuments.org'
-c
-c See HISTORY.md for details of changes
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'itrans_odia.keyman-touch-layout'
 
@@ -163,6 +161,11 @@ c  Consonants
 + "Y"	>	"ଞ୍"
 + "f"	>	"ଫ୍" c ph
 
++ [RCTRL K_E] > U+0B55 c kui/kuvi length
++ [RCTRL K_D] > U+0B5C U+0B4D c rra
++ [RCTRL K_R] > U+0B5D U+0B4D c rra
++ [RCTRL K_Y] > U+0B5F U+0B4D c yya
+
 c  ununsed - beep
 + "F"	>	beep
 + "q"	>	beep
@@ -209,38 +212,38 @@ c
 + "Z"	>	"ଡ଼୍" c .D
 
 c  Rules for Consonants + Vowel Signs
-store(Vyanjana) 'କକ୍ଷଖଗଘଙଚଛଜଜ୍ଞଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଵଶ୍ରଷସହୱ'
-store(ViramaMaatraa) 'eiouAEIORUL'
-store(ViramaMaatraaU) "େ" "ି" "ୋ" "ୁ" "ା" "ୖ" "ୀ" 'ୗ'  "ୃ" "ୂ" "ୢ"
+store(Vyanjana) 'କକ୍ଷଖଗଘଙଚଛଜଜ୍ଞଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଵଶ୍ରଷସହୱଡ଼ଢ଼ୟ'
+store(ViramaMaatraa) 'eiouAEIORUL' [RCTRL K_E]
+store(ViramaMaatraaU) "େ" "ି" "ୋ" "ୁ" "ା" "ୖ" "ୀ" 'ୗ'  "ୃ" "ୂ" "ୢ" U+0B55
 store(aPlusMaatraa) 'aiu'
 store(aPlusMaatraaU) "ା" "ୈ" "ୌ" 
 
 c 	implicit akaara deletion for Hindi mode 
 store(opt1endings) outs(Punctuation) ' '
 
-$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"୍" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
-any(Vyanjana) + "^"	>	index(Vyanjana,1)"୍"U+200C
-any(Vyanjana)"୍" + "^"	>	index(Vyanjana,1)"୍" U+200C
-any(Vyanjana)"୍" + "a"	>	index(Vyanjana,1)
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana) "୍" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
+any(Vyanjana) + "^"	>	index(Vyanjana,1) "୍" U+200C
+any(Vyanjana) "୍" + "^"	>	index(Vyanjana,1) "୍" U+200C
+any(Vyanjana) "୍" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
-any(Vyanjana)"୍" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
-any(Vyanjana)"ି" + "i"	>	index(Vyanjana,1)"ୀ"	c ii
-any(Vyanjana)"ୁ" + "u"	>	index(Vyanjana,1)"ୂ"	c uu
-any(Vyanjana)"େ" + "e"	>	index(Vyanjana,1)"ୀ"	c ee
-any(Vyanjana)"େ" + "i"	>	index(Vyanjana,1)"ୈ"	c ei
-any(Vyanjana)"ୋ" + "o"	>	index(Vyanjana,1)"ୂ"	c oo
-any(Vyanjana)"ୋ" + "u"	>	index(Vyanjana,1)"ୌ"	c ou
+any(Vyanjana) "୍" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana) "ି" + "i"	>	index(Vyanjana,1) "ୀ"	c ii
+any(Vyanjana) "ୁ" + "u"	>	index(Vyanjana,1) "ୂ"	c uu
+any(Vyanjana) "େ" + "e"	>	index(Vyanjana,1) "ୀ"	c ee
+any(Vyanjana) "େ" + "i"	>	index(Vyanjana,1) "ୈ"	c ei
+any(Vyanjana) "ୋ" + "o"	>	index(Vyanjana,1) "ୂ"	c oo
+any(Vyanjana) "ୋ" + "u"	>	index(Vyanjana,1) "ୌ"	c ou
 
-$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"଼" "୍" + any(opt1endings)	>	index(NuktaVyanjana,2)"଼" index(opt1endings,5)
-any(NuktaVyanjana)"଼" "୍" + "^"	>	index(NuktaVyanjana,1)"଼""୍"U+200C
-any(NuktaVyanjana)"଼" "୍" + "a"	>	index(NuktaVyanjana,1)"଼"
-any(NuktaVyanjana)"଼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
-any(NuktaVyanjana)"଼" "୍" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"଼" index(ViramaMaatraaU,4) 
-any(NuktaVyanjana)"଼" "ି" + "i"	>	index(NuktaVyanjana,1)"଼""ୀ"	c ii
-any(NuktaVyanjana)"଼" "ୁ" + "u"	>	index(NuktaVyanjana,1)"଼""ୂ"	c uu
-any(NuktaVyanjana)"଼" "େ" + "e"	>	index(NuktaVyanjana,1)"଼""ୀ"	c ee
-any(NuktaVyanjana)"଼" "େ" + "i"	>	index(NuktaVyanjana,1)"଼""ୈ"	c ei
-any(NuktaVyanjana)"଼" "ୋ" + "o"	>	index(NuktaVyanjana,1)"଼""ୂ"	c oo
-any(NuktaVyanjana)"଼" "ୋ" + "u"	>	index(NuktaVyanjana,1)"଼""ୌ"	c ou
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana) "଼" "୍" + any(opt1endings)	>	index(NuktaVyanjana,2) "଼" index(opt1endings,5)
+any(NuktaVyanjana) "଼" "୍" + "^"	>	index(NuktaVyanjana,1) "଼" "୍" U+200C
+any(NuktaVyanjana) "଼" "୍" + "a"	>	index(NuktaVyanjana,1) "଼"
+any(NuktaVyanjana) "଼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana) "଼" "୍" + any(ViramaMaatraa) > index(NuktaVyanjana,1) "଼" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana) "଼" "ି" + "i"	>	index(NuktaVyanjana,1) "଼" "ୀ"	c ii
+any(NuktaVyanjana) "଼" "ୁ" + "u"	>	index(NuktaVyanjana,1) "଼" "ୂ"	c uu
+any(NuktaVyanjana) "଼" "େ" + "e"	>	index(NuktaVyanjana,1) "଼" "ୀ"	c ee
+any(NuktaVyanjana) "଼" "େ" + "i"	>	index(NuktaVyanjana,1) "଼" "ୈ"	c ei
+any(NuktaVyanjana) "଼" "ୋ" + "o"	>	index(NuktaVyanjana,1) "଼" "ୂ"	c oo
+any(NuktaVyanjana) "଼" "ୋ" + "u"	>	index(NuktaVyanjana,1) "଼" "ୌ"	c ou
 
 c  EOF
