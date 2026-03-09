@@ -1,6 +1,10 @@
 Farsi Phonetic Change History
 ====================
 
+1.1.1 (2026-03-09)
+----------------
+* Update OSK font
+
 1.1 (2026-02-27)
 ----------------
 * Imported MSKLC keyboard to Keyman
