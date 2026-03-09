@@ -1,6 +1,10 @@
 Yiddish Pasekh Keyboard Change History
 =======================
 
+2.0.3 (9 Mar 2026)
+-----------------
+* Revert display font for better OSK display
+
 2.0.2 (15 May 2025)
 -----------------
 * Change to use KbdHebr display font for better OSK display
