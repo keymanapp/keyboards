@@ -94,29 +94,19 @@ function do_build_kmp() {
     # Load relevant fields from the .kps file
 
     mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
-    name=${kpsdata[0]}
-    # version assigned later
+    # Keyman Developer 18.0+ no longer using keyboard name or keyboard version in .kps files (#13600)
+    name='none'
+    version='none'
     bcp47=${kpsdata[2]}
     langname=${kpsdata[3]}
     oskFont=${kpsdata[4]}
     displayFont=${kpsdata[5]}
 
-    # Parse .keyboard_info file to override keyboard version because
-    # some are blank due to <FollowKeyboardVersion/> (#2143)
-    keyboardInfo="$REPO_ROOT/release/$group/$id/build/$id.keyboard_info"
-    if [[ ! -f $keyboardInfo ]]; then
-      die "$keyboardInfo does not exist"
-    fi
-
-    version=$(cat $keyboardInfo | $JQ -r '.version')
-
     # Override sil_euro_latin keyboard to English language
     if [[ $id = 'sil_euro_latin' ]]; then
-      name="English"
-      bcp47="en"  
+      bcp47="en"
       langname="English"
     elif [[ $id = 'basic_kbdcan' ]]; then
-      name="Français"
       bcp47="fr-CA"
       langname="French (Canada)"
     fi
@@ -159,9 +149,7 @@ function do_build_kmp() {
     # Build a keyboard entry
     KEYBOARD_LINES_0='
       <Keyboard>
-        <Name>'"$name"'</Name>
-        <ID>'"$id"'</ID>
-        <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
+        <ID>'"$id"'</ID>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
         <Languages>
           <Language ID="'"$bcp47"'">'"$langname"'</Language>
         </Languages>
@@ -224,7 +212,7 @@ function do_build_region() {
 
   # Convert to JSONArray and write to keyboards.json file
   convertToJSONArray "${mergedKeyboards[@]}" > "build/keyboards.json"
- 
+
   # Add keyboards.json to kmp.json
   if [[ ! -f "build/keyboards.json" ]]; then
     builder_die "Failed to generate build/keyboards.json"

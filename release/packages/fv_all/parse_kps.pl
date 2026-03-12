@@ -9,9 +9,9 @@ read FH, my $kps, -s FH;
 close(FH);
 
 # This extracts relevant variables from the <Keyboard> section of the .kps file:
-
-my $name = $1 if($kps =~ /\<Keyboard\>\s*\<Name\>(.*?)\<\/Name\>/);
-my $version = $1 if($kps =~ /\<Keyboard\>.+<Version\>(.*?)\<\/Version\>/s);
+# Keyman Developer 18.0+ stopped using name and version in .kps files (#13600)
+my $name = 'none';
+my $version = 'none';
 my $bcp47 = $1 if($kps =~ /\<Keyboard\>.+<Language\s+ID="(.+?)"\>/s);
 my $langname = $1 if($kps =~ /\<Keyboard\>.+<Language.+?\>(.+?)\<\/Language\>/s);
 # Font paths are optional
