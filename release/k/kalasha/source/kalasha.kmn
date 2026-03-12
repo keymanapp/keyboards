@@ -128,7 +128,7 @@ any(alphabet) any(diacritic) + [K_BKSP] > nul
 
 store(hchar) 'hH'
 c turn decomposed to composed characters (store(base) + h)
-store(base) 'cCdDgGjJkKlLmMnNpPrRtT'
+store(base) 'dDgGjJkKlLmMnNpPrRtT'
 
 any(base) + any(hchar) > index(base, 1) index(hchar, 2) dk(composing_char)
 dk(composing_char) + any(alphabet) > index(alphabet, 2)
@@ -139,16 +139,13 @@ dk(composed_dotted) + any(alphabet) > index(alphabet, 2)
 any(dotted_letter) U+0323 any(hchar) dk(composed_dotted) + [K_BKSP] > nul
 
 c digraphs (sh,zh,c)
-store(digraph_char) 'sSzZ'
-store(transform_digraph) 'šŠžŽ'
+store(digraph_char) 'cCsSzZ'
+store(transform_digraph) 'čČšŠžŽ'
 
 any(digraph_char) + any(hchar) > index(digraph_char, 1) index(hchar, 2) dk(h_combination)
 dk(h_combination) + any(alphabet) > index(alphabet, 2)
 any(digraph_char) any(hchar) dk(h_combination) + '^' > index(transform_digraph, 1)
 any(digraph_char) any(hchar) dk(h_combination) + [K_BKSP] > nul
-
-'c' + '^' > 'č'
-'C' + '^' > 'Č'
 
 c prevent typing dot before the alphabet
 U+0323 U+0020 + [K_BKSP] > nul
