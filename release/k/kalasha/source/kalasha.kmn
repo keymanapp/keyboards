@@ -138,7 +138,7 @@ any(dotted_letter) U+0323 + any(hchar) > index(dotted_letter, 1) U+0323 index(hc
 dk(composed_dotted) + any(alphabet) > index(alphabet, 2)
 any(dotted_letter) U+0323 any(hchar) dk(composed_dotted) + [K_BKSP] > nul
 
-c digraphs (sh,zh,c)
+c digraphs (ch,sh,zh)
 store(digraph_char) 'cCsSzZ'
 store(transform_digraph) 'čČšŠžŽ'
 

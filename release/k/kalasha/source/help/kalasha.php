@@ -1,60 +1,59 @@
 <?php
   $pagename = 'Kaḷaṣamondr Keyboard Help';
   $pagetitle = 'Kaḷaṣamondr Keyboard Help';
+  $pagestyle = <<<END
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 40px;
+          background: #f9f9f9;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          background: white;
+        }
+
+        thead.main-header, .main-foot {
+          background: #2c3e50;
+          color: white;
+        }
+
+        thead.sub-header {
+          background-color: #284a6e;
+          color: white;
+        }
+
+        th, td {
+          padding: 12px 16px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+
+        th {
+          font-weight: 600;
+          letter-spacing: 0.02em;
+        }
+
+        tbody tr:hover {
+          background: #f5f7fa;
+        }
+
+        tbody tr:nth-child(even) {
+          background: #fafafa;
+        }
+
+        kbd {
+          font-size: 20px;
+          background-color: black;
+          color: white ;
+          border-radius: 20px;
+          text-align: center;
+          padding: 2px 25px;
+        }
+    END;
   require_once('header.php');
 ?>
-
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-    background: #f9f9f9;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-  }
-
-  thead.main-header, .main-foot {
-    background: #2c3e50;
-    color: white;
-  }
-
-  thead.sub-header {
-    background-color: #284a6e;
-    color: white;
-  }
-
-  th, td {
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-
-  th {
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }
-
-  tbody tr:hover {
-    background: #f5f7fa;
-  }
-
-  tbody tr:nth-child(even) {
-    background: #fafafa;
-  }
-
-  kbd {
-    font-size: 20px;
-    background-color: black;
-    color: white ;
-    border-radius: 20px;
-    text-align: center;
-    padding: 2px 25px;
-  }
-</style>
 
 <div>
     <div class="keyboard-description">
@@ -340,10 +339,8 @@
         <div id='osk-tablet' data-states='default shift numeric'></div>
 
         <h3>Longpress</h3>
-        <img src="../welcome/Z_longpress.gif" alt="Mobile Layout - Longpress" style="width:50%">
+        <img src="longpress.gif" alt="Mobile Layout - Longpress" style="width:50%">
 
-        <h3>Flick</h3>
-        <img src="../welcome/C_flick.gif" alt="Mobile Layout - Flick" style="width:50%">
     </div>
 
 </div>

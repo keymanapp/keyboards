@@ -1,4 +1,4 @@
-kalasha Change History
+Kaḷaṣamondr Change History
 ====================
 
 1.0 (2026-03-04)
@@ -10,7 +10,6 @@ kalasha Change History
 
 0.3 (2022-07-13)
 ----------------
-* Initiated by Elsa Cooper
 * Created by Malachi James:
     * A dot under both vowels and consonants, for ‘retroflexed’ vowels and ‘retroflexed’ consonants.
     * A tilde over nasalised vowels.
