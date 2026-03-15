@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+2.4.1 (9 Mar 2026)
+----------------
+* Fix font in kvks
+
 2.4 (16 December 2025)
 ----------------
 * Update welcome.htm, keyboard images, and help document.

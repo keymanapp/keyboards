@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.244.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -79,10 +79,23 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>yiddish_hebrew</ID>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
       <Languages>
         <Language ID="yi">Yiddish</Language>
         <Language ID="yih">Western Yiddish</Language>
