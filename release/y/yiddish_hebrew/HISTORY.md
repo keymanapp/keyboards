@@ -1,6 +1,10 @@
 Yiddish Hebrew Keyboard Change History
 =======================
 
+2.0.2 (9 Mar 2026)
+-----------------
+* Fix display font for better OSK display
+
 2.0.1 (28 Nov 2025)
 -------------------
 * Removed Byte Order Mark (BOM)

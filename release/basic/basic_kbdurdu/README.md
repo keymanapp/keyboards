@@ -1,18 +1,12 @@
 Urdu Basic keyboard
 ==============
 
-© 2008-2020 SIL International
-
-Version 1.2.1
+© SIL Global
 
 Description
 -----------
 
-Urdu Basic generated from template. This keyboard 
-layout is designed for Urdu. It includes an on screen 
-keyboard which can be viewed by clicking on the Keyman 
-icon and selecting the On Screen Keyboard menu item. 
-The keyboard layout follows the Windows 10 Urdu layout. 
+Urdu Basic keyboard was imported with permission from the Windows 10 keyboard. This keyboard layout is designed for Urdu. 
 
 Links
 -----

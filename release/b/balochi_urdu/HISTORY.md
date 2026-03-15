@@ -1,6 +1,10 @@
 Balochi Urdu Change History
 ===============================
 
+1.6.2 (2026-03-11)
+----------------
+* Add KbdArab.json and KbdArabLateef for better display
+
 1.6.1 (30 Mar 2024)
 ------------------
 * Moved ** ARABIC LETTER YEH WITH HAMZA ABOVE + ARABIC LETTER YEH BARREE to ctrl+b
