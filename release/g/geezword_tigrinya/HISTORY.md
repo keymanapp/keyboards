@@ -1,9 +1,15 @@
 geezword_tigrinya Change History
 ================================
 
+18.2 (03-16-2026)
+-----------------
+* Fixes to multitaps
+* Updates for documentation screenshots
+
+
 18.1 (02-14-2026)
 -----------------
-*Synchronization with updates in geezword_amharic
+* Synchronization with updates in geezword_amharic
  
 18.0 (10-16-2025
 ----------------
