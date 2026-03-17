@@ -95,12 +95,10 @@ function do_build_kmp() {
 
     mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
     # Keyman Developer 18.0+ no longer using keyboard name or keyboard version in .kps files (#13600)
-    name='none'
-    version='none'
-    bcp47=${kpsdata[2]}
-    langname=${kpsdata[3]}
-    oskFont=${kpsdata[4]}
-    displayFont=${kpsdata[5]}
+    bcp47=${kpsdata[0]}
+    langname=${kpsdata[1]}
+    oskFont=${kpsdata[2]}
+    displayFont=${kpsdata[3]}
 
     # Override sil_euro_latin keyboard to English language
     if [[ $id = 'sil_euro_latin' ]]; then
