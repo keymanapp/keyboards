@@ -1,6 +1,11 @@
 vietnam Change History
 ====================
 
+2.0.4 (2025-03-05)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyt" vowel
+
 2.0.3 (2025-10-06)
 ----------------
 * Updated by cathaylab
