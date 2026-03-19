@@ -1,0 +1,134 @@
+﻿c Komono (Côte d’Ivoire) - QWERTY
+c Direct replacements + slash escape + French accents (no accents on special Komono letters)
+
+store(&VERSION) '17.0'
+store(&NAME) 'Komono (Côte d’Ivoire) - QWERTY'
+store(&COPYRIGHT) 'Copyright © Kirk Rogers'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'komono.ico'
+store(&VISUALKEYBOARD) 'komono_ci.kvks'
+store(&LAYOUTFILE) 'komono_ci.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ============================================================
+c 1) Slash escape: press / then key to get ORIGINAL key
+c    Also French quick: /e é, /E É, /c ç, /C Ç
+c ============================================================
+
++ [K_SLASH] > deadkey(1)
+
+deadkey(1) + 'e' > U+00E9
+deadkey(1) + 'E' > U+00C9
+deadkey(1) + 'c' > U+00E7
+deadkey(1) + 'C' > U+00C7
+
+deadkey(1) + 'x' > 'x'
+deadkey(1) + 'X' > 'X'
+deadkey(1) + 'q' > 'q'
+deadkey(1) + 'Q' > 'Q'
+deadkey(1) + 'z' > 'z'
+deadkey(1) + 'Z' > 'Z'
+deadkey(1) + "'" > "'"
+deadkey(1) + '"' > '"'
+deadkey(1) + ';' > ';'
+deadkey(1) + ':' > ':'
+deadkey(1) + '`' > '`'
+deadkey(1) + '~' > '~'
+deadkey(1) + '[' > '['
+deadkey(1) + '{' > '{'
+deadkey(1) + ']' > ']'
+deadkey(1) + '}' > '}'
+deadkey(1) + '/' > '/'
+deadkey(1) + '?' > '?'
+deadkey(1) + '<' > '<'
+deadkey(1) + '>' > '>'
+deadkey(1) + '|' > '|'
+
+c ============================================================
+c 2) Direct Komono replacements
+c ============================================================
+
++ 'q' > U+0269
++ 'Q' > U+0196
+
++ "'" > U+0254
++ '"' > U+0186
+
++ ';' > U+025B
++ ':' > U+0190
+
++ 'x' > U+028B
++ 'X' > U+01B2
+
++ '`' > U+0253
++ '~' > U+0181
+
++ 'z' > U+014B
++ 'Z' > U+014A
+
++ ']' > U+2019
++ '}' > U+201C
+
++ '[' > ';'
++ '{' > ':'
+
+c ============================================================
+c 3) French accent deadkeys (standard vowels only)
+c    < grave, > circumflex, | diaeresis
+c    Use /<  />  /|  to type literal symbols
+c ============================================================
+
++ '<' > deadkey(2)
++ '>' > deadkey(3)
++ '|' > deadkey(4)
+
+c Grave accent
+deadkey(2) + 'a' > 'a' U+0300
+deadkey(2) + 'e' > 'e' U+0300
+deadkey(2) + 'i' > 'i' U+0300
+deadkey(2) + 'o' > 'o' U+0300
+deadkey(2) + 'u' > 'u' U+0300
+deadkey(2) + 'A' > 'A' U+0300
+deadkey(2) + 'E' > 'E' U+0300
+deadkey(2) + 'I' > 'I' U+0300
+deadkey(2) + 'O' > 'O' U+0300
+deadkey(2) + 'U' > 'U' U+0300
+
+c Circumflex accent
+deadkey(3) + 'a' > 'a' U+0302
+deadkey(3) + 'e' > 'e' U+0302
+deadkey(3) + 'i' > 'i' U+0302
+deadkey(3) + 'o' > 'o' U+0302
+deadkey(3) + 'u' > 'u' U+0302
+deadkey(3) + 'A' > 'A' U+0302
+deadkey(3) + 'E' > 'E' U+0302
+deadkey(3) + 'I' > 'I' U+0302
+deadkey(3) + 'O' > 'O' U+0302
+deadkey(3) + 'U' > 'U' U+0302
+
+c Diaeresis
+deadkey(4) + 'a' > 'a' U+0308
+deadkey(4) + 'e' > 'e' U+0308
+deadkey(4) + 'i' > 'i' U+0308
+deadkey(4) + 'o' > 'o' U+0308
+deadkey(4) + 'u' > 'u' U+0308
+deadkey(4) + 'A' > 'A' U+0308
+deadkey(4) + 'E' > 'E' U+0308
+deadkey(4) + 'I' > 'I' U+0308
+deadkey(4) + 'O' > 'O' U+0308
+deadkey(4) + 'U' > 'U' U+0308
+
+c If accent deadkey followed by something else, output the symbol then the key
+c deadkey(2) + any(key) > '<' + index(key,1)
+c deadkey(3) + any(key) > '>' + index(key,1)
+c deadkey(4) + any(key) > '|' + index(key,1)
+c The above returned an error. ChatGPT says You don’t actually need them because
+c you already have escape typing via /: 
+c /< gives <
+c /> gives >
+c /| gives |
+c and you can just not use the accent deadkeys unless followed by a vowel.
