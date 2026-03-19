@@ -724,7 +724,6 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <li>Long Press for Geez Vowels :<br></li>
 <li>Long Press to Select Punctuations:<br></li>
 <li>Long Press to Select Geez Numerals:<br></li>
-<li>Special Key ( “^”) to Duplicate Letter.<br></li>
 <li>Typing Diphthong Letters</li>
 </ul>
 
@@ -1049,52 +1048,6 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <dir><img src="images/geezword-tigrinya-mobile-5.png" border="1"/></dir>
 
-<h3>Special Key ( “^”) to Duplicate previous letter</h3>
-<p>The “Press Twice” special letters, can be typed in duplicate with a little trick using <strong>“^”</strong>.</p>
-
-<p>For example, to type ህህ , use the <strong>“^”</strong> symbol to duplicate previous letter, as shown below.</p>
-
-<dir><strong><kbd>h</kbd><kbd>^</kbd> =</strong> ህህ</dir>
-
-<p>The same rule applies to others in the table below.</p>
-
-<dir>
-<table>
-<thead>
-<tr>
-<th>ህህ</th>
-<th>ስስ</th>
-<th>ቅቅ</th>
-<th>ትት</th>
-<th>ችች</th>
-<th>ንን</th>
-<th>ክክ</th>
-<th>ዝዝ</th>
-<th>ድድ</th>
-<th>ግግ</th>
-<th>ጽጽ</th>
-<th>ፕፕ</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>h^</strong></td>
-<td><strong>s^</strong></td>
-<td><strong>q^</strong></td>
-<td><strong>t^</strong></td>
-<td><strong>c^</strong></td>
-<td><strong>n^</strong></td>
-<td><strong>k^</strong></td>
-<td><strong>z^</strong></td>
-<td><strong>d^</strong></td>
-<td><strong>n^</strong></td>
-<td><strong>x^</strong></td>
-<td><strong>p^</strong></td>
-</tr>
-</tbody>
-</table>
-</dir>
 
 <h3>Typing Diphthong Letters</h3>
 <p>How to type the Diphthong letters is the most challenging for most users. In Geezword, it is based on phonetic sound of the letters. The most important to remember is the additional key “<strong>u</strong>” inserted following the consonant key. The vowels are the same as the other letters. That is all. Here are some examples:</p>

@@ -1,4 +1,4 @@
-# GeezWord Amharaic Keyboard
+# GeezWord Amharic Keyboard
 
 Phonetic keyboard for Amharic, Tigrinya,  Geez, Tigre and Blin languages ( አማርኛ፡ ትግርኛ፡ ግእዝ፡ ትግረ፡ ብለን).
 

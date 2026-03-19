@@ -1,7 +1,18 @@
 geezword_tigrinya Change History
-=========================
-18.0 (10-16-2025)
---------------------------
+================================
+
+18.2 (03-16-2026)
+-----------------
+* Fixes to multitaps
+* Updates for documentation screenshots
+
+
+18.1 (02-14-2026)
+-----------------
+* Synchronization with updates in geezword_amharic
+ 
+18.0 (10-16-2025
+----------------
 * Initial Public Release Keyman keyboard
 
 Additional History of GeezWord 
@@ -14,22 +25,22 @@ Additional History of GeezWord
 * Reference: https://tigrinyadigitalinitiatives.org/
 
 1982 On Apple II Computer
--------------------
-* Consonants used phonetic keyboard assignment
+-------------------------
+* Consonants used phonetic keyboard assignmen
 * Vowels used number keys assignment (1-7)
 * Geez fonts designed by Hexadecimal coding 
 
-1987 On Apple Macintosh
--------------------
+1987 On Apple Macintos
+-----------------------
 * It included bitmap Geez fonts
 * Consonants used phonetic keyboard assignment
 * Vowels used number keys assignment (1-7)
 
 1989 On Microsoft DOS And Apple Macintosh
--------------------
+-----------------------------------------
 
 1993 Geezgate for Windows
--------------------
+-------------------------
 * Geez TrueType font - (ASCII)
 * Vowels e,i,o,u were used instead of numerals
 
