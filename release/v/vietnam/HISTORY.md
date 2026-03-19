@@ -4,7 +4,9 @@ vietnam Change History
 2.0.4 (2025-03-05)
 ----------------
 * Updated by cathaylab
-* added tone marks generation rules for "uyt" vowel
+* added tone marks generation rules for "uyt" "uyc" "uyp" vowel
+* modified the "m" and "m" with ngã accent to "m̃" and "M̃"
+* added 'ț' 'Ț' "ŧ' 'Ŧ' 'ŭ' 'Ŭ' letters
 
 2.0.3 (2025-10-06)
 ----------------
