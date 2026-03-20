@@ -1,12 +1,13 @@
-Kaḷaṣamondr Change History
+Kaḷaṣamondr keyboard Change History
 ====================
 
 1.0 (2026-03-04)
 ----------------
 * Updated by MengHeng to include
-    * Composed characters rule for the combination such as rh, ṛh (base with dot underneath + h).
-    * Add c(=č), sh(=š), zh(=ž).
+    * Support backspace with aspiration characters such as rh, ṛh (base with dot underneath + h).
+    * Add ch(=č), sh(=š), zh(=ž).
     * Change backtick to dot on On-screen.
+    * Add Mobile layout.
 
 0.3 (2022-07-13)
 ----------------

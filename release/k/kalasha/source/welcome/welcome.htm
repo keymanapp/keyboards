@@ -3,20 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start Using Kaḷaṣamondr</title>
+  <title>Start Using Kaḷaṣamondr keyboard</title>
   <style type="text/css">
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 12pt Tahoma; color: #4444cc; }
-    
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
-    }
 
     table {
-      width: 100%;
       border-collapse: collapse;
       background: white;
     }
@@ -51,47 +44,59 @@
     }
 
     kbd {
-      font-size: 20px;
-      background-color: black;
+      font-size: 12px;
+      background-color: rgb(133, 133, 133);
       color: white ;
-      border-radius: 20px;
+      border-radius: 10px;
       text-align: center;
-      padding: 2px 25px;
+      padding: 2px 20px;
     }
+  
   </style>
 </head>
 <body>
 
 <h1>Start Using Kaḷaṣamondr</h1>
-  <p>The Kaḷaṣamondr keyboard is created to type the kalasha language with Roman (Latin) script. Allowing keyboard users to write in English and Kalasha without switching keyboards.</p>
+  <div class="keyboard-description">
+    <p>The Kaḷaṣamondr keyboard is created to type the Kalasha language with Roman (Latin) script. Allowing keyboard users to write in English and Kalasha without switching keyboards.</p>
 
-  <p>
-    The Kaḷaṣamondr keyboards has a number of rules to differentiate itself from the standard US keyboard. At first glance, the keyboard
-    only has the typical english characters we are accustomed to, however, the backquote `\`` is replace with a dot. 
-  </p>
+    <p>
+      The Kaḷaṣamondr keyboards has a number of rules to differentiate itself from the standard US keyboard. At first glance, the keyboard only has the typical English characters we are accustomed to; however, there is one key that is different, the top left-hand key. This key has two functions: to represent retroflexion and/or nasalisation. 
+    </p>
 
-  <p>
-    If you are familiar with the language, you'd know that there are characters which created from two characters (sometimes with a dot) to produce one phoneme. These characters are
-    <kbd>c̣h</kbd>, <kbd>dh</kbd>, <kbd>ḍh</kbd>, <kbd>gh</kbd>, <kbd>jh</kbd>, <kbd>j̣h</kbd>, <kbd>lh</kbd>, <kbd>ḷh</kbd>, <kbd>mh</kbd>, 
-    <kbd>nh</kbd>, <kbd>rh</kbd>, <kbd>ṛh</kbd>, <kbd>ṣh</kbd>, <kbd>th</kbd>, <kbd>ṭh</kbd>, <kbd>ẓh</kbd>, <kbd>ch</kbd>, <kbd>sh</kbd>, and <kbd>zh</kbd>.
-    <br>
-    When one of these characters is typed, there is a special rule that would make sure the characters are deleted together (behaving like a composed letter), unless the next letter is typed, then
-    the special phonemes return to "de-composed" behavior.
-    <br>
-    Exceptionally, the <kbd>sh</kbd>, <kbd>zh</kbd>, and <kbd>ch</kbd> have composed characters to represent them:
-    <ul>
-      <li><kbd>ch</kbd> -> `č`</li>
-      <li><kbd>sh</kbd> -> `š`</li>
-      <li><kbd>zh</kbd> -> `ž`</li>
-    </ul> 
-    
+    <h3>Retroflexion (both consonants and vowels can be retroflex)</h3>
+
+    <p>In the Kaḷaṣamondr keyboard, the US keyboard backquote symbol (`) is replaced with now represents retroflexion with a dot-under (combining with the preceding typed character), e.g. <kbd>ḍ</kbd>, <kbd>ṭ</kbd>, <kbd>ṣ</kbd>.</p>
+
+    <h3>Nasalisation (only vowels can be nasalised)</h3>
+
+    <p>In the Kaḷaṣamondr keyboard, the US keyboard tilde symbol (SHIFT+~) now represents nasalisation with a tilde over the preceding typed vowel character, e.g. <kbd>ã</kbd>, <kbd>ẽ</kbd>, <kbd>ĩ</kbd>, <kbd>õ</kbd>, <kbd>ũ</kbd>, <kbd>ạ̃</kbd>, <kbd>ẹ̃</kbd>, <kbd>ị̃</kbd>, <kbd>ọ̃</kbd>, <kbd>ụ̃</kbd></p>
+
+    <p><b>Note</b>: the last five examples. They show that vowels can sometimes be both retroflex and nasalised. The dot-under retroflexion symbol should be typed first.</p>
+
+    <h3>Aspiration</h3>
+
+    <p>
+      If you are familiar with In the language Kaḷaṣamondr keyboard, you'd know that there are characters which created from aspirated consonants are represented with an <kbd>h</kbd> that follows the consonant. That is, two characters together (a digraph), (sometimes with a dot) to produce with the second one being h, represent one aspirated phoneme. These characters are:
+      <kbd>bh</kbd>, <kbd>c̣h</kbd>, <kbd>dh</kbd>, <kbd>ḍh</kbd>, <kbd>gh</kbd>, <kbd>jh</kbd>, <kbd>kh</kbd>, <kbd>lh</kbd>, <kbd>ḷh</kbd>, <kbd>mh</kbd>, 
+      <kbd>ph</kbd>, <kbd>rh</kbd>, <kbd>th</kbd>, <kbd>ṭh</kbd>, and <kbd>ẓh</kbd>.
+    </p>
+    <p>
+      When one both of these characters are typed, but then need to be deleted, there is a special rule that would make sure that both characters can be backspace-deleted together (behaving like a composed letter  character), unless if, however, the next (a third) following letter character is typed, then the special phonemes individual characters return to a decomposed (separate) behaviour state and can be deleted one by one.
+    </p>
+    <p>
+      Exception: In the fricatives <kbd>sh</kbd>, <kbd>zh</kbd>, and <kbd>ch</kbd>, <b>h</b> does not represent aspiration. These digraphs will continue to represent these fricatives. Alternatively, a future option could be a caron (wedge) inserted above the s, z, or c by the <kbd>^</kbd> key, or these characters can be selected using long press on a mobile layout. 
+    </p>
+      
+    <p>The affricates <kbd>ts</kbd> and <kbd>dz</kbd> are typed using these two separate characters. The aspirated affricate <kbd>tsh</kbd> (/t͡sʰ/) is typed using these three separate characters.</p>
+
     <b>(See the key combinations below).</b>
-  </p>
+</div>
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 
-<img src="DesktopLayout.png" alt="Desktop Layout" style="width:50%">
+<img src="DesktopLayout.png" alt="Desktop Layout" style="width:100%">
 
 <div id='osk-container'>
     <div class="keyboard-key-combination">
@@ -357,18 +362,18 @@
 
 <h3>Default (unshifted)</h3>
 
-<img src="TouchLayout_Default.jpg" alt="Touch Layout - Default" style="width:50%">
+<img src="TouchLayout_Default.jpg" alt="Touch Layout - Default" style="width:70%">
 
 <h3>Shift</h3>
 
-<img src="TouchLayout_Shift.jpg" alt="Touch Layout - Shift" style="width:50%">
+<img src="TouchLayout_Shift.jpg" alt="Touch Layout - Shift" style="width:70%">
 
 <h3>Numeric</h3>
 
-<img src="TouchLayout_Numeric.jpg" alt="Touch Layout - Numeric" style="width:50%">
+<img src="TouchLayout_Numeric.jpg" alt="Touch Layout - Numeric" style="width:70%">
 
 <h3>Longpress</h3>
-<img src="longpress.gif" alt="Touch Layout - Longpress" style="width:50%">
+<img src="longpress.gif" alt="Touch Layout - Longpress" style="width:70%">
 
 <br><br>
 
