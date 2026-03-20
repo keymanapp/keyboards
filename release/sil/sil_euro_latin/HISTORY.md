@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 3.0.5 (19 Mar 2026)
+* Remove entries for Fulfulde languages which require characters not supported by this keyboard
 ## 3.0.4 (3 Nov 2025)
 * Add Wynn
 
