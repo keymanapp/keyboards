@@ -13,7 +13,7 @@
     <h2>Mobile/Tablet Keyboard Layout</h2>
     <div id='osk-tablet' data-states='default shift numeric'></div>
 
-    <h3>Flick</h3>
+    <h2>Flick</h2>
     <p>Standby</p>
 
 </div>
