@@ -1,6 +1,9 @@
 Baybayin Keyboard Changelog
 ====================
 
+* Added U+1735 ᜵ PHILIPPINE SINGLE PUNCTUATION on `,`
+* Added U+1736 ᜶ PHILIPPINE DOUBLE PUNCTUATION on `.`
+
 1.2.1 (2024-12-02)
 ----------------
 * Adjusted language tags
