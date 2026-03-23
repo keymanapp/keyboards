@@ -1,5 +1,10 @@
 Baybayin Keyboard Changelog
 ====================
+
+1.3.0 (2026-03-23)
+----------------
+* Add a proper touch layout
+
 1.2.2 (2026-03-23)
 ----------------
 * Added U+1735 ᜵ PHILIPPINE SINGLE PUNCTUATION on `,`
