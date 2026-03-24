@@ -3,7 +3,7 @@ Komono (Côte d’Ivoire) - QWERTY keyboard
 
 Description
 -----------
-Komono keyboard
+The Komono keyboard is a phonetic keyboard designed for typing the Komono language using a custom set of phonetic characters. It allows users to input Komono text efficiently on both desktop and mobile devices using Keyman.
 
 Links
 -----
