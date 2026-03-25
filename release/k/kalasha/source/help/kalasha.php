@@ -2,53 +2,39 @@
   $pagename = 'Kaḷaṣamondr Keyboard Help';
   $pagetitle = 'Kaḷaṣamondr Keyboard Help';
   $pagestyle = <<<END
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          background: #f9f9f9;
-        }
-
-        table {
+        article table {
           width: 100%;
           border-collapse: collapse;
           background: white;
         }
 
-        thead.main-header, .main-foot {
+        article table thead.main-header, .main-foot {
           background: #2c3e50;
           color: white;
         }
 
-        thead.sub-header {
+        article table thead.sub-header {
           background-color: #284a6e;
           color: white;
         }
 
-        th, td {
+        article table th, article table td {
           padding: 12px 16px;
           text-align: left;
           border-bottom: 1px solid #ddd;
         }
 
-        th {
+        article table th {
           font-weight: 600;
           letter-spacing: 0.02em;
         }
 
-        tbody tr:hover {
+        article table tbody tr:hover {
           background: #f5f7fa;
         }
 
-        tbody tr:nth-child(even) {
+        article table tbody tr:nth-child(even) {
           background: #fafafa;
-        }
-
-        kbd {
-          font-size: 20px;
-          background-color: black;
-          color: white ;
-          border-radius: 20px;
-          text-align: center;
-          padding: 2px 25px;
         }
     END;
   require_once('header.php');
