@@ -1,7 +1,13 @@
 Hong Kong Change History
 ====================
 
+2.0 (2026-02-10)
+----------------
+* added new letters ț ŧ ṳ
 
+1.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
 
 1.1.1 (2025-09-11)
 ----------------

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Data\Keyman\balochi_phonetic\source\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Balochi Phonetic</Name>
-    <Copyright URL="">© 2017-2024 SIL International. This keyboard is distributed under The MIT License (MIT).</Copyright>
-    <Description>This keyboard is laid out phonetically (for example, b=beh).</Description>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This keyboard is laid out phonetically (for example, b=beh).</Description>
   </Info>
   <Files>
     <File>
@@ -155,14 +156,17 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabLateef.ttf</Name>
+      <Description>Font KbdArabLateef</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Balochi Phonetic</Name>
       <ID>balochi_phonetic</ID>
-      <Version>1.6</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabLateef.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bal">Baluchi</Language>

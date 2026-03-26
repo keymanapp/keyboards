@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1090.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Burushaski</Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Burushaski</Name>
-    <Copyright URL="">© 2017-2020 Rehmat Aziz Chitrali</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
-    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+    <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali Linguist and
 Researcher at Khowar Academy Chitral Pakistan for keyboarding the
 Burushaski language in the Arabic Script.</Description>
   </Info>
@@ -51,38 +52,50 @@ Burushaski language in the Arabic Script.</Description>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\FONTLOG.txt</Name>
       <Description>File FONTLOG.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL-FAQ.txt</Name>
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew_README.txt</Name>
+      <Description>File ScheherazadeNew_README.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Bold.ttf</Name>
+      <Description>Font Scheherazade New Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Medium.ttf</Name>
+      <Description>Font Scheherazade New Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</Name>
+      <Description>Font Scheherazade New</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -104,20 +117,28 @@ Burushaski language in the Arabic Script.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Burushaski</Name>
       <ID>rac_burushaski</ID>
-      <Version></Version>
-      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="bsk-Arab">Burushaski</Language>
+        <Language ID="bsk">Burushaski</Language>
       </Languages>
       <Examples>
-        <Example ID="bsk-Arab" Keys="b r w x s k i" Text="بروشسکی" Note="Name of language" />
+        <Example ID="bsk" Keys="b r w x s k i" Text="بروشسکی" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

@@ -1,6 +1,10 @@
 alephwithbeth Change History
 ====================
 
+1.0.8 (9 March 2026)
+-----------------
+* Appropriately change display font for .kvks
+
 1.0.7 (2025-05-15)
 ------------------
 * Change to use KbdHebr display font for better OSK display

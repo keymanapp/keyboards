@@ -1,7 +1,7 @@
 FirstVoices Keyboard Package
 ==================================================
 
-(c) 2015-2025 FirstVoices, SIL Global, 2015 First Peoples' Cultural Foundation
+(c) 2015-2026 FirstVoices, SIL Global, 2015 First Peoples' Cultural Foundation
 
 __DESCRIPTION__
 

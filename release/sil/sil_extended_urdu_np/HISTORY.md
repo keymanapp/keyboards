@@ -1,6 +1,10 @@
 Extended Urdu NP (SIL) Change History
 ====================
 
+6.0.2 (2026-Mar-09)
+----------------
+* Update OSK font for better display
+
 6.0.1 (2025-Oct-17)
 ----------------
 * Update Awami Nastaliq v3.400

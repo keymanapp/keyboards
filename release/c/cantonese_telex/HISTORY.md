@@ -1,6 +1,10 @@
 cantonese telex Change History
 ====================
 
+4.0 (2026-2-03)
+----------------
+* added new letters 'ț' 'ŧ' and 'ṳ'
+
 3.1.2 (2025-12-01)
 ----------------
 * added apostrophe between front consonant and vowel in a merged syllable

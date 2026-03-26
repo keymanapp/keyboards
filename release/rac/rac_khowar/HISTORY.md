@@ -1,6 +1,11 @@
 Rachitrali-Khowar Change History
 ================================
 
+1.0 (13 Jan 2026)
+-----------------
+* Update keyboard to support OSK font for better display
+* Update font to Scheherazade New
+
 0.7 (15 May 2018)
 -----------------
 * Updated Desktop layout to handle Latin-style digits
