@@ -7,7 +7,7 @@ Thai Kedmanee is a Thai script Unicode keyboard based on the standard Thai Kedma
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/thai_kedmanee
+Keyboard Homepage: https://keyman.com/keyboards/thai_kedmanee_mattix
 
 Copyright
 ---------

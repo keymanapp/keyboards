@@ -1,6 +1,6 @@
 <?php
-    $pagename = 'Thai Kedmanee Keyboard Help';
-    $pagetitle = 'Thai Kedmanee Keyboard Help';
+    $pagename = 'Thai Kedmanee (Mattix) Keyboard Help';
+    $pagetitle = 'Thai Kedmanee (Mattix) Keyboard Help';
     require_once('header.php');
 
     $pagestyle = <<<END
