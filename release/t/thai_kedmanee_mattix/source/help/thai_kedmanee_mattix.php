@@ -26,7 +26,7 @@
 ?>
 
 <p>
-    Thai Kedmanee is a Thai script Unicode keyboard based on the standard Thai Kedmanee layout. This keyboard is fully compliant with the <a href="https://unicode.org/standard/standard.html">Unicode Standard</a>.
+    Thai Kedmanee (Mattix) is a Thai script Unicode keyboard based on the standard Thai Kedmanee layout. This keyboard is fully compliant with the <a href="https://unicode.org/standard/standard.html">Unicode Standard</a>.
 </p>
 
 <div class="overview">
