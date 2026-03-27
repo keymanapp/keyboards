@@ -21,15 +21,7 @@
             background: #f3f3f3;
         }
 
-        kbd {
-            background: #f7f7f7;
-            border: 1px solid #ccc;
-            border-bottom-width: 2px;
-            border-radius: 4px;
-            padding: 2px 6px;
-            font-family: monospace;
-            margin-right: 2px;
-        }
+        
     END;
 ?>
 
