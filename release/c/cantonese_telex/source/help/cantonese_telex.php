@@ -528,7 +528,8 @@
   <p>If a vowel is pronounced as [ut] in Canton city dialect, and pronounced as [uɔt] in Hoisan dialect，This vowel will be written as "ot", such as "撥bọt"</p>
   <p>如果一個音節嘅廣州音發音係[jyn]，台山話發音又係[juɔn], 會有「uyên鴛」「duyên鳶」「uon冤」「uyển婉」「viền員袁」「duyền緣鉛」「huòn丸完」「viễn遠」「viện院」等等唔同嘅正寫</p>
     <p>If a syllable is pronounced as [jyn] in Canton city accent and pronounced as [juɔn] in Hoisan accent, the spellings will be "uyên鴛" "duyên鳶" "uon冤" "uyển婉" "viền員袁" "duyền緣鉛" "huòn丸完" "viễn遠" "viện院" etc.</p>
-  <p>If a syllable is pronounced as [jyt] in Canton city accent and pronounced as [juɔt] in Hoisan accent, the spellings will be "việt越粵" "duyệt閲悦" "uyết乙" "uót曰" etc.</p>
+    <p>如果一個音節嘅廣州音發音係[jyt]，台山話發音又係[juɔt], 會有「việt越粵」「duyệt閲悦」「uyết乙「uót曰」等等唔同嘅正寫</p>
+<p>If a syllable is pronounced as [jyt] in Canton city accent and pronounced as [juɔt] in Hoisan accent, the spellings will be "việt越粵" "duyệt閲悦" "uyết乙" "uót曰" etc.</p>
   <p>"ơng"用嚟表示[əŋ]，"ơc"用嚟表示[ək]</p>
     <p>"ơng" represents [əŋ]，"ơc" represents [ək]</p>
     <p>"ơn"用嚟表示[ən]</p>
