@@ -464,7 +464,9 @@
   <p>Vowel "ŭ" is pronounced as [ɿ] in Namning accent, pronounced as "i" in Canton city accent and "u" in Hoisan accent</p>
  <p>"it"用嚟表示喺廣州音入面發音係[it]，但係喺其他粵語口音入面唔會變成[iɛt]嘅韻腹，例如「必bit」 「秩địt」</p>
 <p>"it" is applied on those vowels which pronounced as [it] in Canton city accent but have no chance to be pronounced as [iɛt] in other accents, such as "必bit" and "秩địt".</p>
- <p>"iu" "im" "in" "ip" "it" 組合用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字，呢啲正寫嘅發音同廣州話嘅"iêu" "iêm" "iên" "iêp" "iêt" 一樣，同台山話嘅"ưu" "âm" "ân" "ât" "âp" 一樣</p>
+ <p>「麵」嘅正寫係"mịn"</p>
+<p>The spelling of "noodles" in Cantonese is "mịn"</p>
+<p>"iu" "im" "in" "ip" "it" 組合用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字，呢啲正寫嘅發音同廣州話嘅"iêu" "iêm" "iên" "iêp" "iêt" 一樣，同台山話嘅"ưu" "âm" "ân" "ât" "âp" 一樣</p>
  <p>The "iu" "im" "in" "ip" "it" combiniation can be used to represent sounds and spell words without Cantonese origin and without sino-cantonese origin, for example loanword from English, such as "lip" and "thin-nà sủi", or in case of using chinese characters to represent sounds or a word but the meaning of the character is not linked with its origin meaning. Their pronunciation is same as "iêu" "iêm" "iên" "iêp" "iêt" in Canton city accent, or "ưu" "âm" "ân" "ât" "âp" in Hoisan accent.</p>
  <p>ê同ay用嚟表示一樣嘅發音[ɐi]，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫語氣詞、少部分嘅非漢字嘅詞語或者係漢字但係係由唔規則嘅音變產生出呢個讀音嘅字，譬如話「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngụy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p>
  <p>"ê" and "ay" are used to represent the same pronunciation [ɐi]. "ê" is used to spell sino-cantonese words and the words with clear etymology that pronounce this vowel in ancient time. "ay" is used to spell few non-sino-cantonese words and sino-cantonese words with irregular sound change, such as「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngụy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p> 
