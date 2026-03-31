@@ -15,8 +15,8 @@
   Notes:            
   History:          May 2012 - mcdurdin - Generate documentation from Keyman Desktop documentation
 */
-  $pagename = 'Thai Unicode Keyboard Help';
-  $pagetitle = 'Thai Unicode Keyboard Help';
+  $pagename = 'Thai Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Thai Unicode (deprecated) Keyboard Help';
   $style = <<<END
 /* 
 ===========
