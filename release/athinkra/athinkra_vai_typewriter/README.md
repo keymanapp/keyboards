@@ -21,6 +21,3 @@ Supported Platforms
  * Web
  * Mobile
 
-To do
------
-This keyboard could use enhanced documentation. A table would be especially useful to help figure out how to type.
