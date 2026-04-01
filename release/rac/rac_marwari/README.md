@@ -1,19 +1,12 @@
 Rachitrali-Marwari Keyboard Data
 -------------------------------
 
-Copyright:      (C) 2018-2019 Rehmat Aziz Chitrali
-Version:        1.0
+Copyright (c) Rehmat Aziz Chitrali
 
 Description
 -----------
 
-This keyboard is designed for the Marwari language spoken in the Sindh Province  of Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Marwari Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Marwari Keyboard.
-
-This is the first Marwari language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer. This keyboard is for Marwari Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Marwari language.
-
-The Marwari Keyboard Project(MKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
-
-Khowar Academy Chitral was established in April 1996 specifically to promote the endangered languages of Chitral Pakistan. The Academy has worked extensively on Marwari linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Marwari, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+This keyboard is designed for the Marwari language spoken in the Sindh Province  of Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Marwari Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr.Rehmat Aziz Chitrali.
 
 Links
 -----

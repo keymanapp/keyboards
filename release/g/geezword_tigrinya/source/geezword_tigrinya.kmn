@@ -13,9 +13,9 @@ c Updated Septemeber 15, 2001 , some errors corrected
 c -------------------------
   
 store(&Version) '17.0'  c **************June 1- 2008  *******************
-store(&KEYBOARDVERSION) '18.0'
+store(&KEYBOARDVERSION) '18.2'
 
-store(&COPYRIGHT) 'Copyright © Geezsoft. All Rights Reserved.'
+store(&COPYRIGHT) 'Copyright © Geezsoft.'
 store(&MESSAGE) "The easiest Ge'ez/Ethiopic software for Amharic, Tigrinya, Tigre, Ge'ez, and other languages."
 c  store(&ETHNOLOGUECODE) 'tir'
 store(&NAME) 'GeezWord ትግርኛ'
@@ -105,6 +105,13 @@ c ========================== FULL UPPER (no kiflom)====================
  store(uppersabi:out) 'ሖሎሞሮሾቖቦቮጦጮኞኾዎዦዾጆዮጞፆፎጶ'
 
 C ============================================================
+
+c -----------------TESTING TESTING TESTING LOWER CASE only GEEZ TESTING DOUBLE PRESS KEY----------------------------------------
+store(lowersadisonly:key) 'lmrbvwyjf' 
+store(lowersadisonly:out) 'ልምርብቭውይጅፍ'
+store(uppersadisonly:out) 'ሕሽቕጥጭኝኽዥዽጝፅጵ' 
+
+
 c ----------------------------------------------------------
 C -------------------EXTRA GEEZ -------------------------
 store(sadisextra:key) '[]'
@@ -200,92 +207,6 @@ any(lowersadis:out) + any(rabi:key) > index(lowerrabi:out, 1)
 any(lowersalis:out) + any(geez:key)> index(lowerhamis:out, 1)
 any(lowersadis:out) + any(sabi:key)> index(lowersabi:out, 1)
 
-
-c ------------- not working ------------------------------------------------
-c store (lowersinglepress:key) 'hsqtcnkzdgxp'
-c store (lowersinglepress:out) 'ህስቅትችንክዝድግጽፕ'
-c store (lowerdoublepress:out) 'ሕሽቕጥጭኝኽዥዽጝፅጵ'
-
-c any(lowersinglepress:out) + any(lowersinglepress:key) > index(lowerdoublepress:out,1)
-c ---------------------------------------------------------------------------------------------
-
-c ------------------twice press convert to upper case
-
- +[T_H]> 'ህ'
-'ህ' + [T_H] > 'ሕ'
-
-+[T_S]> 'ስ'
-'ስ' + [T_S] > 'ሽ'
-
-+[T_Q]> 'ቅ'
-'ቅ' + [T_Q] > 'ቕ'
-
-+[T_T]> 'ት'
-'ት' + [T_T] > 'ጥ'
-
-c 'ች' + 'c' > 'ጭ'
-+[T_C]> 'ች'
-'ች' + [T_C] > 'ጭ'
-
-c 'ን' + 'n' > 'ኝ'
-+[T_N]> 'ን'
-'ን' + [T_N] > 'ኝ'
-
-c 'ክ' + 'k' > 'ኽ'
-+[T_K]> 'ክ'
-'ክ' + [T_K] > 'ኽ'
-
-c 'ዝ' + 'z' > 'ዥ'
-+[T_Z]> 'ዝ'
-'ዝ' + [T_Z] > 'ዥ'
-
-c 'ድ' + 'd' > 'ዽ'
-+[T_D]> 'ድ'
-'ድ' + [T_D] > 'ዽ'
-
-c 'ግ' + 'g' > 'ጝ'
-+[T_G]> 'ግ'
-'ግ' + [T_G] > 'ጝ'
-
-c 'ጽ' + 'x' > 'ፅ'
-+[T_X]> 'ጽ'
-'ጽ' + [T_X] > 'ፅ'
-
-c 'ፕ' + 'p' > 'ጵ'
-+[T_P]> 'ፕ'
-'ፕ' + [T_P] > 'ጵ'
-
-c 'ኣ' + 'a' > 'እ'
-
-
- 
- c feb 5 2021----------------  solution to side effecteffecteffect of double press - caret generates duplicate letters
-c any(lowersadisonly:out) + "^" > index(lwersadisonly:out,1) c 'ልምርብቭውይጅፍ' 
-c any(lowersadisonly:out) + "^" > index(lwersadisonly:out,1) c 'ልምርብቭውይጅፍ' 
-
-c --------------------Not working -------------------------------------------------------
-store (lowerdublicate:out) 'ህህ' 'ስስ''ቅቅ' 'ትት' 'ችች' 'ንን''ክክ' 'ዝዝ' 'ድድ' 'ግግ' 'ጽጽ' 'ፕፕ'
-c any(lowersinglepress:out) +"^" > index(lowerdublicate:out,1) c not working yet
-c ----------------------------------------------------------------------------------------
-
-c feb 5 2021----------------  solution to side effecteffecteffect of double press - caret generates duplicate letters
-
-   'ህ' + "^" > 'ህህ'
-   'ስ' + "^" > 'ስስ'
-   'ቅ' + "^" > 'ቅቅ'
-   'ት' + "^" > 'ትት'
-   'ች' + "^" > 'ችች'
-   'ን' + "^" > 'ንን'
-   'ክ' + "^" > 'ክክ'
-   'ዝ' + "^" > 'ዝዝ'
-   'ድ' + "^" > 'ድድ'
-   'ግ' + "^" > 'ግግ'
-   'ጽ' + "^" > 'ጽጽ'
-   'ፕ' + "^" > 'ፕፕ'
-
-
-+ '^' > dk(1)
-dk(1)+'^' > '^'
 
 c -------------------------------------------------------------------------------
 c ++++++++++++++++++++++++++++++ lower case  extra [] +++++++++++++++++++++++++++++++++++++++++++++ good
@@ -414,5 +335,7 @@ c '?' + '\' > U+1368
 
  
 c ------- change ends here - march 8, 2002---------------------------
+
++ [T_BEEP] > beep
 
 c End of file

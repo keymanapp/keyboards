@@ -1,6 +1,10 @@
 Vai (Athinkra) Change History
 ====================
 
+1.3.1 (25 March 2026)
+-----------------
+* Improve documentation
+
 1.3 (29 August 2024)
 -----------------
 * Added tablet layout

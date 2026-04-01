@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.334.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -22,7 +22,7 @@
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Wakhi</Name>
     <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
-    <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan</Author>
+    <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Description URL="">This keyboard was developed for keyboarding the Wakhi language in the
 Arabic Script. You can use this keyboard with any extended Arabic script
 Unicode font. If you have problems using the RAChitrali-Wakhi Keyman
@@ -144,14 +144,17 @@ rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Wakhi</Name>
       <ID>rac_wakhi</ID>
-      <Version>1.0.1</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="wbl-Arab">Wakhi (Arabic)</Language>
@@ -159,6 +162,9 @@ rachitrali\@yahoo.com</Description>
       <Examples>
         <Example ID="wbl-Arab" Keys="w K i space" Text="وخی" Note="Name of language"/>
       </Examples>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

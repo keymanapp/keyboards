@@ -1,6 +1,10 @@
 Torwali (SIL) Change History
 =======================
 
+1.0.3 (14 Jan 2026)
+* Update keyboard to support OSK font for better display
+* Change to Scheherazade New font
+
 1.0.2 (27 Oct 2020)
 -------------------
 * Increment version number to force recompile of touch layout.

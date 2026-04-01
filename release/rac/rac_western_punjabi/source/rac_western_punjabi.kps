@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -21,7 +21,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Rachitrali-Western-Punjabi</Name>
-    <Copyright URL="">© Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy, Khot Valley, Torkhow, District Chitral, Khyber Pakhtunkhwa Pakistan</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali Linguist and
@@ -128,21 +128,28 @@ Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Western-Punjabi</Name>
       <ID>rac_western_punjabi</ID>
-      <Version>1.0.2</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="pnb-Arab">Western Panjabi (Arabic)</Language>
+        <Language ID="pnb">Western Panjabi</Language>
+        <Language ID="lah">Lahnda</Language>
       </Languages>
       <Examples>
-        <Example ID="pnb-Arab" Keys="p n j a b i" Text="پنجابی" Note="Name of language"/>
+        <Example ID="pnb" Keys="p n j a b i" Text="پنجابی" Note="Name of language"/>
       </Examples>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

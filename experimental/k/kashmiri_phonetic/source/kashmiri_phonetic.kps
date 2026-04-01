@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Kashmiri Phonetic</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>Kashmiri Phonetic keyboard layout for the Kashmiri language. 
+    <Description URL="">Kashmiri Phonetic keyboard layout for the Kashmiri language. 
 This keyboard works best with a US Qwerty keyboard and is based on a phonetic layout. 
 This is a work in progress. Suggested improvements are welcomed.</Description>
   </Info>
@@ -86,12 +87,17 @@ This is a work in progress. Suggested improvements are welcomed.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Kashmiri Phonetic</Name>
       <ID>kashmiri_phonetic</ID>
-      <Version></Version>
+      <OSKFont>..\..\..\..\release\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
         <Language ID="ks">Kashmiri</Language>
       </Languages>
