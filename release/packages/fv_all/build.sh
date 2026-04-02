@@ -94,7 +94,6 @@ function do_build_kmp() {
     # Load relevant fields from the .kps file
 
     mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
-    # Keyman Developer 18.0+ no longer using keyboard name or keyboard version in .kps files (#13600)
     bcp47=${kpsdata[0]}
     langname=${kpsdata[1]}
     oskFont=${kpsdata[2]}
