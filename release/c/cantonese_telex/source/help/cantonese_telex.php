@@ -6,18 +6,18 @@
 ?>
 
 <p>
-  Cantonese Telex keyboard for the Universal Version Script of the National Language for Cantonese Việt Ngữ Quóc Ngữ Țị Thung dụng Bản粵語國語字通用版
+  Cantonese Telex keyboard for the Universal Version Script of the National Language for Cantonese Việt Ngữ Quóc Ngữ Țụ̆ Thung dụng Bản粵語國語字通用版
 </p>
 <p>粵語國語字係一種拉丁化嘅粵語文字，意在發展粵語表音文字，縮短粵文學習同書寫時間，增強粵語使用者之間嘅凝聚力同自我認同<p>
 <p>粵語國語字通用版本集合咗各種粵語口音嘅特點，形成咗一種能夠體現並且描述各種粵語口音嘅粵語表音文字，又減低咗同音字現象嘅影響，為唔同地區唔同口音嘅粵語使用者提供咗一種通用嘅書面文字</p> 
-  <p> Việt-Ngữ Quóc-Ngữ-Țị hệ yât chủng Lai-đinh-hóa ké Việt-Ngữ mằn-țị, ý-țọi phát-triển Việt Ngữ biểu-yâm mằn-țị, suc-đoản Việt-Mằn học-țập thùng sư-ŧẻ sị-kan, țăng-khường Việt-Ngữ sỉ-dụng-chẻ chi-kan ké ngình-țự-lịch thùng țị-ngõ nhận-thùng</p>
- <p>Việt-Ngữ Quóc-Ngữ-Țị Thung-dụng Bản-Bổn țập-hập chỏ cóc-chủng Việt-Ngữ hẩu-yâm ké đặc-điểm, hình-sình chỏ yât chủng nằng-cấu thể-hiện bính-xẻ miều-suất cóc-chủng Việt-Ngữ hẩu-yâm ké Việt-Ngữ biểu-yâm mằn-țị, ựu kảm-đê chỏ thùng-yâm-xì ké yỉnh-hưởng, vỵ m̀ thùng đỵ-khư m̀ thùng hẩu-yâm ké Việt-Ngữ sỉ-dụng-chẻ thề-cung chỏ yât chủng thung-dụng ké sư-miện mằn-țị</p>
+  <p> Việt-Ngữ Quóc-Ngữ-Țụ̆ hệ yât chủng Lai-đinh-hóa ké Việt-Ngữ mằn-țụ̆, ý-țọi phát-triển Việt Ngữ biểu-yâm mằn-țụ̆, suc-đuỏn Việt-Mằn học-țập thùng sư-ŧẻ sì-kan, țăng-khường Việt-Ngữ sŭ̉-dụng-chẻ chi-kan ké ngình-țự-lịch thùng țụ̆-ngõ nhịnh-thùng</p>
+ <p>Việt-Ngữ Quóc-Ngữ-Țụ̆ Thung-dụng Bản-Bủn țập-họp chỏ cóc-chủng Việt-Ngữ hẩu-yâm ké đặc-điểm, hình-sình chỏ yât chủng nằng-cấu thể-hiện bính-xẻ miều-suất cóc-chủng Việt-Ngữ hẩu-yâm ké Việt-Ngữ biểu-yâm mằn-țụ̆, dựu kảm-đê chỏ thùng-yâm-xŭ̀ ké Ỉnh-hưởng, vỵ m̀ thùng đỵ-khư m̀ thùng hẩu-yâm ké Việt-Ngữ sŭ̉-dụng-chẻ thề-cung chỏ yât chủng thung-dụng ké sư-miện mằn-țụ̆</p>
   <p> Chữ Quốc Ngữ tiếng Quảng Đông là một loại chữ viết La-tinh hóa của tiếng Quảng Đông, nhằm mục đích phát triển chữ viết biểu âm của tiếng Quảng Đông, giảm bớt thời gian học và viết tiếng Quảng Đông, nâng cao sức hướng tâm và khẳng định căn cước của những người sử dụng tiếng Quảng Đông</p>
 <p>Chữ Quốc Ngữ tiếng Quảng Đông thông dụng đã tổng hợp đặc trưng của các loại giọng của tiếng Quảng, hình thành một chữ viết biểu âm có thể thể hiện và mô tả các loại giọng của tiếng Quảng, cũng bớt ảnh hưởng của hiện tượng từ đồng âm, cho những người nói các giọng của tiếng Quảng Đông ở khắp nơi một hệ thống chữ viết thung dụng </p>
   <p> The script of national language for Cantonese is a romanized Cantonese script aimed at developing a phonetic writing system for Cantonese, reduce the time of learning and writing of Cantonese, while strengthening the cohesion and self-identity among Cantonese speakers.</p>
   <p> The universal version of the script of national language for Cantonese combine the character of various accents of Cantonese, forms a phonetic writing system for Cantonese which demonstrates and describe various of Cantonese accents, and reduced the impact of homophone, provides a common written system for Cantonese speakers in different area with different accent.</p>
 
-  <h1>字母表 alphabet</h1>
+  <h1>字母表 Alphabet</h1>
   <table>
  <tbody>
  <tr>
@@ -175,7 +175,7 @@
    <td>nh</td>
    <td>/</td>
    <td>nhơ</td>
-   <td>[ȵ]</td>
+   <td>[ȵ] [ŋ]</td>
  </tr>
    </tr>
    <tr>
@@ -237,7 +237,7 @@
    <tr>
    <td>t</td>
    <td>thi</td>
-   <td>/</td>
+   <td>tơ</td>
    <td>[tʰ] [t]</td>
  </tr>
    </tr>
@@ -272,7 +272,7 @@
    <tr>
    <td>tr</td>
    <td>/</td>
-   <td>chi-tổ-sinh-mỗ</td>
+   <td>chi-tổ-sinh-mỗ知組聲母</td>
    <td>[ʧ] [ʧʰ] [ʨ] [ʨʰ]</td>
  </tr>
    <tr>
@@ -304,9 +304,9 @@
  </tr>
    </tr>
    <tr>
-   <td>ṳ</td>
+   <td>ŭ</td>
    <td>/</td>
-   <td>ṳ</td>
+   <td>ŭ</td>
    <td>[ɿ]</td>
  </tr>
     <tr>
@@ -320,7 +320,7 @@
    <td>v</td>
    <td>vi</td>
    <td>vơ</td>
-   <td>[ʋ] [w]</td>
+   <td>[ʋ] [w] [v]</td>
  </tr>
    </tr>
    <tr>
@@ -398,9 +398,42 @@
  <h1>音韻表 phonologic map</h1>
  <p> 建議以下嘅粵語國語字音韻表打字</p>
  <p> The suggested form of spelling of Cantonese Romanization</p>
- 
- <h1>韻首 Phụ Âm consonants</h1>
- <img src='consonants.png' alt='Keyboard Layout'>
+<h1>韻首consonants</h1>
+<table>
+  <tr>
+    <th>script</th>
+    <th>IPA</th>
+    <th>examples</th>
+  </tr>
+  <tr><td>b</td><td>[p]</td><td>巴</td></tr>
+  <tr><td>p</td><td>[pʰ]</td><td>怕</td></tr>
+  <tr><td>m</td><td>[m]</td><td>媽</td></tr>
+  <tr><td>ph/f</td><td>[f]</td><td>花</td></tr>
+  <tr><td>đ/t</td><td>[t]</td><td>打</td></tr>
+  <tr><td>th</td><td>[tʰ]</td><td>草</td></tr>    
+  <tr><td>n</td><td>[n]</td><td>那</td></tr>
+  <tr><td>l</td><td>[l]</td><td>啦</td></tr>
+  <tr><td>k/c</td><td>[k]</td><td>家</td></tr>  
+  <tr><td>kh</td><td>[kʰ]</td><td>卡</td></tr>
+  <tr><td>ng</td><td>[ŋ]</td><td>牙</td></tr>
+  <tr><td>nh</td><td>[ȵ]</td><td>廿</td></tr>
+  <tr><td>h</td><td>[h]</td><td>蝦</td></tr>
+  <tr><td>qu</td><td>[kʷ]</td><td>瓜</td></tr>   
+  <tr><td>khu/kho</td><td>[kʰʷ]</td><td>誇</td></tr>   
+  <tr><td>hu/ho</td><td>[hʷ]</td><td>黃</td></tr>   
+  <tr><td>v</td><td>[ʋ]</td><td>話</td></tr>
+  <tr><td>u/o</td><td>[ʔw]</td><td>蛙</td></tr>  
+  <tr><td>ch</td><td>[ʨ]</td><td>渣</td></tr>
+  <tr><td>ț</td><td>[ʦ]</td><td>早</td></tr>
+  <tr><td>x</td><td>[ʨʰ]</td><td>叉</td></tr>
+  <tr><td>tx/țh</td><td>[ʦʰ]</td><td>草</td></tr>  
+  <tr><td>s</td><td>[ɕ]</td><td>沙</td></tr>
+  <tr><td>ŧ</td><td>[θ]</td><td>新</td></tr>
+  <tr><td>d</td><td>[j]</td><td>也</td></tr>
+  <tr><td>y</td><td>[ʔi]</td><td>要</td></tr>  
+  <tr><td>/</td><td>[ø]</td><td>安</td></tr>
+  <tr><td>tr</td><td>[ʈ]</td><td>知</td></tr>
+</table>
  <p>韻首[k]位於元音 e ê i y之前嘅韻首一定使用字母k嚟表示，位於元音â ă u ư ô ơ 之前嘅韻首一定使用字母c表示。如果位於元音a o以前，呢個字嘅古音同儋州話發音入面存在介音i，咁就使用字母k嚟表示。如果呢個音節冇介音i,一係表音詞同外來詞，咁就用字母c嚟表示。</p>
  <p>The consonant [k] must be written as the letter "k" when it appears before the vowels "e, ê, i, y". When it appears before the vowels "â, ă, u, ư, ô, ơ"， it must be written as the letter "c". If it appears before the vowels "a" or "o", and the word’s historical pronunciation and its pronunciation in Damchau dialect contain the medial sound [i], then the letter "k" will be applicated. If the syllable does not have the medial sound [i], or if it is an onomatopoeic word or a loanword, then the letter "c" will be applicated.</p>
   <p>位於字母i ê e之前嘅韻首ng可以轉變為ngh</p>
@@ -423,18 +456,20 @@
  <p>The vowels pronounce "ô" in Canton city and Hong Kong accent while pronounce "ao" in Hoisan accent are spelled as "au"</p>
  <p>喺廣州音入面讀"âu"而係喺台山音入面讀"ưu"嘅韻腹寫成"ưu"</p>
  <p>The vowels pronounce "âu" in Canton city and Hong Kong accent while pronounce "ưu" in Hoisan accent are spelled as "ưu"</p>
- <p>如果"ưu"韻腹前邊嘅韻首係[j], 音調係第一聲、第二聲、第三聲、第五聲、第六聲 咁就唔使寫韻首，直程寫"ưu"就得，譬如話「優ưu」「幼ứu」「友ữu」「右ựu」</p>
- <p>If the consonant before the vowel "ưu" is "y", with the first, second, third, fifth or sixth tone, then this consonant will be omitted, only "ưu" will be spelled, such as 「優ưu」「幼ứu」「友ữu」「右ựu」</p>
+ <p>如果"ưu"韻腹前邊嘅韻首係[j], 音調係第一聲、第二聲、第三聲, 咁就唔使寫韻首，直程寫"ưu"就得，譬如話「優ưu」「幼ứu」</p>
+ <p>If the consonant before the vowel "ưu" is "y", with the first, second, third tone, then this consonant will be omitted, only "ưu" will be spelled, such as 「優ưu」「幼ứu」</p>
  <p>如果一個字嘅南寧音版本嘅韻腹係"ư", 喺廣州音或者台山話入面讀"cui/kui" "khui" "hui" "ngui" "ŧui" "txui" "tui" "nui" "lui"，咁呢啲字嘅通用版正寫係"cư/kư" "khư" "hư" "ngư" "ŧư" "txư" "tư" "nư" "lư"</p>
  <p>If a character's vowel is "ư" in Namning accent, and the character is pronounced "cui/kui" "khui" "hui" "ngui" "ŧui" "txui" "tui" "nui" "lui" in Canton city and Hong Kong accent or Hoisan accent, then the character should be spelled as "cư/kư" "khư" "hư" "ngư" "ŧư" "txư" "tư" "nư" "lư" in the universal version</p>
- <p>南寧音入面嘅[tʃɿ] [tʃʰɿ] [sɿ]嘅拼寫係"chṳ" "xṳ" "sṳ"</p>
- <p>The [tʃɿ] [tʃʰɿ] and [sɿ] sounds in Namning accent are spelled as "chṳ" "xṳ" and "sṳ"</p>
+  <p>元音"ŭ"喺南寧話入面讀[ɿ]，喺廣州音入面讀"i", 喺台山話入面讀"u"</p>
+  <p>Vowel "ŭ" is pronounced as [ɿ] in Namning accent, pronounced as "i" in Canton city accent and "u" in Hoisan accent</p>
  <p>"it"用嚟表示喺廣州音入面發音係[it]，但係喺其他粵語口音入面唔會變成[iɛt]嘅韻腹，例如「必bit」 「秩địt」</p>
 <p>"it" is applied on those vowels which pronounced as [it] in Canton city accent but have no chance to be pronounced as [iɛt] in other accents, such as "必bit" and "秩địt".</p>
- <p>"iu" "im" "in" "ip" "it" 組合用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字，呢啲正寫嘅發音同廣州話嘅"iêu" "iêm" "iên" "iêp" "iêt" 一樣，同台山話嘅"ưu" "âm" "ân" "ât" "âp" 一樣</p>
+ <p>「麵」嘅正寫係"mịn"</p>
+<p>The spelling of "noodles" in Cantonese is "mịn"</p>
+<p>"iu" "im" "in" "ip" "it" 組合用嚟表示發音或者串唔係粵語詞源或者唔係漢越詞詞源嘅詞語，譬如話來自嘅英文嘅借詞「𨋢lip」「天拿水thin-nà sủi」，或者係借用漢字嚟表示詞語嘅發音但係字嘅意思同漢字本身嘅意思無關嘅字，呢啲正寫嘅發音同廣州話嘅"iêu" "iêm" "iên" "iêp" "iêt" 一樣，同台山話嘅"ưu" "âm" "ân" "ât" "âp" 一樣</p>
  <p>The "iu" "im" "in" "ip" "it" combiniation can be used to represent sounds and spell words without Cantonese origin and without sino-cantonese origin, for example loanword from English, such as "lip" and "thin-nà sủi", or in case of using chinese characters to represent sounds or a word but the meaning of the character is not linked with its origin meaning. Their pronunciation is same as "iêu" "iêm" "iên" "iêp" "iêt" in Canton city accent, or "ưu" "âm" "ân" "ât" "âp" in Hoisan accent.</p>
- <p>ê同ay用嚟表示一樣嘅發音[ɐi]，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫語氣詞、少部分嘅非漢字嘅詞語或者係漢字但係係由唔規則嘅音變產生出呢個讀音嘅字，譬如話「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngùy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p>
- <p>"ê" and "ay" are used to represent the same pronunciation [ɐi]. "ê" is used to spell sino-cantonese words and the words with clear etymology that pronounce this vowel in ancient time. "ay" is used to spell few non-sino-cantonese words and sino-cantonese words with irregular sound change, such as「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngùy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p> 
+ <p>ê同ay用嚟表示一樣嘅發音[ɐi]，ê用嚟拼寫漢字詞源嘅字同有明確嘅詞源喺古音入面讀呢個韻腹嘅詞語，ay用嚟拼寫語氣詞、少部分嘅非漢字嘅詞語或者係漢字但係係由唔規則嘅音變產生出呢個讀音嘅字，譬如話「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngụy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p>
+ <p>"ê" and "ay" are used to represent the same pronunciation [ɐi]. "ê" is used to spell sino-cantonese words and the words with clear etymology that pronounce this vowel in ancient time. "ay" is used to spell few non-sino-cantonese words and sino-cantonese words with irregular sound change, such as「哎ấy」「嚟lầy」「睇thẩy」「咪mây」「咪mậy」「米mây」「呢nây」「揮phuy」「僞ngụy」「魏ngụy」「危ngùy」「矮ẩy」「曳dây」「喺hẩy」「使sẩy」「费phấy」「沸phấy」</p> 
  <p>y同ơi用嚟表示一樣嘅發音[ɪi] 一係 [ei]，y用嚟拼寫有明確嘅詞源讀呢個韻腹嘅漢越詞或者純越詞，ơi用嚟拼寫語氣詞、冇韻首嘅單獨嘅音節譬如話「誒ợi」，同少部分嘅非漢字嘅詞語或者係漢字但係由不規則音變產生出嘅讀音，譬如話「嚟lời」，同用嚟表示外來語入面嘅呢個韻腹，譬如話「士多啤梨sị-đo-be-lởi」</p>
  <p>"y" and "ơi" are used to represent the same pronunciation [ɪi] or [ei]. "y" is used to spell native cantonese words and sino-cantonese words with clear etymology that should pronounce this vowel. "ơi" is used to spell the vowel without consonant, such as 「誒ợi」, and few native cantonese words and sino-cantonese words with irregular sound change, such as「嚟lời」, and representing this vowel in borrowed words, such as「士多啤梨sị-đo-be-lởi」</p>
  <p>"oai"用嚟表示語氣詞「㗏」[ʔwaːj]</p>
@@ -475,39 +510,134 @@
  <p>The spelling "iêng" "eng" has the same phoneme with "ênh" sound, the spelling "iêc" "ek" has the same phoneme with "êc" sound</p>
  <p>使用正寫"iong"同韻腹"ương"嘅音位一樣，正寫"iok"同韻腹"ươc"嘅音位一樣</p>
  <p>The spelling "iong" has the same phoneme with "ương" sound, the spelling "iok" has the same phoneme with "ươc" sound</p>
- <p>如果一個韻腹喺廣州話入面嘅發音係[yn]，喺台山話入面嘅發音係[un]，咁呢個韻腹用"uyên"表示，例如「聯luyền」。如果韻腹嘅前邊冇其他韻首，聲調係4、5、6聲調嘅話，呢個字就寫成"viền" "viễn" 一係 "viện"。</p>
-    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [un] in Hoisan dialect，This vowel will be written as "uyên", such as "聯luyền" If there is no any other consonants before the vowle, and the tone is forth, fifth and sixth tone, the syllable is written as "viền" "viễn" or "viện".</p>
+ <p>如果一個韻腹喺廣州話入面嘅發音係[yn]，喺台山話入面嘅發音係[un]，咁呢個韻腹用"uyên"表示，例如「聯luyền」</p>
+    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [un] in Hoisan dialect，This vowel will be written as "uyên", such as "聯luyền"</p>
  <p>如果一個字嘅韻腹喺廣州話入面嘅發音係[yn]又係[ɵn]，喺台山話入面嘅發音係[un]，咁呢個韻腹用"ôn"表示，例如「孫ŧôn」</p>
     <p>If a vowel of a word is pronounced as [yn] and [ɵn] in Canton city dialect，and pronounced as [uɔn] in Hoisan dialect，This vowel will be written as "ôn", such as "孫ŧôn"</p>
-     <p>如果一個韻腹喺廣州話入面嘅發音係[yn]，喺台山話入面嘅發音係[uɔn]，咁呢個韻腹用"oan"表示。</p>
-    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [uɔn] in Hoisan dialect，This vowel will be written as "oan", such as "團thoàn"</p>
-<p>如果一個韻腹喺廣州話入面嘅發音係[yt]，喺台山話入面嘅發音係[ut]，咁呢個韻腹用"uyêt"表示，例如「説suyết」。如果"uyêt"嘅前邊冇其他韻首，聲調係6聲調嘅話，就寫成"việt"。</p>
-    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [un] in Hoisan dialect，This vowel will be written as "uyêt", such as "説suyết" If there is no any other consonants before the vowle, and the tone is sixth tone, the syllable is written as "việt".</p>
-<p>如果一個韻腹喺廣州話入面嘅發音係[yt]，喺台山話入面嘅發音係[uɔt]，咁呢個韻腹用"oat"表示，例如「脱thoát」。</p>
-  <p>If a vowel is pronounced as [yt] in Canton city dialect，and pronounced as [uɔt] in Hoisan dialect，This vowel will be written as "oat", such as "脱thoát"</p>
+     <p>如果一個韻腹喺廣州話入面嘅發音係[yn]，喺台山話入面嘅發音係[uɔn]，咁呢個韻腹用"uon"表示。</p>
+    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [uɔn] in Hoisan dialect，This vowel will be written as "uon", such as "團thuòn"</p>
+<p>如果一個韻腹喺廣州話入面嘅發音係[yt]，喺台山話入面嘅發音係[ut]，咁呢個韻腹用"uyêt"表示，例如「説suyết」。</p>
+    <p>If a vowel is pronounced as [yn] in Canton city dialect，and pronounced as [un] in Hoisan dialect，This vowel will be written as "uyêt", such as "説suyết".</p>
+<p>如果一個韻腹喺廣州話入面嘅發音係[yt]，喺台山話入面嘅發音係[uɔt]，咁呢個韻腹用"uot"表示，例如「脱thuót」。</p>
+  <p>If a vowel is pronounced as [yt] in Canton city dialect，and pronounced as [uɔt] in Hoisan dialect，This vowel will be written as "uot", such as "脱thuót"</p>
  <p>如果一個韻腹喺廣州話入面嘅發音係[ɐn]，喺台山話入面嘅發音係[un]，咁呢個韻腹用"ăn"表示。例如「文mằn」</p>
   <p>If a vowel is pronounced as [ɐn] in Canton city dialect，and pronounced as [un] in Hoisan dialect，This vowel will be written as "ăn", such as "文mằn"</p>
- <p>如果一個韻腹喺廣州話入面嘅發音係[un]，喺台山話入面嘅發音係[uɔn]，咁呢個韻腹用"on"表示。例如「門mòn」</p>
+ <p>如果一個韻腹喺廣州話入面嘅發音係[un]，喺台山話入面嘅發音係[uɔn]，咁呢個韻腹用"un"表示。例如「門mùn」</p>
   <p>If a vowel is pronounced as [un] in Canton city dialect，and pronounced as [uɔn] in Hoisan dialect，This vowel will be written as "on", such as "門mòn"</p>
   <p>如果一個韻腹喺廣州話入面嘅發音係[ɐt]，喺台山話入面嘅發音係[ut]，咁呢個韻腹用"ăt"表示。例如「不băt」</p>
     <p>If a vowel is pronounced as [ɐt] in Canton city dialect，and pronounced as [ut] in Hoisan dialect，This vowel will be written as "ăt", such as "不băt"</p>
- <p>如果一個韻腹喺廣州話入面嘅發音係[ut]，喺台山話入面嘅發音係[uɔt]，咁呢個韻腹用"ot"表示。例如「撥bọt」</p>
+ <p>如果一個韻腹喺廣州話入面嘅發音係[ut]，喺台山話入面嘅發音係[uɔt]，咁呢個韻腹用"ut"表示。例如「撥bụt」</p>
   <p>If a vowel is pronounced as [ut] in Canton city dialect, and pronounced as [uɔt] in Hoisan dialect，This vowel will be written as "ot", such as "撥bọt"</p>
-  <p>"ưng"用嚟表示[əŋ]，"ưc"用嚟表示[ək]</p>
-    <p>"ưng" represents [əŋ]，"ưc" represents [ək]</p>
-      <p>"ơn"用嚟表示[ən]</p>
+  <p>如果一個音節嘅廣州音發音係[jyn]，台山話發音又係[juɔn], 會有「uyên鴛」「duyên鳶」「uon冤」「uyển婉」「viền員袁」「duyền緣鉛」「huòn丸完」「viễn遠」「viện院」等等唔同嘅正寫</p>
+    <p>If a syllable is pronounced as [jyn] in Canton city accent and pronounced as [juɔn] in Hoisan accent, the spellings will be "uyên鴛" "duyên鳶" "uon冤" "uyển婉" "viền員袁" "duyền緣鉛" "huòn丸完" "viễn遠" "viện院" etc.</p>
+  <p>如果一個音節嘅廣州音發音係[jyt]，台山話發音又係[juɔt], 會有「việt越粵」「duyệt閲悦」「uyết乙」「uót曰」「duật聿」等等唔同嘅正寫</p>
+  <p>If a syllable is pronounced as [jyt] in Canton city accent and pronounced as [juɔt] in Hoisan accent, the spellings will be "việt越粵" "duyệt閲悦" "uyết乙" "uót曰" "duật聿" etc.</p>
+  <p>"ơng"用嚟表示[əŋ]，"ơc"用嚟表示[ək]</p>
+    <p>"ơng" represents [əŋ]，"ơc" represents [ək]</p>
+    <p>"ơn"用嚟表示[ən]</p>
     <p>"ơn" represents [ən]</p>
-  <p>"uyn"用嚟表示[yn]，"uyt"用嚟表示[yt]</p>
-  <p>"uyn" represents [yn]，"uyt" represents [yt]</p>
+  <p>"ưn"用嚟表示[yn]，"ưt"用嚟表示[yt]</p>
+  <p>"ưn" represents [yn]，"ưt" represents [yt]</p>
   <p>"uôi"用嚟表示[uɔi] [uəi]</p>
     <p>"uôi" represents [uɔi] and [uəi]</p>
  <p>韻尾字母k同韻尾字母c ch嘅作用一樣</p>
  <p>The end consonant letter "k" has the same effect as the end consonant letter "c" and "ch"</p>
- <h1>音調 Thanh Điệu tones</h1>
- <img src='tones.png' alt='Keyboard Layout'>
+ <h1>音調 tones</h1>
+<table>
+ <tbody>
+ <tr>
+   <th>tone name</th>
+   <th>tone mark</th>
+   <th>tone value</th>
+  <th>example</th>
+  <th>triggering key</th>
+    <th>number mark</th>
+ </tr>
+ <tr>
+   <td>unvoiced flat陰平/陰去</td>
+   <td>á</td>
+   <td>˥ / ˥˧</td>
+   <td>分phân</td>
+  <td>/</td>
+  <td>1</td>
+  </tr>
+ <tr>
+   <td>unvoiced rising陰上</td>
+   <td>ả</td>
+   <td>˧˥</td>
+   <td>粉phẩn</td>
+   <td>r</td>
+   <td>2</td>
+ </tr>
+  <tr>
+   <td>unvoiced falling陰平/陰去</td>
+   <td>á</td>
+   <td>˧</td>
+   <td>瞓phấn</td>
+  <td>s</td>
+  <td>3</td>
+  </tr>
+ <tr>
+   <td>voiced flat陽平</td>
+   <td>à</td>
+   <td>˩ / ˨˩</td>
+   <td>焚phần</td>
+   <td>f</td>
+   <td>4</td>
+ </tr>
+  <tr>
+   <td>voiced rising陽上</td>
+   <td>ã</td>
+   <td>˩˧ / ˨˧</td>
+   <td>奮phẫn</td>
+   <td>x</td>
+   <td>5</td>
+ </tr>
+   <tr>
+   <td>voiced entering陽去</td>
+   <td>ạ</td>
+   <td>˨</td>
+   <td>份phận</td>
+   <td>j</td>
+   <td>6</td>
+ </tr>
+  <tr>
+   <td>high unvoiced entering高陰入</td>
+   <td>a</td>
+   <td>˥</td>
+   <td>忽phât</td>
+   <td>/</td>
+   <td>1</td>
+ </tr>
+  <tr>
+   <td>low unvoiced entering低陰入</td>
+   <td>á</td>
+   <td>˧</td>
+   <td>發phát</td>
+   <td>s</td>
+   <td>3</td>
+ </tr>
+   <tr>
+   <td>high voiced entering高陽入</td>
+   <td>ả/ã</td>
+   <td>˧˥</td>
+   <td>甴țảt</td>
+   <td>r/x</td>
+   <td>2/5</td>
+ </tr>
+    <tr>
+   <td>low voiced entering低陽入</td>
+   <td>ạ</td>
+   <td>˨</td>
+   <td>佛phật</td>
+   <td>j</td>
+   <td>6</td>
+ </tr>
+ </tbody>
+</table>
 
 </p>
-<p>Specific Alphabet mẫu tự đặc biệt 特別字母</p>
+<p>Specific Alphabet 特別字母</p>
 <table>
  <tbody>
  <tr>
@@ -558,10 +688,10 @@
    <td>đo多</td>
  </tr>
    <tr>
-   <td>ṳ</td>
+   <td>ŭ</td>
    <td>iw</td>
    <td>si<strong>w</strong></td>
-   <td>sṳ師[sɿ]</td>
+   <td>sŭ師</td>
  </tr>
    <tr>
    <td>ŧ</td>
@@ -572,85 +702,65 @@
     <tr>
    <td>ț</td>
    <td>tt</td>
-   <td>t<strong>t</strong>i</td>
-   <td>ți資</td>
+   <td>t<strong>t</strong>iw</td>
+   <td>țŭ資</td>
  </tr>
  </tbody>
 </table>
 
 <p>tone rules quy tắc thanh điệu 音調規則</p>
  <p> 對應粵拼嘅第一聲唔使打，第二聲打r，第三聲打s，第四聲打f，第五聲打x，第六聲打j </p>
- <p> tone 1 for nothing, tone 2 = r, tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j </p>p>
+ <p> tone 1 for nothing, tone 2 = r, tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j </p>
+
 <h2>Tonal diacritics</h2>
 
 <table>
  <tbody>
    <tr>
-     <th>Tone</th>
+     <th>Tone Marks</th>
      <th>Keys added to syllable</th>
      <th>Sample input</th>
      <th>Sample output
      </th>
    </tr>
    <tr>
-     <td>1(high level)</td>
+     <td>țiêm (first tone)</td>
      <td></td>
      <td>cau<strong></strong></td>
      <td>cau高</td>
    </tr>
    <tr>
-     <td>2 (high rising)</td>
+     <td>đẩu (second tone)</td>
      <td>r</td>
      <td>hau<strong>r</strong></td>
      <td>hảu好
       </td>
    </tr>
    <tr>
-     <td>3 (mid level)</td>
+     <td>khóng (third tone)</td>
      <td>s</td>
      <td>huw<strong>s</strong></td>
      <td>hứ去
      </td>
    </tr>
    <tr>
-     <td>4 (low falling)</td>
+     <td>xầm (forth tone)</td>
      <td>f</td>
      <td>xa<strong>f</strong></td>
      <td>xà茶
      </td></tr>
    <tr>
-     <td>5 (low rising)</td>
+     <td>ngõng (fifth tone)</td>
      <td>x</td>
      <td>ma<strong>x</strong></td>
      <td>mã馬
      </td>
    </tr>
    <tr>
-     <td>6 (low falling)</td>
+     <td>hạ (sixth tone)</td>
      <td>j</td>
      <td>hee<strong>j</strong></td>
      <td>hệ係
-     </td>
-   </tr>
-   <tr>
-     <td>7 (high entering)</td>
-     <td></td>
-     <td>yaat</td>
-     <td>yât一
-     </td>
-   </tr>
-   <tr>
-     <td>8 (middle entering)</td>
-     <td>s</td>
-     <td>phat<strong>s</strong></td>
-     <td>phát發
-     </td>
-   </tr>
-   <tr>
-     <td>9 (low entering)</td>
-     <td>j</td>
-     <td>phat<strong>j</strong></td>
-     <td>phạt罰
      </td>
    </tr>
  </tbody>
@@ -682,7 +792,7 @@
   <p>The acronym of "vần vần" is "v.v."</p>
   <p>有三個字或四個字嘅男性姓名嘅第二個字「文mằn」字嘅縮寫係"M."</p>
   <p>The acronym of the second syllable of a male name with 3 syllables or 4 syllables "文mằn" is "M."</p>
-  <p>如果某一個音節歷史上由兩個音節演化然後合併，咁喺呢個音節嘅韻首同韻腹中間可以加入一個撇"’"，譬如話自"mât-yẽ乜嘢"變成嘅"m’e咩" 自"nhị-sập二十"變成嘅"nh’ạ廿" 自"ŧam-sập三十"變成嘅"ŧ’a卅" 自"m̀-hệ唔係"變成嘅"m’ệ咪"</p>
+  <p>如果某一個音節歷史上由兩個音節演化然後合併，咁喺呢個音節嘅韻首同韻腹中間可以加入一個撇"’"，譬如話自"mât-dẽ乜嘢"變成嘅"m’e咩" 自"nhị-sập二十"變成嘅"nh’ạ廿" 自"ŧam-sập三十"變成嘅"ŧ’a卅" 自"m̀-hệ唔係"變成嘅"m’ệ咪"</p>
   <p>If one syllable was historically evolved from the merging of two syllables, an apostrophe can be inserted between the front consonant and the vowel. For example, "mât-yẽ乜嘢" evolved to "m’e咩" "nhị-sập二十" evolved to "nh’ạ廿" "ŧam-sập三十" evolved to "ŧ’a卅" "m̀-hệ唔係" evolved to "m’ệ咪" </p>
   <p>其他標點嘅作用同英文同越南文類似</p>
   <p>Other uses of punctuation are similar with English and Vietnamese</p>
@@ -698,18 +808,18 @@
  <p> tap Z key to remove tonations  </p>
 
 
-  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/oatnguquocnguti.yaml">Dictionary for the script of National Language universal version Quóc Ngữ Țị大粤國音字匯－粵語國語字字典總合通用版</a>
+  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/oatnguquocnguti.yaml">Dictionary for the script of National Language universal version Quóc Ngữ Țụ̆大粤國音字匯－粵語國語字字典總合通用版</a>
   <p></p>
-  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for the script of National Language for Hong Kong and Canton city accent Quóc Ữ Chị粵語國語字字典香港同廣州音</a>
+  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchiquongchauyam.dic.yaml">Dictionary for the script of National Language for Hong Kong and Canton city accent Quóc Dữ Chị粵語國語字字典香港同廣州音</a>
   <p></p>
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocnguytihoisanva.dict.yaml">Dictionary for the script of National Language for Hoisanese accent Koc Ngũi Tụ台山話國語字字典</a>
   <p></p>
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocngutihamchauva.yaml">Dictionary for the script of National Language for Yamchow accent Quóc Dĩ Chì粵語國語字字典欽州音</a>
   <p></p>
-  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchinamninhva.yaml">Dictionary for the script of National Language for Namning accent Quóc Ữ Chị粵語國語字字典南寧音</a>
+  <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchinamninhva.yaml">Dictionary for the script of National Language for Namning accent Quóc Dữ Chị粵語國語字字典南寧音</a>
   <p></p>
   <p>粵語國語字通用版本係一種收納咗多種粵語口音發音嘅粵語文字，粵語國語字通用版本嘅使用同粵語國語字嘅廣州音、台山音、南寧音、欽州音等等粵語口音嘅版本嘅使用之間唔衝突</p>
-  <p>Việt-Ngữ Quóc-Ngữ-Țị thung-dụng bản-bổn hệ yât chủng sưu-nạp chỏ đo-chủng Việt-Ngữ hẩu-yâm ké Việt-Ngữ mằn-țị, Việt-Ngữ Quóc-Ngữ-Țị thung--dụng bản-bổn ké sỉ-dụng thùng Việt-Ngữ Quóc-Ngữ-Tị ké Quỏng-Châu yâm, Thòi-San yâm, Nàm-Nình yâm, Hâm-Châu yâm đ.đ. Việt-Ngữ hẩu-yâm ké bản-bỏn ké sỉ-dụng m̀ xung-đột </p>
+  <p>Việt-Ngữ Quóc-Ngữ-Țụ̆ thung-dụng bản-bủn hệ yât chủng sưu-nạp chỏ đo-chủng Việt-Ngữ hẩu-yâm ké Việt-Ngữ mằn-țụ̆, Việt-Ngữ Quóc-Ngữ-Țụ̆ thung-dụng bản-bủn ké sŭ̉-dụng thùng Việt-Ngữ Quóc-Ngữ-Țụ̆ ké Quỏng-Châu yâm, Thòi-San yâm, Nàm-Nình yâm, Hâm-Châu yâm đ.đ. Việt-Ngữ hẩu-yâm ké bản-bủn ké sŭ̉-dụng m̀ xung-đột </p>
   <p>The universal version of Script of Nation Language of Cantonese is a Cantonese script gathered various of Cantonese accents and dialects, the uses of the universal version of Script of Nation Language of Cantonese is not conflict with the use of the Script of Nation Language of Cantonese for cantonese accents, such as Hong Kong and Canton city accent, Hoisan accent, Namning accent and Yamchow accent.</p>
   <p></p>
 <p>範文：南國山河</p>
@@ -719,7 +829,7 @@
 <p>截然定分在天書</p>
 <p>Țiệt Nhiền Định Phân Țọi Thiên Sư</p>
 <p>如何逆虜來侵犯</p> 
-<p>Nhừ Hò Ngịch Lỗ Lòi Txâm Phạn</p>
+<p>Nhừ Hò Ngịch Lỗ Lòi Txâm Phạm</p>
 <p>汝等行看取敗虛</p> 
 <p>Nhữ Đẳng Hành Hón Txử Bại Hư</p>
 
