@@ -1,5 +1,15 @@
 # Mara Keyboard – Change History
 
+## 1.0.4 (2026-04-10)
+--------------------
+- Added comprehensive documentation:
+  - `README.md` with overview, project structure, links, license, and acknowledgements
+  - `INSTALL.md` with installation and uninstallation guides for desktop and mobile
+  - `HISTORY.md` for version tracking and planned updates
+- Updated keyboard source metadata (author, version, copyright)
+- Fixed colon key mapping in visual layout (`;` instead of incorrect mapping)
+- Minor visual and structural improvements
+
 ## 1.0.3 (2026-01-08)
 --------------------
 * Fixed Spacebar (U+0020) not producing spaces
