@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '15.0'
 store(&NAME) 'Sharada Inscript'
-store(&COPYRIGHT) 'Copyright © SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'sharada_inscript.ico'
 store(&VISUALKEYBOARD) 'sharada_inscript.kvks'
@@ -24,7 +24,7 @@ store(DepVowK) [K_E] [K_F] [K_R] [K_G] [K_T] [K_EQUAL] [RALT K_EQUAL] [RALT K_F]
 store(DepVow)  U+111B3 .. U+111BF U+111CE
 
 c            ka     kha        ga    gha         nga          ca        cha             ja    jha         nya             tta       ttha            dda       ddha            nna         ta    tha         da    dha         na    pa    pha         ba    bha         ma    ya        ra    la    lla          va    sha         ssa             sa     ha
-store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] [K_LBRKT]  [SHIFT K_RBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] [K_J] [K_N] [SHIFT K_N] [K_B] [SHIFT K_M] [SHIFT K_COMMA] [K_M] [K_U]
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] [K_LBRKT]  [SHIFT K_LBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] [K_J] [K_N] [SHIFT K_N] [K_B] [SHIFT K_M] [SHIFT K_COMMA] [K_M] [K_U]
 store(Cons)  U+11191 .. U+111B2
 
 
@@ -39,7 +39,7 @@ store(LDigitsK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5
 store(LDigits)  U+0030 .. U+0039
 
 
-store(nul) "JVB{"
+store(nul) "JVB"
 group(main) using keys
 
 + any(DepVowK)  > index(DepVow,1)
@@ -74,4 +74,4 @@ group(main) using keys
  c + [K_EQUAL] > U+2010 c hyphen
  c + [RALT K_EQUAL] > U+002B
  c + [RALT K_PERIOD] > U+2E31
- c + any(nul) > nul
+ + any(nul) > nul

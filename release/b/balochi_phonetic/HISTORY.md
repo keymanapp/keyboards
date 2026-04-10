@@ -1,5 +1,10 @@
 Balochi Phonetic Change History
 ===============================
+
+1.6.3 (2026-03-11)
+----------------
+* Add KbdArab.json and KbdArabLateef for better display
+
 1.6.2 (12 Jun 2024)
 ------------------
 * Added backslash 

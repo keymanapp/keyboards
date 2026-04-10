@@ -9,7 +9,7 @@
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightctrl'>
+<div id='osk' data-states='default shift rightctrl-shift'>
 </div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>

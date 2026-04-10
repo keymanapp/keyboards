@@ -1,7 +1,20 @@
 Hong Kong Change History
 ====================
 
+2.1 (2026-04-06)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
 
+2.0 (2026-02-10)
+----------------
+* added new letters ț ŧ ṳ
+
+1.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
 
 1.1.1 (2025-09-11)
 ----------------

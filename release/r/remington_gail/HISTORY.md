@@ -1,6 +1,11 @@
 Remington GAIL (SIL) Change History
 ====================
 
+1.1 (2026-Jan-15)
+----------------
+* Numpad keys now type in Arabic Numerals (0,1,2..) instead of Indic (०,१,२..)
+* Indic numerals (०,१,२..) are mapped to Right Alt (Altgr)+Numpad keys
+
 1.0 (2023-Apr-20)
 ----------------
 * Move keyboard to release
@@ -15,10 +20,11 @@ Remington GAIL (SIL) Change History
 * Fusion of Hindi Indic Input 3 and APS Corporate 2000+
     - classical Remington-Gail layout strictly followed (with recent corrections highlighted in yellow) for all non-Alt combinations
     - HII3 Alt combinations given preference over APS
-    - unused Alt and AltShift slots given to APS 
-  
+    - unused Alt and AltShift slots given to APS
+
 0.6 (2022-Feb-04)
 ----------------
 * Created by Lorna Evans with significant assistance from Kaanchan Adhikary (Satchidananda), yogaedu.org
 * Added to experimental
+
 

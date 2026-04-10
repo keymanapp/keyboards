@@ -1,0 +1,44 @@
+﻿c sil_gawri generated from template at 2026-01-20 10:45:03
+c with name "NP Gawri (SIL)"
+store(&VERSION) '10.0'
+store(&NAME) 'NP Gawri (SIL)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_gawri.ico'
+store(&VISUALKEYBOARD) 'sil_gawri.kvks'
+store(&LAYOUTFILE) 'sil_gawri.keyman-touch-layout'
+store(&KMW_RTL) '1'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdarab/KbdArab.json'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c numbers
+store(Digits) "0123456789"
+store(DigitsU) U+0660 U+0661 U+0662 U+0663 U+0664 U+0665 U+0666 U+0667 U+0668 U+0669
+
+c Default layer
+store(Default)  "`" \
+                "qwertyuiop[]" \
+                "asdfghjkl;'" \
+                "zxcvbnm,."
+store(DefaultU) U+0674 \
+                U+0642 U+0648 U+0698 U+0631 U+062A U+06CC U+0639 U+063A U+0647 U+067E U+005D U+005B \
+                U+0627 U+0633 U+062F U+0641 U+06AF U+06BE U+062C U+06A9 U+0644 U+061B U+0670 \
+                U+0632 U+0621 U+062E U+0638 U+0628 U+0646 U+0645 U+060C U+002D
+
+c Shifted layer
+store(Shifted)  "~!@#$%^&*()_+" \
+                "QWERTYUIOP{}|" \
+                "ASDFGHJKL" \
+                "ZXCVBNM<>?"
+store(ShiftedU) U+076A "!@#$%^&*)(" U+0640 "+" \
+                U+062B U+0624 U+0691 U+0684 U+0679 U+06D2 U+064F U+0634 U+0639 U+0651 U+06E1 U+0685 U+200C \
+                U+0622 U+0635 U+0688 U+062B U+0636 U+062D U+076B U+0650 U+064E \
+                U+0630 U+0626 U+0686 U+0637 U+065E U+06BA U+076D U+064B U+065B U+061F
+
++ any(Digits)  > index(DigitsU,1)          c Arabic digits
++ any(Default) > index(DefaultU,1)         c Default layer
++ any(Shifted) > index(ShiftedU,1)         c Shifted layer

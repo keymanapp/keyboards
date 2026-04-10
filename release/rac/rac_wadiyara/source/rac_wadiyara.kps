@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -30,7 +30,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Wadiyara</Name>
-    <Copyright URL="">© Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <WebSite URL="https://help.keyman.com/keyboard/rac_wadiyara/1.0/rac_wadiyara.php">https://help.keyman.com/keyboard/rac_wadiyara/1.0/rac_wadiyara.php</WebSite>
     <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali Linguist and
@@ -143,20 +143,27 @@ Rehmat Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Wadiyara</Name>
       <ID>rac_wadiyara</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="kxp-Arab">Wadiyara Koli (Arabic)</Language>
+        <Language ID="kxp">Wadiyara Koli</Language>
       </Languages>
       <Examples>
-        <Example ID="kxp-Arab" Keys="w a d i a r a" Text="وادیارا" Note="Name of language"/>
+        <Example ID="kxp" Keys="w a d i a r a" Text="وادیارا" Note="Name of language"/>
       </Examples>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

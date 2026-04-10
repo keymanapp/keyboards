@@ -13,9 +13,11 @@ The layout contains the entire Unicode Runic Block, including the Franks Casket 
 
 Links
 -----
-Watch <a href=https://www.youtube.com/@LearnRunes>Rune Revival on YouTube</a>.
+Watch <a href=https://www.youtube.com/@LearnRunes>Rune Revival on YouTube</a>. 
 
-For help or to report bugs, please visit the Keyman community forums here: https://community.software.sil.org/>
+Visit <a href=https://runerevival.online>RuneRevival.online</a> to learn Modern English Futhorc.
+
+For help or to report bugs, please visit the Keyman community forums here: https://community.software.sil.org/
 
 Bug Fixes
 -----------

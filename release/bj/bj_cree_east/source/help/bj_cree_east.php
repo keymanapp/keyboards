@@ -2,7 +2,7 @@
   $pagename = 'BJCreeUNI (East) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-	  	.cree {font-family: 'BJCree UNI';}
+	  	.cree {font-family: 'BJCree';}
       .msg-important { color: rgb(238, 0, 0); background-color: rgb(255, 213, 213); border: 2px dashed rgb(238, 0, 0); padding: 8pt 16pt; margin: 8pt 0; display: inline-block; }
 END;
   require_once('header.php');
@@ -29,7 +29,7 @@ END;
   <h4>On Screen Keyboard</h4>
   <p>The On Screen Keyboard view for this keyboard is simply a QWERTY US layout, since the keyboard equivalents are designed to match the Latin characters standard East Cree syllabic chart.</p>
   <h4>Fonts</h4>
-  <p>This keyboard installs with the Unicode Aboriginal Syllabic font <b>BJCree UNI</b>, which offers full support for the characters in East Cree and other related languages.</p>
+  <p>This keyboard installs with the Unicode Aboriginal Syllabic font <b>BJCree</b>, which offers full support for the characters in East Cree and other related languages. Please uninstall the <b>BJCree UNI</b> font before installing this package.</p>
   <aside class='break'>
 
   </section>
