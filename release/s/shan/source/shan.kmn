@@ -7,7 +7,7 @@ store(&MESSAGE) 'Based on tzerngkoang layout found here: https://code.google.com
 store(&VISUALKEYBOARD) 'shan.kvks'
 store(&LAYOUTFILE) 'shan.keyman-touch-layout'
 store(&TARGETS) 'any'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&KEYBOARDVERSION) '1.1.2'
 store(&BITMAP) 'shan.ico'
 begin Unicode > use(main)
 
@@ -211,7 +211,7 @@ group(main) using keys
 + [T_7_s] > "႗"
 + [T_8_s] > "႘"
 + [T_9_s] > "႙"  
-+ [T_9_s] > "႙"  
+c + [T_9_s] > "႙"  
 
 platform('touch') + [K_X] > U+1062
 

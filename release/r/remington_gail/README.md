@@ -1,7 +1,7 @@
 Remington GAIL (SIL) keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------
@@ -30,4 +30,5 @@ Supported Platforms
  * Mobile devices
  * Desktop devices
  * Tablet devices
+
 

@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '2.0.4'
+store(&KEYBOARDVERSION) '2.0.5'
 store(&Name) 'ትግርኛ (Tigrinya)'
 store(&COPYRIGHT) '© Geʾez Frontier Foundation'
 store(&Message) 'This is a Tigrinya language mnemonic input method that applies Ethiopian writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
@@ -80,6 +80,7 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ArabOnes) '23456789'
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
+  store(ethDigits)  '፩፪፫፬፭፮፯፰፱'
   store(arabNumbers) '123456789'
   store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
@@ -140,7 +141,7 @@ store(ጸ_ቤተሰብ) 'ጸጹጺጻጼጾጿ'
 store(ፀ_ቤተሰብ) 'ፀፁፂፃፄፆ!'
 store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
-store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟦!'
+store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟦!'
 
 store(touchVowelsLabialvelar) [T_ዘመደ_ግዕዝ][T_ዘመደ_ካዕብ][T_ዘመደ_ሣልስ][T_ዘመደ_ራብዕ][T_ዘመደ_ኃምስ]
 store(ቈ_ቤተሰብ) 'ቈቍቊቋቌ'
@@ -438,7 +439,7 @@ c upto the order of 100 million
   any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
 
 c enhance this later, look for something that can copy a match over
-  any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
+$keymanonly:   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethDigits,2)
 c ---------------------End Input of Numbers-----------------------------------------------------
 
 + [T_THOUSAND] > '፲፻'

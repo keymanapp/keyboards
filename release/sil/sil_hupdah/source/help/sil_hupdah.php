@@ -1,13 +1,12 @@
 <?php 
   $pagename = 'Hupdah (SIL) Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
 
   $pagestyle = <<< END
         table {
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
         }
         th, td {
             border: 1px solid #ddd;
@@ -28,7 +27,9 @@
         .key-combo {
             font-weight: bold;
         }
-    END
+    END;
+
+    require_once('header.php');
 ?>
 
 <div>

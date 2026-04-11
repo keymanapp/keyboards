@@ -1,12 +1,12 @@
 <?php
   $pagename = 'Ho Latin Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   .touch {width: 40%; }
   .symbol{width: 25px; }
   .keyacute{height: 12px; width: 12px;}
   .key{height: 12px; width: 18px;}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

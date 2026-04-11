@@ -1,15 +1,15 @@
 <?php 
   $pagename = 'Unifon Keyboard Help';
-  $pagetitle = 'Unifon Keyboard Help';
-  // Header we will tidy up later  
+  $pagetitle = $pagename;
   require_once('header.php');
 
 
 ?>
 
+<p style="background-color:Pink;"><b>Note:</b> Please note that this keyboard (and associated font) is using a custom encoding. Because this script is not encoded in Unicode, mobile devices will not include fonts supporting this keyboard. Additionally, on mobile devices the keyboard will only display the correct characters within the Keyman application.</p>
 
-<p style='margin: 16px 0 0 0'>
-This keyboard is designed for the Unifon aphabet. It is using a custom encoding.
+<p>
+This keyboard is designed for the Unifon aphabet.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

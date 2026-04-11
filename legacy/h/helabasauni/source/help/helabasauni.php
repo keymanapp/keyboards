@@ -1,30 +1,29 @@
 <?php /*
   Name:             keyboard_helabasauni
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Helabasa Sinhala Keyboard Help';
   $pagetitle = 'Helabasa Sinhala Keyboard Help';
   $style = 'lang2 {font-size:250%}';
-  
+
   $relatedSites = array("http://www.helabasa.com" => "Sinhala Keyboards Home");
   require_once('header.php');
   ?>
 
-  
+
 <p style='margin:0px'>Keyboard &#169; 2008 MyPC Computer Systems and Tavultesoft</p>
 
 <br/>
@@ -44,7 +43,7 @@
 <h4><a target="_blank" href="chart.pdf"><img border=0 style='vertical-align:bottom' src="<?php echo cdn('img/pdficon_small.gif'); ?>" /></a> Download this documentation in <a target="_blank" href="chart.pdf">PDF format</a>.</h4>
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
@@ -94,7 +93,7 @@ For example, typing <span class='keys'>c</span> will produce the vowel <span cla
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>On the On Screen Keyboard you can see the 40 consonants <span class='lang2' style='font-size:200%'>ක ඛ ග ඝ ඞ හ ච ඡ ජ ඣ ඤ ට ඨ ඩ ඪ ණ ඬ ත ථ ද ධ න ඳ ප ඵ බ භ ම ඹ ය ර ල ව ළ ශ ෂ ස ඦ ඟ ෆ</span>, the vowels <span class='lang2' style='font-size:200%'>අ ආ ඇ ඈ ඉ ඊ උ ඌ ඍ ඎ එ ඒ ‌ඓ ඔ ඕ ඖ    ා ැ ෑ ි ී ු ූ ෘ ෲ ෙ ේ ෛ ො ෝ ෞ ං ඃ </span>, and the <span class='lang2' style='font-size:200%'>් ෴</span> marks.  There are also numbers and punctuation marks.</p>
 
 <p>When you type a consonant and a vowel part, the computer will automatically combine them to make one character.  If you use the arrow keys to move through the text, you only need to press an arrow key once to move past each character.  If you press Delete before (on the left of) a combined consonant and vowel, it will be erased completely, but if you press Backspace after a character, only the vowel part will be erased (even if you typed the vowel before the consonant).
@@ -165,7 +164,7 @@ All the consonants naturally include the vowel sound <span class='highlightExamp
 		<td></td>
 		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'></td><td></td>
 	</tr>
-	
+
 </table>
 
 </div>

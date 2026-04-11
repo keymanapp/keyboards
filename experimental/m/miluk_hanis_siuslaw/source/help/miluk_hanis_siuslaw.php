@@ -11,30 +11,17 @@
 
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
 
-<a href="https://imgur.com/MS0pvhB"><img src="https://i.imgur.com/MS0pvhB.png" title="source: imgur.com" /></a>
-<p>
-  
- Default Keyboard layout. 
-  </p> 
-  
-<a href="https://imgur.com/KnrjSFL"><img src="https://i.imgur.com/KnrjSFL.png" title="source: imgur.com" /></a>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-  <p>
-  Keyboard Layout with ALT-Key held
-  </p>
-    
-<a href="https://imgur.com/r9lGSgo"><img src="https://i.imgur.com/r9lGSgo.png" title="source: imgur.com" /></a>
+<div id='osk-phone' data-states='default numeric'>
+</div>
 
-  <p>
-  Mobile Keyboard Layout
-  </p> 
-  
-<p>
-  For the mobile keyboard, additional characters can be accessed by holding down (AKA longpressing) the different default keys. 
-  </p> 
- 
   <p>
 
   Hold q for: qߴ, qߴw, and qw. 

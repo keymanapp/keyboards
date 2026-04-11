@@ -1,5 +1,10 @@
 # Kayah [Myanmar] (SIL) Keyboard Change History
 
+1.2.2 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
 1.2.1 (2024-12-12)
 ------------------
 * Update Padauk font

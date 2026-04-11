@@ -16,8 +16,8 @@
   History:          02 Nov 2012 - tpbaehr - Create online help from package help.
 */
   $pagename = 'Yorùbá 8 Keyboard Help';
-  $pagetitle = 'Yorùbá 8 Keyboard Help';
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 /* 
 ===========
 ==General==

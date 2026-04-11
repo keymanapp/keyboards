@@ -1,6 +1,26 @@
 cantonese telex Change History
 ====================
 
+4.0.1 (2026-3-20)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
+
+4.0 (2026-2-03)
+----------------
+* added new letters 'ț' 'ŧ' and 'ṳ'
+
+3.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
+
+3.1.1 (2025-09-11)
+----------------
+* added explaination for consonants "f" "d" "z" and "dz"
+* fixed bug in letter generation rules
+
 3.1 (2025-08-20)
 ----------------
 * changed the spelling of "yừ" "yữ" "yự" to "ừ" "ữ" "ự"
@@ -50,3 +70,4 @@ cantonese telex Change History
 1.0 (2024-05-25)
 ----------------
 * Created by cathaylab
+

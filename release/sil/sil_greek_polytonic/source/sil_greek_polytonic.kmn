@@ -36,7 +36,7 @@ c store(&ETHNOLOGUECODE) 'grc ell'
 c store(&LANGUAGE) 'x0408'
 c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.8.5'
+store(&KEYBOARDVERSION) '1.8.6'
 store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
 
 begin Unicode > use(MainU)
@@ -951,17 +951,17 @@ nul any(lbr) any(lbr) any(upVSm) any(up)     + [K_BKSP] > \
 nul any(lbr) any(lbr) any(upVSm) any(up)     + [SHIFT K_BKSP] > \
                 index(lbr,2) index(lbr,3) index(upVSm_Sm,4)
 any(wi) any(upVSm) any(up)                   + [K_BKSP] > \
-    index(wi,1)                           index(upVSm_Sm,2) c _AB + <- _>A
+    context use(backspace-near-start-of-line)                c _AB + <- _>A
 any(wi) any(upVSm) any(up)                   + [SHIFT K_BKSP] > \
-    index(wi,1)                           index(upVSm_Sm,2)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(upVSm) any(up)          + [K_BKSP] > \
-    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)  c _[AB+ <- _[>A
+    context use(backspace-near-start-of-line)                c _[AB+ <- _[>A
 any(wi) any(lbr) any(upVSm) any(up)          + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4) c _[[AB <- _[[>A
+    context use(backspace-near-start-of-line)                c _[[AB <- _[[>A
 any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4)
+    context use(backspace-near-start-of-line)
 
 nul any(upR) any(up)                       + [K_BKSP] > \
                                           outs(upRRo)     c 0RB + <- 0<R
@@ -976,17 +976,17 @@ nul any(lbr) any(lbr) any(upR) any(up)     + [K_BKSP] > \
 nul any(lbr) any(lbr) any(upR) any(up)     + [SHIFT K_BKSP] > \
                 index(lbr,2) index(lbr,3) outs(upRRo)
 any(wi) any(upR) any(up)                   + [K_BKSP] > \
-    index(wi,1)                           outs(upRRo)    c _RB + <- _<R
+    context use(backspace-near-start-of-line)            c _RB + <- _<R
 any(wi) any(upR) any(up)                   + [SHIFT K_BKSP] > \
-    index(wi,1)                           outs(upRRo)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(upR) any(up)          + [K_BKSP] > \
-    index(wi,1) index(lbr,2)              outs(upRRo)    c _[RB+ <- _[<R
+    context use(backspace-near-start-of-line)            c _[RB+ <- _[<R
 any(wi) any(lbr) any(upR) any(up)          + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2)              outs(upRRo)
+    context use(backspace-near-start-of-line)
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)    c _[[RB <- _[[<R
+    context use(backspace-near-start-of-line)            c _[[RB <- _[[<R
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
-    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)
+    context use(backspace-near-start-of-line)
 
                     + any(K_low)      > index(low,1)
                     + any(K_up)       > index(up,1)
@@ -999,6 +999,44 @@ c Illegal keys
             + any(K_ill)        > beep
 
 
+
+c ----------------------------------------------------------------------------
+
+
+group(backspace-near-start-of-line) using keys
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+
+any(upVSm) any(up)                   + [K_BKSP] > \
+                              index(upVSm_Sm,1) c _AB + <- _>A
+any(upVSm) any(up)                   + [SHIFT K_BKSP] > \
+                              index(upVSm_Sm,1)
+any(lbr) any(upVSm) any(up)          + [K_BKSP] > \
+    index(lbr,1)              index(upVSm_Sm,2)  c _[AB+ <- _[>A
+any(lbr) any(upVSm) any(up)          + [SHIFT K_BKSP] > \
+    index(lbr,1)              index(upVSm_Sm,2)
+any(lbr) any(lbr) any(upVSm) any(up) + [K_BKSP] > \
+    index(lbr,1) index(lbr,2) index(upVSm_Sm,3) c _[[AB <- _[[>A
+any(lbr) any(lbr) any(upVSm) any(up) + [SHIFT K_BKSP] > \
+    index(lbr,1) index(lbr,2) index(upVSm_Sm,3)
+
+
+any(upR) any(up)                   + [K_BKSP] > \
+                              outs(upRRo)    c _RB + <- _<R
+any(upR) any(up)                   + [SHIFT K_BKSP] > \
+                              outs(upRRo)
+any(lbr) any(upR) any(up)          + [K_BKSP] > \
+    index(lbr,1)              outs(upRRo)    c _[RB+ <- _[<R
+any(lbr) any(upR) any(up)          + [SHIFT K_BKSP] > \
+    index(lbr,1)              outs(upRRo)
+any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
+    index(lbr,1) index(lbr,2) outs(upRRo)    c _[[RB <- _[[<R
+any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
+    index(lbr,1) index(lbr,2) outs(upRRo)
 
 
 c ----------------------------------------------------------------------------

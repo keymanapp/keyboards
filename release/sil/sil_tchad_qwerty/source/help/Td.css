@@ -167,10 +167,6 @@ tr:nth-child(even) td {
     0 0 9px #000;
 }
   
-.keyboard {
-  font-size: 20px;
-  white-space: nowrap;
-}
 .keyboard--row {
   display: block;
   height: 3em;
@@ -233,6 +229,14 @@ tr:nth-child(even) td {
 }
 
 /* Light keyboard */
+
+.keyboard--light {
+  font-size: 20px;
+  white-space: nowrap;
+  max-width: 900px; /* largeur maximale */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
 
 .keyboard.keyboard--light .keyboard--row > * {
   background: #ccc;

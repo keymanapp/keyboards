@@ -1,21 +1,20 @@
 <?php /*
   Name:             keyboard_ekwnewtwuni
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
-  require_once('servervars.php');
   $pagename = 'புதிய தட்டெழுதி | New Typewriter Keyboard Help';
   $pagetitle = $pagename;
   $style = '.lang2 {font-size:130%}';
@@ -47,7 +46,7 @@ For example, the standalone vowel <span class='highlightExample'>இ</span> is e
 </p>
 
 <p>
-Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants. 
+Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants.
 </p>
 
 </div>
@@ -82,7 +81,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>The visible keyboard layout consists of the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, the five Grantha consonants and SRii<span class='lang2'>ஸ ஷ ஜ ஹ க்ஷ ஸ்ரீ</span>, eleven vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ</span>, a range of vowel components and combinants characters, and the Pulli <span class='lang2'>்</span> and Aytham <span class='lang2'>ஃ</span> marks, as well as various punctuation marks.  The majority of characters are typed using a combination of keystrokes.</p>
 
 <p>Although many Tamil characters are typed using separate keys for consonants and components, the characters that appear on screen will be combinants, which the computer sees as a single character.  This means that while two (or more) keystrokes are required to display most consonant-vowel combinants, when you use the arrow keys to move the cursor through the text, only a single keystroke is needed to move past each character.  Moving the cursor to the left of a combinant character and pressing Delete will erase the whole character, but if you move the cursor to the right of a combinant and press Backspace, only the last-typed component will be erased.
@@ -91,7 +90,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <h4>Vowels and Pulli Marks</h4>
 <p>The standalone vowel characters which are on the keyboard will produce that character and will not combine with consonants.  Long vowels have their own keys.  Vowel-consonant combinant characters are entered either by typing a specific key for that combinant or by typing the consonant and vowel components separately.</p>
 
-<p>Vowel components that combine with consonants are typed either before or after the consonants, depending on whether the vowel component appears to the left or right of the consonant component.  
+<p>Vowel components that combine with consonants are typed either before or after the consonants, depending on whether the vowel component appears to the left or right of the consonant component.
 </p>
 <p>
 Because the consonants contain the implicit vowel <span class='highlightExample'>அ</span>, to produce a pure consonant it is necessary to add the Pulli mark <span class='lang2'>்</span> by typing a semicolon <span class='keys'>;</span> immediately after the consonant.  In every case, a consonant-Pulli mark combinant behaves the same way as a consonant-vowel combinant when you use the arrow, Backspace and Delete keys.  Any vowel component that is typed immediately after typing the Pulli mark will not be combined with the consonant.  Also, typing a semicolon after a standalone vowel or a space will produce a semicolon, not the Pulli mark.
@@ -102,7 +101,7 @@ Because the consonants contain the implicit vowel <span class='highlightExample'
 <h4>The SRii Character <img src='sri.png' style='vertical-align:bottom' /></h4>
 <p>
 This character is entered by typing <span class='keys'>_</span> (Shift+Underscore or Shift+Hyphen).  Currently, some browsers do not display this character correctly.
-</p>	
+</p>
 </div>
 
 <h4>Keystroke Examples</h4>

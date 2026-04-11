@@ -1,6 +1,23 @@
 vietnam Change History
 ====================
 
+2.0.4 (2025-03-05)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyt" "uyc" "uyp" vowel
+* modified the "m" and "m" with ngã accent to "m̃" and "M̃" (U+0342 to U+0303)
+* added 'ț' 'Ț' "ŧ' 'Ŧ' 'ŭ' 'Ŭ' letters
+
+2.0.3 (2025-10-06)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyu" vowel
+
+2.0.2 (2025-09-12)
+----------------
+* Updated by cathaylab
+* fixing bug of keyboard codes
+
 2.0.1 (2025-07-12)
 ----------------
 * Updated by cathaylab

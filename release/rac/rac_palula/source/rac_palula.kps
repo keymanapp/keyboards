@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>welcome\RAC.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Rachitrali-Palula</Name>
-    <Copyright URL="">© 2018 Rehmat Aziz Chitrali</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
-    <Description>This keyboard was developed by Rehmat Aziz Chitrali linguist and
+    <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali linguist and
 Researcher at Khowar Academy Chitral Pakistan for keyboarding the Palula
 language in the Arabic Script. You can use this keyboard with any
 extended Arabic script Unicode font. If you have problems using the
@@ -43,18 +44,6 @@ E-mail: rachitrali\@yahoo.com</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\build\rac_palula.js</Name>
       <Description>File rac_palula.js</Description>
       <CopyLocation>0</CopyLocation>
@@ -71,30 +60,6 @@ E-mail: rachitrali\@yahoo.com</Description>
       <Description>Keyboard Rachitrali-Palula</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>welcome\RAC.jpg</Name>
@@ -114,21 +79,76 @@ E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew_README.txt</Name>
+      <Description>File ScheherazadeNew_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Bold.ttf</Name>
+      <Description>Font Scheherazade New Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Medium.ttf</Name>
+      <Description>Font Scheherazade New Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</Name>
+      <Description>Font Scheherazade New</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Palula</Name>
       <ID>rac_palula</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="phl-Arab">Phalura (Arabic)</Language>
+        <Language ID="phl">Phalura</Language>
       </Languages>
       <Examples>
-        <Example ID="phl-Arab" Keys="p a l w l o" Text="پالولہ" Note="Name of language" />
+        <Example ID="phl" Keys="p a l w l o" Text="پالولہ" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

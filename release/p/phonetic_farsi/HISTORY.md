@@ -1,6 +1,11 @@
 Phonetic Farsi Change History
 ====================
 
+2.0.2 (2025-7-23)
+----------------
+- Update OSK for better display
+- Add RTL tag
+
 2.0.1 (2025-7-23)
 ----------------
 - Updated contact details and copyright holder alias

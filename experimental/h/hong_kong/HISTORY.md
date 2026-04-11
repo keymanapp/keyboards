@@ -1,6 +1,29 @@
 Hong Kong Change History
 ====================
 
+2.1 (2026-04-06)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
+
+2.0 (2026-02-10)
+----------------
+* added new letters ț ŧ ṳ
+
+1.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
+
+1.1.1 (2025-09-11)
+----------------
+* added explaination for consonants "f" "d" "z" and "dz"
+* added the vowel "uân" and "uât" in the alphabet, to replace the "un" and "ut" vowels in previous version
+* added explaination for vowels "iêng" "eng" "iêc" "iong" "iok" "uyên" "viên" "uyêt" "viêt"
+* explained the use of "iu" "in" "it" "ip" "im" "in" spelling
+* fixed bug in letter generation rules
+
 1.1 (2025-08-20)
 ----------------
 * changed the spelling of "yừ" "yữ" "yự" to "ừ" "ữ" "ự"

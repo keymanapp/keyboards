@@ -1,9 +1,7 @@
 Urdu Phonetic (CRULP) keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.2
+© SIL Global
 
 Description
 -----------

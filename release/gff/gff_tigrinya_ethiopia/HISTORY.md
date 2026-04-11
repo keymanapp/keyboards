@@ -1,5 +1,10 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+2.0.5 (05 Sep 2025)
+-------------------
+* WashRa fonts are fully retired.
+* Fixes warnings for mismatched index() and any() lengths.
+
 2.0.4 (29 Oct 2024)
 --------------------
 * Abyssinica SIL TypeTuned fonts were renamed.

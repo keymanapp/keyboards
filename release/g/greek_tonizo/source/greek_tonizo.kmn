@@ -1,10 +1,12 @@
 ﻿c Πολυτονικὸ πληκτρολόγιο βασισμένο στὴν διάταξη τοῦ πληκτρολογίου US-QWERTY προσαρμοσμένη στοὺς πρόσθετους τόνους καὶ πνεύματα τοῦ πολυτονικοῦ συστήματος. Γιὰ χρῆστες ποὺ θέλουν νὰ γράψουν διαχρονικὰ ἑλληνικὰ μὲ τὸν ἱστορικὸ τονισμὸ τῆς ἑλληνικῆς.
+c With wordStartBreathingRules group added - Dec 2025
+c Latest change February 2026
 
 store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.4'
+store(&KEYBOARDVERSION) '1.0.8'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -348,7 +350,7 @@ c
 c Characters usually found before words (to be used in order to set automatic breathings
 store(beforeWordChars)  U+0020 U+0028 U+002D U+0027 \
                         U+0022 U+003A U+007B U+00AB \
-                        U+00B6 U+00A9 U+000A
+                        U+00B6 U+00A9 U+000A U+00A0
 c
 c 
 c CONVENTIONS CONVERNING ACCENTS:
@@ -411,6 +413,12 @@ store(acc-dialy)   U+0385 U+1FED U+1FC1 U+00A8 U+00A8 U+00A8 \
                    U+1FED U+0385 U+1FC1 \
                    U+1FED U+0385 U+1FC1 \
                    U+0385 U+1FED U+1FC1
+                   c Addition made in Jan 2026
+store(acc-ypoge)   U+1FCE U+1FCD U+1FCF U+1FFE U+1FBF U+1FBF \
+                   U+1FCD U+1FCE U+1FCF \
+                   U+1FDD U+1FDE U+1FDF \
+                   U+1FBF U+1FBF U+1FBF
+
 c 
 c COMBINATIONS OF DIACRITICS AND VOWELS - dialytika included.
 c
@@ -544,7 +552,7 @@ store(omegaup-yp)   U+03A9 U+03A9 U+03A9 \
                     U+03A9 U+03A9
 c 
 c
-c STORES USED FOR DIPHTHONG PROCESSING (at beginning of word)
+c STORES USED FOR DIPHTHONG PROCESSING at beginning of word
 c
 c Used in Rule 1
 c Sequence of chars: psili / psili-oxeia / psili-perisp / psili-vareia / daseia / daseia-oxeia / daseia-perisp / daseia-vareia
@@ -645,6 +653,7 @@ c -------------------- if iota or ypsilon follows (diphthong) ------------------
 c
 any(startingVowelWithAccBreath) + any(iota)  > index(startingVowel,1) index(IotaWithAccBreath,1)
 any(startingVowelWithAccBreath) + any(upsilon)  > index(startingVowel,1) index(YpsilonWithAccBreath,1)
+U+1F51 + any(iota)  >  U+03C5 U+1F31        c handling of ὑι > υἱ  
 c
 c
 c ------------ Case 2: move breathing to next vowel, if accent follows (diphthong) ------------------------
@@ -673,21 +682,35 @@ any(startingVowelWithPsili)  U+1FDE + any(upsilon) > index(VowelWithoutAcc,1) U+
 any(startingVowelWithPsili)  U+1FDF + any(upsilon) > index(VowelWithoutAcc,1) U+1F57
 any(startingVowelWithPsili)  U+1FDD + any(upsilon) > index(VowelWithoutAcc,1) U+1F53
 c
+c ------------ Rule 3a: psili/daseia entered after vowel with automatic psili/daseia -> 
+c ------------ automatic psili/daseia removed from initial vowel (Jan 2026)
+c
+any(startingVowelWithPsili) + any(psili) > index(VowelWithoutAcc,1) u+1fbf
+any(startingVowelWithDaseia) + any(daseia) > index(VowelWithoutAcc,1) U+1FFE
+c
+c
 c ------------ Rule 4: If none of the above, -------------------------------------------
 c ------------ put DEFAULT BREATHING AT STARTING VOWEL (with or w/o accent) ----
 c ------------ perisp before epsilon or omikron is ignored ---------------------
 c 
-nul U+0384 + any(vowels) > index(vowels-oxeia-breath,3)
-any(beforeWordChars) U+0384 + any(vowels) > index(beforeWordChars,1) index(vowels-oxeia-breath,3)
-nul U+1FC0 + any(vowels) > index(vowels-perisp-breath,3)
-any(beforeWordChars) U+1FC0 + any(vowels) > index(beforeWordChars,1) index(vowels-perisp-breath,3)
-nul U+0060 + any(vowels) > index(vowels-vareia-breath,3)
-any(beforeWordChars) U+0060 + any(vowels) > index(beforeWordChars,1) index(vowels-vareia-breath,3)
+nul U+0384 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+0384 + any(vowels) > context use(wordStartBreathingRules)
+nul U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+1FC0 + any(vowels) > context use(wordStartBreathingRules)
+nul U+0060 + any(vowels) > context use(wordStartBreathingRules)
+any(beforeWordChars) U+0060 + any(vowels) > context use(wordStartBreathingRules)
+c
+c Jan 2026 - Correct error in handling sequences of perisp and ypoge and vice versa
+c
+nul any(tonoi) + any(ypoge) > index(acc-ypoge,2) U+037A  
+any(beforeWordChars) any(tonoi) + any(ypoge)  > U+0020 index(acc-ypoge,2) u+037a 
+c
 c
 c ------------- Rule 5: Ignore accents before consonants ----------------
-c ------------- Exception: Daseia before rho! ----------------------------
+c ------------- Exception: Daseia or psili before rho! -------
 c
 U+1FFE + any(rhos) > index(rhos_das, 2) 
+U+1FBF + outs(rho) > U+1FE4                 c Jan 2026
 any(tonoi) + any(conson) > index(symfwn,2)
 c
 c ----- Combination of breathings and accents ---------------------------------
@@ -798,20 +821,32 @@ nul + any(ypoge) > context U+037A U+1FBF
 any(beforeWordChars) + any(ypoge) > context U+037A U+1FBF
 c
 c
-c ------- RULES FOR REMOVAL OF AUTOMATIC PSILI in numerals followed by fullstop ---------
-c ------- i.e. α. β. ... ια. ιβ ... ιστ ...
+c ------- Jan 2026: REMOVAL OF AUTOMATIC PSILI in greek numerals followed by [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_BKQUOTE]
+c ------- i.e. α. β. ... ια. ιβ. ... ιστ. ...
+c         Removal of automatic psili on greek numerals followed by vareia/single quote is handled in WinOnlyRules
 c
+store(arithm-symbols)       [K_PERIOD] [K_SLASH] [SHIFT K_0] [K_BKQUOTE]
+store(arithm-symbols-hex)   U+002E U+002F U+0029 U+02BC
 store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 \
-                            U+1F08 U+1F18 U+1F28 U+1F38 c stores used in following groups    
+                            U+1F08 U+1F18 U+1F28 U+1F38  
 store(vowels-arithm)        U+0251 U+03B5 U+03B7 U+03B9 \
-                            U+0391 U+0395 U+0397 U+0399 c for dropping of automatic psili after single quite and space 
-any(vowels-arithm-psili) + '.' > index(vowels-arithm,1) U+002E   
-'ἰα' + '.' > 'ια.'  
-'ἰε' + '.' > 'ιε.'
-'ἰστ' + '.' > 'ιστ.'
-'ἰη' + '.' > 'ιη.' 
-'αἰ' + '.' > 'αἰ.'      c exception to the rule
-'ἰ' any(symfwn) + '.' > 'ι' index(symfwn,2) U+002E
+                            U+0391 U+0395 U+0397 U+0399  
+any(vowels-arithm-psili) + any(arithm-symbols) > index(vowels-arithm,1) index(arithm-symbols-hex,2) 
+'αἰ' + '.' > 'αἰ.'      c exception for αἰών
+c  
+store(vowels-arithm1)       'αβγδεζηθ'  c chars used after iota in greek arithmetics > 10
+store(iota-psili)           U+1F30
+any(iota-psili) any(vowels-arithm1) + any(arithm-symbols) > 'ι' index(vowels-arithm1,2) index(arithm-symbols-hex,3)
+'ἰστ' + '.' > 'ιστ.'        c rule does not seem to work with ἰστ
+'ἰστ' + '/' > 'ιστ/'
+'ἰστ' + ')' > 'ιστ)'
+'ἰστ' + [K_BKQUOTE] > 'ιστ' u+02BC
+c
+c
+c ------- Production of greek quotes by double keying of < and > (Jan 2026)
+c
+'<' + '<' > U+00AB
+'>' + '>' > U+00BB
 c
 c
 c ------- FOR ALL OTHER CASES, DEFAULT -------------------
@@ -829,12 +864,11 @@ c
 c ----------- Different processing for desktop and mobile platforms
 c
 group(WinOnlyRules) using keys
-    store(gr-diacritics)     U+1FC0 U+037A U+1FBF    c  perispomeni, ypogegrammeni, psili
-    store(eng-keybd-keys)    U+005B U+007B U+005D    c  replaced by [, {, ] respectively when followed by space
-    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1) 
+    store(gr-diacritics)     U+1FC0 U+037A U+1FBF   c  perispomeni, ypogegrammeni, psili 
+    store(eng-keybd-keys)    U+005B U+007B U+005D   c  replaced by [, {, ] respectively
+    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1)  c  when followed by space 
 
-    c automatic breathing dropped when single vowel followed by vareia and space -> vareia becomes single quote
-    c This can reasonably happen only in Windows
+    c automatic breathing dropped when vareia and space follow greek numerals
     any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020  
     'ἰα`' + U+0020 > 'ια' u+0027 u+0020
     'ἰε`' + U+0020 > 'ιε' u+0027 u+0020
@@ -842,10 +876,22 @@ group(WinOnlyRules) using keys
     'ἰη`' + U+0020 > 'ιη' u+0027 u+0020
     'ἰ' any(symfwn) U+0060 + U+0020 > 'ι' index(symfwn,2) U+0027 u+0020
     c default case: vareia becomes single quote if followed by space
-    U+0060 + U+0020 > U+0027 U+0020
-
-
+    U+0060 + U+0020 > U+0027 U+0020   
+ 
 
 group(mobileOnlyRules) using keys
 c automatic psili dropped when single vowel used for numbering of ordered lists
     any(vowels-arithm-psili) U+0027 + U+0020 > index(vowels-arithm,1) U+0027 U+0020
+
+
+group(wordStartBreathingRules) using keys
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+U+0060 + any(vowels) > index(vowels-vareia-breath,2)
+U+0384 + any(vowels) > index(vowels-oxeia-breath,2)
+U+1FC0 + any(vowels) > index(vowels-perisp-breath,2)
+

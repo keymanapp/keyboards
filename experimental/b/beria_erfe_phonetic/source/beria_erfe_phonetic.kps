@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.235.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.240.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -68,38 +68,65 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\Kedebideri-Regular.ttf</Name>
-      <Description>Font Kedebideri</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>..\build\beria_erfe_phonetic.js</Name>
       <Description>File beria_erfe_phonetic.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Black.ttf</Name>
+      <Description>Font Kedebideri Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Bold.ttf</Name>
+      <Description>Font Kedebideri Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-ExtraBold.ttf</Name>
+      <Description>Font Kedebideri ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Medium.ttf</Name>
+      <Description>Font Kedebideri Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Regular.ttf</Name>
+      <Description>Font Kedebideri</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-SemiBold.ttf</Name>
+      <Description>Font Kedebideri SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\sil\kedebideri\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>beria_erfe_phonetic</ID>
-      <OSKFont>..\assets\Kedebideri-Regular.ttf</OSKFont>
-      <DisplayFont>..\assets\Kedebideri-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\sil\kedebideri\Kedebideri-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="zag-Berf">Zaghawa</Language>
       </Languages>
-      <WebOSKFonts>
-        <Font Filename="..\assets\Kedebideri-Regular.ttf"/>
-      </WebOSKFonts>
-      <WebDisplayFonts>
-        <Font Filename="..\assets\Kedebideri-Regular.ttf"/>
-      </WebDisplayFonts>
+      <Examples>
+        <Example ID="zag" Keys="hivqi" Text="𖻁𖻂̄𖻍𖻂" Note="Macron is typed after the vowel."/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

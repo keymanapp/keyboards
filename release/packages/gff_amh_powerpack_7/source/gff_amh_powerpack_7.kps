@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.240.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>sideimage.bmp</GraphicFile>
+    <LicenseFile>..\..\..\gff\gff_amh_7\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\..\..\gff\gff_amh_7\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -55,11 +55,11 @@
   </StartMenu>
   <Info>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Version URL="">8.1.0</Version>
+    <Version URL="">8.2</Version>
     <Name URL="">GFF Amharic</Name>
     <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
-    <Description>An intuitive, easy to use, keyboard for entering Amharic with standard
+    <Description URL="">An intuitive, easy to use, keyboard for entering Amharic with standard
 English keyboards according to the GFF convention for Ethiopic script
 languages.
 
@@ -114,82 +114,10 @@ Keyboards](http://keyboards.ethiopic.org/specification/)</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
-      <Description>Font Ethiopic Fantuwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
       <Description>Font Free Serif</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
-      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
-      <Description>Font Ethiopic Hiwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
-      <Description>Font Ethiopia Jiret</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
-      <Description>Font Ethiopia Jiret Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
-      <Description>Font Ethiopic Tint</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrabsl.ttf</Name>
-      <Description>Font Ethiopic WashRa Bold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasb.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
-      <Description>Font Ethiopic WashRa SemiBold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
-      <Description>Font Ethiopic Wookianos</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
-      <Description>Font Ethiopic Yebse</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\gff_amh_7.kvk</Name>
@@ -227,25 +155,75 @@ Keyboards](http://keyboards.ethiopic.org/specification/)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaFantuwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ፋንትዋ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaHiwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ህዋእ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaJiret-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጅረት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaTint-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጥንት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaWookianos-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ውቂያኖስ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYebse-Regular.ttf</Name>
+      <Description>Font ዋልድባ - የብሰ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGoffer-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎፈር Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGothic-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ሥራት ጎቲክ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaZelan-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ዘላን Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Amharic</Name>
       <ID>gff_amh_7</ID>
-      <Version>1.5</Version>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
     </Keyboard>
     <Keyboard>
-      <Name>Ethiopic - (Language Neutral)</Name>
       <ID>gff_ethiopic_7</ID>
-      <Version>1.1</Version>
       <Languages/>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff-amh-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff-amh-powerpack-7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

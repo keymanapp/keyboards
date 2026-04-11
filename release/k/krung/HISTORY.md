@@ -1,6 +1,10 @@
 Krung Change History
 ====================
 
+1.0.5 (9 Mar 2026)
+----------------
+* Fix font in kvks
+
 1.0.4 (24 Mar 2025)
 ----------------
 * replace Mondulkiri fonts with Busra
@@ -19,4 +23,4 @@ Krung Change History
 
 1.0 (2019-03-01)
 ----------------
-* Created by SIL International
+* Created by SIL Global

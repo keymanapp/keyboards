@@ -1,13 +1,13 @@
 <?php
   $pagename = 'Rawang Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   .highlightExample {font-weight: bold; color: #0000ff}
   .highlightKeys img {vertical-align:baseline !important}
   .input {font-weight: bold; font-size: 1.2em; color: #a64826}
   .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
   .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

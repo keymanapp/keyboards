@@ -1,4 +1,4 @@
-Sanskrit Library Phonetic ASCII (SLP1) (Sanskrit language)
+slp1_roman README
 ==============
 
 Description

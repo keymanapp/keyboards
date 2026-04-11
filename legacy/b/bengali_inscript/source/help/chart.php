@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Inscript Bengali Keyboard Help';
   $pagetitle = 'Inscript Bengali Keyboard Help';
   $style = 'lang2 {font-size:250%}';

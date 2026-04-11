@@ -1,6 +1,6 @@
 <?php
   $pagename = 'Common Devanagari Keyboard Help';
-  $pagetitle = 'Common Devanagari Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -9,8 +9,9 @@
     <h2>Keyboard layout</h2>
 
     
-   <p><img src="H1.png" alt="image" height="230" width="590" > </img></p>
-   <p><img src="H2.png" alt="image" height="230" width="590" > </img></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
        
  <h2>Input sequences</h2>
     	
@@ -193,7 +194,7 @@
 	
 	<p></p>
 	 <p></p>
-	 <h3>------------------------------------------------------------------------------------------------------------------------</h3>
+	 <h3>-------------------------------------------------------------------------------</h3>
 	<p> Allow halant <kbd>़</kbd> to be typed even after vowels: NO </p>
 	<p>Use Western digits rather than Devanagari digits by default: YES</p>
 	

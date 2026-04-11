@@ -1,6 +1,10 @@
 Rachitrali-Urdu Change History
 ==============================
 
+1.0.3 (13 Jan 2026)
+-----------------
+* Update keyboard to support OSK font for better display
+
 1.0.2 (20 Feb 2025)
 ------------------
 * Put OSKFont from .kps file into .kvks file

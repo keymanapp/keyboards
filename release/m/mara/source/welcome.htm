@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Keyboard</title>
+    <style>
+        /* --- Default Light Theme Variables & General Styling --- */
+        :root {
+            --primary-bg: #f8f9fa;
+            --primary-text: #212529;
+            --secondary-text: #495057;
+            --border-color: #dee2e6;
+            --link-color: #007bff;
+            --header-color: #343a40;
+            --card-bg: #ffffff;
+
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --transition-speed: 0.3s;
+        }
+
+        /* --- Automatic Dark Theme via Media Query --- */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-bg: #121212;
+                --primary-text: #e0e0e0;
+                --secondary-text: #a0a0a0;
+                --border-color: #3a3a3a;
+                --link-color: #64b5f6;
+                --header-color: #ffffff;
+                --card-bg: #1e1e1e;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--primary-bg);
+            color: var(--primary-text);
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+
+        /* --- Layout --- */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: background-color var(--transition-speed);
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3 {
+            color: var(--header-color);
+            font-weight: 600;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5em;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5em;
+            margin-top: 2em;
+        }
+        
+        p, li {
+            color: var(--secondary-text);
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background-color: var(--border-color);
+            color: var(--primary-text);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        
+        /* --- Images --- */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-top: 1em;
+            box-shadow: var(--shadow);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Lists --- */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        /* --- Responsive Styles for Smaller Devices --- */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Reduce body padding */
+            }
+
+            .container {
+                margin: 0; /* Remove side margins */
+                padding: 1rem; /* Reduce container padding */
+                box-shadow: none; /* Remove shadow for a flatter look */
+                border-radius: 0; /* Remove rounded corners */
+            }
+
+            h1 {
+                font-size: 2em; /* Slightly smaller main heading */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mara Keyboard</h1>
+        <p style="text-align:center;">This keyboard is for the Mara language.</p>
+
+        <hr>
+
+        <h2>Description</h2>
+        <p>The Mara Keyboard is designed for the Mara people to type easily in their language.</p>
+        <p>The Mara Keyboard is based on the standard English (QWERTY) layout, but includes special characters for the Mara language.</p>
+        <ul>
+            <li>The <strong>Q</strong> key has been replaced with <strong>Â</strong> (unshifted <strong>â</strong>).</li>
+            <li>The <strong>X</strong> key has been replaced with <strong>Ô</strong> (unshifted <strong>ô</strong>).</li>
+            <li>The <strong>J</strong> key produces the digraph <strong>CH</strong> (unshifted <strong>ch</strong>).</li>
+        </ul>
+        <p>This allows for easy typing of the Mara alphabet. The rest of the keys follow the standard QWERTY layout.</p>
+        <p>The touch layout for phones follows a similar pattern, with the special characters readily available on the main keyboard layer.</p>
+
+        <h2>Palâsana</h2>
+        <p>Mara Keyboard he Mara pho zy ta âmo reih hmâpa ta chhuh awpa ta pachhuahpa a châ.</p>
+        <p>Mara Keyboard he English (QWERTY) layout hmâpa ta pachhuahpa châ ta, Mara reihchâ liata hawhrawh eihpa ta <code>â</code>, <code>ô</code>, <code>ch</code> zy pahlaopa a châ.</p>
+        <ul>
+            <li><strong>Q</strong> key he <strong>Â</strong> (unshifted <strong>â</strong>) ta thla pa a châ.</li>
+            <li><strong>X</strong> key he <strong>Ô</strong> (unshifted <strong>ô</strong>) ta thla pa a châ.</li>
+            <li><strong>J</strong> key chata <strong>CH</strong> (unshifted <strong>ch</strong>) a taopa.</li>
+        </ul>
+        <p>He he Mara châhnawh chhuhna a palâ nawpa châta ta pachhuahpa a châ. Key hropa zy cha QWERTY layout a ypa hawhta a y.</p>
+        <p>Phone châta touch layout chhao he hawhna heta pachhuahpa châ ta, Mara reihchâ hnawh eih viapazy chhao main keyboard liana he hmâ thei awpa ta a y.</p>
+
+        <h2>Keyboard Layout</h2>
+        <h3>Desktop</h3>
+        <p><strong>Unshifted</strong></p>
+        <img src="PC_Unshifted.png" alt="Desktop Layout Unshifted">
+        <p><strong>Shifted</strong></p>
+        <img src="PC_Shifted.png" alt="Desktop Layout Shifted">
+        
+        <h3>Touch</h3>
+        <p><strong>Unshifted</strong></p>
+        <img src="Phone_Unshifted.jpg" alt="Touch Layout Unshifted">
+        <p><strong>Shifted</strong></p>
+        <img src="Phone_Shifted.jpg" alt="Touch Layout Shifted">
+
+        <h2>Links</h2>
+        <ul>
+            <li>Keyboard Homepage: <a href="https://keyman.com/keyboards/mara" target="_blank" rel="noopener noreferrer">https://keyman.com/keyboards/mara</a></li>
+        </ul>
+
+        <h2>Author & Copyright</h2>
+        <p>This keyboard was created by Laitei.</p>
+        <p>See <a href="LICENSE.md">LICENSE.md</a> for copyright information.</p>
+        
+        <h2>Supported Platforms</h2>
+        <ul>
+            <li>Windows</li>
+            <li>macOS</li>
+            <li>Linux</li>
+            <li>Web</li>
+            <li>iPhone & iPad</li>
+            <li>Android phone & tablet</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

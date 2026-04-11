@@ -15,7 +15,6 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
-  require_once('servervars.php');
   $pagename = 'Thamizha New Tamil Typewriter Keyboard Help';
   $pagetitle = 'Thamizha New Tamil Typewriter Keyboard Help';
   $style = '.lang2 {font-size:130%}';
