@@ -34,7 +34,7 @@
    <td>â</td>
    <td>[i]</td>
  </tr>
-  <tr>
+   <tr>
    <td>ây</td>
    <td>/</td>
    <td>/</td>
@@ -184,7 +184,7 @@
    <td>o</td>
    <td>ou</td>
    <td>o</td>
-   <td>[ɔ]</td>
+   <td>[]</td>
  </tr>
    </tr>
    <tr>
@@ -450,6 +450,7 @@
 <p>當字母"y"位於其他元音之前，字母"y"嘅發音同韻首"d"相同</p>
  <p>When the letter "y" is located before other vowel, the letter "y" has the same pronunciation with consonant "d".</p>
 
+
 <h1>韻腹vowels</h1>
 <table>
   <tr>
@@ -486,15 +487,15 @@
   <tr><td>ep</td><td>[ɛp]</td><td>夾</td></tr>
   <tr><td>et</td><td>[ɛt]</td><td>折</td></tr>
   <tr><td>ich</td><td>[ɪk]</td><td>的</td></tr>
-  <tr><td>o</td><td>[ɔ]</td><td>哦</td></tr>
-  <tr><td>oi/uoi</td><td>[ɔi] [uɔi]</td><td>愛</td></tr>
-  <tr><td>on/uon</td><td>[ɔn] [uɔn]</td><td>看</td></tr>
-  <tr><td>ong</td><td>[ɔŋ]</td><td>港</td></tr>
-  <tr><td>ot/uot</td><td>[ɔt] [uɔt]</td><td></td>闊</tr>
-  <tr><td>oc</td><td>[ɔk]</td><td>學</td></tr>
+  <tr><td>o</td><td>[]</td><td>哦</td></tr>
+  <tr><td>oi/uoi</td><td>[i] [ui]</td><td>愛</td></tr>
+  <tr><td>on/uon</td><td>[n] [un]</td><td>看</td></tr>
+  <tr><td>ong</td><td>[ŋ]</td><td>港</td></tr>
+  <tr><td>ot/uot</td><td>[t] [ut]</td><td></td>闊</tr>
+  <tr><td>oc</td><td>[k]</td><td>學</td></tr>
   <tr><td>u</td><td>[u]</td><td>夫</td></tr>
   <tr><td>ui</td><td>[ui]</td><td>水</td></tr>
-  <tr><td>uo</td><td>[uɔ]</td><td>可</td></tr>
+  <tr><td>uo</td><td>[u]</td><td>可</td></tr>
   <tr><td>ôn</td><td>[un]</td><td>分</td></tr>
   <tr><td>ung/ưng</td><td>[ʊŋ] [əŋ]</td><td>風</td></tr>
   <tr><td>ôt</td><td>[ut]</td><td>不</td></tr>
@@ -652,7 +653,7 @@
    <td>cửu九</td>
  </tr>
    <tr>
-   <td>ṳ</td>
+   <td>ŭ</td>
    <td>iw</td>
    <td></td>
    <td></td>
@@ -688,8 +689,6 @@
 
 
 <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocnguytihoisanva.dict.yaml">台山話國語字字典dictionary for Hoisanese Coc Ngũi Tụ</a>
-
-<!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
 
 <p>範文：南國山河 Nàm Coc Sán Huò<p>
