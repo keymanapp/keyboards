@@ -6,7 +6,7 @@ store(&TARGETS) 'any'
 store(&BITMAP) 'hoisan.ico'
 store(&VISUALKEYBOARD) 'hoisan.kvks'
 store(&LAYOUTFILE) 'hoisan.keyman-touch-layout'
-store(&KEYBOARDVERSION) '3.0'
+store(&KEYBOARDVERSION) '3.0.1'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -51,11 +51,7 @@ store(vowel_huyen)             'àèìòùỳừÀÈÌÒÙỲỪ'
 store(vowel_hoi)               'ảẻỉỏủỷửẢẺỈỎỦỶỬ'
 store(vowel_nga)               'ãẽĩõũỹữÃẼĨÕŨỸỮ'
 store(vowel_nang)              'ạẹịọụỵựẠẸỊỌỤỴỰ'
-store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴṳṲ'
-store(u_consonants)              'bcdhklmnpstzBCDHKLMNPSTZ'
-store(y_consonants)              'bcdfghjklmnpstyzBCDFGHJKLMNPSTYZ'
-store(ue_consonants)              'hjsxyzHJSXYZ'
-store(eu_consonants)              'cdghjklnstxyzCDGHJKLNSTXYZ'
+store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴŭŬ'
 store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 store(s_all_letters)  'abcdđefghijklmnopqrstuvwxyzABCDĐEFGHIJKLMNOPQRSTUVWXYZăâêôơưAEIOUĂÂÊÔƠƯŧŦțȚ'
 store(s_no_d_letters) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZăâêôơưAEIOUĂÂÊÔƠƯ'
@@ -63,7 +59,6 @@ store(no_sfrxj_letters) 'abcdeghiklmnopqtuvwyzABCDEGHIKLMNOPQTUVWYZ'
 store(consonants) 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 store(un_l_consonants) 'bcdfghjkmnpqstvwxzBCDFGHJKMNPQSTVWXZ'
 store(un_h_consonants) 'bcdfgjklmnpqrstvwxzBCDFGJKLMNPQRSTVWXZ'
-store(un_kg_consonants) 'bcdfhjlmnpqrstvwxzBCDFHJLMNPQRSTVWXZ'
 store(un_gh_consonants) 'bcdfjklmnpqrstvwxzBCDFJKLMNPQRSTVWXZ'
 store(un_z_consonants) 'bcdfghjklmnpqrstvwxBCDFGHJKLMNPQRSTVWX'
 store(un_hrs_consonants) 'bcdfgjkmnpqtvwzBCDFGJKMNPQTVWZ'
@@ -71,7 +66,7 @@ store(un_T_consonants) 'cdfghjlnqrvwxyzCDFGHJLNQRVWXYZ'
 store(no_u_letters) 'abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(punctuationc) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
-store(no_d_c) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
+store(no_d_c) 'abcefghijklmnopqruvwxyzABCEFGHIJKLMNOPQRUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
 store(ys) 'yýỳỹỷỵYÝỲỸỶỴ'
 store(end_consonants) 'ptkcmnPTKCMN'
@@ -123,9 +118,9 @@ store(a_end) 'yiptkcmnYIPTKCMN'
 store(a_ends) 'ouyiptkcmnOUYIPTKCMN'
 store(e_end) 'ptkcmnPTKCMN'
 store(ie_end) 'ptkcmnuPTKCMNU'
-store(nmui) 'aâenmuiAÂEMNUI'
 store(nui) 'aâenuiyoAÂENUIYO'
 store(nt) 'ntNT'
+store(nptc) 'nptcNPTC'
 store(n) 'nN'
 store(low_u) 'uúùủũụ'
 store(upper_u) 'UÚÙỦŨỤ'
@@ -161,7 +156,6 @@ store(uo_end) 'cimnptuCIMNPTU'
 store(ai) 'aiAI'
 store(uw_end) 'aiptcmnuAIPTCMNU'
 store(ptcmni) 'ptcmniPTCMNI'
-store(eioy) 'eioyEIOY'
 store(eioyw) 'eêioyươôăEÊIOYƯƠÔĂ'
 store(ptc) 'ptcPTC'
 store(ptck) 'ptckPTCK'
@@ -188,13 +182,10 @@ store(aou) 'aouAOU'
 store(aiu) 'aiuAIU'
 store(aou_w) 'ăơưĂƠƯ'
 store(e_1) 'Ee'
-store(capitalized_letters) 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 store(no_d_letters) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZ'
 store(no_ud_letters) 'abcefghijklmnopqrsvwxyzABCEFGHIJKLMNOPQRSVWXYZ'
 store(un_second_no_d_consonants) 'qpfkcvbnmQPFKCVBNM'
 store(un_hrsd_consonants) 'bcfgjklmnpqvwzBCFGJKLMNPQVWZ'
-store(un_hwd_consonants) 'bcfgjkmnpqrsvxzBCFGJKMNPQRSVXZ'
-store(un_ghd_consonants) 'bcfjklmnpqrsvwxzBCFJKLMNPQRSVWXZ'
 store(no_d_consonants) 'bcfghjklmnpqrsvwxzBCFGHJKLMNPQRSVWXZ'
 store(no_dl_consonants) 'bcfghjkmnpqrsvwxzBCFGHJKMNPQRSVWXZ'
 store(un_viet_letters) 'fjwzFJWZ'
@@ -207,11 +198,8 @@ store(iu) 'iuưIUƯ'
 store(all_kinds_e)                   'eêEÊ'
 store(io)                   'ioIO'
 store(all_kinds_u)                   'uưUƯ'
-store(no_g_consonants) 'bcdfhjklmnpqrstvwxzBCDFHJKLMNPQRSTVWXZ'
 store(g) 'gG'
-store(au) 'auAU'
 store(a_w) 'awAW'
-store(aow) 'aowAOW'
 store(q) 'qhkQHK'
 store(qq) 'qQ'
 store(k) 'kK'
@@ -222,7 +210,6 @@ store(low_ow_v) 'ớờởỡợ'
 store(upper_ow_v) 'ỚỜỞỠỢ'
 store(uow_end) 'ptkcmniuPTKCMNIU'
 store(un_tones) 'abcdeghilmnopqtuvwyABCDEGHILMNOPQTUVWY'
-store(un_hwrl_consonants) 'bcdfgjkmpqstvxzBCDFGJKMPQSTVXZ'
 store(un_hrl_consonants) 'bcdfgjkmnpqstvwxzBCDFGJKMNPQSTVWXZ'
 store(no_for_h_consonants) 'bcdfghjkpqrstvwxzBCDFGHJKPQRSTVWXZ'
 store(no_for_m_consonants) 'bcdfghjkmpqrstvwxzBCDFGHJKMPQRSTVWXZ'
@@ -266,6 +253,7 @@ store(dd) 'đĐ'
 store(tt) 'țȚ'
 store(ss) 'ŧŦ'
 store(tone_marks) U+0301 U+0300 U+0309 U+0303 U+0323
+store(mniw) 'mnŭMNŬ' 
 c *******************************************************************
 
     c Keyboard options
@@ -501,6 +489,12 @@ any(vowels_sac) any(ptck) + any(s) > index(vowels, 1) index(ptck, 2) index(s, 3)
 any(vowels_nang) any(ptck) + any(j) > index(vowels, 1) index(ptck, 2) index(j, 3)
 any(vowels_nga) any(ptck) + any(x) > index(vowels, 1) index(ptck, 2) index(x, 3)
 any(vowels_hoi) any(ptck) + any(r) > index(vowels, 1) index(ptck, 2) index(r, 3)
+any(vowels_sac) any(ptck) + any(r) > index(vowels_hoi, 1) index(ptck, 2)
+any(vowels_nang) any(ptck) + any(r) > index(vowels_hoi, 1) index(ptck, 2)
+any(vowels_nga) any(ptck) + any(r) > index(vowels_hoi, 1) index(ptck, 2)
+any(vowels_sac) any(ptck) + any(x) > index(vowels_nga, 1) index(ptck, 2)
+any(vowels_nang) any(ptck) + any(x) > index(vowels_nga, 1) index(ptck, 2)
+any(vowels_hoi) any(ptck) + any(x) > index(vowels_nga, 1) index(ptck, 2)
 any(two_y) any(pk) + any(all_letters) > index(two_y, 1) index(pk, 2) index(all_letters, 3)
 any(aa) any(end_consonants) + any(w) > index(aw, 1) index(end_consonants, 2)
 any(aa) any(end_consonants) + any(two_a) > index(a, 1) index(end_consonants, 2)
@@ -1325,21 +1319,21 @@ any(qq) any(two_u) 'â' + any(low_sfrxj) > index(qq, 1) index(two_u, 2) index(lo
 any(qq) any(two_u) 'â' + any(upper_sfrxj) > index(qq, 1) index(two_u, 2) index(low_aa_v, 4)
 any(qq) any(two_u) 'Â' + any(low_sfrxj) > index(qq, 1) index(two_u, 2) index(upper_aa_v, 4)
 any(qq) any(two_u) 'Â' + any(upper_sfrxj) > index(qq, 1) index(two_u, 2) index(upper_aa_v, 4)
-'úy' + any(nt) > 'uý' index(nt, 3)
-'ùy' + any(nt) > 'uỳ' index(nt, 3)
-'ủy' + any(nt) > 'uỷ' index(nt, 3)
-'ũy' + any(nt) > 'uỹ' index(nt, 3)
-'ụy' + any(nt) > 'uỵ' index(nt, 3)
-'ÚY' + any(nt) > 'UÝ' index(nt, 3)
-'ÙY' + any(nt) > 'UỲ' index(nt, 3)
-'ỦY' + any(nt) > 'UỶ' index(nt, 3)
-'ŨY' + any(nt) > 'UỸ' index(nt, 3)
-'ỤY' + any(nt) > 'UỴ' index(nt, 3)
-'Úy' + any(nt) > 'Uý' index(nt, 3)
-'Ùy' + any(nt) > 'Uỳ' index(nt, 3)
-'Ủy' + any(nt) > 'Uỷ' index(nt, 3)
-'Ũy' + any(nt) > 'Uỹ' index(nt, 3)
-'Ụy' + any(nt) > 'Uỵ' index(nt, 3)
+'úy' + any(nptc) > 'uý' index(nptc, 3)
+'ùy' + any(nptc) > 'uỳ' index(nptc, 3)
+'ủy' + any(nptc) > 'uỷ' index(nptc, 3)
+'ũy' + any(nptc) > 'uỹ' index(nptc, 3)
+'ụy' + any(nptc) > 'uỵ' index(nptc, 3)
+'ÚY' + any(nptc) > 'UÝ' index(nptc, 3)
+'ÙY' + any(nptc) > 'UỲ' index(nptc, 3)
+'ỦY' + any(nptc) > 'UỶ' index(nptc, 3)
+'ŨY' + any(nptc) > 'UỸ' index(nptc, 3)
+'ỤY' + any(nptc) > 'UỴ' index(nptc, 3)
+'Úy' + any(nptc) > 'Uý' index(nptc, 3)
+'Ùy' + any(nptc) > 'Uỳ' index(nptc, 3)
+'Ủy' + any(nptc) > 'Uỷ' index(nptc, 3)
+'Ũy' + any(nptc) > 'Uỹ' index(nptc, 3)
+'Ụy' + any(nptc) > 'Uỵ' index(nptc, 3)
 any(vowels) any(two_y) any(all_letters) + any(punctuation) > index(vowels, 1) index(two_y, 2) index(all_letters, 3) index(punctuation, 4)
 any(vowels) any(two_y) + any(end_consonants) > index(vowels, 1) index(two_y, 2) index(end_consonants, 3)
 
@@ -1569,7 +1563,7 @@ any(ee) 'o' + any(w) > index(ee, 1) 'o' index(w, 3)
 any(ee) 'O' + any(w) > index(ee, 1) 'O' index(w, 3)
 any(aeiouy) any(rgysdfhklzxvb) + any(w) > context index(w, 3)
 any(aeiouy) any(cn) any(h) + any(w) > context index(w, 4)
-any(eioy) any(n) any(g) + any(w) > context index(w, 4)
+any(eiy) any(n) any(g) + any(w) > context index(w, 4)
 any(eiy) any(consonants) + any(w) > context index(w, 3)
 
 'i' any(e_v) any(ie_end) + any(punctuation) > 'i' index(ee_v, 2) index(ie_end, 3) index(punctuation, 4)
@@ -1769,12 +1763,6 @@ any(o) any(o) + any(un_tones) > index(o, 1) index(o, 2) index(un_tones, 3)
 any(aeiy_sac) any(c) any(h) + any(j) > index(aeiy_nang, 1) index(c, 2) index(h, 3)
 any(aeiy_nang) any(c) any(h) + any(s) > index(aeiy_sac, 1) index(c, 2) index(h, 3)
 
-'úy' + any(c) > 'uý' index(c, 3)
-'ụy' + any(c) > 'uỵ' index(c, 3)
-'Úy' + any(c) > 'Uý' index(c, 3)
-'Ụy' + any(c) > 'Uỵ' index(c, 3)
-'ÚY' + any(c) > 'UÝ' index(c, 3)
-'ỤY' + any(c) > 'UỴ' index(c, 3)
 any(two_u) 'y' any(c) any(h) + any(s) > index(two_u, 1) 'ý' index(c, 3) index(h, 4)
 any(two_u) 'y' any(c) any(h) + any(j) > index(two_u, 1) 'ỵ' index(c, 3) index(h, 4)
 any(two_u) 'Y' any(c) any(h) + any(s) > index(two_u, 1) 'Ý' index(c, 3) index(h, 4)
@@ -1874,22 +1862,22 @@ any(low_u_v) "y" + any(two_u) > "u" index(low_y_v, 1) index(two_u, 3)
 any(upper_u_v) "y" + any(two_u) > "U" index(low_y_v, 1) index(two_u, 3)
 any(low_u_v) "Y" + any(two_u) > "u" index(upper_y_v, 1) index(two_u, 3)
 any(upper_u_v) "Y" + any(two_u) > "U" index(upper_y_v, 1) index(two_u, 3)
-'i' + any(w) > 'ṳ'
-'í' + any(w) > 'ṳ́'
-'ì' + any(w) > 'ṳ̀'
-'ỉ' + any(w) > 'ṳ̉'
-'ĩ' + any(w) > 'ṳ̃'
-'ị' + any(w) > 'ṳ̣'
-'I' + any(w) > 'Ṳ'
-'Í' + any(w) > 'Ṳ́'
-'Ì' + any(w) > 'Ṳ̀'
-'Ỉ' + any(w) > 'Ṳ̉'
-'Ĩ' + any(w) > 'Ṳ̃'
-'Ị' + any(w) > 'Ṳ̣'
-'ṳ' + any(low_sfrxj) > 'ṳ' index(tone_marks, 2)
-'ṳ' + any(upper_sfrxj) > 'ṳ' index(tone_marks, 2)
-'Ṳ' + any(low_sfrxj) > 'Ṳ' index(tone_marks, 2)
-'Ṳ' + any(upper_sfrxj) > 'Ṳ' index(tone_marks, 2)
+'i' + any(w) > 'ŭ'
+'í' + any(w) > 'ŭ́'
+'ì' + any(w) > 'ŭ̀'
+'ỉ' + any(w) > 'ŭ̉'
+'ĩ' + any(w) > 'ŭ̃'
+'ị' + any(w) > 'ụ̆'
+'I' + any(w) > 'Ŭ'
+'Í' + any(w) > 'Ŭ́'
+'Ì' + any(w) > 'Ŭ̀'
+'Ỉ' + any(w) > 'Ŭ̉'
+'Ĩ' + any(w) > 'Ŭ̃'
+'Ị' + any(w) > 'Ụ̆'
+'ŭ' + any(low_sfrxj) > 'ŭ' index(tone_marks, 2)
+'ŭ' + any(upper_sfrxj) > 'ŭ' index(tone_marks, 2)
+'Ŭ' + any(low_sfrxj) > 'Ŭ' index(tone_marks, 2)
+'Ŭ' + any(upper_sfrxj) > 'Ŭ' index(tone_marks, 2)
 U+0301 + 's' > 's'
 U+0301 + 'S' > 'S'
 U+0300 + 'f' > 'f'
@@ -1922,19 +1910,22 @@ U+0309 + any(j) > U+0323
 U+0303 + any(j) > U+0323
 any(tone_marks) + any(z) > nul
 
-'ṳ' + any(w) > 'i' index(w, 2)
-'ṳ́' + any(w) > 'í' index(w, 3)
-'ṳ̀' + any(w) > 'ì' index(w, 3)
-'ṳ̉' + any(w) > 'ỉ' index(w, 3)
-'ṳ̃' + any(w) > 'ĩ' index(w, 3)
-'ṳ̣' + any(w) > 'ị' index(w, 3)
-'Ṳ' + any(w) > 'I' index(w, 2)
-'Ṳ́' + any(w) > 'Í' index(w, 3)
-'Ṳ̀' + any(w) > 'Ì' index(w, 3)
-'Ṳ̉' + any(w) > 'Ỉ' index(w, 3)
-'Ṳ̃' + any(w) > 'Ĩ' index(w, 3)
-'Ṳ̣' + any(w) > 'Ị' index(w, 3)
+'ŭ' + any(w) > 'i' index(w, 2)
+'ŭ́' + any(w) > 'í' index(w, 3)
+'ŭ̀' + any(w) > 'ì' index(w, 3)
+'ŭ̉' + any(w) > 'ỉ' index(w, 3)
+'ŭ̃' + any(w) > 'ĩ' index(w, 3)
+'ụ̆' + any(w) > 'ị' index(w, 3)
+'Ŭ' + any(w) > 'I' index(w, 2)
+'Ŭ́' + any(w) > 'Í' index(w, 3)
+'Ŭ̀' + any(w) > 'Ì' index(w, 3)
+'Ŭ̉' + any(w) > 'Ỉ' index(w, 3)
+'Ŭ̃' + any(w) > 'Ĩ' index(w, 3)
+'Ụ̆' + any(w) > 'Ị' index(w, 3)
 any(g) any(low_i) + 'w' > index(g, 1) "i" index(low_uw, 2)
 any(g) any(upper_i) + 'w' > index(g, 1) "I" index(low_uw, 2)
-any(g) any(low_i) + 'W' > index(g, 1) "i" index(upper_uw, 2)
+any(g) any(low_i) + 'W' > index(g, 1) "i" index(upper_uw, 2) 
 any(g) any(upper_i) + 'W' > index(g, 1) "I" index(upper_uw, 2)
+any(o) any(n) any(g) + any(w) > index(ow, 1) index(n, 2) index(g, 3)
+
+any(mniw) any(tone_marks) + [K_BKSP] > nul
