@@ -1,5 +1,11 @@
 # Mara Keyboard – Change History
 
+## 1.0.4 (2026-04-10)
+--------------------
+- Updated keyboard source metadata (author, version, copyright)
+- Fixed colon key mapping in visual layout (`;` instead of incorrect mapping)
+- Minor visual and structural improvements
+
 ## 1.0.3 (2026-01-08)
 --------------------
 * Fixed Spacebar (U+0020) not producing spaces

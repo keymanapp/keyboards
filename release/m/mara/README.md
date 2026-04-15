@@ -22,11 +22,11 @@ Mara Keyboard he Mara pho zy ta âmo reih hmâpa ta chhuh awpa ta pachhuahpa a c
 
 Mara Keyboard he English (QWERTY) layout hmâpa ta pachhuahpa châ ta, Mara reihchâ liata hawhrawh eihpa ta `â`, `ô`, `ch` zy pahlaopa a châ.
 
-*   **Q** key he **Â** (unshifted **â**) ta thla pa a châ.
-*   **X** key he **Ô** (unshifted **ô**) ta thla pa a châ.
+*   **Q** key he **Â** (unshifted **â**) ta thlapa a châ.
+*   **X** key he **Ô** (unshifted **ô**) ta thlapa a châ.
 *   **J** key chata **CH** (unshifted **ch**) a taopa.
 
-He he Mara châhnawh chhuhna a palâ nawpa châta ta pachhuahpa a châ. Key hropa zy cha QWERTY layout a ypa hawhta a y.
+He he Mara châhnawh chhuhna a palâ nawpa châta ta pachhuahpa a châ. Key hropazy cha QWERTY layout a ypa hawhta a y.
 
 Phone châta touch layout chhao he hawhna heta pachhuahpa châ ta, Mara reihchâ hnawh eih viapazy chhao main keyboard liana he hmâ thei awpa ta a y.
 
@@ -36,7 +36,7 @@ Phone châta touch layout chhao he hawhna heta pachhuahpa châ ta, Mara reihchâ
 
 ## Author
 
-This keyboard was created by Laitei.
+This keyboard was created by [Laitei](https://laitei.dev).
 
 ## Copyright
 
