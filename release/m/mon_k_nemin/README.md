@@ -9,7 +9,7 @@ Links
 -----
 Keyboard Homepage: https://keyman.com/keyboards/mon_k_nemin
 
-Copyright
+©NEmin
 ---------
 See [LICENSE.md](LICENSE.md)
 
