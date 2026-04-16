@@ -2,8 +2,8 @@ c This Mon Unicode keyboard helps you type accurately with proper character orde
 store(&VERSION) '17.0'
 store(&NAME) 'Mon K NEmin'
 store(&COPYRIGHT) 'Copyright © NEmin'
-store(&KEYBOARDVERSION) '1.5.1'
-store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&KEYBOARDVERSION) '1.5.2'
+store(&TARGETS) 'any'
 store(&BITMAP) 'mon_k_nemin.ico'
 store(&VISUALKEYBOARD) 'mon_k_nemin.kvks'
 store(&LAYOUTFILE) 'mon_k_nemin.keyman-touch-layout'
@@ -32,11 +32,11 @@ begin Unicode > use(main)
 		       u+103F u+100F u+1028 u+1017 u+1012 u+1013 \
 		       u+1007 u+100C u+1003 u+1020 u+1009 U+1023 \
 		       U+105D u+100D u+100B '%' \
-		       u+101B U+1002 \
+		       u+101B U+1002\
 		       U+003D u+00D7 U+105C u+1029 \
-		       u+100E U+1002 \
-		       u+101D u+104A u+1025 U+105A  \
-		       U+101A U+104A U+104B U+002C u+1037 u+1029 
+		       u+100E U+002A\
+		       u+101D U+104A u+1025 U+105A  \
+		       U+101A U+003F U+002F U+002C u+1037 u+1029 
  
                
                  
@@ -189,7 +189,6 @@ U+200B U+1031 + [K_BKSP] > nul
 any(baseU) U+1031 + [K_BKSP] > outs(filler) U+1031 
 any(mediaU) U+1031 + [K_BKSP]> U+1031   
 
-+ [CTRL ALT K_5] > '%'
 + [CTRL ALT K_4] > 'ပိုဲ'
 + [SHIFT K_2] > 'ဤ'
 + [SHIFT K_8] > '၌'
