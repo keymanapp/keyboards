@@ -13,7 +13,6 @@ store(&MESSAGE)         'A Unicode keyboard for the Mon language is easy to type
 
 begin Unicode > use(main)
 
-
 store(baseK)    'qwert' \
                 'yuiop' \
                 '[zxc' \
@@ -39,6 +38,7 @@ store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 \
                 U+100E U+002A \
                 U+101D U+104A U+1025 U+104E \
                 U+101A U+003F U+002F U+002C U+1037 U+1029
+
 
 store(numK)     '1234567890'
 store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 \
@@ -89,14 +89,7 @@ store(wDiaU)    U+103D
 store(hDiaK)    'S'
 store(hDiaU)    U+103E
 
-store(mDiaK)    'R'
-store(mDiaU)    U+105F
-
-store(nDiaK)    '<'
-store(nDiaU)    U+105E
-
 store(filler)   U+200B
-
 store(vowelEK)  'a'
 store(vowelEU)  U+1031
 
@@ -112,19 +105,15 @@ store(accK)     '|'
 
 
 group(main) using keys
-
-
-c  Backspace
-U+200B U+1031            + [K_BKSP] > nul
+c  Backspace  (Nemin)
+any(filler) U+1031       + [K_BKSP] > nul
 any(baseU) U+1031        + [K_BKSP] > outs(filler) U+1031
-any(mediaU) U+1031       + [K_BKSP] > U+1031
 U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
 U+1039 any(consU)        + [K_BKSP] > nul
 
-
 c  Ctrl+Alt / Shift shortcuts
 + [CTRL ALT K_4]       > U+1015 U+102D U+102F U+1038
-+ [SHIFT K_2]          >  U+100F U+1039 U+100D  
++ [SHIFT K_2]          > U+100F U+1039 U+100D
 + [SHIFT K_8]          > U+002A
 + [SHIFT K_5]          > U+0025
 + [SHIFT K_4]          > U+102D U+1032
@@ -141,43 +130,31 @@ c  Ctrl+Alt / Shift shortcuts
 + [CTRL ALT K_B]       > U+1050
 + [CTRL ALT K_N]       > U+1051
 
-c  Anusvara reorder
-U+102B + 'J' > U+1032 U+102B
-U+1032 + 'g' > U+1032 U+102B
-
-
-c  Vowel E  -  ZWS inserted so consonant typed next slides before U+1031
+c ---------------------------------------------------------------------------
+c  Vowel E  —  Nemin 
+c  Rule 1: 'a' always emits filler + U+1031
+c  Rule 2: next consonant slides before U+1031 (filler consumed)
+c  Rule 3: stacking around U+1031 (from Nemin line: U+1031 any(consU) + stackK)
+c  Everything else (ာ ါ ဲ ံ etc) handled by bare rules below — no special rules needed
+c ---------------------------------------------------------------------------
 + any(vowelEK) > outs(filler) outs(vowelEU)
 
+any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
 
-c  Mon nga (U+105A) autocorrect rules
-c
-c  Although Mon kinzi is canonically U+105A U+103A U+1039, it is visually
-c  identical to Burmese kinzi (U+1004 U+103A U+1039) and causes IDN
-c  confusability problems. Therefore whenever the user types Mon nga (I)
-c  followed by asat (f), the keyboard silently substitutes Burmese nga
-c  so the resulting kinzi is the practically usable U+1004 U+103A U+1039.
-c
-c  Typing sequence:  I f F  ->  U+1004 U+103A U+1039
-c
-c  Mon nga + asat  ->  autocorrect: swap to Burmese nga + asat
-U+105A + any(asatK) > U+1004 U+103A
-c  If U+105A U+103A already present and stacker typed  ->  complete kinzi
+U+1031 any(consU) + any(stackK) > outs(stackU) index(consU, 2) U+1031
+
+c  Mon nga autocorrect
+U+105A + any(asatK)         > U+1004 U+103A
 U+105A U+103A + any(stackK) > U+1004 U+103A U+1039
 
+c  Stacked consonant after U+1031
+U+1031 U+1039 + any(baseK) > U+1039 index(baseU, 3) U+1031
 
 c  Stacker (general)
 + any(stackK) > outs(stackU)
 
-
-c  Consonant typed after filler+U+1031  ->  move consonant before U+1031
-any(filler) U+1031 + any(baseK)  > index(baseU, 3) U+1031
-U+1031 U+1039      + any(baseK)  > U+1039 index(baseU, 3) U+1031
-
-
-c  Medial typed after U+1031  ->  place medial before U+1031
+c  Medial after U+1031 -> slide before U+1031
 U+1031 + any(mediaK) > index(mediaU, 2) U+1031
-
 
 c  U+1025 special sequences
 U+1025 + 'f' > U+1009 U+103A
@@ -186,22 +163,17 @@ U+1025 + 'm' > U+1009 U+102C
 U+1025 + 'D' > U+1026
 
 
-c  Abbrev / accentuation shortcuts
+c  Abbrev / accentuation
 any(filler) U+1031 + any(accK) > U+100B U+1039 U+100C U+1031
 any(filler) U+1031 + any(abbK) > U+100F U+1039 U+100D U+1031
 
 
-c  ပ + ဍ autocorrect  ->  ပ္ဍ  (U+1015 U+1039 U+100D)
-c
-c  The Mon word ပ္ဍဲ: if the user types ပ (y) then ဍ ([SHIFT K_1]) directly
-c  without pressing the stacker F first, insert U+1039 automatically.
-c  If the stacker was already typed (y F !), the context U+1015 U+1039
-c  is already present so the first rule fires instead, keeping U+100D correct.
-c  U+100D (ဍ) is the correct character; U+100C (ဌ) is a different letter.
-c ---------------------------------------------------------------------------
+c  ပ + ဍ autocorrect
 U+1015 U+1039 + [SHIFT K_1] > U+1015 U+1039 U+100D
 U+1015        + [SHIFT K_1] > U+1015 U+1039 U+100D
 
+c  Asat after U+1031  (Nemin: any(consU) U+1031 + aftereDK)
+any(consU) U+1031 + any(asatK) > index(consU, 1) index(asatU, 3) U+1031
 
 c  Base / number catch-alls
 + any(numK)    > index(numU, 1)
@@ -209,8 +181,7 @@ c  Base / number catch-alls
 + any(aftereK) > index(aftereU, 1)
 + any(asatK)   > outs(asatU)
 
-
-c  Diacritic ordering  -  udia2 / ldia interactions
+c  Diacritic ordering  (Nemin)
 any(udia2U) + any(aaK)    > index(aaU, 2) context
 any(ldiaU)  + any(udia1K) > index(udia1U, 2) context
 any(udia2U) + any(ldiaK)  > index(ldiaU, 2) context
@@ -218,6 +189,21 @@ any(udia2U) + any(udia1K) > index(udia1U, 2) context
 U+1036      + 'J'         > U+1032 U+1036
 U+1038      + any(lDotK)  > index(lDotU, 2) context
 
+c ---------------------------------------------------------------------------
+c  ေ + cons: ါ/ာ after cons+ေ 
+c  Correct storage: cons U+1031 U+102B/C   and for ဲါ: U+1032 then U+102B
+c  "a y g"   = ပေါ      "a y m"   = ပော
+c  "a y J g" = ပေဲါ     "g J"     = ဲါ     "J g" already handled by udia2 rules
+c ---------------------------------------------------------------------------
+c  cons ေ + g (ါ)  ->  cons ေါ
+any(consU) U+1031 + 'g' > index(consU, 1) U+1031 U+102B
+c  cons ေ + m (ာ)  ->  cons ော
+any(consU) U+1031 + 'm' > index(consU, 1) U+1031 U+102C
+c  ဲ (U+1032) + g (ါ)  ->  ဲါ  [reorder: ဲ typed first, then ါ]  
+U+1032 + 'g' > U+1032 U+102B
+c  ါ (U+102B) + J (ဲ)  ->  ဲါ  [reorder: ါ typed first, then ဲ] 
+U+102B + 'J' > U+1032 U+102B
+c ---------------------------------------------------------------------------
 
 c  Mon asat contractions
 any(consU) U+103A               + 'S' > index(consU, 1) U+103E U+103A
@@ -226,42 +212,30 @@ any(consU) U+103A U+1031        + 'S' > index(consU, 1) U+103E U+103A U+1031
 U+102C U+103A                   + 'S' > U+102C U+103E U+103A
 any(consU) U+102B U+103A U+1031 + ';' > index(consU, 1) U+102B U+103A U+1038 U+1031
 any(consU) U+102B U+1031        + 'f' > index(consU, 1) U+102B U+103A U+1031
-any(consU) U+1031               + 'g' > index(consU, 1) U+1031 U+102B 
-
-
-c  Asat after U+1031
-U+1031 + any(asatK) > index(asatU, 2) U+1031
-
 
 c  Bare diacritic fall-throughs
 + any(ldiaK)  > index(ldiaU, 1)
 + any(udia1K) > index(udia1U, 1)
 + any(udia2K) > index(udia2U, 1)
 
-
-c  Medial ordering  -  most-specific context first
+c  Medial ordering
 any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context
 any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context
-
-any(wDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context
-any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context
-any(wDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context
-any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context
-any(hDiaU) U+1031 + any(wDiaK) > index(wDiaU, 3) context
-
-any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 3) context
-any(wDiaU) any(hDiaU) + any(rDiaK) > index(rDiaU, 3) context
-
-any(wDiaU) + any(yDiaK) > index(yDiaU, 2) context
-any(hDiaU) + any(yDiaK) > index(yDiaU, 2) context
-any(wDiaU) + any(rDiaK) > index(rDiaU, 2) context
-any(hDiaU) + any(rDiaK) > index(rDiaU, 2) context
-any(hDiaU) + any(wDiaK) > index(wDiaU, 2) context
-
+any(wDiaU) U+1031            + any(yDiaK) > index(yDiaU, 3) context
+any(hDiaU) U+1031            + any(yDiaK) > index(yDiaU, 3) context
+any(wDiaU) U+1031            + any(rDiaK) > index(rDiaU, 3) context
+any(hDiaU) U+1031            + any(rDiaK) > index(rDiaU, 3) context
+any(hDiaU) U+1031            + any(wDiaK) > index(wDiaU, 3) context
+any(wDiaU) any(hDiaU)        + any(yDiaK) > index(yDiaU, 3) context
+any(wDiaU) any(hDiaU)        + any(rDiaK) > index(rDiaU, 3) context
+any(wDiaU)                   + any(yDiaK) > index(yDiaU, 2) context
+any(hDiaU)                   + any(yDiaK) > index(yDiaU, 2) context
+any(wDiaU)                   + any(rDiaK) > index(rDiaU, 2) context
+any(hDiaU)                   + any(rDiaK) > index(rDiaU, 2) context
+any(hDiaU)                   + any(wDiaK) > index(wDiaU, 2) context
 
 c  Bare medial fall-through
 + any(mediaK) > index(mediaU, 1)
-
 
 c  Special character shortcuts
 + '@' > U+100F U+1039 U+100D
@@ -269,3 +243,4 @@ c  Special character shortcuts
 + '}' > U+1021 U+1034
 + '$' > U+102D U+1032
 + '>' > U+104B
+
