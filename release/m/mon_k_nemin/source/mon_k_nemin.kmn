@@ -28,7 +28,7 @@ store(baseK)    'qwert' \
                 'B?/,.]'
 
 store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 \
-                U+1015 U+1000 U+1004 U+101E U+1005 \
+                U+1015 U+1000 U+105A U+101E U+1005 \
                 U+101F U+1016 U+1011 U+1001 \
                 U+101C U+1018 U+100A U+105B \
                 U+103F U+100F U+1028 U+1017 U+1012 U+1013 \
@@ -37,7 +37,7 @@ store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 \
                 U+101B U+1002 \
                 U+003D U+00D7 U+105C U+1029 \
                 U+100E U+002A \
-                U+101D U+104A U+1025 U+105A \
+                U+101D U+104A U+1025 U+104E \
                 U+101A U+003F U+002F U+002C U+1037 U+1029
 
 store(numK)     '1234567890'
@@ -113,25 +113,23 @@ store(accK)     '|'
 
 group(main) using keys
 
-c ---------------------------------------------------------------------------
+
 c  Backspace
-c ---------------------------------------------------------------------------
 U+200B U+1031            + [K_BKSP] > nul
 any(baseU) U+1031        + [K_BKSP] > outs(filler) U+1031
 any(mediaU) U+1031       + [K_BKSP] > U+1031
 U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
 U+1039 any(consU)        + [K_BKSP] > nul
 
-c ---------------------------------------------------------------------------
+
 c  Ctrl+Alt / Shift shortcuts
-c ---------------------------------------------------------------------------
 + [CTRL ALT K_4]       > U+1015 U+102D U+102F U+1038
 + [SHIFT K_2]          >  U+100F U+1039 U+100D  
 + [SHIFT K_8]          > U+002A
 + [SHIFT K_5]          > U+0025
 + [SHIFT K_4]          > U+102D U+1032
 + [CTRL ALT K_Q]       > U+1008
-+ [CTRL ALT K_F]       > U+1004 U+103A U+1039
++ [CTRL ALT K_F]       > U+105A U+103A U+1039
 + [CTRL ALT K_BKSLASH] > U+104F
 + [CTRL ALT K_LBRKT]   > U+1027
 + [CTRL ALT K_R]       > U+104E
@@ -143,58 +141,76 @@ c ---------------------------------------------------------------------------
 + [CTRL ALT K_B]       > U+1050
 + [CTRL ALT K_N]       > U+1051
 
-c ---------------------------------------------------------------------------
 c  Anusvara reorder
-c ---------------------------------------------------------------------------
 U+102B + 'J' > U+1032 U+102B
 U+1032 + 'g' > U+1032 U+102B
 
-c ---------------------------------------------------------------------------
+
 c  Vowel E  -  ZWS inserted so consonant typed next slides before U+1031
-c ---------------------------------------------------------------------------
 + any(vowelEK) > outs(filler) outs(vowelEU)
 
-c ---------------------------------------------------------------------------
-c  Stacker
-c ---------------------------------------------------------------------------
+
+c  Mon nga (U+105A) autocorrect rules
+c
+c  Although Mon kinzi is canonically U+105A U+103A U+1039, it is visually
+c  identical to Burmese kinzi (U+1004 U+103A U+1039) and causes IDN
+c  confusability problems. Therefore whenever the user types Mon nga (I)
+c  followed by asat (f), the keyboard silently substitutes Burmese nga
+c  so the resulting kinzi is the practically usable U+1004 U+103A U+1039.
+c
+c  Typing sequence:  I f F  ->  U+1004 U+103A U+1039
+c
+c  Mon nga + asat  ->  autocorrect: swap to Burmese nga + asat
+U+105A + any(asatK) > U+1004 U+103A
+c  If U+105A U+103A already present and stacker typed  ->  complete kinzi
+U+105A U+103A + any(stackK) > U+1004 U+103A U+1039
+
+
+c  Stacker (general)
 + any(stackK) > outs(stackU)
 
-c ---------------------------------------------------------------------------
+
 c  Consonant typed after filler+U+1031  ->  move consonant before U+1031
-c ---------------------------------------------------------------------------
 any(filler) U+1031 + any(baseK)  > index(baseU, 3) U+1031
 U+1031 U+1039      + any(baseK)  > U+1039 index(baseU, 3) U+1031
 
-c ---------------------------------------------------------------------------
+
 c  Medial typed after U+1031  ->  place medial before U+1031
-c ---------------------------------------------------------------------------
 U+1031 + any(mediaK) > index(mediaU, 2) U+1031
 
-c ---------------------------------------------------------------------------
+
 c  U+1025 special sequences
-c ---------------------------------------------------------------------------
 U+1025 + 'f' > U+1009 U+103A
 U+1025 + 'F' > U+1009 U+1039
 U+1025 + 'm' > U+1009 U+102C
 U+1025 + 'D' > U+1026
 
-c ---------------------------------------------------------------------------
+
 c  Abbrev / accentuation shortcuts
-c ---------------------------------------------------------------------------
 any(filler) U+1031 + any(accK) > U+100B U+1039 U+100C U+1031
 any(filler) U+1031 + any(abbK) > U+100F U+1039 U+100D U+1031
 
+
+c  ပ + ဍ autocorrect  ->  ပ္ဍ  (U+1015 U+1039 U+100D)
+c
+c  The Mon word ပ္ဍဲ: if the user types ပ (y) then ဍ ([SHIFT K_1]) directly
+c  without pressing the stacker F first, insert U+1039 automatically.
+c  If the stacker was already typed (y F !), the context U+1015 U+1039
+c  is already present so the first rule fires instead, keeping U+100D correct.
+c  U+100D (ဍ) is the correct character; U+100C (ဌ) is a different letter.
 c ---------------------------------------------------------------------------
+U+1015 U+1039 + [SHIFT K_1] > U+1015 U+1039 U+100D
+U+1015        + [SHIFT K_1] > U+1015 U+1039 U+100D
+
+
 c  Base / number catch-alls
-c ---------------------------------------------------------------------------
 + any(numK)    > index(numU, 1)
 + any(baseK)   > index(baseU, 1)
 + any(aftereK) > index(aftereU, 1)
 + any(asatK)   > outs(asatU)
 
-c ---------------------------------------------------------------------------
+
 c  Diacritic ordering  -  udia2 / ldia interactions
-c ---------------------------------------------------------------------------
 any(udia2U) + any(aaK)    > index(aaU, 2) context
 any(ldiaU)  + any(udia1K) > index(udia1U, 2) context
 any(udia2U) + any(ldiaK)  > index(ldiaU, 2) context
@@ -202,9 +218,8 @@ any(udia2U) + any(udia1K) > index(udia1U, 2) context
 U+1036      + 'J'         > U+1032 U+1036
 U+1038      + any(lDotK)  > index(lDotU, 2) context
 
-c ---------------------------------------------------------------------------
+
 c  Mon asat contractions
-c ---------------------------------------------------------------------------
 any(consU) U+103A               + 'S' > index(consU, 1) U+103E U+103A
 any(consU) U+103E U+1031        + 'f' > index(consU, 1) U+103E U+103A U+1031
 any(consU) U+103A U+1031        + 'S' > index(consU, 1) U+103E U+103A U+1031
@@ -213,21 +228,18 @@ any(consU) U+102B U+103A U+1031 + ';' > index(consU, 1) U+102B U+103A U+1038 U+1
 any(consU) U+102B U+1031        + 'f' > index(consU, 1) U+102B U+103A U+1031
 any(consU) U+1031               + 'g' > index(consU, 1) U+1031 U+102B 
 
-c ---------------------------------------------------------------------------
+
 c  Asat after U+1031
-c ---------------------------------------------------------------------------
 U+1031 + any(asatK) > index(asatU, 2) U+1031
 
-c ---------------------------------------------------------------------------
+
 c  Bare diacritic fall-throughs
-c ---------------------------------------------------------------------------
 + any(ldiaK)  > index(ldiaU, 1)
 + any(udia1K) > index(udia1U, 1)
 + any(udia2K) > index(udia2U, 1)
 
-c ---------------------------------------------------------------------------
+
 c  Medial ordering  -  most-specific context first
-c ---------------------------------------------------------------------------
 any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context
 any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context
 
@@ -246,14 +258,12 @@ any(wDiaU) + any(rDiaK) > index(rDiaU, 2) context
 any(hDiaU) + any(rDiaK) > index(rDiaU, 2) context
 any(hDiaU) + any(wDiaK) > index(wDiaU, 2) context
 
-c ---------------------------------------------------------------------------
+
 c  Bare medial fall-through
-c ---------------------------------------------------------------------------
 + any(mediaK) > index(mediaU, 1)
 
-c ---------------------------------------------------------------------------
+
 c  Special character shortcuts
-c ---------------------------------------------------------------------------
 + '@' > U+100F U+1039 U+100D
 + '|' > U+100B U+1039 U+100C
 + '}' > U+1021 U+1034
