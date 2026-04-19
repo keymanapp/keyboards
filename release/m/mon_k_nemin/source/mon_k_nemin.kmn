@@ -4,7 +4,7 @@ c clear vowel placement, and correct shaping.
 store(&VERSION)         '17.0'
 store(&NAME)            'Mon K NEmin'
 store(&COPYRIGHT)       'Copyright © NEmin'
-store(&KEYBOARDVERSION) '1.5.3'
+store(&KEYBOARDVERSION) '1.5.4'
 store(&TARGETS)         'any'
 store(&BITMAP)          'mon_k_nemin.ico'
 store(&VISUALKEYBOARD)  'mon_k_nemin.kvks'
@@ -130,13 +130,11 @@ c  Ctrl+Alt / Shift shortcuts
 + [CTRL ALT K_B]       > U+1050
 + [CTRL ALT K_N]       > U+1051
 
-c ---------------------------------------------------------------------------
 c  Vowel E  —  Nemin 
 c  Rule 1: 'a' always emits filler + U+1031
 c  Rule 2: next consonant slides before U+1031 (filler consumed)
 c  Rule 3: stacking around U+1031 (from Nemin line: U+1031 any(consU) + stackK)
 c  Everything else (ာ ါ ဲ ံ etc) handled by bare rules below — no special rules needed
-c ---------------------------------------------------------------------------
 + any(vowelEK) > outs(filler) outs(vowelEU)
 
 any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
@@ -167,7 +165,6 @@ c  Abbrev / accentuation
 any(filler) U+1031 + any(accK) > U+100B U+1039 U+100C U+1031
 any(filler) U+1031 + any(abbK) > U+100F U+1039 U+100D U+1031
 
-
 c  ပ + ဍ autocorrect
 U+1015 U+1039 + [SHIFT K_1] > U+1015 U+1039 U+100D
 U+1015        + [SHIFT K_1] > U+1015 U+1039 U+100D
@@ -189,12 +186,10 @@ any(udia2U) + any(udia1K) > index(udia1U, 2) context
 U+1036      + 'J'         > U+1032 U+1036
 U+1038      + any(lDotK)  > index(lDotU, 2) context
 
-c ---------------------------------------------------------------------------
 c  ေ + cons: ါ/ာ after cons+ေ 
 c  Correct storage: cons U+1031 U+102B/C   and for ဲါ: U+1032 then U+102B
 c  "a y g"   = ပေါ      "a y m"   = ပော
 c  "a y J g" = ပေဲါ     "g J"     = ဲါ     "J g" already handled by udia2 rules
-c ---------------------------------------------------------------------------
 c  cons ေ + g (ါ)  ->  cons ေါ
 any(consU) U+1031 + 'g' > index(consU, 1) U+1031 U+102B
 c  cons ေ + m (ာ)  ->  cons ော
@@ -203,7 +198,6 @@ c  ဲ (U+1032) + g (ါ)  ->  ဲါ  [reorder: ဲ typed first, then ါ]
 U+1032 + 'g' > U+1032 U+102B
 c  ါ (U+102B) + J (ဲ)  ->  ဲါ  [reorder: ါ typed first, then ဲ] 
 U+102B + 'J' > U+1032 U+102B
-c ---------------------------------------------------------------------------
 
 c  Mon asat contractions
 any(consU) U+103A               + 'S' > index(consU, 1) U+103E U+103A
