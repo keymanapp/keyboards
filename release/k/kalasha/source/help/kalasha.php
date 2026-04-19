@@ -1,0 +1,340 @@
+<?php
+  $pagename = 'Kaḷaṣamondr Keyboard Help';
+  $pagetitle = 'Kaḷaṣamondr Keyboard Help';
+  $pagestyle = <<<END
+        article table {
+          width: 100%;
+          border-collapse: collapse;
+          background: white;
+        }
+
+        article table thead.main-header, .main-foot {
+          background: #2c3e50;
+          color: white;
+        }
+
+        article table thead.sub-header {
+          background-color: #284a6e;
+          color: white;
+        }
+
+        article table th, article table td {
+          padding: 12px 16px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+
+        article table th {
+          font-weight: 600;
+          letter-spacing: 0.02em;
+        }
+
+        article table tbody tr:hover {
+          background: #f5f7fa;
+        }
+
+        article table tbody tr:nth-child(even) {
+          background: #fafafa;
+        }
+    END;
+  require_once('header.php');
+?>
+
+<div>
+    <div class="keyboard-description">
+      <p>The Kaḷaṣamondr keyboard is created to type the Kalasha language with Roman (Latin) script. Allowing keyboard users to write in English and Kalasha without switching keyboards.</p>
+
+      <p>
+        The Kaḷaṣamondr keyboards has a number of rules to differentiate itself from the standard US keyboard. At first glance, the keyboard only has the typical English characters we are accustomed to; however, there is one key that is different, the top left-hand key. This key has two functions: to represent retroflexion and/or nasalisation. 
+      </p>
+
+      <h3>Retroflexion (both consonants and vowels can be retroflex)</h3>
+
+      <p>In the Kaḷaṣamondr keyboard, the US keyboard backquote symbol (`) is replaced with now represents retroflexion with a dot-under (combining with the preceding typed character), e.g. <kbd>ḍ</kbd>, <kbd>ṭ</kbd>, <kbd>ṣ</kbd>.</p>
+
+      <h3>Nasalisation (only vowels can be nasalised)</h3>
+
+      <p>In the Kaḷaṣamondr keyboard, the US keyboard tilde symbol (SHIFT+~) now represents nasalisation with a tilde over the preceding typed vowel character, e.g. <kbd>ã</kbd>, <kbd>ẽ</kbd>, <kbd>ĩ</kbd>, <kbd>õ</kbd>, <kbd>ũ</kbd>, <kbd>ạ̃</kbd>, <kbd>ẹ̃</kbd>, <kbd>ị̃</kbd>, <kbd>ọ̃</kbd>, <kbd>ụ̃</kbd></p>
+
+      <p><b>Note</b>: the last five examples. They show that vowels can sometimes be both retroflex and nasalised. The dot-under retroflexion symbol should be typed first.</p>
+
+      <h3>Aspiration</h3>
+
+      <p>
+        If you are familiar with In the language Kaḷaṣamondr keyboard, you'd know that there are characters which created from aspirated consonants are represented with an <kbd>h</kbd> that follows the consonant. That is, two characters together (a digraph), (sometimes with a dot) to produce with the second one being h, represent one aspirated phoneme. These characters are:
+        <kbd>bh</kbd>, <kbd>c̣h</kbd>, <kbd>dh</kbd>, <kbd>ḍh</kbd>, <kbd>gh</kbd>, <kbd>jh</kbd>, <kbd>kh</kbd>, <kbd>lh</kbd>, <kbd>ḷh</kbd>, <kbd>mh</kbd>, 
+        <kbd>ph</kbd>, <kbd>rh</kbd>, <kbd>th</kbd>, <kbd>ṭh</kbd>, and <kbd>ẓh</kbd>.
+      </p>
+      <p>
+        When one both of these characters are typed, but then need to be deleted, there is a special rule that would make sure that both characters can be backspace-deleted together (behaving like a composed letter  character), unless if, however, the next (a third) following letter character is typed, then the special phonemes individual characters return to a decomposed (separate) behaviour state and can be deleted one by one.
+      </p>
+      <p>
+        Exception: In the fricatives <kbd>sh</kbd>, <kbd>zh</kbd>, and <kbd>ch</kbd>, <b>h</b> does not represent aspiration. These digraphs will continue to represent these fricatives. Alternatively, a future option could be a caron (wedge) inserted above the s, z, or c by the <kbd>^</kbd> key, or these characters can be selected using long press on a mobile layout. 
+      </p>
+        
+      <p>The affricates <kbd>ts</kbd> and <kbd>dz</kbd> are typed using these two separate characters. The aspirated affricate <kbd>tsh</kbd> (/t͡sʰ/) is typed using these three separate characters.</p>
+
+      <b>(See the key combinations below).</b>
+  </div>
+
+    <div id='osk-container'>
+        <h2>Desktop Keyboard Layout</h2>
+        <div id='osk' data-states='default shift'></div>
+
+        <div class="keyboard-key-combination">
+        <h2>Key combinations</h2>
+        <table>
+            <thead class="main-header">
+                <tr>
+                  <th>Name</th>
+                  <th>Lowercase</th>
+                  <th>Keystroke</th>
+                  <th>Uppercase</th>
+                  <th>Keystroke</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>BACKTICK or BACKQUOTE</td>
+                  <td>`</td>
+                  <td><kbd>`</kbd><kbd>`</kbd></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>LATIN LETTER S WITH CARON</td>
+                  <td>sh (š)</td>
+                  <td><kbd>s</kbd><kbd>h</kbd><kbd>^</kbd></td>
+                  <td>SH (Š)</td>
+                  <td><kbd>S</kbd><kbd>H</kbd><kbd>^</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LATIN LETTER Z WITH CARON</td>
+                  <td>zh (ž)</td>
+                  <td><kbd>z</kbd><kbd>h</kbd><kbd>^</kbd></td>
+                  <td>ZH (Ž)</td>
+                  <td><kbd>Z</kbd><kbd>H</kbd><kbd>^</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LATIN LETTER C WITH CARON</td>
+                  <td>c (č)</td>
+                  <td><kbd>c</kbd><kbd>^</kbd></td>
+                  <td>C (Č)</td>
+                  <td><kbd>C</kbd><kbd>^</kbd></td>
+                </tr>
+                <thead class="sub-header">
+                  <tr>
+                    <th colspan="5">DOT ( &nbsp; ̣ ) </th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>LETTER A WITH DOT BELOW</td>
+                  <td>ạ</td>
+                  <td><kbd>a</kbd><kbd>`</kbd></td>
+                  <td>Ạ</td>
+                  <td><kbd>A</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                  <td>LETTER C WITH DOT BELOW</td>
+                  <td>c̣</td>
+                  <td><kbd>c</kbd><kbd>`</kbd></td>
+                  <td>C̣</td>
+                  <td><kbd>C</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER D WITH DOT BELOW</td>
+                <td>ḍ</td>
+                <td><kbd>d</kbd><kbd>`</kbd></td>
+                <td>Ḍ</td>
+                <td><kbd>D</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER E WITH DOT BELOW</td>
+                <td>ẹ</td>
+                <td><kbd>e</kbd><kbd>`</kbd></td>
+                <td>Ẹ</td>
+                <td><kbd>E</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER I WITH DOT BELOW</td>
+                <td>ị</td>
+                <td><kbd>i</kbd><kbd>`</kbd></td>
+                <td>Ị</td>
+                <td><kbd>I</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER L WITH DOT BELOW</td>
+                <td>ḷ</td>
+                <td><kbd>l</kbd><kbd>`</kbd></td>
+                <td>Ḷ</td>
+                <td><kbd>L</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER O WITH DOT BELOW</td>
+                <td>ọ</td>
+                <td><kbd>o</kbd><kbd>`</kbd></td>
+                <td>Ọ</td>
+                <td><kbd>O</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER R WITH DOT BELOW</td>
+                <td>ṛ</td>
+                <td><kbd>r</kbd><kbd>`</kbd></td>
+                <td>Ṛ</td>
+                <td><kbd>R</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER S WITH DOT BELOW</td>
+                <td>ṣ</td>
+                <td><kbd>s</kbd><kbd>`</kbd></td>
+                <td>Ṣ</td>
+                <td><kbd>S</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER T WITH DOT BELOW</td>
+                <td>ṭ</td>
+                <td><kbd>t</kbd><kbd>`</kbd></td>
+                <td>Ṭ</td>
+                <td><kbd>T</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER U WITH DOT BELOW</td>
+                <td>ụ</td>
+                <td><kbd>u</kbd><kbd>`</kbd></td>
+                <td>Ụ</td>
+                <td><kbd>U</kbd><kbd>`</kbd></td>
+              </tr>
+
+              <tr>
+                <td>LETTER Z WITH DOT BELOW</td>
+                <td>ẓ</td>
+                <td><kbd>z</kbd><kbd>`</kbd></td>
+                <td>Ẓ</td>
+                <td><kbd>Z</kbd><kbd>`</kbd></td>
+              </tr>
+               <thead class="sub-header">
+                  <tr>
+                    <th colspan="5">TILDE (~)</th>
+                  </tr>
+                  <tr>
+                </thead>
+                  <td>LETTER A WITH TILDE</td>
+                  <td>ã</td>
+                  <td><kbd>a</kbd><kbd>~</kbd></td>
+                  <td>Ã</td>
+                  <td><kbd>A</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER E WITH TILDE</td>
+                  <td>ẽ</td>
+                  <td><kbd>e</kbd><kbd>~</kbd></td>
+                  <td>Ẽ</td>
+                  <td><kbd>E</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER I WITH TILDE</td>
+                  <td>ĩ</td>
+                  <td><kbd>i</kbd><kbd>~</kbd></td>
+                  <td>Ĩ</td>
+                  <td><kbd>I</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER O WITH TILDE</td>
+                  <td>õ</td>
+                  <td><kbd>o</kbd><kbd>~</kbd></td>
+                  <td>Õ</td>
+                  <td><kbd>O</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER U WITH TILDE</td>
+                  <td>ũ</td>
+                  <td><kbd>u</kbd><kbd>~</kbd></td>
+                  <td>Ũ</td>
+                  <td><kbd>U</kbd><kbd>~</kbd></td>
+                </tr>
+                <thead class="sub-header">
+                  <tr>
+                    <th colspan="5">DOT BELOW + TILDE ( &nbsp; ̣ ) + (~)</th>
+                  </tr>
+                  <tr>
+                </thead>
+                <tr>
+                  <td>LETTER A WITH DOT BELOW AND TILDE</td>
+                  <td>ạ̃</td>
+                  <td><kbd>a</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                  <td>Ạ̃</td>
+                  <td><kbd>A</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER E WITH DOT BELOW AND TILDE</td>
+                  <td>ẹ̃</td>
+                  <td><kbd>e</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                  <td>Ẹ̃</td>
+                  <td><kbd>E</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER I WITH DOT BELOW AND TILDE</td>
+                  <td>ị̃</td>
+                  <td><kbd>i</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                  <td>Ị̃</td>
+                  <td><kbd>I</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER O WITH DOT BELOW AND TILDE</td>
+                  <td>ọ̃</td>
+                  <td><kbd>o</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                  <td>Ọ̃</td>
+                  <td><kbd>O</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                </tr>
+
+                <tr>
+                  <td>LETTER U WITH DOT BELOW AND TILDE</td>
+                  <td>ụ̃</td>
+                  <td><kbd>u</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                  <td>Ụ̃</td>
+                  <td><kbd>U</kbd><kbd>`</kbd><kbd>~</kbd></td>
+                </tr>
+            </tbody>
+              <tfoot class="main-foot">
+                  <tr>
+                    <th>Name</th>
+                    <th>Lowercase</th>
+                    <th>Keystroke</th>
+                    <th>Uppercase</th>
+                    <th>Keystroke</th>
+                  </tr>
+              </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div id='osk-tablet-container'>
+        <h2>Mobile/Tablet Keyboard Layout</h2>
+        <div id='osk-tablet' data-states='default shift numeric'></div>
+
+        <h3>Longpress</h3>
+        <img src="longpress.gif" alt="Mobile Layout - Longpress" style="width:50%">
+
+    </div>
+
+</div>
