@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 
-<p>The Engram_en layout (<a href="https://engram-layouts.xyz/engram_en">website</a> and <a href="https://github.com/binarybottle/engram">GitHub repo</a>) 
+<p>The Engram_en layout (<a href="https://engram-layouts.xyz/engram-en">website</a> and <a href="https://github.com/binarybottle/engram">GitHub repo</a>) 
 is a key layout optimized for comfortable and efficient touch typing in English created by <a href="https://arnoklein.info">Arno Klein</a>, 
 with open source code to create other optimized key layouts.
 Letters are optimally arranged to reduce lateral finger movements, 
