@@ -1,211 +1,486 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mnw">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>လၟေင်တက်အက္ခရ် Mon K NEmin</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #f7f5f0;
+      --surface:   #ffffff;
+      --border:    #d6d0c4;
+      --accent:    #2a4a8a;
+      --accent2:   #c0392b;
+      --text:      #1a1a1a;
+      --muted:     #5a5a5a;
+      --header-h:  56px;
+      --font-mon:  'Noto Sans Myanmar', 'Padauk', serif;
+      --font-ui:   'Noto Sans', sans-serif;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── Google Fonts ── */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&family=Noto+Sans:wght@400;600&display=swap');
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--accent);
+      color: #fff;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      padding: 0 clamp(1rem, 5vw, 2.5rem);
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
+
+    header h1 {
+      font-family: var(--font-mon);
+      font-size: clamp(1rem, 3.5vw, 1.4rem);
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    /* ── Layout wrapper ── */
+    .page {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      min-height: calc(100vh - var(--header-h));
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* ── Sidebar nav ── */
+    nav {
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 1.5rem 0;
+      position: sticky;
+      top: var(--header-h);
+      height: calc(100vh - var(--header-h));
+      overflow-y: auto;
+    }
+
+    nav a {
+      display: block;
+      padding: .55rem 1.25rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .85rem;
+      border-left: 3px solid transparent;
+      transition: all .18s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      background: #edf0f8;
+    }
+
+    nav .nav-label {
+      font-size: .7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #999;
+      padding: 1rem 1.25rem .3rem;
+    }
+
+    /* ── Main content ── */
+    main {
+      padding: clamp(1.25rem, 4vw, 2.5rem);
+      overflow-x: auto;
+    }
+
+    /* ── Section headings ── */
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: var(--font-mon);
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: .4rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-family: var(--font-mon);
+      font-size: clamp(.95rem, 2.5vw, 1.1rem);
+      color: var(--accent2);
+      margin: 1.2rem 0 .5rem;
+    }
+
+    p {
+      font-family: var(--font-mon);
+      font-size: clamp(.88rem, 2vw, 1rem);
+      color: var(--text);
+      margin-bottom: .9rem;
+    }
+
+    /* ── Images ── */
+    .img-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: .75rem;
+      margin-bottom: 1.25rem;
+      overflow-x: auto;
+    }
+
+    .img-wrap img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ── Image grid for keyboard layouts ── */
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Tables ── */
+    .tbl-wrap {
+      overflow-x: auto;
+      margin-bottom: 1.25rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: max-content;
+      font-family: var(--font-mon);
+      font-size: clamp(.8rem, 1.8vw, .95rem);
+    }
+
+    th {
+      background: var(--accent);
+      color: #fff;
+      padding: .55rem .9rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: .5rem .9rem;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    tr:nth-child(even) td { background: #f2f0ea; }
+
+    /* ── Vowel row (single-row table) ── */
+    .vowel-row th {
+      font-size: clamp(.85rem, 2vw, 1rem);
+      padding: .65rem .75rem;
+    }
+
+    /* ── Ordered list ── */
+    ol {
+      font-family: var(--font-mon);
+      font-size: clamp(.88rem, 2vw, 1rem);
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    ol li { margin-bottom: .4rem; }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE BREAKPOINTS
+       ══════════════════════════════════════════ */
+
+    /* ── Extra-small phones  ( <360px ) ── */
+    @media (max-width: 359px) {
+      :root { --header-h: 48px; }
+      .page { grid-template-columns: 1fr; }
+      nav { display: none; }
+      main { padding: .75rem; }
+      h2   { font-size: 1rem; }
+      h3   { font-size: .9rem; }
+      p, ol, td, th { font-size: .8rem; }
+      .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Small phones  ( 360–479px ) ── */
+    @media (min-width: 360px) and (max-width: 479px) {
+      .page { grid-template-columns: 1fr; }
+      nav { display: none; }
+      main { padding: 1rem; }
+      h2   { font-size: 1.05rem; }
+      h3   { font-size: .95rem; }
+      .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Large phones  ( 480–599px ) ── */
+    @media (min-width: 480px) and (max-width: 599px) {
+      .page { grid-template-columns: 1fr; }
+      nav { display: none; }
+      main { padding: 1.1rem; }
+      .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Small tablets / phablets  ( 600–767px ) ── */
+    @media (min-width: 600px) and (max-width: 767px) {
+      .page { grid-template-columns: 1fr; }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: .5rem;
+        gap: .25rem;
+      }
+      nav .nav-label { display: none; }
+      nav a {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        padding: .35rem .75rem;
+        border-radius: 4px;
+        font-size: .8rem;
+      }
+      nav a:hover, nav a.active {
+        border-left-color: transparent;
+        border-bottom-color: var(--accent);
+        background: #edf0f8;
+      }
+      main { padding: 1.25rem; }
+      .img-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Tablets portrait  ( 768–1023px ) ── */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .page { grid-template-columns: 180px 1fr; }
+      nav a { font-size: .8rem; padding: .5rem 1rem; }
+      .img-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Tablets landscape / small laptops  ( 1024–1279px ) ── */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .page { grid-template-columns: 200px 1fr; }
+      .img-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ── Desktop  ( 1280px+ ) ── */
+    @media (min-width: 1280px) {
+      .page { grid-template-columns: 220px 1fr; }
+      .img-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ── Wide / 4K  ( 1920px+ ) ── */
+    @media (min-width: 1920px) {
+      html { font-size: 18px; }
+      .page { max-width: 1600px; grid-template-columns: 260px 1fr; }
+      .img-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
   </style>
 </head>
 <body>
 
-<div id="container">
-	<div id="header">
-		<h2> လၟေင်တက်အက္ခရ် Mon K NEmin</h2>
-	</div>
-	<div id="content">
-		<p>
-			ပ္ဍဲအရာမတက်အက္ခရ် Mon Unicode Keyboard ဏံဝွံတၟေင်တၞဟ်ခြာဟွံမွဲရ၊ လၟေင်တက်အက္ခရ်မပ္တံကဵု ၜ၊ၚ၊ဂ၊ယ၊ဣ ကွက်နတအ်ဂှ်
-            တၟေင်နွံတဴညိညရ မပ္တံကဵု Key ဗၟာတအ်လေဝ် တၞဟ်နဂွံသုင်စောဲ ဗွဲမဂတာပ်အခိင်ကီု တၞဟ်နဟွံဒးပြံင် Keyboardဗၟာကီုတုဲ၊ မ္ဒးထပ်စုတ်လဝ် သီုKeyဗၟာရ။
-            ဥပမာ = တက်အက္ခရ် ၜ မ္ဂး \ , ၚ shift+I, ဂ shift+:, ယ shift+B, ဣ shift+M 
-		</p>
+<header>
+  <h1>လၟေင်တက်အက္ခရ် Mon K NEmin</h1>
+</header>
 
-		<h3 id="1">
-			၁။ Mon K NEmin Keyboard
-		</h3>
-		<h4>ဟွံဂွံဍဵု Shift ဏီ</h4>
-		<p><img src="mon_k_nemin.png" alt="Keyboard Layout"></p>
-		
-		<h4>ဍဵုလဝ် Shift တုဲ</h4>
-		<p><img src="mon_k_nemin_after_shift.png" alt="Keyboard Layout with Shift"></p>
-		
-		<h4>ဍဵုလဝ် ctrl+alt တုဲ</h4>
-		<p><img src="mon_k_nemin_ctrl_alt.png" alt="Keyboard Layout with Ctrl+Alt"></p>
-		
-		<h4>Mobile Default Layer </h4>
-		<p><img src="mon_k_nemin_mobile_default.jpg" alt="Mobile Default Layer"></p>
-		
-		<h4>Mobile Shift Layer </h4>
-		<p><img src="mon_k_nemin_mobile_shift.jpg" alt="Mobile Shift Layer"></p>
-		
-		<h4>Mobile Numeric Layer </h4>
-		<p><img src="mon_k_nemin_mobile_numeric.jpg" alt="Mobile Numeric Layer"></p>
-		
-		<h4>Mobile symbol Layer </h4>
-		<p><img src="mon_k_nemin_mobile_symble.jpg" alt="Mobile Symbol Layer"></p>
-		
-		<h3 id="2">
-			၂။ ဗီုဂွံတက်ဗျန်ကွက်ဂမၠိုၚ်
-		</h3>
-		<p>
-			ဍဵု Shift + F တုဲ တက်ဗျန်မဆေင်စပ်ကဵုအက္ခရ်ကွက်တအ်ဂှ်မ္ဂး 
-		</p>
-		<table border="1" cellspacing="0" cellpadding="7">
-			<tr>
-				<th>လၟေင်</th>
-				<th>လၟေင်ပံင်အက္ခရ်</th>
-				<th>လၟေင်တက်အက္ခရ်</th>
-			</tr>
-			<tr>
-				<td>အနတ္တ</td>
-				<td>အ + န + တ + ္‌ + တ</td>
-				<td>t + e + w + F + w </td>
-			</tr>
-			<tr>
-				<td>ပစ္စယ</td>
-				<td>ပ + စ + ္‌ + စ + ယ</td>
-				<td>y + p + F‌ + p + B </td>
-			</tr>
-			<tr>
-				<td>သုတ္တ</td>
-				<td>သ + ု + တ + ္‌ + တ</td>
-				<td>o + k + w + F + w</td>
-			</tr>
-			<tr>
-				<td>အဏ္ဍ</td>
-				<td>အ + ဏ + ္‌ + ဍ</td>
-				<td>t + P + F + !</td>
-			</tr>
-			<tr>
-				<td>ပဒုမ္မ</td>
-				<td>ပ + ဒ + ု + မ + မ </td>
-				<td>y + K + k + r + F + r</td>
-			</tr>
-		</table>
-		<br />
+<div class="page">
 
-		<h3 id="3">
-			၃။ အက္ခရ်တၟေၚ်တၞဟ်ခြာဂမၠိုၚ်
-		</h3>
-		<ol>
-			<li>'၀' သုည ဝ</li>
-			<li>'ဇ' ကွက်ယ' ျ' 'ဇျ' ကေုာံ 'ၛ' ဗျန် ဟွံတုပ်သၟဟ်ရ။</li>
-			<li>‘ဉ' ကေုာံ 'ဥ' ( ဗ + ျ + ဉ + ် = ဗျဉ်) (ဥ + တ + ု = ဥတု)</li>
-			<li>သကွက်ရ 'သြ' ကေုာံ 'ဩ' သွဵု ဟွံတုပ်သၟဟ်ရ။ ( သ + ြ + န + ် = သြန်) (ဩ + ဝ + ် = ဩဝ်)</li>
-		</ol>
-		<br />
+  <!-- ── Sidebar navigation ── -->
+  <nav>
+    <div class="nav-label">အဓိပ္ပဲါ</div>
+    <a href="#s1">၁။ Keyboard Layout</a>
+    <a href="#s2">၂။ ဗီုဂွံတက်ဗျန်</a>
+    <a href="#s3">၃။ အက္ခရ်တၟေၚ်</a>
+    <a href="#s4">၄။ လၟေင်သွဵု</a>
+  </nav>
 
-		<h3 id="4">
-			၄။ လၟေင်သွဵုဒးမံၚ်ကၠာကြဴ
-		</h3>
-		<p>
-			သွဵုတံဂှ် ကာလပကဵုဗျန်မ္ဂး ဒးတက်လၟေင်သွိုရ်(၁၂)ရ။
-		</p>
-		<table border="1" cellspacing="0" cellpadding="7">
-			<tr>
-				<th>ါ / ာ</th>
-				<th>ိ / ီ / ဵ</th>
-				<th>ဳ</th>
-				<th>ု</th>
-				<th>ူ</th>
-				<th>​ေ</th>
-				<th>ဲ</th>
-				<th>​ေါ / ​ော</th>
-				<th>ဴ</th>
-				<th>ံ</th>
-				<th>း</th>
-			</tr>	
-		</table>
-		<br />
-				
-		<table border="1" cellspacing="0" cellpadding="7">
-			<tr>
-				<th>က</th>
-				<th>ခ</th>
-				<th>ဂ</th>
-				<th>ၚ</th>
-				<th>တ</th>
-				<th>ၜ</th>
-			</tr>
-			<tr>
-				<td>ကာ</td>
-				<td>ခမဳ</td>
-				<td>ဂေါ</td>
-				<td>မ္ၚဵု</td>
-				<td>တ္ၚဲ</td>
-				<td>ထ္ၜး</td>
-			</tr>
-		</table>
-		<br />
+  <!-- ── Main content ── -->
+  <main>
 
-		<table border="1" cellspacing="0" cellpadding="7">
-			<tr>
-				<th>၁</th>
-				<th>၂</th>
-				<th>၃</th>
-				<th>၄</th>
-				<th>၅</th>
-				<th>၆</th>
-				<th>၇</th>
-				<th>၈</th>
-				<th>၉</th>
-				<th>၀</th>
-			</tr>
-			<tr>
-				<td>က</td>
-				<td>ခ</td>
-				<td>ဂ</td>
-				<td>ဃ</td>
-				<td>ၚ</td>
-				<td>စ</td>
-				<td>ဆ</td>
-				<td>ဇ</td>
-				<td>ၛ</td>
-				<td>ဉ/ည</td>
-			</tr>
-			<tr>
-				<td>ဋ</td>
-				<td>ဌ</td>
-				<td>ဍ</td>
-				<td>ဎ</td>
-				<td>ဏ</td>
-				<td>တ</td>
-				<td>ထ</td>
-				<td>ဒ</td>
-				<td>ဓ</td>
-				<td>န</td>
-			</tr>
-			<tr>
-				<td>ပ</td>
-				<td>ဖ</td>
-				<td>ဗ</td>
-				<td>ဘ</td>
-				<td>မ</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>အ အာ<br />ဣ ဣဳ<br />ဥ ဥု<br />ဨ ဩ</td>
-			</tr>
-			<tr>
-				<td>ယ</td>
-				<td>ရ</td>
-				<td>လ</td>
-				<td>ဝ</td>
-				<td>ၐ</td>
-				<td>ၑ</td>
-				<td>သ</td>
-				<td>ဟ</td>
-				<td>ဠ</td>
-				<td></td>
-			</tr>							
-		</table>
-		<br />
-	</div>
+    <!-- Intro -->
+    <div class="section">
+      <p>
+        ပ္ဍဲအရာမတက်အက္ခရ် Mon Unicode Keyboard ဝွံ တၟေင်တၞဟ်ခြာဟွံမွဲရ၊
+        လၟေင်တက်အက္ခရ်မပ္တံကဵု ၜ၊ဂ၊ယ၊ဣ ကွက်နတအ်ဂှ် တၟေင်နွံတဴညိညရ
+
+        <p>
+        ဥပမာ = တက်အက္ခရ် ၜ မ္ဂး \ , ဂ shift+:, ယ shift+B, ဣ shift+M 
+        တက်ဂစိုတ်ကင်မ္ဂး ဍေံတိတ်ဂစိုတ်ကင် ဟွံမွဲကဵုကွက် ၚ အလဵုအလဵု Auto fix system ရ။
+        </p>
+
+        မပ္တံကဵု Key ဗၟာတအ်လေဝ် တၞဟ်နဂွံသုင်စောဲ ဗွဲမဂတာပ်အခိင်ကီု
+        တၞဟ်နဟွံဒးပြံင် Keyboard ဗၟာကီုတုဲ၊ မ္ဒးထပ်စုတ်လဝ် သီု Key ဗၟာရ။
+        ယဝ်မိက်ဂွံတက် Myanmar Key မ္ဂး ဍဵု Ctrl + Alt ဥပမာ : တက် "ဦ" မ္ဂး Ctrl + Alf + M, ဦ y, ၌ [,ဧ 
+      </p>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section" id="s1">
+      <h2>၁။ Mon K NEmin Keyboard</h2>
+
+      <h3>ဟွံဂွံဍဵု Shift ဏီ</h3>
+      <div class="img-wrap">
+        <img src="mon_k_nemin.png" alt="Keyboard Layout">
+      </div>
+
+      <h3>ဍဵုလဝ် Shift တုဲ</h3>
+      <div class="img-wrap">
+        <img src="mon_k_nemin_after_shift.png" alt="Keyboard Layout with Shift">
+      </div>
+
+      <h3>ဍဵုလဝ် ctrl+alt တုဲ</h3>
+      <div class="img-wrap">
+        <img src="mon_k_nemin_ctrl_alt.png" alt="Keyboard Layout with Ctrl+Alt">
+      </div>
+
+      <h3>Mobile Layers</h3>
+      <div class="img-grid">
+        <div class="img-wrap">
+          <h3>Default Layer</h3>
+          <img src="mon_k_nemin_mobile_default.jpg" alt="Mobile Default Layer">
+        </div>
+        <div class="img-wrap">
+          <h3>Shift Layer</h3>
+          <img src="mon_k_nemin_mobile_shift.jpg" alt="Mobile Shift Layer">
+        </div>
+        <div class="img-wrap">
+          <h3>Numeric Layer</h3>
+          <img src="mon_k_nemin_mobile_numeric.jpg" alt="Mobile Numeric Layer">
+        </div>
+        <div class="img-wrap">
+          <h3>Symbol Layer</h3>
+          <img src="mon_k_nemin_mobile_symble.jpg" alt="Mobile Symbol Layer">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="s2">
+      <h2>၂။ ဗီုဂွံတက်ဗျန်ကွက်ဂမၠိုင်</h2>
+      <p>ဍဵု Shift + F တုဲ တက်ဗျန်မဆေင်စပ်ကဵုအက္ခရ်ကွက်တအ်ဂှ်မ္ဂး</p>
+      <div class="tbl-wrap">
+        <table>
+          <tr>
+            <th>လၟေင်</th>
+            <th>လၟေင်ပံင်အက္ခရ်</th>
+            <th>လၟေင်တက်အက္ခရ်</th>
+          </tr>
+          <tr><td>အနတ္တ</td><td>အ + န + တ + ္‌ + တ</td><td>t + e + w + F + w</td></tr>
+          <tr><td>ပစ္စယ</td><td>ပ + စ + ္‌ + စ + ယ</td><td>y + p + F‌ + p + B</td></tr>
+          <tr><td>သုတ္တ</td><td>သ + ု + တ + ္‌ + တ</td><td>o + k + w + F + w</td></tr>
+          <tr><td>အဏ္ဍ</td><td>အ + ဏ + ္‌ + ဍ</td><td>t + P + F + !</td></tr>
+          <tr><td>ပဒုမ္မ</td><td>ပ + ဒ + ု + မ + မ</td><td>y + K + k + r + F + r</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" id="s3">
+      <h2>၃။ အက္ခရ်တၟေၚ်တၞဟ်ခြာဂမၠိုၚ်</h2>
+      <ol>
+        <li>'၀' သုည ဝ</li>
+        <li>'ဇ' ကွက်ယ' ျ' 'ဇျ' ကေုာံ 'ၛ' ဗျန် ဟွံတုပ်သၟဟ်ရ။</li>
+        <li>'ဉ' ကေုာံ 'ဥ' ( ဗ + ျ + ဉ + ် = ဗျဉ်) (ဥ + တ + ု = ဥတု)</li>
+        <li>သကွက်ရ 'သြ' ကေုာံ 'ဩ' သွဵု ဟွံတုပ်သၟဟ်ရ။ ( သ + ြ + န + ် = သြန်) (ဩ + ဝ + ် = ဩဝ်)</li>
+      </ol>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section" id="s4">
+      <h2>၄။ လၟေင်သွဵုဒးမံင်ကၠာကြဴ</h2>
+      <p>သွဵုတံဂှ် ကာလပကဵုဗျန်မ္ဂး ဒးတက်လၟေင်သွိုရ်(၁၂)ရ။</p>
+
+      <div class="tbl-wrap">
+        <table class="vowel-row">
+          <tr>
+            <th>ါ / ာ</th><th>ိ / ီ / ဵ</th><th>ဳ</th>
+            <th>ု</th><th>ူ</th><th>​ေ</th>
+            <th>ဲ</th><th>​ေါ / ​ော</th><th>ဴ</th>
+            <th>ံ</th><th>း</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tbl-wrap">
+        <table>
+          <tr>
+            <th>က</th><th>ခ</th><th>ဂ</th>
+            <th>ၚ</th><th>တ</th><th>ၜ</th>
+          </tr>
+          <tr>
+            <td>ကာ</td><td>ခမဳ</td><td>ဂေါ</td>
+            <td>မ္ၚဵု</td><td>တ္ၚဲ</td><td>ထ္ၜး</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tbl-wrap">
+        <table>
+          <tr>
+            <th>၁</th><th>၂</th><th>၃</th><th>၄</th><th>၅</th>
+            <th>၆</th><th>၇</th><th>၈</th><th>၉</th><th>၀</th>
+          </tr>
+          <tr>
+            <td>က</td><td>ခ</td><td>ဂ</td><td>ဃ</td><td>ၚ</td>
+            <td>စ</td><td>ဆ</td><td>ဇ</td><td>ၛ</td><td>ဉ/ည</td>
+          </tr>
+          <tr>
+            <td>ဋ</td><td>ဌ</td><td>ဍ</td><td>ဎ</td><td>ဏ</td>
+            <td>တ</td><td>ထ</td><td>ဒ</td><td>ဓ</td><td>န</td>
+          </tr>
+          <tr>
+            <td>ပ</td><td>ဖ</td><td>ဗ</td><td>ဘ</td><td>မ</td>
+            <td></td><td></td><td></td><td></td>
+            <td>အ အာ<br>ဣ ဣဳ<br>ဥ ဥု<br>ဨ ဩ</td>
+          </tr>
+          <tr>
+            <td>ယ</td><td>ရ</td><td>လ</td><td>ဝ</td><td>ၐ</td>
+            <td>ၑ</td><td>သ</td><td>ဟ</td><td>ဠ</td><td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </main>
 </div>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('.section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
 
 </body>
 </html>

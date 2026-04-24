@@ -18,27 +18,11 @@
 		<h3 id="1">
 			၁။ Mon K NEmin Keyboard
 		</h3>
-		<h4>ဟွံဂွံဍဵု Shift ဏီ</h4>
-		<p><img src="mon_k_nemin.png" alt="Keyboard Layout"></p>
+		<h2>Desktop Keyboard Layout</h2>
+  <div id='osk' data-states='default shift ctrl-alt'></div>
 
-		<h4>ဍဵုလဝ် Shift တုဲ</h4>
-		<p><img src="mon_k_nemin_after_shift.png" alt="Keyboard Layout with Shift"></p>
-
-		<h4>ဍဵုလဝ် ctrl+alt တုဲ</h4>
-		<p><img src="mon_k_nemin_ctrl_alt.png" alt="Keyboard Layout with Ctrl+Alt"></p>
-
-		<h4>Mobile Default Layer </h4>
-		<p><img src="mon_k_nemin_mobile_default.jpg" alt="Mobile Default Layer"></p>
-
-		<h4>Mobile Shift Layer </h4>
-		<p><img src="mon_k_nemin_mobile_shift.jpg" alt="Mobile Shift Layer"></p>
-
-		<h4>Mobile Numeric Layer </h4>
-		<p><img src="mon_k_nemin_mobile_numeric.jpg" alt="Mobile Numeric Layer"></p>
-
-		<h4>Mobile symbol Layer </h4>
-		<p><img src="mon_k_nemin_mobile_symble.jpg" alt="Mobile Symbol Layer"></p>
-
+  <h2>Mobile Keyboard Layout</h2>
+  <div id='osk-phone' data-states='default shift numeric symbol'></div>
 		<h3 id="2">
 			၂။ ဗီုဂွံတက်ဗျန်ကွက်ဂမၠိုၚ်
 		</h3>
