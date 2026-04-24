@@ -32,9 +32,9 @@ and logic symbols (accessed by the Shift Key):
 
 Links
 -----
-https://keyman.com/keyboards/engram
+https://keyman.com/keyboards/engram_en
 
-https://engram-layouts.xyz/engram_en
+https://engram-layouts.xyz/engram-en
 
 https://github.com/binarybottle/engram
 

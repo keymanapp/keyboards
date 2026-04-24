@@ -22,7 +22,7 @@ and licensing, please see the documentation on the website
 subfolder of this font package.
 
 TYPETUNER
-2025-08-11
+2026-04-15
 =========
 
 This package contains a TypeTuned version of the Scheherazade New fonts.
@@ -77,11 +77,10 @@ dialog that shows all the glyphs (symbols) in a font and allow you to enter
 them by clicking on the glyph you want.
 
 Rendering:
-This font is designed to work with any of two advanced font technologies, 
-Graphite or OpenType. To take advantage of the advanced typographic 
-capabilities of this font, you must be using applications that provide an
-adequate level of support for Graphite or OpenType. 
-
+This font is designed to work with the OpenType advanced font technology. 
+To take advantage of the advanced typographic capabilities of this font, 
+you must be using applications that provide an adequate level of support for 
+OpenType. 
 
 CONTACT
 ========

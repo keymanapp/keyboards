@@ -1,0 +1,285 @@
+﻿c East Slavic keyboard for Russian, Ukrainian and Belarusian.
+store(&VERSION) '10.0'
+store(&NAME) 'east slavic'
+store(&COPYRIGHT) 'Copyright © cathaylab'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'east_slavic.ico'
+store(&VISUALKEYBOARD) 'east_slavic.kvks'
+store(&LAYOUTFILE) 'east_slavic.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+any(sentencePunctuation) ' ' > layer('shift')
+any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+
+store(letters) 'АаБбВвГгҐґДдЕеЁёЖжЗзІіЇїИиЙйКкЛлМмНнОоӨөПпРрСсТтУуЎўҮҮФфХхЦцЧчШшЩщЪъЫыЬьЭэЄєЮюЯяҖҗѲѳѢѣѴѵabcdefghijklmnopqrstuvwxyzáéíóúüñABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ1234567890฿₽￥£$¢€₴₩₫-.,!?&§«»–—•…¿?!¡„()[]{}@:;<>/$%^*+#~_\/°№‰%≈≠|0123456789' "'" '"'
++ [RALT K_3] > '‘'
++ [RALT SHIFT K_3] > '“'
+"‘" + [RALT K_3] > "‘’"
+"“" + [RALT SHIFT K_3] > "“”"
+any(letters) + [RALT K_3] > index(letters, 1) '’'
+any(letters) + [RALT SHIFT K_3] > index(letters, 1) '”'
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+0029
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0022
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+2116
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+003b
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+0025
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+003a
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+003f
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+002a
++ [RALT K_8] > '₽'
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0028
+
++ [K_A] > U+0444
++ [SHIFT K_A] > U+0424
++ [RALT K_A] > 'ѳ'
++ [SHIFT RALT K_A] > 'Ѳ'
+
++ [K_B] > U+0438
++ [SHIFT K_B] > U+0418
++ [RALT K_B] > 'ѵ'
++ [SHIFT RALT K_B] > 'Ѵ'
+
++ [K_C] > U+0441
++ [SHIFT K_C] > U+0421
+
++ [K_D] > U+0432
++ [SHIFT K_D] > U+0412
+
++ [K_E] > U+0443
++ [SHIFT K_E] > U+0423
++ [RALT K_E] > 'ў'
++ [SHIFT RALT K_E] > 'Ў'
+
++ [K_F] > U+0430
++ [SHIFT K_F] > U+0410
+
++ [K_G] > U+043f
++ [SHIFT K_G] > U+041f
+
++ [K_H] > U+0440
++ [SHIFT K_H] > U+0420
+
++ [K_I] > U+0448
++ [SHIFT K_I] > U+0428
+
++ [K_J] > U+043e
++ [SHIFT K_J] > U+041e
+
++ [K_K] > U+043b
++ [SHIFT K_K] > U+041b
+
++ [K_L] > U+0434
++ [SHIFT K_L] > U+0414
+
++ [K_M] > U+044c
++ [SHIFT K_M] > U+042c
++ [RALT K_M] > 'ъ'
++ [SHIFT RALT K_M] > 'Ъ'
+
++ [K_N] > U+0442
++ [SHIFT K_N] > U+0422
+
++ [K_O] > U+0449
++ [SHIFT K_O] > U+0429
+
++ [K_P] > U+0437
++ [SHIFT K_P] > U+0417
+
++ [K_Q] > U+0439
++ [SHIFT K_Q] > U+0419
+
++ [K_R] > U+043a
++ [SHIFT K_R] > U+041a
+
++ [K_S] > U+0456
++ [SHIFT K_S] > U+0406
++ [RALT K_S] > 'ї' dk(1)
++ [SHIFT RALT K_S] > 'Ї' dk(1)
+
++ [K_T] > U+0435
++ [SHIFT K_T] > U+0415
++ [RALT K_T] > 'ё'
++ [RALT SHIFT K_T] > 'Ё'
+
++ [K_U] > U+0433
++ [SHIFT K_U] > U+0413
++ [RALT K_U] > U+0491
++ [SHIFT RALT K_U] > U+0490
+
++ [K_V] > U+043c
++ [SHIFT K_V] > U+041c
+
++ [K_W] > U+0446
++ [SHIFT K_W] > U+0426
+
++ [K_X] > U+0447
++ [SHIFT K_X] > U+0427
+
++ [K_Y] > U+043d
++ [SHIFT K_Y] > U+041d
+
++ [K_Z] > U+044f
++ [SHIFT K_Z] > U+042f
++ [RALT K_Z] > 'ѣ'
++ [RALT SHIFT K_Z] > 'Ѣ'
+
++ [NCAPS K_COLON] > U+0436
++ [CAPS K_COLON] > U+0416
++ [NCAPS SHIFT K_COLON] > U+0416
++ [CAPS SHIFT K_COLON] > U+0436
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [NCAPS K_COMMA] > U+0431
++ [CAPS K_COMMA] > U+0411
++ [NCAPS SHIFT K_COMMA] > U+0411
++ [CAPS SHIFT K_COMMA] > U+0431
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
+
++ [NCAPS K_PERIOD] > U+044e
++ [CAPS K_PERIOD] > U+042e
++ [NCAPS SHIFT K_PERIOD] > U+042e
++ [CAPS SHIFT K_PERIOD] > U+044e
+
++ [K_SLASH] > U+002e
++ [SHIFT K_SLASH] > U+002c
+
++ [NCAPS K_BKQUOTE] > "'"
++ [CAPS K_BKQUOTE] > "'"
++ [NCAPS SHIFT K_BKQUOTE] > '₴'
++ [CAPS SHIFT K_BKQUOTE] > '₴'
+
++ [NCAPS K_LBRKT] > U+0445
++ [CAPS K_LBRKT] > U+0425
++ [NCAPS SHIFT K_LBRKT] > U+0425
++ [CAPS SHIFT K_LBRKT] > U+0445
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+002f
+
++ [NCAPS K_RBRKT] > 'ї'
++ [NCAPS SHIFT K_RBRKT] > 'Ї'
++ [CAPS K_RBRKT] > 'Ї'
++ [CAPS SHIFT K_RBRKT] > 'ї'
+
++ [NCAPS K_QUOTE] > 'э'
++ [NCAPS SHIFT K_QUOTE] > 'Э'
++ [CAPS K_QUOTE] > 'Э'
++ [CAPS SHIFT K_QUOTE] > 'э'
++ [NCAPS RALT K_QUOTE] > 'є'
++ [NCAPS RALT SHIFT K_QUOTE] > 'Є'
++ [CAPS RALT K_QUOTE] > 'Є'
++ [CAPS RALT SHIFT K_QUOTE] > 'є'
+
++ [NCAPS K_oE2] > 'ґ'
++ [CAPS K_oE2] > 'Ґ'
++ [NCAPS SHIFT K_oE2] > 'Ґ'
++ [CAPS SHIFT K_oE2] > 'ґ'
+
+'ь' + 's' > 'ы'
+'ь' + 'S' > 'ы'
+'Ь' + 's' > 'Ы'
+'Ь' + 'S' > 'Ы'
+
+'і' + [NCAPS K_QUOTE] > 'є'
+'і' + [NCAPS SHIFT K_QUOTE] > 'є'
+'І' + [NCAPS K_QUOTE] > 'Є'
+'І' + [NCAPS SHIFT K_QUOTE] > 'Є'
+'ї' + [NCAPS K_QUOTE] > 'є'
+'ї' + [NCAPS SHIFT K_QUOTE] > 'є'
+'Ї' + [NCAPS K_QUOTE] > 'Є'
+'Ї' + [NCAPS SHIFT K_QUOTE] > 'Є'
+
+'і' + [CAPS K_QUOTE] > 'є'
+'і' + [CAPS SHIFT K_QUOTE] > 'є'
+'І' + [CAPS K_QUOTE] > 'Є'
+'І' + [CAPS SHIFT K_QUOTE] > 'Є'
+'ї' + [CAPS K_QUOTE] > 'є'
+'ї' + [CAPS SHIFT K_QUOTE] > 'є'
+'Ї' + [CAPS K_QUOTE] > 'Є'
+'Ї' + [CAPS SHIFT K_QUOTE] > 'Є'
+
+'э' + [CAPS K_RBRKT] > 'ё'
+'э' + [NCAPS K_RBRKT] > 'ё'
+'Э' + [CAPS K_RBRKT] > 'Ё'
+'Э' + [NCAPS K_RBRKT] > 'Ё'
+
+'і' + [K_S] > 'ї'
+'і' + [SHIFT K_S] > 'ї'
+'І' + [K_S] > 'Ї'
+'І' + [SHIFT K_S] > 'Ї'
+
+'ї' + [K_S] > 'ії'
+'ї' + [SHIFT K_S] > 'іЇ'
+'Ї' + [K_S] > 'Ії'
+'Ї' + [SHIFT K_S] > 'ІЇ'
+
+'ії'  + [K_S] > 'іі'
+'іЇ'  + [K_S] > 'іІ'
+'Ії'  + [K_S] > 'Іі'
+'ІЇ'  + [K_S] > 'ІІ'
+
+'ії'  + [SHIFT K_S] > 'іі'
+'іЇ'  + [SHIFT K_S] > 'іІ'
+'Ії'  + [SHIFT K_S] > 'Іі'
+'ІЇ'  + [SHIFT K_S] > 'ІІ'
+
+'іі'  + [K_S] > context 'і'
+'іІ'  + [K_S] > context 'і'
+'Іі'  + [K_S] > context 'і'
+'ІІ'  + [K_S] > context 'і'
+'іі'  + [SHIFT K_S] > context 'І'
+'іІ'  + [SHIFT K_S] > context 'І'
+'Іі'  + [SHIFT K_S] > context 'І'
+'ІІ'  + [SHIFT K_S] > context 'І'
