@@ -1,6 +1,12 @@
 Hoisan Change History
 ====================
 
+3.0.1 (2026-04-09)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+
 3.0 (2026-02-26)
 ----------------
 * Updated by cathaylab

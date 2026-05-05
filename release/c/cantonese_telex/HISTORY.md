@@ -1,6 +1,13 @@
 cantonese telex Change History
 ====================
 
+4.0.1 (2026-3-20)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
+
 4.0 (2026-2-03)
 ----------------
 * added new letters 'ț' 'ŧ' and 'ṳ'

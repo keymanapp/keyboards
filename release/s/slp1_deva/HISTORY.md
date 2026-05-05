@@ -1,6 +1,10 @@
 slp1_deva Change History
 ====================
 
+1.1.0 (2026-03-23)
+------------------
+* Add a proper touch layout
+
 1.0.3 (2025-11-28)
 ------------------
 * Delete `U+0934`, add `U+0921` to store(consonants)

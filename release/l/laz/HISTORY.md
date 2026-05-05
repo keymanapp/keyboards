@@ -1,5 +1,9 @@
 Laz Change History
 ====================
+1.0.6 (2026-03-24)
+----------------
+* Layout overhaul
+
 1.0.5 (2024-11-23)
 ----------------
 * Added the correct unicodes for the new letters
