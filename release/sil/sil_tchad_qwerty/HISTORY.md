@@ -1,5 +1,9 @@
 Tchad QWERTY Keyboard Change History
 =======================
+5.4.2 (28 Apr 2026)
+------------------
+* Add vertical-align to fix formatting in PHP and Welcome
+
 5.4.1
 ------------------
 * Produce composed characters from "c" and "s" with wedge (Caron)
