@@ -3,7 +3,7 @@ cantonese telex keyboard
 
 Description
 -----------
-cantonese telex for Việt Ngữ Quóc Ngữ Țị (Cantonese). Cantonese Telex粵語國語字輸入法
+cantonese telex for Việt Ngữ Quóc Ngữ Țụ̆ (Cantonese). Cantonese Telex粵語國語字輸入法
 
 Links
 -----
