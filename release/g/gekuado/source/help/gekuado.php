@@ -1,4 +1,105 @@
-<?php
-echo "<h1>Gekuado Keyboard Help</h1>";
-echo "<p>Latin Gan input with tone marks.</p>";
+<?php 
+  $pagename = 'gekuado Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
 ?>
+<p>
+Welcome to the Gekuado Keyboard. Built on the Keyman keyboard engine, this project provides a foundational input method for writing Gan Chinese (赣语) using a Latin-based orthography.
+</p>
+
+<p>
+Gekuado is part of a broader initiative for the digitalization and modernization of Gan Chinese, aiming to establish a stable electronic writing system for use across modern digital environments.
+</p>
+
+<hr>
+
+<h2>Copyright Policy</h2>
+
+<p>
+Gan Chinese is a language facing gradual decline. We believe that restricting linguistic preservation through copyright barriers contradicts the broader mission of language survival and dissemination.
+</p>
+
+<p>
+Therefore, all Gan-language digitalization materials in this project—including texts, translations, keyboard source files, and configuration code—are released into the Public Domain.
+</p>
+
+<p>
+Anyone may freely use, copy, modify, and distribute these materials for any purpose.
+</p>
+
+<hr>
+
+<h2>Gan Alphabet</h2>
+
+<p>
+A B ċ c d e f g ğ h i j l ł m n ñ o p q ŗ s t u ü v x z
+</p>
+
+<hr>
+
+<h2>Special Character Input Rules</h2>
+
+<ul>
+  <li>ñ = n + ;</li>
+  <li>ċ = t + s</li>
+  <li>ł = l + r</li>
+  <li>ğ = g + h</li>
+  <li>f = p + h</li>
+  <li>d = t + d</li>
+  <li>j = y + t</li>
+  <li>l = t + l</li>
+  <li>ü = w</li>
+</ul>
+
+<h3>ŗ Input Rule</h3>
+
+<p>
+When separated by a space:
+</p>
+<ul>
+  <li>r</li>
+</ul>
+
+<p>
+When continuous with previous syllable:
+</p>
+<ul>
+  <li>t + y</li>
+</ul>
+
+<hr>
+
+<h2>Tone Input Rules</h2>
+
+<p>
+Gan Chinese is tonal, and tone marking is mandatory.
+</p>
+
+<ul>
+  <li>First Tone: j → ā</li>
+  <li>Second Tone: r → á</li>
+  <li>Third Tone: d → ǎ</li>
+  <li>Fourth Tone: f → à</li>
+  <li>Fifth Tone: k → a</li>
+  <li>Sixth Tone: l → â</li>
+</ul>
+
+<hr>
+
+<h2>Join the Project</h2>
+
+<p>
+Contributors are welcome to:
+</p>
+
+<ul>
+  <li>Expand support for additional Gan dialect branches</li>
+  <li>Record local pronunciation systems</li>
+  <li>Assist with Gan-language TTS development</li>
+</ul>
+
+<hr>
+
+<p>
+Thank you for supporting the digital preservation of Gan Chinese.
+</p>
