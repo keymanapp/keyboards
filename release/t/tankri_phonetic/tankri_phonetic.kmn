@@ -1,0 +1,111 @@
+c =========================================
+c Tankri Phonetic Keyboard
+c Version: 1.0.0
+c Author: Tankri Digital Revival Project
+c Platform: Windows, Mac, Linux, Android, iOS
+c Unicode Block: U+11680-U+116CF
+c =========================================
+
+store(&NAME) "Tankri Phonetic"
+store(&VERSION) "10.0"
+store(&TARGETS) "any"
+store(&LANGUAGE) "bhd"
+store(&ETHNOLOGUECODE) "bhd"
+store(&VISUALKEYBOARD) "tankri_phonetic.kvk"
+store(&KMW_HELPFILE) "tankri_phonetic.htm"
+
+begin Unicode > use(main)
+
+c =========================================
+c MAIN GROUP
+c =========================================
+group(main) using keys
+
+c --- INDEPENDENT VOWELS ---
++ [K_A]           > U+11680   c 𑚀 A
++ [K_A K_A]       > U+11681   c 𑚁 AA
++ [K_I]           > U+11682   c 𑚂 I
++ [K_I K_I]       > U+11683   c 𑚃 II
++ [K_U]           > U+11684   c 𑚄 U
++ [K_U K_U]       > U+11685   c 𑚅 UU
++ [K_E]           > U+11686   c 𑚆 E
++ [SHIFT K_E]     > U+11687   c 𑚇 AI
++ [K_O]           > U+11688   c 𑚈 O
++ [SHIFT K_O]     > U+11689   c 𑚉 AU
+
+c --- CONSONANTS (Ka-Varg) ---
++ [K_K]           > U+1168A   c 𑚊 KA
++ [K_K K_H]       > U+1168B   c 𑚋 KHA
++ [K_G]           > U+1168C   c 𑚌 GA
++ [K_G K_H]       > U+1168D   c 𑚍 GHA
++ [SHIFT K_N K_G] > U+1168E   c 𑚎 NGA
+
+c --- CONSONANTS (Cha-Varg) ---
++ [K_C]           > U+1168F   c 𑚏 CA
++ [K_C K_H]       > U+11690   c 𑚐 CHHA
++ [K_J]           > U+11691   c 𑚑 JA
++ [K_J K_H]       > U+11692   c 𑚒 JHA
++ [SHIFT K_N K_Y] > U+11693   c 𑚓 NYA
+
+c --- CONSONANTS (Tta-Varg - Retroflex) ---
++ [SHIFT K_T]     > U+11694   c 𑚔 TTA
++ [SHIFT K_T K_H] > U+11695   c 𑚕 TTHA
++ [SHIFT K_D]     > U+11696   c 𑚖 DDA
++ [SHIFT K_D K_H] > U+11697   c 𑚗 DDHA
++ [SHIFT K_N K_N] > U+11698   c 𑚘 NNA
+
+c --- CONSONANTS (Ta-Varg - Dental) ---
++ [K_T]           > U+11699   c 𑚙 TA
++ [K_T K_H]       > U+1169A   c 𑚚 THA
++ [K_D]           > U+1169B   c 𑚛 DA
++ [K_D K_H]       > U+1169C   c 𑚜 DHA
++ [K_N]           > U+1169D   c 𑚝 NA
+
+c --- CONSONANTS (Pa-Varg) ---
++ [K_P]           > U+1169E   c 𑚞 PA
++ [K_P K_H]       > U+1169F   c 𑚟 PHA
++ [K_B]           > U+116A0   c 𑚠 BA
++ [K_B K_H]       > U+116A1   c 𑚡 BHA
++ [K_M]           > U+116A2   c 𑚢 MA
+
+c --- SEMI-VOWELS & SIBILANTS ---
++ [K_Y]           > U+116A3   c 𑚣 YA
++ [K_R]           > U+116A4   c 𑚤 RA
++ [K_L]           > U+116A5   c 𑚥 LA
++ [K_V]           > U+116A6   c 𑚦 WA/VA
++ [SHIFT K_S K_H] > U+116A7   c 𑚧 SHA
++ [SHIFT K_S K_S] > U+116A8   c 𑚨 SSA
++ [K_S]           > U+116A9   c 𑚩 SA
++ [K_H]           > U+116AA   c 𑚪 HA
+
+c --- VOWEL SIGNS (MATRAS) ---
++ [SHIFT K_A K_A] > U+116AD   c 𑚭 AA matra
++ [SHIFT K_I]     > U+116AE   c 𑚮 I matra
++ [SHIFT K_I K_I] > U+116AF   c 𑚯 II matra
++ [SHIFT K_U]     > U+116B0   c 𑚰 U matra
++ [SHIFT K_U K_U] > U+116B1   c 𑚱 UU matra
++ [SHIFT K_E]     > U+116B2   c 𑚲 E matra
++ [SHIFT K_A K_I] > U+116B3   c 𑚳 AI matra
++ [SHIFT K_O]     > U+116B4   c 𑚴 O matra
++ [SHIFT K_A K_U] > U+116B5   c 𑚵 AU matra
+
+c --- SPECIAL SIGNS ---
++ [SHIFT K_M]     > U+116AB   c 𑚫 ANUSVARA
++ [SHIFT K_H K_H] > U+116AC   c 𑚬 VISARGA
++ [K_X]           > U+116B6   c 𑚶 VIRAMA (vowel killer)
+
+c --- NUMBERS ---
++ [K_1]           > U+116C1   c 𑛁 1
++ [K_2]           > U+116C2   c 𑛂 2
++ [K_3]           > U+116C3   c 𑛃 3
++ [K_4]           > U+116C4   c 𑛄 4
++ [K_5]           > U+116C5   c 𑛅 5
++ [K_6]           > U+116C6   c 𑛆 6
++ [K_7]           > U+116C7   c 𑛇 7
++ [K_8]           > U+116C8   c 𑛈 8
++ [K_9]           > U+116C9   c 𑛉 9
++ [K_0]           > U+116C0   c 𑛀 0
+
+c --- PUNCTUATION ---
++ [K_PERIOD]      > U+0964    c । Danda
++ [K_BKSP]        > beep      c Backspace handled by system
