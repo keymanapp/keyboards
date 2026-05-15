@@ -1,0 +1,175 @@
+﻿c Version 1.0 of the Mising (Latin) virtual keyboard. Developed by Vivian Pegu. This layout is specifically engineered to support rigorous linguistic documentation, accurate phonetic transcription for pronunciation dictionaries, and clean data entry required for training NLP tools like morphological analyzers. It fully accommodates the standard Mising Agom Kébang (MAK) orthography.
+store(&VERSION) '10.0'
+store(&NAME) 'Mising Keyboard'
+store(&COPYRIGHT) 'Copyright © Vivian Pegu'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&BITMAP) 'mising_keyboard.ico'
+store(&VISUALKEYBOARD) 'mising_keyboard.kvks'
+store(&LAYOUTFILE) 'mising_keyboard.keyman-touch-layout'
+store(&MESSAGE) '"Mising (Latin) keyboard optimized for standard MAK orthography and linguistic transcription. Developed by Vivian Pegu."'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- PRIMARY MISING PHONEMES (High Efficiency Layer) ---
+c Mapping central vowels and digraphs to keys not used in standard Mising orthography
++ [K_Q] > 'ng'          c Velar nasal /ŋ/
++ [SHIFT K_Q] > 'Ng'    c Capitalized Velar nasal
++ [K_X] > 'ny'          c Palatal nasal /ɲ/
++ [SHIFT K_X] > 'Ny'    c Capitalized Palatal nasal
++ [K_V] > 'é'           c Central vowel /ɜ/
++ [SHIFT K_V] > 'É'     c Capitalized Central vowel
++ [K_C] > 'í'           c Central vowel /ɨ/
++ [SHIFT K_C] > 'Í'     c Capitalized Central vowel
+
+c --- DEAD KEY LOGIC FOR LONG VOWELS (Length Marker :) ---
+c Using Semicolon as a trigger for the length colon
++ [K_COLON] > dk(long)
+
+c Small Long Vowels
+dk(long) + [K_A] > 'a:'
+dk(long) + [K_E] > 'e:'
+dk(long) + [K_I] > 'i:'
+dk(long) + [K_O] > 'o:'
+dk(long) + [K_U] > 'u:'
+dk(long) + [K_V] > 'é:'
+dk(long) + [K_C] > 'í:'
+
+c Capital Long Vowels
+dk(long) + [SHIFT K_A] > 'A:'
+dk(long) + [SHIFT K_E] > 'E:'
+dk(long) + [SHIFT K_I] > 'I:'
+dk(long) + [SHIFT K_O] > 'O:'
+dk(long) + [SHIFT K_U] > 'U:'
+dk(long) + [SHIFT K_V] > 'É:'
+dk(long) + [SHIFT K_C] > 'Í:'
+
+c --- NUMBER ROW & TOP SYMBOLS ---
+c Standard numbers and shift symbols formatted vertically
++ [K_1] > '1'
++ [SHIFT K_1] > '!'
++ [K_2] > '2'
++ [SHIFT K_2] > '@'
++ [K_3] > '3'
++ [SHIFT K_3] > '#'
++ [K_4] > '4'
++ [SHIFT K_4] > '$'
++ [K_5] > '5'
++ [SHIFT K_5] > '%'
++ [K_6] > '6'
++ [SHIFT K_6] > '^'
++ [K_7] > '7'
++ [SHIFT K_7] > '&'
++ [K_8] > '8'
++ [SHIFT K_8] > '*'
++ [K_9] > '9'
++ [SHIFT K_9] > '('
++ [K_0] > '0'
++ [SHIFT K_0] > ')'
++ [K_HYPHEN] > '-'
++ [SHIFT K_HYPHEN] > '_'
++ [K_EQUAL] > '='
++ [SHIFT K_EQUAL] > '+'
+
+c --- BRACKETS & PUNCTUATION ---
+c Standard punctuation layout formatted vertically
++ [K_LBRKT] > '['
++ [SHIFT K_LBRKT] > '{'
++ [K_RBRKT] > ']'
++ [SHIFT K_RBRKT] > '}'
++ [K_BKSLASH] > '\'
++ [SHIFT K_BKSLASH] > '|'
++ [K_COMMA] > ','
++ [SHIFT K_COMMA] > '<'
++ [K_PERIOD] > '.'
++ [SHIFT K_PERIOD] > '>'
++ [K_SLASH] > '/'
++ [SHIFT K_SLASH] > '?'
++ [K_BKQUOTE] > '`'
++ [SHIFT K_BKQUOTE] > '~'
+
+c --- RECOVERY LAYER (AltGr) ---
+c Use Right-Alt to access the original Roman letters and punctuation
++ [RALT K_Q] > 'q'
++ [SHIFT RALT K_Q] > 'Q'
++ [RALT K_X] > 'x'
++ [SHIFT RALT K_X] > 'X'
++ [RALT K_V] > 'v'
++ [SHIFT RALT K_V] > 'V'
++ [RALT K_C] > 'c'
++ [SHIFT RALT K_C] > 'C'
++ [RALT K_COLON] > ';'
++ [SHIFT RALT K_COLON] > ':'
+
+c --- STANDARD ALPHABET (QWERTY Base) ---
+c Short Vowels (é & í included here added before)
++ [K_A] > 'a'
++ [SHIFT K_A] > 'A'
++ [K_E] > 'e'
++ [SHIFT K_E] > 'E'
++ [K_I] > 'i'
++ [SHIFT K_I] > 'I'
++ [K_O] > 'o'
++ [SHIFT K_O] > 'O'
++ [K_U] > 'u'
++ [SHIFT K_U] > 'U'
+
+c Consonants
++ [K_P] > 'p'
++ [SHIFT K_P] > 'P'
++ [K_B] > 'b'
++ [SHIFT K_B] > 'B'
++ [K_T] > 't'
++ [SHIFT K_T] > 'T'
++ [K_D] > 'd'
++ [SHIFT K_D] > 'D'
++ [K_K] > 'k'
++ [SHIFT K_K] > 'K'
++ [K_G] > 'g'
++ [SHIFT K_G] > 'G'
++ [K_S] > 's'
++ [SHIFT K_S] > 'S'
++ [K_J] > 'j'
++ [SHIFT K_J] > 'J'
++ [K_M] > 'm'
++ [SHIFT K_M] > 'M'
++ [K_N] > 'n'
++ [SHIFT K_N] > 'N'
++ [K_R] > 'r'
++ [SHIFT K_R] > 'R'
++ [K_L] > 'l'
++ [SHIFT K_L] > 'L'
++ [K_Y] > 'y'
++ [SHIFT K_Y] > 'Y'
+
+c --- ADDITIONAL LINGUISTIC KEYS ---
+c Standard keys for English loanwords or linguistic notation
++ [K_W] > 'w'
++ [SHIFT K_W] > 'W'
++ [K_F] > 'f'
++ [SHIFT K_F] > 'F'
++ [K_H] > 'h'
++ [SHIFT K_H] > 'H'
++ [K_Z] > 'z'
++ [SHIFT K_Z] > 'Z'
++ [K_QUOTE] > '’'      c Smart apostrophe for glottal stops
+
+c --- TOUCH LAYOUT RULES: SMALL VOWELS ---
++ [T_new_2683] > 'a:'
++ [T_new_2453] > 'e:'
++ [T_new_2455] > 'é:'
++ [T_new_2451] > 'i:'
++ [T_new_2454] > 'í:'
++ [T_new_2452] > 'o:'
++ [T_new_2456] > 'u:'
+
+c --- TOUCH LAYOUT RULES: CAPITAL VOWELS ---
++ [SHIFT T_new_2498] > 'A:'
++ [SHIFT T_new_2491] > 'E:'
++ [SHIFT T_new_2497] > 'É:'
++ [SHIFT T_new_2493] > 'I:'
++ [SHIFT T_new_2496] > 'Í:'
++ [SHIFT T_new_2495] > 'O:'
++ [SHIFT T_new_2494] > 'U:'
