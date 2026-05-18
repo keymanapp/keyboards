@@ -198,7 +198,7 @@ END;
 
 <div class="kb-header">
   <h1>Mising Keyboard</h1>
-  <div class="subtitle">Version 1.0 &nbsp; &nbspKeyman Keyboard Help</div>
+  <div class="subtitle">Keyman Keyboard Help</div>
 </div>
 
 <p>This keyboard was specifically developed for the Mising community to provide a native digital voice. This layout replaces those generic English interfaces with a native-first design, allowing for natural, fluid communication in the Mising language without compromise. Technical Features MAK Orthography Support: Fully accommodates the standard Mising Agom K&eacute;bang (MAK) orthography (modified Roman script), ensuring all community standards are met. Linguistic Precision: Optimised for both everyday digital use and rigorous linguistic documentation. Data Integrity: Specifically engineered to prevent character fragmentation, ensuring clean data entry for building professional pronunciation dictionaries and annotating acoustic data. Intuitive Design: Built upon a familiar QWERTY foundation to maintain an easy learning curve for all users.</p>
@@ -524,7 +524,7 @@ the same applies for uppercase long vowels.</p>
 </table>
 
 <div class="kb-footer">
-  Mising (Latin) Keyboard v1.0 &nbsp;&bull;&nbsp;
+  Mising (Latin) Keyboard &nbsp;&bull;&nbsp;
   Developed by Vivian Pegu &nbsp;&bull;&nbsp;
   Copyright &copy; Vivian Pegu &nbsp;&bull;&nbsp;
   Optimised for MAK (Mising Agom K&eacute;bang) orthography
