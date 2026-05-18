@@ -1,6 +1,10 @@
 The MIT License (MIT)
 
+<<<<<<< master
 Dr. T Marvin Zou
+=======
+Copyright © 2026 Dr. T Marvin Zou
+>>>>>>> master
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

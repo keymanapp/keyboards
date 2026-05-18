@@ -17,4 +17,8 @@ The Zou script consists of 27 alphabets. Due to the 26-key limit of the standard
 | `Shift` + `[` | 27th Uppercase Letter |
 | `0-9` | Zou Numerals (U+E040 - U+E049) |
 
+<<<<<<< master
 **Copyright © 2026 Dr. T Marvin Zou**
+=======
+**Copyright © Dr. T Marvin Zou**
+>>>>>>> master
