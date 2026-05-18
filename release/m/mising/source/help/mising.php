@@ -1,11 +1,8 @@
 <?php 
-  $pagename = 'Mising (Latin) Keyboard Help';
+  $pagename = 'Mising Keyboard Help';
   $pagetitle = $pagename;
-  // Header
-  require_once('header.php');
-?>
 
-<style>
+  $pagestyle = <<<END
   /* ── Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -193,7 +190,11 @@
     color: #888;
     font-style: italic;
   }
-</style>
+END;
+
+  // Header
+  require_once('header.php');
+?>
 
 <div class="kb-header">
   <h1>Mising Keyboard</h1>
@@ -527,4 +528,4 @@ the same applies for uppercase long vowels.</p>
   Developed by Vivian Pegu &nbsp;&bull;&nbsp;
   Copyright &copy; Vivian Pegu &nbsp;&bull;&nbsp;
   Optimised for MAK (Mising Agom K&eacute;bang) orthography
-</div> 
+</div>
