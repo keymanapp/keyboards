@@ -1,12 +1,11 @@
 ﻿c Zou Script and Numerals Keyboard with 27 upper and lower characters with numerals.
-store(&VERSION) '10.0'
 store(&NAME) 'Zou Script and Numerals'
 store(&COPYRIGHT) 'Copyright (c) Dr. T Marvin Zou'
 store(&MESSAGE) 'Zou Script and Numerals Keyboard created by Dr. T Marvin Zou. This is the first Zou digital keyboard designed, created, edited by Dr. T Marvin Zou from Zou communities of Tibeto Burman.'
 store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&BITMAP) 'zou_script_and_numerals.ico'
-store(&VISUALKEYBOARD) 'zou_script_and_numerals.kvks'
-store(&TARGETS) 'web desktop'
+store(&LAYOUTFILE) 'zou_script_and_numerals.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -88,6 +87,5 @@ c --- Punctuation ---
 + [K_PERIOD]      > '.'
 + [K_COLON]       > ':'
 + [K_COMMA]       > ','
-+ [K_SEMICOLON]   > ';'
 + [SHIFT K_1]     > '!'
 + [K_QUOTE]       > U+0027
