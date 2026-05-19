@@ -1,0 +1,193 @@
+﻿c Pooringbellé - Full Finished Build
+store(&VERSION) '15.0'
+store(&NAME) 'pooringbellé'
+store(&COPYRIGHT) '© Pojor'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0'
+store(&LAYOUTFILE) 'poorigbelle.keyman-touch-layout'
+store(&MESSAGE) 'this my message to everyone who speak poorigbelle "congratulation" '
+store(&VISUALKEYBOARD) 'poorigbelle.kvks'
+store(&BITMAP) 'poorigbelle.ico'
+
+begin Unicode > use(main)
+
+store(lcK) "abcdefghijklmnopqrstuwxyz"
+store(lcU) "ab" U+0273 "de" U+0268 "ghijklmnopqrstuw" U+0289 "yz"
+
+store(ucK) "ABCDEFGHIJKLMNOPQRSTUWXYZ"
+store(ucU) "AB" U+0220 "DE" U+0197 "GHIJKLMNOPQRSTUW" U+0244 "YZ" c 0273 and 0220 should not be paired together 
+
+store(digits) "0123456789"
+store(punct) "!@#$%^&*()_+-=`~\|,./<>?;':" '"'
+
+group(main) using keys
+
+c --- Desktop rules ---
+
++ any(digits) > index(digits,1)
++ any(punct) > index(punct,1)
+
++ any(lcK) > index(lcU,1)
++ any(ucK) > index(ucU,1)
+
++ [K_V] > "ny"
++ [SHIFT K_V] > "NY"
+
++ [K_LBRKT] > U+0301 use(nfc)
++ [K_RBRKT] > U+0302 use(nfc)
++ [SHIFT K_RBRKT] > U+0331 use(nfc)
++ [SHIFT K_LBRKT] > U+030C use(nfc)
+
+c --- ROW 1 (LOWERCASE) ---
++ [T_a_bar] > 'a̱'
++ [T_a_bar_acute] > 'á̱'
++ [T_a_bar_circ] > 'â̱'
++ [T_a_bar_caron] > 'ǎ̱'
++ [T_w] > 'w'
++ [T_e] > 'e'
++ [T_é] > 'é'
++ [T_ê] > 'ê'
++ [T_ě] > 'ě'
++ [T_r] > 'r'
++ [T_t] > 't'
++ [T_y] > 'y'
++ [T_u] > 'u'
++ [T_ú] > 'ú'
++ [T_û] > 'û'
++ [T_ǔ] > 'ǔ'
++ [T_i] > 'i'
++ [T_í] > 'í'
++ [T_î] > 'î'
++ [T_ǐ] > 'ǐ'
++ [T_o] > 'o'
++ [T_ó] > 'ó'
++ [T_ô] > 'ô'
++ [T_ǒ] > 'ǒ'
++ [T_p] > 'p'
+
+c --- ROW 2 (LOWERCASE) ---
++ [T_a] > 'a'
++ [T_á] > 'á'
++ [T_â] > 'â'
++ [T_ǎ] > 'ǎ'
++ [T_s] > 's'
++ [T_d] > 'd'
++ [T_ɨ] > 'ɨ'
++ [T_ɨ_acute] > 'ɨ́'
++ [T_ɨ_circ] > 'ɨ̂'
++ [T_ɨ_caron] > 'ɨ̌'
++ [T_g] > 'g'
++ [T_h] > 'h'
++ [T_j] > 'j'
++ [T_k] > 'k'
++ [T_l] > 'l'
+
+c --- ROW 3 (LOWERCASE) ---
++ [T_z] > 'z'
++ [T_ʉ] > 'ʉ'
++ [T_ʉ_acute] > 'ʉ́'
++ [T_ʉ_circ] > 'ʉ̂'
++ [T_ʉ_caron] > 'ʉ̌'
++ [T_ɳ] > 'ɳ'
++ [T_ny] > 'ny'
++ [T_b] > 'b'
++ [T_n] > 'n'
++ [T_m] > 'm'
+
+c --- SHIFT LAYER (BASIC CAPITALS) ---
++ [SHIFT T_A_BAR_U] > 'A̱'
++ [SHIFT T_A_BAR_acute] > 'Á̱'
++ [SHIFT T_A_BAR_circ] > 'Â̱'
++ [SHIFT T_A_BAR_caron] > 'Ǎ̱'
++ [T_W_U] > 'W'
++ [T_E_U] > 'E'
++ [T_R_U] > 'R'
++ [T_T_U] > 'T'
++ [T_Y_U] > 'Y'
++ [T_U_U] > 'U'
++ [T_I_U] > 'I'
++ [T_O_U] > 'O'
++ [T_P_U] > 'P'
++ [T_A_U] > 'A'
++ [T_S_U] > 'S'
++ [T_D_U] > 'D'
++ [T_ɨ_U] > 'Ɨ'
++ [T_G_U] > 'G'
++ [T_H_U] > 'H'
++ [T_J_U] > 'J'
++ [T_K_U] > 'K'
++ [T_L_U] > 'L'
++ [T_Z_U] > 'Z'
++ [T_ʉ_U] > 'Ʉ'
++ [T_ɳ_U] > 'ɳ'
++ [T_NY_U] > 'NY'
++ [T_B_U] > 'B'
++ [T_N_U] > 'N'
++ [T_M_U] > 'M'
+
+c --- CAPITAL LONG-PRESS (SHIFT LAYER) ---
++ [T_A_BAR_ACUTE_U] > 'Á̱'
++ [T_A_BAR_CIRC_U]  > 'Â̱'
++ [T_A_BAR_CARON_U] > 'Ǎ̱'
++ [T_E_ACUTE_U]     > 'É'
++ [T_E_CIRC_U]      > 'Ê'
++ [T_E_CARON_U]     > 'Ě'
++ [T_I_ACUTE_U]     > 'Í'
++ [T_I_CIRC_U]      > 'Î'
++ [T_I_CARON_U]     > 'Ǐ'
++ [T_O_ACUTE_U]     > 'Ó'
++ [T_O_CIRC_U]      > 'Ô'
++ [T_O_CARON_U]     > 'Ǒ'
++ [T_U_ACUTE_U]     > 'Ú'
++ [T_U_CIRC_U]      > 'Û'
++ [T_U_CARON_U]     > 'Ǔ'
++ [T_ɨ_ACUTE_U]     > 'Ɨ́'
++ [T_ɨ_CIRC_U]      > 'Ɨ̂'
++ [T_ɨ_CARON_U]     > 'Ɨ̌'
++ [T_ʉ_ACUTE_U]     > 'Ʉ́'
++ [T_ʉ_CIRC_U]      > 'Ʉ̂'
++ [T_ʉ_CARON_U]     > 'Ʉ̌'
+
+c --- NUMS & SYMBOLS ---
++ [T_1] > '1'
++ [T_2] > '2'
++ [T_3] > '3'
++ [T_4] > '4'
++ [T_5] > '5'
++ [T_6] > '6'
++ [T_7] > '7'
++ [T_8] > '8'
++ [T_9] > '9'
++ [T_0] > '0'
++ [T_AT] > '@'
++ [T_HASH] > '#'
++ [T_DOLLAR] > '$'
++ [T_UNDERSCORE] > '_'
++ [T_AMP] > '&'
++ [T_MINUS] > '-'
++ [T_PLUS] > '+'
++ [T_LPAR] > '('
++ [T_RPAR] > ')'
++ [T_SLASH] > '/'
++ [T_STAR] > '*'
++ [T_QUOTE] > '"'
++ [T_APOS] > "'"
++ [T_COLON] > ':'
++ [T_SCOLON] > ';'
++ [T_EXCL] > '!'
++ [T_QUERY] > '?'
+
+group(nfc)
+
+store(Vowel) "aeiouAEIOU"
+store(acute)  U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store(circ) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB
+store(caron) U+01CE U+011B U+01D0 U+01D2 U+01D4 U+01CD U+011A U+01CF U+01D1 U+01D3
+
+any(Vowel) U+0301 > index(acute,1)
+any(Vowel) U+0302 > index(circ,1)
+any(Vowel) U+030C > index(caron,1)
+
+any(Vowel) U+0331 U+0301 > index(acute,1) U+0331
+any(Vowel) U+0331 U+0302 > index(circ,1) U+0331
+any(Vowel) U+0331 U+030C > index(caron,1) U+0331

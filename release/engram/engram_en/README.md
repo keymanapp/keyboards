@@ -11,7 +11,9 @@ Description
 Engram_en is optimized for comfortable and efficient touch typing in English 
 created by [Arno Klein](https://arnoklein.info), 
 with [open source code](https://github.com/binarybottle/engram)
-to create other optimized key layouts.
+to create other optimized key layouts. 
+
+A peer-reviewed manuscript in the International Journal of Human-Computer Interaction titled "Optimizing comfortable keyboard layouts using human typing preferences and language-dependent n-grams: the Engram Study" ([http://dx.doi.org/10.1080/10447318.2026.2665409](http://dx.doi.org/10.1080/10447318.2026.2665409)) describes the approach to optimizing keyboard layouts, and specifically the development of the Engram-en layout.
 
 Letters are optimally arranged according typing preference crowdsourced data-driven multi-objective optimization to reflect ergonomics factors that promote reduction 
 of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
