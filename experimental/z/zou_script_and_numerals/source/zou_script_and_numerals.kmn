@@ -1,0 +1,93 @@
+﻿c Zou Script and Numerals Keyboard with 27 upper and lower characters with numerals.
+store(&VERSION) '10.0'
+store(&NAME) 'Zou Script and Numerals'
+store(&COPYRIGHT) 'Copyright (c) Dr. T Marvin Zou'
+store(&MESSAGE) 'Zou Script and Numerals Keyboard created by Dr. T Marvin Zou. This is the first Zou digital keyboard designed, created, edited by Dr. T Marvin Zou from Zou communities of Tibeto Burman.'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'zou_script_and_numerals.ico'
+store(&VISUALKEYBOARD) 'zou_script_and_numerals.kvks'
+store(&TARGETS) 'web desktop'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- Numerals (U+E040 - U+E049) ---
++ [K_0] > U+E040
++ [K_1] > U+E041
++ [K_2] > U+E042
++ [K_3] > U+E043
++ [K_4] > U+E044
++ [K_5] > U+E045
++ [K_6] > U+E046
++ [K_7] > U+E047
++ [K_8] > U+E048
++ [K_9] > U+E049
+
+c --- Lowercase Letters (U+E020 - U+E03A) ---
++ [K_A] > U+E020
++ [K_B] > U+E021
++ [K_C] > U+E022
++ [K_D] > U+E023
++ [K_E] > U+E024
++ [K_F] > U+E025
++ [K_G] > U+E026
++ [K_H] > U+E027
++ [K_I] > U+E028
++ [K_J] > U+E029
++ [K_K] > U+E02A
++ [K_L] > U+E02B
++ [K_M] > U+E02C
++ [K_N] > U+E02D
++ [K_O] > U+E02E
++ [K_P] > U+E02F
++ [K_Q] > U+E030
++ [K_R] > U+E031
++ [K_S] > U+E032
++ [K_T] > U+E033
++ [K_U] > U+E034
++ [K_V] > U+E035
++ [K_W] > U+E036
++ [K_X] > U+E037
++ [K_Y] > U+E038
++ [K_Z] > U+E039
++ [K_LBRKT] > U+E03A  c 27th Lowercase Character[cite: 3]
+
+c --- Uppercase Letters (U+E000 - U+E01A) ---
++ [SHIFT K_A] > U+E000
++ [SHIFT K_B] > U+E001
++ [SHIFT K_C] > U+E002
++ [SHIFT K_D] > U+E003
++ [SHIFT K_E] > U+E004
++ [SHIFT K_F] > U+E005
++ [SHIFT K_G] > U+E006
++ [SHIFT K_H] > U+E007
++ [SHIFT K_I] > U+E008
++ [SHIFT K_J] > U+E009
++ [SHIFT K_K] > U+E00A
++ [SHIFT K_L] > U+E00B
++ [SHIFT K_M] > U+E00C
++ [SHIFT K_N] > U+E00D
++ [SHIFT K_O] > U+E00E
++ [SHIFT K_P] > U+E00F
++ [SHIFT K_Q] > U+E010
++ [SHIFT K_R] > U+E011
++ [SHIFT K_S] > U+E012
++ [SHIFT K_T] > U+E013
++ [SHIFT K_U] > U+E014
++ [SHIFT K_V] > U+E015
++ [SHIFT K_W] > U+E016
++ [SHIFT K_X] > U+E017
++ [SHIFT K_Y] > U+E018
++ [SHIFT K_Z] > U+E019
++ [SHIFT K_LBRKT] > U+E01A  c 27th Uppercase Character[cite: 3]
+
+c --- Punctuation ---
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_QUOTE] > '"'
++ [K_PERIOD]      > '.'
++ [K_COLON]       > ':'
++ [K_COMMA]       > ','
++ [K_SEMICOLON]   > ';'
++ [SHIFT K_1]     > '!'
++ [K_QUOTE]       > U+0027
