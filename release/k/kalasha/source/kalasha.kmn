@@ -2,15 +2,50 @@
 c with name "kalasha"
 store(&VERSION) '17.0'
 store(&NAME) 'Kaḷaṣamondr'
-store(&COPYRIGHT) '© Malachi James, Elsa Cooper, and Greg Cooper'
+store(&COPYRIGHT) '© Elsa Cooper, Greg Cooper, and Malachi James.'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'kalasha.kvks'
 store(&LAYOUTFILE) 'kalasha.keyman-touch-layout'
 store(&KEYBOARDVERSION) '1.0'
 
 begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+store(&CasedKeys) [K_A] .. [K_Z]
+
+store(digit) '0'..'9'
+store(caps) 'A'..'Z'
+store(letters) 'a'..'z'
+
+store(sentencePunctuation) '.?!'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(detectStartOfSentence)
+    
+group(detectStartOfSentence) readonly
+    nomatch > layer('shift')
+
+    any(sentencePunctuation) ' ' > layer('shift')
+
+    nomatch > layer('default')
 
 group(main) using keys
+
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > '_'
 + [SHIFT K_0] > ')'
@@ -104,21 +139,30 @@ c + [SHIFT K_BKQUOTE] > '̃'
 + [K_D] > 'd'
 + [K_S] > 's'
 + [K_A] > 'a'
-+ [K_BKQUOTE] > U+0323 U+0020
++ [K_BKQUOTE] > U+0323
 
-c define dot below
-store(dotted_letter) "aAcCdDeEiIlLoOrRsStTuUzZ"
-any(dotted_letter) + '`' > index(dotted_letter,1) U+0323
+c ====================== Rotation rule ======================
+
+c produce backquote
 U+0323 + '`' > '`'
-c write a rule so that d followed by anything but h loses its dot
 
-c define tilde
-store(tilde_letter) 'aAeEiIoOuU' U+0323
-any(tilde_letter) + '~' > index(tilde_letter,1) U+0303
+c produce tilde
 U+0303 + '~' > '~'
 
 c reorder to dot below, then tilde
 U+0303 + '`' > U+0323 U+0303
+
+c ====================== Diacritics rule ======================
+
+c define dot below
+store(dotted_letter) "aAcCdDeEiIlLoOrRsStTuUzZ"
+any(dotted_letter) + '`' > index(dotted_letter,1) U+0323 deadkey(dotwait) c dotwait is special for the caracter d (see below)
+
+c define tilde
+store(tilde_letter) 'aAeEiIoOuU' U+0323
+any(tilde_letter) + '~' > index(tilde_letter,1) U+0303
+
+c ====================== Backspace rule ======================
 
 c backspace removes diacritic and the base letter
 store(alphabet) 'a'..'z' 'A'..'Z'
@@ -126,8 +170,14 @@ store(diacritic) U+0323 U+0303
 any(alphabet) any(diacritic) any(diacritic) + [K_BKSP] > nul
 any(alphabet) any(diacritic) + [K_BKSP] > nul
 
-store(hchar) 'hH'
+c backspace removes characters c,s,z + h
+any(digraph_char) + any(hchar) > index(digraph_char, 1) index(hchar, 2) dk(h_combination)
+dk(h_combination) + any(alphabet) > index(alphabet, 2)
+any(digraph_char) any(hchar) dk(h_combination) + [K_BKSP] > nul
+
+c ====================== Character + h/H rule ======================
 c turn decomposed to composed characters (store(base) + h)
+store(hchar) 'hH'
 store(base) 'dDgGjJkKlLmMnNpPrRtT'
 
 any(base) + any(hchar) > index(base, 1) index(hchar, 2) dk(composing_char)
@@ -138,17 +188,28 @@ any(dotted_letter) U+0323 + any(hchar) > index(dotted_letter, 1) U+0323 index(hc
 dk(composed_dotted) + any(alphabet) > index(alphabet, 2)
 any(dotted_letter) U+0323 any(hchar) dk(composed_dotted) + [K_BKSP] > nul
 
-c digraphs (ch,sh,zh)
-store(digraph_char) 'cCsSzZ'
-store(transform_digraph) 'čČšŠžŽ'
+c transforming c,s,z,j to have caron: digraphs (ch,sh,zh, j)
+store(digraph_char) 'cCjsSzZ'
+store(transform_digraph) 'čČǰšŠžŽ'
 
-any(digraph_char) + any(hchar) > index(digraph_char, 1) index(hchar, 2) dk(h_combination)
-dk(h_combination) + any(alphabet) > index(alphabet, 2)
-any(digraph_char) any(hchar) dk(h_combination) + '^' > index(transform_digraph, 1)
-any(digraph_char) any(hchar) dk(h_combination) + [K_BKSP] > nul
+"J" + [SHIFT K_J] > "J̌"
+"J" + "^" > "J̌"
+"J̌" + "`" > "J" U+030C U+0323
 
-c prevent typing dot before the alphabet
-U+0323 U+0020 + [K_BKSP] > nul
+any(digraph_char) + '^' > index(transform_digraph, 1)
+any(digraph_char) + any(digraph_char) > index(transform_digraph, 1)
+any(transform_digraph) + '`' > index(transform_digraph, 1) U+0323 
+
+c prevent typing dot before the dotted letter
+c + '`' > 
+
+c Double tap space to produce a full stop or period
+' ' + [K_SPACE] > U+002E U+0020
+
+c write a rule so that d followed by anything but h loses its dot
+store(allkeys) 'abcdefgijklmnopqrstuvwxyzABCDEFGIJKLMNOPQRSTUVWXYZ'
+
+'d' U+0323 deadkey(dotwait) + any(allkeys) > 'd' index(allkeys,4)
 
 c touch keys; d = dot; a = tilde
 + [T_a_d] > 'a' U+0323
