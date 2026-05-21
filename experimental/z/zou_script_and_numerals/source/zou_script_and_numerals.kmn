@@ -82,7 +82,7 @@ c --- Uppercase Letters (U+E000 - U+E01A) ---
 + [SHIFT K_Z] > U+E019
 + [SHIFT K_LBRKT] > U+E01A  c 27th Uppercase Character
 
-c --- Punctuation ---
+c --- Standard Punctuation Mappings ---
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_QUOTE] > '"'
 + [K_PERIOD]      > '.'
@@ -90,3 +90,11 @@ c --- Punctuation ---
 + [K_COMMA]       > ','
 + [SHIFT K_1]     > '!'
 + [K_QUOTE]       > U+0027
+
+c --- Layout Structural Key Fallbacks ---
++ [K_RBRKT]       > ']'
++ [K_BKQUOTE]     > '`'
++ [K_HYPHEN]      > '-'
++ [K_EQUAL]       > '='
++ [K_BKSLASH]     > '\'
++ [K_SLASH]       > '/'
