@@ -41,7 +41,7 @@ To type the following Northern Chinook Jargon characters, use the right ALT key 
 <td>right ALT + x</td><td>x̱</td>
   </tr>
   <tr>
-<td>right ALT + \<single quote\></td><td>ʼ (Unicode U+02BC "MODIFIER LETTER APOSTROPHE")</td>
+<td>right ALT + \<single quote\>(long press . on mobile)</td><td>ʼ (Unicode U+02BC "MODIFIER LETTER APOSTROPHE")</td>
 
   </tr>
 </table>
