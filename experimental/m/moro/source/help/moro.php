@@ -10,7 +10,7 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Charis Moro, sans-serif;
       font-size: 11pt;
       color: #000000;
       line-height: 1.15;
@@ -132,7 +132,7 @@
   <table>
     <tr>
       <td>q</td>
-      <td>ɗ</td>
+      <td>ɽ</td>
     </tr>
     <tr>
       <td>[</td>
@@ -168,7 +168,7 @@
   <table>
     <tr>
       <td>SHIFT + q</td>
-      <td>Ɗ</td>
+      <td>Ɽ</td>
     </tr>
     <tr>
       <td>SHIFT + [</td>
