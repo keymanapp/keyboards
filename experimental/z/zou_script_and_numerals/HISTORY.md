@@ -1,6 +1,7 @@
 # Zou Script and Numerals Change History
 
-
+## 1.1 (2026-05-26)
+* Add touch layout
 
 ## 1.0 (2026-05-06)
 
