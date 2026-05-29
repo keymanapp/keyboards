@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Package>
   <System>
     <KeymanDeveloperVersion>18.0.249.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
+    <ExecuteProgram/>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <LicenseFile>LICENSE.md</LicenseFile>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName/>
+    <MSIOptions/>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
@@ -22,38 +23,32 @@
     <Author URL="">Rohingyan</Author>
     <Description URL="">This is a Hanifi keyboard which lays out all the keys in a more understandable, suitable way, which also allows for space for some letters not included in the normal Hanifi keyboard.
 Thats all.</Description>
-    <Version URL=""></Version>
+    <Version URL=""/>
   </Info>
   <Files>
     <File>
       <Name>..\build\hanifi_rohingya_alternate.kmx</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\hanifi_rohingya_alternate.js</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\hanifi_rohingya_alternate.kvk</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>LICENSE.md</Name>
-      <Description>File LICENSE.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
     </File>
     <File>
       <Name>welcome\ShiftedKeyboard.PNG</Name>
@@ -79,10 +74,48 @@ Thats all.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.php</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-Bold.ttf</Name>
+      <Description>Font Noto Sans Hanifi Rohingya Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-Medium.ttf</Name>
+      <Description>Font Noto Sans Hanifi Rohingya Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-Regular.ttf</Name>
+      <Description>Font Noto Sans Hanifi Rohingya Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-SemiBold.ttf</Name>
+      <Description>Font Noto Sans Hanifi Rohingya SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rohg\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>hanifi_rohingya_alternate</ID>
+      <OSKFont>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Rohg\NotoSansHanifiRohingya-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="rhg-Rohg">Rohingya</Language>
       </Languages>
