@@ -1,0 +1,50 @@
+﻿c sil_madurese generated from template at 2026-05-30 06:31:13
+c with name "sil_madurese"
+store(&VERSION) '15.0'
+store(&NAME) 'sil_madurese'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_madurese.ico'
+store(&VISUALKEYBOARD) 'sil_madurese.kvks'
+store(&LAYOUTFILE) 'sil_madurese.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(controls)  "`/."
+
+if(&platform = 'touch') + any(controls) > use(Touch)
+
+c deadkeys
++ "`" > deadkey(grave)
++ "/" > deadkey(circum)
++ "." > deadkey(dotbelow)
+
+c access dk
+deadkey(grave) + "`" > "`"  
+deadkey(circum)  + "/" > "/"  
+deadkey(dotbelow) + "." > "."  
+
+c `
+store(graveO)    'èÈ'
+store(graveK)    'eE'
+
+c /
+store(circumO)   'âÂ'
+store(circumK)   'aA'
+
+c .
+store(dotbelowO) 'ḌḍṬṭ'
+store(dotbelowK) 'DdTt'
+
+deadkey(grave) + any(graveK) > index(graveO, 2)
+deadkey(circum) + any(circumK) > index(circumO, 2)
+deadkey(dotbelow) + any(dotbelowK) > index(dotbelowO, 2)
+
+group(Touch) using keys
+    c This empty group, plus the rule that calls it, prevents control keys from affecting
+    c the base letter when used on touch keyboards, e.g. pressing 'e on a hardware keyboard
+    c will give é but on a touch keyboard this letter is accessed via long-press on e
+    c instead.
