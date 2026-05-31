@@ -17,14 +17,14 @@
 
 <p style="flex-direction: row;">
     <ul>Dotless Alphabets are in the Default Layout</ul>
-    <img src="help/typing-guide.jpg" alt="Arabic Mobile Layout">
+    <img src="typing-guide.jpg" alt="Arabic Mobile Layout">
     <ul>Dotted alphabets are <b>Shift Up</b></ul>
-    <img src="help/typing-guide-shift.jpg" alt="Arabic Mobile Keyboard Shift">
+    <img src="typing-guide-shift.jpg" alt="Arabic Mobile Keyboard Shift">
   </p>
   <p style="flex-direction: row;">
     <ul>Arabic Numerals are in the <b>Number Layout</b></ul>
     <ul>Hindi Numeras are in Number Layout, <b>Shift Up</b></ul>
-    <img src="help/typing-guide-numbers.jpg" alt="Arabic Mobile Keyboard Numbers">
+    <img src="typing-guide-numbers.jpg" alt="Arabic Mobile Keyboard Numbers">
   </p>
   <p>
     <img src="typing-guide-symbols.jpg" alt="Arabic Mobile Keyboard Symbols">
