@@ -23,7 +23,7 @@
   </p>
   <p style="flex-direction: row;">
     <ul>Arabic Numerals are in the <b>Number Layout</b></ul>
-    <ul>Hindi Numeras are in Number Layout, <b>Shift Up</b></ul>
+    <ul>Hindi Numerals are in Number Layout, <b>Shift Up</b></ul>
     <img src="typing-guide-numbers.jpg" alt="Arabic Mobile Keyboard Numbers">
   </p>
   <p>
