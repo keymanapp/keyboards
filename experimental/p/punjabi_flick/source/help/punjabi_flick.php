@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'punjabi Flick Keyboard Help';
+  $pagename = 'Punjabi Flick Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
