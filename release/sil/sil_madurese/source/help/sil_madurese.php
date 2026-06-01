@@ -10,6 +10,8 @@
   A keyboard for Madurese language written with Latin script
 </p>
 
+<h2>Desktop Keyboard Layout</h2>
+
 <p>Special key combinations to use on desktop computers:</p>
 <ul>
   <li>`e &rarr; è</li>
@@ -22,24 +24,14 @@
   <li>.T &rarr; Ṭ</li>
 </ul>
 
-<p>Type the modifer keys twice to output:</p>
-<ul>
-  <li>`` &rarr; `</li>
-  <li>// &rarr; /</li>
-  <li>.. &rarr; .</li>
-</ul>
-
-<!-- Insert Keyboard Layout Images or HTML here -->
-
-<h2>Desktop Keyboard Layout</h2>
-
 <div id='osk' data-states='default shift'>
 </div>
 
 
 <h2>Mobile Keyboard Layout</h2>
 
-<p>Special characters on longpress keys</p>
+<p>Special characters on longpress keys: 
+  <kbd>a</kbd>, <kbd>d</kbd>, <kbd>e</kbd>, and <kbd>t</kbd></p>
 
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
