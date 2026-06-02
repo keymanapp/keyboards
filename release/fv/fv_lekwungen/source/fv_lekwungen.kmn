@@ -2,7 +2,7 @@
 c 
 c Alternate names: Songish, lək̓ʷəŋiʔnəŋ
 store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.1'
 c store(&ETHNOLOGUECODE) "str"
 store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International.'
 store(&NAME) 'Lekwungen (Lək̓ʷəŋən)'
@@ -101,7 +101,7 @@ C mobile shift layer
 + [SHIFT T_K_0] > 'K̓ʷ' layer('default')
 + [SHIFT T_K] > 'Kʷ' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON] > 'ɬ' layer('default')
++ [SHIFT T_COLON] > 'Ɬ' layer('default')
 
 + [SHIFT T_Z_0] > 'X̣ʷ' layer('default')
 + [SHIFT T_Z] > 'X̣' layer('default')
@@ -160,7 +160,8 @@ store(withCaron) "čšČŠ"
 any(withCaron) + [K_BKSP] > index(noCaron,1)
 
 c Glottal apostrophe combining rules
-store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNY'
+c Added Ŋ to the uppercase list to ensure combinations with standard capitals map seamlessly.
+store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNYŊ'
 store(glottalKeys) [T_J] [SHIFT T_J] [K_QUOTE]
 any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
 
@@ -206,36 +207,102 @@ c combining keys for accents
 + [K_BKSLASH] > U+0300 c grave
 
 c lekwungen characters
-+ [K_2] > 'ʷ'
-+ [K_3] > 'ə'
-+ [K_4] > 'ʔ'
-+ [K_5] > 'č'
-+ [K_6] > 'š'
-+ [K_7] > 'x̣'
-+ [K_8] > 'ƛ̓'
-+ [K_9] > 'ɬ'
-+ [K_0] > 'ŋ'
+
+c Key 2: ʷ (Modifier - typically caseless)
++ [NCAPS K_2] > 'ʷ'
++ [CAPS K_2] > 'ʷ'
++ [NCAPS SHIFT K_2] > 'ʷ'
++ [CAPS SHIFT K_2] > 'ʷ'
+
+c Key 3: ə / Ə
++ [NCAPS K_3] > 'ə'
++ [CAPS K_3] > 'Ə'
++ [NCAPS SHIFT K_3] > 'Ə'
++ [CAPS SHIFT K_3] > 'ə'
+
+c Key 4: ʔ (Glottal stop - caseless)
++ [NCAPS K_4] > 'ʔ'
++ [CAPS K_4] > 'ʔ'
++ [NCAPS SHIFT K_4] > 'ʔ'
++ [CAPS SHIFT K_4] > 'ʔ'
+
+c Key 5: č / Č
++ [NCAPS K_5] > 'č'
++ [CAPS K_5] > 'Č'
++ [NCAPS SHIFT K_5] > 'Č'
++ [CAPS SHIFT K_5] > 'č'
+
+c Key 6: š / Š
++ [NCAPS K_6] > 'š'
++ [CAPS K_6] > 'Š'
++ [NCAPS SHIFT K_6] > 'Š'
++ [CAPS SHIFT K_6] > 'š'
+
+c Key 7: x̣ / X̣
++ [NCAPS K_7] > 'x̣'
++ [CAPS K_7] > 'X̣'
++ [NCAPS SHIFT K_7] > 'X̣'
++ [CAPS SHIFT K_7] > 'x̣'
+
+c Key 8: ƛ̓ (Caseless)
++ [NCAPS K_8] > 'ƛ̓'
++ [CAPS K_8] > 'ƛ̓'
++ [NCAPS SHIFT K_8] > 'ƛ̓'
++ [CAPS SHIFT K_8] > 'ƛ̓'
+
+c Key 9: ɬ / Ɬ
++ [NCAPS K_9] > 'ɬ'
++ [CAPS K_9] > 'Ɬ'
++ [NCAPS SHIFT K_9] > 'Ɬ'
++ [CAPS SHIFT K_9] > 'ɬ'
+
+c Key 0: ŋ / Ŋ
++ [NCAPS K_0] > 'ŋ'
++ [CAPS K_0] > 'Ŋ'
++ [NCAPS SHIFT K_0] > 'Ŋ'
++ [CAPS SHIFT K_0] > 'ŋ'
 
 c letters not in lekwungen but added here to be consistant with LG layout
-+ [K_BKQUOTE] > 'θ'
-+ [K_1] > 'tᶿ'
+
+c Backquote: θ / Θ
++ [NCAPS K_BKQUOTE] > 'θ'
++ [CAPS K_BKQUOTE] > 'Θ'
++ [NCAPS SHIFT K_BKQUOTE] > 'Θ'
++ [CAPS SHIFT K_BKQUOTE] > 'θ'
+
+c Key 1: tᶿ / Tᶿ
++ [NCAPS K_1] > 'tᶿ'
++ [CAPS K_1] > 'Tᶿ'
++ [NCAPS SHIFT K_1] > 'Tᶿ'
++ [CAPS SHIFT K_1] > 'tᶿ'
 
 c original keys with right-alt
 + [RALT K_COLON] > ";"
 + [RALT K_QUOTE] > "'"
 + [RALT K_BKSLASH] > "\"
 
-+ [RALT K_BKQUOTE] > '`'
-+ [RALT K_1] > '1'
-+ [RALT K_2] > '2'
-+ [RALT K_3] > '3'
-+ [RALT K_4] > '4'
-+ [RALT K_5] > '5'
-+ [RALT K_6] > '6'
-+ [RALT K_7] > '7'
-+ [RALT K_8] > '8'
-+ [RALT K_9] > '9'
-+ [RALT K_0] > '0'
++ [NCAPS RALT K_BKQUOTE] > '`'
++ [CAPS RALT K_BKQUOTE] > '`'
++ [NCAPS RALT K_1] > '1'
++ [CAPS RALT K_1] > '1'
++ [NCAPS RALT K_2] > '2'
++ [CAPS RALT K_2] > '2'
++ [NCAPS RALT K_3] > '3'
++ [CAPS RALT K_3] > '3'
++ [NCAPS RALT K_4] > '4'
++ [CAPS RALT K_4] > '4'
++ [NCAPS RALT K_5] > '5'
++ [CAPS RALT K_5] > '5'
++ [NCAPS RALT K_6] > '6'
++ [CAPS RALT K_6] > '6'
++ [NCAPS RALT K_7] > '7'
++ [CAPS RALT K_7] > '7'
++ [NCAPS RALT K_8] > '8'
++ [CAPS RALT K_8] > '8'
++ [NCAPS RALT K_9] > '9'
++ [CAPS RALT K_9] > '9'
++ [NCAPS RALT K_0] > '0'
++ [CAPS RALT K_0] > '0'
 
                               
 nomatch > use(x)                            
