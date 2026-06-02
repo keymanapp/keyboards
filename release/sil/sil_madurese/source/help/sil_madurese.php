@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using sil_madurese</h1>
+<h1>Start Using Madurese (SIL)</h1>
 
 <p>
   A keyboard for Madurese language written with Latin script
@@ -30,7 +30,7 @@
 
 <h2>Mobile Keyboard Layout</h2>
 
-<p>Special characters on longpress keys: 
+<p>Special characters on longpress keys:
   <kbd>a</kbd>, <kbd>d</kbd>, <kbd>e</kbd>, and <kbd>t</kbd></p>
 
 <div id='osk-phone' data-states='default shift numeric'>
