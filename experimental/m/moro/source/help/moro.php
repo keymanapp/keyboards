@@ -10,7 +10,8 @@
     }
 
     body {
-      font-family: Charis Moro, sans-serif;
+      font-family: Charis, sans-serif;
+      font-feature-settings: "cv55" 1, "ss04" 1;
       font-size: 11pt;
       color: #000000;
       line-height: 1.15;
@@ -62,13 +63,13 @@
       height: auto;
     }
 
-    table {
+    table.kbdrules {
       border-collapse: collapse;
       margin: 12pt 0;
     }
 
-    td, th {
-      border: 1px solid #000000;
+    table.kbdrules td, table.kbdrules th {
+      border: 1px solid rgb(0, 0, 0);
       padding: 5pt;
       text-align: left;
       vertical-align: top;
@@ -129,7 +130,7 @@
   <p>The table shows the key cap, the character shown on the hardware keyboard and the character it outputs.</p>
 
   <h2>ŋǝɽiña lŋi ŋero ŋǝperta đwarđa irufya isi ŋoɽra (Lowercase)</h2>
-  <table>
+  <table class="kbdrules">
     <tr>
       <td>q</td>
       <td>ɽ</td>
@@ -165,7 +166,7 @@
   </table>
 
   <h2>ŋəɽiñ iŋi ŋerṯo đəwarađa uruff goɽra (Uppercase)</h2>
-  <table>
+  <table class="kbdrules">
     <tr>
       <td>SHIFT + q</td>
       <td>Ɽ</td>
@@ -203,7 +204,7 @@
   <p>ŋen ŋanta ŋǝɽwađate ta ŋewarđi iruf isi yañaŋɽa alo isi ŋǝɽiña ŋofafia ŋadǝrne ndaŋ đǝŋacaba lafumta indi "alt" and "+" ŋen ŋarno indi lafo alo is iɽo lamǝraba</p>
   <p>To be able to type the characters from the standard qwerty keyboard press the right alt key + the desired key as shown in the table.</p>
 
-  <table>
+  <table class="kbdrules">
     <tr>
       <td>RAlt + [</td>
       <td>[</td>
