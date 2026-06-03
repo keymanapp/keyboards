@@ -23,7 +23,7 @@ require_once('header.php');
 						<td class="compactsans"><img src="splash.png" width="70" height="101"/></td>
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
-							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty(v1.0.0):</strong> A keyboard for the «bda:Bayot (Latin)» language, which generates NFC Unicode characters.</h1t><br>
+							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty:</strong> A keyboard for the «bda:Bayot (Latin)» language, which generates NFC Unicode characters.</h1t><br>
 							<pc>Created by SIL Senegal.</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
@@ -2293,7 +2293,7 @@ require_once('header.php');
 						<td class="compactsans"><img src="splash.png" width="70" height="101"/></td>
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
-							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty(v1.0.0):</strong> Um teclado para o «bda:Bayot (Latin)» idioma, que gera caracteres NFC Unicode.</h1t><br>
+							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty:</strong> Um teclado para o «bda:Bayot (Latin)» idioma, que gera caracteres NFC Unicode.</h1t><br>
 							<pc>Criado por SIL Senegal.</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
@@ -4563,7 +4563,7 @@ require_once('header.php');
 						<td class="compactsans"><img src="splash.png" width="70" height="101"/></td>
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
-							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty(v1.0.0):</strong> Un clavier pour la langue «bda:Bayot (Latin)», qui génère des caractères NFC Unicode.</h1t><br>
+							<h1t style="text-align: center"> <strong>sil_senegal_bda_azerty:</strong> Un clavier pour la langue «bda:Bayot (Latin)», qui génère des caractères NFC Unicode.</h1t><br>
 							<pc>Créé par SIL Sénégal.</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
