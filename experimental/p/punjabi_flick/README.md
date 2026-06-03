@@ -1,4 +1,4 @@
-punjabi Flick keyboard
+Punjabi Flick keyboard
 ==============
 
 Description
