@@ -7,7 +7,7 @@
 
   <p>
     <b>
-      A mobile keyboard layout designed for Punjabi, utilizing a flick input method. Inspired by the <a href="https://keyman.com/keyboards/hindi_flick">Hindi Flick Keyboard</a>, as seen on Keyman. (A little too much)
+     A keyboard layout designed for Punjabi. The mobile layout utilizes a flick input method. Inspired by the <a href="https://keyman.com/keyboards/hindi_flick">Hindi Flick Keyboard</a>, as seen on Keyman. (A little too much)
     </b>
   </p>
   <p>Punjabi Flick is based on the clustering of syllables according to the area of the mouth used that is inherent to
@@ -20,7 +20,7 @@
     correctly preserve the phonetic order of the characters and diacritics, something especially important for syllabic
     scripts (also known as <em>abugidas</em>) like Gurmukhi.</p>
  
-  <h2>Functionality and Usage</h2>
+  <h2>Mobile/Phone Keyboard Layout</h2>
   
   <div id='osk-phone' data-states='default abc_noshift shift numeric'>
   </div>
@@ -75,3 +75,7 @@
   <p>A particular note for nuqtas, the order utilised (as with other parts of the keyboard) is consonant + nuqta +
     matra. Even if you add a matra first, the nuqta will be placed after the consonant. This is to ensure that the nuqta
     is always placed after the consonant, as is the norm in Gurmukhi.</p>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
