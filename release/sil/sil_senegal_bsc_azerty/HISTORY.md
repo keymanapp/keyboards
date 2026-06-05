@@ -1,6 +1,14 @@
 sil_senegal_bsc_azerty Change History
 ====================
 
+1.1.1 (2026-05-16)
+------------------
+RALt replaces CTRL ALT incontext on Touch Layout.
+
+1.1.0 (2026-05-13)
+------------------
+RALt replaces CTRL ALT, sentence initial capitals and CAPSLOCK supported. CTRL layer removed.
+
 1.0.2 (2023-01-18)
 ----------------
 Copyright info updated
