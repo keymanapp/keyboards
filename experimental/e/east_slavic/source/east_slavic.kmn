@@ -2,7 +2,7 @@
 store(&VERSION) '10.0'
 store(&NAME) 'east slavic'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'east_slavic.ico'
 store(&VISUALKEYBOARD) 'east_slavic.kvks'
@@ -194,6 +194,8 @@ any(letters) + [RALT SHIFT K_3] > index(letters, 1) '”'
 
 + [K_SLASH] > U+002e
 + [SHIFT K_SLASH] > U+002c
++ [RALT K_SLASH] > U+0301
++ [SHIFT RALT K_SLASH] > U+0301
 
 + [NCAPS K_BKQUOTE] > "'"
 + [CAPS K_BKQUOTE] > "'"
@@ -231,6 +233,10 @@ any(letters) + [RALT SHIFT K_3] > index(letters, 1) '”'
 'ь' + 'S' > 'ы'
 'Ь' + 's' > 'Ы'
 'Ь' + 'S' > 'Ы'
+'ъ' + 's' > 'ы'
+'ъ' + 'S' > 'ы'
+'Ъ' + 's' > 'Ы'
+'Ъ' + 'S' > 'Ы'
 
 'і' + [NCAPS K_QUOTE] > 'є'
 'і' + [NCAPS SHIFT K_QUOTE] > 'є'
