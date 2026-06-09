@@ -4,7 +4,6 @@
 
   $pagestyle = <<<END
   /* ── Base ── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     /* ── Reference tables ── */
   table.ref {
