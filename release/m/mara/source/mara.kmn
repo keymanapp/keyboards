@@ -6,7 +6,7 @@ store(&VERSION) '10.0'
 store(&NAME) 'Mara'
 store(&COPYRIGHT) 'Copyright © Laitei'
 store(&MESSAGE) 'Author: Laitei (https://laitei.dev)'
-store(&KEYBOARDVERSION) '1.0.4'
+store(&KEYBOARDVERSION) '1.0.5'
 store(&TARGETS) 'any'
 store(&BITMAP) 'mara.ico'
 store(&VISUALKEYBOARD) 'mara.kvks'
@@ -79,6 +79,27 @@ c =========================
 + [CAPS K_Z] > 'Z'
 
 c =========================
+c RIGHT ALT / ALTGR KEYS
+c Native RALT mapping to prevent Windows system beeps
+c =========================
+
+c AltGr with Caps Lock OFF
++ [NCAPS RALT K_Q] > 'q'
++ [NCAPS RALT SHIFT K_Q] > 'Q'
++ [NCAPS RALT K_X] > 'x'
++ [NCAPS RALT SHIFT K_X] > 'X'
++ [NCAPS RALT K_J] > 'j'
++ [NCAPS RALT SHIFT K_J] > 'J'
+
+c AltGr with Caps Lock ON
++ [CAPS RALT K_Q] > 'Q'
++ [CAPS RALT SHIFT K_Q] > 'q'
++ [CAPS RALT K_X] > 'X'
++ [CAPS RALT SHIFT K_X] > 'x'
++ [CAPS RALT K_J] > 'J'
++ [CAPS RALT SHIFT K_J] > 'j'
+
+c =========================
 c SHIFT = UPPERCASE (NCAPS)
 c =========================
 
@@ -91,7 +112,7 @@ c =========================
 + [NCAPS SHIFT K_G] > 'G'
 + [NCAPS SHIFT K_H] > 'H'
 + [NCAPS SHIFT K_I] > 'I'
-+ [NCAPS SHIFT K_J] > 'CH'
++ [NCAPS SHIFT K_J] > 'Ch'
 + [NCAPS SHIFT K_K] > 'K'
 + [NCAPS SHIFT K_L] > 'L'
 + [NCAPS SHIFT K_M] > 'M'
@@ -110,35 +131,35 @@ c =========================
 + [NCAPS SHIFT K_Z] > 'Z'
 
 c =========================
-c SHIFT = UPPERCASE (CAPS)
+c SHIFT = UPPERCASE (CAPS) -> INVERTED TO LOWERCASE
 c =========================
 
-+ [CAPS SHIFT K_A] > 'A'
-+ [CAPS SHIFT K_B] > 'B'
-+ [CAPS SHIFT K_C] > 'C'
-+ [CAPS SHIFT K_D] > 'D'
-+ [CAPS SHIFT K_E] > 'E'
-+ [CAPS SHIFT K_F] > 'F'
-+ [CAPS SHIFT K_G] > 'G'
-+ [CAPS SHIFT K_H] > 'H'
-+ [CAPS SHIFT K_I] > 'I'
-+ [CAPS SHIFT K_J] > 'CH'
-+ [CAPS SHIFT K_K] > 'K'
-+ [CAPS SHIFT K_L] > 'L'
-+ [CAPS SHIFT K_M] > 'M'
-+ [CAPS SHIFT K_N] > 'N'
-+ [CAPS SHIFT K_O] > 'O'
-+ [CAPS SHIFT K_P] > 'P'
-+ [CAPS SHIFT K_Q] > 'Â'
-+ [CAPS SHIFT K_R] > 'R'
-+ [CAPS SHIFT K_S] > 'S'
-+ [CAPS SHIFT K_T] > 'T'
-+ [CAPS SHIFT K_U] > 'U'
-+ [CAPS SHIFT K_V] > 'V'
-+ [CAPS SHIFT K_W] > 'W'
-+ [CAPS SHIFT K_X] > 'Ô'
-+ [CAPS SHIFT K_Y] > 'Y'
-+ [CAPS SHIFT K_Z] > 'Z'
++ [CAPS SHIFT K_A] > 'a'
++ [CAPS SHIFT K_B] > 'b'
++ [CAPS SHIFT K_C] > 'c'
++ [CAPS SHIFT K_D] > 'd'
++ [CAPS SHIFT K_E] > 'e'
++ [CAPS SHIFT K_F] > 'f'
++ [CAPS SHIFT K_G] > 'g'
++ [CAPS SHIFT K_H] > 'h'
++ [CAPS SHIFT K_I] > 'i'
++ [CAPS SHIFT K_J] > 'ch'
++ [CAPS SHIFT K_K] > 'k'
++ [CAPS SHIFT K_L] > 'l'
++ [CAPS SHIFT K_M] > 'm'
++ [CAPS SHIFT K_N] > 'n'
++ [CAPS SHIFT K_O] > 'o'
++ [CAPS SHIFT K_P] > 'p'
++ [CAPS SHIFT K_Q] > 'â'
++ [CAPS SHIFT K_R] > 'r'
++ [CAPS SHIFT K_S] > 's'
++ [CAPS SHIFT K_T] > 't'
++ [CAPS SHIFT K_U] > 'u'
++ [CAPS SHIFT K_V] > 'v'
++ [CAPS SHIFT K_W] > 'w'
++ [CAPS SHIFT K_X] > 'ô'
++ [CAPS SHIFT K_Y] > 'y'
++ [CAPS SHIFT K_Z] > 'z'
 
 c =========================
 c SYMBOLS (normal behavior)
