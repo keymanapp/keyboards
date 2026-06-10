@@ -4,7 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using MADHURÂH (SIL)</h1>
 
 <p>
   A keyboard for the MADHURÂH language written with Latin script for the Madurese people.
