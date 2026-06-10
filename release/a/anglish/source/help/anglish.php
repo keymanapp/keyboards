@@ -12,7 +12,6 @@
 <div id='osk' data-states='default shift'>
     
     <p style="flex-direction: row;">
-        <img src="oldenglish_alphabet.gif" alt="Alphabet">
         <h4>Alphabets Not in Modern English</h4>
         <ul><strong>Æ/æ</strong> (called: <i>Ash</i>) is the "A" in "Cat". It can come in both long and short forms.</ul>
         <ul><strong>Ð/ð</strong> (called: <i>Eth</i>) is the voiced "th" sound in "those", "therefore", etc. Originally, comes from the Rune Letter, that English used to be written with before Latin.</ul>
@@ -26,7 +25,6 @@
         <ul><strong>S/s</strong> is pronounced like "s" as in "sun", when it comes initially, or finally, or after voiceless consonants. It is also pronounced like "z" as in "zero", elsewhere.</ul>
     </p>
     <p style="flex-direction: row;">
-        <img src="oldenglish_pronunciation.gif" alt="Alphabet Pronunciation">
         <h4>List of Vowels</h4>
         <ul><strong>A/a</strong> could be long or short, and is pronounced like "ah" as in "father".</ul>
         <ul><strong>Æ/æ</strong> could be long or short, and is pronounced like "a" as in "bat".</ul>
