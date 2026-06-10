@@ -53,9 +53,5 @@
     </p>
 </div>
 
- <h3>Desktop Keyboard</h3>
- <img src="layout.png" alt="Main Layout">
- <img src="layout-shift.png" alt="Shift Layout">
- <h3>Mobile Layout</h3>
- <img src="mobile.png" alt="Mobile Layout">
- <img src="mobile-shift.png" alt="Mobile Shift Layout">
+<h2>Mobile Keyboard Layout</h2>
+<div id='osk-phone' data-states='default shift numeric'></div>
