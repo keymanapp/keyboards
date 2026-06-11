@@ -1,6 +1,10 @@
 cantonese telex Change History
 ====================
 
+4.0.3 (2026-5-11)
+----------------
+* shortened the codes
+
 4.0.2 (2026-4-25)
 ----------------
 * adopted "ii" input to generate the letters 'ŭ'
