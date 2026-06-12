@@ -10,8 +10,7 @@
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
-    
-    <p style="flex-direction: row;">
+</div>
         <h4>Alphabets Not in Modern English</h4>
         <ul><strong>Æ/æ</strong> (called: <i>Ash</i>) is the "A" in "Cat". It can come in both long and short forms.</ul>
         <ul><strong>Ð/ð</strong> (called: <i>Eth</i>) is the voiced "th" sound in "those", "therefore", etc. Originally, comes from the Rune Letter, that English used to be written with before Latin.</ul>
@@ -23,9 +22,8 @@
         <ul><strong>F/f</strong> is pronounced unvoiced "f" as in "fine", when is comes initially, or finally, or after voiceless consonants. It is also pronounced voiced "v" as in "very", elsewhere. for example, "wolf", and "wolfas".</ul>
         <ul><strong>H/h</strong> is pronounced [ç] after front vowels, and [x] after back vowels as in "loch" in Scottish, and [h] elsewhere.</ul>
         <ul><strong>S/s</strong> is pronounced like "s" as in "sun", when it comes initially, or finally, or after voiceless consonants. It is also pronounced like "z" as in "zero", elsewhere.</ul>
-    </p>
-    <p style="flex-direction: row;">
-        <h4>List of Vowels</h4>
+
+<h4>List of Vowels</h4>
         <ul><strong>A/a</strong> could be long or short, and is pronounced like "ah" as in "father".</ul>
         <ul><strong>Æ/æ</strong> could be long or short, and is pronounced like "a" as in "bat".</ul>
         <ul><strong>E/e</strong> could be long or short, and is pronounced like "eh" as in "bed".</ul>
@@ -33,22 +31,25 @@
         <ul><strong>O/o</strong> could be long or short, and is pronounced like "oh" as in "go", or "o" as in "hot".</ul>
         <ul><strong>U/u</strong> could be long or short, and is pronounced like "oo" as in "soon", or "u" as in "put".</ul>
         <ul><strong>Y/y</strong> could be long or short, and is pronounced "u"/"i" in the back of the mouth, top of the throat.</ul>
-        <h4>List of Diphthongs</h4>
+
+<h4>List of Diphthongs</h4>
         <ul><strong>Ea/ea</strong> could be long or short, and is pronounced like "æa".</ul>
         <ul><strong>Eo/eo</strong> could be long or short, and is pronounced like "eo".</ul>
         <ul><strong>Ie/ie</strong> could be long or short, and is pronounced like "iy".</ul>
         <ul><strong>Io/io</strong> is pronounced like "iu".</ul>
         <ul><strong>Oe/oe</strong> could be long or short, and is pronounced like "ø".</ul>
-        <h4>List of Consonant Combinations</h4>
+
+<h4>List of Consonant Combinations</h4>
         <ul><strong>Cȝ</strong> (it is <i>C with Yogh</i>) is pronounced like "j", or soft "g" in "beige".</ul>
         <ul><strong>Cƿ</strong> (it is <i>C with Wynn</i>) is pronounced like "kw" as in "quite".</ul>
         <ul><strong>Sc</strong> was originally pronounced as "shk", and later as "sh" as in "shine".</ul>
         <ul>In other news, "ff" and "ss" are also quite common variants of long consonants.</ul>
-        <h4>Some Abbreviations</h4>
+
+<h4>Some Abbreviations</h4>
         <ul><strong>⁊</strong> (called: <i>Tironian Et</i>, and not to confused with Arabic Numeral "7") is an old shorthand symbol for "and". It is pronounced like "and", and is used in Ænglish, and also in Irish Gaelic.</ul>
         <ul><strong>ꝥ</strong> (called: <i>Thorn with Stroke</i>) is an old shorthand symbol for "the". It is pronounced like "the", and is used in Ænglish, and also in Irish Gaelic.</ul>
         <ul><strong>̅</strong> (called: <i>Overline</i>) is an old shorthand symbol for "m" or "n". It is pronounced like "m" or "n", and is used in Ænglish, and also in Latin. For example, su̅ne = sumne, etc.</ul>
-    </p>
-</div>
+
+
 <h2>Mobile Keyboard Layout</h2>
 <div id='osk-phone' data-states='default shift numeric'></div>
