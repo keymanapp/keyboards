@@ -1,13 +1,14 @@
-store(&NAME) 'Hindi Flick'
+﻿store(&NAME) 'Hindi Flick'
 store(&VISUALKEYBOARD) 'hindi_flick.kvks'
 store(&BITMAP) 'hindi_flick.ico'
 store(&LAYOUTFILE) 'hindi_flick.keyman-touch-layout'
-store(&COPYRIGHT) '© SIL Global'
+store(&COPYRIGHT) '© Raghav Goel'
 store(&MESSAGE) 'A mobile keyboard layout designed for Hindi, utilizing a flick input method.'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 
 begin Unicode > use(main)
+
 
 c comment these all out to go to design section
 store(svara) U+0904 .. U+0914
@@ -402,6 +403,7 @@ group(handleNuqta)
   U+094B U+093C > U+093C U+094B c o
   U+090B U+093C > U+093C U+0943 c ri
   U+0911 U+093C > U+093C U+0949 c aw
+
 group(main) using keys
 + [U_0905] >  'ा' use(checkMatra)
 + [U_0907] >  'ि' use(checkMatra)
@@ -447,6 +449,138 @@ c + [K_W] > 'ं' use(checkMatra)
 c + [SHIFT K_W] > '़'use(checkMatra)
 c + [SHIFT K_Q] > 'ः' use(checkMatra)
 
+c Rules for desktop (pulled from OSK). Using the platform statement allows the touch layout to still work properly (touch layout has Latin layers).
+platform('desktop') + [K_0] > "0"
+platform('desktop') + [K_1] > "1"
+platform('desktop') + [K_2] > "2"
+platform('desktop') + [K_3] > "3"
+platform('desktop') + [K_4] > "4"
+platform('desktop') + [K_5] > "5"
+platform('desktop') + [K_6] > "6"
+platform('desktop') + [K_7] > "7"
+platform('desktop') + [K_8] > "8"
+platform('desktop') + [K_9] > "9"
+platform('desktop') + [K_A] > "ो"
+platform('desktop') + [K_B] > "व"
+platform('desktop') + [K_C] > "म"
+platform('desktop') + [K_D] > "्"
+platform('desktop') + [K_E] > "ा"
+platform('desktop') + [K_F] > "ि"
+platform('desktop') + [K_G] > "ु"
+platform('desktop') + [K_H] > "प"
+platform('desktop') + [K_I] > "ग"
+platform('desktop') + [K_J] > "र"
+platform('desktop') + [K_K] > "क"
+platform('desktop') + [K_L] > "त"
+platform('desktop') + [K_M] > "स"
+platform('desktop') + [K_N] > "ल"
+platform('desktop') + [K_O] > "द"
+platform('desktop') + [K_P] > "ज"
+platform('desktop') + [K_Q] > "ौ"
+platform('desktop') + [K_R] > "ी"
+platform('desktop') + [K_S] > "े"
+platform('desktop') + [K_T] > "ू"
+platform('desktop') + [K_U] > "ह"
+platform('desktop') + [K_V] > "न"
+platform('desktop') + [K_W] > "ै"
+platform('desktop') + [K_X] > "ं"
+platform('desktop') + [K_Y] > "ब"
+platform('desktop') + [K_Z] > "ॆ"
+platform('desktop') + [K_COLON] > "च"
+platform('desktop') + [K_EQUAL] > "ृ"
+platform('desktop') + [K_COMMA] > ","
+platform('desktop') + [K_HYPHEN] > "-"
+platform('desktop') + [K_PERIOD] > "."
+platform('desktop') + [K_SLASH] > "य"
+platform('desktop') + [K_BKQUOTE] > "ॊ"
+platform('desktop') + [K_LBRKT] > "ड"
+platform('desktop') + [K_BKSLASH] > "ॉ"
+platform('desktop') + [K_RBRKT] > "़"
+platform('desktop') + [K_QUOTE] > "ट"
+platform('desktop') + [K_oE2] > "ॉ"
+platform('desktop') + [SHIFT K_0] > ")"
+platform('desktop') + [SHIFT K_1] > "ऍ"
+platform('desktop') + [SHIFT K_2] > "ॅ"
+platform('desktop') + [SHIFT K_3] > "्र"
+platform('desktop') + [SHIFT K_4] > "र्"
+platform('desktop') + [SHIFT K_5] > "ज्ञ"
+platform('desktop') + [SHIFT K_6] > "त्र"
+platform('desktop') + [SHIFT K_7] > "क्ष"
+platform('desktop') + [SHIFT K_8] > "श्र"
+platform('desktop') + [SHIFT K_9] > "("
+platform('desktop') + [SHIFT K_A] > "ओ"
+platform('desktop') + [SHIFT K_B] > "ऴ"
+platform('desktop') + [SHIFT K_C] > "ण"
+platform('desktop') + [SHIFT K_D] > "अ"
+platform('desktop') + [SHIFT K_E] > "आ"
+platform('desktop') + [SHIFT K_F] > "इ"
+platform('desktop') + [SHIFT K_G] > "उ"
+platform('desktop') + [SHIFT K_H] > "फ"
+platform('desktop') + [SHIFT K_I] > "घ"
+platform('desktop') + [SHIFT K_J] > "ऱ"
+platform('desktop') + [SHIFT K_K] > "ख"
+platform('desktop') + [SHIFT K_L] > "थ"
+platform('desktop') + [SHIFT K_M] > "श"
+platform('desktop') + [SHIFT K_N] > "ळ"
+platform('desktop') + [SHIFT K_O] > "ध"
+platform('desktop') + [SHIFT K_P] > "झ"
+platform('desktop') + [SHIFT K_Q] > "औ"
+platform('desktop') + [SHIFT K_R] > "ई"
+platform('desktop') + [SHIFT K_S] > "ए"
+platform('desktop') + [SHIFT K_T] > "ऊ"
+platform('desktop') + [SHIFT K_U] > "ङ"
+platform('desktop') + [SHIFT K_V] > "ऩ"
+platform('desktop') + [SHIFT K_W] > "ऐ"
+platform('desktop') + [SHIFT K_X] > "ँ"
+platform('desktop') + [SHIFT K_Y] > "भ"
+platform('desktop') + [SHIFT K_Z] > "ऎ"
+platform('desktop') + [SHIFT K_COLON] > "छ"
+platform('desktop') + [SHIFT K_EQUAL] > "ऋ"
+platform('desktop') + [SHIFT K_COMMA] > "ष"
+platform('desktop') + [SHIFT K_HYPHEN] > "ः"
+platform('desktop') + [SHIFT K_PERIOD] > "।"
+platform('desktop') + [SHIFT K_SLASH] > "य़"
+platform('desktop') + [SHIFT K_BKQUOTE] > "ऒ"
+platform('desktop') + [SHIFT K_LBRKT] > "ढ"
+platform('desktop') + [SHIFT K_BKSLASH] > "ऑ"
+platform('desktop') + [SHIFT K_RBRKT] > "ञ"
+platform('desktop') + [SHIFT K_QUOTE] > "ठ"
+platform('desktop') + [SHIFT K_oE2] > "ऑ"
+platform('desktop') + [RALT K_0] > "०"
+platform('desktop') + [RALT K_1] > "१"
+platform('desktop') + [RALT K_2] > "२"
+platform('desktop') + [RALT K_3] > "३"
+platform('desktop') + [RALT K_4] > "४"
+platform('desktop') + [RALT K_5] > "५"
+platform('desktop') + [RALT K_6] > "६"
+platform('desktop') + [RALT K_7] > "७"
+platform('desktop') + [RALT K_8] > "८"
+platform('desktop') + [RALT K_9] > "९"
+platform('desktop') + [RALT K_C] > "॔"
+platform('desktop') + [RALT K_D] > "॒"
+platform('desktop') + [RALT K_F] > "ॢ"
+platform('desktop') + [RALT K_I] > "ग़"
+platform('desktop') + [RALT K_K] > "क़"
+platform('desktop') + [RALT K_P] > "ज़"
+platform('desktop') + [RALT K_R] > "ॣ"
+platform('desktop') + [RALT K_Z] > "॓"
+platform('desktop') + [RALT K_COLON] > "॒"
+platform('desktop') + [RALT K_EQUAL] > "ॄ"
+platform('desktop') + [RALT K_COMMA] > "॰"
+platform('desktop') + [RALT K_PERIOD] > "॥"
+platform('desktop') + [RALT K_LBRKT] > "ड़"
+platform('desktop') + [SHIFT LCTRL K_4] > "₹"
+platform('desktop') + [SHIFT RALT K_E] > "॑"
+platform('desktop') + [SHIFT RALT K_F] > "ऌ"
+platform('desktop') + [SHIFT RALT K_H] > "फ़"
+platform('desktop') + [SHIFT RALT K_K] > "ख़"
+platform('desktop') + [SHIFT RALT K_R] > "ॡ"
+platform('desktop') + [SHIFT RALT K_X] > "ॐ"
+platform('desktop') + [SHIFT RALT K_EQUAL] > "ॠ"
+platform('desktop') + [SHIFT RALT K_PERIOD] > "ऽ"
+platform('desktop') + [SHIFT RALT K_LBRKT] > "ढ़"
+platform('desktop') + [SHIFT RALT K_QUOTE] > "॑"
+ 
 group(linebreakFullSvara)
 c
 c This group is setup to workaround a compatibility issue with Firefox; we
