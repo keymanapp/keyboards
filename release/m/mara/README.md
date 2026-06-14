@@ -23,6 +23,10 @@ If you need to type the original English **q**, **x**, or **j**, you can use the
 *   **Right Alt** + **x** = **x** (Hold Shift for **X**)
 *   **Right Alt** + **j** = **j** (Hold Shift for **J**)
 
+### Smart Backspace (Step-Wise Backspacing)
+
+The keyboard features smart, step-wise backspacing for circumflex characters. Pressing **Backspace** immediately after typing **â**, **Â**, **ô**, or **Ô** will only delete the circumflex (**^**) and leave the base letter intact. Pressing it a second time will delete the base letter.
+
 This allows for easy typing of the Mara alphabet while retaining access to standard English letters. The rest of the keys follow the standard QWERTY layout.
 
 The touch layout for phones follows a similar pattern, with the special characters readily available on the main keyboard layer.
@@ -47,6 +51,10 @@ Monyuh hawhrawh **q**, **x**, nata **j** zy chhuh nawpa ta, **Right Alt (AltGr)*
 *   **Right Alt** + **q** = **q** (**Q** châta Shift)
 *   **Right Alt** + **x** = **x** (**X** châta Shift)
 *   **Right Alt** + **j** = **j** (**J** châta Shift)
+
+### Smart Backspace (Step-Wise Backspacing)
+
+He keyboard liata smart backspace khôpa a châ. **â**, **Â**, **ô**, nata **Ô** na chhuh tawhta **Backspace** na hmie khiahta, luhkhu (**^**) he rao tua aw ta, hawhrawh pizy a y ha chy aw. Backspace na hmie heih khiahta cha a hawhrawh pizy a rao aw.
 
 He he Mara châhnawh chhuhna a pahlâ nawpa châta ta pachhuahpa a châ. Key hropazy cha QWERTY layout a ypa hawhta a y.
 
