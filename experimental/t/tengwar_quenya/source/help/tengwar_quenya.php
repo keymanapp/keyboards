@@ -13,7 +13,7 @@ This keyboard is using Private Use Area codepoints since Tengwar is not in Unico
 
     <img src="keyboard_layout.png" alt="Keyboard Layout" srcset=""><br>
     <img src="keyboard_layout_shifted.png" alt="Shift Keyboard Layout" srcset=""><br>
-    <img src="keyboard_layout_alt.png" alt="" srcset="Alt Keyboard Layout"><br>
+    <img src="keyboard_layout_alt.png" alt="Alt Keyboard Layout" srcset=""><br>
     <img src="keyboard_layout_alt-shifted.png" alt="Alt-Shift Keyboard Layout" srcset=""><br>
     <p>
         This keyboard follows Dvorak for Programmers keyboard layout.
@@ -25,5 +25,5 @@ This keyboard is using Private Use Area codepoints since Tengwar is not in Unico
     <img src="mobile_keyboard_layout.jpg" alt="Mobile Keyboard Layout" srcset=""><br>
     <img src="mobile_layout_numbers.jpg" alt="Mobile Keyboard Layout (Numbers)" srcset="">
     <p>
-        This keyboard uses the same layout as the desktop layout. While characters in desktop shift, alt and alt-shift are available at long press. 
+        This keyboard uses the same layout as the desktop layout. While characters in desktop shift, alt and alt-shift are available at long press.
     </p>
