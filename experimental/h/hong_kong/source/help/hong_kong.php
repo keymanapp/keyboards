@@ -672,7 +672,7 @@
    <tr>
    <td>iê-</td>
    <td>ii-</td>
-   <td>th</strong>i<strong>i</strong>n</td>
+   <td>thi<strong>i</strong>n</td>
    <td>thiên天</td>
   </tr>
    <tr>
