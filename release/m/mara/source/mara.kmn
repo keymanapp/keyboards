@@ -6,7 +6,7 @@ store(&VERSION) '10.0'
 store(&NAME) 'Mara'
 store(&COPYRIGHT) 'Copyright © Laitei'
 store(&MESSAGE) 'Author: Laitei (https://laitei.dev)'
-store(&KEYBOARDVERSION) '1.0.6'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&TARGETS) 'any'
 store(&BITMAP) 'mara.ico'
 store(&VISUALKEYBOARD) 'mara.kvks'
@@ -214,11 +214,6 @@ c =========================
 + [SHIFT K_8] > '*'
 + [SHIFT K_9] > '('
 + [SHIFT K_0] > ')'
-
-c =========================
-c FALLBACK (CRITICAL)
-c =========================
-nomatch > use(main)
 
 c =========================
 c STEP-WISE BACKSPACING
