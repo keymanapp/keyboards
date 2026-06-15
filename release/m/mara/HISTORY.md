@@ -1,5 +1,9 @@
 # Mara Keyboard – Change History
 
+## 1.0.6 (2026-06-14)
+--------------------
+- Added step-wise backspacing for circumflex characters (`â` and `ô`), allowing users to delete just the circumflex on the first backspace press
+
 ## 1.0.5 (2026-06-05)
 --------------------
 - Implemented Smart Shift behavior for the J key (`j` = `ch`, `Shift+j` = `Ch`, `Caps+j` = `CH`)
