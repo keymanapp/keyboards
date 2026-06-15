@@ -13,7 +13,6 @@
    <p> Việt-Dữ Quóc-Dữ-Chị hệ yât chủng Lai-tinh-phá ké Việt-Dữ mần-chị, ý-chọi phát-chiển Việt-Dữ biểu-yâm mần-chị, suc-đuyển Việt-Mần học-chạp thùng sư-sẻ sị-kan, chăng-khường Việt-Dữ sỉ-dụng-chẻ chi-kan ké dình-chụi-lịch thùng chị-ngõ dịnh-thùng</p>
    <p> Chữ Quốc Ngữ tiếng Quảng Đông là một loại chữ viết La-tinh hóa của tiếng Quảng Đông, nhằm mục đích phát triển chữ viết biểu âm của tiếng Quảng Đông, giảm bớt thời gian học và viết tiếng Quảng Đông, nâng cao sự gắn kết và ý thức bản sắc của những người sử dụng tiếng Quảng Đông</p>
   <p> The script of national language for Cantonese is a romanized Cantonese script aimed at developing a phonetic writing system for Cantonese, reduce the time of learning and writing of Cantonese, while strengthening the cohesion and self-identity among Cantonese speakers.</p>
-   <p>
 
 <h1>Alphabet 字母表 Chị-Mỗ-Biểu</h1>
   <table>
