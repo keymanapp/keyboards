@@ -1,5 +1,9 @@
 # Mara Keyboard – Change History
 
+## 1.0.7 (2026-06-14)
+--------------------
+- Fixed an issue where the Spacebar was not working due to the fallback rule
+
 ## 1.0.6 (2026-06-14)
 --------------------
 - Added step-wise backspacing for circumflex characters (`â` and `ô`), allowing users to delete just the circumflex on the first backspace press
