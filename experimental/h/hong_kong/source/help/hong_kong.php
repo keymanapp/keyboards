@@ -394,7 +394,7 @@
 </table>
 
   <h1>Phonologic Map 音韻表 Yâm-Vận-Biểu</h1>
-  <p> 建議以下嘅粵語國語字音韻表打字<p>
+  <p> 建議以下嘅粵語國語字音韻表打字</p>
   <p> The suggested form of spelling of Cantonese Romanization</p>
   
   <h1>Consonants 韻首 Vận-Sẩu</h1>
