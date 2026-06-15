@@ -32,6 +32,9 @@
         <li><strong>Right Alt</strong> + <strong>j</strong> = <strong>j</strong> (Hold Shift for <strong>J</strong>)</li>
     </ul>
 
+    <h3>Smart Backspace (Step-Wise Backspacing)</h3>
+    <p>The keyboard features smart, step-wise backspacing for circumflex characters. Pressing <strong>Backspace</strong> immediately after typing <strong>â</strong>, <strong>Â</strong>, <strong>ô</strong>, or <strong>Ô</strong> will only delete the circumflex (<strong>^</strong>) and leave the base letter intact. Pressing it a second time will delete the base letter.</p>
+
     <p>This allows for easy typing of the Mara alphabet while retaining access to standard English letters. The rest of the keys follow the standard QWERTY layout.</p>
     <p>The touch layout for phones follows a similar pattern, with the special characters readily available on the main keyboard layer.</p>
 
@@ -57,6 +60,9 @@
         <li><strong>Right Alt</strong> + <strong>x</strong> = <strong>x</strong> (<strong>X</strong> châta Shift)</li>
         <li><strong>Right Alt</strong> + <strong>j</strong> = <strong>j</strong> (<strong>J</strong> châta Shift)</li>
     </ul>
+
+    <h3>Smart Backspace (Step-Wise Backspacing)</h3>
+    <p>He keyboard liata smart backspace khôpa a châ. <strong>â</strong>, <strong>Â</strong>, <strong>ô</strong>, nata <strong>Ô</strong> na chhuh tawhta <strong>Backspace</strong> na hmie khiahta, luhkhu (<strong>^</strong>) he lei tua aw ta, hawhrawh pizy a y chy aw. Backspace na hmie heih khiahta hawhrawh pizy a lei aw.</p>
 
     <p>He he Mara châhnawh chhuhna a pahlâ nawpa châta ta pachhuahpa a châ. Key hropazy cha QWERTY layout a ypa hawhta a y.</p>
     <p>Phone châta touch layout chhao he hawhna heta pachhuahpa châ ta, Mara reihchâ hnawh eih viapazy chhao main keyboard liana he hmâ theipa a châ haw bâ!</p>
