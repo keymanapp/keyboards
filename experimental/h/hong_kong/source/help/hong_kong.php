@@ -804,9 +804,9 @@
   </tbody>
 </table>
 
-<p>examples 舉例 Củi-Lệ: <p>
-  <p> ar > ả, as > á, af > à, ax > ã, aj > ạ <p>
-  <p> 譬如話：‘兩’ 嘅羅馬字係‘lưỡng’， 咁輸入內容就係‘luongwx’<p>
+<p>examples 舉例 Củi-Lệ: </p>
+  <p> ar > ả, as > á, af > à, ax > ã, aj > ạ </p>
+  <p> 譬如話：‘兩’ 嘅羅馬字係‘lưỡng’， 咁輸入內容就係‘luongwx’</p>
 
 <h2>Punctuation and Capitalization 標點同大小寫 Biêu-Điểm thùng Đại-Siểu-Sẻ</h2>
 <p>A space " " should be added betweem each words or between each syllable of cantonese origin or sino-cantonese origin words.</p>
