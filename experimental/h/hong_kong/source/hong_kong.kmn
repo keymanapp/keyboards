@@ -1270,29 +1270,29 @@ any(upper_u_v) 'Y' + any(nptc) > 'U' index(upper_y_v, 1) index(nptc, 3)
 any(vowels) any(two_y) any(all_letters) + any(punctuation) > index(vowels, 1) index(two_y, 2) index(all_letters, 3) index(punctuation, 4)
 any(vowels) any(two_y) + any(end_consonants) > index(vowels, 1) index(two_y, 2) index(end_consonants, 3)
 
-+ [ALT K_QUOTE] > '‘'
-+ [ALT SHIFT K_QUOTE] > '“'
-"‘" + [ALT K_QUOTE] > "‘’"
-"“" + [ALT SHIFT K_QUOTE] > "“”"
-any(no_space_punctuation) + [ALT K_QUOTE] > index(no_space_punctuation, 1) '’'
-any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1) '’'
-any(viet_letters) + [ALT K_QUOTE] > index(viet_letters, 1) '’'
-any(vowels_sac) + [ALT K_QUOTE] > index(vowels_sac, 1) '’'
-any(vowels_hoi) + [ALT K_QUOTE] > index(vowels_hoi, 1) '’'
-any(vowels_huyen) + [ALT K_QUOTE] > index(vowels_huyen, 1) '’'
-any(vowels_nga) + [ALT K_QUOTE] > index(vowels_nga, 1) '’'
-any(vowels_nang) + [ALT K_QUOTE] > index(vowels_nang, 1) '’'
-any(no_space_punctuation) + [ALT SHIFT K_QUOTE] > index(no_space_punctuation, 1) '”'
-any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1) '”'
-any(viet_letters) + [ALT SHIFT K_QUOTE] > index(viet_letters, 1) '”'
-any(vowels_sac) + [ALT SHIFT K_QUOTE] > index(vowels_sac, 1) '”'
-any(vowels_hoi) + [ALT SHIFT K_QUOTE] > index(vowels_hoi, 1) '”'
-any(vowels_huyen) + [ALT SHIFT K_QUOTE] > index(vowels_huyen, 1) '”'
-any(vowels_nang) + [ALT SHIFT K_QUOTE] > index(vowels_nang, 1) '”'
-any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1) '”'
++ [RALT K_QUOTE] > '‘'
++ [RALT SHIFT K_QUOTE] > '“'
+"‘" + [RALT K_QUOTE] > "‘’"
+"“" + [RALT SHIFT K_QUOTE] > "“”"
+any(no_space_punctuation) + [RALT K_QUOTE] > index(no_space_punctuation, 1) '’'
+any(all_letters) + [RALT K_QUOTE] > index(all_letters, 1) '’'
+any(viet_letters) + [RALT K_QUOTE] > index(viet_letters, 1) '’'
+any(vowels_sac) + [RALT K_QUOTE] > index(vowels_sac, 1) '’'
+any(vowels_hoi) + [RALT K_QUOTE] > index(vowels_hoi, 1) '’'
+any(vowels_huyen) + [RALT K_QUOTE] > index(vowels_huyen, 1) '’'
+any(vowels_nga) + [RALT K_QUOTE] > index(vowels_nga, 1) '’'
+any(vowels_nang) + [RALT K_QUOTE] > index(vowels_nang, 1) '’'
+any(no_space_punctuation) + [RALT SHIFT K_QUOTE] > index(no_space_punctuation, 1) '”'
+any(all_letters) + [RALT SHIFT K_QUOTE] > index(all_letters, 1) '”'
+any(viet_letters) + [RALT SHIFT K_QUOTE] > index(viet_letters, 1) '”'
+any(vowels_sac) + [RALT SHIFT K_QUOTE] > index(vowels_sac, 1) '”'
+any(vowels_hoi) + [RALT SHIFT K_QUOTE] > index(vowels_hoi, 1) '”'
+any(vowels_huyen) + [RALT SHIFT K_QUOTE] > index(vowels_huyen, 1) '”'
+any(vowels_nang) + [RALT SHIFT K_QUOTE] > index(vowels_nang, 1) '”'
+any(vowels_nga) + [RALT SHIFT K_QUOTE] > index(vowels_nga, 1) '”'
 
-any(tone_marks) + [ALT K_QUOTE] > index(tone_marks, 1) "’"
-any(tone_marks) + [ALT SHIFT K_QUOTE] > index(tone_marks, 1) "”"
+any(tone_marks) + [RALT K_QUOTE] > index(tone_marks, 1) "’"
+any(tone_marks) + [RALT SHIFT K_QUOTE] > index(tone_marks, 1) "”"
 
 any(o) any(end_consonants) + any(two_o) > index(oo, 1) index(end_consonants, 2)
 any(o) 'ng' + any(two_o) > index(oo, 1) 'ng'
@@ -1732,3 +1732,31 @@ any(g) any(low_i) + 'W' > index(g, 1) "i" index(upper_uw, 2)
 any(g) any(upper_i) + 'W' > index(g, 1) "I" index(upper_uw, 2)
 any(mniw) any(tone_marks) + [K_BKSP] > nul
 'ŭ' + any(low_ie_end) > 'iê' index(low_ie_end, 2)
+
+"--" + "-" > "☰"
+"☰" + "-" > "---"
+"-_" + "-" > "☲"
+"☲" + "-" > "-_-"
+"_-" + "_" > "☵"
+"☵" + "_" > "_-_"
+"_-" + "-" > "☱"
+"☱" + "-" > "_--"
+"__" + "-" > "☳"
+"☳" + "-" > "__-"
+"-_" + "_" > "☶"
+"☶" + "_" > "-__"
+"--" + "_" > "☴"
+"☴" + "_" > "--_"
+"__" + "_" > "☷"
+"☷" + "_" > "___"
+
+any(m) any(two_a) any(n) + [RALT K_J] > '卍'
+"yâm dương" + [RALT K_F] > '☯︎'
+"yâm duòng" + [RALT K_W] > '☯︎'
+"sập țụ̆ ka" + [RALT K_S] > '✝'
+"phu" + [RALT K_C] > '🉠'
+"luc" + [RALT K_J] > '🉡'
+"sưu" + [RALT K_J] > '🉢'
+"hy" + [RALT K_R] > '🉣'
+"🉣hy" + [RALT K_R] > '🉤'
+"txoi" + [RALT K_F] > '🉥'
