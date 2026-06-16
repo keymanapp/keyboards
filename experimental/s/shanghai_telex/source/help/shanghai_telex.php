@@ -1,0 +1,755 @@
+<?php 
+  $pagename = 'shanghai telex Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
+<p>
+  Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Koâc-Nhủ-Zụ̆
+</p>
+<p> Ğồ-Nhủ Koâc-Nhủ-Zụ̆ zụ̆ yêt chủng Lơ-Mỏ-hó căh Ğồ-Nhủ Vằn-Zụ̆, mọc-tich zụ̆ păh Ğồ-Nhủ yêt chủng piao-chuẩn căh šư-siả ğiệ-thổng</p>
+<p> Ğồ-Nhủ Koâc-Nhủ-Zụ̆ căh thông-dụng pản-pởn kiêt-ğợt lặh cac-chủng Ğồ-Nhủ fang-nhiền căh đặc-tiển, ğình-žềnh yêt chủng hảo piảo-žụ̆ tăh miào-žuật cac-šưc-cac-diạng Ğồ-Nhủ fang-nhiền căh šư-sỉa ğiệ-thổng, ğã kản-šiảo đồng-in-zụ̆, điề-cung păh făh-đông đị-fang făh-đồng khẩu-in căh cảng Ğồ-Nhủ căh nhìn yêt tháo ğộng-đồng căh šư-siả ğiệ-thổng.</p>
+  <p> The script of national language for Wu is a romanized Wu script is aimed at developing a standard phonetic writing system for Wu.</p>
+  <p> The universal version of the script of national language for Wu combines the character of various accents of Wu, forms a phonetic writing system for Wu which demonstrates and describes various of Wu accents, and reduces the impact of homophone, provides a common written system for Wu speakers in different areas with different accents.</p>
+
+    <h1>Alphabet Zụ̆-Mổ-Piảo</h1>
+  <table>
+ <tbody>
+ <tr>
+   <th>character</th>
+   <th>Name</th>
+   <th>pronunciation</th>
+ </tr>
+ <tr>
+   <td>a</td>
+   <td>a</td>
+   <td>[a]</td>
+ </tr>
+  <tr>
+   <td>au</td>
+   <td>au</td>
+   <td>[ɔ]</td>
+ </tr>
+ <tr>
+   <td>â</td>
+   <td>â</td>
+   <td>[ə] [i]</td>
+ </tr>
+ <tr>
+   <td>ă</td>
+   <td>â</td>
+   <td>[ə]</td>
+ </tr>
+   <tr>
+   <td>ai</td>
+   <td>ai</td>
+   <td>[e]</td>
+ </tr>
+  <tr>
+   <td>an</td>
+   <td>an</td>
+   <td>[æ̃]</td>
+ </tr>
+   <tr>
+   <td>b</td>
+   <td>be</td>
+   <td>[b]</td>
+   <tr>
+     <td>c</td>
+     <td>se/că</td>
+     <td>[k]</td>
+   </tr>
+ <tr>
+   <td>ch</td>
+   <td>chă</td>
+   <td>[tʃ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>d</td>
+   <td>dă</td>
+   <td>[ɦi]</td>
+ </tr>
+    </tr>
+   <tr>
+   <td>dz</td>
+   <td>dză</td>
+   <td>[dz]</td>
+ </tr>
+    <tr>
+   <td>dž</td>
+   <td>džă</td>
+   <td>[dʒ]</td>
+ </tr>
+  <tr>
+   <td>đ</td>
+   <td>đe/đă</td>
+   <td>[d]</td>
+ </tr>
+   <tr>
+   <td>e</td>
+   <td>e</td>
+   <td>[ɛ]</td>
+ </tr>
+   <tr>
+   <td>ê</td>
+   <td>ê</td>
+   <td>[e]</td>
+ </tr>
+    <tr>
+   <td>ên</td>
+   <td>ên</td>
+   <td>[ẽ]</td>
+ </tr>
+  </tr>
+   <tr>
+   <td>f</td>
+   <td>ef/fă</td>
+   <td>[f]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>g</td>
+   <td>že/gă</td>
+   <td>[ɡ]</td>
+ </tr>
+   <tr>
+   <td>gi</td>
+   <td>gi</td>
+   <td>[dʑ] [gi]</td>
+ </tr>
+    </tr>
+   <tr>
+   <td>ğ</td>
+   <td>ğă</td>
+   <td>[ɦ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>h</td>
+   <td>ha</td>
+   <td>[h]</td>
+ </tr>
+  </tr>
+   <tr>
+   <td>hi</td>
+   <td>hi</td>
+   <td>[hi] [ɕi]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>i</td>
+   <td>i</td>
+   <td>[i]</td>
+ </tr>
+   </tr>
+   </tr>
+   <tr>
+   <td>j</td>
+   <td>ži</td>
+   <td>[dʒ] [j] [ʒ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>k</td>
+   <td>ka/kă</td>
+   <td>[k]</td>
+ </tr>
+ </tr>
+    <tr>
+   <td>ki</td>
+   <td>ki</td>
+   <td>[ki] [tɕi]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>kh</td>
+   <td>khă</td>
+   <td>[kʰ]</td>
+ </tr>
+    </tr>
+   <tr>
+   <td>khi</td>
+   <td>khi</td>
+   <td>[kʰi] [tɕʰi]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>l</td>
+   <td>e-lẳ/lă</td>
+   <td>[l]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>m</td>
+   <td>e-mẳ/mă</td>
+   <td>[m]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>n</td>
+   <td>e-nẳ/nă</td>
+   <td>[n]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ng</td>
+   <td>ngă</td>
+   <td>[ŋ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>nh</td>
+   <td>nhă</td>
+   <td>[ȵ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>o</td>
+   <td>o</td>
+   <td>[o] [u]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ô</td>
+   <td>ô</td>
+   <td>[əu] [u]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ơ</td>
+   <td>ơ</td>
+   <td>[ou] [ɯ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>p</td>
+   <td>pe/pă</td>
+   <td>[p]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ph</td>
+   <td>phă</td>
+   <td>[pʰ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>q</td>
+   <td>ku</td>
+   <td>[ku]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>r</td>
+   <td>e-rẳ/ră</td>
+   <td>[ɹ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>s</td>
+   <td>es/să</td>
+   <td>[s]</td>
+ </tr>
+    </tr>
+   <tr>
+   <td>š</td>
+   <td>šă</td>
+   <td>[ʃ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>t</td>
+   <td>te/tă</td>
+   <td>[t]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>th</td>
+   <td>thă</td>
+   <td>[tʰ]</td>
+ </tr>
+    <tr>
+   <td>ț</td>
+   <td>ță</td>
+   <td>[ts]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>țh</td>
+   <td>thă</td>
+   <td>[tsʰ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>u</td>
+   <td>u</td>
+   <td>[y]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ư</td>
+   <td>ư</td>
+   <td>[ʮ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ươ</td>
+   <td>ươ</td>
+   <td>[ø]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>ŭ</td>
+   <td>ŭ</td>
+   <td>[ɿ]</td>
+ </tr>
+    <tr>
+   <td>un</td>
+   <td>un</td>
+   <td>[ui]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>v</td>
+   <td>ve/vă</td>
+   <td>[v]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>w</td>
+   <td>đa-bliổ/wă</td>
+   <td>[ɦu]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>x</td>
+   <td>ekhs/xă</td>
+   <td>[tʃʰ]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>y</td>
+   <td>y-grek</td>
+   <td>[i]</td>
+ </tr>
+   </tr>
+   <tr>
+   <td>z</td>
+   <td>ze-tả/ză</td>
+   <td>[z]</td>
+ </tr>
+    <tr>
+   <td>ž</td>
+   <td>žă</td>
+   <td>[ʒ]</td>
+ </tr>
+ </tbody>
+</table>
+
+  <h1>in-điạo vù-ğạo tone marks</h1>
+
+ <table>
+ <tbody>
+ <tr>
+   <th>tone mark</th>
+   <th>Cantonese Name</th>
+   <th>tone value</th>
+ </tr>
+ <tr>
+   <td>a</td>
+   <td>in-bình/in-zật</td>
+   <td>˦/˦˧</td>
+ </tr>
+  <tr>
+   <td>ả</td>
+   <td>žạng-šênh</td>
+   <td>˥˩</td>
+ </tr>
+  <tr>
+   <td>á</td>
+   <td>in-khú</td>
+   <td>˥˨˧</td>
+ </tr>
+ <tr>
+   <td>à</td>
+   <td>diàng-bình</td>
+   <td>˨˨˧</td>
+ </tr>
+  <tr>
+   <td>ạ</td>
+   <td>diàng-khú/diàng-žật</td>
+   <td>˨˧˩/˨˧</td>
+ </tr>
+  </tbody>
+</table>
+
+ <h1>in-dụn-piảo phonologic map</h1>
+<h1>šênh-mổ consonants</h1>
+
+<table>
+  <tr>
+    <th>script</th>
+    <th>IPA</th>
+    <th>examples</th>
+  </tr>
+  <tr><td>b</td><td>[b]</td><td>排</td></tr>
+  <tr><td>p</td><td>[p]</td><td>巴</td></tr>
+  <tr><td>ph</td><td>[pʰ]</td><td>派</td></tr>
+  <tr><td>m</td><td>[m]</td><td>媽</td></tr>
+  <tr><td>f</td><td>[f]</td><td>發</td></tr>
+  <tr><td>v</td><td>[v]</td><td>佛</td></tr>
+  <tr><td>đ</td><td>[d]</td><td>汏</td></tr>
+  <tr><td>t</td><td>[t]</td><td>打</td></tr>  
+  <tr><td>th</td><td>[tʰ]</td><td>太</td></tr>    
+  <tr><td>n</td><td>[n]</td><td>拿</td></tr>
+  <tr><td>l</td><td>[l]</td><td>拉</td></tr>
+  <tr><td>g</td><td>[g]</td><td>茄</td></tr>  
+  <tr><td>k/c</td><td>[k]</td><td>加</td></tr>  
+  <tr><td>kh</td><td>[kʰ]</td><td>揩</td></tr>
+  <tr><td>ng</td><td>[ŋ]</td><td>牙</td></tr>
+  <tr><td>h</td><td>[h]</td><td>蟹</td></tr>
+  <tr><td>ğ</td><td>[ɦ]</td><td>鞋</td></tr> 
+  <tr><td style="background-color: pink;">gi</td><td>[gi] [dʑi]</td><td>騎</td></tr>
+  <tr><td style="background-color: pink;">ki</td><td>[ki] [tɕi]</td><td>雞</td></tr>
+  <tr><td style="background-color: pink;">khi</td><td>[kʰi] [tɕʰi]</td><td>氣</td></tr>
+  <tr><td style="background-color: pink;">hi</td><td>[hi] [ɕi]</td><td>喜</td></tr>
+  <tr><td style="background-color: lightcoral;">ği</td><td>[ɦi] [ʑi]</td><td>系</td></tr>
+  <tr><td>nh</td><td>[ȵ]</td><td>廿</td></tr>
+  <tr><td>d</td><td>[j]</td><td>爺</td></tr>
+  <tr><td>w</td><td>[ɦu]</td><td>位</td></tr>   
+  <tr><td style="background-color: yellow;">ch</td><td>[tʃ]</td><td>珠</td></tr>
+  <tr><td>ț</td><td>[ts]</td><td>子</td></tr>
+  <tr><td style="background-color: yellow;">x</td><td>[tʃʰ]</td><td>處</td></tr>
+  <tr><td>țh</td><td>[tsʰ]</td><td>次</td></tr>  
+  <tr><td style="background-color: yellow;">š</td><td>[ʃ]</td><td>書</td></tr>
+  <tr><td>s</td><td>[s]</td><td>思</td></tr>
+  <tr><td style="background-color: yellow;">ž</td><td>[ʒ]</td><td>樹</td></tr>
+  <tr><td>z</td><td>[z]</td><td>字</td></tr>
+  <tr><td style="background-color: yellow;">dž</td><td>[dʒ]</td><td>傳</td></tr>
+  <tr><td>dz</td><td>[dz]</td><td>慈</td></tr>
+  <tr><td>o</td><td>[u]</td><td>娃</td></tr>  
+  <tr><td>y</td><td>[i]</td><td>耶</td></tr>  
+  <tr><td>u</td><td>[y]</td><td>鬱</td></tr>
+  <tr><td>/</td><td>[ʔ]</td><td>安</td></tr>
+</table>
+<p>In Wu language, the "k" "kh" "h" "g" and "ğ" consonants are often palatalized to [tɕ] [tɕʰ] [ɕ] [dʑ] and [ʑ] when before "i" "u" or "ưu"vowels.</p>
+<p>In Taiwoo Wu dialect, the "ği" combination often merges to "d" consonant and pronounced as [ɦi].</p>
+<p>In Taiwoo Wu dialect, the "ğu" combination often merges to "w" consonant and pronounced as [ɦu].</p>
+<p>In modern day north Wu dialect, the "ch" "x" "š" "ž" and "dž" have already merged to "ț" "țh" "s" "z" and "dz"</p>
+<p>The "k" consonant at the front can be replaced with "c" if it appears before the letter "a" "ă" "â" "o" "ô" "ơ" "u" or "ư".</p>
+
+<h1>dụn-mổ vowels and end consonants</h1>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>vowels</th>     
+      <th>IPA</th>
+      <th>examples</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>examples</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>examples</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>examples</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>ă</td><td>[ə]</td><td></td><td>i/y</td><td>[i]</td><td>衣</td><td>ô</td><td>[u]</td><td>烏</td><td>u</td><td>[y]</td><td>雨</td></tr>
+<tr><td>a</td><td>[a]</td><td>阿</td><td style="background-color: yellow;">ia</td><td>[ia]</td><td>耶</td><td style="background-color: yellow;">oa</td><td>[ua]</td><td>壞</td><td style="background-color: pink;">ua</td><td>[ya]</td><td>瘸</td></tr>
+<tr><td>au</td><td>[ɔ]</td><td>豪𢜶</td><td style="background-color: yellow;">iau</td><td>[iɔ]</td><td>交關</td><td style="background-color: lightgrey;">oau</td><td>[uɔ]</td><td></td><td style="background-color: lightgrey;">uau</td><td>[yɔ]</td><td></td></tr>
+<tr><td style="background-color: yellow;">âu</td><td>[ɤ]</td><td>歐</td><td style="background-color: yellow;">ưu</td><td>[iɤ]</td><td>有</td><td style="background-color: lightgrey;">oâu</td><td>[uɤɯ]</td><td></td><td style="background-color: yellow;">fu/vu</td><td>[v̩]</td><td>夫</td></tr>
+<tr><td>e</td><td>[ɛ]</td><td></td><td style="background-color: lightgrey;">ie</td><td>[iɛ]</td><td></td><td style="background-color: lightgrey;">oe</td><td>[uɛ]</td><td></td><td style="background-color: lightgrey;">ue</td><td>[yɛ]</td><td></td></tr>
+<tr><td>ê</td><td>[e]</td><td>許</td><td style="background-color: pink;">iê</td><td>[ie]</td><td>世</td><td style="background-color: yellow;">oê</td><td>[ue]</td><td>爲</td><td style="background-color: orange;">uê</td><td>[ye]</td><td>稅</td></tr>
+<tr><td>o</td><td>[o]</td><td>話</td><td style="background-color: yellow;">io</td><td>[io]</td><td>霞</td><td style="background-color: lightgrey;">oơ</td><td>[uo]</td><td></td><td style="background-color: lightcoral;">uyo</td><td>[yʮ]</td><td>靴</td></tr>
+<tr><td style="background-color: skyblue;">ơ</td><td>[ou]</td><td>和</td><td style="background-color: lightgrey;">iơ</td><td>[ioɯ]</td><td></td><td style="background-color: pink;">ơi</td><td>[uɐi]</td><td>推</td><td style="background-color: lightgrey;">uo</td><td>[yo]</td><td></td></tr>
+<tr><td>ŭ</td><td>[ɿ]</td><td>事</td><td style="background-color: skyblue;">iu</td><td>[iʏ]</td><td>有</td><td style="background-color: orange;">ôi</td><td>[uei]</td><td>最</td><td style="background-color: lightcoral;">ư</td><td>[ʮ]</td><td>主</td></tr>
+<tr><td style="background-color: yellow;">ao</td><td>[ɑo]</td><td>奧</td><td style="background-color: yellow;">iao</td><td>[iɑo]</td><td>要</td><td style="background-color: lightgrey;">ôy</td><td>[ui]</td><td></td><td style="background-color: lightcoral;">ươu</td><td>[øʏ]</td><td>樓</td></tr>
+<tr><td style="background-color: yellow;">ai</td><td>[æi]</td><td>愛</td><td style="background-color: pink;">iai</td><td>[iæ]</td><td>解</td><td style="background-color: pink;">oai</td><td>[uæ]</td><td>乖</td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: lightgrey;">ay</td><td>[ai]</td><td></td><td style="background-color: pink;">iay</td><td>[iai]</td><td></td><td style="background-color: pink;">oay</td><td>[uai]</td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: lightcoral;">ây</td><td>[ei]</td><td>魚</td><td style="background-color: lightgrey;">iô</td><td>[iu]</td><td></td><td style="background-color: lightgrey;">oây</td><td>[uei]</td><td></td><td style="background-color: lightgrey;">uây</td><td>[yei]</td><td>稅</td></tr>
+<tr><td style="background-color: lightgrey;">âư</td><td>[əɯ]</td><td></td><td style="background-color: lightgrey;">iâư</td><td>[iəɯ]</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: lightgrey;">ei</td><td>[ɛi]</td><td></td><td></td><td></td><td></td><td style="background-color: lightgrey;">oei</td><td>[uɛi]</td><td></td><td style="background-color: lightgrey;">uei</td><td>[yɛi]</td><td></td></tr>
+<tr><td style="background-color: lightgrey;">eo</td><td>[ɛu]</td><td></td><td style="background-color: lightgrey;">iêu</td><td>[ieɯ]</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: lightgrey;">ươ</td><td>[ø]</td><td>囡</td><td style="background-color: lightgrey;">iươ</td><td>[iø]</td><td></td><td style="background-color: lightgrey;">oươ</td><td>[uø]</td><td></td><td style="background-color: lightgrey;">uươ</td><td>[yø]</td><td></td></tr>
+<tr><td style="background-color: yellow;">an</td><td>[æ̃]</td><td>咸</td><td style="background-color: yellow;">an</td><td>[iæ̃]</td><td>廿</td><td style="background-color: yellow;">oan</td><td>[uæ̃]</td><td>還</td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: orange;">ên</td><td>[ẽ]</td><td>看</td><td style="background-color: yellow;">iên</td><td>[iẽ]</td><td>煙</td><td style="background-color: orange;">oên</td><td>[uẽ]</td><td>管</td><td style="background-color: orange;">uyên</td><td>[yẽ]</td><td>遠</td></tr>
+<tr><td style="background-color: yellow;">on</td><td>[ø̃]</td><td>團</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: yellow;">ang</td><td>[ɑŋ]</td><td>盎</td><td style="background-color: yellow;">iong</td><td>[ɑŋ]</td><td>江</td><td style="background-color: yellow;">oang</td><td>[uɑŋ]</td><td>廣</td><td style="background-color: pink;">uang</td><td>[yɒ̃]</td><td>王</td></tr>
+<tr><td style="background-color: yellow;">anh</td><td>[aŋ]</td><td>櫻</td><td style="background-color: yellow;">iang</td><td>[iaŋ]</td><td>央</td><td style="background-color: yellow;">oanh</td><td>[uaŋ]</td><td>橫</td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: yellow;">ông</td><td>[oŋ]</td><td>翁</td><td style="background-color: yellow;">iông</td><td>[ioŋ]</td><td>永</td><td style="background-color: skyblue;">ơn</td><td>[on]</td><td>本</td><td>uông</td><td>[yoŋ]</td><td>窮</td></tr>
+<tr><td style="background-color: yellowgreen;">ân</td><td>[in]</td><td>真</td><td style="background-color: yellow;">in</td><td>[in]</td><td>民</td><td style="background-color: pink;">ôn</td><td>[øn]</td><td>存</td><td style="background-color: yellowgreen;">un</td><td>[yn]</td><td>運</td></tr>
+<tr><td style="background-color: yellowgreen;">âng</td><td>[əŋ]</td><td>稱</td><td style="background-color: yellow;">inh</td><td>[iŋ]</td><td>英</td><td></td><td></td><td></td><td style="background-color: lightgrey;">uynh</td><td>[yiŋ]</td><td></td></tr>
+<tr><td style="background-color: lightgrey;">êng</td><td>[eŋ]</td><td></td><td style="background-color: lightgrey;">iêng</td><td>[ieŋ]</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="background-color: yellow;">ăn</td><td>[ən]</td><td>能</td><td style="background-color: yellowgreen;">ênh</td><td>[iəŋ]</td><td>正</td><td style="background-color: yellow;">oăn</td><td>[uən]</td><td>溫</td><td style="background-color: yellowgreen;">uân</td><td>[yən]</td><td>順</td></tr>
+<tr><td style="background-color: lightgrey;">ăng</td><td>[əŋ]</td><td></td><td style="background-color: lightgrey;">iăng</td><td>[iəŋ]</td><td></td><td style="background-color: lightgrey;">oăng</td><td>[uəŋ]</td><td></td><td style="background-color: lightgrey;">uăng</td><td>[yəŋ]</td><td></td></tr>
+<tr><td style="background-color: yellowgreen;">ât</td><td>[iɪʔ]</td><td>質</td><td style="background-color: yellow;">iêt</td><td>[iɪʔ]</td><td>一</td><td style="background-color: pink;">oâc</td><td>[uɪʔ]</td><td>國</td><td style="background-color: pink;">uât</td><td>[yøʔ]</td><td>律</td></tr>
+<tr><td style="background-color: lightcoral;">ach</td><td>[ɑʔ]</td><td>白</td><td style="background-color: yellow;">iac</td><td>[iɑʔ]</td><td>約</td><td style="background-color: lightcoral;">oach</td><td>[uɑʔ]</td><td>劃</td><td style="background-color: yellow;">uot</td><td>[yoʔ]</td><td>郁</td></tr>
+<tr><td style="background-color: yellow;">ăc</td><td>[əʔ]</td><td>得</td><td style="background-color: yellowgreen;">ưc</td><td>[ɿʔ]</td><td>直</td><td style="background-color: pink;">ơt</td><td>[uɔʔ]</td><td>合</td><td style="background-color: pink;">uât</td><td>[yəʔ]</td><td>出</td></tr>
+<tr><td style="background-color: lightcoral;">ich</td><td>[iʌʔ]</td><td>喫</td><td style="background-color: pink;">it</td><td>[iʔ]</td><td>筆</td><td></td><td></td><td></td><td style="background-color: yellow;">uyt</td><td>[yɪʔ]</td><td>橘</td></tr>
+<tr><td style="background-color: yellow;">at</td><td>[aʔ]</td><td>鴨</td><td style="background-color: yellow;">iat</td><td>[iaʔ]</td><td>甲</td><td style="background-color: yellow;">oat</td><td>[uaʔ]</td><td>滑</td><td style="background-color: lightcoral;">uat</td><td>[yaʔ]</td><td>曰</td></tr>
+<tr><td style="background-color: yellow;">oc</td><td>[oʔ]</td><td>祿</td><td style="background-color: yellow;">ioc</td><td>[ioʔ]</td><td>玉</td><td style="background-color: yellow;">oăc</td><td>[uəʔ]</td><td>活</td><td style="background-color: yellow;">uoc</td><td>[yoʔ]</td><td>局</td></tr>
+<tr><td style="background-color: lightgrey;">ôc</td><td>[uʔ]</td><td></td><td style="background-color: lightgray;">iôc</td><td>[iuʔ]</td><td></td><td></td><td></td><td></td><td style="background-color: lightgrey;">uôc</td><td>[yuʔ]</td><td></td></tr>
+<tr><td style="background-color: pink;">ôt</td><td>[uəʔ]</td><td>突</td><td></td><td></td><td></td><td style="background-color: pink;">ôt</td><td>[uəʔ]</td><td>骨</td><td style="background-color: lightcoral;">ươt</td><td>[œʔ]</td><td>卒</td></tr>
+<tr><td style="background-color: yellow;">ac</td><td>[ɒʔ]</td><td>駱</td><td></td><td></td><td></td><td style="background-color: yellow;">oac</td><td>[uɒʔ]</td><td>郭</td><td style="background-color: yellow;">uac</td><td>[yɔʔ]</td><td>覺</td></tr>
+<tr><td style="background-color: pink;">êch</td><td>[eʔ]</td><td>尺</td><td></td><td></td><td></td><td style="background-color: pink;">oec</td><td>[uɛʔ]</td><td>郭</td><td style="background-color: orange;">uyêt</td><td>[yeʔ]</td><td>越</td></tr>
+<tr><td style="background-color: yellow;">ăl</td><td>[əl]</td><td>而</td><td style="background-color: yellow;">m</td><td>[m̩]</td><td>嘸</td><td style="background-color: yellow;">n</td><td>[n̩]</td><td>爾</td><td style="background-color: yellow;">ng</td><td>[ŋ̩]</td><td>五</td></tr></tbody>
+  </table> 
+<p>The vowels with white background are common single vowels in Wu language.</p>
+<p>The phonemes with yellow background are common in Taiwoo Wu dialect.</p>
+<p>The phonemes with red background only exist in north Wu accent.</p>
+<p>The phonemes with skyblue background only exist in north Liampo accent.</p>
+<p>The phonemes with pink background exist in other minority Wu accent outside of Taiwoo Wu dialect</p>
+<p>The vowels in the phonemes with a green background shift from [ə] in the North Wu accent to [i] in the Liampo accent.</p>
+<p>The vowels in the phonemes with a orange background may shift to [ø] in Shanghai accent.</p>
+<p>The "ang" [ɑŋ] and "anh"[aŋ] vowel can lose their end consonants and shift to nasal vowels [ɑ̃] and [ã].</p>
+<p>The letter "y" represents the [i] consonant as well as the letter "i". However, unlike letter "i", the letter "y" does not combine with nearby letters to form other consonants or vowels.</p>
+<p>The vowels in grey background indicate the pronunciation in some accents of Wu and loanwords. However, they are seldom used to indicate phonemes with clear etymology.</p>
+<p>The end consonant [ʔ] can be spell as "h" when the vowel is in a particle, the word without a clear etymology about its original end consonant, the loanword, or just for representing the sound of the vowel.</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>vowels</th>     
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>ăh</td><td>[əʔ]</td><td>iăh</td><td>[iəʔ]</td><td>oăh</td><td>[uəʔ]</td><td>uăh</td><td>[yəʔ]</td></tr>
+<tr><td>ih</td><td>[iʔ][iɪʔ][ɪʔ]</td><td>ưh</td><td>[ɿʔ]</td><td>oih</td><td>[uɪʔ]</td><td>uih</td><td>[yɪʔ]</td></tr>
+<tr><td>ah</td><td>[aʔ]</td><td>iah</td><td>[iaʔ]</td><td>oah</td><td>[uaʔ]</td><td>uah</td><td>[yaʔ]</td></tr>
+<tr><td>ôh</td><td>[uʔ]</td><td>iôh</td><td>[iuʔ]</td><td></td><td></td><td>uôh</td><td>[yuʔ]</td></tr>
+<tr><td></td><td></td><td></td><td></td><td>ươh</td><td>[œʔ]</td><td>uươh</td><td>[yœʔ]</td></tr>
+<tr><td>oh</td><td>[oʔ]</td><td>ioh</td><td>[ioʔ]</td><td>oơh</td><td>[uoʔ]</td><td>uoh</td><td>[yoʔ]</td></tr>
+<tr><td>auh</td><td>[ɔʔ][ɑʔ]</td><td>iauh</td><td>[iɔʔ][iɑʔ]</td><td>oauh</td><td>[uɔʔ][uɑʔ]</td><td>uauh</td><td>[yɔʔ][yɑʔ]</td></tr>
+<tr><td>aih</td><td>[æʔ]</td><td>iaih</td><td>[iæʔ]</td><td>oaih</td><td>[uæʔ]</td><td>uaih</td><td>[yæʔ]</td></tr>
+<tr><td>êh</td><td>[eʔ]</td><td>iêh</td><td>[ieʔ]</td><td>oêh</td><td>[ueʔ]</td><td>uêh</td><td>[yeʔ]</td></tr>
+<tr><td>eh</td><td>[ɛʔ]</td><td>ieh</td><td>[iɛʔ]</td><td>oeh</td><td>[uɛʔ]</td><td>ueh</td><td>[yɛʔ]</td></tr>
+  </table>
+<p>The nasalization mark 'ⁿ' indicates the vowel at the front is nasalized. This mark is used to represent the nasal vowel in some Wu accents or loanword.</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>vowels</th>     
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+      <th>vowels</th> 
+      <th>IPA</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>ăⁿ</td><td>[ə̃]</td><td>iăⁿ</td><td>[iə̃]</td><td>oăⁿ</td><td>[uə̃]</td><td>uăⁿ</td><td>[yə̃]</td></tr>
+<tr><td>iⁿ</td><td>[ĩ][iɪ̃][ɪ̃]</td><td>ưⁿ</td><td>[ɨ̃]</td><td>oiⁿ</td><td>[uɪ̃]</td><td>uiⁿ</td><td>[yɪ̃]</td></tr>
+<tr><td>aⁿ</td><td>[ã]</td><td>iaⁿ</td><td>[iã]</td><td>oaⁿ</td><td>[uã]</td><td>uaⁿ</td><td>[yã]</td></tr>
+<tr><td style="background-color: skyblue;">ôⁿ</td><td>[ũ]</td><td>iôⁿ</td><td>[iũ]</td><td>ươⁿ</td><td>[œ̃]</td><td>uươⁿ</td><td>[yœ̃]</td></tr>
+<tr><td>oⁿ</td><td>[õ]</td><td>ioⁿ</td><td>[iõ]</td><td>oơⁿ</td><td>[uõ]</td><td>uoⁿ</td><td>[yõ]</td></tr>
+<tr><td>auⁿ</td><td>[ɔ̃][ɑ̃]</td><td>iauⁿ</td><td>[iɔ̃][iɑ̃]</td><td>oauⁿ</td><td>[uɔ̃][uɑ̃]</td><td>uauⁿ</td><td>[yɔ̃][yɑ̃]</td></tr>
+<tr><td>aiⁿ</td><td>[æ̃]</td><td>iaiⁿ</td><td>[iæ̃]</td><td>oaiⁿ</td><td>[uæ̃]</td><td>uaiⁿ</td><td>[yæ̃]</td></tr>
+<tr><td>êⁿ</td><td>[ẽ]</td><td>iêⁿ</td><td>[iẽ]</td><td>oêⁿ</td><td>[uẽ]</td><td>uêⁿ</td><td>[yẽ]</td></tr>
+<tr><td>eⁿ</td><td>[ɛ̃]</td><td>ieⁿ</td><td>[iɛ̃]</td><td>oeⁿ</td><td>[uɛ̃]</td><td>ueⁿ</td><td>[yɛ̃]</td></tr>
+<table>
+
+
+<h1>šênh-điạo accent tones</h1>
+ <tbody>
+ <tr>
+   <th>tone name</th>
+   <th>tone mark</th>
+   <th>Soochow tone value</th>
+  <th>Shanghai tone value</th>
+  <th>Liampo tone value</th>
+  <th>example</th>
+  <th>triggering key</th>
+ </tr>
+ <tr>
+   <td>unvoiced flat in-bình</td>
+   <td style="background-color: pink;">a</td>
+   <td>˦</td>
+   <td>˥˧</td>
+   <td>˥˧</td>
+   <td>加ca</td>
+  <td>/</td>
+  </tr>
+ <tr>
+   <td>rising tone žạng-šênh</td>
+   <td>ả</td>
+   <td>˥˩</td>
+   <td></td>
+   <td>˧˥</td>
+   <td>假cả</td>
+   <td>r</td>
+ </tr>
+  <tr>
+   <td>unvoiced falling in-khú</td>
+   <td style="background-color: pink;">á</td>
+   <td>˥˨˧</td>
+   <td>˧˦</td>
+   <td>˦</td>
+   <td>界cá</td>
+  <td>s</td>
+  </tr>
+ <tr>
+   <td>voiced flat diàng-bình</td>
+   <td style="background-color: pink;">à</td>
+   <td>˨˨˧</td>
+   <td>˩˧</td>
+   <td>˨˦</td>
+   <td>茄gà</td>
+   <td>f</td>
+ </tr>
+   <tr>
+   <td>voiced entering diàng-khù</td>
+   <td>ạ</td>
+   <td>˨˧˩</td>
+   <td></td>
+   <td>˨˩˧</td>
+   <td>大đạ</td>
+   <td>j</td>
+ </tr>
+  <tr>
+   <td>unvoiced entering in-zật</td>
+   <td style="background-color: pink;">a</td>
+   <td>˦˧</td>
+   <td>˥</td>
+   <td>˥</td>
+   <td>答tat</td>
+   <td>/</td>
+ </tr>
+    <tr>
+   <td>voiced entering diàng-zật</td>
+   <td style="background-color: pink;">ạ</td>
+   <td>˨˧</td>
+   <td>˩˨</td>
+   <td>˩˨</td>
+   <td>踏đạt</td>
+   <td>j</td>
+ </tr>
+ </tbody>
+</table>
+<p>The Shanghai accent only has unvoiced flat tone, unvoiced falling tone, voiced flat tone, unvoiced entering tone, and voiced entering tone.</p>
+
+<h1>Specific Alphabet đặc-biệt zụ̆-mổ</h1>
+<table>
+ <tbody>
+ <tr>
+   <th>Character</th>
+   <th>Key pressed</th>
+ </tr>
+  <tr>
+   <td>đ</td>
+   <td>dd</td>
+ </tr>
+  <tr>
+   <td>ğ</td>
+   <td>gg</td>
+ </tr>
+ <tr>
+   <td>ă</td>
+   <td>aw</td>
+ </tr>
+ <tr>
+   <td>â</td>
+   <td>aa</td>
+ </tr>
+ <tr>
+   <td>ê</td>
+   <td>ee</td>
+ </tr>
+   <tr>
+     <td>ô</td>
+     <td>oo</td>
+   </tr>
+ <tr>
+   <td>ơ</td>
+   <td>ow</td>
+ </tr>
+  <tr>
+   <td>oơ</td>
+   <td>oow</td>
+ </tr>
+  <tr>
+   <td>ư</td>
+   <td>uw</td>
+ </tr>
+   <tr>
+   <td>ŭ</td>
+   <td>ii</td>
+ </tr>
+   <tr>
+   <td>š</td>
+   <td>ss</td>
+ </tr>
+    <tr>
+   <td>ț</td>
+   <td>tt</td>
+ </tr>
+    <tr>
+   <td>ž</td>
+   <td>zz</td>
+ </tr>
+  </tr>
+    <tr>
+   <td>ⁿ</td>
+   <td>ALT + n</td>
+ </tr>
+ </tbody>
+</table>
+
+<p>Liệ-țŭ̉ examples: </p>
+ <p> ar > ả, as > á, af > à, ax > ã, aj > ạ </p>
+ <p>If you want to type "liảng"，please input "liangx"</p>
+  <p></p>
+  <h2>Punctuation and Capitalization piao-tiển vù-ğạo tăh đọ-sỉa</h2>
+  <p>A space " " should be added betweem each words.</p>
+  <p>The first letter in one sentence should be capitalized.</p>
+  <p>The first letter in a proper noun such as the name of a particular person and place should be capitalized.</p>
+  <p>In an acronym, the first letter of each syllable should be capitalized, and a period "." can be added behind each capitalized letter.</p>
+  <p>In a multi-syllable single word, the space " " should be added between each syllable.</p>
+  <p>In a multi-syllable combined word, the hyphen "-" can be added between each syllable for avoid confusion.</p>
+  <p>In compound vowel and vowel with end consonant in loanword or certain accent, the hyphen "-" can be added between vowels or added between vowel and end consonant to mark the sounds out and avoid misreading.</p>
+  <p>Other uses of punctuation are similar with English and Vietnamese.</p>
+  <p></p>
+
+
+ <p> doubletaping leads to generate original letters:  </p>
+   <p>
+     If more than one tone marking key is pressed, the last one will be used. For example, typing <code>asf</code> will return "à". To write a tone marking key as a normal character, one has to press it twice: <code>her</code> becomes <code>hẻ</code>, while <code>herr</code> becomes <code>her</code>.
+   </p>
+ <p> tap Z key to remove tonations  </p>
+
+ <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/shanghaichuquocngu.yaml">Dictionary for Shanghainese National Language Script Orthography Zạng-Hai Ğàn-Ğọ Chếnh-In Zụ̆-Tiển</a>
+<p></p>
+<a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/liampochuquocngu.yaml">Dictionary for Liampo National Language Script Orthography Nhình-Pơ Ğàn-Ğọ Chếnh-In Zụ̆-Tiển</a>
+<p></p>
+<a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/soochowchuquocngu.yaml">Dictionary for Soochow National Language Script Orthography Sô-Châu Ğàn-Ğọ Chếnh-In Zụ̆-Tiển</a>
+<p></p>
+<a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/wuchuquocngu.yaml">Dictionary for Wu National Language Script Orthography Ğồ-Nhủ Chếnh-In Zụ̆-Tiển</a>
+<p></p>
+
+<h2>example vạn-vằn</h2>
+
+<p>南國山河</p>
+<p>Nền Koâc San Ğờ</p>
+<p>南國山河南帝居</p> 
+<p>Nền Koâc San Ğờ Nền Điế Cu</p>
+<p>截然定分在天書</p>
+<p>Dziệt Žền Định Făn Dzại Thiên Sư</p>
+<p>如何逆虜來侵犯</p> 
+<p>Žừ Ğờ Nhịch Lỗ Lài Țhin Vạn</p>
+<p>汝等行看取敗虛</p> 
+<p>Žử Tẳng Ğình Khến Țhủ Bạ Hu</p>
+
+<p>© cathaylab</p>

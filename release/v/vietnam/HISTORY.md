@@ -1,6 +1,13 @@
 vietnam Change History
 ====================
 
+2.0.5 (2025-04-25)
+----------------
+* Updated by cathaylab
+* removed uncommon "inn" and "ann" rules
+* removed most of symbols which are uncommon in Vietnamese. "ḿ" "m̀" and "m̉" are remained for interjection. ÑG is remained for the acronym of family name "Nguyễn".
+* slightly change the location of touch-layout.
+
 2.0.4 (2025-03-05)
 ----------------
 * Updated by cathaylab

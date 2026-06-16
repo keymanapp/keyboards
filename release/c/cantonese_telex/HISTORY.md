@@ -1,6 +1,16 @@
 cantonese telex Change History
 ====================
 
+4.0.3 (2026-5-11)
+----------------
+* shortened the codes
+
+4.0.2 (2026-4-25)
+----------------
+* adopted "ii" input to generate the letters 'ŭ'
+* removed some uncommon letter triggering rules in cantonese, such as oii, ann, inn, uoii, ejh esh
+* completed the vowel chart on keyboard document
+
 4.0.1 (2026-3-20)
 ----------------
 * added new letters 'ŭ' to replace 'ṳ'
