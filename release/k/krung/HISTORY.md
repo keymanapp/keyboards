@@ -1,7 +1,7 @@
 Krung Change History
 ====================
 
-1.2 (16 Jun 2026)
+1.1 (16 Jun 2026)
 ----------------
 * Add Khmer characters key hint for touch layout
 
