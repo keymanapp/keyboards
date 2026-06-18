@@ -6,7 +6,7 @@ store(&VERSION) '10.0'
 store(&NAME) 'Mara'
 store(&COPYRIGHT) 'Copyright © Laitei'
 store(&MESSAGE) 'Author: Laitei (https://laitei.dev)'
-store(&KEYBOARDVERSION) '1.0.5'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&TARGETS) 'any'
 store(&BITMAP) 'mara.ico'
 store(&VISUALKEYBOARD) 'mara.kvks'
@@ -216,5 +216,11 @@ c =========================
 + [SHIFT K_0] > ')'
 
 c =========================
-c FALLBACK (CRITICAL)
+c STEP-WISE BACKSPACING
 c =========================
+
+c Strips the circumflex instead of deleting the whole character
+'â' + [K_BKSP] > 'a'
+'Â' + [K_BKSP] > 'A'
+'ô' + [K_BKSP] > 'o'
+'Ô' + [K_BKSP] > 'O'
