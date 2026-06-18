@@ -1,9 +1,9 @@
 Numanggang keyboard
 ==============
 
-© 2020 SIL International
+© SIL Global
 
-Version 2.0 — requires Keyman 17 or greater
+Requires Keyman 17 or greater
 
 Description
 -----------
