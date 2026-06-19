@@ -4,65 +4,8 @@
 
   $pagestyle = <<<END
   /* ── Base ── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #1a1a1a;
-    background: #ffffff;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 24px 28px 48px;
-    line-height: 1.6;
-  }
-
-  /* ── Header ── */
-  .kb-header {
-    border-bottom: 3px solid #1F5C99;
-    padding-bottom: 12px;
-    margin-bottom: 24px;
-  }
-  .kb-header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 2px;
-  }
-  .kb-header .subtitle {
-    font-size: 13px;
-    color: #666;
-    font-style: italic;
-  }
-
-  /* ── Part headings ── */
-  .part-heading {
-    font-size: 17px;
-    font-weight: 700;
-    color: #1F5C99;
-    border-bottom: 2px solid #D9E2F3;
-    padding-bottom: 5px;
-    margin: 32px 0 14px;
-  }
-
-  /* ── Section headings ── */
-  h3 {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1F5C99;
-    margin: 22px 0 7px;
-  }
-
-  /* ── Body text ── */
-  p { margin-bottom: 9px; font-size: 13.5px; }
-
-  .note {
-    font-size: 12.5px;
-    color: #444;
-    margin-bottom: 8px;
-  }
-
-  /* ── Reference tables ── */
+    /* ── Reference tables ── */
   table.ref {
     width: 100%;
     border-collapse: collapse;
@@ -181,29 +124,15 @@
     margin: -4px 0 10px;
   }
 
-  /* ── Footer ── */
-  .kb-footer {
-    margin-top: 36px;
-    border-top: 1px solid #ccc;
-    padding-top: 8px;
-    font-size: 11.5px;
-    color: #888;
-    font-style: italic;
-  }
 END;
 
   // Header
   require_once('header.php');
 ?>
 
-<div class="kb-header">
-  <h1>Mising Keyboard</h1>
-  <div class="subtitle">Keyman Keyboard Help</div>
-</div>
-
 <p>This keyboard was specifically developed for the Mising community to provide a native digital voice. This layout replaces those generic English interfaces with a native-first design, allowing for natural, fluid communication in the Mising language without compromise. Technical Features MAK Orthography Support: Fully accommodates the standard Mising Agom K&eacute;bang (MAK) orthography (modified Roman script), ensuring all community standards are met. Linguistic Precision: Optimised for both everyday digital use and rigorous linguistic documentation. Data Integrity: Specifically engineered to prevent character fragmentation, ensuring clean data entry for building professional pronunciation dictionaries and annotating acoustic data. Intuitive Design: Built upon a familiar QWERTY foundation to maintain an easy learning curve for all users.</p>
 
-<div class="part-heading">Part 1 &mdash; Desktop / Laptop Keyboard</div>
+<h2>Part 1 &mdash; Desktop / Laptop Keyboard</h2>
 
 <p>This keyboard uses a standard QWERTY base. All Roman letters remain in their
 normal positions. Four QWERTY keys not used in Mising Agom K&eacute;bang (MAK)
@@ -318,7 +247,7 @@ press Semicolon, then <strong>Shift+vowel</strong>.</p>
 </table>
 
 
-<div class="part-heading">Part 2 &mdash; Phone / Touch Keyboard</div>
+<h2>Part 2 &mdash; Phone / Touch Keyboard</h2>
 
 <p>The Mising touch keyboard has four layers: <strong>Default</strong> (lowercase),
 <strong>Shift</strong> (uppercase), <strong>Caps</strong> (caps lock), and
@@ -522,10 +451,3 @@ the same applies for uppercase long vowels.</p>
   <tr><td>Tap abc (on Numeric)</td><td>Return to Default layer</td><td></td></tr>
   <tr><td>Tap &#x2630;&nbsp;Menu</td><td>Open Keyman menu</td><td>Language switch, keyboard settings</td></tr>
 </table>
-
-<div class="kb-footer">
-  Mising (Latin) Keyboard &nbsp;&bull;&nbsp;
-  Developed by Vivian Pegu &nbsp;&bull;&nbsp;
-  Copyright &copy; Vivian Pegu &nbsp;&bull;&nbsp;
-  Optimised for MAK (Mising Agom K&eacute;bang) orthography
-</div>

@@ -1,13 +1,21 @@
 <?php
-  $pagename = 'Madurese (SIL) Keyboard Help';
+  $pagename = 'MADHURÂH (SIL) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<h1>Start Using Madurese (SIL)</h1>
 
 <p>
-  A keyboard for Madurese language written with Latin script
+  A keyboard for the MADHURÂH language written with Latin script for the Madurese people.
+</p>
+
+<h3>Intro provided by SONATA NASAJIN</h3>
+<img src="stingray.png">
+
+<p>
+  The logo is a picture of a stingray carrying a Madurese couple on its back to rescue them from a
+  dangerous wave in the middle of a big ocean. We have a folklore through which we are told that our
+  seafaring ancestors were rescued by a stingray from being drowned by the angry wave.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

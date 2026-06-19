@@ -1,6 +1,17 @@
 Hong Kong Change History
 ====================
 
+2.2.1 (2026-05-12)
+----------------
+* changed spellings in keyboard document
+* modified codes for letter generation
+
+2.2 (2026-05-11)
+----------------
+* adopted "ii" input to generate the letters 'ŭ'
+* removed some uncommon letter triggering rules in cantonese, such as oii, ann, inn, uoii, ejh esh
+* completed the vowel chart on keyboard document
+
 2.1 (2026-04-06)
 ----------------
 * added new letters 'ŭ' to replace 'ṳ'
