@@ -16,7 +16,7 @@
 
 <h2>Non-tonal diacritics</h2>
 
-<table>
+<table class='display'>
   <tbody>
   <tr>
     <th>Character</th>
@@ -142,7 +142,7 @@
 
 <h2>Tonal diacritics</h2>
 
-<table>
+<table class='display'>
   <tbody>
     <tr>
       <th>Tone</th>
