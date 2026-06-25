@@ -1,0 +1,77 @@
+﻿c shughni generated from template at 2026-06-07 14:56:06
+c with name "shughni"
+store(&VERSION) '10.0'
+store(&NAME) 'shughni'
+store(&COPYRIGHT) 'Copyright ©'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'shughni.ico'
+store(&VISUALKEYBOARD) 'shughni.kvks'
+store(&LAYOUTFILE) 'shughni.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- Basic Latin (passthrough) ---
++ [K_A] > 'a'
++ [SHIFT K_A] > 'A'
++ [K_B] > 'b'
++ [SHIFT K_B] > 'B'
++ [K_C] > 'c'
++ [SHIFT K_C] > 'C'
++ [K_D] > 'd'
++ [SHIFT K_D] > 'D'
++ [K_E] > 'e'
++ [SHIFT K_E] > 'E'
++ [K_F] > 'f'
++ [SHIFT K_F] > 'F'
++ [K_G] > 'g'
++ [SHIFT K_G] > 'G'
++ [K_H] > 'h'
++ [SHIFT K_H] > 'H'
++ [K_I] > 'i'
++ [SHIFT K_I] > 'I'
++ [K_J] > 'j'
++ [SHIFT K_J] > 'J'
++ [K_K] > 'k'
++ [SHIFT K_K] > 'K'
++ [K_L] > 'l'
++ [SHIFT K_L] > 'L'
++ [K_M] > 'm'
++ [SHIFT K_M] > 'M'
++ [K_N] > 'n'
++ [SHIFT K_N] > 'N'
++ [K_O] > 'o'
++ [SHIFT K_O] > 'O'
++ [K_P] > 'p'
++ [SHIFT K_P] > 'P'
++ [K_Q] > 'q'
++ [SHIFT K_Q] > 'Q'
++ [K_R] > 'r'
++ [SHIFT K_R] > 'R'
++ [K_S] > 's'
++ [SHIFT K_S] > 'S'
++ [K_T] > 't'
++ [SHIFT K_T] > 'T'
++ [K_U] > 'u'
++ [SHIFT K_U] > 'U'
++ [K_V] > 'v'
++ [SHIFT K_V] > 'V'
++ [K_W] > 'w'
++ [SHIFT K_W] > 'W'
++ [K_X] > 'x'
++ [SHIFT K_X] > 'X'
++ [K_Y] > 'y'
++ [SHIFT K_Y] > 'Y'
++ [K_Z] > 'z'
++ [SHIFT K_Z] > 'Z'
+
+c --- Custom multi-codepoint touch keys ---
+c Each rule has both modifier variants for shift-layer longpress to work
+
+c gamma with caron (ɣ̌ / Ɣ̌)
++ [T_GCHECK_LOWER] > U+0263 U+030C
++ [SHIFT T_GCHECK_LOWER] > U+0263 U+030C
++ [T_GCHECK_UPPER] > U+0194 U+030C
++ [SHIFT T_GCHECK_UPPER] > U+0194 U+030C
