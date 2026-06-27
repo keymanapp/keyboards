@@ -8,8 +8,8 @@
 <p>
   Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Coâc-Nhủ-Zự
 </p>
-<p> Ğồ-Nhủ Coâc-Nhủ-Zự zự yêt chủng Lơ-Mỏ-hó căh Ğồ-Nhủ Vằn-Zự, mọc-tich zự păh Ğồ-Nhủ yêt chủng piao-chuẩn căh šü-siả ğẹ̌-thỏng</p>
-<p> Ğồ-Nhủ Coâc-Nhủ-Zự căh thong-dụng pản-pỏn kiêt-ğợt lặh cŏc-chủng Ğồ-Nhủ fang-nhiền căh đặc-tiển, ğình-žềnh yêt chủng hảo piảo-žự tăh miào-žuật cŏc-šưc-cŏc-diạng Ğồ-Nhủ fang-nhiền căh šü-sỉa ğẹ̌-thỏng, ğà cản-šiảo țứ đòng-in-zự, đě̀-cung păh făh-đòng đị-fang făh-đòng khẩu-in căh cảng Ğồ-Nhủ căh nhìn yêt tháo ğọng-đòng căh šü-siả ğẹ̌-thỏng.</p>
+<p> Ğồ-Nhủ Coâc-Nhủ-Zự zự yêt chủng Lơ-Mỏ-hó căh Ğồ-Nhủ Vằn-Zự, mọc-tich zự păh Ğồ-Nhủ yêt chủng piao-chuẩn căh šŭ-siả ğẹ̌-thỏng</p>
+<p> Ğồ-Nhủ Coâc-Nhủ-Zự căh thong-dụng pản-pỏn kiêt-ğợt lặh cŏc-chủng Ğồ-Nhủ fang-nhiền căh đặc-tiển, ğình-žềnh yêt chủng hảo piảo-žự tăh miào-žuật cŏc-šưc-cŏc-diạng Ğồ-Nhủ fang-nhiền căh šŭ-sỉa ğẹ̌-thỏng, ğà cản-šiảo țứ đòng-in-zự, đě̀-cung păh făh-đòng đị-fang făh-đòng khẩu-in căh cảng Ğồ-Nhủ căh nhìn yêt tháo ğọng-đòng căh šŭ-siả ğẹ̌-thỏng.</p>
   <p> The script of national language for Wu is a romanized Wu script is aimed at developing a standard phonetic writing system for Wu.</p>
   <p> The universal version of the script of national language for Wu combines the character of various accents of Wu, forms a phonetic writing system for Wu which demonstrates and describes various of Wu accents, and reduces the impact of homophone, provides a common written system for Wu speakers in different areas with different accents.</p>
 
@@ -301,8 +301,8 @@
    <td>[œ̃]</td>
  </tr>
  <tr>
-   <td>ü</td>
-   <td>ü</td>
+   <td>ŭ</td>
+   <td>ŭ</td>
    <td>[ʮ]</td>
  </tr>
    <tr>
@@ -461,7 +461,7 @@
 <tr><td>ê</td><td>[e]</td><td>許</td><td style="background-color: pink;">ě</td><td>[ie]</td><td>世</td><td style="background-color: yellow;">oê</td><td>[ue]</td><td>爲</td><td style="background-color: plum;">uê</td><td>[ye]</td><td>稅</td></tr>
 <tr><td>o</td><td>[o]</td><td>話</td><td style="background-color: yellow;">io</td><td>[io]</td><td>霞</td><td style="background-color: lightgrey;">oo</td><td>[uo]</td><td></td><td style="background-color: lightcoral;">uyo</td><td>[yʮ]</td><td>靴</td></tr>
 <tr><td>ơ</td><td>[ɯ]</td><td>和</td><td style="background-color: lightgrey;">ioơ</td><td>[ioɯ]</td><td></td><td style="background-color: pink;">oi</td><td>[uɐi]</td><td>推</td><td style="background-color: lightgrey;">uo</td><td>[yo]</td><td></td></tr>
-<tr><td>ư</td><td>[ɿ]</td><td>事</td><td style="background-color: skyblue;">iu</td><td>[iʏ]</td><td>有</td><td style="background-color: orange;">ôi</td><td>[uei]</td><td>最</td><td style="background-color: lightcoral;">ü</td><td>[ʮ]</td><td>主</td></tr>
+<tr><td>ư</td><td>[ɿ]</td><td>事</td><td style="background-color: skyblue;">iu</td><td>[iʏ]</td><td>有</td><td style="background-color: orange;">ôi</td><td>[uei]</td><td>最</td><td style="background-color: lightcoral;">ŭ</td><td>[ʮ]</td><td>主</td></tr>
 <tr><td style="background-color: yellow;">ao</td><td>[ɑo]</td><td>奧</td><td style="background-color: yellow;">iao</td><td>[iɑo]</td><td>要</td><td style="background-color: lightgrey;">ôy</td><td>[ui]</td><td></td><td style="background-color: lightcoral;">ươu</td><td>[øʏ]</td><td>樓</td></tr>
 <tr><td style="background-color: yellow;">ai</td><td>[æi]</td><td>愛</td><td style="background-color: pink;">iai</td><td>[iæ]</td><td>解</td><td style="background-color: pink;">oai</td><td>[uæ]</td><td>乖</td><td>uai</td><td>[yæ]</td><td></td></tr>
 <tr><td style="background-color: lightgrey;">ä</td><td>[æ]</td><td></td><td style="background-color: lightgrey;">iä</td><td>[iæ]</td><td></td><td style="background-color: lightgrey;">oä</td><td>[uæ]</td><td></td><td style="background-color: lightgrey;">uä</td><td>[yæ]</td><td></td></tr>
@@ -511,7 +511,7 @@
 <p>The letter "y" represents the [i] consonant as well as the letter "i". However, unlike letter "i", the letter "y" neither not cause palatalization with "k" "kh" "h" "g" "", combine with nearby letters to form other consonants or vowels.</p>
 <p>The vowels in grey background indicate the pronunciation in some accents of Wu and loanwords. However, they are seldom used to indicate phonemes with clear etymology.</p>
 <p>The end consonant [ʔ] can be spell as "h" when the vowel is in a particle, the word without a clear etymology about its original end consonant, the loanword, or just for representing the sound of the vowel.</p>
-<p>The "ü" [ʮ] vowel mainly appears in Taiwoo Wu dialect. In Taichow Wu dialect, this phoneme often appears after "ch" "x" "š" "ž" "đr" consonants and pronounced same as vowel "u".</p>
+<p>The "ŭ" [ʮ] vowel mainly appears in Taiwoo Wu dialect. In Taichow Wu dialect, this phoneme often appears after "ch" "x" "š" "ž" "đr" consonants and pronounced same as vowel "u".</p>
 <P>The "ě" [ie] vowel only appears at Shangshan and Lishui dialect. In other Wu dialect, the "ě" vowel is read same as "i" behind "k" "kh" "nh" "h" "ğ" "t" "th" "đ" "n" "l" "p" "ph" "b" "m" consonants or pronounced as "ư" behind "ch" "ț" "x" "țh" "š" "s" "ž" "z" "đr" "dz" consonants.</P>
 <table border="1" cellpadding="8" cellspacing="0" class='display'>
   <thead>
@@ -704,7 +704,7 @@
    <td><kbd>U</kbd> + <kbd>O</kbd> + <kbd>W</kbd></td>
  </tr>
    <tr>
-   <td>ü</td>
+   <td>ŭ</td>
    <td><kbd>I</kbd> + <kbd>I</kbd></td>
  </tr>
     <tr>
