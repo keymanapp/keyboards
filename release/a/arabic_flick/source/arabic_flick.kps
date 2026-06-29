@@ -62,12 +62,6 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>help\arabic_flick.php</Name>
-      <Description>File arabic_flick.php</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.php</FileType>
-    </File>
-    <File>
       <Name>symbols.png</Name>
       <Description>File symbols.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -102,14 +96,25 @@
       <Description>File touch_numbers.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
+<File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>arabic_flick</ID>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\arab\amiri\Amiri-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ar">Arabic</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
