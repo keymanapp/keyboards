@@ -3,7 +3,7 @@ Shanghai Telex keyboard
 
 Description
 -----------
-Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Koâc-Nhủ-Zụ̆
+Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Coâc-Nhủ-Zụ̆
 
 Links
 -----
