@@ -1,0 +1,191 @@
+﻿c Luri Mobile Keyboard
+store(&VERSION) '10.0'
+store(&NAME) 'Luri'
+store(&KEYBOARDVERSION) '1.0.8'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'luri.kvks'
+store(&LAYOUTFILE) 'luri.keyman-touch-layout'
+store(&CasedKeys) [K_A] .. [K_Z]
+store(ac) '0'
+
+begin Unicode > use(main)
+begin NewContext > use(start)
+begin PostKeystroke > use(post)
+
+group(main) using keys
+
+c Desktop RALT+Luri combinations (must precede any(letters))
++ [RALT K_A] > 'â'
++ [RALT SHIFT K_A] > 'Â'
++ [RALT K_E] > 'ê'
++ [RALT SHIFT K_E] > 'Ê'
++ [RALT K_I] > 'î'
++ [RALT SHIFT K_I] > 'Î'
++ [RALT K_O] > 'ö'
++ [RALT SHIFT K_O] > 'Ö'
++ [RALT K_U] > 'ü'
++ [RALT SHIFT K_U] > 'Ü'
++ [RALT K_S] > 'š'
++ [RALT SHIFT K_S] > 'Š'
++ [RALT K_C] > 'č'
++ [RALT SHIFT K_C] > 'Č'
++ [RALT K_Z] > 'ž'
++ [RALT SHIFT K_Z] > 'Ž'
++ [RALT K_D] > 'đ'
++ [RALT SHIFT K_D] > 'Đ'
++ [RALT K_L] > 'ł'
++ [RALT SHIFT K_L] > 'Ł'
++ [RALT K_N] > 'ṅ'
++ [RALT SHIFT K_N] > 'Ṅ'
++ [RALT K_R] > 'ř'
++ [RALT SHIFT K_R] > 'Ř'
++ [RALT K_G] > 'ǧ'
++ [RALT SHIFT K_G] > 'Ǧ'
++ [RALT K_Q] > 'ä'
++ [RALT SHIFT K_Q] > 'Ä'
++ [RALT K_Y] > 'ë'
++ [RALT SHIFT K_Y] > 'Ë'
++ [RALT K_1] > '±'
++ [RALT K_8] > '×'
++ [RALT K_SLASH] > '÷'
++ [RALT K_LBRKT] > '«'
++ [RALT K_RBRKT] > '»'
+
+c A-Z pass-through — outputs whatever the touch layout provides
+store(letters) 'a'..'z' 'A'..'Z'
++ any(letters) > index(letters, 1)
+
+c Touch space — auto-capitalize after sentence-ending punctuation
++ [K_SPACE] > ' ' use(handleSpace)
+
+c Luri specific touch long-press tokens — case-insensitive IDs with SHIFT variant
++ [T_a_circ] > 'â'
++ [SHIFT T_a_circ] > 'Â'
++ [T_e_circ] > 'ê'
++ [SHIFT T_e_circ] > 'Ê'
++ [T_i_circ] > 'î'
++ [SHIFT T_i_circ] > 'Î'
++ [T_o_diaer] > 'ö'
++ [SHIFT T_o_diaer] > 'Ö'
++ [T_u_diaer] > 'ü'
++ [SHIFT T_u_diaer] > 'Ü'
++ [T_a_diaer] > 'ä'
++ [SHIFT T_a_diaer] > 'Ä'
++ [T_e_diaer] > 'ë'
++ [SHIFT T_e_diaer] > 'Ë'
++ [T_r_caron] > 'ř'
++ [SHIFT T_r_caron] > 'Ř'
++ [T_s_caron] > 'š'
++ [SHIFT T_s_caron] > 'Š'
++ [T_d_stroke] > 'đ'
++ [SHIFT T_d_stroke] > 'Đ'
++ [T_g_caron] > 'ǧ'
++ [SHIFT T_g_caron] > 'Ǧ'
++ [T_z_caron] > 'ž'
++ [SHIFT T_z_caron] > 'Ž'
++ [T_c_caron] > 'č'
++ [SHIFT T_c_caron] > 'Č'
++ [T_l_stroke] > 'ł'
++ [SHIFT T_l_stroke] > 'Ł'
++ [T_n_dot] > 'ṅ'
++ [SHIFT T_n_dot] > 'Ṅ'
+
+c Numbers and punctuation
++ [K_1] > '1'
++ [K_2] > '2'
++ [K_3] > '3'
++ [K_4] > '4'
++ [K_5] > '5'
++ [K_6] > '6'
++ [K_7] > '7'
++ [K_8] > '8'
++ [K_9] > '9'
++ [K_0] > '0'
+
+c Desktop punctuation (unshifted)
++ [K_BKQUOTE] > '`'
++ [K_HYPHEN] > '-'
++ [K_SLASH]  > '/'
++ [K_COLON]  > ';'
++ [K_LBRKT]  > '['
++ [K_RBRKT]  > ']'
++ [K_QUOTE]  > "'"
++ [K_EQUAL]  > '='
++ [K_PERIOD] > '.' set(ac = '1')
++ [K_COMMA]  > ','
+
+c Desktop shifted punctuation
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_SLASH]  > '?'
++ [SHIFT K_COLON]  > ':'
++ [SHIFT K_LBRKT]  > '{'
++ [SHIFT K_RBRKT]  > '}'
++ [SHIFT K_QUOTE]  > '"'
++ [SHIFT K_EQUAL]  > '+'
++ [SHIFT K_COMMA]  > '<'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_BKSLASH] > '|'
++ [K_BKSLASH] > '\'
+
+c Touch-only punctuation keys
++ [U_003A]   > ':'
++ [U_003B]   > ';'
++ [U_002A]   > '*'
++ [U_0026]   > '&'
++ [U_002B]   > '+'
++ [U_003F]   > '?' set(ac = '1')
++ [U_0021]   > '!' set(ac = '1')
++ [U_0027]   > "'"
++ [U_0028]   > '('
++ [U_0029]   > ')'
++ [U_0022]   > '"'
++ [U_002E]   > '.'
++ [U_002C]   > ','
++ [U_003C]   > '<'
+
+c Symbols layer keys
++ [U_005B] > '['
++ [U_005D] > ']'
++ [U_007B] > '{'
++ [U_007D] > '}'
++ [U_00AB] > '«'
++ [U_00BB] > '»'
++ [U_0040] > '@'
++ [U_0023] > '#'
++ [U_00D7] > '×'
++ [U_00F7] > '÷'
++ [U_0024] > '$'
++ [U_005F] > '_'
++ [U_007C] > '|'
++ [U_007E] > '~'
++ [U_00B1] > '±'
++ [U_005C] > '\\'
++ [U_00A7] > '§'
++ [U_00B0] > '°'
++ [U_2022] > '•'
+
+group(handleSpace) readonly
+  platform('touch') if(ac = '1') > layer('shift') set(ac = '0')
+
+group(start) readonly
+  platform('touch') > layer('shift')
+
+group(post) readonly
+  platform('touch') if(&newLayer = "") > use(layerControl)
+
+group(layerControl) readonly
+  c Stay on numeric layer
+  platform('touch') if(&layer = 'numeric') > context
+  c Return to default after any other key (auto-cap handled by stores)
+  nomatch > layer('default')
