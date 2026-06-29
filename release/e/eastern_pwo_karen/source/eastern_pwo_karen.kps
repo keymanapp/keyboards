@@ -8,6 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>..\source\welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -86,12 +87,6 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>release\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</Name>
-      <Description>Font Eastern Pwo Karen Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -103,20 +98,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</Name>
+      <Description>Font Eastern Pwo Karen Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\EasternPwoKaren\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>eastern_pwo_karen</ID>
-      <OSKFont>release\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</OSKFont>
-      <DisplayFont>release\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="kjp">Pwo Eastern Karen</Language>
       </Languages>
       <WebOSKFonts>
-        <Font Filename="release\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf"/>
+        <Font Filename="..\..\..\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf"/>
       </WebOSKFonts>
       <WebDisplayFonts>
-        <Font Filename="release\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf"/>
+        <Font Filename="..\..\..\shared\fonts\EasternPwoKaren\EasternPwoKaren-Regular.ttf"/>
       </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
