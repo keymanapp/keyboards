@@ -8,7 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -44,12 +44,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -61,10 +55,47 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabHarmattan.ttf</Name>
+      <Description>Font KbdArabHarmattan</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>swahili_ajami_qwerty</ID>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabHarmattan.ttf</OSKFont>
       <Languages>
         <Language ID="sw-Arab">Swahili (macrolanguage)</Language>
       </Languages>

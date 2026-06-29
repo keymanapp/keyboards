@@ -12,7 +12,7 @@
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 <p>
-  This keyboard is based on an Ubuntu keyboard layout designed by Kevin Donnelly. We are grateful for his permission to do this.
+  This keyboard layout is based on an Ubuntu keyboard layout designed by <a href="https://kevindonnelly.org.uk/swahili/keyboard.php">Kevin Donnelly</a>. We are grateful for his permission to do this.
 </p>
 
 <h2>Mobile/Phone Keyboard Layout</h2>

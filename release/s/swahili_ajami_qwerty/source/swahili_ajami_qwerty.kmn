@@ -8,6 +8,7 @@ store(&TARGETS) 'any'
 store(&BITMAP) 'swahili_ajami_qwerty.ico'
 store(&VISUALKEYBOARD) 'swahili_ajami_qwerty.kvks'
 store(&LAYOUTFILE) 'swahili_ajami_qwerty.keyman-touch-layout'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdarab/KbdArab.json'
 store(&KMW_RTL) '1'
 
 begin Unicode > use(main)
@@ -20,9 +21,9 @@ c base characters
 store(baseU) U+0642      U+0648      U+0631      U+062A      U+064A      U+067E      U+0633      U+062F      U+0641      U+06A0      U+0647 \
              U+062C      U+0643      U+0644      U+0639      U+0632      U+062E      U+0686      U+06A4      U+0628      U+0646      U+0645 \
              U+062B      U+0649      U+0648      U+064A      U+0648      U+0627      U+0634      U+0630      U+063A      U+062D \
-             U+06AA      U+0698      U+06A0 \
+             U+06AA      U+0698      U+075D \
              U+0624      U+0626      U+0637      U+0626      U+0624      U+0626      U+0624      U+0623      U+0635      U+0636      U+06AF \
-             U+0629      U+0636      U+06AE \
+             U+0629      U+0638      U+06AE \
              U+06CF      U+0679      U+0688      U+0621
 store(baseK) [K_Q]       [K_W]       [K_R]       [K_T]       [K_Y]       [K_P]       [K_S]       [K_D]       [K_F]       [K_G]       [K_H]  \
              [K_J]       [K_K]       [K_L]       [K_QUOTE]   [K_Z]       [K_X]       [K_C]       [K_V]       [K_B]       [K_N]       [K_M] \
@@ -51,7 +52,7 @@ store(K_RTL) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R]
 store(U_RTL) U+200C     U+200D     U+200E     U+200F c ZWNJ ZWJ LRM RLM
 
 
-store(nul) "QWRPFJLXCVBM" 
+store(nul) "QWRPFJLXCVBM[]{}\|:?!@#$%-_=+" 
 
 group(main) using keys
 
@@ -74,3 +75,5 @@ group(main) using keys
 + [SHIFT K_BKQUOTE]      > U+0622
 + [RALT K_BKQUOTE]       > U+0670
 + [SHIFT RALT K_BKQUOTE] > U+0671
+
++ [SHIFT K_COMMA] > U+0621
