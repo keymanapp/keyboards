@@ -17,6 +17,7 @@ builder_describe \
   "all            run all actions" \
   "build          build keyboards" \
   "publish        deploy keyboards" \
+  "report         report changes to affected pull requests" \
   "--downloads-keyman-com=DOWNLOADS_KEYMAN_COM_URL  URL of downloads server" \
   "--help-keyman-com=HELP_KEYMAN_COM                Path to help.keyman.com repository" \
   "--s-keyman-com=S_KEYMAN_COM                      Path to s.keyman.com repository" \
@@ -79,12 +80,20 @@ function do_publish() {
   _upload_to_help_keyman_com
 }
 
+function do_report() {
+  "${REPO_ROOT}/resources/build/version/build.sh" configure build
+  local BUILDID="${BUILD_URL##*/}"
+  node resources/build/version run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILDID"
+}
+
 cd "${REPO_ROOT}"
 
 if builder_has_action all; then
   do_build
   do_publish
+  do_report
 else
   builder_run_action  build    do_build
   builder_run_action  publish  do_publish
+  builder_run_action  report   do_report
 fi
