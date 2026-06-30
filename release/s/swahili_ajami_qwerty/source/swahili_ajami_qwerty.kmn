@@ -1,0 +1,79 @@
+﻿c swahili_ajami_qwerty generated from template at 2026-06-26 09:32:02
+c with name "Swahili Ajami (QWERTY)"
+store(&VERSION) '10.0'
+store(&NAME) 'Swahili Ajami (QWERTY)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'swahili_ajami_qwerty.ico'
+store(&VISUALKEYBOARD) 'swahili_ajami_qwerty.kvks'
+store(&LAYOUTFILE) 'swahili_ajami_qwerty.keyman-touch-layout'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdarab/KbdArab.json'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+c combining marks
+store(diaU) U+064C           U+064B           U+064D           U+064E U+064F U+0650 U+0651          U+0652           U+0656 U+0657
+store(diaK) [SHIFT RALT K_U] [SHIFT RALT K_A] [SHIFT RALT K_I] [K_A]  [K_U]  [K_I]  [SHIFT K_QUOTE] [SHIFT K_PERIOD] [K_E]  [K_O]
+
+c base characters
+store(baseU) U+0642      U+0648      U+0631      U+062A      U+064A      U+067E      U+0633      U+062F      U+0641      U+06A0      U+0647 \
+             U+062C      U+0643      U+0644      U+0639      U+0632      U+062E      U+0686      U+06A4      U+0628      U+0646      U+0645 \
+             U+062B      U+0649      U+0648      U+064A      U+0648      U+0627      U+0634      U+0630      U+063A      U+062D \
+             U+06AA      U+0698      U+075D \
+             U+0624      U+0626      U+0637      U+0626      U+0624      U+0626      U+0624      U+0623      U+0635      U+0636      U+06AF \
+             U+0629      U+0638      U+06AE \
+             U+06CF      U+0679      U+0688      U+0621
+store(baseK) [K_Q]       [K_W]       [K_R]       [K_T]       [K_Y]       [K_P]       [K_S]       [K_D]       [K_F]       [K_G]       [K_H]  \
+             [K_J]       [K_K]       [K_L]       [K_QUOTE]   [K_Z]       [K_X]       [K_C]       [K_V]       [K_B]       [K_N]       [K_M] \
+             [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_G] [SHIFT K_H] \
+             [SHIFT K_K] [SHIFT K_Z] [SHIFT K_N] \
+             [RALT K_W]  [RALT K_E]  [RALT K_T]  [RALT K_Y]  [RALT K_U]  [RALT K_I]  [RALT K_O]  [RALT K_A]  [RALT K_S]  [RALT K_D]  [RALT K_G] \
+             [RALT K_H]  [RALT K_Z]  [RALT K_C] \
+             [SHIFT RALT K_W] [SHIFT RALT K_T] [SHIFT RALT K_D] [SHIFT RALT K_H]
+
+store(digitsU) U+0660 .. U+0669
+store(digits)  U+0030 .. U+0039
+store(digitsEuropeanK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9]
+
+store(punctU) U+06E9 U+06DD U+06DE U+FD3E U+FD3F \
+               "!" '"' U+00A3 "$%^&*()" \
+               "-_=+[]{}#~" \
+               ";:'@,.<>/?" \
+               U+060D U+061B U+060C U+0640 U+061F
+store(punctK) [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
+              [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9] [SHIFT RALT K_0] \
+              [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN] [RALT K_EQUAL] [SHIFT RALT K_EQUAL] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] \
+              [RALT K_COLON] [SHIFT RALT K_COLON] [RALT K_QUOTE] [SHIFT RALT K_QUOTE] [RALT K_COMMA] [RALT K_PERIOD] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [RALT K_SLASH] [SHIFT RALT K_SLASH] \
+              [K_HYPHEN] [K_COLON] [K_COMMA] [K_PERIOD] [K_SLASH] 
+
+store(K_RTL) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R]
+store(U_RTL) U+200C     U+200D     U+200E     U+200F c ZWNJ ZWJ LRM RLM
+
+
+store(nul) "QWRPFJLXCVBM[]{}\|:?!@#$%-_=+" 
+
+group(main) using keys
+
++ any(nul) > nul
+
++ any(digits)          > index(digitsU,1) c Arabic-Indic digits are default
++ any(digitsEuropeanK) > index(digits,1)  c European digits are on RALT
++ any(baseK)           > index(baseU,1)   c base characters
+
++ any(diaK) > index(diaU,1)
++ any(punctK) > index(punctU,1)
++ any(K_RTL) > index(U_RTL,1)
+
++ [K_oE2]            > U+0625
++ [SHIFT K_oE2]      > U+0622
++ [RALT K_oE2]       > U+0670
++ [SHIFT RALT K_oE2] > U+0671
+
++ [K_BKQUOTE]            > U+0625
++ [SHIFT K_BKQUOTE]      > U+0622
++ [RALT K_BKQUOTE]       > U+0670
++ [SHIFT RALT K_BKQUOTE] > U+0671
+
++ [SHIFT K_COMMA] > U+0621
