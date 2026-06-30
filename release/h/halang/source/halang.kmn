@@ -1,0 +1,51 @@
+﻿c Halang Telex style Keyboard by Joshua Nim
+store(&VERSION) '10.0'
+store(&NAME) 'Halang'
+store(&COPYRIGHT) 'Copyright © HEAR the WORD'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'halang.ico'
+store(&VISUALKEYBOARD) 'halang.kvks'
+store(&LAYOUTFILE) 'halang.keyman-touch-layout'
+
+store(vowels)               'aeiouăâêôơưyAEIOUĂÂÊÔƠƯY'
+store(vowels_huyen)         'àèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲ'
+store(vowels_Halang_bong)   'ăĕĭŏŭĂĔĬŎŬ'
+store(two_byte_group)       'aeiouAEIOU'
+store(combine_group)        'âêôơưyÂÊÔƠƯY'
+
+c *******************************************************************
+begin Unicode > use(main)          c Code execution entry point
+
+group(main) using keys
+    c Single huyen vowel accent rules - Upper and Lowercase
+    any(vowels) + [K_F] > index(vowels_huyen, 1)
+	
+	c for Halang Bong 
+    any(two_byte_group) + [K_Q] > index(vowels_Halang_bong, 1)
+    any(combine_group) + [K_Q] > index(combine_group, 1) U+0306
+
+    c Single- bong vowel Diacritic telex rules - Lowercase 
+    'a' + [K_W] > 'ă'
+    'a' + [K_A] > 'â'
+    'e' + [K_E] > 'ê'
+	'o' + [K_O] > 'ô'
+    'o' + [K_W] > 'ơ'
+    'u' + [K_W] > 'ư'
+
+    c Single Bong vowel Diacritic telex rules - Uppercase
+    'A' + [K_W] > 'Ă'
+	'A' + [K_A] > 'Â'
+    'A' + [SHIFT K_A] > 'Â'
+    'E' + [K_E] > 'Ê'
+	'E' + [SHIFT K_E] > 'Ê'
+    'O' + [K_O] > 'Ô'
+	'O' + [SHIFT K_O] > 'Ô'
+    'O' + [K_W] > 'Ơ'
+    'U' + [K_W] > 'Ư'
+
+    c Special ươ vowel Diacritic rules - Uppercase and Lowercase
+    'uo' + [K_W] > 'ươ'
+    'Uo' + [K_W] > 'Ươ'
+    'uO' + [K_W] > 'ưƠ'
+    'UO' + [K_W] > 'ƯƠ'
