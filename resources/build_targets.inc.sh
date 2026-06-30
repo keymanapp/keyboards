@@ -6,8 +6,9 @@
 # * legacy
 #
 # The following paths are always excluded:
-# * release/shared    - not keyboards, but files shared with other projects (TODO: move folder to top level)
-# * release/template  - not a keyboard, but a template layout for keyboards (TODO: move folder to top level)
+# * experimental/shared  - not keyboards, but files shared with other projects
+# * release/shared       - not keyboards, but files shared with other projects
+# * release/template     - not a keyboard, but a template layout for keyboards
 #
 # Expects global $TARGETS array; does not take this as a parameter due to
 # spaces in paths which are tedious to avoid
