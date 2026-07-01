@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © HEAR the WORD
+Copyright © 2026 HEAR the WORD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

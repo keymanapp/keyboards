@@ -3,7 +3,7 @@ Halang keyboard
 
 Description
 -----------
-Halang Telex Style Keyboard Ver 1.1
+Halang Telex Style keyboard for the Halang language of Vietnam
 
 Links
 -----
