@@ -1,6 +1,6 @@
 Mising Change History
 ====================
 
-1.0 (2026-05-13)
+1.1 (2026-06-28)
 ----------------
-* Created by Vivian Pegu
+* Created by Vivian Pegu & Smriti Saikia
