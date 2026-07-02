@@ -3,31 +3,8 @@
   $pagetitle = $pagename;
 
   $pagestyle = <<<END
-  /* ── Keyman Base Styles ── */
-  p { font: 10pt Tahoma; margin-bottom: 9px; line-height: 1.6; }
-  h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-  h2 { font: bold 12pt Tahoma; color: #4444cc; }
-
   /* ── Custom Keyboard Documentation Styles ── */
   *, *::before, *::after { box-sizing: border-box; }
-  
-  .kb-header {
-    border-bottom: 3px solid #1F5C99;
-    padding-bottom: 12px;
-    margin-bottom: 24px;
-    font-family: Tahoma, sans-serif;
-  }
-  .kb-header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 2px;
-  }
-  .kb-header .subtitle {
-    font-size: 13px;
-    color: #666;
-    font-style: italic;
-  }
   
   .part-heading {
     font-size: 17pt;
@@ -158,11 +135,6 @@ END;
   // Header
   require_once('header.php');
 ?>
-
-<div class="kb-header">
-  <h1>Mising Keyboard</h1>
-  <div class="subtitle">Keyman Keyboard Help</div>
-</div>
 
 <p>
 A comprehensive keyboard engineered specifically for the Mising language, designed for writing in the standard modified Roman script. Optimised for seamless digital communication, the layout ensures accurate entry of alphabets by preventing character fragmentation across all platforms. Built upon a familiar QWERTY foundation, it provides an intuitive and highly efficient typing experience.
