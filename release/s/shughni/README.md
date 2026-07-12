@@ -1,9 +1,9 @@
-shughni keyboard
+Shughni keyboard
 ==============
 
 Description
 -----------
-Latin keyboard for Shugni
+Latin keyboard for Shughni
 
 Links
 -----

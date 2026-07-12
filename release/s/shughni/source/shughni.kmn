@@ -1,9 +1,9 @@
 ﻿c shughni generated from template at 2026-06-07 14:56:06
 c with name "shughni"
 store(&VERSION) '10.0'
-store(&NAME) 'shughni'
-store(&COPYRIGHT) 'Copyright ©'
-store(&KEYBOARDVERSION) '1.0'
+store(&NAME) 'Shughni'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'shughni.ico'
 store(&VISUALKEYBOARD) 'shughni.kvks'
@@ -75,3 +75,52 @@ c gamma with caron (ɣ̌ / Ɣ̌)
 + [SHIFT T_GCHECK_LOWER] > U+0263 U+030C
 + [T_GCHECK_UPPER] > U+0194 U+030C
 + [SHIFT T_GCHECK_UPPER] > U+0194 U+030C
+
+c --- Desktop (AltGr) equivalents of the touch longpress characters ---
+c Character repertoire matches the touch layout: AltGr+key for the first
+c longpress option, AltGr+Shift+key for its shift-layer pair. K_H and K_J
+c carry the second longpress option found on K_G and K_Z respectively.
+
+c e with circumflex (ê / Ê)
++ [RALT K_E] > U+00EA
++ [SHIFT RALT K_E] > U+00CA
+
+c theta symbol / O with middle tilde (ϑ / Ɵ)
++ [RALT K_T] > U+03D1
++ [SHIFT RALT K_T] > U+019F
+
+c u with ring above (ů / Ů)
++ [RALT K_U] > U+016F
++ [SHIFT RALT K_U] > U+016E
+
+c a with macron (ā / Ā)
++ [RALT K_A] > U+0101
++ [SHIFT RALT K_A] > U+0100
+
+c s with caron (š / Š)
++ [RALT K_S] > U+0161
++ [SHIFT RALT K_S] > U+0160
+
+c Greek delta (δ / Δ)
++ [RALT K_D] > U+03B4
++ [SHIFT RALT K_D] > U+0394
+
+c gamma / gamma with caron (ɣ / Ɣ, ɣ̌ / Ɣ̌)
++ [RALT K_G] > U+0263
++ [SHIFT RALT K_G] > U+0194
++ [RALT K_H] > U+0263 U+030C
++ [SHIFT RALT K_H] > U+0194 U+030C
+
+c z with caron / ezh (ž / Ž, ʓ / Ӡ)
++ [RALT K_Z] > U+017E
++ [SHIFT RALT K_Z] > U+017D
++ [RALT K_J] > U+0293
++ [SHIFT RALT K_J] > U+04E1
+
+c x with dot above (ẋ / Ẋ)
++ [RALT K_X] > U+1E8B
++ [SHIFT RALT K_X] > U+1E8A
+
+c c with caron (č / Č)
++ [RALT K_C] > U+010D
++ [SHIFT RALT K_C] > U+010C
