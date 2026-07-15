@@ -1,4 +1,4 @@
-Laz Latin Change History
+Mingrelian Latin Change History
 ===============================
 
 1.7 (13 Jul 2026)
