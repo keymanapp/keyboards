@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Luri Paprik Keyboard Test</title>
+  <script src="https://s.keyman.com/kmw/engine/18.0/keymanweb.js"></script>
+  <script>
+    keyman.init({
+      resources:'https://s.keyman.com/kmw/engine/18.0/'
+    });
+    keyman.addKeyboards({
+      name:"Luri Paprik",
+      id:"luri_paprik",
+      filename:"build/luri_paprik.js"
+    });
+    window.onload = function() {
+      keyman.setActiveKeyboard('luri_paprik');
+    };
+  </script>
+</head>
+<body>
+  <h1>Luri Paprik Keyboard Test</h1>
+  <textarea rows="8" cols="60" placeholder="Type here..."></textarea>
+</body>
+</html>
