@@ -1,18 +1,23 @@
 <?php 
-  $pagename = 'northern_chinook_jargon keyboard help';
+  $pagename = 'Northern Chinook Jargon Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<p>
+<p lang="en">
     This is a keyboard for typing Northern Chinook Jargon for both desktop (Windows/Mac) and mobile (Android/iPhone/iPad) client.
 </p>
+<p lang="en">
 To type the following Northern Chinook Jargon characters, use the right ALT key on desktop or long press on mobile:
+</p>
+
+<p lang="chn">Kopa mamook Chinok kopa mashin.</p>
 
 <table><table border="width">
   <tr>
-    <th>key combo</th>
-    <th>Northern Chinook Jargon character</th>
+    <th><span lang="en">key combo</span><span lang="chn">Nayka mamook</span></a></th>
+    <th><span lang="en">Northern Chinook Jargon character</span>
+<span lang="chn">tsim</span></th>
   </tr>
   <tr>
 
@@ -46,11 +51,13 @@ To type the following Northern Chinook Jargon characters, use the right ALT key 
   </tr>
 </table>
 
-<h2>Desktop Keyboard Layout</h2>
+<h2><span lang="en">Desktop Keyboard Layout</span>
+<span lang="chn">Kopa Laplash</span></h2>
 <div id='osk' data-states='default shift'>
 </div>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
+<h2><span lang="en">Mobile/Tablet Keyboard Layout</span>
+<span lang="chn">Kopa Lema</span></h2>
 
 <div id='osk-tablet' data-states='default numeric'>
 </div>
