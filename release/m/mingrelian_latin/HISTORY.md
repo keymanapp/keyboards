@@ -1,6 +1,6 @@
 Mingrelian Latin Change History
 ===============================
 
-1.7 (13 Jul 2026)
+2.0 (13 Jul 2026)
 ------------------
-* Seperate from the Colchis Latin keyboard
+* Separate from the Colchis Latin keyboard
