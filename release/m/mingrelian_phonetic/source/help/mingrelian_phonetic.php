@@ -2,6 +2,42 @@
   $pagename = 'Mingrelian Phonetic Keyboard Help';
   $pagetitle = $pagename;
   
+  $pagestyle = <<<END 
+    p { font: 10pt Tahoma; }
+    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
+    h2 { font: bold 12pt Tahoma; color: #4444cc; }
+
+    .georgian-table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: sans-serif;
+      font-size: 14px;
+      border: 1px solid #ccc;
+    }
+    .georgian-table thead tr {
+      background-color: #f5f5f5;
+      border-bottom: 2px solid #ccc;
+    }
+    .georgian-table th {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .georgian-table tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+    .georgian-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .georgian-table .empty-cells {
+      background-color: #fafafa;
+    }
+  END;
+  
   require_once('header.php');
 ?>
 
