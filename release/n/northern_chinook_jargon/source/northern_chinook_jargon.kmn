@@ -1,0 +1,26 @@
+﻿c northern_chinook_jargon generated from template at 2026-05-22 17:55:53
+c with name "Northern Chinook Jargon"
+store(&VERSION) '15.0'
+store(&NAME) 'Northern Chinook Jargon'
+store(&COPYRIGHT) 'Copyright © Juli Baumler'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'northern_chinook_jargon.ico'
+store(&VISUALKEYBOARD) 'northern_chinook_jargon.kvks'
+store(&LAYOUTFILE) 'northern_chinook_jargon.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [RALT K_QUOTE] > 'ʼ'
++ [SHIFT RALT K_H] > 'H̱'
++ [RALT K_H] > 'ẖ'
++ [SHIFT RALT K_K] > 'Ḵ'
++ [RALT K_K] > 'ḵ'
+c double combining marcon U+035F not supported correctly in Win 11
+c combining marcon left/right half U+FE2C U+FE2D require additional font support in Win 11
++ [SHIFT RALT K_W] > 'W̱H̱'
++ [RALT K_W] > 'w̱ẖ'
++ [SHIFT RALT K_X] > 'X̱'
++ [RALT K_X] > 'x̱'
+
