@@ -10,17 +10,14 @@
 
 <dl>
   <dt>Default (unshifted)</dt>
-  <dd>Luri-specific characters (ؽ, ۋ, گ, ڤ, ۉ, ۏ, ۊ, ؤ, لٛ, اٛ, کٛ, etc.).</dd>
+  <dd>Luri-specific characters on letter keys (ؽ, ۋ, گ, ڤ, ۉ, ۏ, ۊ, ؤ, لٛ, اٛ, etc.) plus Persian letters on the number row (ض, ص, ث, ق, ف, غ, ع, خ, ح, ش).</dd>
   <dt>Shift</dt>
-  <dd>Standard Arabic script layout with Extended Arabic-Indic digits on the number row.</dd>
+  <dd>Arabic diacritics (Fatha, Damma, Kasra, Shadda, Sukun), special letters (ڳ, ڒ, ڌ, لٛ, إ), punctuation (؛ ، ٪ — « »), and Persian letters with Arabic-Indic digits on the number row.</dd>
   <dt>RALT (Right Alt)</dt>
-  <dd>Punctuation (<kbd>&gt;</kbd> <kbd>&lt;</kbd> ≤ ≥ « »), currency (€ £ ¥ ¢ ﷼), and math symbols.</dd>
+  <dd>Math symbols (<kbd>&gt;</kbd> <kbd>&lt;</kbd> ≤ ≥), brackets (⟨ ⟩ ﴿ ﴾ ‹ ›), currency (£ ¥ ¢), Arabic decimal separators (٫ ٬), interrobang (‽), and bracket pairs.</dd>
   <dt>RALT+Shift</dt>
-  <dd>Arabic letters and diacritics (Fatha, Damma, Kasra, Shadda, Sukun).</dd>
+  <dd>Not currently assigned.</dd>
 </dl>
-
-<h3>ZWNJ</h3>
-<p><kbd>RALT</kbd> + <kbd>Space</kbd> produces Zero-Width Non-Joiner.</p>
 
 <h2>Touch (Mobile)</h2>
 <p>Long-press a key to select Luri variants from the pop-up menu.</p>
