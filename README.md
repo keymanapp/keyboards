@@ -1,2 +1,2 @@
-# yangap_phone
+# Nyangatom
  This is Neyangatom keyboard for Andriod 
