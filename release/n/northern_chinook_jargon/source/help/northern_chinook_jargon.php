@@ -53,13 +53,13 @@ To type the following Northern Chinook Jargon characters, use the right ALT key 
 
 <h2><span lang="en">Desktop Keyboard Layout</span>
 <span lang="chn">Kopa Laplash</span></h2>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2><span lang="en">Mobile/Tablet Keyboard Layout</span>
 <span lang="chn">Kopa Lema</span></h2>
 
-<div id='osk-tablet' data-states='default numeric'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
 <p>©Juli Baumler</p>
