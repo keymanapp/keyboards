@@ -1,0 +1,31 @@
+lingvo_internacia keyboard
+==============
+
+Description
+-----------
+𐑤𐑦𐑚𐑧𐑮𐑨 𐑒𐑨𐑰 𐑥𐑨𐑤𐑓𐑧𐑮𐑥𐑦𐑑𐑒𐑴𐑛𐑨 𐑛𐑝𐑴𐑮𐑨𐑒‐𐑚𐑨𐑟𐑦𐑑𐑨 𐑯𐑴𐑝𐑖𐑨𐑝𐑨 𐑜𐑧𐑕𐑑𐑒𐑤𐑨𐑝𐑨𐑮𐑴 𐑐𐑴𐑮 𐑤𐑦𐑯𐑜𐑝𐑴 𐑦𐑯𐑑𐑧𐑮𐑯𐑨𐑔𐑦𐑨 𐑐𐑴𐑮 ·𐑨𐑯𐑛𐑮𐑴𐑦𐑛, ·𐑦𐑴𐑕, ·𐑝𐑦𐑯𐑛𐑴𐑟𐑴 𐑑𐑨𐑚𐑤𐑴𐑰𐑛𐑴 𐑒𐑨𐑰 ·𐑦𐑐𐑨𐑛 𐑴𐑐𐑧𐑮𐑨𐑔𐑦𐑵𐑥𐑴𐑰.
+
+Libera kaj malfermitkoda Dvorak-bazita novŝava gestklavaro por Lingvo Internacia por Android, iOS, Windows Tablet kaj iPad operaciumoj.
+
+Trajtoj:
+1. Plilongigita spaco (U+2004)
+
+Uzitaj rimedoj:
+1. Plej oftaj vortoj en Esperanto el retbabilejoj [https://vanege.medium.com/most-common-esperanto-words-plej-oftaj-vortoj-en-esperanto-b56422d13a7f]
+2. Pronomejo.net [https://pronomejo.net]
+3. La Bona Lingvo [https://labonalingvo.org]
+4. La Oftecoj de la Esperantaj Literoj [http://esperanto.davidgsimpson.com/studoj/literoj.pdf]
+
+Farita kun amo 💖 
+Skribu al mi, se vi volas, ke mi ŝanĝu la klavarkoloron al kia ajn vi deziras! :3
+
+Keyboard Homepage: https://keyman.com/keyboards/lingvo_internacia
+
+Copyright
+---------
+See [LICENSE.md](LICENSE.md)
+
+Supported Platforms
+-------------------
+ * Mobile devices
+
