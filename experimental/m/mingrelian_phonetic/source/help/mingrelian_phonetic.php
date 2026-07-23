@@ -1,8 +1,8 @@
-<?php 
+<?php
   $pagename = 'Mingrelian Phonetic Keyboard Help';
   $pagetitle = $pagename;
-  
-  $pagestyle = <<<END 
+
+  $pagestyle = <<<END
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 12pt Tahoma; color: #4444cc; }
@@ -36,8 +36,8 @@
     .georgian-table .empty-cells {
       background-color: #fafafa;
     }
-  END;
-  
+END;
+
   require_once('header.php');
 ?>
 
