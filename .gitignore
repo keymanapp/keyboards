@@ -1,35 +1,33 @@
-*.kpj.user
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
 .idea/
-legacy/*/*/build/
-release/*/*/build/
-release/*/*/tests/
-experimental/*/*/build/
-packages/*/build/
-.cache
-.DS_Store
-/.project
-.vscode/
-node_modules/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
-# compiler is downloaded into tools/kmcomp/
-/tools/kmcomp/
+# Keystore files
+*.jks
+*.keystore
 
-# regression tests will be built into /output
-/output/
+# Google Services (e.g. APIs or Firebase)
+google-services.json
 
-# Program files downloaded -- legacy, these are no longer required
-# but we'll keep them in .gitignore so they don't accidentally get
-# added into commits
-/tools/keyboard_info.distribution.json
-/tools/keyboard_info.source.json
-/tools/kmcmpdll.dll
-/tools/kmcmpdll.x64.dll
-/tools/kmcomp.exe
-/tools/kmcomp.x64.exe
-/tools/kmconvert.exe
-
-.source_is_binary
-build_targets.txt
-build_external_targets.txt
-build_fv_all.txt
-build_legacy.txt
+# Android Profiling
+*.hprof
