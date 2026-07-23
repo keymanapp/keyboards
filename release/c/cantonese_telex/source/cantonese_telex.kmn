@@ -3,7 +3,7 @@ c This Version of Cantonese Romanization script simulate a proto-cantonese phono
 store(&VERSION) '17.0'
 store(&NAME) 'cantonese telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '4.0.3'
+store(&KEYBOARDVERSION) '4.0.4'
 store(&TARGETS) 'any'
 store(&BITMAP) 'cantonese_telex.ico'
 store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
@@ -54,7 +54,7 @@ store(vowel_nga)               'ãẽĩõũỹữÃẼĨÕŨỸỮ'
 store(vowel_nang)              'ạẹịọụỵựẠẸỊỌỤỴỰ'
 store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴŭŬ'
 store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-store(s_all_letters)  'abcdđefghijklmnopqrstuvwxyzABCDĐEFGHIJKLMNOPQRSTUVWXYZăâêôơưAEIOUĂÂÊÔƠƯŧŦțȚ'
+store(s_all_letters)  'abcdđefghijklmnopqrstuvwxyzABCDĐEFGHIJKLMNOPQRSTUVWXYZăâêôơưAEIOUĂÂÊÔƠƯŧŦțȚșȘþÞżŻ'
 store(s_no_d_letters) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZăâêôơưAEIOUĂÂÊÔƠƯ'
 store(no_sfrxj_letters) 'abcdeghiklmnopqtuvwyzABCDEGHIKLMNOPQTUVWYZ'
 store(consonants) 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
@@ -213,7 +213,7 @@ store(upper_ow_v) 'ỚỜỞỠỢ'
 store(uow_end) 'ptkcmniuPTKCMNIU'
 store(un_tones) 'abcdeghilmnopqtuvwyABCDEGHILMNOPQTUVWY'
 store(un_hrl_consonants) 'bcdfgjkmnpqstvwxzBCDFGJKMNPQSTVWXZ'
-store(no_for_h_consonants) 'bcdfghjkpqrstvwxzBCDFGHJKPQRSTVWXZ'
+store(no_for_h_consonants) 'bcdfgjkpqrstvwxzBCDFGJKPQRSTVWXZ'
 store(no_for_m_consonants) 'bcdfghjkmpqrstvwxzBCDFGHJKMPQRSTVWXZ'
 store(c) 'cC'
 store(mn) 'mnMN'
@@ -234,8 +234,7 @@ store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
 store(two_q) 'qQ'
-store(ie_consonants) 'đbcdghklmnprstŧțvxyzĐBCDGHKLMNPRSTŦȚVXYZ'
-store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆŧŦțȚ'
+store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆŧŦțȚșȘþÞżŻ' dk(u) dk(uon)
 store(wj) 'wjWJ'
 store(yu) 'yuYU'
 store(yuia) 'yuiaYUIA'
@@ -257,6 +256,7 @@ store(ss) 'ŧŦ'
 store(tone_marks) U+0301 U+0300 U+0309 U+0303 U+0323
 store(mniw) 'mnŭMNŬ' 
 store(rl) 'rlRL' 
+store(un_c_consonant) 'bdfghjklmnpqrstvwxzBDFGHJKLMNPQRSTVWXZ'
 c *******************************************************************
 
     c Keyboard options
@@ -741,6 +741,13 @@ any(ee) any(two_u) + 'E' > index(e, 1) index(two_u, 2) 'E'
 "Ŧ" + "s" > "Ss"
 "Ŧ" + "S" > "SS"
 
++ [ALT K_S] > "ș"
++ [SHIFT ALT K_S] > "Ș"
++ [ALT K_Z] > "ż"
++ [SHIFT ALT K_Z] > "Ż"
++ [ALT K_T] > "þ"
++ [SHIFT ALT K_T] > "Þ"
+
 any(two_u) any(o) 'ng' + any(w) > index(two_uw, 1) index(ow, 2) 'ng'
 any(two_u) any(o) 'NG' + any(w) > index(two_uw, 1) index(ow, 2) 'NG'
 "u" any(o) any(ptcmni) + any(w) > "ư" index(ow, 2) index(ptcmni, 3)
@@ -1096,11 +1103,11 @@ any(viet_vowels) any(consonants) any(s_all_letters) any(s_all_letters) any(all_l
 any(viet_vowels) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(all_letters) + any(no_d_consonants) > context index(no_d_consonants, 7)
 any(viet_vowels) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(all_letters) + any(no_d_consonants) > context index(no_d_consonants, 8)
 any(viet_vowels) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(all_letters) + any(no_d_consonants) > context index(no_d_consonants, 9)
-any(c) any(h) any(consonants) + any(no_d_c) > context index(no_d_c, 4)
-any(c) any(h) any(consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
-any(c) any(h) any(consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
-any(c) any(h) any(consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
-any(c) any(h) any(consonants)  any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 8)
+any(c) any(h) any(un_h_consonants) + any(no_d_c) > context index(no_d_c, 4)
+any(c) any(h) any(un_h_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
+any(c) any(h) any(un_h_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
+any(c) any(h) any(un_h_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
+any(c) any(h) any(un_h_consonants)  any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 8)
 any(d) any(un_z_consonants) + any(no_d_c) > context index(no_d_c, 3)
 any(d) any(un_z_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
 any(d) any(un_z_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
@@ -1173,6 +1180,11 @@ any(h) any(no_for_h_consonants) any(s_no_d_letters) + any(punctuationc) > contex
 any(h) any(no_for_h_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(h) any(no_for_h_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(h) any(no_for_h_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
+any(un_c_consonant) any(h) any(no_for_h_consonants) + any(no_d_c) > context index(no_d_c, 4)	
+any(un_c_consonant) any(h) any(no_for_h_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
+any(un_c_consonant) any(h) any(no_for_h_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
+any(un_c_consonant) any(h) any(no_for_h_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
+any(un_c_consonant) any(h) any(no_for_h_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 8)
 any(vowels) any(consonants) any(vowels) + any(punctuationc) > context index(punctuationc, 4)
 any(vowels) any(consonants) any(all_letters) any(all_letters) + any(punctuation) > context index (punctuation, 5)	
 any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(punctuation) > context index(punctuation, 6)

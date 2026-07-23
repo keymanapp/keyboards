@@ -32,11 +32,23 @@
    <td>a</td>
    <td>[a]</td>
  </tr>
+  <tr>
+   <td>au</td>
+   <td>/</td>
+   <td>au</td>
+   <td>[ɔu]</td>
+ </tr>
  <tr>
    <td>â</td>
    <td>/</td>
    <td>â</td>
    <td>[ɐ]</td>
+ </tr>
+  <tr>
+   <td>ây</td>
+   <td>/</td>
+   <td>ây</td>
+   <td>[ɐi]</td>
  </tr>
  <tr>
    <td>ă</td>
@@ -61,7 +73,6 @@
    <td>chơ</td>
    <td>[ʧ] [ʨ]</td>
  </tr>
-   </tr>
    <tr>
    <td>d</td>
    <td>đi</td>
@@ -93,166 +104,161 @@
    <td>/</td>
    <td>[f]</td>
  </tr>
-   </tr>
    <tr>
    <td>g</td>
    <td>chư</td>
    <td>/</td>
    <td>[ɡ][dʒ][ʒ]</td>
  </tr>
-   </tr>
    <tr>
    <td>h</td>
    <td>ei-xừ</td>
    <td>ha</td>
    <td>[h]</td>
  </tr>
-   </tr>
    <tr>
    <td>i</td>
    <td>ai</td>
    <td>i</td>
    <td>[i]</td>
  </tr>
-   </tr>
    <tr>
    <td>iê</td>
    <td>/</td>
    <td>ie</td>
    <td>[iɜ] [i]</td>
  </tr>
-   </tr>
    <tr>
    <td>j</td>
    <td>chei</td>
    <td>/</td>
    <td>[dʒ] [j] [ʒ]</td>
  </tr>
-   </tr>
    <tr>
    <td>k</td>
    <td>khei</td>
    <td>ka</td>
    <td>[k]</td>
  </tr>
-   </tr>
    <tr>
    <td>kh</td>
    <td>/</td>
    <td>kha</td>
    <td>[kʰ]</td>
  </tr>
-   </tr>
    <tr>
    <td>l</td>
    <td>e-lồ</td>
    <td>lơ</td>
    <td>[l]</td>
  </tr>
-   </tr>
    <tr>
    <td>m</td>
    <td>em</td>
    <td>mơ</td>
    <td>[m]</td>
  </tr>
-   </tr>
    <tr>
    <td>n</td>
    <td>en</td>
    <td>nơ</td>
    <td>[n]</td>
  </tr>
-   </tr>
    <tr>
    <td>ng</td>
    <td>/</td>
    <td>ngơ</td>
    <td>[ŋ]</td>
  </tr>
-   </tr>
    <tr>
    <td>nh</td>
    <td>/</td>
    <td>nhơ</td>
    <td>[ȵ] [ŋ]</td>
  </tr>
-   </tr>
    <tr>
    <td>o</td>
    <td>ou</td>
    <td>o</td>
    <td>[ɔ]</td>
  </tr>
-   </tr>
    <tr>
    <td>ô</td>
    <td>/</td>
    <td>ô</td>
    <td>[ou] [ɔu] [u]</td>
  </tr>
-   </tr>
+    <tr>
+   <td>ôi</td>
+   <td>/</td>
+   <td>ôi</td>
+   <td>[ui]</td>
+ </tr>
    <tr>
    <td>ơ</td>
    <td>/</td>
    <td>ơ</td>
    <td>[ə]</td>
  </tr>
-   </tr>
+    <tr>
+   <td>ơi</td>
+   <td>/</td>
+   <td>ơi</td>
+   <td>[əi] [ei]</td>
+ </tr>
    <tr>
    <td>p</td>
    <td>pi</td>
    <td>pơ</td>
    <td>[pʰ]</td>
  </tr>
-   </tr>
    <tr>
    <td>ph</td>
    <td>/</td>
    <td>phơ</td>
    <td>[f]</td>
  </tr>
-   </tr>
    <tr>
    <td>q</td>
    <td>khiu</td>
    <td>qui</td>
    <td>[kʷ]</td>
  </tr>
-   </tr>
    <tr>
    <td>r</td>
    <td>a-lồ</td>
    <td>rơ</td>
    <td>[ɹ]</td>
  </tr>
-   </tr>
    <tr>
    <td>s</td>
    <td>e-sì</td>
    <td>sơ</td>
+   <td>[s] [ɕ]</td>
+ </tr>
+    <tr>
+   <td>ș</td>
+   <td>/</td>
+   <td>șơ</td>
    <td>[ʃ] [ɕ]</td>
  </tr>
-   </tr>
    <tr>
    <td>t</td>
    <td>thi</td>
    <td>tơ</td>
    <td>[tʰ] [t]</td>
  </tr>
-   </tr>
    <tr>
    <td>th</td>
    <td>/</td>
    <td>thơ</td>
    <td>[tʰ]</td>
  </tr>
-   </tr>
    <tr>
    <td>ŧ</td>
    <td>/</td>
    <td>ŧơ</td>
-   <td>[s] [θ] [ɬ]</td>
+   <td>[θ] [ɬ]</td>
  </tr>
     <tr>
    <td>ț</td>
@@ -260,19 +266,17 @@
    <td>țơ</td>
    <td>[ʦ]</td>
  </tr>
-   </tr>
    <tr>
    <td>tx</td>
    <td>/</td>
    <td>txơ</td>
    <td>[ʦʰ]</td>
  </tr>
-   </tr>
      </tr>
    <tr>
    <td>tr</td>
    <td>/</td>
-   <td>chi-tổ-sinh-mỗ知組聲母</td>
+   <td>chi-țổ-sinh-mỗ知組聲母</td>
    <td>[ʧ] [ʧʰ] [ʨ] [ʨʰ]</td>
  </tr>
    <tr>
@@ -281,28 +285,24 @@
    <td>u</td>
    <td>[u]</td>
  </tr>
-   </tr>
    <tr>
    <td>uâ</td>
    <td>/</td>
    <td>uâ</td>
    <td>[ɵ]</td>
  </tr>
-   </tr>
    <tr>
    <td>ư/uyê</td>
    <td>/</td>
    <td>ư</td>
    <td>[y]</td>
  </tr>
-   </tr>
    <tr>
    <td>ươ/ưa</td>
    <td>/</td>
    <td>ươ</td>
    <td>[œ]</td>
  </tr>
-   </tr>
    <tr>
    <td>ŭ</td>
    <td>/</td>
@@ -315,40 +315,41 @@
    <td>ui</td>
    <td>[ɵy] [ui]</td>
  </tr>
-   </tr>
    <tr>
    <td>v</td>
    <td>vi</td>
    <td>vơ</td>
    <td>[ʋ] [w] [v]</td>
  </tr>
-   </tr>
    <tr>
    <td>w</td>
    <td>đa-bi-diu</td>
    <td></td>
-   <td>[w]</td>
+   <td>[w] [v]</td>
  </tr>
-   </tr>
    <tr>
    <td>x</td>
    <td>ek-sì</td>
    <td>xơ</td>
    <td>[ʧʰ] [ʨʰ]</td>
  </tr>
-   </tr>
    <tr>
    <td>y</td>
    <td>oai</td>
    <td>ơi</td>
    <td>[ei] [ɪi] [i] [j] [ʝ]</td>
  </tr>
-   </tr>
    <tr>
    <td>z</td>
    <td>dì-set</td>
    <td>/</td>
    <td>[z]</td>
+ </tr>
+    <tr>
+   <td>ż</td>
+   <td>/</td>
+   <td>ż</td>
+   <td>[ʐ]</td>
  </tr>
  </tbody>
 </table>
@@ -429,14 +430,16 @@
   <tr><td>x</td><td>[ʨʰ]</td><td>叉</td></tr>
   <tr><td style="background-color: lightgray;">tx/țh</td><td>[ʦʰ]</td><td>草</td></tr>  
   <tr><td>s</td><td>[ɕ]</td><td>沙</td></tr>
-  <tr><td style="background-color: lightgray;">ŧ</td><td>[θ]</td><td>新</td></tr>
+  <tr><td style="background-color: plum;">ș</td><td>[ʃ] [ɕ]</td><td>share</td></tr>
+  <tr><td style="background-color: lightgray;">ŧ</td><td>[θ] [ɬ]</td><td>新</td></tr>
+  <tr><td style="background-color: plum;">þ</td><td>[θ]</td><td></td></tr>
   <tr><td>d</td><td>[j]</td><td>也</td></tr>
   <tr><td style="background-color: lightpink;">y</td><td>[ʔi]</td><td>要</td></tr>  
   <tr><td>/</td><td>[ø]</td><td>安</td></tr>
   <tr><td style="background-color: yellow;">tr</td><td>[ʈ]</td><td>知</td></tr>
   <tr><td style="background-color: plum;">r</td><td>[ɹ]</td><td>friend</td></tr>
   <tr><td style="background-color: plum;">z</td><td>[z]</td><td></td></tr>
-  
+  <tr><td style="background-color: plum;">ż</td><td>[ʐ]</td><td></td></tr>
 </table>
  <p>韻首[k]位於元音 e ê i y之前嘅韻首一定使用字母k嚟表示，位於元音â ă u ư ô ơ 之前嘅韻首一定使用字母c表示。如果位於元音a o以前，呢個字嘅古音同儋州話發音入面存在介音i，咁就使用字母k嚟表示。如果呢個音節冇介音i,一係表音詞同外來詞，咁就用字母c嚟表示。</p>
  <p>The consonant [k] must be written as the letter "k" when it appears before the vowels "e, ê, i, y". When it appears before the vowels "â, ă, u, ư, ô, ơ"， it must be written as the letter "c". If it appears before the vowels "a" or "o", and the word’s historical pronunciation and its pronunciation in Damchau dialect contain the medial sound [i], then the letter "k" will be applicated. If the syllable does not have the medial sound [i], or if it is an onomatopoeic word or a loanword, then the letter "c" will be applicated.</p>
@@ -456,6 +459,8 @@
  <p>The pronunciation of letter "t" is same with consonant "đ" in Canton city accent. They are both pronounced as [t] in Canton city accent. "t" is used to mark sounds, indicate words only for Canton city accent and spell loanwords, such as "點解tỉm-kải" "我哋ngõ-tỵ" "一啲yât-ti" "拉丁Lai-tinh".</p>
  <p>字母"d" 字母"z" 同字母組合 "dz" 喺粵語源頭嘅詞語入面同字母"y"都用嚟表示韻首/j/或者/z/，字母"y"用嚟表示古音同儋州話入面[ʔ]韻首嘅音節</p>
  <p>Letter "d", letter "z", and letter combination "dz" and letter "y" in Cantonese origin words, are used to represent /j/ or /z/ consonant. The letter “y” is applicated on the syllables with [ʔ] consonant in historical pronunciation and the Damchau dialect. </p>
+  <p>字母"ș" "þ"同"ż"用嚟表示特殊方言同書寫外來詞語</p>
+ <p>The letter "ș" "þ" and "ż" are used to represent specific accents and spelling loanwords from foreign languages.</p>
  <h1>Vowels and End Consonants 韻腹 Vận-Phục</h1> 
  <table border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -496,7 +501,7 @@
 <tr><td>ăng</td><td>[ɐŋ]</td><td>增</td><td>iăng</td><td>[iɐŋ]</td><td></td><td>uăng/oăng</td><td>[uɐŋ]</td><td>轟</td></tr>
 <tr><td>em</td><td>[ɛm]</td><td>𦧷</td><td>iêm/iem</td><td>[iɛm]</td><td>閃</td><td></td><td></td><td></td></tr>
 <tr><td>en</td><td>[ɛn]</td><td>N</td><td>iên/ien</td><td>[iɛn]</td><td>先</td><td>uen/oen</td><td>[wɛn]</td><td>慣</td></tr>
-<tr><td style="background-color: yellow;">eng/ênh</td><td>[ɛŋ]</td><td>聽</td><td>iêng</td><td>[iɛŋ]</td><td>聽</td><td style="background-color: yellowgreen;">uênh/oênh/oeng</td><td>[wɛŋ]</td><td></td></tr>
+<tr><td style="background-color: yellow;">ênh/eng</td><td>[ɛŋ]</td><td>聽</td><td>iêng</td><td>[iɛŋ]</td><td>聽</td><td style="background-color: yellowgreen;">uênh/oênh/oeng</td><td>[wɛŋ]</td><td></td></tr>
 <tr><td>om</td><td>[ɔm]</td><td>甘</td><td style="background-color: plum;">iom</td><td>[iɔm]</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>on</td><td>[ɔn]</td><td>安</td><td>ion</td><td>[iɔn]</td><td></td><td style="background-color: lightgray;">uon</td><td>[uɔn]</td><td>亂</td></tr>
 <tr><td>ong</td><td>[ɔŋ]</td><td>港</td><td>ương</td><td>[œŋ</td><td>羊</td><td>uong</td><td>[wɔŋ]</td><td>光</td></tr>
@@ -725,75 +730,93 @@
  </tr>
  <tr>
    <td>ă</td>
-   <td>aw</td>
+   <td><kbd>A</kbd> + <kbd>W</kbd></td>
    <td>ttac<strong>w</strong></td>
    <td>țăc則</td>
  </tr>
  <tr>
    <td>â</td>
-   <td>aa</td>
+   <td><kbd>A</kbd> + <kbd>A</kbd></td>
    <td>yat<strong>a</strong></td>
    <td>yât一</td>
  </tr>
  <tr>
    <td>ê</td>
-   <td>ee</td>
+   <td><kbd>E</kbd> + <kbd>E</kbd></td>
    <td>le<strong>e</strong>c</td>
    <td>lêc叻</td>
  </tr>
    <tr>
    <td>iê-</td>
-   <td>ii-</td>
+   <td><kbd>I</kbd> + <kbd>I</kbd>-</td>
    <td>thi<strong>i</strong>n</td>
    <td>thiên天</td>
  </tr>
   <tr>
    <td>uyê</td>
-   <td>uyy</td>
+   <td><kbd>U</kbd> + <kbd>Y</kbd> + <kbd>Y</kbd></td>
    <td>quy<strong>y</strong>n</td>
    <td>quyên捐</td>
   </tr>
    <tr>
      <td>ô</td>
-     <td>oo</td>
+     <td><kbd>O</kbd> + <kbd>O</kbd></td>
      <td>ddo<strong>o</strong></td>
      <td>đô都</td>
    </tr>
  <tr>
    <td>ơ</td>
-   <td>ow</td>
+   <td><kbd>O</kbd> + <kbd>W</kbd></td>
    <td>co<strong>w</strong></td>
    <td>cơ㗎</td>
  </tr>
   <tr>
    <td>ư</td>
-   <td>uw</td>
+   <td><kbd>U</kbd> + <kbd>W</kbd></td>
    <td>su<strong>w</strong></td>
    <td>đo多</td>
  </tr>
    <tr>
    <td>ŭ</td>
-   <td>ii</td>
+   <td><kbd>I</kbd> + <kbd>I</kbd></td>
    <td>si<strong>i</strong></td>
    <td>sŭ師</td>
  </tr>
    <tr>
    <td>ŧ</td>
-   <td>ss</td>
+   <td><kbd>S</kbd> + <kbd>S</kbd></td>
    <td>s<strong>s</strong>am</td>
    <td>ŧam三</td>
  </tr>
     <tr>
    <td>ț</td>
-   <td>tt</td>
+   <td><kbd>T</kbd> + <kbd>T</kbd></td>
    <td>t<strong>t</strong>ii</td>
    <td>țŭ資</td>
  </tr>
      <tr>
      <td>đ</td>
-     <td>dd</td>
+     <td><kbd>D</kbd> + <kbd>D</kbd></td>
      <td>d<strong>d</strong>o</td>
      <td>đo多</td>
+   </tr>
+  <tr>
+     <td>ș</td>
+     <td><kbd>Alt</kbd> <kbd>S</kbd></td>
+     <td>To-<kbd>Alt</kbd><strong>s</strong>i-ba</td>
+     <td>To-și-ba</td>
+   </tr>
+  <tr>
+     <td>ż</td>
+     <td><kbd>Alt</kbd> <kbd>Z</kbd></td>
+     <td>Za-pa-ro-<kbd>Alt</kbd><strong>z</strong>ie</td>
+     <td>Za-pa-ro-żie</td>
+   </tr>
+     <tr>
+     <td>þ</td>
+     <td><kbd>Alt</kbd> <kbd>T</kbd></td>
+     <td>A-<kbd>Alt</kbd><strong>t</strong>e-na</td>
+     <td>A-þe-na</td>
    </tr>
  </tbody>
 </table>
@@ -821,34 +844,34 @@
    </tr>
    <tr>
      <td>đẩu (second tone)</td>
-     <td>r</td>
+     <td><kbd>R</kbd></td>
      <td>hau<strong>r</strong></td>
      <td>hảu好
       </td>
    </tr>
    <tr>
      <td>khóng (third tone)</td>
-     <td>s</td>
+     <td><kbd>S</kbd></td>
      <td>huw<strong>s</strong></td>
      <td>hứ去
      </td>
    </tr>
    <tr>
      <td>xầm (forth tone)</td>
-     <td>f</td>
+     <td><kbd>F</kbd></td>
      <td>xa<strong>f</strong></td>
      <td>xà茶
      </td></tr>
    <tr>
      <td>ngõng (fifth tone)</td>
-     <td>x</td>
+     <td><kbd>X</kbd></td>
      <td>ma<strong>x</strong></td>
      <td>mã馬
      </td>
    </tr>
    <tr>
      <td>hạ (sixth tone)</td>
-     <td>j</td>
+     <td><kbd>J</kbd></td>
      <td>hee<strong>j</strong></td>
      <td>hệ係
      </td>
@@ -909,6 +932,9 @@
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocngutihamchauva.yaml">Dictionary for the script of National Language for Yamchow accent Quóc Dĩ Chì粵語國語字字典欽州音</a>
   <p></p>
   <a href="https://github.com/Cathaylaboratory/quokyuzi/blob/main/quocyuchinamninhva.yaml">Dictionary for the script of National Language for Namning accent Quóc Dữ Chị粵語國語字字典南寧音</a>
+  <p></p>
+  <a href="https://github.com/Cathaylaboratory/cantonese-dictionary/blob/main/dictionary%20in%20canton%20accent.txt">Anglo-Cantonese Dictionary in the script National Language粵英國語字典</a>
+  
   <p></p>
   <p>粵語國語字通用版本係一種收納咗多種粵語口音發音嘅粵語文字，粵語國語字通用版本嘅使用同粵語國語字嘅廣州音、台山音、南寧音、欽州音等等粵語口音嘅版本嘅使用之間唔衝突</p>
   <p>Việt-Ngữ Quóc-Ngữ-Țụ̆ thung-dụng bản-bủn hệ yât chủng sưu-nạp chỏ đo-chủng Việt-Ngữ hẩu-yâm ké Việt-Ngữ mằn-țụ̆, Việt-Ngữ Quóc-Ngữ-Țụ̆ thung-dụng bản-bủn ké sŭ̉-dụng thùng Việt-Ngữ Quóc-Ngữ-Țụ̆ ké Quỏng-Châu yâm, Thòi-San yâm, Nàm-Nình yâm, Hâm-Châu yâm đ.đ. Việt-Ngữ hẩu-yâm ké bản-bủn ké sŭ̉-dụng m̀ xung-đặt </p>
