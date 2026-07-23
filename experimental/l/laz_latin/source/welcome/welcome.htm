@@ -1,18 +1,29 @@
-<?php 
-  $pagename = 'Laz Latin Keyboard Help';
-  $pagetitle = $pagename;
-  // Header we will tidy up later  
-  require_once('header.php');
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Using Laz Latin</title>
+  <style type="text/css">
+    p { font: 10pt Tahoma; }
+    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
+    h2 { font: bold 12pt Tahoma; color: #4444cc; }
+  </style>
+</head>
+<body>
+
+<h1>Start Using Laz Latin</h1>
 
 <p>
-    This is a Laz Latin keyboard for transcription of the Lazuri language.
+  This is a Laz Latin keyboard for transcription of the Lazuri language.
 </p>
+
+<h1>Keyboard Layout</h1>
 
   <h2>Desktop Keyboard layout</h2>
   <p>Press the circumflex key (SHIFT 3) followed by a vowel to get a circumflex above a vowel. For example, press ^e to produced ê. This is available on a, e, i, o, u.</p>
 
-<h3>Key combination</h3>
+  <h3>Key combination</h3>
   <table style="border-collapse: collapse; width: 100%; max-width: 300px; font-family: sans-serif; font-size: 14px;">
   <thead>
     <tr style="border-bottom: 2px solid #ccc; text-align: left;">
@@ -56,19 +67,35 @@
   </tbody>
 </table>
 
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
-</div>
+  <h2>Desktop layout</h2>
 
-<h2>Phone Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+	<h3>Default (unshifted)</h3>
+	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+	<h3>Right ALT (unshifted)</h3>
+	<p><a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a></p>
+	<h3>Shift Right ALT</h3>
+	<p><a href="LayoutU_SRA.png"><img class="keyboard" src="LayoutU_SRA.png" alt="Shift Right ALT state" /></a></p>
 
-<div id='osk-phone' data-states='default shift numeric'>
-</div>
+  <h2>Mobile layout</h2>
 
-<h2>Tablet Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+  <h3>Default (unshifted)</h3>
+	<p><a href="Mobile_LayoutU_.png"><img class="keyboard" src="Mobile_LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="Mobile_LayoutU_S.png"><img class="keyboard" src="Mobile_LayoutU_S.png" alt="Shift state" /></a></p>
+	<h3>Numeric</h3>
+	<p><a href="Mobile_LayoutU_N.png"><img class="keyboard" src="Mobile_LayoutU_N.png" alt="Numeric state" /></a></p>
 
-<div id='osk-tablet' data-states='default shift rightalt'>
-</div>
+  <h2>Tablet layout</h2>
+
+  <h3>Default (unshifted)</h3>
+	<p><a href="Tablet_LayoutU_.png"><img class="keyboard" src="Tablet_LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="Tablet_LayoutU_S.png"><img class="keyboard" src="Tablet_LayoutU_S.png" alt="Shift state" /></a></p>
+	<h3>Numeric</h3>
+	<p><a href="Tablet_LayoutU_N.png"><img class="keyboard" src="Tablet_LayoutU_N.png" alt="Numeric state" /></a></p>
+
+  <p>MARGALEF gave input on the keyboard layouts.</p>
+</body>
+</html>
