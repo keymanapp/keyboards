@@ -1,0 +1,1110 @@
+﻿c Luri Paprik Keyboard — Northern Luri (lrc-Arab)
+store(&VERSION) '10.0'
+store(&NAME) 'لری'
+store(&KEYBOARDVERSION) '1.0.8'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Mohsen'
+store(&MESSAGE) 'Northern Luri keyboard'
+store(&VISUALKEYBOARD) 'luri_paprik.kvks'
+store(&LAYOUTFILE) 'luri_paprik.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ======================================================================
+c Default (unshifted) — matches touch layout default layer
+c ======================================================================
+
+c Row 1: ؽ ۋ گ ڤ ۉ ۏ ۊ ؤ ج چ پ
++ [K_Q] > U+063D       c ؽ
++ [K_W] > U+06CB       c ۋ
++ [K_E] > U+06AF       c گ
++ [K_T] > U+06A4       c ڤ
++ [K_Y] > U+06C9       c ۉ
++ [K_U] > U+06CF       c ۏ
++ [K_O] > U+06CA       c ۊ
++ [K_P] > U+0624       c ؤ
++ [K_R] > U+0642       c ق
++ [K_LBRKT] > U+062C   c ج
++ [K_RBRKT] > U+0686   c چ
++ [K_BKSLASH] > U+067E c پ
+
+c Row 2: آ ٱ لٛ اٛ ݩ ئ ا س ی ت ک
++ [K_A] > U+0622       c آ
++ [K_F] > U+0671       c ٱ
++ [K_G] > U+0644       c ل
++ [K_H] > U+0627 U+065B       c اٛ
++ [K_K] > U+0769       c ݩ
++ [K_L] > U+0626       c ئ
++ [K_QUOTE] > U+0627   c ا
++ [K_S] > U+0633       c س
++ [K_D] > U+06CC       c ی
++ [K_J] > U+062A       c ت
++ [K_COLON] > U+06A9   c ک
+
+c Row 3: ژ کٛ اْ ء ز ر ذ د ه
++ [K_Z] > U+0698       c ژ
++ [K_X] > U+06A9 U+065B c کٛ
++ [K_M] > U+0627 U+0652 c اْ
++ [K_COMMA] > U+0621   c ء
++ [K_C] > U+0632       c ز
++ [K_V] > U+0631       c ر
++ [K_B] > U+0630       c ذ
++ [K_N] > U+062F       c د
++ [K_I] > U+0647       c ه
+
+c ======================================================================
+c Shift layer — unique characters not in default layer
+c ======================================================================
+c Row 1: K_Q K_W K_E K_R K_T K_Y K_U K_I K_O K_P K_[ K_\ K_]
++ [SHIFT K_Q] > U+064E   c َ — Fatha
++ [SHIFT K_W] > U+064F   c ُ — Damma
++ [SHIFT K_E] > U+06B3   c ڳ — gueh (Sindhi)
++ [SHIFT K_R] > U+061B   c ؛ — Arabic semicolon
++ [SHIFT K_T] > U+0650   c ِ — Kasra
++ [SHIFT K_Y] > U+0651   c ّ — Shadda
++ [SHIFT K_U] > U+060C   c ، — Arabic comma
++ [SHIFT K_I] > U+0652   c ْ — Sukun
++ [SHIFT K_O] > U+066A   c ٪ — Arabic percent
++ [SHIFT K_P] > U+2014   c — — em dash
++ [SHIFT K_LBRKT] > U+003F   c ?
++ [SHIFT K_RBRKT] > U+00B7   c · — middle dot
++ [SHIFT K_BKSLASH] > U+0640   c ـ — Tatweel
+
+c Row 2: K_A K_S K_D K_F K_G K_H K_J K_K K_L K_; K_'
++ [SHIFT K_A] > U+06DB   c ۛ — Arabic small high vowel
++ [SHIFT K_S] > U+2014   c — — em dash
++ [SHIFT K_D] > U+2013   c – — en dash
++ [SHIFT K_F] > U+0628   c ب
++ [SHIFT K_G] > U+0644 U+065B   c لٛ — lam with small high vowel
++ [SHIFT K_H] > U+00AB   c « — left double angle quote
++ [SHIFT K_J] > U+200C   c ZWNJ — zero-width non-joiner
++ [SHIFT K_K] > U+0646   c ن
++ [SHIFT K_L] > U+0645   c م
++ [SHIFT K_COLON] > U+00BB   c » — right double angle quote
++ [SHIFT K_QUOTE] > U+0625   c إ — alef with hamza below
+
+c Row 3: K_Z K_X K_C K_V K_B K_N K_M K_, K_. K_/
++ [SHIFT K_V] > U+0692   c ڒ
++ [SHIFT K_Z] > U+0638   c ظ
++ [SHIFT K_X] > U+0637   c ط
++ [SHIFT K_C] > U+20AC   c € — euro
++ [SHIFT K_B] > U+FDFC   c ﷼ — rial
++ [SHIFT K_N] > U+068C   c ڌ — dhal (Sindhi)
++ [SHIFT K_M] > U+0023   c # — number sign
++ [SHIFT K_COMMA] > U+0648   c و
++ [SHIFT K_PERIOD] > U+061F   c ؟
++ [SHIFT K_SLASH] > U+061F   c ؟
+
+c ======================================================================
+c Desktop punctuation (unshifted)
+c ======================================================================
++ [K_HYPHEN] > '-'
+
+c ======================================================================
+c Default number row — Persian ISIRI 9147 letters (matches touch layout)
+c ======================================================================
++ [K_1] > U+0636   c ض
++ [K_2] > U+0635   c ص
++ [K_3] > U+062B   c ث
++ [K_4] > U+0642   c ق
++ [K_5] > U+0641   c ف
++ [K_6] > U+063A   c غ
++ [K_7] > U+0639   c ع
++ [K_8] > U+062E   c خ
++ [K_9] > U+062D   c ح
++ [K_0] > U+0634   c ش
+
+c ======================================================================
+c Shifted number row — Extended Arabic-Indic digits (matches touch layout shift)
+c ======================================================================
++ [SHIFT K_1] > U+06F1
++ [SHIFT K_2] > U+06F2
++ [SHIFT K_3] > U+06F3
++ [SHIFT K_4] > U+06F4
++ [SHIFT K_5] > U+06F5
++ [SHIFT K_6] > U+06F6
++ [SHIFT K_7] > U+06F7
++ [SHIFT K_8] > U+06F8
++ [SHIFT K_9] > U+06F9
++ [SHIFT K_0] > U+06F0
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
+
+c On-screen keyboard punctuation
+c ======================================================================
++ [K_PERIOD] > '.'
++ [K_SLASH] > '/'
+
+c ======================================================================
+c RALT layer — punctuation, math, currency, and extra symbols
+c ======================================================================
+
+c Math & comparison
++ [RALT K_A] > U+003E       c >
++ [RALT K_S] > U+003C       c <
++ [RALT K_D] > U+2264       c ≤
++ [RALT K_F] > U+2265       c ≥
+
+c Brackets & quotes
++ [RALT K_J] > U+27E8       c ⟨
++ [RALT K_K] > U+27E9       c ⟩
++ [RALT K_L] > U+FD3F       c ﴿ — ornate right parenthesis
++ [RALT K_COLON] > U+FD3E   c ﴾ — ornate left parenthesis
++ [RALT K_QUOTE] > U+2039   c ‹ — single left angle quote
++ [RALT K_Z] > U+203A       c › — single right angle quote
+
+c Currency
++ [RALT K_C] > U+00A3       c £ — pound
++ [RALT K_V] > U+00A5       c ¥ — yen
++ [RALT K_B] > U+00A2       c ¢ — cent
+
+c Arabic punctuation
++ [RALT K_COMMA] > U+066B   c ٫ — Arabic decimal separator
++ [RALT K_PERIOD] > U+066C  c ٬ — Arabic thousands separator
++ [RALT K_SLASH] > U+203D   c ‽ — interrobang
+
+c Number row extras
++ [RALT K_1] > U+2030       c ‰
++ [RALT K_4] > '$'
++ [RALT K_5] > '%'
++ [RALT K_9] > '('
++ [RALT K_0] > ')'
++ [RALT K_6] > U+005B       c [
++ [RALT K_7] > U+005D       c ]
++ [RALT K_8] > U+007B       c {
++ [RALT K_Q] > U+003A       c :
++ [RALT K_Y] > U+2105       c ℅ — care of
+
+c ======================================================================
+c Touch tokens — single Luri characters (long-press on base keys)
+c ======================================================================
++ [T_a_madd] > U+0622
++ [SHIFT T_a_madd] > U+0622
++ [T_hamza_below] > U+0627 U+0652
++ [SHIFT T_hamza_below] > U+0627 U+0652
++ [T_veh] > U+06A4
++ [SHIFT T_veh] > U+06A4
++ [T_noon_small_v] > U+0769
++ [SHIFT T_noon_small_v] > U+0769
++ [T_dal_inverted_v] > U+068C
++ [SHIFT T_dal_inverted_v] > U+068C
++ [T_gaf_inverted] > U+06B3
++ [SHIFT T_gaf_inverted] > U+06B3
++ [T_waw_inverted_v] > U+06C9
++ [SHIFT T_waw_inverted_v] > U+06C9
++ [T_waw_ring] > U+06CF
++ [SHIFT T_waw_ring] > U+06CF
++ [T_waw_two_dots] > U+06CA
++ [SHIFT T_waw_two_dots] > U+06CA
++ [T_kirghiz_oe] > U+06CB
++ [SHIFT T_kirghiz_oe] > U+06CB
++ [T_jeh] > U+0698
++ [SHIFT T_jeh] > U+0698
++ [T_alef_wasla] > U+0671
++ [SHIFT T_alef_wasla] > U+0671
++ [T_alef_damma] > U+063D
++ [SHIFT T_alef_damma] > U+063D
++ [T_waw_hamza] > U+0624
++ [SHIFT T_waw_hamza] > U+0624
+
+c Compound sequences for touch layout (lam + small high vowel, alef + small high vowel, keheh + small high vowel)
++ [T_lam_high] > U+0644 U+065B
++ [SHIFT T_lam_high] > U+0644 U+065B
++ [T_alef_high] > U+0627 U+065B
++ [SHIFT T_alef_high] > U+0627 U+065B
++ [T_keheh_high] > U+06A9 U+065B
++ [SHIFT T_keheh_high] > U+06A9 U+065B
+
+c Reh with small v (ڒ) — long-press on ر
++ [T_reh_small_v] > U+0692
++ [SHIFT T_reh_small_v] > U+0692
+
+c Em dash — long-press on hyphen
++ [T_em_dash] > U+2014
++ [SHIFT T_em_dash] > U+2014
+
+c Question mark — long-press on period
++ [T_question] > U+003F
++ [SHIFT T_question] > U+003F
+
+c Interrobang — long-press on period
++ [T_interrobang] > U+203D
++ [SHIFT T_interrobang] > U+203D
+
+c Persian letters on touch (empty key spots)
++ [T_be] > U+0628
++ [SHIFT T_be] > U+0628
++ [T_lam] > U+0644
++ [SHIFT T_lam] > U+0644
++ [T_nun] > U+0646
++ [SHIFT T_nun] > U+0646
++ [T_mim] > U+0645
++ [SHIFT T_mim] > U+0645
++ [T_za] > U+0638
++ [SHIFT T_za] > U+0638
++ [T_ta] > U+0637
++ [SHIFT T_ta] > U+0637
++ [T_waw] > U+0648
++ [SHIFT T_waw] > U+0648
+
+c Hamza
++ [T_hamza] > U+0621
++ [SHIFT T_hamza] > U+0621
+
+c Alef with hamza below
++ [T_alef_hamza_below] > U+0625
++ [SHIFT T_alef_hamza_below] > U+0625
+
+c Touch diacritics, ZWNJ, Tatweel
++ [T_fatha] > U+064E
++ [SHIFT T_fatha] > U+064E
++ [T_damma] > U+064F
++ [SHIFT T_damma] > U+064F
++ [T_kasra] > U+0650
++ [SHIFT T_kasra] > U+0650
++ [T_shadda] > U+0651
++ [SHIFT T_shadda] > U+0651
++ [T_sukun] > U+0652
++ [SHIFT T_sukun] > U+0652
++ [T_tatweel] > U+0640
++ [SHIFT T_tatweel] > U+0640
++ [T_arabic_question] > U+061F
++ [SHIFT T_arabic_question] > U+061F
++ [T_zwnj] > U+200C
++ [SHIFT T_zwnj] > U+200C
+
+c Touch punctuation
++ [T_left_paren] > U+0028
++ [SHIFT T_left_paren] > U+0028
++ [T_right_paren] > U+0029
++ [SHIFT T_right_paren] > U+0029
++ [T_colon] > U+003A
++ [SHIFT T_colon] > U+003A
++ [T_exclamation] > U+0021
++ [SHIFT T_exclamation] > U+0021
++ [T_arabic_semicolon] > U+061B
++ [SHIFT T_arabic_semicolon] > U+061B
++ [T_arabic_comma] > U+060C
++ [SHIFT T_arabic_comma] > U+060C
+
+c Touch symbol group keys
++ [T_currency_key] > U+0024
++ [SHIFT T_currency_key] > U+0024
++ [T_bracket_key] > U+005B
++ [SHIFT T_bracket_key] > U+005B
++ [T_dash_key] > U+2014
++ [SHIFT T_dash_key] > U+2014
+
+c Touch currency & symbols
++ [T_dollar] > U+0024
++ [SHIFT T_dollar] > U+0024
++ [T_euro] > U+20AC
++ [SHIFT T_euro] > U+20AC
++ [T_pound] > U+00A3
++ [SHIFT T_pound] > U+00A3
++ [T_yen] > U+00A5
++ [SHIFT T_yen] > U+00A5
++ [T_cent] > U+00A2
++ [SHIFT T_cent] > U+00A2
++ [T_rial] > U+FDFC
++ [SHIFT T_rial] > U+FDFC
++ [T_care_of] > U+2105
++ [SHIFT T_care_of] > U+2105
++ [T_per_mille] > U+2030
++ [SHIFT T_per_mille] > U+2030
++ [T_percent] > U+0025
++ [SHIFT T_percent] > U+0025
++ [T_number_sign] > U+0023
++ [SHIFT T_number_sign] > U+0023
++ [T_ampersand] > U+0026
++ [SHIFT T_ampersand] > U+0026
++ [T_at] > U+0040
++ [SHIFT T_at] > U+0040
+
+c Touch brackets & angles
++ [T_left_square] > U+005B
++ [SHIFT T_left_square] > U+005B
++ [T_right_square] > U+005D
++ [SHIFT T_right_square] > U+005D
++ [T_left_curly] > U+007B
++ [SHIFT T_left_curly] > U+007B
++ [T_right_curly] > U+007D
++ [SHIFT T_right_curly] > U+007D
++ [T_left_double_angle] > U+00AB
++ [SHIFT T_left_double_angle] > U+00AB
++ [T_right_double_angle] > U+00BB
++ [SHIFT T_right_double_angle] > U+00BB
++ [T_single_left_angle] > U+2039
++ [SHIFT T_single_left_angle] > U+2039
++ [T_single_right_angle] > U+203A
++ [SHIFT T_single_right_angle] > U+203A
++ [T_less_than] > U+003C
++ [SHIFT T_less_than] > U+003C
++ [T_greater_than] > U+003E
++ [SHIFT T_greater_than] > U+003E
++ [T_less_equal] > U+2264
++ [SHIFT T_less_equal] > U+2264
++ [T_greater_equal] > U+2265
++ [SHIFT T_greater_equal] > U+2265
+
+c Touch dashes & punctuation
++ [T_en_dash] > U+2013
++ [SHIFT T_en_dash] > U+2013
++ [T_middle_dot] > U+00B7
++ [SHIFT T_middle_dot] > U+00B7
++ [T_inverted_question] > U+00BF
++ [SHIFT T_inverted_question] > U+00BF
++ [T_arabic_decimal] > U+066B
++ [SHIFT T_arabic_decimal] > U+066B
++ [T_arabic_thousands] > U+066C
++ [SHIFT T_arabic_thousands] > U+066C
+
++ [T_arabic_percent] > U+066A
++ [SHIFT T_arabic_percent] > U+066A
+c Touch math signs
++ [T_plus_minus] > U+00B1
++ [SHIFT T_plus_minus] > U+00B1
++ [T_multiply] > U+00D7
++ [SHIFT T_multiply] > U+00D7
++ [T_divide] > U+00F7
++ [SHIFT T_divide] > U+00F7
++ [T_not_equal] > U+2260
++ [SHIFT T_not_equal] > U+2260
++ [T_approximate] > U+2248
++ [SHIFT T_approximate] > U+2248
+
++ [T_left_math_angle] > U+27E8
++ [SHIFT T_left_math_angle] > U+27E8
++ [T_right_math_angle] > U+27E9
++ [SHIFT T_right_math_angle] > U+27E9
++ [T_ornate_left_paren] > U+FD3E
++ [SHIFT T_ornate_left_paren] > U+FD3E
++ [T_ornate_right_paren] > U+FD3F
++ [SHIFT T_ornate_right_paren] > U+FD3F
+
+c ======================================================================
+c Emoji layer keys
+c ======================================================================
+
+c Row 1: Smileys
++ [T_e_grinning] > U+1F600
++ [SHIFT T_e_grinning] > U+1F600
++ [T_e_smiley] > U+1F603
++ [SHIFT T_e_smiley] > U+1F603
++ [T_e_smile] > U+1F604
++ [SHIFT T_e_smile] > U+1F604
++ [T_e_grin] > U+1F601
++ [SHIFT T_e_grin] > U+1F601
++ [T_e_laugh] > U+1F606
++ [SHIFT T_e_laugh] > U+1F606
++ [T_e_sweat] > U+1F605
++ [SHIFT T_e_sweat] > U+1F605
++ [T_e_rofl] > U+1F923
++ [SHIFT T_e_rofl] > U+1F923
++ [T_e_joy] > U+1F602
++ [SHIFT T_e_joy] > U+1F602
++ [T_e_wink] > U+1F609
++ [SHIFT T_e_wink] > U+1F609
++ [T_e_blush] > U+1F60A
++ [SHIFT T_e_blush] > U+1F60A
++ [T_e_heart_eyes] > U+1F60D
++ [SHIFT T_e_heart_eyes] > U+1F60D
++ [T_e_star_struck] > U+1F929
++ [SHIFT T_e_star_struck] > U+1F929
+
+c Row 2: More smileys
++ [T_e_thinking] > U+1F914
++ [SHIFT T_e_thinking] > U+1F914
++ [T_e_unamused] > U+1F612
++ [SHIFT T_e_unamused] > U+1F612
++ [T_e_roll_eyes] > U+1F644
++ [SHIFT T_e_roll_eyes] > U+1F644
++ [T_e_flushed] > U+1F633
++ [SHIFT T_e_flushed] > U+1F633
++ [T_e_stuck_out] > U+1F61B
++ [SHIFT T_e_stuck_out] > U+1F61B
++ [T_e_stuck_out_wink] > U+1F61C
++ [SHIFT T_e_stuck_out_wink] > U+1F61C
++ [T_e_yum] > U+1F61D
++ [SHIFT T_e_yum] > U+1F61D
++ [T_e_relieved] > U+1F60C
++ [SHIFT T_e_relieved] > U+1F60C
++ [T_e_pensive] > U+1F614
++ [SHIFT T_e_pensive] > U+1F614
++ [T_e_sunglasses] > U+1F60E
++ [SHIFT T_e_sunglasses] > U+1F60E
++ [T_e_smirk] > U+1F60F
++ [SHIFT T_e_smirk] > U+1F60F
++ [T_e_neutral] > U+1F610
++ [SHIFT T_e_neutral] > U+1F610
+
+c Row 3: More emotions (longpress keys)
++ [T_e_confused] > U+1F615
++ [SHIFT T_e_confused] > U+1F615
++ [T_e_upside] > U+1F643
++ [SHIFT T_e_upside] > U+1F643
++ [T_e_money] > U+1F911
++ [SHIFT T_e_money] > U+1F911
++ [T_e_astonished] > U+1F632
++ [SHIFT T_e_astonished] > U+1F632
++ [T_e_sleeping] > U+1F634
++ [SHIFT T_e_sleeping] > U+1F634
++ [T_e_vomit] > U+1F92E
++ [SHIFT T_e_vomit] > U+1F92E
++ [T_e_partying] > U+1F973
++ [SHIFT T_e_partying] > U+1F973
++ [T_e_cry] > U+1F622
++ [SHIFT T_e_cry] > U+1F622
++ [T_e_sob] > U+1F62D
++ [SHIFT T_e_sob] > U+1F62D
++ [T_e_scream] > U+1F631
++ [SHIFT T_e_scream] > U+1F631
++ [T_e_head_explode] > U+1F92F
++ [SHIFT T_e_head_explode] > U+1F92F
++ [T_e_heart_broken] > U+1F494
++ [SHIFT T_e_heart_broken] > U+1F494
+
+c Hands
++ [T_e_hands] > U+1F64C
++ [SHIFT T_e_hands] > U+1F64C
++ [T_e_clap] > U+1F44F
++ [SHIFT T_e_clap] > U+1F44F
++ [T_e_handshake] > U+1F91D
++ [SHIFT T_e_handshake] > U+1F91D
++ [T_e_thumbsup] > U+1F44D
++ [SHIFT T_e_thumbsup] > U+1F44D
++ [T_e_thumbsdown] > U+1F44E
++ [SHIFT T_e_thumbsdown] > U+1F44E
++ [T_e_peace] > U+270C U+FE0F
++ [SHIFT T_e_peace] > U+270C U+FE0F
++ [T_e_fingers_crossed] > U+1F91E
++ [SHIFT T_e_fingers_crossed] > U+1F91E
++ [T_e_rock] > U+1F918
++ [SHIFT T_e_rock] > U+1F918
++ [T_e_ok] > U+1F44C
++ [SHIFT T_e_ok] > U+1F44C
++ [T_e_call] > U+1F919
++ [SHIFT T_e_call] > U+1F919
++ [T_e_left] > U+1F448
++ [SHIFT T_e_left] > U+1F448
++ [T_e_right] > U+1F449
++ [SHIFT T_e_right] > U+1F449
++ [T_e_up] > U+1F446
++ [SHIFT T_e_up] > U+1F446
++ [T_e_down] > U+1F447
++ [SHIFT T_e_down] > U+1F447
++ [T_e_hand] > U+1F44B
++ [SHIFT T_e_hand] > U+1F44B
++ [T_e_raised] > U+1F91A
++ [SHIFT T_e_raised] > U+1F91A
++ [T_e_fingers] > U+1F590 U+FE0F
++ [SHIFT T_e_fingers] > U+1F590 U+FE0F
++ [T_e_vulcan] > U+1F596
++ [SHIFT T_e_vulcan] > U+1F596
++ [T_e_heart_hands] > U+1FAF6
++ [SHIFT T_e_heart_hands] > U+1FAF6
++ [T_e_muscle] > U+1F4AA
++ [SHIFT T_e_muscle] > U+1F4AA
++ [T_e_pray] > U+1F64F
++ [SHIFT T_e_pray] > U+1F64F
+
+c Hearts
++ [T_e_heart] > U+2764 U+FE0F
++ [SHIFT T_e_heart] > U+2764 U+FE0F
++ [T_e_orange_heart] > U+1F9E1
++ [SHIFT T_e_orange_heart] > U+1F9E1
++ [T_e_yellow_heart] > U+1F49B
++ [SHIFT T_e_yellow_heart] > U+1F49B
++ [T_e_green_heart] > U+1F49A
++ [SHIFT T_e_green_heart] > U+1F49A
++ [T_e_blue_heart] > U+1F499
++ [SHIFT T_e_blue_heart] > U+1F499
++ [T_e_light_blue_heart] > U+1FA75
++ [SHIFT T_e_light_blue_heart] > U+1FA75
++ [T_e_purple_heart] > U+1F49C
++ [SHIFT T_e_purple_heart] > U+1F49C
++ [T_e_black_heart] > U+1F5A4
++ [SHIFT T_e_black_heart] > U+1F5A4
++ [T_e_white_heart] > U+1F90D
++ [SHIFT T_e_white_heart] > U+1F90D
++ [T_e_brown_heart] > U+1F90E
++ [SHIFT T_e_brown_heart] > U+1F90E
++ [T_e_growing_heart] > U+1F497
++ [SHIFT T_e_growing_heart] > U+1F497
++ [T_e_beating_heart] > U+1F493
++ [SHIFT T_e_beating_heart] > U+1F493
++ [T_e_two_hearts] > U+1F495
++ [SHIFT T_e_two_hearts] > U+1F495
++ [T_e_revolving] > U+1F49E
++ [SHIFT T_e_revolving] > U+1F49E
++ [T_e_sparkling] > U+1F496
++ [SHIFT T_e_sparkling] > U+1F496
++ [T_e_arrow_heart] > U+1F498
++ [SHIFT T_e_arrow_heart] > U+1F498
++ [T_e_gift_heart] > U+1F49D
++ [SHIFT T_e_gift_heart] > U+1F49D
+
+c Nature
++ [T_e_fire] > U+1F525
++ [SHIFT T_e_fire] > U+1F525
++ [T_e_star] > U+2B50
++ [SHIFT T_e_star] > U+2B50
++ [T_e_glowing_star] > U+1F31F
++ [SHIFT T_e_glowing_star] > U+1F31F
++ [T_e_sparkles] > U+2728
++ [SHIFT T_e_sparkles] > U+2728
++ [T_e_dizzy] > U+1F4AB
++ [SHIFT T_e_dizzy] > U+1F4AB
++ [T_e_rainbow] > U+1F308
++ [SHIFT T_e_rainbow] > U+1F308
++ [T_e_sun] > U+2600 U+FE0F
++ [SHIFT T_e_sun] > U+2600 U+FE0F
++ [T_e_moon] > U+1F319
++ [SHIFT T_e_moon] > U+1F319
++ [T_e_lightning] > U+26A1
++ [SHIFT T_e_lightning] > U+26A1
++ [T_e_droplet] > U+1F4A7
++ [SHIFT T_e_droplet] > U+1F4A7
++ [T_e_snowflake] > U+2744 U+FE0F
++ [SHIFT T_e_snowflake] > U+2744 U+FE0F
++ [T_e_wave] > U+1F30A
++ [SHIFT T_e_wave] > U+1F30A
+
+c Animals
++ [T_e_dog] > U+1F436
++ [SHIFT T_e_dog] > U+1F436
++ [T_e_cat] > U+1F431
++ [SHIFT T_e_cat] > U+1F431
++ [T_e_mouse] > U+1F42D
++ [SHIFT T_e_mouse] > U+1F42D
++ [T_e_hamster] > U+1F439
++ [SHIFT T_e_hamster] > U+1F439
++ [T_e_rabbit] > U+1F430
++ [SHIFT T_e_rabbit] > U+1F430
++ [T_e_fox] > U+1F98A
++ [SHIFT T_e_fox] > U+1F98A
++ [T_e_bear] > U+1F43B
++ [SHIFT T_e_bear] > U+1F43B
++ [T_e_panda] > U+1F43C
++ [SHIFT T_e_panda] > U+1F43C
++ [T_e_koala] > U+1F428
++ [SHIFT T_e_koala] > U+1F428
++ [T_e_tiger] > U+1F42F
++ [SHIFT T_e_tiger] > U+1F42F
++ [T_e_lion] > U+1F981
++ [SHIFT T_e_lion] > U+1F981
++ [T_e_cow] > U+1F42E
++ [SHIFT T_e_cow] > U+1F42E
++ [T_e_pig] > U+1F437
++ [SHIFT T_e_pig] > U+1F437
++ [T_e_frog] > U+1F438
++ [SHIFT T_e_frog] > U+1F438
++ [T_e_monkey] > U+1F412
++ [SHIFT T_e_monkey] > U+1F412
++ [T_e_chicken] > U+1F414
++ [SHIFT T_e_chicken] > U+1F414
++ [T_e_penguin] > U+1F427
++ [SHIFT T_e_penguin] > U+1F427
++ [T_e_bird] > U+1F426
++ [SHIFT T_e_bird] > U+1F426
++ [T_e_eagle] > U+1F985
++ [SHIFT T_e_eagle] > U+1F985
++ [T_e_duck] > U+1F986
++ [SHIFT T_e_duck] > U+1F986
++ [T_e_owl] > U+1F989
++ [SHIFT T_e_owl] > U+1F989
+
+c Food
++ [T_e_food] > U+1F355
++ [SHIFT T_e_food] > U+1F355
++ [T_e_burger] > U+1F354
++ [SHIFT T_e_burger] > U+1F354
++ [T_e_fries] > U+1F35F
++ [SHIFT T_e_fries] > U+1F35F
++ [T_e_hotdog] > U+1F2D6 U+FE0F
++ [SHIFT T_e_hotdog] > U+1F2D6 U+FE0F
++ [T_e_popcorn] > U+1F37F
++ [SHIFT T_e_popcorn] > U+1F37F
++ [T_e_cake] > U+1F382
++ [SHIFT T_e_cake] > U+1F382
++ [T_e_shortcake] > U+1F370
++ [SHIFT T_e_shortcake] > U+1F370
++ [T_e_donut] > U+1F369
++ [SHIFT T_e_donut] > U+1F369
++ [T_e_cookie] > U+1F36A
++ [SHIFT T_e_cookie] > U+1F36A
++ [T_e_chocolate] > U+1F36B
++ [SHIFT T_e_chocolate] > U+1F36B
++ [T_e_candy] > U+1F36C
++ [SHIFT T_e_candy] > U+1F36C
++ [T_e_coffee] > U+2615
++ [SHIFT T_e_coffee] > U+2615
++ [T_e_tea] > U+1F375
++ [SHIFT T_e_tea] > U+1F375
++ [T_e_cup_straw] > U+1F964
++ [SHIFT T_e_cup_straw] > U+1F964
++ [T_e_beer] > U+1F37A
++ [SHIFT T_e_beer] > U+1F37A
++ [T_e_wine] > U+1F377
++ [SHIFT T_e_wine] > U+1F377
+
+c Places
++ [T_e_home] > U+1F3E0
++ [SHIFT T_e_home] > U+1F3E0
++ [T_e_garden] > U+1F3E1
++ [SHIFT T_e_garden] > U+1F3E1
++ [T_e_office] > U+1F3E2
++ [SHIFT T_e_office] > U+1F3E2
++ [T_e_hospital] > U+1F3E5
++ [SHIFT T_e_hospital] > U+1F3E5
++ [T_e_school] > U+1F3EB
++ [SHIFT T_e_school] > U+1F3EB
++ [T_e_castle] > U+1F3F0
++ [SHIFT T_e_castle] > U+1F3F0
++ [T_e_tower] > U+1F5FC
++ [SHIFT T_e_tower] > U+1F5FC
++ [T_e_statue] > U+1F5FD
++ [SHIFT T_e_statue] > U+1F5FD
++ [T_e_church] > U+26EA
++ [SHIFT T_e_church] > U+26EA
++ [T_e_mosque] > U+1F54C
++ [SHIFT T_e_mosque] > U+1F54C
++ [T_e_shrine] > U+26E9 U+FE0F
++ [SHIFT T_e_shrine] > U+26E9 U+FE0F
+
+c Travel
++ [T_e_car] > U+1F697
++ [SHIFT T_e_car] > U+1F697
++ [T_e_taxi] > U+1F695
++ [SHIFT T_e_taxi] > U+1F695
++ [T_e_bus] > U+1F68C
++ [SHIFT T_e_bus] > U+1F68C
++ [T_e_rocket] > U+1F680
++ [SHIFT T_e_rocket] > U+1F680
++ [T_e_plane] > U+2708 U+FE0F
++ [SHIFT T_e_plane] > U+2708 U+FE0F
++ [T_e_train] > U+1F682
++ [SHIFT T_e_train] > U+1F682
++ [T_e_ship] > U+1F6A2
++ [SHIFT T_e_ship] > U+1F6A2
++ [T_e_bike] > U+1F6B2
++ [SHIFT T_e_bike] > U+1F6B2
++ [T_e_motorcycle] > U+1F3CD U+FE0F
++ [SHIFT T_e_motorcycle] > U+1F3CD U+FE0F
+
+c Objects
++ [T_e_phone] > U+1F4F1
++ [SHIFT T_e_phone] > U+1F4F1
++ [T_e_laptop] > U+1F4BB
++ [SHIFT T_e_laptop] > U+1F4BB
++ [T_e_desktop] > U+1F5A5 U+FE0F
++ [SHIFT T_e_desktop] > U+1F5A5 U+FE0F
++ [T_e_keyboard] > U+2328 U+FE0F
++ [SHIFT T_e_keyboard] > U+2328 U+FE0F
++ [T_e_printer] > U+1F5A8 U+FE0F
++ [SHIFT T_e_printer] > U+1F5A8 U+FE0F
++ [T_e_camera] > U+1F4F7
++ [SHIFT T_e_camera] > U+1F4F7
++ [T_e_movie] > U+1F3AC
++ [SHIFT T_e_movie] > U+1F3AC
++ [T_e_tv] > U+1F4FA
++ [SHIFT T_e_tv] > U+1F4FA
++ [T_e_radio] > U+1F4FB
++ [SHIFT T_e_radio] > U+1F4FB
+
+c Clothing
++ [T_e_pants] > U+1F456
++ [SHIFT T_e_pants] > U+1F456
++ [T_e_dress] > U+1F457
++ [SHIFT T_e_dress] > U+1F457
++ [T_e_tie] > U+1F54A
++ [SHIFT T_e_tie] > U+1F54A
++ [T_e_bikini] > U+1F459
++ [SHIFT T_e_bikini] > U+1F459
++ [T_e_hat] > U+1F3A9
++ [SHIFT T_e_hat] > U+1F3A9
++ [T_e_shoe] > U+1F45F
++ [SHIFT T_e_shoe] > U+1F45F
++ [T_e_purse] > U+1F45C
++ [SHIFT T_e_purse] > U+1F45C
++ [T_e_backpack] > U+1F392
++ [SHIFT T_e_backpack] > U+1F392
+
+c Activities
++ [T_e_ball] > U+26BD
++ [SHIFT T_e_ball] > U+26BD
++ [T_e_basketball] > U+1F3C0
++ [SHIFT T_e_basketball] > U+1F3C0
++ [T_e_football] > U+1F3C8
++ [SHIFT T_e_football] > U+1F3C8
++ [T_e_baseball] > U+26BE
++ [SHIFT T_e_baseball] > U+26BE
++ [T_e_tennis] > U+1F3BE
++ [SHIFT T_e_tennis] > U+1F3BE
++ [T_e_volleyball] > U+1F3D0
++ [SHIFT T_e_volleyball] > U+1F3D0
++ [T_e_game] > U+1F3AE
++ [SHIFT T_e_game] > U+1F3AE
++ [T_e_dart] > U+1F3AF
++ [SHIFT T_e_dart] > U+1F3AF
++ [T_e_trophy] > U+1F3C6
++ [SHIFT T_e_trophy] > U+1F3C6
+
+c Symbols
++ [T_e_peace2] > U+262E U+FE0F
++ [SHIFT T_e_peace2] > U+262E U+FE0F
++ [T_e_cross2] > U+271D U+FE0F
++ [SHIFT T_e_cross2] > U+271D U+FE0F
++ [T_e_star_crescent] > U+262A U+FE0F
++ [SHIFT T_e_star_crescent] > U+262A U+FE0F
++ [T_e_om] > U+1F549 U+FE0F
++ [SHIFT T_e_om] > U+1F549 U+FE0F
++ [T_e_yinyang] > U+262F U+FE0F
++ [SHIFT T_e_yinyang] > U+262F U+FE0F
++ [T_e_star_david] > U+2721 U+FE0F
++ [SHIFT T_e_star_david] > U+2721 U+FE0F
++ [T_e_six_pointed] > U+1F52F
++ [SHIFT T_e_six_pointed] > U+1F52F
++ [T_e_aries] > U+2648
++ [SHIFT T_e_aries] > U+2648
++ [T_e_taurus] > U+2649
++ [SHIFT T_e_taurus] > U+2649
++ [T_e_gemini] > U+264A
++ [SHIFT T_e_gemini] > U+264A
++ [T_e_cancer] > U+264B
++ [SHIFT T_e_cancer] > U+264B
++ [T_e_leo] > U+264C
++ [SHIFT T_e_leo] > U+264C
++ [T_e_virgo] > U+264D
++ [SHIFT T_e_virgo] > U+264D
++ [T_e_libra] > U+264E
++ [SHIFT T_e_libra] > U+264E
++ [T_e_scorpio] > U+264F
++ [SHIFT T_e_scorpio] > U+264F
++ [T_e_sagittarius] > U+2650
++ [SHIFT T_e_sagittarius] > U+2650
++ [T_e_capricorn] > U+2651
++ [SHIFT T_e_capricorn] > U+2651
++ [T_e_aquarius] > U+2652
++ [SHIFT T_e_aquarius] > U+2652
++ [T_e_pisces] > U+2653
++ [SHIFT T_e_pisces] > U+2653
+
+c Flags
++ [T_e_flag] > U+1F3C1
++ [SHIFT T_e_flag] > U+1F3C1
++ [T_e_red_flag] > U+1F6A9
++ [SHIFT T_e_red_flag] > U+1F6A9
++ [T_e_crossed_flags] > U+1F38C
++ [SHIFT T_e_crossed_flags] > U+1F38C
++ [T_e_black_flag] > U+1F3F4
++ [SHIFT T_e_black_flag] > U+1F3F4
++ [T_e_white_flag] > U+1F3F3 U+FE0F
++ [SHIFT T_e_white_flag] > U+1F3F3 U+FE0F
++ [T_e_us] > U+1F1FA U+1F1F8
++ [SHIFT T_e_us] > U+1F1FA U+1F1F8
++ [T_e_uk] > U+1F1EC U+1F1E7
++ [SHIFT T_e_uk] > U+1F1EC U+1F1E7
++ [T_e_france] > U+1F1EB U+1F1F7
++ [SHIFT T_e_france] > U+1F1EB U+1F1F7
++ [T_e_germany] > U+1F1E9 U+1F1EA
++ [SHIFT T_e_germany] > U+1F1E9 U+1F1EA
++ [T_e_italy] > U+1F1EE U+1F1F9
++ [SHIFT T_e_italy] > U+1F1EE U+1F1F9
++ [T_e_spain] > U+1F1EA U+1F1F8
++ [SHIFT T_e_spain] > U+1F1EA U+1F1F8
++ [T_e_russia] > U+1F1F7 U+1F1FA
++ [SHIFT T_e_russia] > U+1F1F7 U+1F1FA
++ [T_e_china] > U+1F1E8 U+1F1F3
++ [SHIFT T_e_china] > U+1F1E8 U+1F1F3
++ [T_e_japan] > U+1F1EF U+1F1F5
++ [SHIFT T_e_japan] > U+1F1EF U+1F1F5
++ [T_e_korea] > U+1F1F0 U+1F1F7
++ [SHIFT T_e_korea] > U+1F1F0 U+1F1F7
++ [T_e_iran] > U+1F1EE U+1F1F7
++ [SHIFT T_e_iran] > U+1F1EE U+1F1F7
+
+c Checkmarks and symbols
++ [T_e_check] > U+2705
++ [SHIFT T_e_check] > U+2705
++ [T_e_cross] > U+274C
++ [SHIFT T_e_cross] > U+274C
++ [T_e_circle] > U+2B55
++ [SHIFT T_e_circle] > U+2B55
++ [T_e_exclamation] > U+2757
++ [SHIFT T_e_exclamation] > U+2757
++ [T_e_question] > U+2753
++ [SHIFT T_e_question] > U+2753
++ [T_e_double_excl] > U+03C1 U+FE0F
++ [SHIFT T_e_double_excl] > U+03C1 U+FE0F
++ [T_e_interrobang] > U+2049 U+FE0F
++ [SHIFT T_e_interrobang] > U+2049 U+FE0F
++ [T_e_zzz] > U+1F4A4
++ [SHIFT T_e_zzz] > U+1F4A4
++ [T_e_speech] > U+1F4AC
++ [SHIFT T_e_speech] > U+1F4AC
++ [T_e_thought] > U+1F4AD
++ [SHIFT T_e_thought] > U+1F4AD
++ [T_e_angry] > U+1F4EF
++ [SHIFT T_e_angry] > U+1F4EF
+
+c Arrows
++ [T_e_arrow] > U+27A1 U+FE0F
++ [SHIFT T_e_arrow] > U+27A1 U+FE0F
++ [T_e_left_arrow] > U+2B05 U+FE0F
++ [SHIFT T_e_left_arrow] > U+2B05 U+FE0F
++ [T_e_up_arrow] > U+2B06 U+FE0F
++ [SHIFT T_e_up_arrow] > U+2B06 U+FE0F
++ [T_e_down_arrow] > U+2B07 U+FE0F
++ [SHIFT T_e_down_arrow] > U+2B07 U+FE0F
++ [T_e_ne_arrow] > U+2197 U+FE0F
++ [SHIFT T_e_ne_arrow] > U+2197 U+FE0F
++ [T_e_se_arrow] > U+2198 U+FE0F
++ [SHIFT T_e_se_arrow] > U+2198 U+FE0F
++ [T_e_sw_arrow] > U+2199 U+FE0F
++ [SHIFT T_e_sw_arrow] > U+2199 U+FE0F
++ [T_e_nw_arrow] > U+2196 U+FE0F
++ [SHIFT T_e_nw_arrow] > U+2196 U+FE0F
++ [T_e_updown] > U+2195 U+FE0F
++ [SHIFT T_e_updown] > U+2195 U+FE0F
++ [T_e_leftright] > U+2194 U+FE0F
++ [SHIFT T_e_leftright] > U+2194 U+FE0F
++ [T_e_refresh] > U+1F504
++ [SHIFT T_e_refresh] > U+1F504
++ [T_e_arrows] > U+1F503
++ [SHIFT T_e_arrows] > U+1F503
++ [T_e_end] > U+1F51A
++ [SHIFT T_e_end] > U+1F51A
++ [T_e_on] > U+1F51B
++ [SHIFT T_e_on] > U+1F51B
++ [T_e_soon] > U+1F51C
++ [SHIFT T_e_soon] > U+1F51C
++ [T_e_top] > U+1F51D
++ [SHIFT T_e_top] > U+1F51D
+
+c Numbers
++ [T_e_number] > U+0023 U+FE0F U+20E3
++ [SHIFT T_e_number] > U+0023 U+FE0F U+20E3
++ [T_e_0] > U+0030 U+FE0F U+20E3
++ [SHIFT T_e_0] > U+0030 U+FE0F U+20E3
++ [T_e_1] > U+0031 U+FE0F U+20E3
++ [SHIFT T_e_1] > U+0031 U+FE0F U+20E3
++ [T_e_2] > U+0032 U+FE0F U+20E3
++ [SHIFT T_e_2] > U+0032 U+FE0F U+20E3
++ [T_e_3] > U+0033 U+FE0F U+20E3
++ [SHIFT T_e_3] > U+0033 U+FE0F U+20E3
++ [T_e_4] > U+0034 U+FE0F U+20E3
++ [SHIFT T_e_4] > U+0034 U+FE0F U+20E3
++ [T_e_5] > U+0035 U+FE0F U+20E3
++ [SHIFT T_e_5] > U+0035 U+FE0F U+20E3
++ [T_e_6] > U+0036 U+FE0F U+20E3
++ [SHIFT T_e_6] > U+0036 U+FE0F U+20E3
++ [T_e_7] > U+0037 U+FE0F U+20E3
++ [SHIFT T_e_7] > U+0037 U+FE0F U+20E3
++ [T_e_8] > U+0038 U+FE0F U+20E3
++ [SHIFT T_e_8] > U+0038 U+FE0F U+20E3
++ [T_e_9] > U+0039 U+FE0F U+20E3
++ [SHIFT T_e_9] > U+0039 U+FE0F U+20E3
++ [T_e_10] > U+1F51F
++ [SHIFT T_e_10] > U+1F51F
+
+c Clock
++ [T_e_clock] > U+23F0
++ [SHIFT T_e_clock] > U+23F0
++ [T_e_clock_1] > U+1F550
++ [SHIFT T_e_clock_1] > U+1F550
++ [T_e_clock_2] > U+1F551
++ [SHIFT T_e_clock_2] > U+1F551
++ [T_e_clock_3] > U+1F552
++ [SHIFT T_e_clock_3] > U+1F552
++ [T_e_clock_4] > U+1F553
++ [SHIFT T_e_clock_4] > U+1F553
++ [T_e_clock_5] > U+1F554
++ [SHIFT T_e_clock_5] > U+1F554
++ [T_e_clock_6] > U+1F555
++ [SHIFT T_e_clock_6] > U+1F555
++ [T_e_clock_7] > U+1F556
++ [SHIFT T_e_clock_7] > U+1F556
++ [T_e_clock_8] > U+1F557
++ [SHIFT T_e_clock_8] > U+1F557
++ [T_e_clock_9] > U+1F558
++ [SHIFT T_e_clock_9] > U+1F558
++ [T_e_clock_10] > U+1F559
++ [SHIFT T_e_clock_10] > U+1F559
++ [T_e_clock_11] > U+1F55A
++ [SHIFT T_e_clock_11] > U+1F55A
++ [T_e_clock_12] > U+1F55B
++ [SHIFT T_e_clock_12] > U+1F55B
+
+c Celebration
++ [T_e_sparkle] > U+1F48E
++ [SHIFT T_e_sparkle] > U+1F48E
++ [T_e_balloon] > U+1F388
++ [SHIFT T_e_balloon] > U+1F388
++ [T_e_party] > U+1F389
++ [SHIFT T_e_party] > U+1F389
++ [T_e_confetti] > U+1F38A
++ [SHIFT T_e_confetti] > U+1F38A
++ [T_e_ribbon] > U+1F380
++ [SHIFT T_e_ribbon] > U+1F380
++ [T_e_gift] > U+1F381
++ [SHIFT T_e_gift] > U+1F381
++ [T_e_ribbon2] > U+1F397 U+FE0F
++ [SHIFT T_e_ribbon2] > U+1F397 U+FE0F
++ [T_e_ticket] > U+1F39F U+FE0F
++ [SHIFT T_e_ticket] > U+1F39F U+FE0F
++ [T_e_tickets] > U+1F3AB
++ [SHIFT T_e_tickets] > U+1F3AB
++ [T_e_medal] > U+1F396 U+FE0F
++ [SHIFT T_e_medal] > U+1F396 U+FE0F
++ [T_e_sports_medal] > U+1F3C5
++ [SHIFT T_e_sports_medal] > U+1F3C5
++ [T_e_gold] > U+1F947
++ [SHIFT T_e_gold] > U+1F947
++ [T_e_silver] > U+1F948
++ [SHIFT T_e_silver] > U+1F948
++ [T_e_bronze] > U+1F949
++ [SHIFT T_e_bronze] > U+1F949
+
+c Tools
++ [T_e_tool] > U+1F527
++ [SHIFT T_e_tool] > U+1F527
++ [T_e_hammer] > U+1F4E8
++ [SHIFT T_e_hammer] > U+1F4E8
++ [T_e_pick] > U+26CF U+FE0F
++ [SHIFT T_e_pick] > U+26CF U+FE0F
++ [T_e_wrench] > U+1F529
++ [SHIFT T_e_wrench] > U+1F529
++ [T_e_nut] > U+1F529
++ [SHIFT T_e_nut] > U+1F529
++ [T_e_gear] > U+2699 U+FE0F
++ [SHIFT T_e_gear] > U+2699 U+FE0F
++ [T_e_clip] > U+1F4CE
++ [SHIFT T_e_clip] > U+1F4CE
++ [T_e_pin] > U+1F4CC
++ [SHIFT T_e_pin] > U+1F4CC
++ [T_e_pin2] > U+1F4CD
++ [SHIFT T_e_pin2] > U+1F4CD
++ [T_e_scissors] > U+2702 U+FE0F
++ [SHIFT T_e_scissors] > U+2702 U+FE0F
++ [T_e_pen] > U+1F58A U+FE0F
++ [SHIFT T_e_pen] > U+1F58A U+FE0F
++ [T_e_pencil] > U+270F U+FE0F
++ [SHIFT T_e_pencil] > U+270F U+FE0F
++ [T_e_note] > U+1F4DD
++ [SHIFT T_e_note] > U+1F4DD
++ [T_e_folder] > U+1F4C1
++ [SHIFT T_e_folder] > U+1F4C1
++ [T_e_open_folder] > U+1F4C2
++ [SHIFT T_e_open_folder] > U+1F4C2
+
+c Light and money
++ [T_e_light] > U+1F4A1
++ [SHIFT T_e_light] > U+1F4A1
++ [T_e_flashlight] > U+1F526
++ [SHIFT T_e_flashlight] > U+1F526
++ [T_e_candle] > U+1F56F U+FE0F
++ [SHIFT T_e_candle] > U+1F56F U+FE0F
++ [T_e_barrel] > U+1F6E2 U+FE0F
++ [SHIFT T_e_barrel] > U+1F6E2 U+FE0F
++ [T_e_money_wings] > U+1F4B8
++ [SHIFT T_e_money_wings] > U+1F4B8
++ [T_e_dollar] > U+1F4B5
++ [SHIFT T_e_dollar] > U+1F4B5
++ [T_e_yen] > U+1F4B4
++ [SHIFT T_e_yen] > U+1F4B4
++ [T_e_euro] > U+1F4B6
++ [SHIFT T_e_euro] > U+1F4B6
++ [T_e_pound] > U+1F4B7
++ [SHIFT T_e_pound] > U+1F4B7
++ [T_e_moneybag] > U+1F4B0
++ [SHIFT T_e_moneybag] > U+1F4B0
++ [T_e_card] > U+1F4B3
++ [SHIFT T_e_card] > U+1F4B3
++ [T_e_package] > U+1F4E6
++ [SHIFT T_e_package] > U+1F4E6
+
+c Mail
++ [T_e_mail] > U+1F4E7
++ [SHIFT T_e_mail] > U+1F4E7
++ [T_e_incoming] > U+1F4E9
++ [SHIFT T_e_incoming] > U+1F4E9
++ [T_e_envelope] > U+1F4E8
++ [SHIFT T_e_envelope] > U+1F4E8
++ [T_e_outbox] > U+1F4E4
++ [SHIFT T_e_outbox] > U+1F4E4
++ [T_e_inbox] > U+1F4E5
++ [SHIFT T_e_inbox] > U+1F4E5
++ [T_e_email] > U+2709 U+FE0F
++ [SHIFT T_e_email] > U+2709 U+FE0F
++ [T_e_mailbox] > U+1F4EB
++ [SHIFT T_e_mailbox] > U+1F4EB
++ [T_e_closed_mailbox] > U+1F4EA
++ [SHIFT T_e_closed_mailbox] > U+1F4EA
++ [T_e_open_mailbox] > U+1F4EC
++ [SHIFT T_e_open_mailbox] > U+1F4EC
++ [T_e_no_mail] > U+1F4ED
++ [SHIFT T_e_no_mail] > U+1F4ED
++ [T_e_postbox] > U+1F4EE
++ [SHIFT T_e_postbox] > U+1F4EE
+
+c Clocks and charts
++ [T_e_clock2] > U+23F1 U+FE0F
++ [SHIFT T_e_clock2] > U+23F1 U+FE0F
++ [T_e_timer] > U+23F2 U+FE0F
++ [SHIFT T_e_timer] > U+23F2 U+FE0F
++ [T_e_alarm] > U+23F0
++ [SHIFT T_e_alarm] > U+23F0
++ [T_e_mantelpiece] > U+1F570 U+FE0F
++ [SHIFT T_e_mantelpiece] > U+1F570 U+FE0F
++ [T_e_calendar] > U+1F4C5
++ [SHIFT T_e_calendar] > U+1F4C5
++ [T_e_calendar2] > U+1F4C6
++ [SHIFT T_e_calendar2] > U+1F4C6
++ [T_e_card_index] > U+1F4C7
++ [SHIFT T_e_card_index] > U+1F4C7
++ [T_e_chart_up] > U+1F4C8
++ [SHIFT T_e_chart_up] > U+1F4C8
++ [T_e_chart_down] > U+1F4C9
++ [SHIFT T_e_chart_down] > U+1F4C9
++ [T_e_bar_chart] > U+1F4CA
++ [SHIFT T_e_bar_chart] > U+1F4CA
++ [T_e_clipboard] > U+1F4CB
++ [SHIFT T_e_clipboard] > U+1F4CB
+
+c Weather
++ [T_e_weather] > U+2600 U+FE0F
++ [SHIFT T_e_weather] > U+2600 U+FE0F
++ [T_e_sun_small] > U+1F324 U+FE0F
++ [SHIFT T_e_sun_small] > U+1F324 U+FE0F
++ [T_e_partly_sunny] > U+26C5
++ [SHIFT T_e_partly_sunny] > U+26C5
++ [T_e_cloudy] > U+1F325 U+FE0F
++ [SHIFT T_e_cloudy] > U+1F325 U+FE0F
++ [T_e_sun_rain] > U+1F326 U+FE0F
++ [SHIFT T_e_sun_rain] > U+1F326 U+FE0F
++ [T_e_rain] > U+1F327 U+FE0F
++ [SHIFT T_e_rain] > U+1F327 U+FE0F
++ [T_e_storm] > U+1F329 U+FE0F
++ [SHIFT T_e_storm] > U+1F329 U+FE0F
++ [T_e_lightning_cloud] > U+1F329 U+FE0F
++ [SHIFT T_e_lightning_cloud] > U+1F329 U+FE0F
++ [T_e_snow] > U+1F328 U+FE0F
++ [SHIFT T_e_snow] > U+1F328 U+FE0F
++ [T_e_snowflake2] > U+2744 U+FE0F
++ [SHIFT T_e_snowflake2] > U+2744 U+FE0F
++ [T_e_snowman] > U+2603 U+FE0F
++ [SHIFT T_e_snowman] > U+2603 U+FE0F
++ [T_e_snowman2] > U+26C4
++ [SHIFT T_e_snowman2] > U+26C4
++ [T_e_wind] > U+1F32C U+FE0F
++ [SHIFT T_e_wind] > U+1F32C U+FE0F
++ [T_e_droplet2] > U+1F4A7
++ [SHIFT T_e_droplet2] > U+1F4A7
++ [T_e_sweat_drops] > U+1F4A6
++ [SHIFT T_e_sweat_drops] > U+1F4A6
++ [T_e_wave2] > U+1F30A
++ [SHIFT T_e_wave2] > U+1F30A
