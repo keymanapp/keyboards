@@ -1,50 +1,52 @@
-<?php 
-  $pagename = 'Mingrelian Phonetic Keyboard Help';
-  $pagetitle = $pagename;
-  
-  $pagestyle = <<<END 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Using Mingrelian Phonetic</title>
+  <style type="text/css">
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 12pt Tahoma; color: #4444cc; }
 
-    .georgian-table {
-      border-collapse: collapse;
-      width: 100%;
-      font-family: sans-serif;
-      font-size: 14px;
-      border: 1px solid #ccc;
-    }
-    .georgian-table thead tr {
-      background-color: #f5f5f5;
-      border-bottom: 2px solid #ccc;
-    }
-    .georgian-table th {
-      border: 1px solid #ccc;
-      padding: 6px;
-      text-align: center;
-      font-size: 11px;
-    }
-    .georgian-table tbody tr {
-      border-bottom: 1px solid #ddd;
-    }
-    .georgian-table td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-      font-size: 16px;
-    }
-    .georgian-table .empty-cells {
-      background-color: #fafafa;
-    }
-  END;
-  
-  require_once('header.php');
-?>
+  .georgian-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  .georgian-table thead tr {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+  }
+  .georgian-table th {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .georgian-table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  .georgian-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .georgian-table .empty-cells {
+    background-color: #fafafa;
+  }
+  </style>
+</head>
+<body>
+
+<h1>Start Using Mingrelian Phonetic</h1>
 
 <p>
     Mingrelian Phonetic keyboard for the Mingrelian language using Asomtavruli.
 </p>
-
 <table class="georgian-table">
   <thead>
     <tr>
@@ -117,10 +119,25 @@
   </tbody>
 </table>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>
+<h1>Keyboard Layout</h1>
 
-<h2>Phone Keyboard Layout</h2>
-<div id='osk-phone' data-states='default shift numeric'>
-</div>
+  <h2>Desktop Keyboard layout</h2>
+	<h3>Default (unshifted)</h3>
+	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+
+  <h2>Mobile Keyboard layout</h2>
+	<h3>Default (unshifted)</h3>
+	<p><a href="mobile_layout_default.png"><img class="keyboard" src="mobile_layout_default.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="mobile_layout_shift.png"><img class="keyboard" src="mobile_layout_shift.png" alt="Shift state" /></a></p>
+	<h3>Numeric</h3>
+	<p><a href="mobile_layout_numeric.png"><img class="keyboard" src="mobile_layout_numeric.png" alt="Numeric state" /></a></p>  
+
+<p>MARGALEF gave input on the keyboard layouts.</p>
+
+<p>© SIL Global</p>
+
+</body>
+</html>
