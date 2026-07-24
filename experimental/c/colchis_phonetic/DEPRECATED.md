@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by experimental/l/laz_phonetic and experimental/m/mingrelian_phonetic
