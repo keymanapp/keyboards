@@ -1,0 +1,235 @@
+﻿c CauNon Burmese Unicode Keyboard for Keyman 9.0 +
+c Type Mon & Burmese Unicode as in UniMon keyboard layout.
+
+store(&VERSION) '9.0'
+store(&NAME) 'CauNon'
+store(&ETHNOLOGUECODE) 'mnw'
+store(&COPYRIGHT) 'JamonRott©'
+store(&MESSAGE) 'Type Mon & Burmese Unicode as UniMon keyboard in single layout.'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+
+group(main) using keys
+store(&VISUALKEYBOARD) 'caunon.kvks'
+store(&LAYOUTFILE) 'caunon.keyman-touch-layout'
+store(&BITMAP) 'caunon.ico'
+
+begin Unicode > use(Main)
+
+store(baseK)    'qwert' 'yuiop' '[zxc' 'vbnQ' 'OP{AL' 'ZXCN' '!#@%^' '&*' \
+                '_=+-\]' '()|' 'WTYUIM' "'" '"' '`~' '/?$<>B'
+
+store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 \
+                U+1015 U+1000 U+105A U+101E U+1005 \
+                U+101F U+1016 U+1011 U+1001 \
+                U+101C U+1018 U+100A U+105D \
+                U+1025 U+100F U+1027 U+1017 U+1034 \
+                U+1007 U+100C U+1003 U+1009 \
+                U+100D U+100B U+100E U+105B U+1008 \
+                U+101B U+1002 \
+                U+1004 U+003D U+002B U+002D U+104F U+1029 \
+                U+0028 U+0029 U+1024 \
+                U+105C U+1028 U+104C U+103F U+104D U+1026 \
+                U+1012 \
+                U+1013 \
+                U+1050 U+1051 \    
+                U+104B U+104A U+1023 U+101D U+104E U+1020
+
+store(addK)     ',.}'
+store(addU)     U+101A U+002E U+102A
+             
+store(numK)     '1234567890' 
+store(padK)     [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0]
+store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 \
+                U+1046 U+1047 U+1048 U+1049 U+1040             
+store(delK)     [K_BKSP]                
+                
+store(aftereK)  'gmh;'
+store(aftereU)  U+102B U+102C U+1037 U+1038
+
+store(aaK)      'gm'
+store(aaU)      U+102B U+102C  
+
+store(lDotK)    'h'
+store(lDotU)    U+1037    
+
+store(visargaK) ';'
+store(visargaU) U+1038
+                      
+store(udia1K)   'dD:K'
+store(udia1U)   U+102D U+102E U+1033 U+1035 
+
+store(udia2K)   'JH'     
+store(udia2U)   U+1032 U+1036
+                  
+store(ldiaK)    'kl'
+store(ldiaU)    U+102F U+1030
+
+store(consK)    'uc*C_ipqZ' '^%Nn#X!@P' 'wx' "'" '"' '`~' 'eyzA' 'br,&v<o[' \
+                'BtWQ'
+store(consU)    U+1000 U+1001 U+1002 U+1003 U+1004 U+105A U+1005 U+1006 U+1007 \
+                U+1008 U+105B U+1009 U+100A U+100B U+100C U+100D U+100E U+100F \
+                U+1010 U+1011 \
+                U+1012 \
+                U+1013 \
+                U+1050 U+1051 \
+                U+1014 U+1015 U+1016 U+1017 \
+                U+1018 U+1019 U+101A U+101B U+101C U+101D U+101E U+101F \
+                U+1020 U+1021 U+105C U+105D
+
+store(mediaK)   'sSGERVf' 
+store(mediaU)   U+103B U+103E U+103D U+105E U+105F U+1060 U+103A
+
+store(yDiaK)    's'
+store(yDiaU)    U+103B
+
+store(rDiaK)    'j'
+store(rDiaU)    U+103C
+   
+store(wDiaK)    'G'
+store(wDiaU)    U+103D 
+
+store(hDiaK)    'S' 
+store(hDiaU)    U+103E
+
+store(asatK)    'f'
+store(asatU)    U+103A 
+  
+store(vowelEK)  'a'
+store(vowelEU)  U+1031  
+
+store(fillerVowelE)  U+200B U+1031
+
+store(stackK)   'F'
+store(stackU)   U+1039  
+
+store(allDiaU)  U+102F U+1030 U+102D U+102E U+1032 U+1036 U+1037
+store(firstDiaU)  U+102D U+102F U+1032
+store(secondDiaU) U+102D U+1036 U+1037 U+102F    
+
+any(asatU) + any(hDiaK) > index(hDiaU, 2) index(asatU, 1)
+any(consU) any(asatU) U+1031 + any(hDiaK) > index(consU, 1) index(hDiaU, 4) index(asatU, 2) U+1031
+
++ any(vowelEK) > outs(fillerVowelE)
+outs(fillerVowelE) + any(consK) > index(consU, 3) U+1031
+U+1031 U+1039 + any(consK) > U+1039 index(consU, 3) U+1031  
+U+1031 + any(mediaK) > index(mediaU, 2) U+1031
+
++ any(addK) > index(addU, 1)
++ any(numK) > index(numU, 1)
++ any(padK) > index(numU, 1)
++ any(baseK) > index(baseU, 1) 
++ any(aftereK) > index(aftereU, 1)
++ any(stackK) > index(stackU, 1)  
+
+U+1025 + 'f' > U+1009 U+103A
+U+1025 + 'm' > U+1009 U+102C
+U+1025 + 'F' > U+1009 U+1039
+U+1032 + 'g' > U+102B U+1032
+U+1007 + 's' > U+105B
+U+102f U+1032 + 'd' > U+102d U+102f U+1032
+U+1007 U+1031 + 's' > U+105B U+1031
+U+1005 + 's' > U+1008
+U+1005 U+1031 + 's' > U+1008 U+1031
+U+1025 + 'D' > U+1026 
+U+101E U+103C U+1031 U+102C + 'f' > U+102A
+
+any(ldiaU) + any(udia1K) > index(udia1U, 2) index(ldiaU, 1)
+any(udia2U) + any(ldiaK) > index(ldiaU, 2) index(udia2U, 1)
+any(udia2U) + any(udia1K) > index(udia1U, 2) index(udia2U, 1)
+U+1037 + any(udia1K) > index(udia1U, 2) U+1037
+U+1037 + any(udia2K) > index(udia2U, 2) U+1037
+U+1037 + any(ldiaK) > index(ldiaU, 2) U+1037
+U+1037 + any(aaK) > index(aaU, 2) U+1037
+
+store(gNyaK) 'GjSgH' c waSwel, yaYit, haHto, yeChaLong, teteDin
+store(gNyaU) u+103D u+103C u+103E u+102B u+1036
+
+u+105A + any(gNyaK) > u+1004 index(gNyaU, 2)
+u+105A u+1031 + 'G' > u+1004 u+103D context(2) c ngMon waSwel thWaeHto  ngBur
+u+105A u+1031 + ';' > u+1004 context(2) u+1038 c ngMon thWaeHto wiSa:  ngBur
+u+105A u+1037 + 'f' > u+1004 context(2) u+103A c ngMon okaMyint shwinHto  ngBur
+u+1004 u+1036 u+1000 + 'f' > u+105A context(2) context(3) u+103A c ngBur teteDin  ka  shwinHto  ngMon
+
++ any(ldiaK) > index(ldiaU, 1)
++ any(udia1K) > index(udia1U, 1)  
++ any(udia2K) > index(udia2U, 1)
+ 
+any(wDiaU) + any(yDiaK) > index(yDiaU, 2) index(wDiaU, 1)
+any(hDiaU) + any(yDiaK) > index(yDiaU, 2) index(hDiaU, 1)
+any(wDiaU) + any(rDiaK) > index(rDiaU, 2) index(wDiaU, 1)
+any(hDiaU) + any(rDiaK) > index(rDiaU, 2) index(hDiaU, 1)
+any(hDiaU) + any(wDiaK) > index(wDiaU, 2) index(hDiaU, 1)
+
+any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
+any(wDiaU) any(hDiaU) + any(rDiaK) > index(rDiaU, 3) context(1) context(2)
+
+any(wDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
+any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
+any(wDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context(1) context(2)
+any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context(1) context(2)  
+any(hDiaU) U+1031 + any(wDiaK) > index(wDiaU, 3) context(1) context(2) 
+
+any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context(1) context(2) context(3)
+any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context(1) context(2) context(3)  
+
++ any(mediaK) > index(mediaU, 1) 
++ any(rDiaK) > U+200B U+103C
+U+200B U+103C + any(consK) > index(consU, 3) U+103C
+U+103C U+1039 + any(consK) > U+1039 index(consU, 3) U+103C
+U+200B U+1031 + any(rDiaK) > U+200B U+1031 index(rDiaU, 3)
+U+200B U+1031 U+103C + any(consK) > index(consU, 4) U+103C U+1031
+U+103C U+1031 U+1039 + any(consK) > U+1039 index(consU, 4) U+103C U+1031
+
+outs(fillerVowelE) + outs(delK) > nul
+any(baseU) any(vowelEU) + outs(delK) > outs(fillerVowelE)
+any(mediaU) any(vowelEU) + outs(delK) > outs(vowelEU)
+any(consU) any(stackU) any(consU) any(vowelEU) + outs(delK) > index(consU, 1) outs(vowelEU) outs(stackU)
+
+U+200B U+103C + outs(delK) > nul
+any(baseU) any(rDiaU) + outs(delK) > U+200B U+103C
+any(baseU) any(rDiaU) any(vowelEU) + outs(delK) > outs(fillerVowelE) outs(rDiaU)
+any(consU) any(stackU) any(consU) any(rDiaU) + outs(delK) > index(consU, 1) outs(rDiaU) outs(stackU)
+any(consU) any(stackU) any(consU) any(rDiaU) any(vowelEU) + outs(delK) > index(consU, 1) outs(rDiaU) outs(vowelEU) outs(stackU)
+
+store(preStackKeys) [T_WUDDHA_KEY] [T_ATTHA_KEY] [T_NAADTA_KEY] [T_NAATHAA_KEY]
+store(firstCons) U+100D U+100B U+100F U+100F
+store(secondCons) U+100E U+100C U+100D U+100C
+
++ any(preStackKeys) > index(firstCons, 1) U+1039 index(secondCons, 1)
+U+200B U+1031 + any(preStackKeys) > index(firstCons, 3) U+1039 index(secondCons, 3) U+1031
+
+store(lowKeys) [T_LOWCHA_KEY] [T_LOWTA_KEY] [T_LOWNA_KEY] [T_LOWMA_KEY] \
+               [T_LOWAA_KEY] [T_LOWPA_KEY] [T_LOWKA_KEY] [T_LOWNGA_KEY] \
+               [T_LOWSA_KEY] [T_LOWCA_KEY] [T_LOWHA_KEY] [T_LOWDA_KEY] \
+               [T_LOWPHA_KEY] [T_LOWTHA_KEY] [T_LOWKHA_KEY] [T_LOWLA_KEY] \
+               [T_LOWBHA_KEY] [T_LOWNYA_KEY] [T_LOWYA_KEY] [T_LOWGA_KEY] \
+               [T_LOWBPA_KEY] [T_LOWTTA_KEY] [T_LOWNAA_KEY] [T_LOWBA_KEY] \
+               [T_LOWDHA_KEY] [T_LOWJA_KEY] [T_LOWTHAA_KEY] [T_LOWGHA_KEY] \
+               [T_LOWDTA_KEY]
+
+store(lowOutputs) U+1006 U+1010 U+1014 U+1019 \
+                  U+1021 U+1015 U+1000 U+105A \
+                  U+101E U+1005 U+101F U+1012 \
+                  U+1016 U+1011 U+1001 U+101C \
+                  U+1018 U+100A U+101A U+1002 \
+                  U+105C U+100B U+100F U+1017 \
+                  U+1013 U+1007 U+100C U+1003 \
+                  U+100D
+
++ any(lowKeys) > U+1039 index(lowOutputs, 1)
+
+any(consU) U+1031 + any(lowKeys) > index(consU, 1) U+1039 index(lowOutputs, 3) U+1031
+any(consU) U+103C + any(lowKeys) > index(consU, 1) U+1039 index(lowOutputs, 3) U+103C
+any(consU) U+103C U+1031 + any(lowKeys) > index(consU, 1) U+1039 index(lowOutputs, 4) U+103C U+1031
+
+platform('touch') any(firstCons) U+1039 any(secondCons) + outs(delK) > nul
+platform('touch') any(firstCons) U+1039 any(secondCons) U+1031 + outs(delK) > outs(fillerVowelE)
+platform('touch') any(stackU) any(consU) + outs(delK) > nul
+platform('touch') any(consU) any(stackU) any(lowOutputs) any(vowelEU) + outs(delK) > context(2) outs(vowelEU)
+platform('touch') any(consU) any(stackU) any(lowOutputs) any(rDiaU) + outs(delK) > context(2) outs(rDiaU)
+platform('touch') any(consU) any(stackU) any(lowOutputs) any(rDiaU) any(vowelEU) + outs(delK) > context(2) outs(rDiaU) outs(vowelEU)
+platform('touch') U+200B U+1031 + any(rDiaK) > U+200B index(rDiaU, 4) U+1031
+platform('touch') U+200B U+103C U+1031 + any(consK) > index(consU, 5) U+103C U+1031
+platform('touch') U+200B U+103C any(vowelEU) + outs(delK) > outs(fillerVowelE)
+platform('touch') any(baseU) any(rDiaU) any(vowelEU) + outs(delK) > U+200B outs(rDiaU) outs(vowelEU)
