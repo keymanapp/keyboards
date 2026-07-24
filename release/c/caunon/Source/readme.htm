@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CauNon Keyboard : Readme</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style type="text/css">
+    :root {
+      --primary: #2563eb;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-feature: #f1f5f9;
+      --text-heading: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      max-width: 640px;
+      width: 100%;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #eff6ff;
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    p.intro {
+      font-size: 1.05rem;
+      color: var(--text-body);
+      margin-bottom: 28px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .feature-card {
+      background: var(--bg-feature);
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .feature-card h2 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin-bottom: 6px;
+    }
+
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .author {
+      font-weight: 500;
+      color: var(--text-heading);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+       <h1>CauNon Keyboard</h1>
+ <span class="badge">Type Mon and Burmese Unicode in a single layout</span>
+    <p class="intro">
+      Built specifically for the Mon community, CauNon Keyboard places Mon script and language-specific diacritics at the core of its layout. Inspired by the workflow of the classic UniMon keyboard, it seamlessly integrates Mon Unicode characters alongside standard Burmese keys. By prioritizing Mon stacked consonants and essential Burmese characters on the primary layer, CauNon keyboard eliminates the need to switch input methods when typing in both languages. The result is a faster, more intuitive typing experience that supports daily communication and language preservation.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h2>Mon-First Focus</h2>
+        <p>Stacked consonants and diacritics prioritized on the primary layer.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Dual Support</h2>
+        <p>Type in Mon and Burmese without switching input methods.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Language Preservation</h2>
+        <p>Faster, intuitive workflow designed for daily digital communication.</p>
+      </div>
+    </div>
+
+    <footer>
+      <span>CauNon Keyboard &copy; <script>document.write(new Date().getFullYear());</script></span>
+      <span class="author">JaMonRott</span>
+    </footer>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="mnw" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CauNon Keyboard </title>
+    <style>
+	@font-face {
+	font-family: 'Pyidaungsu';
+	src: local('Pyidaungsu'),url('/Pyidaungsu.ttf') format('truetype'),url('https://cdn.jsdelivr.net/gh/saturngod/myanmar-unicode-fonts@master/docs/other/Pyidaungsu.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ── Reset & Base ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-color: #f8fafc;
+    --surface-color: #ffffff;
+    --surface-hover: #f1f5f9;
+    --border-color: #e2e8f0;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --primary-light: #eff6ff;
+    --danger: #ef4444;
+    --header-h: 64px;
+    --sidebar-w: 260px;
+    --radius: 12px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    
+    --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mon: 'Pyidaungsu', 'Padauk', serif;
+}
+
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --surface-color: #1e293b;
+    --surface-hover: #334155;
+    --border-color: #334155;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --primary-light: #1e3a8a;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-ui);
+    background: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, .font-mon {
+    font-family: var(--font-mon);
+}
+
+code {
+    background: var(--surface-hover);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    border: 1px solid var(--border-color);
+    color: var(--primary);
+}
+
+/* ── Layout ── */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mobile-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: var(--header-h);
+    background: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    width: var(--sidebar-w);
+    background: var(--surface-color);
+    border-right: 1px solid var(--border-color);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    z-index: 40;
+}
+
+.sidebar-header {
+    padding: 2rem 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--primary);
+}
+
+.logo i {
+    font-size: 1.75rem;
+}
+
+.logo h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+}
+
+.nav-menu {
+    flex: 1;
+    padding: 0 1rem;
+    overflow-y: auto;
+}
+
+.nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 1rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+    transition: all 0.2s;
+    font-family: var(--font-mon);
+}
+
+.nav-link i {
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+
+.nav-link:hover {
+    background: var(--surface-hover);
+    color: var(--text-main);
+}
+
+.nav-link.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-link.active i {
+    opacity: 1;
+}
+
+.sidebar-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-main);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+    background: var(--surface-hover);
+}
+
+/* ── Main Content ── */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding-bottom: 4rem;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--surface-color) 0%, var(--primary-light) 100%);
+    padding: 1rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text-main);
+    margin-bottom: 0.1rem;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+/* ── Components ── */
+.section {
+    margin-top: 4rem;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    color: var(--text-main);
+    display: inline-block;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+/* Intro Card */
+.intro-card {
+    position: relative;
+    overflow: hidden;
+    margin-top: -3rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.intro-card p {
+    font-family: var(--font-mon);
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.highlight-box {
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+	font-family: Pyidaungsu;
+}
+
+/* Images Grid */
+.keyboard-layouts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.img-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.img-wrap {
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed var(--border-color);
+}
+
+.img-wrapMo {
+    background: var(--bg-color);
+    border-radius: 8px;
+    padding: 0.20rem;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed var(--border-color);
+}
+.img-wrapMo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+.img-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.subsection-title {
+    margin: 3rem 0 1.5rem;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+
+.mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.mobile-card {
+    padding: 1rem;
+}
+.mobile-card h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* Tables */
+.tbl-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--font-mon);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: var(--surface-hover);
+    font-weight: 600;
+    color: var(--text-main);
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+    font-family: var(--font-ui);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.combo-cell {
+    line-height: 1.8;
+}
+
+.vowel-row th {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font-mon);
+    text-transform: none;
+}
+
+.full-grid th, .full-grid td {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Lists */
+.custom-list {
+    padding-left: 1.5rem;
+    font-family: var(--font-mon);
+    font-size: 1.05rem;
+}
+
+.custom-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.custom-list li::marker {
+   font-weight: bold;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    animation: zoomIn 0.3s;
+}
+
+@keyframes zoomIn {
+    from {transform:scale(0.95); opacity:0}
+    to {transform:scale(1); opacity:1}
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+    }
+    
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        width: 280px;
+        box-shadow: var(--shadow-md);
+    }
+    
+    .sidebar.open {
+        left: 0;
+    }
+    
+    .intro-card {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .content-wrapper {
+        padding: 1.5rem;
+    }
+}
+</style>
+     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Top Navigation for Mobile -->
+    <header class="mobile-header">
+        <h1>CauNon Keyboard</h1>
+        <button id="mobile-menu-btn" aria-label="Toggle Menu"><i class="ph ph-list"></i></button>
+    </header>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="ph-fill ph-keyboard"></i>
+                    <h2>CauNon Keyboard</h2>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                
+                <a href="#s1" class="nav-link"><i class="ph ph-layout"></i> 1. ခံက်အၚ်ကောန်ဍေၚ်</a>
+                <a href="#s2" class="nav-link"><i class="ph ph-text-aa"></i>2. ဗီုဂွံတက်အက္ခရ်ဂ္ဇံက်</a>
+                <a href="#s3" class="nav-link"><i class="ph ph-star"></i> 3. အက္ခရ်တၟေၚ်ဂမၠိုၚ်</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ph ph-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>CauNon Keyboard Guide</h1>
+                    <p class="hero-subtitle">Type Mon and Burmese Unicode in a single layout, just like the classic UniMon Keyboard.</p>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Intro -->
+                <section class="card intro-card">
+                    <div class="card-icon"><i class="ph-fill ph-info"></i></div>
+                    <div class="card-body">
+                        <p align="justify">ပ္ဍဲအရာတက်လိက် Unicode ဂှ် တၞဟ်ခြာနူကဵုတက်လိက်သာမညတံရ။ ​အက္ခရ် ( ြ ု ​​​​ူ ) တအ်ဂှ် ဂၠိၚ်/ဂၠေံ/ဍောတ်/ဇၞော်/ပိုတ်/ဝေက်တအ်ဟွံမွဲ နွံဆမွဲဂကူဓဝ်ဟေၚ်တုဲ ကာလတက်မ္ဂး ဍေံပြံၚ်လှာဲကဵု ဗွဲမဗဗွဲကုအက္ခရ်ဆက်စပ်တံဂှ်အလဵုဍေံတုဲ ဒးသမ္တီကောန်ဍေင် Key လိက်သက်သာရ။</p>
+                        <div class="highlight-box">
+                            <p><ul><strong>လၟေၚ်တက်လိက်တုန် - </strong> တက်အတိုၚ်တြေံ ပိုဲကေၚ်တက်မံၚ် UniMon တေံတေံရ။</br></br><li> တက် ​'ေ' ကၠာ။<li>တက် ​'​ြ' ကၠာ။<li> တက် ​'ေ' တုဲ တက် '​ြ' - ဗီုအခိၚ်တက်မံၚ်လိက်သာမညတေံဂှ်ရ။</ul></p>
+							<p><ul><strong>ဗီုပြၚ်လၟေၚ်တက် >>&nbsp; </strong> ​ေ + ​ြ + မ + က + ်  = မြေက် </ul></p>
+							<p><ul><li>Keyboard ဝွံ လၟေၚ်တက်လိက်Unicode - ('ု' ကၠာ 'ိ' ကြဴ၊ 'ု' ကၠာ 'ဲ' ကြဴ၊ 'ိ' ကၠာ 'ဲ' ကြဴ) ဗီုတအ်ဏံ ဟွံမွဲတုဲ  ဗီုဒးစိုတ်ဂှ်တက်ကေတ်မာန် ဗီုတက်မံၚ်လိက်သာမည ဗီုကေၚ်တက်မံၚ်လိက် UniMon တေံရ။</ul></p>
+						</div>
+                        <p align="justify" style="font-size:14px; color:gray">လဆောဝ်လဆောဝ်ပိုဲတအ် အကြာကြာတက်မံၚ်လိက်မန်ဂှ် ဒးတက်လိက်ဗၟာနွံအာမွဲၜါမမ္ဂး သ္ဒးလှာဲ Keyboard ဗၟာဂှ် စိုတ်ယှုက်အာညိနွံရ (အခိၚ်ဒးတက်စရၚ်ညးတၠဒါန်ဒှ်စဂၠိုၚ်)။
+							 ဘဲဏံဂွံသာညိရန်တၟံတုဲ CauNon Keyboard ဝွံ ကၠောန်လဝ်ညံၚ်ဂွံတက်သီုအက္ခရ်ဗၟာမာန်တုဲ၊ ပ္ဍဲစက်ပိုဲ / ပ္ဍဲဖုၚ်ပိုဲ ဒးစုတ်လဝ် Keyboard မွဲဓဝ် တက်သီုလိက်မန်ဂွံ လိက်ဗၟာလေဝ်ဂွံတှ်ေ သီုဍေံသောင်မတ် သီုသောၚ်စိုတ်ညိရောၚ် ထေၚ်ကေတ်တုဲ 
+							သွက်ညးနွံအလဲစိုတ်သာ်ဏံတအ် ဒးဂၞပ်ရောၚ်ထေၚ်ကေတ်ရ။</p>
+                    </div>
+                </section>
+
+                <!-- Section 1 -->
+                <section class="section" id="s1">
+                    <div class="section-header">
+                        <h2>1. ဗီုပြၚ်ခံက်အၚ်ကောန်ဍေၚ်</h2>
+                        <p class="section-desc">&nbsp; &nbsp; &nbsp; &nbsp; Desktop Layout</p>
+                    </div>
+
+                    <div class="keyboard-layouts">
+                        <div class="card img-card">
+                            <h3>ဗီုပြၚ်သာမည</h3>
+                            <div class="img-wrap"><img src="caunonDesktopNormal.png" alt="Keyboard Layout Normal State" class="zoomable"></div>
+                        </div>
+
+                        <div class="card img-card">
+                            <h3>ဗီုပြၚ်ဍဵုလဝ် Shift Key</h3>
+                            <div class="img-wrap"><img src="caunonDesktopShift.png" alt="Keyboard Layout Shift State" class="zoomable"></div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Mobile Layout</h3>
+                    <div class="mobile-grid">
+                        <div class="card mobile-card">
+                            <h4>Default Layout</h4>
+                            <div class="img-wrapMo"><img src="caunonMobileDefault.png" alt="Mobile Default" class="zoomable"></div>
+                        </div>
+                        <div class="card mobile-card">
+                            <h4>Shift Layout</h4>
+                            <div class="img-wrapMo"><img src="caunonMobileShift.png" alt="Mobile Shift" class="zoomable"></div>
+                        </div>
+                        <div class="card mobile-card">
+                            <h4>Numeric Layout</h4>
+                            <div class="img-wrapMo"><img src="caunonMobileNumeric.png" alt="Mobile Numeric" class="zoomable"></div>
+                        </div>				
+                    </div>
+					 <div class="card mobile-card">
+                            <h4>Longpress & Swipe Down</h4>
+                            <div class="img-wrapMo"><img src="caunonLongpress.png" alt="Mobile Longpress & Swipe Down" class="zoomable"></div>
+							</br><p align='center'>တၚ်စၟတ်။&nbsp;&nbsp;&nbsp;။ဗျဉ်မဂ္ဇံက်မာန်တအ်အိုဿီု တက်နကဵုသၞောတ် " ဍဵုခရေတ်ဖျေံ " ဂှ် မာန်ဖအိုတ်ရ။</p>
+                        </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="section" id="s2">
+                    <div class="section-header">
+                        <h2>2. ဗီုဂွံတက်အက္ခရ်ဂ္ဇံက်ဂမၠိုင်</h2>
+                        <p class="section-desc">&nbsp; &nbsp; &nbsp; &nbsp; လက္ချန် ္  ဝွံ နွံပ္ဍဲကောန်ဍေင် Shift + F ရောၚ်။</p>
+                    </div>
+                    
+                    <div class="card table-card">
+                        <div class="tbl-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>မလိက်</th>
+                                        <th>လၟေင်တက်ပံင်အက္ခရ်</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>အက္ခဏ</td><td>အ + က + ္‌ + ခ + ဏ</td></tr>
+                                    <tr><td>ကဏ္ဍ</td><td>က + ဏ + ္‌ + ဍ</td></tr>
+                                    <tr><td>မင်္ဂလ</td><td>မ + ၚ + ် + ္‌ + ဂ + လ</td></tr>
+                                    <tr><td>အဋ္ဌမ</td><td>အ + ဋ + ္‌ + ဌ + မ</td></tr>
+									<tr><td>၀ဍ္ဎိ</td><td>၀ + ဍ + ္‌ + ဎ + ိ</td></tr>
+                                    <tr><td>သိၚ်္ဂဳ</td><td>သ + ိ + ၚ + ် + ္‌ + ဂ +   ဳ</td></tr>
+									<tr><td>ကြက္က</td><td>​ြ + က + က + ္‌ + က</td></tr>
+									<tr><td>ဣန္ဒြိ</td><td>​ဣ + ​ြ + န + ္‌ + ဒ + ိ</td></tr>
+									<tr><td>အိ​န္ဒြေ</td><td>​အ + ိ + ​ေ+ ​ြ + န + ္‌ + ဒ</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3 -->
+                <section class="section" id="s3">
+                    <div class="section-header">
+                        <h2>3. အက္ခရ်တၟေၚ်တၞဟ်ခြာဂမၠိုၚ်</h2>
+                    </div>
+                    <div class="card list-card">
+                        <ul class="custom-list">
+                            <li>'၀' (သုည) ကေုာံ 'ဝ' ဗျဉ် ဟွံတုပ်။</li>
+                            <li>'ဇ' ကွက်ယ ကေုာံ 'ၛ' ဟွံတုပ်။</li>
+                            <li> 'ဉ' ဗျဉ် ကေုာံ 'ဥ' သွဵု ဟွံတုပ်။</li>
+                            <li> 'သ' ကွက်ရ ကေုာံ 'ဩ' သွဵု ဟွံတုပ်။</li>
+                        </ul>
+                    </div>
+					</br><p align='center'><i class="ph ph-layout"></i>&nbsp;&nbsp;သွက်ညးမမိက်ဂိုၚ်စွံတၞးလိက် CauNon Keyboard Layout (သွက်ဂွံရံၚ် အခိၚ်တက်လိက်) မ္ဂး ဍဵုကေတ် <a href="CauNon_Keyboard.jpg" style="color: gray; text-decoration: none;">ဒၞာဲဏံ</a> ညိ။</p>
+                </section>
+            </div>
+            
+            <footer class="main-footer">
+                <p>CauNon Keyboard © <script>document.write(new Date().getFullYear());</script> JaMonRott</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+	document.addEventListener('DOMContentLoaded', () => {
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        const icon = mobileBtn.querySelector('i');
+        if (sidebar.classList.contains('open')) {
+            icon.classList.remove('ph-list');
+            icon.classList.add('ph-x');
+        } else {
+            icon.classList.remove('ph-x');
+            icon.classList.add('ph-list');
+        }
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                sidebar.classList.remove('open');
+                mobileBtn.querySelector('i').classList.replace('ph-x', 'ph-list');
+            }
+        });
+    });
+
+    const sections = document.querySelectorAll('.section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                if (activeLink) activeLink.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(sec => observer.observe(sec));
+
+    const themeBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const themeIcon = themeBtn.querySelector('i');
+    const themeText = themeBtn.querySelector('span');
+
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        setTheme('dark');
+    }
+
+    themeBtn.addEventListener('click', () => {
+        if (htmlEl.getAttribute('data-theme') === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    });
+
+    function setTheme(mode) {
+        htmlEl.setAttribute('data-theme', mode);
+        localStorage.setItem('theme', mode);
+        if (mode === 'dark') {
+            themeIcon.classList.replace('ph-moon', 'ph-sun');
+            themeText.textContent = 'Light Mode';
+        } else {
+            themeIcon.classList.replace('ph-sun', 'ph-moon');
+            themeText.textContent = 'Dark Mode';
+        }
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close-lightbox');
+    const zoomableImages = document.querySelectorAll('.zoomable');
+
+    zoomableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+});
+	</script>
+</body>
+</html>
