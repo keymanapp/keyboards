@@ -3,7 +3,7 @@ c with name "Swahili Ajami (QWERTY)"
 store(&VERSION) '10.0'
 store(&NAME) 'Swahili Ajami (QWERTY)'
 store(&COPYRIGHT) 'Copyright © SIL Global'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'swahili_ajami_qwerty.ico'
 store(&VISUALKEYBOARD) 'swahili_ajami_qwerty.kvks'
@@ -24,14 +24,14 @@ store(baseU) U+0642      U+0648      U+0631      U+062A      U+064A      U+067E 
              U+06AA      U+0698      U+075D \
              U+0624      U+0626      U+0637      U+0626      U+0624      U+0626      U+0624      U+0623      U+0635      U+0636      U+06AF \
              U+0629      U+0638      U+06AE \
-             U+06CF      U+0679      U+0688      U+0621
+             U+06CF      U+0679      U+0688      U+0621      U+064A
 store(baseK) [K_Q]       [K_W]       [K_R]       [K_T]       [K_Y]       [K_P]       [K_S]       [K_D]       [K_F]       [K_G]       [K_H]  \
              [K_J]       [K_K]       [K_L]       [K_QUOTE]   [K_Z]       [K_X]       [K_C]       [K_V]       [K_B]       [K_N]       [K_M] \
              [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_G] [SHIFT K_H] \
              [SHIFT K_K] [SHIFT K_Z] [SHIFT K_N] \
              [RALT K_W]  [RALT K_E]  [RALT K_T]  [RALT K_Y]  [RALT K_U]  [RALT K_I]  [RALT K_O]  [RALT K_A]  [RALT K_S]  [RALT K_D]  [RALT K_G] \
              [RALT K_H]  [RALT K_Z]  [RALT K_C] \
-             [SHIFT RALT K_W] [SHIFT RALT K_T] [SHIFT RALT K_D] [SHIFT RALT K_H]
+             [SHIFT RALT K_W] [SHIFT RALT K_T] [SHIFT RALT K_D] [SHIFT RALT K_H] [SHIFT K_E]
 
 store(digitsU) U+0660 .. U+0669
 store(digits)  U+0030 .. U+0039
@@ -48,11 +48,11 @@ store(punctK) [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
               [RALT K_COLON] [SHIFT RALT K_COLON] [RALT K_QUOTE] [SHIFT RALT K_QUOTE] [RALT K_COMMA] [RALT K_PERIOD] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [RALT K_SLASH] [SHIFT RALT K_SLASH] \
               [K_HYPHEN] [K_COLON] [K_COMMA] [K_PERIOD] [K_SLASH] 
 
-store(K_RTL) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R]
+store(K_RTL) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4]
 store(U_RTL) U+200C     U+200D     U+200E     U+200F c ZWNJ ZWJ LRM RLM
 
 
-store(nul) "QWRPFJLXCVBM[]{}\|:?!@#$%-_=+" 
+store(nul) "QWRPFJLXCVBM[]{}\|:?%-_=+" 
 
 group(main) using keys
 
