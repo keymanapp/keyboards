@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-CauNon Keyboard © 2026 JaMonRott
+Copyright © 2026 JaMonRott
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
