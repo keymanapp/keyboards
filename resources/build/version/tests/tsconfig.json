@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+
+  "compilerOptions": {
+      "rootDir": ".",
+      "outDir": "../build/tests",
+      "baseUrl": ".",
+      "allowSyntheticDefaultImports": true, // for chai
+    },
+  "include": [
+      "**/*.tests.ts",
+      "helpers.ts",
+  ],
+  "references": [
+    { "path": "../" }
+  ]
+}
