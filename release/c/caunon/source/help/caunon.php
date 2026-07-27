@@ -19,7 +19,6 @@
         margin: 0 auto; 
         display: block; 
     }
-    
     .caunon-kbd { background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #3b82f6; }
 END;
 
