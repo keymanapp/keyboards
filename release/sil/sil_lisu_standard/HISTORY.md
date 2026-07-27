@@ -1,5 +1,8 @@
 Lisu Standard (SIL) Keyboard Change History
 =======================
+1.1.2 (2026-07-27)
+----------------
+* Change hyphen output from U+02D7 to U+002D to match Android and iOS Lisu keyboards
 
 1.1.1 (2024-12-02)
 ----------------
