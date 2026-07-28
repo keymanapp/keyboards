@@ -1,6 +1,6 @@
 # Change History — Luri Keyboard (Northern Luri)
 
-## 1.0.8
+## 1.0.8 (2026-07-28)
 
 - Updated documentation to use "Northern Luri" (ISO 639-3: `lrc`, BCP 47: `lrc-Arab`).
 - Fixed KVKS: corrected RALT+SHIFT layer (`shift=""` → `shift="RSA"`), filled empty `<kbdname>`.
