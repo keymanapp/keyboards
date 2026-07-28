@@ -11,7 +11,7 @@
 <p>In order to type the arabic numeral (i.e. 1, 2, 3 etc), press the hash key (<kbd> Shift </kbd> + <kbd> 3 </kbd>) and then any corresponding Ahom numeral.</p>
 
   <h2>Desktop / Tablet</h2>
-   <div id='osk' data-states='default shift'></div>
+   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
    
    <h2>Phone</h2>
     <div id='osk-phone' data-states='default shift numeric'></div>
