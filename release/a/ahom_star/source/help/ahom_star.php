@@ -8,8 +8,6 @@
     Ahom Star keyboard is designed for Ahom language which is a part of the Tai Kadai language family spoken by the Tai Ahom people of Assam and Northeast India. 
 </p>
 
-<p>In order to type the arabic numeral (i.e. 1, 2, 3 etc), press the hash key (<kbd> Shift </kbd> + <kbd> 3 </kbd>) and then any corresponding Ahom numeral.</p>
-
   <h2>Desktop / Tablet</h2>
    <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
    
