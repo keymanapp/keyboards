@@ -1,5 +1,8 @@
 # Change History — Luri Keyboard (Northern Luri)
 
+## 1.0.9 (2026-07-29)
+fix the problem of "لٛ" in touch layout
+
 ## 1.0.8 (2026-07-28)
 
 - Updated documentation to use "Northern Luri" (ISO 639-3: `lrc`, BCP 47: `lrc-Arab`).
