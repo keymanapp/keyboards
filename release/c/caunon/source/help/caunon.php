@@ -52,7 +52,7 @@ END;
     <div id='osk' data-states='default shift'></div>
 
     <h2 class="caunon-mon-text">Mobile Layout</h2>
-    <div id='osk-phone' data-states='default shift numeric symbol'></div>
+    <div id='osk-phone' data-states='default shift numeric'></div>
     
     <div class="caunon-card">
         <h3 class="caunon-mon-text">Longpress & Swipe Down (Mobile)</h3>
