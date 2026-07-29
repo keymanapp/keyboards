@@ -20,7 +20,7 @@
 
 <h3>Mobile/Phone Keyboard Layout</h3>
 
-<div id='osk-phone' data-states='default shift numeric'>
+<div id='osk-phone' data-states='default shift numeric symbol'>
 </div>		
 		
 		<h3 id="2">
