@@ -49,7 +49,7 @@ END;
     <h2 class="caunon-mon-text">1. ဗီုပြၚ်ခံက်အၚ်ကောန်ဍေၚ်ဂမၠိုၚ်</h2>
     
 	<h2 class="caunon-mon-text">Desktop Layout</h2>
-    <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+    <div id='osk' data-states='default shift'></div>
 
     <h2 class="caunon-mon-text">Mobile Layout</h2>
     <div id='osk-phone' data-states='default shift numeric symbol'></div>
