@@ -6,7 +6,7 @@ store(&NAME) 'CauNon'
 store(&ETHNOLOGUECODE) 'mnw'
 store(&COPYRIGHT) '© JamonRott'
 store(&MESSAGE) 'Type Mon & Burmese Unicode as UniMon keyboard in single layout.'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 
 group(main) using keys
@@ -142,14 +142,14 @@ U+1037 + any(udia2K) > index(udia2U, 2) U+1037
 U+1037 + any(ldiaK) > index(ldiaU, 2) U+1037
 U+1037 + any(aaK) > index(aaU, 2) U+1037
 
-store(gNyaK) 'GjSgH' c waSwel, yaYit, haHto, yeChaLong, teteDin
+store(gNyaK) 'GjSgH' 
 store(gNyaU) u+103D u+103C u+103E u+102B u+1036
 
 u+105A + any(gNyaK) > u+1004 index(gNyaU, 2)
-u+105A u+1031 + 'G' > u+1004 u+103D context(2) c ngMon waSwel thWaeHto  ngBur
-u+105A u+1031 + ';' > u+1004 context(2) u+1038 c ngMon thWaeHto wiSa:  ngBur
-u+105A u+1037 + 'f' > u+1004 context(2) u+103A c ngMon okaMyint shwinHto  ngBur
-u+1004 u+1036 u+1000 + 'f' > u+105A context(2) context(3) u+103A c ngBur teteDin  ka  shwinHto  ngMon
+u+105A u+1031 + 'G' > u+1004 u+103D context(2) 
+u+105A u+1031 + ';' > u+1004 context(2) u+1038 
+u+105A u+103A + 'h' > u+1004 context(2) u+1037  
+u+1004 u+1036 u+1000 + 'f' > u+105A context(2) context(3) u+103A
 
 + any(ldiaK) > index(ldiaU, 1)
 + any(udia1K) > index(udia1U, 1)  
