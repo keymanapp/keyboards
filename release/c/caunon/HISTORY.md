@@ -1,5 +1,9 @@
 CauNon Change History
 ====================
+1.2 (2026-07-30)
+----------------
+* Bug fix for text input reordering.
+ 
 1.1 (2026-07-29)
 ----------------
 * Add author name in caunon.kps
