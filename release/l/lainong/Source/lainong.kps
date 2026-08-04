@@ -6,7 +6,7 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile></ReadMeFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -16,15 +16,27 @@
   </StartMenu>
   <Info>
     <Name URL="">Lainong</Name>
-    <Copyright URL="">© Lainong Community</Copyright>
+    <Copyright URL="">© Lainong Literature and Culture Committee</Copyright>
     <Version URL="">1.0</Version>
   </Info>
   <Files>
     <File>
-      <Name>lainong.kmx</Name>
-      <Description>Lainong Keyboard</Description>
+      <Name>..\build\lainong.kmx</Name>
+      <Description>Keyboard Lainong</Description>
       <CopyPath>0</CopyPath>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyPath>0</CopyPath>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyPath>0</CopyPath>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -33,7 +45,7 @@
       <ID>lainong</ID>
       <Version>1.0</Version>
       <Languages>
-        <Language ID="und">Undetermined</Language>
+        <Language ID="lzn">Lainong</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
