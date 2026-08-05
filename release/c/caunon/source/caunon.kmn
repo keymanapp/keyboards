@@ -1,4 +1,4 @@
-﻿c CauNon Burmese Unicode Keyboard for Keyman 9.0 +
+c CauNon Burmese Unicode Keyboard for Keyman 9.0 +
 c Type Mon & Burmese Unicode as in UniMon keyboard layout.
 
 store(&VERSION) '9.0'
@@ -6,7 +6,7 @@ store(&NAME) 'CauNon'
 store(&ETHNOLOGUECODE) 'mnw'
 store(&COPYRIGHT) '© JamonRott'
 store(&MESSAGE) 'Type Mon & Burmese Unicode as UniMon keyboard in single layout.'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 
 group(main) using keys
@@ -142,14 +142,16 @@ U+1037 + any(udia2K) > index(udia2U, 2) U+1037
 U+1037 + any(ldiaK) > index(ldiaU, 2) U+1037
 U+1037 + any(aaK) > index(aaU, 2) U+1037
 
-store(gNyaK) 'GjSgH' c waSwel, yaYit, haHto, yeChaLong, teteDin
-store(gNyaU) u+103D u+103C u+103E u+102B u+1036
+store(gNyaK) 'GSgH' c waSwel, haHto, yeChaLong, teteDin
+store(gNyaU) u+103D u+103E u+102B u+1036
 
 u+105A + any(gNyaK) > u+1004 index(gNyaU, 2)
 u+105A u+1031 + 'G' > u+1004 u+103D context(2) c ngMon waSwel thWaeHto  ngBur
 u+105A u+1031 + ';' > u+1004 context(2) u+1038 c ngMon thWaeHto wiSa:  ngBur
-u+105A u+1037 + 'f' > u+1004 context(2) u+103A c ngMon okaMyint shwinHto  ngBur
+u+105A u+103A + 'h' > u+1004 context(2) u+1037 c ngMon shwinHto okaMyint ngBur
 u+1004 u+1036 u+1000 + 'f' > u+105A context(2) context(3) u+103A c ngBur teteDin  ka  shwinHto  ngMon
+u+200B any(rDiaU) + 'i' > u+1004 index(rDiaU, 2) c filler yaYit ngMon ngBur
+outs(fillerVowelE) any(rDiaU) + 'i' > u+1004 index(rDiaU, 3) outs(vowelEU) c filler thWaeHto yaYit ngMon ngBur
 
 + any(ldiaK) > index(ldiaU, 1)
 + any(udia1K) > index(udia1U, 1)  
@@ -157,21 +159,15 @@ u+1004 u+1036 u+1000 + 'f' > u+105A context(2) context(3) u+103A c ngBur teteDin
  
 any(wDiaU) + any(yDiaK) > index(yDiaU, 2) index(wDiaU, 1)
 any(hDiaU) + any(yDiaK) > index(yDiaU, 2) index(hDiaU, 1)
-any(wDiaU) + any(rDiaK) > index(rDiaU, 2) index(wDiaU, 1)
-any(hDiaU) + any(rDiaK) > index(rDiaU, 2) index(hDiaU, 1)
 any(hDiaU) + any(wDiaK) > index(wDiaU, 2) index(hDiaU, 1)
 
 any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
-any(wDiaU) any(hDiaU) + any(rDiaK) > index(rDiaU, 3) context(1) context(2)
 
 any(wDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
 any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context(1) context(2)
-any(wDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context(1) context(2)
-any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context(1) context(2)  
 any(hDiaU) U+1031 + any(wDiaK) > index(wDiaU, 3) context(1) context(2) 
 
-any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context(1) context(2) context(3)
-any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context(1) context(2) context(3)  
+any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context(1) context(2) context(3)  
 
 + any(mediaK) > index(mediaU, 1) 
 + any(rDiaK) > U+200B U+103C
