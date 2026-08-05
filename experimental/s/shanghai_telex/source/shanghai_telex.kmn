@@ -1,8 +1,8 @@
-﻿c Shanghai Telex keyboard for Ğồ-Nhủ Coâc-Nhủ-Zụ̆ Wu National Language Script
+﻿c Shanghai Telex keyboard for Ğồ-Nhủ Koâc-Nhủ-Zụ̆ Wu National Language Script
 store(&VERSION) '17.0'
 store(&NAME) 'Shanghai Telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'shanghai_telex.ico'
 store(&VISUALKEYBOARD) 'shanghai_telex.kvks'
@@ -246,8 +246,8 @@ store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
-store(ie_consonants) 'đbcdgğhklmnprsštțvxyzžĐBCDGĞHKLMNPRSŠTȚVXYZŽ'
-store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆŧŦțȚšŠžŽğĞ' U+0328 dk(n)
+store(ie_consonants) 'đbcdgğhklmnprsștțvxyzżĐBCDGĞHKLMNPRSȘTȚVXYZŻ'
+store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆŧŦțȚșȘżŻğĞ' U+0328 dk(n)
 store(yu) 'yuoôơYUOÔƠ'
 store(yuia) 'uiaUIA'
 store(pk) 'pkPK'
@@ -703,19 +703,19 @@ any(ee) any(ee_end) + 'E' > index(e, 1) index(ee_end, 2) 'E'
 "Ț" + "t" > "Tt"
 "Ț" + "T" > "TT"
 
-"s" + "s" > "š"
-"S" + "s" > "Š"
-"S" + "S" > "Š"
-"š" + "s" > "ss"
-"Š" + "s" > "Ss"
-"Š" + "S" > "SS"
+"s" + "s" > "ș"
+"S" + "s" > "Ș"
+"S" + "S" > "Ș"
+"ș" + "s" > "ss"
+"Ș" + "s" > "Ss"
+"Ș" + "S" > "SS"
 
-"z" + "z" > "ž"
-"Z" + "z" > "Ž"
-"Z" + "Z" > "Ž"
-"ž" + "z" > "zz"
-"Ž" + "z" > "Zz"
-"Ž" + "Z" > "ZZ"
+"z" + "z" > "ż"
+"Z" + "z" > "Ż"
+"Z" + "Z" > "Ż"
+"ż" + "z" > "zz"
+"Ż" + "z" > "Zz"
+"Ż" + "Z" > "ZZ"
 
 "g" + "g" > "ğ"
 "G" + "g" > "Ğ"
