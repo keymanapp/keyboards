@@ -3,7 +3,7 @@ Arabic W/O Dots keyboard
 
 Description
 -----------
-Arabic Alphabet without the dots like the Olden Days
+Arabic Alphabet without the dots.
 
 Links
 -----

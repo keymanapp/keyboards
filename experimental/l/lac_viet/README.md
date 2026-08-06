@@ -3,7 +3,7 @@ Lac Viet keyboard
 
 Description
 -----------
-Lac Viet keyboard for Vạ Xoạng (Zhuang Language in Chữ Quốc Ngữ) Chữ Quốc Ngữ tiếng Choang.國語字壯文
+Lac Viet keyboard for Ŧaư-Chuậng (Zhuang script in Chữ Quốc Ngữ system) Chữ Quốc Ngữ tiếng Choang.國語字壯文
 
 Links
 -----

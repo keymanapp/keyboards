@@ -8,6 +8,8 @@ END;
   require_once('header.php');
 ?>
 
+<p><b>កំណត់ចំណាំ៖</b> ក្ដារចុចនៅក្នុងទូរស័ព្ទ ធ្វើឡើងដោយមានអក្សរអង់គ្លេស ដែលអាចសរសេរបានដោយផ្អែកទៅលើលំដាប់នៃការវាយតាមរូបមន្តខាងក្រោម៖</p>
+
 <p>
     This is a romanized Keyman keyboard for Krung language spoken as an ethnic minority language in Cambodia.
 </p>
@@ -1660,3 +1662,17 @@ are underlined.
 </table>
 
 <p>For more examples, please refer to the documentation on Romanization of Krung <a href="krung_romanization.pdf" target="_blank">here.</a></p>
+
+<h1>Desktop layout</h1>
+
+<h3>Default (unshifted)</h3>
+<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+<h3>Shift</h3>
+<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+
+<h1>Touch layout</h1>
+
+<h3>Default (unshifted)</h3>
+<p><img src="T_LayoutU_.jpg" alt="Default (unshifted) state" style="width:50%"/></p>
+<h3>Shift</h3>
+<p><img src="T_LayoutU_N.jpg" alt="Shift state" style="width:50%"/></p>

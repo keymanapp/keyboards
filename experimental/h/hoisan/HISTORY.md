@@ -1,6 +1,11 @@
 Hoisan Change History
 ====================
 
+3.0.2 (2026-05-30)
+----------------
+* modified the touch layout
+* modified code for letter generation
+
 3.0.1 (2026-04-09)
 ----------------
 * added new letters 'ŭ' to replace 'ṳ'

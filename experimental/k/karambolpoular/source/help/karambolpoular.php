@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'karambolpoular Keyboard Help';
+  $pagename = 'karambolpoular (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
