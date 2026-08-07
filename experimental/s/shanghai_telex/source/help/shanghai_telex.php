@@ -6,10 +6,10 @@
 ?>
 
 <p>
-  Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Coâc-Nhủ-Zự
+  Shanghai Telex keyboard for Script of the National Language for Wu Ğồ-Nhủ Koâc-Nhủ-Zự
 </p>
-<p> Ğồ-Nhủ Coâc-Nhủ-Zự zự yêt chủng Lơ-Mỏ-hó căh Ğồ-Nhủ Vằn-Zự, mọc-tich zự păh Ğồ-Nhủ yêt chủng piao-chuẩn căh šŭ-siả ğẹ̌-thỏng</p>
-<p> Ğồ-Nhủ Coâc-Nhủ-Zự căh thong-dụng pản-pỏn kiêt-ğợt lặh cŏc-chủng Ğồ-Nhủ fang-nhiền căh đặc-tiển, ğình-žềnh yêt chủng hảo piảo-žự tăh miào-žuật cŏc-šưc-cŏc-diạng Ğồ-Nhủ fang-nhiền căh šŭ-sỉa ğẹ̌-thỏng, ğà cản-šiảo țứ đòng-in-zự, đě̀-cung păh făh-đòng đị-fang făh-đòng khẩu-in căh cảng Ğồ-Nhủ căh nhìn yêt tháo ğọng-đòng căh šŭ-siả ğẹ̌-thỏng.</p>
+<p> Ğồ-Nhủ Koâc-Nhủ-Zự zự yêt chủng Lờ-Mỏ-hó căh Ğồ-Nhủ Vằn-Zự, mọc-tich zự păh Ğồ-Nhủ yêt chủng piao-chuẩn căh șŭ-siả ğẹ̌-thỏng</p>
+<p> Ğồ-Nhủ Koâc-Nhủ-Zự căh thong-dụng pản-pỏn kiêt-ğợt lặh cŏc-chủng Ğồ-Nhủ fang-nhiền căh đặc-tiển, ğình-żềnh yêt chủng hảo piảo-żự tăh miào-żuật cŏc-șưc-cŏc-diạng Ğồ-Nhủ fang-nhiền căh șŭ-sỉa ğẹ̌-thỏng, ğà cản-șiảo țứ đòng-in-zự, đě̀-cung păh făh-đòng đị-fang făh-đòng khẩu-in căh cảng Ğồ-Nhủ căh nhìn yêt tháo gọng-đòng căh șŭ-siả ğẹ̌-thỏng.</p>
   <p> The script of national language for Wu is a romanized Wu script is aimed at developing a standard phonetic writing system for Wu.</p>
   <p> The universal version of the script of national language for Wu combines the character of various accents of Wu, forms a phonetic writing system for Wu which demonstrates and describes various of Wu accents, and reduces the impact of homophone, provides a common written system for Wu speakers in different areas with different accents.</p>
 
@@ -122,7 +122,7 @@
  </tr>
    <tr>
    <td>g</td>
-   <td>že/gă</td>
+   <td>że/gă</td>
    <td>[ɡ]</td>
  </tr>
    <tr>
@@ -147,7 +147,7 @@
  </tr>
    <tr>
    <td>j</td>
-   <td>ži</td>
+   <td>żi</td>
    <td>[dʒ] [j] [ʒ]</td>
  </tr>
    <tr>
@@ -251,8 +251,8 @@
    <td>[s]</td>
  </tr>
    <tr>
-   <td>š</td>
-   <td>šă</td>
+   <td>ș</td>
+   <td>șă</td>
    <td>[ʃ]</td>
  </tr>
    <tr>
@@ -331,8 +331,8 @@
    <td>[z]</td>
  </tr>
     <tr>
-   <td>ž</td>
-   <td>žă</td>
+   <td>ż</td>
+   <td>żă</td>
    <td>[ʒ]</td>
  </tr>
  </tbody>
@@ -349,12 +349,12 @@
  </tr>
  <tr>
    <td>a</td>
-   <td>in-bình/in-zật</td>
+   <td>in-bình/in-żật</td>
    <td>˦/˦˧</td>
  </tr>
   <tr>
    <td>ả</td>
-   <td>žạng-šênh</td>
+   <td>żạng-șênh</td>
    <td>˥˩</td>
  </tr>
   <tr>
@@ -369,14 +369,14 @@
  </tr>
   <tr>
    <td>ạ</td>
-   <td>diàng-khú/diàng-žật</td>
+   <td>diàng-khú/diàng-żật</td>
    <td>˨˧˩/˨˧</td>
  </tr>
   </tbody>
 </table>
 
  <h1>Phonologic Map In-Dụn-Piảo</h1>
-<h1>Consonants Šênh-Mổ</h1>
+<h1>Consonants Șênh-Mổ</h1>
 
 <table class='display'>
   <tr>
@@ -414,9 +414,9 @@
   <tr><td>ț</td><td>[ts]</td><td>子</td></tr>
   <tr><td style="background-color: yellow;">x</td><td>[tʃʰ]</td><td>處</td></tr>
   <tr><td>țh</td><td>[tsʰ]</td><td>次</td></tr>  
-  <tr><td style="background-color: yellow;">š</td><td>[ʃ]</td><td>書</td></tr>
+  <tr><td style="background-color: yellow;">ș</td><td>[ʃ]</td><td>書</td></tr>
   <tr><td>s</td><td>[s]</td><td>思</td></tr>
-  <tr><td style="background-color: yellow;">ž</td><td>[ʒ]</td><td>樹</td></tr>
+  <tr><td style="background-color: yellow;">ż</td><td>[ʒ]</td><td>樹</td></tr>
   <tr><td>z</td><td>[z]</td><td>字</td></tr>
   <tr><td style="background-color: yellow;">đr</td><td>[dʒ]</td><td>傳</td></tr>
   <tr><td>dz</td><td>[dz]</td><td>慈</td></tr>
@@ -428,7 +428,7 @@
 <p>In Wu language, the "k" "kh" "h" "g" and "ğ" consonants are often palatalized to [tɕ] [tɕʰ] [ɕ] [dʑ] and [ʑ] when before "i" "ě" "u" or "ưu"vowels.</p>
 <p>In Taiwoo Wu dialect, the "ği" combination often merges to "d" consonant and pronounced as [ɦi].</p>
 <p>In Taiwoo Wu dialect, the "ğu" combination often merges to "w" consonant and pronounced as [ɦu].</p>
-<p>In modern day north Wu dialect, the "ch" "x" "š" "ž" and "đr" have already merged to "ț" "țh" "s" "z" and "dz"</p>
+<p>In modern day north Wu dialect, the "ch" "x" "ș" "ż" and "đr" have already merged to "ț" "țh" "s" "z" and "dz"</p>
 <p>The "k" consonant at the front can be replaced with "c" if it appears before the letter "a" "ă" "â" "o" "ô" "ơ" "u" or "ư".</p>
 <p>The "r" consonant exist at siao-san Wu accent and loanwords.</p>
 
@@ -511,8 +511,8 @@
 <p>The letter "y" represents the [i] consonant as well as the letter "i". However, unlike letter "i", the letter "y" neither not cause palatalization with "k" "kh" "h" "g" "", combine with nearby letters to form other consonants or vowels.</p>
 <p>The vowels in grey background indicate the pronunciation in some accents of Wu and loanwords. However, they are seldom used to indicate phonemes with clear etymology.</p>
 <p>The end consonant [ʔ] can be spell as "h" when the vowel is in a particle, the word without a clear etymology about its original end consonant, the loanword, or just for representing the sound of the vowel.</p>
-<p>The "ŭ" [ʮ] vowel mainly appears in Taiwoo Wu dialect. In Taichow Wu dialect, this phoneme often appears after "ch" "x" "š" "ž" "đr" consonants and pronounced same as vowel "u".</p>
-<P>The "ě" [ie] vowel only appears at Shangshan and Lishui dialect. In other Wu dialect, the "ě" vowel is read same as "i" behind "k" "kh" "nh" "h" "ğ" "t" "th" "đ" "n" "l" "p" "ph" "b" "m" consonants or pronounced as "ư" behind "ch" "ț" "x" "țh" "š" "s" "ž" "z" "đr" "dz" consonants.</P>
+<p>The "ŭ" [ʮ] vowel mainly appears in Taiwoo Wu dialect. In Taichow Wu dialect, this phoneme often appears after "ch" "x" "ș" "ż" "đr" consonants and pronounced same as vowel "u".</p>
+<P>The "ě" [ie] vowel only appears at Shangshan and Lishui dialect. In other Wu dialect, the "ě" vowel is read same as "i" behind "k" "kh" "nh" "h" "ğ" "t" "th" "đ" "n" "l" "p" "ph" "b" "m" consonants or pronounced as "ư" behind "ch" "ț" "x" "țh" "ș" "s" "ż" "z" "đr" "dz" consonants.</P>
 <table border="1" cellpadding="8" cellspacing="0" class='display'>
   <thead>
     <tr>
@@ -565,7 +565,7 @@
 <table class='display'>
 
 
-<h1>Accent Tones Šênh-Điạo</h1>
+<h1>Accent Tones Șênh-Điạo</h1>
 <table class='display'>
  <tbody>
  <tr>
@@ -587,7 +587,7 @@
   <td>/</td>
   </tr>
  <tr>
-   <td>rising tone žạng-šênh</td>
+   <td>rising tone żạng-șênh</td>
    <td>ả</td>
    <td>˥˩</td>
    <td></td>
@@ -623,7 +623,7 @@
    <td><kbd>J</kbd></td>
  </tr>
   <tr>
-   <td>unvoiced entering in-zật</td>
+   <td>unvoiced entering in-żật</td>
    <td style="background-color: pink;">a</td>
    <td>˦˧</td>
    <td>˥</td>
@@ -632,7 +632,7 @@
    <td>/</td>
  </tr>
     <tr>
-   <td>voiced entering diàng-zật</td>
+   <td>voiced entering diàng-żật</td>
    <td style="background-color: pink;">ạ</td>
    <td>˨˧</td>
    <td>˩˨</td>
@@ -720,7 +720,7 @@
    <td><kbd>O</kbd> + <kbd>I</kbd> + <kbd>I</kbd></td>
  </tr>
    <tr>
-   <td>š</td>
+   <td>ș</td>
    <td><kbd>S</kbd> + <kbd>S</kbd></td>
  </tr>
     <tr>
@@ -728,7 +728,7 @@
    <td><kbd>T</kbd> + <kbd>T</kbd></td>
  </tr>
     <tr>
-   <td>ž</td>
+   <td>ż</td>
    <td><kbd>Z</kbd> + <kbd>Z</kbd></td>
  </tr>
     <tr>
@@ -776,7 +776,7 @@
 
 <p>Examples Lẹ̌-Țử: </p>
  <p> ar > ả, as > á, af > à, ax > ã, aj > ạ </p>
- <p>If you want to type "liảng"，please input "liangx"</p>
+ <p>If you want to type "liảng"，please input "liangr"</p>
   <p></p>
   <h2>Punctuation and Capitalization piao-tiển vù-ğạo tăh đợ-sỉa</h2>
   <p>A space " " should be added between each words.</p>
@@ -808,14 +808,14 @@
 <h2>Sample Vạn-Vằn</h2>
 
 <p>南國山河</p>
-<p>Nền Coâc San Ğờ</p>
+<p>Nền Koâc San Ğờ</p>
 <p>南國山河南帝居</p> 
-<p>Nền Coâc San Ğờ Nền Đě́ Cu</p>
+<p>Nền Koâc San Ğờ Nền Đě́ Cu</p>
 <p>截然定分在天書</p>
-<p>Dziệt Žền Định Făn Dzại Thiên Šŭ</p>
+<p>Dziệt Żền Định Făn Dzại Thiên Șŭ</p>
 <p>如何逆虜來侵犯</p> 
-<p>Žừ Ğờ Nhịch Lỗ Lài Țhin Vạn</p>
+<p>Żừ Ğờ Nhịch Lỗ Lài Țhin Vạn</p>
 <p>汝等行看取敗虛</p> 
-<p>Žử Tẳng Ğình Khến Țhủ Bạ Hu</p>
+<p>Żử Tẳng Ğình Khến Țhủ Bạ Hu</p>
 
 <p>© cathaylab</p>

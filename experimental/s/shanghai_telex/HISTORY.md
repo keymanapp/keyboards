@@ -1,6 +1,11 @@
 Shanghai Telex Change History
 ====================
 
+1.2 (2026-07-30)
+----------------
+* updated by cathaylab
+* adopted ș ż to replace š ž
+
 1.1 (2026-04-29)
 ----------------
 * updated by cathaylab
