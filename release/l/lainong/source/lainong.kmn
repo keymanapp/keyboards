@@ -8,4 +8,25 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-+ [K_A] > 'a'
+c --- Standard Base Character Rules ---
++ [K_f] > 'ë'
++ [K_r] > 'ëu'
++ [K_j] > 'cy'
++ [K_w] > U+0304  c Combining Macron (Mid Tone Mark)
++ [K_BKQUOTE] > U+02C8  c Modifier Letter Vertical Line (Stop Tone Mark)
+
+c --- Capitalized Shift Rules ---
++ [SHIFT K_F] > 'Ë'
++ [SHIFT K_R] > 'Ëu'
++ [SHIFT K_J] > 'Cy'
++ [SHIFT K_W] > U+0300  c Combining Grave Accent (Low Tone Mark)
+
+c --- Context Rules: Shifting Tones Backward onto 'ë' or 'Ë' ---
+c When typing a low tone mark after 'ëu', swap them so it sits on the 'ë' (ë̀u)
+'ëu' + [SHIFT K_W] > 'ë' U+0300 'u'
+'Ëu' + [SHIFT K_W] > 'Ë' U+0300 'u'
+'ëu' + [K_w] > 'ë' U+0304 'u'
+'Ëu' + [K_w] > 'Ë' U+0304 'u'
+
+c --- Context Rules: Stop Tones ---
+c The stop tone sits on the right corner of the vowel, so no swapping is needed for 'ëu' or 'Ëu'
