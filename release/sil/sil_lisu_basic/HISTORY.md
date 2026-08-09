@@ -1,6 +1,13 @@
 Lisu Basic (SIL) Keyboard Change History
 =======================
 
+1.2 (2026-07-28)
+----------------
+* Put U+2010 on hyphen key
+* Put U+02CD on SHIFT O
+* Remove U+02D7 per Unicode
+* Change font to Lisu Bosa
+
 1.1.1 (2024-12-02)
 ----------------
 * Remove lbc language tag

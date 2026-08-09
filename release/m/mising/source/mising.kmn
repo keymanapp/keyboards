@@ -1,50 +1,199 @@
-﻿c Version 1.0 of the Mising (Latin) keyboard. Developed by Vivian Pegu. This layout is specifically engineered to support rigorous linguistic documentation, accurate phonetic transcription for pronunciation dictionaries, and clean data entry required for training NLP tools like morphological analyzers. It fully accommodates the standard Mising Agom Kébang (MAK) orthography.
+﻿c This keyboard is designed for everyday writing in the Mising language using the modified Roman script. It fully accommodates the standard Mising orthography.
 store(&VERSION) '10.0'
 store(&NAME) 'Mising'
-store(&COPYRIGHT) 'Copyright © Vivian Pegu'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Copyright © Vivian Pegu & Smriti Saikia'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'mising.ico'
 store(&VISUALKEYBOARD) 'mising.kvks'
 store(&LAYOUTFILE) 'mising.keyman-touch-layout'
-store(&MESSAGE) '"Mising (Latin) keyboard optimized for standard MAK orthography and linguistic transcription. Developed by Vivian Pegu."'
+store(&MESSAGE) 'A standard keyboard for the Mising language, based on the modified Roman script.'
 
 begin Unicode > use(main)
 
 group(main) using keys
 
-c --- PRIMARY MISING PHONEMES (High Efficiency Layer) ---
-c Mapping central vowels and digraphs to keys not used in standard Mising orthography
-+ [K_Q] > 'ng'          c Velar nasal /ŋ/
-+ [SHIFT K_Q] > 'Ng'    c Capitalized Velar nasal
-+ [K_X] > 'ny'          c Palatal nasal /ɲ/
-+ [SHIFT K_X] > 'Ny'    c Capitalized Palatal nasal
-+ [K_V] > 'é'           c Central vowel /ɜ/
-+ [SHIFT K_V] > 'É'     c Capitalized Central vowel
-+ [K_C] > 'í'           c Central vowel /ɨ/
-+ [SHIFT K_C] > 'Í'     c Capitalized Central vowel
+c --- EXPLICIT MAPPING FOR ALL MISING ALPHABETS ---
 
-c --- DEAD KEY LOGIC FOR LONG VOWELS (Length Marker :) ---
-c Using Semicolon as a trigger for the length colon
-+ [K_COLON] > dk(long)
+c 1. Standard Lowercase (Caps Lock is OFF)
+c Custom Mising alphabets mapped to specific keys
++ [NCAPS K_Q] > 'ng'
++ [NCAPS K_X] > 'ny'
++ [NCAPS K_V] > 'é'
++ [NCAPS K_C] > 'í'
 
-c Small Long Vowels
-dk(long) + [K_A] > 'a:'
-dk(long) + [K_E] > 'e:'
-dk(long) + [K_I] > 'i:'
-dk(long) + [K_O] > 'o:'
-dk(long) + [K_U] > 'u:'
-dk(long) + [K_V] > 'é:'
-dk(long) + [K_C] > 'í:'
+c Standard Mising Consonants
++ [NCAPS K_K] > 'k'
++ [NCAPS K_G] > 'g'
++ [NCAPS K_T] > 't'
++ [NCAPS K_D] > 'd'
++ [NCAPS K_N] > 'n'
++ [NCAPS K_R] > 'r'
++ [NCAPS K_L] > 'l'
++ [NCAPS K_Y] > 'y'
++ [NCAPS K_S] > 's'
++ [NCAPS K_J] > 'j'
++ [NCAPS K_P] > 'p'
++ [NCAPS K_B] > 'b'
++ [NCAPS K_M] > 'm'
++ [NCAPS K_W] > 'w'
++ [NCAPS K_H] > 'h'
 
-c Capital Long Vowels
-dk(long) + [SHIFT K_A] > 'A:'
-dk(long) + [SHIFT K_E] > 'E:'
-dk(long) + [SHIFT K_I] > 'I:'
-dk(long) + [SHIFT K_O] > 'O:'
-dk(long) + [SHIFT K_U] > 'U:'
-dk(long) + [SHIFT K_V] > 'É:'
-dk(long) + [SHIFT K_C] > 'Í:'
+c Standard Mising Vowels
++ [NCAPS K_A] > 'a'
++ [NCAPS K_E] > 'e'
++ [NCAPS K_I] > 'i'
++ [NCAPS K_O] > 'o'
++ [NCAPS K_U] > 'u'
+
+
+c 2. Shifted Uppercase (Caps Lock is OFF)
+c Custom Mising alphabets
++ [NCAPS SHIFT K_Q] > 'NG'
++ [NCAPS SHIFT K_X] > 'NY'
++ [NCAPS SHIFT K_V] > 'É'
++ [NCAPS SHIFT K_C] > 'Í'
+
+c Standard Mising Consonants
++ [NCAPS SHIFT K_K] > 'K'
++ [NCAPS SHIFT K_G] > 'G'
++ [NCAPS SHIFT K_T] > 'T'
++ [NCAPS SHIFT K_D] > 'D'
++ [NCAPS SHIFT K_N] > 'N'
++ [NCAPS SHIFT K_R] > 'R'
++ [NCAPS SHIFT K_L] > 'L'
++ [NCAPS SHIFT K_Y] > 'Y'
++ [NCAPS SHIFT K_S] > 'S'
++ [NCAPS SHIFT K_J] > 'J'
++ [NCAPS SHIFT K_P] > 'P'
++ [NCAPS SHIFT K_B] > 'B'
++ [NCAPS SHIFT K_M] > 'M'
++ [NCAPS SHIFT K_W] > 'W'
++ [NCAPS SHIFT K_H] > 'H'
+
+c Standard Mising Vowels
++ [NCAPS SHIFT K_A] > 'A'
++ [NCAPS SHIFT K_E] > 'E'
++ [NCAPS SHIFT K_I] > 'I'
++ [NCAPS SHIFT K_O] > 'O'
++ [NCAPS SHIFT K_U] > 'U'
+
+
+c 3. Caps Lock is ON (Outputs Capital without holding Shift)
+c Custom Mising alphabets
++ [CAPS K_Q] > 'NG'
++ [CAPS K_X] > 'NY'
++ [CAPS K_V] > 'É'
++ [CAPS K_C] > 'Í'
+
+c Standard Mising Consonants
++ [CAPS K_K] > 'K'
++ [CAPS K_G] > 'G'
++ [CAPS K_T] > 'T'
++ [CAPS K_D] > 'D'
++ [CAPS K_N] > 'N'
++ [CAPS K_R] > 'R'
++ [CAPS K_L] > 'L'
++ [CAPS K_Y] > 'Y'
++ [CAPS K_S] > 'S'
++ [CAPS K_J] > 'J'
++ [CAPS K_P] > 'P'
++ [CAPS K_B] > 'B'
++ [CAPS K_M] > 'M'
++ [CAPS K_W] > 'W'
++ [CAPS K_H] > 'H'
+
+c Standard Mising Vowels
++ [CAPS K_A] > 'A'
++ [CAPS K_E] > 'E'
++ [CAPS K_I] > 'I'
++ [CAPS K_O] > 'O'
++ [CAPS K_U] > 'U'
+
+
+c 4. Caps Lock is ON + Shift (Reverts back to lowercase)
+c Custom Mising alphabets
++ [CAPS SHIFT K_Q] > 'ng'
++ [CAPS SHIFT K_X] > 'ny'
++ [CAPS SHIFT K_V] > 'é'
++ [CAPS SHIFT K_C] > 'í'
+
+c Standard Mising Consonants
++ [CAPS SHIFT K_K] > 'k'
++ [CAPS SHIFT K_G] > 'g'
++ [CAPS SHIFT K_T] > 't'
++ [CAPS SHIFT K_D] > 'd'
++ [CAPS SHIFT K_N] > 'n'
++ [CAPS SHIFT K_R] > 'r'
++ [CAPS SHIFT K_L] > 'l'
++ [CAPS SHIFT K_Y] > 'y'
++ [CAPS SHIFT K_S] > 's'
++ [CAPS SHIFT K_J] > 'j'
++ [CAPS SHIFT K_P] > 'p'
++ [CAPS SHIFT K_B] > 'b'
++ [CAPS SHIFT K_M] > 'm'
++ [CAPS SHIFT K_W] > 'w'
++ [CAPS SHIFT K_H] > 'h'
+
+c Standard Mising Vowels
++ [CAPS SHIFT K_A] > 'a'
++ [CAPS SHIFT K_E] > 'e'
++ [CAPS SHIFT K_I] > 'i'
++ [CAPS SHIFT K_O] > 'o'
++ [CAPS SHIFT K_U] > 'u'
+
+
+c --- DEAD KEY LOGIC FOR LONG VOWEL ALPHABETS (Length Marker :) ---
+c Using unshifted Semicolon as a trigger for the long vowel deadkey
++ [NCAPS K_COLON] > dk(long)
++ [CAPS K_COLON] > dk(long)
+
+c RECOVERY RULES FOR PUNCTUATION
+c 1. Allow typing the actual Colon by holding Shift
++ [NCAPS SHIFT K_COLON] > ':'
++ [CAPS SHIFT K_COLON] > ':'
+
+c 2. Allow typing the actual Semicolon by pressing the key twice
+dk(long) + [NCAPS K_COLON] > ';'
+dk(long) + [CAPS K_COLON] > ';'
+
+c 3. Allow typing the actual Semicolon by pressing the key then Spacebar
+dk(long) + [K_SPACE] > ';'
+
+c Small Long Vowels (Caps Lock OFF or Shift + Caps Lock)
+dk(long) + [NCAPS K_A] > 'a:'
+dk(long) + [NCAPS K_E] > 'e:'
+dk(long) + [NCAPS K_I] > 'i:'
+dk(long) + [NCAPS K_O] > 'o:'
+dk(long) + [NCAPS K_U] > 'u:'
+dk(long) + [NCAPS K_V] > 'é:'
+dk(long) + [NCAPS K_C] > 'í:'
+
+dk(long) + [CAPS SHIFT K_A] > 'a:'
+dk(long) + [CAPS SHIFT K_E] > 'e:'
+dk(long) + [CAPS SHIFT K_I] > 'i:'
+dk(long) + [CAPS SHIFT K_O] > 'o:'
+dk(long) + [CAPS SHIFT K_U] > 'u:'
+dk(long) + [CAPS SHIFT K_V] > 'é:'
+dk(long) + [CAPS SHIFT K_C] > 'í:'
+
+c Capital Long Vowels (Caps Lock ON or Shifted)
+dk(long) + [CAPS K_A] > 'A:'
+dk(long) + [CAPS K_E] > 'E:'
+dk(long) + [CAPS K_I] > 'I:'
+dk(long) + [CAPS K_O] > 'O:'
+dk(long) + [CAPS K_U] > 'U:'
+dk(long) + [CAPS K_V] > 'É:'
+dk(long) + [CAPS K_C] > 'Í:'
+
+dk(long) + [NCAPS SHIFT K_A] > 'A:'
+dk(long) + [NCAPS SHIFT K_E] > 'E:'
+dk(long) + [NCAPS SHIFT K_I] > 'I:'
+dk(long) + [NCAPS SHIFT K_O] > 'O:'
+dk(long) + [NCAPS SHIFT K_U] > 'U:'
+dk(long) + [NCAPS SHIFT K_V] > 'É:'
+dk(long) + [NCAPS SHIFT K_C] > 'Í:'
+
 
 c --- NUMBER ROW & TOP SYMBOLS ---
 c Standard numbers and shift symbols formatted vertically
@@ -73,6 +222,7 @@ c Standard numbers and shift symbols formatted vertically
 + [K_EQUAL] > '='
 + [SHIFT K_EQUAL] > '+'
 
+
 c --- BRACKETS & PUNCTUATION ---
 c Standard punctuation layout formatted vertically
 + [K_LBRKT] > '['
@@ -90,86 +240,192 @@ c Standard punctuation layout formatted vertically
 + [K_BKQUOTE] > '`'
 + [SHIFT K_BKQUOTE] > '~'
 
+
 c --- RECOVERY LAYER (AltGr) ---
-c Use Right-Alt to access the original Roman letters and punctuation
-+ [RALT K_Q] > 'q'
-+ [SHIFT RALT K_Q] > 'Q'
-+ [RALT K_X] > 'x'
-+ [SHIFT RALT K_X] > 'X'
-+ [RALT K_V] > 'v'
-+ [SHIFT RALT K_V] > 'V'
-+ [RALT K_C] > 'c'
-+ [SHIFT RALT K_C] > 'C'
-+ [RALT K_COLON] > ';'
-+ [SHIFT RALT K_COLON] > ':'
+c Use Right-Alt to access the original Roman letters mapped over by Mising Alphabets
++ [NCAPS RALT K_Q] > 'q'
++ [CAPS RALT K_Q] > 'Q'
++ [NCAPS SHIFT RALT K_Q] > 'Q'
++ [CAPS SHIFT RALT K_Q] > 'q'
 
-c --- STANDARD ALPHABET (QWERTY Base) ---
-c Short Vowels (é & í included here added before)
-+ [K_A] > 'a'
-+ [SHIFT K_A] > 'A'
-+ [K_E] > 'e'
-+ [SHIFT K_E] > 'E'
-+ [K_I] > 'i'
-+ [SHIFT K_I] > 'I'
-+ [K_O] > 'o'
-+ [SHIFT K_O] > 'O'
-+ [K_U] > 'u'
-+ [SHIFT K_U] > 'U'
++ [NCAPS RALT K_X] > 'x'
++ [CAPS RALT K_X] > 'X'
++ [NCAPS SHIFT RALT K_X] > 'X'
++ [CAPS SHIFT RALT K_X] > 'x'
 
-c Consonants
-+ [K_P] > 'p'
-+ [SHIFT K_P] > 'P'
-+ [K_B] > 'b'
-+ [SHIFT K_B] > 'B'
-+ [K_T] > 't'
-+ [SHIFT K_T] > 'T'
-+ [K_D] > 'd'
-+ [SHIFT K_D] > 'D'
-+ [K_K] > 'k'
-+ [SHIFT K_K] > 'K'
-+ [K_G] > 'g'
-+ [SHIFT K_G] > 'G'
-+ [K_S] > 's'
-+ [SHIFT K_S] > 'S'
-+ [K_J] > 'j'
-+ [SHIFT K_J] > 'J'
-+ [K_M] > 'm'
-+ [SHIFT K_M] > 'M'
-+ [K_N] > 'n'
-+ [SHIFT K_N] > 'N'
-+ [K_R] > 'r'
-+ [SHIFT K_R] > 'R'
-+ [K_L] > 'l'
-+ [SHIFT K_L] > 'L'
-+ [K_Y] > 'y'
-+ [SHIFT K_Y] > 'Y'
++ [NCAPS RALT K_V] > 'v'
++ [CAPS RALT K_V] > 'V'
++ [NCAPS SHIFT RALT K_V] > 'V'
++ [CAPS SHIFT RALT K_V] > 'v'
 
-c --- ADDITIONAL LINGUISTIC KEYS ---
-c Standard keys for English loanwords or linguistic notation
-+ [K_W] > 'w'
-+ [SHIFT K_W] > 'W'
-+ [K_F] > 'f'
-+ [SHIFT K_F] > 'F'
-+ [K_H] > 'h'
-+ [SHIFT K_H] > 'H'
-+ [K_Z] > 'z'
-+ [SHIFT K_Z] > 'Z'
++ [NCAPS RALT K_C] > 'c'
++ [CAPS RALT K_C] > 'C'
++ [NCAPS SHIFT RALT K_C] > 'C'
++ [CAPS SHIFT RALT K_C] > 'c'
+
++ [NCAPS RALT K_COLON] > ';'
++ [CAPS RALT K_COLON] > ';'
++ [NCAPS SHIFT RALT K_COLON] > ':'
++ [CAPS SHIFT RALT K_COLON] > ':'
+
+
+c --- ADDITIONAL KEYS ---
 + [K_QUOTE] > '’'      c Smart apostrophe for glottal stops
 
-c --- TOUCH LAYOUT RULES: SMALL VOWELS ---
-+ [T_new_2683] > 'a:'
-+ [T_new_2453] > 'e:'
-+ [T_new_2455] > 'é:'
-+ [T_new_2451] > 'i:'
-+ [T_new_2454] > 'í:'
-+ [T_new_2452] > 'o:'
-+ [T_new_2456] > 'u:'
 
-c --- TOUCH LAYOUT RULES: CAPITAL VOWELS ---
-+ [SHIFT T_new_2498] > 'A:'
-+ [SHIFT T_new_2491] > 'E:'
-+ [SHIFT T_new_2497] > 'É:'
-+ [SHIFT T_new_2493] > 'I:'
-+ [SHIFT T_new_2496] > 'Í:'
-+ [SHIFT T_new_2495] > 'O:'
-+ [SHIFT T_new_2494] > 'U:'
+c --- TOUCH LAYOUT RULES: SHORT VOWELS & CONSONANTS ---
++ [T_A] > 'a'
++ [SHIFT T_A] > 'A'
++ [T_B] > 'b'
++ [SHIFT T_B] > 'B'
++ [T_E] > 'e'
++ [SHIFT T_E] > 'E'
++ [T_E_ACUTE] > 'é'
++ [SHIFT T_E_ACUTE] > 'É'
++ [T_I] > 'i'
++ [SHIFT T_I] > 'I'
++ [T_I_ACUTE] > 'í'
++ [SHIFT T_I_ACUTE] > 'Í'
++ [T_M] > 'm'
++ [SHIFT T_M] > 'M'
++ [T_N] > 'n'
++ [SHIFT T_N] > 'N'
++ [T_NG] > 'ng'
++ [SHIFT T_NG] > 'NG'
++ [T_NY] > 'ny'
++ [SHIFT T_NY] > 'NY'
++ [T_O] > 'o'
++ [SHIFT T_O] > 'O'
++ [T_P] > 'p'
++ [SHIFT T_P] > 'P'
++ [T_T] > 't'
++ [SHIFT T_T] > 'T'
++ [T_U] > 'u'
++ [SHIFT T_U] > 'U'
+
+c --- TOUCH LAYOUT RULES: LONG VOWELS ---
++ [T_A_LONG] > 'a:'
++ [SHIFT T_A_LONG] > 'A:'
++ [T_E_LONG] > 'e:'
++ [SHIFT T_E_LONG] > 'E:'
++ [T_E_ACUTE_LONG] > 'é:'
++ [SHIFT T_E_ACUTE_LONG] > 'É:'
++ [T_I_LONG] > 'i:'
++ [SHIFT T_I_LONG] > 'I:'
++ [T_I_ACUTE_LONG] > 'í:'
++ [SHIFT T_I_ACUTE_LONG] > 'Í:'
++ [T_O_LONG] > 'o:'
++ [SHIFT T_O_LONG] > 'O:'
++ [T_U_LONG] > 'u:'
++ [SHIFT T_U_LONG] > 'U:'
+
+c --- TOUCH LAYOUT RULES: PUNCTUATION (FIXED) ---
++ [NCAPS T_COMMA] > ','
++ [NCAPS SHIFT T_COMMA] > ','
++ [CAPS T_COMMA] > ','
+
++ [NCAPS T_PERIOD] > '.'
++ [NCAPS SHIFT T_PERIOD] > '.'
++ [CAPS T_PERIOD] > '.'
+
++ [NCAPS T_COLON] > ':'
++ [NCAPS SHIFT T_COLON] > ':'
++ [CAPS T_COLON] > ':'
+
+c =====================================================================
+c --- TOUCH LAYOUT RULES: COMPLETE NUMERIC LAYER (FINAL & FIXED) ---
+c =====================================================================
+
+c --- ROW 1: NUMBERS ---
++ [NCAPS T_1] > '1'
++ [NCAPS T_2] > '2'
++ [NCAPS T_3] > '3'
++ [NCAPS T_4] > '4'
++ [NCAPS T_5] > '5'
++ [NCAPS T_6] > '6'
++ [NCAPS T_7] > '7'
++ [NCAPS T_8] > '8'
++ [NCAPS T_9] > '9'
++ [NCAPS T_0] > '0'
+
+c --- ROW 2: SYMBOLS & CURRENCIES ---
++ [NCAPS T_AT] > '@'
++ [NCAPS T_HASH] > '#'
++ [NCAPS T_RUPEE] > '₹'
++ [NCAPS T_DOLLAR] > '$'
++ [NCAPS T_EURO] > '€'
++ [NCAPS T_UNDERSCORE] > '_'
++ [NCAPS T_AMP] > '&'
++ [NCAPS T_HYPHEN] > '-'
++ [NCAPS T_PLUS] > '+'
++ [NCAPS T_LPAREN] > '('
++ [NCAPS T_RPAREN] > ')'
++ [NCAPS T_SLASH] > '/'
+
+c --- ROW 3: SYMBOLS & PUNCTUATION ---
++ [NCAPS T_LESS] > '<'
++ [NCAPS T_ASTERISK] > '*'
++ [NCAPS T_DBLQUOTE] > '"'
++ [NCAPS T_QUOTE] > "'"
++ [NCAPS T_SEMICOLON] > ';'
++ [NCAPS T_EXCLAM] > '!'
++ [NCAPS T_QUESTION] > '?'
++ [NCAPS T_PERCENTAGE] > '%' 
+
+c --- NUMPAD LAYER ---
++ [NCAPS T_NUM_0] > '0'
++ [NCAPS T_NUM_1] > '1'
++ [NCAPS T_NUM_2] > '2'
++ [NCAPS T_NUM_3] > '3'
++ [NCAPS T_NUM_4] > '4'
++ [NCAPS T_NUM_5] > '5'
++ [NCAPS T_NUM_6] > '6'
++ [NCAPS T_NUM_7] > '7'
++ [NCAPS T_NUM_8] > '8'
++ [NCAPS T_NUM_9] > '9'
++ [NCAPS T_NUM_PLUS] > '+'
++ [NCAPS T_NUM_MINUS] > '-'
++ [NCAPS T_NUM_STAR] > '*'
++ [NCAPS T_NUM_SLASH] > '/'
++ [NCAPS T_NUM_COMMA] > ','
++ [NCAPS T_NUM_DOT] > '.'
+c =====================================================================
+c --- TOUCH LAYOUT RULES: SYMBOLS LAYER ---
+c =====================================================================
+
+c --- ROW 1 ---
++ [NCAPS T_SYM_TILDE] > '~'
++ [NCAPS T_SYM_BACKTICK] > '`'
++ [NCAPS T_SYM_PIPE] > '|'
++ [NCAPS T_SYM_BULLET] > '•'
++ [NCAPS T_SYM_SQRT] > '√'
++ [NCAPS T_SYM_PI] > 'π'
++ [NCAPS T_SYM_DIVIDE] > '÷'
++ [NCAPS T_SYM_MULTIPLY] > '×'
++ [NCAPS T_SYM_SECTION] > '§'
++ [NCAPS T_SYM_DELTA] > 'Δ'
+
+c --- ROW 2 ---
++ [NCAPS T_SYM_EURO] > '€'
++ [NCAPS T_SYM_YEN] > '¥'
++ [NCAPS T_SYM_DOLLAR] > '$'
++ [NCAPS T_SYM_CENT] > '¢'
++ [NCAPS T_SYM_CARET] > '^'
++ [NCAPS T_SYM_DEGREE] > '°'
++ [NCAPS T_SYM_EQUAL] > '='
++ [NCAPS T_SYM_LBRACE] > '{'
++ [NCAPS T_SYM_RBRACE] > '}'
++ [NCAPS T_SYM_BACKSLASH] > '\'
+
+c --- ROW 3 ---
++ [NCAPS T_SYM_PERCENT] > '%'
++ [NCAPS T_SYM_COPYRIGHT] > '©'
++ [NCAPS T_SYM_REGISTERED] > '®'
++ [NCAPS T_SYM_TM] > '™'
++ [NCAPS T_SYM_CHECK] > '✓'
++ [NCAPS T_SYM_LBRACKET] > '['
++ [NCAPS T_SYM_RBRACKET] > ']'
+
+c --- ROW 4 ---
++ [NCAPS T_SYM_LESS] > '<'
++ [NCAPS T_SYM_GREATER] > '>'

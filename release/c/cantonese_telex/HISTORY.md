@@ -1,6 +1,10 @@
 cantonese telex Change History
 ====================
 
+4.0.4 (2026-7-14)
+----------------
+* added ș þ ż letters for loanwords and specific accents
+
 4.0.3 (2026-5-11)
 ----------------
 * shortened the codes
