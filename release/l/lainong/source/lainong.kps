@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>19.0.261.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowSetup></FollowSetup>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,7 +21,8 @@
     <Name URL="">Lainong</Name>
     <Copyright URL="">Copyright (c) Lainong Literature and Culture Committee</Copyright>
     <Author URL="">Lainong Literature and Culture Committee</Author>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
+    <Description URL="">This keyboard is for the Lainong language.</Description>
   </Info>
   <Files>
     <File>
@@ -35,14 +37,48 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\lainong.kvk</Name>
+      <Description>File lainong.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\lainong.kmx</Name>
+      <Description>Keyboard Lainong</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\lainong.js</Name>
+      <Description>File lainong.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Lainong</Name>
       <ID>lainong</ID>
-      <Version>1.0</Version>
       <Languages>
-        <Language ID="lzn">Lainong</Language>
+        <Language ID="lzn">Leinong Naga</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
