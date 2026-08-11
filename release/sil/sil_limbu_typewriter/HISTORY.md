@@ -1,6 +1,10 @@
 Limbu Typewriter (SIL) Change History
 ====================
 
+1.3.1 (2026-08-11)
+----------------
+* Update font
+
 1.3 (2024-09-09)
 ----------------
 * Add tablet layout
