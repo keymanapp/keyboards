@@ -1,12 +1,13 @@
 ﻿c Πολυτονικὸ πληκτρολόγιο βασισμένο στὴν διάταξη τοῦ πληκτρολογίου US-QWERTY προσαρμοσμένη στοὺς πρόσθετους τόνους καὶ πνεύματα τοῦ πολυτονικοῦ συστήματος. Γιὰ χρῆστες ποὺ θέλουν νὰ γράψουν διαχρονικὰ ἑλληνικὰ μὲ τὸν ἱστορικὸ τονισμὸ τῆς ἑλληνικῆς.
 c With wordStartBreathingRules group added - Dec 2025
-c Latest change February 2026
+c With Alt-Z deadkey for keying vowels w/o automatic breathing
+c Latest change August 2026
 
 store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&KEYBOARDVERSION) '1.0.8'
+store(&KEYBOARDVERSION) '1.0.9'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
@@ -142,8 +143,7 @@ store(omicroncs)  [CAPS SHIFT K_O]
 store(upsiloncs)  [CAPS SHIFT K_Y] 
 store(omegacs)    [CAPS SHIFT K_V]  
 c
-store(alphalc)    [RALT K_A]
-
+c
 c
 c 2 - CONSONANTS: No differentiation between CAPS, NCAPS, SHIFT needed
 c 
@@ -639,6 +639,13 @@ store(vowels-vareia-breath) U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F53 U+1F62 \
 c
 c
 c --------------------------------- RULES -------------------------------------------------------------
+c
+c define dead key (only affects the next character - it does not work as a kbd trigger) - Aug 2026
++ [ALT K_Z] > deadkey(simple)
+c
+deadkey(simple) + any(vowelscs) > index(fwncs,2) deadkey(simple)
+c
+c
 c
 c ------------ Greek colon and ypoge in MOBILE platforms ------------
 c
