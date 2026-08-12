@@ -1,7 +1,7 @@
 Limbu Typewriter (SIL) keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------
