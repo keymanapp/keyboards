@@ -1,0 +1,37 @@
+﻿c Lainong Keyboard Layout for Keyman
+store(&VERSION) '10.0'
+store(&NAME) 'Lainong'
+store(&COPYRIGHT) 'Copyright (c) Lainong Literature and Culture Committee'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'lainong.kvks'
+store(&KEYBOARDVERSION) '1.0'
+store(&LAYOUTFILE) 'lainong.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- Standard Base Character Rules ---
++ [K_F] > 'ë'
++ [K_R] > 'ëu'       c Outputs ë and u together in one press
++ [K_J] > 'cy'       c Outputs c and y together in one press
++ [K_W] > U+0300     c Combining Grave Accent (Low Tone Mark)
+
+c --- Stop Tone Mark Rule (Top Left Key under ESC) ---
++ [K_BKQUOTE] > U+02C8  c Outputs ˈ Modifier Letter Vertical Line
+
+c --- Capitalized Shift Rules ---
++ [SHIFT K_F] > 'Ë'
++ [SHIFT K_R] > 'Ëu' c Outputs capital Ë and u together in one press
++ [SHIFT K_J] > 'Cy' c Outputs capital C and y together in one press
++ [SHIFT K_W] > U+0304  c Combining Macron (Mid Tone Mark)
+
++ [RALT K_F] > 'f'
++ [RALT K_R] > 'r'
++ [RALT K_J] > 'j'
++ [RALT K_W] > 'w'
+
++ [SHIFT RALT K_F] > 'F'
++ [SHIFT RALT K_R] > 'R'
++ [SHIFT RALT K_J] > 'J'
++ [SHIFT RALT K_W] > 'W'
