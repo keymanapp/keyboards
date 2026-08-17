@@ -82,8 +82,8 @@ function do_publish() {
 
 function do_report() {
   "${REPO_ROOT}/resources/build/version/build.sh" configure build
-  local BUILDID="${BUILD_URL##*/}"
-  node resources/build/version run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILDID"
+  local BUILD_ID="${BUILD_URL##*/}"
+  "${REPO_ROOT}/resources/build/version/build.sh" run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILD_ID"
 }
 
 cd "${REPO_ROOT}"

@@ -5,10 +5,10 @@
 import { GitHub } from './find-and-report-on-new-pull-requests.js';
 import { graphql, getPullRequestFiles } from './graphql/queries.js';
 
-export const getListOfKeyboardsForPullRequest = async (octokit: GitHub, number: number): Promise<string[]> => {
+export const getListOfKeyboardsForPullRequest = async (octokit: GitHub, pullRequest: number): Promise<string[]> => {
   const response = await graphql.call(octokit,
     getPullRequestFiles,
-    { pr: number }
+    { pullRequest }
   );
 
   if (response === null || (<any>response).repository.pullRequest === null) {
@@ -28,13 +28,12 @@ export const getListOfKeyboardsForPullRequest = async (octokit: GitHub, number: 
   const ids = [
     // unique list of ids
     ...new Set<string>(nodes
-    // remove non-keyboard-related files
-    .filter((node:{path:string}) => node.path.match(/^(?:release|experimental|legacy)\/[^/]+\/[^/]+/) && !node.path.match(/^([^/]+)\/(shared|template)\//))
-    // get the ids
-    .map((node:{path:string}) => node.path.match(/^(?:release|experimental|legacy)\/(?:[^/]+)\/([^/]+)/)![1]))
+      // remove non-keyboard-related files
+      .filter((node:{path:string}) => node.path.match(/^(?:release|experimental|legacy)\/[^/]+\/[^/]+/) && !node.path.match(/^([^/]+)\/(shared|template)\//))
+      // get the ids
+      .map((node:{path:string}) => node.path.match(/^(?:release|experimental|legacy)\/(?:[^/]+)\/([^/]+)/)![1])
+    )
   ];
 
   return ids;
-  //const node = nodes.find((node:any) => node.state == 'MERGED');
-  //return node ? { title: node.title, number: node.number } : undefined;
 };

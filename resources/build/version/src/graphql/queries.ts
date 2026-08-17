@@ -29,9 +29,9 @@ export const getAssociatedPR = `
 `;
 
 export const getPullRequestFiles = `
-  query pullRequstFiles($pr: Int!) {
+  query pullRequstFiles($pullRequest: Int!) {
     repository(name: "keyboards", owner: "keymanapp") {
-      pullRequest(number: $pr) {
+      pullRequest(number: $pullRequest) {
         files(first: 100) {
           nodes {
             path

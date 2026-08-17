@@ -24,14 +24,14 @@ describe('getListOfKeyboardsForPullRequest', function() {
     sinon.restore();
   });
 
-  pull_responses.forEach( (value, id) =>
-    it(`should report a list of keyboards IDs for pull request ${id}`, async function() {
+  pull_responses.forEach( (keyboardIds, pullRequestNumber) =>
+    it(`should report a list of keyboards IDs for pull request ${pullRequestNumber}`, async function() {
 
-      const data = JSON.parse(fs.readFileSync(makePathToFixture('pull-requests', `${id}.json`), 'utf-8'));
+      const data = JSON.parse(fs.readFileSync(makePathToFixture('pull-requests', `${pullRequestNumber}.json`), 'utf-8'));
       sinon.replace(graphql, 'call', sinon.fake.returns(data));
 
-      const ids = await getListOfKeyboardsForPullRequest(octokit, id);
-      assert.deepEqual(ids, value);
+      const ids = await getListOfKeyboardsForPullRequest(octokit, pullRequestNumber);
+      assert.deepEqual(ids, keyboardIds);
     })
   );
 });

@@ -13,7 +13,8 @@ import { getPullRequestsFromCommitRange } from './get-pull-requests-from-commit-
 import { teamcityGetBuildChanges } from './teamcity-get-build-changes.js';
 
 const argv = await yargs(hideBin(process.argv))
-  .command(['last-commit'], 'Get last commit hash from the last successful build')
+  .command(['run'], 'Add announcments to all PRs included in build identified by build-id')
+  .command(['last-commit'], 'Get commit hash from the last successful build')
   .command(['report'], 'Print list of outstanding PRs waiting for the next release')
   .command(['pr'], 'Get list of outstanding PRs and add a comment to each one')
   .demandCommand(1, 1)

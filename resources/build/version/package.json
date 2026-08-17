@@ -1,5 +1,5 @@
 {
-  "description": "Automatically updates HISTORY.md based on pull requests",
+  "description": "Automatically report on publication of merged pull requests",
   "type": "module",
   "dependencies": {
     "@actions/core": "^1.11.1",
@@ -23,15 +23,8 @@
   ],
   "license": "MIT",
   "main": "build/src/index.js",
-  "name": "@keymanapp/auto-history-action",
+  "name": "@keymanapp/keyboards-version-reporter",
   "private": true,
-  "scripts": {
-    "build:ts": "tsc --project tsconfig.production.json",
-    "build:ts:watch": "tsc --project tsconfig.production.json --watch",
-    "clean": "run-p clean:*",
-    "clean:lib": "rm -rf lib",
-    "types": "tsc --noEmit"
-  },
   "mocha": {
     "spec": "build/tests/**/*.tests.js"
   }
