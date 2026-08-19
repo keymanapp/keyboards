@@ -82,10 +82,8 @@ function do_publish() {
 
 function do_report() {
   "${REPO_ROOT}/resources/build/version/build.sh" configure build
-  # TODO: this is not currently working correctly; we need to retrieve the previous commit on master rather than the information from
-  # TeamCity which shows commits on the branch. Disabled for now.
-  # local BUILD_ID="${BUILD_URL##*/}"
-  # "${REPO_ROOT}/resources/build/version/build.sh" run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILD_ID"
+  local BUILD_ID="${BUILD_URL##*/}"
+  "${REPO_ROOT}/resources/build/version/build.sh" run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILD_ID"
 }
 
 cd "${REPO_ROOT}"
