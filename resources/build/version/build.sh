@@ -33,7 +33,7 @@ do_run() {
       ! builder_has_option --build-id; then
     builder_die "Parameters --teamcity-token, --github-token, --build-id are required"
   fi
-  node . run --teamcity-token "$TEAMCITY_TOKEN" --github_token "$GITHUB_TOKEN" --build-id "$BUILD_ID"
+  node . run --teamcity-token "$TEAMCITY_TOKEN" --github-token "$GITHUB_TOKEN" --build-id "$BUILD_ID"
 }
 
 builder_run_action clean      rm -rf build/ node_modules/
