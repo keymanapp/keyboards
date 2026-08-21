@@ -63,15 +63,22 @@ function is_command(cmd: string): boolean {
 const main = async (): Promise<never> => {
 
   if(is_command('run')) {
-    const shas = await teamcityGetBuildChanges(require_arg('teamcity-token'), argv['build-id']);
-    if(!shas) {
-      console.error('Could not retrieve SHAs from TeamCity');
+
+    const shasCurrent = await teamcityGetBuildChanges(require_arg('teamcity-token'), argv['build-id']);
+    if(!shasCurrent) {
+      console.error(`Could not retrieve SHAs for current build ${argv['build-id']} from TeamCity`);
+      process.exit(1);
+    }
+
+    const shasPrevious = await teamcityGetBuildChanges(require_arg('teamcity-token'));
+    if(!shasPrevious) {
+      console.error('Could not retrieve SHAs for last successful build from TeamCity');
       process.exit(1);
     }
 
     const octokit: GitHub = getOctokit(require_arg('github-token'));
-    let changeCount = await findAndReportOnNewPullRequests(octokit, shas[0], shas[1], false);
-    logInfo(`# ${changeCount} change(s)\n`);
+    const commentCount = await findAndReportOnNewPullRequests(octokit, shasPrevious[1], shasCurrent[1], true);
+    logInfo(`# ${commentCount} comment(s) added\n`);
 
     process.exit(0);
   }
@@ -79,13 +86,17 @@ const main = async (): Promise<never> => {
   // Teamcity commands
 
   if(is_command('last-commit')) {
-    const shas = await teamcityGetBuildChanges(require_arg('teamcity-token'), argv['build-id']);
-    if(!shas) {
+    const shasCurrent = await teamcityGetBuildChanges(require_arg('teamcity-token'), argv['build-id']);
+    const shasPrevious = await teamcityGetBuildChanges(require_arg('teamcity-token'));
+    if(!shasCurrent || !shasPrevious) {
       console.error('Could not retrieve SHAs');
       process.exit(1);
     }
-    console.log(shas[0]);
-    console.log(shas[1]);
+
+    // we need the last commit from the resulting queries
+    console.log(shasCurrent[1]);
+    console.log(shasPrevious[1]);
+
     process.exit(0);
   }
 
@@ -104,8 +115,8 @@ const main = async (): Promise<never> => {
   if(is_command('pr')) {
     logInfo(`# Writing announcements to pull requests`);
     const octokit: GitHub = getOctokit(require_arg('github-token'));
-    let changeCount = await findAndReportOnNewPullRequests(octokit, argv.from!, argv.to);
-    logInfo(`# ${changeCount} change(s)\n`);
+    const commentCount = await findAndReportOnNewPullRequests(octokit, argv.from!, argv.to, true);
+    logInfo(`# ${commentCount} comment(s) added\n`);
     process.exit(0);
   }
 

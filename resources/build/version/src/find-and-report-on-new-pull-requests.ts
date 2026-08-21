@@ -66,5 +66,5 @@ export const findAndReportOnNewPullRequests = async (
     }
   }
 
-  return pulls.length;
+  return pullComments.length;
 };
