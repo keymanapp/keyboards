@@ -1,0 +1,276 @@
+﻿c kachin keyboard for Jinghpaw language
+store(&VERSION) '15.0'
+store(&NAME) 'kachin'
+store(&COPYRIGHT) 'Copyright © cathaylab'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'kachin.ico'
+store(&VISUALKEYBOARD) 'kachin.kvks'
+store(&LAYOUTFILE) 'kachin.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+any(sentencePunctuation) ' ' > layer('shift')
+any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+
+store(letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZăêôĂÊáéíóúắếÁÉÍÓÚẮẾàèìòùằềÀÈÌÒÙẰỀŭŬěĚēĒöÖøØëËöÖ1234567890-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' U+0301 U+0300 U+0302 U+0306 U+0304 U+0309
++ [RALT K_QUOTE] > '‘'
++ [RALT SHIFT K_QUOTE] > '“'
+"‘" + [RALT K_QUOTE] > "‘’"
+"“" + [RALT SHIFT K_QUOTE] > "“”"
+any(letters) + [RALT K_QUOTE] > index(letters, 1) '’'
+any(letters) + [RALT SHIFT K_QUOTE] > index(letters, 1) '”'
+
+store(aiou) 'ăĂŭŬēĒöÖøØ'
+
+store(all_vowel) 'aAeEiIoOuUăĂêÊēĒöÖëËøØŭŬvV' U+0302 U+0306 U+0304
+store(ngang_vowel) 'aAeEiIoOuU'
+store(sac_vowel)   'áÁéÉíÍóÓúÚ'
+store(huyen_vowel) 'àÀèÈìÌòÒùÙ'
+store(nang_vowel)  'âÂêÊîÎôÔûÛ'
+store(aeiou) 'aAeEiIoOuU'
+
+store(a) 'aáàeAÁÀE'
+store(aw) 'ăắằěĂẮẰĚ'
+store(wiu) 'wWiIuU'
+store(w) 'wW'
+store(shn) '126'
+store(low_a_v) 'áàâ'
+store(upper_a_v) 'ÁÀÂ'
+store(low_o_v) 'óòô'
+store(upper_o_v) 'ÓÒÔ'
+store(sh) '12'
+store(low_aw_v) 'ắằ'
+store(upper_aw_v) 'ẮẰ'
+store(two_i) 'iI'
+store(tone_marks) U+0300 U+0301 U+0302
+
+'e' + [K_7] > 'ë'
+'E' + [K_7] > 'Ë'
+'ë' + [K_7] > 'e7'
+'Ë' + [K_7] > 'E7'
+
+any(aiou) + [K_6] > index(aiou, 1) U+0302
+any(aeiou) + [K_6] > index(nang_vowel, 1)
+
+'u' + [K_8] > 'ŭ'
+'U' + [K_8] > 'Ŭ'
+'ŭ' + [K_8] > 'u8'
+'Ŭ' + [K_8] > 'U8'
+
+'o' + [K_7] > 'ö'
+'O' + [K_7] > 'Ö'
+'ö' + [K_7] > 'o7'
+'Ö' + [K_7] > 'O7'
+
+any(a) + [K_8] > index(aw, 1)
+any(aw) + [K_8] > index(a, 1) '8'
+
+'e' + [K_9] > 'ē'
+'E' + [K_9] > 'Ē'
+'ē' + [K_9] > 'e9'
+'Ē' + [K_9] > 'E9'
+
+'o' + [K_9] > 'ø'
+'O' + [K_9] > 'Ø'
+'ø' + [K_9] > 'o9'
+'Ø' + [K_9] > 'O9'
+
+any(ngang_vowel) + [K_1] > index(sac_vowel, 1)
+any(ngang_vowel) + [K_2] > index(huyen_vowel, 1)
+any(ngang_vowel) + [K_6] > index(nang_vowel, 1)
+any(sac_vowel) + [K_2] > index(huyen_vowel, 1)
+any(sac_vowel) + [K_6] > index(nang_vowel, 1)
+any(huyen_vowel) + [K_1] > index(sac_vowel, 1)
+any(huyen_vowel) + [K_6] > index(nang_vowel, 1)
+any(nang_vowel) + [K_1] > index(sac_vowel, 1)
+any(nang_vowel) + [K_2] > index(huyen_vowel, 1)
+any(sac_vowel) + [K_1] > index(ngang_vowel, 1) '1'
+any(huyen_vowel) + [K_2] > index(ngang_vowel, 1) '2'
+any(nang_vowel) + [K_6] > index(ngang_vowel, 1) '6'
+
+'ă' + any(sh) > index(low_aw_v, 2)
+'Ă' + any(sh) > index(upper_aw_v, 2)
+'ắ' + [K_1] > 'ă1'
+'Ắ' + [K_1] > 'Ă1'
+'ắ' + [K_2] > 'ằ'
+'Ắ' + [K_2] > 'Ằ'
+'ắ' + [K_6] > 'ă̂'
+'Ắ' + [K_6] > 'Ă̂'
+'ằ' + [K_2] > 'ă2'
+'Ằ' + [K_2] > 'Ă2'
+'ằ' + [K_1] > 'ắ'
+'Ằ' + [K_1] > 'Ắ'
+'ằ' + [K_6] > 'ă̂'
+'Ằ' + [K_6] > 'Ă̂'
+'ẳ' + [K_2] > 'ằ'
+'Ẳ' + [K_2] > 'Ằ'
+'ẳ' + [K_1] > 'ắ'
+'Ẳ' + [K_1] > 'Ắ'
+'ẳ' + [K_6] > 'ă̂'
+'Ẳ' + [K_6] > 'Ă̂'
+'ă̂' + [K_6] > 'ă6'
+'Ă̂' + [K_6] > 'Ă6'
+'ă̂' + [K_1] > 'ắ'
+'Ă̂' + [K_1] > 'Ắ'
+'ă̂' + [K_2] > 'ằ'
+'Ă̂' + [K_2] > 'Ằ'
+
+'a' any(wiu) + any(shn) > index(low_a_v, 3) index(wiu, 2)
+'A' any(wiu) + any(shn) > index(upper_a_v, 3) index(wiu, 2)
+'á' any(wiu) + [K_1] > 'a' index(wiu, 2) '1'
+'Á' any(wiu) + [K_1] > 'A' index(wiu, 2) '1'
+'á' any(wiu) + [K_2] > 'à' index(wiu, 2)
+'Á' any(wiu) + [K_2] > 'À' index(wiu, 2)
+'á' any(wiu) + [K_6] > 'â' index(wiu, 2)
+'Á' any(wiu) + [K_6] > 'Â' index(wiu, 2)
+'à' any(wiu) + [K_2] > 'a' index(wiu, 2) '2'
+'À' any(wiu) + [K_2] > 'A' index(wiu, 2) '2'
+'à' any(wiu) + [K_1] > 'á' index(wiu, 2)
+'À' any(wiu) + [K_1] > 'Á' index(wiu, 2)
+'à' any(wiu) + [K_6] > 'â' index(wiu, 2)
+'À' any(wiu) + [K_6] > 'Â' index(wiu, 2)
+'ả' any(wiu) + [K_2] > 'à' index(wiu, 2)
+'Ả' any(wiu) + [K_2] > 'À' index(wiu, 2)
+'ả' any(wiu) + [K_1] > 'á' index(wiu, 2)
+'Ả' any(wiu) + [K_1] > 'Á' index(wiu, 2)
+'ả' any(wiu) + [K_6] > 'â' index(wiu, 2)
+'Ả' any(wiu) + [K_6] > 'Â' index(wiu, 2)
+'â' any(wiu) + [K_6] > 'a' index(wiu, 2) '6'
+'Â' any(wiu) + [K_6] > 'A' index(wiu, 2) '6'
+'â' any(wiu) + [K_1] > 'á' index(wiu, 2)
+'Â' any(wiu) + [K_1] > 'Á' index(wiu, 2)
+'â' any(wiu) + [K_2] > 'à' index(wiu, 2)
+'Â' any(wiu) + [K_2] > 'À' index(wiu, 2)
+
+'o' any(two_i) + any(shn) > index(low_o_v, 3) index(two_i, 2)
+'O' any(two_i) + any(shn) > index(upper_o_v, 3) index(two_i, 2)
+'ó' any(two_i) + [K_1] > 'o' index(two_i, 2) '1'
+'Ó' any(two_i) + [K_1] > 'O' index(two_i, 2) '1'
+'ó' any(two_i) + [K_2] > 'ò' index(two_i, 2)
+'Ó' any(two_i) + [K_2] > 'Ò' index(two_i, 2)
+'ó' any(two_i) + [K_6] > 'ô' index(two_i, 2)
+'Ó' any(two_i) + [K_6] > 'Ô' index(two_i, 2)
+'ò' any(two_i) + [K_2] > 'o' index(two_i, 2) '2'
+'Ò' any(two_i) + [K_2] > 'O' index(two_i, 2) '2'
+'ò' any(two_i) + [K_1] > 'ó' index(two_i, 2)
+'Ò' any(two_i) + [K_1] > 'Ó' index(two_i, 2)
+'ò' any(two_i) + [K_6] > 'ô' index(two_i, 2)
+'Ò' any(two_i) + [K_6] > 'Ô' index(two_i, 2)
+'ỏ' any(two_i) + [K_2] > 'ò' index(two_i, 2)
+'Ỏ' any(two_i) + [K_2] > 'Ò' index(two_i, 2)
+'ỏ' any(two_i) + [K_1] > 'ó' index(two_i, 2)
+'Ỏ' any(two_i) + [K_1] > 'Ó' index(two_i, 2)
+'ỏ' any(two_i) + [K_6] > 'ô' index(two_i, 2)
+'Ỏ' any(two_i) + [K_6] > 'Ô' index(two_i, 2)
+'ô' any(two_i) + [K_6] > 'o' index(two_i, 2) '6'
+'Ô' any(two_i) + [K_6] > 'O' index(two_i, 2) '6'
+'ô' any(two_i) + [K_1] > 'ó' index(two_i, 2)
+'Ô' any(two_i) + [K_1] > 'Ó' index(two_i, 2)
+'ô' any(two_i) + [K_2] > 'ò' index(two_i, 2)
+'Ô' any(two_i) + [K_2] > 'Ò' index(two_i, 2)
+
+any(all_vowel) + [K_1] > index(all_vowel, 1) U+0301
+U+0301 + [K_1] > '1'
+U+0301 + [K_2] > U+0300
+U+0301 + [K_6] > U+0302
+any(all_vowel) + [K_2] > index(all_vowel, 1) U+0300
+U+0300 + [K_2] > '2'
+U+0300 + [K_1] > U+0301
+U+0300 + [K_6] > U+0302
+any(all_vowel) + [K_6] > index(all_vowel, 1) U+0302
+U+0302 + [K_6] > '6'
+U+0302 + [K_1] > U+0301
+U+0302 + [K_2] > U+0300
+
+"m" + [K_6] > "m̂"
+"m" + [K_1] > "ḿ"
+"m" + [K_2] > "m̀" 
+"M" + [K_6] > "M̂"
+"M" + [K_1] > "Ḿ"
+"M" + [K_2] > "M̀" 
+
+"n" + [K_1] > "ń"
+"n" + [K_2] > "ǹ"
+"n" + [K_6] > "n̂" 
+"N" + [K_1] > "Ń"
+"N" + [K_2] > "Ǹ"
+"N" + [K_6] > "N̂"
+"m̂" + [K_6] > "m6"
+"ḿ" + [K_1] > "m1"
+"m̀" + [K_2] > "m2"
+"M̂" + [K_6] > "M6"
+"Ḿ" + [K_1] > "M1"
+"M̀" + [K_2] > "M2"
+"n̂" + [K_6] > "n6"
+"ń" + [K_1] > "n1"
+"ǹ" + [K_2] > "n2"
+"N̂" + [K_6] > "N6"
+"Ń" + [K_1] > "N1"
+"Ǹ" + [K_2] > "N2"
+
+"m̂" + [K_1] > "ḿ"
+"m̉" + [K_1] > "ḿ"
+"m̀" + [K_1] > "ḿ"
+"m̂" + [K_2] > "m̀"
+"m̉" + [K_2] > "m̀"
+"ḿ" + [K_2] > "m̀"
+"n̂" + [K_1] > "ń"
+"n̉" + [K_1] > "ń"
+"ǹ" + [K_1] > "ń"
+"n̂" + [K_2] > "ǹ"
+"n̉" + [K_2] > "ǹ"
+"ń" + [K_2] > "ǹ"
+"n̉" + [K_6] > "n̂"
+"ń" + [K_6] > "n̂"
+"ǹ" + [K_6] > "n̂"
+
+"M̂" + [K_1] > "Ḿ"
+"M̉" + [K_1] > "Ḿ"
+"M̀" + [K_1] > "Ḿ"
+"M̂" + [K_2] > "M̀"
+"M̉" + [K_2] > "M̀"
+"Ḿ" + [K_2] > "M̀"
+"N̂" + [K_1] > "Ń"
+"N̉" + [K_1] > "Ń"
+"Ǹ" + [K_1] > "Ń"
+"N̂" + [K_2] > "Ǹ"
+"N̉" + [K_2] > "Ǹ"
+"Ń" + [K_2] > "Ǹ"
+"N̉" + [K_6] > "N̂"
+"Ń" + [K_6] > "N̂"
+"Ǹ" + [K_6] > "N̂"
+
+any(aiou) any(tone_marks) + [K_BKSP] > nul
+
++ [RALT K_A] > 'ă'
++ [RALT SHIFT K_A] > 'Ă'
++ [RALT K_E] > 'ē'
++ [RALT SHIFT K_E] > 'Ē'
++ [RALT K_O] > 'ö'
++ [RALT SHIFT K_O] > 'Ö'
++ [RALT K_U] > 'ŭ'
++ [RALT SHIFT K_U] > 'Ŭ'
