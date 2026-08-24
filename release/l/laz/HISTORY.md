@@ -1,5 +1,9 @@
 Laz Change History
 ====================
+1.0.7 (2026-08-24)
+----------------
+* replaced capital Ť with T̆.
+
 1.0.6 (2026-03-24)
 ----------------
 * Layout overhaul
