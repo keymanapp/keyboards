@@ -1,18 +1,16 @@
 Pontic Greek Keyboard
 =====================
 
-Copyright (C) 2024-2026 Pontic Greek Keyboard Project
-
-Version 5.1
+Copyright (C) Pontic Greek Keyboard Project
 
 DESCRIPTION
 -----------
-Pontic Greek keyboard supporting all specialized diacritical marks used in the Pontic dialect (caron/hacek ˇ, breve ˘, and diaeresis below ̤). Compatible with mobile and desktop platforms. Includes embedded Pontic Sans font for accurate diacritic positioning.
+Pontic Greek keyboard supporting all specialized diacritical marks used in the Pontic dialect (caron/hacek ˇ, breve ˘, and diaeresis below ̤). Compatible with mobile and desktop platforms. Uses the shared Pontic Sans font for accurate diacritic positioning.
 
 Supported Languages
 -------------------
-* Pontic Greek (`pnt`, `pnt-Grek`)
-* Greek (`el`, `el-Grek`)
+* Pontic Greek (`pnt`)
+* Greek (`el`)
 
 Supported Platforms
 -------------------

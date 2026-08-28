@@ -19,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Pontic Greek</Name>
-    <Copyright URL="">© 2024-2026 Pontic Greek Keyboard Project</Copyright>
+    <Copyright URL="">© Pontic Greek Keyboard Project</Copyright>
     <Author URL="">Pontic Greek Keyboard Project</Author>
     <Version URL=""></Version>
-    <Description URL="">Pontic Greek keyboard with caron (ˇ), breve (˘), and diaeresis below (̤) support for mobile and desktop platforms. Includes embedded Pontic Sans font.</Description>
+    <Description URL="">Pontic Greek keyboard with caron (ˇ), breve (˘), and diaeresis below (̤) support for mobile and desktop platforms. Includes Pontic Sans font.</Description>
   </Info>
   <Files>
     <File>
@@ -56,13 +56,13 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>PonticSans-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\grek\pontic-sans\PonticSans-Regular.ttf</Name>
       <Description>Font Pontic Sans Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\grek\pontic-sans\OFL.txt</Name>
       <Description>Font Open Font License</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
@@ -85,14 +85,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>help\pontic_greek.php</Name>
+      <Description>Help pontic_greek.php</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.php</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Pontic Greek</Name>
       <ID>pontic_greek</ID>
-      <Version>5.1</Version>
-      <OSKFont>PonticSans-Regular.ttf</OSKFont>
-      <DisplayFont>PonticSans-Regular.ttf</DisplayFont>
+      <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\grek\pontic-sans\PonticSans-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\grek\pontic-sans\PonticSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="pnt">Pontic</Language>
         <Language ID="el">Greek</Language>
