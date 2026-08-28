@@ -1,5 +1,9 @@
 Laz Change History
 ====================
+1.0.8 (2026-08-27)
+----------------
+* replaced capital Ť with T̆ on touch keyboard.
+
 1.0.7 (2026-08-24)
 ----------------
 * replaced capital Ť with T̆.
