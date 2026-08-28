@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.0.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Pontic Greek</Name>
+    <Copyright URL="">© 2024-2026 Pontic Greek Keyboard Project</Copyright>
+    <Author URL="">Pontic Greek Keyboard Project</Author>
+    <Version URL=""></Version>
+    <Description URL="">Pontic Greek keyboard with caron (ˇ), breve (˘), and diaeresis below (̤) support for mobile and desktop platforms. Includes embedded Pontic Sans font.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\pontic_greek.kmx</Name>
+      <Description>Keyboard Pontic Greek (desktop)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\pontic_greek.js</Name>
+      <Description>Keyboard Pontic Greek (web/touch)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\pontic_greek.kvk</Name>
+      <Description>Visual Keyboard Pontic Greek</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>Welcome page</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>Readme page</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>PonticSans-Regular.ttf</Name>
+      <Description>Font Pontic Sans Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>OFL.txt</Name>
+      <Description>Font Open Font License</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>License</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\README.md</Name>
+      <Description>Readme</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\HISTORY.md</Name>
+      <Description>History</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Pontic Greek</Name>
+      <ID>pontic_greek</ID>
+      <Version>5.1</Version>
+      <OSKFont>PonticSans-Regular.ttf</OSKFont>
+      <DisplayFont>PonticSans-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="pnt">Pontic</Language>
+        <Language ID="el">Greek</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
