@@ -1,6 +1,10 @@
 cantonese telex Change History
 ====================
 
+4.0.5 (2026-8-18)
+----------------
+* added the spelling rule of chh, ts, and hp
+
 4.0.4 (2026-7-14)
 ----------------
 * added ș þ ż letters for loanwords and specific accents
