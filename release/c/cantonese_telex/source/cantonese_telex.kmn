@@ -68,10 +68,10 @@ store(no_u_letters) 'abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(punctuationc) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_d_c) 'abcefghijklmnopqruvwxyzABCEFGHIJKLMNOPQRUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
-store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
+store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$¥€£฿₽¢€₩₫₥%^*+#~_\|0123456789' "'" '"'
 store(ys) 'yýỳỹỷỵYÝỲỸỶỴ'
 store(end_consonants) 'ptkcmnPTKCMN'
-store(un_second_consonants) 'qtpdfkcvbwQTPDFKCVBW'
+store(un_second_consonants) 'qtdfcvbwQTDFCVBW'
 store(a) 'âấầẩẫậÂẤẦẨẪẬ'
 store(aa) 'aáàảãạAÁÀẢÃẠ'
 store(aw) 'ăắằẳẵặĂẮẰẲẴẶ'
@@ -186,7 +186,7 @@ store(aou_w) 'ăơưĂƠƯ'
 store(e_1) 'Ee'
 store(no_d_letters) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZ'
 store(no_ud_letters) 'abcefghijklmnopqrsvwxyzABCEFGHIJKLMNOPQRSVWXYZ'
-store(un_second_no_d_consonants) 'qpfkcvbnmtQPFKCVBNMT'
+store(un_second_no_d_consonants) 'qfcvbnmtQFCVBNMT'
 store(un_hrsd_consonants) 'bcfgjklmnpqvwzBCFGJKLMNPQVWZ'
 store(no_d_consonants) 'abcefghijklmnopqrvwxzABCEFGHIJKLMNOPQRVWXZ'
 store(no_dl_consonants) 'bcfghjkmnpqrsvwxzBCFGHJKMNPQRSVWXZ'
@@ -213,7 +213,7 @@ store(upper_ow_v) 'ỚỜỞỠỢ'
 store(uow_end) 'ptkcmniuPTKCMNIU'
 store(un_tones) 'abcdeghilmnopqtuvwyABCDEGHILMNOPQTUVWY'
 store(un_hrl_consonants) 'bcdfgjkmnpqstvwxzBCDFGJKMNPQSTVWXZ'
-store(no_for_h_consonants) 'bcdfgjkpqrstvwxzBCDFGJKPQRSTVWXZ'
+store(no_for_h_consonants) 'bcdfgjqrstvwxzBCDFGJQRSTVWXZ'
 store(no_for_m_consonants) 'bcdfghjkmpqrstvwxzBCDFGHJKMPQRSTVWXZ'
 store(c) 'cC'
 store(mn) 'mnMN'
@@ -747,6 +747,8 @@ any(ee) any(two_u) + 'E' > index(e, 1) index(two_u, 2) 'E'
 + [SHIFT ALT K_Z] > "Ż"
 + [ALT K_T] > "þ"
 + [SHIFT ALT K_T] > "Þ"
++ [ALT K_4] > "₥"
++ [SHIFT ALT K_4] > "₥"
 
 any(two_u) any(o) 'ng' + any(w) > index(two_uw, 1) index(ow, 2) 'ng'
 any(two_u) any(o) 'NG' + any(w) > index(two_uw, 1) index(ow, 2) 'NG'
@@ -1195,6 +1197,11 @@ any(eioyw) 'y' + any(punctuationc) > context index(punctuationc, 3)
 any(eioyw) 'y' any(no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
 any(eioyw) 'Y' + any(punctuationc) > context index(punctuationc, 3)
 any(eioyw) 'Y' any(no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
+any(z) any(consonants) + any(no_d_c) > context index(no_d_c, 3)	
+any(z) any(consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
+any(z) any(consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
+any(z) any(consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
+any(z) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
 
 'ă' any(iuo) + any(all_letters) > context index(all_letters, 3)
 'Ă' any(iuo) + any(all_letters) > context index(all_letters, 3)
