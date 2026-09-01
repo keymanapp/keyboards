@@ -310,6 +310,12 @@
    <td>/</td>
    <td>[z]</td>
  </tr>
+  <tr>
+   <td>ż</td>
+   <td>/</td>
+   <td>ż</td>
+   <td>[ʐ]</td>
+ </tr>
  </tbody>
 </table>
 
@@ -369,8 +375,9 @@
   <tr><td>b</td><td>[p]</td><td>巴</td></tr>
   <tr><td>p</td><td>[pʰ]</td><td>怕</td></tr>
   <tr><td>m</td><td>[m]</td><td>媽</td></tr>
-  <tr><td>ph/f</td><td>[f]</td><td>花</td></tr>
-  <tr><td>đ/t</td><td>[t]</td><td>打</td></tr>
+  <tr><td>ph</td><td>[f]</td><td>花</td></tr>
+  <tr><td>đ</td><td>[t]</td><td>打</td></tr>
+  <tr><td style="background-color: plum;">t</td><td>[t]</td><td>啲</td></tr>
   <tr><td>th</td><td>[tʰ]</td><td>草</td></tr>    
   <tr><td>n</td><td>[n]</td><td>那</td></tr>
   <tr><td>l</td><td>[l]</td><td>啦</td></tr>
@@ -389,8 +396,16 @@
   <tr><td style="background-color: lightgray;">ŧ</td><td>[s]</td><td>新</td></tr>
   <tr><td>d/y</td><td>[j]</td><td>也</td></tr>
   <tr><td>/</td><td>[ø]</td><td>安</td></tr>
+  <tr><td style="background-color: plum;">chh</td><td>[ʨʰ] [tʃʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">f</td><td>[f]</td><td></td></tr>
+  <tr><td style="background-color: plum;">hk</td><td>[kʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">hp</td><td>[pʰ]</td><td></td></tr>
   <tr><td style="background-color: plum;">r</td><td>[ɹ]</td><td>friend</td></tr>
+  <tr><td style="background-color: plum;">ș</td><td>[ʃ] [ɕ]</td><td>share</td></tr>
+  <tr><td style="background-color: plum;">ts</td><td>[ʦʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">þ</td><td>[θ]</td><td></td></tr>
   <tr><td style="background-color: plum;">z</td><td>[z]</td><td></td></tr>
+  <tr><td style="background-color: plum;">ż</td><td>[ʐ]</td><td></td></tr>
 </table>
   <p>位於字母a â ă u ư o ô ơ 之前嘅韻首k可以轉變為c</p>
   <p>The consonant "k" before vowels a â ă u ư o ô ơ can be transformed to "c"</p>
@@ -398,10 +413,14 @@
   <p>The consonant "ng" before vowels i ê e can be transformed to "ngh"</p>
    <p>字母"f"嘅發音同"ph"相同，主要用嚟表音同書寫外來詞語</p>
  <p>The letter "f" has the same pronunciation with consonant "ph". "f" is mainly used to represent sounds and spelling loanword from foreign languages.</p>
-<p>"ț" "tx" "ŧ" 韻首分別用嚟表示以前嘅廣州話嘅 [ʦ] [ʦʰ] [s]嘅精組聲母發音，呢啲發音响依家嘅廣州音入面已經分別同章組聲母[ʧ] [ʧʰ] [ʃ]有咗同樣音位，可以全部寫成"ch" "x" "s"</p>
+   <p>廣州音韻首"t"嘅發音同"đ"相同，主要用嚟表示純越詞同書寫外來詞語</p>
+ <p>The consonant "t" has the same pronunciation with consonant "đ" in Canton city and Hong Kong accent. "t" is mainly used to represent sounds in pure-cantonese words and spelling loanword from foreign languages.</p>
+ <p>"ț" "tx" "ŧ" 韻首分別用嚟表示以前嘅廣州話嘅 [ʦ] [ʦʰ] [s]嘅精組聲母發音，呢啲發音响依家嘅廣州音入面已經分別同章組聲母[ʧ] [ʧʰ] [ʃ]有咗同樣音位，可以全部寫成"ch" "x" "s"</p>
  <p>"ț" "tx" "ŧ" represents the pronunciation of [ʦ] [ʦʰ] [s] consonants in old Cantonese. Those consonants have already shared their phonomes with [ʧ] [ʧʰ] [ʃ] consonants in modern day Canton city accent，and they can be spelled as "ch" "x" or "s"</p>
  <p>字母"d" 同字母組合 "dz" 喺粵語源頭嘅詞語入面與韻首"y"有一樣嘅作用，發音係[j]</p>
  <p>Letter "d" and letter combination "dz" have the same application with the consonant "y" in Cantonese origin words, the pronunciation is [j]</p> 
+<p>"chh" "f" "hk" "hp" "r" "ș" "ts" "þ" "z" and "ż" are used to indicate sounds and spell loanwords</p>
+<p>"chh" "f" "hk" "hp" "r" "ș" "ts" "þ" "z"同"ż"用嚟表示聲音同書寫外來詞語</p>
 
   <h1>Vowels and End Consonants 韻腹 Vận-Phục</h1> 
    <table border="1" cellpadding="8" cellspacing="0">
@@ -474,8 +493,8 @@
 <tr><td style="background-color: lightgray;">ơp</td><td>[əp]</td><td></td><td></td><td></td><td></td><td style="background-color: lightgray;">up</td><td>[up]</td><td></td></tr>
 <tr><td style="background-color: lightgray;">ơc/ơk</td><td>[ək]</td><td></td><td style="background-color: lightgray;">ioc/iok</td><td>[iɔk]</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>ng</td><td>[ŋ]</td><td>吳</td><td>m</td><td>[m]</td><td>唔</td><td></td><td></td><td></td></tr>
-
   </table>
+
 <p>「麵」嘅正寫係"mịn"</p>
 <p>The spelling of "noodles" in Cantonese is "mịn"</p>
 <p>[pit˥]音節嘅正寫係"bit"</p>
@@ -679,6 +698,30 @@
      <td>d<strong>d</strong>o</td>
      <td>đo多</td>
    </tr>
+     <tr>
+     <td>ș</td>
+     <td><kbd>Alt</kbd> <kbd>S</kbd></td>
+     <td>To-<kbd>Alt</kbd><strong>s</strong>i-ba</td>
+     <td>To-și-ba</td>
+   </tr>
+  <tr>
+     <td>ż</td>
+     <td><kbd>Alt</kbd> <kbd>Z</kbd></td>
+     <td>Za-pa-ro-<kbd>Alt</kbd><strong>z</strong>ie</td>
+     <td>Za-pa-ro-żie</td>
+   </tr>
+     <tr>
+     <td>þ</td>
+     <td><kbd>Alt</kbd> <kbd>T</kbd></td>
+     <td>A-<kbd>Alt</kbd><strong>t</strong>e-na</td>
+     <td>A-þe-na</td>
+   </tr>
+    <tr>
+     <td>₥</td>
+     <td><kbd>Alt</kbd> <kbd>4</kbd></td>
+     <td></td>
+     <td></td>
+   </tr>
  </tbody>
 </table>
 
@@ -798,6 +841,8 @@
   <p>The acronym of the second syllable of a male name with 3 syllables or 4 syllables "文mằn" is "M."</p>
 <p>其他標點嘅作用同英文同越南文類似</p>
 <p>Other uses of punctuation are similar with English and Vietnamese</p>
+  <p>錢幣單位「文」嘅符號係"₥"</p>
+  <p>The symbol of unit of currency "mân" is "₥".</p>
 <p></p>
   <p> doubletaping leads to generate original letters:  </p>
   <p> 雙擊音調鍵同特殊轉化鍵，取消轉化，變返原本嘅拼寫 </p>  
