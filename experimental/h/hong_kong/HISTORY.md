@@ -1,6 +1,11 @@
 Hong Kong Change History
 ====================
 
+2.2.2 (2026-09-02)
+----------------
+* added new spellings and new letters for loanwords
+
+
 2.2.1 (2026-05-12)
 ----------------
 * changed spellings in keyboard document
