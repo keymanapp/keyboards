@@ -6,8 +6,9 @@
 # * legacy
 #
 # The following paths are always excluded:
-# * release/shared    - not keyboards, but files shared with other projects (TODO: move folder to top level)
-# * release/template  - not a keyboard, but a template layout for keyboards (TODO: move folder to top level)
+# * experimental/shared  - not keyboards, but files shared with other projects
+# * release/shared       - not keyboards, but files shared with other projects
+# * release/template     - not a keyboard, but a template layout for keyboards
 #
 # Expects global $TARGETS array; does not take this as a parameter due to
 # spaces in paths which are tedious to avoid
@@ -36,7 +37,7 @@ function collect_build_targets() {
         fv_all=true
       fi
     else
-      (find "$target" -maxdepth 2 -type d -wholename "$target"'/*/*' | grep -vE '^(release/packages|release/shared|release/template)' || true) >> build_targets_temp.txt
+      (find "$target" -maxdepth 2 -type d -wholename "$target"'/*/*' | grep -vE '^(experimental/shared|release/packages|release/shared|release/template)' || true) >> build_targets_temp.txt
       if [[ "$target" == release ]]; then
         (find "$target" -maxdepth 2 -type d -wholename 'release/packages/*' | grep -vE '^(release/packages/fv_all)' || true) >> build_targets_temp.txt
         fv_all=true
@@ -55,6 +56,12 @@ function collect_build_targets() {
       elif [[ -f "$target/source/$keyboard_name.kps" ]]; then
         # only include targets with a source .kps
         echo "$target" >> build_targets.txt
+      elif [[ -z "$( ls -A "$target" )" ]]; then
+        builder_warn "Skipping empty folder '$target'"
+      elif [[ "$( ls -A "$target" )" == build ]]; then
+        builder_warn "Skipping folder '$target' which contains only build artifacts"
+      else
+        builder_die "Could not find a valid package for folder '$target'"
       fi
     done < build_targets_temp.txt
   fi

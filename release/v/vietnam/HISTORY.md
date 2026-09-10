@@ -1,6 +1,13 @@
 vietnam Change History
 ====================
 
+2.0.6 (2025-06-15)
+----------------
+* Updated by cathaylab
+* added symbols
+* modified the code for letter generation
+* changed the way to generate words.
+
 2.0.5 (2025-04-25)
 ----------------
 * Updated by cathaylab

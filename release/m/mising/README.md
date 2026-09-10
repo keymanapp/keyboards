@@ -3,8 +3,7 @@ Mising Keyboard
 
 Description
 -----------
-A comprehensive virtual keyboard engineered for the Mising language. Based on the standard Latin script, this layout is optimised for both everyday digital communication and rigorous linguistic documentation. It fully accommodates the standard Mising Agom Kébang (MAK) orthography while providing streamlined access to specialised phonetic characters and diacritics. Designed to prevent character fragmentation, it ensures clean data entry, which is a crucial requirement for building professional pronunciation dictionaries, annotating acoustic data, etc. The layout builds upon a familiar QWERTY foundation to maintain an intuitive typing experience.
-
+A comprehensive keyboard engineered specifically for the Mising language, designed for writing in the standard modified Roman script. Optimised for seamless digital communication, the layout ensures accurate entry of alphabets by preventing character fragmentation across all platforms. Built upon a familiar QWERTY foundation, it provides an intuitive and highly efficient typing experience.
 Links
 -----
 Keyboard Homepage: https://keyman.com/keyboards/mising

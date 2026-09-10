@@ -15,7 +15,7 @@ store(&BITMAP) 'khmer_traditional.ico'
 store(&LAYOUTFILE) 'khmer_traditional.keyman-touch-layout'
 store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdkhmr/KbdKhmr.json'
 store(&COPYRIGHT) 'Copyright © MengHeng Hav'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 
 begin Unicode > use(main)
 begin PostKeystroke > use(PostKeystroke)
@@ -35,9 +35,7 @@ group(PostKeystroke) readonly
     c as the user hasn't attempted to change layer themselves.
     c platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
 
-
 group(main) using keys
-
 
 c ========================================
 c DEFAULT LAYER
