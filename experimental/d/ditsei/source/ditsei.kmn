@@ -1,0 +1,331 @@
+﻿c Based off of https://github.com/keymanapp/keyboards/tree/master/release/c/cabecar
+
+store(&VERSION) '10.0'
+store(&NAME) 'Ditsei'
+store(&TARGETS) 'any'
+store(&BITMAP) 'ditsei.ico'
+store(&LAYOUTFILE) 'ditsei.keyman-touch-layout'
+store(&COPYRIGHT) '© 2025 Joshua Price'
+store(&VISUALKEYBOARD) 'ditsei.kvks'
+store(&KEYBOARDVERSION) '0.1'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+
++ [T_aNasal] > 'a' U+0331
++ [T_aNasalHT] > 'á' U+0331
++ [T_aNasalLT] > 'à' U+0331
++ [T_aDieresisHT] > 'ä' U+0301
++ [T_aNasal_SHIFT] > 'A' U+0331
++ [T_aNasalHT_SHIFT] > 'Á' U+0331
++ [T_aNasalLT_SHIFT] > 'À' U+0331
++ [T_aDieresisHT_SHIFT] > 'Ä' U+0301
++ [T_eNasal] > 'e' U+0331
++ [T_eNasalHT] > 'é' U+0331
++ [T_eNasalLT] > 'è' U+0331
++ [T_eDieresisHT] > 'ë' U+0301
++ [T_eNasal_SHIFT] > 'E' U+0331
++ [T_eNasalHT_SHIFT] > 'É' U+0331
++ [T_eNasalLT_SHIFT] > 'È' U+0331
++ [T_eDieresisHT_SHIFT] > 'Ë' U+0301
++ [T_oNasal] > 'o' U+0331
++ [T_oNasalHT] > 'ó' U+0331
++ [T_oNasalLT] > 'ò' U+0331
++ [T_oDieresisHT] > 'ö' U+0301
++ [T_oNasal_SHIFT] > 'O' U+0331
++ [T_oNasalHT_SHIFT] > 'Ó' U+0331
++ [T_oNasalLT_SHIFT] > 'Ò' U+0331
++ [T_oDieresisHT_SHIFT] > 'Ö' U+0301
++ [T_iNasal] > 'i' U+0331
++ [T_iNasalHT] > 'í' U+0331
++ [T_iNasalLT] > 'ì' U+0331
++ [T_iNasal_SHIFT] > 'I' U+0331
++ [T_iNasalHT_SHIFT] > 'Í' U+0331
++ [T_iNasalLT_SHIFT] > 'Ì' U+0331
++ [T_uNasal] > 'u' U+0331
++ [T_uNasalHT] > 'ú' U+0331
++ [T_uNasalLT] > 'ù' U+0331
++ [T_uNasal_SHIFT] > 'U' U+0331
++ [T_uNasalHT_SHIFT] > 'Ú' U+0331
++ [T_uNasalLT_SHIFT] > 'Ù' U+0331
+
+
++ [K_SPACE] > U+0020
+
++ [K_0] > '0'
++ [SHIFT K_0] > '='
+
+
++ [K_1] > '1'
++ [SHIFT K_1] > '!'
+
+
++ [K_2] > '2'
++ [SHIFT K_2] > '"'
+
+
++ [K_3] > '3'
++ [SHIFT K_3] > '#'
+
+
++ [K_4] > '4'
++ [SHIFT K_4] > '$'
++ [ALT K_4] > U+20a1
+
++ [K_5] > '5'
++ [SHIFT K_5] > '%'
+
+
++ [K_6] > '6'
++ [SHIFT K_6] > '&'
+
+
++ [K_7] > '7'
++ [SHIFT K_7] > '/'
++ [ALT K_7] > '_'
+
++ [K_8] > '8'
++ [SHIFT K_8] > '('
+
+
++ [K_9] > '9'
++ [SHIFT K_9] > ')'
+
+
++ [NCAPS K_A] > 'a'
++ [CAPS K_A] > 'A'
++ [NCAPS SHIFT K_A] > 'A'
++ [CAPS SHIFT K_A] > 'a'
+
++ [NCAPS K_B] > 'b'
++ [CAPS K_B] > 'B'
++ [NCAPS SHIFT K_B] > 'B'
++ [CAPS SHIFT K_B] > 'b'
+
++ [NCAPS K_C] > 'c'
++ [CAPS K_C] > 'C'
++ [NCAPS SHIFT K_C] > 'C'
++ [CAPS SHIFT K_C] > 'c'
+
++ [NCAPS K_D] > 'd'
++ [CAPS K_D] > 'D'
++ [NCAPS SHIFT K_D] > 'D'
++ [CAPS SHIFT K_D] > 'd'
+
+
++ [NCAPS K_E] > 'e'
++ [CAPS K_E] > 'E'
++ [NCAPS SHIFT K_E] > 'E'
++ [CAPS SHIFT K_E] > 'e'
++ [NCAPS ALT K_E] > U+20ac
+
++ [NCAPS K_F] > 'f'
++ [CAPS K_F] > 'F'
++ [NCAPS SHIFT K_F] > 'F'
++ [CAPS SHIFT K_F] > 'f'
+
++ [NCAPS K_G] > 'g'
++ [CAPS K_G] > 'G'
++ [NCAPS SHIFT K_G] > 'G'
++ [CAPS SHIFT K_G] > 'g'
+
++ [NCAPS K_H] > 'h'
++ [CAPS K_H] > 'H'
++ [NCAPS SHIFT K_H] > 'H'
++ [CAPS SHIFT K_H] > 'h'
+
++ [NCAPS K_I] > 'i'
++ [CAPS K_I] > 'I'
++ [NCAPS SHIFT K_I] > 'I'
++ [CAPS SHIFT K_I] > 'i'
+
++ [NCAPS K_J] > 'j'
++ [CAPS K_J] > 'J'
++ [NCAPS SHIFT K_J] > 'J'
++ [CAPS SHIFT K_J] > 'j'
++ [NCAPS ALT K_J] > U+00a3
+
++ [NCAPS K_K] > 'k'
++ [CAPS K_K] > 'K'
++ [NCAPS SHIFT K_K] > 'K'
++ [CAPS SHIFT K_K] > 'k'
++ [NCAPS ALT K_K] > U+00b1
+
++ [NCAPS K_L] > 'l'
++ [CAPS K_L] > 'L'
++ [NCAPS SHIFT K_L] > 'L'
++ [CAPS SHIFT K_L] > 'l'
+
++ [NCAPS K_M] > 'm'
++ [CAPS K_M] > 'M'
++ [NCAPS SHIFT K_M] > 'M'
++ [CAPS SHIFT K_M] > 'm'
+
++ [NCAPS K_N] > 'n'
++ [CAPS K_N] > 'N'
++ [NCAPS SHIFT K_N] > 'N'
++ [CAPS SHIFT K_N] > 'n'
+
++ [NCAPS K_O] > 'o'
++ [CAPS K_O] > 'O'
++ [NCAPS SHIFT K_O] >'O'
++ [CAPS SHIFT K_O] > 'o'
+
++ [NCAPS K_P] > 'p'
++ [CAPS K_P] > 'P'
++ [NCAPS SHIFT K_P] > 'P'
++ [CAPS SHIFT K_P] > 'p'
+
++ [NCAPS K_Q] > 'q'
++ [CAPS K_Q] > 'Q'
++ [NCAPS SHIFT K_Q] > 'Q'
++ [CAPS SHIFT K_Q] > 'q'
++ [NCAPS ALT K_Q] > '@'
+
++ [NCAPS K_R] > 'r'
++ [CAPS K_R] > 'R'
++ [NCAPS SHIFT K_R] > 'R'
++ [CAPS SHIFT K_R] > 'r'
+
++ [NCAPS K_S] > 's'
++ [CAPS K_S] > 'S'
++ [NCAPS SHIFT K_S] > 'S'
++ [CAPS SHIFT K_S] > 's'
+
+
++ [NCAPS K_T] > 't'
++ [CAPS K_T] > 'T'
++ [NCAPS SHIFT K_T] > 'T'
++ [CAPS SHIFT K_T] > 't'
+
++ [NCAPS K_U] > 'u'
++ [CAPS K_U] > 'U'
++ [NCAPS SHIFT K_U] > 'U'
++ [CAPS SHIFT K_U] > 'u'
+
++ [NCAPS K_V] > 'v'
++ [CAPS K_V] > 'V'
++ [NCAPS SHIFT K_V] > 'V'
++ [CAPS SHIFT K_V] > 'v'
+
++ [NCAPS K_W] > 'w'
++ [CAPS K_W] > 'W'
++ [NCAPS SHIFT K_W] > 'W'
++ [CAPS SHIFT K_W] > 'w'
+
++ [NCAPS K_X] > 'x'
++ [CAPS K_X] > 'X'
++ [NCAPS SHIFT K_X] > 'X'
++ [CAPS SHIFT K_X] > 'x'
+
++ [NCAPS K_Y] > 'y'
++ [CAPS K_Y] > 'Y'
++ [NCAPS SHIFT K_Y] > 'Y'
++ [CAPS SHIFT K_Y] > 'y'
+
++ [NCAPS K_Z] > 'z'
++ [CAPS K_Z] > 'Z'
++ [NCAPS SHIFT K_Z] > 'Z'
++ [CAPS SHIFT K_Z] > 'z'
+
++ [K_RBRKT] > '{'
++ [SHIFT K_RBRKT] > '['
++ [ALT K_RBRKT] > '^'
+
++ [K_COMMA] > ','
++ [SHIFT K_COMMA] > ';'
++ [ALT K_COMMA] > '<'
+
++ [K_HYPHEN] > U+0027
++ [SHIFT K_HYPHEN] > '?'
++ [ALT K_HYPHEN] > '\'
+
++ [K_PERIOD] > '.'
++ [SHIFT K_PERIOD] > ':'
++ [ALT K_PERIOD] > '>'
+
++ [K_BKSLASH] > '}'
++ [SHIFT K_BKSLASH] > ']'
+
++ [NCAPS K_COLON] > U+00f1
++ [CAPS K_COLON] > U+00d1
++ [NCAPS SHIFT K_COLON] > U+00d1
++ [CAPS SHIFT K_COLON] > U+00f1
+
++ [K_EQUAL] > '¿'
++ [SHIFT K_EQUAL] > '¡'
+
++ [K_BKQUOTE] > '|'
++ [SHIFT K_BKQUOTE] > '~'
++ [ALT K_BKQUOTE] > '+'
+
+store(baseVowels) 'a' 'A' 'e' 'E' 'i' 'I' 'o' 'O' 'u' 'U'
+store(highToneVowels) 'á' 'Á' 'é' 'É' 'í' 'Í' 'ó' 'Ó' 'ú' 'Ú'
+store(lowToneVowels) 'à' 'À' 'è' 'È' 'ì' 'Ì' 'ò' 'Ò' 'ù' 'Ù'
+store(diaresisVowels) 'ä' 'Ä' 'ë' 'Ë' 'ï' 'Ï' 'ö' 'Ö' 'ü' 'Ü'
+
+c High tone (acute) key: type the vowel first, then this key.
+c Precomposes when it's the first mark on a plain vowel; appends the
+c combining mark (U+0301) on top of a vowel that's already marked,
+c so it works no matter what order the marks were typed in.
+any(baseVowels) U+0331 + [K_LBRKT] > index(highToneVowels, 1) U+0331
+any(diaresisVowels) + [K_LBRKT] > context(1) U+0301
+any(baseVowels) + [K_LBRKT] > index(highToneVowels, 1)
++ [K_LBRKT] > U+0301
+
+c Low tone (grave) key: same precompose-then-append pattern as high tone.
+any(baseVowels) U+0331 + [SHIFT K_LBRKT] > index(lowToneVowels, 1) U+0331
+any(diaresisVowels) + [SHIFT K_LBRKT] > context(1) U+0300
+any(baseVowels) + [SHIFT K_LBRKT] > index(lowToneVowels, 1)
++ [SHIFT K_LBRKT] > U+0300
+
+c Dieresis key: same precompose-then-append pattern as high tone above.
+any(baseVowels) U+0331 + [K_QUOTE] > index(diaresisVowels, 1) U+0331
+any(highToneVowels) + [K_QUOTE] > context(1) U+0308
+any(lowToneVowels) + [K_QUOTE] > context(1) U+0308
+any(baseVowels) + [K_QUOTE] > index(diaresisVowels, 1)
++ [K_QUOTE] > U+0308
+
+c Dieresis+high tone in one press, e.g. a -> ä́. Kept as a shortcut
+c alongside typing the dieresis and tone keys as two separate presses.
+any(baseVowels) + [SHIFT K_QUOTE] > index(diaresisVowels, 1) U+0301
++ [SHIFT K_QUOTE] > U+0308 U+0301
+
+c Dieresis+low tone in one press, e.g. a -> ä̀.
+any(baseVowels) + [ALT K_QUOTE] > index(diaresisVowels, 1) U+0300
++ [ALT K_QUOTE] > U+0308 U+0300
+
+c Nasal key: no vowel in this orthography has a precomposed nasalized
+c form, so this always just appends the combining mark (U+0331)
+c regardless of what precedes it or what other marks are already there.
++ [K_SLASH] > U+0331
+
+c Nasal+high tone in one press, e.g. a -> á̱. Kept as a shortcut
+c alongside typing the high tone and nasal keys as two separate presses.
+any(baseVowels) + [SHIFT K_SLASH] > index(highToneVowels, 1) U+0331
++ [SHIFT K_SLASH] > U+0331
+
+c Nasal+low tone in one press, e.g. a -> à̱.
+any(baseVowels) + [ALT K_SLASH] > index(lowToneVowels, 1) U+0331
++ [ALT K_SLASH] > U+0331
+
+c Standalone combining-mark key on the touch layout (the ◌̱ key's own
+c long-press, offering ◌́ and ◌̀). Unlike a raw U+0301/U+0300 codepoint,
+c these check what already precedes them and precompose into a single
+c character when possible, same as the desktop tone keys above -- so
+c "a" + this key gives one codepoint (à), not two (a + combining grave).
+any(baseVowels) U+0331 + [T_toneHT] > index(highToneVowels, 1) U+0331
+any(diaresisVowels) + [T_toneHT] > context(1) U+0301
+any(baseVowels) + [T_toneHT] > index(highToneVowels, 1)
++ [T_toneHT] > U+0301
+
+any(baseVowels) U+0331 + [T_toneLT] > index(lowToneVowels, 1) U+0331
+any(diaresisVowels) + [T_toneLT] > context(1) U+0300
+any(baseVowels) + [T_toneLT] > index(lowToneVowels, 1)
++ [T_toneLT] > U+0300
+
++ [K_oE2] > U+003c
++ [SHIFT K_oE2] > U+003e
