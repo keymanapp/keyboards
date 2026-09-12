@@ -1,17 +1,16 @@
 Mbya Guarani keyboard
-==============
+=====================
 
 Latinoamérica Habla©
-
-Version 1.0
 
 Description
 -----------
 
-Mbya Guarani generated from template
+This keyboard is developed for the Guarani language of Argentina. It is based on a QWERTY layout; however, it includes all the characters and digraphs required for Guarani.
 
 Links
 -----
+https://keyman.com/keyboards/mbya_guarani
 
 Supported Platforms
 -------------------
