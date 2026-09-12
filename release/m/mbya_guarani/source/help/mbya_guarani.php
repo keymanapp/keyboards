@@ -1,11 +1,11 @@
-<?php 
+<?php
   $pagename = 'Mbya Guarani Keyboard Help';
   $pagetitle = $pagename;
 
   require_once('header.php');
 
-  $pagestyle = <<<END 
-  
+  $pagestyle = <<<END
+
   .keyman-deadkeys-table {
     border-collapse: collapse;
     width: 100%;
