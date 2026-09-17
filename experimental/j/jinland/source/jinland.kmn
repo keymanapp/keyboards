@@ -1472,6 +1472,7 @@ any(g) any(low_i_v) + 'w' > index(g, 1) 'i' index(low_uw_v, 2)
 any(g) any(upper_i_v) + any(w) > index(g, 1) 'I' index(low_uw_v, 2)
 any(qq) any(u) any(consonants) + any(all_letters) > context index(all_letters, 4)
 any(qq) any(u) any(consonants) any(all_letters) + any(all_letters) > context index(all_letters, 5)
+any(q) any(two_u) any(viet_vowels) any(all_letters) + [K_BKSP] > index(q, 1) index(two_u, 2) index(viet_vowels, 3)
 
 + [RALT K_A] > 'â' dk(a)
 + [RALT SHIFT K_A] > 'Â' dk(a)
