@@ -1294,6 +1294,9 @@ any(qq) any(two_u) any(o) any(n) any(g) + any(w) > index(qq, 1) index(two_u, 2) 
 'u' any(low_a) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'a'
 'U' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'a'
 'U' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'A'
+'o' any(low_e) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'e'
+'O' any(low_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'e'
+'O' any(upper_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'E'
 
 any(low_i_v) + 'a' > 'i' index(low_a_v, 1)
 any(upper_i_v) + 'a' > 'I' index(low_a_v, 1)
