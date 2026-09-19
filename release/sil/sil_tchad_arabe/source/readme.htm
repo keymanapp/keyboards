@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tchad Arabe</title>
+
+  <style type="text/css">
+  h1 { font-size: 14pt; font-family: 'Charis SIL Compact', ’Charis SIL’, serif;}
+  p { font-family: 'Charis SIL Compact', ’Charis SIL’, serif;}
+  </style>
+  <script type='text/javascript'>
+    window.onload = function()
+    {
+      var e = window.top.document.getElementById('tabReadme');
+      var eng=true,fra=true;
+      if(e && e.innerHTML == 'Lisez-moi') eng=false;
+      else if(e && e.innerHTML == 'Readme') fra=false;
+
+      document.getElementById('readme-fra').style.display = fra ? 'block' : 'none';
+      document.getElementById('readme-eng').style.display = eng ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id='readme-eng'>
+    <h1>Tchad Arabic keyboard</h1>
+    <p>This keyboard enables the typing of Chadian
+    languages that use Arabic script, including all Arabic script
+    special characters defined in the Chadian National Alphabet.</p>
+    <p>©&nbsp;SIL Chad</p>
+  </div>
+  <div id='readme-fra'>
+    <h1>Clavier Tchad arabe</h1>
+    <p>Ce clavier vous permet de saisir les langues de Tchad qui utilisent l’écriture arabe,
+    y compris tous les caractères spéciaux en écriture arabe défini dans l’Alphabet National Tchadien.</p>
+    <p>©&nbsp;SIL Tchad</p>
+  </div>
+</body>
+</html>

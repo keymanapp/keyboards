@@ -1,0 +1,208 @@
+
+@font-face {
+    font-family: CharisSILWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charissil/web/CharisSIL-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: CharisSILWeb;
+    font-weight: bold;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charissil/web/CharisSIL-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: ScheherazadeNewWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/scheherazadenew/web/ScheherazadeNew-Regular.woff2") format("woff2");
+}
+
+/* The help is a light-background document. Declaring the scheme stops
+   Android's force-dark algorithm recolouring text and backgrounds
+   independently, which can leave light-on-light or dark-on-dark text. */
+:root {
+    color-scheme: light;
+}
+
+body {
+    font-family: 'Charis SIL', CharisSILWeb, 'Scheherazade New', ScheherazadeNewWeb, Gentium, serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: block;
+}
+
+/* Default styles for larger screens */
+img.responsive {
+    height: 200px;
+    width: auto;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    img.responsive {
+        height: 100px;
+        width: auto;
+    }
+    h1 {
+        font-size: 130%;
+    }
+    p.tagline {
+        font-size: 100%;
+    }
+}
+.right {
+    float: right;
+    margin: 0em 2em;
+}
+.left {
+    float: left;
+    margin: 0em 2em;
+}
+.full {
+    width: 98%;
+    min-width: 700px;
+}
+    
+.red {
+    color:red;
+}
+
+h1 {
+    text-align: center;
+}
+.tagline {
+    text-align: center;
+    font-size: 130%;
+    font-style: italic;
+}
+.buttonlang {
+    background-color: pink;
+    border: none;
+    padding: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 6px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 92%;
+    animation: pulse 2.5s ease infinite;
+}
+
+/* Black on pink, matching sil_cameroon_qwerty. White on pink is a contrast
+   ratio of 1.22:1, which is why the label looked blank on a phone while
+   remaining tappable; black gives 17:1. The element and link states are
+   named so a host stylesheet colouring links cannot override it. */
+a.buttonlang,
+a.buttonlang:link,
+a.buttonlang:visited,
+a.buttonlang:hover,
+a.buttonlang:active,
+a.buttonlang:focus {
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+    text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: pink;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #DB7093;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: pink;
+  }
+}
+
+
+h2.color {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,37,105,1) 0%, rgba(0,37,105,0) 100%);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+
+h3.color {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    color: #000000;
+    background: linear-gradient(90deg, rgba(255,206,0,1) 0%, rgba(255,206,0,0) 100%);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+
+/* Blue */
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140,140,140);
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid rgb(160,160,160);
+  padding: 8px 10px;
+}
+
+th {
+  color: white;
+  background-color: rgb(0,93,153);
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(240,240,240);
+}
+
+table tr td:first-child {
+    border-left: 4px solid;
+}
+table tr td:nth-child(2n) {
+    border-right: 4px solid;
+}
+
+.heman {
+  font: 1.4rem molot;
+  text-shadow:
+    1px 1px 1px #fff,
+    2px 2px 1px #000;
+}
+
+.skeletor {
+  font: 1.7rem rapscallion;
+  letter-spacing: 3px;
+  text-shadow:
+    1px 1px 0 #fff,
+    0 0 9px #000;
+}
+  
