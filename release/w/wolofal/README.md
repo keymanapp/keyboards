@@ -1,9 +1,7 @@
 Wolofal keyboard
 ==============
 
-© 2022 SIM
-
-Version 1.0
+© SIM
 
 Description
 -----------

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.106.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>welcome\RAC.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Torwali</Folder>
@@ -29,10 +30,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Torwali</Name>
-    <Copyright URL="">© 2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <WebSite URL="https://help.keyman.com/keyboard/rac_torwali/1.0/rac_torwali.php">https://help.keyman.com/keyboard/rac_torwali/1.0/rac_torwali.php</WebSite>
-    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+    <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali Linguist and
 Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan for
 keyboarding the Torwali language in the Arabic Script. You can use this
 keyboard with any extended Arabic script Unicode font. If you have
@@ -94,20 +95,27 @@ Rehmat Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Torwali</Name>
       <ID>rac_torwali</ID>
-      <Version>1.0</Version>
-      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
-        <Language ID="trw-Arab">Torwali (Arabic)</Language>
+        <Language ID="trw">Torwali</Language>
       </Languages>
       <Examples>
-        <Example ID="trw-Arab" Keys="t w r w a l i" Text="توروالی" Note="Name of language" />
+        <Example ID="trw" Keys="t w r w a l i" Text="توروالی" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

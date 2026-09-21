@@ -1,5 +1,26 @@
 Tchad QWERTY Keyboard Change History
 =======================
+5.4.3 (21 Sep 2026)
+------------------
+* Make the language button label readable (black on pink, as sil_cameroon_qwerty)
+
+5.4.2 (28 Apr 2026)
+------------------
+* Add vertical-align to fix formatting in PHP and Welcome
+
+5.4.1
+------------------
+* Produce composed characters from "c" and "s" with wedge (Caron)
+
+5.4
+------------------
+
+* Changed `<Info><Name>` from "sil_tchad_qwerty" to "Tchad QWERTY" for web name display.
+
+5.3.4
+------------------
+* Improved web integration: updated CSS
+  addition of the line: text aligned for PHP display
 
 5.3.3 (11 Apr 2025)
 ------------------

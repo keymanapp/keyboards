@@ -1,10 +1,8 @@
 <?php 
-  $pagename = 'Uma Phonetic Keyboard Help';
+  $pagename = 'Uma Phonetic (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-
-<h1>Start Using Uma Phonetic</h1>
 
 <p>
     Uma Phonetic Keyboard version 1.1 created for the Houma Language Project for typing in Uma.

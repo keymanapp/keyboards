@@ -1,7 +1,55 @@
 cantonese telex Change History
 ====================
 
-3.0.1 (2025-04-223)
+4.0.5 (2026-8-18)
+----------------
+* added the spelling rule of chh, ts, and hp
+
+4.0.4 (2026-7-14)
+----------------
+* added ș þ ż letters for loanwords and specific accents
+
+4.0.3 (2026-5-11)
+----------------
+* shortened the codes
+
+4.0.2 (2026-4-25)
+----------------
+* adopted "ii" input to generate the letters 'ŭ'
+* removed some uncommon letter triggering rules in cantonese, such as oii, ann, inn, uoii, ejh esh
+* completed the vowel chart on keyboard document
+
+4.0.1 (2026-3-20)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
+
+4.0 (2026-2-03)
+----------------
+* added new letters 'ț' 'ŧ' and 'ṳ'
+
+3.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
+
+3.1.1 (2025-09-11)
+----------------
+* added explaination for consonants "f" "d" "z" and "dz"
+* fixed bug in letter generation rules
+
+3.1 (2025-08-20)
+----------------
+* changed the spelling of "yừ" "yữ" "yự" to "ừ" "ữ" "ự"
+* shortened the rules for generating letters
+
+3.0.2 (2025-06-03)
+----------------
+* updated the alphabet and keyboard document
+* optimized the rules for generating letters
+
+3.0.1 (2025-04-22)
 ----------------
 * Improve On-Screen keyboard
 
@@ -40,3 +88,4 @@ cantonese telex Change History
 1.0 (2024-05-25)
 ----------------
 * Created by cathaylab
+

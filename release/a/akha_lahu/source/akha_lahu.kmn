@@ -1,0 +1,32 @@
+﻿c Akha ACT keyboard for KeyMan 3.2
+c By Andy G. Thomson, OMF Thailand, P.O. Box27, Chiang Mai, 50000, Thailand
+c July 1998
+
+store(&VERSION) '10.0'
+store(&NAME) 'Akha/Lahu'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'akha_lahu.ico'
+store(&VISUALKEYBOARD) 'akha_lahu.kvks'
+store(&LAYOUTFILE) 'akha_lahu.keyman-touch-layout'
+
+begin Unicode > use(Unicode)
+
+c Stores
+store(Input)  	"}" 	"{" 	"]" 	"[" 	"\" 	"|"
+store(Output) 	d241 	d242 	d243 	d244 	d245 	d246
+store(OutputU)	U+02C6	U+02C7	U+A788	U+02EC	U+02CD	U+02C9
+
+c Rules
+
+group (Unicode) using keys
++ any(Input) > index(OutputU,1)
+U+02C6 + '}' > '}'
+U+02C7 + '{' > '{'
+U+A788 + ']' > ']'
+U+02EC + '[' > '['
+U+02CD + '\' > '\'
+U+02C9 + '|' > '|'
+
+

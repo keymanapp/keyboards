@@ -15,12 +15,11 @@
   Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  require_once('servervars.php');
   $pagename = 'Inscript Bengali Keyboard Help';
   $pagetitle = 'Inscript Bengali Keyboard Help';
   $style = 'lang2 {font-size:250%}';
 
-  $relatedSites = array("$keyman_com/bengali" => "Bengali Keyboards Home");
+  $relatedSites = array("https://keyman.com/bengali" => "Bengali Keyboards Home");
   require_once('header.php');
   ?>
 

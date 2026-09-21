@@ -1,6 +1,10 @@
 Shaw Imperial Change History
 ====================
 
+1.3 (2025-06-22)
+----------------
+* Added Latin alphabet shiftlock (CAPS) layer.
+
 1.2.1 (2023-11-30)
 ----------------
 * Use shared font instead of local

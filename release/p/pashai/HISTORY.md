@@ -1,6 +1,10 @@
 Pashai Change History
 ====================
 
+1.1.1 (2026-03-10)
+----------------
+* Add KbdArab.json and KbdArabScheherazade for better display
+
 1.1 (2025-04-10)
 ----------------
 * Change output of "i" to produce U+064A (and not U+06CC)

@@ -8,12 +8,7 @@
 ?>
 
 
-<p>
-Urdu Basic generated from template. This keyboard 
-layout is designed for Urdu. It includes an on screen 
-keyboard which can be viewed by clicking on the Keyman 
-icon and selecting the On Screen Keyboard menu item. 
-The keyboard layout follows the Windows 10 Urdu layout.</p>
+<p>Urdu Basic keyboard was imported with permission from the Windows 10 keyboard. This keyboard layout is designed for Urdu.</p>
 
 
 <h2>Desktop Keyboard Layout</h2>

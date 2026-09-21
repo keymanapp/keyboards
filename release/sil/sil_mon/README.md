@@ -3,7 +3,7 @@ Mon (SIL) keyboard
 
 Description
 -----------
-Mon (SIL) Keyboard
+Mon (SIL) Keyboard is designed for typing Mon using Myanmar characters. 
 
 Links
 -----

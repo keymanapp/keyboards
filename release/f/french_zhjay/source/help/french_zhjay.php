@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    French (ZHJAY) generated from template.
+    French (ZHJAY) typewriter layout.
 </p>
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>

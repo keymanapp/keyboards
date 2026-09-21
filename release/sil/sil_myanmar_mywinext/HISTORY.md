@@ -1,5 +1,10 @@
 # myWin Extended (SIL) Keyboard Change History
 
+1.5.2 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
 1.5.1 (2024-12-12)
 ------------------
 * Update Padauk font

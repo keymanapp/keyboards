@@ -1,8 +1,6 @@
 Carian keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 Carian
@@ -15,6 +13,7 @@ For help or to report bugs, please visit the Keyman community forums at: https:/
 
 Links
 -----
+https://keyman.com/keyboards/carian
 
 Copyright
 ---------

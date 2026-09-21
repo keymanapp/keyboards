@@ -2,7 +2,7 @@
   $pagename = 'Western Cree (TH-Woods) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-      .cree {font-family: 'BJCree UNI';}
+      .cree {font-family: 'BJCree';}
       .msg-important { color: rgb(238, 0, 0); background-color: rgb(255, 213, 213); border: 2px dashed rgb(238, 0, 0); padding: 8pt 16pt; margin: 8pt 0; display: inline-block; }
 END;
   require_once('header.php');

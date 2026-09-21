@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Central Kurdish Basic</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description>Central Kurdish Basic generated from template</Description>
+    <Description URL="">Central Kurdish Basic keyboard was imported with permission from the Windows 10 keyboard.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -89,15 +91,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Central Kurdish</Name>
       <ID>basic_kbdkurd</ID>
-      <Version>1.0</Version>
-      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
-        <Language ID="ckb-Arab">Central Kurdish (Arabic)</Language>
+        <Language ID="ckb">Central Kurdish</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

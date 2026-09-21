@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1350.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,13 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Urdu Basic</Name>
-    <Copyright URL="">© 2008-2020 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description>Urdu Basic generated from template. This keyboard matches the Inscript
-layout. This keyboard layout is designed for Urdu. It includes an on
-screen keyboard which can be viewed by clicking on the Keyman icon and
-selecting the On Screen Keyboard menu item. The keyboard layout follows
-the Windows 10 Urdu layout.</Description>
+    <Description URL="">Urdu Basic keyboard was imported with permission from the Windows 10 keyboard. This keyboard layout is designed for Urdu.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -81,23 +79,28 @@ the Windows 10 Urdu layout.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Urdu Basic</Name>
       <ID>basic_kbdurdu</ID>
-      <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
         <Language ID="ur">Urdu</Language>
-        <Language ID="hno-Arab">Northern Hindko (Arabic)</Language>
-        <Language ID="hnd-Arab">Southern Hindko (Arabic)</Language>
+        <Language ID="hno">Northern Hindko</Language>
+        <Language ID="hnd">Southern Hindko</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="urdu_kab" Relationship="deprecates" />
-    <RelatedPackage ID="urdu" Relationship="deprecates" />
-    <RelatedPackage ID="kbdurdu" Relationship="deprecates" />
+    <RelatedPackage ID="urdu_kab" Relationship="deprecates"/>
+    <RelatedPackage ID="urdu" Relationship="deprecates"/>
+    <RelatedPackage ID="kbdurdu" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

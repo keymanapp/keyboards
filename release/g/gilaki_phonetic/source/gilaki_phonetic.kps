@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -169,14 +169,17 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabLateef.ttf</Name>
+      <Description>Font KbdArabLateef</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Gilaki Phonetic</Name>
       <ID>gilaki_phonetic</ID>
-      <Version>1.1.1</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabLateef.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="glk">Gilaki</Language>

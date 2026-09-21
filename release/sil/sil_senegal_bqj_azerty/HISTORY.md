@@ -1,6 +1,12 @@
 sil_senegal_bqj_azerty Change History
 ====================
 
+1.1.0 (2026-06-16)
+------------------
+Desktop retains priority of 'p' for commanalty with other languages. Special characters for all Senegalese languages are available via modifiers keys from Desktop.
+RALT replaces ALT CTRL. FS,ESC GS FS removed from CTRL layer.
+Auto sentence initial capitals.
+
 1.0.1 (2023-04-20)
 ------------------
 Touch keyboard 'others' layer '‹≈' and '≈›' keys pointed at correct code in kmn. Place holders 'NBSP' and 'NNBSP' replaced with '≈' and '≠'. Documentation amended accordingly.

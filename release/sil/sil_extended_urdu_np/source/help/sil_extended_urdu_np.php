@@ -7,7 +7,7 @@
 
 
 <p>
-    Keyboard for typing Urdu, Panjabi, and other Northern Pakistan languages. This keyboard installs both the <a href="https://software.sil.org/scheherazade/download/">Scheherazade New</a> (naskh-style) and the <a href="https://software.sil.org/awami/download/">Awami Nastaliq</a> fonts.
+    Keyboard for typing Urdu, Panjabi, and other Northern Pakistan languages. The keyboard is mapped as closely as possible to a corresponding key on the US English keyboard. This keyboard installs both the <a href="https://software.sil.org/scheherazade/download/">Scheherazade New</a> (naskh-style) and the <a href="https://software.sil.org/awami/download/">Awami Nastaliq</a> fonts.
 </p>
 
 
@@ -22,5 +22,3 @@
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-
-<p>© SIL International</p>

@@ -7,7 +7,7 @@
 
 <p>
   Mon (SIL) Keyboard based on the <a href="https://commons.wikimedia.org/wiki/File:Mon-Keyboard-layout-for-Windows.jpg">
-  Mon Keyboard Layout for Windows</a>
+  Mon Keyboard Layout for Windows</a>. A few modifications have been made for ease of use.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

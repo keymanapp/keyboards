@@ -1,9 +1,9 @@
 <?php 
   $pagename = 'Burushaski Perso Arabic Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<EXTRA
+  $pagestyle = <<<END
   p,h1,h2 {font-family: "Burusho Quwatz Nastaliq";}
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

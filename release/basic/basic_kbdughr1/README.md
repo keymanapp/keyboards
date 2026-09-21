@@ -1,14 +1,12 @@
 Uyghur Basic keyboard
 ==============
 
-(c) 2009-2019 SIL International
-
-Version 1.1
+(c) SIL Global
 
 Description
 -----------
 
-Uyghur Basic generated from template
+Uyghur Basic keyboard was imported with permission from the Windows 10 keyboard.
 
 Links
 -----

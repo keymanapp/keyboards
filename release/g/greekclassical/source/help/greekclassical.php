@@ -17,7 +17,7 @@
 */
   $pagename = 'Greek Classical Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<END
+  $pagestyle = <<<END
 .lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.5em; color: #0000ff; line-height:2em}
 h4 {font-size:11pt;}
 table.grid { border-collapse: collapse; }

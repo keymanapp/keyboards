@@ -39,28 +39,46 @@ body {
     color:red;
 }
 
-/* Default styles for larger screens */
+
 img.responsive {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
+/* style.css */
+.my-class {
+  vertical-align: baseline;
+}
 
-/* Styles for screens smaller than 600px */
+/* Responsive (si besoin) */
 @media (max-width: 600px) {
     img.responsive {
-        height: 100px;
-        width: auto;
+        height: 60px;
     }
-	
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Pour le paragraphe du haut entre les images */
+.top-tagline {
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin: 2px;
+    font-size: 2em;
+    font-style: italic; /* facultatif */
+}
+
+/* Pour tous les autres paragraphes "normaux" */
+p.tagline {
+    font-size: 100%;
+}
+
 h1.color {
     text-align: center;
 	font-size: 130%;
 	display: block;
-}
-
-p.tagline {
-        font-size: 100%;
-    }
 }
 .tagline {
     text-align: center;
@@ -69,7 +87,7 @@ p.tagline {
 .buttonlang {
     background-color: pink;
     border: none;
-    color: white;
+    color: black;
     padding: 5px;
     word-wrap: break-word;
     text-align: center;
@@ -100,17 +118,17 @@ h3.color {
   0% {
     transform: scale(1);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #F1506C;
+    background-color: pink;
   }
   50% {
     transform: scale(1.05);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #D21034;
+    background-color: #DB7093;
   }
   100% {
     transform: scale(1);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #F1506C;
+    background-color: pink;
   }
 }
 
@@ -149,10 +167,6 @@ tr:nth-child(even) td {
     0 0 9px #000;
 }
   
-.keyboard {
-  font-size: 20px;
-  white-space: nowrap;
-}
 .keyboard--row {
   display: block;
   height: 3em;
@@ -215,6 +229,14 @@ tr:nth-child(even) td {
 }
 
 /* Light keyboard */
+
+.keyboard--light {
+  font-size: 20px;
+  white-space: nowrap;
+  max-width: 900px; /* largeur maximale */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
 
 .keyboard.keyboard--light .keyboard--row > * {
   background: #ccc;

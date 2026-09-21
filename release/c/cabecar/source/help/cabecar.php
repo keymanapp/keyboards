@@ -9,8 +9,6 @@ require_once('header.php');
 Cabécar keyboard.
 </p>
 
-<h1>Diseño del Teclado</h1>
-
 <h2>Diseño del Teclado de Escritorio</h2>
 <div id='osk' data-states='default shift alt'>
 

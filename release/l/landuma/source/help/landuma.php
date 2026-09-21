@@ -11,7 +11,7 @@ END;
 <p>This keyboard is for use with Unicode fonts such as the Charis font.</p>
 <p>It can be used with Microsoft Windows, Mac OSX, Linux, iPhone, iPad, Android phone, and Android tablets.</p>
 
-<h1>Keyboard shortcuts Landuma</h1>
+<h2>Keyboard shortcuts Landuma</h2>
 
 <p>Special characters are produced by typing the deadkey shown on the left (;) followed by the character.</p>
 

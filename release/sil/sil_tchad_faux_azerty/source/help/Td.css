@@ -1,0 +1,271 @@
+@font-face {
+    font-family: CharisWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charis/web/Charis-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: CharisWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charis/web/Charis-Regular.woff") format("woff2");
+}
+@font-face {
+    font-family: CharisWeb;
+    font-weight: bold;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charis/web/Charis-Bold.woff2") format("woff2");
+}
+
+body {
+    font-family: 'Charis', CharisWeb, Gentium, serif;
+
+}
+
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: block;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.full {
+    width: 98%;
+    min-width: 700px;
+}
+    
+.red {
+    color:red;
+}
+
+
+img.responsive {
+    height: 100px;
+    width: auto;
+}
+/* style.css */
+.my-class {
+  vertical-align: baseline;
+}
+
+/* Responsive (si besoin) */
+@media (max-width: 600px) {
+    img.responsive {
+        height: 60px;
+    }
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Pour le paragraphe du haut entre les images */
+.top-tagline {
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin: 2px;
+    font-size: 2em;
+    font-style: italic; /* facultatif */
+}
+
+/* Pour tous les autres paragraphes "normaux" */
+p.tagline {
+    font-size: 100%;
+}
+
+h1.color {
+    text-align: center;
+	font-size: 130%;
+	display: block;
+}
+.tagline {
+    text-align: center;
+    font-style: italic;
+}
+.buttonlang {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 6px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 94%;
+    animation: pulse 1.5s ease infinite;
+}
+
+h3.color {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    color: #000000;
+    background: linear-gradient(90deg, rgba(255,206,0,1) 0%, rgba(255,206,0,0) 100%);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #F1506C;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #D21034;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #F1506C;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140,140,140);
+  text-align: center;
+}
+
+td {
+  border: 1px solid rgb(160,160,160);
+  padding: 8px 10px;
+}
+
+th {
+  color: white;
+  background-color: rgb(0,78,221);
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(240,240,240);
+}
+
+.heman {
+  font: 1.4rem molot;
+  text-shadow:
+    1px 1px 1px #fff,
+    2px 2px 1px #000;
+}
+
+.skeletor {
+  font: 1.7rem rapscallion;
+  letter-spacing: 3px;
+  text-shadow:
+    1px 1px 0 #fff,
+    0 0 9px #000;
+}
+  
+.keyboard {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.keyboard--row {
+  display: block;
+  height: 3em;
+  margin: 0.5em;
+}
+
+.keyboard--row > * {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border-radius: 0.3em;
+  margin: 0.06em;
+  padding: 0 0.2em;
+  width: 3.3em;
+  height: 100%;
+}
+
+.key--bottom-left > * {
+  position: absolute;
+  text-align: left;
+  bottom: 0.4em;
+  left: 0.4em;
+}
+
+.key--bottom-right > * {
+  position: absolute;
+  text-align: right;
+  bottom: 0.4em;
+  right: 0.4em;
+  white-space:pre;
+}
+
+.key--word > * {
+  font-size: 0.8em;
+}
+
+.key--letter > div {
+  font-size: 1.2em;
+  height: 1.2em;
+  float: right;
+  clear: right;
+}
+
+.key--letter > div:first-child {
+  margin-top: -0.2em;
+}
+
+.key--letter > span {
+  font-size: 1.2em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+  margin-top: -0.2em;
+  margin-left: 0.1em;
+}
+.key--letter > span:last-child {
+  margin-top: 1em;
+}
+
+/* Light keyboard */
+
+.keyboard.keyboard--light .keyboard--row > * {
+  background: #ccc;
+  color: #111;
+  border: 1px solid #888;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .keyboard--row > .key--letter {
+  background: #f0f0f0;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .key--letter > span {
+  color: black
+}
+
+.keyboard.keyboard--light .key--letter span.french {
+  color: blue
+}
+
+.keyboard.keyboard--light .key--letter span.spec {
+  color: gray
+}
+
+.keyboard.keyboard--light .key--letter span.specTd {
+  color: #9400D3
+}

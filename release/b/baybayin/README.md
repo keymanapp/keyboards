@@ -19,3 +19,4 @@ Supported Platforms
  * MacOS
  * Linux
  * Web
+ * Mobile

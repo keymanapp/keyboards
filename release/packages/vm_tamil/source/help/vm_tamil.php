@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Tamil (Visual Media) Keyboard Package</h1>
-
 <p style='margin:0px'>&#169; 2008-2020 Visual Media and SIL International</p>
 
 <p>

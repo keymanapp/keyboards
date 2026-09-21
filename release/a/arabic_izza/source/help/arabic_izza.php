@@ -3,8 +3,8 @@
   require_once('header.php');
 ?>
 
-<h1>Arabic Izza: The pleasure of typing and using Arabic Script</h1>
-<h1>استرجاع لهيبة العربية في عصر المعلوماتية</h1>
+<h2>Arabic Izza: The pleasure of typing and using Arabic Script</h2>
+<h2>استرجاع لهيبة العربية في عصر المعلوماتية</h2>
 
 <p>Supported languages: Arabic, Tamazight, Farsi, Ottoman (Turkish), etc.</p>
 <p>يمكن استعمال مفاتيح العزة لكتابة: العربية، الأمازيغية، الفارسية، العثمانية، إلخ</p>

@@ -1,7 +1,60 @@
 Hong Kong Change History
 ====================
 
-1.0.2 (2025-04-223)
+2.2.2 (2026-09-02)
+----------------
+* added new spellings and new letters for loanwords
+
+
+2.2.1 (2026-05-12)
+----------------
+* changed spellings in keyboard document
+* modified codes for letter generation
+
+2.2 (2026-05-11)
+----------------
+* adopted "ii" input to generate the letters 'ŭ'
+* removed some uncommon letter triggering rules in cantonese, such as oii, ann, inn, uoii, ejh esh
+* completed the vowel chart on keyboard document
+
+2.1 (2026-04-06)
+----------------
+* added new letters 'ŭ' to replace 'ṳ'
+* modified code for letter generation
+* changed the keyboard document
+* finished the dictionary
+
+2.0 (2026-02-10)
+----------------
+* added new letters ț ŧ ṳ
+
+1.1.2 (2025-12-01)
+----------------
+* added apostrophe between front consonant and vowel in a merged syllable
+
+1.1.1 (2025-09-11)
+----------------
+* added explaination for consonants "f" "d" "z" and "dz"
+* added the vowel "uân" and "uât" in the alphabet, to replace the "un" and "ut" vowels in previous version
+* added explaination for vowels "iêng" "eng" "iêc" "iong" "iok" "uyên" "viên" "uyêt" "viêt"
+* explained the use of "iu" "in" "it" "ip" "im" "in" spelling
+* fixed bug in letter generation rules
+
+1.1 (2025-08-20)
+----------------
+* changed the spelling of "yừ" "yữ" "yự" to "ừ" "ữ" "ự"
+* shortened the rules for generating letters
+
+1.0.3 (2025-06-22)
+----------------
+* fixed several bugs in generation
+* updated the keyboard document
+
+1.0.2 (2025-05-30)
+----------------
+* fixed several bugs in generation
+
+1.0.1 (2025-04-22)
 ----------------
 * Improve On-Screen keyboard
 

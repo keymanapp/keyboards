@@ -1,9 +1,7 @@
 Sanjha Punjabi keyboard
 ==============
 
-(c) 2020 Rana Zubair
-
-Version 1.0
+(c) Rana Zubair
 
 Description
 -----------

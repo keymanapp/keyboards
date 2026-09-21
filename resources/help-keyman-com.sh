@@ -65,7 +65,6 @@ CI_CACHE="$KEYBOARDROOT/.cache"
 . "$KEYBOARDROOT/tools/jq.inc.sh"
 keyboards_to_push=0
 
-. "$KEYBOARDROOT/servervars.sh"
 . "$KEYBOARDROOT/resources/util.inc.sh"
 
 echo "Uploading keyboard documentation to help.keyman.com"

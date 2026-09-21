@@ -1,14 +1,12 @@
 Central Kurdish Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
 
-Central Kurdish Basic generated from template
+Central Kurdish Basic keyboard was imported with permission from the Windows 10 keyboard.
 
 Links
 -----

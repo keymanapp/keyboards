@@ -1,6 +1,10 @@
 Jarai ចារាយ (SIL) Change History
 ====================
 
+1.3.1 (9 Mar 2026)
+----------------
+* Fix font in kvks
+
 1.3 (28 Mar 2025)
 ----------------
 * Added EM Space to SHIFT + SPACE

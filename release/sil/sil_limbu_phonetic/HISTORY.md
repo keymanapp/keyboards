@@ -1,6 +1,10 @@
 Limbu Phonetic (SIL) Change History
 ====================
 
+1.4.1 (2026-08-11)
+----------------
+* Update font
+
 1.4 (2024-09-09)
 ----------------
 * Add tablet layout

@@ -49,7 +49,6 @@ item. The keyboard layout follows the Windows 10 Cherokee Nation Phonetic layout
 <p>This keyboard utilizes dead keys to reach the Cherokee characters. The dead keys on this layout have square brackets around them. For example, "[q]" is a dead key.</p>
 
 
-<h2>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

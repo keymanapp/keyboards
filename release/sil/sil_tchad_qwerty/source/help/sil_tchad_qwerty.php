@@ -12,6 +12,9 @@ require_once('header.php');
 <div id="container">
 <img src="sil_tchad_logo.png" class="left responsive" />
 <img src="sil-logo-blue.png" class="right responsive" />
+<h1 style="text-align: center;" class="color" xml:lang="en">Chad <span class="qw">QWERTY</span> Keyboard <span class="keyman"> for Keyman</span>
+<br />by SIL Chad
+</h1>
 <p class="tagline" xml:lang="en">Welcome to the Chad QWERTY Keyboard!<br>
 This keyboard, maintained by the Language Technology team of <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Chad</a>,
 allows you to type all of the special characters of the languages of Chad.</p>
@@ -27,18 +30,18 @@ Depending on the position of that character on the key cap, you might need to ta
 
 <table  style="border: 0pt">
   <tr>
-    <td style="text-align: right; padding-top:05px; border: 0;">
+    <td style="text-align: right; padding-top:05px; border: 0; vertical-align: top;">
       <p style="margin: 4pt;">Hold down Shift and tap the B&nbsp;key&nbsp;→</p>
       <p style="margin: 4pt;">Simply tap the B&nbsp;key&nbsp;→</p>
     </td>
-    <td style="border: 0;">
+    <td style="border: 0; vertical-align: middle;">
         <div class="keyboard keyboard--light">
           <div class="keyboard--row">
             <div class="key--letter"><div><span class="specTd">Ɓ</span></div><div><span class="specTd">ɓ</span></div><span>B</span><span>b</span></div>
           </div>
         </div>
     </td>
-    <td style="text-align: left; padding-top:5px; border: 0;">
+    <td style="text-align: left; padding-top:5px; border: 0; vertical-align: top;">
       <p style="margin: 4pt;">←&nbsp;tap the Chad key, then hold down Shift and tap the B key</p>
       <p style="margin: 4pt">←&nbsp;tap the Chad key, then tap the B key</p>
     </td>
@@ -282,6 +285,9 @@ will be changed to curled quotes depending on the context. If you need to use st
 <img src="sil_tchad_logo.png" class="left responsive" />
 <img src="sil-logo-blue.png" class="right responsive" />
 
+<h1 style="text-align: center;" class="color" xml:lang="fr">Clavier Tchad QWERTY pour Keyman</span>
+<br />par SIL Tchad
+</h1>
 <p class="tagline" xml:lang="fr">Bienvenue au Clavier Tchad QWERTY !<br>
 Ce clavier, maintenu par l’équipe de Technologie Linguistique de <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Tchad</a>,
 vous permet de taper tous les caractères spéciaux des langues du Tchad. </p>
@@ -300,18 +306,18 @@ vous devrez peut-être taper sur la touche « Tchad » et/ou maintenir la to
 
 <table  style="border: 0;">
   <tr>
-    <td style="text-align: right; padding-top:5px; border: 0;">
+    <td style="text-align: right; padding-top:5px; border: 0; vertical-align: top;">
       <p style="margin: 4pt;">Maintenez la touche Majuscule enfoncée et tapez sur la touche&nbsp;B&nbsp;→</p>
       <p style="margin: 4pt;">Tapez simplement sur la touche&nbsp;B&nbsp;→</p>
     </td>
-    <td style="border: 0;">
+    <td style="border: 0; vertical-align: middle;">
         <div class="keyboard keyboard--light">
           <div class="keyboard--row">
             <div class="key--letter"><div><span class="specTd">Ɓ</span></div><div><span class="specTd">ɓ</span></div><span>B</span><span>b</span></div>
           </div>
         </div>
     </td>
-    <td style="text-align: left; padding-top:5px; border: 0;">
+    <td style="text-align: left; padding-top:5px; border: 0; vertical-align: top;">
       <p style="margin: 4pt;">← Tapez sur la touche « Tchad », puis maintenez la touche Majuscule enfoncée et tapez sur la touche B</p>
       <p style="margin: 4pt;">← Tapez sur la touche « Tchad », puis tapez sur la touche B</p>
     </td>

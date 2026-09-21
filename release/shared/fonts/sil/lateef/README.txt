@@ -9,10 +9,6 @@ Lateef is named after Shah Abdul Lateef Bhitai, the famous Sindhi
 mystic and poet. It is intended to be an appropriate style for use 
 in Sindhi and other languages of the South Asian region.
 
-This release supports most of the Unicode 15.0 Arabic character 
-repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). 
-
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
 available. 

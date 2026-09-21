@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Pashto (Afghanistan) Basic. The keyboard layout follows the Windows 10 layout.
+    Pashto (Afghanistan) Basic keyboard was imported with permission from the Windows 10 keyboard.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

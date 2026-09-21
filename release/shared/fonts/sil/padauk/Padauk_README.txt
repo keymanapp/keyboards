@@ -1,24 +1,22 @@
 README
 Padauk
-========================
+======
 
-Padauk is a pan-Burma font designed to support all Myanmar script-based
-languages. It covers all of the Unicode Myanmar script blocks and works
-on all OpenType and Graphite based systems.
+This project is intended to provide a free and open font family for all languages and writing systems that use the Myanmar (Burmese) script.
+It supports the complete range of Unicode characters for the script and works on OpenType based systems.
+For details about the language and alternate character support see [Font features](https://software.sil.org/padauk/smart-font-features/).
+This project uses a UFO-based design and production workflow, with all sources in open formats and a completely open-source build toolkit.
 
-Features:
-* Special support for: ksw, kht, kyu, shn, aio, phk, csh, tjl
-* Variation Selector support for kht, aio, phk
+To download the fonts visit the [Padauk downloads page](https://software.sil.org/padauk/download/) or the [Github releases page](https://github.com/silnrsi/font-padauk/releases).
 
-Issues:
-* Does not work in Word 2007
+For more information on using and developing the fonts see the full project documentation. This is available in three forms:
 
+- *local HTML* - Download the release package and open the file `documentation/index.html` in a browser
+- *local PDF* - Download the release or source package and open the file `documentation/pdf/index.pdf`
+- *Web site* - Visit the [Padauk web site](https://software.sil.org/padauk)
 
-Padauk is released under the SIL Open Font License.
-Padauk is a trademark of SIL Global.
+For a complete list of changes in this version see the [FONTLOG.txt](FONTLOG.txt).
 
-See the OFL and OFL-FAQ for details of the SIL Open Font License.
-See the FONTLOG for information on this and previous releases.
+For copyright and licensing information - including any Reserved Font Names - see [OFL.txt](OFL.txt).
 
-For more information please visit the Padauk page on SIL Global's
-website: https://software.sil.org/padauk.
+For practical information about using, modifying and redistributing this font see [OFL-FAQ.txt](OFL-FAQ.txt).

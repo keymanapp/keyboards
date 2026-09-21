@@ -1,6 +1,10 @@
 Dari (CLRA) Change History
 ====================
 
+1.1.1 (2026-03-19)
+----------------
+* Add KbdArab.json and KbdArabScheherazade for better display
+
 1.1 (2024-08-30)
 ----------------
 * Added tablet layout

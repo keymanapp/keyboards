@@ -1,6 +1,11 @@
 gff_amh_7 Change History
 ========================
 
+1.6 (17 Jul 2025)
+-----------------
+
+Removal of legacy "Washra" fonts that are superseded by the "Waldba" collection.
+
 1.5.1 (20 Jul 2023)
 -----------------
 

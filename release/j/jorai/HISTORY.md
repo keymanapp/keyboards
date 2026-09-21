@@ -1,6 +1,10 @@
 Jorai Keyboard Change History
 =======================
 
+1.1 (8 July 2025)
+-----------------
+* Remove platform dependent parts of rules
+
 1.0.4 (27 Oct 2020)
 -----------------
 * Increment version number to force recompile of touch layout.

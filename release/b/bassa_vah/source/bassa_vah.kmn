@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Bassa Vah'
-store(&COPYRIGHT) 'Copyright © SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'bassa_vah.ico'
 store(&VISUALKEYBOARD) 'bassa_vah.kvks'
@@ -16,15 +16,14 @@ store(consK) [K_N] [K_K] [K_S] [K_F] [K_M] [K_Y] [K_G] [K_D] [K_Q] [K_J] [K_R] [
              [K_COLON] [K_L] [K_C] [K_RBRKT] [K_T] [K_B] [K_V] [K_H] [K_P] [K_QUOTE]
 store(consU) U+16AD0 .. U+16AE6
 
-store(diacK) [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K]
-store(diacU) U+16AF0 .. U+16AF4
+store(tone_diacK) [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K]
+store(tone_diacU) U+16AF0 .. U+16AF4
+store(tone_diacMobile) [U_16AF0] [U_16AF1] [U_16AF2] [U_16AF3] [U_16AF4] 
 
 store(digitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
 store(digitsU) U+0030 .. U+0039
 
-
-
-store(nul) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] \
+store(nul) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_P] \
            [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_L] \
            [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] 
 
@@ -39,6 +38,20 @@ group(main) using keys
 + [K_PERIOD] > U+16AF5
 + [SHIFT K_PERIOD]  > U+002E
 + [SHIFT K_COMMA] > U+0027
++ [SHIFT K_O] > U+25CC
+
+c tone diacritics only go on vowels
+any(vowelsU) + any(tone_diacK)   > context index(tone_diacU,2)
+any(consU) + any(tone_diacK)   > context beep
+c allow tone diacritics on space or 25cc for pedagogical use
+U+0020 + any(tone_diacK)   > context index(tone_diacU,2) U+0020
+U+25CC + any(tone_diacK)   > context index(tone_diacU,2) 
+
+c two diacritics cannot occur together
+any(tone_diacU) + any(tone_diacK) > context beep
+
+c Implement for touch
+platform('touch') any(consU) + any(tone_diacMobile) > context c do not allow tone on consonants
+platform('touch') any(tone_diacU) + any(tone_diacMobile) > context c do not allow two tones 
 
 
-+ any(diacK)   > index(diacU,1)

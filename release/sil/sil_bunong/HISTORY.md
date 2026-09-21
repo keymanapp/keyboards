@@ -1,6 +1,10 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.6.2 (9 Mar 2026)
+----------------
+* Fix font in kvks
+
 1.6.1 (24 Mar 2025)
 ----------------
 * replace Mondulkiri fonts with Busra

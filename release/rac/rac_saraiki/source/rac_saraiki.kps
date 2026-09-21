@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -29,7 +29,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Rachitrali-Saraiki</Name>
-    <Copyright URL="">© Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy, Khot Valley, Torkhow, District Chitral, Khyber Pakhtunkhwa Pakistan</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Version URL=""></Version>
     <Description URL="">This keyboard was developed by Rehmat Aziz Chitrali Linguist and
@@ -139,21 +139,27 @@ Saraiki language in the Arabic Script.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Saraiki</Name>
       <ID>rac_saraiki</ID>
-      <Version>1.0.1</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="skr-Arab">Saraiki (Arabic)</Language>
+        <Language ID="skr">Saraiki</Language>
       </Languages>
       <Examples>
-        <Example ID="skr-Arab" Keys="s r a [ i k i" Text="سرائیکی" Note="Name of language"/>
+        <Example ID="skr" Keys="s r a [ i k i" Text="سرائیکی" Note="Name of language"/>
       </Examples>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

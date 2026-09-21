@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 
-<h1>Moor gʋndga</h1>
+<h2>Moor gʋndga</h2>
 
 <div id='osk-container'>
   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
@@ -19,7 +19,7 @@
 <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
 
-<h1>Clavier mooré</h1>
+<h2>Clavier mooré</h2>
 
 <p>Ce clavier est destiné à la saisie et à l’affichage de textes/documents en langue mooré. Il est construit 
 à partir du clavier AZERTY français. Une infographie incluse dans ce pack permet de repérer les différents 
@@ -34,7 +34,7 @@ emplacements des caractères spécifiques au mooré.</p>
 <p>Les polices <i>Charis</i> sont incluses dans ce pack. Vous pouvez effectuer des mises à jour 
 de ces polices de caractères depuis le site <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
-<h2>Notes</h2>
+<h3>Notes</h3>
 <ul>
   <li>La touche- commande des tons est localisée en haut à l’extrême gauche du clavier :
     <ul>
@@ -52,7 +52,7 @@ de ces polices de caractères depuis le site <a href='http://software.sil.org/ch
   </li>
 </ul>
 
-  <h1>Mooré Keyboard Layout</h1>
+  <h2>Mooré Keyboard Layout</h2>
   
   <p>This keyboard is designed for input of the Mooré language.  It is based on the French keyboard as used in Burkina
   Faso.  A visual keyboard is included in this package; please refer to it for placement of specific characters.</p>
@@ -64,7 +64,7 @@ de ces polices de caractères depuis le site <a href='http://software.sil.org/ch
   <p>This keyboard should be used with a font such as <i>Charis</i>. <i>Charis</i> is included in this package, and
   updated versions of all these fonts can be downloaded from <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
     
-  <h2>Notes</h2>
+  <h3>Notes</h3>
   
   <ul>
     <li>Tone marks are located on the top-left key of the keyboard:

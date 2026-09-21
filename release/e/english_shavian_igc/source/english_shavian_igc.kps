@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.238.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>english_shavian.jpg</GraphicFile>
+    <GraphicFile>english_shavian_igc.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,11 +20,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Shaw Imperial</Name>
-    <Copyright URL="">© 2020-2023 Shavian.info</Copyright>
-    <Author URL="mailto:contact@shavian.info">Ed Greville</Author>
+    <Copyright URL="">© Shavian.info</Copyright>
+    <Author URL="mailto:contact@shavian.info">Evan Gallagher</Author>
     <WebSite URL="www.shavian.info">www.shavian.info</WebSite>
     <Version URL=""></Version>
-    <Description>Shavian alphabet keyboard for English, inspired by the Shavian Imperial
+    <Description URL="">Shavian alphabet keyboard for English, inspired by the Shavian Imperial
 Good Companion typewriter layout.</Description>
   </Info>
   <Files>
@@ -94,12 +95,6 @@ Good Companion typewriter layout.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>english_shavian.jpg</Name>
-      <Description>File english_shavian.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</Name>
       <Description>Font Inter Alia Regular</Description>
       <CopyLocation>0</CopyLocation>
@@ -117,12 +112,16 @@ Good Companion typewriter layout.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>english_shavian_igc.png</Name>
+      <Description>File english_shavian_igc.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Shaw Imperial</Name>
       <ID>english_shavian_igc</ID>
-      <Version>1.2.1</Version>
       <OSKFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</DisplayFont>
       <Languages>
@@ -130,5 +129,9 @@ Good Companion typewriter layout.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="english_shavian_qwerty"/>
+    <RelatedPackage ID="english_shavian_jafl"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

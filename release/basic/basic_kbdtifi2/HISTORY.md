@@ -1,6 +1,10 @@
 Tifinagh (Full) Basic Change History
 ====================
 
+1.0.2 31-Jul-2025
+-----------------
+* Package Tirra font
+
 1.0.1 (2024-12-03)
 ----------------
 * Fixed language tags

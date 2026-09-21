@@ -1,9 +1,7 @@
 Soqotri Keyboard
 =====================
 
-Copyright (C) 2019-2020 SIL International
-
-Version 1.1
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 Soqotri Keyboard

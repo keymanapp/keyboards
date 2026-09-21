@@ -1,0 +1,339 @@
+﻿c Pa-Oh/Myanmar Keyboard for Unicode Encoding. 
+c Derived from an original by MJP Hoskens (SIL)
+c 
+c This Layout has been designed to resemble that used by WinMyanmar Systems 
+c in their non-Unicode fonts. However, it is much simplified because of the 
+c advantages of Unicode technology. Some keys have changed as a result.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Pa-Oh'
+store(&COPYRIGHT) 'Copyright © SIL Global and ThanLwinSoft.org'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'pa_oh.ico'
+store(&VISUALKEYBOARD) 'pa_oh.kvks'
+store(&LAYOUTFILE) 'pa_oh.keyman-touch-layout'
+
+group(main) using keys
+
+c This is same as Burmese my-Win except > is U+AA7B
+c < is U+104E and . is U+108F
+store(baseK)    'qwertyui' \
+                "op['zxc"  \
+                'vbn,./' \
+                'QWERTY' \
+                'UIOP{A"' \
+                'ZXCVBNM?' \
+                '-=!@#%^&' \
+                '*()_+' \
+                '\]}<>`~'
+                
+store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 U+1015 U+1000 U+1004 \
+                U+101E U+1005 U+101F U+1012 U+1016 U+1011 U+1001 \
+                U+101C U+1018 U+100A U+101A U+108F U+104B \
+                U+1029 U+101D U+103F U+1023 U+1024 U+104C \
+                U+1009 U+104D U+1025 U+100F U+1027 U+1017 U+1013 \
+                U+1007 U+100C U+1003 U+1020 U+1026 U+1008 U+102A U+104A \
+                U+002D U+003D U+100D U+100E U+100B U+0025 U+002F U+101B \
+                U+1002 U+0028 U+0029 U+005F U+002B \
+                U+104F U+2018 U+2019 U+104E U+AA7B U+25CC U+2060     
+                
+store(numK)     '1234567890' 
+store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 U+1046 U+1047 U+1048 U+1049 \
+                U+1040
+c Some numbers can be used incorrectly as letters
+store(numOrLetK) '078'
+store(numOrLetU) U+1040 U+1047 U+1048
+store(numAsLetU) U+101D U+101B U+1002
+
+store(aftereK)  'mgh;>.'
+store(aftereU)  U+102C U+102B U+1037 U+1038 U+AA7B U+108F
+
+c sub units of aftereK
+store (aaK)     'mg'
+store (aaU)     U+102C U+102B
+store (lDotK)   'h'
+store (lDotU)   U+1037
+store (visargaK) ';>.'
+store (visargaU) U+1038 U+AA7B U+108F
+                      
+store(udiaK)    'dD'
+store(udiaU)    U+102D U+102E
+
+store(anusvaraK) 'JH'
+store(anusvaraU) U+1032 U+1036
+                  
+store(ldiaK)    'klKL'
+store(ldiaU)    U+102F U+1030 U+102F U+1030
+
+store(aftereDK) 'f'
+store(aftereDU) U+103A        
+
+store(currencyK)    '$'       
+
+c 25cc is added here to allow it to be used to show stand alone diacritics
+store(consU)    U+1000 U+1001 U+1002 U+1003        U+1005 U+1006 U+1007 \
+                U+1008 U+1009 U+100A U+100B U+100C U+100D U+100E U+100F \
+                U+1010 U+1011 U+1012 U+1013 U+1014 U+1015 U+1016 U+1017 \
+                U+1018 U+1019 U+101A U+101B U+101C U+101D U+101E U+101F \
+                U+1020 U+1021 U+25CC
+store(consK)    'uc*CpqZ' \
+                  'NUn#X!@P' \
+                  "wx'" \
+                  '"eyzAbr,&vWo[' \
+                  'Vt'
+
+store(sdiaK)     'sjSG'
+store(sdiaU)     U+103B U+103C U+103E U+103D
+store(diaU)      outs(sdiaU) outs(udiaU) outs(ldiaU) U+1031 U+1036
+    
+c split up diacritics - user shouldn't need to know canonical order 
+c Y/R should be first and can't come together     
+          
+store(yDiaU)    U+103B
+store(rDiaU)    U+103C
+store(wDiaU)    U+103D 
+store(hDiaU)    U+103E
+store(yrDiaU)   U+103B U+103C 
+store(yrwDiaU)   U+103B U+103C U+103D
+
+store(yDiaK) 's'
+store(rDiaK) 'j'
+store(hDiaK) 'S'
+store(wDiaK) 'G'
+store(yrDiaK) outs(yDiaK) outs(rDiaK)
+
+store(m1DiaK)   's'
+store(m2DiaK)   'sj'
+store(m3DiaK)   'sjG'
+store(m4DiaK)   'sjGS'
+store(m1DiaU)   U+103B
+store(m2DiaU)   U+103B U+103C
+store(m3DiaU)   U+103B U+103C U+103D
+store(mDia)     U+103B U+103C U+103D U+103E
+
+c this is a weired stacked combination of 100B,100C                      
+store(ttatthaK) '|' 
+
+c U+200B causes problems in OpenOffice, but Padauk now removes 200C/D,
+c so it doesn't have correct effect
+store(filler)   U+200B
+
+c F is Kinzi - it should be possible to create a Kinzi   
+store(kinziK)   'F'
+store(kinziU)   U+1004    
+
+store(vowelEK)  'a'
+store(vowelEU)  U+1031  
+
+c create some classes for diacritics that might have been 
+c sensibly typed before the user types the medial
+store(allDiaU)  U+1031 U+102F U+1030 U+102D U+1032 U+1036 U+1037
+c only a subset can correctly occur together  
+c (U+1031 U+1037) (U+102D U+102F) 
+c (U+102F U+1036) (U+1032 U+1037) (U+102D U+1036)
+store(firstDiaU) U+1031 U+102D U+102F
+store(secondDiaU) U+102F U+1032 U+1036 U+1037    
+c It is possible for U+102F U+102D U+1037 to occur,
+c but in this case its fairly obvious to type the medials
+c before the final U+1037    
+
+store(stackK)   '`'
+store(stackU)   U+1039
+
+begin Unicode > use(Main)
+
+c Deal with vowel E before consonant 
++ any(vowelEK) > outs(filler) outs(vowelEU)
+c stacker key
+U+1025 any(consU) + any(stackK) > U+1009 outs(stackU) index(consU, 2)
+U+1025 any(numOrLetU) + any(stackK) > U+1009 outs(stackU) index(numOrLetU, 2)
+any(consU) + any(stackK) > outs(stackU) index(consU, 1)
+any(numOrLetU) + any(stackK) > outs(stackU) index(numAsLetU, 1)
+any(numOrLetU) any(consU) + any(stackK) > index(numAsLetU, 1) outs(stackU) index(consU, 2)
+any(numOrLetU) any(numOrLetU) + any(stackK) > index(numAsLetU, 1) outs(stackU) index(numAsLetU, 2)
+c rearrange vowel E to behind consonant in stacking situation
+c U+1031 U+101E U+101E + any(stackK) > U+103F U+1031
+U+1031 any(consU) + any(stackK) > outs(stackU) index(consU, 2) U+1031
+U+1005 U+1031 + any(yDiaK) > U+1008 U+1031
+
+c Asat and 103c Not for Myanmar
+any(consU) U+103A + any(rDiaK) > index(consU, 1) U+103A index(rDiaU, 3)
+any(consU) U+103C + any(aftereDK) > index(consU, 1) index(aftereDU, 3) U+103C
+any(consU) U+1031 + any(aftereDK) > index(consU, 1) index(aftereDU, 3) U+1031
+any(consU) U+103C U+1031 + any(aftereDK) > index(consU, 1) index(aftereDU, 4) U+103C U+1031
+
+c modify space keys
+ + [SHIFT K_SPACE] > U+200B      
+ 
+c Convert sequences for composite vowels into single code point
+U+101E U+103C U+1031 U+102c + any(aftereDK) > U+102A
+U+101E + 'j' > U+1029
+U+1025 + 'D' > U+1026          
+c users usually type u-tha when they mean nya child tha
+U+1025 + 'f' > U+1009 U+103A
+U+1025 + 'm' > U+1009 U+102C
+U+1025 U+1037 + 'f' > U+1009 U+1037 U+103A
+
+any(numOrLetU) + 'm' > index(numAsLetU, 1) U+102C
+any(numOrLetU) + 'g' > index(numAsLetU, 1) U+102B
+any(numOrLetU) + 'f' > index(numAsLetU, 1) U+103A
+any(numOrLetU) + any(anusvaraK) > index(numAsLetU, 1) index(anusvaraU, 2)
+U+1044 U+1004 U+103A + ';' >  U+104E U+1004 U+103A U+1038
+any(numOrLetU) U+1004 + 'f' > index(numAsLetU, 1) U+1004 U+103A
+any(numOrLetU) any(consU) + 'f' > index(numAsLetU, 1) index(consU, 2) U+103A
+any(numOrLetU) any(numOrLetU) + 'f' > index(numAsLetU, 1) index(numAsLetU, 2) U+103A
+
+ + any(numK) > index(numU, 1)
+ + any(baseK) > index(baseU, 1)
+ + any(aftereK) > index(aftereU, 1)
+any(filler) U+1031 + any(numOrLetK) > index(numAsLetU, 3) U+1031
+any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
+any(filler) U+1031 + any(ttatthaK) > U+100B U+1039 U+100C U+1031
+c any(filler) U+1031 + any(baseK) > U+1031 U+25CC index(baseU, 3)
+
+c these allow the user to type upper and lower diacritics in
+c any order, but to still get the storage right
+any(udiaU) U+1037 + any(ldiaK) > index(udiaU, 1) index(ldiaU, 3) U+1037
+any(ldiaU) U+1037 + any(udiaK) > index(udiaU, 3) context
+U+1037 + any(udiaK) > index(udiaU, 2) context
+U+1037 + any(ldiaK) > index(ldiaU, 2) context
+
+ + any(anusvaraK) > index(anusvaraU, 1)
+any(anusvaraU) + any(udiaK) > index(udiaU, 2) context
+any(ldiaU) any(anusvaraU) + any(udiaK) > index(udiaU, 3) context
+any(anusvaraU) + any(ldiaK) > index(ldiaU, 2) context
+c it is unlikely that other combinations will occur with U1037 
+c and aa so this rules are probably OK
+U+1037 + any(aaK) > index(aaU, 2) context
+c allow tone marks to be typed in either order
+any(visargaU) + any(lDotK) > index(lDotU, 2) context
+U+103A any(visargaU) + any(lDotK) > index(lDotU, 3) context
+U+1037 + any(anusvaraK) > index(anusvaraU, 2) U+1037
+any(lDotU) any(visargaU) + any(anusvaraK) > index(anusvaraU, 3) context
+any(lDotU) any(visargaU) + any(ldiaK) > index(ldiaU, 3) context
+any(anusvaraU) any(lDotU) + any(ldiaK) > index(ldiaU, 3) context
+any(visargaU) + any(anusvaraK) > index(anusvaraU, 2) context
+any(visargaU) + any(ldiaK) > index(ldiaU, 2) context
+any(anusvaraU) any(visargaU) + any(ldiaK) > index(ldiaU, 3) context
+any(anusvaraU) any(visargaU) + any(udiaK) > index(udiaU, 3) context
+any(lDiaU) any(visargaU) + any(udiaK) > index(udiaU, 3) context
+
+c any(udiaU) + any(ldiaK) > index(ldiaU, 2) context
+any(ldiaU) + any(udiaK) > index(udiaU, 2) context
+any(numOrLetU) + any(ldiaK) > index(numAsLetU, 1) index(ldiaU, 2)
+any(numOrLetU) + any(udiaK) > index(numAsLetU, 1) index(udiaU, 2)
+ + any(ldiaK) > index(ldiaU, 1)
+ + any(udiaK) > index(udiaU, 1)
+
+ + any(ttatthaK) > U+100B U+1039 U+100C 
+ + any(currencyK) > U+1000 U+103B U+1015 U+103A
+ + ':' > U+102B U+103A
+ 
+c now deal with the medials, need to arrange order appropriately
+c most complicated is when all 3 medials are together but out of order 
+
+any(rDiaU) any(lDiaU) any(wDiaU) any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m1DiaK) > index(m1DiaU, 7) context
+any(rDiaU) any(lDiaU) any(wDiaU) any(hDiaU) any(firstDiaU) + any(m1DiaK) > index(m1DiaU, 6) context
+any(rDiaU) any(lDiaU) any(wDiaU) any(hDiaU) + any(m1DiaK) > index(m1DiaU, 5) context
+any(lDiaU) any(wDiaU) any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m2DiaK) > index(m2DiaU, 6) context
+any(lDiaU) any(wDiaU) any(hDiaU) any(firstDiaU) + any(m2DiaK) > index(m2DiaU, 5) context
+any(lDiaU) any(wDiaU) any(hDiaU) + any(m2DiaK) > index(m2DiaU, 4) context
+any(wDiaU) any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m2DiaK) > index(m2DiaU, 5) context
+any(wDiaU) any(hDiaU) any(firstDiaU) + any(m2DiaK) > index(m2DiaU, 4) context
+any(wDiaU) any(hDiaU) + any(m2DiaK) > index(m2DiaU, 3) context
+any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m3DiaK) > index(m3DiaU, 4) context
+any(hDiaU) any(firstDiaU) + any(m3DiaK) > index(m3DiaU, 3) context
+any(hDiaU) + any(m3DiaK) > index(m3DiaU, 2) context
+c expand full context of syllable
+any(consU) any(wDiaU) any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m2DiaK) >\
+    index(consU, 1)  index(m2DiaU, 6) index(wDiaU, 2) index(hDiaU, 3) index(firstDiaU, 4) index(secondDiaU, 5) 
+any(consU) any(wDiaU) any(hDiaU) any(firstDiaU) + any(m2DiaK) > \
+    index(consU, 1)  index(m2DiaU, 5) index(wDiaU, 2) index(hDiaU, 3) index(firstDiaU, 4)
+any(consU) any(wDiaU) any(hDiaU) + any(m2DiaK) > \
+    index(consU, 1) index(m2DiaU, 4) index(wDiaU, 2) index(hDiaU, 3)
+any(consU) any(wDiaU) any(firstDiaU) any(secondDiaU) + any(m2DiaK) >\
+    index(consU, 1)  index(m2DiaU, 5) index(wDiaU, 2) index(firstDiaU, 3) index(secondDiaU, 4) 
+any(consU) any(wDiaU) any(firstDiaU) + any(m2DiaK) > \
+    index(consU, 1)  index(m2DiaU, 4) index(wDiaU, 2) index(firstDiaU, 3)
+
+any(consU) any(yrwDiaU) any(firstDiaU) any(secondDiaU) + any(hDiaK) > \
+    index(consU, 1) index(yrwDiaU, 2)  index(hDiaU, 5) index(firstDiaU, 3) index(secondDiaU, 4) 
+any(consU) any(yrwDiaU) any(firstDiaU) + any(hDiaK) > \
+    index(consU, 1) index(yrwDiaU, 2)  index(hDiaU, 4) index(firstDiaU, 3)
+
+any(consU) any(wDiaU) + any(yrDiaK) > index(consU, 1) index(yrDiaU,3) index(wDiaU,2)
+any(consU) any(hDiaU) + any(yrDiaK) > index(consU, 1) index(yrDiaU,3) index(hDiaU,2)
+any(consU) any(hDiaU) + any(wDiaK) > index(consU, 1) index(wDiaU,3) index(hDiaU,2)
+any(consU) any(wDiaU) any(hDiaU) + any(yrDiaK) > index(consU, 1) index(yrDiaU,4) index(wDiaU,2) index(hDiaU,3)
+any(consU) any(yrDiaU) any(hDiaU) + any(wDiaK) > index(consU, 1) index(yrDiaU,2) index(wDiaU,4) index(hDiaU,3)
+
+any(consU) any(yrDiaU) any(firstDiaU) any(secondDiaU) + any(wDiaK) > \
+    index(consU, 1) index(yrDiaU, 2)  index(wDiaU, 5) index(firstDiaU, 3) index(secondDiaU, 4) 
+any(consU) any(yrDiaU) any(firstDiaU) + any(wDiaK) > \
+    index(consU, 1) index(yrDiaU, 2)  index(wDiaU, 4) index(firstDiaU, 3)
+
+any(consU) any(hDiaU) any(firstDiaU) any(secondDiaU) + any(m3DiaK) > \
+    index(consU, 1)  index(m3DiaU, 5) index(hDiaU, 2) index(firstDiaU, 3) index(secondDiaU, 4) 
+any(consU) any(hDiaU) any(firstDiaU) + any(m3DiaK) > \
+    index(consU, 1) index(m3DiaU, 4) index(hDiaU, 2) index(firstDiaU, 3)
+any(consU) any(hDiaU) + any(m3DiaK) > \
+    index(consU, 1)  index(m3DiaU, 3) 
+
+any(consU) any(firstDiaU) any(secondDiaU) + any(m4DiaK) > index(consU, 1) index(mDia, 4) index(firstDiaU, 2) index(secondDiaU, 3)
+any(consU) any(firstDiaU) + any(m4DiaK) >  index(consU, 1)  index(mDia, 3) index(firstDiaU, 2)                 
+
+any(firstDiaU) any(secondDiaU) + any(m4DiaK) > index(mDia, 3) context
+any(firstDiaU) + any(m4DiaK) > index(mDia, 2) context
+ + any(m4DiaK) > index(mDia, 1) context
+
+any(visargaU)+ any(m4DiaK) > index(mDia, 2) context
+any(anusvaraU) + any(m4DiaK) > index(mDia, 2) context
+any(ldiaU) any(visargaU)+ any(m4DiaK) > index(mDia, 3) context
+any(udiaU) any(visargaU)+ any(m4DiaK) > index(mDia, 3) context
+any(anusvaraU) any(visargaU)+ any(m4DiaK) > index(mDia, 3) context
+any(udiaU) any(ldiaU) any(visargaU)+ any(m4DiaK) > index(mDia, 4) context
+any(ldiaU) any(anusvaraU) any(visargaU)+ any(m4DiaK) > index(mDia, 4) context
+any(ldiaU) any(anusvaraU) any(lDotU)+ any(m4DiaK) > index(mDia, 4) context
+any(ldiaU) any(anusvaraU) any(lDotU) any(visargaU)+ any(m4DiaK) > index(mDia, 5) context
+
+c contractions
+any(consU) any(mDia) + any(aftereDK) > index(consU, 1) index(aftereDU,3) index(mDia,2)
+
+any(firstDiaU) any(secondDiaU) + any(sdiaK) > index(sdiaU, 3) context
+any(allDiaU) + any(sdiaK) > index(sdiaU, 2) context
+any(numOrLetU) + any(sdiaK) > index(numAsLetU, 1) index(sdiaU, 2)
+U+1005 + 's' > U+1008
+ + any(sdiaK) > index(sdiaU, 1)
+
+ + any(aftereDK) > index(aftereDU, 1)
+
+c Normalization of 1037 and 103a
+any(aftereDU) + any(lDotK) > index(lDotU, 2) index(aftereDU, 1)
+
+any(visargaU) + any(aftereDK) > index(aftereDU, 2) context
+
++ any(kinziK) > index(kinziU, 1) U+103A U+1039
+any(consU) + any(kinziK) > index(kinziU, 2) U+103A U+1039 index(consU, 1)
+U+104E + any(kinziK) > index(kinziU, 2) U+103A U+1039 U+104E
+any(numOrLetU) + any(kinziK) > index(kinziU, 2) U+103A U+1039 index(numAsLetU, 1)
+any(numU) + any(kinziK) > index(kinziU, 2) U+103A U+1039  index(numU, 1)
+any(consU) U+1039 any(consU) + any(kinziK) > index(kinziU, 4) U+103A U+1039 context
+any(consU) U+1039 any(consU) any(diaU) + any(kinziK) > index(kinziU, 5) U+103A U+1039 context
+any(consU) U+1039 any(consU) any(diaU) any(diaU) + any(kinziK) > index(kinziU, 6) U+103A U+1039 context
+any(consU) any(mDia) + any(kinziK) > index(kinziU, 3) U+103A U+1039 index(consU, 1) index(mDia, 2)
+any(consU) any(diaU) + any(kinziK) > index(kinziU, 3) U+103A U+1039 index(consU, 1) index(diaU, 2)
+any(consU) any(diaU) any(diaU) + any(kinziK) > index(kinziU, 4) U+103A U+1039 index(consU, 1) index(diaU, 2) index(diaU, 3)
+any(consU) any(diaU) any(diaU) any(diaU) + any(kinziK) > index(kinziU, 5) U+103A U+1039 index(consU, 1) index(diaU, 2) index(diaU, 3)  index(diaU, 4) 
+any(consU) any(diaU) any(diaU) any(diaU) any(diaU) + any(kinziK) > index(kinziU, 6) U+103A U+1039  index(consU, 1) index(diaU, 2)   index(diaU, 3)  index(diaU, 4)  index(diaU, 5) 
+
+any(filler) U+1031 + [K_BKSP] > nul
+any(baseU) U+1031 + [K_BKSP] > outs(filler) U+1031
+any(mDia) U+1031 + [K_BKSP] > U+1031
+
+U+1004 U+103A U+1039 any(consU) + [K_BKSP] > index(consU, 4)
+U+1004 U+103A U+1039 any(consU) U+1031 + [K_BKSP] > index(consU, 4) U+1031
+U+1039 any(consU) U+1031 + [K_BKSP] > U+1031
+U+1039 any(consU) + [K_BKSP] > nul
+U+1037 U+103A + [K_BKSP] > U+103A
+

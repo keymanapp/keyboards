@@ -1,6 +1,10 @@
 Shaw QWERTY Change History
 ====================
 
+1.2 (2025-06-22)
+* Added Latin alphabet shiftlock (CAPS) layer.
+* Changed longpress display for touch layouts to first longpress character.
+
 1.1.1 (2023-11-30)
 ----------------
 * Use shared font instead of local

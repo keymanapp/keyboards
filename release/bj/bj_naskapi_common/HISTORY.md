@@ -1,6 +1,10 @@
 Naskapi (Common) Keyboard Change History
 =======================
 
+1.4.2 (12 Feb 2026)
+-------------------
+* Updated font to BJCree v7.000
+
 1.4.1 (30 Oct 2023)
 -------------------
 * Updated font to better support the Cans script

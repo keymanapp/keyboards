@@ -14,7 +14,7 @@ THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 cd "$THIS_SCRIPT_PATH"
 
 . "$REPO_ROOT/resources/util.inc.sh"
-. "$REPO_ROOT/tools/7z.inc.sh"
+. "$REPO_ROOT/resources/zip.inc.sh"
 . "$REPO_ROOT/tools/jq.inc.sh"
 
 builder_describe \
@@ -94,29 +94,16 @@ function do_build_kmp() {
     # Load relevant fields from the .kps file
 
     mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
-    name=${kpsdata[0]}
-    # version assigned later
-    bcp47=${kpsdata[2]}
-    langname=${kpsdata[3]}
-    oskFont=${kpsdata[4]}
-    displayFont=${kpsdata[5]}
-
-    # Parse .keyboard_info file to override keyboard version because
-    # some are blank due to <FollowKeyboardVersion/> (#2143)
-    keyboardInfo="$REPO_ROOT/release/$group/$id/build/$id.keyboard_info"
-    if [[ ! -f $keyboardInfo ]]; then
-      die "$keyboardInfo does not exist"
-    fi
-
-    version=$(cat $keyboardInfo | $JQ -r '.version')
+    bcp47=${kpsdata[0]}
+    langname=${kpsdata[1]}
+    oskFont=${kpsdata[2]}
+    displayFont=${kpsdata[3]}
 
     # Override sil_euro_latin keyboard to English language
     if [[ $id = 'sil_euro_latin' ]]; then
-      name="English"
-      bcp47="en"  
+      bcp47="en"
       langname="English"
     elif [[ $id = 'basic_kbdcan' ]]; then
-      name="Français"
       bcp47="fr-CA"
       langname="French (Canada)"
     fi
@@ -159,9 +146,7 @@ function do_build_kmp() {
     # Build a keyboard entry
     KEYBOARD_LINES_0='
       <Keyboard>
-        <Name>'"$name"'</Name>
-        <ID>'"$id"'</ID>
-        <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
+        <ID>'"$id"'</ID>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
         <Languages>
           <Language ID="'"$bcp47"'">'"$langname"'</Language>
         </Languages>
@@ -198,7 +183,7 @@ function do_build_region() {
   fi
 
   # Extract kmp.json (overwrite) from build/fv_all.kmp
-  "$APP7Z" x build/fv_all.kmp -aoa -obuild kmp.json 
+  unzip -o build/fv_all.kmp kmp.json -d build
   [ -f "build/kmp.json" ] || builder_die "fv_all: Failed to extract kmp.json"
 
   kmpKeyboards=$("$JQ" -r '.keyboards' build/kmp.json)
@@ -224,12 +209,12 @@ function do_build_region() {
 
   # Convert to JSONArray and write to keyboards.json file
   convertToJSONArray "${mergedKeyboards[@]}" > "build/keyboards.json"
- 
+
   # Add keyboards.json to kmp.json
   if [[ ! -f "build/keyboards.json" ]]; then
     builder_die "Failed to generate build/keyboards.json"
   fi
-  "$APP7Z" a build/fv_all.kmp ./build/keyboards.json
+  add_zip_files build/fv_all.kmp ./build/keyboards.json
 }
 
 function do_build() {

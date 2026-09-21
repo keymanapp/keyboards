@@ -7,7 +7,7 @@ This keyboard is for the Eastern Cham language using the Cham script. It is loos
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/sil_cham
+Keyboard Homepage: https://keyman.com/keyboards/sil_cham_phonetic
 
 Copyright
 ---------

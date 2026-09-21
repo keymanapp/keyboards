@@ -1,6 +1,10 @@
 Hebrew Legacy (SIL) Keyboard Change History
 =======================
 
+1.0.2 (9 March 2026)
+-----------------
+* Appropriately change display font for .kvks
+
 1.0.1 (1 Oct 2024)
 -----------------
 * Changed display font for .kvks

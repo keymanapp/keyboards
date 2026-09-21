@@ -1,0 +1,106 @@
+﻿c Mathematical Bold Script keyboard for Mathematical Bold Script Alphanumeric Symbols
+store(&VERSION) '10.0'
+store(&NAME) 'Mathematical Bold Script'
+store(&COPYRIGHT) 'Copyright © cathaylab'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'mathematical_bold_script.ico'
+store(&VISUALKEYBOARD) 'mathematical_bold_script.kvks'
+store(&LAYOUTFILE) 'mathematical_bold_script.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+any(sentencePunctuation) ' ' > layer('shift')
+any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+store(letters) '𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗𝟎1234567890-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
++ [ALT K_QUOTE] > '‘'
++ [ALT SHIFT K_QUOTE] > '“'
+"‘" + [ALT K_QUOTE] > "‘’"
+"“" + [ALT SHIFT K_QUOTE] > "“”"
+any(letters) + [ALT K_QUOTE] > index(letters, 1) '’'
+any(letters) + [ALT SHIFT K_QUOTE] > index(letters, 1) '”'
++ [K_Z] > '𝔃'
++ [K_Y] > '𝔂'
++ [K_X] > '𝔁'
++ [K_W] > '𝔀'
++ [K_V] > '𝓿'
++ [K_U] > '𝓾'
++ [K_T] > '𝓽'
++ [K_S] > '𝓼'
++ [K_R] > '𝓻'
++ [K_Q] > '𝓺'
++ [K_P] > '𝓹'
++ [K_O] > '𝓸'
++ [K_N] > '𝓷'
++ [K_M] > '𝓶'
++ [K_L] > '𝓵'
++ [K_K] > '𝓴'
++ [K_J] > '𝓳'
++ [K_I] > '𝓲'
++ [K_H] > '𝓱'
++ [K_G] > '𝓰'
++ [K_F] > '𝓯'
++ [K_E] > '𝓮'
++ [K_D] > '𝓭'
++ [K_C] > '𝓬'
++ [K_B] > '𝓫'
++ [K_A] > '𝓪'
++ [SHIFT K_I] > '𝓘'
++ [SHIFT K_Z] > '𝓩'
++ [SHIFT K_Y] > '𝓨'
++ [SHIFT K_X] > '𝓧'
++ [SHIFT K_W] > '𝓦'
++ [SHIFT K_V] > '𝓥'
++ [SHIFT K_U] > '𝓤'
++ [SHIFT K_T] > '𝓣'
++ [SHIFT K_S] > '𝓢'
++ [SHIFT K_R] > '𝓡'
++ [SHIFT K_Q] > '𝓠'
++ [SHIFT K_P] > '𝓟'
++ [SHIFT K_O] > '𝓞'
++ [SHIFT K_N] > '𝓝'
++ [SHIFT K_M] > '𝓜'
++ [SHIFT K_L] > '𝓛'
++ [SHIFT K_K] > '𝓚'
++ [SHIFT K_J] > '𝓙'
++ [SHIFT K_H] > '𝓗'
++ [SHIFT K_G] > '𝓖'
++ [SHIFT K_F] > '𝓕'
++ [SHIFT K_E] > '𝓔'
++ [SHIFT K_D] > '𝓓'
++ [SHIFT K_C] > '𝓒'
++ [SHIFT K_B] > '𝓑'
++ [SHIFT K_A] > '𝓐'
++ [K_1] > '𝟏'
++ [K_2] > '𝟐'
++ [K_3] > '𝟑'
++ [K_4] > '𝟒'
++ [K_5] > '𝟓'
++ [K_6] > '𝟔'
++ [K_7] > '𝟕'
++ [K_8] > '𝟖'
++ [K_9] > '𝟗'
++ [K_0] > '𝟎'

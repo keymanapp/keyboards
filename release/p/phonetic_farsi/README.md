@@ -5,7 +5,6 @@ A phonetically accurate Farsi (Persian) keyboard that includes the Farsi numbers
 
 # Links
 - Keyboard Homepage: https://keyman.com/keyboards/phonetic_farsi
-- Contact amir.ghareebdost@gmail.com
 
 # Copyright
 See [LICENSE.md](LICENSE.md)

@@ -13,7 +13,7 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'mingrelian_cyrillic.kvks'
 store(&BITMAP) 'mingrelian_cyrillic.ico'
 store(&LAYOUTFILE) 'mingrelian_cyrillic.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&COPYRIGHT) 'Copyright © Harindeveloper'
 
 begin Unicode > use(main)
@@ -67,18 +67,30 @@ group(main) using keys
 + [NCAPS SHIFT K_C] > U+0426
 + [CAPS SHIFT K_C] > U+0446
 
-+ [CAPS SHIFT RALT K_c] > U+04b5
++ [NCAPS RALT K_C] > U+04b5
++ [CAPS RALT K_C] > U+04b4
 + [NCAPS SHIFT RALT K_C] > U+04b4
++ [CAPS SHIFT RALT K_C] > U+04b5
 
 + [NCAPS K_D] > U+0434
 + [CAPS K_D] > U+0414
 + [NCAPS SHIFT K_D] > U+0414
 + [CAPS SHIFT K_D] > U+0434
 
++ [NCAPS RALT K_D] > U+04Ad
++ [CAPS RALT K_D] > U+04AC
++ [NCAPS SHIFT RALT K_D] > U+04AC
++ [CAPS SHIFT RALT K_D] > U+04AD
+
 + [NCAPS K_E] > U+0435
 + [CAPS K_E] > U+0415
 + [NCAPS SHIFT K_E] > U+0415
 + [CAPS SHIFT K_E] > U+0435
+
++ [NCAPS RALT K_E] > U+04D9
++ [CAPS RALT K_E] > U+04D8
++ [NCAPS SHIFT RALT K_E] > U+04D8
++ [CAPS SHIFT RALT K_E] > U+04D9
 
 + [NCAPS K_F] > U+0444
 + [CAPS K_F] > U+0424
@@ -90,21 +102,30 @@ group(main) using keys
 + [NCAPS SHIFT K_G] > U+0413
 + [CAPS SHIFT K_G] > U+0433
 
-+ [CAPS SHIFT RALT K_G] > U+0494
-+ [NCAPS SHIFT RALT K_G] > U+0495
++ [NCAPS RALT K_G] > U+0495
++ [CAPS RALT K_G] > U+0494
++ [NCAPS SHIFT RALT K_G] > U+0494
++ [CAPS SHIFT RALT K_G] > U+0495
 
 + [NCAPS K_H] > U+0447
 + [CAPS K_H] > U+0427
 + [NCAPS SHIFT K_H] > U+0427
 + [CAPS SHIFT K_H] > U+0447
 
-+ [CAPS SHIFT RALT K_H] > U+a692
-+ [NCAPS SHIFT RALT K_H] > U+a693
++ [NCAPS RALT K_H] > U+a693
++ [CAPS RALT K_H] > U+a692
++ [NCAPS SHIFT RALT K_H] > U+a692
++ [CAPS SHIFT RALT K_H] > U+a693
 
 + [NCAPS K_I] > U+0456
 + [CAPS K_I] > U+0406
 + [NCAPS SHIFT K_I] > U+0406
 + [CAPS SHIFT K_I] > U+0456
+
++ [NCAPS RALT K_I] > U+0438
++ [CAPS RALT K_I] > U+0418
++ [NCAPS SHIFT RALT K_I] > U+0418
++ [CAPS SHIFT RALT K_I] > U+0438
 
 + [NCAPS K_J] > U+0458
 + [CAPS K_J] > U+0408
@@ -116,8 +137,10 @@ group(main) using keys
 + [NCAPS SHIFT K_K] > U+041a
 + [CAPS SHIFT K_K] > U+043a
 
-+ [CAPS SHIFT RALT K_K] > U+04c3
-+ [NCAPS SHIFT RALT K_K] > U+04c4
++ [NCAPS RALT K_K] > U+04c4
++ [CAPS RALT K_K] > U+04c3
++ [NCAPS SHIFT RALT K_K] > U+04c3
++ [CAPS SHIFT RALT K_K] > U+04c4
 
 + [NCAPS K_L] > U+043b
 + [CAPS K_L] > U+041b
@@ -134,8 +157,10 @@ group(main) using keys
 + [NCAPS SHIFT K_N] > U+041d
 + [CAPS SHIFT K_N] > U+043d
 
-+ [CAPS SHIFT RALT K_N] > U+04bb
++ [NCAPS RALT K_N] > U+04bb
++ [CAPS RALT K_N] > U+04ba
 + [NCAPS SHIFT RALT K_N] > U+04ba
++ [CAPS SHIFT RALT K_N] > U+04bb
 
 + [NCAPS K_O] > U+043e
 + [CAPS K_O] > U+041e
@@ -147,13 +172,20 @@ group(main) using keys
 + [NCAPS SHIFT K_P] > U+041f
 + [CAPS SHIFT K_P] > U+043f
 
-+ [CAPS SHIFT RALT K_P] > U+04a6
-+ [NCAPS SHIFT RALT K_P] > U+04a7
++ [NCAPS RALT K_P] > U+04a7
++ [CAPS RALT K_P] > U+04a6
++ [NCAPS SHIFT RALT K_P] > U+04a6
++ [CAPS SHIFT RALT K_P] > U+04a7
 
 + [NCAPS K_Q] > U+04a1
 + [CAPS K_Q] > U+04a0
 + [NCAPS SHIFT K_Q] > U+04a0
 + [CAPS SHIFT K_Q] > U+04a1
+
++ [NCAPS RALT K_Q] > U+049F
++ [CAPS RALT K_Q] > U+049E
++ [NCAPS SHIFT RALT K_Q] > U+049E
++ [CAPS SHIFT RALT K_Q] > U+049F
 
 + [NCAPS K_R] > U+0440
 + [CAPS K_R] > U+0420
@@ -170,8 +202,10 @@ group(main) using keys
 + [NCAPS SHIFT K_T] > U+0422
 + [CAPS SHIFT K_T] > U+0442
 
-+ [CAPS SHIFT RALT K_T] > U+a68a
-+ [NCAPS SHIFT RALT K_T] > U+a68b
++ [NCAPS RALT K_T] > U+a68b
++ [CAPS RALT K_T] > U+a68a
++ [NCAPS SHIFT RALT K_T] > U+a68a
++ [CAPS SHIFT RALT K_T] > U+a68b
 
 + [NCAPS K_U] > U+0443
 + [CAPS K_U] > U+0423
@@ -193,8 +227,10 @@ group(main) using keys
 + [NCAPS SHIFT K_X] > U+0425
 + [CAPS SHIFT K_X] > U+0445
 
-+ [CAPS SHIFT RALT K_X] > U+040f
-+ [NCAPS SHIFT RALT K_X] > U+045f
++ [NCAPS RALT K_X] > U+045f
++ [CAPS RALT K_X] > U+040f
++ [NCAPS SHIFT RALT K_X] > U+040f
++ [CAPS SHIFT RALT K_X] > U+045f
 
 + [NCAPS K_Y] > U+0475
 + [CAPS K_Y] > U+0474
@@ -206,8 +242,10 @@ group(main) using keys
 + [NCAPS SHIFT K_Z] > U+0417
 + [CAPS SHIFT K_Z] > U+0437
 
-+ [CAPS SHIFT RALT K_Z] > U+04e0
-+ [NCAPS SHIFT RALT K_Z] > U+04e1
++ [NCAPS RALT K_Z] > U+04e1
++ [CAPS RALT K_Z] > U+04e0
++ [NCAPS SHIFT RALT K_Z] > U+04e0
++ [CAPS SHIFT RALT K_Z] > U+04e1
 
 + [NCAPS K_COLON] > U+003b
 + [CAPS K_COLON] > U+003a
@@ -239,8 +277,8 @@ group(main) using keys
 + [CAPS SHIFT K_BKQUOTE] > U+0060
 
 + [NCAPS K_LBRKT] > U+a64b
-+ [CAPS K_LBRKT] > U+a64b
-+ [NCAPS SHIFT K_LBRKT] > U+a64b
++ [CAPS K_LBRKT] > U+a64a
++ [NCAPS SHIFT K_LBRKT] > U+a64a
 + [CAPS SHIFT K_LBRKT] > U+a64b
 
 + [K_BKSLASH] > U+005c

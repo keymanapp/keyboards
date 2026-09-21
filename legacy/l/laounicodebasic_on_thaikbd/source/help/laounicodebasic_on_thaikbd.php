@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Lao Unicode on Thai Keyboard Help';
-  $pagetitle = 'Lao Unicode on Thai Keyboard Help';
+  $pagename = 'Lao Unicode on Thai (deprecated) Keyboard Help';
+  $pagetitle = 'Lao Unicode on Thai (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 
@@ -1525,3 +1525,4 @@ keyboard more accessible to Lao and Thai users.</span></p>
 
 
 </div>
+

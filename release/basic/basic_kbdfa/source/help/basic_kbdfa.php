@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Persian Basic. The keyboard layout follows the Windows 10 layout.
+    Persian Basic keyboard was imported with permission from the Windows 10 keyboard. This keyboard follows the Inscript Farsi layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

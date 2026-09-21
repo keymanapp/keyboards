@@ -1,8 +1,6 @@
 Old English keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 This keyboard is designed for typing the Old English language, using the Latin script, with a standard 104- or 105-key layout. It can also be used to type Middle English.

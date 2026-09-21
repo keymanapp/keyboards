@@ -12,29 +12,15 @@
 		</p>
 
 
-		<h3 id="1">
-			၁။ Mon (Phonetic) Keyboard
-		</h3 >
-		<h4>Unshifted</h4>
+<h3>Desktop Keyboard Layout</h3>
 
-	     <p><img src="mon_phonetic.png"></p>
-		<h4>Shift</h4>
-      <p><img src="mon_phonetic_s.png"></p>
-	  <h4>Right Alt</h4>
+<div id='osk' data-states='default shift alt shift-alt'>
+</div>
 
-	     <p><img src="mon_phonetic_right_alt.png"></p>
-		<h4>Shift + Right Alt</h4>
-      <p><img src="mon_phonetic_s_right_alt.png"></p>
-	  
-	    <h4>Mobile Default Layer </h4>  
-		<p><img src="mon_phonetic_mobile_default.png"></p>
-		
-		 <h4>Mobile Shift Layer </h4>  
-		<p><img src="mon_phonetic_mobile_shift.png"></p>
-		
-		<h4>Mobile Numeric Layer </h4>  
-		<p><img src="mon_phonetic_mobile_numeric.png"></p>
-		
+<h3>Mobile/Phone Keyboard Layout</h3>
+
+<div id='osk-phone' data-states='default shift numeric symbol'>
+</div>		
 		
 		<h3 id="2">
 			၂။ ဗီုဂွံတက်ဗျန်ကွက်ဂမၠိုၚ်

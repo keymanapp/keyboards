@@ -4,8 +4,11 @@
   require_once('header.php');
 ?>
 
-        <p>
-            The slp1_roman keyboard is one of two keyboards that are a part of The Sanskrit Library Phonetic ASCII package:
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
+
+<p>The slp1_roman keyboard is one of two keyboards that are a part of The Sanskrit Library Phonetic ASCII package:
             one to enter Roman Unicode with diacritics, the other to enter
             Devanagari Unicode. These include all accents required for The
             R̥gveda. Both keymaps follow the Sanskrit Library ASCII encoding
@@ -19,7 +22,5 @@
             brackets. Contacts: info@sanskritlibrary.org
         </p>
         <p>This particular keyboard supports the Latin script.</p>
+        <p>In addition to the help file linked to above, the keyboard also supports typing "e-" and "o-" to produce "ē" and "ō".</p>
 
-        <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>

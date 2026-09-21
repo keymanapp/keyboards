@@ -1,6 +1,10 @@
 Farsiman Change History
 ====================
 
+1.0.3 (2026-03-09)
+------------------
+* Update OSKFont for better display
+
 1.0.2 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file

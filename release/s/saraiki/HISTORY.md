@@ -1,6 +1,10 @@
 Saraiki Change History
 ====================
 
+1.2.1 (2026-03-10)
+----------------
+* Add KbdArab.json and KbdArabScheherazade for better display
+
 1.2 (2024-09-04)
 ----------------
 * Add tablet layout

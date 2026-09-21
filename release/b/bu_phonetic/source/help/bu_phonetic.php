@@ -19,8 +19,6 @@
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-<h1>The BU Phonetic Keyboarding System</h1>
-<h2>Albert Bickford</h2>
 
 <p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
 <ul>

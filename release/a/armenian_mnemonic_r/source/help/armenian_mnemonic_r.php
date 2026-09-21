@@ -1,7 +1,6 @@
 <?php
-  $pagename = 'Armenian Mnemonic R Keyboard Help';
-  $pagetitle = 'Armenian Mnemonic R Keyboard Help';
-  
+  $pagename = 'Armenian Mnemonic R (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

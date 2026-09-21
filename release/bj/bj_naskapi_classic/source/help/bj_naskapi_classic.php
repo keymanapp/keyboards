@@ -12,7 +12,6 @@
 
 <h2>Fonts</h2>
 
-<p>The font included in this package were developed and are copyrighted by 
-Bill Jancewicz (SIL).</p>
+<p>This keyboard includes the <b>BJCree</b> font. Please uninstall the <b>BJCree UNI</b> font before installing this package.</p>
 
 

@@ -3,12 +3,13 @@ c with name "Kazakh (Arabic)"
 store(&VERSION) '10.0'
 store(&NAME) 'Kazakh (Arabic)'
 store(&COPYRIGHT) 'Copyright © Murat Karibay'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&TARGETS) 'any'
 store(&BITMAP) 'kazakh_arabic.ico'
 store(&VISUALKEYBOARD) 'kazakh_arabic.kvks'
 store(&LAYOUTFILE) 'kazakh_arabic.keyman-touch-layout'
 store(&KMW_RTL) '1'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdarab/KbdArab.json'                   
 
 begin Unicode > use(main)
 
@@ -60,8 +61,8 @@ group(main) using keys
 + [K_3] > '3'
 + [K_2] > '2'
 + [K_1] > '1'
-+ [SHIFT K_RBRKT] > '»'
-+ [SHIFT K_LBRKT] > '«'
++ [SHIFT K_RBRKT] > '«'
++ [SHIFT K_LBRKT] > '»'
 + [K_COLON] > '؛'
 + [SHIFT K_SLASH] > '؟'
 + [K_COMMA] > '،'

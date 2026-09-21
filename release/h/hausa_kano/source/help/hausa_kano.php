@@ -4,7 +4,6 @@
   require_once('header.php');
 ?>
 
-    <h1>Documentation for Hausa Kano Keyboard</h1>
     <p>This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.</p>
     <p>Press <span style='color:red'>q</span>
         for <span style='color:#00B050'>&#409;</span></p>

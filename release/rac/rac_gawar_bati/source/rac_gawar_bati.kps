@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1207.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Gawar-Bati</Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Gawar-Bati</Name>
-    <Copyright URL="">©2017-2020 Rehmat Aziz Chitrali</Copyright>
+    <Copyright URL="">© Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
-    <Description>This keyboard was developed for keyboarding the Gawar-Bati language in
+    <Description URL="">This keyboard was developed for keyboarding the Gawar-Bati language in
 the Arabic Script. You can use this keyboard with any extended Arabic
 script Unicode font. If you have problems using the
 Rachitrali-Gawar-Bati Keyman keyboard, please contact: Rehmat Aziz
@@ -70,19 +71,27 @@ Chitrali E-mail: rachitrali\@yahoo.com</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Rachitrali-Gawar-Bati</Name>
       <ID>rac_gawar_bati</ID>
-      <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
-        <Language ID="gwt-Arab">Gawar-Bati (Arabic)</Language>
+        <Language ID="gwt">Gawar-Bati</Language>
       </Languages>
       <Examples>
-        <Example ID="gwt-Arab" Keys="g w a r b t i" Text="گواربتی" Note="Name of language" />
+        <Example ID="gwt" Keys="g w a r b t i" Text="گواربتی" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf"/>
+      </WebOSKFonts>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

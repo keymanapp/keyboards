@@ -1,6 +1,10 @@
 Afghan Turkmen Change History
 ====================
 
+3.0.1 (2026-03-11)
+----------------
+* Add KbdArab.json and KbdArabLateef for better display
+
 3.0 (2025-05-01)
 ----------------
 * Added NNBSP to Shift+Space (in place of ZWNJ)

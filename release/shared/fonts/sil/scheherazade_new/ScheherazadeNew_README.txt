@@ -5,10 +5,6 @@ Scheherazade New
 Thank you for your interest in the Scheherazade New font.
 We hope you find it useful!
 
-This release supports most of the Unicode 16.0 Arabic character 
-repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use).
-
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
 available. 
@@ -70,10 +66,10 @@ dialog that shows all the glyphs (symbols) in a font and allow you to enter
 them by clicking on the glyph you want.
 
 Rendering:
-This font is designed to work with any of two advanced font technologies, 
-Graphite or OpenType. To take advantage of the advanced typographic 
-capabilities of this font, you must be using applications that provide an
-adequate level of support for Graphite or OpenType. 
+This font is designed to work with the OpenType advanced font technology. 
+To take advantage of the advanced typographic capabilities of this font, 
+you must be using applications that provide an adequate level of support for 
+OpenType. 
 
 
 CONTACT

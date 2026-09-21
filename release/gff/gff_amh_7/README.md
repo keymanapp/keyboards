@@ -1,9 +1,9 @@
 Amharic GFF keyboard
 ====================
 
-Copyright (C) 2015 GFF Frontier Foundation, Tavultesoft
+Copyright (C) 1997-2025 GFF Frontier Foundation, Tavultesoft
 
-Version 1.3
+Version 1.6
 
 A phonetic keyboard for Amharic.
 

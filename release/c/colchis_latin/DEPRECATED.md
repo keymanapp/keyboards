@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by experimental/l/laz_latin and experimental/m/mingrelian_latin

@@ -1,9 +1,8 @@
 <?php
-  $pagename = 'Jorai  Keyboard Help';
-  $pagetitle = 'Jorai  Keyboard Help';
+  $pagename = 'Jorai Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
-<h1>Jorai keyboard for Keyman Desktop</h1>
 
 <p>This keyboard is designed for use with the Jorai language of Viet Nam. It includes an
 on screen keyboard which can be viewed by clicking on the Keyman icon and 
@@ -11,19 +10,13 @@ selecting the On Screen Keyboard menu item. </p>
 
 
 <h2>Keyboard Layout</h2>
-<h3>Default</h3>
-  <img width="100%" src="Default.jpg">
-<h3>Shift</h3>
-  <img width="100%" src="Shift.jpg">
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h3>RALT</h3>
-  <img width="100%" src="RAlt.jpg">
+<h2>Mobile/Phone Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<h3>RAlt+Shift</h3>
-  <img width="100%" src="RAltShift.jpg">
-
-<h2>Links</h2>
-<ul>
-<li>Home Page: <a href='https://keyman.com/'>https://keyman.com/</a></li>
-<li><a href='https://keyman.com/keyboards?q=jra'>Other keyboards for these languages</a></li>
-</ul>
+<div id='osk-phone' data-states='default shift numeric'>
+</div>

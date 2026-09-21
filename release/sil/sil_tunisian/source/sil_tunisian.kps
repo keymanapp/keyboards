@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -20,7 +20,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tunisian Spoken Arabic (SIL)</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Description URL="">Arabic script keyboard for the Tunisian Spoken Arabic \[aeb\] language.
 The keyboard includes an On screen keyboard and keyboard layout
 description.</Description>
@@ -111,14 +111,17 @@ description.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Tunisian Spoken Arabic (SIL)</Name>
       <ID>sil_tunisian</ID>
-      <Version>1.1</Version>
-      <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="aeb">Tunisian Arabic</Language>
