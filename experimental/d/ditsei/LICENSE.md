@@ -1,6 +1,5 @@
 The MIT License (MIT)
 
-Copyright © 2020-2022 Victoria Quint
 Copyright © 2025 Joshua Price
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
