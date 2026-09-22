@@ -1,7 +1,7 @@
 Tchad Arabe Keyboard
 =====================
 
-Copyright (C) 2024-2026 SIL Tchad
+Copyright (C) SIL Tchad
 
 __DESCRIPTION__
 This keyboard enables the typing of all the characters required by the
