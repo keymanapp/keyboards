@@ -5,171 +5,6 @@ $pagestyle = "@import url('td-arabe.css');";
 require_once('header.php');
 ?>
 
-<style>
-.keyboard {
-  font-size: 20px;
-  white-space: nowrap;
-}
-.keyboard--row {
-  display: block;
-  height: 3em;
-  margin: 0.5em;
-}
-
-.keyboard--row > * {
-  display: inline-block;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  border-radius: 0.3em;
-  margin: 0.06em;
-  padding: 0 0.2em;
-  width: 3.3em;
-  height: 100%;
-}
-
-.key--bottom-left > * {
-  position: absolute;
-  text-align: left;
-  bottom: 0.4em;
-  left: 0.4em;
-}
-
-.key--bottom-right > * {
-  position: absolute;
-  text-align: right;
-  bottom: 0.4em;
-  right: 0.4em;
-  white-space:pre;
-}
-
-.key--word > * {
-  font-size: 0.8em;
-}
-
-/* Special characters - right side */
-.key--letter > div {
-  font-size: 1.0em;
-  height: 1.2em;
-  float: right;
-  clear: right;
-}
-
-/* Special character - lower right */
-.key--letter > div:first-child {
-  margin-top: -0.2em;
-}
-
-/* Shift character - left side */
-.key--letter > span {
-  font-size: 1.0em;
-  height: 1.2em;
-  display: block;
-  position: absolute;
-  margin-top: -0.25em;
-  margin-left: 0.1em;
-}
-
-/* Normal character - lower left */
-.key--letter > span:last-child {
-  margin-top: 1.0em;
-}
-
-/* Light keyboard */
-
-.keyboard.keyboard--light .keyboard--row > * {
-  background: #ccc;
-  color: #111;
-  border: 1px solid #888;
-  box-shadow: 0 0.2em 0 0.05em #666;
-  border-bottom-color: #ddd;
-}
-
-.keyboard.keyboard--light .keyboard--row > .key--letter {
-  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
-  background: #f0f0f0;
-  box-shadow: 0 0.2em 0 0.05em #666;
-  border-bottom-color: #ddd;
-}
-
-.keyboard.keyboard--light .key--letter > span {
-  color: black
-}
-
-.keyboard.keyboard--light .key--letter span.charis {
-  font-family: 'Charis SIL', CharisSILWeb, serif;
-  font-size: 1.1em;
-}
-
-.keyboard.keyboard--light .key--letter span.spec {
-  color: gray
-}
-
-.keyboard.keyboard--light .key--letter span.specTd {
-  color: #9400D3
-}
-
-.img-pair {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  align-items: flex-start;
-  margin: 0.5em 0;
-}
-
-.scheherazade {
-  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
-  font-size: 1.2em;
-}
-
-/* A key cap named in running text is a picture of a key, so it must read the
-   way the key actually looks in the app, which is not the same as the order
-   the characters are stored in: the app lays the label out RTL, so the stored
-   "1 ؟ «" appears on the key as "؟ 1 «". Each character sits in its own
-   inline-block so the browser cannot reorder them again, and the order written
-   here is the order the reader sees. If a key label changes, check it against
-   a screenshot of the app rather than reasoning about bidi. */
-.keycap {
-  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
-  font-size: 1.1em;
-  unicode-bidi: isolate;
-  white-space: nowrap;
-  display: inline-block;
-  border: 1px solid #888;
-  border-bottom-width: 2px;
-  border-radius: 0.25em;
-  background: #f0f0f0;
-  color: #111;
-  padding: 0.05em 0.4em 0.1em;
-  line-height: 1.4;
-  vertical-align: baseline;
-}
-
-.keycap > i {
-  display: inline-block;
-  font-style: normal;
-  unicode-bidi: isolate;
-}
-
-.keycap > i + i { margin-left: 0.35em; }
-
-/* A table cell listing the characters hidden under a key must read in the
-   order the flick menu offers them. Two Arabic letters in a plain string are
-   laid out RTL and so appear reversed; a box each stops that. */
-.seq > i {
-  display: inline-block;
-  font-style: normal;
-  unicode-bidi: isolate;
-}
-
-.seq > i + i { margin-left: 0.4em; }
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
-</style>
-
 <div class="tab-folder">
 <!--Starting English-->
 <div id="en" class="tab-content">
@@ -179,10 +14,10 @@ require_once('header.php');
 <img src="sil-logo-blue.png" class="right responsive">
 <span id="toc-Chad-qwerty-keyboard-for-keyman-by-sil-Chad-"></span>
 <h1 xml:lang="en">Chad Arabic Keyboard for Keyman
-<br>by SIL Chad</h1>
+<br>by SIL Tchad</h1>
 
 <p class="tagline" xml:lang="en">Welcome to the Chad Arabic Keyboard!<br>
-This keyboard, maintained by the Language Technology team of <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Chad</a>,
+This keyboard, maintained by the Language Technology team of <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Tchad</a>,
 allows you to type all of the special characters needed to write the languages of Chad in Arabic script.</p>
 <hr/>
 
@@ -575,7 +410,7 @@ The “Chad” key plus two hyphens ( =-- ) gives a no-break hyphen.</p>
 <p>For more information and guidance on the Chad Arabic Keyboard, you can reach us here: 
 <a href=https://sites.google.com/sil.org/sil-tchad-langtech/home>Language Technology Chad</a></p>
 
-<p>©&nbsp;2017-2026 SIL International.</p>
+<p>©&nbsp;SIL Tchad</p>
 </div>
 </div>
 <!--Ending English-->
@@ -992,7 +827,7 @@ pour taper des caractères spéciaux en écriture arabe.</p>
 <p> Pour plus d’information et orientation sur le Clavier Tchad Arabe vous pouvez nous joindre ici :
 <a href=https://sites.google.com/sil.org/sil-tchad-langtech/home>Technologie Linguistique Tchad</a></p>
 
-<p>©&nbsp;2017-2026 SIL International</p>
+<p>©&nbsp;SIL Tchad</p>
 </div>
 </div>
 <!--Ending French-->
