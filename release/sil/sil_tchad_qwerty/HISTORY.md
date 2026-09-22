@@ -1,5 +1,9 @@
 Tchad QWERTY Keyboard Change History
 =======================
+5.4.3 (21 Sep 2026)
+------------------
+* Make the language button label readable (black on pink, as sil_cameroon_qwerty)
+
 5.4.2 (28 Apr 2026)
 ------------------
 * Add vertical-align to fix formatting in PHP and Welcome
