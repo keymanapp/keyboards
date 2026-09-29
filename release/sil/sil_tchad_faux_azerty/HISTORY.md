@@ -1,12 +1,13 @@
 Tchad FAUX AZERTY Keyboard Change History
 =======================
-5.4.3
+
+5.4.3 (29 Sep 2026)
 ------------------
 * Make the language button label readable (black on pink, as sil_cameroon_qwerty)
 
-5.4.2
+5.4.2 
 ------------------
-* Add vertical-align:top for rigth and left td and middle for middle td in PHP and Welcom
+* Add vertical-align:top for right and left td and middle for middle td in PHP and Welcome
 
 5.4.1 (19 Dec 2025)
 ------------------
