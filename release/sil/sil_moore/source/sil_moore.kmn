@@ -5,7 +5,7 @@ c Mooré keyboard for Burkina Faso
 store(&VERSION) '10.0'
 store(&NAME) 'Mooré - Burkina Faso'
 store(&COPYRIGHT) '© SIL Global'
-store(&KEYBOARDVERSION) '2.1.2'
+store(&KEYBOARDVERSION) '2.1.3'
 store(&TARGETS) 'any'
 store(&MESSAGE) 'With thanks to Emmanuel Sawadogo for linguistic expert advice'
 store(&BITMAP) 'sil_moore.ico'
@@ -27,23 +27,29 @@ store(outs_0u) '&ẽ"' "'" '(-ɛ_çà)='
 store(keys_0s) [NCAPS SHIFT K_1] [NCAPS SHIFT K_2] [NCAPS SHIFT K_3] [NCAPS SHIFT K_4] [NCAPS SHIFT K_5] [NCAPS SHIFT K_6] [NCAPS SHIFT K_7] [NCAPS SHIFT K_8] [NCAPS SHIFT K_9] [NCAPS SHIFT K_0] [NCAPS SHIFT K_HYPHEN] [NCAPS SHIFT K_EQUAL] [CAPS K_1] [CAPS K_2] [CAPS K_3] [CAPS K_4] [CAPS K_5] [CAPS K_6] [CAPS K_7] [CAPS K_8] [CAPS K_9] [CAPS K_0] [CAPS K_HYPHEN] [CAPS K_EQUAL]
 store(outs_0s) '1234567890°+' '1234567890°+'
 
-store(keys_1u) 'qwertyuiop' [NCAPS K_LBRKT] [NCAPS K_RBRKT]
+store(keys_1u) [NCAPS K_Q] [NCAPS K_W] [NCAPS K_E] [NCAPS K_R] [NCAPS K_T] [NCAPS K_Y] [NCAPS K_U] \
+               [NCAPS K_I] [NCAPS K_O] [NCAPS K_P]  [NCAPS K_LBRKT] [NCAPS K_RBRKT]
 store(outs_1u) 'azertyuiopĩ$'
 
-store(keys_1s) 'QWERTYUIOP' [NCAPS SHIFT K_LBRKT] [NCAPS SHIFT K_RBRKT][CAPS K_LBRKT] [CAPS K_RBRKT]
+store(keys_1s) [NCAPS SHIFT K_Q] [NCAPS SHIFT K_W] [NCAPS SHIFT K_E] [NCAPS SHIFT K_R] [NCAPS SHIFT K_T] [NCAPS SHIFT K_Y] [NCAPS SHIFT K_U] \
+               [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] [NCAPS SHIFT K_P] [NCAPS SHIFT K_LBRKT] [NCAPS SHIFT K_RBRKT][CAPS K_LBRKT] [CAPS K_RBRKT]
 store(outs_1s) 'AZERTYUIOP' dk(diaeresis) '£'   dk(diaeresis)  '£'
 
-store(keys_2u) "asdfghjkl" [NCAPS K_COLON] [NCAPS K_QUOTE] [NCAPS K_BKSLASH]
+store(keys_2u) [NCAPS K_A] [NCAPS K_S] [NCAPS K_D] [NCAPS K_F] [NCAPS K_G] [NCAPS K_H] [NCAPS K_J] [NCAPS K_K] [NCAPS K_L] \
+               [NCAPS K_COLON] [NCAPS K_QUOTE] [NCAPS K_BKSLASH]
 store(outs_2u) "ãsdfghõklmũ*"
 
-store(keys_2s) 'A'      'SDFGH' 'J'      'KL' [NCAPS SHIFT K_COLON] [NCAPS SHIFT K_QUOTE] [NCAPS SHIFT K_BKSLASH] [CAPS K_COLON] [CAPS K_QUOTE] [CAPS K_BKSLASH]
-store(outs_2s) dk(none) 'SDFGH' dk(none) 'KLM%µ'  'M%µ'
+store(keys_2s) [NCAPS SHIFT K_A] [NCAPS SHIFT K_S] [NCAPS SHIFT K_D] [NCAPS SHIFT K_F] [NCAPS SHIFT K_G] [NCAPS SHIFT K_H] [NCAPS SHIFT K_J] \
+               [NCAPS SHIFT K_K] [NCAPS SHIFT K_L] [NCAPS SHIFT K_COLON] [NCAPS SHIFT K_QUOTE] [NCAPS SHIFT K_BKSLASH] [CAPS K_COLON] [CAPS K_QUOTE] [CAPS K_BKSLASH]
+store(outs_2s) dk(none) [NCAPS SHIFT K_S] [NCAPS SHIFT K_D] [NCAPS SHIFT K_F] [NCAPS SHIFT K_G] [NCAPS SHIFT K_H] dk(none) [NCAPS SHIFT K_K] \
+               [NCAPS SHIFT K_L] [NCAPS SHIFT K_M] '%µ'  [NCAPS SHIFT K_M] '%µ'
 
-store(keys_3u) [K_oE2] 'zxcvbnm' [NCAPS K_COMMA] [NCAPS K_PERIOD] [NCAPS K_SLASH]
+store(keys_3u) [NCAPS K_oE2] [NCAPS K_Z] [NCAPS K_X] [NCAPS K_C] [NCAPS K_V] [NCAPS K_B] [NCAPS K_N] [NCAPS K_M] [NCAPS K_COMMA] [NCAPS K_PERIOD] [NCAPS K_SLASH]
 store(outs_3u) '<'     'wɩʋvbn,;:!'
 
-store(keys_3s) [SHIFT K_oE2] 'Z' 'X'      'C'      'VBNM' [NCAPS SHIFT K_COMMA] [NCAPS SHIFT K_PERIOD] [NCAPS SHIFT K_SLASH] [CAPS K_COMMA] [CAPS K_PERIOD] [CAPS K_SLASH]
-store(outs_3s) '>'           'W' dk(none) dk(none) 'VBN?./§' './§'
+store(keys_3s) [NCAPS SHIFT K_oE2] [NCAPS RALT K_Z] [NCAPS RALT K_X] [NCAPS RALT K_C] [NCAPS RALT K_V] [NCAPS RALT K_B] [NCAPS RALT K_N] \
+               [NCAPS SHIFT K_COMMA] [NCAPS SHIFT K_PERIOD] [NCAPS SHIFT K_SLASH] [CAPS K_COMMA] [CAPS K_PERIOD] [CAPS K_SLASH]
+store(outs_3s) '>'  [NCAPS RALT K_W] dk(none) dk(none) [NCAPS RALT K_V] [NCAPS RALT K_B] U+0272 './§' './§'
 
 store(keys_0a) [NCAPS RALT K_2] [NCAPS RALT K_3] [NCAPS RALT K_4] [NCAPS RALT K_5] [NCAPS RALT K_6] [NCAPS RALT K_7] [NCAPS RALT K_8] [NCAPS RALT K_9] [NCAPS RALT K_0] [NCAPS RALT K_HYPHEN] [NCAPS RALT K_EQUAL]
 store(outs_0a) dk(tilde)  '#'        '{'        '['        '|'        dk(grave)  '\'        '^'        '@'        ']'             '}'
@@ -58,8 +64,8 @@ store(outs_1a) '€'        dk(circumflex) '¤'
 + any(keys_1u) > index(outs_1u,1)
 + any(keys_1s) > index(outs_1s,1)
 + any(keys_1a) > index(outs_1a,1)
-+ any(keys_2u) > index(outs_2u,1)
-+ any(keys_2s) > index(outs_2s,1)
++ any(keys_2u) > index(outs_2u,1) c fixed store to support NCAPS
++ any(keys_2s) > index(outs_2s,1) c fixed store to support NCAPS
 c + any(keys_2a) > use(dkouts) index(outs_2a,1)
 + any(keys_3u) > index(outs_3u,1)
 + any(keys_3s) > index(outs_3s,1)
@@ -67,12 +73,12 @@ c + any(keys_3a) > use(dkouts) index(outs_3a,1)
 
 c Additional items in requirements but not on keyboard map - our suggestions
 
-+ [RALT SHIFT K_2] > '²'  c moved from backquote in original proposal - backquote used for tones
++ [RALT NCAPS SHIFT K_2] > '²'  c moved from backquote in original proposal - backquote used for tones
 + [RALT CAPS K_2] > '²'  c moved from backquote in original proposal - backquote used for tones
 + [RALT NCAPS K_O] > 'ɔ'
-+ [RALT SHIFT K_4] > "ʼ"
++ [RALT NCAPS SHIFT K_4] > "ʼ"
 + [RALT CAPS K_4] > "ʼ"
-+ [RALT SHIFT K_7] > 'é'
++ [RALT NCAPS SHIFT K_7] > 'é'
 + [RALT CAPS K_7] > 'é'
 
 c Tone marks - rotate tone marks if necessary
@@ -87,8 +93,9 @@ any(toneablechar) + any(keys_tone) > context index(outs_tone, 2)
 
 c Characters for linguists
                 
-store(keys_ling) [NCAPS RALT K_G] [NCAPS RALT K_M] [NCAPS RALT K_D] [RALT SHIFT K_D] [RALT CAPS K_D] [NCAPS RALT K_H] [NCAPS RALT K_J] [RALT SHIFT K_G] [RALT CAPS K_G] [RALT K_N] [RALT SHIFT K_N] [RALT CAPS K_N] 
-store(outs_ling) 'ŋʔɖɗɗɦɟɠɠɲɳɳ'
+store(keys_ling) [NCAPS RALT K_G] [NCAPS RALT K_M] [NCAPS RALT K_D] [NCAPS RALT SHIFT K_D] [RALT CAPS K_D] [NCAPS RALT K_H] [NCAPS RALT K_J] \
+                 [NCAPS RALT SHIFT K_G] [NCAPS RALT CAPS K_G] [NCAPS RALT SHIFT K_N] [NCAPS RALT CAPS K_N]
+store(outs_ling) 'ŋʔɖɗɗɦɟɠɠɳɳ'
 
 + any(keys_ling) > index(outs_ling, 1)
 
@@ -96,9 +103,9 @@ c Handle deadkeys
 
 store(deadkeys)  dk(diaeresis) dk(diaeresis)   dk(tilde)  dk(grave)  dk(circumflex)
 store(deadchars) '¨'             '¨'              '~'        '`'        '^'
-store(keys_dead) [SHIFT K_LBRKT] [CAPS K_LBRKT] [NCAPS RALT K_2] [NCAPS RALT K_7] [NCAPS RALT K_LBRKT]
+store(keys_dead) [NCAPS SHIFT K_LBRKT] [CAPS K_LBRKT] [NCAPS RALT K_2] [NCAPS RALT K_7] [NCAPS RALT K_LBRKT]
 
-store(vowel)      'qeiouQEIOU' 
+store(vowel)      [NCAPS K_Q] [NCAPS K_E] [NCAPS K_I] [NCAPS K_O] [NCAPS K_U] [NCAPS SHIFT K_Q] [NCAPS SHIFT K_E] [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] [NCAPS SHIFT K_U]
 store(diavowel)   'äëïöüÄËÏÖÜ'
 store(tildevowel) 'ãẽĩõũÃẼĨÕŨ'
 store(circumvowel) 'âêîôûÂÊÎÔÛ'
@@ -106,8 +113,8 @@ store(gravevowel) 'àèìòùÀÈÌÒÙ'
 
 dk(diaeresis) + any(vowel) > index(diavowel, 2)
 dk(tilde) + any(vowel) > index(tildevowel, 2)
-dk(tilde) + 'n' > 'ñ'
-dk(tilde) + 'N' > 'Ñ'
+dk(tilde) + [NCAPS K_N] > 'ñ'
+dk(tilde) + [NCAPS SHIFT K_N] > 'Ñ'
 dk(grave) + any(vowel) > index(gravevowel, 2)
 dk(circumflex) + any(vowel) > index(circumvowel, 2)
 
