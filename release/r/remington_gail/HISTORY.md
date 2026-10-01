@@ -1,6 +1,10 @@
 Remington GAIL (SIL) Change History
 ====================
 
+1.1.1 (2026-Oct-1)
+----------------
+* Update rule for numpad to use NCAPS
+
 1.1 (2026-Jan-15)
 ----------------
 * Numpad keys now type in Arabic Numerals (0,1,2..) instead of Indic (०,१,२..)
