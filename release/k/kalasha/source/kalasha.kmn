@@ -22,20 +22,20 @@ store(letters) 'a'..'z'
 store(sentencePunctuation) '.?!'
 
 group(NewContext) readonly
-    nomatch > use(detectStartOfSentence)
+    platform('touch') > use(detectStartOfSentence)
 
 group(PostKeystroke) readonly
     c We get here after every keystroke and model action is processed
 
     c Okay, let's stay on the numeric layer if we are there already
-    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
 
     c Don't swap off the caps lock layer automatically
-    if(&layer = 'caps') > context
+    platform('touch') if(&newLayer = "caps") if(&layer = 'caps') > context
 
     c no other changes, so detect sentence or layer change, as long
     c as the user hasn't attempted to change layer themselves.
-    if(&newLayer = "") > use(detectStartOfSentence)
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
     
 group(detectStartOfSentence) readonly
     nomatch > layer('shift')
@@ -156,7 +156,7 @@ c ====================== Diacritics rule ======================
 
 c define dot below
 store(dotted_letter) "aAcCdDeEiIlLoOrRsStTuUzZ"
-any(dotted_letter) + '`' > index(dotted_letter,1) U+0323 deadkey(dotwait) c dotwait is special for the caracter d (see below)
+any(dotted_letter) + '`' > index(dotted_letter,1) U+0323 deadkey(dotwait) c dotwait is special for the character d (see below)
 
 c define tilde
 store(tilde_letter) 'aAeEiIoOuU' U+0323
@@ -201,15 +201,15 @@ any(digraph_char) + any(digraph_char) > index(transform_digraph, 1)
 any(transform_digraph) + '`' > index(transform_digraph, 1) U+0323 
 
 c prevent typing dot before the dotted letter
-c + '`' > 
+U+0323 + any(dotted_letter) > index(dotted_letter, 2) U+0323
 
 c Double tap space to produce a full stop or period
 ' ' + [K_SPACE] > U+002E U+0020
 
-c write a rule so that d followed by anything but h loses its dot
-store(allkeys) 'abcdefgijklmnopqrstuvwxyzABCDEFGIJKLMNOPQRSTUVWXYZ'
+c write a rule: d followed by anything but h loses its dot
+store(allkeys_except_h) 'abcdefgijklmnopqrstuvwxyzABCDEFGIJKLMNOPQRSTUVWXYZ'
 
-'d' U+0323 deadkey(dotwait) + any(allkeys) > 'd' index(allkeys,4)
+'d' U+0323 deadkey(dotwait) + any(allkeys_except_h) > 'd' index(allkeys_except_h,4)
 
 c touch keys; d = dot; a = tilde
 + [T_a_d] > 'a' U+0323
