@@ -1,6 +1,10 @@
 Mooré - Burkina Faso Change History
 ====================
 
+2.1.3 (2026-10-01)
+------------------
+* Clean up errors in keyboard to use NCAPS and adjust one rule which didn't fire because of a prior rule
+ 
 2.1.2 (2025-06-09)
 ------------------
 * Update font to new version of Charis
