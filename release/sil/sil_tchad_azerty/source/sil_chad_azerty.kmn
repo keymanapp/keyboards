@@ -1,0 +1,287 @@
+﻿store(&NAME) 'Chad AZERTY'
+store(&COPYRIGHT) '© SIL Chad'
+store(&BITMAP) 'sil_tchad.ico'
+store(&MESSAGE) 'Use the Tchad key (the !/§ key, just after : and just before right Shift) to type Chadian-language characters.'
+store(&LAYOUTFILE) 'sil_chad_azerty.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_chad_azerty.kvks'
+store(&KMW_HELPTEXT) 'Use the Tchad key (!/§, just after : and just before right Shift) to type Chadian-language characters. Tap it once for a letter, tap it twice for /.'
+
+c =====================================================
+c Clavier AZERTY du Tchad
+c Reconstruit d'apres la page d'aide officielle SIL Tchad
+c (Chad AZERTY Keyboard Help - Jeff Heath & Roger Nadoumngar)
+c Positions physiques au format Keyman (noms de touches bases
+c sur QWERTY, sortie = lettres AZERTY, comme sur un vrai
+c clavier AZERTY physique).
+c =====================================================
+store(&KEYBOARDVERSION) '5.4.3'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c =====================================================
+c GROUPE PRINCIPAL - touches de base (sans Tchad)
+c =====================================================
++ [K_BKQUOTE] > U+00B2		c '²'
++ [SHIFT K_BKQUOTE] > U+0303
+
++ [K_1] > U+0026		c '&'
++ [SHIFT K_1] > U+0031		c '1'
+
++ [K_2] > U+00E9		c '́'
++ [SHIFT K_2] > U+0032		c '2'
+
++ [K_3] > U+0022		c '"'
++ [SHIFT K_3] > U+0033		c '3'
+
++ [K_4] > U+02BC		c 'ʼ'
++ [SHIFT K_4] > U+0034		c '4'
+
++ [K_5] > U+0028		c '('
++ [SHIFT K_5] > U+0035		c '5'
+
++ [K_6] > U+002D		c '-'
++ [SHIFT K_6] > U+0036		c '6'
+
++ [K_7] > U+00E8		c '̀'
++ [SHIFT K_7] > U+0037		c '7'
+
++ [K_8] > U+005F		c '_'
++ [SHIFT K_8] > U+0038		c '8'
+
++ [K_9] > U+00E7		c '̧'
++ [SHIFT K_9] > U+0039		c '9'
+
++ [K_0] > U+00E0		c 'à'
++ [SHIFT K_0] > U+0030		c '0'
+
++ [K_HYPHEN] > U+0029		c ')'
++ [SHIFT K_HYPHEN] > U+00B0		c '°'
+
++ [K_EQUAL] > U+003D		c '='
++ [SHIFT K_EQUAL] > U+002B		c '+'
+
++ [K_Q] > U+0061		c 'a'
++ [SHIFT K_Q] > U+0041		c 'A'
+
++ [K_W] > U+007A		c 'z'
++ [SHIFT K_W] > U+005A		c 'Z'
+
++ [K_E] > U+0065		c 'e'
++ [SHIFT K_E] > U+0045		c 'E'
+
++ [K_R] > U+0072		c 'r'
++ [SHIFT K_R] > U+0052		c 'R'
+
++ [K_T] > U+0074		c 't'
++ [SHIFT K_T] > U+0054		c 'T'
+
++ [K_Y] > U+0079		c 'y'
++ [SHIFT K_Y] > U+0059		c 'Y'
+
++ [K_U] > U+0075		c 'u'
++ [SHIFT K_U] > U+0055		c 'U'
+
++ [K_I] > U+0069		c 'i'
++ [SHIFT K_I] > U+0049		c 'I'
+
++ [K_O] > U+006F		c 'o'
++ [SHIFT K_O] > U+004F		c 'O'
+
++ [K_P] > U+0070		c 'p'
++ [SHIFT K_P] > U+0050		c 'P'
+
++ [K_LBRKT] > U+0302		c '̂'
++ [SHIFT K_LBRKT] > U+0308		c '̈'
+
++ [K_RBRKT] > U+0024		c '$'
++ [SHIFT K_RBRKT] > U+00A3		c '£'
+
++ [K_A] > U+0071		c 'q'
++ [SHIFT K_A] > U+0051		c 'Q'
+
++ [K_S] > U+0073		c 's'
++ [SHIFT K_S] > U+0053		c 'S'
+
++ [K_D] > U+0064		c 'd'
++ [SHIFT K_D] > U+0044		c 'D'
+
++ [K_F] > U+0066		c 'f'
++ [SHIFT K_F] > U+0046		c 'F'
+
++ [K_G] > U+0067		c 'g'
++ [SHIFT K_G] > U+0047		c 'G'
+
++ [K_H] > U+0068		c 'h'
++ [SHIFT K_H] > U+0048		c 'H'
+
++ [K_J] > U+006A		c 'j'
++ [SHIFT K_J] > U+004A		c 'J'
+
++ [K_K] > U+006B		c 'k'
++ [SHIFT K_K] > U+004B		c 'K'
+
++ [K_L] > U+006C		c 'l'
++ [SHIFT K_L] > U+004C		c 'L'
+
++ [K_COLON] > U+006D		c 'm'
++ [SHIFT K_COLON] > U+004D		c 'M'
+
++ [K_QUOTE] > U+00F9		c 'ù'
++ [SHIFT K_QUOTE] > U+0025		c '%'
+
++ [K_BKSLASH] > U+002A		c '*'
++ [SHIFT K_BKSLASH] > U+00B5		c 'µ'
+
++ [K_OE2] > U+003C		c '<'
++ [SHIFT K_OE2] > U+003E		c '>'
+
++ [K_Z] > U+0077		c 'w'
++ [SHIFT K_Z] > U+0057		c 'W'
+
++ [K_X] > U+0078		c 'x'
++ [SHIFT K_X] > U+0058		c 'X'
+
++ [K_C] > U+0063		c 'c'
++ [SHIFT K_C] > U+0043		c 'C'
+
++ [K_V] > U+0076		c 'v'
++ [SHIFT K_V] > U+0056		c 'V'
+
++ [K_B] > U+0062		c 'b'
++ [SHIFT K_B] > U+0042		c 'B'
+
++ [K_N] > U+006E		c 'n'
++ [SHIFT K_N] > U+004E		c 'N'
+
++ [K_M] > U+002C		c ','
++ [SHIFT K_M] > U+003F		c '?'
+
++ [K_COMMA] > U+003B		c ';'
++ [SHIFT K_COMMA] > U+002E		c '.'
+
++ [K_PERIOD] > U+003A		c ':'
++ [SHIFT K_PERIOD] > U+002F		c '/'
+
+c =====================================================
+c TOUCHE TCHAD (K_SLASH): appui seul = '!' ; +Shift = '§'
+c double-appui = '/'
+c =====================================================
++ [K_SLASH] > U+0021
++ [SHIFT K_SLASH] > U+00A7
+U+0021 + [K_SLASH] > U+002F		c double Tchad -> /
+
+c =====================================================
+c COMBOS: '!' (Tchad) + touche suivante -> caractere special
+c =====================================================
+U+0021 + [K_BKQUOTE] > U+0060		c Tchad+² -> `
+U+0021 + [SHIFT K_BKQUOTE] > U+0330		c Tchad+Shift+² -> ̰
+U+0021 + [K_1] > U+0329		c Tchad+& -> ̩
+U+0021 + [SHIFT K_1] > U+0021		c Tchad+Shift+& -> !
+U+0021 + [K_2] > U+0325		c Tchad+́ -> ̥
+U+0021 + [SHIFT K_2] > U+007E		c Tchad+Shift+́ -> ~
+U+0021 + [K_3] > U+0023		c Tchad+" -> #
+U+0021 + [K_4] > U+007B		c Tchad+ʼ -> {
+U+0021 + [SHIFT K_4] > U+030C		c Tchad+Shift+ʼ -> ̌
+U+0021 + [K_5] > U+005B		c Tchad+( -> [
+U+0021 + [SHIFT K_5] > U+0323		c Tchad+Shift+( -> ̣
+U+0021 + [K_6] > U+007C		c Tchad+- -> |
+U+0021 + [SHIFT K_6] > U+0304		c Tchad+Shift+- -> ̄
+U+0021 + [SHIFT K_7] > U+0060		c Tchad+Shift+̀ -> `
+U+0021 + [K_8] > U+005C		c Tchad+_ -> \
+U+0021 + [K_9] > U+005E		c Tchad+̧ -> ^
+U+0021 + [K_0] > U+0040		c Tchad+à -> @
+U+0021 + [K_HYPHEN] > U+005D		c Tchad+) -> ]
+U+0021 + [SHIFT K_HYPHEN] > U+00BA		c Tchad+Shift+) -> º
+U+0021 + [K_EQUAL] > U+007D		c Tchad+= -> }
+U+0021 + [SHIFT K_EQUAL] > U+00A0		c Tchad+Shift+= ->  
+U+0021 + [K_Q] > U+00E6		c Tchad+a -> æ
+U+0021 + [SHIFT K_Q] > U+00C6		c Tchad+Shift+a -> Æ
+U+0021 + [K_W] > U+0292		c Tchad+z -> ʒ
+U+0021 + [SHIFT K_W] > U+00F0		c Tchad+Shift+z -> ð
+U+0021 + [K_E] > U+0259		c Tchad+e -> ə
+U+0021 + [SHIFT K_E] > U+018F		c Tchad+Shift+e -> Ə
+U+0021 + [K_R] > U+027E		c Tchad+r -> ɾ
+U+0021 + [SHIFT K_R] > U+027D		c Tchad+Shift+r -> ɽ
+U+0021 + [K_T] > U+0288		c Tchad+t -> ʈ
+U+0021 + [SHIFT K_T] > U+03B8		c Tchad+Shift+t -> θ
+U+0021 + [K_Y] > U+01B4		c Tchad+y -> ƴ
+U+0021 + [SHIFT K_Y] > U+01B3		c Tchad+Shift+y -> Ƴ
+U+0021 + [K_U] > U+028A		c Tchad+u -> ʊ
+U+0021 + [SHIFT K_U] > U+01B1		c Tchad+Shift+u -> Ʊ
+U+0021 + [K_I] > U+0268		c Tchad+i -> ɨ
+U+0021 + [SHIFT K_I] > U+0197		c Tchad+Shift+i -> Ɨ
+U+0021 + [K_O] > U+0254		c Tchad+o -> ɔ
+U+0021 + [SHIFT K_O] > U+0186		c Tchad+Shift+o -> Ɔ
+U+0021 + [K_P] > U+0153		c Tchad+p -> œ
+U+0021 + [SHIFT K_P] > U+0152		c Tchad+Shift+p -> Œ
+U+0021 + [K_LBRKT] > U+030C		c Tchad+̂ -> <
+U+0021 + [SHIFT K_LBRKT] > U+201C		c Tchad+Shift+̂ -> “
+U+0021 + [K_RBRKT] > U+00A4		c Tchad+$ -> ¤
+U+0021 + [SHIFT K_RBRKT] > U+201D		c Tchad+Shift+$ -> ”
+U+0021 + [K_A] > U+0281		c Tchad+q -> ʁ
+U+0021 + [SHIFT K_A] > U+0256		c Tchad+Shift+q -> ɖ
+U+0021 + [K_S] > U+0283		c Tchad+s -> ʃ
+U+0021 + [SHIFT K_S] > U+00DF		c Tchad+Shift+s -> ß
+U+0021 + [K_D] > U+0257		c Tchad+d -> ɗ
+U+0021 + [SHIFT K_D] > U+018A		c Tchad+Shift+d -> Ɗ
+U+0021 + [K_F] > U+025B		c Tchad+f -> ɛ
+U+0021 + [SHIFT K_F] > U+0190		c Tchad+Shift+f -> Ɛ
+U+0021 + [K_G] > U+0263		c Tchad+g -> ɣ
+U+0021 + [SHIFT K_G] > U+018E		c Tchad+Shift+g -> Ǝ
+U+0021 + [K_H] > U+0266		c Tchad+h -> ɦ
+U+0021 + [SHIFT K_H] > U+A7AA		c Tchad+Shift+h -> Ɦ
+U+0021 + [K_J] > U+0284		c Tchad+j -> ʄ
+U+0021 + [SHIFT K_J] > U+025F		c Tchad+Shift+j -> ɟ
+U+0021 + [K_K] > U+026A		c Tchad+k -> ɪ
+U+0021 + [SHIFT K_K] > U+0197		c Tchad+Shift+k -> Ɨ
+U+0021 + [K_L] > U+026C		c Tchad+l -> ɬ
+U+0021 + [SHIFT K_L] > U+026E		c Tchad+Shift+l -> ɮ
+U+0021 + [K_COLON] > U+0272		c Tchad+m -> ɲ
+U+0021 + [SHIFT K_COLON] > U+019D		c Tchad+Shift+m -> Ɲ
+U+0021 + [K_QUOTE] > U+A78C		c Tchad+ù -> ꞌ
+U+0021 + [SHIFT K_QUOTE] > U+A78B		c Tchad+Shift+ù -> Ꞌ
+U+0021 + [K_BKSLASH] > U+0027		c Tchad+* -> '
+U+0021 + [SHIFT K_BKSLASH] > U+02D0		c Tchad+Shift+* -> ː
+U+0021 + [K_OE2] > U+2039		c Tchad+< -> ‹
+U+0021 + [SHIFT K_OE2] > U+203A		c Tchad+Shift+< -> ›
+U+0021 + [K_Z] > U+00F8		c Tchad+w -> ø
+U+0021 + [SHIFT K_Z] > U+00A0		c Tchad+Shift+w ->  
+U+0021 + [K_X] > U+03C7		c Tchad+x -> χ
+U+0021 + [SHIFT K_X] > U+0127		c Tchad+Shift+x -> ħ
+U+0021 + [K_C] > U+00E7		c Tchad+c -> ç
+U+0021 + [SHIFT K_C] > U+00C7		c Tchad+Shift+c -> Ç
+U+0021 + [K_V] > U+2C71		c Tchad+v -> ⱱ
+U+0021 + [SHIFT K_V] > U+028B		c Tchad+Shift+v -> ʋ
+U+0021 + [K_B] > U+0253		c Tchad+b -> ɓ
+U+0021 + [SHIFT K_B] > U+0181		c Tchad+Shift+b -> Ɓ
+U+0021 + [K_N] > U+014B		c Tchad+n -> ŋ
+U+0021 + [SHIFT K_N] > U+014A		c Tchad+Shift+n -> Ŋ
+U+0021 + [SHIFT K_M] > U+0294		c Tchad+Shift+, -> ʔ
+U+0021 + [K_PERIOD] > U+02D0 c Tchad+: -> ː
+
+c =====================================================
+c Tirets (d'apres la table "Additional Characters")
+c =====================================================
+U+002D + [K_6] > U+2013          c -- -> tiret demi-cadratin (en dash)
+U+2013 + [K_6] > U+2014          c --- -> tiret cadratin (em dash)
+
+c =====================================================
+c Guillemets francais (chevrons doubles, independants de Tchad)
+c =====================================================
+U+003C + [K_OE2] > U+00AB        c << -> «
+U+003E + [SHIFT K_OE2] > U+00BB  c >> -> »
+
+c =====================================================
+c Espace insecable via Tchad
+c =====================================================
+U+0021 + [K_SPACE] > U+00A0      c Tchad + espace -> espace insecable
+U+00A0 + [K_SPACE] > U+202F      c Tchad+espace+espace -> espace fine insecable
+
+c NOTE POUR VALIDATION: le texte d'aide dit aussi "Tchad + trait d'union (/-)
+c donne un trait d'union insecable", mais le tableau visuel de la touche K_6
+c indique deja Tchad+'-' -> '|' (barre verticale). Ces deux sources se
+c contredisent; j'ai garde le tableau visuel (source la plus complete et
+c structuree). A confirmer avec Jeff Heath / Roger Nadoumngar.
