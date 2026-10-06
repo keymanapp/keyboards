@@ -25,12 +25,16 @@ c SILGREEK.KMN 3.0  D I Bevan - 14-Mar-1997
 c See REVISION.TXT
 c ----------------------------------------------------------------------------
 
-store(&VERSION) '17.0'
-store(&NAME) "Polytonic Greek (SIL)"
+store(&Version) '17.0'
+store(&name) "Polytonic Greek (SIL)"
 store(&BITMAP) 'sil_greek_polytonic.ico'
-store(&COPYRIGHT) '© SIL Global'
-store(&MESSAGE) "The Greek (polytonic precomposed) keyboard is distributed under the MIT license."
+store(&COPYRIGHT) '(c) SIL Global'
+store(&message) "The Greek (polytonic precomposed) keyboard is distributed under the MIT license."
+
 store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) 'grc ell'
+c store(&LANGUAGE) 'x0408'
+c store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
 store(&KEYBOARDVERSION) '1.8.7'
 store(&LAYOUTFILE) 'sil_greek_polytonic.keyman-touch-layout'
@@ -74,31 +78,23 @@ c store(w)            U+03C9      c omega
 store(upW)          U+03A9      c OMEGA
 
 c keys for lowercase
-store(K_low_reduced) "a"    "b"    "g"    "d"    "e"    "z"    "j"    "q"    "i" \
-                     "k"    "l"    "m"    "n"    "x"    "o"  \
-                     "p"    "r"    "s"    "t"    "u"    "f"    "c"    "y"    "w"
-store(low_reduced)   U+03B1 U+03B2 U+03B3 U+03B4 U+03B5 U+03B6 U+03B7 U+03B8 U+03B9 \
-                     U+03BA U+03BB U+03BC U+03BD U+03BE U+03BF \
-                     U+03C0 U+03C1 U+03C2 U+03C4 U+03C5 U+03C6 U+03C7 U+03C8 U+03C9
-
+store(K_low)      "a"        "b"    "g"    "d"    "e"        "z"        "j"       "q"     "i" \
+                  "k"        "l"    "m"    "n"    "x"        "o"  \
+                  "p"        U+00FF "r"    "s"    "t"        "u"        "f"       "c"     "y"       "w"         U+00FF
 c keys for lowercase
-store(K_low_nobr) [RALT K_A] [RALT K_E] [RALT K_J] [RALT K_I] [RALT K_O] [RALT K_U] [RALT K_W]
-store(low_nobr)   U+03B1     U+03B5     U+03B7     U+03B9     U+03BF     U+03C5     U+03C9
-
+store(K_low_nobr) [RALT K_A] U+00FF U+00FF U+00FF [RALT K_E] U+00FF     [RALT K_J] U+00FF [RALT K_I] \
+                  U+00FF     U+00FF U+00FF U+00FF U+00FF     [RALT K_O]  \
+                  U+00FF     U+00FF U+00FF U+00FF U+00FF     [RALT K_U] U+00FF     U+00FF U+00FF     [RALT K_W] U+00FF
 c lowercase letters
-store(low)          U+03B1 U+03B2 U+03B3 U+03B4 U+03B5 U+03B6 U+03B7 U+03B8 U+03B9 \
-                    U+03BA U+03BB U+03BC U+03BD U+03BE U+03BF \
-                    U+03C0 U+03C2 U+03C1 U+03C2 U+03C4 U+03C5 U+03C6 U+03C7 U+03C8 U+03C9 U+1FE5
+store(low)        U+03B1     U+03B2 U+03B3 U+03B4 U+03B5     U+03B6     U+03B7     U+03B8 U+03B9 \
+                  U+03BA     U+03BB U+03BC U+03BD U+03BE     U+03BF \
+                  U+03C0     U+03C2 U+03C1 U+03C2 U+03C4     U+03C5     U+03C6     U+03C7 U+03C8     U+03C9     U+1FE5
 
 c keys for lowercase vowels
 store(K_lowv)       "a"    "e"    "j"    "i"    "o"    "u"    "w"
 c lowercase vowels
-store(lowv)         U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
-
-store(lowvSm)       U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
-store(lowvRo)       U+1F01 U+1F11 U+1F21 U+1F31 U+1F41 U+1F51 U+1F61 U+1F81 U+1F91 U+1FA1
-store(lowvSmGr)     U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F52 U+1F62 U+1F82 U+1F92 U+1FA2
-store(lowvRoGr)     U+1F03 U+1F13 U+1F23 U+1F33 U+1F43 U+1F53 U+1F63 U+1F83 U+1F93 U+1FA3
+store(lowv)          U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
+store(lowvSmShorter) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60
 
 c lowercase consonants
 store(lowc)         U+03B2 U+03B3 U+03B4 U+03B6 U+03B8 U+03BA U+03BB U+03BC U+03BD U+03BE  \
@@ -113,6 +109,11 @@ store(up)           U+0391 U+0392 U+0393 U+0394 U+0395 U+0396 U+0397 U+0398 U+03
                     U+039A U+039B U+039C U+039D U+039E U+039F \
                     U+03A0 U+03A1 U+03A3 U+03A4 U+03A5 U+03A6 U+03A7 U+03A8 U+03A9
 
+c except E and O
+c store(upnotEO)      U+0391 U+0392 U+0393 U+0394 U+0396 U+0397 U+0398 U+0399 \
+c U+039A U+039B U+039C U+039D U+039E \
+c U+03A0 U+03A1 U+03A3 U+03A4 U+03A5 U+03A6 U+03A7 U+03A8 U+03A9
+
 c keys for upper vowels
 store(K_upV)        "A"    "E"    "J"    "I"    "O"    "U"    "W"
 c uppercase vowels
@@ -122,6 +123,11 @@ store(upVRoGr)      U+1F0B U+1F1B U+1F2B U+1F3B U+1F4B U+1F5B U+1F6B
 store(upVRoAc)      U+1F0D U+1F1D U+1F2D U+1F3D U+1F4D U+1F5D U+1F6D
 store(upVAc)        U+1FBB U+1FC9 U+1FCB U+1FDB U+1FF9 U+1FEB U+1FFB
 store(upVGr)        U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FEA U+1FFA
+
+c store(upVDP)        U+0391 U+0397 U+0399 U+03A5 U+03A9
+c store(upVDPeris)    U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F
+c store(upVPP)        U+0391 U+0397 U+0399 U+03A9
+c store(upVPPeris)    U+1F0E U+1F2E U+1F3E U+1F6E
 
 store(K_upVSm)      "A"    "E"    "J"    "I"    "O"    "W"
 store(upVSm)        U+0391 U+0395 U+0397 U+0399 U+039F U+03A9
@@ -152,40 +158,61 @@ store(updipURo)     U+1F09 U+1F19 U+1F29 U+1F49
 c Smooth Breathing
 store(K_Sm)         ">"
 store(Sm)           U+0313
-store(Sm_in)    U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 U+03B7 U+1F74 U+1F75 U+1FC6 \
-                U+03B9 U+1F76 U+1F77 U+1FD6 U+03BF U+1F78 U+1F79 U+03C5 U+1F7A U+1F7B U+1FE6 \
-                U+03C9 U+1F7C U+1F7D U+1FF6 U+1FB3 U+1FB2 U+1FB4 U+1FB7 \
-                U+1FC3 U+1FC2 U+1FC4 U+1FC7 U+1FF3 U+1FF2 U+1FF4 U+1FF7
-store(Sm_Sm)    U+1F00 U+1F02 U+1F04 U+1F06 U+1F10 U+1F12 U+1F14 U+1F20 U+1F22 U+1F24 U+1F26 \
-                U+1F30 U+1F32 U+1F34 U+1F36 U+1F40 U+1F42 U+1F44 U+1F50 U+1F52 U+1F54 U+1F56 \
-                U+1F60 U+1F62 U+1F64 U+1F66 U+1F80 U+1F82 U+1F84 U+1F86 \
-                U+1F90 U+1F92 U+1F94 U+1F96 U+1FA0 U+1FA2 U+1FA4 U+1FA6
+c `      '      ~      a      a`     a'     a~     e
+c i                    o                    u
+c w                           a_
+c j_                          w_
+store(Sm_in)        U+00FF U+00FF U+00FF U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 U+03B7 U+1F74 U+1F75 U+1FC6 \
+                    U+03B9 U+1F76 U+1F77 U+1FD6 U+03BF U+1F78 U+1F79 U+03C5 U+1F7A U+1F7B U+1FE6 \
+                    U+03C9 U+1F7C U+1F7D U+1FF6 U+1FB3 U+1FB2 U+1FB4 U+1FB7 \
+                    U+1FC3 U+1FC2 U+1FC4 U+1FC7 U+1FF3 U+1FF2 U+1FF4 U+1FF7
 
-store(Sm_Ro)    U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 U+1F21 U+1F23 U+1F25 U+1F27 \
-                U+1F31 U+1F33 U+1F35 U+1F37 U+1F41 U+1F43 U+1F45 U+1F51 U+1F53 U+1F55 U+1F57 \
-                U+1F61 U+1F63 U+1F65 U+1F67 U+1F81 U+1F83 U+1F85 U+1F87 \
-                U+1F91 U+1F93 U+1F95 U+1F97 U+1FA1 U+1FA3 U+1FA5 U+1FA7 \
+store(Sm_Sm)        U+00FF U+00FF U+00FF U+1F00 U+1F02 U+1F04 U+1F06 U+1F10 U+1F12 U+1F14 U+1F20 U+1F22 U+1F24 U+1F26 \
+                    U+1F30 U+1F32 U+1F34 U+1F36 U+1F40 U+1F42 U+1F44 U+1F50 U+1F52 U+1F54 U+1F56 \
+                    U+1F60 U+1F62 U+1F64 U+1F66 U+1F80 U+1F82 U+1F84 U+1F86 \
+                    U+1F90 U+1F92 U+1F94 U+1F96 U+1FA0 U+1FA2 U+1FA4 U+1FA6
+
+store(Sm_Ro)        U+00FF U+00FF U+00FF U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 U+1F21 U+1F23 U+1F25 U+1F27 \
+                    U+1F31 U+1F33 U+1F35 U+1F37 U+1F41 U+1F43 U+1F45 U+1F51 U+1F53 U+1F55 U+1F57 \
+                    U+1F61 U+1F63 U+1F65 U+1F67 U+1F81 U+1F83 U+1F85 U+1F87 \
+                    U+1F91 U+1F93 U+1F95 U+1F97 U+1FA1 U+1FA3 U+1FA5 U+1FA7 \
 
 
+c "A"    "E"    "J"    "I"    "O"    "U"    "W"
 
+c store(lowv2)        U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 U+1FB3 U+1FC3 U+1FF3
+c store(lowvGr)       U+1F70 U+1F72 U+1F74 U+1F76 U+1F78 U+1F7A U+1F7C U+1FB2 U+1FC2 U+1FF2
+c store(lowvAc)       U+1F71 U+1F73 U+1F75 U+1F77 U+1F79 U+1F7B U+1F7D U+1FB4 U+1FC4 U+1FF4
+store(lowvSm)       U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
+store(lowvRo)       U+1F01 U+1F11 U+1F21 U+1F31 U+1F41 U+1F51 U+1F61 U+1F81 U+1F91 U+1FA1
+store(lowvSmGr)     U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F52 U+1F62 U+1F82 U+1F92 U+1FA2
+store(lowvRoGr)     U+1F03 U+1F13 U+1F23 U+1F33 U+1F43 U+1F53 U+1F63 U+1F83 U+1F93 U+1FA3
+c store(lowvSmAc)     U+1F04 U+1F14 U+1F24 U+1F34 U+1F44 U+1F54 U+1F64 U+1F84 U+1F94 U+1FA4
+c store(lowvRoAc)     U+1F05 U+1F15 U+1F25 U+1F35 U+1F45 U+1F55 U+1F65 U+1F85 U+1F95 U+1FA5
+
+c "a"    "j"    "i"    "u"    "w"    "a,"    "j,"  "w,"
+c store(lowvSm2)      U+1F00 U+1F20 U+1F30 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
+c store(lowvSmSmCi)   U+1F06 U+1F26 U+1F36 U+1F56 U+1F66 U+1F86 U+1F96 U+1FA6
+c store(lowvSmRoCi)   U+1F07 U+1F27 U+1F37 U+1F57 U+1F67 U+1F87 U+1F97 U+1FA7
+c store(lowvCi)       U+1FB6 U+1FC6 U+1FD6 U+1FE6 U+1FF6 U+1FB7 U+1FC7 U+1FF7
 
 c Rough Breathing
 store(K_Ro)         "hH<"
 c store(K_Ronoth)     "<"
 store(Ro)           U+0314
-store(Ro_in)        U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 \
+store(Ro_in)        U+00FF U+00FF U+00FF U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 \
                     U+03B7 U+1F74 U+1F75 U+1FC6 U+03B9 U+1F76 U+1F77 U+1FD6 U+03BF U+1F78 U+1F79 \
                     U+03C5 U+1F7A U+1F7B U+1FE6 U+03C9 U+1F7C U+1F7D U+1FF6 \
                     U+1FB3 U+1FB2 U+1FB4 U+1FB7 U+1FC3 U+1FC2 U+1FC4 U+1FC7 \
                     U+1FF3 U+1FF2 U+1FF4 U+1FF7
 
-store(Ro_Ro)        U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 \
+store(Ro_Ro)        U+00FF U+00FF U+00FF U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 \
                     U+1F21 U+1F23 U+1F25 U+1F27 U+1F31 U+1F33 U+1F35 U+1F37 U+1F41 U+1F43 U+1F45 \
                     U+1F51 U+1F53 U+1F55 U+1F57 U+1F61 U+1F63 U+1F65 U+1F67 \
                     U+1F81 U+1F83 U+1F85 U+1F87 U+1F91 U+1F93 U+1F95 U+1F97 \
                     U+1FA1 U+1FA3 U+1FA5 U+1FA7
 
-store(XR_in)        U+0313 U+0313 U+0300 U+0301 U+0342
+store(XR_in)        U+0313 U+0313 U+0300 U+0301 U+0342 U+00FF U+00FF U+00FF 
 
 c Delete Breathings
 store(K_Del)        "*"
@@ -219,28 +246,27 @@ c Grave Accent
 store(K_Gr)         "\`"
 store(Gr)           U+0300
 
-store(Gr_in)        U+03B1 U+1F00 U+1F01 U+03B5 U+1F11 U+03B7 U+1F20 U+1F21 \
+store(Gr_in)        U+00FF U+00FF U+00FF U+03B1 U+1F00 U+1F01 U+03B5 U+1F11 U+03B7 U+1F20 U+1F21 \
                     U+03B9 U+1F31 U+03BF U+1F40 U+1F41 U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 \
                     U+1FB3 U+1F80 U+1F81 U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1 U+03CA U+03CB
 
-store(Gr_Gr)        U+1F70 U+1F02 U+1F03 U+1F72 U+1F13 U+1F74 U+1F22 U+1F23 \
+store(Gr_Gr)        U+00FF U+00FF U+00FF U+1F70 U+1F02 U+1F03 U+1F72 U+1F13 U+1F74 U+1F22 U+1F23 \
                     U+1F76 U+1F33 U+1F78 U+1F42 U+1F43 U+1F7A U+1F52 U+1F53 U+1F7C U+1F62 U+1F63 \
                     U+1FB2 U+1F82 U+1F83 U+1FC2 U+1F92 U+1F93 U+1FF2 U+1FA2 U+1FA3 U+1FD2 U+1FE2
 
-store(Gr_Ac)        U+1F71 U+1F04 U+1F05 U+1F73 U+1F15 U+1F75 U+1F24 U+1F25 \
+store(Gr_Ac)        U+00FF U+00FF U+00FF U+1F71 U+1F04 U+1F05 U+1F73 U+1F15 U+1F75 U+1F24 U+1F25 \
                     U+1F77 U+1F35 U+1F79 U+1F44 U+1F45 U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 \
                     U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+1FD3 U+1FE3
-
 
 c Acute Accent
 store(K_Ac)         "/'"
 store(Ac)           U+0301
 
-store(Ac_in)        U+03B1 U+1F00 U+1F01 U+03B5 U+1F10 U+1F11 \
+store(Ac_in)        U+00FF U+00FF U+00FF U+03B1 U+1F00 U+1F01 U+03B5 U+1F10 U+1F11 \
                     U+03B7 U+1F20 U+1F21 U+03B9 U+1F30 U+1F31 U+03BF U+1F40 U+1F41 \
                     U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 U+1FB3 U+1F80 U+1F81 \
                     U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1 U+03CA U+03CB
-store(Ac_Ac)        U+1F71 U+1F04 U+1F05 U+1F73 U+1F14 U+1F15 \
+store(Ac_Ac)        U+00FF U+00FF U+00FF U+1F71 U+1F04 U+1F05 U+1F73 U+1F14 U+1F15 \
                     U+1F75 U+1F24 U+1F25 U+1F77 U+1F34 U+1F35 U+1F79 U+1F44 U+1F45 \
                     U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 U+1FB4 U+1F84 U+1F85 \
                     U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+1FD3 U+1FE3
@@ -255,23 +281,24 @@ store(Ma_comp) U+1FB1 U+1FB9 U+1FD1 U+1FD9 U+1FE1 U+1FE9
 c Circumflex/Tilde
 store(K_Ci)         "~^="
 store(Ci)           U+0342
-store(Ci_in)        U+03B1 U+1F00 U+1F01 U+03B7 U+1F20 U+1F21 \
+store(Ci_in)        U+00FF U+00FF U+03B1 U+1F00 U+1F01 U+03B7 U+1F20 U+1F21 \
                     U+03B9 U+1F30 U+1F31 U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 \
                     U+1FB3 U+1F80 U+1F81 U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1
-store(Ci_Ci)        U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
+store(Ci_Ci)        U+00FF U+00FF U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
                     U+1FD6 U+1F36 U+1F37 U+1FE6 U+1F56 U+1F57 U+1FF6 U+1F66 U+1F67 \
                     U+1FB7 U+1F86 U+1F87 U+1FC7 U+1F96 U+1F97 U+1FF7 U+1FA6 U+1FA7
-store(Ci_Ac)        U+1F71 U+1F04 U+1F05 U+1F75 U+1F24 U+1F25 \
+store(Ci_Ac)        U+00FF U+00FF U+1F71 U+1F04 U+1F05 U+1F75 U+1F24 U+1F25 \
                     U+1F77 U+1F34 U+1F35 U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 \
                     U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5
 
-store(GC_Ci)        U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
+store(GC_Ci)        U+00FF U+00FF U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
                     U+1FD6 U+1F36 U+1FE6 U+1F56 U+1F57 U+1FF6 U+1F66 U+1F67 \
                     U+1FB7 U+1F86 U+1F87 U+1FC7 U+1F96 U+1F97 U+1FF7 U+1FA6 U+1FA7
 
-store(GC_Gr)        U+1F70 U+1F02 U+1F03 U+1F74 U+1F22 U+1F23 \
+store(GC_Gr)        U+00FF U+00FF U+1F70 U+1F02 U+1F03 U+1F74 U+1F22 U+1F23 \
                     U+1F76 U+1F33 U+1F7A U+1F52 U+1F53 U+1F7C U+1F62 U+1F63 \
                     U+1FB2 U+1F82 U+1F83 U+1FC2 U+1F92 U+1F93 U+1FF2 U+1FA2 U+1FA3
+
 
 c Iota subscript
 store(K_Io)         "!|+_"
@@ -360,24 +387,24 @@ store(I_upAEOUi2)   U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35
 store(I_upAEOJu2)   U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55
 store(AI_E)         U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D
 store(AI_O)         U+1FF8 U+1FF9 U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D
-store(I_upAEOUi3)   U+1F76 U+1F77        U+1F31        U+1F33        U+1F35
-store(AI_U)         U+1FEA U+1FEB        U+1F59        U+1F5B        U+1F5D
+store(I_upAEOUi3)   U+1F76 U+1F77 U+00FF U+1F31 U+00FF U+1F33 U+00FF U+1F35
+store(AI_U)         U+1FEA U+1FEB U+00FF U+1F59 U+00FF U+1F5B U+00FF U+1F5D
 
 
 store(I_upAEOU)     U+1FBA U+1FBB U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
                     U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
                     U+1FF8 U+1FF9 U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
-                    U+1FEA U+1FEB        U+1F59        U+1F5B        U+1F5D
+                    U+1FEA U+1FEB U+00FF U+1F59 U+00FF U+1F5B U+00FF U+1F5D
 
 store(I_upAEOUi)    U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37 \
                     U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
                     U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
-                    U+1F76 U+1F77        U+1F31        U+1F33        U+1F35
+                    U+1F76 U+1F77 U+00FF U+1F31 U+00FF U+1F33 U+00FF U+1F35
 
 store(I_upAEOUA)    U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 \
                     U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 \
                     U+039F U+039F U+039F U+039F U+039F U+039F U+039F U+039F \
-                    U+03A5 U+03A5        U+03A5        U+03A5        U+03A5
+                    U+03A5 U+03A5 U+00FF U+03A5 U+00FF U+03A5 U+00FF U+03A5
 
 store(I_upAEOJ)     U+1FBA U+1FBB U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
                     U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
@@ -402,12 +429,7 @@ store(upVRoTi2)       U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F
 
 
 c Vowels
-store(V_in)         U+0313 U+0314 U+0300 U+0301 
-store(V_A_reduced)  U+1F00 U+1F01 U+1F70 U+1F71 
-store(V_J_reduced)  U+1F20 U+1F21 U+1F74 U+1F75
-store(V_U_reduced)  U+1F50 U+1F51 U+1F7A U+1F7B
-store(V_W_reduced)  U+1F60 U+1F61 U+1F7C U+1F7D
-
+store(V_in)         U+0313 U+0314 U+0300 U+0301 U+00FF U+00FF U+00FF U+00FF U+00FF U+00FF U+00FF 
 store(V_A)          U+1F00 U+1F01 U+1F70 U+1F71 U+1FB6 U+1F02 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
 store(V_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F00 U+1F04 U+1F01 U+1F01 U+1F07
 store(V_J)          U+1F20 U+1F21 U+1F74 U+1F75 U+1FC6 U+1F22 U+1F24 U+1F26 U+1F23 U+1F25 U+1F27
@@ -419,9 +441,7 @@ store(V_W)          U+1F60 U+1F61 U+1F7C U+1F7D U+1FF6 U+1F62 U+1F64 U+1F66 U+1F
 store(XV_U)         U+1F50 U+1F51 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
 store(XV_UDi)       U+03CB U+03CB U+1FE2 U+1FE3 U+03CB U+1FE2 U+1FE3 U+03CB
 
-store(E_in)         U+0313 U+0314 U+0300 U+0301
-store(E_E_reduced)  U+1F10 U+1F11 U+1F72 U+1F73
-
+store(E_in)         U+0313 U+0314 U+0300 U+0301 U+00FF U+00FF U+00FF 
 store(E_E)          U+1F10 U+1F11 U+1F72 U+1F73 U+1F14 U+1F13 U+1F15
 store(E_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F11 U+1F11
 store(E_I)          U+1F30 U+1F31 U+0376 U+0377 U+1F34 U+1F33 U+1F35
@@ -430,9 +450,7 @@ store(E_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1F54 U+1F53 U+1F55
 store(E_O)          U+1F40 U+1F41 U+1F78 U+1F79 U+1F44 U+1F43 U+1F45
 store(E_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F41 U+1F41
 
-store(I_in)         U+0313 U+0314 U+0300 U+0301 U+0342
-store(I_I_reduced)  U+1F30 U+1F31 U+0376 U+0377 U+1FD6
-
+store(I_in)         U+0313 U+0314 U+0300 U+0301 U+0342 U+00FF U+00FF U+00FF U+00FF U+00FF 
 store(I_I)          U+1F30 U+1F31 U+0376 U+0377 U+1FD6 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
 store(I_IDi)        U+03CA U+03CA U+1FD2 U+1FD3 U+03CA U+1FD3 U+03CA U+1FD2 U+1FD3 U+03CA
 store(I_A)          U+1F00 U+1F01 U+1F70 U+1F71 U+1FB6 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
@@ -440,13 +458,11 @@ store(I_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F04 U+1F01 U+1F
 store(I_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1FE6 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
 store(I_UBr)        U+1F50 U+1F51 U+03C5 U+03C5 U+1FE6 U+1F50 U+1F56 U+1F51 U+1F51 U+1F57
 
-store(XI_XBr)       U+0313 U+0314 U+0313        U+0314 U+0314
-store(XI_I)         U+1F30 U+1F31 U+1F34        U+1F33 U+1F35
-store(XI_IDi)       U+03CA U+03CA U+1FD3        U+1FD2 U+1FD3
+store(XI_XBr)       U+0313 U+0314 U+0313 U+00FF U+0314 U+0314 U+00FF 
+store(XI_I)         U+1F30 U+1F31 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
+store(XI_IDi)       U+03CA U+03CA U+1FD3 U+03CA U+1FD2 U+1FD3 U+03CA
 
-store(O_in)         U+0313 U+0314 U+0300 U+0301
-store(O_O_reduced)  U+1F40 U+1F41 U+1F78 U+1F79
-
+store(O_in)         U+0313 U+0314 U+0300 U+0301 U+00FF U+00FF U+00FF U+00FF 
 store(O_O)          U+1F40 U+1F41 U+1F78 U+1F79 U+1F42 U+1F44 U+1F43 U+1F45
 store(O_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F40 U+1F41 U+1F41
 store(O_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F10 U+1F11 U+1F11
@@ -754,12 +770,12 @@ any(Eng_in)          + any(K_Vel) > index(Eng,1) index(Vel,2)   c n   + k  gk
 any(Eng_in) any(Eng) + any(K_GG)  > index(Eng,1) index(Eng,2)   c ng  + g  gg
 
 c Final sigma
-any(sFin)                 + any(K_low_reduced) > outs(sMed) \
-                                                  index(low_reduced,2)  c v   + a  sa
-any(sFin) any(br)         + any(K_low_reduced) > outs(sMed) \
-                                      index(br,2) index(low_reduced,3)  c v[  + a  s[a
-any(sFin) any(br) any(br) + any(K_low_reduced) > outs(sMed) \
-                          index(br,2) index(br,3) index(low_reduced,4)  c v[[ + a  s[[a
+any(sFin)                 + any(K_low) > outs(sMed) \
+                                                  index(low,2)  c v   + a  sa
+any(sFin) any(br)         + any(K_low) > outs(sMed) \
+                                      index(br,2) index(low,3)  c v[  + a  s[a
+any(sFin) any(br) any(br) + any(K_low) > outs(sMed) \
+                          index(br,2) index(br,3) index(low,4)  c v[[ + a  s[[a
 
 c Forced medial sigma
 
@@ -768,17 +784,17 @@ c Forced medial sigma
 c Initial vowel and rho
 
 
-nul                       + any(K_lowv) > index(lowv,2)       c 0   + a  >a
+nul                       + any(K_lowv) > index(lowvSmShorter,2)       c 0   + a  >a
 nul any(lbr)              + any(K_lowv) > context \
-                                          index(lowv,3)       c 0[  + a  >a
+                                          index(lowvSmShorter,3)       c 0[  + a  >a
 nul any(lbr) any(lbr)     + any(K_lowv) > context \
-                                          index(lowv,4)       c 0[[ + a  >a
+                                          index(lowvSmShorter,4)       c 0[[ + a  >a
 any(wi)                   + any(K_lowv) > context \
-                                          index(lowv,2)       c _   + a  >a
+                                          index(lowvSmShorter,2)       c _   + a  >a
 any(wi) any(lbr)          + any(K_lowv) > context \
-                                          index(lowv,3)       c _[  + a  >a
+                                          index(lowvSmShorter,3)       c _[  + a  >a
 any(wi) any(lbr) any(lbr) + any(K_lowv) > context \
-                                          index(lowv,4)       c _[[ + a  >a
+                                          index(lowvSmShorter,4)       c _[[ + a  >a
 
 
 nul                       + any(K_r)    > outs(rRo)             c 0   + r  <r
@@ -819,13 +835,13 @@ any(wi) any(lbr)          + any(K_upR)  > context outs(upRRo)   c _[  + R  <R
 any(wi) any(lbr) any(lbr) + any(K_upR)  > context outs(upRRo)   c _[[ + R  <R
 
 c Diacritic + initial vowel or rho
-any(V_in)  + any(K_a)   > index(V_A_reduced,1)                          c >   + a  a>
-any(E_in)  + any(K_e)   > index(E_E_reduced,1)                          c >   + e  e>
-any(V_in)  + any(K_j)   > index(V_J_reduced,1)                          c >   + j  j>
-any(I_in)  + any(K_i)   > index(I_I_reduced,1)                          c >   + i  i>
-any(O_in)  + any(K_o)   > index(O_O_reduced,1)                          c >   + o  o>
-any(V_in)  + any(K_u)   > index(V_U_reduced,1)                          c >   + u  u>
-any(V_in)  + any(K_w)   > index(V_W_reduced,1)                          c >   + w  w>
+any(V_in)  + any(K_a)   > index(V_A,1)                          c >   + a  a>
+any(E_in)  + any(K_e)   > index(E_E,1)                          c >   + e  e>
+any(V_in)  + any(K_j)   > index(V_J,1)                          c >   + j  j>
+any(I_in)  + any(K_i)   > index(I_I,1)                          c >   + i  i>
+any(O_in)  + any(K_o)   > index(O_O,1)                          c >   + o  o>
+any(V_in)  + any(K_u)   > index(V_U,1)                          c >   + u  u>
+any(V_in)  + any(K_w)   > index(V_W,1)                          c >   + w  w>
 any(Sm)    + any(K_r)   > outs(rSm)                             c >   + r  r>
 any(Ro)    + any(K_r)   > outs(rRo)                             c <   + r  r<
 any(IU_in) + any(K_i)   > index(IU_IDi,1)                       c "   + i  i"
@@ -959,9 +975,9 @@ any(wi) any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
     context use(backspace-near-start-of-line)
 
-                    + any(K_low_reduced) > index(low_reduced,1)
-                    + any(K_up)          > index(up,1)
-                    + any(K_low_nobr)    > index(low_nobr,1) c RALT keys
+                    + any(K_low)      > index(low,1)
+                    + any(K_up)       > index(up,1)
+                    + any(K_low_nobr) > index(low,1) c RALT keys
 
 
 any(all)    + [K_BKSP]          > nul
