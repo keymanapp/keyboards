@@ -11,8 +11,6 @@
     The Phonetic Hebrew keyboard is designed by assigning the letters to the most similar sound of the English keys or appearance to type the Ancient Hebrew language.
 </p>
 
-<img src="tmp.jpg">
-
 <h2>Desktop Keyboard Layout</h2>
 
 <a href="documentation.pdf">
