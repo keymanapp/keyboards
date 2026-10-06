@@ -1,6 +1,10 @@
 Tunisian Spoken Arabic (SIL) Keyboard Change History
 =======================
 
+1.1.2 1-Oct-2026
+----------------
+* Remove language header in .kmn file
+
 1.1.1 9-Mar-2026
 ----------------
 * Updated OSK font for bettr experience

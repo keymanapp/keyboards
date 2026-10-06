@@ -1,6 +1,10 @@
 Ahmao (SIL) Keyboard Change History
 =======================
 
+1.3.1 (2 Oct 2026)
+------------------
+* Remove deprecated header statement in .kmn
+
 1.3 (22 Nov 2024)
 ------------------
 * Added missing characters for both Augmented Traditional character set as well as the Normalised character set
