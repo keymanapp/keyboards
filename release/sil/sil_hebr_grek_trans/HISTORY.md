@@ -1,6 +1,10 @@
 Hebrew and Greek Transliteration (SIL) Keyboard Change History
 =======================
 
+1.2.1 2-Oct-2026
+-----------------
+* Update deprecated header statement
+
 1.2 17-Sep-2024
 -----------------
 * Added tablet layout
