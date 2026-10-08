@@ -10,7 +10,7 @@ store(&NAME) "Vai (Athinkra)"
 store(&BITMAP) 'athinkra_vai.ico'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© Athinkra, LLC'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.3.1'
 store(&VISUALKEYBOARD) 'athinkra_vai.kvks'
 store(&LAYOUTFILE) 'athinkra_vai.keyman-touch-layout'
 
@@ -50,12 +50,12 @@ U+014B + "E" > U+A5E3
 "h" + "o" > U+A573
 "h" + "u" > U+A597
 "h" + "O" > U+A5BD
-"h" + "E" > U+A5E5
+"h" + "E" > U+A5E4
+U+A5E4 + "~" > U+A5E5
 U+A526 + "~" > U+A527 c Nasal i 
 U+A54C + "~" > U+A54D c Nasal a
 U+A597 + "~" > U+A598 c Nasal u
 U+A5BD + "~" > U+A5BE c Nasal O
-U+A5E5 + "~" > U+A5E6 c Nasal E
 
 "w" + "e" > U+A503
 "w" + "i" > U+A528
@@ -89,13 +89,6 @@ U+0253 + "h" > "bh"
 "bh" + "u" > U+A59C 
 "bh" + "O" > U+A5C2  
 "bh" + "E" > U+A5E9 
-U+0253 "h" + "e" > U+A506 
-U+0253 "h" + "i" > U+A52B 
-U+0253 "h" + "a" > U+A551 
-U+0253 "h" + "o" > U+A577  
-U+0253 "h" + "u" > U+A59C 
-U+0253 "h" + "O" > U+A5C2  
-U+0253 "h" + "E" > U+A5E9 
 
 U+0253  + "e" > U+A507 
 U+0253  + "i" > U+A52C 
@@ -356,6 +349,7 @@ c special letters
 + [RALT K_F] > "-f"
 "-f" + "e" > U+A613
 "-f" + "a" > U+A610
+"-f" + "A" > U+A618
 + [RALT K_T] > "-t"
 "-t" + "i" > U+A615
 "-t" + "O" > U+A61D
@@ -372,7 +366,7 @@ c special letters
 "-k" + "u" > U+A61C
 c archaic nasal vowels
 "-" U+A55A + "~" > U+A619 c -ta~
-"-" U+0257 "O" + "~" > U+A61E
+"-" U+A5D1 + "~" > U+A61E c RALT d O~
 
 + [RALT K_N] > "-n"
 "-" U+A547 + "~" > U+A616 c -ni~

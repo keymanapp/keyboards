@@ -1,7 +1,7 @@
 <?php 
   $pagename = 'Tawallammat Latin Keyboard Help';
-  $pagetitle = 'Tawallammat Latin Keyboard Help';
-  $style = <<<EXTRA
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 	.kbd {
 		background-color: #eee;
 		border-radius: 3px;
@@ -19,7 +19,7 @@
 	.th, .td { text-align: center; padding: 8px; }
 	.tr:nth-child(even) { background-color: #f2f2f2 }
 	.th { background-color: #4CAF50; color: white; }
-EXTRA;
+END;
   require_once('header.php');
 ?>
 

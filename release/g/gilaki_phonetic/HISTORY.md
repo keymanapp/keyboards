@@ -1,6 +1,10 @@
 Gilaki Phonetic Change History
 ==============================
 
+1.1.2 (2026-03-11)
+----------------
+* Add KbdArab.json and KbdArabLateef for better display
+
 1.1.1 (20 Feb 2025)
 -----------------
 * Put OSKFont from .kps file into .kvks file

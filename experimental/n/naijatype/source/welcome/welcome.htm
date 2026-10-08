@@ -48,8 +48,19 @@
 		table.codepoints tr td:nth-child(2) { text-align:center; font-size: 200%; border-radius: 6px; background-color: #ddd; }
 
 		table tr th {
-			background-color: #ccc; border-radius: 6px; border: solid white 2px; min-width: 1em;
+			background-color: #ccc; border-radius: 4px; border: solid white 2px; min-width: 0.4em;
 		}
+
+		table.rota_summary tr th, table.rota_summary tr td:nth-child(1) {
+			font-size: 100%;
+		}
+
+		.rota_summary tr td {
+			padding: 0px;
+			text-wrap-mode: nowrap;
+		}
+
+		table.rota_summary td:hover { background-color: #e7e7de; border: black 1px solid; border-radius: 6px; }
 
 		th .key { padding-top: -12px; margin-top: -12px; }
 
@@ -71,7 +82,7 @@
         div.touch img.key { float: left; border: 0px; background: none; margin: 0px;}
 
 		/* Format for desktops: float the touch to the right. */
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 700px) {
                 body, p {
                     font-size: 100%;
                 }
@@ -104,6 +115,7 @@ languages correctly on systems, tablets and handsets but no more.
 There’s one free keyboard you can install on all your devices to
 make it really easy to type hooked letters, special vowels, letters
 with accents, underlines and underdots and more: Naija Type. <!-- I’ll tell you how to install it in a moment but first let me show you how to use it. --></p>
+<p>Jump down to: <a href="#smallcaps">Small Caps &amp; ∅</a>, <a href="#codepoints">Unicode Character list</a>, <a href="#rotations">Rotation list (transformations)</a>, <a href="#history">Version History</a></p>
 
 <div class="touch">
 <h2>On touch screens (Android or iOS)</h2>
@@ -171,8 +183,8 @@ letters or symbols.
 	<p>Saltillos and other apostrophe or comma-like symbols are available under the comma key.</p>
 </div>
 
-<div class="desktop"><h2>On desktop</h2>
-<h3>Type then change shape</h3>
+<div class="desktop"><h2>On desktop: </h2>
+<h3><span class="key">;</span> Type then change shape </h3>
 <p>Type the base letter then the semicolon key <span class="key">;</span>
 one or more times to switch between other
 forms of that letter. For example, to type the word</p>
@@ -195,7 +207,7 @@ you press <span class="key">;
 	<span class="key">y</span>
 	<span class="key">a</span></li>
 </ul>
-<h3>Add tone and nasal</h3>
+<h3><span class="key">ˎ̃</span> Add tone and nasal </h3>
 <p>After typing a vowel or nasal you can add a tone
 mark above it by pressing the <span class="key">`</span>
 key repeatedly. This cycles through the following symbols: <b>ó ò
@@ -313,14 +325,14 @@ want to type a semicolon, a back tick, or a tilde then hold down the
 <span class="key">alt</span>
 key as you type these keys.</p>
 
-<h2>ꜱᴍᴀʟʟ ᴄᴀᴘꜱ and null</h2>
+<a name="smallcaps"><h2>ꜱᴍᴀʟʟ ᴄᴀᴘꜱ and null</h2>
 <p>Type equals key <span class="key">=</span> twice to turn on 'small caps' mode. Every small letter you type will be a Unicode small caps letter, ideal for spreadsheets or grammatical glossing in Fieldworks or other places where small caps is desirable but not a style option. Type the same equals key <span class="key">=</span> twice to turn off this mode.</p>
 <p>Type an empty set (null morpheme) ∅ in one of two ways: <ol><li>Type  zero <span class="key">0</span> <span class="key">0</span> <span class="key">;</span></li>
 <li><span class="key">0</span> <span class="key">/</span> <span class="key">/</span></li></ol>.</p>
 </div>
 
 <div class="symbols">
-<h1>What symbols are included?</h1>
+<a name="codepoints"><h1>What symbols are included?</h1>
 <h2>Codepoints produced</h2>
 <p>The following are all the codepoints produced by the touch and desktop keyboards:</p>
 <table class="codepoints">
@@ -333,10 +345,10 @@ key as you type these keys.</p>
 </table>
 </div>
 
-<h2>Physical keyboard rotation</h2>
+<a name="rotations"><h2>Physical keyboard rotation</h2>
 <p>Here are the symbols that the <span class="key">;</span>
  key will cycle through:</p>
-<table class="rota_summary" cellpadding="3" cellspacing="0">
+<table class="rota_summary" cellpadding="9" cellspacing="0">
 	<col width="15%"/>
 
 	<col/>
@@ -375,7 +387,7 @@ key as you type these keys.</p>
 
 
 <!-- When updating, paste here from naijatype_key_generator.ods rota_summary sheet -->
-<tr valign="bottom"><td width="15%"><p align="right"> Basic</p></td> <th align=”center">a</th> <th align=”center">e</th> <th align=”center">i</th> <th align=”center">o</th> <th align=”center">u</th> <th align=”center">b</th> <th align=”center">c</th> <th align=”center">d</th> <th align=”center">g</th> <th align=”center">h</th> <th align=”center">k</th> <th align=”center">n</th> <th align=”center">s</th> <th align=”center">v</th> <th align=”center">y</th> <th align=”center">z</th> <th align=”center">$</th> <th align=”center">q</th> <th align=”center">!</th> <th align=”center">'</th> <th align=”center">?</th> <th align=”center">‘</th> <th align=”center">’</th> <th align=”center">“</th> <th align=”center">”</th> <th align=”center">^</th> </tr><tr valign="bottom"><td width="15%"><p align="right"> 1<sup>st </sup><span class="key">;</span></p></td> <td align=”center">ə</td> <td align=”center">ɛ</td> <td align=”center">ɨ</td> <td align=”center">ɔ</td> <td align=”center">ʊ</td> <td align=”center">ɓ</td> <td align=”center">ç</td> <td align=”center">ɗ</td> <td align=”center">ɣ</td> <td align=”center">ɦ</td> <td align=”center">ƙ</td> <td align=”center">ŋ</td> <td align=”center">ʃ</td> <td align=”center">ⱱ</td> <td align=”center">ƴ</td> <td align=”center">ʒ</td> <td align=”center">₦</td> <td align=”center">ǝ</td> <td align=”center">¡</td> <td align=”center">ꞌ</td> <td align=”center">¿</td> <td align=”center">ꞌ</td> <td align=”center">ꞌ</td> <td align=”center">Ꞌ</td> <td align=”center">Ꞌ</td> <td align=”center">˄</td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 2<sup>nd</sup> <span class="key">;</span></p></td> <td align=”center">a̱</td> <td align=”center">e̱</td> <td align=”center">ɪ</td> <td align=”center">ø</td> <td align=”center">ʉ</td> <td align=”center">ḇ</td> <td align=”center"></td> <td align=”center">ḏ</td> <td align=”center">g̱</td> <td align=”center">ẖ</td> <td align=”center">ḵ</td> <td align=”center">ɲ</td> <td align=”center">s̱</td> <td align=”center">ʌ</td> <td align=”center">y̱</td> <td align=”center">ẕ</td> <td align=”center">£</td> <td align=”center"></td> <td align=”center"></td> <td align=”center">Ꞌ</td> <td align=”center">ˈ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 3<sup>rd</sup> <span class="key">;</span></p></td> <td align=”center">ạ</td> <td align=”center">ẹ</td> <td align=”center">i̱</td> <td align=”center">o̱</td> <td align=”center">u̱</td> <td align=”center">ḅ</td> <td align=”center"></td> <td align=”center">ḍ</td> <td align=”center">g̣</td> <td align=”center">ḥ</td> <td align=”center">ḳ</td> <td align=”center">ṉ</td> <td align=”center">ṣ</td> <td align=”center"></td> <td align=”center">ỵ</td> <td align=”center">ẓ</td> <td align=”center">€</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ʔ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 4<sup>th</sup> <span class="key">;</span></p></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ị</td> <td align=”center">ọ</td> <td align=”center">ụ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ṇ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">₵</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr>
+<tr valign="bottom"><td width="15%"><p align="right">First Key:</p></td> <th align=”center">a</th> <th align=”center">e</th> <th align=”center">i</th> <th align=”center">o</th> <th align=”center">u</th> <th align=”center">b</th> <th align=”center">c</th> <th align=”center">d</th> <th align=”center">g</th> <th align=”center">h</th> <th align=”center">k</th> <th align=”center">n</th> <th align=”center">s</th> <th align=”center">v</th> <th align=”center">y</th> <th align=”center">z</th> <th align=”center">$</th> <th align=”center">q</th> <th align=”center">!</th> <th align=”center">'</th> <th align=”center">?</th> <th align=”center">‘</th> <th align=”center">’</th> <th align=”center">“</th> <th align=”center">”</th> <th align=”center">^</th> </tr><tr valign="bottom"><td width="15%"><p align="right"> 1<sup>st </sup><span class="key">;</span></p></td> <td align=”center">ə</td> <td align=”center">ɛ</td> <td align=”center">ɨ</td> <td align=”center">ɔ</td> <td align=”center">ʊ</td> <td align=”center">ɓ</td> <td align=”center">ç</td> <td align=”center">ɗ</td> <td align=”center">ɣ</td> <td align=”center">ɦ</td> <td align=”center">ƙ</td> <td align=”center">ŋ</td> <td align=”center">ʃ</td> <td align=”center">ⱱ</td> <td align=”center">ƴ</td> <td align=”center">ʒ</td> <td align=”center">₦</td> <td align=”center">ǝ</td> <td align=”center">¡</td> <td align=”center">ꞌ</td> <td align=”center">¿</td> <td align=”center">ꞌ</td> <td align=”center">ꞌ</td> <td align=”center">Ꞌ</td> <td align=”center">Ꞌ</td> <td align=”center">˄</td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 2<sup>nd</sup> <span class="key">;</span></p></td> <td align=”center">a̱</td> <td align=”center">e̱</td> <td align=”center">ɪ</td> <td align=”center">ø</td> <td align=”center">ʉ</td> <td align=”center">ḇ</td> <td align=”center"></td> <td align=”center">ḏ</td> <td align=”center">g̱</td> <td align=”center">ẖ</td> <td align=”center">ḵ</td> <td align=”center">ɲ</td> <td align=”center">s̱</td> <td align=”center">ʌ</td> <td align=”center">y̱</td> <td align=”center">ẕ</td> <td align=”center">£</td> <td align=”center"></td> <td align=”center"></td> <td align=”center">Ꞌ</td> <td align=”center">ˈ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 3<sup>rd</sup> <span class="key">;</span></p></td> <td align=”center">ạ</td> <td align=”center">ẹ</td> <td align=”center">i̱</td> <td align=”center">o̱</td> <td align=”center">u̱</td> <td align=”center">ḅ</td> <td align=”center"></td> <td align=”center">ḍ</td> <td align=”center">g̣</td> <td align=”center">ḥ</td> <td align=”center">ḳ</td> <td align=”center">ṉ</td> <td align=”center">ṣ</td> <td align=”center"></td> <td align=”center">ỵ</td> <td align=”center">ẓ</td> <td align=”center">€</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ʔ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr><tr valign="bottom"><td width="15%"><p align="right"> 4<sup>th</sup> <span class="key">;</span></p></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ị</td> <td align=”center">ọ</td> <td align=”center">ụ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">ṇ</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center">₵</td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> <td align=”center"></td> </tr>
 <!-- PASTE ENDS -->
 
 </table>
@@ -397,7 +409,7 @@ characters used:</p>
 
 
 
-<h1>Version History</h1>
+<a name="history"><h1>Version History</h1>
 <p>See the kmp file and <a href="../doc/readme.htm">readme</a> for the version history.</p>
 <!-- COPY the version history from the naijatype.kmn file and regex replace '\rc '-> '</li>\r<li>' then top and tail the ul -->
 <ul><li>c Added small capital I.</li>

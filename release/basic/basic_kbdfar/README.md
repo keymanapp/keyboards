@@ -1,14 +1,12 @@
 Persian (Standard) Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.0
+© SIL Global
 
 Description
 -----------
 
-Persian (Standard) Basic generated from template
+Persian (Standard) Basic keyboard was imported with permission from the Windows 10 keyboard. 
 
 Links
 -----

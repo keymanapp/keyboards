@@ -16,8 +16,8 @@
   History:          01 Jun 2012 - pbaehr - Generate documentation from Keyman Desktop documentation
 */
   $pagename = "N'Ko Phonetic Keyboard Help";
-  $pagetitle = "N'Ko Phonetic Keyboard Help";
-  $style = <<<END
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
 /* 
 ===========
 ==General==

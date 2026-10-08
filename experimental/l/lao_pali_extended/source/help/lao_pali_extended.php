@@ -1,10 +1,9 @@
 <?php 
   $pagename = 'Lao Pali Extended Keyboard Help';
   $pagetitle = $pagename;
-    $style = <<<END
+    $pagestyle = <<<END
     .lao {font-family: "Lanexang Pali25"; font-size: 15pt;}
 END;
-  
   require_once('header.php');
 ?>
 <p>The keyboard uses the official Lao standard layout, adapted to support entry of the Lao Pali and Lao Sanskrit characters included in Unicode. It includes some Private Use Area (PUA) code points for characters not yet supported in Unicode. Because of this, some of the characters will not display properly on mobile devices or without the included <b>Lanexang Pali25</b> font.</p>

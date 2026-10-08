@@ -1,0 +1,82 @@
+﻿c Bunong Latin Script
+
+store(&VERSION) '10.0'
+store(&NAME) 'Bunong Latin (SIL)'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.2'
+store(&BITMAP) 'sil_bunong_latn.ico'
+store(&VISUALKEYBOARD) 'sil_bunong_latn.kvks'
+store(&MESSAGE) 'Bunong Latin (SIL) keyboard is designed for typing Bunong language using Latin characters.'
+store(&TARGETS) 'web desktop'
+
+begin Unicode> use(main)
+
+store (vowels) "aeiou" U+01A1 U+01B0 "AEIOU" U+01A0 U+01AF U+0302
+
+group(main) using keys
+
+c other spaces
++ [RALT K_SPACE] > U+200A
++ [SHIFT RALT K_SPACE] > U+2009
++ [LCTRL K_SPACE] > U+2005
++ [SHIFT LCTRL K_SPACE] > U+2002
+
+'O' + '7' > U+01A0
+U+01A0 + '7' > 'O' '7'
+'o' + '7' > U+01A1    
+U+01A1 + '7' > 'o' '7'
+'U' + '7' > U+01AF
+U+01AF + '7' > 'U' '7'
+'u' + '7' > U+01B0
+U+01B0 + '7' > 'u' '7'
+';' + 'D' > U+0110
+';' + 'd' > U+0111
+'D' + '9' > U+0110
+U+0110 + '9' > 'D' '9'
+'d' + '9' > U+0111
+U+0111 + '9' > 'd' '9'
+'B' + '9' > U+0243
+U+0243 + '9' > 'B' '9'
+'b' + '9' > U+0180
+U+0180 + '9' > 'b' '9'
+';' + 'B' > U+0243
+';' + 'b' > U+0180
+
+'A' + '6' > 'A' U+0302
+'a' + '6' > 'a' U+0302
+'E' + '6' > 'E' U+0302
+'e' + '6' > 'e' U+0302
+'O' + '6' > 'O' U+0302
+'o' + '6' > 'o' U+0302
+U+0302 + '6' > '6'
+
+'A' + '8' > 'A' U+0306
+'a' + '8' > 'a' U+0306
+'E' + '8' > 'E' U+0306
+'e' + '8' > 'e' U+0306
+'I' + '8' > 'I' U+0306
+'i' + '8' > 'i' U+0306
+'O' + '8' > 'O' U+0306
+'o' + '8' > 'o' U+0306
+'U' + '8' > 'U' U+0306
+'u' + '8' > 'u' U+0306
+U+01A0 +'8' > U+01A0 U+0306
+U+01A1 +'8' > U+01A1 U+0306
+U+01AF +'8' > U+01AF U+0306
+U+01B0 +'8' > U+01B0 U+0306
+U+0302 + '8' > U+0302 U+0306
+U+0306 + '8' > '8'
+
+any(vowels) + "<" > index (vowels,1) U+0301
+any(vowels) + "`" > index (vowels,1) U+0300
+any(vowels) + "~" > index (vowels,1) U+0309
+any(vowels) + ">" > index (vowels,1) U+0323
+any(vowels) U+0301 + "<" > index (vowels,1) "'"
+any(vowels) U+0300 + "`" > index (vowels,1) "`"
+any(vowels) U+0309 + "~" > index (vowels,1) "~"
+any(vowels) U+0323 + ">" > index (vowels,1) "/"
+
+";" ";" + "'"> '«'
+";" + "'" > U+201C
+";" ";" + '"'> '»'
+";" + '"' > U+201D

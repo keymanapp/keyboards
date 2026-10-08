@@ -3,7 +3,6 @@ Seereer Ajami (QWERTY) keyboard
 
 © SIL Global
 
-
 Description
 -----------
 Seereer Ajami (QWERTY) keyboard developed for use for the Seereer language of Senegal.

@@ -1,6 +1,10 @@
 Balochi InPage Keyboard Change History
 ======================================
 
+1.6.1 (2026-03-11)
+----------------
+* Add KbdArab.json and KbdArabLateef for better display
+
 1.6 (24 Apr 2024)
 -----------------
 * New letters: 

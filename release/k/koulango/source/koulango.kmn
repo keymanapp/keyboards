@@ -1,0 +1,30 @@
+﻿c koulango generated from template at 2026-09-08 00:06:20
+c with name "Koulango"
+store(&VERSION) '10.0'
+store(&NAME) 'Koulango'
+store(&COPYRIGHT) 'Copyright © Yao Seyi'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'koulango.ico'
+store(&VISUALKEYBOARD) 'koulango.kvks'
+store(&LAYOUTFILE) 'koulango.keyman-touch-layout'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Lettres minuscules avec AltGr
++ [CTRL ALT K_E] > 'ɛ'
++ [CTRL ALT K_O] > 'ɔ'
++ [CTRL ALT K_I] > 'ɩ'
++ [CTRL ALT K_U] > 'ʋ'
++ [CTRL ALT K_N] > 'ɲ'
++ [CTRL ALT K_G] > 'ŋ'
+
+c Lettres majuscules avec AltGr + Majuscule
++ [SHIFT CTRL ALT K_E] > 'Ɛ'
++ [SHIFT CTRL ALT K_O] > 'Ɔ'
++ [SHIFT CTRL ALT K_I] > 'Ɩ'
++ [SHIFT CTRL ALT K_U] > 'Ʋ'
++ [SHIFT CTRL ALT K_N] > 'Ɲ'
++ [SHIFT CTRL ALT K_G] > 'Ŋ'

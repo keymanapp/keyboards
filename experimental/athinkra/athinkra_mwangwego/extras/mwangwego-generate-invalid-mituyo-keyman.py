@@ -1,0 +1,87 @@
+import os
+from os import path
+import pandas as pd
+
+
+CURR_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
+
+def main():
+    df = pd.read_excel( CURR_DIR + "/Mituyo-Combinations.xlsx", sheet_name='Mituyo-Combo-Numbers' )
+
+    columns = df.head()
+    del columns[ 'Letter' ]
+    del columns[ 'IPA' ]
+
+    """
+    Mutuyo_Key_Map = {
+        '': '1',
+        '': '2',
+        '': '3',
+        '': '4',
+        '': '5',
+        '': '6',
+        '': '7',
+        '': '8',
+        '': '9',
+        '': '0',
+        '': '-',
+        '': '='
+    }
+    """
+
+    # Create stores() for Invalid Mutuyo combinations with Masisi
+    for row in df.index:
+        masisi = str( df['Letter'][row] )
+        invalid = ""
+        for mutuyo in columns:
+            realized = df[mutuyo][row]
+            if( realized != '✓' ):
+                if( (type(mutuyo) == int) or (mutuyo == '-') or (mutuyo == '=') ):
+                    invalid = invalid + str(mutuyo)
+        print( "store(" + masisi + "_InvalidMituyo) '" + invalid + "'" )
+
+    # Create stores() for Invalid Mituyo Stack combinations with Masiri
+    Mituyo = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=' }
+    masisi_mutuyo = dict()
+    for row in df.index:
+        masisi = df['Letter'][row]
+        invalid = ""
+        for mutuyo in columns:
+            mutuyo = str(mutuyo)
+            if( len(mutuyo) == 2):
+                realized = df[mutuyo][row]
+                if( realized == '✓' ):
+                    key = masisi + "_" + mutuyo[0]
+                    if( key in masisi_mutuyo ):
+                        masisi_mutuyo[key].add( mutuyo[1] )
+                    else:
+                        masisi_mutuyo[key] = { mutuyo[1] }
+                    
+    for key in masisi_mutuyo:
+        InvalidMituyo = sorted( Mituyo - masisi_mutuyo[key] )
+        invalid = "".join(map(str,InvalidMituyo))
+        mutuyo = key.split("_")[1] # split key to get the mutuyo after "_"
+        print( "store(" + key + "_InvalidMituyo) '" + invalid + "'" )
+    
+    # Create rules to block invalid 1 level mituyo stacks
+    for row in df.index:
+        masisi = str( df['Letter'][row] )
+        print( "'" + masisi + "' + any(" + masisi + "_InvalidMituyo) > beep" )
+
+    # Create rules to block invalid 2, 3 & 4 level mituyo stacks
+    mutuyo_map = {
+        '': '\u16E29', # waya below
+        '': '\u16E2B', # mura
+        '': '\u16E2C', # mula
+        '': '\u16E2D', # pewa
+        '': '\u16E2F'  # kwanthu
+    }
+    for key in masisi_mutuyo:
+        masisi = key.split("_")[0] # split key to get the mutuyo before "_"
+        mutuyo = key.split("_")[1] # split key to get the mutuyo after "_"
+        for m in mutuyo_map:
+            mutuyo = mutuyo.replace( m , mutuyo_map[m] )
+        print( "'" + mutuyo + "' '" + masisi + "' + any(" + key + "_InvalidMituyo) > beep" ) 
+
+if __name__ == "__main__":
+    main()

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.102.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Sanjha Punjabi</Name>
-    <Copyright URL="">© 2020 Rana Zubair</Copyright>
+    <Copyright URL="">© Rana Zubair</Copyright>
     <Author URL="">rana zubair latif</Author>
     <Version URL=""></Version>
-    <Description>Sanjha Punjabi keyboard using the Arabic script.</Description>
+    <Description URL="">Sanjha Punjabi keyboard using the Arabic script.</Description>
   </Info>
   <Files>
     <File>
@@ -72,15 +73,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Sanjha Punjabi</Name>
       <ID>sanjha_punjabi</ID>
-      <Version>1.0</Version>
-      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
         <Language ID="pnb-Arab">Western Panjabi</Language>
+        <Language ID="lah">Lahnda</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -28,10 +28,14 @@
 <li><kbd> U </kbd> + <kbd> W </kbd> + <kbd> X </kbd> = Ư̆ </li>
 <li><kbd> U </kbd> + <kbd> ` </kbd> = Ù </li>
 <li><kbd> U </kbd> + <kbd> U </kbd> + <kbd> ` </kbd>= Ừ </li>
+<li><kbd> U </kbd> + <kbd> ^ </kbd> = Û </li>
+<li><kbd> U </kbd> + <kbd> ^ </kbd> = <kbd>Û</kbd> + <kbd> X </kbd> + <kbd> X </kbd> = Û̆ </li>
 </ul>
 
 <ul>
 <li><kbd> I </kbd> + <kbd> X </kbd> = Ĭ </li>
+<li><kbd> I </kbd> + <kbd> ^ </kbd> = Î </li>
+<li><kbd> I </kbd> + <kbd> ^ </kbd> = <kbd>Î</kbd> + <kbd> x </kbd> + <kbd> x </kbd> = Î̆ </li>
 <li><kbd> Y </kbd> + <kbd> X </kbd> = Y̆ </li>
 </ul>
 
@@ -83,11 +87,15 @@
 <li><kbd> u </kbd> + <kbd> w </kbd> + <kbd> x </kbd> = ư̆ </li>
 <li><kbd> u </kbd> + <kbd> ` </kbd> = ù </li>
 <li><kbd> u </kbd> + <kbd> u </kbd> + <kbd> ` </kbd>= ừ </li>
+<li><kbd> u </kbd> + <kbd> ^ </kbd> = û </li>
+<li><kbd> u </kbd> + <kbd> ^ </kbd> = <kbd>û</kbd> + <kbd> x </kbd> + <kbd> x </kbd> = û̆ </li>
 
 </ul>
 
 <ul>
 <li><kbd> i </kbd> + <kbd> x </kbd> = ĭ </li>
+<li><kbd> i </kbd> + <kbd> ^ </kbd> = î </li>
+<li><kbd> i </kbd> + <kbd> ^ </kbd> = <kbd>î</kbd> + <kbd> x </kbd> + <kbd> x </kbd> = î̆ </li>
 <li><kbd> y </kbd> + <kbd> x </kbd> = y̆ </li>
 </ul>
 

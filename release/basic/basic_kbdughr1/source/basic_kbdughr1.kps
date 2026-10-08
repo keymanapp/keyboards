@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Uyghur Basic</Name>
-    <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description>Uyghur Basic generated from template</Description>
+    <Description URL="">Uyghur Basic keyboard was imported with permission from the Windows 10 keyboard. This keyboard is designed for the Uyghur language of China using the Arabic script.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -71,20 +73,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Uyghur Basic</Name>
       <ID>basic_kbdughr1</ID>
-      <Version>1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
-        <Language ID="ug-Arab">Uighur</Language>
+        <Language ID="ug">Uighur</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="kbdughr" Relationship="deprecates" />
-    <RelatedPackage ID="basic_kbdughr" Relationship="deprecates" />
+    <RelatedPackage ID="kbdughr" Relationship="deprecates"/>
+    <RelatedPackage ID="basic_kbdughr" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

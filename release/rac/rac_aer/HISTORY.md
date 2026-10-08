@@ -1,6 +1,9 @@
 Rachitrali-Aer Change History
 =============================
 
+1.1.4 (13 Jan 2026)
+* Update keyboard to support OSK font for better display
+
 1.1.3 (20 Feb 2025)
 * Put OSKFont from .kps file into .kvks file
 * Change to Scheherazade New font

@@ -1,6 +1,10 @@
 Hebrew Basic Change History
 ====================
 
+1.1.2 (9 March 2026)
+-----------------
+* Appropriately change display font for .kvks
+
 1.1.1 (1 Oct 2024)
 -----------------
 * Changed display font for .kvks

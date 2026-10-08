@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,12 +19,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Naskapi (Classic)</Name>
-    <Copyright URL="">© 2001-2023 Bill Jancewicz</Copyright>
+    <Copyright URL="">© Bill Jancewicz</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <Version URL=""></Version>
-    <Description>The Naskapi (Classic) keyboard is a \"typewriter - style\" layout (type 
+    <Description URL="">The Naskapi (Classic) keyboard is a \"typewriter - style\" layout (type 
 one key for one character). It uses Unified Canadian Aboriginal 
-Syllabics. This keyboard includes a newer version of the BJCree UNI font. Please uninstall any older versions before installing this package.</Description>
+Syllabics. This keyboard includes the BJCree font. Please uninstall the BJCree UNI font before installing this package.</Description>
   </Info>
   <Files>
     <File>
@@ -57,38 +58,66 @@ Syllabics. This keyboard includes a newer version of the BJCree UNI font. Please
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\cree\bjcrus.ttf</Name>
-      <Description>Font BJCree UNI</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\cree\bjcrusb.ttf</Name>
-      <Description>Font BJCree UNI Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\BJCree-Bold.ttf</Name>
+      <Description>Font BJCree Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\BJCree-Medium.ttf</Name>
+      <Description>Font BJCree Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\BJCree-Regular.ttf</Name>
+      <Description>Font BJCree</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\BJCree-SemiBold.ttf</Name>
+      <Description>Font BJCree SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\bjcree\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Naskapi (Classic)</Name>
       <ID>bj_naskapi_classic</ID>
-      <Version>2.1.1</Version>
-      <OSKFont>..\..\..\shared\fonts\cree\bjcrus.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\cree\bjcrus.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\bjcree\BJCree-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\bjcree\BJCree-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="nsk">Naskapi</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="naskeysdesktop" Relationship="deprecates" />
+    <RelatedPackage ID="naskeysdesktop" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

@@ -18,7 +18,7 @@
   $pagename = 'Tamil Anjal Paangu Keyboard Help';
   $pagetitle = 'Tamil Anjal Paangu Keyboard Help';
   $style = '.lang2 {font-size:130%}';
-  $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
+  $relatedSites = array("https://keyman.com/tamil" => "Tamil Keyboards Home");
 
   require_once('header.php');
 ?>

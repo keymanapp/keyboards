@@ -1,6 +1,10 @@
 Lepcha (SIL) Keyboard Change History
 =======================
 
+1.2.0 (5 Mar 2026)
+-----------------
+* Update font version
+
 1.1.1 (17 Feb 2025)
 -----------------
 * Add .kvk to list of files

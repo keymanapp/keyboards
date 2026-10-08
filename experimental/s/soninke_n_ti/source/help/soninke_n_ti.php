@@ -7,7 +7,7 @@ require_once('header.php');
 
 <p>
 تُستخدم لوحة المفاتيح هذه لكتابة لغة سونينكي بخط N'ti. / Ce clavier est utilisé pour écrire le soninké dans l'écriture N'ti. / This keyboard is used to write Soninke in the N'ti script.
-لم يتم ترميز البرنامج النصي N'ti بعد في الترميز الموحد. / L'écriture N'ti n'est pas encore codée en Unicode. / The N'ti script is not yet encoded in Unicode..
+لم يتم ترميز البرنامج النصي N'ti بعد في الترميز الموحد. / L'écriture N'ti n'est pas encore codée en Unicode. / The N'ti script is not yet encoded in Unicode.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

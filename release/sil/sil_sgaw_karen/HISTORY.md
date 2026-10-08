@@ -1,6 +1,11 @@
 Sgaw Karen Change History
 ====================
 
+1.1.3 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
 1.1.2 (2025-02-20)
 ------------------
 * Put OSKFont from .kps file into .kvks file

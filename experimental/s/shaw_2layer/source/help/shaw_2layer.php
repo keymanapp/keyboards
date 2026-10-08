@@ -4,14 +4,18 @@ $pagetitle = $pagename;
 // Header
 require_once('header.php');
 ?>
-  <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it. Shaw believed there should be a simpler way to write English. His wish was fulfilled in 1962 following a worldwide competition. The winner of that competition, Kingsley Read, developed an alphabet designed especially for English, with a unique letter for each of the 40 or so basic sounds we all use today.</p><img src="shavian_alphabet_reading_key.png" alt="A table of Shavian alphabet letters and the sounds they represent.">
+  <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it. Shaw believed there should be a simpler way to write English. His wish was fulfilled in 1962 following a worldwide competition. The winner of that competition, Kingsley Read, developed an alphabet designed especially for English, with a unique letter for each of the 40 or so basic sounds we all use today.</p>
+  <img src="shavian_alphabet_reading_key.png"  width="800" alt="A table of Shavian alphabet letters and the sounds they represent.">
   <p>For further information about the Shavian alphabet visit <a href="https://www.shavian.info">Shavian.info</a>.</p>
 
   <h2>Desktop and onscreen layouts</h2>
-  <p>The desktop and onscreen layouts are identical, and are designed with a similar ethos as Dvorak. Shaw 2-Layer is a keyboard made from scratch for those who want comfort when touch-typing, as well as ease of remembering which keys go where.</p><img src="shavian_2layer_desktop_layout_home.png" alt="An image of the default layer of the Shaw 2-Layer desktop keyboard layout.">
-  <p>Other letters may be found by holding down Shift. You can see that most of the letters in the Shift layer are related to the letters on the same key.</p><img src="shavian_2layer_desktop_layout_shift.png" alt="An image of the Shift layer of the Shaw 2-Layer desktop keyboard layout.">
+  <p>The desktop and onscreen layouts are identical, and are designed with a similar ethos as Dvorak. Shaw 2-Layer is a keyboard made from scratch for those who want comfort when touch-typing, as well as ease of remembering which keys go where.</p>
+  <img src="shavian_2layer_desktop_layout_home.png"  width="800" alt="An image of the default layer of the Shaw 2-Layer desktop keyboard layout.">
+  <p>Other letters may be found by holding down Shift. You can see that most of the letters in the Shift layer are related to the letters on the same key.</p>
+  <img src="shavian_2layer_desktop_layout_shift.png"  width="800" alt="An image of the Shift layer of the Shaw 2-Layer desktop keyboard layout.">
   <p>Most symbols are not moved from their positions in US QWERTY. However, the semicolon and colon have been moved to the comma and period keys for simplicity. It can be accessed by holding AltGr, or on the key to the right of Left Shift in some European keyboards.</p>
-  <p>Extended Shavian letters, supported in select fonts such as Inter Alia, are also accessible through AltGr (or the Right Alt key, depending on your keyboard).</p><img src="shavian_2layer_desktop_layout_altgr.png" alt="An image of the AltGr layer of the Shaw 2-Layer desktop keyboard layout.">
+  <p>Extended Shavian letters, supported in select fonts such as Inter Alia, are also accessible through AltGr (or the Right Alt key, depending on your keyboard).</p>
+  <img src="shavian_2layer_desktop_layout_altgr.png"  width="800" alt="An image of the AltGr layer of the Shaw 2-Layer desktop keyboard layout.">
   <!-- How do you edit that in Keyman Developer??
   <p>Latin letters, and the standard US English 2-Layer keyboard, may be accessed by pressing Caps Lock, with capital letters then entered the usual way by holding down Shift. To return to Shavian, simply turn off Caps Lock.</p>
   -->

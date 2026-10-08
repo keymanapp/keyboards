@@ -87,7 +87,7 @@ h1.color {
 .buttonlang {
     background-color: pink;
     border: none;
-    color: white;
+    color: black;
     padding: 5px;
     word-wrap: break-word;
     text-align: center;
@@ -118,17 +118,17 @@ h3.color {
   0% {
     transform: scale(1);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #F1506C;
+    background-color: pink;
   }
   50% {
     transform: scale(1.05);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #D21034;
+    background-color: #DB7093;
   }
   100% {
     transform: scale(1);
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    background-color: #F1506C;
+    background-color: pink;
   }
 }
 
@@ -167,10 +167,6 @@ tr:nth-child(even) td {
     0 0 9px #000;
 }
   
-.keyboard {
-  font-size: 20px;
-  white-space: nowrap;
-}
 .keyboard--row {
   display: block;
   height: 3em;
@@ -233,6 +229,14 @@ tr:nth-child(even) td {
 }
 
 /* Light keyboard */
+
+.keyboard--light {
+  font-size: 20px;
+  white-space: nowrap;
+  max-width: 900px; /* largeur maximale */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
 
 .keyboard.keyboard--light .keyboard--row > * {
   background: #ccc;

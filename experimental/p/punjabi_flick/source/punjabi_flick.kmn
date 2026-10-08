@@ -1,0 +1,517 @@
+﻿store(&VERSION) '17.0'
+store(&NAME) 'Punjabi Flick'
+store(&VISUALKEYBOARD) 'punjabi_flick.kvks'
+store(&BITMAP) 'punjabi_flick.ico'
+store(&LAYOUTFILE) 'punjabi_flick.keyman-touch-layout'
+store(&COPYRIGHT) '© SIL Global'
+store(&MESSAGE) 'A mobile keyboard layout designed for Punjabi, utilizing a flick input method. Inspired by the Hindi Flick Keyboard, found in Keyman. (A little too much)'
+store(&KEYBOARDVERSION) '1.1.1'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+c comment these all out to go to design section
+store(svara) U+0A05 .. U+0A14
+store(small_svara) 'ਇਊਏਓ'
+store(big_svara) 'ਈਊਏਐਔ'
+store(vyanjan) U+0A15 .. U+0A39
+store(small_matraein) U+0A3F U+0A41 U+0A47 U+0A4B
+store(big_matraein) U+0A40 U+0A42 U+0A48 U+0A4C
+store(matras) outs(small_matraein) outs(big_matraein)
+store(d_digits) U+0A66 .. U+0A6F c gurmukhi digits
+store(h_digits) U+0030 .. U+0039 c hindu-arabic digits
+
+c comment this out to go to design section
+group(checkMatra)
+  c any(vyanjan) any(small_matraein) any(small_matraein)> context(1) context(3)
+  c any(vyanjan) any(small_matraein) any(big_matraein)> context(1) context(3)
+  c any(vyanjan) any(big_matraein) any(small_matraein)> context(1) context(3)
+  c any(vyanjan) any(big_matraein) any(big_matraein)> context(1) context(3)
+  c ा + ॅ -> ॉ (aa + chandra -> dr. o, i.e. o in doctor)
+  c builds on previous rule, to get chandrabindu on aa
+  c same, but other way
+  U+0A02 U+0A02 > U+0A3C c anusvara to nukta
+  U+0A3C U+0A3C > U+0A02 c nukta to anusvara
+  c halant on halant removes the original halant, making it a live consonant.
+  U+0A4D U+0A4D > nul
+  c no char behind, add full svara.
+  nul U+0A4D > U+0A05 c a
+  nul U+0A3E > U+0A05 c a
+  nul U+0A3F > U+0A07 c i
+  nul U+0A41 > U+0A09 c u
+  nul U+0A47 > U+0A0F c e
+  nul U+0A4B > U+0A13 c o
+  c linebreak, add full svara.
+  U+000A U+0A4D > context use(linebreakFullSvara) c a
+  U+000A U+0A3E > context use(linebreakFullSvara) c a
+  U+000A U+0A3F > context use(linebreakFullSvara) c i
+  U+000A U+0A41 > context use(linebreakFullSvara) c u
+  U+000A U+0A47 > context use(linebreakFullSvara) c e
+  U+000A U+0A4B > context use(linebreakFullSvara) c o
+  c svara behind, add full svara.
+  any(svara) U+0A4D > context(1)  c a
+  any(svara) U+0A3E > context(1) U+0A05 c aa
+  any(svara) U+0A3F > context(1) U+0A07 c i
+  any(svara) U+0A41 > context(1) U+0A09 c u
+  any(svara) U+0A47 > context(1) U+0A0F c e
+  any(svara) U+0A4B > context(1) U+0A13 c o
+  c matra behind, add full svara.
+  any(small_matraein) U+0A4D > context(1)  c a
+  any(small_matraein) U+0A3E > context(1) U+0A05 c aa
+  any(small_matraein) U+0A3F > context(1) U+0A07 c i
+  any(small_matraein) U+0A41 > context(1) U+0A09 c u
+  any(small_matraein) U+0A47 > context(1) U+0A0F c e
+  any(small_matraein) U+0A4B > context(1) U+0A13 c o
+
+  any(big_matraein) U+0A4D > context(1)  c a
+  any(big_matraein) U+0A3E > context(1) U+0A05 c aa
+  any(big_matraein) U+0A3F > context(1) U+0A07 c i
+  any(big_matraein) U+0A41 > context(1) U+0A09 c u
+  any(big_matraein) U+0A47 > context(1) U+0A0F c e
+  any(big_matraein) U+0A4B > context(1) U+0A13 c o
+  
+  U+0A3E U+0A4D > context(1)  c a
+  U+0A3E U+0A3E > context(1) U+0A05 c aa
+  U+0A3E U+0A3F > context(1) U+0A07 c i
+  U+0A3E U+0A41 > context(1) U+0A09 c u
+  U+0A3E U+0A47 > context(1) U+0A0F c e
+  U+0A3E U+0A4B > context(1) U+0A13 c o
+  c when at start of new word in sentence
+  U+0020 U+0A4D > U+0020 U+0A05 c a
+  U+0020 U+0A3E > U+0020 U+0A05 c aa
+  U+0020 U+0A3F > U+0020 U+0A07 c i
+  U+0020 U+0A41 > U+0020 U+0A09 c u
+  U+0020 U+0A47 > U+0020 U+0A0F c e
+  U+0020 U+0A4B > U+0020 U+0A13 c o
+
+  c when in front of numbers
+  any(d_digits) U+0A4D > context(1) U+0A05 c a
+  any(d_digits) U+0A3E > context(1) U+0A05 c aa
+  any(d_digits) U+0A3F > context(1) U+0A07 c i
+  any(d_digits) U+0A41 > context(1) U+0A09 c u
+  any(d_digits) U+0A47 > context(1) U+0A0F c e
+  any(d_digits) U+0A4B > context(1) U+0A13 c o
+
+  any(h_digits) U+0A4D > context(1) U+0A05 c a
+  any(h_digits) U+0A3E > context(1) U+0A05 c aa
+  any(h_digits) U+0A3F > context(1) U+0A07 c i
+  any(h_digits) U+0A41 > context(1) U+0A09 c u
+  any(h_digits) U+0A47 > context(1) U+0A0F c e
+  any(h_digits) U+0A4B > context(1) U+0A13 c o
+
+  c when in front of ZWNJ, use svar form and remove ZWNJ
+  U+200C U+0A4D > U+0A05 c a
+  U+200C U+0A3E > U+0A05 c aa
+  U+200C U+0A3F > U+0A07 c i
+  U+200C U+0A41 > U+0A09 c u
+  U+200C U+0A47 > U+0A0F c e
+  U+200C U+0A4B > U+0A13 c o
+
+  c when in front of bindi, use svar form
+  U+0A02 U+0A4D > U+0A02 U+0A05 c a
+  U+0A02 U+0A3E > U+0A02 U+0A05 c aa
+  U+0A02 U+0A3F > U+0A02 U+0A07 c i
+  U+0A02 U+0A41 > U+0A02 U+0A09 c u
+  U+0A02 U+0A47 > U+0A02 U+0A0F c e
+  U+0A02 U+0A4B > U+0A02 U+0A13 c o
+
+  c when in front of adak bindi, use svar form
+  U+0A01 U+0A4D > U+0A01 U+0A05 c a
+  U+0A01 U+0A3E > U+0A01 U+0A05 c aa
+  U+0A01 U+0A3F > U+0A01 U+0A07 c i
+  U+0A01 U+0A41 > U+0A01 U+0A09 c u
+  U+0A01 U+0A47 > U+0A01 U+0A0F c e
+  U+0A01 U+0A4B > U+0A01 U+0A13 c o
+
+  c when in front of visarga, use svar form
+  U+0A03 U+0A4D > U+0A03 U+0A05 c a
+  U+0A03 U+0A3E > U+0A03 U+0A05 c aa
+  U+0A03 U+0A3F > U+0A03 U+0A07 c i
+  U+0A03 U+0A41 > U+0A03 U+0A09 c u
+  U+0A03 U+0A47 > U+0A03 U+0A0F c e
+  U+0A03 U+0A4B > U+0A03 U+0A13 c o
+
+  c when in front of tippi, use svar form
+  U+0A70 U+0A4D > U+0A70 U+0A05 c a
+  U+0A70 U+0A3E > U+0A70 U+0A05 c aa
+  U+0A70 U+0A3F > U+0A70 U+0A07 c i
+  U+0A70 U+0A41 > U+0A70 U+0A09 c u
+  U+0A70 U+0A47 > U+0A70 U+0A0F c e
+  U+0A70 U+0A4B > U+0A70 U+0A13 c o
+
+group(smallToBig)
+  c Swap short and long vowels
+  any(vyanjan) U+0A4D   > context(1) U+0A3E
+  any(vyanjan) U+0A3E   > context(1)
+  any(vyanjan) U+0A4D  U+0A02 > context(1) U+0A3E U+0A02
+  any(vyanjan) U+0A3E  U+0A02 > context(1) U+0A4D U+0A02
+  any(vyanjan) U+0A4D  U+0A70 > context(1) U+0A3E U+0A70
+  any(vyanjan) U+0A3E  U+0A70 > context(1) U+0A4D U+0A70
+  any(vyanjan) U+0A4D  U+0A71 > context(1) U+0A3E U+0A71
+  any(vyanjan) U+0A3E  U+0A71 > context(1) U+0A4D U+0A71
+  any(vyanjan) U+0A3C  U+0A4D > context(1) U+0A3C U+0A3E
+  any(vyanjan) U+0A3C  U+0A3E > context(1) U+0A3C U+0A4D
+
+  any(vyanjan) U+0A3F   > context(1) U+0A40  c ि + ि → ी
+  any(vyanjan) U+0A40   > context(1) U+0A3F  c ी + ि → ि
+  any(vyanjan) U+0A3F  U+0A02 > context(1) U+0A40 U+0A02  c िंि → ीं
+  any(vyanjan) U+0A40  U+0A02 > context(1) U+0A3F U+0A02  c ींि → िं
+  any(vyanjan) U+0A3F  U+0A70 > context(1) U+0A40 U+0A70
+  any(vyanjan) U+0A40  U+0A70 > context(1) U+0A3F U+0A70
+  any(vyanjan) U+0A3F  U+0A71 > context(1) U+0A40 U+0A71
+  any(vyanjan) U+0A40  U+0A71 > context(1) U+0A3F U+0A71
+  any(vyanjan) U+0A3C  U+0A3F > context(1) U+0A3C U+0A40  c ि़ि → ी़
+  any(vyanjan) U+0A3C  U+0A40 > context(1) U+0A3C U+0A3F  c ी़ि → ि़
+
+  any(vyanjan) U+0A41  > context(1) U+0A42  c ु + ु → ू
+  any(vyanjan) U+0A42  > context(1) U+0A41  c ू + ु → ु
+  any(vyanjan) U+0A41  U+0A02 >context(1)  U+0A42 U+0A02  c ुंु → ूं
+  any(vyanjan) U+0A42  U+0A02 >context(1)  U+0A41 U+0A02  c ूंु → ुं
+  any(vyanjan) U+0A41  U+0A70 > context(1) U+0A42 U+0A70
+  any(vyanjan) U+0A42  U+0A70 > context(1) U+0A41 U+0A70
+  any(vyanjan) U+0A41  U+0A71 > context(1) U+0A42 U+0A71
+  any(vyanjan) U+0A42  U+0A71 > context(1) U+0A41 U+0A71
+  any(vyanjan) U+0A3C  U+0A41 >context(1)  U+0A3C U+0A42  c ु़ु → ू़
+  any(vyanjan) U+0A3C  U+0A42 >context(1)  U+0A3C U+0A41  c ू़ु → ु़
+
+  any(vyanjan) U+0A47  > context(1) U+0A48  c े + े → ै
+  any(vyanjan) U+0A48  > context(1) U+0A47  c ै + े → े
+  any(vyanjan) U+0A47  U+0A02  > context(1) U+0A48 U+0A02  c ेंे → ैं
+  any(vyanjan) U+0A48  U+0A02  > context(1) U+0A47 U+0A02  c ैंे → ें
+  any(vyanjan) U+0A47  U+0A70 > context(1) U+0A48 U+0A70
+  any(vyanjan) U+0A48  U+0A70 > context(1) U+0A47 U+0A70
+  any(vyanjan) U+0A47  U+0A71 > context(1) U+0A48 U+0A71
+  any(vyanjan) U+0A48  U+0A71 > context(1) U+0A47 U+0A71
+  any(vyanjan) U+0A3C  U+0A47  > context(1) U+0A3C U+0A48  c े़े → ै़
+  any(vyanjan) U+0A3C  U+0A48  > context(1) U+0A3C U+0A47  c ै़े → े़
+
+  any(vyanjan) U+0A4B > context(1) U+0A4C  c ो + ो → ौ
+  any(vyanjan) U+0A4C > context(1) U+0A4B  c ौ + ो → ो
+  any(vyanjan) U+0A4B  U+0A02 > context(1) U+0A4C U+0A02  c ोंो → ौं
+  any(vyanjan) U+0A4C  U+0A02 > context(1) U+0A4B U+0A02  c ौंो → ों
+  any(vyanjan) U+0A4B  U+0A70 > context(1) U+0A4C U+0A70
+  any(vyanjan) U+0A4C  U+0A70 > context(1) U+0A4B U+0A70
+  any(vyanjan) U+0A4B  U+0A71 > context(1) U+0A4C U+0A71
+  any(vyanjan) U+0A4C  U+0A71 > context(1) U+0A4B U+0A71
+  any(vyanjan) U+0A3C  U+0A4B > context(1) U+0A3C U+0A4C  c ो़ो → ौ़
+  any(vyanjan) U+0A3C  U+0A4C > context(1) U+0A3C U+0A4B  c ौ़ो → ो़
+
+  c small svara <-> big svara
+  U+0A05 > U+0A06 c a -> aa
+  U+0A07 > U+0A08 c i -> ii
+  U+0A09 > U+0A0A c u -> uu
+  U+0A0F > U+0A10 c e -> ai
+  U+0A13 > U+0A14 c o -> au
+  U+0A06 > U+0A05 c aa -> a
+  U+0A08 > U+0A07 c ii -> i
+  U+0A0A > U+0A09 c uu -> u
+  U+0A10 > U+0A0F c ai -> e
+  U+0A14 > U+0A13 c au -> o
+
+c TODO: Is this actually being used anywhere?
+group(delMatraIfExists)
+  any(small_matraein) any(small_matraein) > context(2)
+  any(big_matraein) any(small_matraein) > context(2)
+  any(small_matraein) U+0A4D > context(2)
+  any(big_matraein) U+0A4D > context(2)
+  U+0A3E any(small_matraein) > context(2)
+  any(small_matraein) U+0A3E > context(2)
+  U+0A3E any(big_matraein) > context(2)
+  any(big_matraein) U+0A3E > context(2)
+
+group(matraToSvar)
+  c matra + ZWNJ = svara
+  U+0A4D U+200C > U+0A4D c a
+  U+0A3E U+200C > U+0A06 c aa
+  U+0A3F U+200C > U+0A07 c i
+  U+0A40 U+200C > U+0A08 c ii
+  U+0A41 U+200C > U+0A09 c u
+  U+0A42 U+200C > U+0A0A c uu
+  U+0A47 U+200C > U+0A0F c e
+  U+0A48 U+200C > U+0A10 c ai
+  U+0A4B U+200C > U+0A13 c o
+  U+0A4C U+200C > U+0A14 c au
+
+  c vyanjan + matra + ZWNJ = vyanjan + svara
+  c any(vyanjan) U+200C > context(1) U+0A05        c a
+  any(vyanjan) U+0A4D U+200C > context(1) U+0A4D c halant
+  any(vyanjan) U+0A05 U+200C > context(1)        c back to vyanjan
+  any(vyanjan) U+0A06 U+200C > context(1) U+0A3E c aa
+  any(vyanjan) U+0A07 U+200C > context(1) U+0A3F c i
+  any(vyanjan) U+0A08 U+200C > context(1) U+0A40 c ii
+  any(vyanjan) U+0A09 U+200C > context(1) U+0A41 c u
+  any(vyanjan) U+0A0A U+200C > context(1) U+0A42 c uu
+  any(vyanjan) U+0A0F U+200C > context(1) U+0A47 c e
+  any(vyanjan) U+0A10 U+200C > context(1) U+0A48 c ai
+  any(vyanjan) U+0A13 U+200C > context(1) U+0A4B c o
+  any(vyanjan) U+0A14 U+200C > context(1) U+0A4C c au
+
+  c with bindu (aaaaaaaaaaahhhhhhhh)
+  U+0A4D U+0A02 U+200C > U+0A4D U+0A02 c a
+  U+0A3E U+0A02 U+200C > U+0A05 U+0A02 c aa
+  U+0A3F U+0A02 U+200C > U+0A07 U+0A02 c i
+  U+0A40 U+0A02 U+200C > U+0A08 U+0A02 c ii
+  U+0A41 U+0A02 U+200C > U+0A09 U+0A02 c u
+  U+0A42 U+0A02 U+200C > U+0A0A U+0A02 c uu
+  U+0A47 U+0A02 U+200C > U+0A0F U+0A02 c e
+  U+0A48 U+0A02 U+200C > U+0A10 U+0A02 c ai
+  U+0A4B U+0A02 U+200C > U+0A13 U+0A02 c o
+  U+0A4C U+0A02 U+200C > U+0A14 U+0A02 c au
+
+  any(vyanjan) U+0A05 U+0A02 U+200C > context(1) U+0A3E U+0A02 c aa
+  any(vyanjan) U+0A07 U+0A02 U+200C > context(1) U+0A3F U+0A02 c i
+  any(vyanjan) U+0A08 U+0A02 U+200C > context(1) U+0A40 U+0A02 c ii
+  any(vyanjan) U+0A09 U+0A02 U+200C > context(1) U+0A41 U+0A02 c u
+  any(vyanjan) U+0A0A U+0A02 U+200C > context(1) U+0A42 U+0A02 c uu
+  any(vyanjan) U+0A0F U+0A02 U+200C > context(1) U+0A47 U+0A02 c e
+  any(vyanjan) U+0A10 U+0A02 U+200C > context(1) U+0A48 U+0A02 c ai
+  any(vyanjan) U+0A13 U+0A02 U+200C > context(1) U+0A4B U+0A02 c o
+  any(vyanjan) U+0A14 U+0A02 U+200C > context(1) U+0A4C U+0A02 c au
+
+  c with adak bindi (aaaaaaaaaaahhhhhhhh)
+  U+0A4D U+0A01 U+200C > U+0A4D U+0A01 c a
+  U+0A3E U+0A01 U+200C > U+0A05 U+0A01 c aa
+  U+0A3F U+0A01 U+200C > U+0A07 U+0A01 c i
+  U+0A40 U+0A01 U+200C > U+0A08 U+0A01 c ii
+  U+0A41 U+0A01 U+200C > U+0A09 U+0A01 c u
+  U+0A42 U+0A01 U+200C > U+0A0A U+0A01 c uu
+  U+0A47 U+0A01 U+200C > U+0A0F U+0A01 c e
+  U+0A48 U+0A01 U+200C > U+0A10 U+0A01 c ai
+  U+0A4B U+0A01 U+200C > U+0A13 U+0A01 c o
+  U+0A4C U+0A01 U+200C > U+0A14 U+0A01 c au
+
+  any(vyanjan) U+0A05 U+0A01 U+200C > context(1) U+0A3E U+0A01 c aa
+  any(vyanjan) U+0A07 U+0A01 U+200C > context(1) U+0A3F U+0A01 c i
+  any(vyanjan) U+0A08 U+0A01 U+200C > context(1) U+0A40 U+0A01 c ii
+  any(vyanjan) U+0A09 U+0A01 U+200C > context(1) U+0A41 U+0A01 c u
+  any(vyanjan) U+0A0A U+0A01 U+200C > context(1) U+0A42 U+0A01 c uu
+  any(vyanjan) U+0A0F U+0A01 U+200C > context(1) U+0A47 U+0A01 c e
+  any(vyanjan) U+0A10 U+0A01 U+200C > context(1) U+0A48 U+0A01 c ai
+  any(vyanjan) U+0A13 U+0A01 U+200C > context(1) U+0A4B U+0A01 c o
+  any(vyanjan) U+0A14 U+0A01 U+200C > context(1) U+0A4C U+0A01 c au
+
+c with tippi (aaaaaaaaaaahhhhhhhh)
+  U+0A4D U+0A70 U+200C > U+0A4D U+0A70 c a
+  U+0A3E U+0A70 U+200C > U+0A05 U+0A70 c aa
+  U+0A3F U+0A70 U+200C > U+0A07 U+0A70 c i
+  U+0A40 U+0A70 U+200C > U+0A08 U+0A70 c ii
+  U+0A41 U+0A70 U+200C > U+0A09 U+0A70 c u
+  U+0A42 U+0A70 U+200C > U+0A0A U+0A70 c uu
+  U+0A47 U+0A70 U+200C > U+0A0F U+0A70 c e
+  U+0A48 U+0A70 U+200C > U+0A10 U+0A70 c ai
+  U+0A4B U+0A70 U+200C > U+0A13 U+0A70 c o
+  U+0A4C U+0A70 U+200C > U+0A14 U+0A70 c au
+
+  any(vyanjan) U+0A05 U+0A70 U+200C > context(1) U+0A3E U+0A70 c aa
+  any(vyanjan) U+0A07 U+0A70 U+200C > context(1) U+0A3F U+0A70 c i
+  any(vyanjan) U+0A08 U+0A70 U+200C > context(1) U+0A40 U+0A70 c ii
+  any(vyanjan) U+0A09 U+0A70 U+200C > context(1) U+0A41 U+0A70 c u
+  any(vyanjan) U+0A0A U+0A70 U+200C > context(1) U+0A42 U+0A70 c uu
+  any(vyanjan) U+0A0F U+0A70 U+200C > context(1) U+0A47 U+0A70 c e
+  any(vyanjan) U+0A10 U+0A70 U+200C > context(1) U+0A48 U+0A70 c ai
+  any(vyanjan) U+0A13 U+0A70 U+200C > context(1) U+0A4B U+0A70 c o
+  any(vyanjan) U+0A14 U+0A70 U+200C > context(1) U+0A4C U+0A70 c au
+
+c with addak (aaaaaaaaaaahhhhhhhh)
+  U+0A4D U+0A71 U+200C > U+0A4D U+0A71 c a
+  U+0A3E U+0A71 U+200C > U+0A05 U+0A71 c aa
+  U+0A3F U+0A71 U+200C > U+0A07 U+0A71 c i
+  U+0A40 U+0A71 U+200C > U+0A08 U+0A71 c ii
+  U+0A41 U+0A71 U+200C > U+0A09 U+0A71 c u
+  U+0A42 U+0A71 U+200C > U+0A0A U+0A71 c uu
+  U+0A47 U+0A71 U+200C > U+0A0F U+0A71 c e
+  U+0A48 U+0A71 U+200C > U+0A10 U+0A71 c ai
+  U+0A4B U+0A71 U+200C > U+0A13 U+0A71 c o
+  U+0A4C U+0A71 U+200C > U+0A14 U+0A71 c au
+
+  any(vyanjan) U+0A05 U+0A71 U+200C > context(1) U+0A3E U+0A71 c aa
+  any(vyanjan) U+0A07 U+0A71 U+200C > context(1) U+0A3F U+0A71 c i
+  any(vyanjan) U+0A08 U+0A71 U+200C > context(1) U+0A40 U+0A71 c ii
+  any(vyanjan) U+0A09 U+0A71 U+200C > context(1) U+0A41 U+0A71 c u
+  any(vyanjan) U+0A0A U+0A71 U+200C > context(1) U+0A42 U+0A71 c uu
+  any(vyanjan) U+0A0F U+0A71 U+200C > context(1) U+0A47 U+0A71 c e
+  any(vyanjan) U+0A10 U+0A71 U+200C > context(1) U+0A48 U+0A71 c ai
+  any(vyanjan) U+0A13 U+0A71 U+200C > context(1) U+0A4B U+0A71 c o
+  any(vyanjan) U+0A14 U+0A71 U+200C > context(1) U+0A4C U+0A71 c au
+
+  c vyanjan + adak bindi +ZWNJ = vyanjan + a + adak bindi
+  any(vyanjan) U+0A01 U+200C > context(1) U+0A05 U+0A01
+  c vyanjan + bindu +ZWNJ = vyanjan + a + bindu
+  any(vyanjan) U+0A02 U+200C > context(1) U+0A05 U+0A02
+  c vyanjan + tippi +ZWNJ = vyanjan + a + tippi
+  any(vyanjan) U+0A70 U+200C > context(1) U+0A05 U+0A70
+  c vyanjan + addak +ZWNJ = vyanjan + a + addak
+  any(vyanjan) U+0A71 U+200C > context(1) U+0A05 U+0A71
+  any(vyanjan) U+200C  > context(1) c remove zwnj if adding another vyanjan
+  any(svara) U+200C  > context(1) c remove zwnj if adding another svara
+  U+200C U+200C > U+200C c only one zwnj
+  U+0020 U+200C > U+0020 c if nothing behind, just don't add zwnj
+  nul U+200C > nul c if nothing behind, do nothing.
+
+group(handleNuqta)
+  U+0A16 U+0A3C > U+0A59 c kha -> khha
+  U+0A17 U+0A3C > U+0A5A c ga -> ghha
+  U+0A1C U+0A3C > U+0A5B c ja -> za
+  U+0A2B U+0A3C > U+0A5E c pha -> fa
+  U+0A38 U+0A3C > U+0A36 c sa -> sha
+  U+0A32 U+0A3C > U+0A33 c la -> lla
+
+  c reverse order handling
+  U+0A59 U+0A3C > U+0A16
+  U+0A5A U+0A3C > U+0A17
+  U+0A5B U+0A3C > U+0A1C
+  U+0A5E U+0A3C > U+0A2B
+  U+0A36 U+0A3C > U+0A38
+  U+0A33 U+0A3C > U+0A32
+
+  c when in front of nuqta (need to reverse order for matra conversion to work)
+  U+0A4D U+0A3C > U+0A3C U+0A4D c a
+  U+0A3E U+0A3C > U+0A3C U+0A3E c aa
+  U+0A3F U+0A3C > U+0A3C U+0A3F c i
+  U+0A41 U+0A3C > U+0A3C U+0A41 c u
+  U+0A47 U+0A3C > U+0A3C U+0A47 c e
+  U+0A4B U+0A3C > U+0A3C U+0A4B c o
+group(main) using keys
+  + [U_0A05] >  U+0A3E use(checkMatra)
+  + [U_0A07] >  U+0A3F use(checkMatra)
+  + [U_0A09] >  U+0A41 use(checkMatra)
+  + [U_0A0F] >  U+0A47 use(checkMatra)
+  + [U_0A13] >  U+0A4B use(checkMatra)
+  + [U_200C] >  U+200C use(matraToSvar)
+c + [U_] > 'ं' use(checkMatra)
+c + [U_] >  'ृ' use(checkMatra)
+c + [U_] > 'ॅ' use(checkMatra)
+c + [SHIFT K_W] > '़' use(checkMatra)
+c + [SHIFT K_Q] > 'ः' use(checkMatra)
++ [T_new_618] > use(smallToBig)
++ [T_RRA] > "੍ਰ"
++ [T_HHA] > "੍ਹ"
++ [T_VVA] > "੍ਵ"
++ [U_0A3C] > U+0A3C use(handleNuqta)
++ [K_A] > 'ੋ'
++ [K_B] > 'ਵ'
++ [K_C] > 'ਮ'
++ [K_D] > '੍'
++ [K_E] > 'ਾ'
++ [K_F] > 'ਿ'
++ [K_G] > 'ੁ'
++ [K_H] > 'ਪ'
++ [K_I] > 'ਗ'
++ [K_J] > 'ਰ'
++ [K_K] > 'ਕ'
++ [K_L] > 'ਤ'
++ [K_M] > 'ਸ'
++ [K_N] > 'ਲ'
++ [K_O] > 'ਦ'
++ [K_P] > 'ਜ'
++ [K_Q] > 'ੌ'
++ [K_R] > 'ੀ'
++ [K_S] > 'ੇ'
++ [K_T] > 'ੂ'
++ [K_U] > 'ਹ'
++ [K_V] > 'ਨ'
++ [K_W] > 'ੈ'
++ [K_X] > 'ਂ'
++ [K_Y] > 'ਬ'
++ [K_Z] > 'ੱ'
++ [K_0] > '੦'
++ [K_1] > '੧'
++ [K_2] > '੨'
++ [K_3] > '੩'
++ [K_4] > '੪'
++ [K_5] > '੫'
++ [K_6] > '੬'
++ [K_7] > '੭'
++ [K_8] > '੮'
++ [K_9] > '੯'
++ [K_COLON] > 'ਚ'
++ [K_HYPHEN] > 'ਃ'
++ [K_LBRKT] > 'ਡ'
++ [K_RBRKT] > '਼'
++ [K_BKQUOTE] > 'ੑ'
++ [K_COMMA] > ','
++ [K_QUOTE] > 'ਟ'
++ [K_SLASH] > 'ਯ'
++ [K_PERIOD] > '.'
++ [K_oE2] > '&gt;'
++ [SHIFT K_A] > 'ਓ'
++ [SHIFT K_B] > 'ਵ'
++ [SHIFT K_C] > 'ਣ'
++ [SHIFT K_D] > 'ਅ'
++ [SHIFT K_E] > 'ਆ'
++ [SHIFT K_F] > 'ਇ'
++ [SHIFT K_G] > 'ਉ'
++ [SHIFT K_H] > 'ਫ'
++ [SHIFT K_I] > 'ਘ'
++ [SHIFT K_J] > 'ੜ'
++ [SHIFT K_K] > 'ਖ'
++ [SHIFT K_L] > 'ਥ'
++ [SHIFT K_M] > 'ਸ਼'
++ [SHIFT K_N] > 'ਲ਼'
++ [SHIFT K_O] > 'ਧ'
++ [SHIFT K_P] > 'ਝ'
++ [SHIFT K_Q] > 'ਔ'
++ [SHIFT K_R] > 'ਈ'
++ [SHIFT K_S] > 'ਏ'
++ [SHIFT K_T] > 'ਊ'
++ [SHIFT K_U] > 'ਙ'
++ [SHIFT K_V] > 'ੵ'
++ [SHIFT K_W] > 'ਐ'
++ [SHIFT K_X] > 'ੰ'
++ [SHIFT K_Y] > 'ਭ'
++ [SHIFT K_Z] > 'ਁ'
++ [SHIFT K_0] > ')'
++ [SHIFT K_1] > 'ੳ'
++ [SHIFT K_2] > 'ੲ'
++ [SHIFT K_3] > 'ੱ'
++ [SHIFT K_4] > 'ੴ'
++ [SHIFT K_5] > '☬'
++ [SHIFT K_9] > '('
++ [SHIFT K_COLON] > 'ਛ'
++ [SHIFT K_LBRKT] > 'ਢ'
++ [SHIFT K_RBRKT] > 'ਞ'
++ [SHIFT K_COMMA] > '&gt;'
++ [SHIFT K_QUOTE] > 'ਠ'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > '।'
++ [SHIFT K_oE2] > '&lt;'
++ [ALT K_4] > '₹'
++ [ALT K_oE2] > '|'
++ [ALT K_PERIOD] > '॥'
++ [ALT K_H] > 'ਫ਼'
++ [ALT K_K] > 'ਖ਼'
++ [ALT K_I] > 'ਗ਼'
++ [ALT K_P] > 'ਜ਼'
++ [SHIFT ALT K_oE2] > '¦'
+
+any(vyanjan) + "`" > context U+0A4D
+
+c for weird nuqta characters to go back to their normal forms on backspace
+U+0A59 + [K_BKSP] > U+0A16
+U+0A5A + [K_BKSP] > U+0A17
+U+0A5B + [K_BKSP] > U+0A1C
+U+0A5E + [K_BKSP] > U+0A2B
+c + [K_O] > U+0A4B use(checkMatra)
+c + [K_U] > U+0A41 use(checkMatra)
+c + [K_I] > U+0A3F use(checkMatra)
+c + [K_Z] > U+0A3C use(checkMatra)
+c + [K_E] > U+0A47 use(checkMatra)
+c + [K_D] > U+0A4D use(checkMatra)
+c + [K_A] > U+0A3E use(checkMatra)
+c + [K_W] > U+0A02 use(checkMatra)
+c + [SHIFT K_W] > U+0A3C use(checkMatra)
+c + [SHIFT K_Q] > U+0A03 use(checkMatra)
+
+group(linebreakFullSvara)
+c
+c This group is setup to workaround a compatibility issue with Firefox; we
+c want to avoid deleting and re-emitting the LF (U+000A). For more details,
+c please see:
+c https://github.com/keymanapp/keyman/issues/14148#issuecomment-3269582559
+c
+U+0A4D > U+0A05 c a
+U+0A3E > U+0A05 c a
+U+0A3F > U+0A07 c i
+U+0A41 > U+0A09 c u
+U+0A47 > U+0A0F c e
+U+0A4B > U+0A13 c o

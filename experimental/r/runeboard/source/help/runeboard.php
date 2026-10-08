@@ -9,15 +9,17 @@
 <p>Although not designed for the purpose, this keyboard does have the ability to type the Old Norse language, using the runic script (Younger Fuþark runes), with a standard 104- or 105-key layout.</p>
 <p>The layout contains the entire Unicode Runic Block, including the Franks Casket runes and the 3 novel runes invented by Tolkien. The ability of any given machine to display one or more of these characters may be limited by which fonts are installed on it.</p>
 
-<p>Watch <a href=https://www.youtube.com/@LearnRunes>Rune Revival on YouTube</a>.</p>
+<p>Watch <a href=https://www.youtube.com/@LearnRunes>Rune Revival on YouTube</a> and visit <a href=https://runerevival.online>RuneRevival.online</a>.</p>
 
 <h2>Keyboard Layout</h2>
 
 
 <h3>Desktop Keyboard Layout</h3>
 
-<p>The SHIFT+SPACE key is the Zero Width Joiner [ZWJ]. In fonts which support bindrunes/ligatures, type it after one rune and before another to create a supported bindrune.</p>
-<p>The space key outputs U+16EB RUNIC SINGLE PUNCTUATION. A regular space can be accessed throught the K_BACKSLASH key. </p>
+<p>The spacebar outputs RUNIC SINGLE PUNCTUATION (U+16EB) followed by Zero Width Space [ZW SP] (U+200B). This enables tabbing between words in various desktop programmes.</p>
+<p>A regular space can be accessed through the AltGr+SHIFT+SPACE key.</p>
+<p>The SHIFT+SPACE key is the Zero Width Joiner [ZWJ] (U+200D). In fonts which support bindrunes/ligatures, type it after one rune and before another to create a supported bindrune.</p>
+<p>The AltGr+SPACE key outputs a TRICOLON (U+205D) followed by Zero Width Space [ZW SP] (U+200B). This can be used to distinguish the unencoded "runic triple punctuation" mark from the RUNIC SINGLE PUNCTUATION (U+16EB) and RUNIC MULTIPLE PUNCTUATION (U+16EC), if necessary.</p>
 
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

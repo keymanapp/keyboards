@@ -1,6 +1,11 @@
 Myanmar (Phonetic order) Basic Change History
 ====================
 
+1.2.3 (2025-10-14)
+------------------
+* Update Padauk Book font to v6.000
+* Remove Padauk
+
 1.2.1 (2024-12-12)
 ------------------
 * Update Padauk font

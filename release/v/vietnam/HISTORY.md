@@ -1,6 +1,37 @@
 vietnam Change History
 ====================
 
+2.0.7 (2025-09-17)
+----------------
+* Updated by cathaylab
+* fixed bugs
+
+2.0.6 (2025-06-15)
+----------------
+* Updated by cathaylab
+* added symbols
+* modified the code for letter generation
+* changed the way to generate words.
+
+2.0.5 (2025-04-25)
+----------------
+* Updated by cathaylab
+* removed uncommon "inn" and "ann" rules
+* removed most of symbols which are uncommon in Vietnamese. "ḿ" "m̀" and "m̉" are remained for interjection. ÑG is remained for the acronym of family name "Nguyễn".
+* slightly change the location of touch-layout.
+
+2.0.4 (2025-03-05)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyt" "uyc" "uyp" vowel
+* modified the "m" and "m" with ngã accent to "m̃" and "M̃" (U+0342 to U+0303)
+* added 'ț' 'Ț' "ŧ' 'Ŧ' 'ŭ' 'Ŭ' letters
+
+2.0.3 (2025-10-06)
+----------------
+* Updated by cathaylab
+* added tone marks generation rules for "uyu" vowel
+
 2.0.2 (2025-09-12)
 ----------------
 * Updated by cathaylab

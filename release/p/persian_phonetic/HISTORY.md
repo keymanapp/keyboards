@@ -1,6 +1,11 @@
 Persian Phonetic Change History
 ===============================
 
+1.0.4 (9 Mar 2026)
+-------------------
+* Update OSK for better display
+* Add Scheherazade New font
+
 1.0.3 (27 Oct 2020)
 -------------------
 * Increment version number to force recompile of touch layout.

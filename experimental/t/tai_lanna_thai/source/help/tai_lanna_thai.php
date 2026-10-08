@@ -1,10 +1,10 @@
 <?php 
-  $pagename = 'Tai Lanna (Thai Layout) Keyboard Help';
+  $pagename = 'Tham Lanna (Thai Layout) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<p>The Tai Lanna (Thai Layout) keyboard enables input of the Tai Tham Unicode script using a Thai-based layout.</p>
+<p>The Tham Lanna (Thai Layout) keyboard enables input of the Tai Tham Unicode script using a Thai-based layout.</p>
 
 
 <h2>Desktop Keyboard Layout</h2>
