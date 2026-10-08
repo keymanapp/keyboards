@@ -1,6 +1,11 @@
 Pontic Greek Keyboard Change History
 ====================================
 
+6.0 (2026-10-07)
+----------------
+* Updated Pontic Sans font to version 6.0 with calibrated GPOS anchors for all combining diacritics
+* Improved optical alignment of caron (ˇ) and diaeresis below (̤) across all platforms
+
 5.1 (2026-08-28)
 ----------------
 * Expanded targets to support desktop, mobile, and web (`store(&TARGETS) 'any'`)
