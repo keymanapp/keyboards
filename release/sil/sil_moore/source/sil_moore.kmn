@@ -45,11 +45,12 @@ store(outs_2s) dk(none) [NCAPS SHIFT K_S] [NCAPS SHIFT K_D] [NCAPS SHIFT K_F] [N
                [NCAPS SHIFT K_L] [NCAPS SHIFT K_M] '%µ'  [NCAPS SHIFT K_M] '%µ'
 
 store(keys_3u) [NCAPS K_oE2] [NCAPS K_Z] [NCAPS K_X] [NCAPS K_C] [NCAPS K_V] [NCAPS K_B] [NCAPS K_N] [NCAPS K_M] [NCAPS K_COMMA] [NCAPS K_PERIOD] [NCAPS K_SLASH]
-store(outs_3u) '<'     'wɩʋvbn,;:!'
+store(outs_3u) '<wɩʋvbn,;:!'
 
-store(keys_3s) [NCAPS SHIFT K_oE2] [NCAPS RALT K_Z] [NCAPS RALT K_X] [NCAPS RALT K_C] [NCAPS RALT K_V] [NCAPS RALT K_B] [NCAPS RALT K_N] \
+store(keys_3s) [NCAPS SHIFT K_oE2] [NCAPS RALT K_Z] [NCAPS RALT K_X] [NCAPS RALT K_C] [NCAPS RALT K_V] [NCAPS RALT K_B] \
                [NCAPS SHIFT K_COMMA] [NCAPS SHIFT K_PERIOD] [NCAPS SHIFT K_SLASH] [CAPS K_COMMA] [CAPS K_PERIOD] [CAPS K_SLASH]
-store(outs_3s) '>'  [NCAPS RALT K_W] dk(none) dk(none) [NCAPS RALT K_V] [NCAPS RALT K_B] U+0272 './§' './§'
+store(outs_3s) '>W' dk(none) dk(none) 'VB' \
+               '?./§' './'
 
 store(keys_0a) [NCAPS RALT K_2] [NCAPS RALT K_3] [NCAPS RALT K_4] [NCAPS RALT K_5] [NCAPS RALT K_6] [NCAPS RALT K_7] [NCAPS RALT K_8] [NCAPS RALT K_9] [NCAPS RALT K_0] [NCAPS RALT K_HYPHEN] [NCAPS RALT K_EQUAL]
 store(outs_0a) dk(tilde)  '#'        '{'        '['        '|'        dk(grave)  '\'        '^'        '@'        ']'             '}'
@@ -93,11 +94,11 @@ any(toneablechar) + any(keys_tone) > context index(outs_tone, 2)
 
 c Characters for linguists
                 
-store(keys_ling) [NCAPS RALT K_G] [NCAPS RALT K_M] [NCAPS RALT K_D] [NCAPS RALT SHIFT K_D] [RALT CAPS K_D] [NCAPS RALT K_H] [NCAPS RALT K_J] \
-                 [NCAPS RALT SHIFT K_G] [NCAPS RALT CAPS K_G] [NCAPS RALT SHIFT K_N] [NCAPS RALT CAPS K_N]
-store(outs_ling) 'ŋʔɖɗɗɦɟɠɠɳɳ'
+store(keys_ling) [NCAPS RALT K_D] [NCAPS RALT K_G] [NCAPS RALT K_H] [NCAPS RALT K_J] [NCAPS RALT K_N] [NCAPS RALT K_M]  \
+                 [NCAPS RALT SHIFT K_D] [NCAPS RALT SHIFT K_G] [NCAPS RALT SHIFT K_N] 
+store(outs_ling) 'ɖŋɦɟɲʔ' 'ɗɠɳ'
 
-+ any(keys_ling) > index(outs_ling, 1)
+ + any(keys_ling) > index(outs_ling, 1)
 
 c Handle deadkeys
 
