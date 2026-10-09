@@ -1,6 +1,10 @@
 poorigbelle Change History
 ====================
 
+1.2 (2026-10-06)
+----------------
+* Add K_Q and polish to the touch layouts.
+
 1.1 (2026-09-28)
 ----------------
 * Add missing keystroke rules to help and welcome files.
