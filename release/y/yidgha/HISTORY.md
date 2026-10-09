@@ -1,6 +1,10 @@
 Yidgha Phonetic Change History
 ===============================
 
+1.0.5 (9 Mar 2026)
+------------------
+* Update OSK for better display
+
 1.0.4 (20 Feb 2025)
 ------------------
 * Put OSKFont from .kps file into .kvks file

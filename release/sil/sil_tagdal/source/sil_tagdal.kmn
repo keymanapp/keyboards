@@ -1,8 +1,8 @@
 ﻿store(&VERSION) '15.0'
 store(&NAME) 'Tagdal (SIL)'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2024 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.1'
 store(&VISUALKEYBOARD) 'sil_tagdal.kvks'
 store(&LAYOUTFILE) 'sil_tagdal.keyman-touch-layout'
 store(&BITMAP) 'sil_tagdal.ico'
@@ -29,13 +29,16 @@ group(main) using keys
 + [RALT K_O] > 'ɔ'
 + [RALT K_LBRKT] > '['
 + [RALT K_RBRKT] > ']'
-+ [RALT K_S] > 'ʃ'
++ [RALT K_C] > 'ʃ'
 + [RALT K_H] > 'ħ'
 + [RALT K_J] > 'ʒ'
 + [RALT K_COLON] > U+02D0
 + [RALT K_COMMA] > '́'
 + [RALT K_PERIOD] > '̃'
 + [RALT K_SLASH] > 'ʕ'
++ [RALT K_S] > U+0161
++ [SHIFT RALT K_S] > U+0160
+
 
 c Combining dot below
 c + [K_RBRKT] > '̣'

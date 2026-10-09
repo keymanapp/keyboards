@@ -1,7 +1,7 @@
 <?php
   $pagename = 'Lao Phonetic Keyboard Help';
   $pagetitle = $pagename;
-  $style = <<<END
+  $pagestyle = <<<END
   span.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold;}
   span.wd {font-family: helvetica,Arial,sansserif; font-weight: bold; }
   

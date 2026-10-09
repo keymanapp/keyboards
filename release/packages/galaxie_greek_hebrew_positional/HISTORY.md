@@ -1,5 +1,8 @@
 # Galaxie Greek/Hebrew (Positional) Keyboard Package
 
+## 2.3.2 (30 Oct 2024)
+* Revert display font for better OSK display
+
 ## 2.3.1 (30 Oct 2024)
 * Change to use KbdHebr display font for better OSK display
 

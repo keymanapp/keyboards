@@ -1,14 +1,12 @@
 Pashto (Afghanistan) Basic keyboard
 ==============
 
-(c) 2009-2019 SIL International
-
-Version 1.1
+(c) SIL Global
 
 Description
 -----------
 
-Pashto (Afghanistan) Basic generated from template
+Pashto (Afghanistan) Basic keyboard was imported with permission from the Windows 10 keyboard.
 
 Links
 -----

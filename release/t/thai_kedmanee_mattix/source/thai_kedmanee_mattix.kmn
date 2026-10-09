@@ -1,0 +1,141 @@
+c thai_kedmanee_mattix generated from template at 2026-03-13 16:10:36
+c with name "Thai Kedmanee"
+store(&VERSION) '17.0'
+store(&NAME) 'Thai Kedmanee (Mattix)'
+store(&COPYRIGHT) 'Copyright © Samuel A. Mattix'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'thai_kedmanee_mattix.ico'
+store(&VISUALKEYBOARD) 'thai_kedmanee_mattix.kvks'
+store(&LAYOUTFILE) 'thai_kedmanee_mattix.keyman-touch-layout'
+store(&HOTKEY) [CTRL SHIFT K_T]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ '`' > '_'
++ '1' > 'ๅ'
++ '2' > '/'
++ '3' > '-'
++ '4' > 'ภ'
++ '5' > 'ถ'
++ '6' > 'ุ'
++ '7' > 'ึ'
++ '8' > 'ค'
++ '9' > 'ต'
++ '0' > 'จ'
++ '-' > 'ข'
++ '=' > 'ช'
+
++ 'q' > 'ๆ'
++ 'w' > 'ไ'
++ 'e' > 'ำ'
++ 'r' > 'พ'
++ 't' > 'ะ'
++ 'y' > 'ั'
++ 'u' > 'ี'
++ 'i' > 'ร'
++ 'o' > 'น'
++ 'p' > 'ย'
++ '[' > 'บ'
++ ']' > 'ล'
++ '\' > 'ฃ'
+
++ 'a' > 'ฟ'
++ 's' > 'ห'
++ 'd' > 'ก'
++ 'f' > 'ด'
++ 'g' > 'เ'
++ 'h' > '้'
++ 'j' > '่'
++ 'k' > 'า'
++ 'l' > 'ส'
++ ';' > 'ว'
++ "'" > 'ง'
+
++ 'z' > 'ผ'
++ 'x' > 'ป'
++ 'c' > 'แ'
++ 'v' > 'อ'
++ 'b' > 'ิ'
++ 'n' > 'ื'
++ 'm' > 'ท'
++ ',' > 'ม'
++ '.' > 'ใ'
++ '/' > 'ฝ'
+
++ '~' > '%'
++ '!' > '+'
++ '@' > '๑'
++ '#' > '๒'
++ '$' > '๓'
++ '%' > '๔'
++ '^' > 'ู'
++ '&' > '฿'
++ '*' > '๕'
++ '(' > '๖'
++ ')' > '๗'
++ '_' > '๘'
++ '+' > '๙'
+
++ 'Q' > '๐'
++ 'W' > '"'
++ 'E' > 'ฎ'
++ 'R' > 'ฑ'
++ 'T' > 'ธ'
++ 'Y' > 'ํ'
++ 'U' > '๊'
++ 'I' > 'ณ'
++ 'O' > 'ฯ'
++ 'P' > 'ญ'
++ '{' > 'ฐ'
++ '}' > ','
++ '|' > 'ฅ'
+
++ 'A' > 'ฤ'
++ 'S' > 'ฆ'
++ 'D' > 'ฏ'
++ 'F' > 'โ'
++ 'G' > 'ฌ'
++ 'H' > '็'
++ 'J' > '๋'
++ 'K' > 'ษ'
++ 'L' > 'ศ'
++ ':' > 'ซ'
++ '"' > '.'
+
++ 'Z' > '('
++ 'X' > ')'
++ 'C' > 'ฉ'
++ 'V' > 'ฮ'
++ 'B' > 'ฺ'
++ 'N' > '์'
++ 'M' > '?'
++ '<' > 'ฒ'
++ '>' > 'ฬ'
++ '?' > 'ฦ'
+
+c =========================================================
+c Thai special character shortcuts
+c =========================================================
+c Paiyanyai — OO → ฯลฯ
+'ฯ' + [SHIFT K_O] > 'ฯลฯ'
+
+c Yamakkan — `3 → ๎
+'_' + [K_3] > U+0E4E
+
+c Fongman — `" → ๏
+'_' + [SHIFT K_QUOTE] > U+0E4F
+
+c Angkhankhu — `ฯ → ๚
+'_' + [SHIFT K_O] > U+0E5A dk(compose)
+
+c Khomut — `ฯฯ → ๛
+U+0E5A dk(compose) + [SHIFT K_O] > U+0E5B
+
+c Bullet — `๑ → •
+'_' + [SHIFT K_2] > U+2022
+
+c Zero width space — `Space → ZWSP
+'_' + [K_SPACE] > U+200B

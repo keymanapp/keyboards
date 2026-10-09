@@ -1,5 +1,17 @@
 Laz Change History
 ====================
+1.0.8 (2026-08-27)
+----------------
+* replaced capital Ť with T̆ on touch keyboard.
+
+1.0.7 (2026-08-24)
+----------------
+* replaced capital Ť with T̆.
+
+1.0.6 (2026-03-24)
+----------------
+* Layout overhaul
+
 1.0.5 (2024-11-23)
 ----------------
 * Added the correct unicodes for the new letters

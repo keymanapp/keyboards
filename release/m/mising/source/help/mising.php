@@ -1,0 +1,482 @@
+<?php 
+  $pagename = 'Mising Keyboard Help';
+  $pagetitle = $pagename;
+
+  $pagestyle = <<<END
+  /* ── Custom Keyboard Documentation Styles ── */
+  *, *::before, *::after { box-sizing: border-box; }
+  
+  .part-heading {
+    font-size: 17pt;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    color: #1F5C99;
+    border-bottom: 2px solid #D9E2F3;
+    padding-bottom: 5px;
+    margin: 32px 0 14px;
+  }
+
+  h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    color: #1F5C99;
+    margin: 22px 0 7px;
+  }
+
+  .note {
+    font-size: 9.5pt;
+    color: #444;
+    margin-bottom: 8px;
+    font-family: Tahoma, sans-serif;
+  }
+
+  /* Reference tables */
+  table.ref {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 18px;
+    font-family: Tahoma, sans-serif;
+    font-size: 10pt;
+  }
+  table.ref th {
+    background: #D9E2F3;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    text-align: left;
+  }
+  table.ref td {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+  }
+  table.ref tr:nth-child(even) td { background: #F4F7FC; }
+  table.ref td.key { color: #2E74B5; font-weight: bold; white-space: nowrap; }
+  table.ref td.out { font-weight: bold; font-size: 11pt; }
+  table.ref td.long { color: #7A5C00; font-weight: bold; }
+
+  /* Touch keyboard grid */
+  .kb-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    background: #c8cdd6;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 6px;
+    width: 100%;
+    max-width: 520px;
+    font-family: Arial, sans-serif;
+  }
+
+  .kb-row {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEF3FA;
+    border: 1px solid #9AABCC;
+    border-bottom: 3px solid #7A90B8;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+    height: 40px;
+    padding: 0 2px;
+    cursor: default;
+    white-space: nowrap;
+    user-select: none;
+    min-width: 0;
+  }
+
+  .key.special {
+    background: #C9D3E8;
+    border-color: #8090B8;
+    border-bottom-color: #5A6898;
+    font-size: 12px;
+    color: #222;
+  }
+
+  /* subkey indicator dot */
+  .key .sk-dot {
+    font-size: 7px;
+    vertical-align: super;
+    color: #2E74B5;
+    margin-left: 2px;
+  }
+
+  .sk-legend {
+    font-size: 9pt;
+    color: #2E74B5;
+    margin: -4px 0 10px;
+    font-family: Tahoma, sans-serif;
+  }
+
+  /* Footer */
+  .kb-footer {
+    margin-top: 36px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    font-size: 8.5pt;
+    color: #888;
+    font-style: italic;
+    font-family: Tahoma, sans-serif;
+  }
+END;
+
+  // Header
+  require_once('header.php');
+?>
+
+<p>
+A comprehensive keyboard engineered specifically for the Mising language, designed for writing in the standard modified Roman script. Optimised for seamless digital communication, the layout ensures accurate entry of alphabets by preventing character fragmentation across all platforms. Built upon a familiar QWERTY foundation, it provides an intuitive and highly efficient typing experience.
+</p>
+
+<h1>Keyboard Layout</h1>
+
+<div class="part-heading">Part 1 &mdash; Desktop / Laptop Keyboard</div>
+
+<p>This keyboard uses a standard QWERTY base. All Roman letters remain in their normal positions. Four QWERTY keys &mdash; <strong>Q, X, V, C</strong> &mdash; are reassigned to frequently occurring Mising phonemes. The original Latin letters <em>q, x, v, c</em> remain accessible via the <strong>AltGr</strong> (Right Alt) recovery layer.</p>
+
+<p>Long vowels are entered with a <strong>dead key</strong>: press <strong>Semicolon (;)</strong> to activate length mode, then press the vowel. The semicolon itself is recovered via pressing the key twice or by pressing <strong>AltGr+;</strong>.</p>
+
+<h3>1.1 &nbsp; Consonants</h3>
+<p class="note">Standard Mising consonants are typed directly.</p>
+<table class="ref">
+  <tr><th>Output</th><th>Key</th><th>Description</th></tr>
+  <tr><td class="out">p / P</td><td class="key">p &nbsp;/&nbsp; Shift+P</td><td>Bilabial plosive (voiceless)</td></tr>
+  <tr><td class="out">b / B</td><td class="key">b &nbsp;/&nbsp; Shift+B</td><td>Bilabial plosive (voiced)</td></tr>
+  <tr><td class="out">t / T</td><td class="key">t &nbsp;/&nbsp; Shift+T</td><td>Alveolar plosive (voiceless)</td></tr>
+  <tr><td class="out">d / D</td><td class="key">d &nbsp;/&nbsp; Shift+D</td><td>Alveolar plosive (voiced)</td></tr>
+  <tr><td class="out">k / K</td><td class="key">k &nbsp;/&nbsp; Shift+K</td><td>Velar plosive (voiceless)</td></tr>
+  <tr><td class="out">g / G</td><td class="key">g &nbsp;/&nbsp; Shift+G</td><td>Velar plosive (voiced)</td></tr>
+  <tr><td class="out">s / S</td><td class="key">s &nbsp;/&nbsp; Shift+S</td><td>Alveolar fricative (voiceless)</td></tr>
+  <tr><td class="out">j / J</td><td class="key">j &nbsp;/&nbsp; Shift+J</td><td>Palatal affricate / approximant</td></tr>
+  <tr><td class="out">m / M</td><td class="key">m &nbsp;/&nbsp; Shift+M</td><td>Bilabial nasal</td></tr>
+  <tr><td class="out">n / N</td><td class="key">n &nbsp;/&nbsp; Shift+N</td><td>Alveolar nasal</td></tr>
+  <tr><td class="out">r / R</td><td class="key">r &nbsp;/&nbsp; Shift+R</td><td>Alveolar trill / flap</td></tr>
+  <tr><td class="out">l / L</td><td class="key">l &nbsp;/&nbsp; Shift+L</td><td>Alveolar lateral approximant</td></tr>
+  <tr><td class="out">y / Y</td><td class="key">y &nbsp;/&nbsp; Shift+Y</td><td>Palatal approximant</td></tr>
+  <tr><td class="out">w / W</td><td class="key">w &nbsp;/&nbsp; Shift+W</td><td>Labio-velar approximant</td></tr>
+  <tr><td class="out">h / H</td><td class="key">h &nbsp;/&nbsp; Shift+H</td><td>Glottal fricative</td></tr>
+</table>
+
+<h3>1.2 &nbsp; Special Consonants &mdash; Reassigned Keys (Q &amp; X)</h3>
+<p class="note">Two special consonants are produced with a single keystroke.</p>
+<table class="ref">
+  <tr><th>Output</th><th>Key</th><th>Phonetic value / Assignment</th></tr>
+  <tr><td class="out">ng</td><td class="key">q</td><td>Velar nasal &mdash; assigned to Q</td></tr>
+  <tr><td class="out">NG</td><td class="key">Shift+Q</td><td>Capitalised velar nasal</td></tr>
+  <tr><td class="out">ny</td><td class="key">x</td><td>Palatal nasal &mdash; assigned to X</td></tr>
+  <tr><td class="out">NY</td><td class="key">Shift+X</td><td>Capitalised palatal nasal</td></tr>
+</table>
+
+<h3>1.3 &nbsp; Short Vowels</h3>
+<p class="note">Standard vowels on natural QWERTY keys, with two central vowels mapped onto V and C.</p>
+<table class="ref">
+  <tr><th>Output</th><th>Key</th><th>Description</th></tr>
+  <tr><td class="out">a / A</td><td class="key">a &nbsp;/&nbsp; Shift+A</td><td>Standard unrounded vowel</td></tr>
+  <tr><td class="out">e / E</td><td class="key">e &nbsp;/&nbsp; Shift+E</td><td>Standard front vowel</td></tr>
+  <tr><td class="out">i / I</td><td class="key">i &nbsp;/&nbsp; Shift+I</td><td>Standard close vowel</td></tr>
+  <tr><td class="out">o / O</td><td class="key">o &nbsp;/&nbsp; Shift+O</td><td>Standard back rounded vowel</td></tr>
+  <tr><td class="out">u / U</td><td class="key">u &nbsp;/&nbsp; Shift+U</td><td>Standard close back vowel</td></tr>
+  <tr><td class="out">é / É</td><td class="key">v &nbsp;/&nbsp; Shift+V</td><td>Mid central vowel &mdash; assigned to V</td></tr>
+  <tr><td class="out">í / Í</td><td class="key">c &nbsp;/&nbsp; Shift+C</td><td>Close central unrounded vowel &mdash; assigned to C</td></tr>
+</table>
+
+<h3>1.4 &nbsp; Long Vowels </h3>
+<p>Press the <strong>Semicolon (;)</strong> key first, then the vowel key. For uppercase long vowels, press Semicolon, then <strong>Shift+vowel</strong>.</p>
+<table class="ref">
+  <tr><th>Output</th><th>Keystroke sequence</th><th>Notes</th></tr>
+  <tr><td class="out">a:</td><td class="key">; &rarr; a</td><td>Long a</td></tr>
+  <tr><td class="out">e:</td><td class="key">; &rarr; e</td><td>Long e</td></tr>
+  <tr><td class="out">i:</td><td class="key">; &rarr; i</td><td>Long i</td></tr>
+  <tr><td class="out">o:</td><td class="key">; &rarr; o</td><td>Long o</td></tr>
+  <tr><td class="out">u:</td><td class="key">; &rarr; u</td><td>Long u</td></tr>
+  <tr><td class="out">é:</td><td class="key">; &rarr; v</td><td>Long central é</td></tr>
+  <tr><td class="out">í:</td><td class="key">; &rarr; c</td><td>Long central í</td></tr>
+  <tr><td class="out">A:</td><td class="key">; &rarr; Shift+A</td><td>Long A uppercase</td></tr>
+  <tr><td class="out">E:</td><td class="key">; &rarr; Shift+E</td><td>Long E uppercase</td></tr>
+  <tr><td class="out">I:</td><td class="key">; &rarr; Shift+I</td><td>Long I uppercase</td></tr>
+  <tr><td class="out">O:</td><td class="key">; &rarr; Shift+O</td><td>Long O uppercase</td></tr>
+  <tr><td class="out">U:</td><td class="key">; &rarr; Shift+U</td><td>Long U uppercase</td></tr>
+  <tr><td class="out">É:</td><td class="key">; &rarr; Shift+V</td><td>Long É uppercase</td></tr>
+  <tr><td class="out">Í:</td><td class="key">; &rarr; Shift+C</td><td>Long Í uppercase</td></tr>
+</table>
+
+<h3>1.5 &nbsp; AltGr Recovery Layer</h3>
+<p class="note">Hold <strong>Right Alt (AltGr)</strong> to recover original Latin letters and standard punctuation.</p>
+<table class="ref">
+  <tr><th>Output</th><th>Keystroke</th><th>Purpose</th></tr>
+  <tr><td class="out">q / Q</td><td class="key">AltGr+Q &nbsp;/&nbsp; AltGr+Shift+Q</td><td>Latin q</td></tr>
+  <tr><td class="out">x / X</td><td class="key">AltGr+X &nbsp;/&nbsp; AltGr+Shift+X</td><td>Latin x</td></tr>
+  <tr><td class="out">v / V</td><td class="key">AltGr+V &nbsp;/&nbsp; AltGr+Shift+V</td><td>Latin v</td></tr>
+  <tr><td class="out">c / C</td><td class="key">AltGr+C &nbsp;/&nbsp; AltGr+Shift+C</td><td>Latin c</td></tr>
+  <tr><td class="out">;</td><td class="key">AltGr+;</td><td>Semicolon</td></tr>
+  <tr><td class="out">:</td><td class="key">AltGr+Shift+;</td><td>Colon</td></tr>
+</table>
+
+<h3>1.6 &nbsp; Glottal Stop Marker</h3>
+<table class="ref">
+  <tr><th>Output</th><th>Key</th><th>Description</th></tr>
+  <tr><td class="out">’</td><td class="key">' (apostrophe key)</td><td>Smart right single quotation mark (U+2019) &mdash; used as glottal marker</td></tr>
+</table>
+
+<div class="part-heading">Part 2 &mdash; Phone / Touch Keyboard</div>
+
+<p>The Mising touch interface contains discrete dedicated layers: <strong>Default</strong>, <strong>Shift</strong>, <strong>Numeric</strong>, <strong>Numpad</strong>, and <strong>Symbols</strong>. Long vowels remain instantly accessible via long-press subkeys.</p>
+
+<p class="sk-legend">&#9679; A small dot on a key in the diagrams below indicates that a long-press subkey is available.</p>
+
+<h3>2.1 &nbsp; Default Layer (Lowercase)</h3>
+<div class="kb-grid">
+  <div class="kb-row">
+    <div class="key" style="flex: 128;">é<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">w</div>
+    <div class="key" style="flex: 100;">e<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">r</div>
+    <div class="key" style="flex: 100;">t</div>
+    <div class="key" style="flex: 100;">y</div>
+    <div class="key" style="flex: 100;">u<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">i<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 113;">o<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 126;">p</div>
+  </div>
+  <div class="kb-row">
+    <div style="flex: 50; visibility: hidden;"></div>
+    <div class="key" style="flex: 100;">a<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 98;">s</div>
+    <div class="key" style="flex: 100;">d</div>
+    <div class="key" style="flex: 100;">í<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">g</div>
+    <div class="key" style="flex: 100;">h</div>
+    <div class="key" style="flex: 100;">j</div>
+    <div class="key" style="flex: 100;">k</div>
+    <div class="key" style="flex: 118;">l</div>
+    <div class="key" style="flex: 115;">:</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 238;">⇧ Shift</div>
+    <div class="key" style="flex: 142;">ny</div>
+    <div class="key" style="flex: 144;">ng</div>
+    <div class="key" style="flex: 135;">b</div>
+    <div class="key" style="flex: 123;">n</div>
+    <div class="key" style="flex: 121;">m</div>
+    <div class="key special" style="flex: 211;">⌫ BkSp</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 181;">123</div>
+    <div class="key special" style="flex: 108;">🌐</div>
+    <div class="key" style="flex: 128;">,</div>
+    <div class="key special" style="flex: 406;">Space</div>
+    <div class="key" style="flex: 116;">.</div>
+    <div class="key special" style="flex: 194;">↵ Enter</div>
+  </div>
+</div>
+
+<h3>2.2 &nbsp; Shift Layer (Uppercase)</h3>
+<div class="kb-grid">
+  <div class="kb-row">
+    <div class="key" style="flex: 112;">É<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 109;">W</div>
+    <div class="key" style="flex: 102;">E<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">R</div>
+    <div class="key" style="flex: 100;">T</div>
+    <div class="key" style="flex: 100;">Y</div>
+    <div class="key" style="flex: 100;">U<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">I<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 109;">O<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 124;">P</div>
+  </div>
+  <div class="kb-row">
+    <div style="flex: 50; visibility: hidden;"></div>
+    <div class="key" style="flex: 105;">A<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">S</div>
+    <div class="key" style="flex: 105;">D</div>
+    <div class="key" style="flex: 100;">Í<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">G</div>
+    <div class="key" style="flex: 100;">H</div>
+    <div class="key" style="flex: 100;">J</div>
+    <div class="key" style="flex: 100;">K</div>
+    <div class="key" style="flex: 100;">L</div>
+    <div class="key" style="flex: 110;">:</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 207;">⇧ Shift</div>
+    <div class="key" style="flex: 135;">NY</div>
+    <div class="key" style="flex: 147;">NG</div>
+    <div class="key" style="flex: 147;">B</div>
+    <div class="key" style="flex: 144;">N</div>
+    <div class="key" style="flex: 128;">M</div>
+    <div class="key special" style="flex: 191;">⌫ BkSp</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 142;">123</div>
+    <div class="key special" style="flex: 120;">🌐</div>
+    <div class="key" style="flex: 112;">,</div>
+    <div class="key special" style="flex: 447;">Space</div>
+    <div class="key" style="flex: 110;">.</div>
+    <div class="key special" style="flex: 186;">↵ Enter</div>
+  </div>
+</div>
+
+<h3>2.3 &nbsp; Numeric Layer</h3>
+<p class="note">Optimized formatting featuring currency alignments directly built into Row 2.</p>
+<div class="kb-grid">
+  <div class="kb-row">
+    <div class="key" style="flex: 119;">1</div>
+    <div class="key" style="flex: 100;">2</div>
+    <div class="key" style="flex: 100;">3</div>
+    <div class="key" style="flex: 100;">4</div>
+    <div class="key" style="flex: 100;">5</div>
+    <div class="key" style="flex: 100;">6</div>
+    <div class="key" style="flex: 100;">7</div>
+    <div class="key" style="flex: 100;">8</div>
+    <div class="key" style="flex: 100;">9</div>
+    <div class="key" style="flex: 124;">0</div>
+  </div>
+  <div class="kb-row">
+    <div style="flex: 50; visibility: hidden;"></div>
+    <div class="key" style="flex: 100;">@</div>
+    <div class="key" style="flex: 100;">#</div>
+    <div class="key" style="flex: 100;">₹<span class="sk-dot">&#9679;</span></div>
+    <div class="key" style="flex: 100;">_</div>
+    <div class="key" style="flex: 100;">&amp;</div>
+    <div class="key" style="flex: 100;">-</div>
+    <div class="key" style="flex: 100;">+</div>
+    <div class="key" style="flex: 100;">(</div>
+    <div class="key" style="flex: 100;">)</div>
+    <div class="key" style="flex: 108;">/</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 114;">=\&lt;</div>
+    <div class="key" style="flex: 100;">*</div>
+    <div class="key" style="flex: 100;">"</div>
+    <div class="key" style="flex: 100;">'</div>
+    <div class="key" style="flex: 100;">:</div>
+    <div class="key" style="flex: 100;">;</div>
+    <div class="key" style="flex: 100;">!</div>
+    <div class="key" style="flex: 100;">?</div>
+    <div class="key" style="flex: 100;">%</div>
+    <div class="key special" style="flex: 132;">⌫ BkSp</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 150;">abc</div>
+    <div class="key special" style="flex: 120;">🌐</div>
+    <div class="key" style="flex: 100;">,</div>
+    <div class="key special" style="flex: 473;">Space</div>
+    <div class="key" style="flex: 100;">.</div>
+    <div class="key special" style="flex: 161;">↵ Enter</div>
+  </div>
+</div>
+
+<h3>2.4 &nbsp; Numpad Layer</h3>
+<p class="note">Clean calculator layout for heavy number data entry.</p>
+<div class="kb-grid">
+  <div class="kb-row">
+    <div class="key" style="flex: 119;">+</div>
+    <div class="key" style="flex: 178;">1</div>
+    <div class="key" style="flex: 193;">2</div>
+    <div class="key" style="flex: 175;">3</div>
+    <div class="key" style="flex: 110;">*</div>
+  </div>
+  <div class="kb-row">
+    <div style="flex: 50; visibility: hidden;"></div>
+    <div class="key" style="flex: 86;">-</div>
+    <div class="key" style="flex: 176;">4</div>
+    <div class="key" style="flex: 196;">5</div>
+    <div class="key" style="flex: 178;">6</div>
+    <div class="key" style="flex: 105;">/</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 132;">?123</div>
+    <div class="key" style="flex: 166;">7</div>
+    <div class="key" style="flex: 199;">8</div>
+    <div class="key" style="flex: 173;">9</div>
+    <div class="key special" style="flex: 105;">⌫ BkSp</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 121;">abc</div>
+    <div class="key special" style="flex: 72;">🌐</div>
+    <div class="key" style="flex: 99;">,</div>
+    <div class="key" style="flex: 202;">0</div>
+    <div class="key" style="flex: 112;">.</div>
+    <div class="key special" style="flex: 153;">↵ Enter</div>
+  </div>
+</div>
+
+<h3>2.5 &nbsp; Symbols Layer</h3>
+<p class="note">Houses extended mathematical symbols, brackets, and typographic markers.</p>
+<div class="kb-grid">
+  <div class="kb-row">
+    <div class="key" style="flex: 119;">~</div>
+    <div class="key" style="flex: 100;">`</div>
+    <div class="key" style="flex: 100;">|</div>
+    <div class="key" style="flex: 100;">•</div>
+    <div class="key" style="flex: 100;">√</div>
+    <div class="key" style="flex: 100;">π</div>
+    <div class="key" style="flex: 100;">÷</div>
+    <div class="key" style="flex: 100;">×</div>
+    <div class="key" style="flex: 100;">§</div>
+    <div class="key" style="flex: 116;">Δ</div>
+  </div>
+  <div class="kb-row">
+    <div style="flex: 50; visibility: hidden;"></div>
+    <div class="key" style="flex: 100;">€</div>
+    <div class="key" style="flex: 100;">¥</div>
+    <div class="key" style="flex: 100;">$</div>
+    <div class="key" style="flex: 100;">¢</div>
+    <div class="key" style="flex: 100;">^</div>
+    <div class="key" style="flex: 100;">°</div>
+    <div class="key" style="flex: 100;">=</div>
+    <div class="key" style="flex: 100;">{</div>
+    <div class="key" style="flex: 100;">}</div>
+    <div class="key" style="flex: 98;">\</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 132;">?123</div>
+    <div class="key" style="flex: 100;">%</div>
+    <div class="key" style="flex: 100;">©</div>
+    <div class="key" style="flex: 100;">®</div>
+    <div class="key" style="flex: 100;">™</div>
+    <div class="key" style="flex: 100;">✓</div>
+    <div class="key" style="flex: 100;">[</div>
+    <div class="key" style="flex: 100;">]</div>
+    <div class="key special" style="flex: 222;">⌫ BkSp</div>
+  </div>
+  <div class="kb-row">
+    <div class="key special" style="flex: 150;">abc</div>
+    <div class="key special" style="flex: 100;">🌐</div>
+    <div class="key special" style="flex: 100;">1234</div>
+    <div class="key" style="flex: 100;">&lt;</div>
+    <div class="key special" style="flex: 384;">Space</div>
+    <div class="key" style="flex: 100;">&gt;</div>
+    <div class="key special" style="flex: 150;">↵ Enter</div>
+  </div>
+</div>
+
+<h3>2.6 &nbsp; Long-Vowel & Currency Subkeys (Hold / Long-Press)</h3>
+<table class="ref">
+  <tr><th>Key</th><th>Tap &rarr; output</th><th>Hold &rarr; subkey</th></tr>
+  <tr><td class="out">a / A</td><td class="key">a / A</td><td class="long">a: / A:</td></tr>
+  <tr><td class="out">e / E</td><td class="key">e / E</td><td class="long">e: / E:</td></tr>
+  <tr><td class="out">i / I</td><td class="key">i / I</td><td class="long">i: / I:</td></tr>
+  <tr><td class="out">o / O</td><td class="key">o / O</td><td class="long">o: / O:</td></tr>
+  <tr><td class="out">u / U</td><td class="key">u / U</td><td class="long">u: / U:</td></tr>
+  <tr><td class="out">é / É</td><td class="key">é / É</td><td class="long">é: / É:</td></tr>
+  <tr><td class="out">í / Í</td><td class="key">í / Í</td><td class="long">í: / Í:</td></tr>
+  <tr><td class="out">₹ (Numeric)</td><td class="key">₹</td><td class="long">$ / €</td></tr>
+</table>
+
+<div class="kb-footer">
+  Mising Keyboard &nbsp;&bull;&nbsp;
+  Copyright &copy; Vivian Pegu &amp; Smriti Saikia
+</div>

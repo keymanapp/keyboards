@@ -1,6 +1,10 @@
 Naskapi (Classic) Change History
 ====================
 
+2.1.3 (12 Feb 2026)
+-------------------
+* Updated font to BJCree v7.000
+
 2.1.2 (30 Oct 2023)
 -------------------
 * Updated font to better support the Cans script

@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by release/l/lao_on_thai_layout

@@ -3,7 +3,7 @@ c with name "Soninke N'ti"
 store(&VERSION) '10.0'
 store(&NAME) 'Soninke N' U+0027 'ti'
 store(&COPYRIGHT) 'Copyright © Oreen Yousuf'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&BITMAP) 'soninke_n_ti.ico'
 store(&VISUALKEYBOARD) 'soninke_n_ti.kvks'
 store(&LAYOUTFILE) 'soninke_n_ti.keyman-touch-layout'
@@ -50,8 +50,8 @@ group(main) using keys
 + [SHIFT K_J] > '' c yilla diacritic (change consonant to foreign consonant)
 '' + 'J' > U+E05C c yilla diacritic (change consonant to foreign consonant)
 + [SHIFT K_T] > '' c yilla diacritic (change consonant to foreign consonant)
-+ [SHIFT K_1] > ''
-+ [K_COLON] > ''
++ [SHIFT K_1] > '¡'
++ [K_COLON] > ';'
 + [K_COMMA] > ''
 + [SHIFT K_M] > ''
 + [K_0] > ''
@@ -221,13 +221,10 @@ c hindu-arabic numerals
 + [RALT K_0] > '0'
 
 c latin punctuation instead of n'ti punctuation
-+ [RALT SHIFT K_1] > '!'
-+ [RALT SHIFT K_COLON] > ';'
-+ [RALT SHIFT K_COMMA] > ','
++ [RALT K_COMMA] > ','
 
 c to type `
-+ [SHIFT K_BKQUOTE] > '`'
-+ [RALT K_BKQUOTE] > '~' 
++ [SHIFT K_BKQUOTE] > '~'
 
 c yilla on top of numbers; creates ordinal numbers (e.g., first, second third, etc.)
 '' + [RALT K_PERIOD] > U+E05D

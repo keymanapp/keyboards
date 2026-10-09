@@ -1,13 +1,18 @@
 Seereer Ajami (QWERTY) Change History
 ====================
 
+1.1.2 (2026-03-10)
+----------------
+* Update font for better OSK support
+* Added Medium and SemiBold weights of Harmattan
+
 1.1.1 (2025-07-07)
 ----------------
 * Updated filename for touch layout and SIL International to SIL Global
 
 1.1 (2022-03-07)
 ----------------
-* Added U+08A2 and U+08A3 (removed U+0684 and U+067D
+* Added U+08A2 and U+08A3 (removed U+0684 and U+067D)
 
 1.0 (2022-01-18)
 ----------------

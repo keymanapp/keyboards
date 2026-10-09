@@ -1,6 +1,10 @@
 Khowar Phonetic (SIL) Change History
 ====================
 
+1.1.1 (2026-03-10)
+----------------
+* Add KbdArab.json and KbdArabScheherazade for better display
+
 1.1 (13 Sept 2024)
 -----------------
 * Add tablet layout

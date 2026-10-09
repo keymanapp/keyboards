@@ -1,19 +1,12 @@
 Rachitrali-Dhatki Keyboard Data
 -------------------------------
 
-Copyright (C) 2018 Rehmat Aziz Chitrali
-Version 1.0
+Copyright (c) Rehmat Aziz Chitrali
 
 Description
 -----------
 
-This keyboard is designed for the Dhatki language spoken in Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Dhatki Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Dhatki Keyboard.
-
-This is the first Dhatki language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer. This keyboard is for Dhatki Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Dhatki language.
-
-The Dhatki Keyboard Project(DKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
-
-Khowar Academy Chitral was established in April 1996 specifically to promote the endangered languages of Chitral Pakistan. The Academy has worked extensively on Dhatki linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Dhatki, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+This keyboard is designed for the Dhatki language spoken in Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Dhatki Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr. Rehmat Aziz Chitrali.
 
 Links
 -----

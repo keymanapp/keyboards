@@ -1,6 +1,10 @@
 Odia/Oriya Phonetic (ITRANS)
 ==================
 
+1.2.0 (2025-03-31)
+----------------
+* Add 4 remaining characters from Oriya/Odia block
+
 1.1.1 (2025-03-31)
 ----------------
 * Remove support for kui (keyboard does not support all required characters)
@@ -14,3 +18,4 @@ Odia/Oriya Phonetic (ITRANS)
 ----------------
 * itrans_odia created by Shree Devi Kumar
 * Based on itrans_gujarati
+

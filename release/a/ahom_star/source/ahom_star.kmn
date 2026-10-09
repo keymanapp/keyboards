@@ -1,30 +1,28 @@
-c ahom_star generated from template at 2021-05-29 19:48:30
-c with name "ahom_star"
-c Language Ahom
+﻿c ============================================================================
+c Tai Ahom Star Keyboard
+c ============================================================================
+c Repository: GitHub - drhemanta/ahom-star-keyboard: Tai Ahom Star Keyboard - Keyman keyboard layout for Ahom script with Burmese numerals · GitHub
+c ============================================================================
+
 store(&VERSION) '10.0'
 store(&COPYRIGHT) '© HemantaGogoi Ngi Mon'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '2.0.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'ahom_star.kvks'
 store(&LAYOUTFILE) 'ahom_star.keyman-touch-layout'
-store(&MESSAGE) 'New vesrsion of Ahom keyboard'
-store(&KMW_HELPTEXT) 'Ahom Unicode'
 store(&BITMAP) 'ahom_star.ico'
 store(&NAME) 'Ahom Star'
 
 begin Unicode > use(main)
 
 group(main) using keys
-+ [K_PERIOD] > '.'
-+ [K_HYPHEN] > '-'
-+ [K_EQUAL] > '='
-+ [K_COMMA] > ','
-+ [K_SLASH] > '/'
-+ [K_QUOTE] > U+0027
-+ [K_COLON] > ';'
-+ [K_BKSLASH] > '\'
-+ [K_RBRKT] > ']'
-+ [K_LBRKT] > '['
+
+c ============================================================================
+c PUNCTUATION AND SPECIAL CHARACTERS
+c ============================================================================
+c Standard ASCII punctuation marks accessed via Shift+symbol keys
+c These provide common typing symbols for Ahom script documents
+
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
@@ -35,17 +33,25 @@ group(main) using keys
 + [SHIFT K_LBRKT] > '{'
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > '_'
-+ [SHIFT K_0] > ')'
-+ [SHIFT K_9] > '('
-+ [SHIFT K_8] > '*'
-+ [SHIFT K_7] > '&'
-+ [SHIFT K_6] > '^'
-+ [SHIFT K_5] > '%'
-+ [SHIFT K_4] > '$'
-+ [SHIFT K_3] > '#'
-+ [SHIFT K_2] > '@'
-+ [SHIFT K_1] > '!'
 + [SHIFT K_BKQUOTE] > '~'
+
++ [RALT SHIFT K_0] > ')'
++ [RALT SHIFT K_9] > '('
++ [RALT SHIFT K_8] > '*'
++ [RALT SHIFT K_7] > '&'
++ [RALT SHIFT K_6] > '^'
++ [RALT SHIFT K_5] > '%'
++ [RALT SHIFT K_4] > '$'
++ [RALT SHIFT K_3] > '#'
++ [RALT SHIFT K_2] > '@'
++ [RALT SHIFT K_1] > '!'
+
+c ============================================================================
+c AHOM CONSONANTS - UPPERCASE VARIANTS (with Shift)
+c ============================================================================
+c Capital/uppercase forms of Ahom consonants accessed via Shift+letter
+c Unicode Block: U+11700–U+1173F (Ahom Script)
+
 + [SHIFT K_M] > '𑜪'
 + [SHIFT K_N] > '𑜐'
 + [SHIFT K_B] > '𑜘'
@@ -68,6 +74,36 @@ group(main) using keys
 + [SHIFT K_E] > '𑜟'
 + [SHIFT K_W] > '𑜻'
 + [SHIFT K_Q] > '𑜩'
+
+c ============================================================================
+c AHOM NUMERALS - ALTERNATIVE (Shift+number)
+c ============================================================================
+c v2.0 Update: Ahom numerals maintained as alternative
+c Accessed via Shift+1 through Shift+0 for backward compatibility with v1.0
+c Unicode: U+11731–U+1173A (Ahom Digits)
+
++ [SHIFT K_0] > '𑜰'
++ [SHIFT K_9] > '𑜹'
++ [SHIFT K_8] > '𑜸'
++ [SHIFT K_7] > '𑜷'
++ [SHIFT K_6] > '𑜶'
++ [SHIFT K_5] > '𑜵'
++ [SHIFT K_4] > '𑜴'
++ [SHIFT K_3] > '𑜳'
++ [SHIFT K_2] > '𑜲'
++ [SHIFT K_1] > '𑜱'
+
+c ============================================================================
+c AHOM CONSONANTS - LOWERCASE (default)
+c ============================================================================
+c Primary lowercase consonant forms of the Ahom script
+c Mapped to standard QWERTY letter keys for intuitive typing
+c
+c Key mapping:
+c Q W E R T Y U I O P = consonants (top row)
+c A S D F G H J K L = consonants (middle row)
+c Z X C V B N M = consonants (bottom row)
+
 + [K_M] > '𑜉'
 + [K_N] > '𑜃'
 + [K_B] > '𑜈'
@@ -95,16 +131,41 @@ group(main) using keys
 + [K_W] > '𑜚'
 + [K_Q] > '𑜫'
 + [K_BKQUOTE] > '𑜾'
-+ [K_0] > '𑜰'
-+ [K_9] > '𑜹'
-+ [K_8] > '𑜸'
-+ [K_7] > '𑜷'
-+ [K_6] > '𑜶'
-+ [K_5] > '𑜵'
-+ [K_4] > '𑜴'
-+ [K_3] > '𑜳'
-+ [K_2] > '𑜲'
-+ [K_1] > '𑜱'
+
+c ============================================================================
+c BURMESE NUMERALS - PRIMARY (no modifier)
+c ============================================================================
+c v2.0 NEW FEATURE: Burmese numerals (0-9) as default numeral system
+c These are accessed by simply pressing the number keys 0-9
+c Provides better regional integration with Burmese language environment
+c Unicode: U+1090–U+1099 (Burmese Digits)
+c
+c Burmese numerals table:
+c 0 ➜ ၀ 1 ➜ ၁ 2 ➜ ၂ 3 ➜ ၃ 4 ➜ ၄
+c 5 ➜ ၅ 6 ➜ ၆ 7 ➜ ၇ 8 ➜ ၈ 9 ➜ ၉
+
++ [K_1] > '၁'
++ [K_2] > '၂'
++ [K_3] > '၃'
++ [K_4] > '၄'
++ [K_5] > '၅'
++ [K_6] > '၆'
++ [K_7] > '၇'
++ [K_8] > '၈'
++ [K_9] > '၉'
++ [K_0] > '၀'
+
+c arabic numeral
++ [RALT K_0] > '0'
++ [RALT K_9] > '9'
++ [RALT K_8] > '8'
++ [RALT K_7] > '7'
++ [RALT K_6] > '6'
++ [RALT K_5] > '5'
++ [RALT K_4] > '4'
++ [RALT K_3] > '3'
++ [RALT K_2] > '2'
++ [RALT K_1] > '1'
 
 c nulify the unused keys
 + [SHIFT K_Y] > nul
@@ -112,14 +173,10 @@ c nulify the unused keys
 + [SHIFT K_F] > nul
 + [SHIFT K_C] > nul
 
-c arabic numeral
-'#' + [K_0] > '0'
-'#' + [K_9] > '9'
-'#' + [K_8] > '8'
-'#' + [K_7] > '7'
-'#' + [K_6] > '6'
-'#' + [K_5] > '5'
-'#' + [K_4] > '4'
-'#' + [K_3] > '3'
-'#' + [K_2] > '2'
-'#' + [K_1] > '1'
+
+c ============================================================================
+c END OF KEYBOARD DEFINITION
+c ============================================================================
+
+
+

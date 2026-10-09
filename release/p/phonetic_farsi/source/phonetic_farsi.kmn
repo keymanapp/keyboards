@@ -2,9 +2,10 @@
 
 store(&VERSION) '10.0'
 store(&COPYRIGHT) 'Copyright © alliancecrusader'
-store(&KEYBOARDVERSION) '2.0.1'
+store(&KEYBOARDVERSION) '2.0.2'
 store(&BITMAP) 'phonetic_farsi.ico'
 store(&NAME) 'phonetic_farsi'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdarab/KbdArab.json'                   
 
 c ------------------ Variable Stores -----------------------
 
@@ -197,6 +198,7 @@ store(FatimaMasuma) "فاطمة المعصومة"
 c ------------------ Base Keyboard Layout -----------------------
 store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'phonetic_farsi.kvks'
+store(&KMW_RTL) '1'
 
     begin Unicode > use(main)
 

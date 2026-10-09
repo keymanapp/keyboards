@@ -1,0 +1,359 @@
+/* ===== Fonts ===== */
+@font-face {
+    font-family: CharisSILWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charissil/web/CharisSIL-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: CharisSILWeb;
+    font-weight: bold;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/charissil/web/CharisSIL-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: ScheherazadeNewWeb;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.languagetechnology.org/fonts/sil/scheherazadenew/web/ScheherazadeNew-Regular.woff2") format("woff2");
+}
+
+/* ===== Document ===== */
+
+/* The help is a light-background document. Declaring the scheme stops
+   Android's force-dark algorithm recolouring text and backgrounds
+   independently, which can leave light-on-light or dark-on-dark text. */
+:root {
+    color-scheme: light;
+}
+
+body {
+    font-family: 'Charis SIL', CharisSILWeb, 'Scheherazade New', ScheherazadeNewWeb, Gentium, serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ===== Page furniture ===== */
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: block;
+}
+
+/* Default styles for larger screens */
+img.responsive {
+    height: 200px;
+    width: auto;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    img.responsive {
+        height: 100px;
+        width: auto;
+    }
+    h1 {
+        font-size: 130%;
+    }
+    p.tagline {
+        font-size: 100%;
+    }
+}
+.right {
+    float: right;
+    margin: 0em 2em;
+}
+.left {
+    float: left;
+    margin: 0em 2em;
+}
+    
+
+h1 {
+    text-align: center;
+}
+.tagline {
+    text-align: center;
+    font-size: 130%;
+    font-style: italic;
+}
+.buttonlang {
+    background-color: pink;
+    border: none;
+    padding: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 6px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 92%;
+    animation: pulse 2.5s ease infinite;
+}
+
+/* Black on pink, matching sil_cameroon_qwerty. White on pink is a contrast
+   ratio of 1.22:1, which is why the label looked blank on a phone while
+   remaining tappable; black gives 17:1. The element and link states are
+   named so a host stylesheet colouring links cannot override it. */
+a.buttonlang,
+a.buttonlang:link,
+a.buttonlang:visited,
+a.buttonlang:hover,
+a.buttonlang:active,
+a.buttonlang:focus {
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+    text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: pink;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: #DB7093;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    background-color: pink;
+  }
+}
+
+
+h2.color {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,37,105,1) 0%, rgba(0,37,105,0) 100%);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+
+h3.color {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    color: #000000;
+    background: linear-gradient(90deg, rgba(255,206,0,1) 0%, rgba(255,206,0,0) 100%);
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+
+/* Blue */
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140,140,140);
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid rgb(160,160,160);
+  padding: 8px 10px;
+}
+
+th {
+  color: white;
+  background-color: rgb(0,93,153);
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(240,240,240);
+}
+
+table tr td:first-child {
+    border-left: 4px solid;
+}
+table tr td:nth-child(2n) {
+    border-right: 4px solid;
+}
+  
+
+
+/* ===== Help content ===== */
+/* Layout diagrams, key caps and key sequences used in the body of the help.
+   Shared by welcome.htm and the website help page, which are generated from
+   the same source, so these rules live here rather than inline in either. */
+
+.keyboard {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.keyboard--row {
+  display: block;
+  height: 3em;
+  margin: 0.5em;
+}
+
+.keyboard--row > * {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border-radius: 0.3em;
+  margin: 0.06em;
+  padding: 0 0.2em;
+  width: 3.3em;
+  height: 100%;
+}
+
+.key--bottom-left > * {
+  position: absolute;
+  text-align: left;
+  bottom: 0.4em;
+  left: 0.4em;
+}
+
+.key--bottom-right > * {
+  position: absolute;
+  text-align: right;
+  bottom: 0.4em;
+  right: 0.4em;
+  white-space:pre;
+}
+
+.key--word > * {
+  font-size: 0.8em;
+}
+
+/* Special characters - right side */
+.key--letter > div {
+  font-size: 1.0em;
+  height: 1.2em;
+  float: right;
+  clear: right;
+}
+
+/* Special character - lower right */
+.key--letter > div:first-child {
+  margin-top: -0.2em;
+}
+
+/* Shift character - left side */
+.key--letter > span {
+  font-size: 1.0em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+  margin-top: -0.25em;
+  margin-left: 0.1em;
+}
+
+/* Normal character - lower left */
+.key--letter > span:last-child {
+  margin-top: 1.0em;
+}
+
+/* Light keyboard */
+
+.keyboard.keyboard--light .keyboard--row > * {
+  background: #ccc;
+  color: #111;
+  border: 1px solid #888;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .keyboard--row > .key--letter {
+  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
+  background: #f0f0f0;
+  box-shadow: 0 0.2em 0 0.05em #666;
+  border-bottom-color: #ddd;
+}
+
+.keyboard.keyboard--light .key--letter > span {
+  color: black
+}
+
+.keyboard.keyboard--light .key--letter span.charis {
+  font-family: 'Charis SIL', CharisSILWeb, serif;
+  font-size: 1.1em;
+}
+
+.keyboard.keyboard--light .key--letter span.spec {
+  color: gray
+}
+
+.keyboard.keyboard--light .key--letter span.specTd {
+  color: #9400D3
+}
+
+.img-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: flex-start;
+  margin: 0.5em 0;
+}
+
+.scheherazade {
+  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
+  font-size: 1.2em;
+}
+
+/* A key cap named in running text is a picture of a key, so it must read the
+   way the key actually looks in the app, which is not the same as the order
+   the characters are stored in: the app lays the label out RTL, so the stored
+   "1 ؟ «" appears on the key as "؟ 1 «". Each character sits in its own
+   inline-block so the browser cannot reorder them again, and the order written
+   here is the order the reader sees. If a key label changes, check it against
+   a screenshot of the app rather than reasoning about bidi. */
+.keycap {
+  font-family: 'Scheherazade New', ScheherazadeNewWeb, ’Times New Roman’, serif;
+  font-size: 1.1em;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  display: inline-block;
+  border: 1px solid #888;
+  border-bottom-width: 2px;
+  border-radius: 0.25em;
+  background: #f0f0f0;
+  color: #111;
+  padding: 0.05em 0.4em 0.1em;
+  line-height: 1.4;
+  vertical-align: baseline;
+}
+
+.keycap > i {
+  display: inline-block;
+  font-style: normal;
+  unicode-bidi: isolate;
+}
+
+.keycap > i + i { margin-left: 0.35em; }
+
+/* A table cell listing the characters hidden under a key must read in the
+   order the flick menu offers them. Two Arabic letters in a plain string are
+   laid out RTL and so appear reversed; a box each stops that. */
+.seq > i {
+  display: inline-block;
+  font-style: normal;
+  unicode-bidi: isolate;
+}
+
+.seq > i + i { margin-left: 0.4em; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.246.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\HENADMACT\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Soqotri</Name>
-    <Copyright URL="">(C) 2019-2020 SIL International</Copyright>
+    <Copyright URL="">(C) SIL Global</Copyright>
     <WebSite URL="https://keyman.com/">https://keyman.com/</WebSite>
-    <Description>This is the Soqotri (Arabic) keyboard</Description>
+    <Description URL="">&gt;لوحة المفاتيح هذه مجعولة للكتابة باللغة السقطرية.
+
+This keyboard was developed for entering Soqotri.</Description>
   </Info>
   <Files>
     <File>
@@ -72,14 +75,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</Name>
+      <Description>Font KbdArabScheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Soqotri</Name>
       <ID>soqotri_arabic</ID>
-      <Version>1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdarab\KbdArabScheherazade.ttf</OSKFont>
       <Languages>
-        <Language ID="sqt-Arab">Soqotri (Arabic)</Language>
+        <Language ID="sqt">Soqotri</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

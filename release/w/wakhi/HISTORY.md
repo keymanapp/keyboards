@@ -1,6 +1,10 @@
 Wakhi Change History
 ====================
 
+3.0.1 (2026-03-10)
+----------------
+* Add KbdArab.json and KbdArabScheherazade for better display
+
 3.0 (2025-02-20)
 ----------------
 * Move to Keyman github repo

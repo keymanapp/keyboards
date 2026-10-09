@@ -1,6 +1,14 @@
 SIL Yi Keyboard Change History
 =======================
 
+2.0.1 (02 Oct 2026)
+--------------------
+* Rename T_BKSP to K_BKSP
+
+2.0 (06 Nov 2025)
+--------------------
+* Add tablet touch layout (and remove phone touch layout)
+
 1.3.1 (21 Oct 2022)
 --------------------
 * Fix keyboard to only support the Northern Yi dialect family ii-Yiii, variously called Nuosu Yi, Nosu Yi, Sichuan Yi, 
@@ -71,3 +79,4 @@ Liangshan Yi, Standard Yi
 -----------------
 * Intial version of keyboard layout for Keyman 5.0
 * calls Unicode codepoints for Yi characters
+

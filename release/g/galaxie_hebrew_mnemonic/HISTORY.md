@@ -1,5 +1,8 @@
 # Galaxie Hebrew (Mnemonic) Keyboard Change History
 
+## 3.3.2 (9 Mar 2026)
+* Revert display font for better OSK display
+
 ## 3.3.1 (30 Oct 2024)
 * Change to use KbdHebr display font for better OSK display
 
