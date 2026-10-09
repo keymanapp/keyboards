@@ -66,8 +66,18 @@ c Tilde shortcuts (dra-iso-15919-itrans.mim ~N/~n). Distinct contexts; order-fre
 "~" + "n"	>	"ñ"	c ~n
 "~" + "N"	>	"ṅ"	c ~N
 
-c Dravidian ḻ: "L" + "H" (dra-iso-15919-itrans.mim LH). Must precede + "H".
-"L" + "H"	>	"ḻ"	c LH
+c Tamil H-sandhi (mirroring the Tamil rules of optitrans_kannada_sanskrit:
+c "ऋ" + "H" > "ऱ्", "ळ्" + "H" > "ऴ्", "न्" + "H" > "ऩ्",
+c "णृ" + "H" > "ऩ्ऱ्", "नृ" + "H" > "ऩ्ऱ्", "ॠ" + "H" > "ऱ्ऱ्", "र्" + "H" > "ऱ्").
+c Contexts must be converted text: an ASCII "L" + "H" rule would never fire
+c ("L" becomes "ḷ" the moment it is typed).
+"ṇr̥" + "H"	>	"ṉṛ"	c cf. णृ + H
+"nr̥" + "H"	>	"ṉṛ"	c cf. नृ + H
+"r̥̄" + "H"	>	"ṛṛ"	c cf. ॠ + H
+"r̥" + "H"	>	"ṛ"	c cf. ऋ + H
+"ḷ" + "H"	>	"ḻ"	c LH (dra-iso-15919-itrans.mim)
+"n" + "H"	>	"ṉ"	c cf. न् + H
+"r" + "H"	>	"ṛ"	c cf. र् + H
 
 c Vowel modifiers. ("ō" + "M" must precede + "M".)
 "ō" + "M"	>	"ōṁ"	c OM (before + "M")
@@ -103,7 +113,7 @@ c (No bare +k/+g/+j/+r/+y rules exist, so these are order-free.)
 "." + "j"	>	"z"	c .j
 "." + "r"	>	"ṛ"	c .r (dra-iso-15919-itrans.mim)
 "." + "y"	>	"ẏ"	c .y
-";" + "n"	>	"ṉ"	c (mim :n)
+";" + "n"	>	"ṉ"	c ;n (cf. mim :n)
 
 c Aspirates and sibilant mergers (mirroring optitrans_kannada_sanskrit).
 c The two-character-context rules come first: otherwise "c" + "h" would
