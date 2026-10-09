@@ -1,12 +1,8 @@
 Paleohispanic keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
-Paleohispanic
-
 This keyboard is designed for typing the Iberian language, using the Northern Paleohispanic script.
 
 Iberian was a pre-roman language spoken in the Iberian Peninsula region of Spain and Portugal from before the 7th to 1rd century BC.
