@@ -3,7 +3,7 @@ Phonetic Hebrew keyboard
 
 Description
 -----------
-The Phonetic Hebrew keyboard is designed by assigning the letters to the most similar sound of the English keys or appearance to type the Ancient Hebrew language.
+The Phonetic Hebrew keyboard is designed by assigning the letters to the most similar sound of the English keys or appearance to type the Hebrew language.
 
 Links
 -----

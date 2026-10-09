@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.252.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.253.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -39,12 +39,6 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>welcome\documentation.pdf</Name>
-      <Description>File documentation.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -63,40 +57,10 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-Bold.otf</Name>
-      <Description>Font David CLM Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
       <Name>Jerusalem.jpeg</Name>
       <Description>File Jerusalem.jpeg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpeg</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-BoldItalic.otf</Name>
-      <Description>Font David CLM Bold Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-Medium.otf</Name>
-      <Description>Font David CLM Medium</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-MediumItalic.otf</Name>
-      <Description>Font David CLM Medium Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\hebr\david-clm\GNU-GPL</Name>
-      <Description>File GNU-GPL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType></FileType>
     </File>
     <File>
       <Name>..\build\phonetic_hebrew.js</Name>
@@ -116,12 +80,48 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-Bold.otf</Name>
+      <Description>Font David CLM Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-BoldItalic.otf</Name>
+      <Description>Font David CLM Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-Medium.otf</Name>
+      <Description>Font David CLM Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-MediumItalic.otf</Name>
+      <Description>Font David CLM Medium Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\david\GNU-GPL.txt</Name>
+      <Description>File GNU-GPL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\clm\ashkenaz\stam_ashkenaz.ttf</Name>
+      <Description>Font Stam Ashkenaz CLM Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>phonetic_hebrew</ID>
-      <OSKFont>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-Bold.otf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\hebr\david-clm\DavidCLM-Bold.otf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-Bold.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\hebr\clm\david\DavidCLM-Bold.otf</DisplayFont>
       <Languages>
         <Language ID="he-Hebr-IL">Hebrew (Hebrew, Israel)</Language>
         <Language ID="hbo-Hebr-IL">Ancient Hebrew (Hebrew, Israel)</Language>
