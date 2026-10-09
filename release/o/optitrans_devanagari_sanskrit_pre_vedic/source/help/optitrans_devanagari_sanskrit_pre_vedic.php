@@ -30,7 +30,7 @@ END;
 <p>nk-&gt;ङ्क्, nkh-&gt;ङ्ख्, ng-&gt;ङ्ग्, ngh-&gt;ङ्घ्
     nch-&gt;ञ्च्, nCh-&gt;ञ्छ्, nc-&gt;ञ्च्, nC-&gt;ञ्छ्, nchh-&gt;ञ्छ्,
     nj-&gt;ञ्ज्, njh-&gt;ञ्झ्, nT-&gt;ण्ट्, nTh-&gt;ण्ठ्, nD-&gt;ण्ड्, nDh-&gt;ण्ढ्
-    c-&gt;च्, C-&gt;छ्, z-&gt;श्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&gt;ऋ</p>
+    c-&gt;च्, C-&gt;छ्, z-&gt;ज़्, S-&gt;ष्, jn-&gt;ज्ञ्, R-&gt;ऋ</p>
 <p>Examples: Type <code>saMskRta</code> for संस्कृत.</p>
 <h2 id="details">Details</h2>
 <ul>

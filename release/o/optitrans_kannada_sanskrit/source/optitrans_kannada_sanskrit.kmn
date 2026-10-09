@@ -1,0 +1,224 @@
+﻿store(&VERSION) "10.0" 
+store(&NAME) 'Kannada Sanskrit Phonetic (OPTITRANS)'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Sanskrit Coders'
+store(&MESSAGE) 'A Phonetic Kannada (OPTITRANS) keyboard with support for Pre-Vedic Sanskrit.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&BITMAP) 'optitrans_kannada_sanskrit.ico'
+store(&VISUALKEYBOARD) 'optitrans_kannada_sanskrit.kvks'
+store(&LAYOUTFILE) 'optitrans_kannada_sanskrit.keyman-touch-layout'
+
+begin Unicode	>	use(main)
+group(main) using keys
+
+
+"." + " "	>	"। "
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॰"	c	DEVANAGARI ABBREVIATION SIGN
+"॰" + "."	>	"…"	c four dots for a HORIZONTAL ELLIPSIS
+"." + ","	>	"॥"	c DOUBLE DANDA
+"," + "."	>	"॥"	c DOUBLE DANDA
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+">" + ">"	>	"→"
+"<" + "<"	>	"←"
+
+c	COMMON VEDIC MARKS
+"'" + "'"	>	"᳓"	c DEVANAGARI STRESS SIGN KARSHANA, used for UDATTA - ''
+"᳓" + "'"	>	"᳙"	c VEDIC SVATANTRA SVARITA - '''
+"!" + "!"	>	"॑"	c VEDIC SVARITA - !!
++ "_"	>	"॒"	c ANUDATTA
+
+"p" + "H"	>	"ೲ"	c VEDIC SIGN UPADHMANIYA
+"k" + "H"	>	"ೱ"	c VEDIC SIGN JIHVAMULIYA
+
+c	numbers - Kannada Digits
+store(Digits)	"0"		"1"		"2"		"3"		"4"		"5"		"6"		"7"		"8"		"9"
+store(DigitsU)	"೦"		"೧"		"೨"		"೩"		"೪"		"೫"		"೬"		"೭"		"೮"		"೯"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+
+c standalone vowel signs with .
+"." + "A"	>	"ಾ"
+".A" + "i"	>	"ೈ"
+".A" + "u"	>	"ೌ"
+"." + "i"	>	"ಿ"
+"." + "I"	>	"ೀ"
+"." + "u"	>	"ು"
+"." + "U"	>	"ೂ"
+"." + "e"	>	"ೆ"
+".e" + "a"	>	"ೆ"
+"." + "o"	>	"ೊ"
+"." + "E"	>	"ೇ"
+"." + "O"	>	"ೋ"
+"." + "a"	>	"ಽ"
+"ಽ" + "a"	>	"ಾ"
+"ಽ" + "i"	>	"ೈ"
+"ಽ" + "u"	>	"ೌ"
+"ಿ" + "i"	>	"ೀ"
+"ು" + "u"	>	"ೂ"
+"ೆ" + "e"	>	"ೇ"
+"ೊ" + "o"	>	"ೋ"
+"." + "R"	>	"ೃ"
+"ೃ" + "R"	>	"ೄ" c .RR
+".L" + "i"	>	"ೢ"
+".LL" + "I"	>	"ೣ" 
+"ೢ" + "i"	>	"ೣ" c .LLii
+"." + "h"	>	"್"
+
+c Independent Vowels
++ "a"	>	"ಅ"
+"ಅ" + "a"	>	"ಆ"
+"ಅ" + "i"	>	"ಐ"
+"ಅ" + "u"	>	"ಔ"
++ "A"	>	"ಆ"
++ "i"	>	"ಇ"
+"ಇ" + "i"	>	"ಈ"
++ "I"	>	"ಈ"
++ "u"	>	"ಉ"
+"ಉ" + "u"	>	"ಊ"
++ "e"	>	"ಎ"
+"ಎ" + "e"	>	"ಏ"
+"ಒ" + "o"	>	"ಓ"
+"ಅ" + "e"	>	"ಎ"
+"ಆ" + "i"	>	"ಐ"
+"ಆ" + "u"	>	"ಔ"
++ "o"	>	"ಒ"
++ "O"	>	"ಓ"
++ "R"	>	"ಋ" c R
+"ಋ" + "R"	>	"ೠ" c RR
+"ಳ್ಳ್" + "i"	>	"ಌ"
+"ಳ್ಳ್" + "I"	>	"ೡ" 
+
+c Vowel Modifiers
++ "H"	>	"ಃ" c VISARGA - H
++ "M"	>	"ಂ" c ANUSVARA - M
+"." + "N"	>	"ಁ"	c CHANDRABINDU
+
+c Consonants
++ "b"	>	"ಬ್"
++ "B"	>	"ಭ್"
++ "c"	>	"ಚ್"
++ "C"	>	"ಛ್"
++ "d"	>	"ದ್"
++ "D"	>	"ಡ್"
++ "g"	>	"ಗ್"
++ "G"	>	"ಘ್"
++ "h"	>	"ಹ್"
++ "j"	>	"ಜ್"
++ "J"	>	"ಝ್"
++ "k"	>	"ಕ್"
++ "K"	>	"ಖ್"
++ "l"	>	"ಲ್"
++ "L"	>	"ಳ್"
++ "m"	>	"ಮ್"
+"ಜ್" + "n"	>	"ಜ್ಞ್"
++ "n"	>	"ನ್"
++ "N"	>	"ಣ್"
++ "p"	>	"ಪ್"
++ "P"	>	"ಫ್"
++ "r"	>	"ರ್"
++ "s"	>	"ಸ್"
++ "S"	>	"ಷ್"
++ "t"	>	"ತ್"
++ "T"	>	"ಟ್"
++ "v"	>	"ವ್"
++ "w"	>	"ವ್"
++ "x"	>	"ಕ್ಷ್"
+"ಕ್ಸ್" + "h"	>	"ಕ್ಷ್"
++ "y"	>	"ಯ್"
+
++ "Y"	>	"ಯ಼್"
++ "f"	>	"ಫ಼್"
++ "z"	>	"ಜ಼್"
+
+c The below are useful for tamil & maNipravALa.
+
+"ಋ" + "H"	>	"ಱ್" 
+"ಳ್" + "H"	>	"ೞ್"
+"ನ್" + "H"	>	"ನ಼್"
+"ಣೃ" + "H"	>	"ನ಼್ಱ್"
+"ನೃ" + "H"	>	"ನ಼್ಱ್"
+"ೠ" + "H"	>	"ಱ್ಱ್"
+"ರ್" + "H"	>	"ಱ್"
+
+
+c Nukta with preceding dot
+"." + "k"	>	"ಕ಼್" c .k
+"." + "K"	>	"ಖ಼್" c .k
+"ಕ಼್" + "h"	>	"ಖ಼್" c .kh
+"." + "g"	>	"ಗ಼್" c .g
+"." + "j"	>	"ಜ಼್" c .j
+"ಜ಼್" + "h"	>	"ಝ಼್" c .jh
+"." + "D"	>	"ಡ಼್" c .D
+"ಡ಼್" + "h"	>	"ಢ಼್" c .Dh
+"." + "r"	>	"ಱ್" c .r
+"." + "y"	>	"ಯ಼್" c .y
+";" + "n"	>	"ನ಼್" c .n
+
+c alternate mapping with ~
+"~" + "n"	>	"ಞ್" c ~n
+"~" + "N"	>	"ಙ್" c ~N
+
+c add h to consonants
+"ಕ್" + "h"	>	"ಖ್"
+"ಗ್" + "h"	>	"ಘ್"
+"ಚ್" + "h"	>	"ಚ್" c same c=ch
+"ಛ್" + "h"	>	"ಛ್" c same C=Ch
+"ಜ್" + "h"	>	"ಝ್"
+"ಟ್" + "h"	>	"ಠ್"
+"ಡ್" + "h"	>	"ಢ್"
+"ತ್" + "h"	>	"ಥ್"
+"ದ್" + "h"	>	"ಧ್"
+"ಪ್" + "h"	>	"ಫ್" 
+"ಬ್" + "h"	>	"ಭ್"
+"ಷ್" + "h"	>	"ಷ್" c same S=Sh
+"ಸ್" + "h"	>	"ಶ್"
+
+c special combinations
+"ನ್" + "k"	>	"ಙ್ಕ್"
+"ನ್" + "g"	>	"ಙ್ಗ್"
+"ನ್" + "c"	>	"ಞ್ಚ್"	c direct (was: "nc" intermediate, which leaked into output before vowels, e.g. panca -> ಪncಅ)
+"ನ್" + "C"	>	"ಞ್ಛ್"	c nC
+"ನ್" + "j"	>	"ಞ್ಜ್"
+"ಘ್" + "Y"	>	"ಜ್ಞ್"	
+"ದ್ನ್" + "y"	>	"ಜ್ಞ್"	
+"ಓ" + "M" > "ಓಂ"	c	OM
+
+c Rules for Consonants + Vowel Signs
+
+store(Vyanjana) 'ಕಕ್ಷಖಗಘಙಚಛಜಜ್ಞಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲಳವಶ್ರಷಸಹನ಼ೞಱಕ಼ಖ಼ಗ಼ಜ಼ಡ಼ಢ಼ಫ಼ಯ಼'
+store(NuktaVyanjana) 'ಝ'
+store(ViramaMaatraa) 'eiouAEIORU'
+store(ViramaMaatraaU) "ೆ" "ಿ" "ೊ" "ು" "ಾ" "ೇ" "ೀ" "ೋ" "ೃ" "ೂ"
+store(aPlusMaatraa) 'aiu'
+store(aPlusMaatraaU) "ಾ" "ೈ" "ೌ"
+
+
+any(Vyanjana)"್" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"್" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"್""ಳ್ಳ್" + "i"	>	 index(Vyanjana,1)"ೢ"
+any(Vyanjana)"್""ಳ್ಳ್" + "I"	>	 index(Vyanjana,1)"ೣ"
+any(Vyanjana)"ಿ" + "i"	>	 index(Vyanjana,1)"ೀ"	 c ii
+any(Vyanjana)"ು" + "u"	>	 index(Vyanjana,1)"ೂ"	 c uu
+any(Vyanjana)"ೆ" + "e"	>	 index(Vyanjana,1)"ೇ"	 c ee
+any(Vyanjana)"ೊ" + "o"	>	 index(Vyanjana,1)"ೋ"	 c oo
+any(Vyanjana)"ಾ" + "i"	>	index(Vyanjana,1)"ೈ"	 c ei
+any(Vyanjana)"ಾ" + "u"	>	index(Vyanjana,1)"ೌ"	 c ou
+
+
+any(NuktaVyanjana)"಼""್" + "a"	>	index(NuktaVyanjana,1)"಼"
+any(NuktaVyanjana)"಼" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"಼""್" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"಼" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"಼""ಿ" + "i"	>	 index(NuktaVyanjana,1)"಼""ೀ"	 c ii
+any(NuktaVyanjana)"಼""ಳ್ಳ್" + "i"	>	 index(NuktaVyanjana,1)"಼""ೢ"
+any(NuktaVyanjana)"಼""ಳ್ಳ್" + "I"	>	 index(NuktaVyanjana,1)"಼""ೣ"
+any(NuktaVyanjana)"಼""ು" + "u"	>	 index(NuktaVyanjana,1)"಼""ೂ"	 c uu
+any(NuktaVyanjana)"಼""ೆ" + "e"	>	 index(NuktaVyanjana,1)"಼""ೇ"	 c ee
+any(NuktaVyanjana)"಼""ೊ" + "o"	>	 index(NuktaVyanjana,1)"಼""ೋ"	 c oo
+any(NuktaVyanjana)"಼""ಾ" + "i"	>	index(NuktaVyanjana,1)"಼""ೈ"	 c ei
+any(NuktaVyanjana)"಼""ಾ" + "u"	>	index(NuktaVyanjana,1)"಼""ೌ"	 c ou
+
+c EOF
