@@ -2,6 +2,10 @@ Indonesia Keyboard Layout Change History
 Riwayat Perubahan Tata Letak Papan Tombol Indonesia
 =======================================
 
+2.0.3 (9 Oct 2026)
+---------------------------------
+* Remove the CAPS rules to make the keyboard internally consistent
+
 2.0.2 (6 Jan 2025)
 ---------------------------------
 * Fix touch layout for zxq
