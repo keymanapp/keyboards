@@ -1,0 +1,324 @@
+store(&VERSION) "10.0" 
+store(&NAME) 'Tamil Subscripted Sanskrit Phonetic (OPTITRANS)'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Sanskrit Coders'
+store(&MESSAGE) 'An OPTITRANS-based Tamil-subscripted Sanskrit keyboard (see tamil_subscripted.toml).'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&BITMAP) 'optitrans_tamil_subscripted_sanskrit.ico'
+store(&VISUALKEYBOARD) 'optitrans_tamil_subscripted_sanskrit.kvks'
+store(&LAYOUTFILE) 'optitrans_tamil_subscripted_sanskrit.keyman-touch-layout'
+
+begin Unicode	>	use(main)
+group(main) using keys
+
+
+c Punctuation. Tamil-subscripted uses ASCII full stops for dandas
+c (tamil_subscripted.toml: । -> ".", ॥ -> ".."), so no danda rules are needed.
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+">" + ">"	>	"→"
+"<" + "<"	>	"←"
+"," + "."	>	".."	c DOUBLE DANDA (tamil_subscripted.toml)
+
+c Vedic accents (script-independent, mirrored from optitrans_kannada_sanskrit)
+"'" + "'"	>	"᳓"	c VEDIC KARSHANA, used for UDATTA - ''
+"᳓" + "'"	>	"᳙"	c VEDIC SVATANTRA SVARITA - '''
+"!" + "!"	>	"॑"	c VEDIC SVARITA - !!
++ "_"	>	"॒"	c ANUDATTA
+
+c Jihvamuliya and updhamniya. Converted contexts: an ASCII "k" + "H" rule
+c would never fire ("k" becomes "க்" the moment it is typed).
+"க்" + "H"	>	"ᳵ"	c VEDIC SIGN JIHVAMULIYA (cf. kannada kH)
+"ப்" + "H"	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA (cf. kannada pH)
+
+c Subscript movement: the subscript travels to the end of the akshara
+c (e.g. ge yields கெ₂, not க₃ே). Generated rules: pulli+subscript+V
+c becomes sign+subscript, for each subscript in ₃₄.
+"்₂" + "a"	>	"₂"
+"்₂" + "A"	>	"ா₂"
+"்₂" + "i"	>	"ி₂"
+"்₂" + "I"	>	"ீ₂"
+"்₂" + "u"	>	"ு₂"
+"்₂" + "U"	>	"ூ₂"
+"்₂" + "R"	>	"்ரு₂"
+"்₂" + "E"	>	"ே₂"
+"்₂" + "e"	>	"ெ₂"
+"்₂" + "o"	>	"ொ₂"
+"்₂" + "O"	>	"ோ₂"
+"்₂" + "M"	>	"ம்₂"
+"்₂" + "H"	>	"꞉₂"
+"₂" + "a"	>	"ா₂"
+"₂" + "i"	>	"ை₂"
+"₂" + "u"	>	"ௌ₂"
+"ா₂" + "i"	>	"ை₂"
+"ா₂" + "u"	>	"ௌ₂"
+"ரு₂" + "R"	>	"ரூ₂"
+"்₃" + "a"	>	"₃"
+"்₃" + "A"	>	"ா₃"
+"்₃" + "i"	>	"ி₃"
+"்₃" + "I"	>	"ீ₃"
+"்₃" + "u"	>	"ு₃"
+"்₃" + "U"	>	"ூ₃"
+"்₃" + "R"	>	"்ரு₃"
+"்₃" + "E"	>	"ே₃"
+"்₃" + "e"	>	"ெ₃"
+"்₃" + "o"	>	"ொ₃"
+"்₃" + "O"	>	"ோ₃"
+"்₃" + "M"	>	"ம்₃"
+"்₃" + "H"	>	"꞉₃"
+"₃" + "a"	>	"ா₃"
+"₃" + "i"	>	"ை₃"
+"₃" + "u"	>	"ௌ₃"
+"ா₃" + "i"	>	"ை₃"
+"ா₃" + "u"	>	"ௌ₃"
+"ரு₃" + "R"	>	"ரூ₃"
+"்₄" + "a"	>	"₄"
+"்₄" + "A"	>	"ா₄"
+"்₄" + "i"	>	"ி₄"
+"்₄" + "I"	>	"ீ₄"
+"்₄" + "u"	>	"ு₄"
+"்₄" + "U"	>	"ூ₄"
+"்₄" + "R"	>	"்ரு₄"
+"்₄" + "E"	>	"ே₄"
+"்₄" + "e"	>	"ெ₄"
+"்₄" + "o"	>	"ொ₄"
+"்₄" + "O"	>	"ோ₄"
+"்₄" + "M"	>	"ம்₄"
+"்₄" + "H"	>	"꞉₄"
+"₄" + "a"	>	"ா₄"
+"₄" + "i"	>	"ை₄"
+"₄" + "u"	>	"ௌ₄"
+"ா₄" + "i"	>	"ை₄"
+"ா₄" + "u"	>	"ௌ₄"
+"ரு₄" + "R"	>	"ரூ₄"
+
+c Vowels after subscripted -r clusters (dri, kri and the like): without these,
+c the aPlus rule below would turn "i" into "ை" and "u" into "ௌ".
+"்₂ர்" + "i"	>	"்₂ரி"
+"்₃ர்" + "i"	>	"்₃ரி"
+"்₄ர்" + "i"	>	"்₄ரி"
+"்₂ர்" + "u"	>	"்₂ரு"
+"்₃ர்" + "u"	>	"்₃ரு"
+"்₄ர்" + "u"	>	"்₄ரு"
+
+c Doubling after subscripted signs (dee/doo/dii/duu): without these, the
+c second vowel would fall through to the independent vowel (தெ₃எ).
+"ெ₂" + "e"	>	"ே₂"
+"ெ₃" + "e"	>	"ே₃"
+"ெ₄" + "e"	>	"ே₄"
+"ொ₂" + "o"	>	"ோ₂"
+"ொ₃" + "o"	>	"ோ₃"
+"ொ₄" + "o"	>	"ோ₄"
+"ி₂" + "i"	>	"ீ₂"
+"ி₃" + "i"	>	"ீ₃"
+"ி₄" + "i"	>	"ீ₄"
+"ு₂" + "u"	>	"ூ₂"
+"ு₃" + "u"	>	"ூ₃"
+"ு₄" + "u"	>	"ூ₄"
+
+c Standalone vowel signs with "." (mirroring optitrans_kannada_sanskrit:
+c .A -> ா, .i -> ி and so on). Each must precede its bare +X rule below.
+"." + "A"	>	"ா"
+"." + "i"	>	"ி"
+"." + "I"	>	"ீ"
+"." + "u"	>	"ு"
+"." + "U"	>	"ூ"
+"." + "e"	>	"ெ"
+"." + "E"	>	"ே"
+"." + "o"	>	"ொ"
+"." + "O"	>	"ோ"
+"." + "R"	>	"்ரு₂"
+"." + "L"	>	"ள்"
+"." + "a"	>	"(அ)"	c avagraha (tamil_subscripted.toml)
+"(அ)" + "a"	>	"ா"	c .aa
+"(அ)" + "i"	>	"ை"	c .ai
+"(அ)" + "u"	>	"ௌ"	c .au
+"ா" + "i"	>	"ை"	c .Ai (safe: "kai" matches the longer TV-rule instead)
+"ா" + "u"	>	"ௌ"	c .Au
+"ெ" + "e"	>	"ே"	c .ee
+"ொ" + "o"	>	"ோ"	c .oo
+"ி" + "i"	>	"ீ"	c .ii
+"ு" + "u"	>	"ூ"	c .uu
+
+c Independent vowels
++ "a"	>	"அ"
+"அ" + "a"	>	"ஆ"
+"அ" + "i"	>	"ஐ"
+"அ" + "u"	>	"ஔ"
++ "A"	>	"ஆ"
+"ள்ள்" + "i"	>	"லு₂"	c LLi (before + "i")
+"ள்ள்" + "I"	>	"லூ₂"	c LLI (before + "I")
++ "i"	>	"இ"
+"இ" + "i"	>	"ஈ"
++ "I"	>	"ஈ"
++ "u"	>	"உ"
+"உ" + "u"	>	"ஊ"
++ "U"	>	"ஊ"
++ "e"	>	"எ"
++ "E"	>	"ஏ"	c standalone long-e (the template lacks this; without it "E" stays Latin)
+"எ" + "e"	>	"ஏ"
+"அ" + "e"	>	"எ"	c cf. kannada short-e
++ "o"	>	"ஒ"
++ "O"	>	"ஓ"
+"ஒ" + "o"	>	"ஓ"
++ "R"	>	"ரு₂"	c R (tamil_subscripted.toml)
+"ரு₂" + "R"	>	"ரூ₂"	c RR (before + "R")
++ "L"	>	"ள்"	c consonant La; vocalic l via LLi above
+
+c (Avagraha "." + "a" lives in the standalone-sign block above.)
+
+c Tamil H-sandhi (mirroring the Tamil rules of optitrans_kannada_sanskrit:
+c "ऋ" + "H" > "ऱ்", "ळ्" + "H" > "ऴ्", "न्" + "H" > "ऩ्",
+c "णृ" + "H" > "ऩ्ऱ्", "नृ" + "H" > "ऩ्ऱ्", "ॠ" + "H" > "ऱ्ऱ्", "र्" + "H" > "ऱ्").
+c Converted contexts ("ர்" + "H", not ASCII "r" + "H").
+"ண்ரு₂" + "H"	>	"ன்ற்"	c cf. णृ + H
+"ந்ரு₂" + "H"	>	"ன்ற்"	c cf. नृ + H
+"ரூ₂" + "H"	>	"ற்ற்"	c cf. ॠ + H
+"ரு₂" + "H"	>	"ற்"	c cf. ऋ + H
+"ள்" + "H"	>	"ழ்"	c cf. ळ् + H
+"ந்" + "H"	>	"ன்"	c cf. न् + H
+"ர்" + "H"	>	"ற்"	c cf. र् + H
+
+c Vowel modifiers (tamil_subscripted.toml yogavaahas)
+"ஓ" + "M"	>	"ௐ"	c OM (before + "M")
++ "M"	>	"ம்₂"	c ANUSVARA - M
++ "H"	>	"꞉"	c VISARGA - H
+"." + "N"	>	"ம்₃"	c CHANDRABINDU (before + "N")
+
+c Special combinations (mirroring optitrans_kannada_sanskrit; converted contexts).
+c These precede the bare +X rules below.
+"ந்" + "k"	>	"ங்க்"	c nk
+"ந்" + "g"	>	"ங்க்₃"	c ng
+"ந்" + "c"	>	"ஞ்ச்"	c nc (direct; never an "nc" intermediate)
+"ந்" + "C"	>	"ஞ்ச்₂"	c nC (before + "C")
+"ந்" + "j"	>	"ஞ்ஜ்"	c nj
+"ந்" + "T"	>	"ண்ட்"	c nT
+"ந்" + "D"	>	"ண்ட்₃"	c nD
+"ந்" + "d"	>	"ந்த்₃"	c nd
+"ம்" + "b"	>	"ம்ப்₃"	c mb
+"ஜ்" + "n"	>	"ஜ்ஞ்"	c jn (before + "n")
+"த்₃ந்" + "y"	>	"ஜ்ஞ்"	c dny (d is subscripted; plain த்ந் from "tn" falls through)
+"க்₄" + "Y"	>	"ஜ்ஞ்"	c GY (before + "Y"; G gives க்₄)
+"க்ஸ்" + "h"	>	"க்ஷ்"	c ksh
+"ங்க்" + "h"	>	"ங்க்₂"	c nkh
+"ங்க்₃" + "h"	>	"ங்க்₄"	c ngh
+"ஞ்ச்₂" + "h"	>	"ஞ்ச்₂"	c nCh (absorb h, cf. ச்₂ + h)
+
+c Nukta / Perso-Arabic loans (tamil_subscripted.toml extra_consonants).
+c Before the bare rules below.
+"." + "k"	>	"ஃ₂க்"	c .k
+"." + "K"	>	"ஃக்₂"	c .K (before + "K")
+"." + "g"	>	"ஃக்₃"	c .g (before + "G")
+"." + "j"	>	"ஃஜ்"	c .j (before + "J")
+"." + "D"	>	"ஃட்₂"	c .D (before + "D")
+"ஃட்₂" + "h"	>	"ஃட்₃"	c .Dh
+"." + "r"	>	"ற்"	c .r (before + "r")
+"." + "y"	>	"ஃய்"	c .y (before + "y")
+";" + "n"	>	"ன்"	c ;n
+".ப்" + "h"	>	"ஃப்"	c .ph (3cp context first)
+
+c Consonants (tamil_subscripted.toml). Halanta forms; unmatched keys pass through.
++ "k"	>	"க்"
++ "K"	>	"க்₂"
++ "g"	>	"க்₃"
++ "G"	>	"க்₄"
++ "c"	>	"ச்"
++ "C"	>	"ச்₂"
++ "j"	>	"ஜ்"
++ "J"	>	"ஜ்₂"
++ "T"	>	"ட்"
++ "D"	>	"ட்₃"
++ "N"	>	"ண்"
++ "t"	>	"த்"
++ "d"	>	"த்₃"	c voiced dental takes subscript 3 (tamil_subscripted.toml)
++ "p"	>	"ப்"
++ "P"	>	"ப்₂"
++ "b"	>	"ப்₃"
++ "B"	>	"ப்₄"
++ "m"	>	"ம்"
++ "y"	>	"ய்"
++ "r"	>	"ர்"
++ "l"	>	"ல்"
++ "L"	>	"ள்"
++ "v"	>	"வ்"
++ "w"	>	"வ்"
++ "s"	>	"ஸ்"
++ "S"	>	"ஷ்"
++ "n"	>	"ந்"
++ "x"	>	"க்ஷ்"
++ "f"	>	"ஃப்"
++ "z"	>	"ஃஜ்"
++ "Y"	>	"ஃய்"
+
+c Aspirates and sibilant mergers. "th" gives த்₂ (tha), "dh" gives த்₄ (dha).
+"த்" + "h"	>	"த்₂"	c th
+"க்" + "h"	>	"க்₂"	c kh
+"ச்" + "h"	>	"ச்"	c same c=ch
+"ச்₂" + "h"	>	"ச்₂"	c same C=Ch
+"ஜ்" + "h"	>	"ஜ்₂"	c jh
+"ட்" + "h"	>	"ட்₂"	c Th
+"ட்₃" + "h"	>	"ட்₄"	c Dha
+"த்₃" + "h"	>	"த்₄"	c dha
+"ப்" + "h"	>	"ப்₂"	c ph
+"ப்₃" + "h"	>	"ப்₄"	c bha (Bha)
+"க்₃" + "h"	>	"க்₄"	c Gha
+"ஸ்" + "h"	>	"ஶ்"	c sh
+"ஷ்" + "h"	>	"ஷ்"	c same S=Sh
+"." + "h"	>	"்"	c explicit pulli
++ "h"	>	"ஹ்"	c plain ha (last: specific key-h rules above take precedence)
+
+c Consonant + vowel-sign rules (mirroring optitrans_kannada_sanskrit numbering)
+store(TVyanjana) 'கஙசஜஞடணதநபமயரலளவழறனஶஷஸஹ'
+store(TViramaMaatraa) 'eiouAEIOU'
+c No R here: its sign ்்ரு₂ is multi-char, and index() misaligns on those.
+c R is handled by explicit per-base rules below.
+store(TViramaMaatraaU) "ெ" "ி" "ொ" "ு" "ா" "ே" "ீ" "ோ" "ூ"
+store(TaPlusMaatraa) 'aiu'
+store(TaPlusMaatraaU) "ா" "ை" "ௌ"
+
+any(TVyanjana)"்" + "a"	>	index(TVyanjana,1)
+any(TVyanjana) + any(TaPlusMaatraa) 	>	context index(TaPlusMaatraaU,2) 
+any(TVyanjana)"்" + any(TViramaMaatraa) 	>	index(TVyanjana,1) index(TViramaMaatraaU,3) 
+c Explicit vocalic-R rules, one per base: the sign ்ரு₂ cannot live in
+c TViramaMaatraaU (index() misaligns on multi-char entries).
+c cf. dra-iso-15919 / tamil_subscripted.toml ृ -> ்்ரு₂.
+"க்" + "R"	>	"க்ரு₂"
+"ங்" + "R"	>	"ங்ரு₂"
+"ச்" + "R"	>	"ச்ரு₂"
+"ஜ்" + "R"	>	"ஜ்ரு₂"
+"ஞ்" + "R"	>	"ஞ்ரு₂"
+"ட்" + "R"	>	"ட்ரு₂"
+"ண்" + "R"	>	"ண்ரு₂"
+"த்" + "R"	>	"த்ரு₂"
+"ந்" + "R"	>	"ந்ரு₂"
+"ப்" + "R"	>	"ப்ரு₂"
+"ம்" + "R"	>	"ம்ரு₂"
+"ய்" + "R"	>	"ய்ரு₂"
+"ர்" + "R"	>	"ர்ரு₂"
+"ல்" + "R"	>	"ல்ரு₂"
+"ள்" + "R"	>	"ள்ரு₂"
+"வ்" + "R"	>	"வ்ரு₂"
+"ழ்" + "R"	>	"ழ்ரு₂"
+"ற்" + "R"	>	"ற்ரு₂"
+"ன்" + "R"	>	"ன்ரு₂"
+"ஶ்" + "R"	>	"ஶ்ரு₂"
+"ஷ்" + "R"	>	"ஷ்ரு₂"
+"ஸ்" + "R"	>	"ஸ்ரு₂"
+"ஹ்" + "R"	>	"ஹ்ரு₂"
+any(TVyanjana)"்""ள்ள்" + "i"	>	 index(TVyanjana,1)"்லு₂"
+any(TVyanjana)"்""ள்ள்" + "I"	>	 index(TVyanjana,1)"்லூ₂"
+any(TVyanjana)"ி" + "i"	>	 index(TVyanjana,1)"ீ"	 c ii
+any(TVyanjana)"ு" + "u"	>	 index(TVyanjana,1)"ூ"	 c uu
+any(TVyanjana)"ெ" + "e"	>	 index(TVyanjana,1)"ே"	 c ee
+any(TVyanjana)"ொ" + "o"	>	 index(TVyanjana,1)"ோ"	 c oo
+any(TVyanjana)"ா" + "i"	>	index(TVyanjana,1)"ை"	 c Ai
+any(TVyanjana)"ா" + "u"	>	index(TVyanjana,1)"ௌ"	 c Au
+
+c Numbers - Tamil digits (tamil_subscripted.toml)
+store(Digits)	"0"		"1"		"2"		"3"		"4"		"5"		"6"		"7"		"8"		"9"
+store(DigitsT)	"௦"		"௧"		"௨"		"௩"		"௪"		"௫"		"௬"		"௭"		"௮"		"௯"
++ any(Digits)	>	index(DigitsT,1)
+any(DigitsT) + [K_BKSP]	>	index(Digits,1)
+
+c EOF
