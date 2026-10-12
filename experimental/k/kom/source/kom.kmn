@@ -1,0 +1,47 @@
+﻿c Kom (Cameroon, Grassfields) keyboard
+c AltGr+I = i-bar, AltGr+N = eng, AltGr+' = glottal stop,
+c AltGr+` = low tone, AltGr+6 = falling tone
+
+store(&VERSION) '10.0'
+store(&NAME) 'Kom (Cameroon)'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'kom.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(base)  'aeiouAEIOU'
+store(grave) 'àèìòùÀÈÌÒÙ'
+store(circ)  'âêîôûÂÊÎÔÛ'
+
+any(base) + [RALT K_BKQUOTE] > index(grave,1)
+any(base) + [RALT K_6] > index(circ,1)
++ [RALT K_BKQUOTE] > U+0300
++ [RALT K_6] > U+0302
+
++ [RALT K_I] > U+0268
++ [SHIFT RALT K_I] > U+0197
++ [RALT K_N] > U+014B
++ [SHIFT RALT K_N] > U+014A
++ [RALT K_QUOTE] > U+2019
+
+c Touch keys: i-bar with tone marks
++ [T_IBG] > U+0268 U+0300
++ [T_IBF] > U+0268 U+0302
++ [T_IBG_UC] > U+0197 U+0300
++ [T_IBF_UC] > U+0197 U+0302
+c Digraph keys on the phone
++ [T_AE] > 'ae'
++ [T_OE] > 'oe'
++ [T_UE] > 'ue'
++ [T_CH] > 'ch'
++ [T_GH] > 'gh'
++ [T_NY] > 'ny'
++ [T_AE_UC] > 'AE'
++ [T_OE_UC] > 'OE'
++ [T_UE_UC] > 'UE'
++ [T_CH_UC] > 'Ch'
++ [T_GH_UC] > 'Gh'
++ [T_NY_UC] > 'Ny'
