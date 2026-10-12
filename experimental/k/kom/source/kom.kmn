@@ -1,4 +1,4 @@
-﻿c Kom (Cameroon, Grassfields) keyboard
+c Kom (Cameroon, Grassfields) keyboard
 c AltGr+I = i-bar, AltGr+N = eng, AltGr+' = glottal stop,
 c AltGr+` = low tone, AltGr+6 = falling tone
 
@@ -7,6 +7,8 @@ store(&NAME) 'Kom (Cameroon)'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'kom.keyman-touch-layout'
+store(&BITMAP) 'kom.ico'
+store(&VISUALKEYBOARD) 'kom.kvks'
 
 begin Unicode > use(main)
 
@@ -39,9 +41,9 @@ c Digraph keys on the phone
 + [T_CH] > 'ch'
 + [T_GH] > 'gh'
 + [T_NY] > 'ny'
-+ [T_AE_UC] > 'AE'
-+ [T_OE_UC] > 'OE'
-+ [T_UE_UC] > 'UE'
-+ [T_CH_UC] > 'Ch'
-+ [T_GH_UC] > 'Gh'
-+ [T_NY_UC] > 'Ny'
++ [SHIFT T_AE_UC] > 'AE'
++ [SHIFT T_OE_UC] > 'OE'
++ [SHIFT T_UE_UC] > 'UE'
++ [SHIFT T_CH_UC] > 'Ch'
++ [SHIFT T_GH_UC] > 'Gh'
++ [SHIFT T_NY_UC] > 'Ny'
