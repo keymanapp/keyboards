@@ -1,9 +1,12 @@
 BU Phonetic Change History
 ====================
 
-2.1.1 (2026-10-08)
+2.1.1 (2026-10-12)
 ------------------
-* 
+* Removed ANSI rules
+* Removed rules for linebreaking
+* Removed saltillo hack
+* Updated documentation to remove references to ANSI, etc.
 
 2.1 (2023-10-09)
 ------------------
