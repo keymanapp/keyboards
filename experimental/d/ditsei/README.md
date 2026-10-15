@@ -1,7 +1,7 @@
 Ditsei Keyboard / Teclado Ditsei
 ==============
 
-© 2025 Joshua Price
+© Joshua Price
 
 Description
 -----------
