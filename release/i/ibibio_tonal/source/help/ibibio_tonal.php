@@ -31,10 +31,6 @@ Ibibio (ibb) is spoken in Akwa Ibom State, Nigeria.</p>
 Example: <b>o ; ]</b> gives <b>ọ́</b>, and <b>m [</b> gives <b>m̀</b>.</p>
 <p>On touch devices, use the five tone keys in the top row.</p>
 
-<h2>Desktop Keyboard layouts</h2>
-<div id='osk' data-states='default shift'>
-</div>
-
 <h2>Touch Keyboard layouts</h2>
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
