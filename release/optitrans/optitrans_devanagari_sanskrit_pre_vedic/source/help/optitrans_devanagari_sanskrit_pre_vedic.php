@@ -250,6 +250,26 @@ Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inheren
     </tbody>
 </table>
 
+<h3>Perso-Arabic and other loans</h3>
+<p>Nukta (़) letters for Perso-Arabic loans, plus <samp>ऱ्</samp>, are typed with a leading <kbd>.</kbd>. A few also have a bare key. As elsewhere, the forms below are halanta (add a vowel key for the signed form).</p>
+<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+    <tbody>
+    <tr>
+        <td>क़्</td><td>.k</td><td></td>
+        <td>ख़्</td><td>.K</td><td></td>
+        <td>ग़्</td><td>.g</td><td></td>
+        <td>ज़्</td><td>.j / z</td><td></td>
+        <td>ड़्</td><td>.D</td><td></td>
+    </tr>
+    <tr>
+        <td>य़्</td><td>.y / Y</td><td></td>
+        <td>फ़्</td><td>f</td><td></td>
+        <td>ऱ्</td><td>.r</td><td></td>
+    </tr>
+    </tbody>
+</table>
+
+
 <h2>Consonantal Diacritics</h2>
 
 <p>Arranged with the vowels are two consonantal diacritics, the final nasal anusvāra ं 

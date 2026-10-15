@@ -241,6 +241,26 @@ Kannada. 'ka' is without any added vowel sign, where the vowel 'a' is inherent.<
     </tbody>
 </table>
 
+<h3>Perso-Arabic and other loans</h3>
+<p>Nukta (಼) letters for Perso-Arabic loans, plus the Tamil <samp>ಱ್</samp>, are typed with a leading <kbd>.</kbd>. A few also have a bare key. As elsewhere, the forms below are halanta (add a vowel key for the signed form).</p>
+<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+    <tbody>
+    <tr>
+        <td>ಕ಼್</td><td>.k</td><td></td>
+        <td>ಖ಼್</td><td>.K</td><td></td>
+        <td>ಗ಼್</td><td>.g</td><td></td>
+        <td>ಜ಼್</td><td>.j / z</td><td></td>
+        <td>ಡ಼್</td><td>.D</td><td></td>
+    </tr>
+    <tr>
+        <td>ಯ಼್</td><td>.y / Y</td><td></td>
+        <td>ಫ಼್</td><td>f</td><td></td>
+        <td>ಱ್</td><td>.r</td><td></td>
+    </tr>
+    </tbody>
+</table>
+
+
 <h2>Consonantal Diacritics</h2>
 
 <p>Arranged with the vowels are two consonantal diacritics, the final nasal anusvāra ಂ 

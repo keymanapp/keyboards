@@ -41,7 +41,6 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "்₂" + "I"	>	"ீ₂"
 "்₂" + "u"	>	"ு₂"
 "்₂" + "U"	>	"ூ₂"
-"்₂" + "R"	>	"்ரு₂"
 "்₂" + "E"	>	"ே₂"
 "்₂" + "e"	>	"ெ₂"
 "்₂" + "o"	>	"ொ₂"
@@ -57,7 +56,6 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "்₃" + "I"	>	"ீ₃"
 "்₃" + "u"	>	"ு₃"
 "்₃" + "U"	>	"ூ₃"
-"்₃" + "R"	>	"்ரு₃"
 "்₃" + "E"	>	"ே₃"
 "்₃" + "e"	>	"ெ₃"
 "்₃" + "o"	>	"ொ₃"
@@ -67,14 +65,12 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "₃" + "u"	>	"ௌ₃"
 "ா₃" + "i"	>	"ை₃"
 "ா₃" + "u"	>	"ௌ₃"
-"ரு₃" + "R"	>	"ரூ₃"
 "்₄" + "a"	>	"₄"
 "்₄" + "A"	>	"ா₄"
 "்₄" + "i"	>	"ி₄"
 "்₄" + "I"	>	"ீ₄"
 "்₄" + "u"	>	"ு₄"
 "்₄" + "U"	>	"ூ₄"
-"்₄" + "R"	>	"்ரு₄"
 "்₄" + "E"	>	"ே₄"
 "்₄" + "e"	>	"ெ₄"
 "்₄" + "o"	>	"ொ₄"
@@ -84,7 +80,6 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "₄" + "u"	>	"ௌ₄"
 "ா₄" + "i"	>	"ை₄"
 "ா₄" + "u"	>	"ௌ₄"
-"ரு₄" + "R"	>	"ரூ₄"
 
 c Vowels after subscripted -r clusters (dri, kri and the like): without these,
 c the aPlus rule below would turn "i" into "ை" and "u" into "ௌ".
@@ -201,15 +196,15 @@ c These precede the bare +X rules below.
 c Nukta / Perso-Arabic loans (tamil_subscripted.toml extra_consonants).
 c Before the bare rules below.
 "." + "k"	>	"ஃ₂க்"	c .k
-"." + "K"	>	"ஃக்₂"	c .K (before + "K")
-"." + "g"	>	"ஃக்₃"	c .g (before + "G")
-"." + "j"	>	"ஃஜ்"	c .j (before + "J")
-"." + "D"	>	"ஃட்₂"	c .D (before + "D")
-"ஃட்₂" + "h"	>	"ஃட்₃"	c .Dh
+"." + "K"	>	"ஃ₂க்₂"	c .K (before + "K")
+"." + "g"	>	"ஃ₂க்₃"	c .g (before + "G")
+"." + "j"	>	"ஃ₂ஜ்"	c .j (before + "J")
+"." + "D"	>	"ஃ₂ட்₂"	c .D (before + "D")
+"ஃ₂ட்₂" + "h"	>	"ஃ₂ட்₃"	c .Dh
 "." + "r"	>	"ற்"	c .r (before + "r")
-"." + "y"	>	"ஃய்"	c .y (before + "y")
+"." + "y"	>	"ஃ₂ய்"	c .y (before + "y")
 ";" + "n"	>	"ன்"	c ;n
-".ப்" + "h"	>	"ஃப்"	c .ph (3cp context first)
+".ப்" + "h"	>	"ஃ₂ப்"	c .ph (3cp context first)
 
 c Consonants (tamil_subscripted.toml). Halanta forms; unmatched keys pass through.
 + "k"	>	"க்"
@@ -239,9 +234,9 @@ c Consonants (tamil_subscripted.toml). Halanta forms; unmatched keys pass throug
 + "S"	>	"ஷ்"
 + "n"	>	"ந்"
 + "x"	>	"க்ஷ்"
-+ "f"	>	"ஃப்"
-+ "z"	>	"ஃஜ்"
-+ "Y"	>	"ஃய்"
++ "f"	>	"ஃ₂ப்"
++ "z"	>	"ஃ₂ஜ்"
++ "Y"	>	"ஃ₂ய்"
 
 c Aspirates and sibilant mergers. "th" gives த்₂ (tha), "dh" gives த்₄ (dha).
 "த்" + "h"	>	"த்₂"	c th
