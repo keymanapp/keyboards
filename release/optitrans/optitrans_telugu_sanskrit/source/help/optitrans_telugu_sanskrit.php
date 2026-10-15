@@ -390,5 +390,4 @@ produces <samp>క్త్‌</samp>.
 <tr> <td><kbd>'</kbd><kbd>'</kbd></td> <td><samp>᳓</samp></td> <td>VEDIC SIGN NIHSHVASA (also used for udAtta)</td></tr>
 </tbody>
 </table>
-</center>
 

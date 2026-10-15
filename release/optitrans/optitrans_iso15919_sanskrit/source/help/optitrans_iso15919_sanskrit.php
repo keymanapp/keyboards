@@ -390,5 +390,4 @@ Indic-script versions does nothing special here: it produces the literal text
 <tr> <td><kbd>'</kbd><kbd>'</kbd></td> <td><samp>́</samp></td> <td>COMBINING ACUTE ACCENT (UDATTA)</td></tr>
 </tbody>
 </table>
-</center>
 

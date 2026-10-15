@@ -46,14 +46,11 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "்₂" + "e"	>	"ெ₂"
 "்₂" + "o"	>	"ொ₂"
 "்₂" + "O"	>	"ோ₂"
-"்₂" + "M"	>	"ம்₂"
-"்₂" + "H"	>	"꞉₂"
 "₂" + "a"	>	"ா₂"
 "₂" + "i"	>	"ை₂"
 "₂" + "u"	>	"ௌ₂"
 "ா₂" + "i"	>	"ை₂"
 "ா₂" + "u"	>	"ௌ₂"
-"ரு₂" + "R"	>	"ரூ₂"
 "்₃" + "a"	>	"₃"
 "்₃" + "A"	>	"ா₃"
 "்₃" + "i"	>	"ி₃"
@@ -65,8 +62,6 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "்₃" + "e"	>	"ெ₃"
 "்₃" + "o"	>	"ொ₃"
 "்₃" + "O"	>	"ோ₃"
-"்₃" + "M"	>	"ம்₃"
-"்₃" + "H"	>	"꞉₃"
 "₃" + "a"	>	"ா₃"
 "₃" + "i"	>	"ை₃"
 "₃" + "u"	>	"ௌ₃"
@@ -84,8 +79,6 @@ c becomes sign+subscript, for each subscript in ₃₄.
 "்₄" + "e"	>	"ெ₄"
 "்₄" + "o"	>	"ொ₄"
 "்₄" + "O"	>	"ோ₄"
-"்₄" + "M"	>	"ம்₄"
-"்₄" + "H"	>	"꞉₄"
 "₄" + "a"	>	"ா₄"
 "₄" + "i"	>	"ை₄"
 "₄" + "u"	>	"ௌ₄"
@@ -162,8 +155,8 @@ c Independent vowels
 + "o"	>	"ஒ"
 + "O"	>	"ஓ"
 "ஒ" + "o"	>	"ஓ"
+"ரு₂" + "R"	>	"ரூ₂"	c RR; must precede the standalone + "R" rule below
 + "R"	>	"ரு₂"	c R (tamil_subscripted.toml)
-"ரு₂" + "R"	>	"ரூ₂"	c RR (before + "R")
 + "L"	>	"ள்"	c consonant La; vocalic l via LLi above
 
 c (Avagraha "." + "a" lives in the standalone-sign block above.)
@@ -183,7 +176,7 @@ c Converted contexts ("ர்" + "H", not ASCII "r" + "H").
 c Vowel modifiers (tamil_subscripted.toml yogavaahas)
 "ஓ" + "M"	>	"ௐ"	c OM (before + "M")
 + "M"	>	"ம்₂"	c ANUSVARA - M
-+ "H"	>	"꞉"	c VISARGA - H
++ "H"	>	"ஃ"	c VISARGA - H
 "." + "N"	>	"ம்₃"	c CHANDRABINDU (before + "N")
 
 c Special combinations (mirroring optitrans_kannada_sanskrit; converted contexts).
@@ -240,7 +233,6 @@ c Consonants (tamil_subscripted.toml). Halanta forms; unmatched keys pass throug
 + "y"	>	"ய்"
 + "r"	>	"ர்"
 + "l"	>	"ல்"
-+ "L"	>	"ள்"
 + "v"	>	"வ்"
 + "w"	>	"வ்"
 + "s"	>	"ஸ்"
