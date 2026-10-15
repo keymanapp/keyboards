@@ -1,0 +1,866 @@
+<?php
+$pagename = 'Chad Arabic Keyboard Help';
+$pagetitle = $pagename;
+$pagestyle = "@import url('td-arabe.css');";
+require_once('header.php');
+?>
+
+<div class="tab-folder">
+<!--Starting English-->
+<div id="en" class="tab-content">
+<a class="buttonlang" href="#fr">Cliquer ici pour voir cette page en français...</a>
+<div id="container">
+<img src="sil_tchad_arabe_logo.png" class="left responsive">
+<img src="sil-logo-blue.png" class="right responsive">
+<span id="toc-Chad-qwerty-keyboard-for-keyman-by-sil-Chad-"></span>
+<h1 xml:lang="en">Chad Arabic Keyboard for Keyman
+<br>by SIL Tchad</h1>
+
+<p class="tagline" xml:lang="en">Welcome to the Chad Arabic Keyboard!<br>
+This keyboard, maintained by the Language Technology team of <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Tchad</a>,
+allows you to type all of the special characters needed to write the languages of Chad in Arabic script.</p>
+<hr/>
+
+<p>The Chad Arabic keyboard behaves differently depending on whether you are using it on a <b><a class="jump" href="#en-physical">Physical keyboard</a></b> (Windows, Mac, Linux; also Android and iOS with external keyboards) or on a virtual <b><a class="jump" href="#en-touch">Touch keyboard</a></b> (Android, iOS). Choose the appropriate section below to find instructions for your type of keyboard.</p>
+
+<h2 class="color" id="en-physical">Physical keyboard</h2>
+
+<h3 class="color">Using the keyboard</h3>
+<p>To learn how to type a character with this keyboard, refer to the graphical keyboard layout below. The characters to the left on each key cap are typed with a simple tap (bottom), or by holding down the Shift key and tapping (top). The characters to the right on each key cap are typed with the help of a special “Chad” key.
+This key is found just to the left of the Backspace key, and will likely appear something like this on your keyboard: <img src="touche-td.png" width="30" height="30" title="equals"> (for typing the equals and plus signs).
+On the keyboard layout below, this key appears with a Chadian flag, to remind you that the “special” characters of Chad are typed with this key.</p>
+<p>To type a character, find the character you want to type on the graphical keyboard layout below, 
+and note the position of the <b>key on the keyboard</b> and the position of the <b>character on the key cap (one of three positions)</b>.
+Depending on the position of that character on the key cap, you might need to tap the “Chad” key first or hold down the Shift key. We’ll take as an example the key just to the right of the Tab key. This might show as Q (on QWERTY keyboards) or as A (on AZERTY keyboards), but note that it has Arabic script letters on our keyboard layout below. And this is how you type the letters in the different positions:</p>
+
+<table  style="border: 0pt">
+  <tr>
+    <td style="text-align: right; padding-top:5px; border: 0;">
+      <p style="margin: 4pt;">Hold down Shift and tap the key&nbsp;→</p>
+      <p style="margin: 4pt;">Simply tap the key&nbsp;→</p>
+    </td>
+    <td style="border: 0;">
+        <div class="keyboard keyboard--light">
+          <div class="keyboard--row">
+            <div class="key--letter"><div></div><div><span>ڔ</span></div><span>◌َ</span><span>ض</span></div>
+          </div>
+        </div>
+    </td>
+    <td style="text-align: left; padding-top:5px; border: 0;">
+      <p style="margin: 4pt;">&nbsp;</p>
+      <p style="margin: 4pt">←&nbsp;tap the Chad key, then tap the key</p>
+    </td>
+  </tr>
+</table>
+
+<p>Note that you can type the equals sign by tapping the “Chad” key twice, since the “=” character appears in the lower-right corner of that key cap.</p>
+
+<!--Physical Keyboard-->
+<span id="toc-physical-keyboard-windows"></span>
+<h3 class="color">Chad Arabic Keyboard layout</h3>
+
+<div class="keyboard keyboard--light">
+  <div class="keyboard--row">
+    <div class="key--letter"><div></div><div><span>ذ</span></div><span>&#x25CC;&#x0651;</span><span>ذ</span></div>
+    <div class="key--letter"><div></div><div><span>١</span></div><span>!</span><span>1</span></div>
+    <div class="key--letter"><div></div><div><span>٢</span></div><span>@</span><span>2</span></div>
+    <div class="key--letter"><div></div><div><span>٣</span></div><span>#</span><span>3</span></div>
+    <div class="key--letter"><div></div><div><span>٤</span></div><span>$</span><span>4</span></div>
+    <div class="key--letter"><div></div><div><span>٥</span></div><span>%</span><span>5</span></div>
+    <div class="key--letter"><div></div><div><span>٦</span></div><span>^</span><span>6</span></div>
+    <div class="key--letter"><div></div><div><span>٧</span></div><span>&amp;</span><span>7</span></div>
+    <div class="key--letter"><div></div><div><span>٨</span></div><span>*</span><span>8</span></div>
+    <div class="key--letter"><div></div><div><span>٩</span></div><span>(</span><span>9</span></div>
+    <div class="key--letter"><div></div><div><span>٠</span></div><span>)</span><span>0</span></div>
+    <div class="key--letter"><div></div><div><span>_</span></div><span>_</span><span>-</span></div>
+    <div class="key--letter"><div></div><div><span>=</span></div><span>+</span><span><img src="drapeau.tchad.png" width="30" height="20" title="Chad" /></span></div>
+    <div class="key--bottom-right key--word" style="width: 7.4em;"><span>Backspace</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 5.5em;"><span>Tab</span></div>
+    <div class="key--letter"><div></div><div><span>ڔ</span></div><span>&#x25CC;&#x064E;</span><span>ض</span></div>
+    <div class="key--letter"><div></div><div><span>لإ</span></div><span>◌ً</span><span>ص</span></div>
+    <div class="key--letter"><div></div><div><span>ࢤ</span></div><span>◌ُ</span><span>ث</span></div>
+    <div class="key--letter"><div></div><div><span>ࢥ</span></div><span>◌ٌ</span><span>ق</span></div>
+    <div class="key--letter"><div></div><div><span>ڤ</span></div><span>◌ٝ</span><span>ف</span></div>
+    <div class="key--letter"><div></div><div><span>ڠ</span></div><span>إ</span><span>غ</span></div>
+    <div class="key--letter"><div></div><div><span>ݝ</span></div><span>‘</span><span>ع</span></div>
+    <div class="key--letter"><div></div><div><span>ۀ</span></div><span>÷</span><span>ه</span></div>
+    <div class="key--letter"><div></div><div><span>ڃ</span></div><span>×</span><span>خ</span></div>
+    <div class="key--letter"><div></div><div><span>ڄ</span></div><span>؛</span><span>ح</span></div>
+    <div class="key--letter"><div></div><div><span>چ</span></div><span>&lt;</span><span>ج</span></div>
+    <div class="key--letter"><div></div><div><span>ڊ</span></div><span>&gt;</span><span>د</span></div>
+    <div class="key--letter" style="width: 5.2em"><div></div><div><span>\</span></div><span>|</span><span>\</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 7.2em"><span>Caps Lock</span></div>
+    <div class="key--letter"><div></div><div><span>ژ</span></div><span>◌ِ</span><span>ش</span></div>
+    <div class="key--letter"><div></div><div><span>لأ</span></div><span>◌ٍ</span><span>س</span></div>
+    <div class="key--letter"><div></div><div><span>ړ</span></div><span>◌ٖ</span><span>ي</span></div>
+    <div class="key--letter"><div></div><div><span>ٻ</span></div><span>◌ٜ</span><span>ب</span></div>
+    <div class="key--letter"><div></div><div><span>ݪ</span></div><span>◌ٚ</span><span>ل</span></div>
+    <div class="key--letter"><div></div><div><span>ࢦ</span></div><span>أ</span><span>ا</span></div>
+    <div class="key--letter"><div></div><div><span>ࢧ</span></div><span>ــ</span><span>ت</span></div>
+    <div class="key--letter"><div></div><div><span>ݧ</span></div><span>،</span><span>ن</span></div>
+    <div class="key--letter"><div></div><div><span>ݦ</span></div><span>/</span><span>م</span></div>
+    <div class="key--letter"><div></div><div><span>ڮ</span></div><span>:</span><span>ك</span></div>
+    <div class="key--letter"><div></div><div><span>'</span></div><span>"</span><span>ط</span></div>
+    <div class="key--bottom-right key--word" style="width: 7.2em"><span>Enter</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 9em"><span>Shift</span></div>
+    <div class="key--letter"><div></div><div><span>لآ</span></div><span>~</span><span>ئ</span></div>
+    <div class="key--letter"><div></div><div><span>ال</span></div><span>◌ْ</span><span>ء</span></div>
+    <div class="key--letter"><div></div><div><span>{</span></div><span>◌٘</span><span>ؤ</span></div>
+    <div class="key--letter"><div></div><div><span>}</span></div><span>◌ٛ</span><span>ر</span></div>
+    <div class="key--letter"><div></div><div><span>«</span></div><span>لآ</span><span>پ</span></div>
+    <div class="key--letter"><div></div><div><span>»</span></div><span>آ</span><span>ى</span></div>
+    <div class="key--letter"><div></div><div><span>ڗ</span></div><span>’</span><span>ة</span></div>
+    <div class="key--letter"><div></div><div><span>،</span></div><span>,</span><span>و</span></div>
+    <div class="key--letter"><div></div><div><span>.</span></div><span>.</span><span>ز</span></div>
+    <div class="key--letter"><div></div><div><span>؟</span></div><span>؟</span><span>ظ</span></div>
+    <div class="key--bottom-right key--word" style="width: 9em"><span>Shift</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Ctrl</span></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Fn</span></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><img src="windows.logo.png" width="50" height="40" title="Windows"></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Alt </span></div>
+    <div class="key--letter" style="width: 20.3em;"><div></div><div></div><span></span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Alt</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Ctrl</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Home</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>PgUp&#10;&#13;PgDn</span><span></span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>End</span></div>	
+  </div>
+</div>
+
+<h3 class="color">Typing short vowels</h3>
+<p>Note that some of the characters appear with dotted circles: <b class="scheherazade">◌</b>. 
+These indicate vowels which are combined with the previous character typed. 
+So if you type <b class="scheherazade">“س”</b> and then type the character <b class="scheherazade">“◌َ”</b>, then the resulting character on the screen will be <b class="scheherazade">“سَ”</b>.
+ Type <b class="scheherazade">“ك”</b> plus <b class="scheherazade">“&#x25CC;&#x0650;”</b> to get <b class="scheherazade">“ك&#x0650;”</b>.</p>
+
+<h3 class="color">Additional characters</h3>
+<p>There are some additional characters that can be typed with this keyboard that are not displayed on the graphical keyboard layout above.
+In most cases they are modified forms of other characters that are on the layout.</p>
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>type:</th>
+    <th>to get:</th>
+    <th>type:</th>
+    <th>to get:</th>
+    <th>type:</th>
+    <th>to get:</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--</td>
+      <td>–</td>
+      <td>$$</td>
+      <td>€</td>
+      <td>@@</td>
+      <td>©</td>
+    </tr>
+    <tr>
+      <td>---</td>
+      <td>—</td>
+      <td>$$$</td>
+      <td>£</td>
+      <td>@@@</td>
+      <td>℗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>@@@@</td>
+      <td>®</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In addition, the “Chad” key plus space ( =⎵ ) gives a no-break space (<b>NBSP</b>), and typing space bar again ( =⎵ ⎵ ) gives a narrow no-break space (<b>NNBSP</b>).
+The “Chad” key plus two hyphens ( =-- ) gives a no-break hyphen.</p>
+
+<p>On a phone you do not need most of these: the dashes, the currency signs and the copyright signs are all a single long press away on the symbol layer, and the space bar there hides <b>NBSP</b> and <b>NNBSP</b>. The no-break hyphen is only available on a physical keyboard.</p>
+
+<h2 class="color" id="en-touch">Touch keyboard</h2>
+
+<p>Once you install and activate this keyboard on your touch device, the main keyboard layer will appear. You will find most of the characters that you need for writing Arabic script text on this layer. You reach the second layer by tapping the <b class="keycap" dir="ltr"><i>؟</i><i>1</i><i>«</i></b> key in the lower left of the keyboard; it holds the symbols and numbers.</p>
+
+<h3 class="color">The main layer</h3>
+
+<img src="touch-layout.jpg" alt="Tchad Arabe main touch layout">
+
+<p>The consonants are found on the middle three rows, roughly laid out the same as a standard Arabic keyboard. The top row holds the (combining) vowels you need most often, together with the shadda, which marks a doubled consonant, and the sukun, which marks a consonant with no vowel after it. A few less frequently used vowels are found on the symbol layer.</p>
+
+<h3 class="color">Reaching the hidden characters</h3>
+
+<p>Many keys have a small mark in the upper corner. That means there are more characters hidden underneath. There are two ways to type them.</p>
+
+<p><b>Long press.</b> Hold your finger on the key. A small menu opens above it with the extra characters. Slide your finger onto the one you want, then lift. Use this method while you are still learning where the letters are. A key may have one hidden character or two. On the left below is the menu after long pressing the AIN WITH TWO DOTS ABOVE <b class="scheherazade">ݝ</b> key, which has one hidden character; on the right, the menu on the BEH <b class="scheherazade">ب</b> key, which has two:</p>
+
+<div class="img-pair">
+<img src="touch-layout-long-press1.jpg" alt="Long press menu showing one hidden character">
+<img src="touch-layout-long-press2.jpg" alt="Long press menu showing two hidden characters">
+</div>
+
+<p><b>Tap and flick up.</b> Once you know what is hidden under a key you do not have to wait for the menu to pop up. Tap the key and flick your finger upwards in one movement, and the hidden character is typed immediately. Where a key has two hidden characters, flick up and slightly to the left or right to choose between them. No key has more than two hidden characters, so this is quick to learn, and it makes the hidden characters almost as fast to type as the ones on the key caps.</p>
+
+<p>Here is every key on the main layer that has characters hidden under it:</p>
+
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+  </thead>
+  <tbody class="scheherazade">
+    <tr>
+      <td>&#x25CC;&#x0651;</td>
+      <td>1</td>
+      <td>&#x25CC;&#x0652;</td>
+      <td>2</td>
+      <td>&#x25CC;&#x064E;</td>
+      <td>3</td>
+      <td>&#x25CC;&#x0650;</td>
+      <td>4</td>
+      <td>&#x25CC;&#x064F;</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>&#x25CC;&#x065A;</td>
+      <td>6</td>
+      <td>&#x25CC;&#x065B;</td>
+      <td>7</td>
+      <td>&#x25CC;&#x064D;</td>
+      <td>8</td>
+      <td>&#x25CC;&#x064C;</td>
+      <td>9</td>
+      <td>&#x25CC;&#x065D;</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ق</td>
+      <td>ࢥ</td>
+      <td>ف</td>
+      <td><span class="seq"><i>ࢤ</i><i>ڤ</i></span></td>
+      <td>ڠ</td>
+      <td>غ</td>
+      <td>ݝ</td>
+      <td>ع</td>
+      <td>ه</td>
+      <td>ۀ</td>
+    </tr>
+    <tr>
+      <td>ج</td>
+      <td><span class="seq"><i>ڃ</i><i>خ</i></span></td>
+      <td>ح</td>
+      <td><span class="seq"><i>چ</i><i>ڄ</i></span></td>
+      <td>س</td>
+      <td>ش</td>
+      <td>ب</td>
+      <td><span class="seq"><i>پ</i><i>ٻ</i></span></td>
+      <td>ل</td>
+      <td><span class="seq"><i>ࢦ</i><i>ݪ</i></span></td>
+    </tr>
+    <tr>
+      <td>ا</td>
+      <td><span class="seq"><i>إ</i><i>أ</i></span></td>
+      <td>ن</td>
+      <td>ݧ</td>
+      <td>م</td>
+      <td><span class="seq"><i>ࢧ</i><i>ݦ</i></span></td>
+      <td>ك</td>
+      <td>ڮ</td>
+      <td>د</td>
+      <td><span class="seq"><i>ڊ</i><i>ذ</i></span></td>
+    </tr>
+    <tr>
+      <td>ء</td>
+      <td>آ</td>
+      <td>ر</td>
+      <td><span class="seq"><i>ړ</i><i>ڔ</i></span></td>
+      <td>ى</td>
+      <td>ئ</td>
+      <td>ز</td>
+      <td><span class="seq"><i>ژ</i><i>ڗ</i></span></td>
+      <td>.</td>
+      <td><span class="seq"><i>؟</i><i>!</i></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="color">Typing numbers</h3>
+
+<p>Each key on the top row has a numeral printed in its corner &mdash; 1 on the shadda key, 2 on the sukun key, and so on across the row to 0. Flick up on any of them to type that numeral without leaving the main layer. For longer numbers, the symbol layer has a full row of numerals, with no flicking needed. The Arabic-Indic numerals <b class="scheherazade">١ ٢ ٣</b> are there too, on a long press or flick up of each numeral key, and that layer is the only place they appear.</p>
+
+<h3 class="color">The symbol (and number) layer</h3>
+
+<p>Tap the <b class="keycap" dir="ltr"><i>؟</i><i>1</i><i>«</i></b> key at the bottom left of the main layer to switch to the symbol layer, and tap the <b class="keycap" dir="ltr"><i>ت</i><i>ب</i><i>ا</i></b> key on the symbol layer to return to the main layer.</p>
+
+<img src="touch-layout-shift.jpg" alt="Symbol and Number layer">
+
+<p>The top row gives the numerals 1 to 0, each with its Arabic-Indic form underneath on a flick up. Below those are the tatweel, the fathatan and three vowels, and then punctuation, brackets, currency and the other symbols. The space bar on this layer hides the no-break space (<b>NBSP</b>) and the narrow no-break space (<b>NNBSP</b>).</p>
+
+<p>Here is every key on the symbol layer with characters hidden under it:</p>
+
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+    <th>key:</th>
+    <th>hidden:</th>
+  </thead>
+  <tbody class="scheherazade">
+    <tr>
+      <td>1</td>
+      <td>١</td>
+      <td>2</td>
+      <td>٢</td>
+      <td>3</td>
+      <td>٣</td>
+      <td>4</td>
+      <td>٤</td>
+      <td>5</td>
+      <td>٥</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>٦</td>
+      <td>7</td>
+      <td>٧</td>
+      <td>8</td>
+      <td>٨</td>
+      <td>9</td>
+      <td>٩</td>
+      <td>0</td>
+      <td>٠</td>
+    </tr>
+    <tr>
+      <td>©</td>
+      <td><span class="seq"><i>℗</i><i>®</i></span></td>
+      <td>*</td>
+      <td>^</td>
+      <td>&amp;</td>
+      <td>#</td>
+      <td>$</td>
+      <td><span class="seq"><i>£</i><i>€</i></span></td>
+      <td>(</td>
+      <td><span class="seq"><i>{</i><i>[</i></span></td>
+    </tr>
+    <tr>
+      <td>)</td>
+      <td><span class="seq"><i>}</i><i>]</i></span></td>
+      <td>«</td>
+      <td><span class="seq"><i>&lt;</i><i>‹</i></span></td>
+      <td>»</td>
+      <td><span class="seq"><i>&gt;</i><i>›</i></span></td>
+      <td>-</td>
+      <td><span class="seq"><i>—</i><i>–</i></span></td>
+      <td>=</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td><span class="seq"><i>÷</i><i>×</i></span></td>
+      <td>/</td>
+      <td>\</td>
+      <td>،</td>
+      <td>؛</td>
+      <td>؟</td>
+      <td>?</td>
+      <td>:</td>
+      <td>;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td><span class="seq"><i>“</i><i>”</i></span></td>
+      <td>&#x27;</td>
+      <td><span class="seq"><i>‘</i><i>’</i></span></td>
+      <td>٪</td>
+      <td>%</td>
+      <td>space</td>
+      <td><span class="seq"><i>[NNBSP]</i><i>[NBSP]</i></span></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="color">Fonts</h2>
+<p>Make sure you have a Unicode font like <a href="https://software.sil.org/scheherazade/download/">Scheherazade New</a> selected to type special Arabic script characters.</p>
+
+<h2 class="color">Contact</h2>
+<p>For more information and guidance on the Chad Arabic Keyboard, you can reach us here: 
+<a href=https://sites.google.com/sil.org/sil-tchad-langtech/home>Language Technology Chad</a></p>
+
+<p>©&nbsp;SIL Tchad</p>
+</div>
+</div>
+<!--Ending English-->
+
+<!--Starting French-->
+<div id="fr" class="tab-content">
+<a class="buttonlang" href="#en">Click here to view this page in English...</a>
+<div id="container-fr">
+<img src="sil_tchad_arabe_logo.png" class="left responsive">
+<img src="sil-logo-blue.png" class="right responsive">
+<span id="toc-clavier-Tchad-qwerty-pour-keyman-par-sil-Tchad-"></span>
+<h1 xml:lang="fr">Clavier Tchad Arabe pour Keyman
+<br>par SIL Tchad</h1>
+         
+<p class="tagline" xml:lang="fr">Bienvenue au Clavier Tchad Arabe !<br>
+Ce clavier, maintenu par l’équipe de Technologie Linguistique de <a href="https://sites.google.com/sil.org/sil-tchad-langtech/home">SIL Tchad</a>,
+vous permet de taper tous les caractères spéciaux des langues du Tchad en écriture arabe. </p>
+<hr/>
+
+<p>Le clavier arabe du Tchad fonctionne de manière différente selon que vous l’utilisez sur un <b><a class="jump" href="#fr-physical">clavier physique</a></b> (Windows, Mac, Linux&nbsp;; également Android et iOS avec des claviers externes) ou sur un <b><a class="jump" href="#fr-touch">clavier virtuel tactile</a></b> (Android, iOS). Choisissez la section appropriée ci-dessous pour trouver les instructions correspondant à votre type de clavier.</p>
+
+<h2 class="color" id="fr-physical">Clavier physique</h2>
+
+<h3 class="color">Utilisation du clavier</h3>
+<p xml:lang="fr">Pour apprendre comment taper un caractère avec ce clavier, référez-vous à la disposition graphique du clavier ci-dessous. 
+Les caractères à gauche de chaque touche se tapent par un simple appui (en bas) ou en maintenant la touche Majuscule enfoncée (en haut). Les caractères à droite de chaque touche se tapent à l’aide d’une touche spéciale « Tchad ». 
+Cette touche se trouve juste à gauche de la touche Bksp (Backspace, Retour arrière, ←) et apparaîtra probablement ainsi sur votre clavier :  <img src="touche-td.png" width="30" height="30" title="slash">
+(pour taper les signes égalité et plus). Sur la disposition du clavier ci-dessous, 
+cette touche apparaît avec un drapeau tchadien, pour vous rappeler que les caractères « spéciaux » du Tchad sont tapés avec cette touche.</p>
+<p>Pour taper un caractère, repérez le caractère que vous souhaitez taper sur la disposition graphique du clavier ci-dessous, 
+et notez la position de la <b>touche sur le clavier</b> et la position du <b>caractère sur la touche (une des trois positions)</b>.
+Selon la position de ce caractère sur la touche, 
+vous devrez peut-être taper sur la touche « Tchad » ou maintenir la touche Majuscule enfoncée.
+Prenons l’exemple de la touche située juste à droite de la touche Tab. Elle peut être représentée par Q (sur les claviers QWERTY) ou par A (sur les claviers AZERTY), mais notez qu’elle comporte des lettres arabes sur notre disposition de clavier ci-dessous.
+Voici comment taper les lettres dans les différentes positions :</p>
+
+<table  style="border: 0pt">
+  <tr>
+    <td style="text-align: right; padding-top:5px; border: 0;">
+      <p style="margin: 4pt;">Maintenez la touche Majuscule enfoncée et tapez sur la touche&nbsp;→</p>
+      <p style="margin: 4pt;">Tapez simplement sur la touche&nbsp;→</p>
+    </td>
+    <td style="border: 0;">
+        <div class="keyboard keyboard--light">
+          <div class="keyboard--row">
+            <div class="key--letter"><div></div><div><span>ڔ</span></div><span>◌َ</span><span>ض</span></div>
+          </div>
+        </div>
+    </td>
+    <td style="text-align: left; padding-top:5px; border: 0;">
+      <p style="margin: 4pt;">&nbsp;</p>
+      <p style="margin: 4pt">←&nbsp;Tapez sur la touche « Tchad », puis sur la touche</p>
+    </td>
+  </tr>
+</table>
+
+<p>Notez que vous pouvez taper un caractère égalité en tapant deux fois sur la touche <b>« Tchad »</b>, puisque le caractère <b>« = »</b> apparaît dans le coin inférieur droit de cette touche.</p>
+
+<!--Physical Keyboard-->
+
+<h3 class="color">Disposition du clavier Tchad Arabe</h3>
+
+<div class="keyboard keyboard--light">
+  <div class="keyboard--row">
+    <div class="key--letter"><div></div><div><span>ذ</span></div><span>&#x25CC;&#x0651;</span><span>ذ</span></div>
+    <div class="key--letter"><div></div><div><span>١</span></div><span>!</span><span>1</span></div>
+    <div class="key--letter"><div></div><div><span>٢</span></div><span>@</span><span>2</span></div>
+    <div class="key--letter"><div></div><div><span>٣</span></div><span>#</span><span>3</span></div>
+    <div class="key--letter"><div></div><div><span>٤</span></div><span>$</span><span>4</span></div>
+    <div class="key--letter"><div></div><div><span>٥</span></div><span>%</span><span>5</span></div>
+    <div class="key--letter"><div></div><div><span>٦</span></div><span>^</span><span>6</span></div>
+    <div class="key--letter"><div></div><div><span>٧</span></div><span>&amp;</span><span>7</span></div>
+    <div class="key--letter"><div></div><div><span>٨</span></div><span>*</span><span>8</span></div>
+    <div class="key--letter"><div></div><div><span>٩</span></div><span>(</span><span>9</span></div>
+    <div class="key--letter"><div></div><div><span>٠</span></div><span>)</span><span>0</span></div>
+    <div class="key--letter"><div></div><div><span>_</span></div><span>_</span><span>-</span></div>
+    <div class="key--letter"><div></div><div><span>=</span></div><span>+</span><span><img src="drapeau.tchad.png" width="30" height="20" title="Chad" /></span></div>
+    <div class="key--bottom-right key--word" style="width: 7.4em;"><span>Backspace</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 5.5em;"><span>Tab</span></div>
+    <div class="key--letter"><div></div><div><span>ڔ</span></div><span>&#x25CC;&#x064E;</span><span>ض</span></div>
+    <div class="key--letter"><div></div><div><span>لإ</span></div><span>◌ً</span><span>ص</span></div>
+    <div class="key--letter"><div></div><div><span>ࢤ</span></div><span>◌ُ</span><span>ث</span></div>
+    <div class="key--letter"><div></div><div><span>ࢥ</span></div><span>◌ٌ</span><span>ق</span></div>
+    <div class="key--letter"><div></div><div><span>ڤ</span></div><span>◌ٝ</span><span>ف</span></div>
+    <div class="key--letter"><div></div><div><span>ڠ</span></div><span>إ</span><span>غ</span></div>
+    <div class="key--letter"><div></div><div><span>ݝ</span></div><span>‘</span><span>ع</span></div>
+    <div class="key--letter"><div></div><div><span>ۀ</span></div><span>÷</span><span>ه</span></div>
+    <div class="key--letter"><div></div><div><span>ڃ</span></div><span>×</span><span>خ</span></div>
+    <div class="key--letter"><div></div><div><span>ڄ</span></div><span>؛</span><span>ح</span></div>
+    <div class="key--letter"><div></div><div><span>چ</span></div><span>&lt;</span><span>ج</span></div>
+    <div class="key--letter"><div></div><div><span>ڊ</span></div><span>&gt;</span><span>د</span></div>
+    <div class="key--letter" style="width: 5.2em"><div></div><div><span>\</span></div><span>|</span><span>\</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 7.2em"><span>Caps Lock</span></div>
+    <div class="key--letter"><div></div><div><span>ژ</span></div><span>◌ِ</span><span>ش</span></div>
+    <div class="key--letter"><div></div><div><span>لأ</span></div><span>◌ٍ</span><span>س</span></div>
+    <div class="key--letter"><div></div><div><span>ړ</span></div><span>◌ٖ</span><span>ي</span></div>
+    <div class="key--letter"><div></div><div><span>ٻ</span></div><span>◌ٜ</span><span>ب</span></div>
+    <div class="key--letter"><div></div><div><span>ݪ</span></div><span>◌ٚ</span><span>ل</span></div>
+    <div class="key--letter"><div></div><div><span>ࢦ</span></div><span>أ</span><span>ا</span></div>
+    <div class="key--letter"><div></div><div><span>ࢧ</span></div><span>ــ</span><span>ت</span></div>
+    <div class="key--letter"><div></div><div><span>ݧ</span></div><span>،</span><span>ن</span></div>
+    <div class="key--letter"><div></div><div><span>ݦ</span></div><span>/</span><span>م</span></div>
+    <div class="key--letter"><div></div><div><span>ڮ</span></div><span>:</span><span>ك</span></div>
+    <div class="key--letter"><div></div><div><span>'</span></div><span>"</span><span>ط</span></div>
+    <div class="key--bottom-right key--word" style="width: 7.2em"><span>Enter</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 9em"><span>Shift</span></div>
+    <div class="key--letter"><div></div><div><span>لآ</span></div><span>~</span><span>ئ</span></div>
+    <div class="key--letter"><div></div><div><span>ال</span></div><span>◌ْ</span><span>ء</span></div>
+    <div class="key--letter"><div></div><div><span>{</span></div><span>◌٘</span><span>ؤ</span></div>
+    <div class="key--letter"><div></div><div><span>}</span></div><span>◌ٛ</span><span>ر</span></div>
+    <div class="key--letter"><div></div><div><span>«</span></div><span>لآ</span><span>پ</span></div>
+    <div class="key--letter"><div></div><div><span>»</span></div><span>آ</span><span>ى</span></div>
+    <div class="key--letter"><div></div><div><span>ڗ</span></div><span>’</span><span>ة</span></div>
+    <div class="key--letter"><div></div><div><span>،</span></div><span>,</span><span>و</span></div>
+    <div class="key--letter"><div></div><div><span>.</span></div><span>.</span><span>ز</span></div>
+    <div class="key--letter"><div></div><div><span>؟</span></div><span>؟</span><span>ظ</span></div>
+    <div class="key--bottom-right key--word" style="width: 9em"><span>Shift</span></div>
+  </div>
+  <div class="keyboard--row">
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Ctrl</span></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Fn</span></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><img src="windows.logo.png" width="50" height="40" title="Windows"></div>
+    <div class="key--bottom-left key--word" style="width: 3.5em;"><span>Alt </span></div>
+    <div class="key--letter" style="width: 20.3em;"><div></div><div></div><span></span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Alt</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Ctrl</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>Home</span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>PgUp&#10;&#13;PgDn</span><span></span></div>
+    <div class="key--bottom-right key--word" style="width: 3.5em;"><span>End</span></div>	
+  </div>
+</div>
+
+<h3 class="color">Taper les voyelles courtes</h3>
+<p>Notez que certains caractères apparaissent avec des cercles pointillés : <b class="scheherazade">◌</b>. 
+Ils indiquent les voyelles qui se combinent avec le caractère précédent. 
+Ainsi, si vous tapez <b class="scheherazade">“س”</b> puis tapez le caractère <b class="scheherazade">“◌َ”</b>, le caractère résultant à l’écran sera <b class="scheherazade">“سَ”</b>.
+ Tapez <b class="scheherazade">“ك”</b> plus <b class="scheherazade">“&#x25CC;&#x0650;”</b> pour obtenir <b class="scheherazade">“&#x0643;&#x0650;”</b>.</p>
+
+<h3 class="color">Caractères supplémentaires</h3>
+<p>Il y a quelques caractères supplémentaires qui peuvent être tapés avec ce clavier et qui ne sont pas affichés sur la disposition graphique du clavier ci-dessus. 
+Dans la plupart des cas, ce sont des formes modifiées d’autres caractères qui se trouvent sur la disposition.</p>
+
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>type:</th>
+    <th>to get:</th>
+    <th>type:</th>
+    <th>to get:</th>
+    <th>type:</th>
+    <th>to get:</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--</td>
+      <td>–</td>
+      <td>$$</td>
+      <td>€</td>
+      <td>@@</td>
+      <td>©</td>
+    </tr>
+    <tr>
+      <td>---</td>
+      <td>—</td>
+      <td>$$$</td>
+      <td>£</td>
+      <td>@@@</td>
+      <td>℗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>@@@@</td>
+      <td>®</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>De plus, la touche « Tchad » suivie de la barre d’espace ( =⎵ ) vous donne un espace insécable (<b>NBSP</b>), 
+et si vous ajoutez un autre espace ( =⎵ ⎵ ), vous obtenez un espace insécable étroit (<b>NNBSP</b>).
+La touche « Tchad » plus deux traits d’union ( =-- ) donne un trait d’union insécable.</p>
+
+<p>Sur un téléphone, la plupart de ces caractères sont inutiles : les tirets, les symboles monétaires et les symboles de copyright sont tous accessibles par un simple appui long sur la couche des symboles, et la barre d’espace de cette couche cache le <b>NBSP</b> et le <b>NNBSP</b>. Le trait d’union insécable n’est disponible que sur un clavier physique.</p>
+
+<h2 class="color" id="fr-touch">Clavier virtuel tactile</h2>
+
+<p>Une fois ce clavier installé et activé sur votre appareil tactile, la couche principale apparaît. Vous y trouverez la plupart des caractères nécessaires pour écrire en écriture arabe. La seconde couche, à laquelle on accède en appuyant sur la touche <b class="keycap" dir="ltr"><i>؟</i><i>1</i><i>«</i></b> en bas à gauche du clavier, contient les symboles et les chiffres.</p>
+
+<h3 class="color">La couche principale</h3>
+
+<img src="touch-layout.jpg" alt="Couche principale du clavier Tchad Arabe">
+
+<p>Les consonnes se trouvent sur les trois rangées du milieu, disposées à peu près comme sur un clavier arabe standard. La rangée du haut contient les voyelles (de combinaison) dont vous avez le plus souvent besoin, ainsi que le chadda, qui marque une consonne redoublée, et le soukoun, qui marque une consonne non suivie d’une voyelle. Quelques voyelles moins fréquentes se trouvent sur la couche des symboles.</p>
+
+<h3 class="color">Accéder aux caractères cachés</h3>
+
+<p>De nombreuses touches portent un petit signe dans le coin supérieur. Cela indique que d’autres caractères sont cachés en dessous. Il y a deux façons de les taper.</p>
+
+<p><b>L’appui long.</b> Maintenez le doigt sur la touche. Un petit menu s’ouvre au-dessus avec les caractères supplémentaires. Faites glisser le doigt sur celui que vous voulez, puis relevez-le. Utilisez cette méthode tant que vous apprenez encore où se trouvent les lettres. Une touche peut cacher un caractère ou deux. À gauche ci-dessous, le menu après un appui long sur la touche AÏN À DEUX POINTS SUSCRITS <b class="scheherazade">ݝ</b>, qui en cache un&nbsp;; à droite, la touche BEH <b class="scheherazade">ب</b>, qui en cache deux&nbsp;:</p>
+
+<div class="img-pair">
+<img src="touch-layout-long-press1.jpg" alt="Menu d’appui long avec un seul caractère caché">
+<img src="touch-layout-long-press2.jpg" alt="Menu d’appui long avec deux caractères cachés">
+</div>
+
+<p><b>L’appui et le glissement vers le haut.</b> Une fois que vous savez ce qui est caché sous une touche, vous n’avez plus besoin d’attendre l’ouverture du menu. Appuyez sur la touche et faites glisser le doigt vers le haut d’un seul mouvement&nbsp;: le caractère caché est tapé immédiatement. Lorsqu’une touche cache deux caractères, glissez vers le haut en biais, légèrement à gauche ou à droite, pour choisir entre les deux. Aucune touche ne cache plus de deux caractères, ce qui rend la méthode rapide à apprendre et permet de taper les caractères cachés presque aussi vite que ceux imprimés sur les touches.</p>
+
+<p>Voici toutes les touches de la couche principale qui cachent des caractères&nbsp;:</p>
+
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+  </thead>
+  <tbody class="scheherazade">
+    <tr>
+      <td>&#x25CC;&#x0651;</td>
+      <td>1</td>
+      <td>&#x25CC;&#x0652;</td>
+      <td>2</td>
+      <td>&#x25CC;&#x064E;</td>
+      <td>3</td>
+      <td>&#x25CC;&#x0650;</td>
+      <td>4</td>
+      <td>&#x25CC;&#x064F;</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>&#x25CC;&#x065A;</td>
+      <td>6</td>
+      <td>&#x25CC;&#x065B;</td>
+      <td>7</td>
+      <td>&#x25CC;&#x064D;</td>
+      <td>8</td>
+      <td>&#x25CC;&#x064C;</td>
+      <td>9</td>
+      <td>&#x25CC;&#x065D;</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ق</td>
+      <td>ࢥ</td>
+      <td>ف</td>
+      <td><span class="seq"><i>ࢤ</i><i>ڤ</i></span></td>
+      <td>ڠ</td>
+      <td>غ</td>
+      <td>ݝ</td>
+      <td>ع</td>
+      <td>ه</td>
+      <td>ۀ</td>
+    </tr>
+    <tr>
+      <td>ج</td>
+      <td><span class="seq"><i>ڃ</i><i>خ</i></span></td>
+      <td>ح</td>
+      <td><span class="seq"><i>چ</i><i>ڄ</i></span></td>
+      <td>س</td>
+      <td>ش</td>
+      <td>ب</td>
+      <td><span class="seq"><i>پ</i><i>ٻ</i></span></td>
+      <td>ل</td>
+      <td><span class="seq"><i>ࢦ</i><i>ݪ</i></span></td>
+    </tr>
+    <tr>
+      <td>ا</td>
+      <td><span class="seq"><i>إ</i><i>أ</i></span></td>
+      <td>ن</td>
+      <td>ݧ</td>
+      <td>م</td>
+      <td><span class="seq"><i>ࢧ</i><i>ݦ</i></span></td>
+      <td>ك</td>
+      <td>ڮ</td>
+      <td>د</td>
+      <td><span class="seq"><i>ڊ</i><i>ذ</i></span></td>
+    </tr>
+    <tr>
+      <td>ء</td>
+      <td>آ</td>
+      <td>ر</td>
+      <td><span class="seq"><i>ړ</i><i>ڔ</i></span></td>
+      <td>ى</td>
+      <td>ئ</td>
+      <td>ز</td>
+      <td><span class="seq"><i>ژ</i><i>ڗ</i></span></td>
+      <td>.</td>
+      <td><span class="seq"><i>؟</i><i>!</i></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="color">Taper les chiffres</h3>
+
+<p>Chaque touche de la rangée du haut porte un chiffre imprimé dans son coin&nbsp;: 1 sur la touche du chadda, 2 sur celle du soukoun, et ainsi de suite jusqu’à 0. Glissez vers le haut sur l’une d’elles pour taper ce chiffre sans quitter la couche principale. Pour les nombres plus longs, la couche des symboles offre une rangée entière de chiffres, sans avoir à glisser. Les chiffres arabo-indiens <b class="scheherazade">١ ٢ ٣</b> s’y trouvent également, en appui long sur chaque touche de chiffre&nbsp;; c’est le seul endroit où ils apparaissent.</p>
+
+<h3 class="color">La couche des symboles (et des chiffres)</h3>
+
+<p>Appuyez sur la touche <b class="keycap" dir="ltr"><i>؟</i><i>1</i><i>«</i></b> en bas à gauche de la couche principale pour passer à la couche des symboles, et sur la touche <b class="keycap" dir="ltr"><i>ت</i><i>ب</i><i>ا</i></b> de la couche des symboles pour revenir à la couche principale.</p>
+
+<img src="touch-layout-shift.jpg" alt="Couche des symboles et des chiffres">
+
+<p>La rangée du haut donne les chiffres de 1 à 0, chacun avec sa forme arabo-indienne en dessous, accessible en glissant vers le haut. En dessous se trouvent le tatwil, le fathatan et trois voyelles, puis la ponctuation, les parenthèses, les symboles monétaires et les autres symboles. La barre d’espace de cette couche cache l’espace insécable (<b>NBSP</b>) et l’espace insécable étroit (<b>NNBSP</b>).</p>
+
+<p>Voici toutes les touches de la couche des symboles qui cachent des caractères&nbsp;:</p>
+
+<table border="1" cellspacing="1" cellpadding="5">
+  <thead>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+    <th>touche&nbsp;:</th>
+    <th>caché&nbsp;:</th>
+  </thead>
+  <tbody class="scheherazade">
+    <tr>
+      <td>1</td>
+      <td>١</td>
+      <td>2</td>
+      <td>٢</td>
+      <td>3</td>
+      <td>٣</td>
+      <td>4</td>
+      <td>٤</td>
+      <td>5</td>
+      <td>٥</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>٦</td>
+      <td>7</td>
+      <td>٧</td>
+      <td>8</td>
+      <td>٨</td>
+      <td>9</td>
+      <td>٩</td>
+      <td>0</td>
+      <td>٠</td>
+    </tr>
+    <tr>
+      <td>©</td>
+      <td><span class="seq"><i>℗</i><i>®</i></span></td>
+      <td>*</td>
+      <td>^</td>
+      <td>&amp;</td>
+      <td>#</td>
+      <td>$</td>
+      <td><span class="seq"><i>£</i><i>€</i></span></td>
+      <td>(</td>
+      <td><span class="seq"><i>{</i><i>[</i></span></td>
+    </tr>
+    <tr>
+      <td>)</td>
+      <td><span class="seq"><i>}</i><i>]</i></span></td>
+      <td>«</td>
+      <td><span class="seq"><i>&lt;</i><i>‹</i></span></td>
+      <td>»</td>
+      <td><span class="seq"><i>&gt;</i><i>›</i></span></td>
+      <td>-</td>
+      <td><span class="seq"><i>—</i><i>–</i></span></td>
+      <td>=</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td><span class="seq"><i>÷</i><i>×</i></span></td>
+      <td>/</td>
+      <td>\</td>
+      <td>،</td>
+      <td>؛</td>
+      <td>؟</td>
+      <td>?</td>
+      <td>:</td>
+      <td>;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td><span class="seq"><i>“</i><i>”</i></span></td>
+      <td>&#x27;</td>
+      <td><span class="seq"><i>‘</i><i>’</i></span></td>
+      <td>٪</td>
+      <td>%</td>
+      <td>espace</td>
+      <td><span class="seq"><i>[NNBSP]</i><i>[NBSP]</i></span></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="color">Polices</h2>
+<p>Assurez-vous d’avoir sélectionné une police Unicode comme <a href="https://software.sil.org/scheherazade/download/">Scheherazade New</a>
+pour taper des caractères spéciaux en écriture arabe.</p>
+
+<h2 class="color">Contact</h2>
+<p> Pour plus d’information et orientation sur le Clavier Tchad Arabe vous pouvez nous joindre ici :
+<a href=https://sites.google.com/sil.org/sil-tchad-langtech/home>Technologie Linguistique Tchad</a></p>
+
+<p>©&nbsp;SIL Tchad</p>
+</div>
+</div>
+<!--Ending French-->
+</div>
+
+<script>
+/* The language tabs are driven by the URL fragment (#en / #fr), so a normal
+   anchor link would hide both halves and fall through to the last one.
+   These links scroll to their target and record a history entry that keeps
+   the current language fragment, so Back returns to where you were with the
+   right half still showing. */
+(function () {
+  if (!window.history || !history.pushState) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lang = function () { return /^#(en|fr)$/.test(location.hash) ? location.hash : '#en'; };
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a.jump') : null;
+    if (!a) return;
+    var target = document.getElementById(a.getAttribute('href').slice(1));
+    if (!target) return;
+    e.preventDefault();
+
+    // record where we are leaving from, then where we land
+    history.replaceState({ y: window.pageYOffset }, '', lang());
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    history.pushState({ y: target.getBoundingClientRect().top + window.pageYOffset }, '', lang());
+  });
+
+  window.addEventListener('popstate', function (e) {
+    if (e.state && typeof e.state.y === 'number') {
+      window.scrollTo({ top: e.state.y, behavior: reduce ? 'auto' : 'smooth' });
+    }
+  });
+})();
+</script>
