@@ -1,4 +1,4 @@
-# Lemko QWERTY keyboard
+# Rusyn (Lemko, Poland) keyboard
 
 Version 0.3.0, initial submission.
 
