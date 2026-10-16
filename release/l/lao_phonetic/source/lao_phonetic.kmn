@@ -10,7 +10,7 @@ store(&capsalwaysoff) "1"
 store(&TARGETS) 'any'
 store(&BITMAP) 'lao_phonetic.ico'
 store(&VISUALKEYBOARD) 'lao_phonetic.kvks'
-store(&KEYBOARDVERSION) '1.1.4'
+store(&KEYBOARDVERSION) '1.1.5'
 store(&LAYOUTFILE) 'lao_phonetic.keyman-touch-layout'
 
 begin Unicode > use(Start)
@@ -41,8 +41,8 @@ c Final Lao consonants that are unvoiced but written as voiced
  store(LaoNonFinal) "ຕປຢ"
     
 c All initial consonants (o-ang will be inserted automatically)
- store(C)  "kKCgjJcxdtTDnbpPFBfmyrlvwsVSHhNM"
- store(CLao) "ກຂຄງຈຽຈຊດຕຖທນບປຜຝພຟມຢຣລວວສວສຫຮໜໝ" "ອ" U+0EBC "ຍ"
+ store(C)  "kKCgjJcxdtTDnbpPFBfmyrlvwsVSHhNM" c 33 characters
+ store(CLao) "ກຂຄງຈຽຈຊດຕຖທນບປຜຝພຟມຢຣລວວສວສຫຮໜໝ" "ອ" U+0EBC "ຍ" c 36 characters
 
  store(MC) "kctnpfmh"
  store(MCLao) "ກຈຕນປຟມຮ" 
@@ -122,7 +122,7 @@ c Currency symbols
  store(NextCurrency)"₭€£¥$"
  
 c Punctuation marks which should never be separated from preceding text
-store(Punctuation) "!@#%-+=_.,)]}>:;'?" d34
+store(Punctuation) "!@#%-+=_.,)]}>:;'?" U+0022
 
 c ====================================================================
 c Process special (virtual key) rules first, then match pending syllable (if any)
@@ -147,9 +147,9 @@ c Special rules for adding thanthakhat (mainly for loan words)
  any(LaoLetter) dk(1) + [SHIFT K_5] > $Thanthakhat dk(1)
  
 c Space character output when not following a Lao syllable string
-  dk(1) + [K_SPACE] > d32       c delete ZWSP before a normal space
+  dk(1) + [K_SPACE] > U+0020       c delete ZWSP before a normal space
   any(LaoLetter) + [K_SPACE]  > context(1) dk(1)  c insert ZWSP if immediately after Lao character
-  + [K_SPACE] > d32             c in all other situations, output space unchanged
+  + [K_SPACE] > U+0020             c in all other situations, output space unchanged
                                         
 c Syllable modification signs
   + any(SignKey) > index(Sign,1) dk(1)

@@ -1,6 +1,11 @@
 
 # Slaviatura Change History
 
+## 1.2 (October 5, 2026)
+
+- Updated collective language tag for wen to hsb and dsb.
+- Updated language tags to minimal tags
+
 ## 1.1 (July 18, 2025)
 
 - Removed the phone layout: The phone layout was redundant and is no longer
