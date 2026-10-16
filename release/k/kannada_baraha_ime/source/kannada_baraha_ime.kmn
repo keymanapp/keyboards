@@ -1,0 +1,85 @@
+﻿c Kannada script IME keyboard following Baraha-style transliteration scheme.
+store(&VERSION) '10.0'
+store(&NAME) 'Kannada Baraha IME'
+store(&COPYRIGHT) '© 2026'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx linux web desktop'
+store(&BITMAP) 'kannada.ico'
+
+begin Unicode > use(main)
+
+store(cons) 'ಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಲವಶಷಸಹಳ'
+store(c1key) 'kgcjTDNtdnpfbmyrlvwshL'
+store(c1out) 'ಕಗಚಜಟಡಣತದನಪಫಬಮಯರಲವವಸಹಳ'
+store(aspbase) 'ಕಗಚಜಟಡತದಪಬಸ'
+store(aspout) 'ಖಘಛಝಠಢಥಧಫಭಶ'
+store(vkey) 'iuUeEoOAI'
+store(vsign) 'ಿುೂೆೇೊೋಾೀ'
+store(opens) ' ([{“—-'
+
+group(main) using keys
+
+
+c consonants: type the consonant with a virama
++ any(c1key) > index(c1out, 1) '್'
++ 'x' > 'ಕ' '್' 'ಷ' '್'
+
+c aspirates: consonant + h (kh, gh, ch, jh, Th, Dh, th, dh, ph, bh, sh)
+any(aspbase) '್' + 'h' > index(aspout, 1) '್'
+'S' + 'h' > 'ಷ' '್'
+'~' + 'g' > 'ಙ' '್'
+'~' + 'j' > 'ಞ' '್'
+
+c vowel signs: a removes the virama, others replace it
+any(cons) '್' + 'a' > index(cons, 1)
+any(cons) '್' + any(vkey) > index(cons, 1) index(vsign, 3)
+any(cons) '್' 'R' + 'u' > index(cons, 1) 'ೃ'
+
+c long vowels and diphthongs after a consonant (aa, ai, au, ii, ee, uu, oo)
+any(cons) + 'a' > index(cons, 1) 'ಾ'
+any(cons) + 'i' > index(cons, 1) 'ೈ'
+any(cons) + 'u' > index(cons, 1) 'ೌ'
+'ಿ' + 'i' > 'ೀ'
+'ೆ' + 'e' > 'ೀ'
+'ು' + 'u' > 'ೂ'
+'ೊ' + 'o' > 'ೂ'
+'ೊ' + 'u' > 'ೌ'
+
+c independent vowels
++ 'a' > 'ಅ'
+'ಅ' + 'a' > 'ಆ'
+'ಅ' + 'i' > 'ಐ'
+'ಅ' + 'u' > 'ಔ'
++ 'A' > 'ಆ'
++ 'i' > 'ಇ'
+'ಇ' + 'i' > 'ಈ'
++ 'I' > 'ಈ'
++ 'u' > 'ಉ'
+'ಉ' + 'u' > 'ಊ'
++ 'U' > 'ಊ'
++ 'e' > 'ಎ'
+'ಎ' + 'e' > 'ಈ'
++ 'E' > 'ಏ'
++ 'o' > 'ಒ'
+'ಒ' + 'u' > 'ಔ'
+'ಒ' + 'o' > 'ಊ'
++ 'O' > 'ಓ'
+'R' + 'u' > 'ಋ'
+
+c anusvara and visarga (a bare consonant before them takes the inherent a)
+any(cons) '್' + 'M' > index(cons, 1) 'ಂ'
++ 'M' > 'ಂ'
+any(cons) '್' + 'H' > index(cons, 1) 'ಃ'
++ 'H' > 'ಃ'
+
+c danda and double danda
++ '|' > '।'
+'।' + '|' > '॥'
+
+c apostrophe separates letters: k'h → ಕ್ಹ
++ "'" > dk(sep)
+
+c smart double quotes
+nul + '"' > '“'
+any(opens) + '"' > context '“'
++ '"' > '”'
