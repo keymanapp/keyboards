@@ -27,17 +27,9 @@
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
 <p>¸c will produce ç (available on cCsStT).</p>
 
-
-<h1>Keyboard Layout</h1>
-
-  <h2>Desktop Keyboard layout</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
-	<h3>Shift</h3>
-	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
-	<h3>Right ALT (unshifted)</h3>
-	<p><a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a></p>
-	<h3>Right ALT Shift</h3>
-	<p><a href="LayoutU_SRA.png"><img class="keyboard" src="LayoutU_SRA.png" alt="Right ALT Shift state" /></a></p>
+<h2>Desktop Keyboard Layout</h2> 
+<div id='osk' data-states='default shift rightalt rightalt-shift'> </div>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift numeric currencies'> </div>
 
 <p>© cathaylab</p>

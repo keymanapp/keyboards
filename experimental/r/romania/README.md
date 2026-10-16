@@ -3,7 +3,7 @@ romania keyboard
 
 Description
 -----------
-Romania keyboard for Romanian language limba română
+Romania keyboard for Romanian limba română. This keyboard can automatically distinguish the scenario to apply the letter "â" and the letter "î" in romanian orthography. This keyboard automatically produces "â" after you type "î" in the middle of a word.
 
 Links
 -----
