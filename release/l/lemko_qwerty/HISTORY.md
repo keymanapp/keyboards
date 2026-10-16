@@ -1,5 +1,11 @@
 # Version history
 
+## 0.3.4 — 2026-10-16
+
+* Match the requested EuroLatin-style numeric arrangement and add a currency page.
+* Display grey long-press letter and symbol hints.
+* Add touch sentence capitalization with manual Shift override; preserve decimal input.
+
 ## 0.3.3 — 2026-10-16
 
 * Split numbers and symbols into two four-row pages with balanced widths.

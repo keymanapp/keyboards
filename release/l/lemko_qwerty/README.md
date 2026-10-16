@@ -1,6 +1,6 @@
 # Rusyn (Lemko, Poland) keyboard
 
-Version 0.3.3, initial submission.
+Version 0.3.4, initial submission.
 
 A positional Cyrillic keyboard for Lemko, based on the Apple macOS Russian Phonetic layout. The backslash position produces є instead of э; Shift produces Є. Option on macOS and right Alt on other platforms also provide є at the backslash position. Additional mappings include і on Option/AltGr+I, ї on Option/AltGr+A and ґ on Option/AltGr+H. The language tag rue identifies Rusyn broadly; this keyboard and its visible labels target Lemko specifically.
 
@@ -19,3 +19,7 @@ This package contains no lexical model or dictionary data. A separately develope
 ## License
 
 MIT. Copyright 2026 lemko.tools. See LICENSE.md.
+
+## Touch behavior
+
+The number page follows the EuroLatin-style arrangement, with a second currency/symbol page. Grey corner labels show long-press alternatives. Automatic Shift is enabled at an empty field, after a newline, and after `.`, `?`, or `!` followed by one to three spaces. After a letter it returns to lowercase. Manual Shift can override the next letter; decimal points without a following space do not start a sentence. Abbreviations are not detected linguistically. Desktop capitalization is unchanged.
