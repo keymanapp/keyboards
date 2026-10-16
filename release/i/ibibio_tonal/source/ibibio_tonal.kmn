@@ -1,0 +1,62 @@
+c Ibibio Tonal keyboard
+c Types the full Ibibio alphabet (ọ ị ụ ʌ ə ñ) and the five tone marks.
+c
+c Desktop typing:
+c   letter + ;      dotted / special letter   o; ọ   i; ị   u; ụ   v; ʌ   e; ə   n; ñ
+c   vowel or nasal + ]   high tone (acute)          ó
+c   vowel or nasal + [   low tone (grave)           ò
+c   vowel or nasal + }   falling tone (circumflex)  ô
+c   vowel or nasal + {   rising tone (caron)        ǒ
+c   vowel or nasal + \   downstep (macron)          ō
+c   Press the same key twice to type the plain character instead (o;; gives o;).
+c   Pressing a different tone key swaps the tone.
+c
+c Touch (phone/tablet): see ibibio_tonal.keyman-touch-layout.
+c Output is in decomposed form (base letter + combining mark), which every
+c modern app displays correctly and normalizes to NFC when saved.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Ibibio Tonal'
+store(&COPYRIGHT) '© Solomon Usoro'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'ibibio_tonal.ico'
+store(&LAYOUTFILE) 'ibibio_tonal.keyman-touch-layout'
+store(&MESSAGE) 'Ibibio with tone marks. Letter then ; for ọ ị ụ ʌ ə ñ. Then ] high, [ low, } falling, { rising, \ downstep.'
+
+begin Unicode > use(main)
+
+c ---------- stores ----------
+store(plain)  'oiuveOIUVEnN'
+store(dotted) 'ọịụʌəỌỊỤɅƏñÑ'
+
+c tone-bearing units: vowels and syllabic nasals
+store(tbu) 'aeiouAEIOUọịụʌəỌỊỤɅƏmnñMNÑ'
+
+c desktop tone keys and matching combining marks (same order)
+store(tonekey) ']' '[' '}' '{' '\'
+store(touchtone) [T_HIGH] [T_LOW] [T_FALL] [T_RISE] [T_DOWN]
+store(mark) U+0301 U+0300 U+0302 U+030C U+0304
+
+group(main) using keys
+
+c ---------- special letters ----------
+c pressing ; twice undoes the change and types a real semicolon
+any(dotted) + ';' > index(plain,1) ';'
+any(plain)  + ';' > index(dotted,1)
+
+c ---------- tones from the desktop keys ----------
+c same tone key twice: remove the mark and type the key itself
+any(tbu) U+0301 + ']' > context(1) ']'
+any(tbu) U+0300 + '[' > context(1) '['
+any(tbu) U+0302 + '}' > context(1) '}'
+any(tbu) U+030C + '{' > context(1) '{'
+any(tbu) U+0304 + '\' > context(1) '\'
+c a different tone key swaps the tone
+any(tbu) any(mark) + any(tonekey) > context(1) index(mark,3)
+any(tbu) + any(tonekey) > context index(mark,2)
+
+c ---------- tones from the touch keys ----------
+any(tbu) any(mark) + any(touchtone) > context(1) index(mark,3)
+any(tbu) + any(touchtone) > context index(mark,2)
++ any(touchtone) > nul
