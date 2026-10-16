@@ -1,0 +1,149 @@
+﻿store(&VERSION) "10.0" 
+store(&NAME) 'Sanskrit ISO-15919 Phonetic (OPTITRANS)'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Sanskrit Coders'
+store(&MESSAGE) 'An OPTITRANS-based ISO 15919 romanization keyboard for Sanskrit.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&BITMAP) 'optitrans_iso15919_sanskrit.ico'
+store(&VISUALKEYBOARD) 'optitrans_iso15919_sanskrit.kvks'
+store(&LAYOUTFILE) 'optitrans_iso15919_sanskrit.keyman-touch-layout'
+
+begin Unicode	>	use(main)
+group(main) using keys
+
+
+c Punctuation (script-independent; mirrored from optitrans_kannada_sanskrit)
+"." + " "	>	"। "
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॰"	c	DEVANAGARI ABBREVIATION SIGN (still used in romanized print)
+"॰" + "."	>	"…"	c four dots for a HORIZONTAL ELLIPSIS
+"." + ","	>	"॥"	c DOUBLE DANDA
+"," + "."	>	"॥"	c DOUBLE DANDA
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+">" + ">"	>	"→"
+"<" + "<"	>	"←"
+
+c Vedic accents. ISO 15919: udatta = acute, anudatta = grave.
+"'" + "'"	>	"́"	c U+0301 COMBINING ACUTE ACCENT, udatta - ''
+"́" + "'"	>	"̋"	c U+030B COMBINING DOUBLE ACUTE, approximating svatantra svarita - '''
+"!" + "!"	>	"́"	c acute (the source U+0951 is named UDATTA) - !!
++ "_"	>	"̀"	c U+0300 COMBINING GRAVE ACCENT, anudatta
+
+c Upadhmaniya and jihvamuliya (dra-iso-15919-itrans.mim). Before + "H".
+"p" + "H"	>	"ḫ"	c VEDIC SIGN UPADHMANIYA
+"k" + "H"	>	"ẖ"	c VEDIC SIGN JIHVAMULIYA
+
+c Vowels. e/o/ai/au follow dra-iso-15919-itrans.mim: e stays e, E/ee give ē, ai/au stay diphthongs.
++ "A"	>	"ā"
+"a" + "a"	>	"ā"
+"ā" + "i"	>	"ai"	c Ai
+"ā" + "u"	>	"au"	c Au
+"ḷḷ" + "I"	>	"l̥̄"	c LLI (must precede + "I")
++ "I"	>	"ī"
+"i" + "i"	>	"ī"
++ "U"	>	"ū"
+"u" + "u"	>	"ū"
+"r̥" + "R"	>	"r̥̄"	c RR (must precede + "R")
++ "R"	>	"r̥"	c R
++ "E"	>	"ē"
+"e" + "e"	>	"ē"
++ "O"	>	"ō"
+"o" + "o"	>	"ō"
+
+c Avagraha (.a in dra-iso-15919-itrans.mim)
+"." + "a"	>	"’"	c U+2019 RIGHT SINGLE QUOTATION MARK
+"’" + "a"	>	"ā"
+"’" + "i"	>	"ai"
+"’" + "u"	>	"au"
+
+c Double La for Dravidian words (LL/LLi in dra-iso-15919-itrans.mim).
+c ("ḷ" + "L" and "ḷḷ" + "I" live next to + "L" and + "I" above; they must precede them.)
+"ḷḷ" + "i"	>	"l̥"	c LLi
+
+c Tilde shortcuts (dra-iso-15919-itrans.mim ~N/~n). Distinct contexts; order-free.
+"~" + "n"	>	"ñ"	c ~n
+"~" + "N"	>	"ṅ"	c ~N
+
+c Tamil H-sandhi (mirroring the Tamil rules of optitrans_kannada_sanskrit:
+c "ऋ" + "H" > "ऱ्", "ळ्" + "H" > "ऴ्", "न्" + "H" > "ऩ्",
+c "णृ" + "H" > "ऩ्ऱ्", "नृ" + "H" > "ऩ्ऱ्", "ॠ" + "H" > "ऱ्ऱ्", "र्" + "H" > "ऱ्").
+c Contexts must be converted text: an ASCII "L" + "H" rule would never fire
+c ("L" becomes "ḷ" the moment it is typed).
+"ṇr̥" + "H"	>	"ṉṛ"	c cf. णृ + H
+"nr̥" + "H"	>	"ṉṛ"	c cf. नृ + H
+"r̥̄" + "H"	>	"ṛṛ"	c cf. ॠ + H
+"r̥" + "H"	>	"ṛ"	c cf. ऋ + H
+"ḷ" + "H"	>	"ḻ"	c LH (dra-iso-15919-itrans.mim)
+"n" + "H"	>	"ṉ"	c cf. न् + H
+"r" + "H"	>	"ṛ"	c cf. र् + H
+
+c Vowel modifiers. ("ō" + "M" must precede + "M".)
+"ō" + "M"	>	"ōṁ"	c OM (before + "M")
++ "M"	>	"ṃ"	c ANUSVARA - M
++ "H"	>	"ḥ"	c VISARGA - H
+"." + "n"	>	"ṁ"	c (dra-iso-15919-itrans.mim)
+
+c Consonants. Bare Latin: romanization has no virama, so unmatched keys pass through.
+c (The three rules below must precede the bare + "L"/+ "N"/+ "D".)
+"ḷ" + "L"	>	"ḷḷ"	c LL (dra-iso-15919-itrans.mim)
+"." + "N"	>	"m̐"	c CHANDRABINDU (dra-iso-15919-itrans.mim)
+"." + "D"	>	"ṛ"	c .D (cf. mim .r)
++ "K"	>	"kh"
++ "G"	>	"gh"
++ "C"	>	"ch"
++ "J"	>	"jh"
++ "T"	>	"ṭ"
++ "D"	>	"ḍ"
++ "N"	>	"ṇ"
++ "P"	>	"ph"
++ "B"	>	"bh"
++ "S"	>	"ṣ"
++ "L"	>	"ḷ"
+"gh" + "Y"	>	"jñ"	c GY (dra-iso-15919-itrans.mim; must precede + "Y")
++ "Y"	>	"ẏ"
++ "w"	>	"v"
++ "x"	>	"kṣ"	c (dra-iso-15919-itrans.mim)
+
+c Nukta / Perso-Arabic loans (dra-iso-15919-itrans.mim).
+c (No bare +k/+g/+j/+r/+y rules exist, so these are order-free.)
+"." + "k"	>	"q"	c .k
+"." + "g"	>	"ġ"	c .g
+"." + "j"	>	"z"	c .j
+"." + "r"	>	"ṛ"	c .r (dra-iso-15919-itrans.mim)
+"." + "y"	>	"ẏ"	c .y
+";" + "n"	>	"ṉ"	c ;n (cf. mim :n)
+
+c Aspirates and sibilant mergers (mirroring optitrans_kannada_sanskrit).
+c The two-character-context rules come first: otherwise "c" + "h" would
+c swallow the h of "ñch", and "s" + "h" the h of "ksh".
+"ñc" + "h"	>	"ñch"	c nch
+"ks" + "h"	>	"kṣ"	c ksh (for kSa typists)
+"ch" + "h"	>	"ch"	c same C=Ch
+"k" + "h"	>	"kh"
+"g" + "h"	>	"gh"
+"c" + "h"	>	"c"	c same c=ch (cf. kannada)
+"j" + "h"	>	"jh"
+"ṭ" + "h"	>	"ṭh"
+"ḍ" + "h"	>	"ḍh"
+"t" + "h"	>	"th"
+"d" + "h"	>	"dh"
+"p" + "h"	>	"ph"
+"b" + "h"	>	"bh"
+"s" + "h"	>	"ś"
+"ṣ" + "h"	>	"ṣ"	c same S=Sh
+
+c Special combinations (mirroring optitrans_kannada_sanskrit)
+"n" + "k"	>	"ṅk"
+"n" + "g"	>	"ṅg"
+"n" + "c"	>	"ñc"	c direct (mim nc)
+"n" + "j"	>	"ñj"
+"j" + "n"	>	"jñ"
+"dn" + "y"	>	"jñ"	c dny (dra-iso-15919-itrans.mim)
+
+c No ".h" rule: dra-iso-15919-itrans.mim maps .h to nothing, but Keyman
+c rejects empty outputs, and romanization has no halanta to mark anyway.
+c (Typing ".h" therefore yields the literal text ".h".)
+
+c EOF
