@@ -1,0 +1,118 @@
+store(&VERSION) '10.0'
+store(&NAME) 'Nepali MPP Traditional'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'nepali_mpp_traditional.kvks'
+store(&LAYOUTFILE) 'nepali_mpp_traditional.keyman-touch-layout'
+store(&BITMAP) 'nepali_mpp_traditional.ico'
+store(&COPYRIGHT) '(c) Language Technology Kendra / Madan Puraskar Pustakalaya'
+store(&MESSAGE) 'Authentic Nepali Traditional keyboard layout conforming strictly to the official Madan Puraskar Pustakalaya (MPP) & Language Technology Kendra (LTK) specification.'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Number Row
++ "`"  > "ञ"
++ "~"  > "॥"
++ "1"  > "१"
++ "!"  > "ज्ञ"
++ "2"  > "२"
++ "@"  > "ई"
++ "3"  > "३"
++ "#"  > "घ"
++ "4"  > "४"
++ "$"  > "द्ध"
++ "5"  > "५"
++ "%"  > "छ"
++ "6"  > "६"
++ "^"  > "ट"
++ "7"  > "७"
++ "&"  > "ठ"
++ "8"  > "८"
++ "*"  > "ड"
++ "9"  > "९"
++ "("  > "ढ"
++ "0"  > "०"
++ ")"  > "ण"
++ "-"  > "औ"
++ "_"  > "ओ"
++ "="  > U+200D
++ "+"  > U+200C
+
+c Row 1 (QWERTY)
++ "q"  > "त्र"
++ "Q"  > "त्त"
++ "w"  > "ध"
++ "W"  > "ड्ढ"
++ "e"  > "भ"
++ "E"  > "ऐ"
++ "r"  > "च"
++ "R"  > "द्व"
++ "t"  > "त"
++ "T"  > "ट्ट"
++ "y"  > "थ"
++ "Y"  > "ठ्ठ"
++ "u"  > "ग"
++ "U"  > "ऊ"
++ "i"  > "ष"
++ "I"  > "क्ष"
++ "o"  > "य"
++ "O"  > "इ"
++ "p"  > "उ"
++ "P"  > "ए"
++ "["  > "र्"
++ "{"  > "ृ"
++ "]"  > "े"
++ "}"  > "ै"
++ "\"  > "्"
++ "|"  > "ं"
+
+c Row 2 (ASDFGH)
++ "a"  > "ब"
++ "A"  > "आ"
++ "s"  > "क"
++ "S"  > "ङ्क"
++ "d"  > "म"
++ "D"  > "ङ्ग"
++ "f"  > "ा"
++ "F"  > "ँ"
++ "g"  > "न"
++ "G"  > "द्द"
++ "h"  > "ज"
++ "H"  > "झ"
++ "j"  > "व"
++ "J"  > "ो"
++ "k"  > "प"
++ "K"  > "फ"
++ "l"  > "ि"
++ "L"  > "ी"
++ ";"  > "स"
++ ":"  > "ट्ठ"
++ "'"  > "ु"
++ '"'  > "ू"
+
+c Row 3 (ZXCVBN)
++ "z"  > "श"
++ "Z"  > "क्क"
++ "x"  > "ह"
++ "X"  > "ह्म"
++ "c"  > "अ"
++ "C"  > "ऋ"
++ "v"  > "ख"
++ "V"  > "ॐ"
++ "b"  > "द"
++ "B"  > "ौ"
++ "n"  > "ल"
++ "N"  > "द्य"
++ "m"  > "ः"
++ "M"  > "ड्ड"
++ ","  > "ऽ"
++ "<"  > "ङ"
++ "."  > "।"
++ ">"  > "श्र"
++ "/"  > "र"
++ "?"  > "रु"
+
+c touch layout extensions 
++ [T_eyelash_half_rra] > "ऱ्"
