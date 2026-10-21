@@ -1,7 +1,5 @@
 # Rusyn (Lemko, Poland) keyboard
 
-Version 0.3.4, initial submission.
-
 A phonetic Cyrillic keyboard for Lemko. Additional mappings include і on Option/AltGr+I, ї on Option/AltGr+A and ґ on Option/AltGr+H. The language tag rue identifies Rusyn broadly; this keyboard and its visible labels target Lemko specifically.
 
 Includes desktop rules, on-screen keyboard legends, and phone/tablet touch layouts. Touch long-press alternatives include і/ї on и, ґ on г, and щ on ш; a separate symbols layer provides numbers and punctuation.
