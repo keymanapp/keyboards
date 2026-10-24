@@ -4,34 +4,71 @@
   require_once('header.php');
 ?>
 <div>
-<p>The Ibibio Tonal keyboard types the full Ibibio alphabet and all five tone marks.
-Ibibio (ibb) is spoken in Akwa Ibom State, Nigeria.</p>
-<h2>Special letters</h2>
-<table>
-<tr><th>Letter</th><th>Desktop</th><th>Touch</th></tr>
-<tr><td>ọ Ọ</td><td>o ;</td><td>ọ key, or long-press o</td></tr>
-<tr><td>ị Ị</td><td>i ;</td><td>ị key, or long-press i</td></tr>
-<tr><td>ụ Ụ</td><td>u ;</td><td>ụ key, or long-press u</td></tr>
-<tr><td>ʌ Ʌ</td><td>v ;</td><td>ʌ key, or long-press u</td></tr>
-<tr><td>ə Ə</td><td>e ;</td><td>long-press e</td></tr>
-<tr><td>ñ Ñ</td><td>n ;</td><td>ñ key, or long-press n</td></tr>
-</table>
-<p>Press <b>;</b> a second time to undo the letter and type a real semicolon.</p>
-<h2>Tone marks</h2>
-<p>Type the vowel or nasal (m, n, ñ) first, then the tone.</p>
-<table>
-<tr><th>Tone</th><th>Result</th><th>Desktop key</th></tr>
-<tr><td>High</td><td>ó</td><td>]</td></tr>
-<tr><td>Low</td><td>ò</td><td>[</td></tr>
-<tr><td>Falling</td><td>ô</td><td>}</td></tr>
-<tr><td>Rising</td><td>ǒ</td><td>{</td></tr>
-<tr><td>Downstep</td><td>ō</td><td>\</td></tr>
-</table>
-<p>A different tone key swaps the tone. The same tone key again removes it and types the key itself.
-Example: <b>o ; ]</b> gives <b>ọ́</b>, and <b>m [</b> gives <b>m̀</b>.</p>
-<p>On touch devices, use the five tone keys in the top row.</p>
+<p><b>Usem Ibibio ke ñkpọ utañ ikọ mfo.</b> Ibibio on your phone. This keyboard types every Ibibio letter (<b>ọ ị ʌ ñ</b>) and all five tones.</p>
 
-<h2>Touch Keyboard layouts</h2>
-<div id='osk-phone' data-states='default shift numeric'>
-</div>
+<h2>1. The keyboard at a glance (phone)</h2>
+<ul>
+<li><b>ị</b> sits at the end of the top row, <b>ọ ʌ</b> at the end of the middle row, <b>ñ</b> next to m.</li>
+<li><b>ˊˋ</b> (next to the space bar) is the <b>tone key</b>.</li>
+<li><b>Long-press</b> any vowel (a e i o u ọ ị ʌ) or <b>m n ñ</b> to pick a toned letter in one go.</li>
+<li><b>Comma</b> is next to the space bar. <b>Long-press the period</b> for <b>' ? ! -</b></li>
+<li>After numbers or symbols, the <b>space bar</b> takes you back to the letters.</li>
+</ul>
+
+<h2>2. Golden rule: letter first, then tone</h2>
+<p>Type the vowel (or m, n, ñ), <i>then</i> tap <b>ˊˋ</b>. Keep tapping to change the tone:</p>
+<table>
+<tr><th>Taps on ˊˋ</th><th>Tone</th><th>a becomes</th></tr>
+<tr><td>1</td><td>high</td><td>á</td></tr>
+<tr><td>2</td><td>low</td><td>à</td></tr>
+<tr><td>3</td><td>falling</td><td>â</td></tr>
+<tr><td>4</td><td>rising</td><td>ǎ</td></tr>
+<tr><td>5</td><td>downstep</td><td>ā</td></tr>
+<tr><td>6</td><td>no tone</td><td>a</td></tr>
+</table>
+<table>
+<tr><th>To get</th><th>Tap</th><th>Or long-press</th></tr>
+<tr><td><b>Àbàsì</b> (God)</td><td>A ˊˋˊˋ b a ˊˋˊˋ s i ˊˋˊˋ</td><td>hold A → À, hold a → à, hold i → ì</td></tr>
+<tr><td><b>èkà</b> (mother)</td><td>e ˊˋˊˋ k a ˊˋˊˋ</td><td>hold e → è, hold a → à</td></tr>
+<tr><td><b>úfộk</b> (house)</td><td>u ˊˋ f ọ ˊˋˊˋˊˋ k</td><td>hold u → ú, hold ọ → ộ</td></tr>
+<tr><td><b>m̀fị́n</b> (today)</td><td>m ˊˋˊˋ f ị ˊˋ n</td><td>hold m → m̀, hold ị → ị́</td></tr>
+<tr><td><b>ñ́wọñ</b> (drink)</td><td>ñ ˊˋ w ọ ñ</td><td>hold ñ → ñ́</td></tr>
+</table>
+<ul>
+<li><b>Capitals:</b> tap ⇧, type the capital, then the tone. Example: <b>Ìbìbìò</b> = ⇧ I ˊˋˊˋ b i ˊˋˊˋ b i ˊˋˊˋ o ˊˋˊˋ</li>
+<li><b>Fastest way:</b> install the dictionary (section 4). Type plain letters and pick the toned word from the suggestions.</li>
+</ul>
+
+<h2>3. The five tones</h2>
+<table>
+<tr><th>Tone</th><th>Mark</th><th>Example</th></tr>
+<tr><td>High</td><td>á</td><td><b>ébót</b> goat</td></tr>
+<tr><td>Low</td><td>à</td><td><b>èkà</b> mother</td></tr>
+<tr><td>Falling</td><td>â</td><td><b>íkộ</b> word, language</td></tr>
+<tr><td>Rising</td><td>ǎ</td><td><b>kǎ</b> go (class notes; the dictionary writes few rising tones)</td></tr>
+<tr><td>Downstep</td><td>ā</td><td><b>áfēn</b> other</td></tr>
+</table>
+<p>Not sure of a tone? Leave it off. Untoned Ibibio is still correct Ibibio; tones make it clearer.</p>
+
+<h2>4. Word suggestions (predictive text)</h2>
+<p>Install the <b>Ibibio Tonal dictionary</b> and the keyboard suggests fully tone-marked words while you type plain letters: type <i>abasi</i>, get <b>Àbàsì</b>.</p>
+<ul>
+<li><b>Android:</b> open the dictionary file (<i>solomonusoro.ibb.ibibio_tonal.model.kmp</i>) and choose <b>Keyman</b>. Then Keyman → Settings → Ibibio → turn on <b>Enable predictions</b>.</li>
+<li><b>iPhone:</b> AirDrop or share the same file, open it in Keyman, then turn on predictions the same way.</li>
+<li>Install the keyboard <b>before</b> the dictionary.</li>
+</ul>
+
+<h2>5. Computer keyboard</h2>
+<table>
+<tr><th>Type</th><th>Gets</th></tr>
+<tr><td>o ; &nbsp; i ; &nbsp; v ; &nbsp; n ;</td><td>ọ ị ʌ ñ</td></tr>
+<tr><td>vowel then ]</td><td>high (ó)</td></tr>
+<tr><td>vowel then [</td><td>low (ò)</td></tr>
+<tr><td>vowel then }</td><td>falling (ô)</td></tr>
+<tr><td>vowel then {</td><td>rising (ǒ)</td></tr>
+<tr><td>vowel then \</td><td>downstep (ō)</td></tr>
+</table>
+<p>Press the same key twice to type the plain symbol (o ; ; gives o;).</p>
+
+<p><b>Ikûyak usem ǹnyị̀n átàk.</b> Let us not allow our language to perish.</p>
 </div>
