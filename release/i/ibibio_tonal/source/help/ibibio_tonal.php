@@ -39,6 +39,10 @@
 <li><b>Fastest way:</b> install the dictionary (section 4). Type plain letters and pick the toned word from the suggestions.</li>
 </ul>
 
+<h2>Touch keyboard layout</h2>
+<div id='osk-phone' data-states='default shift numeric symbols'>
+</div>
+
 <h2>3. The five tones</h2>
 <table>
 <tr><th>Tone</th><th>Mark</th><th>Example</th></tr>
