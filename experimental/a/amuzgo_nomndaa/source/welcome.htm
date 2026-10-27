@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teclado Ñomndaa</title>
+<style>
+
+  :root {
+    --verde:    #2D6A4F;
+    --verde2:   #40916C;
+    --verde3:   #74C69D;
+    --oro:      #D4A017;
+    --oro2:     #F0C040;
+    --crema:    #FAF3E0;
+    --crema2:   #F0E6C8;
+    --cafe:     #5C3D1E;
+    --texto:    #2C2416;
+    --sombra:   rgba(44,36,22,0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--crema);
+    color: var(--texto);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--verde);
+    padding: 40px 32px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30%;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: rgba(212,160,23,0.12);
+  }
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--oro);
+    color: var(--cafe);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  header h1 span { color: var(--oro2); }
+  header p {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 520px;
+    line-height: 1.6;
+  }
+  .header-meta {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .meta-chip {
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* ── MAIN ── */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 36px 24px 60px;
+  }
+
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--verde);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--crema2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .icon {
+    width: 30px; height: 30px;
+    background: var(--verde);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* ── INTRO CARD ── */
+  .intro-card {
+    background: linear-gradient(135deg, var(--verde) 0%, var(--verde2) 100%);
+    border-radius: 16px;
+    padding: 28px 32px;
+    color: #fff;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .intro-card::after {
+    content: '⌨';
+    position: absolute;
+    right: 24px; bottom: -10px;
+    font-size: 90px;
+    opacity: 0.08;
+    line-height: 1;
+  }
+  .intro-card h2 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--oro2);
+  }
+  .intro-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.9;
+    max-width: 600px;
+  }
+
+  /* ── KEYBOARD VISUAL ── */
+  .keyboard-section { margin-bottom: 40px; }
+
+  .kb-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--verde2);
+    margin-bottom: 10px;
+  }
+
+  .keyboard {
+    background: var(--cafe);
+    border-radius: 14px;
+    padding: 16px 14px 18px;
+    box-shadow: 0 8px 32px var(--sombra), inset 0 1px 0 rgba(255,255,255,0.08);
+    overflow-x: auto;
+  }
+  .kb-row {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .key {
+    background: linear-gradient(180deg, #f5f0e8 0%, #e8e0cc 100%);
+    border-radius: 6px;
+    min-width: 40px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--texto);
+    box-shadow: 0 3px 0 #8a7a5a, 0 4px 6px rgba(0,0,0,0.3);
+    position: relative;
+    padding: 2px 4px;
+    cursor: default;
+    transition: transform 0.08s, box-shadow 0.08s;
+    flex-shrink: 0;
+  }
+  .key:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #8a7a5a, 0 3px 4px rgba(0,0,0,0.3);
+  }
+  .key .shift { font-size: 9px; color: #666; line-height: 1; }
+  .key .base  { font-size: 12px; font-weight: 600; line-height: 1; }
+  .key .altgr { font-size: 8px; color: var(--verde); line-height: 1; font-weight: 700; }
+
+  .key.special {
+    background: linear-gradient(180deg, #d4c8a8 0%, #c4b890 100%);
+    color: #555;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .key.wide-15 { min-width: 58px; }
+  .key.wide-2  { min-width: 84px; }
+  .key.wide-25 { min-width: 104px; }
+  .key.wide-3  { min-width: 124px; }
+  .key.wide-7  { min-width: 300px; }
+  .key.highlight {
+    background: linear-gradient(180deg, #e8f5ee 0%, #c8e8d8 100%);
+    box-shadow: 0 3px 0 #4a9a6a, 0 4px 6px rgba(0,0,0,0.3);
+  }
+  .key.highlight .base { color: var(--verde); }
+  .key.dead {
+    background: linear-gradient(180deg, #fff8e8 0%, #f0e4b8 100%);
+    box-shadow: 0 3px 0 #b08a2a, 0 4px 6px rgba(0,0,0,0.3);
+  }
+  .key.dead .base { color: var(--oro); }
+
+  /* ── TABLES ── */
+  .tables-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 600px) { .tables-grid { grid-template-columns: 1fr; } }
+
+  .ref-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px var(--sombra);
+  }
+  .ref-card-title {
+    background: var(--verde);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 16px;
+  }
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .ref-table tr:nth-child(even) { background: var(--crema); }
+  .ref-table td {
+    padding: 7px 14px;
+    border-bottom: 1px solid var(--crema2);
+  }
+  .ref-table td:first-child {
+    font-weight: 600;
+    color: var(--cafe);
+    white-space: nowrap;
+  }
+  .ref-table td:last-child {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .key-combo {
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+  }
+  .kc {
+    background: var(--crema2);
+    border: 1px solid #c8b890;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 11px;
+    font-family: monospace;
+    font-weight: 700;
+    color: var(--cafe);
+    box-shadow: 0 1px 0 #a89060;
+  }
+  .plus { font-size: 10px; color: #999; }
+
+  /* ── DEAD KEY DIAGRAM ── */
+  .deadkey-section { margin-bottom: 36px; }
+  .dk-flow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 10px var(--sombra);
+    flex-wrap: wrap;
+  }
+  .dk-key {
+    background: linear-gradient(180deg, #fff8e8 0%, #f0e4b8 100%);
+    border: 2px solid var(--oro);
+    border-radius: 8px;
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--oro);
+    box-shadow: 0 3px 0 #b08a2a;
+    flex-shrink: 0;
+  }
+  .dk-arrow { font-size: 18px; color: #bbb; }
+  .dk-plus {
+    font-size: 20px;
+    color: var(--verde2);
+    font-weight: 700;
+  }
+  .dk-result {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .dk-pair {
+    background: var(--crema);
+    border: 1px solid var(--crema2);
+    border-radius: 8px;
+    padding: 6px 10px;
+    text-align: center;
+    min-width: 44px;
+  }
+  .dk-pair .input  { font-size: 11px; color: #999; }
+  .dk-pair .output { font-size: 16px; font-weight: 700; color: var(--verde); }
+
+  .dk-label {
+    font-size: 12px;
+    color: #888;
+    margin-left: 4px;
+  }
+
+  /* ── SPECIAL CHARS ── */
+  .special-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .sc-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--sombra);
+    border-top: 3px solid var(--verde3);
+  }
+  .sc-char {
+    font-size: 28px;
+    font-family: 'Charis SIL', 'Andika', serif;
+    color: var(--verde);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .sc-name {
+    font-size: 10px;
+    color: #888;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .sc-combo {
+    font-size: 10px;
+    font-family: monospace;
+    background: var(--crema2);
+    border-radius: 4px;
+    padding: 2px 6px;
+    color: var(--cafe);
+    font-weight: 600;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--verde);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  footer strong { color: var(--oro2); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="badge">Teclado Ñomndaa · 2025-2026</div>
+    <h1>Teclado <span>Amuzgo de Guerrero</span> / Base: Español Latinoamerica</h1>
+    <p>Diseño optimizado para la escritura del Amuzgo de Guerrero basado en distribución Español Latinoamerica, 
+    con soporte completo del estándar Unicode para amuzgo de Guerreo.</p>
+    <div class="header-meta">
+      <span class="meta-chip">🌐 amuzgo-guia.netlify.app</span>
+      <span class="meta-chip">✍ Soporte / trinidadodiseo@gmail.com - OTL© 2025-2026</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro-card">
+    <h2>¿Qué es este teclado?</h2>
+    <p>Esta distribución de teclado pretende facilitar la escritura bilingüe en la lengua Ñomndaa (Amuzgo de Guerrero) de manera fluida y natural teniendo como base intacta la distribución Español Latinoaméricana.
+El usuario mantiene su memoria muscular y hábitos de escritura previos.
+Compatibilidad Estándar: Mantiene la ubicación original de caracteres del español (como la ñ, tildes y signos de puntuación), eliminando la curva de aprendizaje para quienes ya escriben en computadoras y dispositivos android.
+Cada combinación de caracteres está definida por una secuencia de teclas organizadas de forma muy cuidadosa, que además no interfieren con funciones de sistema o sofware.
+Integración del Amuzgo: Incorpora con 100% de fidelidad todos los caracteres UNICODE  Estandarizados por SIL International, que son fundamento para la lengua Ñomndaa . </p>
+    <p> Filosofía de Diseño: Este trabajo reconoce y agradece profundamente las distribuciones oficiales existentes en plataformas como Keyman; no obstante, surge como una propuesta complementaria enfocada en la usabilidad masiva. El propósito final es acercar la lengua Amuzgo en medios digitales, ya que hasta ahora se consideran distantes o incluso ausentes, ofreciendo una herramienta que sea accesible tanto para hablantes nativos como para nuevos aprendices sin las complicaciones de configuraciones técnicas ajenas a su contexto diario </p>
+  </div>
+
+  <!-- KEYBOARD VISUAL -->
+  <div class="keyboard-section">
+    <div class="section-title"><span class="icon">⌨</span> Mapa del Teclado para  Computadora</div>
+
+    <div class="kb-label">Sin modificador / Shift</div>
+    <div class="keyboard">
+      <!-- Row 1: numbers -->
+      <div class="kb-row">
+        <div class="key"><span class="shift">°</span><span class="base">|</span><span class="altgr">dk</span></div>
+        <div class="key"><span class="shift">!</span><span class="base">1</span></div>
+        <div class="key"><span class="shift">"</span><span class="base">2</span></div>
+        <div class="key"><span class="shift">#</span><span class="base">3</span></div>
+        <div class="key"><span class="shift">$</span><span class="base">4</span></div>
+        <div class="key"><span class="shift">%</span><span class="base">5</span></div>
+        <div class="key"><span class="shift">&amp;</span><span class="base">6</span></div>
+        <div class="key"><span class="shift">/</span><span class="base">7</span></div>
+        <div class="key"><span class="shift">(</span><span class="base">8</span></div>
+        <div class="key"><span class="shift">)</span><span class="base">9</span></div>
+        <div class="key"><span class="shift">=</span><span class="base">0</span></div>
+        <div class="key highlight"><span class="shift">?</span><span class="base">ꞌ</span><span class="altgr">\</span></div>
+        <div class="key"><span class="shift">¡</span><span class="base">¿</span></div>
+        <div class="key special wide-15">⌫ Bksp</div>
+      </div>
+      <!-- Row 2: QWERTY -->
+      <div class="kb-row">
+        <div class="key special wide-15">Tab</div>
+        <div class="key"><span class="shift">Q</span><span class="base">q</span><span class="altgr">@</span></div>
+        <div class="key"><span class="shift">W</span><span class="base">w</span></div>
+        <div class="key"><span class="shift">E</span><span class="base">e</span></div>
+        <div class="key"><span class="shift">R</span><span class="base">r</span></div>
+        <div class="key"><span class="shift">T</span><span class="base">t</span></div>
+        <div class="key"><span class="shift">Y</span><span class="base">y</span></div>
+        <div class="key"><span class="shift">U</span><span class="base">u</span></div>
+        <div class="key"><span class="shift">I</span><span class="base">i</span></div>
+        <div class="key"><span class="shift">O</span><span class="base">o</span></div>
+        <div class="key"><span class="shift">P</span><span class="base">p</span></div>
+        <div class="key dead"><span class="shift">¨</span><span class="base">´</span><span class="altgr">dk</span></div>
+        <div class="key"><span class="shift">*</span><span class="base">+</span><span class="altgr">~</span></div>
+        <div class="key special wide-15">Enter</div>
+      </div>
+      <!-- Row 3: ASDF -->
+      <div class="kb-row">
+        <div class="key special wide-2">Caps</div>
+        <div class="key"><span class="shift">A</span><span class="base">a</span></div>
+        <div class="key"><span class="shift">S</span><span class="base">s</span></div>
+        <div class="key"><span class="shift">D</span><span class="base">d</span></div>
+        <div class="key"><span class="shift">F</span><span class="base">f</span></div>
+        <div class="key"><span class="shift">G</span><span class="base">g</span></div>
+        <div class="key"><span class="shift">H</span><span class="base">h</span></div>
+        <div class="key"><span class="shift">J</span><span class="base">j</span></div>
+        <div class="key"><span class="shift">K</span><span class="base">k</span></div>
+        <div class="key"><span class="shift">L</span><span class="base">l</span></div>
+        <div class="key highlight"><span class="shift">Ñ</span><span class="base">ñ</span></div>
+        <div class="key"><span class="shift">[</span><span class="base">{</span></div>
+        <div class="key"><span class="shift">]</span><span class="base">}</span><span class="altgr">`</span></div>
+      </div>
+      <!-- Row 4: ZXCV -->
+      <div class="kb-row">
+        <div class="key special wide-25">Shift</div>
+        <div class="key"><span class="shift">Z</span><span class="base">z</span></div>
+        <div class="key"><span class="shift">X</span><span class="base">x</span></div>
+        <div class="key"><span class="shift">C</span><span class="base">c</span></div>
+        <div class="key"><span class="shift">V</span><span class="base">v</span></div>
+        <div class="key"><span class="shift">B</span><span class="base">b</span></div>
+        <div class="key highlight"><span class="shift">N</span><span class="base">n</span><span class="altgr">ⁿ</span></div>
+        <div class="key"><span class="shift">M</span><span class="base">m</span></div>
+        <div class="key"><span class="shift">;</span><span class="base">,</span></div>
+        <div class="key"><span class="shift">:</span><span class="base">.</span></div>
+        <div class="key"><span class="shift">_</span><span class="base">-</span><span class="altgr">̱</span></div>
+        <div class="key special wide-25">Shift</div>
+      </div>
+      <!-- Row 5: space -->
+      <div class="kb-row">
+        <div class="key special wide-15">Ctrl</div>
+        <div class="key special wide-15">Alt</div>
+        <div class="key wide-7"> </div>
+        <div class="key special wide-15">AltGr</div>
+        <div class="key special wide-15">Ctrl</div>
+      </div>
+    </div>
+
+    <p style="font-size:11px; color:#888; margin-top:8px;">
+      <span style="color:var(--verde); font-weight:700;">■</span> Verde = carácter especial Amuzgo &nbsp;
+      <span style="color:var(--oro); font-weight:700;">■</span> Amarillo = tecla combinante previa &nbsp;
+      <span style="font-size:10px;">Texto pequeño verde = AltGr</span>
+    </p>
+  </div>
+
+  <!-- DEAD KEYS -->
+  <div class="deadkey-section">
+    <div class="section-title"><span class="icon">🔑</span> DeadKeys (Teclas Combinantes Previas)</div>
+
+    <div class="dk-flow">
+      <div class="dk-key">´</div>
+      <span class="dk-arrow">→</span>
+      <span class="dk-label">Acento agudo — presiona ´ luego la vocal</span>
+      <div class="dk-result">
+        <div class="dk-pair"><div class="input">a</div><div class="output">á</div></div>
+        <div class="dk-pair"><div class="input">e</div><div class="output">é</div></div>
+        <div class="dk-pair"><div class="input">i</div><div class="output">í</div></div>
+        <div class="dk-pair"><div class="input">o</div><div class="output">ó</div></div>
+        <div class="dk-pair"><div class="input">u</div><div class="output">ú</div></div>
+        <div class="dk-pair"><div class="input">y</div><div class="output">ý</div></div>
+      </div>
+    </div>
+
+    <div class="dk-flow">
+      <div class="dk-key">¨</div>
+      <span class="dk-arrow">→</span>
+      <span class="dk-label">Diéresis — presiona Shift+´ luego la vocal</span>
+      <div class="dk-result">
+        <div class="dk-pair"><div class="input">a</div><div class="output">ä</div></div>
+        <div class="dk-pair"><div class="input">e</div><div class="output">ë</div></div>
+        <div class="dk-pair"><div class="input">i</div><div class="output">ï</div></div>
+        <div class="dk-pair"><div class="input">o</div><div class="output">ö</div></div>
+        <div class="dk-pair"><div class="input">u</div><div class="output">ü</div></div>
+      </div>
+    </div>
+
+    <div class="dk-flow">
+      <div class="dk-key" style="font-size:14px;">|</div>
+      <span class="dk-arrow">→</span>
+      <span class="dk-label">Circunflejo — presiona | (Inicio de fila númerica) luego la vocal</span>
+      <div class="dk-result">
+        <div class="dk-pair"><div class="input">a</div><div class="output">â</div></div>
+        <div class="dk-pair"><div class="input">e</div><div class="output">ê</div></div>
+        <div class="dk-pair"><div class="input">i</div><div class="output">î</div></div>
+        <div class="dk-pair"><div class="input">o</div><div class="output">ô</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECIAL CHARACTERS -->
+  <div class="section-title"><span class="icon"> </span> Caracteres Especiales Amuzgo</div>
+  <div class="special-grid">
+    <div class="sc-card">
+      <div class="sc-char">ꞌ</div>
+      <div class="sc-name">Saltillo<br>(glotal)</div>
+      <div class="sc-combo">tecla ' (Sustituye Apóstrofo recto)</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">a̱</div>
+      <div class="sc-name">a + barra<br>inferior</div>
+      <div class="sc-combo">AltGr+A</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">o̱</div>
+      <div class="sc-name">o + barra<br>inferior</div>
+      <div class="sc-combo">AltGr+O</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">ô̱ </div>
+      <div class="sc-name">ô + barra<br>inferior</div>
+      <div class="sc-combo">AltGr+0</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">ⁿ</div>
+      <div class="sc-name">n<br>superíndice</div>
+      <div class="sc-combo">AltGr+N</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">ᴺ</div>
+      <div class="sc-name">N<br>Adaptación Mayuscula de ⁿ </div>
+      <div class="sc-combo">⇧ AltGr+N</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">̱</div>
+      <div class="sc-name">barra inferior<br>colocar  ̱ manualmente despúes de cualquier carácter</div>
+      <div class="sc-combo">AltGr+-(guión)</div>
+    </div>
+    <div class="sc-card">
+      <div class="sc-char">´ ¨ ^</div>
+      <div class="sc-name">combinantes previas a la vocal <br></div>
+      <div class="sc-combo">â ü ô̱ é    </div>
+    </div>
+  </div>
+
+  <!-- REFERENCE TABLES -->
+  <div class="section-title"><span class="icon">📋</span> Referencia Rápida (combinaciones amuzgo/español)</div>
+  <div class="tables-grid">
+
+    <div class="ref-card">
+      <div class="ref-card-title">AltGr (Ctrl+Alt)</div>
+      <table class="ref-table">
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">Q</span></span></td><td>@</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">N</span></span></td><td>ⁿ</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">A</span></span></td><td>a̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">O</span></span></td><td>o̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">0</span></span></td><td>ô̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">-</span></span></td><td>̱ (barra infereior)</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">]</span></span></td><td>~</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">\</span></span></td><td>`</td></tr>
+      </table>
+    </div>
+
+    <div class="ref-card">
+      <div class="ref-card-title">Shift + AltGr</div>
+      <table class="ref-table">
+        <tr><td><span class="key-combo"><span class="kc">⇧</span><span class="plus">+</span><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">N</span></span></td><td>ᴺ</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">⇧</span><span class="plus">+</span><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">A</span></span></td><td>A̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">⇧</span><span class="plus">+</span><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">O</span></span></td><td>O̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">⇧</span><span class="plus">+</span><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">0</span></span></td><td>Ô̱</td></tr>
+        <tr><td><span class="key-combo"><span class="kc">⇧</span><span class="plus">+</span><span class="kc">AltGr</span><span class="plus">+</span><span class="kc">-</span></span></td><td>_</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <strong>Amuzgo Keyboard v2.2.1</strong> · OdisseoTL · Copyright © 2025-2026 
+  Guía completa: <strong></strong> · <strong>https://amuzgo-guia.netlify.app</strong>
+</footer>
+
+</body>
+</html>
