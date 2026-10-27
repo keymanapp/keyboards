@@ -1,6 +1,11 @@
 vietnam Change History
 ====================
 
+2.0.7 (2025-09-17)
+----------------
+* Updated by cathaylab
+* fixed bugs
+
 2.0.6 (2025-06-15)
 ----------------
 * Updated by cathaylab

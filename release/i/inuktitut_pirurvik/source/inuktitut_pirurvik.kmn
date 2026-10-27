@@ -2,16 +2,13 @@
 store(&VERSION) '10.0'
 store(&TARGETS) 'tablet mobile'
 store(&NAME) 'Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ'
-c store(&ETHNOLOGUECODE) 'ike'
-store(&COPYRIGHT) '(c) 2015-2019 Pirurvik Center and SIL International'
-c store(&LANGUAGE) 'x045D'
-c store(&WINDOWSLANGUAGES) 'x045D'
+store(&COPYRIGHT) '(c) Pirurvik Center and SIL Global'
 store(&LAYOUTFILE) 'inuktitut_pirurvik.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'inuktitut_pirurvik.css'
-store(&KEYBOARDVERSION) '1.4.1'
+store(&KEYBOARDVERSION) '1.4.2'
 begin Unicode > use(main)
 
-store(punct) ".,:;'\/!?" d34
+store(punct) ".,:;'\/!?" U+0022
 store(unused) [T_TRANS_W][T_TRANS_E][T_TRANS_Y][T_TRANS_O][T_TRANS_D][T_TRANS_F][T_TRANS_Z][T_TRANS_X][T_TRANS_C][T_TRANS_B]
 group(main) using keys
 

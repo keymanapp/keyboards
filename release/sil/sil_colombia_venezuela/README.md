@@ -3,8 +3,6 @@ Colombia_Venezuela keyboard
 
 Description
 -----------
-Colombia_Venezuela generated from template
-
 Teclado normalizado para la escritura de más de 60 idiomas indígenas de Colombia y Venezuela. Incluye soporte para caracteres especiales (barradas, nasales, saltillo), rotación de vocales y distribución latinoamericana.
 
 Copyright

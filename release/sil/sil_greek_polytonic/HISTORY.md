@@ -1,6 +1,10 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.8.7 (2 Oct 2026)
+-----------------
+* Changed and added stores as the "xff" syntax is no longer supported
+
 1.8.6 (10 Sep 2025)
 -----------------
 * Additional handling for start-of-line scenarios
