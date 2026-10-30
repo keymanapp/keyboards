@@ -1,0 +1,178 @@
+c AnnouMaké — clavier ordinateur (Windows, Mac)
+c
+c Calé sur le clavier « Kréyòl Gwadloup » d'Apple (iOS 27) : AZERTY où
+c   q -> k   et   x -> ò
+c Sur ordinateur, é et è restent sur leurs touches AZERTY habituelles (2 et 7)
+c pour ne pas sacrifier la virgule et le point-virgule ; Verr. Maj donne É È Ò À Ç.
+c Pas de q ni de x : ils n'existent pas en créole guadeloupéen. Pour le français,
+c on change de clavier, comme sur l'iPhone (décision de Brigitte, 11/10/2026).
+c
+c Disposition complète définie ici : le clavier fonctionne en AZERTY
+c quelle que soit la disposition du système (AZERTY ou QWERTY).
+c Base : AZERTY Windows (kbdfr). Les touches de symboles qui diffèrent sur un
+c Mac AZERTY sont redéfinies en tête de la rangée des chiffres (platform macosx).
+
+store(&NAME) 'AnnouMaké'
+store(&COPYRIGHT) '© SAS POTOMITAN'
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'desktop web'
+store(&VISUALKEYBOARD) 'potomitan_gcf.kvks'
+store(&CasedKeys) [K_A]..[K_Z]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ---------- Rangée des chiffres (AZERTY Windows) ----------
+c Mac : les touches de symboles qui diffèrent sur un Mac AZERTY passent d'abord.
+
+platform('macosx') + [K_BKQUOTE] > '@'
+platform('macosx') + [SHIFT K_BKQUOTE] > '#'
+platform('macosx') + [K_6] > '§'
+platform('macosx') + [SHIFT K_6] > '6'
+platform('macosx') + [K_8] > '!'
+platform('macosx') + [SHIFT K_8] > '8'
+platform('macosx') + [K_EQUAL] > '-'
+platform('macosx') + [SHIFT K_EQUAL] > '_'
+platform('macosx') + [K_RBRKT] > '$'
+platform('macosx') + [SHIFT K_RBRKT] > '*'
+platform('macosx') + [K_BKSLASH] > '`'
+platform('macosx') + [SHIFT K_BKSLASH] > '£'
+platform('macosx') + [K_SLASH] > '='
+platform('macosx') + [SHIFT K_SLASH] > '+'
+
++ [K_BKQUOTE] > '²'
++ [K_1] > '&'
++ [SHIFT K_1] > '1'
++ [CAPS K_2] > 'É'
++ [NCAPS K_2] > 'é'
++ [NCAPS SHIFT K_2] > '2'
++ [CAPS SHIFT K_2] > '2'
++ [K_3] > '"'
++ [SHIFT K_3] > '3'
++ [K_4] > "'"
++ [SHIFT K_4] > '4'
++ [K_5] > '('
++ [SHIFT K_5] > '5'
++ [K_6] > '-'
++ [SHIFT K_6] > '6'
++ [CAPS K_7] > 'È'
++ [NCAPS K_7] > 'è'
++ [NCAPS SHIFT K_7] > '7'
++ [CAPS SHIFT K_7] > '7'
++ [K_8] > '_'
++ [SHIFT K_8] > '8'
++ [CAPS K_9] > 'Ç'
++ [NCAPS K_9] > 'ç'
++ [NCAPS SHIFT K_9] > '9'
++ [CAPS SHIFT K_9] > '9'
++ [CAPS K_0] > 'À'
++ [NCAPS K_0] > 'à'
++ [NCAPS SHIFT K_0] > '0'
++ [CAPS SHIFT K_0] > '0'
++ [K_HYPHEN] > ')'
++ [SHIFT K_HYPHEN] > '°'
++ [K_EQUAL] > '='
++ [SHIFT K_EQUAL] > '+'
+
+c AltGr (Windows) / Option droite (Mac)
++ [NCAPS RALT K_2] > '~'
++ [RALT K_3] > '#'
++ [RALT K_4] > '{'
++ [RALT K_5] > '['
++ [RALT K_6] > '|'
++ [NCAPS RALT K_7] > '`'
++ [RALT K_8] > '\'
++ [NCAPS RALT K_0] > '@'
++ [RALT K_HYPHEN] > ']'
++ [RALT K_EQUAL] > '}'
++ [RALT K_E] > '€'
+
+c ---------- Rangée du haut ----------
++ [K_Q] > 'a'
++ [SHIFT K_Q] > 'A'
++ [K_W] > 'z'
++ [SHIFT K_W] > 'Z'
++ [K_E] > 'e'
++ [SHIFT K_E] > 'E'
++ [K_R] > 'r'
++ [SHIFT K_R] > 'R'
++ [K_T] > 't'
++ [SHIFT K_T] > 'T'
++ [K_Y] > 'y'
++ [SHIFT K_Y] > 'Y'
++ [K_U] > 'u'
++ [SHIFT K_U] > 'U'
++ [K_I] > 'i'
++ [SHIFT K_I] > 'I'
++ [K_O] > 'o'
++ [SHIFT K_O] > 'O'
++ [K_P] > 'p'
++ [SHIFT K_P] > 'P'
++ [K_LBRKT] > dk(circ)
++ [SHIFT K_LBRKT] > dk(trema)
++ [K_RBRKT] > '$'
++ [SHIFT K_RBRKT] > '£'
+
+c ---------- Rangée du milieu : q -> k (comme sur l'iPhone) ----------
++ [K_A] > 'k'
++ [SHIFT K_A] > 'K'
++ [K_S] > 's'
++ [SHIFT K_S] > 'S'
++ [K_D] > 'd'
++ [SHIFT K_D] > 'D'
++ [K_F] > 'f'
++ [SHIFT K_F] > 'F'
++ [K_G] > 'g'
++ [SHIFT K_G] > 'G'
++ [K_H] > 'h'
++ [SHIFT K_H] > 'H'
++ [K_J] > 'j'
++ [SHIFT K_J] > 'J'
++ [K_K] > 'k'
++ [SHIFT K_K] > 'K'
++ [K_L] > 'l'
++ [SHIFT K_L] > 'L'
++ [K_COLON] > 'm'
++ [SHIFT K_COLON] > 'M'
++ [K_QUOTE] > 'ù'
++ [SHIFT K_QUOTE] > '%'
++ [K_BKSLASH] > '*'
++ [SHIFT K_BKSLASH] > 'µ'
+
+c ---------- Rangée du bas : x -> ò (comme sur l'iPhone) ----------
++ [K_oE2] > '<'
++ [SHIFT K_oE2] > '>'
++ [K_Z] > 'w'
++ [SHIFT K_Z] > 'W'
++ [K_X] > 'ò'
++ [SHIFT K_X] > 'Ò'
++ [K_C] > 'c'
++ [SHIFT K_C] > 'C'
++ [K_V] > 'v'
++ [SHIFT K_V] > 'V'
++ [K_B] > 'b'
++ [SHIFT K_B] > 'B'
++ [K_N] > 'n'
++ [SHIFT K_N] > 'N'
++ [K_M] > ','
++ [SHIFT K_M] > '?'
++ [K_COMMA] > ';'
++ [SHIFT K_COMMA] > '.'
++ [K_PERIOD] > ':'
++ [SHIFT K_PERIOD] > '/'
++ [K_SLASH] > '!'
++ [SHIFT K_SLASH] > '§'
+
+c ---------- Touches mortes ^ et ¨ (pour le français) ----------
+store(circKeys)  [K_Q] [K_E] [K_I] [K_O] [K_U] [SHIFT K_Q] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U]
+store(circOut)   'â'   'ê'   'î'   'ô'   'û'   'Â'         'Ê'         'Î'         'Ô'         'Û'
+store(tremaKeys) [K_Q] [K_E] [K_I] [K_O] [K_U] [K_Y] [SHIFT K_Q] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U]
+store(tremaOut)  'ä'   'ë'   'ï'   'ö'   'ü'   'ÿ'   'Ä'         'Ë'         'Ï'         'Ö'         'Ü'
+
+dk(circ) + any(circKeys) > index(circOut, 2)
+dk(circ) + [K_SPACE] > '^'
+dk(circ) + [K_LBRKT] > '^'
+dk(trema) + any(tremaKeys) > index(tremaOut, 2)
+dk(trema) + [K_SPACE] > '¨'
