@@ -1,9 +1,7 @@
 BU Phonetic keyboard
 ==============
 
-© 2006-2023 J. Albert Bickford
-
-Version 2.1
+© J. Albert Bickford
 
 Description
 -----------

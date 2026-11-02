@@ -1,5 +1,10 @@
 Colombia_Venezuela Change History
 ====================
+
+2.1 (5 Oct 2026)
+-----------------
+* Changed kar tag to car
+
 2.0 (15 Jan 2026)
 -----------------
 * First release for Keyman repository.
