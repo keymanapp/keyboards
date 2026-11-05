@@ -1,5 +1,5 @@
 <?php 
-    $pagename = "Phonetic Hebrew Help";
+    $pagename = "Phonetic Hebrew Keyboard Help";
     $pagetitle = $pagename;
     $pagestyle = <<<END
 
@@ -17,4 +17,4 @@
 
 <h2>Touch Keyboard Layout</h2>
 
-<div id='osk-phone' data-states='default'>
+<div id='osk-tablet' data-states='default'>
