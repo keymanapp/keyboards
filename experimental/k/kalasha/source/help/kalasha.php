@@ -328,9 +328,9 @@
         </div>
     </div>
 
-    <div id='osk-tablet-container'>
-        <h2>Mobile/Tablet Keyboard Layout</h2>
-        <div id='osk-tablet' data-states='default shift numeric'></div>
+    <div id='osk-phone-container'>
+        <h2>Mobile Keyboard Layout</h2>
+        <div id='osk-phone' data-states='default shift numeric'></div>
 
         <h3>Longpress</h3>
         <img src="longpress.gif" alt="Mobile Layout - Longpress" style="width:50%">
