@@ -1,10 +1,7 @@
 <?php 
     $pagename = "Phonetic Hebrew Keyboard Help";
     $pagetitle = $pagename;
-    $pagestyle = <<<END
-
-    END;
-    require_once('header.php'); 
+  require_once('header.php');
 ?>
 
 <p>
@@ -17,4 +14,5 @@
 
 <h2>Touch Keyboard Layout</h2>
 
-<div id='osk-tablet' data-states='default'>
+<div id='osk-tablet' data-states='default'></div>
+
