@@ -19,7 +19,7 @@ and another <b>a</b> makes it <span class="kn">ಕಾ</span>.</p>
 <ul>
   <li><b>Capital letters matter.</b> <b>t</b> is <span class="kn">ತ</span> but <b>T</b> is <span class="kn">ಟ</span>;
       <b>e</b> is <span class="kn">ಎ</span> but <b>E</b> is <span class="kn">ಏ</span>.</li>
-  <li><b>Conjuncts form automatically.</b> Type consonants one after another: <b>kSh</b> gives <span class="kn">ಕ್ಷ</span>,
+  <li><b>ಒತ್ತಕ್ಷರಗಳು (ottakSharas) form automatically.</b> Type consonants one after another: <b>kSh</b> gives <span class="kn">ಕ್ಷ</span>,
       <b>dr</b> gives <span class="kn">ದ್ರ್</span>.</li>
   <li><b>Word endings.</b> A word ending in a consonant shows a virama (<span class="kn">್</span>)
       until you type the final vowel: <b>raam</b> is <span class="kn">ರಾಮ್</span>, <b>raama</b> is <span class="kn">ರಾಮ</span>.</li>
