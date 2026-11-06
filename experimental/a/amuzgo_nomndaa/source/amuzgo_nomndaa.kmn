@@ -1,0 +1,801 @@
+﻿c ============================================================
+c Amuzgo Keyboard - Teclado Amuzgo Guerrero /Ñomndaa
+c Autor: Odiseo Trinidad López
+c Base: Distribucion Latinoamericana Mod MSKLC
+c ============================================================
+
+
+store(&VERSION) '17.0'
+store(&COPYRIGHT) '© 2026 Odiseo Trinidad López'
+
+c ===============================================
+store(&LAYOUTFILE) 'amuzgo_nomndaa.keyman-touch-layout'
+
+store(&NAME) 'Ñomndaa (Amuzgo de Guerrero)'
+store(&KEYBOARDVERSION) '3.2.2'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'amuzgo_nomndaa.kvks'
+store(&BITMAP) 'amuzgo_nomndaa.ico'
+store(&MESSAGE) 'Teclado para escribir ñomndaa (amuzgo de Guerrero) sobre la distribución Español (Latinoamérica).'
+begin Unicode > use(Main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(default-alpha) 'a' 'A' 'b' 'B' 'c' 'C' 'd' 'D' 'e' 'E' 'f' 'F' 'g' 'G' 'h' 'H' 'i' 'I' 'j' 'J' 'k' 'K' 'l' 'L' 'm' 'M' 'n' 'N' 'ñ' 'Ñ' 'o' 'O' 'p' 'P' 'q' 'Q' 'r' 'R' 's' 'S' 't' 'T' 'u' 'U' 'v' 'V' 'w' 'W' 'x' 'X' 'y' 'Y' 'z' 'Z'
+store(digit) '0'..'9'
+store(sentencePunctuation) '.?!¿¡'
+
+$keymanweb: store(&CasedKeys) [K_A]..[K_Z] [K_COLON]
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
+
++ [NCAPS K_0] > U+0030
+
++ [NCAPS SHIFT K_0] > U+003d
+
++ [CAPS K_0] > U+0030
+
++ [CAPS SHIFT K_0] > U+003d
+
+
+
++ [NCAPS K_1] > U+0031
+
++ [NCAPS SHIFT K_1] > U+0021
+
++ [CAPS K_1] > U+0031
+
++ [CAPS SHIFT K_1] > U+0021
+
+
++ [K_2] > U+0032
+
++ [SHIFT K_2] > U+0022
+
+
++ [K_3] > U+0033
+
++ [SHIFT K_3] > U+0023
+
+
++ [K_4] > U+0034
+
++ [SHIFT K_4] > U+0024
+
+
++ [K_5] > U+0035
+
++ [SHIFT K_5] > U+0025
+
+
++ [K_6] > U+0036
+
++ [SHIFT K_6] > U+0026
+
+
++ [K_7] > U+0037
+
++ [SHIFT K_7] > U+002f
+
+
+
++ [K_8] > U+0038
+
++ [SHIFT K_8] > U+0028
+
+
++ [K_9] > U+0039
+
++ [SHIFT K_9] > U+0029
+
+
+
++ [NCAPS K_A] > U+0061
+
++ [CAPS K_A] > U+0041
+
++ [NCAPS SHIFT K_A] > U+0041
+
++ [CAPS SHIFT K_A] > U+0061
+
+
+
++ [NCAPS K_B] > U+0062
+
++ [CAPS K_B] > U+0042
+
++ [NCAPS SHIFT K_B] > U+0042
+
++ [CAPS SHIFT K_B] > U+0062
+
+
+
++ [NCAPS K_C] > U+0063
+
++ [CAPS K_C] > U+0043
+
++ [NCAPS SHIFT K_C] > U+0043
+
++ [CAPS SHIFT K_C] > U+0063
+
+
+
++ [NCAPS K_D] > U+0064
+
++ [CAPS K_D] > U+0044
+
++ [NCAPS SHIFT K_D] > U+0044
+
++ [CAPS SHIFT K_D] > U+0064
+
+
+
++ [NCAPS K_E] > U+0065
+
++ [CAPS K_E] > U+0045
+
++ [NCAPS SHIFT K_E] > U+0045
+
++ [CAPS SHIFT K_E] > U+0065
+
+
+
++ [NCAPS K_F] > U+0066
+
++ [CAPS K_F] > U+0046
+
++ [NCAPS SHIFT K_F] > U+0046
+
++ [CAPS SHIFT K_F] > U+0066
+
+
+
++ [NCAPS K_G] > U+0067
+
++ [CAPS K_G] > U+0047
+
++ [NCAPS SHIFT K_G] > U+0047
+
++ [CAPS SHIFT K_G] > U+0067
+
+
+
++ [NCAPS K_H] > U+0068
+
++ [CAPS K_H] > U+0048
+
++ [NCAPS SHIFT K_H] > U+0048
+
++ [CAPS SHIFT K_H] > U+0068
+
+
+
++ [NCAPS K_I] > U+0069
+
++ [CAPS K_I] > U+0049
+
++ [NCAPS SHIFT K_I] > U+0049
+
++ [CAPS SHIFT K_I] > U+0069
+
+
+
++ [NCAPS K_J] > U+006a
+
++ [CAPS K_J] > U+004a
+
++ [NCAPS SHIFT K_J] > U+004a
+
++ [CAPS SHIFT K_J] > U+006a
+
+
+
++ [NCAPS K_K] > U+006b
+
++ [CAPS K_K] > U+004b
+
++ [NCAPS SHIFT K_K] > U+004b
+
++ [CAPS SHIFT K_K] > U+006b
+
+
+
++ [NCAPS K_L] > U+006c
+
++ [CAPS K_L] > U+004c
+
++ [NCAPS SHIFT K_L] > U+004c
+
++ [CAPS SHIFT K_L] > U+006c
+
+
+
++ [NCAPS K_M] > U+006d
+
++ [CAPS K_M] > U+004d
+
++ [NCAPS SHIFT K_M] > U+004d
+
++ [CAPS SHIFT K_M] > U+006d
+
+
+
++ [NCAPS K_N] > U+006e
+
++ [CAPS K_N] > U+004e
+
++ [NCAPS SHIFT K_N] > U+004e
+
++ [CAPS SHIFT K_N] > U+006e
+
+
+
++ [NCAPS K_O] > U+006f
+
++ [CAPS K_O] > U+004f
+
++ [NCAPS SHIFT K_O] > U+004f
+
++ [CAPS SHIFT K_O] > U+006f
+
+
+
++ [NCAPS K_P] > U+0070
+
++ [CAPS K_P] > U+0050
+
++ [NCAPS SHIFT K_P] > U+0050
+
++ [CAPS SHIFT K_P] > U+0070
+
+
+
++ [NCAPS K_Q] > U+0071
+
++ [CAPS K_Q] > U+0051
+
++ [NCAPS SHIFT K_Q] > U+0051
+
++ [CAPS SHIFT K_Q] > U+0071
+
++ [NCAPS RALT K_Q] > U+0040
+
+
+
++ [NCAPS K_R] > U+0072
+
++ [CAPS K_R] > U+0052
+
++ [NCAPS SHIFT K_R] > U+0052
+
++ [CAPS SHIFT K_R] > U+0072
+
+
+
++ [NCAPS K_S] > U+0073
+
++ [CAPS K_S] > U+0053
+
++ [NCAPS SHIFT K_S] > U+0053
+
++ [CAPS SHIFT K_S] > U+0073
+
+
+
++ [NCAPS K_T] > U+0074
+
++ [CAPS K_T] > U+0054
+
++ [NCAPS SHIFT K_T] > U+0054
+
++ [CAPS SHIFT K_T] > U+0074
+
+
+
++ [NCAPS K_U] > U+0075
+
++ [CAPS K_U] > U+0055
+
++ [NCAPS SHIFT K_U] > U+0055
+
++ [CAPS SHIFT K_U] > U+0075
+
+
+
++ [NCAPS K_V] > U+0076
+
++ [CAPS K_V] > U+0056
+
++ [NCAPS SHIFT K_V] > U+0056
+
++ [CAPS SHIFT K_V] > U+0076
+
+
+
++ [NCAPS K_W] > U+0077
+
++ [CAPS K_W] > U+0057
+
++ [NCAPS SHIFT K_W] > U+0057
+
++ [CAPS SHIFT K_W] > U+0077
+
+
+
++ [NCAPS K_X] > U+0078
+
++ [CAPS K_X] > U+0058
+
++ [NCAPS SHIFT K_X] > U+0058
+
++ [CAPS SHIFT K_X] > U+0078
+
+
+
++ [NCAPS K_Y] > U+0079
+
++ [CAPS K_Y] > U+0059
+
++ [NCAPS SHIFT K_Y] > U+0059
+
++ [CAPS SHIFT K_Y] > U+0079
+
+
+
++ [NCAPS K_Z] > U+007a
+
++ [CAPS K_Z] > U+005a
+
++ [NCAPS SHIFT K_Z] > U+005a
+
++ [CAPS SHIFT K_Z] > U+007a
+
+
+
++ [K_LBRKT] > dk(00b4)
+
++ [SHIFT K_LBRKT] > dk(00a8)
+
+
+
++ [K_RBRKT] > U+002b
+
++ [SHIFT K_RBRKT] > U+002a
+
++ [RALT K_RBRKT] > U+007e
+
+
+
++ [K_COMMA] > U+002c
+
++ [SHIFT K_COMMA] > U+003b
+
+
+
+
++ [K_SLASH] > U+002d
+
++ [SHIFT K_SLASH] > U+005f
+
+c --- MACRON INFERIOR PARA COLOCARSE DESPUÉS DE CUALQUIER CARÁCTER ---
+
++ [RALT K_SLASH] > U+0331
+
+
+
++ [K_PERIOD] > U+002e
+
++ [SHIFT K_PERIOD] > U+003a
+
+
+
++ [K_BKSLASH] > U+007d
+
++ [SHIFT K_BKSLASH] > U+005d
+
+c --- DEADKEY PARA ACENTO GRAVE, NI EL EL ESPAÑOL LATINO NI EN EL AMUZGO SE UTILIZA, PERO POR ALGUNA RAZÓN ESTÁ PRESENTE ---
+
+
++ [RALT K_BKSLASH] > dk(0060)
+
+
+
++ [NCAPS K_COLON] > U+00f1
+
++ [CAPS K_COLON] > U+00d1
+
++ [NCAPS SHIFT K_COLON] > U+00d1
+
++ [CAPS SHIFT K_COLON] > U+00f1
+
+
+
+c --- SALTILLO SUSTITUYE AL CARACTER APÓSTROFO RECTO QUE TAMPOCO EXISTE EN EL AMUZGO---
+
++ [K_HYPHEN] > U+A78C
+
++ [SHIFT K_HYPHEN] > U+003f
+
++ [RALT K_HYPHEN] > U+005c
+
+
+
+c --- DEAD KEY CIRCUNFLEJO: LA RAZÓN POR LA QUE SUSTITUYÓ AL CARÁCTER LINEA RECTA ES PARA SERVIR DE ATAJO POR SU UBICACIÓN FÁCIL DE RECORDAR Y A QUE ESTE NO SE UTILIZA NI EN ESPAÑOL NI AMUZGO. UTIL EN PROGRAMACIÓN PERO NO ES OBJETIVO DE ESTE TECLADO. AÚN SE MANTIENE SU UBICACIÓN ORIGINAL---
+
++ [K_BKQUOTE] > dk(007c)
+
++ [SHIFT K_BKQUOTE] > U+00b0
+
++ [RALT K_BKQUOTE] > U+00ac
+
+
+
++ [K_EQUAL] > U+00bf
+
++ [SHIFT K_EQUAL] > U+00a1
+
+
+
++ [K_QUOTE] > U+007b
+
++ [SHIFT K_QUOTE] > U+005b
+
+
+c --- CIRCUNFLEJO: DUPLICADO INTENCIONAL, UBICACIÓN ORIGINAL Y ATAJO---
+
++ [RALT K_QUOTE] > dk(007c)
+
+
++ [K_oE2] > U+003c
+
++ [SHIFT K_oE2] > U+003e
+
+
+
+c --- LIGADURAS AMUZGO: VOCAL + COMBINANTE (U+0331) ---
+c Todas las vocales admiten macron independiente, Estos atajos son para las vocales que realmente lo emplean en el amuzgo. Solo A & O
+c admiten ademas la combinacion circunflejo+macron
+c Atajos directos en teclas 0 y 1 para las dos combinaciones realmente
+c usadas en Amuzgo (o-circunflejo+macron, a-circunflejo+macron).
+
+c Atajo directo: RALT+0 = o-circunflejo + macron (uso real en Amuzgo)
++ [NCAPS RALT K_0] > U+00F4 U+0331
++ [CAPS RALT K_0] > U+00D4 U+0331
++ [NCAPS RALT SHIFT K_0] > U+00D4 U+0331
++ [CAPS RALT SHIFT K_0] > U+00F4 U+0331
+
+c Atajo directo: RALT+1 = a-circunflejo + macron (uso sugerido en Amuzgo)
++ [NCAPS RALT K_1] > U+00E2 U+0331
++ [CAPS RALT K_1] > U+00C2 U+0331
++ [NCAPS RALT SHIFT K_1] > U+00C2 U+0331
++ [CAPS RALT SHIFT K_1] > U+00E2 U+0331
+
+c --- LIGADURAS AMUZGO: VOCAL + COMBINANTE (U+0331) ---
+c --- PODRÍA CONSIDERARSE REDUNDANTE PERO, LA LÓGICA DE LA ASIGNACIÓN DE LOS CARACTERES COMBINANTES CIRCUNFLEJO Y MACRON INFERIOR POR SEPARADO, LE DICEN AL USUARIO QUE ESTA ES LA SECUENCIA CORRECTA, EL USO DE 1 Y 0 SON ATAJOS AÚN MAS CORTOS PARA NO TENER QUE USAR TANTAS TECLAS ---
+c --- A ---
++ [NCAPS RALT K_A] > U+0061 U+0331
++ [CAPS RALT K_A] > U+0041 U+0331
++ [NCAPS RALT SHIFT K_A] > U+0041 U+0331
++ [CAPS RALT SHIFT K_A] > U+0061 U+0331
+
+c --- Â̱ ---
+
+dk(007c) + [NCAPS RALT K_A] > U+00E2 U+0331
+dk(007c) + [CAPS RALT K_A] > U+00C2 U+0331
+dk(007c) + [NCAPS RALT SHIFT K_A] > U+00C2 U+0331
+dk(007c) + [CAPS RALT SHIFT K_A] > U+00E2 U+0331
+
+c --- O ---
+
++ [NCAPS RALT K_O] > U+006F U+0331
++ [CAPS RALT K_O] > U+004F U+0331
++ [NCAPS RALT SHIFT K_O] > U+004F U+0331
++ [CAPS RALT SHIFT K_O] > U+006F U+0331
+
+c --- Ô̱ ---
+
+dk(007c) + [NCAPS RALT K_O] > U+00F4 U+0331
+dk(007c) + [CAPS RALT K_O] > U+00D4 U+0331
+dk(007c) + [NCAPS RALT SHIFT K_O] > U+00D4 U+0331
+dk(007c) + [CAPS RALT SHIFT K_O] > U+00F4 U+0331
+
+c --- ⁿ Para nasalización: Unicode no define un par mayúscula/miinuscula para U+207F ---
+c --- Se asigna U+1D3A ᴺ únicamente por proximidad visual y estética en textos sin minúsculas.
+
++ [NCAPS RALT K_N] > U+207F
+
++ [NCAPS RALT SHIFT K_N] > U+1D3A
+
++ [CAPS RALT K_N] > U+1D3A
+
++ [CAPS RALT SHIFT K_N] > U+207F
+
+
+
+
+
+c --- REGLAS TOUCH ANDROID: IDs personalizados T_AMZ_* ---
+
+c Disparados por longpress en amuzgo_es.keyman-touch-layout
+
+c Los IDs U_XXXX del touch layout son resueltos por el motor sin regla aqui
+
+
+
+c a + combinante barra baja (U+0331)
+
++ [T_AMZ_A_BELOW]                       > U+0061 U+0331
+
++ [NCAPS T_AMZ_A_BELOW_UC]              > U+0041 U+0331
+
++ [NCAPS SHIFT T_AMZ_A_BELOW_UC]        > U+0041 U+0331
+
++ [CAPS T_AMZ_A_BELOW_UC]               > U+0041 U+0331
+
++ [CAPS SHIFT T_AMZ_A_BELOW_UC]         > U+0041 U+0331
+
+
+
+c o + combinante barra baja
+
++ [T_AMZ_O_BELOW]                       > U+006F U+0331
+
++ [NCAPS T_AMZ_O_BELOW_UC]              > U+004F U+0331
+
++ [NCAPS SHIFT T_AMZ_O_BELOW_UC]        > U+004F U+0331
+
++ [CAPS T_AMZ_O_BELOW_UC]               > U+004F U+0331
+
++ [CAPS SHIFT T_AMZ_O_BELOW_UC]         > U+004F U+0331
+
+
+
+c o-circunflejo (U+00F4/U+00D4) + combinante barra baja
+
++ [T_AMZ_OCIRC_BELOW]                       > U+00F4 U+0331
++ [NCAPS T_AMZ_OCIRC_BELOW_UC]              > U+00D4 U+0331
++ [NCAPS SHIFT T_AMZ_OCIRC_BELOW_UC]        > U+00D4 U+0331
++ [CAPS T_AMZ_OCIRC_BELOW_UC]               > U+00D4 U+0331
++ [CAPS SHIFT T_AMZ_OCIRC_BELOW_UC]         > U+00D4 U+0331
+
+
+c a-circunflejo (U+00E2/U+00C2) + combinante barra baja
++ [T_AMZ_ACIRC_BELOW]                       > U+00E2 U+0331
++ [NCAPS T_AMZ_ACIRC_BELOW_UC]              > U+00C2 U+0331
++ [NCAPS SHIFT T_AMZ_ACIRC_BELOW_UC]        > U+00C2 U+0331
++ [CAPS T_AMZ_ACIRC_BELOW_UC]               > U+00C2 U+0331
++ [CAPS SHIFT T_AMZ_ACIRC_BELOW_UC]         > U+00C2 U+0331
+
+
+c ============================================================
+c EMOJIS (T_EMOJI_*) 
+c ============================================================
++ [T_EMOJI_CARAS_01] > U+1F600    c 😀
++ [T_EMOJI_CARAS_02] > U+1F603    c 😃
++ [T_EMOJI_CARAS_03] > U+1F604    c 😄
++ [T_EMOJI_CARAS_04] > U+1F601    c 😁
++ [T_EMOJI_CARAS_05] > U+1F606    c 😆
++ [T_EMOJI_CARAS_06] > U+1F605    c 😅
++ [T_EMOJI_CARAS_07] > U+1F923    c 🤣
++ [T_EMOJI_CARAS_08] > U+1F602    c 😂
++ [T_EMOJI_CARAS_09] > U+1F642    c 🙂
++ [T_EMOJI_CARAS_10] > U+1F643    c 🙃
++ [T_EMOJI_CARAS_11] > U+1F609    c 😉
++ [T_EMOJI_CARAS_12] > U+1F60A    c 😊
++ [T_EMOJI_CARAS_13] > U+1F607    c 😇
++ [T_EMOJI_CARAS_14] > U+1F970    c 🥰
++ [T_EMOJI_CARAS_15] > U+1F60D    c 😍
++ [T_EMOJI_CARAS_16] > U+1F929    c 🤩
++ [T_EMOJI_CARAS_17] > U+1F618    c 😘
++ [T_EMOJI_CARAS_18] > U+1F60B    c 😋
++ [T_EMOJI_CARAS_19] > U+1F61B    c 😛
++ [T_EMOJI_CARAS_20] > U+1F61C    c 😜
++ [T_EMOJI_CARAS_21] > U+1F92A    c 🤪
++ [T_EMOJI_CARAS_22] > U+1F60E    c 😎
++ [T_EMOJI_CARAS_23] > U+1F973    c 🥳
++ [T_EMOJI_CARAS_24] > U+1F914    c 🤔
+
++ [T_EMOJI_NATURALEZA_01] > U+1F436    c 🐶
++ [T_EMOJI_NATURALEZA_02] > U+1F431    c 🐱
++ [T_EMOJI_NATURALEZA_03] > U+1F42D    c 🐭
++ [T_EMOJI_NATURALEZA_04] > U+1F439    c 🐗
++ [T_EMOJI_NATURALEZA_05] > U+1F430    c 🐰
++ [T_EMOJI_NATURALEZA_06] > U+1F98A    c 🦊
++ [T_EMOJI_NATURALEZA_07] > U+1F43B    c 🦌
++ [T_EMOJI_NATURALEZA_08] > U+1F43C    c 🐑
++ [T_EMOJI_NATURALEZA_09] > U+1F428    c 🦞
++ [T_EMOJI_NATURALEZA_10] > U+1F42F    c 🐯
++ [T_EMOJI_NATURALEZA_11] > U+1F981    c 🦁
++ [T_EMOJI_NATURALEZA_12] > U+1F42E    c 🐮
++ [T_EMOJI_NATURALEZA_13] > U+1F437    c 🐷
++ [T_EMOJI_NATURALEZA_14] > U+1F438    c 🐸
++ [T_EMOJI_NATURALEZA_15] > U+1F435    c 🦅
++ [T_EMOJI_NATURALEZA_16] > U+1F414    c 🐔
++ [T_EMOJI_NATURALEZA_17] > U+1F427    c 🦃
++ [T_EMOJI_NATURALEZA_18] > U+1F426    c 🐦
++ [T_EMOJI_NATURALEZA_19] > U+1F986    c 🦆
++ [T_EMOJI_NATURALEZA_20] > U+1F989    c 🐿️
++ [T_EMOJI_NATURALEZA_21] > U+1F43A    c 🐺
++ [T_EMOJI_NATURALEZA_22] > U+1F434    c 🐴
++ [T_EMOJI_NATURALEZA_23] > U+1F98B    c 🦋
++ [T_EMOJI_NATURALEZA_24] > U+1F41D    c 🐝
+
++ [T_EMOJI_COMIDA_01] > U+1F34F    c 🍏
++ [T_EMOJI_COMIDA_02] > U+1F34E    c 🍎
++ [T_EMOJI_COMIDA_03] > U+1F34A    c 🍊
++ [T_EMOJI_COMIDA_04] > U+1F34B    c 🍋
++ [T_EMOJI_COMIDA_05] > U+1F34C    c 🍌
++ [T_EMOJI_COMIDA_06] > U+1F349    c 🍉
++ [T_EMOJI_COMIDA_07] > U+1F347    c 🍇
++ [T_EMOJI_COMIDA_08] > U+1F353    c 🍓
++ [T_EMOJI_COMIDA_09] > U+1F352    c 🍒
++ [T_EMOJI_COMIDA_10] > U+1F351    c 🍑
++ [T_EMOJI_COMIDA_11] > U+1F96D    c 🥭
++ [T_EMOJI_COMIDA_12] > U+1F34D    c 🍍
++ [T_EMOJI_COMIDA_13] > U+1F965    c 🥥
++ [T_EMOJI_COMIDA_14] > U+1F95D    c 🥝
++ [T_EMOJI_COMIDA_15] > U+1F345    c 🍅
++ [T_EMOJI_COMIDA_16] > U+1F33D    c 🌽
++ [T_EMOJI_COMIDA_17] > U+1F955    c 🥕
++ [T_EMOJI_COMIDA_18] > U+1F336    c 🌶
++ [T_EMOJI_COMIDA_19] > U+1F954    c 🥔
++ [T_EMOJI_COMIDA_20] > U+1F35E    c 🍞
++ [T_EMOJI_COMIDA_21] > U+1F9C0    c 🧀
++ [T_EMOJI_COMIDA_22] > U+1F357    c 🍗
++ [T_EMOJI_COMIDA_23] > U+1F355    c 🍕
++ [T_EMOJI_COMIDA_24] > U+1F32E    c 🌮
+
++ [T_EMOJI_OBJETOS_01] > U+26BD     c ⚽
++ [T_EMOJI_OBJETOS_02] > U+1F3C0    c 🏀
++ [T_EMOJI_OBJETOS_03] > U+1F3C8    c 🏈
++ [T_EMOJI_OBJETOS_04] > U+26BE     c ⚾
++ [T_EMOJI_OBJETOS_05] > U+1F3BE    c 🎾
++ [T_EMOJI_OBJETOS_06] > U+1F3D0    c 🏐
++ [T_EMOJI_OBJETOS_07] > U+1F3B1    c 🎱
++ [T_EMOJI_OBJETOS_08] > U+1F3D3    c 🏓
++ [T_EMOJI_OBJETOS_09] > U+1F3AF    c 🎯
++ [T_EMOJI_OBJETOS_10] > U+1F3AE    c 🎮
++ [T_EMOJI_OBJETOS_11] > U+1F3B2    c 🎲
++ [T_EMOJI_OBJETOS_12] > U+1F3B8    c 🎸
++ [T_EMOJI_OBJETOS_13] > U+1F3A8    c 🎨
++ [T_EMOJI_OBJETOS_14] > U+1F4F7    c 📷
++ [T_EMOJI_OBJETOS_15] > U+1F4F1    c 📱
++ [T_EMOJI_OBJETOS_16] > U+1F4BB    c 💻
++ [T_EMOJI_OBJETOS_17] > U+231A     c ⌚
++ [T_EMOJI_OBJETOS_18] > U+1F381    c 🎁
++ [T_EMOJI_OBJETOS_19] > U+1F389    c 🎉
++ [T_EMOJI_OBJETOS_20] > U+1F4DA    c 📚
++ [T_EMOJI_OBJETOS_21] > U+270F     c ✏
++ [T_EMOJI_OBJETOS_22] > U+1F511    c 🔑
++ [T_EMOJI_OBJETOS_23] > U+1F4A1    c 💡
++ [T_EMOJI_OBJETOS_24] > U+1F3B5    c 🎵
+
++ [T_EMOJI_CORAZONES_01] > U+2764     c ❤
++ [T_EMOJI_CORAZONES_02] > U+1F9E1    c 🧡
++ [T_EMOJI_CORAZONES_03] > U+1F49B    c 💛
++ [T_EMOJI_CORAZONES_04] > U+1F49A    c 💚
++ [T_EMOJI_CORAZONES_05] > U+1F499    c 💙
++ [T_EMOJI_CORAZONES_06] > U+1F49C    c 💜
++ [T_EMOJI_CORAZONES_07] > U+1F5A4    c 🖤
++ [T_EMOJI_CORAZONES_08] > U+1F90D    c 🤍
++ [T_EMOJI_CORAZONES_09] > U+1F90E    c 🤎
++ [T_EMOJI_CORAZONES_10] > U+1F494    c 💔
++ [T_EMOJI_CORAZONES_11] > U+1F495    c 💕
++ [T_EMOJI_CORAZONES_12] > U+1F49E    c 💞
++ [T_EMOJI_CORAZONES_13] > U+1F493    c 💓
++ [T_EMOJI_CORAZONES_14] > U+1F497    c 💗
++ [T_EMOJI_CORAZONES_15] > U+1F496    c 💖
++ [T_EMOJI_CORAZONES_16] > U+1F498    c 💘
++ [T_EMOJI_CORAZONES_17] > U+1F49D    c 💝
++ [T_EMOJI_CORAZONES_18] > U+2728     c ✨
++ [T_EMOJI_CORAZONES_19] > U+2B50     c ⭐
++ [T_EMOJI_CORAZONES_20] > U+1F31F    c 🌟
++ [T_EMOJI_CORAZONES_21] > U+1F4AB    c 💫
++ [T_EMOJI_CORAZONES_22] > U+26A1     c ⚡
++ [T_EMOJI_CORAZONES_23] > U+1F525    c 🔥
++ [T_EMOJI_CORAZONES_24] > U+2600     c ☀
+
++ [T_EMOJI_BANDERAS_01] > U+1F1F2 U+1F1FD    c 🇲🇽
++ [T_EMOJI_BANDERAS_02] > U+1F1FA U+1F1F8    c 🇺🇸
++ [T_EMOJI_BANDERAS_03] > U+1F1EC U+1F1F9    c 🇬🇹
++ [T_EMOJI_BANDERAS_04] > U+1F1E7 U+1F1FF    c 🇧🇿
++ [T_EMOJI_BANDERAS_05] > U+1F1ED U+1F1F3    c 🇭🇳
++ [T_EMOJI_BANDERAS_06] > U+1F1F8 U+1F1FB    c 🇸🇻
++ [T_EMOJI_BANDERAS_07] > U+1F1F3 U+1F1EE    c 🇳🇮
++ [T_EMOJI_BANDERAS_08] > U+1F1E8 U+1F1F7    c 🇨🇷
++ [T_EMOJI_BANDERAS_09] > U+1F1F5 U+1F1E6    c 🇵🇦
++ [T_EMOJI_BANDERAS_10] > U+1F1EA U+1F1F8    c 🇪🇸
++ [T_EMOJI_BANDERAS_11] > U+1F1E8 U+1F1F4    c 🇨🇴
++ [T_EMOJI_BANDERAS_12] > U+1F1E6 U+1F1F7    c 🇦🇷
++ [T_EMOJI_BANDERAS_13] > U+1F3C1            c 🏁
++ [T_EMOJI_BANDERAS_14] > U+1F6A9            c 🚩
++ [T_EMOJI_BANDERAS_15] > U+1F3F3            c 🏳
++ [T_EMOJI_BANDERAS_16] > U+1F3F4            c 🏴
+
+c Pasa al grupo deadkeys para resolver todos los dead keys
+
+match > use(deadkeys)
+
+c ============================================================
+
+c GRUPO deadkeys: resuelve todos los dead keys
+
+c Sin "using keys" - Ya que Keyman prioriza la regla mas larga automaticamente
+
+c dk(007c)+RALT+K_O tiene prioridad sobre dk(007c)+K_O solo
+
+c ============================================================
+
+group(deadkeys)
+
+
+
+c --- DEAD KEY CIRCUNFLEJO (007c) ---
+
+c Cubre SOLO a e i o con circunflejo - sin u circunflejo (no existe en Amuzgo)
+
+c Las reglas dk(007c)+RALT+K_O estan en grupo main donde la sintaxis es valida
+
+store(dkf007c) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f
+
+store(dkt007c) U+005e U+00e2 U+00c2 U+00ea U+00ca U+00ee U+00ce U+00f4 U+00d4
+
+dk(007c) any(dkf007c) > index(dkt007c, 2)
+
+
+
+store(dkf00b4) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079 U+0059
+
+store(dkt00b4) U+00b4 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+00f3 U+00d3 U+00fa U+00da U+00fd U+00dd
+
+dk(00b4) any(dkf00b4) > index(dkt00b4, 2)
+
+
+
+store(dkf00a8) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079
+
+store(dkt00a8) U+00a8 U+00e4 U+00c4 U+00eb U+00cb U+00ef U+00cf U+00f6 U+00d6 U+00fc U+00dc U+00ff
+
+dk(00a8) any(dkf00a8) > index(dkt00a8, 2)
+
+
+
+store(dkf0060) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
+
+store(dkt0060) U+0060 U+00e0 U+00c0 U+00e8 U+00c8 U+00ec U+00cc U+00f2 U+00d2 U+00f9 U+00d9
+
+dk(0060) any(dkf0060) > index(dkt0060, 2)
+
+group(Touch) using keys
+
+group(NewContext) readonly
+    platform('touch') > use(detectStartOfSentence)
+
+store(sentEnd) '.' '!' '?' U+2026
+
+group(PostKeystroke) readonly
+    c Mantener la capa caps sin cambios automáticos
+    platform('touch') if(&layer = 'caps') > context
+
+    c Mantener la capa numérica al teclear dígitos
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Si el usuario no cambió manualmente de capa, evaluar la lógica de mayúsculas
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c 1. Inicio absoluto de texto/campo
+    nul > layer('shift')  
+
+    c 2. Tras un salto de línea (LF, CR o CRLF)
+    U+000A > layer('shift')
+    U+000D > layer('shift')
+    U+000D U+000A > layer('shift')
+
+    c 3. Tras signo de puntuación final seguido de espacio
+    any(sentEnd) U+0020 > layer('shift')
+
+    c 4. Caso por defecto (capa normal)
+    nomatch > layer('default')
