@@ -1,6 +1,10 @@
 Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ Change History
 ===================================
 
+1.4.2 (2 Oct 2026)
+-------------------
+* Change decimal to Unicode
+
 1.4.1 (29 Apr 2025)
 -------------------
 * No changes, rebuild to address https://github.com/keymanapp/keyboards/issues/3473

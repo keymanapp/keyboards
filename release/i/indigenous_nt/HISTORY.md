@@ -1,6 +1,11 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.7 (2026-10-02)
+------------------
+
+* Add BKSP and ENTER keys to RALT mobile layers
+
 4.0.6 (2025-02-20)
 ------------------
 

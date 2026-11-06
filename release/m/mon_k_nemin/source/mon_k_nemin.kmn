@@ -1,239 +1,306 @@
-c This Mon Unicode keyboard helps you type accurately with proper character order,
-c clear vowel placement, and correct shaping.
+﻿c Mon Unicode keyboard — correct character storage order for Mon script.
+c Supports both standard order (type consonant first) and visual order
+c (type ေ first), with smart backspace and medial reordering.
+c On touch devices (phone/tablet), visual order is always forced.
+c Digit mode: SHIFT+ALT+Z toggles Myanmar digits (၁၂၃) / English digits (123).
+c Applies to both the main number row and the numeric keypad.
 
 store(&VERSION)         '17.0'
 store(&NAME)            'Mon K NEmin'
 store(&COPYRIGHT)       'Copyright © NEmin'
-store(&KEYBOARDVERSION) '1.5.4'
+store(&KEYBOARDVERSION) '1.5.5'
 store(&TARGETS)         'any'
-store(&BITMAP)          'mon_k_nemin.ico'
-store(&VISUALKEYBOARD)  'mon_k_nemin.kvks'
-store(&LAYOUTFILE)      'mon_k_nemin.keyman-touch-layout'
-store(&MESSAGE)         'A Unicode keyboard for the Mon language is easy to type and special (mnw).'
+c store(&VISUALKEYBOARD)  'mon_k_nemin.kvk'
+store(&MESSAGE)         'A Unicode keyboard for the Mon language — easy to type, correct character order (mnw).'
+c store(&BITMAP)          'mon_k_nemin.ico'
+c store(&LAYOUTFILE)      'mon_k_nemin.keyman-touch-layout'
+store(&BITMAP) 'mon_k_nemin.ico'
+store(&VISUALKEYBOARD) 'mon_k_nemin.kvks'
+store(&LAYOUTFILE) 'mon_k_nemin.keyman-touch-layout'
 
 begin Unicode > use(main)
 
-store(baseK)    'qwert' \
-                'yuiop' \
-                '[zxc' \
-                'vbnQ' \
-                'OP{AKL' \
-                'ZXCVNM' \
-                '`!#%' \
-                '&:' \
-                '=_\]' \
-                '~*' \
-                'W<UI' \
-                'B?/,.]'
+store(opt_e_mode) '1'
+store(opt_num_mode) '1'
 
-store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 \
-                U+1015 U+1000 U+105A U+101E U+1005 \
-                U+101F U+1016 U+1011 U+1001 \
-                U+101C U+1018 U+100A U+105B \
-                U+103F U+100F U+1028 U+1017 U+1012 U+1013 \
-                U+1007 U+100C U+1003 U+1020 U+1009 U+1023 \
-                U+105D U+100D U+100B U+0025 \
-                U+101B U+1002 \
-                U+003D U+00D7 U+105C U+1029 \
-                U+100E U+002A \
-                U+101D U+104A U+1025 U+104E \
-                U+101A U+003F U+002F U+002C U+1037 U+1029
+store(baseK)    'qwertyuiop' \
+                '[]'         \
+                'zxcvbn`'    \
+                'QWOP{AKL:Z' \
+                'XCVBNM!~'   \
+                '\U.'
+
+store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 U+1015 U+1000 U+105A U+101E U+1005 \
+                U+101F U+1029 \
+                U+1016 U+1011 U+1001 U+101C U+1018 U+100A U+105D \
+                U+105B U+101D U+103F U+100F U+1028 U+1017 U+1012 U+1013 U+1002 U+1007 \
+                U+100C U+1003 U+1020 U+101A U+1009 U+1023 U+100D U+100E \
+                U+105C U+1025 U+1037
 
 
-store(numK)     '1234567890'
-store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 \
-                U+1046 U+1047 U+1048 U+1049 U+1040
+store(numK) '1234567890'
+store(numU) U+1041 U+1042 U+1043 U+1044 U+1045 \
+            U+1046 U+1047 U+1048 U+1049 U+1040
 
-store(aftereK)  'gmh;'
-store(aftereU)  U+102B U+102C U+1034 U+1038
+store(vowelEK) 'a'
+store(vowelEU) U+1031
+store(filler)  U+200B
+store(asatK)   'f'
+store(asatU)   U+103A
+store(stackK)  'F'
+store(stackU)  U+1039
 
-store(aaK)      'gm'
-store(aaU)      U+102B U+102C
+store(mediaK) 'sjSGRYE'
+store(mediaU) U+103B U+103C U+103E U+103D U+105F U+1060 U+105E
 
-store(lDotK)    'h'
-store(lDotU)    U+1034
+store(mediaNoWK) 'sjSRYE'
+store(mediaNoWU) U+103B U+103C U+103E U+105F U+1060 U+105E
 
-store(visargaK) ';'
-store(visargaU) U+1038
+store(yDiaK) 's'
+store(yDiaU) U+103B
+store(rDiaK) 'j'
+store(rDiaU) U+103C
+store(hDiaK) 'S'
+store(hDiaU) U+103E
+store(wDiaK) 'G'
+store(wDiaU) U+103D
+store(mDiaK) 'R'
+store(mDiaU) U+105F
+store(laMedK) 'Y'
+store(laMedU) U+1060
+store(nDiaK) 'E'
+store(nDiaU) U+105E
 
-store(udia1K)   'dDT^'
-store(udia1U)   U+102D U+102E U+1033 U+1035
+store(aftereK) 'gmh;'
+store(aftereU) U+102B U+102C U+1034 U+1038
 
-store(udia2K)   'JH'
-store(udia2U)   U+1032 U+1036
+store(udia1K) 'dDT'
+store(udia1U) U+102D U+102E U+1033
 
-store(ldiaK)    'kl'
-store(ldiaU)    U+102F U+1030
+store(udia2K) 'JH'
+store(udia2U) U+1032 U+1036
 
-store(asatK)    'f'
-store(asatU)    U+103A
+store(ldiaK) 'kl'
+store(ldiaU) U+102F U+1030
 
-store(consU)    U+1000 U+1001 U+1002 U+1003 U+105A U+1005 U+1006 U+1007 \
-                U+105B U+1009 U+100A U+100B U+100C U+100D U+100E U+100F \
-                U+1010 U+1011 U+1012 U+1013 U+1014 U+1015 U+1016 U+1017 \
-                U+1018 U+1019 U+101A U+101B U+101C U+101D U+101E U+101F \
-                U+1020 U+105C U+1021 U+105D U+103F U+1050 U+1051 U+1029
 
-store(mediaK)   'sjSGRYE'
-store(mediaU)   U+103B U+103C U+103E U+103D U+105F U+1060 U+105E
-
-store(yDiaK)    's'
-store(yDiaU)    U+103B
-
-store(rDiaK)    'j'
-store(rDiaU)    U+103C
-
-store(wDiaK)    'G'
-store(wDiaU)    U+103D
-
-store(hDiaK)    'S'
-store(hDiaU)    U+103E
-
-store(filler)   U+200B
-store(vowelEK)  'a'
-store(vowelEU)  U+1031
-
-store(allDiaU)  U+102F U+1030 U+102D U+102E U+1032 U+1036 U+1033 U+1034 U+1035
-store(firstDiaU)  U+102D U+102F U+1032
-store(secondDiaU) U+102D U+1036 U+1037 U+102F
-
-store(stackK)   'F'
-store(stackU)   U+1039
-
-store(abbK)     '@'
-store(accK)     '|'
-
+store(consU) U+1000 U+1001 U+1002 U+1003 U+1004 U+1005 U+1006 U+1007 U+1008 \
+             U+1009 U+100A \
+             U+100B U+100C U+100D U+100E U+100F U+1010 U+1011 U+1012 U+1013 \
+             U+1014 U+1015 U+1016 U+1017 U+1018 U+1019 U+101A U+101B U+101C \
+             U+101D U+101E U+101F U+1020 U+1021 U+1023 U+1025 U+1029 U+103F \
+             U+105A U+105B U+105C U+105D
 
 group(main) using keys
-c  Backspace  (Nemin)
-any(filler) U+1031       + [K_BKSP] > nul
-any(baseU) U+1031        + [K_BKSP] > outs(filler) U+1031
-U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
-U+1039 any(consU)        + [K_BKSP] > nul
 
-c  Ctrl+Alt / Shift shortcuts
-+ [CTRL ALT K_4]       > U+1015 U+102D U+102F U+1038
+if(opt_e_mode = '1') + [CTRL ALT K_A]  > set(opt_e_mode = '0') save(opt_e_mode)
+if(opt_e_mode = '0') + [CTRL ALT K_A]  > set(opt_e_mode = '1') save(opt_e_mode)
+if(opt_e_mode = '1') + [SHIFT ALT K_A] > set(opt_e_mode = '0') save(opt_e_mode)
+if(opt_e_mode = '0') + [SHIFT ALT K_A] > set(opt_e_mode = '1') save(opt_e_mode)
+if(opt_e_mode = '1') + [CTRL ALT K_E]  > set(opt_e_mode = '0') save(opt_e_mode)
+if(opt_e_mode = '0') + [CTRL ALT K_E]  > set(opt_e_mode = '1') save(opt_e_mode)
+if(opt_e_mode = '1') + [SHIFT ALT K_E] > set(opt_e_mode = '0') save(opt_e_mode)
+if(opt_e_mode = '0') + [SHIFT ALT K_E] > set(opt_e_mode = '1') save(opt_e_mode)
+if(opt_num_mode = '1') + [SHIFT ALT K_Z] > set(opt_num_mode = '0') save(opt_num_mode)
+if(opt_num_mode = '0') + [SHIFT ALT K_Z] > set(opt_num_mode = '1') save(opt_num_mode)
+
+
+if(opt_num_mode = '1') + [K_NP1] > U+1041
+if(opt_num_mode = '1') + [K_NP2] > U+1042
+if(opt_num_mode = '1') + [K_NP3] > U+1043
+if(opt_num_mode = '1') + [K_NP4] > U+1044
+if(opt_num_mode = '1') + [K_NP5] > U+1045
+if(opt_num_mode = '1') + [K_NP6] > U+1046
+if(opt_num_mode = '1') + [K_NP7] > U+1047
+if(opt_num_mode = '1') + [K_NP8] > U+1048
+if(opt_num_mode = '1') + [K_NP9] > U+1049
+if(opt_num_mode = '1') + [K_NP0] > U+1040
+
+if(opt_num_mode = '0') + [K_NP1] > '1'
+if(opt_num_mode = '0') + [K_NP2] > '2'
+if(opt_num_mode = '0') + [K_NP3] > '3'
+if(opt_num_mode = '0') + [K_NP4] > '4'
+if(opt_num_mode = '0') + [K_NP5] > '5'
+if(opt_num_mode = '0') + [K_NP6] > '6'
+if(opt_num_mode = '0') + [K_NP7] > '7'
+if(opt_num_mode = '0') + [K_NP8] > '8'
+if(opt_num_mode = '0') + [K_NP9] > '9'
+if(opt_num_mode = '0') + [K_NP0] > '0'
+
+U+1004 U+103A U+1039 any(consU) U+1031 + [K_BKSP] > index(consU,4) U+1031
+U+1004 U+103A U+1039 any(consU)        + [K_BKSP] > index(consU,4)
+
+any(consU) U+1039 any(consU) U+1031 + [K_BKSP] > index(consU,1) U+1031
+U+1039 any(consU) U+1031            + [K_BKSP] > outs(filler) U+1031
+U+200B U+1031                       + [K_BKSP] > nul
+
+any(consU) any(mediaU) U+1031 any(aftereU) + [K_BKSP] > index(consU,1) index(mediaU,2) U+1031
+any(consU)             U+1031 any(aftereU) + [K_BKSP] > index(consU,1) U+1031
+any(consU) any(mediaU) U+1031 any(ldiaU)   + [K_BKSP] > index(consU,1) index(mediaU,2) U+1031
+any(consU)             U+1031 any(ldiaU)   + [K_BKSP] > index(consU,1) U+1031
+any(consU) any(mediaU) U+1031 any(udia1U)  + [K_BKSP] > index(consU,1) index(mediaU,2) U+1031
+any(consU)             U+1031 any(udia1U)  + [K_BKSP] > index(consU,1) U+1031
+any(consU) any(mediaU) U+1031 any(udia2U)  + [K_BKSP] > index(consU,1) index(mediaU,2) U+1031
+any(consU)             U+1031 any(udia2U)  + [K_BKSP] > index(consU,1) U+1031
+
+any(consU) any(mediaU) any(aftereU) + [K_BKSP] > index(consU,1) index(mediaU,2)
+any(consU)             any(aftereU) + [K_BKSP] > index(consU,1)
+
+any(consU) any(mediaU) U+103A any(mediaU) U+1031 + [K_BKSP] > index(consU,1) index(mediaU,2) U+103A outs(filler) U+1031
+any(consU) any(mediaU) U+103A U+1031             + [K_BKSP] > index(consU,1) index(mediaU,2) outs(filler) U+1031
+any(consU)             U+103A U+1031             + [K_BKSP] > index(consU,1) outs(filler) U+1031
+any(mediaU)            U+103A U+1031             + [K_BKSP] > index(mediaU,1) outs(filler) U+1031
+
+any(consU) any(mediaU) any(mediaU) U+1031 + [K_BKSP] > index(consU,1) index(mediaU,2) U+1031
+any(consU) any(mediaU) U+1031            + [K_BKSP] > index(consU,1) U+1031
+any(consU)             U+1031            + [K_BKSP] > outs(filler) U+1031
+any(mediaU)            U+1031            + [K_BKSP] > U+1031
+
+U+1039 any(consU)                       + [K_BKSP] > nul
+U+103A U+1031                           + [K_BKSP] > outs(filler) U+1031
+U+1031                                  + [K_BKSP] > nul
+
+any(filler) U+1031 + [SHIFT ALT K_Q] > U+1008 U+1031
+any(filler) U+1031 + [SHIFT ALT K_I] > U+1004 U+1031
+any(filler) U+1031 + [SHIFT K_3]    > U+100B U+1031
+any(filler) U+1031 + [SHIFT K_7]    > U+101B U+1031
+
++ [SHIFT ALT K_Q]       > U+1008
++ [SHIFT ALT K_U]       > U+104D
++ [SHIFT ALT K_R]       > U+104E
++ [SHIFT ALT K_Y]       > U+104C
++ [SHIFT ALT K_I]       > U+1004
++ [SHIFT ALT K_T]       > U+1024
++ [SHIFT ALT K_B]       > U+1050
++ [SHIFT ALT K_N]       > U+1051
++ [SHIFT ALT K_M]       > U+1025 U+102E
++ [SHIFT ALT K_LBRKT]   > U+1027
++ [SHIFT ALT K_RBRKT]   > U+102A
++ [SHIFT ALT K_BKSLASH] > U+104F
++ [SHIFT ALT K_SLASH]   > U+005C
++ [SHIFT ALT K_4]       > U+1015 U+102D U+102F U+1038
++ [SHIFT ALT K_F]       > U+105A U+103A
 + [SHIFT K_2]          > U+100F U+1039 U+100D
 + [SHIFT K_8]          > U+002A
 + [SHIFT K_5]          > U+0025
 + [SHIFT K_4]          > U+102D U+1032
-+ [CTRL ALT K_Q]       > U+1008
-+ [CTRL ALT K_F]       > U+105A U+103A U+1039
-+ [CTRL ALT K_BKSLASH] > U+104F
-+ [CTRL ALT K_LBRKT]   > U+1027
-+ [CTRL ALT K_R]       > U+104E
-+ [CTRL ALT K_Y]       > U+104C
-+ [CTRL ALT K_I]       > U+104D
-+ [CTRL ALT K_RBRKT]   > U+102A
-+ [CTRL ALT K_M]       > U+1025 U+102E
-+ [CTRL ALT K_T]       > U+1024
-+ [CTRL ALT K_B]       > U+1050
-+ [CTRL ALT K_N]       > U+1051
++ [SHIFT K_3] > U+100B  
++ [SHIFT K_6] > U+1035  
++ [SHIFT K_7] > U+101B 
++ '<' > U+104A
++ '(' > U+0028
++ ')' > U+0029
++ '-' > U+002D
++ '=' > U+003D
++ '_' > U+005F
++ '+' > U+002B
++ "'" > U+0027
++ '"' > U+0022
++ ',' > U+002C
++ '/' > U+002F
++ '?' > U+003F
 
-c  Vowel E  —  Nemin 
-c  Rule 1: 'a' always emits filler + U+1031
-c  Rule 2: next consonant slides before U+1031 (filler consumed)
-c  Rule 3: stacking around U+1031 (from Nemin line: U+1031 any(consU) + stackK)
-c  Everything else (ာ ါ ဲ ံ etc) handled by bare rules below — no special rules needed
-+ any(vowelEK) > outs(filler) outs(vowelEU)
 
-any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
+any(filler) U+1031           + [SHIFT K_I] > U+1004 U+103A U+1039 U+1031
+any(consU) U+1031            + [SHIFT K_I] > U+1004 U+103A U+1039 index(consU,1) U+1031
+any(consU) any(consU)        + [SHIFT K_I] > index(consU,1) U+1004 U+103A U+1039 index(consU,2)
+U+1004 U+103A U+1039 U+1031 + any(mediaK) > U+1004 U+103A U+1039 index(mediaU,5) U+1031
++ [SHIFT K_I]                             > U+1004 U+103A U+1039
 
-U+1031 any(consU) + any(stackK) > outs(stackU) index(consU, 2) U+1031
-
-c  Mon nga autocorrect
-U+105A + any(asatK)         > U+1004 U+103A
+U+105A        + any(asatK)  > U+1004 U+103A
 U+105A U+103A + any(stackK) > U+1004 U+103A U+1039
 
-c  Stacked consonant after U+1031
-U+1031 U+1039 + any(baseK) > U+1039 index(baseU, 3) U+1031
 
-c  Stacker (general)
+platform('touch') any(filler) U+1031 + any(vowelEK) > context
+platform('touch')                    + any(vowelEK) > outs(filler) outs(vowelEU)
+
+if(opt_e_mode = '0') + any(vowelEK) > outs(filler) outs(vowelEU)
+if(opt_e_mode = '1') + any(vowelEK) > outs(vowelEU)
+
 + any(stackK) > outs(stackU)
 
-c  Medial after U+1031 -> slide before U+1031
-U+1031 + any(mediaK) > index(mediaU, 2) U+1031
+U+101E U+1031 + any(rDiaK) > U+1029 U+1031
+U+1007 U+1031 + any(yDiaK) > U+105B U+1031
+U+101E        + any(rDiaK) > U+1029
+U+1007        + any(yDiaK) > U+105B
 
-c  U+1025 special sequences
+any(filler) U+1031 + any(mediaK) > index(mediaU,3) U+1031
+any(filler) U+1031 + any(baseK)  > index(baseU,3) U+1031
+
+U+1031 U+1039      + any(baseK)  > U+1039 index(baseU,3) U+1031
+
+any(consU) any(mediaU) U+1031 + any(baseK) > context index(baseU,4)
+any(mediaU) U+1031 + any(baseK)  > index(baseU,3) index(mediaU,1) U+1031
+
+U+1031             + any(mediaK) > index(mediaU,2) U+1031
+U+1031 any(udia1U) + any(mediaK) > index(mediaU,3) U+1031 index(udia1U,2)
+U+1031 any(udia2U) + any(mediaK) > index(mediaU,3) U+1031 index(udia2U,2)
+
+any(consU) any(mediaU) U+1031 any(udia1U) + any(wDiaK) > index(consU,1) index(mediaU,2) index(wDiaU,5) U+1031 index(udia1U,4)
+any(consU) any(mediaU) U+1031 any(udia2U) + any(wDiaK) > index(consU,1) index(mediaU,2) index(wDiaU,5) U+1031 index(udia2U,4)
+any(consU) U+1031 any(udia1U) + any(wDiaK) > index(consU,1) index(wDiaU,4) U+1031 index(udia1U,3)
+any(consU) U+1031 any(udia2U) + any(wDiaK) > index(consU,1) index(wDiaU,4) U+1031 index(udia2U,3)
+any(consU) U+1031 any(aftereU) + any(wDiaK) > index(consU,1) index(wDiaU,4) U+1031 index(aftereU,3)
+any(consU) U+1031 any(udia1U) + any(mediaNoWK) > index(consU,1) index(mediaNoWU,4) U+1031 index(udia1U,3)
+any(consU) U+1036        + any(wDiaK) > index(consU,1) index(wDiaU,3) U+1036
+any(consU) U+1031 U+1036 + any(wDiaK) > index(consU,1) index(wDiaU,4) U+1031 U+1036
+any(consU) any(udia1U) + any(wDiaK) > index(consU,1) index(wDiaU,3) index(udia1U,2)
+any(consU) any(udia2U) + any(wDiaK) > index(consU,1) index(wDiaU,3) index(udia2U,2)
+any(consU) any(aftereU) + any(wDiaK) > index(consU,1) index(wDiaU,3) index(aftereU,2)
+any(consU) any(udia1U) + any(mediaNoWK) > index(consU,1) index(mediaNoWU,3) index(udia1U,2)
+
 U+1025 + 'f' > U+1009 U+103A
 U+1025 + 'F' > U+1009 U+1039
 U+1025 + 'm' > U+1009 U+102C
 U+1025 + 'D' > U+1026
 
-
-c  Abbrev / accentuation
-any(filler) U+1031 + any(accK) > U+100B U+1039 U+100C U+1031
-any(filler) U+1031 + any(abbK) > U+100F U+1039 U+100D U+1031
-
-c  ပ + ဍ autocorrect
-U+1015 U+1039 + [SHIFT K_1] > U+1015 U+1039 U+100D
-U+1015        + [SHIFT K_1] > U+1015 U+1039 U+100D
-
-c  Asat after U+1031  (Nemin: any(consU) U+1031 + aftereDK)
-any(consU) U+1031 + any(asatK) > index(consU, 1) index(asatU, 3) U+1031
-
-c  Base / number catch-alls
-+ any(numK)    > index(numU, 1)
-+ any(baseK)   > index(baseU, 1)
-+ any(aftereK) > index(aftereU, 1)
-+ any(asatK)   > outs(asatU)
-
-c  Diacritic ordering  (Nemin)
-any(udia2U) + any(aaK)    > index(aaU, 2) context
-any(ldiaU)  + any(udia1K) > index(udia1U, 2) context
-any(udia2U) + any(ldiaK)  > index(ldiaU, 2) context
-any(udia2U) + any(udia1K) > index(udia1U, 2) context
-U+1036      + 'J'         > U+1032 U+1036
-U+1038      + any(lDotK)  > index(lDotU, 2) context
-
-c  ေ + cons: ါ/ာ after cons+ေ 
-c  Correct storage: cons U+1031 U+102B/C   and for ဲါ: U+1032 then U+102B
-c  "a y g"   = ပေါ      "a y m"   = ပော
-c  "a y J g" = ပေဲါ     "g J"     = ဲါ     "J g" already handled by udia2 rules
-c  cons ေ + g (ါ)  ->  cons ေါ
-any(consU) U+1031 + 'g' > index(consU, 1) U+1031 U+102B
-c  cons ေ + m (ာ)  ->  cons ော
-any(consU) U+1031 + 'm' > index(consU, 1) U+1031 U+102C
-c  ဲ (U+1032) + g (ါ)  ->  ဲါ  [reorder: ဲ typed first, then ါ]  
-U+1032 + 'g' > U+1032 U+102B
-c  ါ (U+102B) + J (ဲ)  ->  ဲါ  [reorder: ါ typed first, then ဲ] 
-U+102B + 'J' > U+1032 U+102B
-
-c  Mon asat contractions
-any(consU) U+103A               + 'S' > index(consU, 1) U+103E U+103A
-any(consU) U+103E U+1031        + 'f' > index(consU, 1) U+103E U+103A U+1031
-any(consU) U+103A U+1031        + 'S' > index(consU, 1) U+103E U+103A U+1031
-U+102C U+103A                   + 'S' > U+102C U+103E U+103A
-any(consU) U+102B U+103A U+1031 + ';' > index(consU, 1) U+102B U+103A U+1038 U+1031
-any(consU) U+102B U+1031        + 'f' > index(consU, 1) U+102B U+103A U+1031
-
-c  Bare diacritic fall-throughs
-+ any(ldiaK)  > index(ldiaU, 1)
-+ any(udia1K) > index(udia1U, 1)
-+ any(udia2K) > index(udia2U, 1)
-
-c  Medial ordering
-any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context
-any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context
-any(wDiaU) U+1031            + any(yDiaK) > index(yDiaU, 3) context
-any(hDiaU) U+1031            + any(yDiaK) > index(yDiaU, 3) context
-any(wDiaU) U+1031            + any(rDiaK) > index(rDiaU, 3) context
-any(hDiaU) U+1031            + any(rDiaK) > index(rDiaU, 3) context
-any(hDiaU) U+1031            + any(wDiaK) > index(wDiaU, 3) context
-any(wDiaU) any(hDiaU)        + any(yDiaK) > index(yDiaU, 3) context
-any(wDiaU) any(hDiaU)        + any(rDiaK) > index(rDiaU, 3) context
-any(wDiaU)                   + any(yDiaK) > index(yDiaU, 2) context
-any(hDiaU)                   + any(yDiaK) > index(yDiaU, 2) context
-any(wDiaU)                   + any(rDiaK) > index(rDiaU, 2) context
-any(hDiaU)                   + any(rDiaK) > index(rDiaU, 2) context
-any(hDiaU)                   + any(wDiaK) > index(wDiaU, 2) context
-
-c  Bare medial fall-through
-+ any(mediaK) > index(mediaU, 1)
-
-c  Special character shortcuts
+any(filler) U+1031 + '@' > U+100F U+1039 U+100D U+1031
+any(filler) U+1031 + '|' > U+100B U+1039 U+100C U+1031
 + '@' > U+100F U+1039 U+100D
 + '|' > U+100B U+1039 U+100C
 + '}' > U+1021 U+1034
 + '$' > U+102D U+1032
 + '>' > U+104B
+
+any(filler) U+1031 + any(asatK) > outs(asatU) U+1031
+U+1031              + any(asatK) > outs(asatU) U+1031
+
+any(ldiaU)  + any(udia1K) > index(udia1U,2) context
+any(udia2U) + any(ldiaK)  > index(ldiaU,2) context
+any(udia2U) + any(udia1K) > index(udia1U,2) context
+U+1038      + 'h'         > U+1034 U+1038
+
+any(consU) U+102F + [SHIFT K_6] > index(consU,1) U+1035 U+102F
+
+any(consU) U+103A               + 'S' > index(consU,1) U+103E U+103A
+any(consU) U+103E U+1031        + 'f' > index(consU,1) U+103E U+103A U+1031
+any(consU) U+103A U+1031        + 'S' > index(consU,1) U+103E U+103A U+1031
+U+102C U+103A                   + 'S' > U+102C U+103E U+103A
+any(consU) U+102B U+103A U+1031 + ';' > index(consU,1) U+102B U+103A U+1038 U+1031
+any(consU) U+102B U+1031        + 'f' > index(consU,1) U+102B U+103A U+1031
+any(consU) U+1031               + 'g' > index(consU,1) U+1031 U+102B
+
+any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU,4) context
+any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU,4) context
+any(wDiaU) U+1031            + any(yDiaK) > index(yDiaU,3) context
+any(hDiaU) U+1031            + any(yDiaK) > index(yDiaU,3) context
+any(wDiaU) U+1031            + any(rDiaK) > index(rDiaU,3) context
+any(hDiaU) U+1031            + any(rDiaK) > index(rDiaU,3) context
+any(hDiaU) U+1031            + any(wDiaK) > index(wDiaU,3) context
+any(wDiaU) any(hDiaU)        + any(yDiaK) > index(yDiaU,3) context
+any(wDiaU) any(hDiaU)        + any(rDiaK) > index(rDiaU,3) context
+any(wDiaU)                   + any(yDiaK) > index(yDiaU,2) context
+any(hDiaU)                   + any(yDiaK) > index(yDiaU,2) context
+any(wDiaU)                   + any(rDiaK) > index(rDiaU,2) context
+any(hDiaU)                   + any(rDiaK) > index(rDiaU,2) context
+any(hDiaU)                   + any(wDiaK) > index(wDiaU,2) context
+
+if(opt_num_mode = '1') + any(numK) > index(numU,2)
+if(opt_num_mode = '0') + any(numK) > index(numK,2)
++ any(baseK)   > index(baseU,1)
++ any(aftereK) > index(aftereU,1)
++ any(asatK)   > outs(asatU)
++ any(ldiaK)   > index(ldiaU,1)
++ any(udia1K)  > index(udia1U,1)
++ any(udia2K)  > index(udia2U,1)
++ any(mediaK)  > index(mediaU,1)

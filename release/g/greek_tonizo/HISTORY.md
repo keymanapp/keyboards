@@ -2,6 +2,10 @@
 
 CHANGES
 
+## 1.0.9 (2026-08-12)
+
+⦁   Introduction of Alt-Z as a dead key, cancelling the automatic breathing from the subsequent vowel. To be used for vowel corrections in the middle of a word.
+
 ## 1.0.8 (2026-02-04)
 
 ⦁   Exclusion of vareia from the removal of automatic psili on Greek numerals (last change of v.1.0.6).
@@ -57,3 +61,4 @@ CHANGES
 ## 1.0 (2025-02-05) First edition
 
 * Created by Amaryllis Deliyanni
+

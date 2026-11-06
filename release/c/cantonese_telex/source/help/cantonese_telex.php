@@ -89,7 +89,7 @@
    <td>e</td>
    <td>di</td>
    <td>e</td>
-   <td>[ɛ]</td>
+   <td>[ɛ] [iɛ] </td>
  </tr>
    <tr>
    <td>ê</td>
@@ -120,13 +120,13 @@
    <td>i</td>
    <td>ai</td>
    <td>i</td>
-   <td>[i]</td>
+   <td>[i] [ɪ]</td>
  </tr>
    <tr>
    <td>iê</td>
    <td>/</td>
    <td>ie</td>
-   <td>[iɜ] [i]</td>
+   <td>[iɜ] [iː ]</td>
  </tr>
    <tr>
    <td>j</td>
@@ -406,38 +406,44 @@
     <th>IPA</th>
     <th>examples</th>
   </tr>
-  <tr><td>b</td><td>[ɓ]</td><td>巴</td></tr>
-  <tr><td>p</td><td>[pʰ]</td><td>怕</td></tr>
-  <tr><td>m</td><td>[m]</td><td>媽</td></tr>
-  <tr><td>ph/f</td><td>[f]</td><td>花</td></tr>
-  <tr><td>đ</td><td>[ɗ]</td><td>打</td></tr>
-  <tr><td>t</td><td>[t]</td><td>啲</td></tr>
-  <tr><td>th</td><td>[tʰ]</td><td>草</td></tr>    
-  <tr><td>n</td><td>[n]</td><td>那</td></tr>
-  <tr><td>l</td><td>[l]</td><td>啦</td></tr>
-  <tr><td>k/c</td><td>[k]</td><td>家</td></tr>  
-  <tr><td>kh</td><td>[kʰ]</td><td>卡</td></tr>
-  <tr><td>ng</td><td>[ŋ]</td><td>牙</td></tr>
-  <tr><td style="background-color: yellowgreen;">nh</td><td>[ȵ]</td><td>廿</td></tr>
-  <tr><td>h</td><td>[h]</td><td>蝦</td></tr>
-  <tr><td>qu</td><td>[kʷ]</td><td>瓜</td></tr>   
-  <tr><td>khu/kho</td><td>[kʰʷ]</td><td>誇</td></tr>   
-  <tr><td style="background-color: yellow;">hu/ho</td><td>[hʷ]</td><td>黃</td></tr>   
-  <tr><td>v</td><td>[ʋ]</td><td>話</td></tr>
-  <tr><td style="background-color: lightpink;">u/o</td><td>[w]</td><td>蛙</td></tr>  
-  <tr><td>ch</td><td>[ʨ]</td><td>渣</td></tr>
-  <tr><td style="background-color: lightgray;">ț</td><td>[ʦ]</td><td>早</td></tr>
-  <tr><td>x</td><td>[ʨʰ]</td><td>叉</td></tr>
-  <tr><td style="background-color: lightgray;">tx/țh</td><td>[ʦʰ]</td><td>草</td></tr>  
-  <tr><td>s</td><td>[ɕ]</td><td>沙</td></tr>
-  <tr><td style="background-color: plum;">ș</td><td>[ʃ] [ɕ]</td><td>share</td></tr>
-  <tr><td style="background-color: lightgray;">ŧ</td><td>[θ] [ɬ]</td><td>新</td></tr>
-  <tr><td style="background-color: plum;">þ</td><td>[θ]</td><td></td></tr>
-  <tr><td>d</td><td>[j]</td><td>也</td></tr>
-  <tr><td style="background-color: lightpink;">y</td><td>[ʔi]</td><td>要</td></tr>  
-  <tr><td>/</td><td>[ø]</td><td>安</td></tr>
-  <tr><td style="background-color: yellow;">tr</td><td>[ʈ]</td><td>知</td></tr>
+  <tr><td>b</td><td>[ɓ]</td><td>巴ba</td></tr>
+  <tr><td>p</td><td>[pʰ]</td><td>怕pá</td></tr>
+  <tr><td>m</td><td>[m]</td><td>媽ma</td></tr>
+  <tr><td>ph</td><td>[f] [ɸ]</td><td>發phát</td></tr>
+  <tr><td>đ</td><td>[ɗ]</td><td>打đả</td></tr>
+  <tr><td>t</td><td>[t]</td><td>啲ti</td></tr>
+  <tr><td>th</td><td>[tʰ]</td><td>草txảu</td></tr>    
+  <tr><td>n</td><td>[n]</td><td>那nà</td></tr>
+  <tr><td>l</td><td>[l]</td><td>啦la</td></tr>
+  <tr><td>k/c</td><td>[k]</td><td>家ka</td></tr>  
+  <tr><td>kh</td><td>[kʰ] [x]</td><td>卡kha</td></tr>
+  <tr><td>ng</td><td>[ŋ]</td><td>牙ngà</td></tr>
+  <tr><td style="background-color: yellowgreen;">nh</td><td>[ȵ]</td><td>廿nhạ</td></tr>
+  <tr><td>h</td><td>[h]</td><td>蝦ha</td></tr>
+  <tr><td>qu</td><td>[kʷ]</td><td>瓜qua</td></tr>   
+  <tr><td>khu/kho</td><td>[kʰʷ]</td><td>誇khoa</td></tr>   
+  <tr><td style="background-color: yellow;">hu/ho</td><td>[hʷ]</td><td>黃hoàng(in Liẩu-Châu dialect)</td></tr>   
+  <tr><td>v</td><td>[ʋ]</td><td>話vạ</td></tr>
+  <tr><td style="background-color: lightblue;">viê</td><td>[ʋi]</td><td>越việt</td></tr>
+  <tr><td style="background-color: lightpink;">u/o</td><td>[w]</td><td>哇oa</td></tr>  
+  <tr><td>ch</td><td>[ʨ]</td><td>渣cha</td></tr>
+  <tr><td style="background-color: lightgray;">ț</td><td>[ʦ]</td><td>早țảu</td></tr>
+  <tr><td>x</td><td>[ʨʰ]</td><td>叉xa</td></tr>
+  <tr><td style="background-color: lightgray;">tx/țh</td><td>[ʦʰ]</td><td>草txảu</td></tr>  
+  <tr><td>s</td><td>[ɕ]</td><td>沙sa</td></tr>
+  <tr><td style="background-color: lightgray;">ŧ</td><td>[θ] [ɬ]</td><td>新ŧân</td></tr>
+  <tr><td>d</td><td>[j]</td><td>也dã</td></tr>
+  <tr><td style="background-color: lightpink;">y</td><td>[ʔi]</td><td>要yếu</td></tr>  
+  <tr><td>/</td><td>[ø]</td><td>安on</td></tr>
+  <tr><td style="background-color: yellow;">tr</td><td>[ʈ]</td><td>知tri</td></tr>
+  <tr><td style="background-color: plum;">chh</td><td>[ʨʰ] [tʃʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">f</td><td>[f]</td><td></td></tr>
+  <tr><td style="background-color: plum;">hk</td><td>[kʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">hp</td><td>[pʰ]</td><td></td></tr>
   <tr><td style="background-color: plum;">r</td><td>[ɹ]</td><td>friend</td></tr>
+  <tr><td style="background-color: plum;">ș</td><td>[ʃ] [ɕ]</td><td>share</td></tr>
+  <tr><td style="background-color: plum;">ts</td><td>[ʦʰ]</td><td></td></tr>
+  <tr><td style="background-color: plum;">þ</td><td>[θ]</td><td></td></tr>
   <tr><td style="background-color: plum;">z</td><td>[z]</td><td></td></tr>
   <tr><td style="background-color: plum;">ż</td><td>[ʐ]</td><td></td></tr>
 </table>
@@ -453,8 +459,26 @@
  <p>"tr" consonant is used to represent the "tr" serie consonants which is no longer existing Cantonese. The "tr" is applied in the proper noun such as name of a person and a place. The pronunciation of "tr" is same as "ch" in syllable with the first, second, third and sixth tone. The pronunciation of "tr" is same as "x" in syllable with the forth and fifth tone.</p>
  <p>喺廣州音入面讀"ph"而係喺南寧音入面有機會讀"v"嘅韻首，通用版本寫"ho" "hu"或者"kho"譬如話 「花hoa」「化hóa」「葷huân」「訓huấn」「快khoái」</p> 
  <p>The consonants pronounce "ph" in Canton city accent and have change to be pronounced as "v", should be spelled as "ho" "hu" or "kho" in universal version, such as "花hoa" "化hóa" "葷huân" "訓huấn" "快khoái"</p> 
- <p>字母"f"嘅發音同"ph"相同，主要用嚟表音同書寫外來詞語</p>
- <p>The letter "f" has the same pronunciation with consonant "ph". "f" is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+ <p>字母"f"嘅發音係[f]，主要用嚟表音同書寫外來詞語</p>
+ <p>The pronunciation of the letter "f" is [f]. "f" is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+ <p>儋州話嘅韻首"ph"嘅發音係[ɸ]，喺大部份粵語方言入面，"ph"嘅發音係[f]</p>
+ <p>In Damchow dialect, the pronunciation of consonant "ph" is [ɸ]. In most of Cantonese accents, the pronunciation of "ph" is [f].</p>
+  <p>字母"p"嘅廣州音同台山音嘅發音係[pʰ]，不過喺某啲語言系統入面可能係[p]</p>
+ <p>The pronunciation of letter "p" is [pʰ] in Canton city and Hoisanese orthography. However, in some language system the pronunciation of letter "p" can be [p].</p>
+  <p>"hp"嘅發音係[pʰ]，主要用嚟表音同書寫外來詞語</p>
+ <p>The pronunciation of "hp" is [pʰ], which is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+  <p>儋州話嘅韻首"kh"嘅發音係[x]，喺大部份粵語方言入面，"kh"嘅發音係[kʰ]</p>
+ <p>In Damchow dialect, the pronunciation of consonant "kh" is [x]. In most of Cantonese accents, the pronunciation of "kh" is [kʰ].</p>
+   <p>"hk"嘅發音係[kʰ]，主要用嚟表音同書寫外來詞語</p>
+ <p>The pronunciation of "hk" is [kʰ], which is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+  <p>"chh"嘅發音係[ʨʰ]一係[tʃʰ]，主要用嚟表音同書寫外來詞語</p>
+ <p>The pronunciation of "chh" is [ʨʰ] or [tʃʰ], which is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+   <p>"ts"嘅發音係[ʦʰ]，主要用嚟表音同書寫外來詞語</p>
+ <p>The pronunciation of "ts" is [ʦʰ], which is mainly used to represent sounds and spelling loanword from foreign languages.</p>
+  <p>喺大部份粵語方言入面，內爆音"b"同"đ"已經變成清輔音[p]同[t]</p>
+ <p>In most of Cantonese accents, the implosive consonants "b" and "đ" have already became unvoiced consonants [p] and [t].</p>
+ <p>韻首"viê"喺化州話入面嘅發音係[ʋi]，喺廣州話入面嘅發音係[jy]，喺台山話入面嘅發音係[juo]，喺欽州話入面嘅發音係[ji]</p>
+  <p>The pronunciation of "viê" front in Phá-Châu accent is [ʋi]. The pronunciation of "viê" front in Canton accent is [jy]. The pronunciation of "viê" front in Hoisan accent is [juo]. The pronunciation of "viê" front in Hâm-Châu accent is [ji].</p>
   <p>字母"t"嘅發音同"đ"嘅廣州音相同，都係[t], "t"用嚟標記聲音、表示廣州音專有詞語同書寫外來詞語，例如「點解tỉm-kải」「我哋ngõ-tỵ」「一啲yât-ti」「拉丁Lai-tinh」</p>
  <p>The pronunciation of letter "t" is same with consonant "đ" in Canton city accent. They are both pronounced as [t] in Canton city accent. "t" is used to mark sounds, indicate words only for Canton city accent and spell loanwords, such as "點解tỉm-kải" "我哋ngõ-tỵ" "一啲yât-ti" "拉丁Lai-tinh".</p>
  <p>字母"d" 字母"z" 同字母組合 "dz" 喺粵語源頭嘅詞語入面同字母"y"都用嚟表示韻首/j/或者/z/，字母"y"用嚟表示古音同儋州話入面[ʔ]韻首嘅音節</p>
@@ -483,7 +507,7 @@
 <tr><td>ai</td><td>[ai]</td><td>大</td><td>iai</td><td>[iai]</td><td></td><td>uai/oai</td><td>[wai]</td><td>怪</td></tr>
 <tr><td>ao</td><td>[au]</td><td>嘲</td><td>iao</td><td>[iau]</td><td>巧</td><td style="background-color: plum;">oao</td><td>[wau]</td><td>wow</td></tr>
 <tr><td>ây</td><td>[ɐi]</td><td>睇</td><td>ê</td><td>[ɐi]</td><td>禮</td><td>uây</td><td>[wɐi]</td><td>油炸鬼</td></tr>
-<tr><td>âu</td><td>[ɐu]</td><td>狗</td><td style="background-color: lightgray;">ưu</td><td>[iəu]</td><td>九</td><td></td><td></td><td></td></tr>
+<tr><td>âu</td><td>[ɐu]</td><td>狗</td><td style="background-color: lightgray;">ưu</td><td>[iɐu]</td><td>九</td><td></td><td></td><td></td></tr>
 <tr><td>e</td><td>[ɛ]</td><td>姐</td><td style="background-color: yellowgreen;">ie</td><td>[iɛ]</td><td></td><td>ue/oe</td><td>[wɛ]</td><td>搲</td></tr>
 <tr><td>ơi</td><td>[ei]</td><td>誒</td><td>y</td><td>[ɪi]</td><td>氣</td><td>uy/vy</td><td>[wei]</td><td>鬼</td></tr>
 <tr><td>eo</td><td>[ɛu]</td><td>掉</td><td>iêu</td><td>[iɛu]</td><td>小</td><td style="background-color: plum;">oeo</td><td>[wɜu]</td><td></td></tr>
@@ -501,14 +525,14 @@
 <tr><td>ăng</td><td>[ɐŋ]</td><td>增</td><td>iăng</td><td>[iɐŋ]</td><td></td><td>uăng/oăng</td><td>[uɐŋ]</td><td>轟</td></tr>
 <tr><td>em</td><td>[ɛm]</td><td>𦧷</td><td>iêm/iem</td><td>[iɛm]</td><td>閃</td><td></td><td></td><td></td></tr>
 <tr><td>en</td><td>[ɛn]</td><td>N</td><td>iên/ien</td><td>[iɛn]</td><td>先</td><td>uen/oen</td><td>[wɛn]</td><td>慣</td></tr>
-<tr><td style="background-color: yellow;">ênh/eng</td><td>[ɛŋ]</td><td>聽</td><td>iêng</td><td>[iɛŋ]</td><td>聽</td><td style="background-color: yellowgreen;">uênh/oênh/oeng</td><td>[wɛŋ]</td><td></td></tr>
+<tr><td style="background-color: yellow;">eng</td><td>[ɛŋ]</td><td>聽</td><td>iêng</td><td>[iɛŋ]</td><td>聽</td><td style="background-color: yellowgreen;">uênh/oênh/oeng</td><td>[wɛŋ]</td><td></td></tr>
 <tr><td>om</td><td>[ɔm]</td><td>甘</td><td style="background-color: plum;">iom</td><td>[iɔm]</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>on</td><td>[ɔn]</td><td>安</td><td>ion</td><td>[iɔn]</td><td></td><td style="background-color: lightgray;">uon</td><td>[uɔn]</td><td>亂</td></tr>
-<tr><td>ong</td><td>[ɔŋ]</td><td>港</td><td>ương</td><td>[œŋ</td><td>羊</td><td>uong</td><td>[wɔŋ]</td><td>光</td></tr>
-<tr><td style="background-color: orange;">ôn</td><td>[un]</td><td>孫</td><td>uyên/viên</td><td>[yn]</td><td>聯</td><td style="background-color: orange;">ăn</td><td>[un]</td><td>文</td></tr>
+<tr><td>ong</td><td>[ɔŋ]</td><td>港</td><td>ương</td><td>[œŋ]</td><td>羊</td><td>uong</td><td>[wɔŋ]</td><td>光</td></tr>
+<tr><td style="background-color: orange;">ôn</td><td>[un]</td><td>孫</td><td>uyên</td><td>[yn]</td><td>聯</td><td style="background-color: orange;">ăn</td><td>[un]</td><td>文</td></tr>
 <tr><td style="background-color: yellow;">un</td><td>[uɔn]</td><td>滿</td><td style="background-color: plum;">iun</td><td>[iun]</td><td></td><td style="background-color: yellow;">uôn</td><td>[un]</td><td>官</td></tr>
 <tr><td>ung</td><td>[ʊŋ]</td><td>風</td><td style="background-color: plum;">iung</td><td>[iuŋ]</td><td></td><td style="background-color: yellowgreen;">ông</td><td>[oŋ]</td><td></td></tr>
-<tr><td>inh</td><td>[iŋ]</td><td>英</td><td></td><td></td><td></td><td>uynh</td><td>[wiŋ]</td><td>炯</td></tr>
+<tr><td>inh</td><td>[ɪŋ]</td><td>英</td><td>ênh</td><td>[eŋ]</td><td>英</td><td>uynh</td><td>[wɪŋ]</td><td>炯</td></tr>
 <tr><td style="background-color: yellowgreen;">ơn</td><td>[ən]</td><td></td><td style="background-color: pink;">ưn</td><td>[yn]</td><td>魚丸</td><td></td><td></td><td></td></tr>
 <tr><td style="background-color: yellowgreen;">ơm</td><td>[əm]</td><td></td><td></td><td></td><td></td><td style="background-color: plum;">um</td><td>[um]</td><td></td></tr>
 <tr><td style="background-color: yellowgreen;">ơng</td><td>[əŋ]</td><td></td><td style="background-color: yellowgreen;">iong</td><td>[iɔŋ]</td><td></td><td></td><td></td><td></td></tr>
@@ -520,14 +544,14 @@
 <tr><td>ăc/ăk</td><td>[ɐk]</td><td>得</td><td style="background-color: yellowgreen;">iăc/iăk</td><td>[iɐk]</td><td></td><td>uăc/oăc/oăk</td><td>[wɐk]</td><td>𥕏</td></tr>
 <tr><td>ep</td><td>[ɛp]</td><td>喼</td><td>iêp</td><td>[iɛp]</td><td>葉</td><td></td><td></td><td></td></tr>
 <tr><td>et</td><td>[ɛt]</td><td>坺</td><td>iêt</td><td>[iɛt]</td><td>結</td><td>uet/oet</td><td>[wɛt]</td><td>刮</td></tr>
-<tr><td style="background-color: yellow;">êc/ek</td><td>[ɛk]</td><td>踢</td><td>iêc/iek</td><td>[iɛk]</td><td>錫</td><td style="background-color: yellowgreen;">uêch/oêch/oek</td><td>[wɛk]</td><td></td></tr>
+<tr><td style="background-color: yellow;">ec</td><td>[ɛk]</td><td>踢</td><td>iêc/iek</td><td>[iɛk]</td><td>錫</td><td style="background-color: yellowgreen;">uec/oec/oek</td><td>[wɛk]</td><td></td></tr>
 <tr><td>op</td><td>[ɔp]</td><td>合</td><td style="background-color: plum;">iop</td><td>[iɔp]</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>ot</td><td>[ɔt]</td><td>渴</td><td style="background-color: plum;">iot</td><td>[iɔt]</td><td></td><td style="background-color: lightgray;">uot</td><td>[uɔt]</td><td>脱</td></tr>
 <tr><td>oc/ok</td><td>[ɔk]</td><td>各</td><td>ươc</td><td>[œk]</td><td>約</td><td>uoc/uok</td><td>[wɔk]</td><td>國</td></tr>
-<tr><td style="background-color: orange;">ôt</td><td>[ut]</td><td>卒</td><td>uyêt/viêt</td><td>[yt]</td><td>越</td><td style="background-color: orange;">ăt</td><td>[ut]</td><td>不</td></tr>
+<tr><td style="background-color: orange;">ôt</td><td>[ut]</td><td>卒</td><td>uyêt</td><td>[yt]</td><td>越</td><td style="background-color: orange;">ăt</td><td>[ut]</td><td>不</td></tr>
 <tr><td style="background-color: yellow;">ut</td><td>[uɔt]</td><td>沒</td><td style="background-color: plum;">iut</td><td>[iut]</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>uc/uk</td><td>[ʊk]</td><td>木</td><td style="background-color: plum;">iuc/iuk</td><td>[iuk]</td><td></td><td style="background-color: yellowgreen;">ôc/ôk</td><td>[ok]</td><td></td></tr>
-<tr><td>ich/ik</td><td>[ik]</td><td>亦</td><td></td><td></td><td></td><td>uich/uik</td><td>[wik]</td><td>隙</td></tr>
+<tr><td>ich/ik</td><td>[ɪk]</td><td>亦</td><td>êch</td><td>[ek]</td><td></td><td>uich/uik</td><td>[wɪk]</td><td>隙</td></tr>
 <tr><td style="background-color: yellowgreen;">ơt</td><td>[ət]</td><td></td><td style="background-color: pink;">ưt</td><td>[yt]</td><td>嘟</td><td></td><td></td><td></td></tr>
 <tr><td style="background-color: yellowgreen;">ơp</td><td>[əp]</td><td></td><td></td><td></td><td></td><td style="background-color: plum;">up</td><td>[up]</td><td></td></tr>
 <tr><td style="background-color: yellowgreen;">ơc/ơk</td><td>[ək]</td><td></td><td style="background-color: yellowgreen;">ioc/iok</td><td>[iɔk]</td><td></td><td></td><td></td><td></td></tr>
@@ -572,8 +596,6 @@
  <p>If a [jʊŋ]  sound Canton city accent syllable has first, second, or third tone, it should be spelled as "yung", such as "翁yung" "擁yủng" "雍yúng"</p>
   <p>如果一個單獨嘅[jʊk] 音節廣州音音節聲調係第1聲調，咁要寫成yuc，譬如話「郁yuc」</p>
  <p>If a [jʊk]  sound Canton city accent syllable has first tone, it should be spelled as "yuc", such as "郁yuc"</p>
-  <p>如果一個單獨嘅[jɪŋ] 音節廣州音音節聲調係第1、2、3聲調，咁要寫成inh，譬如話「英inh」「影ỉnh」「應ính」</p>
- <p>If a [jɪŋ]  sound Canton city accent syllable has first, second, or third tone, it should be spelled as "inh", such as "英inh" "影ỉnh" "應ính"</p>
    <p>如果一個單獨嘅[jɪk] 音節廣州音音節聲調係第1聲調，咁要寫成ich，譬如話「益ich」</p>
  <p>If a [jɪk]  sound Canton city accent syllable has first, second, or third tone, it should be spelled as "ich", such as "益ich"</p>
    <p>如果一個單獨嘅[jœŋ] 音節廣州音音節聲調係第1、2、3聲調，咁要寫成ương，譬如話「央ương」「炴ưởng」「怏ưởng」</p>
@@ -588,8 +610,8 @@
  <p>If [ei] and [ɐi] vowels appear without a consonant before, it should be spelled as "ơi" "ay", such as "誒ợi" "哎ấy"</p>
  <p>如果[ə]嘅元音後邊冇韻尾單獨出現，咁要寫"ơ"，譬如話「㗎cớ」「嘞lớ」</p>
  <p>If [ə] vowels appear without a consonant behind, the vowel should be spelled as "ơ", such as "㗎cớ" "嘞lớ"</p>
- <p>使用正寫"iêng" "eng"同韻腹"ênh"嘅音位一樣，正寫"iêc" "ek"同韻腹"êc"嘅音位一樣</p>
- <p>The spelling "iêng" "eng" has the same phoneme with "ênh" sound, the spelling "iêc" "ek" has the same phoneme with "êc" sound</p>
+ <p>使用正寫"iêng"同韻腹"eng"嘅音位一樣，正寫"iêc"同韻腹"ec"嘅音位一樣</p>
+ <p>The spelling "iêng" has the same phoneme with "eng" sound, the spelling "iêc" has the same phoneme with "ec" sound</p>
  <p>使用正寫"iong"同韻腹"ương"嘅音位一樣，正寫"iok"同韻腹"ươc"嘅音位一樣</p>
  <p>The spelling "iong" has the same phoneme with "ương" sound, the spelling "iok" has the same phoneme with "ươc" sound</p>
  <p>如果一個韻腹喺廣州話入面嘅發音係[yn]，喺台山話入面嘅發音係[un]，咁呢個韻腹用"uyên"表示，例如「聯luyền」</p>
@@ -616,8 +638,13 @@
   <p>If a syllable is pronounced as [jyt] in Canton city accent and pronounced as [juɔt] in Hoisan accent, the spellings will be "việt越粵" "duyệt閲悦" "uyết乙" "uót曰" "duật聿" etc.</p>
   <p>"ơng"用嚟表示[əŋ]，"ơc"用嚟表示[ək]</p>
     <p>"ơng" represents [əŋ]，"ơc" represents [ək]</p>
+    <p>"êng" "ênh"用嚟表示[eŋ]，同"inh"嘅音位一樣。"êch" "êc"用嚟表示[ek]，同"ich"嘅音位一樣。例如: 「英Yênh」同「影Yểnh」</p>
+    <p>"êng" "ênh" represents [eŋ]，share the same phoneme with "inh". "êch" "êc" represents [ek], share the same phoneme with "ich". For example, "英Yênh" and "影Yểnh".</p>
     <p>"ơn"用嚟表示[ən]</p>
     <p>"ơn" represents [ən]</p>
+
+      <p>"ang"[aŋ]同"ac"[ak]韻母係"ong"同"oc"韻母喺某啲粵語方言入面嘅變體</p>
+    <p>"ang"[aŋ] and "ac"[ak] rhymes are the variants of "ong" and "oc" rhymes in some Cantonese dialects</p>
   <p>"ưn"用嚟表示[yn]，"ưt"用嚟表示[yt]，用嚟串唔係"uyên" "uon" "uyêt" "uot"韻母起源嘅詞語同表示發音，例如「肥嘟嘟phỳ-tưt-tưt」「魚丸dừ-dửn」「海豚hỏi-thừn」</p>
   <p>"ưn" represents [yn]，"ưt" represents [yt]. They are used to spell the words without the origin of "uyên" "uon" "uyêt" or "uot" vowel combination, or indicate the sound, such as "肥嘟嘟phỳ-tưt-tưt" "魚丸dừ-dửn" and "海豚hỏi-thừn"</p>
   <p>"uoi"用嚟表示[uɔi]</p>
@@ -743,8 +770,8 @@
  <tr>
    <td>ê</td>
    <td><kbd>E</kbd> + <kbd>E</kbd></td>
-   <td>le<strong>e</strong>c</td>
-   <td>lêc叻</td>
+   <td>ke<strong>e</strong></td>
+   <td>kê雞</td>
  </tr>
    <tr>
    <td>iê-</td>
@@ -817,6 +844,12 @@
      <td><kbd>Alt</kbd> <kbd>T</kbd></td>
      <td>A-<kbd>Alt</kbd><strong>t</strong>e-na</td>
      <td>A-þe-na</td>
+   </tr>
+    <tr>
+     <td>₥</td>
+     <td><kbd>Alt</kbd> <kbd>4</kbd></td>
+     <td></td>
+     <td></td>
    </tr>
  </tbody>
 </table>
@@ -911,6 +944,8 @@
   <p>If one syllable was historically evolved from the merging of two syllables, an apostrophe can be inserted between the front consonant and the vowel. For example, "mât-yẽ乜嘢" evolved to "m’e咩" "nhị-sập二十" evolved to "nh’ạ廿" "ŧam-sập三十" evolved to "ŧ’a卅" "m̀-hệ唔係" evolved to "m’ệ咪" </p>
   <p>其他標點嘅作用同英文同越南文類似</p>
   <p>Other uses of punctuation are similar with English and Vietnamese</p>
+  <p>錢幣單位「文」嘅符號係"₥"</p>
+  <p>The symbol of unit of currency "mân" is "₥".</p>
   <p></p>
 
 

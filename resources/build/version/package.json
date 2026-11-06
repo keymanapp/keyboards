@@ -1,0 +1,31 @@
+{
+  "description": "Automatically report on publication of merged pull requests",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.7.0",
+    "@types/semver": "^7.1.0",
+    "@types/sinon": "^21.0.1",
+    "@types/yargs": "^17.0.26",
+    "chai": "^6.2.2",
+    "mocha": "^11.7.6",
+    "sinon": "^22.0.0",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
+  "main": "build/src/index.js",
+  "name": "@keymanapp/keyboards-version-reporter",
+  "private": true,
+  "mocha": {
+    "spec": "build/tests/**/*.tests.js"
+  }
+}

@@ -8,7 +8,7 @@ store(&VISUALKEYBOARD) 'vietnam.kvks'
 store(&LAYOUTFILE) 'vietnam.keyman-touch-layout'
 
 c Note three entry points, rather than the traditional single entry point
-store(&KEYBOARDVERSION) '2.0.6'
+store(&KEYBOARDVERSION) '2.0.7'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -1182,9 +1182,9 @@ any(upper_uw_v) 'a' + any(z) > 'Ưa'
 any(upper_uw_v) 'A' + any(z) > 'ƯA'
 any(aa) + any(two_a) > index(a, 1)
 
-any(low_u_v) 'a' + any(two_a) > 'u' index(low_a_v, 1)
-any(upper_u_v) 'a' + any(two_a) > 'U' index(low_a_v, 1)
-any(upper_u_v) 'A' + any(two_a) > 'U' index(upper_a_v, 1)
+any(low_u_v) 'a' + any(two_a) > 'u' index(low_aa_v, 1)
+any(upper_u_v) 'a' + any(two_a) > 'U' index(low_aa_v, 1)
+any(upper_u_v) 'A' + any(two_a) > 'U' index(upper_aa_v, 1)
 any(low_u_v) 'o' + any(two_o) > 'u' index(low_oo_v, 1)
 any(upper_u_v) 'o' + any(two_o) > 'U' index(low_oo_v, 1)
 any(upper_u_v) 'O' + any(two_o) > 'U' index(upper_oo_v, 1)
@@ -1507,6 +1507,9 @@ any(low_i_v) + 'i' > 'i' index(low_ee_v, 1)
 'o' any(low_a) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'a'
 'O' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'a'
 'O' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'A'
+'o' any(low_e) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'e'
+'O' any(low_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'e'
+'O' any(upper_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'E'
 'u' any(low_y) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'y'
 'U' any(low_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'y'
 'U' any(upper_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'Y'
@@ -1581,6 +1584,7 @@ any(upper_u_v) "Y" + any(two_u) > "U" index(upper_y_v, 1) index(two_u, 3)
 'Ý' any(ptc) + any(s) > 'Y' index(ptc, 2) index(s, 3)
 'Ỵ' any(ptc) + any(j) > 'Y' index(ptc, 2) index(j, 3)
 any(m) any(tone_marks) + [K_BKSP] > nul
+any(q) any(two_u) any(viet_vowels) any(all_letters) + [K_BKSP] > index(q, 1) index(two_u, 2) index(viet_vowels, 3)
 c
 + [RALT K_K] > 'không'
 + [SHIFT RALT K_K] > 'Không'

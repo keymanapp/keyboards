@@ -1,6 +1,10 @@
 SIL Yi Keyboard Change History
 =======================
 
+2.0.1 (02 Oct 2026)
+--------------------
+* Rename T_BKSP to K_BKSP
+
 2.0 (06 Nov 2025)
 --------------------
 * Add tablet touch layout (and remove phone touch layout)

@@ -1,6 +1,10 @@
 Extended Urdu NP (SIL) Change History
 ====================
 
+6.0.3 (2026-Oct-02)
+----------------
+* Update deprecated header statement
+
 6.0.2 (2026-Mar-09)
 ----------------
 * Update OSK font for better display
