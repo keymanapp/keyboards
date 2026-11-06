@@ -1,4 +1,3 @@
-
 <?php
 $pagename = 'Rohingyalish Keyboard Help';
 $pagetitle = $pagename;
