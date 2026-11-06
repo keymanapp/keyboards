@@ -1,6 +1,13 @@
 BU Phonetic Change History
 ====================
 
+2.1.1 (2026-10-12)
+------------------
+* Removed ANSI rules
+* Removed rules for linebreaking
+* Removed saltillo hack
+* Updated documentation to remove references to ANSI, etc.
+
 2.1 (2023-10-09)
 ------------------
 * Replaced PUA codepoint for the "saltillo" with official Unicode codepoint U+A78C
