@@ -2,13 +2,6 @@
 <?php
 $pagename = 'Rohingyalish Keyboard Help';
 $pagetitle = $pagename;
-
-$pagestyle = <<<END
-body {
-  line-height: 1.6;
-}
-END;
-
 require_once('header.php');
 ?>
 
@@ -70,10 +63,5 @@ require_once('header.php');
   <p>
     The keyboard includes characters such as á, ā, ḍ, ṭ, ñ, ṛ, and ș,
     including uppercase forms where configured.
-  </p>
-
-  <p>
-    For information about Keyman, visit
-    <a href="https://keyman.com/">keyman.com</a>
   </p>
 </div>
