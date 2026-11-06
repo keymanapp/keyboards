@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elkatib - الكاتب</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Tahoma, sans-serif;
+            background: #f5f6f8;
+            color: #252b36;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: #ffffff;
+            text-align: center;
+            padding: 55px 25px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #263c70;
+        }
+
+        .hero .arabic {
+            font-size: 36px;
+            direction: rtl;
+            margin: 5px 0 15px;
+        }
+
+        .hero p {
+            color: #667085;
+            font-size: 17px;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+
+        h2 {
+            color: #263c70;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .ar {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .ar h2 {
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        a {
+            color: #3157a4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 10px;
+            color: #7b8494;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px auto;
+                padding: 12px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+        
+        .keyboard-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+        }
+
+        .layout-item {
+    text-align: center;
+        }
+
+        .layout-item h3 {
+    color: #263c70;
+    margin-bottom: 5px;
+        }
+
+        .layout-item p {
+    color: #667085;
+        }
+
+        .layout-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 15px auto 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <h1>Elkatib</h1>
+        <div class="arabic">الكاتب</div>
+
+        <p>
+            An Arabic Keyboard Layout Designed
+            for Efficient Typing.
+        </p>
+
+        <p class="ar">
+            تخطيط لوحة مفاتيح عربية مصمم
+            لتجربة كتابة أكثر كفاءة.
+        </p>
+    </header>
+
+    <section class="section">
+        <h2>About Elkatib</h2>
+
+        <p>
+            Elkatib is an Arabic keyboard layout project
+            developed to provide an alternative approach
+            to typing in Arabic.
+        </p>
+    </section>
+
+    <section class="section ar">
+        <h2>عن الكاتب</h2>
+
+        <p>
+            الكاتب هو مشروع لتخطيط لوحة مفاتيح عربية،
+            يهدف إلى تقديم طريقة بديلة للكتابة باللغة العربية
+            وتحسين تجربة المستخدم.
+        </p>
+    </section>
+    
+    <section class="section">
+    <h2>Keyboard Layout</h2>
+
+    <p>
+        Explore the Elkatib keyboard layout and discover
+        the characters available on each key.
+    </p>
+
+    <div class="keyboard-layout">
+
+        <div class="layout-item">
+            <h3>Normal Layout</h3>
+            <p>Default keyboard layer (without Shift).</p>
+
+            <img
+                src="elkatib-keyboard-layout.png"
+                alt="Elkatib Arabic keyboard layout without Shift"
+                loading="lazy">
+        </div>
+
+        <div class="layout-item">
+            <h3>Shift Layout</h3>
+            <p>Additional characters available using Shift.</p>
+
+            <img
+                src="elkatib-keyboard-layout-shift.png"
+                alt="Elkatib Arabic keyboard layout with Shift"
+                loading="lazy">
+        </div>
+
+    </div>
+    </section>
+
+    <section class="section ar">
+    <h2>تخطيط لوحة المفاتيح</h2>
+
+    <p>
+        استكشف توزيع الحروف في تخطيط الكاتب،
+        وتعرّف على الرموز والحروف المتاحة على كل مفتاح.
+    </p>
+
+    <h3>التخطيط الأساسي</h3>
+    <p>الحروف والرموز دون استخدام مفتاح Shift.</p>
+
+    <h3>تخطيط Shift</h3>
+    <p>الحروف والرموز الإضافية عند استخدام مفتاح Shift.</p>
+    </section>
+
+
+    <section class="section">
+        <h2>Getting Started</h2>
+
+        <ol>
+            <li>Install the Elkatib keyboard.</li>
+            <li>Activate it using Keyman.</li>
+            <li>Switch to Elkatib when typing in Arabic.</li>
+        </ol>
+    </section>
+
+    <section class="section ar">
+        <h2>البدء</h2>
+
+        <ol>
+            <li>قم بتثبيت لوحة مفاتيح الكاتب.</li>
+            <li>قم بتفعيلها باستخدام Keyman.</li>
+            <li>اختر تخطيط الكاتب عند الكتابة باللغة العربية.</li>
+        </ol>
+    </section>
+
+    <section class="section">
+        <h2>Project & Credits</h2>
+
+        <p>
+            Developer: <strong>Optikman</strong>
+        </p>
+
+        <p>
+            Source code and documentation:
+            <a href="https://github.com/Optikman/Elkatib-Arabic-keyboard-layout"
+               target="_blank" rel="noopener">
+                GitHub Repository
+            </a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        Elkatib — الكاتب<br>
+        Designed and developed by Optikman.
+    </footer>
+
+</div>
+
+</body>
+</html>
