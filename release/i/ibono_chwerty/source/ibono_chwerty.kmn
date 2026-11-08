@@ -7,7 +7,7 @@ store(&LAYOUTFILE) 'ibono_chwerty.keyman-touch-layout'
 store(&BITMAP) 'ibono_chwerty.ico'
 store(&MESSAGE) 'A keyboard layout (chwerty) for the Ibọnọ language of Nigeria.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Ibọnọ language.'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&KMW_EMBEDCSS) 'ibono_chwerty.css'
 
 begin Unicode > use(main)
@@ -27,7 +27,7 @@ group(PostKeystroke) readonly
 
 group(detectStartOfSentence) readonly
     store(sentencePunctuation) '.?!‽⁈'
-    store(nl) d10 d13
+    store(nl) U+000A U+000D
     store(enclose) U+0029 U+0027 U+0022
     nul > layer('shift')
     any(sentencePunctuation) ' ' > layer('shift')

@@ -15,6 +15,8 @@ Usage
 
  * `;` → `ŋ` (eng, U+014B). Press `;` again for a literal `;`; a third press gives `ŋŋ`.
  * `|` → `Ŋ` (eng, U+014A). Press `|` again for a literal `|`; a third press gives `ŊŊ`.
+ * On a phone, `ŋ` has its own key at the right end of the middle row; press Shift first for `Ŋ`.
+   `;` and `:` are on the long-press of `.`, and `|` is on the 123 layer.
 
 Links
 -----

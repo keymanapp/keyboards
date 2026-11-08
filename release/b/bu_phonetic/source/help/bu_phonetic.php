@@ -20,7 +20,7 @@
   require_once('header.php');
 ?>
 
-<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
+<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode (<a href='https://www.unicode.org/'>www.unicode.org</a>), including:</p>
 <ul>
 <li>English, Spanish, French, German, and other major European languages</li>
 <li>nearly complete set of IPA and Americanist phonetic symbols, include obscure and obsolete symbols</li>

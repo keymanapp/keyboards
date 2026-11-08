@@ -1,6 +1,10 @@
 lao_phonetic Change History
 ====================
 
+1.1.5 (2026-10-02)
+-----------------
+* Change decimal to Unicode
+
 1.1.4 (2025-02-20)
 -----------------
 * Put OSKFont from .kps file into .kvks file

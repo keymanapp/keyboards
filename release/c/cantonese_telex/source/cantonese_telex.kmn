@@ -3,7 +3,7 @@ c This Version of Cantonese Romanization script simulate a proto-cantonese phono
 store(&VERSION) '17.0'
 store(&NAME) 'cantonese telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '4.0.5'
+store(&KEYBOARDVERSION) '4.0.6'
 store(&TARGETS) 'any'
 store(&BITMAP) 'cantonese_telex.ico'
 store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
@@ -1116,6 +1116,7 @@ any(d) any(un_z_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctua
 any(d) any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(d) any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
 any(t) any(un_hrsd_consonants) + any(no_d_c) > context index(no_d_c, 3)
+any(t) any(un_hrs_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
@@ -1202,6 +1203,8 @@ any(z) any(consonants) any(s_no_d_letters) + any(punctuationc) > context index(p
 any(z) any(consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(z) any(consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(z) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
+any(consonants) any(n) + any(s) > context index(s, 3)
+any(consonants) any(m) + any(s) > context index(s, 3)
 
 'ă' any(iuo) + any(all_letters) > context index(all_letters, 3)
 'Ă' any(iuo) + any(all_letters) > context index(all_letters, 3)
@@ -1353,9 +1356,9 @@ any(upper_uw_v) 'a' + any(z) > 'Ưa'
 any(upper_uw_v) 'A' + any(z) > 'ƯA'
 any(aa) + any(two_a) > index(a, 1)
 
-any(low_u_v) 'a' + any(two_a) > 'u' index(low_a_v, 1)
-any(upper_u_v) 'a' + any(two_a) > 'U' index(low_a_v, 1)
-any(upper_u_v) 'A' + any(two_a) > 'U' index(upper_a_v, 1)
+any(low_u_v) 'a' + any(two_a) > 'u' index(low_aa_v, 1)
+any(upper_u_v) 'a' + any(two_a) > 'U' index(low_aa_v, 1)
+any(upper_u_v) 'A' + any(two_a) > 'U' index(upper_aa_v, 1)
 any(low_u_v) 'o' + any(two_o) > 'u' index(low_oo_v, 1)
 any(upper_u_v) 'o' + any(two_o) > 'U' index(low_oo_v, 1)
 any(upper_u_v) 'O' + any(two_o) > 'U' index(upper_oo_v, 1)
@@ -1655,6 +1658,9 @@ any(two_q) any(two_u) any(oo) any(n) any(g) + any(w) > index(two_q, 1) index(two
 'o' any(low_a) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'a'
 'O' any(low_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'a'
 'O' any(upper_a) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'A'
+'o' any(low_e) any(end_consonants) + [K_BKSP] > index(low_o, 2) 'e'
+'O' any(low_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'e'
+'O' any(upper_e) any(end_consonants) + [K_BKSP] > index(upper_o, 2) 'E'
 'u' any(low_y) any(end_consonants) + [K_BKSP] > index(low_u, 2) 'y'
 'U' any(low_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'y'
 'U' any(upper_y) any(end_consonants) + [K_BKSP] > index(upper_u, 2) 'Y'
@@ -1751,3 +1757,4 @@ any(g) any(low_i) + 'W' > index(g, 1) "i" index(upper_uw, 2)
 any(g) any(upper_i) + 'W' > index(g, 1) "I" index(upper_uw, 2)
 any(mniw) any(tone_marks) + [K_BKSP] > nul
 'ŭ' + any(low_ie_end) > 'iê' index(low_ie_end, 2)
+any(q) any(two_u) any(viet_vowels) any(all_letters) + [K_BKSP] > index(q, 1) index(two_u, 2) index(viet_vowels, 3)
