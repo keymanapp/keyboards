@@ -7,9 +7,8 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>amuzgo_nomndaa.jpg</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -20,22 +19,21 @@
   </StartMenu>
   <Info>
     <Name URL="">Ñomndaa (Amuzgo de Guerrero)</Name>
-    <Copyright URL="">© 2026 Odiseo Trinidad López</Copyright>
-    <Author URL="mailto:trinidadodiseo@gmail.com">Odiseo Trinidad López</Author>
-    <Description URL="">Teclado base español latinoamérica con todos los caracteres propios del amuzgo (ñomndaa) de Guerrero.</Description>
+    <Copyright URL="">Copyright © Odiseo Trinidad</Copyright>
+    <Author URL="">Odiseo Trinidad</Author>
+    <Description URL="">Teclado para escribir ñomndaa amuzgo de Guerrero, basado en distribución español latinoamérica</Description>
     <Version URL=""></Version>
-    <WebSite URL="https://amuzgo-guia.netlify.app/">https://amuzgo-guia.netlify.app/</WebSite>
   </Info>
   <Files>
     <File>
       <Name>..\build\amuzgo_nomndaa.kmx</Name>
-      <Description>Teclado para escribir Ñomndaa (Amuzgo de Guerrero)</Description>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\amuzgo_nomndaa.js</Name>
-      <Description>Teclado para escribir Ñomndaa (Amuzgo de Guerrero) tactil</Description>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
@@ -44,12 +42,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -64,32 +56,42 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\release\shared\fonts\noto\Latn\NotoSans-Regular.ttf</Name>
-      <Description>Font Noto Sans Regular</Description>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
-      <Name>amuzgo_nomndaa.jpg</Name>
-      <Description>File amuzgo_nomndaa.jpg</Description>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>amuzgo_nomndaa</ID>
-      <OSKFont>..\..\..\..\release\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\..\release\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="amu">Guerrero Amuzgo</Language>
       </Languages>
-      <WebOSKFonts>
-        <Font Filename="..\..\..\..\release\shared\fonts\noto\Latn\NotoSans-Regular.ttf"/>
-      </WebOSKFonts>
-      <WebDisplayFonts>
-        <Font Filename="..\..\..\..\release\shared\fonts\noto\Latn\NotoSans-Regular.ttf"/>
-      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
