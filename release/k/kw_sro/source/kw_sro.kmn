@@ -1,0 +1,114 @@
+﻿c KW SRO keyboard (kw_sro): Cree and Nakawē in Standard Roman Orthography, plus the vowel marks
+c of Stoney Nakoda, Algonquin, Mohawk, and other Roman spellings
+c Type a vowel, then a mark key: \ = macron (ā), ] = circumflex (â), [ = acute (á; y[ = ý),
+c ` = grave (à, for Algonquin and Mohawk).
+c Some Nakawē (Saulteaux) writers use š and č: s then \ gives š, and c then \ gives č
+c (as in FirstVoices' Anishinaabemowin keyboard).
+c u takes every mark too (ū û ú ù); û is for East Cree and Stoney Nakoda.
+c Every other key types exactly as on a US keyboard.
+c Based on the FirstVoices fv_cree_latin keyboard (MIT licence); see LICENSE.md.
+
+store(&VERSION) '10.0'
+store(&NAME) 'KW SRO'
+store(&COPYRIGHT) '© 2026 Kevin Waddell'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'kw_sro.kvks'
+store(&LAYOUTFILE) 'kw_sro.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Parallel stores: each position holds the same vowel with a different mark.
+store(vowel)  'aeiouAEIOU'
+store(vMac)   'āēīōūĀĒĪŌŪ'
+store(vCirc)  'âêîôûÂÊÎÔÛ'
+store(vAcu)   'áéíóúÁÉÍÓÚ'
+store(vGrave) 'àèìòùÀÈÌÒÙ'
+store(yPlain) 'yY'
+store(yAcu)   'ýÝ'
+store(cPlain) 'scSC'
+store(cCaron) 'ščŠČ'
+
+c ---- Hardware keyboard: the mark key goes after the vowel ----
+c After anything else the key types itself, so [ ] \ still work.
+
+c \ = macron; a second \ gives back the plain vowel and a backslash
+any(vowel) + [K_BKSLASH] > index(vMac, 1)
+any(vCirc) + [K_BKSLASH] > index(vMac, 1)
+any(vAcu)  + [K_BKSLASH] > index(vMac, 1)
+any(vGrave) + [K_BKSLASH] > index(vMac, 1)
+any(vMac)  + [K_BKSLASH] > index(vowel, 1) '\'
+
+c \ after s or c = caron (š, č), for the Nakawē writers who use them; Cree never needs either
+any(cPlain) + [K_BKSLASH] > index(cCaron, 1)
+any(cCaron) + [K_BKSLASH] > index(cPlain, 1) '\'
+
+c ] = circumflex
+any(vowel) + [K_RBRKT] > index(vCirc, 1)
+any(vMac)  + [K_RBRKT] > index(vCirc, 1)
+any(vAcu)  + [K_RBRKT] > index(vCirc, 1)
+any(vGrave) + [K_RBRKT] > index(vCirc, 1)
+any(vCirc) + [K_RBRKT] > index(vowel, 1) ']'
+
+c [ = acute, also y[ = ý
+any(vowel)  + [K_LBRKT] > index(vAcu, 1)
+any(vMac)   + [K_LBRKT] > index(vAcu, 1)
+any(vCirc)  + [K_LBRKT] > index(vAcu, 1)
+any(vGrave) + [K_LBRKT] > index(vAcu, 1)
+any(vAcu)   + [K_LBRKT] > index(vowel, 1) '['
+any(yPlain) + [K_LBRKT] > index(yAcu, 1)
+any(yAcu)   + [K_LBRKT] > index(yPlain, 1) '['
+
+c ` = grave, for Algonquin and Mohawk
+any(vowel) + [K_BKQUOTE] > index(vGrave, 1)
+any(vMac)  + [K_BKQUOTE] > index(vGrave, 1)
+any(vCirc) + [K_BKQUOTE] > index(vGrave, 1)
+any(vAcu)  + [K_BKQUOTE] > index(vGrave, 1)
+any(vGrave) + [K_BKQUOTE] > index(vowel, 1) '`'
+
+c ---- Touch: tap ◌̄ after a vowel (hold it for ◌̂, ◌́, ◌̀, and ◌̌); tap again to take it off ----
+store(tMac)   [T_MACRON] [SHIFT T_MACRON]
+store(tCirc)  [T_CIRC]   [SHIFT T_CIRC]
+store(tAcu)   [T_ACUTE]  [SHIFT T_ACUTE]
+store(tCaron) [T_CARON]  [SHIFT T_CARON]
+store(tGrave) [T_GRAVE]  [SHIFT T_GRAVE]
+
+any(cPlain) + any(tCaron) > index(cCaron, 1)
+any(cCaron) + any(tCaron) > index(cPlain, 1)
+
+any(vowel) + any(tMac) > index(vMac, 1)
+any(vCirc) + any(tMac) > index(vMac, 1)
+any(vAcu)  + any(tMac) > index(vMac, 1)
+any(vGrave) + any(tMac) > index(vMac, 1)
+any(vMac)  + any(tMac) > index(vowel, 1)
+
+any(vowel) + any(tCirc) > index(vCirc, 1)
+any(vMac)  + any(tCirc) > index(vCirc, 1)
+any(vAcu)  + any(tCirc) > index(vCirc, 1)
+any(vGrave) + any(tCirc) > index(vCirc, 1)
+any(vCirc) + any(tCirc) > index(vowel, 1)
+
+any(vowel)  + any(tAcu) > index(vAcu, 1)
+any(vMac)   + any(tAcu) > index(vAcu, 1)
+any(vCirc)  + any(tAcu) > index(vAcu, 1)
+any(vGrave) + any(tAcu) > index(vAcu, 1)
+any(vAcu)   + any(tAcu) > index(vowel, 1)
+any(yPlain) + any(tAcu) > index(yAcu, 1)
+any(yAcu)   + any(tAcu) > index(yPlain, 1)
+
+any(vowel) + any(tGrave) > index(vGrave, 1)
+any(vMac)  + any(tGrave) > index(vGrave, 1)
+any(vCirc) + any(tGrave) > index(vGrave, 1)
+any(vAcu)  + any(tGrave) > index(vGrave, 1)
+any(vGrave) + any(tGrave) > index(vowel, 1)
+
+c ---- Backspace takes the mark off first (ā -> a), as in the FirstVoices keyboard ----
+store(bksp) [K_BKSP] [SHIFT K_BKSP]
+any(vMac)  + any(bksp) > index(vowel, 1)
+any(vCirc) + any(bksp) > index(vowel, 1)
+any(vAcu)  + any(bksp) > index(vowel, 1)
+any(vGrave) + any(bksp) > index(vowel, 1)
+any(yAcu)  + any(bksp) > index(yPlain, 1)
+any(cCaron) + any(bksp) > index(cPlain, 1)
