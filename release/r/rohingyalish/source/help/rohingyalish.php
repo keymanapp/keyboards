@@ -13,6 +13,11 @@ require_once('header.php');
     characters with diacritics.
   </p>
 
+  <h2>Further Resources</h2>
+  <ul>
+    <li><a href="https://rohingyalanguage.org/tools/rohingya-keyboard/">Rohingya virtual keyboard</a> — select Rohingyalish to type in your browser.</li>
+  </ul>
+
   <h2>Using the keyboard on a physical keyboard</h2>
 
   <p>
