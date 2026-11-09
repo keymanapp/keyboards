@@ -1,7 +1,7 @@
 Ñomndaa (Amuzgo de Guerrero) Change History
 ====================
 
-1.3.2 
+1.3.2 (2026-Nov-9)
 ------------------
 * Se corrigieron detalles que no cumplían con la estructura oficial del repositorio.
 * Se asignó la tecla K_LOPT visible en cada capa.
