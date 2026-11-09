@@ -134,6 +134,9 @@ END;
   <li>La tecla <b>Symbol</b> abre números y signos; desde allí, la tecla 😊 abre las categorías de emojis.</li>
 </ul>
 
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
+
 <h2>Sobre el texto en Unicode / About the text (Unicode)</h2>
 
 <p>
