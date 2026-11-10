@@ -8,7 +8,6 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -44,12 +43,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -61,13 +54,34 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>welcome\elkatib-keyboard-layout.png</Name>
+      <Description>File elkatib-keyboard-layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\elkatib-keyboard-layout-shift.png</Name>
+      <Description>File elkatib-keyboard-layout-shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <ID>elkatib</ID>
       <Languages>
-        <Language ID="ar-EG">Arabic</Language>
+        <Language ID="ar">Arabic</Language>
       </Languages>
+      <Examples>
+        <Example ID="ar" Keys="ا ل س ي د" Text="السيد" Note="this is an Arabic example"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>
