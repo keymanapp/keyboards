@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>19.0.277.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">BU Phonetic</Name>
-    <Copyright URL="">© 2006-2023 J. Albert Bickford</Copyright>
+    <Copyright URL="">© J. Albert Bickford</Copyright>
     <Author URL="mailto:albert_bickford@sil.org">J. Albert Bickford</Author>
     <Version URL=""></Version>
-    <Description>The BU Phonetic Keyboard provides access to a wide range of characters
+    <Description URL="">The BU Phonetic Keyboard provides access to a wide range of characters
 for Latin-based scripts in Unicode (www.unicode.org).</Description>
   </Info>
   <Files>
@@ -58,9 +59,7 @@ for Latin-based scripts in Unicode (www.unicode.org).</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>BU keyboard</Name>
       <ID>bu_phonetic</ID>
-      <Version></Version>
       <Languages>
         <Language ID="fr">French</Language>
         <Language ID="de">German</Language>
@@ -69,8 +68,8 @@ for Latin-based scripts in Unicode (www.unicode.org).</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="bu" Relationship="deprecates" />
+    <RelatedPackage ID="bu" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

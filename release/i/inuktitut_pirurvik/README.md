@@ -1,9 +1,7 @@
 Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ keyboard
 =============================
 
-Copyright (C) 2015-2019 Pirurvik Centre and SIL International
-
-Version 1.4
+Copyright (C) Pirurvik Centre and SIL Global
 
 A transliteration keyboard for Inuktut languages,
 Canadian Aboriginal Syllabics script

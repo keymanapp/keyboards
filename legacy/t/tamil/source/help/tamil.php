@@ -18,7 +18,7 @@
   $pagename = 'Tamil Inscript (deprecated) Keyboard Help';
   $pagetitle = 'Tamil Inscript (deprecated) Keyboard Help';
   $style = '.lang2 {font-size:130%}';
-  $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
+  $relatedSites = array("https://keyman.com/tamil" => "Tamil Keyboards Home");
   require_once('header.php');
 ?>
 

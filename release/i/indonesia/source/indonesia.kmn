@@ -7,7 +7,7 @@ store(&NAME) 'Indonesia'
 store(&VISUALKEYBOARD) 'indonesia.kvks'
 store(&BITMAP) 'indonesia.ico'
 store(&COPYRIGHT) '© Benny Lin'
-store(&KEYBOARDVERSION) '2.0.2'
+store(&KEYBOARDVERSION) '2.0.3'
 store(&TARGETS) 'any'
 store(&MESSAGE) 'Indonesian basic keyboard'
 store(&LAYOUTFILE) 'indonesia.keyman-touch-layout'
@@ -54,12 +54,12 @@ c this is for the physical keyboard rule
 "X" + [SHIFT K_Z] > "Q"
 "Q" + [SHIFT K_Z] > "Z"
 
-"z" + [CAPS K_Z] > "X"
-"x" + [CAPS K_Z] > "Q"
-"q" + [CAPS K_Z] > "Z"
-"Z" + [CAPS K_Z] > "X"
-"X" + [CAPS K_Z] > "Q"
-"Q" + [CAPS K_Z] > "Z"
+c "z" + [CAPS K_Z] > "X"
+c "x" + [CAPS K_Z] > "Q"
+c "q" + [CAPS K_Z] > "Z"
+c "Z" + [CAPS K_Z] > "X"
+c "X" + [CAPS K_Z] > "Q"
+c "Q" + [CAPS K_Z] > "Z"
 
 c custom keys for touch layout
 + [T_NG] > 'n' 'g'

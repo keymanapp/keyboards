@@ -3,7 +3,7 @@ jinland keyboard
 
 Description
 -----------
-Jinland keyboard for the Jin National Language script Țín Dử Quât Dử Țỵ 晉語國語字
+Jinland keyboard for the Jin National Language script Țín Dủ Koât Dủ Țỵ 晉語國語字
 
 Links
 -----

@@ -1,0 +1,188 @@
+﻿c Clavier Arabe du Tchad
+c pour une disposition positionnelle Arabe
+c 
+c Jeff Heath
+c 
+
+store(&VERSION) '15.0'
+store(&NAME) 'Tchad Arabe'
+store(&COPYRIGHT) '© SIL Tchad'
+store(&KEYBOARDVERSION) '3.0'
+store(&hotkey) '[CTRL ALT K_A]'  
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_tchad_arabe.ico'
+store(&VISUALKEYBOARD) 'sil_tchad_arabe.kvks'
+store(&LAYOUTFILE) 'sil_tchad_arabe.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_BKQUOTE] > 'ذ'
++ [K_1] > U+0031
++ [K_2] > U+0032
++ [K_3] > U+0033
++ [K_4] > U+0034
++ [K_5] > U+0035
++ [K_6] > U+0036
++ [K_7] > U+0037
++ [K_8] > U+0038
++ [K_9] > U+0039
++ [K_0] > U+0030
++ [K_HYPHEN] > U+002D   
+c Equals sign is used as special character key - see below
+
++ [K_Q] > 'ض'
++ [K_W] > 'ص'
++ [K_E] > 'ث'
++ [K_R] > 'ق'
++ [K_T] > 'ف'
++ [K_Y] > 'غ'
++ [K_U] > 'ع'
++ [K_I] > 'ه'
++ [K_O] > 'خ'
++ [K_P] > 'ح'
++ [K_LBRKT] > 'ج'
++ [K_RBRKT] > 'د'
++ [K_BKSLASH] > '\'
+
++ [K_A] > 'ش'
++ [K_S] > 'س'
++ [K_D] > 'ي'
++ [K_F] > 'ب'
++ [K_G] > 'ل'
++ [K_H] > 'ا'
++ [K_J] > 'ت'
++ [K_K] > 'ن'
++ [K_L] > 'م'
++ [K_COLON] > 'ك'
++ [K_QUOTE] > 'ط'
+
++ [K_Z] > 'ئ'
++ [K_X] > 'ء'
++ [K_C] > 'ؤ'
++ [K_V] > 'ر'
++ [K_B] > 'پ'
++ [K_N] > 'ى'
++ [K_M] > 'ة'
++ [K_COMMA] > 'و'
++ [K_PERIOD] > 'ز'
++ [K_SLASH] > 'ظ'
+
++ [SHIFT K_BKQUOTE] > U+0651 
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
+
++ [SHIFT K_Q] > U+064E 
++ [SHIFT K_W] > U+064B 
++ [SHIFT K_E] > U+064F 
++ [SHIFT K_R] > U+064C 
++ [SHIFT K_T] > U+065D 
++ [SHIFT K_Y] > 'إ'
++ [SHIFT K_U] > '‘'
++ [SHIFT K_I] > '÷'
++ [SHIFT K_O] > '×'
++ [SHIFT K_P] > '؛'
++ [SHIFT K_LBRKT] > '<'
++ [SHIFT K_RBRKT] > '>'
++ [SHIFT K_BKSLASH] > '|'
+
++ [SHIFT K_A] > U+0650 
++ [SHIFT K_S] > U+064D 
++ [SHIFT K_D] > U+0656 
++ [SHIFT K_F] > U+065C 
++ [SHIFT K_G] > U+065A 
++ [SHIFT K_H] > 'أ'
++ [SHIFT K_J] > 'ـ'
++ [SHIFT K_K] > '،'
++ [SHIFT K_L] > '/'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_QUOTE] > '"'    
+
++ [SHIFT K_Z] > '~'
++ [SHIFT K_X] > U+0652 
++ [SHIFT K_C] > U+0658 
++ [SHIFT K_V] > U+065B 
++ [SHIFT K_B] > 'لآ'
++ [SHIFT K_N] > 'آ'
++ [SHIFT K_M] > '’'
++ [SHIFT K_COMMA] > ','
++ [SHIFT K_PERIOD] > '.'
++ [SHIFT K_SLASH] > '؟'
+
+'-' + '-' > '–'      c  n dash
+'–' + '-' > '—'      c  m dash
+'@' + '@' > '©'      c COPYRIGHT_SIGN, can be typed SHIFT '@@'
+'©' + '@' > U+2117   c SOUND_RECORDING_COPYRIGHT, can be typed SHIFT '@@@'
+U+2117 + '@' > '®'   c REGISTERED_SIGN, can be typed SHIFT '@@@@' 
+'$' + '$' > '€'      c can be typed SHIFT '$$'
+'€' + '$' > '£'      c can be typed SHIFT '$$$'
+
++ [K_EQUAL] > deadkey(spec)
+
+dk(spec) + [K_BKQUOTE] > 'ذ'
+dk(spec) + [K_1] > U+0661
+dk(spec) + [K_2] > U+0662
+dk(spec) + [K_3] > U+0663
+dk(spec) + [K_4] > U+0664
+dk(spec) + [K_5] > U+0665
+dk(spec) + [K_6] > U+0666
+dk(spec) + [K_7] > U+0667
+dk(spec) + [K_8] > U+0668
+dk(spec) + [K_9] > U+0669
+dk(spec) + [K_0] > U+0660
+dk(spec) + [K_HYPHEN] > '_'
+dk(spec) + [K_EQUAL] > '='
+
+dk(spec) + [K_Q] > 'ڔ'
+dk(spec) + [K_W] > 'لإ' 
+dk(spec) + [K_E] > U+08A4
+dk(spec) + [K_R] > U+08A5
+dk(spec) + [K_T] > 'ڤ'
+dk(spec) + [K_Y] > 'ڠ'
+dk(spec) + [K_U] > 'ݝ'
+dk(spec) + [K_I] > 'ۀ'
+dk(spec) + [K_O] > 'ڃ'
+dk(spec) + [K_P] > 'ڄ'
+dk(spec) + [K_LBRKT] > 'چ'
+dk(spec) + [K_RBRKT] > 'ڊ'
+dk(spec) + [K_BKSLASH] > '\'
+
+dk(spec) + [K_A] > 'ژ'
+dk(spec) + [K_S] > 'لأ' 
+dk(spec) + [K_D] > 'ړ'      c reh with ring, Alphabet National item 39
+dk(spec) + [K_F] > 'ٻ'
+dk(spec) + [K_G] > 'ݪ'
+dk(spec) + [K_H] > U+08A6
+dk(spec) + [K_J] > U+08A7
+dk(spec) + [K_K] > 'ݧ'
+dk(spec) + [K_L] > 'ݦ'
+dk(spec) + [K_COLON] > 'ڮ'
+dk(spec) + [K_QUOTE] > "'"
+
+dk(spec) + [K_Z] > 'لآ'
+dk(spec) + [K_X] > 'ال'
+dk(spec) + [K_C] > '{'
+dk(spec) + [K_V] > '}'
+dk(spec) + [K_B] > '«'
+dk(spec) + [K_N] > '»'
+dk(spec) + [K_M] > 'ڗ'
+dk(spec) + [K_COMMA] > '،'
+dk(spec) + [K_PERIOD] > '.'
+dk(spec) + [K_SLASH] > '؟'
+
+U+005F + '-' > U+2011       c no-break hyphen
+dk(spec) + ' ' > U+00A0     c no-break space
+U+00A0 + ' ' > U+202F       c narrow no-break space
+
+c EOF

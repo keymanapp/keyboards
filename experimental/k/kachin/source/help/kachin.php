@@ -349,4 +349,6 @@
   If more than one tone marking key is pressed, the last one will be used. For example, typing <code>a12</code> will return "à". To write a tone marking key as a normal digital, one has to press it twice: <code>a1</code> becomes <code>á</code>, while <code>a11</code> becomes <code>a1</code>.
 </p>
 
+<a href="https://www.google.co.uk/books/edition/A_Grammar_of_the_Kachin_Language/bKIOAAAAMAAJ?hl=en">A Grammar of the Kachin Language</a>
+
 <p>© cathaylab</p>
