@@ -5,3 +5,8 @@ Bali Simbar Keyboard Change History
 ------------------
 
 * Initial release
+
+2.0 (November 2026)
+------------------
+
+* Major development of 
