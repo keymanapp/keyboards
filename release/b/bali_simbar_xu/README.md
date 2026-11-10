@@ -1,7 +1,7 @@
 Aksara Bali Keyboard
 ============================
 
-Copyright (C) I Made Suatjana 1996
+Copyright (C) I Made Suatjana 1996-2026
 
 __DESCRIPTION__
 This keyboard lets you type Aksara Bali (Balinese script) in Unicode.
