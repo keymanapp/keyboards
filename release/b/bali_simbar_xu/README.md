@@ -8,7 +8,7 @@ This keyboard lets you type Aksara Bali (Balinese script) in Unicode. All instru
 
 Links
 -----
-https://keyman.com/keyboards/bali_simbar
+https://keyman.com/keyboards/bali_simbar_xu
 
  * Contact: msuatjana@gmail.com
 
