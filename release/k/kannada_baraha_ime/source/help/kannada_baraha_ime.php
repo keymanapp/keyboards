@@ -1,0 +1,85 @@
+<?php 
+  $pagename = 'Baraha Kannada IME Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
+<p>Type Kannada using Latin letters. The keyboard converts what you type into Kannada script as you go,
+following the Baraha transliteration scheme. For example, <b>namaskAra</b> becomes
+<span class="kn">ನಮಸ್ಕಾರ</span>.</p>
+<p>This project intends to extend the Baraha transliteration functionality of the Mac OS app Lipika-IME to other operating systems (e.g. Windows, Linux).</p>
+
+<h2>How to type</h2>
+
+<p>Type each Kannada word the way it sounds. The text changes into Kannada as you type:
+<b>k</b> shows <span class="kn">ಕ್</span>, then <b>a</b> turns it into <span class="kn">ಕ</span>,
+and another <b>a</b> makes it <span class="kn">ಕಾ</span>.</p>
+
+<ul>
+  <li><b>Capital letters matter.</b> <b>t</b> is <span class="kn">ತ</span> but <b>T</b> is <span class="kn">ಟ</span>;
+      <b>e</b> is <span class="kn">ಎ</span> but <b>E</b> is <span class="kn">ಏ</span>.</li>
+  <li><b>ಒತ್ತಕ್ಷರಗಳು (ottakSharas) form automatically.</b> Type consonants one after another: <b>kSh</b> gives <span class="kn">ಕ್ಷ</span>,
+      <b>dr</b> gives <span class="kn">ದ್ರ್</span>.</li>
+  <li><b>Word endings.</b> A word ending in a consonant shows a virama (<span class="kn">್</span>)
+      until you type the final vowel: <b>raam</b> is <span class="kn">ರಾಮ್</span>, <b>raama</b> is <span class="kn">ರಾಮ</span>.</li>
+  <li><b>Separating letters.</b> Type an apostrophe between letters that would otherwise combine:
+      <b>k'ha</b> gives <span class="kn">ಕ್ಹ</span> instead of <span class="kn">ಖ</span>.</li>
+</ul>
+
+<h2>Examples</h2>
+
+<table>
+  <tr><th>Type</th><th>Result</th></tr>
+  <tr><td>namaskAra</td><td class="kn">ನಮಸ್ಕಾರ</td></tr>
+  <tr><td>kannaDa</td><td class="kn">ಕನ್ನಡ</td></tr>
+  <tr><td>beMgaLUru</td><td class="kn">ಬೆಂಗಳೂರು</td></tr>
+  <tr><td>caMdra</td><td class="kn">ಚಂದ್ರ</td></tr>
+  <tr><td>kRuShNa</td><td class="kn">ಕೃಷ್ಣ</td></tr>
+  <tr><td>j~jAna</td><td class="kn">ಜ್ಞಾನ</td></tr>
+</table>
+
+<h2>Vowels</h2>
+
+<table>
+  <tr><th>Type</th><th>Vowel</th><th>Type</th><th>Vowel</th></tr>
+  <tr><td>a</td><td class="kn">ಅ</td><td>A, aa</td><td class="kn">ಆ</td></tr>
+  <tr><td>i</td><td class="kn">ಇ</td><td>I, ii, ee</td><td class="kn">ಈ</td></tr>
+  <tr><td>u</td><td class="kn">ಉ</td><td>U, uu, oo</td><td class="kn">ಊ</td></tr>
+  <tr><td>Ru</td><td class="kn">ಋ</td><td></td><td></td></tr>
+  <tr><td>e</td><td class="kn">ಎ</td><td>E</td><td class="kn">ಏ</td></tr>
+  <tr><td>ai</td><td class="kn">ಐ</td><td></td><td></td></tr>
+  <tr><td>o</td><td class="kn">ಒ</td><td>O</td><td class="kn">ಓ</td></tr>
+  <tr><td>au</td><td class="kn">ಔ</td><td></td><td></td></tr>
+  <tr><td>M</td><td class="kn">ಂ</td><td>H</td><td class="kn">ಃ</td></tr>
+</table>
+
+<p>After a consonant, vowels attach as vowel signs: <b>ki</b> is <span class="kn">ಕಿ</span>,
+<b>kU</b> is <span class="kn">ಕೂ</span>, <b>kai</b> is <span class="kn">ಕೈ</span>.</p>
+
+<h2>Consonants</h2>
+
+<table>
+  <tr><td>k <span class="kn">ಕ</span></td><td>kh <span class="kn">ಖ</span></td><td>g <span class="kn">ಗ</span></td><td>gh <span class="kn">ಘ</span></td><td>~g <span class="kn">ಙ</span></td></tr>
+  <tr><td>c <span class="kn">ಚ</span></td><td>ch <span class="kn">ಛ</span></td><td>j <span class="kn">ಜ</span></td><td>jh <span class="kn">ಝ</span></td><td>~j <span class="kn">ಞ</span></td></tr>
+  <tr><td>T <span class="kn">ಟ</span></td><td>Th <span class="kn">ಠ</span></td><td>D <span class="kn">ಡ</span></td><td>Dh <span class="kn">ಢ</span></td><td>N <span class="kn">ಣ</span></td></tr>
+  <tr><td>t <span class="kn">ತ</span></td><td>th <span class="kn">ಥ</span></td><td>d <span class="kn">ದ</span></td><td>dh <span class="kn">ಧ</span></td><td>n <span class="kn">ನ</span></td></tr>
+  <tr><td>p <span class="kn">ಪ</span></td><td>ph, f <span class="kn">ಫ</span></td><td>b <span class="kn">ಬ</span></td><td>bh <span class="kn">ಭ</span></td><td>m <span class="kn">ಮ</span></td></tr>
+  <tr><td>y <span class="kn">ಯ</span></td><td>r <span class="kn">ರ</span></td><td>l <span class="kn">ಲ</span></td><td>v, w <span class="kn">ವ</span></td><td>sh <span class="kn">ಶ</span></td></tr>
+  <tr><td>Sh <span class="kn">ಷ</span></td><td>s <span class="kn">ಸ</span></td><td>h <span class="kn">ಹ</span></td><td>L <span class="kn">ಳ</span></td><td>kSh, x <span class="kn">ಕ್ಷ</span></td></tr>
+</table>
+
+<h2>Punctuation</h2>
+
+<table>
+  <tr><th>Type</th><th>Result</th><th></th></tr>
+  <tr><td>|</td><td class="kn">।</td><td>danda</td></tr>
+  <tr><td>||</td><td class="kn">॥</td><td>double danda</td></tr>
+  <tr><td>"</td><td>“ ”</td><td>curly quotes; opening or closing is chosen automatically</td></tr>
+</table>
+
+<p>Other punctuation (<b>. , ? ! : ;</b>) types as usual.</p>
+
+
+<div id='osk' data-states='default shift'>
+</div>
