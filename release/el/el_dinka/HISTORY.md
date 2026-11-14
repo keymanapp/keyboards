@@ -1,5 +1,14 @@
 # Dinka Change History
 
+## 4.0 (15 NOV 2026)
+* Added acute tone vowels via Shift+vowel (á, é, í, ó, ú, ɛ́, ɔ́, Ɛ́, Ɔ́)
+* Added circumflex dead key (Shift+6) for breathy high tone (â, ê, î, ô, û, ɛ̂, ɔ̂, Ɛ̂, Ɔ̂)
+* Added long-press popup menus for all vowel keys on touch layout
+* Added custom NotoSans-Dinka font to render capital Ŋ in n-form (matching lowercase ŋ)
+* Updated all font references from Arial/DejaVu/Tahoma to Noto Sans Dinka
+* Added backspace handling for all new tone marks
+* Updated touch layout with digraph secondary keys (th, dh, nh, ny)
+
 ## 3.0 (06 JUL 2018)
 * Updated backspace logic
 * Added touch device support

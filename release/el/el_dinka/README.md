@@ -1,9 +1,9 @@
 Thuɔŋjäŋ Keyboard
 =====================
 
-© 2015-2018 Enabling Languages
+© 2015-2026 Enabling Languages
 
-Version 3.0
+Version 4.0
 
 Keyboard layout for the Dinka Language.
 

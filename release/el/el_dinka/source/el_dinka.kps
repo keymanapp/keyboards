@@ -18,11 +18,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Thuɔŋjäŋ</Name>
-    <Version URL=""></Version>
-    <Copyright URL="">© 2015-2018 Enabling Languages</Copyright>
+    <Version URL="">4.0</Version>
+    <Copyright URL="">© 2015-2026 Enabling Languages</Copyright>
     <Author URL=""></Author>
     <WebSite URL="https://enabling-languages.github.io/dinka">https://enabling-languages.github.io/dinka</WebSite>
     <Description>Keyboard layout for typing the Dinka language.</Description>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Info>
   <Files>
     <File>
@@ -33,7 +34,7 @@
     </File>
     <File>
       <Name>..\build\el_dinka.kmx</Name>
-      <Description>Keyboard Dinka Basic (DLIA)</Description>
+      <Description>Thuɔŋjäŋ (Dinka) keyboard</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
@@ -80,8 +81,8 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</Name>
-      <Description>Font DejaVu Sans</Description>
+      <Name>NotoSans-Dinka.ttf</Name>
+      <Description>Noto Sans Dinka font with corrected capital Ŋ glyph</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -96,23 +97,24 @@
     <Keyboard>
       <Name>Thuɔŋjäŋ</Name>
       <ID>el_dinka</ID>
-      <Version></Version>
-      <WebDisplayFonts><Font Filename="DejaVuSans.ttf"/></WebDisplayFonts>
+      <Version>4.0</Version>
+      <OSKFont>NotoSans-Dinka.ttf</OSKFont>
+      <DisplayFont>NotoSans-Dinka.ttf</DisplayFont>
+      <WebOSKFonts><Font Filename="NotoSans-Dinka.ttf"/></WebOSKFonts>
+      <WebDisplayFonts><Font Filename="NotoSans-Dinka.ttf"/></WebDisplayFonts>
       <Languages>
-        <Language ID="din-Latn">Dinka (Latin)</Language>
-        <Language ID="dip-Latn">Northeastern Dinka (Latin)</Language>
-        <Language ID="diw-Latn">Northwestern Dinka (Latin)</Language>
-        <Language ID="dib-Latn">South Central Dinka (Latin)</Language>
-        <Language ID="dks-Latn">Southeastern Dinka (Latin)</Language>
-        <Language ID="dik-Latn">Southwestern Dinka (Latin)</Language>
+        <Language ID="din">Dinka</Language>
+        <Language ID="dip">Northeastern Dinka</Language>
+        <Language ID="diw">Northwestern Dinka</Language>
+        <Language ID="dib">South Central Dinka</Language>
+        <Language ID="dks">Southeastern Dinka</Language>
       </Languages>
       <Examples>
-        <Example ID="din-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
-        <Example ID="dip-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
-        <Example ID="diw-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
-        <Example ID="dib-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
-        <Example ID="dks-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
-        <Example ID="dik-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="din" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dip" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="diw" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dib" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dks" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
       </Examples>
   </Keyboard>
   </Keyboards>
