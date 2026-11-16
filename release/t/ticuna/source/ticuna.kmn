@@ -1,0 +1,76 @@
+c Teclado Ticuna (Magüta) para Keyman
+c
+c Teclado de toque QWERTY, no desenho do teclado do iPhone, com uma fileira fixa
+c de letras ticuna acima do QWERTY:  ã ẽ ĩ õ ũ ü ü̃ ü̃́ '
+c
+c O layout de toque fica em ticuna.keyman-touch-layout (gerado por script e revisado no Keyman Developer).
+c O visual minimalista (estilo iOS, claro/escuro) está em ticuna.css.
+
+store(&VERSION) '17.0'
+store(&NAME) 'Ticuna'
+store(&COPYRIGHT) '© Bruno Maia de Jesus - TJ'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'mobile tablet'
+store(&LAYOUTFILE) 'ticuna.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'ticuna.css'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c Letras que o caps lock deixa maiúsculas no QWERTY
+store(&CasedKeys) [K_A] .. [K_Z]
+
+store(letras) 'a' .. 'z' 'A' .. 'Z'
+
+c Fim de palavra (para os dois espaços virarem ponto) e começo de frase
+store(fimpalavra) 'a' .. 'z' 'A' .. 'Z' '0' .. '9' 'ãẽĩõũüÃẼĨÕŨÜ' U+0303 U+0301 "'" \
+                  'áàâäéêèëíîìïóôòöúûùçñÁÀÂÄÉÊÈËÍÎÌÏÓÔÒÖÚÛÙÇÑ'
+store(pontofinal) '.?!'
+store(espaco) ' ' U+00A0 U+000D U+000A U+0009
+
+c ---------------------------------------------------------------------------
+c A fileira ticuna não precisa de regra: as teclas são U_xxxx no layout de toque
+c e escrevem o caractere direto (ex.: U_00FC_0303 = ü + til). Ver gerar_layout.py.
+c ---------------------------------------------------------------------------
+
+group(main) using keys
+
+c Dois espaços depois de uma palavra viram ". " (como no iPhone)
+platform('touch') any(fimpalavra) ' ' + [K_SPACE] > index(fimpalavra, 2) '. '
+
+c QWERTY: deixa o Keyman aplicar maiúscula/minúscula conforme a camada
++ any(letras) > index(letras, 1)
+
+c ---------------------------------------------------------------------------
+c Troca automática de camada (maiúscula no começo da frase, como no iPhone)
+c Mesmo desenho do EuroLatin (SIL).
+c ---------------------------------------------------------------------------
+
+group(NewContext) readonly
+  c Ao tocar num campo de texto ou mover o cursor, escolhe a camada certa
+  platform('touch') > use(detectaInicioDeFrase)
+
+group(PostKeystroke) readonly
+  c Caps lock fica ligado até a pessoa desligar
+  platform('touch') if(&layer = 'caps') > context
+
+  c Nas camadas de números e símbolos, continua nelas até um espaço ou enter
+  platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(espaco) > use(detectaInicioDeFrase)
+  platform('touch') if(&newLayer = "") if(&layer = 'numeric') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'symbol') any(espaco) > use(detectaInicioDeFrase)
+  platform('touch') if(&newLayer = "") if(&layer = 'symbol') > context
+
+  c Nos outros casos, volta para minúscula (ou maiúscula se começou frase nova)
+  platform('touch') if(&newLayer = "") > use(detectaInicioDeFrase)
+
+group(detectaInicioDeFrase) readonly
+  c Começo do campo de texto
+  nul > layer('shift')
+
+  c Depois de . ? ! e um, dois ou três espaços
+  any(pontofinal) any(espaco) > layer('shift')
+  any(pontofinal) any(espaco) any(espaco) > layer('shift')
+  any(pontofinal) any(espaco) any(espaco) any(espaco) > layer('shift')
+
+  nomatch > layer('default')

@@ -1,0 +1,56 @@
+/* Teclado Ticuna: visual minimalista no estilo do teclado do iOS.
+   Teclas chapadas, sem sombra nem borda, cantos arredondados, teclas especiais da mesma cor
+   das letras e barra de espaço limpa. Acompanha o modo claro/escuro do celular.
+   Tudo fica dentro de .kmw-keyboard-ticuna para não mexer em outros teclados. */
+
+.kmw-keyboard-ticuna .kmw-key {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 9px !important;
+}
+
+.kmw-keyboard-ticuna .kmw-key-default,
+.kmw-keyboard-ticuna .kmw-key-shift {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Shift ligado (e caps lock): cinza leve para dar para ver que está ativo */
+.kmw-keyboard-ticuna .kmw-key-shift-on {
+  background-color: #aeb3be !important;
+  color: #000000 !important;
+}
+
+/* Letras um pouco maiores e na fonte do sistema */
+.kmw-keyboard-ticuna .kmw-key-default {
+  font-size: 125%;
+}
+.kmw-keyboard-ticuna .kmw-key-default .kmw-key-text {
+  font-family: -apple-system, system-ui, Roboto, "Segoe UI", sans-serif;
+}
+
+/* Tecla pressionada: um tom mais escuro */
+.kmw-keyboard-ticuna .kmw-key.kmw-key-touched {
+  background-color: #c9ccd2 !important;
+}
+
+/* Barra de espaço limpa, sem o nome do teclado */
+.kmw-keyboard-ticuna .kmw-spacebar-caption {
+  opacity: 0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .kmw-keyboard-ticuna .kmw-key-default,
+  .kmw-keyboard-ticuna .kmw-key-shift {
+    background-color: #434345 !important;
+    color: #ffffff !important;
+  }
+  /* Shift ligado: tecla clara com seta escura, como no iOS */
+  .kmw-keyboard-ticuna .kmw-key-shift-on {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .kmw-keyboard-ticuna .kmw-key.kmw-key-touched {
+    background-color: #6b6b6e !important;
+  }
+}
