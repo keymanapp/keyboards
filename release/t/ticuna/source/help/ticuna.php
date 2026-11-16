@@ -44,6 +44,8 @@ END;
   <li>Segure a vogal para á à â ä é ê è ë í î ì ï ó ô ò ö ú û ù; segure o c para ç e o n para ñ.<br>
       Long-press vowels, c and n for Portuguese accented letters.</li>
   <li>Dois espaços depois de uma palavra viram ". " / Double space after a word types ". "</li>
+  <li>A tecla 😀 abre os emojis (três páginas); ABC volta para as letras.<br>
+      The 😀 key opens an emoji tab (three pages); ABC returns to the letters.</li>
 </ul>
 
 <p>

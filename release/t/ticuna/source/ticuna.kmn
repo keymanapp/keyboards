@@ -61,6 +61,11 @@ group(PostKeystroke) readonly
   platform('touch') if(&newLayer = "") if(&layer = 'symbol') any(espaco) > use(detectaInicioDeFrase)
   platform('touch') if(&newLayer = "") if(&layer = 'symbol') > context
 
+  c Na aba de emojis, continua nela até tocar em ABC
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji1') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji2') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji3') > context
+
   c Nos outros casos, volta para minúscula (ou maiúscula se começou frase nova)
   platform('touch') if(&newLayer = "") > use(detectaInicioDeFrase)
 
