@@ -11,7 +11,7 @@ maratwarana na kanyakanya ĩno.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/gikuyukanya.
+Keyboard Homepage: https://keyman.com/keyboards/gikuyukanya
 Online Documentation:https://app.notion.com/p/K-h-th-ra-KanyaKanya-1d3b2f92168f8051b36ae2f8aae67078
 
 Copyright
