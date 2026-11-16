@@ -1,0 +1,78 @@
+c Uzbek Latin 2026 keyboard
+c
+c Uzbek Latin alphabet as amended by Law of the Republic of Uzbekistan No. ORQ-1184
+c (21 October 2026): letters Ö ö, Ğ ğ, Ş ş, Ç ç and the tutuq (apostrophe letter) ʼ U+02BC.
+c
+c Desktop layout follows the PROPOSED layout ("preferred variant") shown at the Senate
+c on 10 September 2026. It is NOT an official standard: no official technical standard for
+c the keyboard layout had been published when this keyboard was made.
+c
+c Everything is US QWERTY except five keys:
+c   [  ->  ö Ö        ]  ->  ğ Ğ        ;  ->  ş Ş        '  ->  ç Ç
+c   \  ->  ʼ (U+02BC, with or without Shift)
+c The US characters displaced from these keys are on Right Alt (AltGr) on the same key:
+c   RAlt+[ [   RAlt+Shift+[ {    RAlt+] ]   RAlt+Shift+] }
+c   RAlt+; ;   RAlt+Shift+; :    RAlt+' '   RAlt+Shift+' "
+c   RAlt+\ \   RAlt+Shift+\ |
+c Caps Lock works on ö ğ ş ç like on the other letters.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Uzbek Latin 2026'
+store(&COPYRIGHT) '© bitg contributors'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'uzbek_latin_2026.kvks'
+store(&LAYOUTFILE) 'uzbek_latin_2026.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ö Ö
++ [NCAPS K_LBRKT] > 'ö'
++ [CAPS K_LBRKT] > 'Ö'
++ [NCAPS SHIFT K_LBRKT] > 'Ö'
++ [CAPS SHIFT K_LBRKT] > 'ö'
++ [NCAPS RALT K_LBRKT] > '['
++ [CAPS RALT K_LBRKT] > '['
++ [NCAPS SHIFT RALT K_LBRKT] > '{'
++ [CAPS SHIFT RALT K_LBRKT] > '{'
+
+c ğ Ğ
++ [NCAPS K_RBRKT] > 'ğ'
++ [CAPS K_RBRKT] > 'Ğ'
++ [NCAPS SHIFT K_RBRKT] > 'Ğ'
++ [CAPS SHIFT K_RBRKT] > 'ğ'
++ [NCAPS RALT K_RBRKT] > ']'
++ [CAPS RALT K_RBRKT] > ']'
++ [NCAPS SHIFT RALT K_RBRKT] > '}'
++ [CAPS SHIFT RALT K_RBRKT] > '}'
+
+c ş Ş
++ [NCAPS K_COLON] > 'ş'
++ [CAPS K_COLON] > 'Ş'
++ [NCAPS SHIFT K_COLON] > 'Ş'
++ [CAPS SHIFT K_COLON] > 'ş'
++ [NCAPS RALT K_COLON] > ';'
++ [CAPS RALT K_COLON] > ';'
++ [NCAPS SHIFT RALT K_COLON] > ':'
++ [CAPS SHIFT RALT K_COLON] > ':'
+
+c ç Ç
++ [NCAPS K_QUOTE] > 'ç'
++ [CAPS K_QUOTE] > 'Ç'
++ [NCAPS SHIFT K_QUOTE] > 'Ç'
++ [CAPS SHIFT K_QUOTE] > 'ç'
++ [NCAPS RALT K_QUOTE] > "'"
++ [CAPS RALT K_QUOTE] > "'"
++ [NCAPS SHIFT RALT K_QUOTE] > '"'
++ [CAPS SHIFT RALT K_QUOTE] > '"'
+
+c tutuq ʼ U+02BC (same with Shift, so it can be typed inside an all-caps word)
++ [K_BKSLASH] > U+02BC
++ [SHIFT K_BKSLASH] > U+02BC
++ [RALT K_BKSLASH] > '\'
++ [SHIFT RALT K_BKSLASH] > '|'
+
+c Touch layout: ö ğ ş ç ʼ have their own keys (U_xxxx key IDs, no rules needed),
+c and are also on longpress of o g s c.
