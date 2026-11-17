@@ -69,5 +69,5 @@ END;
 </ul>
 
 <p>
-  © 2026 Bruno Maia de Jesus - TJ. Released under the MIT license.
+  © Bruno Maia de Jesus - TJ. Released under the MIT license.
 </p>
