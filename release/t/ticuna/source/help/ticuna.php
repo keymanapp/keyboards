@@ -48,6 +48,28 @@ END;
       The 😀 key opens an emoji tab (three pages); ABC returns to the letters.</li>
 </ul>
 
+<h2>No computador / Desktop</h2>
+<p>
+  No computador (e com teclado físico no celular ou tablet) o layout é o ABNT2, o padrão dos computadores no
+  Brasil, e as teclas de acento também fazem as letras ticuna.<br>
+  On desktop (and with a hardware keyboard on phones and tablets) the layout is Brazilian ABNT2, with the dead
+  keys extended for Ticuna.
+</p>
+<ul>
+  <li>~ e depois a vogal: ã ẽ ĩ õ ũ<br>
+      ~ then a vowel: ã ẽ ĩ õ ũ</li>
+  <li>¨ (Shift+6) e depois u: ü<br>
+      ¨ (Shift+6) then u: ü</li>
+  <li>~ e ¨ (qualquer ordem) e depois u: ü̃<br>
+      ~ and ¨ (any order) then u: ü̃</li>
+  <li>~, ¨ e ´ e depois u: ü̃́<br>
+      ~, ¨ and ´ then u: ü̃́</li>
+  <li>Glotal ( ' ): tecla ao lado do 1.<br>
+      Glottal stop ( ' ): the key left of 1.</li>
+  <li>Shift ou caps lock dão as maiúsculas.<br>
+      Shift or caps lock give the capitals.</li>
+</ul>
+
 <p>
   © 2026 Bruno Maia de Jesus - TJ. Released under the MIT license.
 </p>
