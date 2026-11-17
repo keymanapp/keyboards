@@ -1,0 +1,94 @@
+/* Teclado Nheengatu: visual minimalista no estilo do teclado do iOS.
+   Teclas chapadas, sem sombra nem borda, cantos arredondados, teclas especiais da mesma cor
+   das letras e barra de espaço limpa. Acompanha o modo claro/escuro do celular.
+   Tudo fica dentro de .kmw-keyboard-nheengatu para não mexer em outros teclados. */
+
+.kmw-keyboard-nheengatu .kmw-key {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 9px !important;
+}
+
+.kmw-keyboard-nheengatu .kmw-key-default,
+.kmw-keyboard-nheengatu .kmw-key-shift,
+.kmw-keyboard-nheengatu .kmw-key-special {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Shift ligado, caps lock e aba de emoji ativa: cinza leve para dar para ver que está ativo */
+.kmw-keyboard-nheengatu .kmw-key-shift-on,
+.kmw-keyboard-nheengatu .kmw-key-special-on {
+  background-color: #aeb3be !important;
+  color: #000000 !important;
+}
+
+/* Letras um pouco maiores e na fonte do sistema */
+.kmw-keyboard-nheengatu .kmw-key-default {
+  font-size: 125%;
+}
+.kmw-keyboard-nheengatu .kmw-key-default .kmw-key-text {
+  font-family: -apple-system, system-ui, Roboto, "Segoe UI", sans-serif;
+}
+
+/* Tecla pressionada: um tom mais escuro */
+.kmw-keyboard-nheengatu .kmw-key.kmw-key-touched {
+  background-color: #c9ccd2 !important;
+}
+
+/* Barra de espaço limpa, sem o nome do teclado */
+.kmw-keyboard-nheengatu .kmw-spacebar-caption {
+  opacity: 0 !important;
+}
+
+/* Fundo do teclado e barra de sugestões: a cor padrão do Keyman muda por sistema (no Android claro fica escura).
+   :has() limita ao quadro que contém este teclado. */
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu),
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-banner-bar {
+  background-color: #d1d4d9 !important;
+}
+.kmw-keyboard-nheengatu .kmw-key-layer-group {
+  background-color: transparent !important;
+}
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggest-option,
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggestion-text {
+  color: #000000 !important;
+}
+
+/* Sugestões na mesma fonte das teclas */
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggest-option,
+.kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggestion-text {
+  font-family: -apple-system, system-ui, Roboto, "Segoe UI", sans-serif !important;
+}
+
+/* Emojis: um pouco maiores nas teclas da aba */
+.kmw-keyboard-nheengatu .kmw-key-layer[data-layer^="emoji"] .kmw-key-text,
+.kmw-keyboard-nheengatu [id^="emoji"].kmw-key .kmw-key-text {
+  font-family: "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .kmw-osk-frame:has(.kmw-keyboard-nheengatu),
+  .kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-banner-bar {
+    background-color: #1f1f21 !important;
+  }
+  .kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggest-option,
+  .kmw-osk-frame:has(.kmw-keyboard-nheengatu) .kmw-suggestion-text {
+    color: #ffffff !important;
+  }
+  .kmw-keyboard-nheengatu .kmw-key-default,
+  .kmw-keyboard-nheengatu .kmw-key-shift,
+  .kmw-keyboard-nheengatu .kmw-key-special {
+    background-color: #434345 !important;
+    color: #ffffff !important;
+  }
+  /* Shift ligado: tecla clara com seta escura, como no iOS */
+  .kmw-keyboard-nheengatu .kmw-key-shift-on,
+  .kmw-keyboard-nheengatu .kmw-key-special-on {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .kmw-keyboard-nheengatu .kmw-key.kmw-key-touched {
+    background-color: #6b6b6e !important;
+  }
+}
