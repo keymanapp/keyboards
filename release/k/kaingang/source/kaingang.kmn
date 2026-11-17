@@ -1,0 +1,156 @@
+c Teclado Kaingang para Keyman
+c
+c Teclado de toque QWERTY, no desenho do teclado do iPhone, com uma fileira fixa
+c de letras kaingang acima do QWERTY:  ã ẽ ĩ ũ ỹ á é ó '
+c
+c O layout de toque fica em kaingang.keyman-touch-layout (gerado por script e revisado no Keyman Developer).
+c O visual minimalista (estilo iOS, claro/escuro) está em kaingang.css.
+c
+c No computador (e com teclado físico no celular/tablet) o layout é ABNT2 com teclas mortas:
+c ~ + vogal = ã ẽ ĩ ũ ỹ ; ´ + vogal = á é ó ; ' (ao lado do 1) = glotal.
+c O teclado na tela do computador está em kaingang.kvks.
+
+store(&VERSION) '17.0'
+store(&NAME) 'Kaingang'
+store(&COPYRIGHT) '© Bruno Maia de Jesus - TJ'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'kaingang.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'kaingang.css'
+store(&VISUALKEYBOARD) 'kaingang.kvks'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c Letras que o caps lock deixa maiúsculas no QWERTY
+store(&CasedKeys) [K_A] .. [K_Z] [K_COLON]
+
+store(letras) 'a' .. 'z' 'A' .. 'Z'
+
+c Fim de palavra (para os dois espaços virarem ponto) e começo de frase
+store(fimpalavra) 'a' .. 'z' 'A' .. 'Z' '0' .. '9' 'ãẽĩõũüÃẼĨÕŨÜ' U+0303 U+0301 "'" \
+                  'áàâäéêèëíîìïóôòöúûùçñÁÀÂÄÉÊÈËÍÎÌÏÓÔÒÖÚÛÙÇÑ'
+store(pontofinal) '.?!'
+store(espaco) ' ' U+00A0 U+000D U+000A U+0009
+
+c ---------------------------------------------------------------------------
+c A fileira kaingang não precisa de regra: as teclas são U_xxxx no layout de toque
+c e escrevem o caractere direto (ex.: U_1EF9 = ỹ). Ver kaingang.keyman-touch-layout.
+c ---------------------------------------------------------------------------
+
+group(main) using keys
+
+c Dois espaços depois de uma palavra viram ". " (como no iPhone)
+platform('touch') any(fimpalavra) ' ' + [K_SPACE] > index(fimpalavra, 2) '. '
+
+c QWERTY: deixa o Keyman aplicar maiúscula/minúscula conforme a camada
++ any(letras) > index(letras, 1)
+
+c [inicio teclado fisico]
+c Teclado físico (computador): base ABNT2, como os computadores no Brasil, mais teclas mortas
+c para as letras indígenas.
+
++ [K_BKQUOTE] > U+0027
++ [SHIFT K_BKQUOTE] > U+0022
++ [RALT K_1] > U+00B9
++ [RALT K_2] > U+00B2
++ [RALT K_3] > U+00B3
++ [RALT K_4] > U+00A3
++ [RALT K_5] > U+00A2
++ [SHIFT K_6] > dk(trema)
++ [RALT K_6] > U+00AC
++ [RALT K_EQUAL] > U+00A7
++ [RALT K_Q] > U+002F
++ [RALT K_W] > U+003F
++ [RALT K_E] > U+00B0
++ [K_LBRKT] > dk(agudo)
++ [SHIFT K_LBRKT] > dk(grave)
++ [K_RBRKT] > U+005B
++ [SHIFT K_RBRKT] > U+007B
++ [RALT K_RBRKT] > U+00AA
++ [K_BKSLASH] > U+005D
++ [SHIFT K_BKSLASH] > U+007D
++ [RALT K_BKSLASH] > U+00BA
++ [K_COLON] > U+00E7
++ [SHIFT K_COLON] > U+00C7
++ [K_QUOTE] > dk(til)
++ [SHIFT K_QUOTE] > dk(circ)
++ [K_oE2] > U+005C
++ [SHIFT K_oE2] > U+007C
++ [RALT K_C] > U+20A2
++ [K_SLASH] > U+003B
++ [SHIFT K_SLASH] > U+003A
++ [K_?C1] > U+002F
++ [SHIFT K_?C1] > U+003F
++ [RALT K_?C1] > U+00B0
+
+store(til_base) 'aeiouynAEIOUYN'
+store(til_letra) 'ãẽĩõũỹñÃẼĨÕŨỸÑ'
+dk(til) + any(til_base) > index(til_letra, 2)
+dk(til) + ' ' > '~'
+dk(til) + [K_QUOTE] > '~'
+
+store(circ_base) 'aeiouAEIOU'
+store(circ_letra) 'âêîôûÂÊÎÔÛ'
+dk(circ) + any(circ_base) > index(circ_letra, 2)
+dk(circ) + ' ' > '^'
+dk(circ) + [SHIFT K_QUOTE] > '^'
+
+store(agudo_base) 'aeiouycAEIOUYC'
+store(agudo_letra) 'áéíóúýçÁÉÍÓÚÝÇ'
+dk(agudo) + any(agudo_base) > index(agudo_letra, 2)
+dk(agudo) + ' ' > '´'
+dk(agudo) + [K_LBRKT] > '´'
+
+store(grave_base) 'aeiouAEIOU'
+store(grave_letra) 'àèìòùÀÈÌÒÙ'
+dk(grave) + any(grave_base) > index(grave_letra, 2)
+dk(grave) + ' ' > '`'
+dk(grave) + [SHIFT K_LBRKT] > '`'
+
+store(trema_base) 'aeiouyAEIOUY'
+store(trema_letra) 'äëïöüÿÄËÏÖÜŸ'
+dk(trema) + any(trema_base) > index(trema_letra, 2)
+dk(trema) + ' ' > '¨'
+dk(trema) + [SHIFT K_6] > '¨'
+
+c [fim teclado fisico]
+
+c ---------------------------------------------------------------------------
+c Troca automática de camada (maiúscula no começo da frase, como no iPhone)
+c Mesmo desenho do EuroLatin (SIL).
+c ---------------------------------------------------------------------------
+
+group(NewContext) readonly
+  c Ao tocar num campo de texto ou mover o cursor, escolhe a camada certa
+  platform('touch') > use(detectaInicioDeFrase)
+
+group(PostKeystroke) readonly
+  c Caps lock fica ligado até a pessoa desligar
+  platform('touch') if(&layer = 'caps') > context
+
+  c Nas camadas de números e símbolos, continua nelas até um espaço ou enter
+  platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(espaco) > use(detectaInicioDeFrase)
+  platform('touch') if(&newLayer = "") if(&layer = 'numeric') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'symbol') any(espaco) > use(detectaInicioDeFrase)
+  platform('touch') if(&newLayer = "") if(&layer = 'symbol') > context
+
+  c Na aba de emojis, continua nela até tocar em ABC
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji1') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji2') > context
+  platform('touch') if(&newLayer = "") if(&layer = 'emoji3') > context
+
+  c Nos outros casos, volta para minúscula (ou maiúscula se começou frase nova)
+  platform('touch') if(&newLayer = "") > use(detectaInicioDeFrase)
+
+group(detectaInicioDeFrase) readonly
+  c Começo do campo de texto
+  nul > layer('shift')
+
+  c Depois de . ? ! e um, dois ou três espaços
+  any(pontofinal) any(espaco) > layer('shift')
+  any(pontofinal) any(espaco) any(espaco) > layer('shift')
+  any(pontofinal) any(espaco) any(espaco) any(espaco) > layer('shift')
+
+  nomatch > layer('default')
