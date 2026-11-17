@@ -47,6 +47,24 @@ END;
       The 😀 key opens an emoji tab (three pages); ABC returns to the letters.</li>
 </ul>
 
+<h2>No computador / Desktop</h2>
+<p>
+  No computador (e com teclado físico no celular ou tablet) o layout é o ABNT2, o padrão dos computadores no
+  Brasil, e as teclas de acento também fazem as letras kaingang.<br>
+  On desktop (and with a hardware keyboard on phones and tablets) the layout is Brazilian ABNT2, with the dead
+  keys extended for Kaingang.
+</p>
+<ul>
+  <li>~ e depois a vogal: ã ẽ ĩ ũ ỹ<br>
+      ~ then a vowel: ã ẽ ĩ ũ ỹ</li>
+  <li>´ e depois a vogal: á é ó<br>
+      ´ then a vowel: á é ó</li>
+  <li>Glotal ( ' ): tecla ao lado do 1.<br>
+      Glottal stop ( ' ): the key left of 1.</li>
+  <li>Shift ou caps lock dão as maiúsculas.<br>
+      Shift or caps lock give the capitals.</li>
+</ul>
+
 <p>
   © 2026 Bruno Maia de Jesus - TJ. Released under the MIT license.
 </p>
