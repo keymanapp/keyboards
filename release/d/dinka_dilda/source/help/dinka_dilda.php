@@ -1,37 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-<head>
- <meta charset='utf-8'/>
- <title>Dinka (DILDA) Keyboard</title>
- <style>
- kbd
-  {
-      -moz-border-radius:3px;
-      -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-      -webkit-border-radius:3px;
-      -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-      background-color:#f7f7f7;
-      border:1px solid #ccc;
-      border-radius:3px;
-      box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-      color:#333;
-      display:inline-block;
-      font-family:'Noto Sans Dinka',sans-serif;
-      font-weight: bold;
-      font-size:0.8em;
-      line-height:1.4;
-      margin:0 .1em;
-      padding:.1em .6em;
-      text-shadow:0 1px 0 #fff;
-  }
-</style>
-</head>
-<body>
-<h1><span lang="din">Dinka (DILDA)</span> Keyboard</h1>
+<?php 
+  $pagename = "Dinka (DILDA) Keyboard Help";
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 
 <p>A keyboard layout for the Dinka (Thuɔŋjäŋ) language, based on the <strong>Grammar of Unified Thuɔŋjäŋ</strong> published by DILDA (Akutmɛ̈t Latueŋ Thuɔŋjäŋ), Juba, South Sudan, 2021.</p>
-
-<p>© Lahat Mariel Apach</p>
 
 <div id='osk'>
 </div>
@@ -80,9 +53,10 @@
 
 <p><kbd>Ctrl</kbd><kbd>Back Space</kbd> will delete a long breathy vowel.</p>
 
+<h2>Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift numeric'></div>
+
 <h2>Acknowledgments</h2>
 
 <p>This keyboard uses work from the original <strong>el_dinka</strong> keyboard (MIT license). The original keyboard provided the base layout, character mappings, and touch layout structure that were enhanced for DILDA compliance.</p>
 
-</body>
-</html>
