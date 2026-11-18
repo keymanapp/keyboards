@@ -22,5 +22,5 @@ Dzardzongke keyboard based on basic keyboard.
 </div>
 
 <h2>Predictive text on a phone or tablet</h2>
-<p> If you are using a phone or tablet, you can also download a 'lexical model' to enable predictive text on your device. Follow this link https://github.com/kitty-liu-wy/dzardzongke-resources to download it and view more information. </p>
+<p> If you are using a phone or tablet, you can also download a 'lexical model' to enable predictive text on your device. Follow <a href="https://github.com/kitty-liu-wy/dzardzongke-resources">this link</a> to download it and view more information. </p>
 

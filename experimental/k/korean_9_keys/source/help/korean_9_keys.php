@@ -7,8 +7,6 @@
 
 ?>
 
-<h1>Start Using Korean 9 keys</h1>
-
 <p>
   Korean 9 keys keyboard for hangul한글
 </p>

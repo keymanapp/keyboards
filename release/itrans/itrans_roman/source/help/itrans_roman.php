@@ -14,7 +14,7 @@ END;
   require_once('header.php');
 ?>
 
-<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span> Keyboard Version 1.1.1</h2>
+<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span></h2>
 
 <p>This is a phonetic keyboard for Indic Romanization which is based on  
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> 
