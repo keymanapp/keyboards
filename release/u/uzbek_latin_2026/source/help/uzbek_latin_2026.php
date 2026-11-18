@@ -40,8 +40,12 @@
   The <b>123</b> key opens numbers and symbols.
 </p>
 
+<h3>Phone layout</h3>
+
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
+
+<h3>Tablet layout</h3>
 
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
