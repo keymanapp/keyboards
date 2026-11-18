@@ -1,6 +1,12 @@
 poorigbelle Change History
 ====================
 
+1.3 (2026-10-06)
+----------------
+* Move Q to RALT layers on desktop
+* Add a with underline to Q position on desktop
+* Change to use eng character instead of unmatched pair of U+0273 and U+0220
+
 1.2 (2026-10-06)
 ----------------
 * Add K_Q and polish to the touch layouts.
