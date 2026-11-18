@@ -136,7 +136,7 @@ END;
     </tr>
   </tbody>
 </table>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>

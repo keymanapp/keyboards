@@ -3,8 +3,8 @@ poorigbelle keyboard
 
 Description
 -----------
-this is a fur/poorigbellé language we use to speek from darfur
-i'm developing this language to use it in any phone and pc
+This is a fur/poorigbellé language we use to speak from darfur
+I'm developing this language to use it in any phone and pc
 
 Links
 -----
