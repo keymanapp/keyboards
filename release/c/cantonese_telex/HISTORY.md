@@ -1,6 +1,11 @@
 cantonese telex Change History
 ====================
 
+4.0.6 (2026-10-31)
+----------------
+* applied "eng" and "ec" to replace "ênh" and "êc" in [ɛŋ] and [ɛk] sounds.
+* appled "ênh" "êng" "êc" and "êch" in [eŋ] and [ek] sounds.
+
 4.0.5 (2026-8-18)
 ----------------
 * added the spelling rule of chh, ts, and hp

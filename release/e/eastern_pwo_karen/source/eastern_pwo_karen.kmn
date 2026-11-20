@@ -3,7 +3,7 @@ c with name "eastern_pwo_karen"
 store(&VERSION) '15.0'
 store(&NAME) 'eastern_pwo_karen'
 store(&COPYRIGHT) 'Copyright © Eastern Pwo Karen Unicode Team'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'eastern_pwo_karen.ico'
 store(&VISUALKEYBOARD) 'eastern_pwo_karen.kvks'
@@ -12,6 +12,9 @@ store(&LAYOUTFILE) 'eastern_pwo_karen.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
++ [K_BKQUOTE] > '`'
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_Y] > 'ရ'
 
 + [K_SPACE] > U+0020
 
@@ -35,7 +38,7 @@ c Number Row
 + [SHIFT K_6] > U+005e
 
 + [K_7] > U+116e1
-+ [SHIFT K_7] > U+101b
++ [SHIFT K_7] > '&'
 
 + [K_8] > U+116e2
 + [SHIFT K_8] > U+002a
@@ -69,7 +72,6 @@ c QWERTY Row
 + [SHIFT K_T] > U+100d
 
 + [K_Y] > U+1015
-+ [SHIFT K_Y] > 'ါဲ'
 
 + [K_U] > U+1000
 + [SHIFT K_U] > U+1025
