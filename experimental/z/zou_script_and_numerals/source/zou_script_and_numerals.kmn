@@ -3,8 +3,8 @@ store(&VERSION) '10.0'
 store(&NAME) 'Zou Script and Numerals'
 store(&COPYRIGHT) 'Copyright (c) Dr. T Marvin Zou'
 store(&MESSAGE) 'Zou Script and Numerals Keyboard created by Dr. T Marvin Zou. This is the first Zou digital keyboard designed, created, edited by Dr. T Marvin Zou from Zou communities of Tibeto Burman.'
-store(&KEYBOARDVERSION) '1.1'
-store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&BITMAP) 'zou_script_and_numerals.ico'
 store(&LAYOUTFILE) 'zou_script_and_numerals.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'zou_script_and_numerals.kvks'
@@ -12,6 +12,16 @@ store(&VISUALKEYBOARD) 'zou_script_and_numerals.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
++ [SHIFT K_COLON] > ''
++ [SHIFT K_0] > ''
++ [SHIFT K_9] > ''
++ [SHIFT K_8] > ''
++ [SHIFT K_7] > ''
++ [SHIFT K_6] > ''
++ [SHIFT K_5] > ''
++ [SHIFT K_4] > ''
++ [SHIFT K_3] > ''
++ [SHIFT K_2] > ''
 
 + [K_0] > U+E040
 + [K_1] > U+E041
@@ -80,18 +90,18 @@ group(main) using keys
 + [SHIFT K_Z] > U+E019
 + [SHIFT K_LBRKT] > U+E01A
 
-+ [SHIFT K_SLASH] > '?'
-+ [SHIFT K_QUOTE] > '"'
-+ [K_PERIOD] > '.'
-+ [K_COLON] > ':'
-+ [K_COMMA] > ','
-+ [SHIFT K_1] > '!'
-+ [K_QUOTE] > U+0027
++ [SHIFT K_SLASH] > ''
++ [SHIFT K_QUOTE] > ''
++ [K_PERIOD] > ''
++ [K_COLON] > ''
++ [K_COMMA] > ''
++ [SHIFT K_1] > ''
++ [K_QUOTE] > ''
 
-+ [K_RBRKT] > ']'
++ [K_RBRKT] > ''
 + [K_BKQUOTE] > '`'
-+ [K_HYPHEN] > '-'
-+ [K_EQUAL] > '='
-+ [K_BKSLASH] > '\'
-+ [K_SLASH] > '/'
++ [K_HYPHEN] > ''
++ [K_EQUAL] > ''
++ [K_BKSLASH] > ''
++ [K_SLASH] > ''
 + [K_oE2] > '\'

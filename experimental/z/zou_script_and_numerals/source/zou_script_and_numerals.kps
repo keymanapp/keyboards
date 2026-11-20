@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>18.0.249.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.255.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -82,7 +82,7 @@ Since the script is not encoded in Unicode, the codepoints in this keyboard are 
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\assets\zou_script_and_numerals.ttf</Name>
+      <Name>..\..\ttf\zou_script_and_numerals.ttf</Name>
       <Description>Font Zou Script And Numerals Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -91,11 +91,17 @@ Since the script is not encoded in Unicode, the codepoints in this keyboard are 
   <Keyboards>
     <Keyboard>
       <ID>zou_script_and_numerals</ID>
-      <OSKFont>..\assets\zou_script_and_numerals.ttf</OSKFont>
-      <DisplayFont>..\assets\zou_script_and_numerals.ttf</DisplayFont>
+      <OSKFont>..\..\ttf\zou_script_and_numerals.ttf</OSKFont>
+      <DisplayFont>..\..\ttf\zou_script_and_numerals.ttf</DisplayFont>
       <Languages>
-        <Language ID="zom-Zzzz">Zou (Code for uncoded script)</Language>
+        <Language ID="zom">Zou</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\ttf\zou_script_and_numerals.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="..\..\ttf\zou_script_and_numerals.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
