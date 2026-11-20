@@ -1,80 +1,68 @@
-c Pontic Greek Keyboard for Keyman — v6.0
-c Понтийская Греческая Раскладка — iOS / Android / Desktop
+c Pontic Greek Keyboard for Keyman — v6.1
+c Pontic Greek Layout — iOS / Android / Desktop / Web
 c
-c ЕДИНАЯ НУМЕРАЦИЯ ВЕРСИЙ: номер версии общий для всех платформ
-c (Windows, Android, iOS, macOS, шрифты). Одна цифра на весь релиз, чтобы у
-c пользователя всё сходилось: и телефон, и компьютер, и шрифты — 6.0.
+c UNIFIED VERSIONING: Version number shared across all platforms
+c (Windows, Android, iOS, macOS, fonts) so every platform stays in sync.
+c
+c v6.1:
+c - AUTO-SHIFT & CAPS LOCK (Touch): Added PostKeystroke layer switching
+c   so typing an uppercase character on mobile automatically returns from the
+c   shift layer to the default lowercase layer without a second Shift tap.
+c   Pending dead keys (dk(tonos), dk(dialytika), dk(pontic), dk(pontic_tonos))
+c   preserve the shift state until completed, and a dedicated 'caps' layer
+c   supports double-tap Shift for persistent Caps Lock.
+c - FULL SHIFT DIACRITIC PARITY: Added [SHIFT T_TONOS] and [SHIFT T_PONTIC_DK]
+c   post-fix rules and bi-directional dead-key ordering (tonos <-> pontic)
+c   so Caps Lock and Shift work identically for all Pontic diacritics.
 c
 c v6.0:
-c - ОБНОВЛЕНИЕ ШРИФТА: встроенный шрифт Pontic Sans обновлен до v6.0.
-c   Откалиброваны якорные точки GPOS для гачека (ˇ), бреве (˘) и диэрезиса снизу (̤)
-c   для всех глифов греческого алфавита. Полная совместимость с десктопом и мобильными.
+c - FONT UPDATE: Embedded Pontic Sans updated to v6.0 with calibrated
+c   GPOS anchors for caron (U+030C), breve (U+0306), and diaeresis below
+c   (U+0324) across all Pontic Greek glyphs on desktop and mobile.
 c
 c v5.0:
-c - ПОЛНОЕ СЕМЕЙСТВО ШРИФТОВ: Pontic Sans и Pontic Serif теперь в четырёх
-c   начертаниях — Regular, Italic, Bold, Bold Italic (просьба носитель языка: нужен
-c   контраст обычный/полужирный и настоящий курсив, а не просто наклон).
-c   Собираются из variable-шрифтов Noto через fontTools.instancer.
-c - ЦЕНТРИРОВАНИЕ ГАЧЕКА над ψ ξ ζ (учтён длинный нижний хвост) и наклонная
-c   поправка для курсивов — гачек строго по центру каждой буквы во всех 8
-c   начертаниях (проверено HarfBuzz: отклонение ≤ 1 ед.). Отзыв носитель языка: «над
-c   строчной ψ в Pontic Serif гачек немного сдвинут влево» — исправлено.
+c - FULL FONT FAMILY: Pontic Sans and Pontic Serif in 4 styles each
+c   (Regular, Italic, Bold, Bold Italic) instanced from Noto variable fonts
+c   via fontTools.instancer.
+c - OPTICAL CENTERING: Caron centered above ψ, ξ, ζ (accounting for long
+c   descenders) and italic slope compensation across all 8 styles (<= 1 unit
+c   error verified via HarfBuzz).
 c
 c v4.1:
-c - ИСПРАВЛЕН ГАЧЕК НАД СТРОЧНОЙ χ. Отзыв носитель языка: «в приложении Keyman у χ
-c   гачек сдвинулся вправо». Причина: у χ в исходном Noto Sans НЕ было
-c   GPOS-якоря вовсе (её просто забыли в списке v4.0), поэтому знак вставал
-c   по ширине буквы и уезжал вправо. В build_font.py χ добавлена в список,
-c   якорь теперь по центру глифа (проверено HarfBuzz: mark_x −292, как у σ/κ).
-c - Скрипт сборки шрифта переписан: высота якоря вычисляется из реальных
-c   габаритов глифа, а не задаётся числом — это позволяет собрать тем же
-c   скриптом и Pontic Serif (по просьбе носитель языка, похож на Cambria).
-c - Windows (AHK): исправлена конечная сигма ς̌ — раньше и W, и S давали
-c   медиальную σ̌; теперь сигма определяется по символу раскладки.
+c - FIXED CHI CARON: Added missing GPOS top anchor on lowercase χ in
+c   build_font.py so caron centers accurately over the glyph.
+c - Dynamic anchor height calculation shared by both Pontic Sans and Serif.
+c - Windows (AHK): Fixed final sigma ς̌ handling by key context.
 c
 c v3.6:
-c - ГАЧЕК БОЛЬШЕ НЕ НАЛЕЗАЕТ НА БУКВЫ. В пакет встроен собственный шрифт
-c   Pontic Sans (DisplayFont + OSKFont).
-c   Причина проблемы: в Noto Sans GPOS-якоря для комбинируемого гачека U+030C
-c   заданы лишь для части греческих букв (Α Χ Κ Ο Ζ α χ κ ο). Именно поэтому
-c   носитель языка видел правильный знак ТОЛЬКО над Ζ и Χ. У ξ ζ ψ σ ς γ
-c   и заглавных Σ Ξ Ψ Γ якорей не было вовсе — знак вставал по умолчанию
-c   и налезал на букву.
-c   Решение: в font/build_font.py дописаны 10 недостающих якорей.
-c   Проверено через HarfBuzz: 7 сочетаний исправлено, ранее корректные
-c   (Ζ̌ Χ̌ Κ̌ α̤ ο̤) не изменились — регрессий нет.
+c - Embedded Pontic Sans font (DisplayFont + OSKFont) directly in package
+c   to resolve missing combining caron GPOS anchors on Android/iOS.
 c
-c v3.5 fixes (по отзыву носителя языка):
-c - ЗАГЛАВНЫЕ БУКВЫ: убран nextlayer=default со всех клавиш shift-слоя.
-c   Именно он ломал ввод прописных букв на Android (слой переключался
-c   раньше, чем символ успевал вставиться).
-c - ПУНКТУАЦИЯ: запятая и апостроф теперь ОТДЕЛЬНЫЕ ВИДИМЫЕ клавиши в
-c   нижнем ряду, а не спрятаны в долгом нажатии. Под ними в долгом нажатии:
-c     ,  →  ;  :  (  )  -  /
-c     '  →  ’  "  «  »
-c     .  →  ?  !  …
-c   Все клавиши продублированы для shift-слоя (суффикс _S).
+c v3.5 fixes:
+c - CAPITAL LETTERS: Removed premature nextlayer=default from individual keys
+c   in the shift layer (which switched layers on Android before rules fired).
+c - PUNCTUATION: Dedicated comma and apostrophe keys on the bottom row with
+c   long-press variants replicated on both default and shift (_S) layers.
 c
 c v3.0 fixes:
-c - Dual Tonos support: press vowel THEN tonos (α + ΄ → ά) OR tonos THEN vowel (΄ + α → ά)
-c - Fixed ALL uppercase longpress subkeys by handling both + [T_...] and + [SHIFT T_...]
-c - Added post-fix diacritics for Pontic dead key (α + ˇ → α̤, ζ + ˇ → ζ̌)
-c - Fixed Apostrophe on both shift and default layers
-c - Added nextlayer: default on shift layer for automatic return to lowercase after typing a capital letter
+c - Dual Tonos support: vowel THEN tonos OR tonos THEN vowel
+c - Unified [T_...] and [SHIFT T_...] handlers for all touch subkeys
+c - Post-fix and pre-fix Pontic diacritics (α + ˇ -> α̤, ζ + ˇ -> ζ̌)
 c
 c License: MIT
 
-store(&VERSION) '10.0'
+store(&VERSION) '15.0'
 store(&NAME) 'Pontic Greek'
 store(&COPYRIGHT) '© Pontic Greek Keyboard Project'
-store(&KEYBOARDVERSION) '6.0'
+store(&KEYBOARDVERSION) '6.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'pontic_greek.kvks'
 store(&LAYOUTFILE) 'pontic_greek.keyman-touch-layout'
-store(&MESSAGE) 'Понтийская Греческая Клавиатура / Pontic Greek Keyboard'
+store(&MESSAGE) 'Pontic Greek Keyboard'
 store(&KMW_HELPTEXT) 'Pontic Greek keyboard with caron, breve, diaeresis below'
 
 begin Unicode > use(main)
+begin PostKeystroke > use(PostKeystroke)
 
 group(main) using keys
 
@@ -151,6 +139,14 @@ c --- Post-fix Tonos (type vowel THEN press ΄ key — standard mobile behavior)
 'υ' + [T_TONOS] > U+03CD    c υ + ΄ → ύ
 'ω' + [T_TONOS] > U+03CE    c ω + ΄ → ώ
 
+'α' + [SHIFT T_TONOS] > U+03AC
+'ε' + [SHIFT T_TONOS] > U+03AD
+'η' + [SHIFT T_TONOS] > U+03AE
+'ι' + [SHIFT T_TONOS] > U+03AF
+'ο' + [SHIFT T_TONOS] > U+03CC
+'υ' + [SHIFT T_TONOS] > U+03CD
+'ω' + [SHIFT T_TONOS] > U+03CE
+
 'Α' + [T_TONOS] > U+0386    c Α + ΄ → Ά
 'Ε' + [T_TONOS] > U+0388    c Ε + ΄ → Έ
 'Η' + [T_TONOS] > U+0389    c Η + ΄ → Ή
@@ -159,13 +155,28 @@ c --- Post-fix Tonos (type vowel THEN press ΄ key — standard mobile behavior)
 'Υ' + [T_TONOS] > U+038E    c Υ + ΄ → Ύ
 'Ω' + [T_TONOS] > U+038F    c Ω + ΄ → Ώ
 
+'Α' + [SHIFT T_TONOS] > U+0386
+'Ε' + [SHIFT T_TONOS] > U+0388
+'Η' + [SHIFT T_TONOS] > U+0389
+'Ι' + [SHIFT T_TONOS] > U+038A
+'Ο' + [SHIFT T_TONOS] > U+038C
+'Υ' + [SHIFT T_TONOS] > U+038E
+'Ω' + [SHIFT T_TONOS] > U+038F
+
 'α̤' + [T_TONOS] > U+03AC U+0324  c α̤ + ΄ → ά̤
 'ο̤' + [T_TONOS] > U+03CC U+0324  c ο̤ + ΄ → ό̤
 'Α̤' + [T_TONOS] > U+0386 U+0324  c Α̤ + ΄ → Ά̤
 'Ο̤' + [T_TONOS] > U+038C U+0324  c Ο̤ + ΄ → Ό̤
 
+'α̤' + [SHIFT T_TONOS] > U+03AC U+0324
+'ο̤' + [SHIFT T_TONOS] > U+03CC U+0324
+'Α̤' + [SHIFT T_TONOS] > U+0386 U+0324
+'Ο̤' + [SHIFT T_TONOS] > U+038C U+0324
+
 'ϊ' + [T_TONOS] > U+0390    c ϊ + ΄ → ΐ
 'ϋ' + [T_TONOS] > U+03B0    c ϋ + ΄ → ΰ
+'ϊ' + [SHIFT T_TONOS] > U+0390
+'ϋ' + [SHIFT T_TONOS] > U+03B0
 
 c --- Pre-fix Tonos (press ΄ key THEN type vowel — dead key behavior) ---
 + [K_COLON] > dk(tonos)
@@ -188,8 +199,11 @@ dk(tonos) + [SHIFT K_O] > U+038C    c Ό
 dk(tonos) + [SHIFT K_Y] > U+038E    c Ύ
 dk(tonos) + [SHIFT K_V] > U+038F    c Ώ
 
-dk(tonos) + [K_SPACE] > U+0384     c ΄ tonos mark
-dk(tonos) + [K_COLON] > U+0385     c ΅ dialytika tonos
+dk(tonos) + [K_SPACE] > U+0384         c ΄ tonos mark
+dk(tonos) + [SHIFT K_SPACE] > U+0384   c ΄ tonos mark
+dk(tonos) + [K_COLON] > U+0385         c ΅ dialytika tonos
+dk(tonos) + [T_PONTIC_DK] > dk(pontic_tonos)
+dk(tonos) + [SHIFT T_PONTIC_DK] > dk(pontic_tonos)
 
 c =============================================================================
 c Dialytika (diaeresis)
@@ -200,7 +214,8 @@ dk(dialytika) + [K_I] > U+03CA    c ϊ
 dk(dialytika) + [K_Y] > U+03CB    c ϋ
 dk(dialytika) + [SHIFT K_I] > U+03AA    c Ϊ
 dk(dialytika) + [SHIFT K_Y] > U+03AB    c Ϋ
-dk(dialytika) + [K_SPACE] > U+00A8  c ¨
+dk(dialytika) + [K_SPACE] > U+00A8      c ¨
+dk(dialytika) + [SHIFT K_SPACE] > U+00A8
 
 c =============================================================================
 c PONTIC DIACRITICS — BOTH ORDERINGS (Post-fix and Pre-fix)
@@ -220,6 +235,19 @@ c --- Post-fix Pontic diacritics (type character THEN press long-press ˇ) ---
 'ψ' + [T_PONTIC_DK] > U+03C8 U+030C    c ψ̌
 'γ' + [T_PONTIC_DK] > U+03B3 U+0306    c γ̆
 
+'α' + [SHIFT T_PONTIC_DK] > U+03B1 U+0324
+'ο' + [SHIFT T_PONTIC_DK] > U+03BF U+0324
+'ά' + [SHIFT T_PONTIC_DK] > U+03AC U+0324
+'ό' + [SHIFT T_PONTIC_DK] > U+03CC U+0324
+'ζ' + [SHIFT T_PONTIC_DK] > U+03B6 U+030C
+'σ' + [SHIFT T_PONTIC_DK] > U+03C3 U+030C
+'ς' + [SHIFT T_PONTIC_DK] > U+03C2 U+030C
+'χ' + [SHIFT T_PONTIC_DK] > U+03C7 U+030C
+'κ' + [SHIFT T_PONTIC_DK] > U+03BA U+030C
+'ξ' + [SHIFT T_PONTIC_DK] > U+03BE U+030C
+'ψ' + [SHIFT T_PONTIC_DK] > U+03C8 U+030C
+'γ' + [SHIFT T_PONTIC_DK] > U+03B3 U+0306
+
 'Α' + [T_PONTIC_DK] > U+0391 U+0324    c Α̤
 'Ο' + [T_PONTIC_DK] > U+039F U+0324    c Ο̤
 'Ά' + [T_PONTIC_DK] > U+0386 U+0324    c Ά̤
@@ -231,6 +259,18 @@ c --- Post-fix Pontic diacritics (type character THEN press long-press ˇ) ---
 'Ξ' + [T_PONTIC_DK] > U+039E U+030C    c Ξ̌
 'Ψ' + [T_PONTIC_DK] > U+03A8 U+030C    c Ψ̌
 'Γ' + [T_PONTIC_DK] > U+0393 U+0306    c Γ̆
+
+'Α' + [SHIFT T_PONTIC_DK] > U+0391 U+0324
+'Ο' + [SHIFT T_PONTIC_DK] > U+039F U+0324
+'Ά' + [SHIFT T_PONTIC_DK] > U+0386 U+0324
+'Ό' + [SHIFT T_PONTIC_DK] > U+038C U+0324
+'Ζ' + [SHIFT T_PONTIC_DK] > U+0396 U+030C
+'Σ' + [SHIFT T_PONTIC_DK] > U+03A3 U+030C
+'Χ' + [SHIFT T_PONTIC_DK] > U+03A7 U+030C
+'Κ' + [SHIFT T_PONTIC_DK] > U+039A U+030C
+'Ξ' + [SHIFT T_PONTIC_DK] > U+039E U+030C
+'Ψ' + [SHIFT T_PONTIC_DK] > U+03A8 U+030C
+'Γ' + [SHIFT T_PONTIC_DK] > U+0393 U+0306
 
 c --- Pre-fix Pontic dead key ---
 + [K_SLASH] > dk(pontic)
@@ -262,14 +302,17 @@ dk(pontic) + [SHIFT K_O] > U+039F U+0324    c Ο̤
 
 dk(pontic) + [K_COLON] > dk(pontic_tonos)
 dk(pontic) + [T_TONOS] > dk(pontic_tonos)
+dk(pontic) + [SHIFT T_TONOS] > dk(pontic_tonos)
 
 dk(pontic_tonos) + [K_A] > U+03AC U+0324    c ά̤
 dk(pontic_tonos) + [K_O] > U+03CC U+0324    c ό̤
 dk(pontic_tonos) + [SHIFT K_A] > U+0386 U+0324    c Ά̤
 dk(pontic_tonos) + [SHIFT K_O] > U+038C U+0324    c Ό̤
 dk(pontic_tonos) + [K_SPACE] > '/' ';'
+dk(pontic_tonos) + [SHIFT K_SPACE] > '/' ';'
 
 dk(pontic) + [K_SPACE] > '/'
+dk(pontic) + [SHIFT K_SPACE] > '/'
 
 c =============================================================================
 c TOUCH-ONLY KEYS (T_ prefix) — long-press subkeys (BOTH DEFAULT AND SHIFT)
@@ -391,9 +434,9 @@ c =============================================================================
 c PUNCTUATION AND SYMBOL TOUCH KEYS
 c =============================================================================
 
-c --- Нижний ряд: запятая, апостроф, точка + их долгие нажатия ---
-c Каждая клавиша описана в 4 вариантах: default/shift-слой × без/с SHIFT,
-c чтобы ввод срабатывал при любом состоянии клавиатуры.
+c --- Bottom row: comma, apostrophe, period + their long-press subkeys ---
+c Each key is handled for all layer/modifier variants (unshifted & SHIFT,
+c _S suffix for shift/caps layers) so punctuation always works reliably.
 
 + [T_COMMA] > ','
 + [SHIFT T_COMMA] > ','
@@ -543,6 +586,7 @@ c =============================================================================
 + [K_QUOTE] > U+0027
 + [K_BKQUOTE] > '`'
 + [K_SPACE] > ' '
++ [SHIFT K_SPACE] > ' '
 
 + [SHIFT K_1] > '!'
 + [SHIFT K_2] > '@'
@@ -564,3 +608,19 @@ c =============================================================================
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_QUOTE] > '"'
 + [SHIFT K_BKQUOTE] > '~'
+
+c =============================================================================
+c POST-KEYSTROKE LAYER SWITCHING (Touch: auto-return shift -> default)
+c =============================================================================
+group(PostKeystroke) readonly
+    c Preserve Caps Lock when active
+    platform('touch') if(&newLayer = "") if(&layer = 'caps') > context
+
+    c Stay on shift layer while composing a pending pre-fix dead key
+    platform('touch') if(&newLayer = "") if(&layer = 'shift') dk(tonos) > context
+    platform('touch') if(&newLayer = "") if(&layer = 'shift') dk(dialytika) > context
+    platform('touch') if(&newLayer = "") if(&layer = 'shift') dk(pontic) > context
+    platform('touch') if(&newLayer = "") if(&layer = 'shift') dk(pontic_tonos) > context
+
+    c Automatically return from shift to default after typing a character
+    platform('touch') if(&newLayer = "") if(&layer = 'shift') > layer('default')
