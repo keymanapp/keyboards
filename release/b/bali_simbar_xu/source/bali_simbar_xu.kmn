@@ -57,7 +57,7 @@ store(end_key)     [K_COMMA] [K_PERIOD] [K_SPACE] [K_F5] [SHIFT K_SPACE] [K_ENTE
 store(end_char)     U+1B5E    U+1B5F      U+200D   U+200D    U+200B       U+000D
 
 store(vokal_key)    [K_E]  [SHIFT K_E] [K_I]  [K_O]  [K_U]  [K_A]
-store(vokal_char)   U+1B42 U+1B3E      U+1B36 U+1B40 U+1B38 nul      c 'ᭂᬾᬶᭀᬸ'
+store(vokal_char)   U+1B42 U+1B3E      U+1B36 U+1B40 U+1B38 dk(none)      c 'ᭂᬾᬶᭀᬸ'
 
 store(vdirga_key)    [SHIFT K_A]  [SHIFT K_I]  [SHIFT K_U]  [CTRL SHIFT K_E]  [SHIFT K_O]  [CTRL K_E]
 store(vdirga_char)   U+1B35       U+1B37       U+1B39       U+1B3F             U+1B41       U+1B3F
@@ -469,8 +469,7 @@ c vokal sandi
 c vokal awal
   c + any(vokal_key) > U+1B33 index(vokal_char,1)
   c U+1B7B + any(vdirga_key) > U+1B33 index(vdirga_char,2)
-  any(kons_key) U+003F U+200D + any(vokal_key) > index(kons_char,1) index(vokal_char,4)
-c  any(kons_key) U+003F U+200D + any(vdirga_key) > index(kons_char,1) index(vdirga_char,4)
+  any(kons_char) U+003F U+200D + any(vokal_key) > index(kons_char,1) index(vokal_char,4)
 
   any(kons_ttl) U+003F U+200D + any(vdirga_key) > index(kons_ttl,1) index(vdirga_char,4)
 c   U+200D + any(vdirga_key) > U+1B33 index(vdirga_char,2)
@@ -7027,7 +7026,7 @@ U+200B U+1B15 U+1B24 U+1B02 U+200B > U+1B15 U+1B25 U+1B02 U+200D
 U+200B U+1B24 U+1B02 U+200B > U+1B25 U+1B02 U+200D
 U+200D U+1B24 U+1B02 U+200B > U+1B25 U+1B02 U+200D
 
-any(kons_ttl) U+003F any(end_key) > index(kons_ttl,1) U+003F index(end_char,3)
+any(kons_ttl) U+003F any(end_char) > index(kons_ttl,1) U+003F index(end_char,3)
 
 U+1B44 U+200B > U+1B44 U+200D
 U+003F U+200B > U+1B44 U+200D
