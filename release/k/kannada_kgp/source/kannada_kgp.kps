@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.255.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <FollowKeyboardVersion/>
+  </Options>
+  <Info>
+    <Name URL="">Kannada KGP (Nudi)</Name>
+    <Copyright URL="">© 2026 The Open Kannada Authors</Copyright>
+    <Author URL="">Prasad Subrahmanya</Author>
+    <WebSite URL="https://openkannada.org">https://openkannada.org</WebSite>
+    <Description URL="">Kannada on the KGP (Kannada Ganaka Parishat) phonetic layout, the standard layout of the Government of Karnataka and of the Nudi software. f joins consonants into ottaksharas, X types the variant letters (ಱ, ೞ, ಜ಼, ೝ), and the phone layout puts every key where KGP typists expect it.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\kannada_kgp.kmx</Name>
+    </File>
+    <File>
+      <Name>..\build\kannada_kgp.js</Name>
+    </File>
+    <File>
+      <Name>..\build\kannada_kgp.kvk</Name>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</Name>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Kannada KGP (Nudi)</Name>
+      <ID>kannada_kgp</ID>
+      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Knda\NotoSansKannada-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="kn">Kannada</Language>
+      </Languages>
+      <Examples>
+        <Example ID="kn" Keys="k n f n w" Text="ಕನ್ನಡ" Note="Kannada"/>
+      </Examples>
+    </Keyboard>
+  </Keyboards>
+</Package>
