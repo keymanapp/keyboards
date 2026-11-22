@@ -1,5 +1,5 @@
-Kannada KGP (Nudi) keyboard
-===========================
+Kannada KGP keyboard
+====================
 
 © 2026 The Open Kannada Authors
 

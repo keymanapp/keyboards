@@ -1,5 +1,5 @@
-Kannada KGP (Nudi) Change History
-=================================
+Kannada KGP Change History
+==========================
 
 1.0 (2026-11-22)
 ----------------

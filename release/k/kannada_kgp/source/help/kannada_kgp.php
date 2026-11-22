@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Kannada KGP (Nudi) keyboard help';
+  $pagename = 'Kannada KGP keyboard help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
 samp { font-family: "Noto Sans Kannada", sans-serif; font-size: 140%; }
@@ -10,7 +10,7 @@ END;
   require_once('header.php');
 ?>
 
-<p>Kannada KGP (Nudi) types Kannada on the Kannada Ganaka Parishat (KGP) phonetic layout, the standard layout of the Government of Karnataka and of the Nudi software. If you learned to type Kannada on Nudi, your fingers already know this keyboard.</p>
+<p>Kannada KGP types Kannada on the Kannada Ganaka Parishat (KGP) phonetic layout, the standard layout of the Government of Karnataka and of the Nudi software. If you learned to type Kannada on Nudi, your fingers already know this keyboard.</p>
 <p>Type a consonant, then a vowel key for its vowel sign: <kbd>k</kbd> <kbd>A</kbd> types ಕಾ. Press <kbd>f</kbd> after a consonant to join it to the next one: <kbd>k</kbd> <kbd>n</kbd> <kbd>f</kbd> <kbd>n</kbd> <kbd>w</kbd> types ಕನ್ನಡ.</p>
 <h2>Vowels</h2>
 <table class="inputSequences"><thead><tr><th>Key</th><th>Letter</th><th>Sign after a consonant</th></tr></thead><tbody>
