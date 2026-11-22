@@ -28,6 +28,7 @@ Links
 -----
 
 * Keyboard homepage: https://keyman.com/keyboards/kannada_kgp
+* Open Kannada: https://openkannada.org
 
 Supported Platforms
 -------------------
