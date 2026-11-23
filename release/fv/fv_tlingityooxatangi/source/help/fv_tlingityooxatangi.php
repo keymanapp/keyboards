@@ -13,7 +13,6 @@ END;
 ?>
 
 
-<h1>Start Using T’aḵu Lingít Yoo X̱’átangí</h1>
 <p>
     This keyboard is designed for the <b>T’aḵu Lingít Yoo X̱’átangí</b> Taku River Tlingit First Nation (TRTFN) who shares the Tlingit Language with Carcross-Tagish First Nation and Teslin Tlingit Council.
 </p>
@@ -24,6 +23,7 @@ END;
 
 
 <h2>Desktop Layout</h2>
+
 <div id='osk' data-states='default shift'></div>
 
 <ul>

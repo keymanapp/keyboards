@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Moro Omwarəŋ Keyboard Layout';
+  $pagename = 'Moro Omwarəŋ Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 

@@ -1,5 +1,5 @@
 <?php 
-  $pagename = "Mwangwego Keyboard";
+  $pagename = "Mwangwego Keyboard Help";
   $pagetitle = "The Athinkra Mwangwego Keyboard";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
@@ -67,8 +67,6 @@ END;
   require_once('header.php');
 ?>
 
-
-<h1>Mwangwego Keyboard</h1>
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
