@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'hokkienese telex'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'hokkienese_telex.ico'
 store(&VISUALKEYBOARD) 'hokkienese_telex.kvks'
@@ -54,7 +54,7 @@ store(vowel_nga)               'ãẽĩõũỹữÃẼĨÕŨỸỮ'
 store(vowel_nang)              'ạẹịọụỵựẠẸỊỌỤỴỰ'
 store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴŭŬŏŎ'
 store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-store(s_all_letters)  'abcdđefghijklmnopqrstuvwxyzABCDĐEFGHIJKLMNOPQRSTUVWXYZăâêôơưAEIOUĂÂÊÔƠƯŧŦțȚ'
+store(s_all_letters)  'abcdđefghijklmnopqrstuvwxyzABCDĐEFGHIJKLMNOPQRSTUVWXYZăâêôơưAEIOUĂÂÊÔƠƯ'
 store(s_no_d_letters) 'abcefghijklmnopqrsuvwxyzABCEFGHIJKLMNOPQRSUVWXYZăâêôơưAEIOUĂÂÊÔƠƯ'
 store(consonants) 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
 store(un_l_consonants) 'bcdfghjkmnpqstvwxzBCDFGHJKMNPQSTVWXZ'
@@ -68,7 +68,7 @@ store(no_u_letters) 'abcdefghijklmnopqrstvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(punctuationc) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
 store(no_d_c) 'abcefhijklmnopqruvwxyABCEFHIJKLMNOPQRUVWXY-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
-store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
+store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' U+0328
 store(ys) 'yỳýỷỹỵYỲỶÝỸỴ'
 store(end_consonants) 'ptkchmnPTKCHMN' U+0328
 store(un_second_consonants) 'qltpdfkcvbwQLTPDFKCVBW'
@@ -236,7 +236,7 @@ store(upper_i_v) 'ÍÌỈĨỊ'
 store(h) 'hH'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
-store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆțȚ' U+0328 dk(n)
+store(viet_letters) 'ăâêôơưđĂÂÊÔƠƯĐḿṃḾṂńǹñṇŃǸÑṆ' U+0328 dk(n)
 store(yu) 'yuoôơYUOÔƠ'
 store(yuia) 'yuiaųįąYUIAŲĮĄ'
 store(pk) 'pkPK'
@@ -612,13 +612,6 @@ any(ee) any(ee_end) + 'E' > index(e, 1) index(ee_end, 2) 'E'
 "Đ" + "d" > "Dd"
 "Đ" + "D" > "DD"
 
-"t" + "t" > "ț"
-"T" + "t" > "Ț"
-"T" + "T" > "Ț"
-"ț" + "t" > "tt"
-"Ț" + "t" > "Tt"
-"Ț" + "T" > "TT"
-
 'ô' any(two_i) + any(low_sfrxj) > index(low_oo_v, 3) index(two_i, 2)
 'ô' any(two_i) + any(upper_sfrxj) > index(low_oo_v, 3) index(two_i, 2)
 'Ô' any(two_i) + any(low_sfrxj) > index(upper_oo_v, 3) index(two_i, 2)
@@ -847,6 +840,7 @@ any(d) any(un_z_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctua
 any(d) any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(d) any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
 any(t) any(un_hrsd_consonants) + any(no_d_c) > context index(no_d_c, 3)
+any(t) any(un_hrs_consonants) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 4)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 5)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 6)
 any(t) any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(punctuationc) > context index(punctuationc, 7)
@@ -1184,7 +1178,7 @@ U+0309 + any(j) > U+0323
 U+0303 + any(j) > U+0323
 any(tone_marks) + any(z) > nul
 
-any(mn) any(tone_marks) + [K_BKSP] > nul
+any(mn) any(tone_marks) + [K_BKSP] > nul 
 any(viet_vowels) U+0328 + [K_BKSP] > nul
 
 any(low_i_v) 'a' + any(a_ends) > 'i' index(low_a_v, 1) index(a_ends, 3)
