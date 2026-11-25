@@ -1,0 +1,13 @@
+store(&VERSION) '15.0'
+store(&NAME) 'BEKL (Bulgarian Enhanced)'
+store(&COPYRIGHT) 'Copyright (c) 2026 BEKL contributors'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'web'
+store(&LAYOUTFILE) 'bekl.keyman-touch-layout'
+store(&MESSAGE) 'BEKL (Bulgarian Enhanced) is distributed under the MIT License.'
+store(&KMW_HELPTEXT) 'Bulgarian Enhanced Keyboard Layout (BEKL), with historic Cyrillic letters and long-press symbols.'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_SPACE] > U+0020
