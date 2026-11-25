@@ -12,10 +12,10 @@ END;
   require_once('header.php');
 ?>
 
-<p>Official Pontic Greek (Ποντιακά) keyboard layout with full support for specialized diacritics (caron/hacek ˇ, breve ˘, and diaeresis below ̤). Includes the embedded <strong>Pontic Sans</strong> font for correct diacritic placement across all devices.</p>
+<p>Pontic Greek (Ποντιακά) keyboard layout with full support for specialized diacritics (caron/hacek ˇ, breve ˘, and diaeresis below ̤). Includes the embedded <strong>Pontic Sans</strong> font for accurate diacritic placement across all devices.</p>
 
 <h2>Touch Devices (iOS / Android)</h2>
-<p class="hint">Long-press (tap and hold) any key to access specialized Pontic letters:</p>
+<p class="hint">Long-press (tap and hold) any base letter to access specialized Pontic letters directly. Tap Shift once to type a single capital letter (automatically returns to lowercase), or double-tap Shift for Caps Lock:</p>
 
 <table>
     <thead>

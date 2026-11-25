@@ -1,6 +1,12 @@
 Pontic Greek Keyboard Change History
 ====================================
 
+6.1 (2026-11-20)
+----------------
+* Added mobile auto-shift return (`shift` -> `default`) via Keyman 15 `PostKeystroke` after typing a capital letter, while preserving uppercase layer during pending dead keys
+* Added dedicated `caps` touch layer activated by double-tapping Shift (`*ShiftedLock*`) and unified mobile touch layout (removed redundant `tablet` layout per Keyman review)
+* Added full `[SHIFT T_TONOS]` and `[SHIFT T_PONTIC_DK]` post-fix/pre-fix parity and bi-directional dead-key composition
+
 6.0 (2026-10-07)
 ----------------
 * Updated Pontic Sans font to version 6.0 with calibrated GPOS anchors for all combining diacritics
