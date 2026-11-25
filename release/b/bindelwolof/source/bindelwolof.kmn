@@ -1,0 +1,141 @@
+﻿c BindelWolof — clavier Keyman pour écrire le wolof en Ajami (Wolofal, orthographe murid)
+c Fichier source reconstitué à partir du clavier compilé 2.1.5, puis mis à jour (2.2.0 : câ' = U+0685 ; voyelles o, ë, ei propres au mobile) (bindelwolof.kmx et bindelwolof.js).
+c Développement : Mafaatihul Bishri — Coordination : Serigne Mbacké Madina Gueye
+
+store(&VERSION) '17.0'
+store(&NAME) 'bindelwolof'
+store(&COPYRIGHT) '© 2025-2026 Serigne Mbacké Madina Gueye'
+store(&KEYBOARDVERSION) '2.2.0'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet'
+store(&BITMAP) 'bindelwolof.ico'
+store(&VISUALKEYBOARD) 'bindelwolof.kvks'
+store(&LAYOUTFILE) 'bindelwolof.keyman-touch-layout'
+store(&MESSAGE) 'BIENVENUE ! Le clavier Bindel Wolof est une disposition personnalisée conçue pour faciliter la saisie du wolof et des Qaçaîdes avec l’écriture Ajami (caractères coraniques adaptés aux langues africaines). Compatible avec les plateformes numériques, Keyman Developer et Web.'
+store(&KMW_RTL) '1'
+store(&KMW_HELPTEXT) 'Le Clavier est développé dans le cadre des travaux de transcription et de diffusion du Ajami en Wolof. Il fonctionne avec Windows, macOS, Linux, Android et iOS via Keyman. Pour un affichage optimal des caractères Ajami, il est recommandé de se servir de police compatible avec le caractère arabe. Pour toute remarque ou suggestion concernant ce clavier, écrire à : taaluboromadina@gmail.com'
+store(&KMW_EMBEDCSS) 'bindelwolof.css'
+
+c Signes de nasalisation : U+06E2 (mbâ' seulement), U+06E8 (njâ', ndâ', ngâ', nqâ'), U+0610 (niâ', nhâ')
+store(nasales) U+06E2 U+06E8 U+0610
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Mobile et web : sur Android, une voyelle suscrite (classe Unicode basse) tapée après un signe de
+c nasalisation (classe 230) serait affichée sous ce signe. Le CGJ (U+034F) bloque ce réordonnancement.
+platform('touch') any(nasales) + [K_Q] > context U+034F U+064E   c CGJ + Fatha
+platform('touch') any(nasales) + [K_U] > context U+034F U+064F   c CGJ + Damma
+platform('touch') any(nasales) + [K_E] > context U+034F U+0652   c CGJ + Sukun
+platform('touch') any(nasales) + [SHIFT K_Q] > context U+034F U+064B   c CGJ + Fathatan
+platform('touch') any(nasales) + [SHIFT K_U] > context U+034F U+064C   c CGJ + Dammatan
+platform('touch') any(nasales) + [SHIFT K_E] > context U+034F U+0651   c CGJ + Shadda
+
+c Mobile et web : les voyelles o, ë et ei utilisent les signes du bloc Arabe étendu-A (U+08FD, U+08F5, U+08F6).
+c Les polices des téléphones affichent U+0654, U+065A et U+06ED comme hamza, petit v et petit mîm ;
+c sous Windows, Word exige au contraire U+0654, U+065A et U+06ED (règles générales ci-dessous).
+platform('touch') + [K_O] > U+08FD                    c o (ɔ)
+platform('touch') + [K_0] > U+08F5                    c ë
+platform('touch') + [K_7] > U+08F6                    c ei
+platform('touch') + [K_9] > U+062F U+08F5 U+0631 U+0652 U+0647 U+08F5 U+0645 U+0652   c dërëm
+
+c Règles générales, dans l'ordre du fichier source d'origine
++ [K_BKQUOTE] > U+0621                              c ء
++ [K_W] > U+062C U+06E8                             c ج Arabic Small High Noon
++ [K_TAB] > U+0009                                  c U+0009
++ [SHIFT K_SPACE] > U+200F                          c Right-To-Left Mark
++ [K_Q] > U+064E                                    c Arabic Fatha
++ [SHIFT K_D] > U+06DE                              c ۞
++ [K_RBRKT] > U+062D                                c ح
++ [K_9] > U+062F U+065A U+0631 U+0652 U+0647 U+065A U+0645 U+0652   c د Arabic Vowel Sign Small V Above ر Arabic Sukun ه Arabic Vowel Sign Small V Above م Arabic Sukun
++ [SHIFT K_H] > U+0625                              c إ
++ [SHIFT K_BKQUOTE] > U+0629                        c ة
++ [SHIFT K_COLON] > U+FDFA                          c ﷺ
++ [SHIFT K_F] > U+062B                              c ث
++ [SHIFT K_J] > U+0623                              c أ
++ [SHIFT K_RBRKT] > U+005D                          c ]
++ [SHIFT K_LBRKT] > U+005B                          c [
++ [SHIFT K_BKSLASH] > U+002A                        c *
++ [SHIFT K_PERIOD] > U+002F                         c /
++ [SHIFT K_oE2] > U+003E                            c >
++ [SHIFT K_V] > U+06A8                              c ڨ
++ [SHIFT K_Z] > U+06D2                              c ے
++ [SHIFT K_P] > U+0638                              c ظ
++ [SHIFT K_COMMA] > U+2022                          c •
++ [SHIFT K_M] > U+061F                              c ؟
++ [SHIFT K_SLASH] > U+061E                          c ؞
++ [SHIFT K_A] > U+063A                              c غ
++ [SHIFT K_S] > U+0634                              c ش
++ [SHIFT K_X] > U+062E U+06E8                       c خ Arabic Small High Noon
++ [SHIFT K_C] > U+0635                              c ص
++ [SHIFT K_L] > U+0636                              c ض
++ [SHIFT K_U] > U+064C                              c Arabic Dammatan
++ [SHIFT K_K] > U+06A9 U+06E8                       c ک Arabic Small High Noon
++ [SHIFT K_B] > U+0628 U+06E2                       c ب Arabic Small High Meem Isolated Form
++ [SHIFT K_G] > U+06A9 U+0610                       c ک Arabic Sign Sallallahou Alayhe Wassallam
++ [SHIFT K_N] > U+062C U+0610                       c ج Arabic Sign Sallallahou Alayhe Wassallam
++ [SHIFT K_O] > U+0639                              c ع
++ [SHIFT K_QUOTE] > U+0025                          c %
++ [SHIFT K_Y] > U+0649                              c ى
++ [SHIFT K_T] > U+0637                              c ط
++ [SHIFT K_E] > U+0651                              c Arabic Shadda
++ [SHIFT K_I] > U+064D                              c Arabic Kasratan
++ [SHIFT K_R] > U+0632                              c ز
++ [SHIFT K_W] > U+0630                              c ذ
++ [SHIFT K_Q] > U+064B                              c Arabic Fathatan
++ [SHIFT K_EQUAL] > U+002B                          c +
++ [SHIFT K_HYPHEN] > U+00B0                         c °
++ [SHIFT K_0] > U+0030                              c 0
++ [SHIFT K_9] > U+0039                              c 9
++ [SHIFT K_8] > U+0038                              c 8
++ [SHIFT K_7] > U+0037                              c 7
++ [SHIFT K_6] > U+0036                              c 6
++ [SHIFT K_5] > U+0035                              c 5
++ [SHIFT K_4] > U+0034                              c 4
++ [SHIFT K_3] > U+0033                              c 3
++ [SHIFT K_2] > U+0032                              c 2
++ [SHIFT K_1] > U+0031                              c 1
++ [K_N] > U+0646                                    c ن
++ [K_B] > U+0628                                    c ب
++ [K_V] > U+062F U+06E8                             c د Arabic Small High Noon
++ [K_C] > U+0685                                    c څ (câ', jîm à trois points suscrits)
++ [K_X] > U+062E                                    c خ
++ [K_Z] > U+0648                                    c و
++ [K_oE2] > U+003C                                  c <
++ [K_COLON] > U+0645                                c م
++ [K_L] > U+0644                                    c ل
++ [K_K] > U+06A9                                    c ک
++ [K_J] > U+062C                                    c ج
++ [K_H] > U+0647                                    c ه
++ [K_G] > U+0763                                    c ݣ
++ [K_F] > U+06A2                                    c ڢ
++ [K_D] > U+062F                                    c د
++ [K_S] > U+0633                                    c س
++ [K_A] > U+06A7                                    c ڧ
++ [K_P] > U+0751                                    c ݑ
++ [K_O] > U+0654                                    c Arabic Hamza Above
++ [K_I] > U+0650                                    c Arabic Kasra
++ [K_U] > U+064F                                    c Arabic Damma
++ [K_Y] > U+064A                                    c ي
++ [K_T] > U+062A                                    c ت
++ [K_R] > U+0631                                    c ر
++ [K_E] > U+0652                                    c Arabic Sukun
++ [K_1] > U+0670                                    c Arabic Letter Superscript Alef
++ [K_8] > U+0640                                    c ـ
++ [K_6] > U+002D                                    c -
++ [K_4] > U+007D                                    c }
++ [K_3] > U+007B                                    c {
++ [K_M] > U+060C                                    c ،
++ [K_COMMA] > U+061B                                c ؛
++ [K_PERIOD] > U+003A                               c :
++ [K_SLASH] > U+0021                                c !
++ [K_BKSLASH] > U+0627                              c ا
++ [K_QUOTE] > U+0657                                c Arabic Inverted Damma
++ [K_LBRKT] > U+0653                                c Arabic Maddah Above
++ [K_EQUAL] > U+003D                                c =
++ [K_5] > U+0028                                    c (
++ [K_HYPHEN] > U+0029                               c )
++ [K_0] > U+065A                                    c Arabic Vowel Sign Small V Above
++ [K_7] > U+06ED                                    c Arabic Small Low Meem
++ [K_2] > U+065C                                    c Arabic Vowel Sign Dot Below
+
