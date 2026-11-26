@@ -19,8 +19,9 @@ can type the same keys on any computer or phone.
 - The phone layout keeps every key where KGP puts it, with the rarer letters on long press.
 
 The text it types is already in the canonical form of the Open Kannada normalization profile
-(https://github.com/openkannada/kannadi/blob/main/NORMALIZATION.md), and it matches
-Wikimedia's jquery.ime KGP layout key for key.
+(https://github.com/openkannada/kannadi/blob/main/NORMALIZATION.md). Wherever Wikimedia's jquery.ime
+KGP layout has a rule, this keyboard types the same text. It also has rules where jquery.ime has
+none, such as X for the variant letters.
 
 Links
 -----
