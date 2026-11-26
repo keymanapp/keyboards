@@ -1,6 +1,10 @@
 CS Pinyin Change History
 =======================
 
+1.4.2 (3 Nov 2026)
+-----------------
+* Add arm64 build for IMX, KeymanIMX.arm64.dll
+
 1.4.1 (6 May 2025)
 ------------------
 * Correctly report that cs_pinyin runs only on Windows

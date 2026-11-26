@@ -16,7 +16,7 @@ The source/build.bat for this keyboard builds the Windows executables and DLLs
 required to make this keyboard work, and places the binaries in the source
 folder. The binaries must be checked in.
 
-build.bat requires VC++2019.
+build.bat requires VC++2022.
 
 Links
 -----
