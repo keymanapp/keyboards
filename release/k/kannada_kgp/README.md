@@ -1,9 +1,7 @@
 Kannada KGP keyboard
 ====================
 
-© 2026 The Open Kannada Authors
-
-Version 1.0
+© The Open Kannada Authors
 
 Description
 -----------
