@@ -1,0 +1,173 @@
+c Kannada KGP: the Kannada Ganaka Parishat phonetic layout, as typed in Nudi.
+c Joiners follow the canonical form of the Open Kannada normalization profile
+c (github.com/openkannada/kannadi, NORMALIZATION.md), so the text it types is already normalized.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Kannada KGP'
+store(&COPYRIGHT) '© The Open Kannada Authors'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'kannada_kgp.ico'
+store(&VISUALKEYBOARD) 'kannada_kgp.kvks'
+store(&LAYOUTFILE) 'kannada_kgp.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c ka kha ga gha nga, ca cha ja jha nya, Ta Tha Da Dha Na, ta tha da dha na,
+c pa pha ba bha ma, ya ra la va sha ssa sa ha lla
+store(consKey) 'kKgGZ' 'cCjJz' 'qQwWN' 'tTdDn' 'pPbBm' 'yrlvSxshL'
+store(consOut) 'ಕಖಗಘಙ' 'ಚಛಜಝಞ' 'ಟಠಡಢಣ' 'ತಥದಧನ' 'ಪಫಬಭಮ' 'ಯರಲವಶಷಸಹಳ'
+store(cons) outs(consOut) 'ಱೞ'
+store(nuktaBase) 'ಕಖಗಘಙ' 'ಚಛಜಝಞ' 'ಟಠಡಢಣ' 'ತಥದಧನ' 'ಪಫಬಭಮ' 'ಯಲವಶಷಹ'
+
+store(vowelKey) 'AiIuUReEYoOV'
+store(vowelLetter) 'ಆಇಈಉಊಋಎಏಐಒಓಔ'
+store(vowelSign) 'ಾಿೀುೂೃೆೇೈೊೋೌ'
+
+store(digitKey) '0123456789'
+store(digitOut) '೦೧೨೩೪೫೬೭೮೯'
+
+c Touch keys for letters that a desktop typist reaches with X, and for English digits.
+store(touchConsKey) [T_RRA] [T_LLLA]
+store(touchConsOut) 'ಱೞ'
+store(touchDigitKey) [T_ASCII_0] [T_ASCII_1] [T_ASCII_2] [T_ASCII_3] [T_ASCII_4] [T_ASCII_5] [T_ASCII_6] [T_ASCII_7] [T_ASCII_8] [T_ASCII_9]
+
+store(kannada) U+0C80 .. U+0CFF
+store(joiner) U+200C U+200D
+c Marks as the normalizer classes them: vowel signs, virama, nukta and modifiers.
+store(mark) U+0C81 .. U+0C83 U+0CBC U+0CBE .. U+0CC4 U+0CC6 .. U+0CC8 U+0CCA .. U+0CCD U+0CD5 U+0CD6 U+0CE2 U+0CE3 U+0CF1 .. U+0CF3
+store(markAfterJoiner) U+0C81 .. U+0C83 U+0CBC U+0CBE .. U+0CC4 U+0CC6 .. U+0CC8 U+0CCA .. U+0CCC U+0CD5 U+0CD6 U+0CE2 U+0CE3 U+0CF1 .. U+0CF3
+
+store(escapeKey) 'abcdefghijklmnopqrstuvwxyz' 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' '>_~.0123456789'
+
+group(main) using keys
+
+c f: virama after a consonant. A second f keeps the virama visible before the next
+c consonant (ZWNJ, written when that consonant comes); a third does nothing.
+any(cons) + 'f' > index(cons, 1) U+0CCD
+any(cons) U+0CBC + 'f' > index(cons, 1) U+0CBC U+0CCD
+dk(zwj) + 'f' > U+0CCD dk(zwjvirama)
+dk(zwnjsign) + 'f' > U+0CCD dk(zwjvirama)
+U+200D U+0CCD + 'f' > context
+U+0CCD dk(zwjvirama) + 'f' > context
+'ರ' U+0CCD dk(rzwj) + 'f' > context
+U+0CCD dk(zwnj) + 'f' > context
+U+0CCD + 'f' > context dk(zwnj)
+c ಅ್ಯ and ಆ್ಯ spell the English vowel of "apple" (ಆ್ಯಪಲ್).
+'ಅ' + 'f' > 'ಅ' U+0CCD
+'ಆ' + 'f' > 'ಆ' U+0CCD
+
+c F: ZWJ. After a ರ that starts its syllable it types ZWJ and virama, so ರ joins the
+c next consonant without becoming an arkavattu (ಆರ‍್ಯ); ರ್ then F waits to do the same.
+c After a virama it works as a second f. After another consonant the ZWJ waits: it
+c stays only before a modifier, and stops the next vowel key from typing a sign; a
+c second F makes it ZWNJ. Elsewhere next to Kannada a joiner would change nothing, so
+c F types nothing.
+U+0CCD 'ರ' + 'F' > U+0CCD 'ರ' U+0CCD dk(zwjvirama)
+'ರ' + 'F' > 'ರ' U+200D U+0CCD
+U+0CCD 'ರ' U+0CCD + 'F' > context dk(zwnj)
+'ರ' U+0CCD + 'F' > context dk(rzwj)
+'ರ' U+0CCD dk(rzwj) + 'F' > 'ರ' U+0CCD dk(zwnj)
+U+0CCD dk(zwjvirama) + 'F' > U+0CCD dk(zwnj)
+U+0CCD dk(zwnj) + 'F' > context
+U+0CCD + 'F' > context dk(zwnj)
+dk(zwj) + 'F' > dk(zwnjsign)
+dk(zwnjsign) + 'F' > context
+any(cons) + 'F' > context dk(zwj)
+any(cons) U+0CBC + 'F' > context dk(zwj)
+dk(zwj) + 'M' > U+200D U+0C82
+dk(zwj) + 'H' > U+200D U+0C83
+dk(zwnjsign) + 'M' > U+200C U+0C82
+dk(zwnjsign) + 'H' > U+200C U+0C83
+any(kannada) + 'F' > context
+U+200D + 'F' > U+200C
++ 'F' > U+200D
+
+c X: the variant of the letter or sign before it. A consonant with no other variant
+c takes the nukta (ಜ಼, ಫ಼); ಸ goes to ಽ and then ಸ಼.
+'ಸ' + 'X' > 'ಽ'
+any(nuktaBase) + 'X' > index(nuktaBase, 1) U+0CBC
+'ಽ' + 'X' > 'ಸ' U+0CBC
+'ರ' + 'X' > 'ಱ'
+'ಳ' + 'X' > 'ೞ'
+'ನ' U+0CCD + 'X' > U+0CDD
+'ಋ' + 'X' > 'ೠ'
+'ೠ' + 'X' > 'ಌ'
+'ಌ' + 'X' > 'ೡ'
+U+0CC3 + 'X' > U+0CC4
+U+0CC4 + 'X' > U+0CE2
+U+0CE2 + 'X' > U+0CE3
+U+0C82 + 'X' > U+0C81
+U+0C81 + 'X' > U+0C80
+U+0C83 + 'X' > U+0CF1
+U+0CF1 + 'X' > U+0CF2
+
+c Vowels: a sign after a consonant, a letter anywhere else. a is always ಅ.
+any(cons) + any(vowelKey) > index(cons, 1) index(vowelSign, 2)
+any(cons) U+0CBC + any(vowelKey) > index(cons, 1) U+0CBC index(vowelSign, 3)
++ 'a' > 'ಅ'
++ any(vowelKey) > index(vowelLetter, 1)
+
++ 'M' > U+0C82
++ 'H' > U+0C83
+
++ any(consKey) > index(consOut, 1)
++ any(touchConsKey) > index(touchConsOut, 1)
+
++ any(digitKey) > index(digitOut, 1)
++ any(touchDigitKey) > index(digitKey, 1)
+
+c A backslash before a letter, digit or > _ ~ . types it unchanged, as in jquery.ime.
+U+005C + any(escapeKey) > index(escapeKey, 2)
+
+c Right Alt (Option on a Mac) for signs with no KGP key.
++ [RALT K_M] > U+0CF3
++ [RALT K_O] > U+0C84
++ [RALT K_PERIOD] > U+0964
++ [RALT SHIFT K_PERIOD] > U+0965
+
+c Touch keys
+any(cons) + [T_NUKTA] > index(cons, 1) U+0CBC
++ [T_QA] > 'ಕ' U+0CBC
++ [T_KHHA] > 'ಖ' U+0CBC
++ [T_GHHA] > 'ಗ' U+0CBC
++ [T_ZA] > 'ಜ' U+0CBC
++ [T_FA] > 'ಫ' U+0CBC
+any(cons) + [T_RRI] > index(cons, 1) U+0CC4
+any(cons) U+0CBC + [T_RRI] > index(cons, 1) U+0CBC U+0CC4
++ [T_RRI] > 'ೠ'
+any(cons) + [T_LI] > index(cons, 1) U+0CE2
+any(cons) U+0CBC + [T_LI] > index(cons, 1) U+0CBC U+0CE2
++ [T_LI] > 'ಌ'
+any(cons) + [T_LII] > index(cons, 1) U+0CE3
+any(cons) U+0CBC + [T_LII] > index(cons, 1) U+0CBC U+0CE3
++ [T_LII] > 'ೡ'
++ [T_NNA_POLLU] > U+0CDD
++ [T_AVAGRAHA] > U+0CBD
++ [T_CANDRABINDU] > U+0C81
++ [T_SPACING_CANDRABINDU] > U+0C80
++ [T_ANUSVARA_ABOVE] > U+0CF3
++ [T_JIHVAMULIYA] > U+0CF1
++ [T_UPADHMANIYA] > U+0CF2
++ [T_SIDDHAM] > U+0C84
+
+match > use(clean)
+
+c Writes the joiner that a deadkey asked for once a consonant follows, and drops what
+c the normalization profile would drop: a joiner next to Kannada that changes nothing,
+c and a mark typed twice.
+group(clean)
+
+U+0CCD dk(zwnj) any(cons) U+0CBC > U+0CCD U+200C index(cons, 3) U+0CBC
+U+0CCD dk(zwnj) any(cons) > U+0CCD U+200C index(cons, 3)
+'ರ' U+0CCD dk(rzwj) any(cons) U+0CBC > 'ರ' U+200D U+0CCD index(cons, 4) U+0CBC
+'ರ' U+0CCD dk(rzwj) any(cons) > 'ರ' U+200D U+0CCD index(cons, 4)
+U+0CCD U+200C any(cons) > context
+'ರ' U+200D U+0CCD > context
+any(cons) any(joiner) any(markAfterJoiner) > context
+U+0CBC any(joiner) any(markAfterJoiner) > context
+any(joiner) any(joiner) any(joiner) any(joiner) any(kannada) > index(kannada, 5)
+any(joiner) any(joiner) any(joiner) any(kannada) > index(kannada, 4)
+any(joiner) any(joiner) any(kannada) > index(kannada, 3)
+any(joiner) any(kannada) > index(kannada, 2)
+any(mark) index(mark, 1) > index(mark, 1)
