@@ -1,6 +1,10 @@
 Yorùbá with Dot Change History
 ====================
 
+1.4.2 (2026-11-28)
+------------------
+* Refactor nuls out of stores (replace with U+0020)
+
 1.4.1 (2020-10-27)
 ----------------
 * Increment version number to force recompile of touch layout.
