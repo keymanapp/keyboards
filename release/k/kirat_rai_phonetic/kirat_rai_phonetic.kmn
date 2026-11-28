@@ -1,0 +1,96 @@
+c ==============================================================================
+c Kirat Rai (Phonetic) Keyman Keyboard
+c Unicode 16.0 Specification (U+16D40 - U+16D7F)
+c Language: Bantawa (bap), Kiranti Languages
+c Author: Kirat Community / Digital Initiative
+c ==============================================================================
+
+store(&NAME) 'Kirat Rai (Phonetic)'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&COPYRIGHT) 'Public Domain / Free Community License'
+store(&MESSAGE) 'Phonetic typing for Kirat Rai script (Unicode 16.0)'
+store(&VISUALKEYBOARD) 'kirat_rai_phonetic.kvks'
+store(&LAYOUTFILE) 'kirat_rai_phonetic.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- Consonants (Base) ---
++ [K_K] > U+16D44  c Ka
++ [K_G] > U+16D46  c Ga
++ [K_C] > U+16D49  c Ca
++ [K_J] > U+16D4B  c Ja
++ [K_T] > U+16D52  c Ta
++ [K_D] > U+16D54  c Da
++ [K_N] > U+16D56  c Na
++ [K_P] > U+16D58  c Pa
++ [K_B] > U+16D5A  c Ba
++ [K_M] > U+16D5C  c Ma
++ [K_Y] > U+16D5D  c Ya
++ [K_R] > U+16D5E  c Ra
++ [K_L] > U+16D5F  c La
++ [K_V] > U+16D60  c Va / Wa
++ [K_W] > U+16D60  c Wa
++ [K_S] > U+16D61  c Sa
++ [K_H] > U+16D62  c Ha
+
+c --- Shifted Consonants (Aspirated & Retroflex) ---
++ [SHIFT K_K] > U+16D45  c Kha
++ [SHIFT K_G] > U+16D47  c Gha
++ [SHIFT K_N] > U+16D48  c Nga
++ [SHIFT K_C] > U+16D4A  c Cha
++ [SHIFT K_J] > U+16D4C  c Jha
++ [SHIFT K_Y] > U+16D4D  c Nya
++ [SHIFT K_T] > U+16D4E  c Tta (Retroflex)
++ [SHIFT K_D] > U+16D50  c Dda (Retroflex)
++ [SHIFT K_P] > U+16D59  c Pha
++ [SHIFT K_B] > U+16D5B  c Bha
+
+c --- Independent Vowels & Matras ---
++ [K_A] > U+16D43  c Letter A
++ [SHIFT K_A] > U+16D63  c Vowel Sign Aa
++ [K_I] > U+16D64  c Vowel Sign I
++ [SHIFT K_I] > U+16D43 U+16D64 c Independent I
++ [K_U] > U+16D65  c Vowel Sign U
++ [SHIFT K_U] > U+16D66  c Vowel Sign Ue
++ [K_E] > U+16D67  c Vowel Sign E
++ [SHIFT K_E] > U+16D68  c Vowel Sign Ai
++ [K_O] > U+16D69  c Vowel Sign O
++ [SHIFT K_O] > U+16D6A  c Vowel Sign Au
+
+c --- Signs & Virama ---
++ [K_X] > U+16D6B  c Virama (Halant)
++ [K_M] > U+16D5C  c Ma
++ [SHIFT K_M] > U+16D40  c Anusvara
++ [SHIFT K_H] > U+16D42  c Visarga
++ [K_Q] > U+16D41  c Tonpi (Candrabindu)
++ [K_QUOTE] > U+16D6C  c Sign Saat
++ [SHIFT K_QUOTE] > U+16D6D  c Sign Yupi
++ [K_PERIOD] > U+16D6E  c Danda (।)
++ [SHIFT K_PERIOD] > U+16D6F  c Double Danda (॥)
+
+c --- Digits (0-9) ---
++ [K_0] > U+16D70  c Digit 0
++ [K_1] > U+16D71  c Digit 1
++ [K_2] > U+16D72  c Digit 2
++ [K_3] > U+16D73  c Digit 3
++ [K_4] > U+16D74  c Digit 4
++ [K_5] > U+16D75  c Digit 5
++ [K_6] > U+16D76  c Digit 6
++ [K_7] > U+16D77  c Digit 7
++ [K_8] > U+16D78  c Digit 8
++ [K_9] > U+16D79  c Digit 9
+
+c --- Multi-letter Ligatures / Phonetic Digraphs ---
+U+16D44 + [K_H] > U+16D45  c k + h -> kha
+U+16D46 + [K_H] > U+16D47  c g + h -> gha
+U+16D56 + [K_G] > U+16D48  c n + g -> nga
+U+16D49 + [K_H] > U+16D4A  c c + h -> cha
+U+16D4B + [K_H] > U+16D4C  c j + h -> jha
+U+16D52 + [K_H] > U+16D53  c t + h -> tha
+U+16D54 + [K_H] > U+16D55  c d + h -> dha
+U+16D58 + [K_H] > U+16D59  c p + h -> pha
+U+16D5A + [K_H] > U+16D5B  c b + h -> bha
+U+16D61 + [K_H] > U+16D61  c s + h -> sa
