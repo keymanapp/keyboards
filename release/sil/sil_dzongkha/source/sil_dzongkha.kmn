@@ -9,7 +9,7 @@ c store(&LANGUAGE) 'x0451'
 store(&VISUALKEYBOARD) 'sil_dzongkha.kvks'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© SIL Global'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.2.1'
 store(&LAYOUTFILE) 'sil_dzongkha.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -43,21 +43,25 @@ store(row1a) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT 
 store(out1a) U+0fd1 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 U+002d U+003d
 store(row2a) [RALT K_q] [RALT K_w] [RALT K_e] [RALT K_r] [RALT K_t] [RALT K_y] [RALT K_u] [RALT K_i] [RALT K_o] [RALT K_p] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_BKSLASH]
 store(out2a) U+0f88 U+0f89 U+0f8c U+0f83 U+0f1a U+0f1b U+0f1c U+0f1d U+0f1e U+0f1f U+0028 U+0029 U+005c
-store(row3a) [RALT K_a] [RALT K_s] [RALT K_d] [RALT K_f] [RALT K_g] [RALT K_h] [RALT K_j] [RALT K_k] [RALT K_l] [RALT K_COLON] [RALT K_QUOTE]
-store(out3a) U+0f4a U+0f4b U+0f4c U+0f4e nul    nul    U+0f37 U+0f7e U+0f39 U+003b U+0027
+
+c [RALT K_g] [RALT K_h]
+c nul        nul
+
+store(row3a) [RALT K_a] [RALT K_s] [RALT K_d] [RALT K_f] [RALT K_j] [RALT K_k] [RALT K_l] [RALT K_COLON] [RALT K_QUOTE]
+store(out3a) U+0f4a     U+0f4b     U+0f4c     U+0f4e      U+0f37 U+0f7e U+0f39 U+003b U+0027
 store(row4a) [RALT K_z] [RALT K_x] [RALT K_c] [RALT K_v] [RALT K_b] [RALT K_n] [RALT K_m] [RALT K_COMMA] [RALT K_PERIOD] [RALT K_SLASH]
 store(out4a) U+0f13 U+0fbe U+0f03 U+0f0f U+0f6a U+0f12 U+0f65 U+002c U+002e U+002f
 store(row5a) [RALT K_SPACE]
 store(out5a) U+0f0c
 
-store(row1sa) [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_HYPHEN] [SHIFT RALT K_EQUAL]
-store(out1sa) U+0fd0 U+0fd3 U+0fd4 U+0f3a U+0f3b U+0f85 U+0f01 U+0f8a U+002a nul    nul    U+0fd2 U+002b
-store(row2sa) [SHIFT RALT K_q] [SHIFT RALT K_w] [SHIFT RALT K_e] [SHIFT RALT K_r] [SHIFT RALT K_y] [SHIFT RALT K_u] [SHIFT RALT K_i] [SHIFT RALT K_o] [SHIFT RALT K_p] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_BKSLASH]  c rule for [SHIFT RALT K_t] below
-store(out2sa) U+0f8d U+0f8e U+0f8f U+0f82 nul    nul    U+0f17 U+0f18 U+0f19 U+0f3f U+0f3e U+0fba
-store(row3sa) [SHIFT RALT K_a] [SHIFT RALT K_s] [SHIFT RALT K_d] [SHIFT RALT K_f] [SHIFT RALT K_g] [SHIFT RALT K_h] [SHIFT RALT K_j] [SHIFT RALT K_k] [SHIFT RALT K_l] [SHIFT RALT K_COLON] [SHIFT RALT K_QUOTE]
-store(out3sa) U+0f9a U+0f9b U+0f9c U+0f9e nul    nul    U+0f35 U+0f86 U+0f87 U+003a U+0022 c DevCommission chart gives this order on key caps, but swaps U+0f86 with U+0f87 in text description. I'm assuming visual is more likely to be correct than text string.
-store(row4sa) [SHIFT RALT K_z] [SHIFT RALT K_x] [SHIFT RALT K_c] [SHIFT RALT K_v] [SHIFT RALT K_b] [SHIFT RALT K_n] [SHIFT RALT K_m] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [SHIFT RALT K_SLASH]
-store(out4sa) U+0f36 U+0fbf U+0fb0 U+0fbb U+0fbc nul    U+0fb5 U+0fd9 U+0fda U+003f
+store(row1sa) [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8]  [SHIFT RALT K_HYPHEN] [SHIFT RALT K_EQUAL]  c 9, 0 have no output
+store(out1sa) U+0fd0 U+0fd3 U+0fd4 U+0f3a U+0f3b U+0f85 U+0f01 U+0f8a U+002a U+0fd2 U+002b
+store(row2sa) [SHIFT RALT K_q] [SHIFT RALT K_w] [SHIFT RALT K_e] [SHIFT RALT K_r] [SHIFT RALT K_i] [SHIFT RALT K_o] [SHIFT RALT K_p] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_BKSLASH]  c rule for [SHIFT RALT K_t] below; y, u have no output
+store(out2sa) U+0f8d U+0f8e U+0f8f U+0f82    U+0f17 U+0f18 U+0f19 U+0f3f U+0f3e U+0fba
+store(row3sa) [SHIFT RALT K_a] [SHIFT RALT K_s] [SHIFT RALT K_d] [SHIFT RALT K_f] [SHIFT RALT K_j] [SHIFT RALT K_k] [SHIFT RALT K_l] [SHIFT RALT K_COLON] [SHIFT RALT K_QUOTE] c g, h have no output
+store(out3sa) U+0f9a U+0f9b U+0f9c U+0f9e U+0f35 U+0f86 U+0f87 U+003a U+0022 c DevCommission chart gives this order on key caps, but swaps U+0f86 with U+0f87 in text description. I'm assuming visual is more likely to be correct than text string.
+store(row4sa) [SHIFT RALT K_z] [SHIFT RALT K_x] [SHIFT RALT K_c] [SHIFT RALT K_v] [SHIFT RALT K_b]  [SHIFT RALT K_m] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [SHIFT RALT K_SLASH] c  n has no output
+store(out4sa) U+0f36 U+0fbf U+0fb0 U+0fbb U+0fbc U+0fb5 U+0fd9 U+0fda U+003f
 store(row5sa) [SHIFT RALT K_SPACE]
 store(out5sa) U+00a0
 
