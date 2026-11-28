@@ -1,6 +1,10 @@
 Dzongkha (SIL) Keyboard Change History
 =======================
 
+1.2.1 (2026-11-28)
+------------------
+* Refactor nuls out of stores (no functional change)
+
 1.2 (2024-09-19)
 ----------------
 * Add tablet layout
