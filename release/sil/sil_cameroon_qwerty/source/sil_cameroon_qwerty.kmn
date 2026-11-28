@@ -3,7 +3,7 @@ store(&COPYRIGHT) '© SIL Cameroon'
 store(&BITMAP) 'Cameroon.ico'
 store(&MESSAGE) 'Use ; or AltGr to access special characters.'
 store(&LAYOUTFILE) 'sil_cameroon_qwerty.keyman-touch-layout'
-store(&KEYBOARDVERSION) '6.1.2'
+store(&KEYBOARDVERSION) '6.1.3'
 store(&VISUALKEYBOARD) 'sil_cameroon_qwerty.kvks'
 store(&TARGETS) 'any'
 store(&KMW_EMBEDCSS) 'sil_cameroon_qwerty.css'
@@ -24,7 +24,7 @@ store(nfpunct) ",:;"
 store(final) ".!?"
 store(num) "0123456789"
 store(diablock) " 0123456789?!;:'-_=<©®>.,[]{}\|/@°#$%^&*()«»‹›‘“’”€¥£…†ʼꞌꞋ" U+0022
-store(dia) U+0300 U+0304 U+0301 U+030C U+0302 U+0303 U+0308 U+0327 U+030D U+0330 
+store(dia) U+0300 U+0304 U+0301 U+030C U+0302 U+0303 U+0308 U+0327 U+030D U+0330
 
 platform('touch') any(word) any(final) + [K_SPACE] > index(word,2) index(final,3) " " layer('shift')
 platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
@@ -99,7 +99,7 @@ any(composed) + [K_BKSP] > index(comp-dia,1)
 + [K_C] > U+0063
 + [RALT K_C] > U+0327
 + [SHIFT K_C] > U+0043
-+ [SHIFT RALT K_C] > U+00a9  
++ [SHIFT RALT K_C] > U+00a9
 any(diablock) + [RALT K_C] > context
 
 + [K_D] > U+0064
@@ -140,7 +140,7 @@ any(diablock) + [RALT K_J] > context
 any(diablock) + [SHIFT RALT K_J] > context
 
 + [K_K] > U+006b
-+ [RALT K_K] > U+1dc5     
++ [RALT K_K] > U+1dc5
 + [SHIFT K_K] > U+004b
 + [SHIFT RALT K_K] > U+1dc7
 any(diablock) + [RALT K_K] > context
@@ -224,7 +224,7 @@ any(diablock) + [SHIFT RALT K_L] > context
 + [SHIFT RALT K_Z] > U+2020
 
 + [K_COLON] >  dk(003b)
-+ [SHIFT K_COLON] > U+003a   
++ [SHIFT K_COLON] > U+003a
 + [RALT K_COLON] > U+003b
 + [SHIFT RALT K_COLON] > U+003a
 
@@ -258,12 +258,12 @@ any(diablock) + [RALT K_HYPHEN] > context
 + [RALT K_BKQUOTE] > U+0060
 + [SHIFT K_BKQUOTE] > U+0303
 + [SHIFT RALT K_BKQUOTE] > U+007e
-any(diablock) + [K_BKQUOTE] > context  
-any(diablock) + [SHIFT K_BKQUOTE] > context 
+any(diablock) + [K_BKQUOTE] > context
+any(diablock) + [SHIFT K_BKQUOTE] > context
 
 + [K_LBRKT] > U+0301
 + [RALT K_LBRKT] > U+005b
-+ [SHIFT K_LBRKT] > U+030c 
++ [SHIFT K_LBRKT] > U+030c
 + [SHIFT RALT K_LBRKT] > U+007b
 any(diablock) + [K_LBRKT] > context
 any(diablock) + [SHIFT K_LBRKT] > context
@@ -348,14 +348,26 @@ match > use(deadkeys)
 
 group(deadkeys)
 
-store(dkf003b) U+0020 U+0030 U+0029 U+0031 U+0032 U+0033 U+0024 U+002A U+0039 U+0028 U+0061 U+0041 U+0062 U+0042 U+0063 U+0043 U+0064 U+0044 U+0065 U+0045 U+0066 U+0046 U+0067 U+0047 U+0068 U+0048 U+0069 U+0049 U+006A U+004A U+006B U+004B U+006C U+004C U+004D U+006E U+004E U+006F U+004F U+0070 U+0050 U+0071 U+0051 U+0072 U+0052 U+0074 U+0054 U+0075 U+0055 U+0076 U+0056 U+0077 U+0057 U+0079 U+0059 U+007A U+005A U+002B U+002D U+002E U+002F U+002C U+003C U+003E U+030D U+0303 U+0301 U+030C U+0327 U+0308 U+0300 U+0302 U+0078 U+0058 U+006D U+005C U+0073 U+0053 U+0034 U+0035 U+0036 U+0037 U+0038    
-store(dkt003b) U+003B U+2019 U+201D U+00BC U+00BD U+00BE U+20AC U+00D7 U+2018 U+201C U+025B U+0190 U+0253 U+0181 U+0327 U+00A9 U+0257 U+018A U+0259 U+018F U+00E6 U+00C6 U+02BC U+A78B U+03B1 U+2C6D U+0268 U+0197 U+0330 U+0323 U+1DC5 U+1DC7 U+1DC6 U+1DC4 U+2122 U+014B U+014A U+0254 U+0186 U+00F8 U+00D8 U+2014 U+2013 U+25CC U+00AE U+0153 U+0152 U+0289 U+0244 U+A78C U+A78B U+1E85 U+1E84 U+01B4 U+01B3 U+2026 U+2020 U+00B1 U+0304 U+203A U+00F7 U+2039 U+00AB U+00BB U+0060 U+007E U+005B U+007B U+005D U+007D U+0027 U+0022 nul    nul    nul    nul    nul    nul    nul    nul    nul    nul    nul  
+store(dkf003b) U+0020 U+0030 U+0029 U+0031 U+0032 U+0033 U+0024 U+002A U+0039 U+0028 U+0061 U+0041 U+0062 U+0042 \
+               U+0063 U+0043 U+0064 U+0044 U+0065 U+0045 U+0066 U+0046 U+0067 U+0047 U+0068 U+0048 U+0069 U+0049 \
+               U+006A U+004A U+006B U+004B U+006C U+004C U+004D U+006E U+004E U+006F U+004F U+0070 U+0050 U+0071 \
+               U+0051 U+0072 U+0052 U+0074 U+0054 U+0075 U+0055 U+0076 U+0056 U+0077 U+0057 U+0079 U+0059 U+007A \
+               U+005A U+002B U+002D U+002E U+002F U+002C U+003C U+003E U+030D U+0303 U+0301 U+030C U+0327 U+0308 \
+               U+0300 U+0302
+store(dkf003b_nul) U+0078 U+0058 U+006D U+005C U+0073 U+0053 U+0034 U+0035 U+0036 U+0037 U+0038
+store(dkt003b) U+003B U+2019 U+201D U+00BC U+00BD U+00BE U+20AC U+00D7 U+2018 U+201C U+025B U+0190 U+0253 U+0181 \
+               U+0327 U+00A9 U+0257 U+018A U+0259 U+018F U+00E6 U+00C6 U+02BC U+A78B U+03B1 U+2C6D U+0268 U+0197 \
+               U+0330 U+0323 U+1DC5 U+1DC7 U+1DC6 U+1DC4 U+2122 U+014B U+014A U+0254 U+0186 U+00F8 U+00D8 U+2014 \
+               U+2013 U+25CC U+00AE U+0153 U+0152 U+0289 U+0244 U+A78C U+A78B U+1E85 U+1E84 U+01B4 U+01B3 U+2026 \
+               U+2020 U+00B1 U+0304 U+203A U+00F7 U+2039 U+00AB U+00BB U+0060 U+007E U+005B U+007B U+005D U+007D \
+               U+0027 U+0022
 dk(003b) any(dkf003b) > index(dkt003b, 2)
+dk(003b) any(dkf003b_nul) > nul
 
 dk(003b) dk(003d) > U+003D
 platform('hardware') dk(003b) dk(003b) > U+003b
 
-dk(003d) dk(003d) > U+003D 
+dk(003d) dk(003d) > U+003D
 store(dkf003d) U+0020 U+0304 U+030d U+0303 U+0301 U+030c U+0327 U+0300 U+0302
 store(dkt003d) U+003d U+02c9 U+02c8 U+007e U+02ca U+02c7 U+00b8 U+02cb U+02c6
-dk(003d) any(dkf003d) > index(dkt003d, 2)  
+dk(003d) any(dkf003d) > index(dkt003d, 2)

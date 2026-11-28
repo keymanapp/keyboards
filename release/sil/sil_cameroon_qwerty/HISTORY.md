@@ -1,5 +1,10 @@
 Change History
 =======================
+
+6.1.3 (2026-11-28)
+-----------------
+* Refactor nuls out of stores (no functional change)
+
 6.1.2 (2025-May)
 -----------------
 Add missing welcome .htm files to KPS.
