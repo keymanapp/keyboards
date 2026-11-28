@@ -1,6 +1,10 @@
 Kui Odia Winscript Change History
 ====================
 
+1.0.3 (2026-11-28)
+----------------
+* Refactor virtual key out of store to eliminate warning (no functional change)
+
 1.0.2 (2025-04-24)
 ----------------
 * Version bump to include new font
