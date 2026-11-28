@@ -1,6 +1,10 @@
 Clavier du Burkina Change History
 =======================
 
+9.1.3 (2026-11-28)
+------------------
+* Refactor beeps out of stores (no functional change)
+
 9.1.2 (2025-06-09)
 ------------------
 * Add Charis font
