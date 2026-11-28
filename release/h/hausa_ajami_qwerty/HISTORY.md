@@ -1,6 +1,10 @@
 Hausa Ajami (QWERTY) Change History
 ====================
 
+1.0.3 (2026-11-28)
+----------------
+* Refactor nul out of store (no functional change)
+
 1.0.2 (2022-06-13)
 ----------------
 * Include mobile layout in .kps file
