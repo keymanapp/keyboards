@@ -2,13 +2,13 @@
 store(&BITMAP) 'sil_akebu.ico'
 store(&MESSAGE) 'Use ! or AltGr to access special characters.'
 store(&LAYOUTFILE) 'sil_akebu.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.0.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_akebu.kvks'
 store(&KMW_EMBEDCSS) 'sil_akebu.css'
 store(&KMW_HELPTEXT) 'Use the ! key to access special characters.'
 store(&CasedKeys) [K_A]..[K_Z] [K_0]..[K_9] [K_HYPHEN] [K_EQUAL] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_QUOTE] [K_COMMA] [K_PERIOD] [K_COLON]
-c Technically, [K_SLASH] should be in the above list, but I'm choosing not to add it to avoid confusion.  
+c Technically, [K_SLASH] should be in the above list, but I'm choosing not to add it to avoid confusion.
 store(&NAME) 'Akebu'
 
 begin Unicode > use(main)
@@ -146,12 +146,12 @@ c ??
 + [K_J] > U+006a
 + [SHIFT K_J] > U+004a
 + [SHIFT RALT K_J] > U+2122
-+ [RALT K_J] > BEEP 
++ [RALT K_J] > BEEP
 
 + [K_K] > U+006b
 + [SHIFT K_K] > U+004b
-+ [SHIFT RALT K_K] > BEEP 
-+ [RALT K_K] > BEEP 
++ [SHIFT RALT K_K] > BEEP
++ [RALT K_K] > BEEP
 
 + [K_L] > U+006c
 + [SHIFT K_L] > U+004c
@@ -292,7 +292,7 @@ any(diablock) + [SHIFT K_LBRKT] > context
 + [RALT K_QUOTE] > BEEP
 + [SHIFT K_QUOTE] > U+0302
 + [SHIFT RALT K_QUOTE] > BEEP
-any(diablock) + [K_QUOTE] > context 
+any(diablock) + [K_QUOTE] > context
 any(diablock) + [SHIFT K_QUOTE] > context
 
 + [K_OE2] > U+003C
@@ -322,11 +322,17 @@ match > use(deadkeys)
 group(deadkeys)
 
 dk(0021) dk(0021) > U+0021
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-store(dkf0021)	U+0020	U+0024	U+0026	U+0027	U+0028	U+0029	U+002B	U+002D 	U+0031  U+0032  U+0035 	U+003C	U+003D	U+003E	U+003F	U+0041	U+0043	U+0044	U+0045	U+0049	U+004A	U+004C	U+004D	U+004E	U+004F	U+0051	U+0052	U+0053	U+0058	U+005A	U+0061 	U+0064	U+0065	U+0069	U+006D	U+006E	U+006F	U+0071	U+0072	U+0073	U+0078	U+007A  U+00E0	U+0301	U+20AC	U+0033	U+0034  U+0022  U+005F  U+002C U+003D U+002F U+006A  U+006b  U+004b U+006C U+0075 U+0055
-store(dkt0021)	U+0021	U+00B2	U+00B9	U+007B	U+005B	U+005D	U+00B1  U+007C	U+2018  U+2019  U+0023  U+00AB	U+007D	U+00BB	beep    U+0190  U+00A9	U+0189	U+018E	U+0196	U+2122	U+00A3	U+00B5	U+014A	U+0186	U+2013	U+00AE	U+201D	U+203A	U+2020	U+025B	U+0256	U+01DD	U+0269	U+00F9	U+014B	U+0254	U+2014	U+25CC	U+201C	U+2039	U+2026	U+0040	U+005E	U+00B3	U+00AB	U+00BB  U+0025  U+005C  beep   U+007D   beep    beep    beep     beep    beep   U+028A U+01B1
+
+store(dkfbeep)  U+003F  U+002C  U+002F  U+006A  U+006b  U+004b  U+006C
+store(dkf0021)	U+0020	U+0024	U+0026	U+0027	U+0028	U+0029	U+002B	U+002D 	U+0031  U+0032  U+0035 	U+003C	U+003D	U+003E	U+0041	U+0043	U+0044	U+0045	U+0049	\
+                U+004A	U+004C	U+004D	U+004E	U+004F	U+0051	U+0052	U+0053	U+0058	U+005A	U+0061 	U+0064	U+0065	U+0069	U+006D	U+006E	U+006F	U+0071	U+0072	\
+                U+0073	U+0078	U+007A  U+00E0	U+0301	U+20AC	U+0033	U+0034  U+0022  U+005F  U+003D  U+0075  U+0055
+store(dkt0021)	U+0021	U+00B2	U+00B9	U+007B	U+005B	U+005D	U+00B1  U+007C	U+2018  U+2019  U+0023  U+00AB	U+007D	U+00BB	U+0190  U+00A9	U+0189	U+018E	U+0196	\
+                U+2122	U+00A3	U+00B5	U+014A	U+0186	U+2013	U+00AE	U+201D	U+203A	U+2020	U+025B	U+0256	U+01DD	U+0269	U+00F9	U+014B	U+0254	U+2014	U+25CC	\
+                U+201C	U+2039	U+2026	U+0040	U+005E	U+00B3	U+00AB	U+00BB  U+0025  U+005C  U+007D  U+028A  U+01B1
 dk(0021) any(dkf0021) > index(dkt0021, 2)
+dk(0021) any(dkfbeep) > beep
 
 c CAM U not listed as possibility.
-          
+
 c is 0308 the right diaeresis?
